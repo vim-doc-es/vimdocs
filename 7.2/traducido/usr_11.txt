@@ -1,0 +1,287 @@
+*usr_11.txt*	For Vim version 7.2.  Last change: 2006 Apr 24
+
+                MANUAL DE USUARIO DE VIM - por Bram Moolenaar
+
+			   Recuperación de errores
+
+
+¿Se colgó tu ordenador después de horas editando?  ¡No entres en pánico!  Vim
+mantiene suficiente información en el disco duro como para recuperar la mayor
+parte del trabajo.  Este capítulo te mostrará cómo recuperar tu trabajo y cómo
+funciona el archivo de recuperación.
+
+|11.1|  Recuperación básica
+|11.2|  ¿Dónde está el archivo de recuperación?
+|11.3|  ¿Se ha colgado o no?
+|11.4|  Más allá de lo explicado
+
+ Capítulo siguiente: |usr_12.txt|  Trucos
+  Capítulo anterior: |usr_10.txt|  Realizar grandes cambios
+         Contenidos: |usr_toc.txt|
+
+==============================================================================
+*11.1*  Recuperación básica
+
+En la mayoría de los casos, recuperar un archivo es bastante sencillo, si
+asumimos que sabes que archivo estabas editando (y el disco duro aún
+funciona).  Arranca Vim con el archivo y el argumento "-r": >
+
+	vim -r ayuda.txt
+
+Vim leerá el archivo de recuperación (empleado para almacenar el texto
+editado) y puede que lea bits y porciones del texto original.  Si todo ha
+funcionado correctamente, verás los siguientes mensajes (con otros nombres):
+
+	Using swap file ".ayuda.txt.swp" ~
+	Original file "~/vim/runtime/doc/ayuda.txt" ~
+	Recovery completed. You should check if everything is OK. ~
+	(You might want to write out this file under another name ~
+	and run diff with the original file to check for changes) ~
+	Delete the .swp file afterwards. ~
+
+Para ponerse del lado de la seguridad, escribe este archivo con otro nombre: >
+
+	:write ayuda.txt.recuperado
+
+Compara el archivo con el original y comprueba que obtuviste lo que esperabas.
+Vimdiff es muy útil para esto |08.7|.  Comprueba que el archivo original no
+contenga una versión reciente (guardaste el archivo justo antes de que el
+ordenador se colgase).  Comprueba también que no hay líneas que falten (algo
+que fue mal y Vim no pudo recuperar).
+   Si Vim produce mensajes de advertencia mientras se produce la recuperación,
+léelos con detenimiento.  En todo caso, no es habitual.
+
+Es normal que los últimos cambios no se puedan recuperar.  Vim vuelca los
+cambios al disco duro cuando no tecleas durante cuatro segundos, o tras
+escribir unos doscientos caracteres.  Esto se puede modificar con las opciones
+'updatetime' y 'updatecount'.  De esta forma, cuando Vim no tiene posibilidad
+de guardar cuando el sistema cae, tendrás los cambios del último volcado.
+
+si estabas editando sin un nombre de archivo designado, dale este argumento:
+>
+	vim -r ""
+
+Deberás estar en el mismo directorio para poder recuperar la información.
+
+==============================================================================
+*11.2*  ¿Dónde está el archivo de recuperación?
+
+Vim puede guardar el archivo de recuperación en distintos lugares.
+Normalmente se encuentra en el mismo directorio que el archivo original.  Para
+encontrarlo, cambia al directorio del archivo y escribe: >
+
+	vim -r
+
+Vim usará una lista de archivos de recuperación que ha encontrado.  También
+buscará en otros directorios donde los archivos de recuperación de archivos
+en el actual puedan encontrarse.  No buscará archivos de recuperación en otros
+directorios, ni siquiera en los subdirectorios.
+   La salida se parecerá a esto:
+
+	Swap files found: ~
+	   In current directory: ~
+	1.    .main.c.swp ~
+		  owned by: mool   dated: Tue May 29 21:00:25 2001 ~
+		 file name: ~mool/vim/vim6/src/main.c ~
+		  modified: YES ~
+		 user name: mool   host name: masaka.moolenaar.net ~
+		process ID: 12525 ~
+	   In directory ~/tmp: ~
+	      -- none -- ~
+	   In directory /var/tmp: ~
+	      -- none -- ~
+	   In directory /tmp: ~
+	      -- none -- ~
+
+Si hay varios archivos de recuperación que tienen pinta de ser el que quieres
+usar, se mostrará una lista y se requerirá que introduzcas el número del que
+quieres seleccionar.  Observa con cuidado las fechas para decidir cuál quieres
+usar.
+   En caso de que no sepas cuál seleccionar, pruébalos uno a uno y comprueba
+que los archivos resultantes sean el que deseas.
+
+
+USAR UN ARCHIVO DE RECUPERACIÓN ESPECÍFICO
+
+Si sabes qué archivo de recuperación quieres usar, puedes realizar la
+recuperación dando como argumento el nombre de este archivo.  Vim encontrará
+el nombre del archivo original del cuál este es el archivo de recuperación.
+
+Por ejemplo: >
+	vim -r .help.txt.swo
+
+Esto resulta útil cuando el archivo de recuperación está en otro directorio
+diferente al esperado.  Si esto tampoco funciona, mira los nombres de archivo
+que Vim reporta y renómbralos acordemente.  Comprueba la opción 'directory'
+para ver dónde ha podido poner Vim los archivos de recuperación.
+
+	Note:
+	Vim intenta encontrar los archivos de recuperación buscando los
+	directorios de la opción 'dir' por nombres que coincidan con
+	"nombredearchivo.sw?".  Si la expansión del nombre no funciona (p.ej.
+	la opción 'shell' es inválida), Vim intenta buscar el archivo
+	"nombredearchivo.swp".  Si esto también falla, tendrás que darle el
+	nombre del archivo a mano para que pueda recuperarlo.
+
+==============================================================================
+*11.3*  ¿Se ha colgado o no?				*ATTENTION* *E325*
+
+Vim intenta protegerte de cometer estupideces.  Supón que inocentemente
+comienzas la edición de un archivo, a esperas de que los contenidos se
+muestren.  En su lugar, Vim produce un mensaje muy largo:
+
+		E325: ATTENTION ~
+	Found a swap file by the name ".main.c.swp" ~
+		  owned by: mool   dated: Tue May 29 21:09:28 2001 ~
+		 file name: ~mool/vim/vim6/src/main.c ~
+		  modified: no ~
+		 user name: mool   host name: masaka.moolenaar.net ~
+		process ID: 12559 (still running) ~
+	While opening file "main.c" ~
+		     dated: Tue May 29 19:46:12 2001 ~
+ ~
+	(1) Another program may be editing the same file. ~
+	    If this is the case, be careful not to end up with two ~
+	    different instances of the same file when making changes. ~
+	    Quit, or continue with caution. ~
+ ~
+	(2) An edit session for this file crashed. ~
+	    If this is the case, use ":recover" or "vim -r main.c" ~
+	    to recover the changes (see ":help recovery"). ~
+	    If you did this already, delete the swap file ".main.c.swp" ~
+	    to avoid this message. ~
+
+Has recibido este mensaje porque cuando comienzas a editar un archivo, Vim
+comprueba que exista un archivo de recuperación para este archivo.  Si hay
+uno, algo debe estar pasando.  Puede ocurrir cualquiera de estas situaciones:
+
+1. Otra sesión está editando este archivo.  Mira el mensaje con la línea
+    "process ID".  Se parecerá a esta:
+
+		process ID: 12559 (still running) ~
+
+   El text "(still running)" indica que el proceso que edita este archivo está
+   corriendo en el mismo ordenador.  Cuando estés bajo un sistema no Unix, no
+   obtendrás esta información extra.  Cuando edites un archivo a través de red, 
+   seguramente no verás esta información, porque el proceso estará en otro
+   ordenador.  Tendrás que averiguarlo por tu cuenta.
+      Si hay otro Vim editando el mismo archivo, continuar editándolo
+   conllevará a que tengas dos versiones del mismo archivo.  La última que
+   guardes sobreescribirá a la otra, con la consecuente pérdida de los
+   cambios.  Mejor salir de este Vim.
+
+2. El archivo de recuperación puede que sea el resultado de un cuelgue de Vim
+   o del ordenador.  Comprueba la hora mencionada en el mensaje.  Si la fecha
+   del archivo de recuperación es posterior y aparece:
+
+		modified: YES ~
+
+   entonces es muy probable que haya ocurrido algo con la sesión.
+      Si la fecha del archivo es posterior a la fecha del archivo de
+   recuperación, es que o cambiado tras el cuelgue (quizá la recuperaste antes
+   y no eliminaste el archivo de recuperación), o es que el archivo fue
+   guardado después de la última grabación del archivo de recuperación
+   (entonces tienes suerte: no necesitas ni ese viejo archivo de
+   recuperación).  Vim te advertirá de esto:
+
+      NEWER than swap file! ~
+
+
+ARCHIVO DE RECUPERACIÓN ILEGIBLE
+
+A veces la línea
+
+	[cannot be read] ~
+
+aparecerá bajo el nombre del archivo de recuperación.  Esto puede ser bueno o
+malo dependiendo de las circunstancias.
+
+Son buenas noticias si la sesión anterior se colgó sin haber hecho ningún
+cambio al archivo.  En tal caso un listado de archivos del directorio mostrará
+que tiene cero bytes.  Tal vez quieras eliminarla y continuar.
+
+No son muy buenas noticias si lo que ocurre es que no tienes permisos de
+lectura del archivo de recuperación.  Tal vez quieras ver el archivo en modo
+sólo lectura o salir.  En sistemas multiusuario si empleaste otro usuario,
+salir y volver a identificarte tal vez resuelva el "error de lectura".  O en
+su defecto quizá quieras encontrar quien lo editó por última vez (o está
+editándolo ahora mismo) y hablar con él.
+
+Son muy malas noticias si significa que hay un error de lectura a nivel físico
+del disco duro.  Afortunadamente, esto no ocurre casi nunca.  Quizá quieras
+ver el archivo en modo sólo lectura inicialmente (si puedes), para ver el
+alcance de los cambios que fueron "olvidados".  Si eres el que está a cargo
+del archivo, prepárate para rehacer los últimos cambios.
+
+
+¿QUÉ HACER?
+
+Si tienes soporte para diálogos, se te pedirá que elijas uno de los siguiente:
+
+  Swap file ".main.c.swp" already exists! ~
+  [O]pen Read-Only, (E)dit anyway, (R)ecover, (Q)uit, (A)bort, (D)elete it: ~
+
+O  Abrir el archivo en modo sólo lectura.  Usa esto cuando sólo quieras ver el
+   archivo y no necesites recuperarlo.  Tal vez quieras usar esto cuando sepas
+   que alguien está usando el archivo y tú solo quieras echar un vistazo sin
+   hacer cambios.
+
+E  Editar el archivo igualmente.  ¡Usa esto con cuidado!  Si el archivo está
+   siendo utilizado por otro Vim, terminarás con dos versiones del archivo.
+   Vim intentará advertirte si esto va a ocurrir, pero más vale prevenir.
+
+R  Recuperar el archivo del archivo de recuperación.  Emplea esto si sabes que
+   el archivo de recuperación contiene los cambios que quieres.
+
+Q  Salir.  Esto evita la edición.  Esa esto si hay otro Vim editando el mismo
+   archivo.
+      Tras iniciar Vim, esto saldrá de él.  Cuando comiences Vim con archivos
+   en varias ventanas, Vim sale sólo si hay un archivo de recuperación para el
+   primero.  Cuando uses un comando de edición, el archivo no será cargado y
+   serás devuelto al archivo previamente editado.
+
+A  Abortar.  Como salir (Q), pero también aborta los comando posteriores.
+   Esto es útil cuando cargues un script que edita varios archivos, como una
+   sesión con múltiples ventanas.
+
+D  Eliminar el archivo de recuperación.  Usa esto cuando estés seguro de que
+   no lo necesitas.  Por ejemplo, cuando no contenga cambios o cuando el
+   archivo en sí sea más nuevo que el archivo de recuperación.
+      En Unix esta opción sólo se ofrece cuando el proceso que creó el archivo
+   de recuperación no parece que esté corriendo.
+
+Si no ves el diálogo (estás haciendo funcionar una versión de Vim que no lo
+soporta), tendrás que hacerlo a mano.  Para recuperar el archivo usa el
+siguiente comando: >
+
+	:recover
+
+
+Vim no puede detectar siempre que un archivo de recuperación ya existe para un
+archivo.  Este es el caso cuando otras sesiones de edición ponen los archivos
+en otro directorio o cuando una ruta de archivo difiere en máquinas distintas. 
+Por lo tanto, no confíes en que Vim siempre te vaya a alertar.
+
+Si realmente no quieres ver este mensaje, puedes añadir la bandera 'A' a la
+opción 'shortmess'.  Pero es poco habitual que lo necesites.
+
+==============================================================================
+*11.4*  Más allá de lo explicado
+
+|swap-file|	Una explicación sobre dónde será creado el archivo de
+		recuperación y cuál es su nombre.
+|:preserve|	Volcado manual de un archivo de recuperación al disco.
+|:swapname|	Ver el nombre del archivo de recuperación para el actual.
+'updatecount'	Número de pulsación tras las cuales el archivo de recuperación
+		es volcado al disco.
+'updatetime'	Temporizador tras el cuál se producirá el volcado a disco.
+'swapsync'	Si el disco duro debe ser sincronizado tras el volcado.
+'directory'	Listado de directorios para el archivo de recuperación.
+'maxmem'	Limitar el uso de memoria antes de hacer el volcado.
+'maxmemtot'	Lo mismo pero incluyendo todos los archivos en total.
+
+==============================================================================
+
+Capítulo siguiente: |usr_12.txt|  Trucos
+
+Copyright: ver |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:

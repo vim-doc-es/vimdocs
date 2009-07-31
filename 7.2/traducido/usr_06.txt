@@ -1,0 +1,276 @@
+*usr_06.txt*	Para Vim version 7.2.  Último cambio: 2006 Apr 24
+
+		     VIM USER MANUAL - por Bram Moolenaar
+
+			Uso del coloreado de sintaxis
+
+
+Texto en blanco y negro es aburrido.  Con colores los archivos tienen más
+vida.  No sólo adquieren mejor apariencia, si no que acelera la producción.
+Cambia los colores para distintos tipos de texto.  Imprime tus textos con los
+colores que ves en pantalla.
+
+|06.1|	Activándola
+|06.2|	¿Colores incorrectos o ausentes?
+|06.3|	Diferentes colores
+|06.4|	Con colores o sin colores
+|06.5|	Imprimir con colores
+|06.6|	Más información
+
+ Capítulo siguiente: |usr_07.txt|  Editar más de un archivo
+  Capítulo anterior: |usr_05.txt|  Configuración
+         Contenidos: |usr_toc.txt|
+
+==============================================================================
+*06.1*	Activándola
+
+Comenzamos con un simple comando: >
+
+	:syntax enable
+
+Esto debería funcionar en la mayoría de las situaciones para obtener el
+coloreado.  Vim detectará automágicamente el tipo de archivo y cargará la
+sintaxis correspondiente.  De repente, lo comentarios, las palabras clave y
+las cadenas se colorean.  Esto lo hace más fácil para la vista.  Tras usarlo
+un poco te darás cuenta de lo que te ralentizaba la edición el blanco y negro!
+
+Si siempre quieres usar el coloreado de sintaxis, pon el comando ":syntax
+enable" en tu archivo |vimrc|.
+
+Si quieres coloreado de sintaxis sólo cuando la terminal soporte colores,
+puedes poner esto en tu archivo |vimrc|: >
+
+	if &t_Co > 1
+	   syntax enable
+	endif
+
+Si quieres coloreado de sintaxis sólo en la versión GUI, pon el comando
+":syntax enable" únicamente en el archivo |gvimrc|.
+
+==============================================================================
+*06.2*	¿Colores incorrectos o ausentes?
+
+Puede haber una serie de motivos causantes del problema:
+
+- Tu terminal no soporta colores.
+	Vim usará negrita, itálica y texto subrayado, pero esto no es muy
+	agradable.  Probablemente quieras probar una terminal con colores.
+	Para Unix, se recomienda usar la xterm del proyecto XFree86:
+	|xfree-xterm|.
+
+- Tu terminal soporta colores, pero Vim no lo sabe.
+	Asegúrate de que la variable $TERM es correcta.  Por ejemplo, cuando
+	uses una xterm que soporte colores: >
+
+		setenv TERM xterm-color
+<
+	o (dependiendo de tu shell): >
+
+		TERM=xterm-color; export TERM
+
+<	El nombre de la terminal debe coincidir con la terminal que estés
+	usando.  Si aún así no funciona, échale un vistazo a |xterm-color|,
+	que te muestra unas cuantas maneras de hacer que se vean colores.
+
+- El tipo de archivo no es reconocido.
+	Vim no conoce todos los tipos de archivos, y a veces es casi imposible
+	decir que lenguaje usa un archivo.  Prueba este comando: >
+
+		:set filetype
+<
+	Si el resultado es "filetype=" entonces el problema es que Vim no sabe
+	que de qué tipo de archivo se trata.  Puedes decirle el tipo de archivo
+	de forma manual: >
+
+		:set filetype=fortran
+
+<	Para ver qué tipos de archivos están disponibles,  échale un vistazo a
+	$VIMRUNTIME/syntax.  Para la GUI puedes usar el menú Syntax.  Activar el
+	tipo de archivo también puede ser realizado con un |modeline|, de forma
+	que el archivo será coloreado cada vez que lo edites.  Por ejemplo, esta
+	línea puede ser empleada para los Makefiles (ponla cerca del principio o
+	el final del archivo): >
+
+		# vim: syntax=make
+
+<	Quizá sepas cómo detectar el tipo de archivo por cuenta propia.  A
+	menudo se puede emplear la extensión del nombre de archivo.
+	Ve a |new-filetype| para ver cómo decirle a Vim que detecte el tipo.
+
+- No hay coloreado para tu tipo de archivo.
+	Puedes intentar usar un archivo similar activándolo manualmente como se
+	explica más arriba.  Si no tienes suficiente, puedes escribir tu propio
+	archivo de sintaxis, ve a |mysyntaxfile|.
+
+
+O los colores están mal:
+
+- El texto coloreado es muy difícil de leer.
+	Vim trata de averiguar el color de fondo que estás usando.  Si es negro
+	(u otro color oscuro) usará colores claros para el texto.  Si es blanco
+	(u otro colo claro) usará colores oscuros para el texto.  Si Vim no ha
+	acertado, el texto se hará difícil de leer.  Para solucionar esto,
+	activa la opción 'background'.  Para un fondo oscuro: >
+
+		:set background=dark
+
+<	Y para un fondo claro: >
+
+		:set background=light
+
+<	Asegúrate de que lo pones _antes_ de ":syntax enable", en caso
+	contrario, los colores ya se habrán definido.  Puedes hacer ":syntax
+	reset" tras activar 'background' para hacer que Vim vuelva a redefinir
+	los colores.
+
+- Los colores están mal cuando se desplaza el texto de abajo arriba.
+	Vim no lee el archivo completo.  Comienza justo en el punto donde estás
+	viendo el archivo.  Eso ahorra mucho tiempo, pero a veces los colores
+	están mal.  Un apaño rápido consiste en teclear CTRL-L, o ir hacia atrás
+	y de nuevo hacia delante en el texto.  Para un arreglo real, ve a
+	|:syn-sync|.  Algunos archivos de sintaxis tienen un modo de mirar hacia
+	el texto hacia atrás, mira la ayuda para la sintaxis específica.  Por
+	ejemplo, |tex.vim| para la sintaxis de TeX.
+
+==============================================================================
+*06.3*	Diferentes colores				*:syn-default-override*
+
+Si no te gustan los colores por defecto, puedes seleccionar otro esquema de
+colores.  En GVim usa el menú Edit/Color.  También puedes usar el comando: >
+
+	:colorscheme evening
+
+"evening" es el nombre del esquema de colores.  Hay muchos otros que quizá
+quieras probar.  Mira en el directorio $MYVIMRUNTIME/colors.
+
+Cuando hayas encontrado un esquema que te guste, añade el comando ":colorscheme"
+a tu archivo |vimrc|.
+
+También puedes escribir tu propio esquema de colores.  Así es que como se hace:
+
+1. Selecciona un esquema que se parezca.  Copia este archivo a tu propio
+   directorio Vim.  Para Unix, esto debería funcionar: >
+
+	!mkdir ~/.vim/colors
+	!cp $VIMRUNTIME/colors/morning.vim ~/.vim/colors/mine.vim
+<
+   Esto se hace desde Vim, porque conoce el valor de $VIMRUNTIME.
+
+2. Edita el archivo del esquema de colores.  Estas entradas son útiles:
+
+	term		atributos en una terminal B/N
+	cterm		atributos en una terminal a color
+	ctermfg		color frontal de una terminal a color
+	ctermbg		color de fondo de una terminal a color
+	gui		atributos de la GUI
+	guifg		color frontal de la GUI
+	guibg		color de fondo de la GUI
+
+   Por ejemplo, para hacer los comentarios en verde: >
+
+	:highlight Comment ctermfg=green guifg=green
+<
+   Los atributos que puedes usar para "cterm" y "gui" son "bold" y "underline".
+   Si quieres los dos, escribe "bold,underline".  Para más detalles ve al
+   comando |:highlight|.
+
+3. Dile a Vim que use el esquema siempre.  Pon esto en tu |vimrc|: >
+
+	colorscheme mine
+
+Si quieres ver cómo son los colores más habitualmente usados, emplea este
+comando: >
+
+	:runtime syntax/colortest.vim
+
+Verás texto en varias combinaciones de colores.  Puedes comprobar cuáles son
+leíbles y tienen un apariencia agradable.
+
+==============================================================================
+*06.4*	Con colores o sin colores
+
+Mostrar texto en color conlleva un gran uso del procesador.  Si te parece que el
+texto se muestra muy lentamente, puedes desactivar el coloreado momentáneamente:
+>
+	:syntax clear
+
+Cuando edites otro archivo (o el mismo) los colores reaparecerán.
+
+							*:syn-off*
+Si quieres desactivar el coloreado por completo usa: >
+
+	:syntax off
+
+Esto desactivará completamente el coloreado de sintaxis y eliminará
+inmediatamente de todos los búfers. 
+
+							*:syn-manual*
+Si quieres coloreado de sintaxis sólo para archivos específicos, usa esto: >
+
+	:syntax manual
+
+Esto permitirá el coloreado, pero no lo activará automáticamente cuando edites
+un búfer.  Para activarla en el búfer actual, asigna la opción 'syntax' del
+siguiente modo: >
+
+	:set syntax=ON
+<
+==============================================================================
+*06.5*	Imprimir con colores				*syntax-printing*
+
+En la version MS-Windows puedes imprimir el archivo actual del siguiente modo: >
+
+	:hardcopy
+
+Te aparecerá el típico diálogo de impresora, donde puedes seleccionarla junto
+con algunas opciones.  Si tienes una impresora a color, la salida impresa debe
+ser similar a lo que te aparece en pantalla.  Sin embargo, cuando tienes un
+fondo oscuro, los colores se ajustarán para verse bien sobre blanco.
+
+Hay diversas opciones que cambiarán el modo en el que Vim imprime:
+	'printdevice'
+	'printheader'
+	'printfont'
+	'printoptions'
+
+Para imprimir sólo un rango de líneas, usa el modo Visual para seleccionarlas y
+luego introduce el comando de este modo: >
+
+	v100j:hardcopy
+
+"v" inicia el modo Visual.  "100j" te mueve 100 líneas hacia abajo que serán
+destacadas.  Por último ":hardcopy" imprimirá las líneas destacadas.  Puedes
+usar otros comandos para moverte en modo Visual, por supuesto.
+
+Esto también funciona en Unix si tienes una impresora PostScript.  En caso
+contrario tendrás que hacer un poco más de trabajo.  Tendrás que convertir a
+HTML primero y luego imprimirlo desde un navegador web como Netscape.
+
+Convierte el archivo a HTML con este comando: >
+
+	:source $VIMRUNTIME/syntax/2html.vim
+
+Lo verás trabajar, esto puede llevar un buen tiempo para archivos grandes.  Un
+rato después otra ventana muestra el código HTML.  Ahora guarda esto en algún
+lugar (no importa dónde, lo eliminarás en cuanto termines de imprimir):
+>
+	:write main.c.html
+
+Abre este archivo en tu navegador favorito e imprímelo desde allí.  Si todo ha
+salido bien, la salida debe tener la misma apariencia que tenía en Vim.  Ve a
+|2html.vim| para más detalles.  No te olvides de eliminar el archivo HTML.
+
+En lugar de imprimir, puedes poner el archivo HTML en un servidor, y permitir a
+otros ver el texto coloreado.
+
+==============================================================================
+*06.6*	Más información
+
+|usr_44.txt|  Tu propio coloreado de sintaxis.
+|syntax|      Todos los detalles.
+
+==============================================================================
+
+Capítulo siguiente: |usr_07.txt|  Editar más de un archivo
+
+Copyright: ver |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:

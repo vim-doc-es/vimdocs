@@ -1,0 +1,824 @@
+*usr_10.txt*	For Vim version 7.2.  Last change: 2006 Nov 05
+
+		MANUAL DE USUARIO DE VIM - por Bram Moolenaar
+
+			   Realizar grandes cambios
+
+
+En el capítulo 4 se explicaron algunas formas de hacer cambios pequeños.  Este
+capítulo tratará de cambios que se repiten o que afectan a grandes porciones
+del texto.  El modo Visual permite hacer varias cosas con bloques de texto.
+Usa un programa externo para hacer las cosas más complicadas.
+
+|10.1|	Comandos de grabación y reproducción
+|10.2|	Substitución
+|10.3|	Rangos de aplicación
+|10.4|	Los comandos globales
+|10.5|	El modo de bloque Visual
+|10.6|	Leyendo y escribiendo parte de un archivo
+|10.7|	Formatear texto
+|10.8|	Cambiar mayúsculas y minúsculas
+|10.9|	Uso de un programa externo
+
+ Capítulo siguiente: |usr_11.txt|  Recuperación de errores
+  Capítulo anterior: |usr_09.txt|  Uso de la GUI
+         Contenidos: |usr_toc.txt|
+
+==============================================================================
+*10.1*	Comandos de grabación y reproducción
+
+El comando "." repite el cambio precedente.  ¿Pero qué ocurre si quieres hacer
+algo más complicado que un simple cambio?  Para eso tenemos el comando
+"grabación".  Hay que seguir tres pasos:
+
+1. El comando "q{registro}" inicia la grabación de teclas pulsadas en un
+   registro llamado {registro}.  El nombre del registro es una letra (a-z).
+2. Introduce los comandos.
+3. Para finalizar la grabación, pulsa q (sin ningún carácter extra).
+
+Puedes ejecutar la macro tecleando el comando "@{registro}"
+
+Vamos a echarle un vistazo a cómo se usan los comandos en la práctica.  Tienes
+una lista de nombres de archivo como esta:
+
+	stdio.h ~
+	fcntl.h ~
+	unistd.h ~
+	stdlib.h ~
+
+Y lo que quieres es lo siguiente:
+
+	#include "stdio.h" ~
+	#include "fcntl.h" ~
+	#include "unistd.h" ~
+	#include "stdlib.h" ~
+
+Comienzas yendo al primer carácter de la primera línea.  A continuación
+ejecuta el siguiente comando:
+
+	qa			Comenzar a grabar la macro en el registro a.
+	^			Moverte al comienzo de la línea.
+	i#include "<Esc>	Insertar el #include " al comienzo de cada
+				línea.
+	$			Moverte al final de la línea.
+	a"<Esc>			Añadir el carácter de comillas dobles (") al
+				final de la línea.
+	j			Ir a la próxima línea.
+	q			Detener la grabación de la macro.
+
+Ahora que has realizado el trabajo una vez, puedes repetir el cambio tecleando
+el comando "@a" tres veces.
+   El comando "@a" puede venir precedido de un multiplicador, el cuál causará
+que la macro se ejecute ese número determinado de veces.  En este caso: >
+
+	3@a
+
+
+MOVER Y EJECUTAR
+
+Tal vez tengas la líneas que quieres cambiar en varios lugares.  Simplemente
+mueve el cursor a cada localización y usa el comando "@a".  Si has hecho eso
+una vez, puedes repetirlo con "@@".  Es un poco más sencillo de teclear.  Si
+ejecutas el registro b con "@b", el próximo "@@" usará el registro b.
+   Si comparas esto con el método ".", hay varias diferencias.  Lo primero,
+"." sólo puede repetir un cambio.  Como has podido ver en el ejemplo de
+arriba, "@a" puede llevar a cabo varios cambios, incluyendo movimientos.  Por
+otro lado, "." sólo puede recordar el último cambio.  Ejecutar un registro te
+permite hacer algunos cambios en el texto y poder usar todavía lo comandos
+grabados.  Por último, puedes usar 26 registros distintos.  De este modo
+puedes reusar 26 secuencias diferentes.
+
+
+USO DE REGISTROS
+
+Los registros que se usan para grabar son los mismos que se usan para los
+comandos copiar y eliminar.  Esto te permite mezclar la grabación con otros
+comandos para manipular los registros.
+   Supón que has grabado algunos comandos en el registro n.  Cuando lo
+ejecutas con "@n" te das cuenta de que algo no va bien.  Podrías intentar
+grabarlo de nuevo, pero quizá cometas otro error.  Mejor usar este truco:
+
+	G                       Ve al final del archivo
+	o<Esc>                  Crea una nueva línea
+	"np                     Pega el texto del registro n.  Verás que los
+				comandos que grabaste se pegan como texto.
+	{edits}                 Cambia los comandos que están mal.  Esto es
+				como editar texto.
+	0                       Ve al principio de la línea.
+	"ny$                    Copia (yank) los comandos corregidos al
+				registro n.
+	dd                      Elimina la línea con los comandos pegados.
+
+Ahora puedes ejecutar los comandos corregidos con "@n".  (Si los comandos
+grabados incluyen saltos de línea, ajusta los dos últimos puntos de explicados
+anteriormente para incluir todas las líneas.)
+
+
+AÑADIR A UN REGISTRO
+
+Hasta el momento hemos usado letras en minúscula para el nombre del registro.
+Para añadir a un registro, usa una letra en mayúscula.
+   Supón por un momento que has grabado un comando para cambiar una palabra en
+el registro c.  Funciona correctamente, pero quisieras añadir una búsqueda
+para la siguiente palabra a cambiar.  Esto se puede hacer así: >
+
+	qC/palabra<Entrar>q
+
+Comienzas con "qC", que añadirá al registro c.  De este modo podrás siempre
+escribir el registro al que quieras añadir nuevos pasos mediante la misma
+de letra de identificación pero en mayúscula.
+
+Esto funciona tanto grabando como con los comandos de copiar y eliminar.  Por
+ejemplo, quieres recoger una secuencia de líneas en un registro.  Copia la
+primera línea con: >
+
+	"aY
+
+Ahora ve a la siguiente línea y escribe: >
+
+	"AY
+
+Repite el comando para todas las líneas.  El registro a" contiene en este
+momento todas estas líneas, en el orden en el que las has copiado.
+
+==============================================================================
+*10.2*	Sustitución						*find-replace*
+
+El comando ":substitute" te permite ejecutar sustituciones de cadenas de
+caracteres en un rango de líneas.  La forma general es la siguiente: >
+
+	:[rango]substitute/de/a/[banderas]
+
+Este comando cambia la cadena "de" por la cadena "a" en las líneas
+especificadas con [rango].  Por ejemplo, puedes cambiar "profesor" por
+"maestro" en todas las líneas con el siguiente comando: >
+
+	:%substitute/profesor/maestro/
+<
+	Note:
+	El comando ":substitute" casi nunca se escribe completo.  La mayoría
+	de las veces la gente escribe la versión abreviada ":s".  A partir de
+	ahora la abreviatura será empleada.
+
+El "%" antes del comando especifica que se ejecuta en todas las líneas.  Sin
+rango, ":s" sólo funciona en la línea actual.  Más sobre los rangos en la
+próxima sección |10.3|.
+
+Por defecto, el comando ":substitute" cambia sólo la primera palabra
+encontrada en cada línea.  Por ejemplo, el comando anterior cambia esta línea:
+
+	El profesor Pinilla ha criticado hoy al profesor Burgos. ~
+
+a esta:
+
+	El maestro Pinilla ha criticado hoy al profesor Burgos. ~
+
+Para cambiar todas palabras que aparezcan en la línea deberás usa la bandera g
+(global).  El comando: >
+
+	:%s/profesor/maestro/g
+
+da como resultado (ejecutándolo sobre la línea original):
+
+	El maestro Pinilla ha criticado hoy al maestro Burgos. ~
+
+Otras banderas incluyen p (print = imprimir), que hace el comando ":s" muestre
+en pantalla la última línea que cambie.  La c (confirm = confirmar) le dice a
+":s" que pida confirmación antes que se ejecute cada sustitución.  Introduce
+lo siguiente: >
+
+	:%s/profesor/maestro/c
+
+Vim encuentra la primera aparición de "profesor" y muestra el texto que está a
+punto de cambiar.  Te aparecerá la siguiente pregunta: >
+
+	replace with maestro (y/n/a/q/l/^E/^Y)?
+
+Aquí puedes darle cualquiera de las siguientes respuestas:
+
+	y               Si; hacer el cambio.
+	n               No; saltar esta palabra.
+	a               Todo; hacer este cambio y todos los restantes sin
+			pedir más confirmación.
+	q               Quit; no hacer más cambios.
+	l               Último; hacer este cambio y salir.
+	CTRL-E          Desplazar el texto hacia arriba.
+	CTRL-Y          Desplazar el texto hacia abajo.
+
+
+La parte "de" del comando sustituir es, de hecho, un patrón (del mismo
+tipo de los que se usan para la búsqueda).  Por ejemplo, este comando sólo
+sustituye "Eso" cuando aparece al comienzo de una línea: >
+
+	:s/^Eso/Aquello/
+
+Si sustituyes con un "de" o un "a" que incluyan una barra inclinada, tendrás
+que poner una barra invertida antes de él.  Una forma más sencilla es usar
+otro carácter como separador en lugar de la barra.  Un "+", por ejemplo: >
+
+	:s+uno/dos+uno o dos+
+
+==============================================================================
+*10.3*  Rangos de aplicación
+
+El comando ":substitute" y muchos otros comandos ":" pueden ser aplicados a
+una selección de líneas.  A esto se le llama rango.
+   La forma más simple de un rango es {n},{n} (n es un número entero). Por ej:
+>
+	:1,5s/esto/aquello/g
+
+ejecuta el comando sustituir desde la línea 1 a la 5.  La línea 5 queda
+incluida.  El rango se sitúa justo antes del comando.
+
+Un único número puede ser empleado para acceder a una línea específica: >
+
+	:54s/Político/Demagogo/
+
+Algunos comandos funcionan sobre un archivo completo cuando no le especificas
+un rango.  Para hacerlos funcionar en la línea actual, "." es empleado.  El
+comando ":write" funciona de ese modo.  Sin un rango, escribe el archivo
+completo.  Para hacer que sólo escriba una línea a un archivo: >
+
+	:.write otroarchivo
+
+La primera línea siempre tiene como numeración el 1.  ¿Pero qué ocurre con la
+última línea?  El carácter "$" puede ser empleado para esto.  Por ejemplo,
+para sustituir en las líneas desde la del cursor hasta el final: >
+
+	:.,$s/si/no/
+
+El rango "%" que usamos anteriormente es una forma de decir "1,$" (desde la
+primera hasta la última).
+
+
+USO DE UN PATRÓN EN EL RANGO
+
+Supón que estás editado un capítulo de un libro y quieres reemplazar todas las
+palabras "gris" con "blanco".  Pero sólo en ese capítulo, no en el siguiente.
+Sabes que los límites entre capítulos tienen la palabra "Capítulo" en la
+primera columna.  Este comando funcionará así: >
+
+	:?^Capítulo?,/^Capítulo/s=gris=azul=g
+
+Puedes observar que un patrón ha sido usado en dos ocasiones.  La primera
+"?^Chapter?" busca hacia atrás el patrón.  Por lo tanto ?patrón? buscará
+encima de la línea actual.  De forma similar, "/^Capítulo/" se usa para buscar
+hacia delante el comienzo del nuevo capítulo.
+   Para evitar confusión con las barras, el carácter "=" ha sido empleado en
+el comando sustituir.  Una barra o cualquier otro carácter habría funcionado
+igual de bien.
+
+
+AÑADIR Y ELIMINAR
+
+Hay un pequeño error en el comando de arriba: Si el título del siguiente
+capítulo hubiese incluido "gris" habría sido reemplazado igualmente.  Quizá
+querías eso, ¿pero qué ocurre si no? Puedes especificar un offset.
+   Para buscar un patrón e indicar la línea anterior: >
+
+	/Capítulo/-1
+
+Puedes usar cualquier número en lugar de 1.  Para indicar la segunda línea por
+debajo de la cadena encontrada: >
+
+	/Capítulo/+2
+
+El desplazamiento puede ser empleado también con otros elementos en un rango.
+Mira este: >
+
+	:.+3,$-5
+
+Esto especifica que el rango comienza tres líneas por debajo de la actual y
+termina cinco líneas antes de la última línea del archivo.
+
+
+USO DE MARCAS 
+
+En lugar de acordarte del número de algunas líneas en determinadas posiciones,
+e introducirlas en un rango, puedes usar marcadores.
+   Pon marcas como se explica en el capítulo 3.  Por ejemplo, usa "ms" para
+marcar la parte superior de un área y "mi" para marcar la parte inferior".
+Puedes usar el rango para especificar las líneas entre las marcas (inclusive):
+>
+	:'s,'i
+
+
+MODO VISUAL Y RANGOS
+
+Puedes seleccionar texto con el modo Visual.  Si pulsas ":" para iniciar un
+comando, verás lo siguiente: >
+
+	:'<,'>
+
+Ahora puedes teclear el comando y será aplicado al rango de líneas que tienes
+seleccionadas.
+
+	Note:
+	Cuando uses el modo Visual para seleccionar parte de una línea, o uses
+	CTRL-V para seleccionar un bloque de texto, los comandos se aplicarán
+	a líneas completas.  Esto puede que cambie en una futura versión.
+
+'<' y '>' con marcadores que se sitúan al principio y al final de la
+selección.  Estos marcadores mantienen estas posiciones hasta que aparece una
+nueva selección Visual.  Por lo tanto, puedes usar el comando "'<" para saltar
+al lugar donde el área Visual comenzaba.  También puedes mezclarlas: >
+
+	:'>,$
+
+Esto especifica las líneas desde el final del área visual hasta el final del
+archivo.
+
+
+UN NÚMERO DE LÍNEAS
+
+Cuando sepas cuántas líneas quieres cambiar, puedes teclear el número y luego
+":".  Si, por ejemplo, escribes "5:" obtendrás: >
+
+	:.,.+4
+
+Ahora puedes teclear el comando que quieras usar.  Usará el rango "." (línea
+actual) hasta ".+4" (cuatro líneas más).  Esto hará un total de cinco líneas.
+
+==============================================================================
+*10.4*  El comando global
+
+El comando ":global" es una de las características más potentes de Vim.
+Permite que encuentres una cadena con un patrón y ejecutes un comando en el
+lugar.  El formato habitual es: >
+
+	:[rango]global/{patrón}/{comando}
+
+Esto es similar al comando ":substitute".  Pero en lugar de reemplazar el
+texto concordado con otro texto, el comando {comando} se ejecutará.
+
+	Note:
+	El comando ejecutado para ":global" debe ser uno que comience con un
+	punto y coma.  Comandos para el modo normal no pueden ser empleados de
+	forma directa.  De esto se encargará |:normal|.
+
+Supón que quieres cambiar "foobar" por "barfoo", pero solamente en los
+comentarios de C++.  Estos comentarios empiezan por "//".  Usa lo siguiente: >
+
+	:g+//+s/foobar/barfoo/g
+
+Comienza con ":g", la abreviatura de ":global", igual que ocurría con ":s" y
+":substitute".  Luego viene el patrón, entre signos "+".  Puesto que el patrón
+que estamos buscando contiene una barra inclinada, esto emplea el signo "+"
+para separar el patrón.  A continuación viene el comando que cambia "foobar" a
+"barfoo".
+   El rango por defecto del comando global es el archivo completo.  Como en
+este caso, ya que ningún rango ha sido especificado.  Esto difiere del comando
+":substitute", el cuál afecta a una línea por defecto.
+   El comando no es perfecto, ya que también coincidirá líneas donde "//"
+aparece a mitad de línea y la substitución también se hará antes de los "//".
+
+Tal y como ocurre con ":substitute", cualquier patrón puede ser empleado.
+Cuando aprendas patrones más complicados, podrás usarlos aquí.
+
+==============================================================================
+*10.5*  El modo de bloque Visual
+
+Con CTRL-V puedes seleccionar un área rectangular de texto.  Hay algunos
+comandos que hacen algo especial con los bloques de texto.
+
+El comando "$" en el modo bloque Visual tiene algo de especial.  Cuando el
+último comando de movimiento fue "$", todas las líneas de la selección Visual
+se extenderán hasta el final de la línea, incluso cuando la línea con el
+cursor sea más corta.  Esto se hará efectivo hasta que uses otro comando de
+movimiento que desplace el cursor horizontalmente.
+
+
+INSERTAR TEXTO
+
+El comando "I{cadena}<Esc>" inserta el texto {cadena} en cada línea, justo a
+la izquierda del bloque.  Comienza tecleando CTRL-V para entrar en el modo
+bloque Visual.  Mueve el cursor para definir tu bloque.  A continuación pulsa
+"I" para iniciar el modo Insertar.  Según tecleas, el texto aparece únicamente
+en la primera línea.
+   Tras pulsar <Esc> para finalizar la inserción, el texto aparecerá
+mágicamente insertado en el resto de líneas contenidas en el bloque:
+
+	include uno ~
+	include dos ~
+	include tres ~
+	include cuatro ~
+
+Mueve el cursor a la "u" de "uno" y presiona CTRL-V.  Muévete hacia abajo con
+"3j" hasta "cuatro".  Tienes unas selección que abarca cuatro líneas.  Teclea:
+>
+	Imain.<Esc>
+
+El resultado:
+
+	include main.uno ~
+	include main.dos ~
+	include main.tres ~
+	include main.cuatro ~
+
+Si el bloque abarca líneas que no caen dentro del área del bloque, el texto no
+se insertará en esa línea.  Por ejemplo, haz un bloque Visual que no incluya
+la palabra "larga" en la primera y última línea de este texto, de manera que no
+se seleccione texto en la segunda línea:
+
+	Esto es una línea larga ~
+	corta ~
+	Esto es una línea larga ~
+
+		    ^^^^^ bloque seleccionado
+
+Ahora usa el comando "Imuy <Esc>".  El resultado es:
+
+	Esto es una línea muy larga ~
+	corta ~
+	Esto es una línea muy larga ~
+
+En el texto corto no se introdujo nada.
+
+Si la cadena que insertaste contiene una nueva línea, el "I" actúa justo como
+una inserción normal y únicamente afecta a la primera línea del bloque.
+
+El comando "A" funciona de la misma manera, excepto porque añade a la derecha
+del bloque.  En este caso sí se se añade al final de la línea corta.  De este
+modo puedes elegir si quieres añadir o no un texto a la línea corta.
+   Hay un caso especial para "A": selecciona un bloque Visual y pulsa "$" para
+hacer que el bloque se extienda al final de cada línea.  Usar "A" añadirá el
+texto al final de cada línea.
+   Usar el mismo ejemplo que arriba y tecleando "$A XXX<Esc>" obtendrás el
+siguiente resultado:
+
+	Esto es una línea larga XXX~
+	corta XXX~
+	Esto es una línea larga XXX~
+
+Esto requiere el uso del comando "$". Vim recordará que los has usado.  Hacer
+la misma selección con el cursor hasta el final de la línea más larga con
+otros comandos no te dará el mismo resultado.
+
+
+CAMBIAR EL TEXTO
+
+El comando de bloque Visual "c" elimina el bloque y te devuelve al modo
+Insertar para que escribas en una cadena de caracteres.  La cadena será
+insertada en cada línea del bloque.
+   Comenzando con la misma selección que las palabras "larga" de arriba,
+tecleando "c_LARGA_<Esc>", obtendrás esto:
+
+	Esto es una línea _LARGA_ ~
+	corta ~
+	Esto es una línea _LARGA_ ~
+
+Tal y como ocurre con "I", la línea corta no cambia.  Del mismo modo no podrás
+introducir una nueva línea en el texto.
+
+El comando "C" elimina texto desde el borde izquierdo del bloque hasta el
+final de cada línea.  Luego te deja en modo Insert para que puedas teclear una
+cadena, que se añadirá al final de cada línea.
+   Comenzando con el mismo texto, teclea "Ctexto nuevo<Esc>" y obtendrás:
+
+	Esto es un texto nuevo ~
+	corta ~
+	Esto es un texto nuevo ~
+
+Date cuenta de que aunque sólo la palabra "larga" fue seleccionada, el texto
+tras ella fue eliminado igualmente.  Por lo tanto sólo la posición del borde
+izquierdo del eje izquierdo importa realmente.
+   Una vez más, las palabras que no forman parte del bloque son excluidas.
+
+Otros comandos que cambian caracteres son en el bloque son:
+
+	~       cambiar may./min.   (a -> A and A -> a)
+	U       cambiar a may.      (a -> A and A -> A)
+	u       cambiar a min.      (a -> a and A -> a)
+
+
+RELLENAR CON UN CARÁCTER
+
+Para rellenar un bloque completo con un sólo carácter, usa el comando "r".
+Pruébalo de nuevo con el texto de antes, pulsando "rx":
+
+	Esto es una línea larga ~
+	corta ~
+	Esto es una línea larga ~
+
+
+	Note:
+	Si quieres incluir los caracteres más allá del final de línea en el
+	bloque, mira la opción 'virtualedit' en el capítulo 25.
+
+
+EMPUJAR
+
+El comando ">" empuja el texto hacia la derecha un espacio determinado,
+insertando espacios en blanco.  El punto base empleado para esta operación es
+el borde izquierdo del bloque visual.
+   Con el mismo ejemplo de nuevo, ">" te da el resultado:
+
+	Esto es una	línea larga ~
+	corta ~
+	Esto es una	línea larga ~
+
+El espacio del desplazamiento está especificado con la opción 'shiftwidth".
+Para cambiarlo a cuatro espacios: >
+
+	:set shiftwidth=4
+
+El comando "<" desplaza por cada empuje la misma cantidad de espacios en
+blanco hacia la izquierda.  Este comando está limitado al texto que se
+encuentre, de manera que eliminará la cantidad de espacio en blanco
+disponible sin sobreescribir texto.
+
+
+FUNDIR LÍNEAS
+
+El comando "J" funde todas las líneas en una sola, eliminando los saltos de
+línea.  De hecho, el salto de línea, espacios en blanco al comienzo y al final
+de línea se convierten en un solo espacio.  Se usan dos espacios tras un final
+de línea (pudiéndose cambiar esto con la opción 'joinspaces'.
+   Vamos a usar el ejemplo que nos resulta ya familiar.  El resultado de usar
+el comando "J" será:
+
+	Esto es una línea larga corta Esto es una línea larga ~
+
+El comando "J" no requiere selección de bloques.  Funciona con la selección
+"v" y "V" de igual modo.
+
+Si no quieres que los espacios en blanco cambien, usa el comando "gJ".
+
+==============================================================================
+*10.6*  Leer y escribir parte de un archivo
+
+Mientras escribes un correo te das cuenta de que quieres incluir otro archivo.
+Esto puede ser llevado a cabo con el comando ":read {nombredearchivo}".  El
+texto del archivo se pegará debajo de la línea actual:
+   A partir de este texto:
+
+	Hola Juan, ~
+	Aquí tienes el parche que arregle el problema: ~
+	Un saludo, Pedro. ~
+
+Mueve el cursor a la segunda línea y escribe: >
+
+	:read parche
+
+El archivo de nombre "parche" será insertado: con este resultado:
+
+	Hola Juan, ~
+	Aquí tienes el parche que arregle el problema: ~
+	2c2 ~
+	<	for (i = 0; i <= length; ++i) ~
+	--- ~
+	>	for (i = 0; i < length; ++i) ~
+	Un saludo, Pedro. ~
+
+El comando ":read" acepta un rango.  El archivo será colocado justo debajo de
+la última línea de este rango.  Por lo tanto, ":$r parche" añadirá el archivo
+"parche" al final del actual.
+   ¿Qué ocurre si quieres pegar el archivo encima de la primera línea?  Esto
+puede ser realizado con el número de línea cero.  Este número de línea en
+realidad no existe, lo cuál hará que con muchos comandos recibas un error. >
+
+	:0read parche
+
+El archivo "parche" será puesto sobre la primera línea del archivo.
+
+
+ESCRIBIR UN RANGO DE LÍNEAS
+
+Para guardar un rango de líneas en un archivo puedes usar el comando ":write".
+Sin el rango esto guardará el archivo completo.  Pero con un rango
+especificado únicamente las líneas que se especifiquen se escribirán: >
+
+	:.,$write tempo
+
+Esto guardará las líneas desde el cursor hasta el final del texto en el
+archivo "tempo".  Si este archivo existe actualmente obtendrás un mensaje de
+error.  Vim te protege de que sobreescribas un archivo preexistente.  Si sabes
+lo que haces y quieres sobreescribirlo, añade "!": >
+
+	:.,$write! tempo
+
+CUIDADO: El "!" debe ponerse justo después del comando ":write", sin el
+espacio en blanco.  En caso contrario se convierte en un comando filtro, el
+cuál es explicado en el capítulo siguiente.
+
+
+AÑADIR A UN ARCHIVO
+
+En la primera sección de este capítulo se explicó cómo recolectar una serie de
+líneas en un registro. Lo mismo puede ser realizado para recolectar líneas en
+un archivo.  Escribe una primera línea con este comando: >
+
+	:.write archivo
+
+Ahora pon el cursor en la siguiente línea que quieras añadir y escribe esto:
+>
+	:.write >>archivo
+
+El ">>" le dice a Vim que "archivo" no debe ser escrito como un nuevo archivo
+sino que la línea debe ser añadida al final.  Puedes repetir esto tantas veces
+como quieras.
+
+==============================================================================
+*10.7*  Formatear texto
+
+Cuando introduces texto tal vez te resulte útil que, si la longitud de cada
+línea supera un número, sea automáticamente partida.  Para hacer esto posible,
+activa la opción 'textwidth': >
+
+	:set textwidth=72
+
+Quizá te acuerdes de que en el ejemplo de archivo vimrc este comando era
+empleado para cualquier tipo de archivo.  Por lo tanto, si estás usando ese
+archivo vimrc, ya lo tienes activado.  Para comprobar el valor actual: >
+
+	:set textwidth
+
+A partir de ahora las líneas se partirán cuando lleguen a 72 caracteres.  Sin
+embargo, cuando introduzcas texto en mitad de una líneas, o cuando elimines
+unas palabras la línea no será reformateada por Vim.
+   Para decirle a Vim que formatee el párrafo actual: >
+
+	gqap
+
+Esto consiste en un comando "gq", que es un operador, seguido de una "ap", el
+objeto de texto para "un párrafo".  Un párrafo es lo que está separado de otro
+párrafo por una línea en blanco.
+
+	Note:
+	Una línea que contiene espacio en blanco NO separa párrafos.  Esto
+	suele ser difícil de notar.
+
+En lugar de "ap" puedes usar cualquier movimiento u objeto de texto.  Si tus
+párrafos están adecuadamente separados, puedes usar esto para formatear todo:
+>
+	gggqG
+
+"gg" te lleva a la primera línea, "gq" es el operador de formateo y "G" el
+comando de movimiento que te lleva a la última línea.
+
+En caso de que tus párrafos no estén claramente definidos, puedes dar formato
+sólo a las líneas que selecciones manualmente.  Pon el cursor sobre la primera
+línea que quieras formatear.  Teclea "gqj".  Esto formatea la línea actual y
+la siguiente.  Si la primera era demasiado corta, las palabras de la siguiente
+línea serán añadidas.  Si era demasiado larga, las palabras se moverán a la
+siguiente línea.  A continuación puedes usar el comando "." para repetir la
+operación.  Repítelo hasta que llegues al final del texto a formatear.
+
+==============================================================================
+*10.8*  Cambiar mayúsculas y minúsculas
+
+Tienes texto con cabeceras de sección en minúsculas.  Quieres que la palabra
+"sección" esté en mayúsculas.  Puedes hacerlo con el operador "gU".  Comienza
+con el cursor en la primera columna: >
+
+			     gUw
+<	cabecera de sección ---->      cabecera de SECCIÓN
+
+El operador "gu" hace exactamente lo contrario:
+
+			     guw
+	cabecera de SECCIÓN ---->      cabecera de sección
+
+También puedes usar c"g~" para alternar may./min.  Son operadores, así que
+funcionan con comandos de movimiento, objetos de texto y el modo Visual.
+   Para hacer que un operador funcione en líneas, lo duplicas.  El operador
+de eliminación es "d", de manera que para eliminar una línea empleas "dd".  De
+forma similar, "gugu" hace que la línea al completo sea en minúsculas.  Esto
+puede abreviarse a "guu". "gUgU" puede abreviarse a "gUU" y "g~g~" a "g~~":
+
+				      g~~ 
+	Algunas CHICAS se divierten  ---->  aLGUNAS chicas SE DIVIERTEN ~
+
+==============================================================================
+*10.9*  Uso de un programa externo
+
+Vim tiene un conjunto de operaciones muy potente para hacer cualquier cosa.
+Pero siempre hay un programa externo que es mejor para una tarea específica.
+   El comando "!{movimiento}{programa}" recoge un bloque de un texto y lo
+filtra a través de un programa externo.  En otras palabras, hace correr el
+comando de sistema {programa}, dándole el bloque te texto representado por
+{movimiento} como entrada.  La la salida del comando sustituirá la selección.
+   Ya que esto requiere más explicación si no usas los filtros UNIX
+habitualmente, veamos un ejemplo.  El comando "sort" ordena un archivo.  Si
+ejecutas lo siguiente, el archivo desordenado entrada.txt será ordenado y
+guardado en output.txt.  (Esto funciona en UNIX y en Windows.) >
+
+	sort <input.txt >output.txt
+
+Ahora haz lo mismo en Vim.  Quieres ordenar las líneas de la 1 a la 5.  Para
+comenzar, pon el cursor en la línea 1.  A continuación ejecuta el siguiente
+comando: >
+
+	!5G
+
+El "!" le dice a Vim que estás formateando una operación filtro.  El editor
+Vim espera que introduzcas a continuación un comando de movimiento para saber
+qué filtrar.  El comando "5G" le dice a Vim que vaya a la línea 5, de forma
+que sepa que tiene que filtrar desde la línea 1 (la actual) hasta la 5.
+   Antes de filtrar nada, la línea de comandos se activa y muestra un "!".
+Ahora es el momento de que escribas el filtro, en este caso "sort".  Por lo
+tanto, el comando completo sería: >
+
+	!5Gsort<Entrar>
+
+El resultado es que el programa sort es ejecutado sobre las 5 primeras líneas.
+La salida del programa reemplaza estas líneas.
+
+	línea 55		      línea 11
+	línea 33		      línea 22
+	línea 11	-->	      línea 33
+	línea 22		      línea 44
+	línea 44		      línea 55
+	última línea		      última línea
+
+El comando "!!" filtra la línea actual.  En Unix, el comando "date" imprime la
+hora y fecha actuales.  "!!date<Entrar>" reemplaza la línea actual con la
+salida de "date".  Esto es útil para añadir una marca de tiempo al archivo.
+
+
+CUANDO NO FUNCIONA
+
+Iniciar la shell, enviarle texto y capturar la salida requiere que Vim sepa
+exactamente cómo funciona la shell de forma precisa.  Cuando tengas problemas
+con el filtrado, comprueba los valores de las siguientes opciones:
+
+	'shell'		especifica el programa que Vim empleará para ejecutar
+			programas externos.
+	'shellcmdflag'	argumento para pasar un comando a la shell
+	'shellquote'	comillas a usar alrededor del comando
+	'shellxquote'	comillas a usar alrededor del comando y redirección
+	'shelltype'	tipo de shell (sólo para Amiga)
+	'shellslash'	usar barras inclinadas en el comando (sólo para
+			Windows y similares)
+	'shellredir'	cadena para escribir la salida a un archivo
+
+En Unix esto raramente es un problema, porque hay dos tipos de shell: "sh" y
+"csh".  Vim comprueba la opción 'shell' y configura todo automáticamente,
+dependiendo de si ve "csh" en algún lugar de 'shell'.
+   Sin embargo, en Windows, hay muchos tipos de shells y quizá tengas que
+ajustar las opciones para hacer que el filtrado funcione correctamente.  Busca
+en la ayuda más información sobre las opciones de configuración de la shell
+para poder solucionarlo.
+
+
+LEER LA SALIDA DEL COMANDO
+
+Para escribir los contenidos del directorio actual en el archivo, usa:
+
+en Unix: >
+	:read !ls
+en MS-Windows: >
+	:read !dir
+
+La salida de los comandos "ls" o "dir" puede ser capturada e insertada en el
+texto, debajo del cursor.  Esto es similar a leer un archivo, excepto que el
+"!" se emplea para decirle a Vim que hay un comando a continuación.
+   El comando puede que tenga argumentos.  Un rango puede ser empleado para
+decirle a Vim dónde debería poner las líneas: >
+
+	:0read !date -u
+
+Esto inserta la hora y fecha actuales en formato UTC en la primera línea del
+archivo.  (Bueno, si tienes un comando date que acepta el argumento "-u".)
+Observa la diferencia de usar "!!date": esto reemplazó una línea, mientras que
+":read !date" insertó una línea.
+
+
+PASARLE TEXTO A UN COMANDO
+
+El comando Unix "wc" cuenta palabras.  Para contar las del archivo actual: >
+
+	:write !wc
+
+Este es el mismo comando write que anteriormente, pero en lugar de un nombre
+de archivo, el carácter "!" y un comando externo son empleados.  El texto
+guardado será pasado al comando especificado como entrada estándar.  La salida
+será algo así:
+
+       4      47     249 ~
+
+El comando "wc" no es muy prolijo.  Esto significa que tienes 4 líneas, 47
+palabras y 249 caracteres.
+
+Ten cuidado de no cometer este error: >
+
+	:write! wc
+
+Esto guardará el archivo "wc" en el directorio actual (con la opción force =
+forzar).  ¡El espacio en blanco es muy importante en este caso!
+
+
+REDIBUJAR LA PANTALLA
+
+Si el comando externo produjo un mensaje de error, la pantalla de Vim tal vez
+esté sobreescrita con información confusa.  Vim es muy eficiente y sólo
+reescribe aquellas partes de la pantalla que lo necesiten.  Pero no puede
+saber sobre lo que otro programa ha tocado.  Para decirle a Vim que redibuje:
+>
+	CTRL-L
+
+==============================================================================
+
+Capítulo siguiente: |usr_11.txt|  Recuperación de errores
+
+Copyright: see |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:
