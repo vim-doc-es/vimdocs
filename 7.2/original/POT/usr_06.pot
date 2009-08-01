@@ -1,0 +1,529 @@
+#. extracted from usr_06.txt
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-01 19:54+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.3.0\n"
+
+#: usr_06.txt:1
+msgid "*usr_06.txt*\tFor Vim version 7.2.  Last change: 2006 Apr 24"
+msgstr ""
+
+#: usr_06.txt:3
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar"
+msgstr ""
+
+#: usr_06.txt:5
+msgid "\t\t\t  Using syntax highlighting"
+msgstr ""
+
+#: usr_06.txt:8
+msgid ""
+"Black and white text is boring.  With colors your file comes to life.  This\n"
+"not only looks nice, it also speeds up your work.  Change the colors used "
+"for\n"
+"the different sorts of text.  Print your text, with the colors you see on "
+"the\n"
+"screen."
+msgstr ""
+
+#: usr_06.txt:13
+msgid ""
+"|06.1|\tSwitching it on\n"
+"|06.2|\tNo or wrong colors?\n"
+"|06.3|\tDifferent colors\n"
+"|06.4|\tWith colors or without colors\n"
+"|06.5|\tPrinting with colors\n"
+"|06.6|\tFurther reading"
+msgstr ""
+
+#: usr_06.txt:20
+msgid ""
+"     Next chapter: |usr_07.txt|  Editing more than one file\n"
+" Previous chapter: |usr_05.txt|  Set your settings\n"
+"Table of contents: |usr_toc.txt|"
+msgstr ""
+
+#: usr_06.txt:24
+msgid ""
+"============================================================================"
+"==\n"
+"*06.1*\tSwitching it on"
+msgstr ""
+
+#: usr_06.txt:27
+msgid "It all starts with one simple command: >"
+msgstr ""
+
+#: usr_06.txt:29
+msgid "\t:syntax enable"
+msgstr ""
+
+#: usr_06.txt:31
+msgid ""
+"That should work in most situations to get color in your files.  Vim will\n"
+"automagically detect the type of file and load the right syntax "
+"highlighting.\n"
+"Suddenly comments are blue, keywords brown and strings red.  This makes it\n"
+"easy to overview the file.  After a while you will find that black&white "
+"text\n"
+"slows you down!"
+msgstr ""
+
+#: usr_06.txt:37
+msgid ""
+"If you always want to use syntax highlighting, put the \":syntax enable\"\n"
+"command in your |vimrc| file."
+msgstr ""
+
+#: usr_06.txt:40
+msgid ""
+"If you want syntax highlighting only when the terminal supports colors, you\n"
+"can put this in your |vimrc| file: >"
+msgstr ""
+
+#: usr_06.txt:43
+msgid ""
+"\tif &t_Co > 1\n"
+"\t   syntax enable\n"
+"\tendif"
+msgstr ""
+
+#: usr_06.txt:47
+msgid ""
+"If you want syntax highlighting only in the GUI version, put the \":syntax\n"
+"enable\" command in your |gvimrc| file."
+msgstr ""
+
+#: usr_06.txt:50
+msgid ""
+"============================================================================"
+"==\n"
+"*06.2*\tNo or wrong colors?"
+msgstr ""
+
+#: usr_06.txt:53
+msgid "There can be a number of reasons why you don't see colors:"
+msgstr ""
+
+#: usr_06.txt:55
+msgid ""
+"- Your terminal does not support colors.\n"
+"\tVim will use bold, italic and underlined text, but this doesn't look\n"
+"\tvery nice.  You probably will want to try to get a terminal with\n"
+"\tcolors.  For Unix, I recommend the xterm from the XFree86 project:\n"
+"\t|xfree-xterm|."
+msgstr ""
+
+#: usr_06.txt:61
+msgid ""
+"- Your terminal does support colors, but Vim doesn't know this.\n"
+"\tMake sure your $TERM setting is correct.  For example, when using an\n"
+"\txterm that supports colors: >"
+msgstr ""
+
+#: usr_06.txt:65
+msgid ""
+"\t\tsetenv TERM xterm-color\n"
+"<\n"
+"\tor (depending on your shell): >"
+msgstr ""
+
+#: usr_06.txt:69
+msgid "\t\tTERM=xterm-color; export TERM"
+msgstr ""
+
+#: usr_06.txt:71
+msgid ""
+"<\tThe terminal name must match the terminal you are using.  If it\n"
+"\tstill doesn't work, have a look at |xterm-color|, which shows a few\n"
+"\tways to make Vim display colors (not only for an xterm)."
+msgstr ""
+
+#: usr_06.txt:75
+msgid ""
+"- The file type is not recognized.\n"
+"\tVim doesn't know all file types, and sometimes it's near to impossible\n"
+"\tto tell what language a file uses.  Try this command: >"
+msgstr ""
+
+#: usr_06.txt:79
+msgid ""
+"\t\t:set filetype\n"
+"<\n"
+"\tIf the result is \"filetype=\" then the problem is indeed that Vim\n"
+"\tdoesn't know what type of file this is.  You can set the type\n"
+"\tmanually: >"
+msgstr ""
+
+#: usr_06.txt:85
+msgid "\t\t:set filetype=fortran"
+msgstr ""
+
+#: usr_06.txt:87
+msgid ""
+"<\tTo see which types are available, look in the directory\n"
+"\t$VIMRUNTIME/syntax.  For the GUI you can use the Syntax menu.\n"
+"\tSetting the filetype can also be done with a |modeline|, so that the\n"
+"\tfile will be highlighted each time you edit it.  For example, this\n"
+"\tline can be used in a Makefile (put it near the start or end of the\n"
+"\tfile): >"
+msgstr ""
+
+#: usr_06.txt:94
+msgid "\t\t# vim: syntax=make"
+msgstr ""
+
+#: usr_06.txt:96
+msgid ""
+"<\tYou might know how to detect the file type yourself.  Often the file\n"
+"\tname extension (after the dot) can be used.\n"
+"\tSee |new-filetype| for how to tell Vim to detect that file type."
+msgstr ""
+
+#: usr_06.txt:100
+msgid ""
+"- There is no highlighting for your file type.\n"
+"\tYou could try using a similar file type by manually setting it as\n"
+"\tmentioned above.  If that isn't good enough, you can write your own\n"
+"\tsyntax file, see |mysyntaxfile|."
+msgstr ""
+
+#: usr_06.txt:106
+msgid "Or the colors could be wrong:"
+msgstr ""
+
+#: usr_06.txt:108
+msgid ""
+"- The colored text is very hard to read.\n"
+"\tVim guesses the background color that you are using.  If it is black\n"
+"\t(or another dark color) it will use light colors for text.  If it is\n"
+"\twhite (or another light color) it will use dark colors for text.  If\n"
+"\tVim guessed wrong the text will be hard to read.  To solve this, set\n"
+"\tthe 'background' option.  For a dark background: >"
+msgstr ""
+
+#: usr_06.txt:115
+msgid "\t\t:set background=dark"
+msgstr ""
+
+#: usr_06.txt:117
+msgid "<\tAnd for a light background: >"
+msgstr ""
+
+#: usr_06.txt:119
+msgid "\t\t:set background=light"
+msgstr ""
+
+#: usr_06.txt:121
+msgid ""
+"<\tMake sure you put this _before_ the \":syntax enable\" command,\n"
+"\totherwise the colors will already have been set.  You could do\n"
+"\t\":syntax reset\" after setting 'background' to make Vim set the default\n"
+"\tcolors again."
+msgstr ""
+
+#: usr_06.txt:126
+msgid ""
+"- The colors are wrong when scrolling bottom to top.\n"
+"\tVim doesn't read the whole file to parse the text.  It starts parsing\n"
+"\twherever you are viewing the file.  That saves a lot of time, but\n"
+"\tsometimes the colors are wrong.  A simple fix is hitting CTRL-L.  Or\n"
+"\tscroll back a bit and then forward again.\n"
+"\tFor a real fix, see |:syn-sync|.  Some syntax files have a way to make\n"
+"\tit look further back, see the help for the specific syntax file.  For\n"
+"\texample, |tex.vim| for the TeX syntax."
+msgstr ""
+
+#: usr_06.txt:135
+msgid ""
+"============================================================================"
+"==\n"
+"*06.3*\tDifferent colors\t\t\t\t*:syn-default-override*"
+msgstr ""
+
+#: usr_06.txt:138
+msgid ""
+"If you don't like the default colors, you can select another color scheme.  "
+"In\n"
+"the GUI use the Edit/Color Scheme menu.  You can also type the command: >"
+msgstr ""
+
+#: usr_06.txt:141
+msgid "\t:colorscheme evening"
+msgstr ""
+
+#: usr_06.txt:143
+msgid ""
+"\"evening\" is the name of the color scheme.  There are several others you "
+"might\n"
+"want to try out.  Look in the directory $VIMRUNTIME/colors."
+msgstr ""
+
+#: usr_06.txt:146
+msgid ""
+"When you found the color scheme that you like, add the \":colorscheme\" "
+"command\n"
+"to your |vimrc| file."
+msgstr ""
+
+#: usr_06.txt:149
+msgid "You could also write your own color scheme.  This is how you do it:"
+msgstr ""
+
+#: usr_06.txt:151
+msgid ""
+"1. Select a color scheme that comes close.  Copy this file to your own Vim\n"
+"   directory.  For Unix, this should work: >"
+msgstr ""
+
+#: usr_06.txt:154
+msgid ""
+"\t!mkdir ~/.vim/colors\n"
+"\t!cp $VIMRUNTIME/colors/morning.vim ~/.vim/colors/mine.vim\n"
+"<\n"
+"   This is done from Vim, because it knows the value of $VIMRUNTIME."
+msgstr ""
+
+#: usr_06.txt:159
+msgid "2. Edit the color scheme file.  These entries are useful:"
+msgstr ""
+
+#: usr_06.txt:161
+msgid ""
+"\tterm\t\tattributes in a B&W terminal\n"
+"\tcterm\t\tattributes in a color terminal\n"
+"\tctermfg\t\tforeground color in a color terminal\n"
+"\tctermbg\t\tbackground color in a color terminal\n"
+"\tgui\t\tattributes in the GUI\n"
+"\tguifg\t\tforeground color in the GUI\n"
+"\tguibg\t\tbackground color in the GUI"
+msgstr ""
+
+#: usr_06.txt:169
+msgid "   For example, to make comments green: >"
+msgstr ""
+
+#: usr_06.txt:171
+msgid ""
+"\t:highlight Comment ctermfg=green guifg=green\n"
+"<\n"
+"   Attributes you can use for \"cterm\" and \"gui\" are \"bold\" and \"underline\".\n"
+"   If you want both, use \"bold,underline\".  For details see the |:highlight|\n"
+"   command."
+msgstr ""
+
+#: usr_06.txt:177
+msgid ""
+"3. Tell Vim to always use your color scheme.  Put this line in your |vimrc|: "
+">"
+msgstr ""
+
+#: usr_06.txt:179
+msgid "\tcolorscheme mine"
+msgstr ""
+
+#: usr_06.txt:181
+msgid ""
+"If you want to see what the most often used color combinations look like, "
+"use\n"
+"this command: >"
+msgstr ""
+
+#: usr_06.txt:184
+msgid "\t:runtime syntax/colortest.vim"
+msgstr ""
+
+#: usr_06.txt:186
+msgid ""
+"You will see text in various color combinations.  You can check which ones "
+"are\n"
+"readable and look nice."
+msgstr ""
+
+#: usr_06.txt:189
+msgid ""
+"============================================================================"
+"==\n"
+"*06.4*\tWith colors or without colors"
+msgstr ""
+
+#: usr_06.txt:192
+msgid ""
+"Displaying text in color takes a lot of effort.  If you find the displaying\n"
+"too slow, you might want to disable syntax highlighting for a moment: >"
+msgstr ""
+
+#: usr_06.txt:195
+msgid "\t:syntax clear"
+msgstr ""
+
+#: usr_06.txt:197
+msgid "When editing another file (or the same one) the colors will come back."
+msgstr ""
+
+#: usr_06.txt:199
+msgid ""
+"\t\t\t\t\t\t\t*:syn-off*\n"
+"If you want to stop highlighting completely use: >"
+msgstr ""
+
+#: usr_06.txt:202
+msgid "\t:syntax off"
+msgstr ""
+
+#: usr_06.txt:204
+msgid ""
+"This will completely disable syntax highlighting and remove it immediately "
+"for\n"
+"all buffers."
+msgstr ""
+
+#: usr_06.txt:207
+msgid ""
+"\t\t\t\t\t\t\t*:syn-manual*\n"
+"If you want syntax highlighting only for specific files, use this: >"
+msgstr ""
+
+#: usr_06.txt:210
+msgid "\t:syntax manual"
+msgstr ""
+
+#: usr_06.txt:212
+msgid ""
+"This will enable the syntax highlighting, but not switch it on automatically\n"
+"when starting to edit a buffer.  To switch highlighting on for the current\n"
+"buffer, set the 'syntax' option: >"
+msgstr ""
+
+#: usr_06.txt:216
+msgid ""
+"\t:set syntax=ON\n"
+"<\n"
+"============================================================================"
+"==\n"
+"*06.5*\tPrinting with colors\t\t\t\t*syntax-printing*"
+msgstr ""
+
+#: usr_06.txt:221
+msgid ""
+"In the MS-Windows version you can print the current file with this command: "
+">"
+msgstr ""
+
+#: usr_06.txt:223
+msgid "\t:hardcopy"
+msgstr ""
+
+#: usr_06.txt:225
+msgid ""
+"You will get the usual printer dialog, where you can select the printer and "
+"a\n"
+"few settings.  If you have a color printer, the paper output should look the\n"
+"same as what you see inside Vim.  But when you use a dark background the\n"
+"colors will be adjusted to look good on white paper."
+msgstr ""
+
+#: usr_06.txt:230
+msgid ""
+"There are several options that change the way Vim prints:\n"
+"\t'printdevice'\n"
+"\t'printheader'\n"
+"\t'printfont'\n"
+"\t'printoptions'"
+msgstr ""
+
+#: usr_06.txt:236
+msgid ""
+"To print only a range of lines,  use Visual mode to select the lines and "
+"then\n"
+"type the command: >"
+msgstr ""
+
+#: usr_06.txt:239
+msgid "\tv100j:hardcopy"
+msgstr ""
+
+#: usr_06.txt:241
+msgid ""
+"\"v\" starts Visual mode.  \"100j\" moves a hundred lines down, they will be\n"
+"highlighted.  Then \":hardcopy\" will print those lines.  You can use other\n"
+"commands to move in Visual mode, of course."
+msgstr ""
+
+#: usr_06.txt:245
+msgid ""
+"This also works on Unix, if you have a PostScript printer.  Otherwise, you\n"
+"will have to do a bit more work.  You need to convert the text to HTML "
+"first,\n"
+"and then print it from a web browser such as Netscape."
+msgstr ""
+
+#: usr_06.txt:249
+msgid "Convert the current file to HTML with this command: >"
+msgstr ""
+
+#: usr_06.txt:251
+msgid "\t:source $VIMRUNTIME/syntax/2html.vim"
+msgstr ""
+
+#: usr_06.txt:253
+msgid ""
+"You will see it crunching away, this can take quite a while for a large "
+"file.\n"
+"Some time later another window shows the HTML code.  Now write this "
+"somewhere\n"
+"(doesn't matter where, you throw it away later):\n"
+">\n"
+"\t:write main.c.html"
+msgstr ""
+
+#: usr_06.txt:259
+msgid ""
+"Open this file in your favorite browser and print it from there.  If all "
+"goes\n"
+"well, the output should look exactly as it does in Vim.  See |2html.vim| for\n"
+"details.  Don't forget to delete the HTML file when you are done with it."
+msgstr ""
+
+#: usr_06.txt:263
+msgid ""
+"Instead of printing, you could also put the HTML file on a web server, and "
+"let\n"
+"others look at the colored text."
+msgstr ""
+
+#: usr_06.txt:266
+msgid ""
+"============================================================================"
+"==\n"
+"*06.6*\tFurther reading"
+msgstr ""
+
+#: usr_06.txt:269
+msgid ""
+"|usr_44.txt|  Your own syntax highlighted.\n"
+"|syntax|      All the details."
+msgstr ""
+
+#: usr_06.txt:272
+msgid ""
+"============================================================================"
+"=="
+msgstr ""
+
+#: usr_06.txt:274
+msgid "Next chapter: |usr_07.txt|  Editing more than one file"
+msgstr ""
+
+#: usr_06.txt:276
+msgid "Copyright: see |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
+msgstr ""

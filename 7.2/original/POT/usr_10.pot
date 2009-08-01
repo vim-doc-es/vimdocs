@@ -1,0 +1,1488 @@
+#. extracted from usr_10.txt
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-01 19:54+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.3.0\n"
+
+#: usr_10.txt:1
+msgid "*usr_10.txt*\tFor Vim version 7.2.  Last change: 2006 Nov 05"
+msgstr ""
+
+#: usr_10.txt:3
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar"
+msgstr ""
+
+#: usr_10.txt:5
+msgid "\t\t\t     Making big changes"
+msgstr ""
+
+#: usr_10.txt:8
+msgid ""
+"In chapter 4 several ways to make small changes were explained.  This "
+"chapter\n"
+"goes into making changes that are repeated or can affect a large amount of\n"
+"text.  The Visual mode allows doing various things with blocks of text.  Use\n"
+"an external program to do really complicated things."
+msgstr ""
+
+#: usr_10.txt:13
+msgid ""
+"|10.1|\tRecord and playback commands\n"
+"|10.2|\tSubstitution\n"
+"|10.3|\tCommand ranges\n"
+"|10.4|\tThe global command\n"
+"|10.5|\tVisual block mode\n"
+"|10.6|\tReading and writing part of a file\n"
+"|10.7|\tFormatting text\n"
+"|10.8|\tChanging case\n"
+"|10.9|\tUsing an external program"
+msgstr ""
+
+#: usr_10.txt:23
+msgid ""
+"     Next chapter: |usr_11.txt|  Recovering from a crash\n"
+" Previous chapter: |usr_09.txt|  Using the GUI\n"
+"Table of contents: |usr_toc.txt|"
+msgstr ""
+
+#: usr_10.txt:27
+msgid ""
+"============================================================================"
+"==\n"
+"*10.1*\tRecord and playback commands"
+msgstr ""
+
+#: usr_10.txt:30
+msgid ""
+"The \".\" command repeats the preceding change.  But what if you want to do\n"
+"something more complex than a single change?  That's where command recording\n"
+"comes in.  There are three steps:"
+msgstr ""
+
+#: usr_10.txt:34
+msgid ""
+"1. The \"q{register}\" command starts recording keystrokes into the register\n"
+"   named {register}.  The register name must be between a and z.\n"
+"2. Type your commands.\n"
+"3. To finish recording, press q (without any extra character)."
+msgstr ""
+
+#: usr_10.txt:39
+msgid "You can now execute the macro by typing the command \"@{register}\"."
+msgstr ""
+
+#: usr_10.txt:41
+msgid ""
+"Take a look at how to use these commands in practice.  You have a list of\n"
+"filenames that look like this:"
+msgstr ""
+
+#: usr_10.txt:44
+msgid ""
+"\tstdio.h ~\n"
+"\tfcntl.h ~\n"
+"\tunistd.h ~\n"
+"\tstdlib.h ~"
+msgstr ""
+
+#: usr_10.txt:49
+msgid "And what you want is the following:"
+msgstr ""
+
+#: usr_10.txt:51
+msgid ""
+"\t#include \"stdio.h\" ~\n"
+"\t#include \"fcntl.h\" ~\n"
+"\t#include \"unistd.h\" ~\n"
+"\t#include \"stdlib.h\" ~"
+msgstr ""
+
+#: usr_10.txt:56
+msgid ""
+"You start by moving to the first character of the first line.  Next you\n"
+"execute the following commands:"
+msgstr ""
+
+#: usr_10.txt:59
+msgid ""
+"\tqa\t\t\tStart recording a macro in register a.\n"
+"\t^\t\t\tMove to the beginning of the line.\n"
+"\ti#include \"<Esc>\tInsert the string #include \" at the beginning\n"
+"\t\t\t\tof the line.\n"
+"\t$\t\t\tMove to the end of the line.\n"
+"\ta\"<Esc>\t\t\tAppend the character double quotation mark (\")\n"
+"\t\t\t\tto the end of the line.\n"
+"\tj\t\t\tGo to the next line.\n"
+"\tq\t\t\tStop recording the macro."
+msgstr ""
+
+#: usr_10.txt:69
+msgid ""
+"Now that you have done the work once, you can repeat the change by typing "
+"the\n"
+"command \"@a\" three times.\n"
+"   The \"@a\" command can be preceded by a count, which will cause the macro "
+"to\n"
+"be executed that number of times.  In this case you would type: >"
+msgstr ""
+
+#: usr_10.txt:74
+msgid "\t3@a"
+msgstr ""
+
+#: usr_10.txt:77
+msgid "MOVE AND EXECUTE"
+msgstr ""
+
+#: usr_10.txt:79
+msgid ""
+"You might have the lines you want to change in various places.  Just move "
+"the\n"
+"cursor to each location and use the \"@a\" command.  If you have done that "
+"once,\n"
+"you can do it again with \"@@\".  That's a bit easier to type.  If you now\n"
+"execute register b with \"@b\", the next \"@@\" will use register b.\n"
+"   If you compare the playback method with using \".\", there are several\n"
+"differences.  First of all, \".\" can only repeat one change.  As seen in the\n"
+"example above, \"@a\" can do several changes, and move around as well.\n"
+"Secondly, \".\" can only remember the last change.  Executing a register "
+"allows\n"
+"you to make any changes and then still use \"@a\" to replay the recorded\n"
+"commands.  Finally, you can use 26 different registers.  Thus you can "
+"remember\n"
+"26 different command sequences to execute."
+msgstr ""
+
+#: usr_10.txt:92
+msgid "USING REGISTERS"
+msgstr ""
+
+#: usr_10.txt:94
+msgid ""
+"The registers used for recording are the same ones you used for yank and\n"
+"delete commands.  This allows you to mix recording with other commands to\n"
+"manipulate the registers.\n"
+"   Suppose you have recorded a few commands in register n.  When you execute\n"
+"this with \"@n\" you notice you did something wrong.  You could try recording\n"
+"again, but perhaps you will make another mistake.  Instead, use this trick:"
+msgstr ""
+
+#: usr_10.txt:101
+msgid ""
+"\tG\t\t\tGo to the end of the file.\n"
+"\to<Esc>\t\t\tCreate an empty line.\n"
+"\t\"np\t\t\tPut the text from the n register.  You now see\n"
+"\t\t\t\tthe commands you typed as text in the file.\n"
+"\t{edits}\t\t\tChange the commands that were wrong.  This is\n"
+"\t\t\t\tjust like editing text.\n"
+"\t0\t\t\tGo to the start of the line.\n"
+"\t\"ny$\t\t\tYank the corrected commands into the n\n"
+"\t\t\t\tregister.\n"
+"\tdd\t\t\tDelete the scratch line."
+msgstr ""
+
+#: usr_10.txt:112
+msgid ""
+"Now you can execute the corrected commands with \"@n\".  (If your recorded\n"
+"commands include line breaks, adjust the last two items in the example to\n"
+"include all the lines.)"
+msgstr ""
+
+#: usr_10.txt:117
+msgid "APPENDING TO A REGISTER"
+msgstr ""
+
+#: usr_10.txt:119
+msgid ""
+"So far we have used a lowercase letter for the register name.  To append to "
+"a\n"
+"register, use an uppercase letter.\n"
+"   Suppose you have recorded a command to change a word to register c.  It\n"
+"works properly, but you would like to add a search for the next word to\n"
+"change.  This can be done with: >"
+msgstr ""
+
+#: usr_10.txt:125
+msgid "\tqC/word<Enter>q"
+msgstr ""
+
+#: usr_10.txt:127
+msgid ""
+"You start with \"qC\", which records to the c register and appends.  Thus\n"
+"writing to an uppercase register name means to append to the register with\n"
+"the same letter, but lowercase."
+msgstr ""
+
+#: usr_10.txt:131
+msgid ""
+"This works both with recording and with yank and delete commands.  For\n"
+"example, you want to collect a sequence of lines into the a register.  Yank\n"
+"the first line with: >"
+msgstr ""
+
+#: usr_10.txt:135
+msgid "\t\"aY"
+msgstr ""
+
+#: usr_10.txt:137
+msgid "Now move to the second line, and type: >"
+msgstr ""
+
+#: usr_10.txt:139
+msgid "\t\"AY"
+msgstr ""
+
+#: usr_10.txt:141
+msgid ""
+"Repeat this command for all lines.  The a register now contains all those\n"
+"lines, in the order you yanked them."
+msgstr ""
+
+#: usr_10.txt:144
+msgid ""
+"============================================================================"
+"==\n"
+"*10.2*\tSubstitution\t\t\t\t\t\t*find-replace*"
+msgstr ""
+
+#: usr_10.txt:147
+msgid ""
+"The \":substitute\" command enables you to perform string replacements on a\n"
+"whole range of lines.  The general form of this command is as follows: >"
+msgstr ""
+
+#: usr_10.txt:150
+msgid "\t:[range]substitute/from/to/[flags]"
+msgstr ""
+
+#: usr_10.txt:152
+msgid ""
+"This command changes the \"from\" string to the \"to\" string in the lines\n"
+"specified with [range].  For example, you can change \"Professor\" to "
+"\"Teacher\"\n"
+"in all lines with the following command: >"
+msgstr ""
+
+#: usr_10.txt:156
+msgid ""
+"\t:%substitute/Professor/Teacher/\n"
+"<\n"
+"\tNote:\n"
+"\tThe \":substitute\" command is almost never spelled out completely.\n"
+"\tMost of the time, people use the abbreviated version \":s\".  From here\n"
+"\ton the abbreviation will be used."
+msgstr ""
+
+#: usr_10.txt:163
+msgid ""
+"The \"%\" before the command specifies the command works on all lines.  "
+"Without\n"
+"a range, \":s\" only works on the current line.  More about ranges in the next\n"
+"section |10.3|."
+msgstr ""
+
+#: usr_10.txt:167
+msgid ""
+"By default, the \":substitute\" command changes only the first occurrence on\n"
+"each line.  For example, the preceding command changes the line:"
+msgstr ""
+
+#: usr_10.txt:170
+msgid "\tProfessor Smith criticized Professor Johnson today. ~"
+msgstr ""
+
+#: usr_10.txt:172
+msgid "to:"
+msgstr ""
+
+#: usr_10.txt:174
+msgid "\tTeacher Smith criticized Professor Johnson today. ~"
+msgstr ""
+
+#: usr_10.txt:176
+msgid ""
+"To change every occurrence on the line, you need to add the g (global) flag.\n"
+"The command: >"
+msgstr ""
+
+#: usr_10.txt:179
+msgid "\t:%s/Professor/Teacher/g"
+msgstr ""
+
+#: usr_10.txt:181
+msgid "results in (starting with the original line):"
+msgstr ""
+
+#: usr_10.txt:183
+msgid "\tTeacher Smith criticized Teacher Johnson today. ~"
+msgstr ""
+
+#: usr_10.txt:185
+msgid ""
+"Other flags include p (print), which causes the \":substitute\" command to "
+"print\n"
+"out the last line it changes.  The c (confirm) flag tells \":substitute\" to "
+"ask\n"
+"you for confirmation before it performs each substitution.  Enter the\n"
+"following: >"
+msgstr ""
+
+#: usr_10.txt:190
+msgid "\t:%s/Professor/Teacher/c"
+msgstr ""
+
+#: usr_10.txt:192
+msgid ""
+"Vim finds the first occurrence of \"Professor\" and displays the text it is\n"
+"about to change.  You get the following prompt: >"
+msgstr ""
+
+#: usr_10.txt:195
+msgid "\treplace with Teacher (y/n/a/q/l/^E/^Y)?"
+msgstr ""
+
+#: usr_10.txt:197
+msgid "At this point, you must enter one of the following answers:"
+msgstr ""
+
+#: usr_10.txt:199
+msgid ""
+"\ty\t\tYes; make this change.\n"
+"\tn\t\tNo; skip this match.\n"
+"\ta\t\tAll; make this change and all remaining ones without\n"
+"\t\t\tfurther confirmation.\n"
+"\tq\t\tQuit; don't make any more changes.\n"
+"\tl\t\tLast; make this change and then quit.\n"
+"\tCTRL-E\t\tScroll the text one line up.\n"
+"\tCTRL-Y\t\tScroll the text one line down."
+msgstr ""
+
+#: usr_10.txt:209
+msgid ""
+"The \"from\" part of the substitute command is actually a pattern.  The same\n"
+"kind as used for the search command.  For example, this command only\n"
+"substitutes \"the\" when it appears at the start of a line: >"
+msgstr ""
+
+#: usr_10.txt:213
+msgid "\t:s/^the/these/"
+msgstr ""
+
+#: usr_10.txt:215
+msgid ""
+"If you are substituting with a \"from\" or \"to\" part that includes a slash, "
+"you\n"
+"need to put a backslash before it.  A simpler way is to use another "
+"character\n"
+"instead of the slash.  A plus, for example: >"
+msgstr ""
+
+#: usr_10.txt:219
+msgid "\t:s+one/two+one or two+"
+msgstr ""
+
+#: usr_10.txt:221
+msgid ""
+"============================================================================"
+"==\n"
+"*10.3*\tCommand ranges"
+msgstr ""
+
+#: usr_10.txt:224
+msgid ""
+"The \":substitute\" command, and many other : commands, can be applied to a\n"
+"selection of lines.  This is called a range.\n"
+"   The simple form of a range is {number},{number}.  For example: >"
+msgstr ""
+
+#: usr_10.txt:228
+msgid "\t:1,5s/this/that/g"
+msgstr ""
+
+#: usr_10.txt:230
+msgid ""
+"Executes the substitute command on the lines 1 to 5.  Line 5 is included.\n"
+"The range is always placed before the command."
+msgstr ""
+
+#: usr_10.txt:233
+msgid "A single number can be used to address one specific line: >"
+msgstr ""
+
+#: usr_10.txt:235
+msgid "\t:54s/President/Fool/"
+msgstr ""
+
+#: usr_10.txt:237
+msgid ""
+"Some commands work on the whole file when you do not specify a range.  To "
+"make\n"
+"them work on the current line the \".\" address is used.  The \":write\" command\n"
+"works like that.  Without a range, it writes the whole file.  To make it "
+"write\n"
+"only the current line into a file: >"
+msgstr ""
+
+#: usr_10.txt:242
+msgid "\t:.write otherfile"
+msgstr ""
+
+#: usr_10.txt:244
+msgid ""
+"The first line always has number one.  How about the last line?  The \"$\"\n"
+"character is used for this.  For example, to substitute in the lines from "
+"the\n"
+"cursor to the end: >"
+msgstr ""
+
+#: usr_10.txt:248
+msgid "\t:.,$s/yes/no/"
+msgstr ""
+
+#: usr_10.txt:250
+msgid ""
+"The \"%\" range that we used before, is actually a short way to say \"1,$\", "
+"from\n"
+"the first to the last line."
+msgstr ""
+
+#: usr_10.txt:254
+msgid "USING A PATTERN IN A RANGE"
+msgstr ""
+
+#: usr_10.txt:256
+msgid ""
+"Suppose you are editing a chapter in a book, and want to replace all\n"
+"occurrences of \"grey\" with \"gray\".  But only in this chapter, not in the "
+"next\n"
+"one.  You know that only chapter boundaries have the word \"Chapter\" in the\n"
+"first column.  This command will work then: >"
+msgstr ""
+
+#: usr_10.txt:261
+msgid "\t:?^Chapter?,/^Chapter/s=grey=gray=g"
+msgstr ""
+
+#: usr_10.txt:263
+msgid ""
+"You can see a search pattern is used twice.  The first \"?^Chapter?\" finds "
+"the\n"
+"line above the current position that matches this pattern.  Thus the "
+"?pattern?\n"
+"range is used to search backwards.  Similarly, \"/^Chapter/\" is used to "
+"search\n"
+"forward for the start of the next chapter.\n"
+"   To avoid confusion with the slashes, the \"=\" character was used in the\n"
+"substitute command here.  A slash or another character would have worked as\n"
+"well."
+msgstr ""
+
+#: usr_10.txt:272
+msgid "ADD AND SUBTRACT"
+msgstr ""
+
+#: usr_10.txt:274
+msgid ""
+"There is a slight error in the above command: If the title of the next "
+"chapter\n"
+"had included \"grey\" it would be replaced as well.  Maybe that's what you\n"
+"wanted, but what if you didn't?  Then you can specify an offset.\n"
+"   To search for a pattern and then use the line above it: >"
+msgstr ""
+
+#: usr_10.txt:279
+msgid "\t/Chapter/-1"
+msgstr ""
+
+#: usr_10.txt:281
+msgid ""
+"You can use any number instead of the 1.  To address the second line below "
+"the\n"
+"match: >"
+msgstr ""
+
+#: usr_10.txt:284
+msgid "\t/Chapter/+2"
+msgstr ""
+
+#: usr_10.txt:286
+msgid ""
+"The offsets can also be used with the other items in a range.  Look at this\n"
+"one: >"
+msgstr ""
+
+#: usr_10.txt:289
+msgid "\t:.+3,$-5"
+msgstr ""
+
+#: usr_10.txt:291
+msgid ""
+"This specifies the range that starts three lines below the cursor and ends\n"
+"five lines before the last line in the file."
+msgstr ""
+
+#: usr_10.txt:295
+msgid "USING MARKS"
+msgstr ""
+
+#: usr_10.txt:297
+msgid ""
+"Instead of figuring out the line numbers of certain positions, remembering "
+"them\n"
+"and typing them in a range, you can use marks.\n"
+"   Place the marks as mentioned in chapter 3.  For example, use \"mt\" to mark\n"
+"the top of an area and \"mb\" to mark the bottom.  Then you can use this range\n"
+"to specify the lines between the marks (including the lines with the marks): "
+">"
+msgstr ""
+
+#: usr_10.txt:303
+msgid "\t:'t,'b"
+msgstr ""
+
+#: usr_10.txt:306
+msgid "VISUAL MODE AND RANGES"
+msgstr ""
+
+#: usr_10.txt:308
+msgid ""
+"You can select text with Visual mode.  If you then press \":\" to start a "
+"colon\n"
+"command, you will see this: >"
+msgstr ""
+
+#: usr_10.txt:311
+msgid "\t:'<,'>"
+msgstr ""
+
+#: usr_10.txt:313
+msgid ""
+"Now you can type the command and it will be applied to the range of lines "
+"that\n"
+"was visually selected."
+msgstr ""
+
+#: usr_10.txt:316
+msgid ""
+"\tNote:\n"
+"\tWhen using Visual mode to select part of a line, or using CTRL-V to\n"
+"\tselect a block of text, the colon commands will still apply to whole\n"
+"\tlines.  This might change in a future version of Vim."
+msgstr ""
+
+#: usr_10.txt:321
+msgid ""
+"The '< and '> are actually marks, placed at the start and end of the Visual\n"
+"selection.  The marks remain at their position until another Visual "
+"selection\n"
+"is made.  Thus you can use the \"'<\" command to jump to position where the\n"
+"Visual area started.  And you can mix the marks with other items: >"
+msgstr ""
+
+#: usr_10.txt:326
+msgid "\t:'>,$"
+msgstr ""
+
+#: usr_10.txt:328
+msgid ""
+"This addresses the lines from the end of the Visual area to the end of the\n"
+"file."
+msgstr ""
+
+#: usr_10.txt:332
+msgid "A NUMBER OF LINES"
+msgstr ""
+
+#: usr_10.txt:334
+msgid ""
+"When you know how many lines you want to change, you can type the number and\n"
+"then \":\".  For example, when you type \"5:\", you will get: >"
+msgstr ""
+
+#: usr_10.txt:337
+msgid "\t:.,.+4"
+msgstr ""
+
+#: usr_10.txt:339
+msgid ""
+"Now you can type the command you want to use.  It will use the range \".\"\n"
+"(current line) until \".+4\" (four lines down).  Thus it spans five lines."
+msgstr ""
+
+#: usr_10.txt:342
+msgid ""
+"============================================================================"
+"==\n"
+"*10.4*\tThe global command"
+msgstr ""
+
+#: usr_10.txt:345
+msgid ""
+"The \":global\" command is one of the more powerful features of Vim.  It "
+"allows\n"
+"you to find a match for a pattern and execute a command there.  The general\n"
+"form is: >"
+msgstr ""
+
+#: usr_10.txt:349
+msgid "\t:[range]global/{pattern}/{command}"
+msgstr ""
+
+#: usr_10.txt:351
+msgid ""
+"This is similar to the \":substitute\" command.  But, instead of replacing the\n"
+"matched text with other text, the command {command} is executed."
+msgstr ""
+
+#: usr_10.txt:354
+msgid ""
+"\tNote:\n"
+"\tThe command executed for \":global\" must be one that starts with a\n"
+"\tcolon.  Normal mode commands can not be used directly.  The |:normal|\n"
+"\tcommand can do this for you."
+msgstr ""
+
+#: usr_10.txt:359
+msgid ""
+"Suppose you want to change \"foobar\" to \"barfoo\", but only in C++ style\n"
+"comments.  These comments start with \"//\".  Use this command: >"
+msgstr ""
+
+#: usr_10.txt:362
+msgid "\t:g+//+s/foobar/barfoo/g"
+msgstr ""
+
+#: usr_10.txt:364
+msgid ""
+"This starts with \":g\".  That is short for \":global\", just like \":s\" is short\n"
+"for \":substitute\".  Then the pattern, enclosed in plus characters.  Since "
+"the\n"
+"pattern we are looking for contains a slash, this uses the plus character to\n"
+"separate the pattern.  Next comes the substitute command that changes "
+"\"foobar\"\n"
+"into \"barfoo\".\n"
+"   The default range for the global command is the whole file.  Thus no "
+"range\n"
+"was specified in this example.  This is different from \":substitute\", which\n"
+"works on one line without a range.\n"
+"   The command isn't perfect, since it also matches lines where \"//\" appears\n"
+"halfway a line, and the substitution will also take place before the \"//\"."
+msgstr ""
+
+#: usr_10.txt:375
+msgid ""
+"Just like with \":substitute\", any pattern can be used.  When you learn more\n"
+"complicated patterns later, you can use them here."
+msgstr ""
+
+#: usr_10.txt:378
+msgid ""
+"============================================================================"
+"==\n"
+"*10.5*\tVisual block mode"
+msgstr ""
+
+#: usr_10.txt:381
+msgid ""
+"With CTRL-V you can start selection of a rectangular area of text.  There "
+"are\n"
+"a few commands that do something special with the text block."
+msgstr ""
+
+#: usr_10.txt:384
+msgid ""
+"There is something special about using the \"$\" command in Visual block mode.\n"
+"When the last motion command used was \"$\", all lines in the Visual selection\n"
+"will extend until the end of the line, also when the line with the cursor is\n"
+"shorter.  This remains effective until you use a motion command that moves "
+"the\n"
+"cursor horizontally.  Thus using \"j\" keeps it, \"h\" stops it."
+msgstr ""
+
+#: usr_10.txt:391
+msgid "INSERTING TEXT"
+msgstr ""
+
+#: usr_10.txt:393
+msgid ""
+"The command  \"I{string}<Esc>\" inserts the text {string} in each line, just\n"
+"left of the visual block.  You start by pressing CTRL-V to enter visual "
+"block\n"
+"mode.  Now you move the cursor to define your block.  Next you type I to "
+"enter\n"
+"Insert mode, followed by the text to insert.  As you type, the text appears "
+"on\n"
+"the first line only.\n"
+"   After you press <Esc> to end the insert, the text will magically be\n"
+"inserted in the rest of the lines contained in the visual selection.  "
+"Example:"
+msgstr ""
+
+#: usr_10.txt:401
+msgid ""
+"\tinclude one ~\n"
+"\tinclude two ~\n"
+"\tinclude three ~\n"
+"\tinclude four ~"
+msgstr ""
+
+#: usr_10.txt:406
+msgid ""
+"Move the cursor to the \"o\" of \"one\" and press CTRL-V.  Move it down with "
+"\"3j\"\n"
+"to \"four\".  You now have a block selection that spans four lines.  Now type: "
+">"
+msgstr ""
+
+#: usr_10.txt:409
+msgid "\tImain.<Esc>"
+msgstr ""
+
+#: usr_10.txt:411
+msgid "The result:"
+msgstr ""
+
+#: usr_10.txt:413
+msgid ""
+"\tinclude main.one ~\n"
+"\tinclude main.two ~\n"
+"\tinclude main.three ~\n"
+"\tinclude main.four ~"
+msgstr ""
+
+#: usr_10.txt:418
+msgid ""
+"If the block spans short lines that do not extend into the block, the text "
+"is\n"
+"not inserted in that line.  For example, make a Visual block selection that\n"
+"includes the word \"long\" in the first and last line of this text, and thus "
+"has\n"
+"no text selected in the second line:"
+msgstr ""
+
+#: usr_10.txt:423
+msgid ""
+"\tThis is a long line ~\n"
+"\tshort ~\n"
+"\tAny other long line ~"
+msgstr ""
+
+#: usr_10.txt:427
+msgid "\t\t  ^^^^ selected block"
+msgstr ""
+
+#: usr_10.txt:429
+msgid "Now use the command \"Ivery <Esc>\".  The result is:"
+msgstr ""
+
+#: usr_10.txt:431
+msgid ""
+"\tThis is a very long line ~\n"
+"\tshort ~\n"
+"\tAny other very long line ~"
+msgstr ""
+
+#: usr_10.txt:435
+msgid "In the short line no text was inserted."
+msgstr ""
+
+#: usr_10.txt:437
+msgid ""
+"If the string you insert contains a newline, the \"I\" acts just like a Normal\n"
+"insert command and affects only the first line of the block."
+msgstr ""
+
+#: usr_10.txt:440
+msgid ""
+"The \"A\" command works the same way, except that it appends after the right\n"
+"side of the block.  And it does insert text in a short line.  Thus you can\n"
+"make a choice whether you do or don't want to append text to a short line.\n"
+"   There is one special case for \"A\": Select a Visual block and then use \"$\"\n"
+"to make the block extend to the end of each line.  Using \"A\" now will append\n"
+"the text to the end of each line.\n"
+"   Using the same example from above, and then typing \"$A XXX<Esc>, you get\n"
+"this result:"
+msgstr ""
+
+#: usr_10.txt:449
+msgid ""
+"\tThis is a long line XXX ~\n"
+"\tshort XXX ~\n"
+"\tAny other long line XXX ~"
+msgstr ""
+
+#: usr_10.txt:453
+msgid ""
+"This really requires using the \"$\" command.  Vim remembers that it was used.\n"
+"Making the same selection by moving the cursor to the end of the longest "
+"line\n"
+"with other movement commands will not have the same result."
+msgstr ""
+
+#: usr_10.txt:458
+msgid "CHANGING TEXT"
+msgstr ""
+
+#: usr_10.txt:460
+msgid ""
+"The Visual block \"c\" command deletes the block and then throws you into "
+"Insert\n"
+"mode to enable you to type in a string.  The string will be inserted in each\n"
+"line in the block.\n"
+"   Starting with the same selection of the \"long\" words as above, then "
+"typing\n"
+"\"c_LONG_<Esc>\", you get this:"
+msgstr ""
+
+#: usr_10.txt:466
+msgid ""
+"\tThis is a _LONG_ line ~\n"
+"\tshort ~\n"
+"\tAny other _LONG_ line ~"
+msgstr ""
+
+#: usr_10.txt:470
+msgid ""
+"Just like with \"I\" the short line is not changed.  Also, you can't enter a\n"
+"newline in the new text."
+msgstr ""
+
+#: usr_10.txt:473
+msgid ""
+"The \"C\" command deletes text from the left edge of the block to the end of\n"
+"line.  It then puts you in Insert mode so that you can type in a string,\n"
+"which is added to the end of each line.\n"
+"   Starting with the same text again, and typing \"Cnew text<Esc>\" you get:"
+msgstr ""
+
+#: usr_10.txt:478
+msgid ""
+"\tThis is a new text ~\n"
+"\tshort ~\n"
+"\tAny other new text ~"
+msgstr ""
+
+#: usr_10.txt:482
+msgid ""
+"Notice that, even though only the \"long\" word was selected, the text after "
+"it\n"
+"is deleted as well.  Thus only the location of the left edge of the visual\n"
+"block really matters.\n"
+"   Again, short lines that do not reach into the block are excluded."
+msgstr ""
+
+#: usr_10.txt:487
+msgid "Other commands that change the characters in the block:"
+msgstr ""
+
+#: usr_10.txt:489
+msgid ""
+"\t~\tswap case\t(a -> A and A -> a)\n"
+"\tU\tmake uppercase  (a -> A and A -> A)\n"
+"\tu\tmake lowercase  (a -> a and A -> a)"
+msgstr ""
+
+#: usr_10.txt:494
+msgid "FILLING WITH A CHARACTER"
+msgstr ""
+
+#: usr_10.txt:496
+msgid ""
+"To fill the whole block with one character, use the \"r\" command.  Again,\n"
+"starting with the same example text from above, and then typing \"rx\":"
+msgstr ""
+
+#: usr_10.txt:499
+msgid ""
+"\tThis is a xxxx line ~\n"
+"\tshort ~\n"
+"\tAny other xxxx line ~"
+msgstr ""
+
+#: usr_10.txt:504
+msgid ""
+"\tNote:\n"
+"\tIf you want to include characters beyond the end of the line in the\n"
+"\tblock, check out the 'virtualedit' feature in chapter 25."
+msgstr ""
+
+#: usr_10.txt:509
+msgid "SHIFTING"
+msgstr ""
+
+#: usr_10.txt:511
+msgid ""
+"The command \">\" shifts the selected text to the right one shift amount,\n"
+"inserting whitespace.  The starting point for this shift is the left edge of\n"
+"the visual block.\n"
+"   With the same example again, \">\" gives this result:"
+msgstr ""
+
+#: usr_10.txt:516
+msgid ""
+"\tThis is a\t  long line ~\n"
+"\tshort ~\n"
+"\tAny other\t  long line ~"
+msgstr ""
+
+#: usr_10.txt:520
+msgid ""
+"The shift amount is specified with the 'shiftwidth' option.  To change it to\n"
+"use 4 spaces: >"
+msgstr ""
+
+#: usr_10.txt:523
+msgid "\t:set shiftwidth=4"
+msgstr ""
+
+#: usr_10.txt:525
+msgid ""
+"The \"<\" command removes one shift amount of whitespace at the left\n"
+"edge of the block.  This command is limited by the amount of text that is\n"
+"there; so if there is less than a shift amount of whitespace available, it\n"
+"removes what it can."
+msgstr ""
+
+#: usr_10.txt:531
+msgid "JOINING LINES"
+msgstr ""
+
+#: usr_10.txt:533
+msgid ""
+"The \"J\" command joins all selected lines together into one line.  Thus it\n"
+"removes the line breaks.  Actually, the line break, leading white space and\n"
+"trailing white space is replaced by one space.  Two spaces are used after a\n"
+"line ending (that can be changed with the 'joinspaces' option).\n"
+"   Let's use the example that we got so familiar with now.  The result of\n"
+"using the \"J\" command:"
+msgstr ""
+
+#: usr_10.txt:540
+msgid "\tThis is a long line short Any other long line ~"
+msgstr ""
+
+#: usr_10.txt:542
+msgid ""
+"The \"J\" command doesn't require a blockwise selection.  It works with \"v\" "
+"and\n"
+"\"V\" selection in exactly the same way."
+msgstr ""
+
+#: usr_10.txt:545
+msgid "If you don't want the white space to be changed, use the \"gJ\" command."
+msgstr ""
+
+#: usr_10.txt:547
+msgid ""
+"============================================================================"
+"==\n"
+"*10.6*\tReading and writing part of a file"
+msgstr ""
+
+#: usr_10.txt:550
+msgid ""
+"When you are writing an e-mail message, you may want to include another "
+"file.\n"
+"This can be done with the \":read {filename}\" command.  The text of the file "
+"is\n"
+"put below the cursor line.\n"
+"   Starting with this text:"
+msgstr ""
+
+#: usr_10.txt:555
+msgid ""
+"\tHi John, ~\n"
+"\tHere is the diff that fixes the bug: ~\n"
+"\tBye, Pierre. ~"
+msgstr ""
+
+#: usr_10.txt:559
+msgid "Move the cursor to the second line and type: >"
+msgstr ""
+
+#: usr_10.txt:561
+msgid "\t:read patch"
+msgstr ""
+
+#: usr_10.txt:563
+msgid "The file named \"patch\" will be inserted, with this result:"
+msgstr ""
+
+#: usr_10.txt:565
+msgid ""
+"\tHi John, ~\n"
+"\tHere is the diff that fixes the bug: ~\n"
+"\t2c2 ~\n"
+"\t<\tfor (i = 0; i <= length; ++i) ~\n"
+"\t--- ~\n"
+"\t>\tfor (i = 0; i < length; ++i) ~\n"
+"\tBye, Pierre. ~"
+msgstr ""
+
+#: usr_10.txt:573
+msgid ""
+"The \":read\" command accepts a range.  The file will be put below the last "
+"line\n"
+"number of this range.  Thus \":$r patch\" appends the file \"patch\" at the end "
+"of\n"
+"the file.\n"
+"   What if you want to read the file above the first line?  This can be done\n"
+"with the line number zero.  This line doesn't really exist, you will get an\n"
+"error message when using it with most commands.  But this command is "
+"allowed:\n"
+">\n"
+"\t:0read patch"
+msgstr ""
+
+#: usr_10.txt:582
+msgid "The file \"patch\" will be put above the first line of the file."
+msgstr ""
+
+#: usr_10.txt:585
+msgid "WRITING A RANGE OF LINES"
+msgstr ""
+
+#: usr_10.txt:587
+msgid ""
+"To write a range of lines to a file, the \":write\" command can be used.\n"
+"Without a range it writes the whole file.  With a range only the specified\n"
+"lines are written: >"
+msgstr ""
+
+#: usr_10.txt:591
+msgid "\t:.,$write tempo"
+msgstr ""
+
+#: usr_10.txt:593
+msgid ""
+"This writes the lines from the cursor until the end of the file into the "
+"file\n"
+"\"tempo\".  If this file already exists you will get an error message.  Vim\n"
+"protects you from accidentally overwriting an existing file.  If you know "
+"what\n"
+"you are doing and want to overwrite the file, append !: >"
+msgstr ""
+
+#: usr_10.txt:598
+msgid "\t:.,$write! tempo"
+msgstr ""
+
+#: usr_10.txt:600
+msgid ""
+"CAREFUL: The ! must follow the \":write\" command immediately, without white\n"
+"space.  Otherwise it becomes a filter command, which is explained later in\n"
+"this chapter."
+msgstr ""
+
+#: usr_10.txt:605
+msgid "APPENDING TO A FILE"
+msgstr ""
+
+#: usr_10.txt:607
+msgid ""
+"In the first section of this chapter was explained how to collect a number "
+"of\n"
+"lines into a register.  The same can be done to collect lines in a file.\n"
+"Write the first line with this command: >"
+msgstr ""
+
+#: usr_10.txt:611
+msgid "\t:.write collection"
+msgstr ""
+
+#: usr_10.txt:613
+msgid ""
+"Now move the cursor to the second line you want to collect, and type this: >"
+msgstr ""
+
+#: usr_10.txt:615
+msgid "\t:.write >>collection"
+msgstr ""
+
+#: usr_10.txt:617
+msgid ""
+"The \">>\" tells Vim the \"collection\" file is not to be written as a new file,\n"
+"but the line must be appended at the end.   You can repeat this as many "
+"times\n"
+"as you like."
+msgstr ""
+
+#: usr_10.txt:621
+msgid ""
+"============================================================================"
+"==\n"
+"*10.7*\tFormatting text"
+msgstr ""
+
+#: usr_10.txt:624
+msgid ""
+"When you are typing plain text, it's nice if the length of each line is\n"
+"automatically trimmed to fit in the window.  To make this happen while\n"
+"inserting text, set the 'textwidth' option: >"
+msgstr ""
+
+#: usr_10.txt:628
+msgid "\t:set textwidth=72"
+msgstr ""
+
+#: usr_10.txt:630
+msgid ""
+"You might remember that in the example vimrc file this command was used for\n"
+"every text file.  Thus if you are using that vimrc file, you were already\n"
+"using it.  To check the current value of 'textwidth': >"
+msgstr ""
+
+#: usr_10.txt:634
+msgid "\t:set textwidth"
+msgstr ""
+
+#: usr_10.txt:636
+msgid ""
+"Now lines will be broken to take only up to 72 characters.  But when you\n"
+"insert text halfway a line, or when you delete a few words, the lines will "
+"get\n"
+"too long or too short.  Vim doesn't automatically reformat the text.\n"
+"   To tell Vim to format the current paragraph: >"
+msgstr ""
+
+#: usr_10.txt:641
+msgid "\tgqap"
+msgstr ""
+
+#: usr_10.txt:643
+msgid ""
+"This starts with the \"gq\" command, which is an operator.  Following is \"ap\",\n"
+"the text object that stands for \"a paragraph\".  A paragraph is separated "
+"from\n"
+"the next paragraph by an empty line."
+msgstr ""
+
+#: usr_10.txt:647
+msgid ""
+"\tNote:\n"
+"\tA blank line, which contains white space, does NOT separate\n"
+"\tparagraphs.  This is hard to notice!"
+msgstr ""
+
+#: usr_10.txt:651
+msgid ""
+"Instead of \"ap\" you could use any motion or text object.  If your paragraphs\n"
+"are properly separated, you can use this command to format the whole file: >"
+msgstr ""
+
+#: usr_10.txt:654
+msgid "\tgggqG"
+msgstr ""
+
+#: usr_10.txt:656
+msgid ""
+"\"gg\" takes you to the first line, \"gq\" is the format operator and \"G\" the\n"
+"motion that jumps to the last line."
+msgstr ""
+
+#: usr_10.txt:659
+msgid ""
+"In case your paragraphs aren't clearly defined, you can format just the "
+"lines\n"
+"you manually select.  Move the cursor to the first line you want to format.\n"
+"Start with the command \"gqj\".  This formats the current line and the one "
+"below\n"
+"it.  If the first line was short, words from the next line will be appended.\n"
+"If it was too long, words will be moved to the next line.  The cursor moves "
+"to\n"
+"the second line.  Now you can use \".\" to repeat the command.  Keep doing "
+"this\n"
+"until you are at the end of the text you want to format."
+msgstr ""
+
+#: usr_10.txt:667
+msgid ""
+"============================================================================"
+"==\n"
+"*10.8*\tChanging case"
+msgstr ""
+
+#: usr_10.txt:670
+msgid ""
+"You have text with section headers in lowercase.  You want to make the word\n"
+"\"section\" all uppercase.  Do this with the \"gU\" operator.  Start with the\n"
+"cursor in the first column: >"
+msgstr ""
+
+#: usr_10.txt:674
+msgid ""
+"\t\t\t     gUw\n"
+"<\tsection header\t    ---->      SECTION header"
+msgstr ""
+
+#: usr_10.txt:677
+msgid "The \"gu\" operator does exactly the opposite: >"
+msgstr ""
+
+#: usr_10.txt:679
+msgid ""
+"\t\t\t     guw\n"
+"<\tSECTION header\t    ---->      section header"
+msgstr ""
+
+#: usr_10.txt:682
+msgid ""
+"You can also use \"g~\" to swap case.  All these are operators, thus they work\n"
+"with any motion command, with text objects and in Visual mode.\n"
+"   To make an operator work on lines you double it.  The delete operator is\n"
+"\"d\", thus to delete a line you use \"dd\".  Similarly, \"gugu\" makes a whole "
+"line\n"
+"lowercase.  This can be shortened to \"guu\".  \"gUgU\" is shortened to \"gUU\" "
+"and\n"
+"\"g~g~\" to \"g~~\".  Example: >"
+msgstr ""
+
+#: usr_10.txt:689
+msgid ""
+"\t\t\t\tg~~ \n"
+"<\tSome GIRLS have Fun    ---->   sOME girls HAVE fUN ~"
+msgstr ""
+
+#: usr_10.txt:692
+msgid ""
+"============================================================================"
+"==\n"
+"*10.9*\tUsing an external program"
+msgstr ""
+
+#: usr_10.txt:695
+msgid ""
+"Vim has a very powerful set of commands, it can do anything.  But there may\n"
+"still be something that an external command can do better or faster.\n"
+"   The command \"!{motion}{program}\" takes a block of text and filters it\n"
+"through an external program.  In other words, it runs the system command\n"
+"represented by {program}, giving it the block of text represented by "
+"{motion}\n"
+"as input.  The output of this command then replaces the selected block.\n"
+"   Because this summarizes badly if you are unfamiliar with UNIX filters, "
+"take\n"
+"a look at an example.  The sort command sorts a file.  If you execute the\n"
+"following command, the unsorted file input.txt will be sorted and written to\n"
+"output.txt.  (This works on both UNIX and Microsoft Windows.) >"
+msgstr ""
+
+#: usr_10.txt:706
+msgid "\tsort <input.txt >output.txt"
+msgstr ""
+
+#: usr_10.txt:708
+msgid ""
+"Now do the same thing in Vim.  You want to sort lines 1 through 5 of a file.\n"
+"You start by putting the cursor on line 1.  Next you execute the following\n"
+"command: >"
+msgstr ""
+
+#: usr_10.txt:712
+msgid "\t!5G"
+msgstr ""
+
+#: usr_10.txt:714
+msgid ""
+"The \"!\" tells Vim that you are performing a filter operation.  The Vim "
+"editor\n"
+"expects a motion command to follow, indicating which part of the file to\n"
+"filter.  The \"5G\" command tells Vim to go to line 5, so it now knows that it\n"
+"is to filter lines 1 (the current line) through 5.\n"
+"   In anticipation of the filtering, the cursor drops to the bottom of the\n"
+"screen and a ! prompt displays.  You can now type in the name of the filter\n"
+"program, in this case \"sort\".  Therefore, your full command is as follows: >"
+msgstr ""
+
+#: usr_10.txt:722
+msgid "\t!5Gsort<Enter>"
+msgstr ""
+
+#: usr_10.txt:724
+msgid ""
+"The result is that the sort program is run on the first 5 lines.  The output\n"
+"of the program replaces these lines."
+msgstr ""
+
+#: usr_10.txt:727
+msgid ""
+"\tline 55\t\t\t      line 11\n"
+"\tline 33\t\t\t      line 22\n"
+"\tline 11\t\t-->\t      line 33\n"
+"\tline 22\t\t\t      line 44\n"
+"\tline 44\t\t\t      line 55\n"
+"\tlast line\t\t      last line"
+msgstr ""
+
+#: usr_10.txt:734
+msgid ""
+"The \"!!\" command filters the current line through a filter.  In Unix the "
+"\"date\"\n"
+"command prints the current time and date.  \"!!date<Enter>\" replaces the "
+"current\n"
+"line with the output of \"date\".  This is useful to add a timestamp to a "
+"file."
+msgstr ""
+
+#: usr_10.txt:739
+msgid "WHEN IT DOESN'T WORK"
+msgstr ""
+
+#: usr_10.txt:741
+msgid ""
+"Starting a shell, sending it text and capturing the output requires that Vim\n"
+"knows how the shell works exactly.  When you have problems with filtering,\n"
+"check the values of these options:"
+msgstr ""
+
+#: usr_10.txt:745
+msgid ""
+"\t'shell'\t\tspecifies the program that Vim uses to execute\n"
+"\t\t\texternal programs.\n"
+"\t'shellcmdflag'\targument to pass a command to the shell\n"
+"\t'shellquote'\tquote to be used around the command\n"
+"\t'shellxquote'\tquote to be used around the command and redirection\n"
+"\t'shelltype'\tkind of shell (only for the Amiga)\n"
+"\t'shellslash'\tuse forward slashes in the command (only for\n"
+"\t\t\tMS-Windows and alikes)\n"
+"\t'shellredir'\tstring used to write the command output into a file"
+msgstr ""
+
+#: usr_10.txt:755
+msgid ""
+"On Unix this is hardly ever a problem, because there are two kinds of "
+"shells:\n"
+"\"sh\" like and \"csh\" like.  Vim checks the 'shell' option and sets related\n"
+"options automatically, depending on whether it sees \"csh\" somewhere in\n"
+"'shell'.\n"
+"   On MS-Windows, however, there are many different shells and you might "
+"have\n"
+"to tune the options to make filtering work.  Check the help for the options\n"
+"for more information."
+msgstr ""
+
+#: usr_10.txt:764
+msgid "READING COMMAND OUTPUT"
+msgstr ""
+
+#: usr_10.txt:766
+msgid "To read the contents of the current directory into the file, use this:"
+msgstr ""
+
+#: usr_10.txt:768
+msgid ""
+"on Unix: >\n"
+"\t:read !ls\n"
+"on MS-Windows: >\n"
+"\t:read !dir"
+msgstr ""
+
+#: usr_10.txt:773
+msgid ""
+"The output of the \"ls\" or \"dir\" command is captured and inserted in the "
+"text,\n"
+"below the cursor.  This is similar to reading a file, except that the \"!\" is\n"
+"used to tell Vim that a command follows.\n"
+"   The command may have arguments.  And a range can be used to tell where "
+"Vim\n"
+"should put the lines: >"
+msgstr ""
+
+#: usr_10.txt:779
+msgid "\t:0read !date -u"
+msgstr ""
+
+#: usr_10.txt:781
+msgid ""
+"This inserts the current time and date in UTC format at the top of the file.\n"
+"(Well, if you have a date command that accepts the \"-u\" argument.)  Note the\n"
+"difference with using \"!!date\": that replaced a line, while \":read !date\" "
+"will\n"
+"insert a line."
+msgstr ""
+
+#: usr_10.txt:787
+msgid "WRITING TEXT TO A COMMAND"
+msgstr ""
+
+#: usr_10.txt:789
+msgid ""
+"The Unix command \"wc\" counts words.  To count the words in the current file: "
+">"
+msgstr ""
+
+#: usr_10.txt:791
+msgid "\t:write !wc"
+msgstr ""
+
+#: usr_10.txt:793
+msgid ""
+"This is the same write command as before, but instead of a file name the \"!\"\n"
+"character is used and the name of an external command.  The written text "
+"will\n"
+"be passed to the specified command as its standard input.  The output could\n"
+"look like this:"
+msgstr ""
+
+#: usr_10.txt:798
+msgid "       4      47     249 ~"
+msgstr ""
+
+#: usr_10.txt:800
+msgid ""
+"The \"wc\" command isn't verbose.  This means you have 4 lines, 47 words and "
+"249\n"
+"characters."
+msgstr ""
+
+#: usr_10.txt:803
+msgid "Watch out for this mistake: >"
+msgstr ""
+
+#: usr_10.txt:805
+msgid "\t:write! wc"
+msgstr ""
+
+#: usr_10.txt:807
+msgid ""
+"This will write the file \"wc\" in the current directory, with force.  White\n"
+"space is important here!"
+msgstr ""
+
+#: usr_10.txt:811
+msgid "REDRAWING THE SCREEN"
+msgstr ""
+
+#: usr_10.txt:813
+msgid ""
+"If the external command produced an error message, the display may have been\n"
+"messed up.  Vim is very efficient and only redraws those parts of the screen\n"
+"that it knows need redrawing.  But it can't know about what another program\n"
+"has written.  To tell Vim to redraw the screen: >"
+msgstr ""
+
+#: usr_10.txt:818
+msgid "\tCTRL-L"
+msgstr ""
+
+#: usr_10.txt:820
+msgid ""
+"============================================================================"
+"=="
+msgstr ""
+
+#: usr_10.txt:822
+msgid "Next chapter: |usr_11.txt|  Recovering from a crash"
+msgstr ""
+
+#: usr_10.txt:824
+msgid "Copyright: see |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
+msgstr ""

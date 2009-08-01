@@ -1,0 +1,515 @@
+#. extracted from usr_09.txt
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-01 19:54+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.3.0\n"
+
+#: usr_09.txt:1
+msgid "*usr_09.txt*\tFor Vim version 7.2.  Last change: 2006 Apr 24"
+msgstr ""
+
+#: usr_09.txt:3
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar"
+msgstr ""
+
+#: usr_09.txt:5
+msgid "\t\t\t\tUsing the GUI"
+msgstr ""
+
+#: usr_09.txt:8
+msgid ""
+"Vim works in an ordinary terminal.  GVim can do the same things and a few\n"
+"more.  The GUI offers menus, a toolbar, scrollbars and other items.  This\n"
+"chapter is about these extra things that the GUI offers."
+msgstr ""
+
+#: usr_09.txt:12
+msgid ""
+"|09.1|\tParts of the GUI\n"
+"|09.2|\tUsing the mouse\n"
+"|09.3|\tThe clipboard\n"
+"|09.4|\tSelect mode"
+msgstr ""
+
+#: usr_09.txt:17
+msgid ""
+"     Next chapter: |usr_10.txt|  Making big changes\n"
+" Previous chapter: |usr_08.txt|  Splitting windows\n"
+"Table of contents: |usr_toc.txt|"
+msgstr ""
+
+#: usr_09.txt:21
+msgid ""
+"============================================================================"
+"==\n"
+"*09.1*\tParts of the GUI"
+msgstr ""
+
+#: usr_09.txt:24
+msgid ""
+"You might have an icon on your desktop that starts gVim.  Otherwise, one of\n"
+"these commands should do it: >"
+msgstr ""
+
+#: usr_09.txt:27
+msgid ""
+"\tgvim file.txt\n"
+"\tvim -g file.txt"
+msgstr ""
+
+#: usr_09.txt:30
+msgid ""
+"If this doesn't work you don't have a version of Vim with GUI support.  You\n"
+"will have to install one first.\n"
+"   Vim will open a window and display \"file.txt\" in it.  What the window "
+"looks\n"
+"like depends on the version of Vim.  It should resemble the following "
+"picture\n"
+"(for as far as this can be shown in ASCII!)."
+msgstr ""
+
+#: usr_09.txt:36
+msgid ""
+"\t+----------------------------------------------------+\n"
+"\t| file.txt + (~/dir) - VIM\t\t\t   X |\t<- window title\n"
+"\t+----------------------------------------------------+\n"
+"\t| File\tEdit  Tools  Syntax  Buffers  Window  Help   |\t<- menubar\n"
+"\t+----------------------------------------------------+\n"
+"\t| aaa  bbb  ccc  ddd  eee  fff\tggg  hhh  iii  jjj   |\t<- toolbar\n"
+"\t| aaa  bbb  ccc  ddd  eee  fff\tggg  hhh  iii  jjj   |\n"
+"\t+----------------------------------------------------+\n"
+"\t| file text\t\t\t\t\t | ^ |\n"
+"\t| ~\t\t\t\t\t\t | # |\n"
+"\t| ~\t\t\t\t\t\t | # |\t<- scrollbar\n"
+"\t| ~\t\t\t\t\t\t | # |\n"
+"\t| ~\t\t\t\t\t\t | # |\n"
+"\t| ~\t\t\t\t\t\t | # |\n"
+"\t|\t\t\t\t\t\t | V |\n"
+"\t+----------------------------------------------------+"
+msgstr ""
+
+#: usr_09.txt:53
+msgid ""
+"The largest space is occupied by the file text.  This shows the file in the\n"
+"same way as in a terminal.  With some different colors and another font\n"
+"perhaps."
+msgstr ""
+
+#: usr_09.txt:58
+msgid "THE WINDOW TITLE"
+msgstr ""
+
+#: usr_09.txt:60
+msgid ""
+"At the very top is the window title.  This is drawn by your window system.\n"
+"Vim will set the title to show the name of the current file.  First comes "
+"the\n"
+"name of the file.  Then some special characters and the directory of the "
+"file\n"
+"in parens.  These special character can be present:"
+msgstr ""
+
+#: usr_09.txt:65
+msgid ""
+"\t-\tThe file cannot be modified (e.g., a help file)\n"
+"\t+\tThe file contains changes\n"
+"\t=\tThe file is read-only\n"
+"\t=+\tThe file is read-only, contains changes anyway"
+msgstr ""
+
+#: usr_09.txt:70
+msgid "If nothing is shown you have an ordinary, unchanged file."
+msgstr ""
+
+#: usr_09.txt:73
+msgid "THE MENUBAR"
+msgstr ""
+
+#: usr_09.txt:75
+msgid ""
+"You know how menus work, right?  Vim has the usual items, plus a few more.\n"
+"Browse them to get an idea of what you can use them for.  A relevant submenu\n"
+"is Edit/Global Settings.  You will find these entries:"
+msgstr ""
+
+#: usr_09.txt:79
+msgid ""
+"\tToggle Toolbar\t\tmake the toolbar appear/disappear\n"
+"\tToggle Bottom Scrollbar\tmake a scrollbar appear/disappear at the bottom\n"
+"\tToggle Left Scrollbar\tmake a scrollbar appear/disappear at the left\n"
+"\tToggle Right Scrollbar\tmake a scrollbar appear/disappear at the right"
+msgstr ""
+
+#: usr_09.txt:84
+msgid ""
+"On most systems you can tear-off the menus.  Select the top item of the "
+"menu,\n"
+"the one that looks like a dashed line.  You will get a separate window with\n"
+"the items of the menu.  It will hang around until you close the window."
+msgstr ""
+
+#: usr_09.txt:89
+msgid "THE TOOLBAR"
+msgstr ""
+
+#: usr_09.txt:91
+msgid ""
+"This contains icons for the most often used actions.  Hopefully the icons "
+"are\n"
+"self-explanatory.  There are tooltips to get an extra hint (move the mouse\n"
+"pointer to the icon without clicking and don't move it for a second)."
+msgstr ""
+
+#: usr_09.txt:95
+msgid ""
+"The \"Edit/Global Settings/Toggle Toolbar\" menu item can be used to make the\n"
+"toolbar disappear.  If you never want a toolbar, use this command in your\n"
+"vimrc file: >"
+msgstr ""
+
+#: usr_09.txt:99
+msgid "\t:set guioptions-=T"
+msgstr ""
+
+#: usr_09.txt:101
+msgid ""
+"This removes the 'T' flag from the 'guioptions' option.  Other parts of the\n"
+"GUI can also be enabled or disabled with this option.  See the help for it."
+msgstr ""
+
+#: usr_09.txt:105
+msgid "THE SCROLLBARS"
+msgstr ""
+
+#: usr_09.txt:107
+msgid ""
+"By default there is one scrollbar on the right.  It does the obvious thing.\n"
+"When you split the window, each window will get its own scrollbar.\n"
+"   You can make a horizontal scrollbar appear with the menu item\n"
+"Edit/Global Settings/Toggle Bottom Scrollbar.  This is useful in diff mode, "
+"or\n"
+"when the 'wrap' option has been reset (more about that later)."
+msgstr ""
+
+#: usr_09.txt:113
+msgid ""
+"When there are vertically split windows, only the windows on the right side\n"
+"will have a scrollbar.  However, when you move the cursor to a window on the\n"
+"left, it will be this one the that scrollbar controls.  This takes a bit of\n"
+"time to get used to.\n"
+"   When you work with vertically split windows, consider adding a scrollbar "
+"on\n"
+"the left.  This can be done with a menu item, or with the 'guioptions' "
+"option:\n"
+">\n"
+"\t:set guioptions+=l"
+msgstr ""
+
+#: usr_09.txt:122
+msgid "This adds the 'l' flag to 'guioptions'."
+msgstr ""
+
+#: usr_09.txt:124
+msgid ""
+"============================================================================"
+"==\n"
+"*09.2*\tUsing the mouse"
+msgstr ""
+
+#: usr_09.txt:127
+msgid ""
+"Standards are wonderful.  In Microsoft Windows, you can use the mouse to\n"
+"select text in a standard manner.  The X Window system also has a standard\n"
+"system for using the mouse.  Unfortunately, these two standards are not the\n"
+"same.\n"
+"   Fortunately, you can customize Vim.  You can make the behavior of the "
+"mouse\n"
+"work like an X Window system mouse or a Microsoft Windows mouse.  The "
+"following\n"
+"command makes the mouse behave like an X Window mouse: >"
+msgstr ""
+
+#: usr_09.txt:135
+msgid "\t:behave xterm"
+msgstr ""
+
+#: usr_09.txt:137
+msgid ""
+"The following command makes the mouse work like a Microsoft Windows mouse: >"
+msgstr ""
+
+#: usr_09.txt:139
+msgid "\t:behave mswin"
+msgstr ""
+
+#: usr_09.txt:141
+msgid ""
+"The default behavior of the mouse on UNIX systems is xterm.  The default\n"
+"behavior on a Microsoft Windows system is selected during the installation\n"
+"process.  For details about what the two behaviors are, see |:behave|.  Here\n"
+"follows a summary."
+msgstr ""
+
+#: usr_09.txt:147
+msgid "XTERM MOUSE BEHAVIOR"
+msgstr ""
+
+#: usr_09.txt:149
+msgid ""
+"Left mouse click\t\tposition the cursor\n"
+"Left mouse drag\t\t\tselect text in Visual mode\n"
+"Middle mouse click\t\tpaste text from the clipboard\n"
+"Right mouse click\t\textend the selected text until the mouse\n"
+"\t\t\t\tpointer"
+msgstr ""
+
+#: usr_09.txt:156
+msgid "MSWIN MOUSE BEHAVIOR"
+msgstr ""
+
+#: usr_09.txt:158
+msgid ""
+"Left mouse click\t\tposition the cursor\n"
+"Left mouse drag\t\t\tselect text in Select mode (see |09.4|)\n"
+"Left mouse click, with Shift\textend the selected text until the mouse\n"
+"\t\t\t\tpointer\n"
+"Middle mouse click\t\tpaste text from the clipboard\n"
+"Right mouse click\t\tdisplay a pop-up menu"
+msgstr ""
+
+#: usr_09.txt:166
+msgid ""
+"The mouse can be further tuned.  Check out these options if you want to "
+"change\n"
+"the way how the mouse works:"
+msgstr ""
+
+#: usr_09.txt:169
+msgid ""
+"\t'mouse'\t\t\tin which mode the mouse is used by Vim\n"
+"\t'mousemodel'\t\twhat effect a mouse click has\n"
+"\t'mousetime'\t\ttime between clicks for a double-click\n"
+"\t'mousehide'\t\thide the mouse while typing\n"
+"\t'selectmode'\t\twhether the mouse starts Visual or Select mode"
+msgstr ""
+
+#: usr_09.txt:175
+msgid ""
+"============================================================================"
+"==\n"
+"*09.3*\tThe clipboard"
+msgstr ""
+
+#: usr_09.txt:178
+msgid ""
+"In section |04.7| the basic use of the clipboard was explained.  There is "
+"one\n"
+"essential thing to explain about X-windows: There are actually two places to\n"
+"exchange text between programs.  MS-Windows doesn't have this."
+msgstr ""
+
+#: usr_09.txt:182
+msgid ""
+"In X-Windows there is the \"current selection\".  This is the text that is\n"
+"currently highlighted.  In Vim this is the Visual area (this assumes you are\n"
+"using the default option settings).  You can paste this selection in another\n"
+"application without any further action.\n"
+"   For example, in this text select a few words with the mouse.  Vim will\n"
+"switch to Visual mode and highlight the text.  Now start another gVim, "
+"without\n"
+"a file name argument, so that it displays an empty window.  Click the middle\n"
+"mouse button.  The selected text will be inserted."
+msgstr ""
+
+#: usr_09.txt:191
+msgid ""
+"The \"current selection\" will only remain valid until some other text is\n"
+"selected.  After doing the paste in the other gVim, now select some "
+"characters\n"
+"in that window.  You will notice that the words that were previously "
+"selected\n"
+"in the other gVim window are displayed differently.  This means that it no\n"
+"longer is the current selection."
+msgstr ""
+
+#: usr_09.txt:197
+msgid ""
+"You don't need to select text with the mouse, using the keyboard commands "
+"for\n"
+"Visual mode works just as well."
+msgstr ""
+
+#: usr_09.txt:201
+msgid "THE REAL CLIPBOARD"
+msgstr ""
+
+#: usr_09.txt:203
+msgid ""
+"Now for the other place with which text can be exchanged.  We call this the\n"
+"\"real clipboard\", to avoid confusion.  Often both the \"current selection\" "
+"and\n"
+"the \"real clipboard\" are called clipboard, you'll have to get used to that.\n"
+"   To put text on the real clipboard, select a few different words in one of\n"
+"the gVims you have running.  Then use the Edit/Copy menu entry.  Now the "
+"text\n"
+"has been copied to the real clipboard.  You can't see this, unless you have\n"
+"some application that shows the clipboard contents (e.g., KDE's klipper).\n"
+"   Now select the other gVim, position the cursor somewhere and use the\n"
+"Edit/Paste menu.  You will see the text from the real clipboard is inserted."
+msgstr ""
+
+#: usr_09.txt:214
+msgid "USING BOTH"
+msgstr ""
+
+#: usr_09.txt:216
+msgid ""
+"This use of both the \"current selection\" and the \"real clipboard\" might "
+"sound\n"
+"a bit confusing.  But it is very useful.  Let's show this with an example.\n"
+"Use one gVim with a text file and perform these actions:"
+msgstr ""
+
+#: usr_09.txt:220
+msgid ""
+"-  Select two words in Visual mode.\n"
+"-  Use the Edit/Copy menu to get these words onto the clipboard.\n"
+"-  Select one other word in Visual mode.\n"
+"-  Use the Edit/Paste menu item.  What will happen is that the single "
+"selected\n"
+"   word is replaced with the two words from the clipboard.\n"
+"-  Move the mouse pointer somewhere else and click the middle button.  You\n"
+"   will see that the word you just overwrote with the clipboard is inserted\n"
+"   here."
+msgstr ""
+
+#: usr_09.txt:229
+msgid ""
+"If you use the \"current selection\" and the \"real clipboard\" with care, you "
+"can\n"
+"do a lot of useful editing with them."
+msgstr ""
+
+#: usr_09.txt:233
+msgid "USING THE KEYBOARD"
+msgstr ""
+
+#: usr_09.txt:235
+msgid ""
+"If you don't like using the mouse, you can access the current selection and\n"
+"the real clipboard with two registers.  The \"* register is for the current\n"
+"selection.\n"
+"   To make text become the current selection, use Visual mode.  For example,\n"
+"to select a whole line just press \"V\".\n"
+"   To insert the current selection before the cursor: >"
+msgstr ""
+
+#: usr_09.txt:242
+msgid "\t\"*P"
+msgstr ""
+
+#: usr_09.txt:244
+msgid ""
+"Notice the uppercase \"P\".  The lowercase \"p\" puts the text after the cursor."
+msgstr ""
+
+#: usr_09.txt:246
+msgid ""
+"The \"+ register is used for the real clipboard.  For example, to copy the "
+"text\n"
+"from the cursor position until the end of the line to the clipboard: >"
+msgstr ""
+
+#: usr_09.txt:249
+msgid "\t\"+y$"
+msgstr ""
+
+#: usr_09.txt:251
+msgid ""
+"Remember, \"y\" is yank, which is Vim's copy command.\n"
+"   To insert the contents of the real clipboard before the cursor: >"
+msgstr ""
+
+#: usr_09.txt:254
+msgid "\t\"+P"
+msgstr ""
+
+#: usr_09.txt:256
+msgid ""
+"It's the same as for the current selection, but uses the plus (+) register\n"
+"instead of the star (*) register."
+msgstr ""
+
+#: usr_09.txt:259
+msgid ""
+"============================================================================"
+"==\n"
+"*09.4*\tSelect mode"
+msgstr ""
+
+#: usr_09.txt:262
+msgid ""
+"And now something that is used more often on MS-Windows than on X-Windows.\n"
+"But both can do it.  You already know about Visual mode.  Select mode is "
+"like\n"
+"Visual mode, because it is also used to select text.  But there is an "
+"obvious\n"
+"difference: When typing text, the selected text is deleted and the typed "
+"text\n"
+"replaces it."
+msgstr ""
+
+#: usr_09.txt:268
+msgid ""
+"To start working with Select mode, you must first enable it (for MS-Windows\n"
+"it is probably already enabled, but you can do this anyway): >"
+msgstr ""
+
+#: usr_09.txt:271
+msgid "\t:set selectmode+=mouse"
+msgstr ""
+
+#: usr_09.txt:273
+msgid ""
+"Now use the mouse to select some text.  It is highlighted like in Visual "
+"mode.\n"
+"Now press a letter.  The selected text is deleted, and the single letter\n"
+"replaces it.  You are in Insert mode now, thus you can continue typing."
+msgstr ""
+
+#: usr_09.txt:277
+msgid ""
+"Since typing normal text causes the selected text to be deleted, you can not\n"
+"use the normal movement commands \"hjkl\", \"w\", etc.  Instead, use the shifted\n"
+"function keys.  <S-Left> (shifted cursor left key) moves the cursor left.  "
+"The\n"
+"selected text is changed like in Visual mode.  The other shifted cursor keys\n"
+"do what you expect.  <S-End> and <S-Home> also work."
+msgstr ""
+
+#: usr_09.txt:283
+msgid "You can tune the way Select mode works with the 'selectmode' option."
+msgstr ""
+
+#: usr_09.txt:285
+msgid ""
+"============================================================================"
+"=="
+msgstr ""
+
+#: usr_09.txt:287
+msgid "Next chapter: |usr_10.txt|  Making big changes"
+msgstr ""
+
+#: usr_09.txt:289
+msgid "Copyright: see |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
+msgstr ""

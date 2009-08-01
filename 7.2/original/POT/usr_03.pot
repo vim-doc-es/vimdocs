@@ -1,0 +1,1166 @@
+#. extracted from usr_03.txt
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-01 19:53+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.3.0\n"
+
+#: usr_03.txt:1
+msgid "*usr_03.txt*\tFor Vim version 7.2.  Last change: 2006 Jun 21"
+msgstr ""
+
+#: usr_03.txt:3
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar"
+msgstr ""
+
+#: usr_03.txt:5
+msgid "\t\t\t     Moving around"
+msgstr ""
+
+#: usr_03.txt:8
+msgid ""
+"Before you can insert or delete text the cursor has to be moved to the right\n"
+"place.  Vim has a large number of commands to position the cursor.  This\n"
+"chapter shows you how to use the most important ones.  You can find a list "
+"of\n"
+"these commands below |Q_lr|."
+msgstr ""
+
+#: usr_03.txt:13
+msgid ""
+"|03.1|\tWord movement\n"
+"|03.2|\tMoving to the start or end of a line\n"
+"|03.3|\tMoving to a character\n"
+"|03.4|\tMatching a parenthesis\n"
+"|03.5|\tMoving to a specific line\n"
+"|03.6|\tTelling where you are\n"
+"|03.7|\tScrolling around\n"
+"|03.8|\tSimple searches\n"
+"|03.9|\tSimple search patterns\n"
+"|03.10|\tUsing marks"
+msgstr ""
+
+#: usr_03.txt:24
+msgid ""
+"     Next chapter: |usr_04.txt|  Making small changes\n"
+" Previous chapter: |usr_02.txt|  The first steps in Vim\n"
+"Table of contents: |usr_toc.txt|"
+msgstr ""
+
+#: usr_03.txt:28
+msgid ""
+"============================================================================"
+"==\n"
+"*03.1*\tWord movement"
+msgstr ""
+
+#: usr_03.txt:31
+msgid ""
+"To move the cursor forward one word, use the \"w\" command.  Like most Vim\n"
+"commands, you can use a numeric prefix to move past multiple words.  For\n"
+"example, \"3w\" moves three words.  This figure shows how it works:"
+msgstr ""
+
+#: usr_03.txt:35
+msgid ""
+"\tThis is a line with example text ~\n"
+"\t  --->-->->----------------->\n"
+"\t   w  w  w    3w"
+msgstr ""
+
+#: usr_03.txt:39
+msgid ""
+"Notice that \"w\" moves to the start of the next word if it already is at the\n"
+"start of a word.\n"
+"   The \"b\" command moves backward to the start of the previous word:"
+msgstr ""
+
+#: usr_03.txt:43
+msgid ""
+"\tThis is a line with example text ~\n"
+"\t<----<--<-<---------<---\n"
+"\t   b   b b    2b      b"
+msgstr ""
+
+#: usr_03.txt:47
+msgid ""
+"There is also the \"e\" command that moves to the next end of a word and \"ge\",\n"
+"which moves to the previous end of a word:"
+msgstr ""
+
+#: usr_03.txt:50
+msgid ""
+"\tThis is a line with example text ~\n"
+"\t   <-   <--- ----->   ---->\n"
+"\t   ge    ge     e       e"
+msgstr ""
+
+#: usr_03.txt:54
+msgid ""
+"If you are at the last word of a line, the \"w\" command will take you to the\n"
+"first word in the next line.  Thus you can use this to move through a\n"
+"paragraph, much faster than using \"l\".  \"b\" does the same in the other\n"
+"direction."
+msgstr ""
+
+#: usr_03.txt:59
+msgid ""
+"A word ends at a non-word character, such as a \".\", \"-\" or \")\".  To change\n"
+"what Vim considers to be a word, see the 'iskeyword' option.\n"
+"   It is also possible to move by white-space separated WORDs.  This is not "
+"a\n"
+"word in the normal sense, that's why the uppercase is used.  The commands "
+"for\n"
+"moving by WORDs are also uppercase, as this figure shows:"
+msgstr ""
+
+#: usr_03.txt:65
+msgid ""
+"\t       ge      b\t  w\t\t\t\te\n"
+"\t       <-     <-\t --->\t\t\t       --->\n"
+"\tThis is-a line, with special/separated/words (and some more). ~\n"
+"\t   <----- <-----\t -------------------->\t       ----->\n"
+"\t     gE      B\t\t\t W\t\t\t E"
+msgstr ""
+
+#: usr_03.txt:71
+msgid ""
+"With this mix of lowercase and uppercase commands, you can quickly move\n"
+"forward and backward through a paragraph."
+msgstr ""
+
+#: usr_03.txt:74
+msgid ""
+"============================================================================"
+"==\n"
+"*03.2*\tMoving to the start or end of a line"
+msgstr ""
+
+#: usr_03.txt:77
+msgid ""
+"The \"$\" command moves the cursor to the end of a line.  If your keyboard has\n"
+"an <End> key it will do the same thing."
+msgstr ""
+
+#: usr_03.txt:80
+msgid ""
+"The \"^\" command moves to the first non-blank character of the line.  The \"0\"\n"
+"command (zero) moves to the very first character of the line.  The <Home> "
+"key\n"
+"does the same thing.  In a picture:"
+msgstr ""
+
+#: usr_03.txt:84
+msgid ""
+"\t\t  ^\n"
+"\t     <------------\n"
+"\t.....This is a line with example text ~\n"
+"\t<-----------------   --------------->\n"
+"\t\t0\t\t   $"
+msgstr ""
+
+#: usr_03.txt:90
+msgid "(the \".....\" indicates blanks here)"
+msgstr ""
+
+#: usr_03.txt:92
+msgid ""
+"   The \"$\" command takes a count, like most movement commands.  But moving "
+"to\n"
+"the end of the line several times doesn't make sense.  Therefore it causes "
+"the\n"
+"editor to move to the end of another line.  For example, \"1$\" moves you to\n"
+"the end of the first line (the one you're on), \"2$\" to the end of the next\n"
+"line, and so on.\n"
+"   The \"0\" command doesn't take a count argument, because the \"0\" would be\n"
+"part of the count.  Unexpectedly, using a count with \"^\" doesn't have any\n"
+"effect."
+msgstr ""
+
+#: usr_03.txt:101
+msgid ""
+"============================================================================"
+"==\n"
+"*03.3*\tMoving to a character"
+msgstr ""
+
+#: usr_03.txt:104
+msgid ""
+"One of the most useful movement commands is the single-character search\n"
+"command.  The command \"fx\" searches forward in the line for the single\n"
+"character x.  Hint: \"f\" stands for \"Find\".\n"
+"   For example, you are at the beginning of the following line.  Suppose you\n"
+"want to go to the h of human.  Just execute the command \"fh\" and the cursor\n"
+"will be positioned over the h:"
+msgstr ""
+
+#: usr_03.txt:111
+msgid ""
+"\tTo err is human.  To really foul up you need a computer. ~\n"
+"\t---------->--------------->\n"
+"\t    fh\t\t fy"
+msgstr ""
+
+#: usr_03.txt:115
+msgid ""
+"This also shows that the command \"fy\" moves to the end of the word really.\n"
+"   You can specify a count; therefore, you can go to the \"l\" of \"foul\" with\n"
+"\"3fl\":"
+msgstr ""
+
+#: usr_03.txt:119
+msgid ""
+"\tTo err is human.  To really foul up you need a computer. ~\n"
+"\t\t  --------------------->\n"
+"\t\t\t   3fl"
+msgstr ""
+
+#: usr_03.txt:123
+msgid "The \"F\" command searches to the left:"
+msgstr ""
+
+#: usr_03.txt:125
+msgid ""
+"\tTo err is human.  To really foul up you need a computer. ~\n"
+"\t\t  <---------------------\n"
+"\t\t\t    Fh"
+msgstr ""
+
+#: usr_03.txt:129
+msgid ""
+"The \"tx\" command works like the \"fx\" command, except it stops one character\n"
+"before the searched character.  Hint: \"t\" stands for \"To\".  The backward\n"
+"version of this command is \"Tx\"."
+msgstr ""
+
+#: usr_03.txt:133
+msgid ""
+"\tTo err is human.  To really foul up you need a computer. ~\n"
+"\t\t   <------------  ------------->\n"
+"\t\t\tTh\t\ttn"
+msgstr ""
+
+#: usr_03.txt:137
+msgid ""
+"These four commands can be repeated with \";\".  \",\" repeats in the other\n"
+"direction.  The cursor is never moved to another line.  Not even when the\n"
+"sentence continues."
+msgstr ""
+
+#: usr_03.txt:141
+msgid ""
+"Sometimes you will start a search, only to realize that you have typed the\n"
+"wrong command.  You type \"f\" to search backward, for example, only to "
+"realize\n"
+"that you really meant \"F\".  To abort a search, press <Esc>.  So \"f<Esc>\" is "
+"an\n"
+"aborted forward search and doesn't do anything.  Note: <Esc> cancels most\n"
+"operations, not just searches."
+msgstr ""
+
+#: usr_03.txt:147
+msgid ""
+"============================================================================"
+"==\n"
+"*03.4*\tMatching a parenthesis"
+msgstr ""
+
+#: usr_03.txt:150
+msgid ""
+"When writing a program you often end up with nested () constructs.  Then the\n"
+"\"%\" command is very handy: It moves to the matching paren.  If the cursor is\n"
+"on a \"(\" it will move to the matching \")\".  If it's on a \")\" it will move to\n"
+"the matching \"(\"."
+msgstr ""
+
+#: usr_03.txt:155
+msgid ""
+"\t\t\t    %\n"
+"\t\t\t <----->\n"
+"\t\tif (a == (b * c) / d) ~\n"
+"\t\t   <---------------->\n"
+"\t\t\t    %"
+msgstr ""
+
+#: usr_03.txt:161
+msgid ""
+"This also works for [] and {} pairs.  (This can be defined with the\n"
+"'matchpairs' option.)"
+msgstr ""
+
+#: usr_03.txt:164
+msgid ""
+"When the cursor is not on a useful character, \"%\" will search forward to "
+"find\n"
+"one.  Thus if the cursor is at the start of the line of the previous "
+"example,\n"
+"\"%\" will search forward and find the first \"(\".  Then it moves to its match:"
+msgstr ""
+
+#: usr_03.txt:168
+msgid ""
+"\t\tif (a == (b * c) / d) ~\n"
+"\t\t---+---------------->\n"
+"\t\t\t   %"
+msgstr ""
+
+#: usr_03.txt:172
+msgid ""
+"============================================================================"
+"==\n"
+"*03.5*\tMoving to a specific line"
+msgstr ""
+
+#: usr_03.txt:175
+msgid ""
+"If you are a C or C++ programmer, you are familiar with error messages such "
+"as\n"
+"the following:"
+msgstr ""
+
+#: usr_03.txt:178
+msgid "\tprog.c:33: j   undeclared (first use in this function) ~"
+msgstr ""
+
+#: usr_03.txt:180
+msgid ""
+"This tells you that you might want to fix something on line 33.  So how do "
+"you\n"
+"find line 33?  One way is to do \"9999k\" to go to the top of the file and "
+"\"32j\"\n"
+"to go down thirty two lines.  It is not a good way, but it works.  A much\n"
+"better way of doing things is to use the \"G\" command.  With a count, this\n"
+"command positions you at the given line number.  For example, \"33G\" puts you\n"
+"on line 33.  (For a better way of going through a compiler's error list, see\n"
+"|usr_30.txt|, for information on the :make command.)\n"
+"   With no argument, \"G\" positions you at the end of the file.  A quick way "
+"to\n"
+"go to the start of a file use \"gg\".  \"1G\" will do the same, but is a tiny "
+"bit\n"
+"more typing."
+msgstr ""
+
+#: usr_03.txt:191
+msgid ""
+"\t    |\tfirst line of a file   ^\n"
+"\t    |\ttext text text text    |\n"
+"\t    |\ttext text text text    |  gg\n"
+"\t7G  |\ttext text text text    |\n"
+"\t    |\ttext text text text\n"
+"\t    |\ttext text text text\n"
+"\t    V\ttext text text text    |\n"
+"\t\ttext text text text    |  G\n"
+"\t\ttext text text text    |\n"
+"\t\tlast line of a file    V"
+msgstr ""
+
+#: usr_03.txt:202
+msgid ""
+"Another way to move to a line is using the \"%\" command with a count.  For\n"
+"example \"50%\" moves you to halfway the file.  \"90%\" goes to near the end."
+msgstr ""
+
+#: usr_03.txt:205
+msgid ""
+"The previous assumes that you want to move to a line in the file, no matter "
+"if\n"
+"it's currently visible or not.  What if you want to move to one of the lines\n"
+"you can see?  This figure shows the three commands you can use:"
+msgstr ""
+
+#: usr_03.txt:209
+msgid ""
+"\t\t\t+---------------------------+\n"
+"\t\tH -->\t| text sample text\t    |\n"
+"\t\t\t| sample text\t\t    |\n"
+"\t\t\t| text sample text\t    |\n"
+"\t\t\t| sample text\t\t    |\n"
+"\t\tM -->\t| text sample text\t    |\n"
+"\t\t\t| sample text\t\t    |\n"
+"\t\t\t| text sample text\t    |\n"
+"\t\t\t| sample text\t\t    |\n"
+"\t\tL -->\t| text sample text\t    |\n"
+"\t\t\t+---------------------------+"
+msgstr ""
+
+#: usr_03.txt:221
+msgid "Hints: \"H\" stands for Home, \"M\" for Middle and \"L\" for Last."
+msgstr ""
+
+#: usr_03.txt:223
+msgid ""
+"============================================================================"
+"==\n"
+"*03.6*\tTelling where you are"
+msgstr ""
+
+#: usr_03.txt:226
+msgid "To see where you are in a file, there are three ways:"
+msgstr ""
+
+#: usr_03.txt:228
+msgid ""
+"1.  Use the CTRL-G command.  You get a message like this (assuming the "
+"'ruler'\n"
+"    option is off):"
+msgstr ""
+
+#: usr_03.txt:231
+msgid "\t\"usr_03.txt\" line 233 of 650 --35%-- col 45-52 ~"
+msgstr ""
+
+#: usr_03.txt:233
+msgid ""
+"    This shows the name of the file you are editing, the line number where "
+"the\n"
+"    cursor is, the total number of lines, the percentage of the way through\n"
+"    the file and the column of the cursor.\n"
+"       Sometimes you will see a split column number.  For example, \"col "
+"2-9\".\n"
+"    This indicates that the cursor is positioned on the second character, "
+"but\n"
+"    because character one is a tab, occupying eight spaces worth of columns,\n"
+"    the screen column is 9."
+msgstr ""
+
+#: usr_03.txt:241
+msgid ""
+"2.  Set the 'number' option.  This will display a line number in front of\n"
+"    every line: >"
+msgstr ""
+
+#: usr_03.txt:244
+msgid ""
+"\t:set number\n"
+"<\n"
+"    To switch this off again: >"
+msgstr ""
+
+#: usr_03.txt:248
+msgid ""
+"\t:set nonumber\n"
+"<\n"
+"    Since 'number' is a boolean option, prepending \"no\" to its name has the\n"
+"    effect of switching it off.  A boolean option has only these two values,\n"
+"    it is either on or off.\n"
+"       Vim has many options.  Besides the boolean ones there are options "
+"with\n"
+"    a numerical value and string options.  You will see examples of this "
+"where\n"
+"    they are used."
+msgstr ""
+
+#: usr_03.txt:257
+msgid ""
+"3.  Set the 'ruler' option.  This will display the cursor position in the\n"
+"    lower right corner of the Vim window: >"
+msgstr ""
+
+#: usr_03.txt:260
+msgid "\t:set ruler"
+msgstr ""
+
+#: usr_03.txt:262
+msgid ""
+"Using the 'ruler' option has the advantage that it doesn't take much room,\n"
+"thus there is more space for your text."
+msgstr ""
+
+#: usr_03.txt:265
+msgid ""
+"============================================================================"
+"==\n"
+"*03.7*\tScrolling around"
+msgstr ""
+
+#: usr_03.txt:268
+msgid ""
+"The CTRL-U command scrolls down half a screen of text.  Think of looking\n"
+"through a viewing window at the text and moving this window up by half the\n"
+"height of the window.  Thus the window moves up over the text, which is\n"
+"backward in the file.  Don't worry if you have a little trouble remembering\n"
+"which end is up.  Most users have the same problem.\n"
+"   The CTRL-D command moves the viewing window down half a screen in the "
+"file,\n"
+"thus scrolls the text up half a screen."
+msgstr ""
+
+#: usr_03.txt:276
+msgid ""
+"\t\t\t\t       +----------------+\n"
+"\t\t\t\t       | some text\t|\n"
+"\t\t\t\t       | some text\t|\n"
+"\t\t\t\t       | some text\t|\n"
+"\t+---------------+\t       | some text\t|\n"
+"\t| some text\t|  CTRL-U  --> |\t\t|\n"
+"\t|\t\t|\t       | 123456\t\t|\n"
+"\t| 123456\t|\t       +----------------+\n"
+"\t| 7890\t\t|\n"
+"\t|\t\t|\t       +----------------+\n"
+"\t| example\t|  CTRL-D -->  | 7890\t\t|\n"
+"\t+---------------+\t       |\t\t|\n"
+"\t\t\t\t       | example\t|\n"
+"\t\t\t\t       | example\t|\n"
+"\t\t\t\t       | example\t|\n"
+"\t\t\t\t       | example\t|\n"
+"\t\t\t\t       +----------------+"
+msgstr ""
+
+#: usr_03.txt:294
+msgid ""
+"To scroll one line at a time use CTRL-E (scroll up) and CTRL-Y (scroll "
+"down).\n"
+"Think of CTRL-E to give you one line Extra.  (If you use MS-Windows "
+"compatible\n"
+"key mappings CTRL-Y will redo a change instead of scroll.)"
+msgstr ""
+
+#: usr_03.txt:298
+msgid ""
+"To scroll forward by a whole screen (except for two lines) use CTRL-F.  The\n"
+"other way is backward, CTRL-B is the command to use.  Fortunately CTRL-F is\n"
+"Forward and CTRL-B is Backward, that's easy to remember."
+msgstr ""
+
+#: usr_03.txt:302
+msgid ""
+"A common issue is that after moving down many lines with \"j\" your cursor is "
+"at\n"
+"the bottom of the screen.  You would like to see the context of the line "
+"with\n"
+"the cursor.  That's done with the \"zz\" command."
+msgstr ""
+
+#: usr_03.txt:306
+msgid ""
+"\t+------------------+\t\t +------------------+\n"
+"\t| some text\t   |\t\t | some text\t    |\n"
+"\t| some text\t   |\t\t | some text\t    |\n"
+"\t| some text\t   |\t\t | some text\t    |\n"
+"\t| some text\t   |   zz  -->\t | line with cursor |\n"
+"\t| some text\t   |\t\t | some text\t    |\n"
+"\t| some text\t   |\t\t | some text\t    |\n"
+"\t| line with cursor |\t\t | some text\t    |\n"
+"\t+------------------+\t\t +------------------+"
+msgstr ""
+
+#: usr_03.txt:316
+msgid ""
+"The \"zt\" command puts the cursor line at the top, \"zb\" at the bottom.  There\n"
+"are a few more scrolling commands, see |Q_sc|.  To always keep a few lines "
+"of\n"
+"context around the cursor, use the 'scrolloff' option."
+msgstr ""
+
+#: usr_03.txt:320
+msgid ""
+"============================================================================"
+"==\n"
+"*03.8*\tSimple searches"
+msgstr ""
+
+#: usr_03.txt:323
+msgid ""
+"To search for a string, use the \"/string\" command.  To find the word "
+"include,\n"
+"for example, use the command: >"
+msgstr ""
+
+#: usr_03.txt:326
+msgid "\t/include"
+msgstr ""
+
+#: usr_03.txt:328
+msgid ""
+"You will notice that when you type the \"/\" the cursor jumps to the last line\n"
+"of the Vim window, like with colon commands.  That is where you type the "
+"word.\n"
+"You can press the backspace key (backarrow or <BS>) to make corrections.  "
+"Use\n"
+"the <Left> and <Right> cursor keys when necessary.\n"
+"   Pressing <Enter> executes the command."
+msgstr ""
+
+#: usr_03.txt:334
+msgid ""
+"\tNote:\n"
+"\tThe characters .*[]^%/\\?~$ have special meanings.  If you want to use\n"
+"\tthem in a search you must put a \\ in front of them.  See below."
+msgstr ""
+
+#: usr_03.txt:338
+msgid ""
+"To find the next occurrence of the same string use the \"n\" command.  Use "
+"this\n"
+"to find the first #include after the cursor: >"
+msgstr ""
+
+#: usr_03.txt:341
+msgid "\t/#include"
+msgstr ""
+
+#: usr_03.txt:343
+msgid ""
+"And then type \"n\" several times.  You will move to each #include in the "
+"text.\n"
+"You can also use a count if you know which match you want.  Thus \"3n\" finds\n"
+"the third match.  Using a count with \"/\" doesn't work."
+msgstr ""
+
+#: usr_03.txt:347
+msgid "The \"?\" command works like \"/\" but searches backwards: >"
+msgstr ""
+
+#: usr_03.txt:349
+msgid "\t?word"
+msgstr ""
+
+#: usr_03.txt:351
+msgid ""
+"The \"N\" command repeats the last search the opposite direction.  Thus using\n"
+"\"N\" after a \"/\" command search backwards, using \"N\" after \"?\" searches\n"
+"forward."
+msgstr ""
+
+#: usr_03.txt:356
+msgid "IGNORING CASE"
+msgstr ""
+
+#: usr_03.txt:358
+msgid ""
+"Normally you have to type exactly what you want to find.  If you don't care\n"
+"about upper or lowercase in a word, set the 'ignorecase' option: >"
+msgstr ""
+
+#: usr_03.txt:361
+msgid "\t:set ignorecase"
+msgstr ""
+
+#: usr_03.txt:363
+msgid ""
+"If you now search for \"word\", it will also match \"Word\" and \"WORD\".  To "
+"match\n"
+"case again: >"
+msgstr ""
+
+#: usr_03.txt:366
+msgid "\t:set noignorecase"
+msgstr ""
+
+#: usr_03.txt:369
+msgid "HISTORY"
+msgstr ""
+
+#: usr_03.txt:371
+msgid "Suppose you do three searches: >"
+msgstr ""
+
+#: usr_03.txt:373
+msgid ""
+"\t/one\n"
+"\t/two\n"
+"\t/three"
+msgstr ""
+
+#: usr_03.txt:377
+msgid ""
+"Now let's start searching by typing a simple \"/\" without pressing <Enter>.  "
+"If\n"
+"you press <Up> (the cursor key), Vim puts \"/three\" on the command line.\n"
+"Pressing <Enter> at this point searches for three.  If you do not press\n"
+"<Enter>, but press <Up> instead, Vim changes the prompt to \"/two\".  Another\n"
+"press of <Up> moves you to \"/one\".\n"
+"   You can also use the <Down> cursor key to move through the history of\n"
+"search commands in the other direction."
+msgstr ""
+
+#: usr_03.txt:385
+msgid ""
+"If you know what a previously used pattern starts with, and you want to use "
+"it\n"
+"again, type that character before pressing <Up>.  With the previous example,\n"
+"you can type \"/o<Up>\" and Vim will put \"/one\" on the command line."
+msgstr ""
+
+#: usr_03.txt:389
+msgid ""
+"The commands starting with \":\" also have a history.  That allows you to "
+"recall\n"
+"a previous command and execute it again.  These two histories are separate."
+msgstr ""
+
+#: usr_03.txt:393
+msgid "SEARCHING FOR A WORD IN THE TEXT"
+msgstr ""
+
+#: usr_03.txt:395
+msgid ""
+"Suppose you see the word \"TheLongFunctionName\" in the text and you want to\n"
+"find the next occurrence of it.  You could type \"/TheLongFunctionName\", but\n"
+"that's a lot of typing.  And when you make a mistake Vim won't find it.\n"
+"   There is an easier way: Position the cursor on the word and use the \"*\"\n"
+"command.  Vim will grab the word under the cursor and use it as the search\n"
+"string.\n"
+"   The \"#\" command does the same in the other direction.  You can prepend a\n"
+"count: \"3*\" searches for the third occurrence of the word under the cursor."
+msgstr ""
+
+#: usr_03.txt:405
+msgid "SEARCHING FOR WHOLE WORDS"
+msgstr ""
+
+#: usr_03.txt:407
+msgid ""
+"If you type \"/the\" it will also match \"there\".  To only find words that end\n"
+"in \"the\" use: >"
+msgstr ""
+
+#: usr_03.txt:410
+msgid "\t/the\\>"
+msgstr ""
+
+#: usr_03.txt:412
+msgid ""
+"The \"\\>\" item is a special marker that only matches at the end of a word.\n"
+"Similarly \"\\<\" only matches at the begin of a word.  Thus to search for the\n"
+"word \"the\" only: >"
+msgstr ""
+
+#: usr_03.txt:416
+msgid "\t/\\<the\\>"
+msgstr ""
+
+#: usr_03.txt:418
+msgid ""
+"This does not match \"there\" or \"soothe\".  Notice that the \"*\" and \"#\" "
+"commands\n"
+"use these start-of-word and end-of-word markers to only find whole words "
+"(you\n"
+"can use \"g*\" and \"g#\" to match partial words)."
+msgstr ""
+
+#: usr_03.txt:423
+msgid "HIGHLIGHTING MATCHES"
+msgstr ""
+
+#: usr_03.txt:425
+msgid ""
+"While editing a program you see a variable called \"nr\".  You want to check\n"
+"where it's used.  You could move the cursor to \"nr\" and use the \"*\" command\n"
+"and press \"n\" to go along all the matches.\n"
+"   There is another way.  Type this command: >"
+msgstr ""
+
+#: usr_03.txt:430
+msgid "\t:set hlsearch"
+msgstr ""
+
+#: usr_03.txt:432
+msgid ""
+"If you now search for \"nr\", Vim will highlight all matches.  That is a very\n"
+"good way to see where the variable is used, without the need to type "
+"commands.\n"
+"   To switch this off: >"
+msgstr ""
+
+#: usr_03.txt:436
+msgid "\t:set nohlsearch"
+msgstr ""
+
+#: usr_03.txt:438
+msgid ""
+"Then you need to switch it on again if you want to use it for the next "
+"search\n"
+"command.  If you only want to remove the highlighting, use this command: >"
+msgstr ""
+
+#: usr_03.txt:441
+msgid "\t:nohlsearch"
+msgstr ""
+
+#: usr_03.txt:443
+msgid ""
+"This doesn't reset the option.  Instead, it disables the highlighting.  As\n"
+"soon as you execute a search command, the highlighting will be used again.\n"
+"Also for the \"n\" and \"N\" commands."
+msgstr ""
+
+#: usr_03.txt:448
+msgid "TUNING SEARCHES"
+msgstr ""
+
+#: usr_03.txt:450
+msgid ""
+"There are a few options that change how searching works.  These are the\n"
+"essential ones:\n"
+">\n"
+"\t:set incsearch"
+msgstr ""
+
+#: usr_03.txt:455
+msgid ""
+"This makes Vim display the match for the string while you are still typing "
+"it.\n"
+"Use this to check if the right match will be found.  Then press <Enter> to\n"
+"really jump to that location.  Or type more to change the search string.\n"
+">\n"
+"\t:set nowrapscan"
+msgstr ""
+
+#: usr_03.txt:461
+msgid ""
+"This stops the search at the end of the file.  Or, when you are searching\n"
+"backwards, at the start of the file.  The 'wrapscan' option is on by "
+"default,\n"
+"thus searching wraps around the end of the file."
+msgstr ""
+
+#: usr_03.txt:466
+msgid "INTERMEZZO"
+msgstr ""
+
+#: usr_03.txt:468
+msgid ""
+"If you like one of the options mentioned before, and set it each time you "
+"use\n"
+"Vim, you can put the command in your Vim startup file.\n"
+"   Edit the file, as mentioned at |not-compatible|.  Or use this command to\n"
+"find out where it is: >"
+msgstr ""
+
+#: usr_03.txt:473
+msgid "\t:scriptnames"
+msgstr ""
+
+#: usr_03.txt:475
+msgid "Edit the file, for example with: >"
+msgstr ""
+
+#: usr_03.txt:477
+msgid "\t:edit ~/.vimrc"
+msgstr ""
+
+#: usr_03.txt:479
+msgid ""
+"Then add a line with the command to set the option, just like you typed it "
+"in\n"
+"Vim.  Example: >"
+msgstr ""
+
+#: usr_03.txt:482
+msgid "\tGo:set hlsearch<Esc>"
+msgstr ""
+
+#: usr_03.txt:484
+msgid ""
+"\"G\" moves to the end of the file.  \"o\" starts a new line, where you type the\n"
+"\":set\" command.  You end insert mode with <Esc>.  Then write the file: >"
+msgstr ""
+
+#: usr_03.txt:487
+msgid "\tZZ"
+msgstr ""
+
+#: usr_03.txt:489
+msgid "If you now start Vim again, the 'hlsearch' option will already be set."
+msgstr ""
+
+#: usr_03.txt:491
+msgid ""
+"============================================================================"
+"==\n"
+"*03.9*\tSimple search patterns"
+msgstr ""
+
+#: usr_03.txt:494
+msgid ""
+"The Vim editor uses regular expressions to specify what to search for.\n"
+"Regular expressions are an extremely powerful and compact way to specify a\n"
+"search pattern.  Unfortunately, this power comes at a price, because regular\n"
+"expressions are a bit tricky to specify.\n"
+"   In this section we mention only a few essential ones.  More about search\n"
+"patterns and commands in chapter 27 |usr_27.txt|.  You can find the full\n"
+"explanation here: |pattern|."
+msgstr ""
+
+#: usr_03.txt:503
+msgid "BEGINNING AND END OF A LINE"
+msgstr ""
+
+#: usr_03.txt:505
+msgid ""
+"The ^ character matches the beginning of a line.  On an English-US keyboard\n"
+"you find it above the 6.  The pattern \"include\" matches the word include\n"
+"anywhere on the line.  But the pattern \"^include\" matches the word include\n"
+"only if it is at the beginning of a line.\n"
+"   The $ character matches the end of a line.  Therefore, \"was$\" matches the\n"
+"word was only if it is at the end of a line."
+msgstr ""
+
+#: usr_03.txt:512
+msgid ""
+"Let's mark the places where \"the\" matches in this example line with \"x\"s:"
+msgstr ""
+
+#: usr_03.txt:514
+msgid ""
+"\tthe solder holding one of the chips melted and the ~\n"
+"\txxx\t\t\t  xxx\t\t       xxx"
+msgstr ""
+
+#: usr_03.txt:517
+msgid "Using \"/the$\" we find this match:"
+msgstr ""
+
+#: usr_03.txt:519
+msgid ""
+"\tthe solder holding one of the chips melted and the ~\n"
+"\t\t\t\t\t\t       xxx"
+msgstr ""
+
+#: usr_03.txt:522
+msgid ""
+"And with \"/^the\" we find this one:\n"
+"\tthe solder holding one of the chips melted and the ~\n"
+"\txxx"
+msgstr ""
+
+#: usr_03.txt:526
+msgid ""
+"You can try searching with \"/^the$\", it will only match a single line\n"
+"consisting of \"the\".  White space does matter here, thus if a line contains "
+"a\n"
+"space after the word, like \"the \", the pattern will not match."
+msgstr ""
+
+#: usr_03.txt:531
+msgid "MATCHING ANY SINGLE CHARACTER"
+msgstr ""
+
+#: usr_03.txt:533
+msgid ""
+"The . (dot) character matches any existing character.  For example, the\n"
+"pattern \"c.m\" matches a string whose first character is a c, whose second\n"
+"character is anything, and whose the third character is m.  Example:"
+msgstr ""
+
+#: usr_03.txt:537
+msgid ""
+"\tWe use a computer that became the cummin winter. ~\n"
+"\t\t xxx\t\t xxx\t  xxx"
+msgstr ""
+
+#: usr_03.txt:541
+msgid "MATCHING SPECIAL CHARACTERS"
+msgstr ""
+
+#: usr_03.txt:543
+msgid ""
+"If you really want to match a dot, you must avoid its special meaning by\n"
+"putting a backslash before it.\n"
+"   If you search for \"ter.\", you will find these matches:"
+msgstr ""
+
+#: usr_03.txt:547
+msgid ""
+"\tWe use a computer that became the cummin winter. ~\n"
+"\t\t      xxxx\t\t\t    xxxx"
+msgstr ""
+
+#: usr_03.txt:550
+msgid "Searching for \"ter\\.\" only finds the second match."
+msgstr ""
+
+#: usr_03.txt:552
+msgid ""
+"============================================================================"
+"==\n"
+"*03.10*\tUsing marks"
+msgstr ""
+
+#: usr_03.txt:555
+msgid ""
+"When you make a jump to a position with the \"G\" command, Vim remembers the\n"
+"position from before this jump.  This position is called a mark.  To go back\n"
+"where you came from, use this command: >"
+msgstr ""
+
+#: usr_03.txt:559
+msgid "\t``"
+msgstr ""
+
+#: usr_03.txt:561
+msgid ""
+"This ` is a backtick or open single-quote character.\n"
+"   If you use the same command a second time you will jump back again.  "
+"That's\n"
+"because the ` command is a jump itself, and the position from before this "
+"jump\n"
+"is remembered."
+msgstr ""
+
+#: usr_03.txt:566
+msgid ""
+"Generally, every time you do a command that can move the cursor further than\n"
+"within the same line, this is called a jump.  This includes the search\n"
+"commands \"/\" and \"n\" (it doesn't matter how far away the match is).  But not\n"
+"the character searches with \"fx\" and \"tx\" or the word movements \"w\" and \"e\".\n"
+"   Also, \"j\" and \"k\" are not considered to be a jump.  Even when you use a\n"
+"count to make them move the cursor quite a long way away."
+msgstr ""
+
+#: usr_03.txt:573
+msgid ""
+"The `` command jumps back and forth, between two points.  The CTRL-O command\n"
+"jumps to older positions (Hint: O for older).  CTRL-I then jumps back to "
+"newer\n"
+"positions (Hint: I is just next to O on the keyboard).  Consider this "
+"sequence\n"
+"of commands: >"
+msgstr ""
+
+#: usr_03.txt:578
+msgid ""
+"\t33G\n"
+"\t/^The\n"
+"\tCTRL-O"
+msgstr ""
+
+#: usr_03.txt:582
+msgid ""
+"You first jump to line 33, then search for a line that starts with \"The\".\n"
+"Then with CTRL-O you jump back to line 33.  Another CTRL-O takes you back to\n"
+"where you started.  If you now use CTRL-I you jump to line 33 again.  And\n"
+"to the match for \"The\" with another CTRL-I."
+msgstr ""
+
+#: usr_03.txt:588
+msgid ""
+"\t     |\texample text   ^\t     |\n"
+"\t33G  |\texample text   |  CTRL-O     | CTRL-I\n"
+"\t     |\texample text   |\t     |\n"
+"\t     V\tline 33 text   ^\t     V\n"
+"\t     |\texample text   |\t     |\n"
+"       /^The |\texample text   |  CTRL-O     | CTRL-I\n"
+"\t     V\tThere you are  |\t     V\n"
+"\t\texample text"
+msgstr ""
+
+#: usr_03.txt:597
+msgid ""
+"\tNote:\n"
+"\tCTRL-I is the same as <Tab>."
+msgstr ""
+
+#: usr_03.txt:600
+msgid ""
+"The \":jumps\" command gives a list of positions you jumped to.  The entry "
+"which\n"
+"you used last is marked with a \">\"."
+msgstr ""
+
+#: usr_03.txt:604
+msgid "NAMED MARKS\t\t\t\t\t\t\t*bookmark*"
+msgstr ""
+
+#: usr_03.txt:606
+msgid ""
+"Vim enables you to place your own marks in the text.  The command \"ma\" marks\n"
+"the place under the cursor as mark a.  You can place 26 marks (a through z) "
+"in\n"
+"your text.  You can't see them, it's just a position that Vim remembers.\n"
+"   To go to a mark, use the command `{mark}, where {mark} is the mark "
+"letter.\n"
+"Thus to move to the a mark:\n"
+">\n"
+"\t`a"
+msgstr ""
+
+#: usr_03.txt:614
+msgid ""
+"The command 'mark (single quotation mark, or apostrophe) moves you to the\n"
+"beginning of the line containing the mark.  This differs from the `mark\n"
+"command, which moves you to marked column."
+msgstr ""
+
+#: usr_03.txt:618
+msgid ""
+"The marks can be very useful when working on two related parts in a file.\n"
+"Suppose you have some text near the start of the file you need to look at,\n"
+"while working on some text near the end of the file.\n"
+"   Move to the text at the start and place the s (start) mark there: >"
+msgstr ""
+
+#: usr_03.txt:623
+msgid "\tms"
+msgstr ""
+
+#: usr_03.txt:625
+msgid ""
+"Then move to the text you want to work on and put the e (end) mark there: >"
+msgstr ""
+
+#: usr_03.txt:627
+msgid "\tme"
+msgstr ""
+
+#: usr_03.txt:629
+msgid ""
+"Now you can move around, and when you want to look at the start of the file,\n"
+"you use this to jump there: >"
+msgstr ""
+
+#: usr_03.txt:632
+msgid "\t's"
+msgstr ""
+
+#: usr_03.txt:634
+msgid ""
+"Then you can use '' to jump back to where you were, or 'e to jump to the "
+"text\n"
+"you were working on at the end.\n"
+"   There is nothing special about using s for start and e for end, they are\n"
+"just easy to remember."
+msgstr ""
+
+#: usr_03.txt:639
+msgid "You can use this command to get a list of marks: >"
+msgstr ""
+
+#: usr_03.txt:641
+msgid "\t:marks"
+msgstr ""
+
+#: usr_03.txt:643
+msgid "You will notice a few special marks.  These include:"
+msgstr ""
+
+#: usr_03.txt:645
+msgid ""
+"\t'\tThe cursor position before doing a jump\n"
+"\t\"\tThe cursor position when last editing the file\n"
+"\t[\tStart of the last change\n"
+"\t]\tEnd of the last change"
+msgstr ""
+
+#: usr_03.txt:650
+msgid ""
+"============================================================================"
+"=="
+msgstr ""
+
+#: usr_03.txt:652
+msgid "Next chapter: |usr_04.txt|  Making small changes"
+msgstr ""
+
+#: usr_03.txt:654
+msgid "Copyright: see |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
+msgstr ""

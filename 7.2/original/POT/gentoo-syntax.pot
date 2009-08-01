@@ -1,0 +1,495 @@
+#. extracted from gentoo-syntax.txt
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-01 19:57+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.3.0\n"
+
+#: gentoo-syntax.txt:1
+msgid "*gentoo-syntax.txt*\tGentoo Syntax Plugin"
+msgstr ""
+
+#: gentoo-syntax.txt:3
+msgid ""
+"Authors:  Ciaran McCreesh <ciaranm at gentoo dot org>\n"
+"          Aaron Walker    <ka0ttic at gentoo dot org>\n"
+"          Tom Martin      <slarti  at gentoo dot org>\n"
+"          Elfyn McBratney <beu     at gentoo dot org>\n"
+"          Mike Kelly      <pioto   at gentoo dot org>"
+msgstr ""
+
+#: gentoo-syntax.txt:9
+msgid ""
+"============================================================================"
+"==\n"
+"1. Contents\t\t\t\t\t\t       *gentoo-syntax*"
+msgstr ""
+
+#: gentoo-syntax.txt:12
+msgid ""
+"    1. Contents                                            |gentoo-syntax|"
+msgstr ""
+
+#: gentoo-syntax.txt:14
+msgid ""
+"    2. Plugin Information                         |gentoo-syntax-overview|\n"
+"\tDetection Specifics                      |gentoo-syntax-detection|\n"
+"\tHighlighting Specifics                |gentoo-syntax-highlighting|\n"
+"\t    Common Syntax Rules                     |gentoo-common-syntax|\n"
+"\t    Ebuild and Eclass Files                 |gentoo-ebuild-syntax|\n"
+"\t    GLEP Files                                |gentoo-glep-syntax|\n"
+"\t    ChangeLogs                           |gentoo-changelog-syntax|\n"
+"\t    conf.d Files                            |gentoo-conf.d-syntax|\n"
+"\t    cron.d Files                            |gentoo-cron.d-syntax|\n"
+"\t    env.d Files                              |gentoo-env.d-syntax|\n"
+"\t    GuideXML Syntax                       |gentoo-guidexml-syntax|\n"
+"\t    init.d Files                            |gentoo-init.d-syntax|\n"
+"\t    make.conf Files                      |gentoo-make-conf-syntax|\n"
+"\t    metadata.xml Files                    |gentoo-metadata-syntax|\n"
+"\t    package.(un)mask                  |gentoo-package-mask-syntax|\n"
+"\t    package.keywords              |gentoo-package-keywords-syntax|\n"
+"\t    package.use                        |gentoo-package-use-syntax|\n"
+"\t    thirdpartymirrors                      |gentoo-mirrors-syntax|\n"
+"\t    use.desc, use.local.desc              |gentoo-use-desc-syntax|\n"
+"\tSettings Specifics                        |gentoo-syntax-settings|\n"
+"\tIndent Specifics                          |gentoo-indent-settings|\n"
+"\tBug Summary                                          |:BugSummary|\n"
+"\tNew conf.d Files                                      |new-conf.d|\n"
+"\tNew Ebuilds                                          |new-ebuilds|\n"
+"\tNew init.d Files                                      |new-init.d|\n"
+"\tNew Metadata                                        |new-metadata|"
+msgstr ""
+
+#: gentoo-syntax.txt:41
+msgid ""
+"============================================================================"
+"==\n"
+"2. Plugin Information\t\t\t\t      *gentoo-syntax-overview*"
+msgstr ""
+
+#: gentoo-syntax.txt:44
+msgid ""
+"\tThe gentoo-syntax package provides a collection of syntax, ftdetect,\n"
+"\tftplugin and indent files to help Gentoo developers and users work\n"
+"\twith ebuilds, eclasses, GLEPs, Gentoo style ChangeLogs, init.d /\n"
+"\tconf.d / env.d / cron.d entries, /etc/portage/ files and so on."
+msgstr ""
+
+#: gentoo-syntax.txt:49
+msgid "    Detection Specifics\t\t\t\t     *gentoo-syntax-detection*"
+msgstr ""
+
+#: gentoo-syntax.txt:51
+msgid ""
+"\tEbuilds are detected by an 'ebuild' extension. Eclasses are detected\n"
+"\tby an 'eclass' extension. Both ebuild and eclass files are assigned\n"
+"\tthe 'ebuild' filetype."
+msgstr ""
+
+#: gentoo-syntax.txt:55
+msgid ""
+"\tGLEP files are detected by a 'txt' extension, followed by a check that\n"
+"\tthe first line of the file starts with \"GLEP: \". They are assigned the\n"
+"\t'glep' filetype."
+msgstr ""
+
+#: gentoo-syntax.txt:59
+msgid ""
+"\tGentoo ChangeLogs are detected by the 'ChangeLog' filename and a\n"
+"\tcopyright header on the second line."
+msgstr ""
+
+#: gentoo-syntax.txt:62
+msgid ""
+"\tinit.d scripts are detected by being in /etc/init.d/ . They are also\n"
+"\tdetected if they are under a files/ directory and include a\n"
+"\t'#!/sbin/runscript' header."
+msgstr ""
+
+#: gentoo-syntax.txt:66
+msgid ""
+"\tconf.d, env.d and cron.d files are detected by being in the relevant\n"
+"\tsubdirectory in /etc."
+msgstr ""
+
+#: gentoo-syntax.txt:69
+msgid ""
+"\tpackage.mask, package.unmask, package.keywords, package.use and\n"
+"\tthirdpartymirrors files are detected by filename."
+msgstr ""
+
+#: gentoo-syntax.txt:72
+msgid ""
+"\tmake.conf files are detected by filename (make.globals is also\n"
+"\trecognised)."
+msgstr ""
+
+#: gentoo-syntax.txt:75
+msgid "\tmetadata.xml files are detected by filename."
+msgstr ""
+
+#: gentoo-syntax.txt:77
+msgid ""
+"\tuse.desc files are detected by filename (use.local.desc is also\n"
+"\trecognised)."
+msgstr ""
+
+#: gentoo-syntax.txt:80
+msgid "    Highlighting Specifics\t\t\t  *gentoo-syntax-highlighting*"
+msgstr ""
+
+#: gentoo-syntax.txt:82
+msgid ""
+"\tSyntax highlighting is provided for ebuild/eclass, GLEP files,\n"
+"\tGentoo ChangeLogs and init.d / conf.d / env.d / cron.d scripts."
+msgstr ""
+
+#: gentoo-syntax.txt:85
+msgid "\t\t\t\t\t\t\t*gentoo-common-syntax*"
+msgstr ""
+
+#: gentoo-syntax.txt:87
+msgid ""
+"\tMany of the syntax files are based upon gentoo-common.vim, which\n"
+"\tprovides basic syntax highlighting for header blocks and bug numbers."
+msgstr ""
+
+#: gentoo-syntax.txt:90
+msgid "\t\t\t\t\t\t\t*gentoo-ebuild-syntax*"
+msgstr ""
+
+#: gentoo-syntax.txt:92
+msgid ""
+"\tThe ebuild/eclass syntax file builds upon the vim-provided |sh.vim|\n"
+"\tand adds in highlighting for:\n"
+"\t    * ebuild.sh / portage keywords\n"
+"\t    * functions from commonly used eclasses (eutils, flag-o-matic,\n"
+"\t      gcc, libtool, fixheadtails, webapp, webapp-apache, versionator,\n"
+"\t      cvs, fdo-mime, multilib, 64-bit, cron, games, toolchain-funcs,\n"
+"\t      subversion, alternatives, rpm, python, check-kernel,\n"
+"\t      perl-module, distutils)\n"
+"\t    * common mistakes (assigning to read-only variables, misspellings,\n"
+"\t      leading non-tab spaces, default WORKDIR assignment)"
+msgstr ""
+
+#: gentoo-syntax.txt:103
+msgid ""
+"\t\t\t\t       *g:ebuild_error_on_trailing_whitespace*\n"
+"\tError highlighting for trailing whitespace is available but disabled\n"
+"\tby default. To turn it on, add:\n"
+">\n"
+"\t    let g:ebuild_error_on_trailing_whitespace=1\n"
+"<\n"
+"\tto your |vimrc| file."
+msgstr ""
+
+#: gentoo-syntax.txt:111
+msgid "\t\t\t\t\t\t\t  *gentoo-glep-syntax*"
+msgstr ""
+
+#: gentoo-syntax.txt:113
+msgid ""
+"\tSyntax highlighting for GLEP files is based upon the vim-provided rst\n"
+"\tsyntax file. Additional highlighting is available for the headers at\n"
+"\tthe top of the file and for heading sections."
+msgstr ""
+
+#: gentoo-syntax.txt:117
+msgid "\t\t\t\t\t\t     *gentoo-changelog-syntax*"
+msgstr ""
+
+#: gentoo-syntax.txt:119
+msgid ""
+"\tSyntax highlighting for Gentoo ChangeLogs is implemented from scratch\n"
+"\t(some rules come from |gentoo-common-syntax|)."
+msgstr ""
+
+#: gentoo-syntax.txt:122
+msgid "\t\t\t\t\t\t\t*gentoo-conf.d-syntax*"
+msgstr ""
+
+#: gentoo-syntax.txt:124
+msgid ""
+"\tSyntax highlighting for conf.d files is based upon the vim-provided\n"
+"\t|sh.vim|, with additional support for certain Gentooisms (some rules\n"
+"\tcome from |gentoo-common-syntax|)."
+msgstr ""
+
+#: gentoo-syntax.txt:128
+msgid "\t\t\t\t\t\t\t*gentoo-cron.d-syntax*"
+msgstr ""
+
+#: gentoo-syntax.txt:130
+msgid ""
+"\tSyntax highlighting for cron.d entries uses the vim-provided\n"
+"\tcrontab.vim file."
+msgstr ""
+
+#: gentoo-syntax.txt:133
+msgid "\t\t\t\t\t\t\t *gentoo-env.d-syntax*"
+msgstr ""
+
+#: gentoo-syntax.txt:135
+msgid ""
+"\tSyntax highlighting for env.d files is based upon the vim-provided\n"
+"\t|sh.vim|, with additional support for certain Gentooisms (some rules\n"
+"\tcome from |gentoo-common-syntax|)."
+msgstr ""
+
+#: gentoo-syntax.txt:139
+msgid "\t\t\t\t\t\t      *gentoo-guidexml-syntax*"
+msgstr ""
+
+#: gentoo-syntax.txt:141
+msgid ""
+"\tSyntax highlighting for guidexml files is based upon the vim-provided\n"
+"\t|xml.vim|."
+msgstr ""
+
+#: gentoo-syntax.txt:144
+msgid "\t\t\t\t\t\t\t*gentoo-init.d-syntax*"
+msgstr ""
+
+#: gentoo-syntax.txt:146
+msgid ""
+"\tSyntax highlighting for init.d files is based upon the vim-provided\n"
+"\t|sh.vim|, with additional support for certain Gentooisms (some rules\n"
+"\tcome from |gentoo-common-syntax|)."
+msgstr ""
+
+#: gentoo-syntax.txt:150
+msgid "\t\t\t\t\t\t     *gentoo-make-conf-syntax*"
+msgstr ""
+
+#: gentoo-syntax.txt:152
+msgid ""
+"\tSyntax highlighting for make.conf files is implemented from scratch\n"
+"\t(some rules come from |gentoo-common-syntax|)."
+msgstr ""
+
+#: gentoo-syntax.txt:155
+msgid "\t\t\t\t\t\t     *gentoo-metadata-syntax*"
+msgstr ""
+
+#: gentoo-syntax.txt:157
+msgid ""
+"\tSyntax highlighting for metadata.xml files is based upon the\n"
+"\tvim-provided |xml.vim|, with additional highlighting for recognised\n"
+"\telements."
+msgstr ""
+
+#: gentoo-syntax.txt:161
+msgid "\t\t\t\t\t\t  *gentoo-package-mask-syntax*"
+msgstr ""
+
+#: gentoo-syntax.txt:163
+msgid ""
+"\tSyntax highlighting for package.mask and package.unmask files is\n"
+"\timplemented from scratch (some rules come from\n"
+"\t|gentoo-common-syntax|)."
+msgstr ""
+
+#: gentoo-syntax.txt:167
+msgid "\t\t\t\t\t      *gentoo-package-keywords-syntax*"
+msgstr ""
+
+#: gentoo-syntax.txt:169
+msgid ""
+"\tSyntax highlighting for package.keywords files is implemented from\n"
+"\tscratch (some rules come from |gentoo-common-syntax|)."
+msgstr ""
+
+#: gentoo-syntax.txt:172
+msgid "\t\t\t\t\t\t   *gentoo-package-use-syntax*"
+msgstr ""
+
+#: gentoo-syntax.txt:174
+msgid ""
+"\tSyntax highlighting for package.use files is implemented from scratch\n"
+"\t(some rules come from |gentoo-common-syntax|)."
+msgstr ""
+
+#: gentoo-syntax.txt:177
+msgid "\t\t\t\t\t\t       *gentoo-mirrors-syntax*"
+msgstr ""
+
+#: gentoo-syntax.txt:179
+msgid ""
+"\tSyntax highlighting for thirdpartymirrors files is implemented from\n"
+"\tscratch (some rules come from |gentoo-common-syntax|)."
+msgstr ""
+
+#: gentoo-syntax.txt:182
+msgid ""
+"\t\t\t\t\t\t      *gentoo-use-desc-syntax*\n"
+"\tSyntax highlighting for use.desc and use.local.desc is implemented\n"
+"\tfrom scratch (some rules come from |gentoo-common-syntax|)."
+msgstr ""
+
+#: gentoo-syntax.txt:186
+msgid "    Settings Specifics\t\t\t\t      *gentoo-syntax-settings*"
+msgstr ""
+
+#: gentoo-syntax.txt:188
+msgid ""
+"\tFor ebuilds and eclasses, tabs (|'shiftwidth'| and |'tabstop'|) are\n"
+"\tset to four spaces, tab to space conversion (|'expandtab'|) is disabled\n"
+"\tand the text width (|'textwidth'|) is set to 80 columns. To allow\n"
+"\tproper syntax highlighting for commands like 'strip-flags', the hyphen\n"
+"\tcharacter is added as a valid keyword character (|'iskeyword'|)."
+msgstr ""
+
+#: gentoo-syntax.txt:194
+msgid ""
+"\tFor ebuilds, eclasses and ChangeLogs, UTF-8 is used for fileencoding\n"
+"\tas per GLEP 31."
+msgstr ""
+
+#: gentoo-syntax.txt:197
+msgid "    Indent Specifics\t\t\t\t      *gentoo-indent-settings*"
+msgstr ""
+
+#: gentoo-syntax.txt:199
+msgid ""
+"\tIndent settings for ebuilds and eclasses are the same as for regular\n"
+"\tbash files."
+msgstr ""
+
+#: gentoo-syntax.txt:202
+msgid "    Bug Summary\t\t\t\t\t\t\t *:BugSummary*"
+msgstr ""
+
+#: gentoo-syntax.txt:204
+msgid "\tTo see a summary of a Gentoo bug, execute :BugSummary 12345."
+msgstr ""
+
+#: gentoo-syntax.txt:206
+msgid ""
+"\t\t\t\t\t\t\t\t *:BugDetails*\n"
+"\tThe :BugDetails 12345 command is similar to :BugSummary, but will also\n"
+"\tdisplay a menu allowing the user to open the bug in a browser or\n"
+"\tinsert the bug details / number into the active document. In normal\n"
+"\tmode, a map <Leader>bug (see |<Leader>|) is provided to call this\n"
+"\tcommand on the bug number under the cursor."
+msgstr ""
+
+#: gentoo-syntax.txt:213
+msgid ""
+"\t\t\t\t\t\t\t*g:bugsummary_browser*\n"
+"\tBefore using the \"browser\" BugSummary option, you must let the plugin\n"
+"\tknow what browser you want to use. For example: >"
+msgstr ""
+
+#: gentoo-syntax.txt:217
+msgid ""
+"\t    let g:bugsummary_browser=\"firefox '%s'\"\n"
+"<\n"
+"\tThe %s sequence is replaced by the URL to load."
+msgstr ""
+
+#: gentoo-syntax.txt:221
+msgid "    New conf.d Files\t\t\t\t      *new-conf.d* *:NewConfd*"
+msgstr ""
+
+#: gentoo-syntax.txt:223
+msgid ""
+"\tNew conf.d files will automatically have a skeleton content created\n"
+"\tfor them."
+msgstr ""
+
+#: gentoo-syntax.txt:226
+msgid ""
+"\tThe ':NewConfd' command can be used to manually create contents for a\n"
+"\tnew conf.d file."
+msgstr ""
+
+#: gentoo-syntax.txt:229
+msgid ""
+"\tNote: conf.d files may not be detected automatically. The |:NewConfd|\n"
+"\tcommand will still work in these situations."
+msgstr ""
+
+#: gentoo-syntax.txt:232
+msgid "    New Ebuilds\t\t\t\t\t    *new-ebuilds* *:NewEbuild*"
+msgstr ""
+
+#: gentoo-syntax.txt:234
+msgid ""
+"\tNew ebuilds will automatically have content placed into them based\n"
+"\tupon context (for example, the package category). Similarly, new\n"
+"\teclasses are created from a template. If the environment variable\n"
+"\t'ECHANGELOG_USER' is set, it will be used for the author's name.\n"
+"\tOtherwise, the 'USER' environment variable will be used."
+msgstr ""
+
+#: gentoo-syntax.txt:240
+msgid ""
+"\tThe ':NewEbuild' command can be used to manually create contents for a\n"
+"\tnew ebuild or eclass file."
+msgstr ""
+
+#: gentoo-syntax.txt:243
+msgid "\tTo disable the autogenerate functionality place into your .vimrc file:"
+msgstr ""
+
+#: gentoo-syntax.txt:245
+msgid "\t    let g:ebuild_create_on_empty = 0"
+msgstr ""
+
+#: gentoo-syntax.txt:247
+msgid "    New init.d Files\t\t\t\t      *new-init.d* *:NewInitd*"
+msgstr ""
+
+#: gentoo-syntax.txt:249
+msgid ""
+"\tNew init.d files will automatically have a skeleton content created\n"
+"\tfor them."
+msgstr ""
+
+#: gentoo-syntax.txt:252
+msgid ""
+"\tThe ':NewInitd' command can be used to manually create contents for a\n"
+"\tnew init.d file."
+msgstr ""
+
+#: gentoo-syntax.txt:255
+msgid ""
+"\tNote: init.d files may not be detected automatically. The |:NewInitd|\n"
+"\tcommand will still work in these situations."
+msgstr ""
+
+#: gentoo-syntax.txt:258
+msgid "    New Metadata\t\t\t\t *new-metadata* *:NewMetadata*"
+msgstr ""
+
+#: gentoo-syntax.txt:260
+msgid ""
+"\tNew metadata.xml files will automatically have content placed into\n"
+"\tthem based upon context (for example, the package category). If the\n"
+"\tenvironment variable 'ECHANGELOG_USER' is set, it will be used for the\n"
+"\tauthor's name and email address."
+msgstr ""
+
+#: gentoo-syntax.txt:265
+msgid ""
+"\tThe ':NewMetadata' command can be used to manually create contents for\n"
+"\ta new metadata file."
+msgstr ""
+
+#: gentoo-syntax.txt:268
+msgid ""
+"\tNote: metadata.xml files may not be detected automatically. The\n"
+"\t|:NewMetadata| command will still work in these situations."
+msgstr ""
+
+#: gentoo-syntax.txt:271
+msgid "vim:tw=78:ts=8:ft=help"
+msgstr ""
