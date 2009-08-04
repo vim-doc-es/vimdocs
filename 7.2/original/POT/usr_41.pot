@@ -1,0 +1,4099 @@
+#. extracted from usr_41.txt
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-04 13:42+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.3.0\n"
+
+#: usr_41.txt:1
+msgid "*usr_41.txt*\tFor Vim version 7.2.  Last change: 2008 Jun 21"
+msgstr ""
+
+#: usr_41.txt:3
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar"
+msgstr ""
+
+#: usr_41.txt:5
+msgid "\t\t\t      Write a Vim script"
+msgstr ""
+
+#: usr_41.txt:8
+msgid ""
+"The Vim script language is used for the startup vimrc file, syntax files, "
+"and\n"
+"many other things.  This chapter explains the items that can be used in a "
+"Vim\n"
+"script.  There are a lot of them, thus this is a long chapter."
+msgstr ""
+
+#: usr_41.txt:12
+msgid ""
+"|41.1|\tIntroduction\n"
+"|41.2|\tVariables\n"
+"|41.3|\tExpressions\n"
+"|41.4|\tConditionals\n"
+"|41.5|\tExecuting an expression\n"
+"|41.6|\tUsing functions\n"
+"|41.7|\tDefining a function\n"
+"|41.8|\tLists and Dictionaries\n"
+"|41.9|\tExceptions\n"
+"|41.10|\tVarious remarks\n"
+"|41.11|\tWriting a plugin\n"
+"|41.12|\tWriting a filetype plugin\n"
+"|41.13|\tWriting a compiler plugin\n"
+"|41.14|\tWriting a plugin that loads quickly\n"
+"|41.15|\tWriting library scripts\n"
+"|41.16|\tDistributing Vim scripts"
+msgstr ""
+
+#: usr_41.txt:29
+msgid ""
+"     Next chapter: |usr_42.txt|  Add new menus\n"
+" Previous chapter: |usr_40.txt|  Make new commands\n"
+"Table of contents: |usr_toc.txt|"
+msgstr ""
+
+#: usr_41.txt:33
+msgid ""
+"============================================================================"
+"==\n"
+"*41.1*\tIntroduction\t\t\t\t*vim-script-intro* *script*"
+msgstr ""
+
+#: usr_41.txt:36
+msgid ""
+"Your first experience with Vim scripts is the vimrc file.  Vim reads it when\n"
+"it starts up and executes the commands.  You can set options to values you\n"
+"prefer.  And you can use any colon command in it (commands that start with a\n"
+"\":\"; these are sometimes referred to as Ex commands or command-line "
+"commands).\n"
+"   Syntax files are also Vim scripts.  As are files that set options for a\n"
+"specific file type.  A complicated macro can be defined by a separate Vim\n"
+"script file.  You can think of other uses yourself."
+msgstr ""
+
+#: usr_41.txt:44
+msgid "Let's start with a simple example: >"
+msgstr ""
+
+#: usr_41.txt:46
+msgid ""
+"\t:let i = 1\n"
+"\t:while i < 5\n"
+"\t:  echo \"count is\" i\n"
+"\t:  let i += 1\n"
+"\t:endwhile\n"
+"<\n"
+"\tNote:\n"
+"\tThe \":\" characters are not really needed here.  You only need to use\n"
+"\tthem when you type a command.  In a Vim script file they can be left\n"
+"\tout.  We will use them here anyway to make clear these are colon\n"
+"\tcommands and make them stand out from Normal mode commands.\n"
+"\tNote:\n"
+"\tYou can try out the examples by yanking the lines from the text here\n"
+"\tand executing them with :@\""
+msgstr ""
+
+#: usr_41.txt:61
+msgid "The output of the example code is:"
+msgstr ""
+
+#: usr_41.txt:63
+msgid ""
+"\tcount is 1 ~\n"
+"\tcount is 2 ~\n"
+"\tcount is 3 ~\n"
+"\tcount is 4 ~"
+msgstr ""
+
+#: usr_41.txt:68
+msgid ""
+"In the first line the \":let\" command assigns a value to a variable.  The\n"
+"generic form is: >"
+msgstr ""
+
+#: usr_41.txt:71
+msgid "\t:let {variable} = {expression}"
+msgstr ""
+
+#: usr_41.txt:73
+msgid ""
+"In this case the variable name is \"i\" and the expression is a simple value,\n"
+"the number one.\n"
+"   The \":while\" command starts a loop.  The generic form is: >"
+msgstr ""
+
+#: usr_41.txt:77
+msgid ""
+"\t:while {condition}\n"
+"\t:  {statements}\n"
+"\t:endwhile"
+msgstr ""
+
+#: usr_41.txt:81
+msgid ""
+"The statements until the matching \":endwhile\" are executed for as long as "
+"the\n"
+"condition is true.  The condition used here is the expression \"i < 5\".  This\n"
+"is true when the variable i is smaller than five.\n"
+"\tNote:\n"
+"\tIf you happen to write a while loop that keeps on running, you can\n"
+"\tinterrupt it by pressing CTRL-C (CTRL-Break on MS-Windows)."
+msgstr ""
+
+#: usr_41.txt:88
+msgid ""
+"The \":echo\" command prints its arguments.  In this case the string \"count "
+"is\"\n"
+"and the value of the variable i.  Since i is one, this will print:"
+msgstr ""
+
+#: usr_41.txt:91
+msgid "\tcount is 1 ~"
+msgstr ""
+
+#: usr_41.txt:93
+msgid ""
+"Then there is the \":let i += 1\" command.  This does the same thing as\n"
+"\":let i = i + 1\".  This adds one to the variable i and assigns the new value\n"
+"to the same variable."
+msgstr ""
+
+#: usr_41.txt:97
+msgid ""
+"The example was given to explain the commands, but would you really want to\n"
+"make such a loop it can be written much more compact: >"
+msgstr ""
+
+#: usr_41.txt:100
+msgid ""
+"\t:for i in range(1, 4)\n"
+"\t:  echo \"count is\" i\n"
+"\t:endfor"
+msgstr ""
+
+#: usr_41.txt:104
+msgid ""
+"We won't explain how |:for| and |range()| work until later.  Follow the "
+"links\n"
+"if you are impatient."
+msgstr ""
+
+#: usr_41.txt:108
+msgid "THREE KINDS OF NUMBERS"
+msgstr ""
+
+#: usr_41.txt:110
+msgid ""
+"Numbers can be decimal, hexadecimal or octal.  A hexadecimal number starts\n"
+"with \"0x\" or \"0X\".  For example \"0x1f\" is decimal 31.  An octal number "
+"starts\n"
+"with a zero.  \"017\" is decimal 15.  Careful: don't put a zero before a "
+"decimal\n"
+"number, it will be interpreted as an octal number!\n"
+"   The \":echo\" command always prints decimal numbers.  Example: >"
+msgstr ""
+
+#: usr_41.txt:116
+msgid ""
+"\t:echo 0x7f 036\n"
+"<\t127 30 ~"
+msgstr ""
+
+#: usr_41.txt:119
+msgid ""
+"A number is made negative with a minus sign.  This also works for "
+"hexadecimal\n"
+"and octal numbers.   A minus sign is also used for subtraction.  Compare "
+"this\n"
+"with the previous example: >"
+msgstr ""
+
+#: usr_41.txt:123
+msgid ""
+"\t:echo 0x7f -036\n"
+"<\t97 ~"
+msgstr ""
+
+#: usr_41.txt:126
+msgid ""
+"White space in an expression is ignored.  However, it's recommended to use "
+"it\n"
+"for separating items, to make the expression easier to read.  For example, "
+"to\n"
+"avoid the confusion with a negative number above, put a space between the\n"
+"minus sign and the following number: >"
+msgstr ""
+
+#: usr_41.txt:131
+msgid "\t:echo 0x7f - 036"
+msgstr ""
+
+#: usr_41.txt:133
+msgid ""
+"============================================================================"
+"==\n"
+"*41.2*\tVariables"
+msgstr ""
+
+#: usr_41.txt:136
+msgid ""
+"A variable name consists of ASCII letters, digits and the underscore.  It\n"
+"cannot start with a digit.  Valid variable names are:"
+msgstr ""
+
+#: usr_41.txt:139
+msgid ""
+"\tcounter\n"
+"\t_aap3\n"
+"\tvery_long_variable_name_with_underscores\n"
+"\tFuncLength\n"
+"\tLENGTH"
+msgstr ""
+
+#: usr_41.txt:145
+msgid ""
+"Invalid names are \"foo+bar\" and \"6var\".\n"
+"   These variables are global.  To see a list of currently defined variables\n"
+"use this command: >"
+msgstr ""
+
+#: usr_41.txt:149
+msgid "\t:let"
+msgstr ""
+
+#: usr_41.txt:151
+msgid ""
+"You can use global variables everywhere.  This also means that when the\n"
+"variable \"count\" is used in one script file, it might also be used in "
+"another\n"
+"file.  This leads to confusion at least, and real problems at worst.  To "
+"avoid\n"
+"this, you can use a variable local to a script file by prepending \"s:\".  For\n"
+"example, one script contains this code: >"
+msgstr ""
+
+#: usr_41.txt:157
+msgid ""
+"\t:let s:count = 1\n"
+"\t:while s:count < 5\n"
+"\t:  source other.vim\n"
+"\t:  let s:count += 1\n"
+"\t:endwhile"
+msgstr ""
+
+#: usr_41.txt:163
+msgid ""
+"Since \"s:count\" is local to this script, you can be sure that sourcing the\n"
+"\"other.vim\" script will not change this variable.  If \"other.vim\" also uses "
+"an\n"
+"\"s:count\" variable, it will be a different copy, local to that script.  More\n"
+"about script-local variables here: |script-variable|."
+msgstr ""
+
+#: usr_41.txt:168
+msgid ""
+"There are more kinds of variables, see |internal-variables|.  The most often\n"
+"used ones are:"
+msgstr ""
+
+#: usr_41.txt:171
+msgid ""
+"\tb:name\t\tvariable local to a buffer\n"
+"\tw:name\t\tvariable local to a window\n"
+"\tg:name\t\tglobal variable (also in a function)\n"
+"\tv:name\t\tvariable predefined by Vim"
+msgstr ""
+
+#: usr_41.txt:177
+msgid "DELETING VARIABLES"
+msgstr ""
+
+#: usr_41.txt:179
+msgid ""
+"Variables take up memory and show up in the output of the \":let\" command.  "
+"To\n"
+"delete a variable use the \":unlet\" command.  Example: >"
+msgstr ""
+
+#: usr_41.txt:182
+msgid "\t:unlet s:count"
+msgstr ""
+
+#: usr_41.txt:184
+msgid ""
+"This deletes the script-local variable \"s:count\" to free up the memory it\n"
+"uses.  If you are not sure if the variable exists, and don't want an error\n"
+"message when it doesn't, append !: >"
+msgstr ""
+
+#: usr_41.txt:188
+msgid "\t:unlet! s:count"
+msgstr ""
+
+#: usr_41.txt:190
+msgid ""
+"When a script finishes, the local variables used there will not be\n"
+"automatically freed.  The next time the script executes, it can still use "
+"the\n"
+"old value.  Example: >"
+msgstr ""
+
+#: usr_41.txt:194
+msgid ""
+"\t:if !exists(\"s:call_count\")\n"
+"\t:  let s:call_count = 0\n"
+"\t:endif\n"
+"\t:let s:call_count = s:call_count + 1\n"
+"\t:echo \"called\" s:call_count \"times\""
+msgstr ""
+
+#: usr_41.txt:200
+msgid ""
+"The \"exists()\" function checks if a variable has already been defined.  Its\n"
+"argument is the name of the variable you want to check.  Not the variable\n"
+"itself!  If you would do this: >"
+msgstr ""
+
+#: usr_41.txt:204
+msgid "\t:if !exists(s:call_count)"
+msgstr ""
+
+#: usr_41.txt:206
+msgid ""
+"Then the value of s:call_count will be used as the name of the variable that\n"
+"exists() checks.  That's not what you want.\n"
+"   The exclamation mark ! negates a value.  When the value was true, it\n"
+"becomes false.  When it was false, it becomes true.  You can read it as "
+"\"not\".\n"
+"Thus \"if !exists()\" can be read as \"if not exists()\".\n"
+"   What Vim calls true is anything that is not zero.  Zero is false.\n"
+"\tNote:\n"
+"\tVim automatically converts a string to a number when it is looking for\n"
+"\ta number.  When using a string that doesn't start with a digit the\n"
+"\tresulting number is zero.  Thus look out for this: >\n"
+"\t\t:if \"true\"\n"
+"<\tThe \"true\" will be interpreted as a zero, thus as false!"
+msgstr ""
+
+#: usr_41.txt:220
+msgid "STRING VARIABLES AND CONSTANTS"
+msgstr ""
+
+#: usr_41.txt:222
+msgid ""
+"So far only numbers were used for the variable value.  Strings can be used "
+"as\n"
+"well.  Numbers and strings are the basic types of variables that Vim "
+"supports.\n"
+"The type is dynamic, it is set each time when assigning a value to the\n"
+"variable with \":let\".  More about types in |41.8|.\n"
+"   To assign a string value to a variable, you need to use a string "
+"constant.\n"
+"There are two types of these.  First the string in double quotes: >"
+msgstr ""
+
+#: usr_41.txt:229
+msgid ""
+"\t:let name = \"peter\"\n"
+"\t:echo name\n"
+"<\tpeter ~"
+msgstr ""
+
+#: usr_41.txt:233
+msgid ""
+"If you want to include a double quote inside the string, put a backslash in\n"
+"front of it: >"
+msgstr ""
+
+#: usr_41.txt:236
+msgid ""
+"\t:let name = \"\\\"peter\\\"\"\n"
+"\t:echo name\n"
+"<\t\"peter\" ~"
+msgstr ""
+
+#: usr_41.txt:240
+msgid ""
+"To avoid the need for a backslash, you can use a string in single quotes: >"
+msgstr ""
+
+#: usr_41.txt:242
+msgid ""
+"\t:let name = '\"peter\"'\n"
+"\t:echo name\n"
+"<\t\"peter\" ~"
+msgstr ""
+
+#: usr_41.txt:246
+msgid ""
+"Inside a single-quote string all the characters are as they are.  Only the\n"
+"single quote itself is special: you need to use two to get one.  A backslash\n"
+"is taken literally, thus you can't use it to change the meaning of the\n"
+"character after it.\n"
+"   In double-quote strings it is possible to use special characters.  Here "
+"are\n"
+"a few useful ones:"
+msgstr ""
+
+#: usr_41.txt:253
+msgid ""
+"\t\\t\t\t<Tab>\n"
+"\t\\n\t\t<NL>, line break\n"
+"\t\\r\t\t<CR>, <Enter>\n"
+"\t\\e\t\t<Esc>\n"
+"\t\\b\t\t<BS>, backspace\n"
+"\t\\\"\t\t\"\n"
+"\t\\\\\t\t\\, backslash\n"
+"\t\\<Esc>\t\t<Esc>\n"
+"\t\\<C-W>\t\tCTRL-W"
+msgstr ""
+
+#: usr_41.txt:263
+msgid ""
+"The last two are just examples.  The  \"\\<name>\" form can be used to include\n"
+"the special key \"name\".\n"
+"   See |expr-quote| for the full list of special items in a string."
+msgstr ""
+
+#: usr_41.txt:267
+msgid ""
+"============================================================================"
+"==\n"
+"*41.3*\tExpressions"
+msgstr ""
+
+#: usr_41.txt:270
+msgid ""
+"Vim has a rich, yet simple way to handle expressions.  You can read the\n"
+"definition here: |expression-syntax|.  Here we will show the most common\n"
+"items.\n"
+"   The numbers, strings and variables mentioned above are expressions by\n"
+"themselves.  Thus everywhere an expression is expected, you can use a "
+"number,\n"
+"string or variable.  Other basic items in an expression are:"
+msgstr ""
+
+#: usr_41.txt:277
+msgid ""
+"\t$NAME\t\tenvironment variable\n"
+"\t&name\t\toption\n"
+"\t@r\t\tregister"
+msgstr ""
+
+#: usr_41.txt:281
+msgid "Examples: >"
+msgstr ""
+
+#: usr_41.txt:283
+msgid ""
+"\t:echo \"The value of 'tabstop' is\" &ts\n"
+"\t:echo \"Your home directory is\" $HOME\n"
+"\t:if @a > 5"
+msgstr ""
+
+#: usr_41.txt:287
+msgid ""
+"The &name form can be used to save an option value, set it to a new value,\n"
+"do something and restore the old value.  Example: >"
+msgstr ""
+
+#: usr_41.txt:290
+msgid ""
+"\t:let save_ic = &ic\n"
+"\t:set noic\n"
+"\t:/The Start/,$delete\n"
+"\t:let &ic = save_ic"
+msgstr ""
+
+#: usr_41.txt:295
+msgid ""
+"This makes sure the \"The Start\" pattern is used with the 'ignorecase' option\n"
+"off.  Still, it keeps the value that the user had set.  (Another way to do\n"
+"this would be to add \"\\C\" to the pattern, see |/\\C|.)"
+msgstr ""
+
+#: usr_41.txt:300
+msgid "MATHEMATICS"
+msgstr ""
+
+#: usr_41.txt:302
+msgid ""
+"It becomes more interesting if we combine these basic items.  Let's start "
+"with\n"
+"mathematics on numbers:"
+msgstr ""
+
+#: usr_41.txt:305
+msgid ""
+"\ta + b\t\tadd\n"
+"\ta - b\t\tsubtract\n"
+"\ta * b\t\tmultiply\n"
+"\ta / b\t\tdivide\n"
+"\ta % b\t\tmodulo"
+msgstr ""
+
+#: usr_41.txt:311
+msgid "The usual precedence is used.  Example: >"
+msgstr ""
+
+#: usr_41.txt:313
+msgid ""
+"\t:echo 10 + 5 * 2\n"
+"<\t20 ~"
+msgstr ""
+
+#: usr_41.txt:316
+msgid "Grouping is done with braces.  No surprises here.  Example: >"
+msgstr ""
+
+#: usr_41.txt:318
+msgid ""
+"\t:echo (10 + 5) * 2\n"
+"<\t30 ~"
+msgstr ""
+
+#: usr_41.txt:321
+msgid "Strings can be concatenated with \".\".  Example: >"
+msgstr ""
+
+#: usr_41.txt:323
+msgid ""
+"\t:echo \"foo\" . \"bar\"\n"
+"<\tfoobar ~"
+msgstr ""
+
+#: usr_41.txt:326
+msgid ""
+"When the \":echo\" command gets multiple arguments, it separates them with a\n"
+"space.  In the example the argument is a single expression, thus no space is\n"
+"inserted."
+msgstr ""
+
+#: usr_41.txt:330
+msgid "Borrowed from the C language is the conditional expression:"
+msgstr ""
+
+#: usr_41.txt:332
+msgid "\ta ? b : c"
+msgstr ""
+
+#: usr_41.txt:334
+msgid ""
+"If \"a\" evaluates to true \"b\" is used, otherwise \"c\" is used.  Example: >"
+msgstr ""
+
+#: usr_41.txt:336
+msgid ""
+"\t:let i = 4\n"
+"\t:echo i > 5 ? \"i is big\" : \"i is small\"\n"
+"<\ti is small ~"
+msgstr ""
+
+#: usr_41.txt:340
+msgid ""
+"The three parts of the constructs are always evaluated first, thus you could\n"
+"see it work as:"
+msgstr ""
+
+#: usr_41.txt:343
+msgid "\t(a) ? (b) : (c)"
+msgstr ""
+
+#: usr_41.txt:345
+msgid ""
+"============================================================================"
+"==\n"
+"*41.4*\tConditionals"
+msgstr ""
+
+#: usr_41.txt:348
+msgid ""
+"The \":if\" commands executes the following statements, until the matching\n"
+"\":endif\", only when a condition is met.  The generic form is:"
+msgstr ""
+
+#: usr_41.txt:351
+msgid ""
+"\t:if {condition}\n"
+"\t   {statements}\n"
+"\t:endif"
+msgstr ""
+
+#: usr_41.txt:355
+msgid ""
+"Only when the expression {condition} evaluates to true (non-zero) will the\n"
+"{statements} be executed.  These must still be valid commands.  If they\n"
+"contain garbage, Vim won't be able to find the \":endif\".\n"
+"   You can also use \":else\".  The generic form for this is:"
+msgstr ""
+
+#: usr_41.txt:360
+msgid ""
+"\t:if {condition}\n"
+"\t   {statements}\n"
+"\t:else\n"
+"\t   {statements}\n"
+"\t:endif"
+msgstr ""
+
+#: usr_41.txt:366
+msgid ""
+"The second {statements} is only executed if the first one isn't.\n"
+"   Finally, there is \":elseif\":"
+msgstr ""
+
+#: usr_41.txt:369
+msgid ""
+"\t:if {condition}\n"
+"\t   {statements}\n"
+"\t:elseif {condition}\n"
+"\t   {statements}\n"
+"\t:endif"
+msgstr ""
+
+#: usr_41.txt:375
+msgid ""
+"This works just like using \":else\" and then \"if\", but without the need for "
+"an\n"
+"extra \":endif\".\n"
+"   A useful example for your vimrc file is checking the 'term' option and\n"
+"doing something depending upon its value: >"
+msgstr ""
+
+#: usr_41.txt:380
+msgid ""
+"\t:if &term == \"xterm\"\n"
+"\t:  \" Do stuff for xterm\n"
+"\t:elseif &term == \"vt100\"\n"
+"\t:  \" Do stuff for a vt100 terminal\n"
+"\t:else\n"
+"\t:  \" Do something for other terminals\n"
+"\t:endif"
+msgstr ""
+
+#: usr_41.txt:389
+msgid "LOGIC OPERATIONS"
+msgstr ""
+
+#: usr_41.txt:391
+msgid ""
+"We already used some of them in the examples.  These are the most often used\n"
+"ones:"
+msgstr ""
+
+#: usr_41.txt:394
+msgid ""
+"\ta == b\t\tequal to\n"
+"\ta != b\t\tnot equal to\n"
+"\ta >  b\t\tgreater than\n"
+"\ta >= b\t\tgreater than or equal to\n"
+"\ta <  b\t\tless than\n"
+"\ta <= b\t\tless than or equal to"
+msgstr ""
+
+#: usr_41.txt:401
+msgid ""
+"The result is one if the condition is met and zero otherwise.  An example: >"
+msgstr ""
+
+#: usr_41.txt:403
+msgid ""
+"\t:if v:version >= 700\n"
+"\t:  echo \"congratulations\"\n"
+"\t:else\n"
+"\t:  echo \"you are using an old version, upgrade!\"\n"
+"\t:endif"
+msgstr ""
+
+#: usr_41.txt:409
+msgid ""
+"Here \"v:version\" is a variable defined by Vim, which has the value of the "
+"Vim\n"
+"version.  600 is for version 6.0.  Version 6.1 has the value 601.  This is\n"
+"very useful to write a script that works with multiple versions of Vim.\n"
+"|v:version|"
+msgstr ""
+
+#: usr_41.txt:414
+msgid ""
+"The logic operators work both for numbers and strings.  When comparing two\n"
+"strings, the mathematical difference is used.  This compares byte values,\n"
+"which may not be right for some languages.\n"
+"   When comparing a string with a number, the string is first converted to a\n"
+"number.  This is a bit tricky, because when a string doesn't look like a\n"
+"number, the number zero is used.  Example: >"
+msgstr ""
+
+#: usr_41.txt:421
+msgid ""
+"\t:if 0 == \"one\"\n"
+"\t:  echo \"yes\"\n"
+"\t:endif"
+msgstr ""
+
+#: usr_41.txt:425
+msgid ""
+"This will echo \"yes\", because \"one\" doesn't look like a number, thus it is\n"
+"converted to the number zero."
+msgstr ""
+
+#: usr_41.txt:428
+msgid "For strings there are two more items:"
+msgstr ""
+
+#: usr_41.txt:430
+msgid ""
+"\ta =~ b\t\tmatches with\n"
+"\ta !~ b\t\tdoes not match with"
+msgstr ""
+
+#: usr_41.txt:433
+msgid ""
+"The left item \"a\" is used as a string.  The right item \"b\" is used as a\n"
+"pattern, like what's used for searching.  Example: >"
+msgstr ""
+
+#: usr_41.txt:436
+msgid ""
+"\t:if str =~ \" \"\n"
+"\t:  echo \"str contains a space\"\n"
+"\t:endif\n"
+"\t:if str !~ '\\.$'\n"
+"\t:  echo \"str does not end in a full stop\"\n"
+"\t:endif"
+msgstr ""
+
+#: usr_41.txt:443
+msgid ""
+"Notice the use of a single-quote string for the pattern.  This is useful,\n"
+"because backslashes would need to be doubled in a double-quote string and\n"
+"patterns tend to contain many backslashes."
+msgstr ""
+
+#: usr_41.txt:447
+msgid ""
+"The 'ignorecase' option is used when comparing strings.  When you don't want\n"
+"that, append \"#\" to match case and \"?\" to ignore case.  Thus \"==?\" compares\n"
+"two strings to be equal while ignoring case.  And \"!~#\" checks if a pattern\n"
+"doesn't match, also checking the case of letters.  For the full table see\n"
+"|expr-==|."
+msgstr ""
+
+#: usr_41.txt:454
+msgid "MORE LOOPING"
+msgstr ""
+
+#: usr_41.txt:456
+msgid ""
+"The \":while\" command was already mentioned.  Two more statements can be used\n"
+"in between the \":while\" and the \":endwhile\":"
+msgstr ""
+
+#: usr_41.txt:459
+msgid ""
+"\t:continue\t\tJump back to the start of the while loop; the\n"
+"\t\t\t\tloop continues.\n"
+"\t:break\t\t\tJump forward to the \":endwhile\"; the loop is\n"
+"\t\t\t\tdiscontinued."
+msgstr ""
+
+#: usr_41.txt:464
+msgid "Example: >"
+msgstr ""
+
+#: usr_41.txt:466
+msgid ""
+"\t:while counter < 40\n"
+"\t:  call do_something()\n"
+"\t:  if skip_flag\n"
+"\t:    continue\n"
+"\t:  endif\n"
+"\t:  if finished_flag\n"
+"\t:    break\n"
+"\t:  endif\n"
+"\t:  sleep 50m\n"
+"\t:endwhile"
+msgstr ""
+
+#: usr_41.txt:477
+msgid ""
+"The \":sleep\" command makes Vim take a nap.  The \"50m\" specifies fifty\n"
+"milliseconds.  Another example is \":sleep 4\", which sleeps for four seconds."
+msgstr ""
+
+#: usr_41.txt:480
+msgid ""
+"Even more looping can be done with the \":for\" command, see below in |41.8|."
+msgstr ""
+
+#: usr_41.txt:482
+msgid ""
+"============================================================================"
+"==\n"
+"*41.5*\tExecuting an expression"
+msgstr ""
+
+#: usr_41.txt:485
+msgid ""
+"So far the commands in the script were executed by Vim directly.  The\n"
+"\":execute\" command allows executing the result of an expression.  This is a\n"
+"very powerful way to build commands and execute them.\n"
+"   An example is to jump to a tag, which is contained in a variable: >"
+msgstr ""
+
+#: usr_41.txt:490
+msgid "\t:execute \"tag \" . tag_name"
+msgstr ""
+
+#: usr_41.txt:492
+msgid ""
+"The \".\" is used to concatenate the string \"tag \" with the value of variable\n"
+"\"tag_name\".  Suppose \"tag_name\" has the value \"get_cmd\", then the command "
+"that\n"
+"will be executed is: >"
+msgstr ""
+
+#: usr_41.txt:496
+msgid "\t:tag get_cmd"
+msgstr ""
+
+#: usr_41.txt:498
+msgid ""
+"The \":execute\" command can only execute colon commands.  The \":normal\" "
+"command\n"
+"executes Normal mode commands.  However, its argument is not an expression "
+"but\n"
+"the literal command characters.  Example: >"
+msgstr ""
+
+#: usr_41.txt:502
+msgid "\t:normal gg=G"
+msgstr ""
+
+#: usr_41.txt:504
+msgid ""
+"This jumps to the first line and formats all lines with the \"=\" operator.\n"
+"   To make \":normal\" work with an expression, combine \":execute\" with it.\n"
+"Example: >"
+msgstr ""
+
+#: usr_41.txt:508
+msgid "\t:execute \"normal \" . normal_commands"
+msgstr ""
+
+#: usr_41.txt:510
+msgid ""
+"The variable \"normal_commands\" must contain the Normal mode commands.\n"
+"   Make sure that the argument for \":normal\" is a complete command.  "
+"Otherwise\n"
+"Vim will run into the end of the argument and abort the command.  For "
+"example,\n"
+"if you start Insert mode, you must leave Insert mode as well.  This works: >"
+msgstr ""
+
+#: usr_41.txt:515
+msgid "\t:execute \"normal Inew text \\<Esc>\""
+msgstr ""
+
+#: usr_41.txt:517
+msgid ""
+"This inserts \"new text \" in the current line.  Notice the use of the special\n"
+"key \"\\<Esc>\".  This avoids having to enter a real <Esc> character in your\n"
+"script."
+msgstr ""
+
+#: usr_41.txt:521
+msgid ""
+"If you don't want to execute a string but evaluate it to get its expression\n"
+"value, you can use the eval() function: >"
+msgstr ""
+
+#: usr_41.txt:524
+msgid ""
+"\t:let optname = \"path\"\n"
+"\t:let optval = eval('&' . optname)"
+msgstr ""
+
+#: usr_41.txt:527
+msgid ""
+"A \"&\" character is prepended to \"path\", thus the argument to eval() is\n"
+"\"&path\".  The result will then be the value of the 'path' option.\n"
+"   The same thing can be done with: >\n"
+"\t:exe 'let optval = &' . optname"
+msgstr ""
+
+#: usr_41.txt:532
+msgid ""
+"============================================================================"
+"==\n"
+"*41.6*\tUsing functions"
+msgstr ""
+
+#: usr_41.txt:535
+msgid ""
+"Vim defines many functions and provides a large amount of functionality that\n"
+"way.  A few examples will be given in this section.  You can find the whole\n"
+"list here: |functions|."
+msgstr ""
+
+#: usr_41.txt:539
+msgid ""
+"A function is called with the \":call\" command.  The parameters are passed in\n"
+"between braces, separated by commas.  Example: >"
+msgstr ""
+
+#: usr_41.txt:542
+msgid "\t:call search(\"Date: \", \"W\")"
+msgstr ""
+
+#: usr_41.txt:544
+msgid ""
+"This calls the search() function, with arguments \"Date: \" and \"W\".  The\n"
+"search() function uses its first argument as a search pattern and the second\n"
+"one as flags.  The \"W\" flag means the search doesn't wrap around the end of\n"
+"the file."
+msgstr ""
+
+#: usr_41.txt:549
+msgid "A function can be called in an expression.  Example: >"
+msgstr ""
+
+#: usr_41.txt:551
+msgid ""
+"\t:let line = getline(\".\")\n"
+"\t:let repl = substitute(line, '\\a', \"*\", \"g\")\n"
+"\t:call setline(\".\", repl)"
+msgstr ""
+
+#: usr_41.txt:555
+msgid ""
+"The getline() function obtains a line from the current buffer.  Its argument\n"
+"is a specification of the line number.  In this case \".\" is used, which "
+"means\n"
+"the line where the cursor is.\n"
+"   The substitute() function does something similar to the \":substitute\"\n"
+"command.  The first argument is the string on which to perform the\n"
+"substitution.  The second argument is the pattern, the third the replacement\n"
+"string.  Finally, the last arguments are the flags.\n"
+"   The setline() function sets the line, specified by the first argument, to "
+"a\n"
+"new string, the second argument.  In this example the line under the cursor "
+"is\n"
+"replaced with the result of the substitute().  Thus the effect of the three\n"
+"statements is equal to: >"
+msgstr ""
+
+#: usr_41.txt:567
+msgid "\t:substitute/\\a/*/g"
+msgstr ""
+
+#: usr_41.txt:569
+msgid ""
+"Using the functions becomes more interesting when you do more work before "
+"and\n"
+"after the substitute() call."
+msgstr ""
+
+#: usr_41.txt:573
+msgid "FUNCTIONS\t\t\t\t\t\t*function-list*"
+msgstr ""
+
+#: usr_41.txt:575
+msgid ""
+"There are many functions.  We will mention them here, grouped by what they "
+"are\n"
+"used for.  You can find an alphabetical list here: |functions|.  Use CTRL-] "
+"on\n"
+"the function name to jump to detailed help on it."
+msgstr ""
+
+#: usr_41.txt:579
+msgid ""
+"String manipulation:\n"
+"\tnr2char()\t\tget a character by its ASCII value\n"
+"\tchar2nr()\t\tget ASCII value of a character\n"
+"\tstr2nr()\t\tconvert a string to a Number\n"
+"\tstr2float()\t\tconvert a string to a Float\n"
+"\tprintf()\t\tformat a string according to % items\n"
+"\tescape()\t\tescape characters in a string with a '\\'\n"
+"\tshellescape()\t\tescape a string for use with a shell command\n"
+"\tfnameescape()\t\tescape a file name for use with a Vim command\n"
+"\ttr()\t\t\ttranslate characters from one set to another\n"
+"\tstrtrans()\t\ttranslate a string to make it printable\n"
+"\ttolower()\t\tturn a string to lowercase\n"
+"\ttoupper()\t\tturn a string to uppercase\n"
+"\tmatch()\t\t\tposition where a pattern matches in a string\n"
+"\tmatchend()\t\tposition where a pattern match ends in a string\n"
+"\tmatchstr()\t\tmatch of a pattern in a string\n"
+"\tmatchlist()\t\tlike matchstr() and also return submatches\n"
+"\tstridx()\t\tfirst index of a short string in a long string\n"
+"\tstrridx()\t\tlast index of a short string in a long string\n"
+"\tstrlen()\t\tlength of a string\n"
+"\tsubstitute()\t\tsubstitute a pattern match with a string\n"
+"\tsubmatch()\t\tget a specific match in a \":substitute\"\n"
+"\tstrpart()\t\tget part of a string\n"
+"\texpand()\t\texpand special keywords\n"
+"\ticonv()\t\t\tconvert text from one encoding to another\n"
+"\tbyteidx()\t\tbyte index of a character in a string\n"
+"\trepeat()\t\trepeat a string multiple times\n"
+"\teval()\t\t\tevaluate a string expression"
+msgstr ""
+
+#: usr_41.txt:608
+msgid ""
+"List manipulation:\n"
+"\tget()\t\t\tget an item without error for wrong index\n"
+"\tlen()\t\t\tnumber of items in a List\n"
+"\tempty()\t\t\tcheck if List is empty\n"
+"\tinsert()\t\tinsert an item somewhere in a List\n"
+"\tadd()\t\t\tappend an item to a List\n"
+"\textend()\t\tappend a List to a List\n"
+"\tremove()\t\tremove one or more items from a List\n"
+"\tcopy()\t\t\tmake a shallow copy of a List\n"
+"\tdeepcopy()\t\tmake a full copy of a List\n"
+"\tfilter()\t\tremove selected items from a List\n"
+"\tmap()\t\t\tchange each List item\n"
+"\tsort()\t\t\tsort a List\n"
+"\treverse()\t\treverse the order of a List\n"
+"\tsplit()\t\t\tsplit a String into a List\n"
+"\tjoin()\t\t\tjoin List items into a String\n"
+"\trange()\t\t\treturn a List with a sequence of numbers\n"
+"\tstring()\t\tString representation of a List\n"
+"\tcall()\t\t\tcall a function with List as arguments\n"
+"\tindex()\t\t\tindex of a value in a List\n"
+"\tmax()\t\t\tmaximum value in a List\n"
+"\tmin()\t\t\tminimum value in a List\n"
+"\tcount()\t\t\tcount number of times a value appears in a List\n"
+"\trepeat()\t\trepeat a List multiple times"
+msgstr ""
+
+#: usr_41.txt:633
+msgid ""
+"Dictionary manipulation:\n"
+"\tget()\t\t\tget an entry without an error for a wrong key\n"
+"\tlen()\t\t\tnumber of entries in a Dictionary\n"
+"\thas_key()\t\tcheck whether a key appears in a Dictionary\n"
+"\tempty()\t\t\tcheck if Dictionary is empty\n"
+"\tremove()\t\tremove an entry from a Dictionary\n"
+"\textend()\t\tadd entries from one Dictionary to another\n"
+"\tfilter()\t\tremove selected entries from a Dictionary\n"
+"\tmap()\t\t\tchange each Dictionary entry\n"
+"\tkeys()\t\t\tget List of Dictionary keys\n"
+"\tvalues()\t\tget List of Dictionary values\n"
+"\titems()\t\t\tget List of Dictionary key-value pairs\n"
+"\tcopy()\t\t\tmake a shallow copy of a Dictionary\n"
+"\tdeepcopy()\t\tmake a full copy of a Dictionary\n"
+"\tstring()\t\tString representation of a Dictionary\n"
+"\tmax()\t\t\tmaximum value in a Dictionary\n"
+"\tmin()\t\t\tminimum value in a Dictionary\n"
+"\tcount()\t\t\tcount number of times a value appears"
+msgstr ""
+
+#: usr_41.txt:652
+msgid ""
+"Floating point computation:\n"
+"\tfloat2nr()\t\tconvert Float to Number\n"
+"\tabs()\t\t\tabsolute value (also works for Number)\n"
+"\tround()\t\t\tround off\n"
+"\tceil()\t\t\tround up\n"
+"\tfloor()\t\t\tround down\n"
+"\ttrunc()\t\t\tremove value after decimal point\n"
+"\tlog10()\t\t\tlogarithm to base 10\n"
+"\tpow()\t\t\tvalue of x to the exponent y\n"
+"\tsqrt()\t\t\tsquare root\n"
+"\tsin()\t\t\tsine\n"
+"\tcos()\t\t\tcosine\n"
+"\tatan()\t\t\tarc tangent"
+msgstr ""
+
+#: usr_41.txt:666
+msgid ""
+"Variables:\n"
+"\ttype()\t\t\ttype of a variable\n"
+"\tislocked()\t\tcheck if a variable is locked\n"
+"\tfunction()\t\tget a Funcref for a function name\n"
+"\tgetbufvar()\t\tget a variable value from a specific buffer\n"
+"\tsetbufvar()\t\tset a variable in a specific buffer\n"
+"\tgetwinvar()\t\tget a variable from specific window\n"
+"\tgettabwinvar()\t\tget a variable from specific window & tab page\n"
+"\tsetwinvar()\t\tset a variable in a specific window\n"
+"\tsettabwinvar()\t\tset a variable in a specific window & tab page\n"
+"\tgarbagecollect()\tpossibly free memory"
+msgstr ""
+
+#: usr_41.txt:678
+msgid ""
+"Cursor and mark position:\n"
+"\tcol()\t\t\tcolumn number of the cursor or a mark\n"
+"\tvirtcol()\t\tscreen column of the cursor or a mark\n"
+"\tline()\t\t\tline number of the cursor or mark\n"
+"\twincol()\t\twindow column number of the cursor\n"
+"\twinline()\t\twindow line number of the cursor\n"
+"\tcursor()\t\tposition the cursor at a line/column\n"
+"\tgetpos()\t\tget position of cursor, mark, etc.\n"
+"\tsetpos()\t\tset position of cursor, mark, etc.\n"
+"\tbyte2line()\t\tget line number at a specific byte count\n"
+"\tline2byte()\t\tbyte count at a specific line\n"
+"\tdiff_filler()\t\tget the number of filler lines above a line"
+msgstr ""
+
+#: usr_41.txt:691
+msgid ""
+"Working with text in the current buffer:\n"
+"\tgetline()\t\tget a line or list of lines from the buffer\n"
+"\tsetline()\t\treplace a line in the buffer\n"
+"\tappend()\t\tappend line or list of lines in the buffer\n"
+"\tindent()\t\tindent of a specific line\n"
+"\tcindent()\t\tindent according to C indenting\n"
+"\tlispindent()\t\tindent according to Lisp indenting\n"
+"\tnextnonblank()\t\tfind next non-blank line\n"
+"\tprevnonblank()\t\tfind previous non-blank line\n"
+"\tsearch()\t\tfind a match for a pattern\n"
+"\tsearchpos()\t\tfind a match for a pattern\n"
+"\tsearchpair()\t\tfind the other end of a start/skip/end\n"
+"\tsearchpairpos()\t\tfind the other end of a start/skip/end\n"
+"\tsearchdecl()\t\tsearch for the declaration of a name"
+msgstr ""
+
+#: usr_41.txt:706
+msgid ""
+"System functions and manipulation of files:\n"
+"\tglob()\t\t\texpand wildcards\n"
+"\tglobpath()\t\texpand wildcards in a number of directories\n"
+"\tfindfile()\t\tfind a file in a list of directories\n"
+"\tfinddir()\t\tfind a directory in a list of directories\n"
+"\tresolve()\t\tfind out where a shortcut points to\n"
+"\tfnamemodify()\t\tmodify a file name\n"
+"\tpathshorten()\t\tshorten directory names in a path\n"
+"\tsimplify()\t\tsimplify a path without changing its meaning\n"
+"\texecutable()\t\tcheck if an executable program exists\n"
+"\tfilereadable()\t\tcheck if a file can be read\n"
+"\tfilewritable()\t\tcheck if a file can be written to\n"
+"\tgetfperm()\t\tget the permissions of a file\n"
+"\tgetftype()\t\tget the kind of a file\n"
+"\tisdirectory()\t\tcheck if a directory exists\n"
+"\tgetfsize()\t\tget the size of a file\n"
+"\tgetcwd()\t\tget the current working directory\n"
+"\thaslocaldir()\t\tcheck if current window used |:lcd|\n"
+"\ttempname()\t\tget the name of a temporary file\n"
+"\tmkdir()\t\t\tcreate a new directory\n"
+"\tdelete()\t\tdelete a file\n"
+"\trename()\t\trename a file\n"
+"\tsystem()\t\tget the result of a shell command\n"
+"\thostname()\t\tname of the system\n"
+"\treadfile()\t\tread a file into a List of lines\n"
+"\twritefile()\t\twrite a List of lines into a file"
+msgstr ""
+
+#: usr_41.txt:733
+msgid ""
+"Date and Time:\n"
+"\tgetftime()\t\tget last modification time of a file\n"
+"\tlocaltime()\t\tget current time in seconds\n"
+"\tstrftime()\t\tconvert time to a string\n"
+"\treltime()\t\tget the current or elapsed time accurately\n"
+"\treltimestr()\t\tconvert reltime() result to a string"
+msgstr ""
+
+#: usr_41.txt:740
+msgid ""
+"Buffers, windows and the argument list:\n"
+"\targc()\t\t\tnumber of entries in the argument list\n"
+"\targidx()\t\tcurrent position in the argument list\n"
+"\targv()\t\t\tget one entry from the argument list\n"
+"\tbufexists()\t\tcheck if a buffer exists\n"
+"\tbuflisted()\t\tcheck if a buffer exists and is listed\n"
+"\tbufloaded()\t\tcheck if a buffer exists and is loaded\n"
+"\tbufname()\t\tget the name of a specific buffer\n"
+"\tbufnr()\t\t\tget the buffer number of a specific buffer\n"
+"\ttabpagebuflist()\treturn List of buffers in a tab page\n"
+"\ttabpagenr()\t\tget the number of a tab page\n"
+"\ttabpagewinnr()\t\tlike winnr() for a specified tab page\n"
+"\twinnr()\t\t\tget the window number for the current window\n"
+"\tbufwinnr()\t\tget the window number of a specific buffer\n"
+"\twinbufnr()\t\tget the buffer number of a specific window\n"
+"\tgetbufline()\t\tget a list of lines from the specified buffer"
+msgstr ""
+
+#: usr_41.txt:757
+msgid ""
+"Command line:\n"
+"\tgetcmdline()\t\tget the current command line\n"
+"\tgetcmdpos()\t\tget position of the cursor in the command line\n"
+"\tsetcmdpos()\t\tset position of the cursor in the command line\n"
+"\tgetcmdtype()\t\treturn the current command-line type"
+msgstr ""
+
+#: usr_41.txt:763
+msgid ""
+"Quickfix and location lists:\n"
+"\tgetqflist()\t\tlist of quickfix errors\n"
+"\tsetqflist()\t\tmodify a quickfix list\n"
+"\tgetloclist()\t\tlist of location list items\n"
+"\tsetloclist()\t\tmodify a location list"
+msgstr ""
+
+#: usr_41.txt:769
+msgid ""
+"Insert mode completion:\n"
+"\tcomplete()\t\tset found matches\n"
+"\tcomplete_add()\t\tadd to found matches\n"
+"\tcomplete_check()\tcheck if completion should be aborted\n"
+"\tpumvisible()\t\tcheck if the popup menu is displayed"
+msgstr ""
+
+#: usr_41.txt:775
+msgid ""
+"Folding:\n"
+"\tfoldclosed()\t\tcheck for a closed fold at a specific line\n"
+"\tfoldclosedend()\t\tlike foldclosed() but return the last line\n"
+"\tfoldlevel()\t\tcheck for the fold level at a specific line\n"
+"\tfoldtext()\t\tgenerate the line displayed for a closed fold\n"
+"\tfoldtextresult()\tget the text displayed for a closed fold"
+msgstr ""
+
+#: usr_41.txt:782
+msgid ""
+"Syntax and highlighting:\n"
+"\tclearmatches()\t\tclear all matches defined by |matchadd()| and\n"
+"\t\t\t\tthe |:match| commands\n"
+"\tgetmatches()\t\tget all matches defined by |matchadd()| and\n"
+"\t\t\t\tthe |:match| commands\n"
+"\thlexists()\t\tcheck if a highlight group exists\n"
+"\thlID()\t\t\tget ID of a highlight group\n"
+"\tsynID()\t\t\tget syntax ID at a specific position\n"
+"\tsynIDattr()\t\tget a specific attribute of a syntax ID\n"
+"\tsynIDtrans()\t\tget translated syntax ID\n"
+"\tdiff_hlID()\t\tget highlight ID for diff mode at a position\n"
+"\tmatchadd()\t\tdefine a pattern to highlight (a \"match\")\n"
+"\tmatcharg()\t\tget info about |:match| arguments\n"
+"\tmatchdelete()\t\tdelete a match defined by |matchadd()| or a\n"
+"\t\t\t\t|:match| command\n"
+"\tsetmatches()\t\trestore a list of matches saved by\n"
+"\t\t\t\t|getmatches()|"
+msgstr ""
+
+#: usr_41.txt:800
+msgid ""
+"Spelling:\n"
+"\tspellbadword()\t\tlocate badly spelled word at or after cursor\n"
+"\tspellsuggest()\t\treturn suggested spelling corrections\n"
+"\tsoundfold()\t\treturn the sound-a-like equivalent of a word"
+msgstr ""
+
+#: usr_41.txt:805
+msgid ""
+"History:\n"
+"\thistadd()\t\tadd an item to a history\n"
+"\thistdel()\t\tdelete an item from a history\n"
+"\thistget()\t\tget an item from a history\n"
+"\thistnr()\t\tget highest index of a history list"
+msgstr ""
+
+#: usr_41.txt:811
+msgid ""
+"Interactive:\n"
+"\tbrowse()\t\tput up a file requester\n"
+"\tbrowsedir()\t\tput up a directory requester\n"
+"\tconfirm()\t\tlet the user make a choice\n"
+"\tgetchar()\t\tget a character from the user\n"
+"\tgetcharmod()\t\tget modifiers for the last typed character\n"
+"\tfeedkeys()\t\tput characters in the typeahead queue\n"
+"\tinput()\t\t\tget a line from the user\n"
+"\tinputlist()\t\tlet the user pick an entry from a list\n"
+"\tinputsecret()\t\tget a line from the user without showing it\n"
+"\tinputdialog()\t\tget a line from the user in a dialog\n"
+"\tinputsave()\t\tsave and clear typeahead\n"
+"\tinputrestore()\t\trestore typeahead"
+msgstr ""
+
+#: usr_41.txt:825
+msgid ""
+"GUI:\n"
+"\tgetfontname()\t\tget name of current font being used\n"
+"\tgetwinposx()\t\tX position of the GUI Vim window\n"
+"\tgetwinposy()\t\tY position of the GUI Vim window"
+msgstr ""
+
+#: usr_41.txt:830
+msgid ""
+"Vim server:\n"
+"\tserverlist()\t\treturn the list of server names\n"
+"\tremote_send()\t\tsend command characters to a Vim server\n"
+"\tremote_expr()\t\tevaluate an expression in a Vim server\n"
+"\tserver2client()\t\tsend a reply to a client of a Vim server\n"
+"\tremote_peek()\t\tcheck if there is a reply from a Vim server\n"
+"\tremote_read()\t\tread a reply from a Vim server\n"
+"\tforeground()\t\tmove the Vim window to the foreground\n"
+"\tremote_foreground()\tmove the Vim server window to the foreground"
+msgstr ""
+
+#: usr_41.txt:840
+msgid ""
+"Window size and position:\n"
+"\twinheight()\t\tget height of a specific window\n"
+"\twinwidth()\t\tget width of a specific window\n"
+"\twinrestcmd()\t\treturn command to restore window sizes\n"
+"\twinsaveview()\t\tget view of current window\n"
+"\twinrestview()\t\trestore saved view of current window"
+msgstr ""
+
+#: usr_41.txt:847
+msgid ""
+"Various:\n"
+"\tmode()\t\t\tget current editing mode\n"
+"\tvisualmode()\t\tlast visual mode used\n"
+"\thasmapto()\t\tcheck if a mapping exists\n"
+"\tmapcheck()\t\tcheck if a matching mapping exists\n"
+"\tmaparg()\t\tget rhs of a mapping\n"
+"\texists()\t\tcheck if a variable, function, etc. exists\n"
+"\thas()\t\t\tcheck if a feature is supported in Vim\n"
+"\tchangenr()\t\treturn number of most recent change\n"
+"\tcscope_connection()\tcheck if a cscope connection exists\n"
+"\tdid_filetype()\t\tcheck if a FileType autocommand was used\n"
+"\teventhandler()\t\tcheck if invoked by an event handler\n"
+"\tgetpid()\t\tget process ID of Vim"
+msgstr ""
+
+#: usr_41.txt:861
+msgid ""
+"\tlibcall()\t\tcall a function in an external library\n"
+"\tlibcallnr()\t\tidem, returning a number"
+msgstr ""
+
+#: usr_41.txt:864
+msgid ""
+"\tgetreg()\t\tget contents of a register\n"
+"\tgetregtype()\t\tget type of a register\n"
+"\tsetreg()\t\tset contents and type of a register"
+msgstr ""
+
+#: usr_41.txt:868
+msgid ""
+"\ttaglist()\t\tget list of matching tags\n"
+"\ttagfiles()\t\tget a list of tags files"
+msgstr ""
+
+#: usr_41.txt:871
+msgid ""
+"============================================================================"
+"==\n"
+"*41.7*\tDefining a function"
+msgstr ""
+
+#: usr_41.txt:874
+msgid ""
+"Vim enables you to define your own functions.  The basic function "
+"declaration\n"
+"begins as follows: >"
+msgstr ""
+
+#: usr_41.txt:877
+msgid ""
+"\t:function {name}({var1}, {var2}, ...)\n"
+"\t:  {body}\n"
+"\t:endfunction\n"
+"<\n"
+"\tNote:\n"
+"\tFunction names must begin with a capital letter."
+msgstr ""
+
+#: usr_41.txt:884
+msgid ""
+"Let's define a short function to return the smaller of two numbers.  It "
+"starts\n"
+"with this line: >"
+msgstr ""
+
+#: usr_41.txt:887
+msgid "\t:function Min(num1, num2)"
+msgstr ""
+
+#: usr_41.txt:889
+msgid ""
+"This tells Vim that the function is named \"Min\" and it takes two arguments:\n"
+"\"num1\" and \"num2\".\n"
+"   The first thing you need to do is to check to see which number is "
+"smaller:\n"
+"   >\n"
+"\t:  if a:num1 < a:num2"
+msgstr ""
+
+#: usr_41.txt:895
+msgid ""
+"The special prefix \"a:\" tells Vim that the variable is a function argument.\n"
+"Let's assign the variable \"smaller\" the value of the smallest number: >"
+msgstr ""
+
+#: usr_41.txt:898
+msgid ""
+"\t:  if a:num1 < a:num2\n"
+"\t:    let smaller = a:num1\n"
+"\t:  else\n"
+"\t:    let smaller = a:num2\n"
+"\t:  endif"
+msgstr ""
+
+#: usr_41.txt:904
+msgid ""
+"The variable \"smaller\" is a local variable.  Variables used inside a "
+"function\n"
+"are local unless prefixed by something like \"g:\", \"a:\", or \"s:\"."
+msgstr ""
+
+#: usr_41.txt:907
+msgid ""
+"\tNote:\n"
+"\tTo access a global variable from inside a function you must prepend\n"
+"\t\"g:\" to it.  Thus \"g:today\" inside a function is used for the global\n"
+"\tvariable \"today\", and \"today\" is another variable, local to the\n"
+"\tfunction."
+msgstr ""
+
+#: usr_41.txt:913
+msgid ""
+"You now use the \":return\" statement to return the smallest number to the "
+"user.\n"
+"Finally, you end the function: >"
+msgstr ""
+
+#: usr_41.txt:916
+msgid ""
+"\t:  return smaller\n"
+"\t:endfunction"
+msgstr ""
+
+#: usr_41.txt:919
+msgid "The complete function definition is as follows: >"
+msgstr ""
+
+#: usr_41.txt:921
+msgid ""
+"\t:function Min(num1, num2)\n"
+"\t:  if a:num1 < a:num2\n"
+"\t:    let smaller = a:num1\n"
+"\t:  else\n"
+"\t:    let smaller = a:num2\n"
+"\t:  endif\n"
+"\t:  return smaller\n"
+"\t:endfunction"
+msgstr ""
+
+#: usr_41.txt:930
+msgid "For people who like short functions, this does the same thing: >"
+msgstr ""
+
+#: usr_41.txt:932
+msgid ""
+"\t:function Min(num1, num2)\n"
+"\t:  if a:num1 < a:num2\n"
+"\t:    return a:num1\n"
+"\t:  endif\n"
+"\t:  return a:num2\n"
+"\t:endfunction"
+msgstr ""
+
+#: usr_41.txt:939
+msgid ""
+"A user defined function is called in exactly the same way as a built-in\n"
+"function.  Only the name is different.  The Min function can be used like\n"
+"this: >"
+msgstr ""
+
+#: usr_41.txt:943
+msgid "\t:echo Min(5, 8)"
+msgstr ""
+
+#: usr_41.txt:945
+msgid ""
+"Only now will the function be executed and the lines be interpreted by Vim.\n"
+"If there are mistakes, like using an undefined variable or function, you "
+"will\n"
+"now get an error message.  When defining the function these errors are not\n"
+"detected."
+msgstr ""
+
+#: usr_41.txt:950
+msgid ""
+"When a function reaches \":endfunction\" or \":return\" is used without an\n"
+"argument, the function returns zero."
+msgstr ""
+
+#: usr_41.txt:953
+msgid ""
+"To redefine a function that already exists, use the ! for the \":function\"\n"
+"command: >"
+msgstr ""
+
+#: usr_41.txt:956
+msgid "\t:function!  Min(num1, num2, num3)"
+msgstr ""
+
+#: usr_41.txt:959
+msgid "USING A RANGE"
+msgstr ""
+
+#: usr_41.txt:961
+msgid ""
+"The \":call\" command can be given a line range.  This can have one of two\n"
+"meanings.  When a function has been defined with the \"range\" keyword, it "
+"will\n"
+"take care of the line range itself.\n"
+"  The function will be passed the variables \"a:firstline\" and \"a:lastline\".\n"
+"These will have the line numbers from the range the function was called "
+"with.\n"
+"Example: >"
+msgstr ""
+
+#: usr_41.txt:968
+msgid ""
+"\t:function Count_words() range\n"
+"\t:  let lnum = a:firstline\n"
+"\t:  let n = 0\n"
+"\t:  while lnum <= a:lastline\n"
+"\t:    let n = n + len(split(getline(lnum)))\n"
+"\t:    let lnum = lnum + 1\n"
+"\t:  endwhile\n"
+"\t:  echo \"found \" . n . \" words\"\n"
+"\t:endfunction"
+msgstr ""
+
+#: usr_41.txt:978
+msgid "You can call this function with: >"
+msgstr ""
+
+#: usr_41.txt:980
+msgid "\t:10,30call Count_words()"
+msgstr ""
+
+#: usr_41.txt:982
+msgid ""
+"It will be executed once and echo the number of words.\n"
+"   The other way to use a line range is by defining a function without the\n"
+"\"range\" keyword.  The function will be called once for every line in the\n"
+"range, with the cursor in that line.  Example: >"
+msgstr ""
+
+#: usr_41.txt:987
+msgid ""
+"\t:function  Number()\n"
+"\t:  echo \"line \" . line(\".\") . \" contains: \" . getline(\".\")\n"
+"\t:endfunction"
+msgstr ""
+
+#: usr_41.txt:991
+msgid "If you call this function with: >"
+msgstr ""
+
+#: usr_41.txt:993
+msgid "\t:10,15call Number()"
+msgstr ""
+
+#: usr_41.txt:995
+msgid "The function will be called six times."
+msgstr ""
+
+#: usr_41.txt:998
+msgid "VARIABLE NUMBER OF ARGUMENTS"
+msgstr ""
+
+#: usr_41.txt:1000
+msgid ""
+"Vim enables you to define functions that have a variable number of "
+"arguments.\n"
+"The following command, for instance, defines a function that must have 1\n"
+"argument (start) and can have up to 20 additional arguments: >"
+msgstr ""
+
+#: usr_41.txt:1004
+msgid "\t:function Show(start, ...)"
+msgstr ""
+
+#: usr_41.txt:1006
+msgid ""
+"The variable \"a:1\" contains the first optional argument, \"a:2\" the second, "
+"and\n"
+"so on.  The variable \"a:0\" contains the number of extra arguments.\n"
+"   For example: >"
+msgstr ""
+
+#: usr_41.txt:1010
+msgid ""
+"\t:function Show(start, ...)\n"
+"\t:  echohl Title\n"
+"\t:  echo \"Show is \" . a:start\n"
+"\t:  echohl None\n"
+"\t:  let index = 1\n"
+"\t:  while index <= a:0\n"
+"\t:    echo \"  Arg \" . index . \" is \" . a:{index}\n"
+"\t:    let index = index + 1\n"
+"\t:  endwhile\n"
+"\t:  echo \"\"\n"
+"\t:endfunction"
+msgstr ""
+
+#: usr_41.txt:1022
+msgid ""
+"This uses the \":echohl\" command to specify the highlighting used for the\n"
+"following \":echo\" command.  \":echohl None\" stops it again.  The \":echon\"\n"
+"command works like \":echo\", but doesn't output a line break."
+msgstr ""
+
+#: usr_41.txt:1026
+msgid ""
+"You can also use the a:000 variable, it is a List of all the \"...\" "
+"arguments.\n"
+"See |a:000|."
+msgstr ""
+
+#: usr_41.txt:1030
+msgid "LISTING FUNCTIONS"
+msgstr ""
+
+#: usr_41.txt:1032
+msgid ""
+"The \":function\" command lists the names and arguments of all user-defined\n"
+"functions: >"
+msgstr ""
+
+#: usr_41.txt:1035
+msgid ""
+"\t:function\n"
+"<\tfunction Show(start, ...) ~\n"
+"\tfunction GetVimIndent() ~\n"
+"\tfunction SetSyn(name) ~"
+msgstr ""
+
+#: usr_41.txt:1040
+msgid ""
+"To see what a function does, use its name as an argument for \":function\": >"
+msgstr ""
+
+#: usr_41.txt:1042
+msgid ""
+"\t:function SetSyn\n"
+"<\t1     if &syntax == '' ~\n"
+"\t2       let &syntax = a:name ~\n"
+"\t3     endif ~\n"
+"\t   endfunction ~"
+msgstr ""
+
+#: usr_41.txt:1049
+msgid "DEBUGGING"
+msgstr ""
+
+#: usr_41.txt:1051
+msgid ""
+"The line number is useful for when you get an error message or when "
+"debugging.\n"
+"See |debug-scripts| about debugging mode.\n"
+"   You can also set the 'verbose' option to 12 or higher to see all function\n"
+"calls.  Set it to 15 or higher to see every executed line."
+msgstr ""
+
+#: usr_41.txt:1057
+msgid "DELETING A FUNCTION"
+msgstr ""
+
+#: usr_41.txt:1059
+msgid "To delete the Show() function: >"
+msgstr ""
+
+#: usr_41.txt:1061
+msgid "\t:delfunction Show"
+msgstr ""
+
+#: usr_41.txt:1063
+msgid "You get an error when the function doesn't exist."
+msgstr ""
+
+#: usr_41.txt:1066
+msgid "FUNCTION REFERENCES"
+msgstr ""
+
+#: usr_41.txt:1068
+msgid ""
+"Sometimes it can be useful to have a variable point to one function or\n"
+"another.  You can do it with the function() function.  It turns the name of "
+"a\n"
+"function into a reference: >"
+msgstr ""
+
+#: usr_41.txt:1072
+msgid ""
+"\t:let result = 0\t\t\" or 1\n"
+"\t:function! Right()\n"
+"\t:  return 'Right!'\n"
+"\t:endfunc\n"
+"\t:function! Wrong()\n"
+"\t:  return 'Wrong!'\n"
+"\t:endfunc\n"
+"\t:\n"
+"\t:if result == 1\n"
+"\t:  let Afunc = function('Right')\n"
+"\t:else\n"
+"\t:  let Afunc = function('Wrong')\n"
+"\t:endif\n"
+"\t:echo call(Afunc, [])\n"
+"<\tWrong! ~"
+msgstr ""
+
+#: usr_41.txt:1088
+msgid ""
+"Note that the name of a variable that holds a function reference must start\n"
+"with a capital.  Otherwise it could be confused with the name of a builtin\n"
+"function.\n"
+"   The way to invoke a function that a variable refers to is with the call()\n"
+"function.  Its first argument is the function reference, the second argument\n"
+"is a List with arguments."
+msgstr ""
+
+#: usr_41.txt:1095
+msgid ""
+"Function references are most useful in combination with a Dictionary, as is\n"
+"explained in the next section."
+msgstr ""
+
+#: usr_41.txt:1098
+msgid ""
+"============================================================================"
+"==\n"
+"*41.8*\tLists and Dictionaries"
+msgstr ""
+
+#: usr_41.txt:1101
+msgid ""
+"So far we have used the basic types String and Number.  Vim also supports "
+"two\n"
+"composite types: List and Dictionary."
+msgstr ""
+
+#: usr_41.txt:1104
+msgid ""
+"A List is an ordered sequence of things.  The things can be any kind of "
+"value,\n"
+"thus you can make a List of numbers, a List of Lists and even a List of "
+"mixed\n"
+"items.  To create a List with three strings: >"
+msgstr ""
+
+#: usr_41.txt:1108
+msgid "\t:let alist = ['aap', 'mies', 'noot']"
+msgstr ""
+
+#: usr_41.txt:1110
+msgid ""
+"The List items are enclosed in square brackets and separated by commas.  To\n"
+"create an empty List: >"
+msgstr ""
+
+#: usr_41.txt:1113
+msgid "\t:let alist = []"
+msgstr ""
+
+#: usr_41.txt:1115
+msgid "You can add items to a List with the add() function: >"
+msgstr ""
+
+#: usr_41.txt:1117
+msgid ""
+"\t:let alist = []\n"
+"\t:call add(alist, 'foo')\n"
+"\t:call add(alist, 'bar')\n"
+"\t:echo alist\n"
+"<\t['foo', 'bar'] ~"
+msgstr ""
+
+#: usr_41.txt:1123
+msgid "List concatenation is done with +: >"
+msgstr ""
+
+#: usr_41.txt:1125
+msgid ""
+"\t:echo alist + ['foo', 'bar']\n"
+"<\t['foo', 'bar', 'foo', 'bar'] ~"
+msgstr ""
+
+#: usr_41.txt:1128
+msgid "Or, if you want to extend a List directly: >"
+msgstr ""
+
+#: usr_41.txt:1130
+msgid ""
+"\t:let alist = ['one']\n"
+"\t:call extend(alist, ['two', 'three'])\n"
+"\t:echo alist\n"
+"<\t['one', 'two', 'three'] ~"
+msgstr ""
+
+#: usr_41.txt:1135
+msgid "Notice that using add() will have a different effect: >"
+msgstr ""
+
+#: usr_41.txt:1137
+msgid ""
+"\t:let alist = ['one']\n"
+"\t:call add(alist, ['two', 'three'])\n"
+"\t:echo alist\n"
+"<\t['one', ['two', 'three']] ~"
+msgstr ""
+
+#: usr_41.txt:1142
+msgid "The second argument of add() is added as a single item."
+msgstr ""
+
+#: usr_41.txt:1145
+msgid "FOR LOOP"
+msgstr ""
+
+#: usr_41.txt:1147
+msgid "One of the nice things you can do with a List is iterate over it: >"
+msgstr ""
+
+#: usr_41.txt:1149
+msgid ""
+"\t:let alist = ['one', 'two', 'three']\n"
+"\t:for n in alist\n"
+"\t:  echo n\n"
+"\t:endfor\n"
+"<\tone ~\n"
+"\ttwo ~\n"
+"\tthree ~"
+msgstr ""
+
+#: usr_41.txt:1157
+msgid ""
+"This will loop over each element in List \"alist\", assigning the value to\n"
+"variable \"n\".  The generic form of a for loop is: >"
+msgstr ""
+
+#: usr_41.txt:1160
+msgid ""
+"\t:for {varname} in {listexpression}\n"
+"\t:  {commands}\n"
+"\t:endfor"
+msgstr ""
+
+#: usr_41.txt:1164
+msgid ""
+"To loop a certain number of times you need a List of a specific length.  The\n"
+"range() function creates one for you: >"
+msgstr ""
+
+#: usr_41.txt:1167
+msgid ""
+"\t:for a in range(3)\n"
+"\t:  echo a\n"
+"\t:endfor\n"
+"<\t0 ~\n"
+"\t1 ~\n"
+"\t2 ~"
+msgstr ""
+
+#: usr_41.txt:1174
+msgid ""
+"Notice that the first item of the List that range() produces is zero, thus "
+"the\n"
+"last item is one less than the length of the list.\n"
+"   You can also specify the maximum value, the stride and even go backwards: "
+">"
+msgstr ""
+
+#: usr_41.txt:1178
+msgid ""
+"\t:for a in range(8, 4, -2)\n"
+"\t:  echo a\n"
+"\t:endfor\n"
+"<\t8 ~\n"
+"\t6 ~\n"
+"\t4 ~"
+msgstr ""
+
+#: usr_41.txt:1185
+msgid "A more useful example, looping over lines in the buffer: >"
+msgstr ""
+
+#: usr_41.txt:1187
+msgid ""
+"\t:for line in getline(1, 20)\n"
+"\t:  if line =~ \"Date: \"\n"
+"\t:    echo matchstr(line, 'Date: \\zs.*')\n"
+"\t:  endif\n"
+"\t:endfor"
+msgstr ""
+
+#: usr_41.txt:1193
+msgid ""
+"This looks into lines 1 to 20 (inclusive) and echoes any date found in "
+"there."
+msgstr ""
+
+#: usr_41.txt:1196
+msgid "DICTIONARIES"
+msgstr ""
+
+#: usr_41.txt:1198
+msgid ""
+"A Dictionary stores key-value pairs.  You can quickly lookup a value if you\n"
+"know the key.  A Dictionary is created with curly braces: >"
+msgstr ""
+
+#: usr_41.txt:1201
+msgid "\t:let uk2nl = {'one': 'een', 'two': 'twee', 'three': 'drie'}"
+msgstr ""
+
+#: usr_41.txt:1203
+msgid "Now you can lookup words by putting the key in square brackets: >"
+msgstr ""
+
+#: usr_41.txt:1205
+msgid ""
+"\t:echo uk2nl['two']\n"
+"<\ttwee ~"
+msgstr ""
+
+#: usr_41.txt:1208
+msgid "The generic form for defining a Dictionary is: >"
+msgstr ""
+
+#: usr_41.txt:1210
+msgid "\t{<key> : <value>, ...}"
+msgstr ""
+
+#: usr_41.txt:1212
+msgid "An empty Dictionary is one without any keys: >"
+msgstr ""
+
+#: usr_41.txt:1214
+msgid "\t{}"
+msgstr ""
+
+#: usr_41.txt:1216
+msgid ""
+"The possibilities with Dictionaries are numerous.  There are various "
+"functions\n"
+"for them as well.  For example, you can obtain a list of the keys and loop\n"
+"over them: >"
+msgstr ""
+
+#: usr_41.txt:1220
+msgid ""
+"\t:for key in keys(uk2nl)\n"
+"\t:  echo key\n"
+"\t:endfor\n"
+"<\tthree ~\n"
+"\tone ~\n"
+"\ttwo ~"
+msgstr ""
+
+#: usr_41.txt:1227
+msgid ""
+"You will notice the keys are not ordered.  You can sort the list to get a\n"
+"specific order: >"
+msgstr ""
+
+#: usr_41.txt:1230
+msgid ""
+"\t:for key in sort(keys(uk2nl))\n"
+"\t:  echo key\n"
+"\t:endfor\n"
+"<\tone ~\n"
+"\tthree ~\n"
+"\ttwo ~"
+msgstr ""
+
+#: usr_41.txt:1237
+msgid ""
+"But you can never get back the order in which items are defined.  For that "
+"you\n"
+"need to use a List, it stores items in an ordered sequence."
+msgstr ""
+
+#: usr_41.txt:1241
+msgid "DICTIONARY FUNCTIONS"
+msgstr ""
+
+#: usr_41.txt:1243
+msgid ""
+"The items in a Dictionary can normally be obtained with an index in square\n"
+"brackets: >"
+msgstr ""
+
+#: usr_41.txt:1246
+msgid ""
+"\t:echo uk2nl['one']\n"
+"<\teen ~"
+msgstr ""
+
+#: usr_41.txt:1249
+msgid ""
+"A method that does the same, but without so many punctuation characters: >"
+msgstr ""
+
+#: usr_41.txt:1251
+msgid ""
+"\t:echo uk2nl.one\n"
+"<\teen ~"
+msgstr ""
+
+#: usr_41.txt:1254
+msgid ""
+"This only works for a key that is made of ASCII letters, digits and the\n"
+"underscore.  You can also assign a new value this way: >"
+msgstr ""
+
+#: usr_41.txt:1257
+msgid ""
+"\t:let uk2nl.four = 'vier'\n"
+"\t:echo uk2nl\n"
+"<\t{'three': 'drie', 'four': 'vier', 'one': 'een', 'two': 'twee'} ~"
+msgstr ""
+
+#: usr_41.txt:1261
+msgid ""
+"And now for something special: you can directly define a function and store "
+"a\n"
+"reference to it in the dictionary: >"
+msgstr ""
+
+#: usr_41.txt:1264
+msgid ""
+"\t:function uk2nl.translate(line) dict\n"
+"\t:  return join(map(split(a:line), 'get(self, v:val, \"???\")'))\n"
+"\t:endfunction"
+msgstr ""
+
+#: usr_41.txt:1268
+msgid "Let's first try it out: >"
+msgstr ""
+
+#: usr_41.txt:1270
+msgid ""
+"\t:echo uk2nl.translate('three two five one')\n"
+"<\tdrie twee ??? een ~"
+msgstr ""
+
+#: usr_41.txt:1273
+msgid ""
+"The first special thing you notice is the \"dict\" at the end of the "
+"\":function\"\n"
+"line.  This marks the function as being used from a Dictionary.  The \"self\"\n"
+"local variable will then refer to that Dictionary.\n"
+"   Now let's break up the complicated return command: >"
+msgstr ""
+
+#: usr_41.txt:1278
+msgid "\tsplit(a:line)"
+msgstr ""
+
+#: usr_41.txt:1280
+msgid ""
+"The split() function takes a string, chops it into white separated words\n"
+"and returns a list with these words.  Thus in the example it returns: >"
+msgstr ""
+
+#: usr_41.txt:1283
+msgid ""
+"\t:echo split('three two five one')\n"
+"<\t['three', 'two', 'five', 'one'] ~"
+msgstr ""
+
+#: usr_41.txt:1286
+msgid ""
+"This list is the first argument to the map() function.  This will go through\n"
+"the list, evaluating its second argument with \"v:val\" set to the value of "
+"each\n"
+"item.  This is a shortcut to using a for loop.  This command: >"
+msgstr ""
+
+#: usr_41.txt:1290
+msgid "\t:let alist = map(split(a:line), 'get(self, v:val, \"???\")')"
+msgstr ""
+
+#: usr_41.txt:1292
+msgid "Is equivalent to: >"
+msgstr ""
+
+#: usr_41.txt:1294
+msgid ""
+"\t:let alist = split(a:line)\n"
+"\t:for idx in range(len(alist))\n"
+"\t:  let alist[idx] = get(self, alist[idx], \"???\")\n"
+"\t:endfor"
+msgstr ""
+
+#: usr_41.txt:1299
+msgid ""
+"The get() function checks if a key is present in a Dictionary.  If it is, "
+"then\n"
+"the value is retrieved.  If it isn't, then the default value is returned, in\n"
+"the example it's '???'.  This is a convenient way to handle situations where "
+"a\n"
+"key may not be present and you don't want an error message."
+msgstr ""
+
+#: usr_41.txt:1304
+msgid ""
+"The join() function does the opposite of split(): it joins together a list "
+"of\n"
+"words, putting a space in between.\n"
+"  This combination of split(), map() and join() is a nice way to filter a "
+"line\n"
+"of words in a very compact way."
+msgstr ""
+
+#: usr_41.txt:1310
+msgid "OBJECT ORIENTED PROGRAMMING"
+msgstr ""
+
+#: usr_41.txt:1312
+msgid ""
+"Now that you can put both values and functions in a Dictionary, you can\n"
+"actually use a Dictionary like an object.\n"
+"   Above we used a Dictionary for translating Dutch to English.  We might "
+"want\n"
+"to do the same for other languages.  Let's first make an object (aka\n"
+"Dictionary) that has the translate function, but no words to translate: >"
+msgstr ""
+
+#: usr_41.txt:1318
+msgid ""
+"\t:let transdict = {}\n"
+"\t:function transdict.translate(line) dict\n"
+"\t:  return join(map(split(a:line), 'get(self.words, v:val, \"???\")'))\n"
+"\t:endfunction"
+msgstr ""
+
+#: usr_41.txt:1323
+msgid ""
+"It's slightly different from the function above, using 'self.words' to "
+"lookup\n"
+"word translations.  But we don't have a self.words.  Thus you could call "
+"this\n"
+"an abstract class."
+msgstr ""
+
+#: usr_41.txt:1327
+msgid "Now we can instantiate a Dutch translation object: >"
+msgstr ""
+
+#: usr_41.txt:1329
+msgid ""
+"\t:let uk2nl = copy(transdict)\n"
+"\t:let uk2nl.words = {'one': 'een', 'two': 'twee', 'three': 'drie'}\n"
+"\t:echo uk2nl.translate('three one')\n"
+"<\tdrie een ~"
+msgstr ""
+
+#: usr_41.txt:1334
+msgid "And a German translator: >"
+msgstr ""
+
+#: usr_41.txt:1336
+msgid ""
+"\t:let uk2de = copy(transdict)\n"
+"\t:let uk2de.words = {'one': 'ein', 'two': 'zwei', 'three': 'drei'}\n"
+"\t:echo uk2de.translate('three one')\n"
+"<\tdrei ein ~"
+msgstr ""
+
+#: usr_41.txt:1341
+msgid ""
+"You see that the copy() function is used to make a copy of the \"transdict\"\n"
+"Dictionary and then the copy is changed to add the words.  The original\n"
+"remains the same, of course."
+msgstr ""
+
+#: usr_41.txt:1345
+msgid "Now you can go one step further, and use your preferred translator: >"
+msgstr ""
+
+#: usr_41.txt:1347
+msgid ""
+"\t:if $LANG =~ \"de\"\n"
+"\t:  let trans = uk2de\n"
+"\t:else\n"
+"\t:  let trans = uk2nl\n"
+"\t:endif\n"
+"\t:echo trans.translate('one two three')\n"
+"<\teen twee drie ~"
+msgstr ""
+
+#: usr_41.txt:1355
+msgid ""
+"Here \"trans\" refers to one of the two objects (Dictionaries).  No copy is\n"
+"made.  More about List and Dictionary identity can be found at |list-"
+"identity|\n"
+"and |dict-identity|."
+msgstr ""
+
+#: usr_41.txt:1359
+msgid ""
+"Now you might use a language that isn't supported.  You can overrule the\n"
+"translate() function to do nothing: >"
+msgstr ""
+
+#: usr_41.txt:1362
+msgid ""
+"\t:let uk2uk = copy(transdict)\n"
+"\t:function! uk2uk.translate(line)\n"
+"\t:  return a:line\n"
+"\t:endfunction\n"
+"\t:echo uk2uk.translate('three one wladiwostok')\n"
+"<\tthree one wladiwostok ~"
+msgstr ""
+
+#: usr_41.txt:1369
+msgid ""
+"Notice that a ! was used to overwrite the existing function reference.  Now\n"
+"use \"uk2uk\" when no recognized language is found: >"
+msgstr ""
+
+#: usr_41.txt:1372
+msgid ""
+"\t:if $LANG =~ \"de\"\n"
+"\t:  let trans = uk2de\n"
+"\t:elseif $LANG =~ \"nl\"\n"
+"\t:  let trans = uk2nl\n"
+"\t:else\n"
+"\t:  let trans = uk2uk\n"
+"\t:endif\n"
+"\t:echo trans.translate('one two three')\n"
+"<\tone two three ~"
+msgstr ""
+
+#: usr_41.txt:1382
+msgid "For further reading see |Lists| and |Dictionaries|."
+msgstr ""
+
+#: usr_41.txt:1384
+msgid ""
+"============================================================================"
+"==\n"
+"*41.9*\tExceptions"
+msgstr ""
+
+#: usr_41.txt:1387
+msgid "Let's start with an example: >"
+msgstr ""
+
+#: usr_41.txt:1389
+msgid ""
+"\t:try\n"
+"\t:   read ~/templates/pascal.tmpl\n"
+"\t:catch /E484:/\n"
+"\t:   echo \"Sorry, the Pascal template file cannot be found.\"\n"
+"\t:endtry"
+msgstr ""
+
+#: usr_41.txt:1395
+msgid ""
+"The \":read\" command will fail if the file does not exist.  Instead of\n"
+"generating an error message, this code catches the error and gives the user "
+"a\n"
+"nice message instead."
+msgstr ""
+
+#: usr_41.txt:1399
+msgid ""
+"For the commands in between \":try\" and \":endtry\" errors are turned into\n"
+"exceptions.  An exception is a string.  In the case of an error the string\n"
+"contains the error message.  And every error message has a number.  In this\n"
+"case, the error we catch contains \"E484:\".  This number is guaranteed to "
+"stay\n"
+"the same (the text may change, e.g., it may be translated)."
+msgstr ""
+
+#: usr_41.txt:1405
+msgid ""
+"When the \":read\" command causes another error, the pattern \"E484:\" will not\n"
+"match in it.  Thus this exception will not be caught and result in the usual\n"
+"error message."
+msgstr ""
+
+#: usr_41.txt:1409
+msgid "You might be tempted to do this: >"
+msgstr ""
+
+#: usr_41.txt:1411
+msgid ""
+"\t:try\n"
+"\t:   read ~/templates/pascal.tmpl\n"
+"\t:catch\n"
+"\t:   echo \"Sorry, the Pascal template file cannot be found.\"\n"
+"\t:endtry"
+msgstr ""
+
+#: usr_41.txt:1417
+msgid ""
+"This means all errors are caught.  But then you will not see errors that are\n"
+"useful, such as \"E21: Cannot make changes, 'modifiable' is off\"."
+msgstr ""
+
+#: usr_41.txt:1420
+msgid "Another useful mechanism is the \":finally\" command: >"
+msgstr ""
+
+#: usr_41.txt:1422
+msgid ""
+"\t:let tmp = tempname()\n"
+"\t:try\n"
+"\t:   exe \".,$write \" . tmp\n"
+"\t:   exe \"!filter \" . tmp\n"
+"\t:   .,$delete\n"
+"\t:   exe \"$read \" . tmp\n"
+"\t:finally\n"
+"\t:   call delete(tmp)\n"
+"\t:endtry"
+msgstr ""
+
+#: usr_41.txt:1432
+msgid ""
+"This filters the lines from the cursor until the end of the file through the\n"
+"\"filter\" command, which takes a file name argument.  No matter if the\n"
+"filtering works, something goes wrong in between \":try\" and \":finally\" or "
+"the\n"
+"user cancels the filtering by pressing CTRL-C, the \"call delete(tmp)\" is\n"
+"always executed.  This makes sure you don't leave the temporary file behind."
+msgstr ""
+
+#: usr_41.txt:1438
+msgid ""
+"More information about exception handling can be found in the reference\n"
+"manual: |exception-handling|."
+msgstr ""
+
+#: usr_41.txt:1441
+msgid ""
+"============================================================================"
+"==\n"
+"*41.10*\tVarious remarks"
+msgstr ""
+
+#: usr_41.txt:1444
+msgid ""
+"Here is a summary of items that apply to Vim scripts.  They are also "
+"mentioned\n"
+"elsewhere, but form a nice checklist."
+msgstr ""
+
+#: usr_41.txt:1447
+msgid ""
+"The end-of-line character depends on the system.  For Unix a single <NL>\n"
+"character is used.  For MS-DOS, Windows, OS/2 and the like, <CR><LF> is "
+"used.\n"
+"This is important when using mappings that end in a <CR>.  See "
+"|:source_crnl|."
+msgstr ""
+
+#: usr_41.txt:1452
+msgid "WHITE SPACE"
+msgstr ""
+
+#: usr_41.txt:1454
+msgid "Blank lines are allowed and ignored."
+msgstr ""
+
+#: usr_41.txt:1456
+msgid ""
+"Leading whitespace characters (blanks and TABs) are always ignored.  The\n"
+"whitespaces between parameters (e.g. between the 'set' and the 'cpoptions' "
+"in\n"
+"the example below) are reduced to one blank character and plays the role of "
+"a\n"
+"separator, the whitespaces after the last (visible) character may or may not\n"
+"be ignored depending on the situation, see below."
+msgstr ""
+
+#: usr_41.txt:1462
+msgid "For a \":set\" command involving the \"=\" (equal) sign, such as in: >"
+msgstr ""
+
+#: usr_41.txt:1464
+msgid "\t:set cpoptions    =aABceFst"
+msgstr ""
+
+#: usr_41.txt:1466
+msgid ""
+"the whitespace immediately before the \"=\" sign is ignored.  But there can be\n"
+"no whitespace after the \"=\" sign!"
+msgstr ""
+
+#: usr_41.txt:1469
+msgid ""
+"To include a whitespace character in the value of an option, it must be\n"
+"escaped by a \"\\\" (backslash)  as in the following example: >"
+msgstr ""
+
+#: usr_41.txt:1472
+msgid "\t:set tags=my\\ nice\\ file"
+msgstr ""
+
+#: usr_41.txt:1474
+msgid "The same example written as >"
+msgstr ""
+
+#: usr_41.txt:1476
+msgid "\t:set tags=my nice file"
+msgstr ""
+
+#: usr_41.txt:1478
+msgid "will issue an error, because it is interpreted as: >"
+msgstr ""
+
+#: usr_41.txt:1480
+msgid ""
+"\t:set tags=my\n"
+"\t:set nice\n"
+"\t:set file"
+msgstr ""
+
+#: usr_41.txt:1485
+msgid "COMMENTS"
+msgstr ""
+
+#: usr_41.txt:1487
+msgid ""
+"The character \" (the double quote mark) starts a comment.  Everything after\n"
+"and including this character until the end-of-line is considered a comment "
+"and\n"
+"is ignored, except for commands that don't consider comments, as shown in\n"
+"examples below.  A comment can start on any character position on the line."
+msgstr ""
+
+#: usr_41.txt:1492
+msgid "There is a little \"catch\" with comments for some commands.  Examples: >"
+msgstr ""
+
+#: usr_41.txt:1494
+msgid ""
+"\t:abbrev dev development\t\t\" shorthand\n"
+"\t:map <F3> o#include\t\t\" insert include\n"
+"\t:execute cmd\t\t\t\" do it\n"
+"\t:!ls *.c\t\t\t\" list C files"
+msgstr ""
+
+#: usr_41.txt:1499
+msgid ""
+"The abbreviation 'dev' will be expanded to 'development     \" shorthand'.  "
+"The\n"
+"mapping of <F3> will actually be the whole line after the 'o# ....' "
+"including\n"
+"the '\" insert include'.  The \"execute\" command will give an error.  The \"!\"\n"
+"command will send everything after it to the shell, causing an error for an\n"
+"unmatched '\"' character.\n"
+"   There can be no comment after \":map\", \":abbreviate\", \":execute\" and \"!\"\n"
+"commands (there are a few more commands with this restriction).  For the\n"
+"\":map\", \":abbreviate\" and \":execute\" commands there is a trick: >"
+msgstr ""
+
+#: usr_41.txt:1508
+msgid ""
+"\t:abbrev dev development|\" shorthand\n"
+"\t:map <F3> o#include|\" insert include\n"
+"\t:execute cmd\t\t\t|\" do it"
+msgstr ""
+
+#: usr_41.txt:1512
+msgid ""
+"With the '|' character the command is separated from the next one.  And that\n"
+"next command is only a comment.  For the last command you need to do two\n"
+"things: |:execute| and use '|': >\n"
+"\t:exe '!ls *.c'\t\t\t|\" list C files"
+msgstr ""
+
+#: usr_41.txt:1517
+msgid ""
+"Notice that there is no white space before the '|' in the abbreviation and\n"
+"mapping.  For these commands, any character until the end-of-line or '|' is\n"
+"included.  As a consequence of this behavior, you don't always see that\n"
+"trailing whitespace is included: >"
+msgstr ""
+
+#: usr_41.txt:1522
+msgid "\t:map <F4> o#include  "
+msgstr ""
+
+#: usr_41.txt:1524
+msgid ""
+"To spot these problems, you can set the 'list' option when editing vimrc\n"
+"files."
+msgstr ""
+
+#: usr_41.txt:1527
+msgid ""
+"For Unix there is one special way to comment a line, that allows making a "
+"Vim\n"
+"script executable: >\n"
+"\t#!/usr/bin/env vim -S\n"
+"\techo \"this is a Vim script\"\n"
+"\tquit"
+msgstr ""
+
+#: usr_41.txt:1533
+msgid ""
+"The \"#\" command by itself lists a line with the line number.  Adding an\n"
+"exclamation mark changes it into doing nothing, so that you can add the "
+"shell\n"
+"command to execute the rest of the file. |:#!| |-S|"
+msgstr ""
+
+#: usr_41.txt:1538
+msgid "PITFALLS"
+msgstr ""
+
+#: usr_41.txt:1540
+msgid "Even bigger problem arises in the following example: >"
+msgstr ""
+
+#: usr_41.txt:1542
+msgid ""
+"\t:map ,ab o#include\n"
+"\t:unmap ,ab "
+msgstr ""
+
+#: usr_41.txt:1545
+msgid ""
+"Here the unmap command will not work, because it tries to unmap \",ab \".  "
+"This\n"
+"does not exist as a mapped sequence.  An error will be issued, which is very\n"
+"hard to identify, because the ending whitespace character in \":unmap ,ab \" "
+"is\n"
+"not visible."
+msgstr ""
+
+#: usr_41.txt:1550
+msgid ""
+"And this is the same as what happens when one uses a comment after an "
+"'unmap'\n"
+"command: >"
+msgstr ""
+
+#: usr_41.txt:1553
+msgid "\t:unmap ,ab     \" comment"
+msgstr ""
+
+#: usr_41.txt:1555
+msgid ""
+"Here the comment part will be ignored.  However, Vim will try to unmap\n"
+"',ab     ', which does not exist.  Rewrite it as: >"
+msgstr ""
+
+#: usr_41.txt:1558
+msgid "\t:unmap ,ab|    \" comment"
+msgstr ""
+
+#: usr_41.txt:1561
+msgid "RESTORING THE VIEW"
+msgstr ""
+
+#: usr_41.txt:1563
+msgid ""
+"Sometimes you want to make a change and go back to where cursor was.\n"
+"Restoring the relative position would also be nice, so that the same line\n"
+"appears at the top of the window.\n"
+"   This example yanks the current line, puts it above the first line in the\n"
+"file and then restores the view: >"
+msgstr ""
+
+#: usr_41.txt:1569
+msgid "\tmap ,p ma\"aYHmbgg\"aP`bzt`a"
+msgstr ""
+
+#: usr_41.txt:1571
+msgid ""
+"What this does: >\n"
+"\tma\"aYHmbgg\"aP`bzt`a\n"
+"<\tma\t\t\tset mark a at cursor position\n"
+"\t  \"aY\t\t\tyank current line into register a\n"
+"\t     Hmb\t\tgo to top line in window and set mark b there\n"
+"\t\tgg\t\tgo to first line in file\n"
+"\t\t  \"aP\t\tput the yanked line above it\n"
+"\t\t     `b\t\tgo back to top line in display\n"
+"\t\t       zt\tposition the text in the window as before\n"
+"\t\t\t `a\tgo back to saved cursor position"
+msgstr ""
+
+#: usr_41.txt:1583
+msgid "PACKAGING"
+msgstr ""
+
+#: usr_41.txt:1585
+msgid ""
+"To avoid your function names to interfere with functions that you get from\n"
+"others, use this scheme:\n"
+"- Prepend a unique string before each function name.  I often use an\n"
+"  abbreviation.  For example, \"OW_\" is used for the option window functions.\n"
+"- Put the definition of your functions together in a file.  Set a global\n"
+"  variable to indicate that the functions have been loaded.  When sourcing "
+"the\n"
+"  file again, first unload the functions.\n"
+"Example: >"
+msgstr ""
+
+#: usr_41.txt:1594
+msgid "\t\" This is the XXX package"
+msgstr ""
+
+#: usr_41.txt:1596
+msgid ""
+"\tif exists(\"XXX_loaded\")\n"
+"\t  delfun XXX_one\n"
+"\t  delfun XXX_two\n"
+"\tendif"
+msgstr ""
+
+#: usr_41.txt:1601
+msgid ""
+"\tfunction XXX_one(a)\n"
+"\t\t... body of function ...\n"
+"\tendfun"
+msgstr ""
+
+#: usr_41.txt:1605
+msgid ""
+"\tfunction XXX_two(b)\n"
+"\t\t... body of function ...\n"
+"\tendfun"
+msgstr ""
+
+#: usr_41.txt:1609
+msgid "\tlet XXX_loaded = 1"
+msgstr ""
+
+#: usr_41.txt:1611
+msgid ""
+"============================================================================"
+"==\n"
+"*41.11*\tWriting a plugin\t\t\t\t*write-plugin*"
+msgstr ""
+
+#: usr_41.txt:1614
+msgid ""
+"You can write a Vim script in such a way that many people can use it.  This "
+"is\n"
+"called a plugin.  Vim users can drop your script in their plugin directory "
+"and\n"
+"use its features right away |add-plugin|."
+msgstr ""
+
+#: usr_41.txt:1618
+msgid "There are actually two types of plugins:"
+msgstr ""
+
+#: usr_41.txt:1620
+msgid ""
+"  global plugins: For all types of files.\n"
+"filetype plugins: Only for files of a specific type."
+msgstr ""
+
+#: usr_41.txt:1623
+msgid ""
+"In this section the first type is explained.  Most items are also relevant "
+"for\n"
+"writing filetype plugins.  The specifics for filetype plugins are in the "
+"next\n"
+"section |write-filetype-plugin|."
+msgstr ""
+
+#: usr_41.txt:1628
+msgid "NAME"
+msgstr ""
+
+#: usr_41.txt:1630
+msgid ""
+"First of all you must choose a name for your plugin.  The features provided\n"
+"by the plugin should be clear from its name.  And it should be unlikely that\n"
+"someone else writes a plugin with the same name but which does something\n"
+"different.  And please limit the name to 8 characters, to avoid problems on\n"
+"old Windows systems."
+msgstr ""
+
+#: usr_41.txt:1636
+msgid ""
+"A script that corrects typing mistakes could be called \"typecorr.vim\".  We\n"
+"will use it here as an example."
+msgstr ""
+
+#: usr_41.txt:1639
+msgid ""
+"For the plugin to work for everybody, it should follow a few guidelines.  "
+"This\n"
+"will be explained step-by-step.  The complete example plugin is at the end."
+msgstr ""
+
+#: usr_41.txt:1643
+msgid "BODY"
+msgstr ""
+
+#: usr_41.txt:1645
+msgid ""
+"Let's start with the body of the plugin, the lines that do the actual work: "
+">"
+msgstr ""
+
+#: usr_41.txt:1647
+msgid ""
+" 14\tiabbrev teh the\n"
+" 15\tiabbrev otehr other\n"
+" 16\tiabbrev wnat want\n"
+" 17\tiabbrev synchronisation\n"
+" 18\t\t\\ synchronization\n"
+" 19\tlet s:count = 4"
+msgstr ""
+
+#: usr_41.txt:1654
+msgid "The actual list should be much longer, of course."
+msgstr ""
+
+#: usr_41.txt:1656
+msgid ""
+"The line numbers have only been added to explain a few things, don't put "
+"them\n"
+"in your plugin file!"
+msgstr ""
+
+#: usr_41.txt:1660
+msgid "HEADER"
+msgstr ""
+
+#: usr_41.txt:1662
+msgid ""
+"You will probably add new corrections to the plugin and soon have several\n"
+"versions laying around.  And when distributing this file, people will want "
+"to\n"
+"know who wrote this wonderful plugin and where they can send remarks.\n"
+"Therefore, put a header at the top of your plugin: >"
+msgstr ""
+
+#: usr_41.txt:1667
+msgid ""
+"  1\t\" Vim global plugin for correcting typing mistakes\n"
+"  2\t\" Last Change:\t2000 Oct 15\n"
+"  3\t\" Maintainer:\tBram Moolenaar <Bram@vim.org>"
+msgstr ""
+
+#: usr_41.txt:1671
+msgid ""
+"About copyright and licensing: Since plugins are very useful and it's hardly\n"
+"worth restricting their distribution, please consider making your plugin\n"
+"either public domain or use the Vim |license|.  A short note about this near\n"
+"the top of the plugin should be sufficient.  Example: >"
+msgstr ""
+
+#: usr_41.txt:1676
+msgid "  4\t\" License:\tThis file is placed in the public domain."
+msgstr ""
+
+#: usr_41.txt:1679
+msgid "LINE CONTINUATION, AVOIDING SIDE EFFECTS\t\t*use-cpo-save*"
+msgstr ""
+
+#: usr_41.txt:1681
+msgid ""
+"In line 18 above, the line-continuation mechanism is used |line-"
+"continuation|.\n"
+"Users with 'compatible' set will run into trouble here, they will get an "
+"error\n"
+"message.  We can't just reset 'compatible', because that has a lot of side\n"
+"effects.  To avoid this, we will set the 'cpoptions' option to its Vim "
+"default\n"
+"value and restore it later.  That will allow the use of line-continuation "
+"and\n"
+"make the script work for most people.  It is done like this: >"
+msgstr ""
+
+#: usr_41.txt:1688
+msgid ""
+" 11\tlet s:save_cpo = &cpo\n"
+" 12\tset cpo&vim\n"
+" ..\n"
+" 42\tlet &cpo = s:save_cpo"
+msgstr ""
+
+#: usr_41.txt:1693
+msgid ""
+"We first store the old value of 'cpoptions' in the s:save_cpo variable.  At\n"
+"the end of the plugin this value is restored."
+msgstr ""
+
+#: usr_41.txt:1696
+msgid ""
+"Notice that a script-local variable is used |s:var|.  A global variable "
+"could\n"
+"already be in use for something else.  Always use script-local variables for\n"
+"things that are only used in the script."
+msgstr ""
+
+#: usr_41.txt:1701
+msgid "NOT LOADING"
+msgstr ""
+
+#: usr_41.txt:1703
+msgid ""
+"It's possible that a user doesn't always want to load this plugin.  Or the\n"
+"system administrator has dropped it in the system-wide plugin directory, but "
+"a\n"
+"user has his own plugin he wants to use.  Then the user must have a chance "
+"to\n"
+"disable loading this specific plugin.  This will make it possible: >"
+msgstr ""
+
+#: usr_41.txt:1708
+msgid ""
+"  6\tif exists(\"loaded_typecorr\")\n"
+"  7\t  finish\n"
+"  8\tendif\n"
+"  9\tlet loaded_typecorr = 1"
+msgstr ""
+
+#: usr_41.txt:1713
+msgid ""
+"This also avoids that when the script is loaded twice it would cause error\n"
+"messages for redefining functions and cause trouble for autocommands that "
+"are\n"
+"added twice."
+msgstr ""
+
+#: usr_41.txt:1718
+msgid "MAPPING"
+msgstr ""
+
+#: usr_41.txt:1720
+msgid ""
+"Now let's make the plugin more interesting: We will add a mapping that adds "
+"a\n"
+"correction for the word under the cursor.  We could just pick a key sequence\n"
+"for this mapping, but the user might already use it for something else.  To\n"
+"allow the user to define which keys a mapping in a plugin uses, the <Leader>\n"
+"item can be used: >"
+msgstr ""
+
+#: usr_41.txt:1726
+msgid " 22\t  map <unique> <Leader>a  <Plug>TypecorrAdd"
+msgstr ""
+
+#: usr_41.txt:1728
+msgid ""
+"The \"<Plug>TypecorrAdd\" thing will do the work, more about that further on."
+msgstr ""
+
+#: usr_41.txt:1730
+msgid ""
+"The user can set the \"mapleader\" variable to the key sequence that he wants\n"
+"this mapping to start with.  Thus if the user has done: >"
+msgstr ""
+
+#: usr_41.txt:1733
+msgid "\tlet mapleader = \"_\""
+msgstr ""
+
+#: usr_41.txt:1735
+msgid ""
+"the mapping will define \"_a\".  If the user didn't do this, the default value\n"
+"will be used, which is a backslash.  Then a map for \"\\a\" will be defined."
+msgstr ""
+
+#: usr_41.txt:1738
+msgid ""
+"Note that <unique> is used, this will cause an error message if the mapping\n"
+"already happened to exist. |:map-<unique>|"
+msgstr ""
+
+#: usr_41.txt:1741
+msgid ""
+"But what if the user wants to define his own key sequence?  We can allow "
+"that\n"
+"with this mechanism: >"
+msgstr ""
+
+#: usr_41.txt:1744
+msgid ""
+" 21\tif !hasmapto('<Plug>TypecorrAdd')\n"
+" 22\t  map <unique> <Leader>a  <Plug>TypecorrAdd\n"
+" 23\tendif"
+msgstr ""
+
+#: usr_41.txt:1748
+msgid ""
+"This checks if a mapping to \"<Plug>TypecorrAdd\" already exists, and only\n"
+"defines the mapping from \"<Leader>a\" if it doesn't.  The user then has a\n"
+"chance of putting this in his vimrc file: >"
+msgstr ""
+
+#: usr_41.txt:1752
+msgid "\tmap ,c  <Plug>TypecorrAdd"
+msgstr ""
+
+#: usr_41.txt:1754
+msgid "Then the mapped key sequence will be \",c\" instead of \"_a\" or \"\\a\"."
+msgstr ""
+
+#: usr_41.txt:1757
+msgid "PIECES"
+msgstr ""
+
+#: usr_41.txt:1759
+msgid ""
+"If a script gets longer, you often want to break up the work in pieces.  You\n"
+"can use functions or mappings for this.  But you don't want these functions\n"
+"and mappings to interfere with the ones from other scripts.  For example, "
+"you\n"
+"could define a function Add(), but another script could try to define the "
+"same\n"
+"function.  To avoid this, we define the function local to the script by\n"
+"prepending it with \"s:\"."
+msgstr ""
+
+#: usr_41.txt:1766
+msgid "We will define a function that adds a new typing correction: >"
+msgstr ""
+
+#: usr_41.txt:1768
+msgid ""
+" 30\tfunction s:Add(from, correct)\n"
+" 31\t  let to = input(\"type the correction for \" . a:from . \": \")\n"
+" 32\t  exe \":iabbrev \" . a:from . \" \" . to\n"
+" ..\n"
+" 36\tendfunction"
+msgstr ""
+
+#: usr_41.txt:1774
+msgid ""
+"Now we can call the function s:Add() from within this script.  If another\n"
+"script also defines s:Add(), it will be local to that script and can only\n"
+"be called from the script it was defined in.  There can also be a global "
+"Add()\n"
+"function (without the \"s:\"), which is again another function."
+msgstr ""
+
+#: usr_41.txt:1779
+msgid ""
+"<SID> can be used with mappings.  It generates a script ID, which identifies\n"
+"the current script.  In our typing correction plugin we use it like this: >"
+msgstr ""
+
+#: usr_41.txt:1782
+msgid ""
+" 24\tnoremap <unique> <script> <Plug>TypecorrAdd  <SID>Add\n"
+" ..\n"
+" 28\tnoremap <SID>Add  :call <SID>Add(expand(\"<cword>\"), 1)<CR>"
+msgstr ""
+
+#: usr_41.txt:1786
+msgid "Thus when a user types \"\\a\", this sequence is invoked: >"
+msgstr ""
+
+#: usr_41.txt:1788
+msgid "\t\\a  ->  <Plug>TypecorrAdd  ->  <SID>Add  ->  :call <SID>Add()"
+msgstr ""
+
+#: usr_41.txt:1790
+msgid ""
+"If another script would also map <SID>Add, it would get another script ID "
+"and\n"
+"thus define another mapping."
+msgstr ""
+
+#: usr_41.txt:1793
+msgid ""
+"Note that instead of s:Add() we use <SID>Add() here.  That is because the\n"
+"mapping is typed by the user, thus outside of the script.  The <SID> is\n"
+"translated to the script ID, so that Vim knows in which script to look for\n"
+"the Add() function."
+msgstr ""
+
+#: usr_41.txt:1798
+msgid ""
+"This is a bit complicated, but it's required for the plugin to work together\n"
+"with other plugins.  The basic rule is that you use <SID>Add() in mappings "
+"and\n"
+"s:Add() in other places (the script itself, autocommands, user commands)."
+msgstr ""
+
+#: usr_41.txt:1802
+msgid "We can also add a menu entry to do the same as the mapping: >"
+msgstr ""
+
+#: usr_41.txt:1804
+msgid " 26\tnoremenu <script> Plugin.Add\\ Correction      <SID>Add"
+msgstr ""
+
+#: usr_41.txt:1806
+msgid ""
+"The \"Plugin\" menu is recommended for adding menu items for plugins.  In this\n"
+"case only one item is used.  When adding more items, creating a submenu is\n"
+"recommended.  For example, \"Plugin.CVS\" could be used for a plugin that "
+"offers\n"
+"CVS operations \"Plugin.CVS.checkin\", \"Plugin.CVS.checkout\", etc."
+msgstr ""
+
+#: usr_41.txt:1811
+msgid ""
+"Note that in line 28 \":noremap\" is used to avoid that any other mappings "
+"cause\n"
+"trouble.  Someone may have remapped \":call\", for example.  In line 24 we "
+"also\n"
+"use \":noremap\", but we do want \"<SID>Add\" to be remapped.  This is why\n"
+"\"<script>\" is used here.  This only allows mappings which are local to the\n"
+"script. |:map-<script>|  The same is done in line 26 for \":noremenu\".\n"
+"|:menu-<script>|"
+msgstr ""
+
+#: usr_41.txt:1819
+msgid "<SID> AND <Plug>\t\t\t\t\t*using-<Plug>*"
+msgstr ""
+
+#: usr_41.txt:1821
+msgid ""
+"Both <SID> and <Plug> are used to avoid that mappings of typed keys "
+"interfere\n"
+"with mappings that are only to be used from other mappings.  Note the\n"
+"difference between using <SID> and <Plug>:"
+msgstr ""
+
+#: usr_41.txt:1825
+msgid ""
+"<Plug>\tis visible outside of the script.  It is used for mappings which the\n"
+"\tuser might want to map a key sequence to.  <Plug> is a special code\n"
+"\tthat a typed key will never produce.\n"
+"\tTo make it very unlikely that other plugins use the same sequence of\n"
+"\tcharacters, use this structure: <Plug> scriptname mapname\n"
+"\tIn our example the scriptname is \"Typecorr\" and the mapname is \"Add\".\n"
+"\tThis results in \"<Plug>TypecorrAdd\".  Only the first character of\n"
+"\tscriptname and mapname is uppercase, so that we can see where mapname\n"
+"\tstarts."
+msgstr ""
+
+#: usr_41.txt:1835
+msgid ""
+"<SID>\tis the script ID, a unique identifier for a script.\n"
+"\tInternally Vim translates <SID> to \"<SNR>123_\", where \"123\" can be any\n"
+"\tnumber.  Thus a function \"<SID>Add()\" will have a name \"<SNR>11_Add()\"\n"
+"\tin one script, and \"<SNR>22_Add()\" in another.  You can see this if\n"
+"\tyou use the \":function\" command to get a list of functions.  The\n"
+"\ttranslation of <SID> in mappings is exactly the same, that's how you\n"
+"\tcan call a script-local function from a mapping."
+msgstr ""
+
+#: usr_41.txt:1844
+msgid "USER COMMAND"
+msgstr ""
+
+#: usr_41.txt:1846
+msgid "Now let's add a user command to add a correction: >"
+msgstr ""
+
+#: usr_41.txt:1848
+msgid ""
+" 38\tif !exists(\":Correct\")\n"
+" 39\t  command -nargs=1  Correct  :call s:Add(<q-args>, 0)\n"
+" 40\tendif"
+msgstr ""
+
+#: usr_41.txt:1852
+msgid ""
+"The user command is defined only if no command with the same name already\n"
+"exists.  Otherwise we would get an error here.  Overriding the existing user\n"
+"command with \":command!\" is not a good idea, this would probably make the "
+"user\n"
+"wonder why the command he defined himself doesn't work.  |:command|"
+msgstr ""
+
+#: usr_41.txt:1858
+msgid "SCRIPT VARIABLES"
+msgstr ""
+
+#: usr_41.txt:1860
+msgid ""
+"When a variable starts with \"s:\" it is a script variable.  It can only be "
+"used\n"
+"inside a script.  Outside the script it's not visible.  This avoids trouble\n"
+"with using the same variable name in different scripts.  The variables will "
+"be\n"
+"kept as long as Vim is running.  And the same variables are used when "
+"sourcing\n"
+"the same script again. |s:var|"
+msgstr ""
+
+#: usr_41.txt:1866
+msgid ""
+"The fun is that these variables can also be used in functions, autocommands\n"
+"and user commands that are defined in the script.  In our example we can add\n"
+"a few lines to count the number of corrections: >"
+msgstr ""
+
+#: usr_41.txt:1870
+msgid ""
+" 19\tlet s:count = 4\n"
+" ..\n"
+" 30\tfunction s:Add(from, correct)\n"
+" ..\n"
+" 34\t  let s:count = s:count + 1\n"
+" 35\t  echo s:count . \" corrections now\"\n"
+" 36\tendfunction"
+msgstr ""
+
+#: usr_41.txt:1878
+msgid ""
+"First s:count is initialized to 4 in the script itself.  When later the\n"
+"s:Add() function is called, it increments s:count.  It doesn't matter from\n"
+"where the function was called, since it has been defined in the script, it\n"
+"will use the local variables from this script."
+msgstr ""
+
+#: usr_41.txt:1884
+msgid "THE RESULT"
+msgstr ""
+
+#: usr_41.txt:1886
+msgid "Here is the resulting complete example: >"
+msgstr ""
+
+#: usr_41.txt:1888
+msgid ""
+"  1\t\" Vim global plugin for correcting typing mistakes\n"
+"  2\t\" Last Change:\t2000 Oct 15\n"
+"  3\t\" Maintainer:\tBram Moolenaar <Bram@vim.org>\n"
+"  4\t\" License:\tThis file is placed in the public domain.\n"
+"  5\n"
+"  6\tif exists(\"loaded_typecorr\")\n"
+"  7\t  finish\n"
+"  8\tendif\n"
+"  9\tlet loaded_typecorr = 1\n"
+" 10\n"
+" 11\tlet s:save_cpo = &cpo\n"
+" 12\tset cpo&vim\n"
+" 13\n"
+" 14\tiabbrev teh the\n"
+" 15\tiabbrev otehr other\n"
+" 16\tiabbrev wnat want\n"
+" 17\tiabbrev synchronisation\n"
+" 18\t\t\\ synchronization\n"
+" 19\tlet s:count = 4\n"
+" 20\n"
+" 21\tif !hasmapto('<Plug>TypecorrAdd')\n"
+" 22\t  map <unique> <Leader>a  <Plug>TypecorrAdd\n"
+" 23\tendif\n"
+" 24\tnoremap <unique> <script> <Plug>TypecorrAdd  <SID>Add\n"
+" 25\n"
+" 26\tnoremenu <script> Plugin.Add\\ Correction      <SID>Add\n"
+" 27\n"
+" 28\tnoremap <SID>Add  :call <SID>Add(expand(\"<cword>\"), 1)<CR>\n"
+" 29\n"
+" 30\tfunction s:Add(from, correct)\n"
+" 31\t  let to = input(\"type the correction for \" . a:from . \": \")\n"
+" 32\t  exe \":iabbrev \" . a:from . \" \" . to\n"
+" 33\t  if a:correct | exe \"normal viws\\<C-R>\\\" \\b\\e\" | endif\n"
+" 34\t  let s:count = s:count + 1\n"
+" 35\t  echo s:count . \" corrections now\"\n"
+" 36\tendfunction\n"
+" 37\n"
+" 38\tif !exists(\":Correct\")\n"
+" 39\t  command -nargs=1  Correct  :call s:Add(<q-args>, 0)\n"
+" 40\tendif\n"
+" 41\n"
+" 42\tlet &cpo = s:save_cpo"
+msgstr ""
+
+#: usr_41.txt:1931
+msgid ""
+"Line 33 wasn't explained yet.  It applies the new correction to the word "
+"under\n"
+"the cursor.  The |:normal| command is used to use the new abbreviation.  "
+"Note\n"
+"that mappings and abbreviations are expanded here, even though the function\n"
+"was called from a mapping defined with \":noremap\"."
+msgstr ""
+
+#: usr_41.txt:1936
+msgid ""
+"Using \"unix\" for the 'fileformat' option is recommended.  The Vim scripts "
+"will\n"
+"then work everywhere.  Scripts with 'fileformat' set to \"dos\" do not work on\n"
+"Unix.  Also see |:source_crnl|.  To be sure it is set right, do this before\n"
+"writing the file: >"
+msgstr ""
+
+#: usr_41.txt:1941
+msgid "\t:set fileformat=unix"
+msgstr ""
+
+#: usr_41.txt:1944
+msgid "DOCUMENTATION\t\t\t\t\t\t*write-local-help*"
+msgstr ""
+
+#: usr_41.txt:1946
+msgid ""
+"It's a good idea to also write some documentation for your plugin.  "
+"Especially\n"
+"when its behavior can be changed by the user.  See |add-local-help| for how\n"
+"they are installed."
+msgstr ""
+
+#: usr_41.txt:1950
+msgid ""
+"Here is a simple example for a plugin help file, called \"typecorr.txt\": >"
+msgstr ""
+
+#: usr_41.txt:1952
+msgid ""
+"  1\t*typecorr.txt*\tPlugin for correcting typing mistakes\n"
+"  2\n"
+"  3\tIf you make typing mistakes, this plugin will have them corrected\n"
+"  4\tautomatically.\n"
+"  5\n"
+"  6\tThere are currently only a few corrections.  Add your own if you like.\n"
+"  7\n"
+"  8\tMappings:\n"
+"  9\t<Leader>a   or   <Plug>TypecorrAdd\n"
+" 10\t\tAdd a correction for the word under the cursor.\n"
+" 11\n"
+" 12\tCommands:\n"
+" 13\t:Correct {word}\n"
+" 14\t\tAdd a correction for {word}.\n"
+" 15\n"
+" 16\t\t\t\t\t\t\t*typecorr-settings*\n"
+" 17\tThis plugin doesn't have any settings."
+msgstr ""
+
+#: usr_41.txt:1970
+msgid ""
+"The first line is actually the only one for which the format matters.  It "
+"will\n"
+"be extracted from the help file to be put in the \"LOCAL ADDITIONS:\" section "
+"of\n"
+"help.txt |local-additions|.  The first \"*\" must be in the first column of "
+"the\n"
+"first line.  After adding your help file do \":help\" and check that the "
+"entries\n"
+"line up nicely."
+msgstr ""
+
+#: usr_41.txt:1976
+msgid ""
+"You can add more tags inside ** in your help file.  But be careful not to "
+"use\n"
+"existing help tags.  You would probably use the name of your plugin in most "
+"of\n"
+"them, like \"typecorr-settings\" in the example."
+msgstr ""
+
+#: usr_41.txt:1980
+msgid ""
+"Using references to other parts of the help in || is recommended.  This "
+"makes\n"
+"it easy for the user to find associated help."
+msgstr ""
+
+#: usr_41.txt:1984
+msgid "FILETYPE DETECTION\t\t\t\t\t*plugin-filetype*"
+msgstr ""
+
+#: usr_41.txt:1986
+msgid ""
+"If your filetype is not already detected by Vim, you should create a "
+"filetype\n"
+"detection snippet in a separate file.  It is usually in the form of an\n"
+"autocommand that sets the filetype when the file name matches a pattern.\n"
+"Example: >"
+msgstr ""
+
+#: usr_41.txt:1991
+msgid "\tau BufNewFile,BufRead *.foo\t\t\tset filetype=foofoo"
+msgstr ""
+
+#: usr_41.txt:1993
+msgid ""
+"Write this single-line file as \"ftdetect/foofoo.vim\" in the first directory\n"
+"that appears in 'runtimepath'.  For Unix that would be\n"
+"\"~/.vim/ftdetect/foofoo.vim\".  The convention is to use the name of the\n"
+"filetype for the script name."
+msgstr ""
+
+#: usr_41.txt:1998
+msgid ""
+"You can make more complicated checks if you like, for example to inspect the\n"
+"contents of the file to recognize the language.  Also see |new-filetype|."
+msgstr ""
+
+#: usr_41.txt:2002
+msgid "SUMMARY\t\t\t\t\t\t\t*plugin-special*"
+msgstr ""
+
+#: usr_41.txt:2004
+msgid "Summary of special things to use in a plugin:"
+msgstr ""
+
+#: usr_41.txt:2006
+msgid "s:name\t\t\tVariables local to the script."
+msgstr ""
+
+#: usr_41.txt:2008
+msgid ""
+"<SID>\t\t\tScript-ID, used for mappings and functions local to\n"
+"\t\t\tthe script."
+msgstr ""
+
+#: usr_41.txt:2011
+msgid ""
+"hasmapto()\t\tFunction to test if the user already defined a mapping\n"
+"\t\t\tfor functionality the script offers."
+msgstr ""
+
+#: usr_41.txt:2014
+msgid ""
+"<Leader>\t\tValue of \"mapleader\", which the user defines as the\n"
+"\t\t\tkeys that plugin mappings start with."
+msgstr ""
+
+#: usr_41.txt:2017
+msgid ":map <unique>\t\tGive a warning if a mapping already exists."
+msgstr ""
+
+#: usr_41.txt:2019
+msgid ""
+":noremap <script>\tUse only mappings local to the script, not global\n"
+"\t\t\tmappings."
+msgstr ""
+
+#: usr_41.txt:2022
+msgid "exists(\":Cmd\")\t\tCheck if a user command already exists."
+msgstr ""
+
+#: usr_41.txt:2024
+msgid ""
+"============================================================================"
+"==\n"
+"*41.12*\tWriting a filetype plugin\t*write-filetype-plugin* *ftplugin*"
+msgstr ""
+
+#: usr_41.txt:2027
+msgid ""
+"A filetype plugin is like a global plugin, except that it sets options and\n"
+"defines mappings for the current buffer only.  See |add-filetype-plugin| for\n"
+"how this type of plugin is used."
+msgstr ""
+
+#: usr_41.txt:2031
+msgid ""
+"First read the section on global plugins above |41.11|.  All that is said "
+"there\n"
+"also applies to filetype plugins.  There are a few extras, which are "
+"explained\n"
+"here.  The essential thing is that a filetype plugin should only have an\n"
+"effect on the current buffer."
+msgstr ""
+
+#: usr_41.txt:2037
+msgid "DISABLING"
+msgstr ""
+
+#: usr_41.txt:2039
+msgid ""
+"If you are writing a filetype plugin to be used by many people, they need a\n"
+"chance to disable loading it.  Put this at the top of the plugin: >"
+msgstr ""
+
+#: usr_41.txt:2042
+msgid ""
+"\t\" Only do this when not done yet for this buffer\n"
+"\tif exists(\"b:did_ftplugin\")\n"
+"\t  finish\n"
+"\tendif\n"
+"\tlet b:did_ftplugin = 1"
+msgstr ""
+
+#: usr_41.txt:2048
+msgid ""
+"This also needs to be used to avoid that the same plugin is executed twice "
+"for\n"
+"the same buffer (happens when using an \":edit\" command without arguments)."
+msgstr ""
+
+#: usr_41.txt:2051
+msgid ""
+"Now users can disable loading the default plugin completely by making a\n"
+"filetype plugin with only this line: >"
+msgstr ""
+
+#: usr_41.txt:2054
+msgid "\tlet b:did_ftplugin = 1"
+msgstr ""
+
+#: usr_41.txt:2056
+msgid ""
+"This does require that the filetype plugin directory comes before "
+"$VIMRUNTIME\n"
+"in 'runtimepath'!"
+msgstr ""
+
+#: usr_41.txt:2059
+msgid ""
+"If you do want to use the default plugin, but overrule one of the settings,\n"
+"you can write the different setting in a script: >"
+msgstr ""
+
+#: usr_41.txt:2062
+msgid "\tsetlocal textwidth=70"
+msgstr ""
+
+#: usr_41.txt:2064
+msgid ""
+"Now write this in the \"after\" directory, so that it gets sourced after the\n"
+"distributed \"vim.vim\" ftplugin |after-directory|.  For Unix this would be\n"
+"\"~/.vim/after/ftplugin/vim.vim\".  Note that the default plugin will have set\n"
+"\"b:did_ftplugin\", but it is ignored here."
+msgstr ""
+
+#: usr_41.txt:2070
+msgid "OPTIONS"
+msgstr ""
+
+#: usr_41.txt:2072
+msgid ""
+"To make sure the filetype plugin only affects the current buffer use the >"
+msgstr ""
+
+#: usr_41.txt:2074
+msgid "\t:setlocal"
+msgstr ""
+
+#: usr_41.txt:2076
+msgid ""
+"command to set options.  And only set options which are local to a buffer "
+"(see\n"
+"the help for the option to check that).  When using |:setlocal| for global\n"
+"options or options local to a window, the value will change for many "
+"buffers,\n"
+"and that is not what a filetype plugin should do."
+msgstr ""
+
+#: usr_41.txt:2081
+msgid ""
+"When an option has a value that is a list of flags or items, consider using\n"
+"\"+=\" and \"-=\" to keep the existing value.  Be aware that the user may have\n"
+"changed an option value already.  First resetting to the default value and\n"
+"then changing it often a good idea.  Example: >"
+msgstr ""
+
+#: usr_41.txt:2086
+msgid "\t:setlocal formatoptions& formatoptions+=ro"
+msgstr ""
+
+#: usr_41.txt:2089
+msgid "MAPPINGS"
+msgstr ""
+
+#: usr_41.txt:2091
+msgid "To make sure mappings will only work in the current buffer use the >"
+msgstr ""
+
+#: usr_41.txt:2093
+msgid "\t:map <buffer>"
+msgstr ""
+
+#: usr_41.txt:2095
+msgid ""
+"command.  This needs to be combined with the two-step mapping explained "
+"above.\n"
+"An example of how to define functionality in a filetype plugin: >"
+msgstr ""
+
+#: usr_41.txt:2098
+msgid ""
+"\tif !hasmapto('<Plug>JavaImport')\n"
+"\t  map <buffer> <unique> <LocalLeader>i <Plug>JavaImport\n"
+"\tendif\n"
+"\tnoremap <buffer> <unique> <Plug>JavaImport oimport \"\"<Left><Esc>"
+msgstr ""
+
+#: usr_41.txt:2103
+msgid ""
+"|hasmapto()| is used to check if the user has already defined a map to\n"
+"<Plug>JavaImport.  If not, then the filetype plugin defines the default\n"
+"mapping.  This starts with |<LocalLeader>|, which allows the user to select\n"
+"the key(s) he wants filetype plugin mappings to start with.  The default is "
+"a\n"
+"backslash.\n"
+"\"<unique>\" is used to give an error message if the mapping already exists or\n"
+"overlaps with an existing mapping.\n"
+"|:noremap| is used to avoid that any other mappings that the user has "
+"defined\n"
+"interferes.  You might want to use \":noremap <script>\" to allow remapping\n"
+"mappings defined in this script that start with <SID>."
+msgstr ""
+
+#: usr_41.txt:2114
+msgid ""
+"The user must have a chance to disable the mappings in a filetype plugin,\n"
+"without disabling everything.  Here is an example of how this is done for a\n"
+"plugin for the mail filetype: >"
+msgstr ""
+
+#: usr_41.txt:2118
+msgid ""
+"\t\" Add mappings, unless the user didn't want this.\n"
+"\tif !exists(\"no_plugin_maps\") && !exists(\"no_mail_maps\")\n"
+"\t  \" Quote text by inserting \"> \"\n"
+"\t  if !hasmapto('<Plug>MailQuote')\n"
+"\t    vmap <buffer> <LocalLeader>q <Plug>MailQuote\n"
+"\t    nmap <buffer> <LocalLeader>q <Plug>MailQuote\n"
+"\t  endif\n"
+"\t  vnoremap <buffer> <Plug>MailQuote :s/^/> /<CR>\n"
+"\t  nnoremap <buffer> <Plug>MailQuote :.,$s/^/> /<CR>\n"
+"\tendif"
+msgstr ""
+
+#: usr_41.txt:2129
+msgid ""
+"Two global variables are used:\n"
+"no_plugin_maps\t\tdisables mappings for all filetype plugins\n"
+"no_mail_maps\t\tdisables mappings for a specific filetype"
+msgstr ""
+
+#: usr_41.txt:2134
+msgid "USER COMMANDS"
+msgstr ""
+
+#: usr_41.txt:2136
+msgid ""
+"To add a user command for a specific file type, so that it can only be used "
+"in\n"
+"one buffer, use the \"-buffer\" argument to |:command|.  Example: >"
+msgstr ""
+
+#: usr_41.txt:2139
+msgid "\t:command -buffer  Make  make %:r.s"
+msgstr ""
+
+#: usr_41.txt:2142
+msgid "VARIABLES"
+msgstr ""
+
+#: usr_41.txt:2144
+msgid ""
+"A filetype plugin will be sourced for each buffer of the type it's for.  "
+"Local\n"
+"script variables |s:var| will be shared between all invocations.  Use local\n"
+"buffer variables |b:var| if you want a variable specifically for one buffer."
+msgstr ""
+
+#: usr_41.txt:2149
+msgid "FUNCTIONS"
+msgstr ""
+
+#: usr_41.txt:2151
+msgid ""
+"When defining a function, this only needs to be done once.  But the filetype\n"
+"plugin will be sourced every time a file with this filetype will be opened.\n"
+"This construct make sure the function is only defined once: >"
+msgstr ""
+
+#: usr_41.txt:2155
+msgid ""
+"\t:if !exists(\"*s:Func\")\n"
+"\t:  function s:Func(arg)\n"
+"\t:    ...\n"
+"\t:  endfunction\n"
+"\t:endif\n"
+"<"
+msgstr ""
+
+#: usr_41.txt:2162
+msgid "UNDO\t\t\t\t\t\t\t*undo_ftplugin*"
+msgstr ""
+
+#: usr_41.txt:2164
+msgid ""
+"When the user does \":setfiletype xyz\" the effect of the previous filetype\n"
+"should be undone.  Set the b:undo_ftplugin variable to the commands that "
+"will\n"
+"undo the settings in your filetype plugin.  Example: >"
+msgstr ""
+
+#: usr_41.txt:2168
+msgid ""
+"\tlet b:undo_ftplugin = \"setlocal fo< com< tw< commentstring<\"\n"
+"\t\t\\ . \"| unlet b:match_ignorecase b:match_words b:match_skip\""
+msgstr ""
+
+#: usr_41.txt:2171
+msgid ""
+"Using \":setlocal\" with \"<\" after the option name resets the option to its\n"
+"global value.  That is mostly the best way to reset the option value."
+msgstr ""
+
+#: usr_41.txt:2174
+msgid ""
+"This does require removing the \"C\" flag from 'cpoptions' to allow line\n"
+"continuation, as mentioned above |use-cpo-save|."
+msgstr ""
+
+#: usr_41.txt:2178
+msgid "FILE NAME"
+msgstr ""
+
+#: usr_41.txt:2180
+msgid ""
+"The filetype must be included in the file name |ftplugin-name|.  Use one of\n"
+"these three forms:"
+msgstr ""
+
+#: usr_41.txt:2183
+msgid ""
+"\t.../ftplugin/stuff.vim\n"
+"\t.../ftplugin/stuff_foo.vim\n"
+"\t.../ftplugin/stuff/bar.vim"
+msgstr ""
+
+#: usr_41.txt:2187
+msgid "\"stuff\" is the filetype, \"foo\" and \"bar\" are arbitrary names."
+msgstr ""
+
+#: usr_41.txt:2190
+msgid "SUMMARY\t\t\t\t\t\t\t*ftplugin-special*"
+msgstr ""
+
+#: usr_41.txt:2192
+msgid "Summary of special things to use in a filetype plugin:"
+msgstr ""
+
+#: usr_41.txt:2194
+msgid ""
+"<LocalLeader>\t\tValue of \"maplocalleader\", which the user defines as\n"
+"\t\t\tthe keys that filetype plugin mappings start with."
+msgstr ""
+
+#: usr_41.txt:2197
+msgid ":map <buffer>\t\tDefine a mapping local to the buffer."
+msgstr ""
+
+#: usr_41.txt:2199
+msgid ""
+":noremap <script>\tOnly remap mappings defined in this script that start\n"
+"\t\t\twith <SID>."
+msgstr ""
+
+#: usr_41.txt:2202
+msgid ":setlocal\t\tSet an option for the current buffer only."
+msgstr ""
+
+#: usr_41.txt:2204
+msgid ":command -buffer\tDefine a user command local to the buffer."
+msgstr ""
+
+#: usr_41.txt:2206
+msgid "exists(\"*s:Func\")\tCheck if a function was already defined."
+msgstr ""
+
+#: usr_41.txt:2208
+msgid "Also see |plugin-special|, the special things used for all plugins."
+msgstr ""
+
+#: usr_41.txt:2210
+msgid ""
+"============================================================================"
+"==\n"
+"*41.13*\tWriting a compiler plugin\t\t*write-compiler-plugin*"
+msgstr ""
+
+#: usr_41.txt:2213
+msgid ""
+"A compiler plugin sets options for use with a specific compiler.  The user "
+"can\n"
+"load it with the |:compiler| command.  The main use is to set the\n"
+"'errorformat' and 'makeprg' options."
+msgstr ""
+
+#: usr_41.txt:2217
+msgid ""
+"Easiest is to have a look at examples.  This command will edit all the "
+"default\n"
+"compiler plugins: >"
+msgstr ""
+
+#: usr_41.txt:2220
+msgid "\t:next $VIMRUNTIME/compiler/*.vim"
+msgstr ""
+
+#: usr_41.txt:2222
+msgid "Use |:next| to go to the next plugin file."
+msgstr ""
+
+#: usr_41.txt:2224
+msgid ""
+"There are two special items about these files.  First is a mechanism to "
+"allow\n"
+"a user to overrule or add to the default file.  The default files start "
+"with: >"
+msgstr ""
+
+#: usr_41.txt:2227
+msgid ""
+"\t:if exists(\"current_compiler\")\n"
+"\t:  finish\n"
+"\t:endif\n"
+"\t:let current_compiler = \"mine\""
+msgstr ""
+
+#: usr_41.txt:2232
+msgid ""
+"When you write a compiler file and put it in your personal runtime directory\n"
+"(e.g., ~/.vim/compiler for Unix), you set the \"current_compiler\" variable to\n"
+"make the default file skip the settings.\n"
+"\t\t\t\t\t\t\t*:CompilerSet*\n"
+"The second mechanism is to use \":set\" for \":compiler!\" and \":setlocal\" for\n"
+"\":compiler\".  Vim defines the \":CompilerSet\" user command for this.  "
+"However,\n"
+"older Vim versions don't, thus your plugin should define it then.  This is "
+"an\n"
+"example: >"
+msgstr ""
+
+#: usr_41.txt:2241
+msgid ""
+"  if exists(\":CompilerSet\") != 2\n"
+"    command -nargs=* CompilerSet setlocal <args>\n"
+"  endif\n"
+"  CompilerSet errorformat&\t\t\" use the default 'errorformat'\n"
+"  CompilerSet makeprg=nmake"
+msgstr ""
+
+#: usr_41.txt:2247
+msgid ""
+"When you write a compiler plugin for the Vim distribution or for a system-"
+"wide\n"
+"runtime directory, use the mechanism mentioned above.  When\n"
+"\"current_compiler\" was already set by a user plugin nothing will be done."
+msgstr ""
+
+#: usr_41.txt:2251
+msgid ""
+"When you write a compiler plugin to overrule settings from a default plugin,\n"
+"don't check \"current_compiler\".  This plugin is supposed to be loaded\n"
+"last, thus it should be in a directory at the end of 'runtimepath'.  For "
+"Unix\n"
+"that could be ~/.vim/after/compiler."
+msgstr ""
+
+#: usr_41.txt:2256
+msgid ""
+"============================================================================"
+"==\n"
+"*41.14*\tWriting a plugin that loads quickly\t*write-plugin-quickload*"
+msgstr ""
+
+#: usr_41.txt:2259
+msgid ""
+"A plugin may grow and become quite long.  The startup delay may become\n"
+"noticeable, while you hardly ever use the plugin.  Then it's time for a\n"
+"quickload plugin."
+msgstr ""
+
+#: usr_41.txt:2263
+msgid ""
+"The basic idea is that the plugin is loaded twice.  The first time user\n"
+"commands and mappings are defined that offer the functionality.  The second\n"
+"time the functions that implement the functionality are defined."
+msgstr ""
+
+#: usr_41.txt:2267
+msgid ""
+"It may sound surprising that quickload means loading a script twice.  What "
+"we\n"
+"mean is that it loads quickly the first time, postponing the bulk of the\n"
+"script to the second time, which only happens when you actually use it.  "
+"When\n"
+"you always use the functionality it actually gets slower!"
+msgstr ""
+
+#: usr_41.txt:2272
+msgid ""
+"Note that since Vim 7 there is an alternative: use the |autoload|\n"
+"functionality |41.15|."
+msgstr ""
+
+#: usr_41.txt:2275
+msgid "The following example shows how it's done: >"
+msgstr ""
+
+#: usr_41.txt:2277
+msgid ""
+"\t\" Vim global plugin for demonstrating quick loading\n"
+"\t\" Last Change:\t2005 Feb 25\n"
+"\t\" Maintainer:\tBram Moolenaar <Bram@vim.org>\n"
+"\t\" License:\tThis file is placed in the public domain."
+msgstr ""
+
+#: usr_41.txt:2282
+msgid ""
+"\tif !exists(\"s:did_load\")\n"
+"\t\tcommand -nargs=* BNRead  call BufNetRead(<f-args>)\n"
+"\t\tmap <F19> :call BufNetWrite('something')<CR>"
+msgstr ""
+
+#: usr_41.txt:2286
+msgid ""
+"\t\tlet s:did_load = 1\n"
+"\t\texe 'au FuncUndefined BufNet* source ' . expand('<sfile>')\n"
+"\t\tfinish\n"
+"\tendif"
+msgstr ""
+
+#: usr_41.txt:2291
+msgid ""
+"\tfunction BufNetRead(...)\n"
+"\t\techo 'BufNetRead(' . string(a:000) . ')'\n"
+"\t\t\" read functionality here\n"
+"\tendfunction"
+msgstr ""
+
+#: usr_41.txt:2296
+msgid ""
+"\tfunction BufNetWrite(...)\n"
+"\t\techo 'BufNetWrite(' . string(a:000) . ')'\n"
+"\t\t\" write functionality here\n"
+"\tendfunction"
+msgstr ""
+
+#: usr_41.txt:2301
+msgid ""
+"When the script is first loaded \"s:did_load\" is not set.  The commands "
+"between\n"
+"the \"if\" and \"endif\" will be executed.  This ends in a |:finish| command, "
+"thus\n"
+"the rest of the script is not executed."
+msgstr ""
+
+#: usr_41.txt:2305
+msgid ""
+"The second time the script is loaded \"s:did_load\" exists and the commands\n"
+"after the \"endif\" are executed.  This defines the (possible long)\n"
+"BufNetRead() and BufNetWrite() functions."
+msgstr ""
+
+#: usr_41.txt:2309
+msgid ""
+"If you drop this script in your plugin directory Vim will execute it on\n"
+"startup.  This is the sequence of events that happens:"
+msgstr ""
+
+#: usr_41.txt:2312
+msgid ""
+"1. The \"BNRead\" command is defined and the <F19> key is mapped when the "
+"script\n"
+"   is sourced at startup.  A |FuncUndefined| autocommand is defined.  The\n"
+"   \":finish\" command causes the script to terminate early."
+msgstr ""
+
+#: usr_41.txt:2316
+msgid ""
+"2. The user types the BNRead command or presses the <F19> key.  The\n"
+"   BufNetRead() or BufNetWrite() function will be called."
+msgstr ""
+
+#: usr_41.txt:2319
+msgid ""
+"3. Vim can't find the function and triggers the |FuncUndefined| autocommand\n"
+"   event.  Since the pattern \"BufNet*\" matches the invoked function, the\n"
+"   command \"source fname\" will be executed.  \"fname\" will be equal to the "
+"name\n"
+"   of the script, no matter where it is located, because it comes from\n"
+"   expanding \"<sfile>\" (see |expand()|)."
+msgstr ""
+
+#: usr_41.txt:2325
+msgid ""
+"4. The script is sourced again, the \"s:did_load\" variable exists and the\n"
+"   functions are defined."
+msgstr ""
+
+#: usr_41.txt:2328
+msgid ""
+"Notice that the functions that are loaded afterwards match the pattern in "
+"the\n"
+"|FuncUndefined| autocommand.  You must make sure that no other plugin "
+"defines\n"
+"functions that match this pattern."
+msgstr ""
+
+#: usr_41.txt:2332
+msgid ""
+"============================================================================"
+"==\n"
+"*41.15*\tWriting library scripts\t\t\t*write-library-script*"
+msgstr ""
+
+#: usr_41.txt:2335
+msgid ""
+"Some functionality will be required in several places.  When this becomes "
+"more\n"
+"than a few lines you will want to put it in one script and use it from many\n"
+"scripts.  We will call that one script a library script."
+msgstr ""
+
+#: usr_41.txt:2339
+msgid ""
+"Manually loading a library script is possible, so long as you avoid loading "
+"it\n"
+"when it's already done.  You can do this with the |exists()| function.\n"
+"Example: >"
+msgstr ""
+
+#: usr_41.txt:2343
+msgid ""
+"\tif !exists('*MyLibFunction')\n"
+"\t   runtime library/mylibscript.vim\n"
+"\tendif\n"
+"\tcall MyLibFunction(arg)"
+msgstr ""
+
+#: usr_41.txt:2348
+msgid ""
+"Here you need to know that MyLibFunction() is defined in a script\n"
+"\"library/mylibscript.vim\" in one of the directories in 'runtimepath'."
+msgstr ""
+
+#: usr_41.txt:2351
+msgid ""
+"To make this a bit simpler Vim offers the autoload mechanism.  Then the\n"
+"example looks like this: >"
+msgstr ""
+
+#: usr_41.txt:2354
+msgid "\tcall mylib#myfunction(arg)"
+msgstr ""
+
+#: usr_41.txt:2356
+msgid ""
+"That's a lot simpler, isn't it?  Vim will recognize the function name and "
+"when\n"
+"it's not defined search for the script \"autoload/mylib.vim\" in "
+"'runtimepath'.\n"
+"That script must define the \"mylib#myfunction()\" function."
+msgstr ""
+
+#: usr_41.txt:2360
+msgid ""
+"You can put many other functions in the mylib.vim script, you are free to\n"
+"organize your functions in library scripts.  But you must use function names\n"
+"where the part before the '#' matches the script name.  Otherwise Vim would\n"
+"not know what script to load."
+msgstr ""
+
+#: usr_41.txt:2365
+msgid ""
+"If you get really enthusiastic and write lots of library scripts, you may\n"
+"want to use subdirectories.  Example: >"
+msgstr ""
+
+#: usr_41.txt:2368
+msgid "\tcall netlib#ftp#read('somefile')"
+msgstr ""
+
+#: usr_41.txt:2370
+msgid "For Unix the library script used for this could be:"
+msgstr ""
+
+#: usr_41.txt:2372
+msgid "\t~/.vim/autoload/netlib/ftp.vim"
+msgstr ""
+
+#: usr_41.txt:2374
+msgid "Where the function is defined like this: >"
+msgstr ""
+
+#: usr_41.txt:2376
+msgid ""
+"\tfunction netlib#ftp#read(fname)\n"
+"\t\t\"  Read the file fname through ftp\n"
+"\tendfunction"
+msgstr ""
+
+#: usr_41.txt:2380
+msgid ""
+"Notice that the name the function is defined with is exactly the same as the\n"
+"name used for calling the function.  And the part before the last '#'\n"
+"exactly matches the subdirectory and script name."
+msgstr ""
+
+#: usr_41.txt:2384
+msgid "You can use the same mechanism for variables: >"
+msgstr ""
+
+#: usr_41.txt:2386
+msgid "\tlet weekdays = dutch#weekdays"
+msgstr ""
+
+#: usr_41.txt:2388
+msgid ""
+"This will load the script \"autoload/dutch.vim\", which should contain "
+"something\n"
+"like: >"
+msgstr ""
+
+#: usr_41.txt:2391
+msgid ""
+"\tlet dutch#weekdays = ['zondag', 'maandag', 'dinsdag', 'woensdag',\n"
+"\t\t\\ 'donderdag', 'vrijdag', 'zaterdag']"
+msgstr ""
+
+#: usr_41.txt:2394
+msgid "Further reading: |autoload|."
+msgstr ""
+
+#: usr_41.txt:2396
+msgid ""
+"============================================================================"
+"==\n"
+"*41.16*\tDistributing Vim scripts\t\t\t*distribute-script*"
+msgstr ""
+
+#: usr_41.txt:2399
+msgid ""
+"Vim users will look for scripts on the Vim website: http://www.vim.org.\n"
+"If you made something that is useful for others, share it!"
+msgstr ""
+
+#: usr_41.txt:2402
+msgid ""
+"Vim scripts can be used on any system.  There might not be a tar or gzip\n"
+"command.  If you want to pack files together and/or compress them the \"zip\"\n"
+"utility is recommended."
+msgstr ""
+
+#: usr_41.txt:2406
+msgid ""
+"For utmost portability use Vim itself to pack scripts together.  This can be\n"
+"done with the Vimball utility.  See |vimball|."
+msgstr ""
+
+#: usr_41.txt:2409
+msgid ""
+"It's good if you add a line to allow automatic updating.  See |glvs-"
+"plugins|."
+msgstr ""
+
+#: usr_41.txt:2411
+msgid ""
+"============================================================================"
+"=="
+msgstr ""
+
+#: usr_41.txt:2413
+msgid "Next chapter: |usr_42.txt|  Add new menus"
+msgstr ""
+
+#: usr_41.txt:2415
+msgid "Copyright: see |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
+msgstr ""

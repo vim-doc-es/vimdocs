@@ -1,0 +1,980 @@
+#. extracted from gui_x11.txt
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-04 13:43+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.3.0\n"
+
+#: gui_x11.txt:1
+msgid "*gui_x11.txt*   For Vim version 7.2.  Last change: 2007 Dec 09"
+msgstr ""
+
+#: gui_x11.txt:4
+msgid "\t\t  VIM REFERENCE MANUAL    by Bram Moolenaar"
+msgstr ""
+
+#: gui_x11.txt:7
+msgid ""
+"Vim's Graphical User Interface\t\t\t\t*gui-x11* *GUI-X11*\n"
+"\t\t\t\t\t\t\t*Athena* *Motif*\n"
+"1. Starting the X11 GUI\t\t|gui-x11-start|\n"
+"2. GUI Resources\t\t|gui-resources|\n"
+"3. Shell Commands\t\t|gui-pty|\n"
+"4. Various\t\t\t|gui-x11-various|\n"
+"5. GTK version\t\t\t|gui-gtk|\n"
+"6. GNOME version\t\t|gui-gnome|\n"
+"7. KDE version\t\t\t|gui-kde|\n"
+"8. Compiling\t\t\t|gui-x11-compiling|\n"
+"9. X11 selection mechanism\t|x11-selection|"
+msgstr ""
+
+#: gui_x11.txt:19
+msgid ""
+"Other relevant documentation:\n"
+"|gui.txt|\tFor generic items of the GUI."
+msgstr ""
+
+#: gui_x11.txt:22
+msgid "{Vi does not have any of these commands}"
+msgstr ""
+
+#: gui_x11.txt:24
+msgid ""
+"============================================================================"
+"==\n"
+"1. Starting the X11 GUI\t\t\t\t\t*gui-x11-start* *E665*"
+msgstr ""
+
+#: gui_x11.txt:27
+msgid ""
+"Then you can run the GUI version of Vim in either of these ways:\n"
+"    gvim [options] [files...]\n"
+"    vim -g [options] [files...]"
+msgstr ""
+
+#: gui_x11.txt:31
+msgid ""
+"So if you call the executable \"gvim\", or make \"gvim\" a link to the "
+"executable,\n"
+"then the GUI version will automatically be used.  Additional characters may "
+"be\n"
+"added after \"gvim\", for example \"gvim-5\"."
+msgstr ""
+
+#: gui_x11.txt:35
+msgid ""
+"You may also start up the GUI from within the terminal version by using one "
+"of\n"
+"these commands:\n"
+"\t:gui [++opt] [+cmd] [-f|-b] [files...]\t\t\t*:gu* *:gui*\n"
+"\t:gvim [++opt] [+cmd] [-f|-b] [files...]\t\t\t*:gv* *:gvim*\n"
+"The \"-f\" option runs Vim in the foreground.\n"
+"The \"-b\" option runs Vim in the background (this is the default).\n"
+"Also see |++opt| and |+cmd|."
+msgstr ""
+
+#: gui_x11.txt:43
+msgid ""
+"\t\t\t\t\t\t\t*gui-fork*\n"
+"When the GUI is started, it does a fork() and exits the current process.\n"
+"When gvim was started from a shell this makes the shell accept further\n"
+"commands.  If you don't want this (e.g. when using gvim for a mail program\n"
+"that waits for gvim to exit), start gvim with \"gvim -f\", \"vim -gf\" or use\n"
+"\":gui -f\".  Don't use \"vim -fg\", because \"-fg\" specifies the foreground\n"
+"color."
+msgstr ""
+
+#: gui_x11.txt:51
+msgid ""
+"When using \"gvim -f\" and then \":gui\", Vim will run in the foreground.  The\n"
+"\"-f\" argument will be remembered.  To force running Vim in the background "
+"use\n"
+"\":gui -b\"."
+msgstr ""
+
+#: gui_x11.txt:55
+msgid "\"gvim --nofork\" does the same as \"gvim -f\"."
+msgstr ""
+
+#: gui_x11.txt:57
+msgid ""
+"If you want the GUI to run in the foreground always, include the 'f'\n"
+"flag in 'guioptions'.  |-f|."
+msgstr ""
+
+#: gui_x11.txt:60
+msgid ""
+"============================================================================"
+"==\n"
+"2. GUI Resources\t\t\t*gui-resources* *.Xdefaults*"
+msgstr ""
+
+#: gui_x11.txt:63
+msgid ""
+"If using the Motif or Athena version of the GUI (not for the KDE, GTK+ or "
+"Win32\n"
+"version), a number of X resources are available.  You should use Vim's class\n"
+"\"Vim\" when setting these.  They are as follows:"
+msgstr ""
+
+#: gui_x11.txt:67
+msgid "    Resource name\tMeaning\t\t~"
+msgstr ""
+
+#: gui_x11.txt:69
+msgid ""
+"    reverseVideo\tBoolean: should reverse video be used?\n"
+"    background\t\tColor of background.\n"
+"    foreground\t\tColor of normal text.\n"
+"    scrollBackground\tColor of trough portion of scrollbars.\n"
+"    scrollForeground\tColor of slider and arrow portions of scrollbars.\n"
+"    menuBackground\tColor of menu backgrounds.\n"
+"    menuForeground\tColor of menu foregrounds.\n"
+"    tooltipForeground\tColor of tooltip and balloon foreground.\n"
+"    tooltipBackground\tColor of tooltip and balloon background."
+msgstr ""
+
+#: gui_x11.txt:79
+msgid ""
+"    font\t\tName of font used for normal text.\n"
+"    boldFont\t\tName of font used for bold text.\n"
+"    italicFont\t\tName of font used for italic text.\n"
+"    boldItalicFont\tName of font used for bold, italic text.\n"
+"    menuFont\t\tName of font used for the menus, used when compiled\n"
+"\t\t\twithout the |+xfontset| feature\n"
+"    menuFontSet\t\tName of fontset used for the menus, used when compiled\n"
+"\t\t\twith the |+xfontset| feature\n"
+"    tooltipFont\t\tName of the font used for the tooltip and balloons.\n"
+"\t\t\tWhen compiled with the |+xfontset| feature this is a\n"
+"\t\t\tfontset name."
+msgstr ""
+
+#: gui_x11.txt:91
+msgid ""
+"    geometry\t\tInitial geometry to use for gvim's window (default\n"
+"\t\t\tis same size as terminal that started it).\n"
+"    scrollbarWidth\tThickness of scrollbars.\n"
+"    borderWidth\t\tThickness of border around text area.\n"
+"    menuHeight\t\tHeight of the menu bar (only for Athena)."
+msgstr ""
+
+#: gui_x11.txt:97
+msgid ""
+"A special font for italic, bold, and italic-bold text will only be used if\n"
+"the user has specified one via a resource.  No attempt is made to guess what\n"
+"fonts should be used for these based on the normal text font."
+msgstr ""
+
+#: gui_x11.txt:101
+msgid ""
+"Note that the colors can also be set with the \":highlight\" command, using "
+"the\n"
+"\"Normal\", \"Menu\", \"Tooltip\", and \"Scrollbar\" groups.  Example: >\n"
+"\t:highlight Menu guibg=lightblue\n"
+"\t:highlight Tooltip guibg=yellow\n"
+"\t:highlight Scrollbar guibg=lightblue guifg=blue\n"
+"\t:highlight Normal guibg=grey90\n"
+"<\n"
+"\t\t\t\t\t\t\t*font-sizes*\n"
+"Note: All fonts (except for the menu and tooltip) must be of the same "
+"size!!!\n"
+"If you don't do this, text will disappear or mess up the display.  Vim does\n"
+"not check the font sizes.  It's the size in screen pixels that must be the\n"
+"same.  Note that some fonts that have the same point size don't have the "
+"same\n"
+"pixel size!  Additionally, the positioning of the fonts must be the same\n"
+"(ascent and descent).  You can check this with \"xlsfonts -l {fontname}\"."
+msgstr ""
+
+#: gui_x11.txt:116
+msgid ""
+"If any of these things are also set with Vim commands, e.g. with\n"
+"\":set guifont=Screen15\", then this will override the X resources (currently\n"
+"'guifont' is the only option that is supported)."
+msgstr ""
+
+#: gui_x11.txt:120
+msgid "Here is an example of what you might put in your ~/.Xdefaults file: >"
+msgstr ""
+
+#: gui_x11.txt:122
+msgid ""
+"\tVim*useSchemes:\t\t\tall\n"
+"\tVim*sgiMode:\t\t\ttrue\n"
+"\tVim*useEnhancedFSB:\t\ttrue\n"
+"\tVim.foreground:\t\t\tBlack\n"
+"\tVim.background:\t\t\tWheat\n"
+"\tVim*fontList:\t\t\t7x13"
+msgstr ""
+
+#: gui_x11.txt:129
+msgid ""
+"The first three of these are standard resources on Silicon Graphics machines\n"
+"which make Motif applications look even better, highly recommended!"
+msgstr ""
+
+#: gui_x11.txt:132
+msgid ""
+"The \"Vim*fontList\" is to set the menu font for Motif.  Example: >\n"
+"\tVim*menuBar*fontList:\t     -*-courier-medium-r-*-*-10-*-*-*-*-*-*-*\n"
+"With Athena: >\n"
+"\tVim*menuBar*SmeBSB*font:     -*-courier-medium-r-*-*-10-*-*-*-*-*-*-*\n"
+"\tVim*menuBar*MenuButton*font: -*-courier-medium-r-*-*-10-*-*-*-*-*-*-*"
+msgstr ""
+
+#: gui_x11.txt:138
+msgid ""
+"NOTE: A more portable, and indeed more correct, way to specify the menu font\n"
+"in either Motif or Athena is through the resource: >\n"
+"\tVim.menuFont:\t     -*-courier-medium-r-*-*-10-*-*-*-*-*-*-*\n"
+"Or, when compiled with the |+xfontset| feature: >\n"
+"\tVim.menuFontSet:     -*-courier-medium-r-*-*-10-*-*-*-*-*-*-*"
+msgstr ""
+
+#: gui_x11.txt:144
+msgid ""
+"Don't use \"Vim*geometry\" in the defaults.  This will break the menus.  Use\n"
+"\"Vim.geometry\" instead."
+msgstr ""
+
+#: gui_x11.txt:147
+msgid ""
+"If you get an error message \"Cannot allocate colormap entry for \"gray60\",\n"
+"try adding this to your Vim resources (change the colors to your liking): >"
+msgstr ""
+
+#: gui_x11.txt:150
+msgid ""
+"\tVim*scrollBackground:\t\tBlack\n"
+"\tVim*scrollForeground:\t\tBlue"
+msgstr ""
+
+#: gui_x11.txt:153
+msgid "The resources can also be set with arguments to Vim:"
+msgstr ""
+
+#: gui_x11.txt:155
+msgid ""
+"    argument\t\tmeaning\t~\n"
+"\t\t\t\t\t\t\t*-gui*\n"
+"   -display {display}\tRun vim on {display}\t\t*-display*\n"
+"   -iconic\t\tStart vim iconified\t\t*-iconic*\n"
+"   -background {color}\tUse {color} for the background\t*-background*\n"
+"   -bg {color}\t\tidem\t\t\t\t*-bg*\n"
+"   -foreground {color}\tUse {color} for normal text\t*-foreground*\n"
+"   -fg {color}\t\tidem\t\t\t\t*-fg*\n"
+"   -ul {color}\t\tidem\t\t\t\t*-ul*\n"
+"   -font {font}\t\tUse {font} for normal text\t*-font*\n"
+"   -fn {font}\t\tidem\t\t\t\t*-fn*\n"
+"   -boldfont {font}\tUse {font} for bold text\t*-boldfont*\n"
+"   -italicfont {font}\tUse {font} for italic text\t*-italicfont*\n"
+"   -menufont {font}\tUse {font} for menu items\t*-menufont*\n"
+"   -menufontset {fontset} Use {fontset} for menu items\t*-menufontset*\n"
+"   -mf {font}\t\tidem\t\t\t\t*-mf*\n"
+"   -geometry {geom}\tUse {geom} for initial geometry\t*-geometry*\n"
+"   -geom {geom}\t\tidem, see |-geometry-example|\t*-geom*\n"
+"   -borderwidth {width}\tUse a border width of {width}\t*-borderwidth*\n"
+"   -bw {width}\t\tidem\t\t\t\t*-bw*\n"
+"\t\t\t\t\t\t\t*-scrollbarwidth*\n"
+"   -scrollbarwidth {width}\tUse a scrollbar width of {width}\n"
+"   -sw {width}\t\tidem\t\t\t\t*-sw*\n"
+"   -menuheight {height}\tUse a menu bar height of {height} *-menuheight*\n"
+"   -mh {height}\t\tidem\t\t\t\t*-mh*\n"
+"\t\t\tNOTE: On Motif the value is ignored, the menu height\n"
+"\t\t\tis computed to fit the menus.\n"
+"   -reverse\t\tUse reverse video\t\t*-reverse*\n"
+"   -rv\t\t\tidem\t\t\t\t*-rv*\n"
+"   +reverse\t\tDon't use reverse video\t\t*-+reverse*\n"
+"   +rv\t\t\tidem\t\t\t\t*-+rv*\n"
+"   -xrm {resource}\tSet the specified resource\t*-xrm*"
+msgstr ""
+
+#: gui_x11.txt:188
+msgid ""
+"Note about reverse video: Vim checks that the result is actually a light "
+"text\n"
+"on a dark background.  The reason is that some X11 versions swap the colors,\n"
+"and some don't.  These two examples will both give yellow text on a blue\n"
+"background:\n"
+"    gvim -fg Yellow -bg Blue -reverse\n"
+"    gvim -bg Yellow -fg Blue -reverse"
+msgstr ""
+
+#: gui_x11.txt:195
+msgid ""
+"\t\t\t\t\t\t\t*-geometry-example*\n"
+"An example for the geometry argument: >\n"
+"\tgvim -geometry 80x63+8+100\n"
+"This creates a window with 80 columns and 63 lines at position 8 pixels from\n"
+"the left and 100 pixels from the top of the screen."
+msgstr ""
+
+#: gui_x11.txt:201
+msgid ""
+"============================================================================"
+"==\n"
+"3. Shell Commands\t\t\t\t\t*gui-pty*"
+msgstr ""
+
+#: gui_x11.txt:204
+msgid ""
+"WARNING: Executing an external command from the GUI will not always work.\n"
+"\"normal\" commands like \"ls\", \"grep\" and \"make\" mostly work fine.  Commands\n"
+"that require an intelligent terminal like \"less\" and \"ispell\" won't work.\n"
+"Some may even hang and need to be killed from another terminal.  So be\n"
+"careful!"
+msgstr ""
+
+#: gui_x11.txt:210
+msgid ""
+"There are two ways to do the I/O with a shell command: Pipes and a pseudo-"
+"tty.\n"
+"The default is to use a pseudo-tty.  This should work best on most systems."
+msgstr ""
+
+#: gui_x11.txt:213
+msgid ""
+"Unfortunately, the implementation of the pseudo-tty is different on every "
+"Unix\n"
+"system.  And some systems require root permission.  To avoid running into\n"
+"problems with a pseudo-tty when you least expect it, test it when not "
+"editing\n"
+"a file.  Be prepared to \"kill\" the started command or Vim.  Commands like\n"
+"\":r !cat\" may hang!"
+msgstr ""
+
+#: gui_x11.txt:219
+msgid ""
+"If using a pseudo-tty does not work for you, reset the 'guipty' option: >"
+msgstr ""
+
+#: gui_x11.txt:221
+msgid "\t:set noguipty"
+msgstr ""
+
+#: gui_x11.txt:223
+msgid ""
+"Using a pipe should work on any Unix system, but there are disadvantages:\n"
+"- Some shell commands will notice that a pipe is being used and behave\n"
+"  differently.  E.g., \":!ls\" will list the files in one column.\n"
+"- The \":sh\" command won't show a prompt, although it will sort of work.\n"
+"- When using \":make\" it's not possible to interrupt with a CTRL-C."
+msgstr ""
+
+#: gui_x11.txt:229
+msgid ""
+"Typeahead while the external command is running is often lost.  This happens\n"
+"both with a pipe and a pseudo-tty.  This is a known problem, but it seems it\n"
+"can't be fixed (or at least, it's very difficult)."
+msgstr ""
+
+#: gui_x11.txt:233
+msgid ""
+"\t\t\t\t\t\t\t*gui-pty-erase*\n"
+"When your erase character is wrong for an external command, you should fix\n"
+"this in your \"~/.cshrc\" file, or whatever file your shell uses for\n"
+"initializations.  For example, when you want to use backspace to delete\n"
+"characters, but hitting backspaces produces \"^H\" instead, try adding this to\n"
+"your \"~/.cshrc\": >\n"
+"\tstty erase ^H\n"
+"The ^H is a real CTRL-H, type it as CTRL-V CTRL-H."
+msgstr ""
+
+#: gui_x11.txt:242
+msgid ""
+"============================================================================"
+"==\n"
+"4. Various\t\t\t\t\t\t*gui-x11-various*"
+msgstr ""
+
+#: gui_x11.txt:245
+msgid ""
+"\t\t\t\t\t\t\t*gui-x11-printing*\n"
+"The \"File/Print\" menu simply sends the current buffer to \"lpr\".  No options "
+"or\n"
+"whatever.  If you want something else, you can define your own print "
+"command.\n"
+"For example: >"
+msgstr ""
+
+#: gui_x11.txt:250
+msgid ""
+"  :10amenu File.Print :w !lpr -Php3\n"
+"  :10vmenu File.Print :w !lpr -Php3\n"
+"<\n"
+"\t\t\t\t\t\t\t*X11-icon*\n"
+"Vim uses a black&white icon by default when compiled with Motif or Athena.  "
+"A\n"
+"colored Vim icon is included as $VIMRUNTIME/vim32x32.xpm.  For GTK+, this is\n"
+"the builtin icon used.  Unfortunately, how you should install it depends on\n"
+"your window manager.  When you use this, remove the 'i' flag from\n"
+"'guioptions', to remove the black&white icon: >\n"
+"  :set guioptions-=i"
+msgstr ""
+
+#: gui_x11.txt:261
+msgid ""
+"If you use one of the fvwm* family of window managers simply add this line "
+"to\n"
+"your .fvwm2rc configuration file: >"
+msgstr ""
+
+#: gui_x11.txt:264
+msgid "  Style \"vim\"\t\tIcon vim32x32.xpm"
+msgstr ""
+
+#: gui_x11.txt:266
+msgid ""
+"Make sure the icon file's location is consistent with the window manager's\n"
+"ImagePath statement.  Either modify the ImagePath from within your .fvwm2rc "
+"or\n"
+"drop the icon into one the pre-defined directories: >"
+msgstr ""
+
+#: gui_x11.txt:270
+msgid ""
+"  ImagePath /usr/X11R6/include/X11/pixmaps:/usr/X11R6/include/X11/bitmaps"
+msgstr ""
+
+#: gui_x11.txt:272
+msgid "Note: older versions of fvwm use \"IconPath\" instead of \"ImagePath\"."
+msgstr ""
+
+#: gui_x11.txt:274
+msgid ""
+"For CDE \"dtwm\" (a derivative of Motif) add this line in the .Xdefaults: >\n"
+"   Dtwm*Vim*iconImage: /usr/local/share/vim/vim32x32.xpm"
+msgstr ""
+
+#: gui_x11.txt:277
+msgid ""
+"For \"mwm\" (Motif window manager) the line would be: >\n"
+"   Mwm*Vim*iconImage: /usr/local/share/vim/vim32x32.xpm"
+msgstr ""
+
+#: gui_x11.txt:280
+msgid "Mouse Pointers Available in X11\t\t\t\t*X11_mouse_shapes*"
+msgstr ""
+
+#: gui_x11.txt:282
+msgid ""
+"By using the |'mouseshape'| option, the mouse pointer can be automatically\n"
+"changed whenever Vim enters one of its various modes (e.g., Insert or\n"
+"Command).  Currently, the available pointers are:"
+msgstr ""
+
+#: gui_x11.txt:286
+msgid ""
+"\tarrow\t\t\tan arrow pointing northwest\n"
+"\tbeam\t\t\ta I-like vertical bar\n"
+"\tsize\t\t\tan arrow pointing up and down\n"
+"\tbusy\t\t\ta wristwatch\n"
+"\tblank\t\t\tan invisible pointer\n"
+"\tcrosshair\t\ta thin \"+\" sign\n"
+"\thand1\t\t\ta dark hand pointing northeast\n"
+"\thand2\t\t\ta light hand pointing northwest\n"
+"\tpencil\t\t\ta pencil pointing southeast\n"
+"\tquestion\t\tquestion_arrow\n"
+"\tright_arrow\t\tan arrow pointing northeast\n"
+"\tup_arrow\t\tan arrow pointing upwards"
+msgstr ""
+
+#: gui_x11.txt:299
+msgid ""
+"Additionally, any of the mouse pointers that are built into X11 may be\n"
+"used by specifying an integer from the X11/cursorfont.h include file."
+msgstr ""
+
+#: gui_x11.txt:302
+msgid ""
+"If a name is used that exists on other systems, but not in X11, the default\n"
+"\"arrow\" pointer is used."
+msgstr ""
+
+#: gui_x11.txt:305
+msgid ""
+"============================================================================"
+"==\n"
+"5. GTK version\t\t\t\t\t\t*gui-gtk* *GTK+* *GTK*"
+msgstr ""
+
+#: gui_x11.txt:308
+msgid "The GTK version of the GUI works a little bit different."
+msgstr ""
+
+#: gui_x11.txt:310
+msgid ""
+"GTK does _not_ use the traditional X resource settings.  Thus items in your\n"
+"~/.Xdefaults or app-defaults files are not used.\n"
+"Many of the traditional X command line arguments are not supported.  (e.g.,\n"
+"stuff like -bg, -fg, etc).  The ones that are supported are:"
+msgstr ""
+
+#: gui_x11.txt:315
+msgid ""
+"    command line argument   resource name\tmeaning ~\n"
+"    -fn  or  -font\t    .font\t\tfont name for the text\n"
+"    -geom  or  -geometry    .geometry\t\tsize of the gvim window\n"
+"    -rv  or  -reverse\t    *reverseVideo\twhite text on black background\n"
+"    -display\t\t\t\t\tdisplay to be used\n"
+"    -fg -foreground {color}\t\t\tforeground color\n"
+"    -bg -background {color}\t\t\tbackground color"
+msgstr ""
+
+#: gui_x11.txt:323
+msgid ""
+"To set the font, see |'guifont'|.  For GTK, there's also a menu option that\n"
+"does this."
+msgstr ""
+
+#: gui_x11.txt:326
+msgid ""
+"Additionally, there are these command line arguments, which are handled by "
+"GTK\n"
+"internally.  Look in the GTK documentation for how they are used:\n"
+"\t--sync\n"
+"\t--gdk-debug\n"
+"\t--gdk-no-debug\n"
+"\t--no-xshm\t(not in GTK+ 2)\n"
+"\t--xim-preedit\t(not in GTK+ 2)\n"
+"\t--xim-status\t(not in GTK+ 2)\n"
+"\t--gtk-debug\n"
+"\t--gtk-no-debug\n"
+"\t--g-fatal-warnings\n"
+"\t--gtk-module\n"
+"\t--display\t(GTK+ counterpart of -display; works the same way.)\n"
+"\t--screen\t(The screen number; for GTK+ 2.2 multihead support.)"
+msgstr ""
+
+#: gui_x11.txt:341
+msgid ""
+"These arguments are ignored when the |+netbeans_intg| feature is used:\n"
+"\t-xrm\n"
+"\t-mf"
+msgstr ""
+
+#: gui_x11.txt:345
+msgid ""
+"As for colors, Vim's color settings (for syntax highlighting) is still\n"
+"done the traditional Vim way.  See |:highlight| for more help."
+msgstr ""
+
+#: gui_x11.txt:348
+msgid ""
+"If you want to set the colors of remaining gui components (e.g., the\n"
+"menubar, scrollbar, whatever), those are GTK specific settings and you\n"
+"need to set those up in some sort of gtkrc file.  You'll have to refer\n"
+"to the GTK documentation, however little there is, on how to do this.\n"
+"See http://developer.gnome.org/doc/API/2.0/gtk/gtk-Resource-Files.html\n"
+"for more information."
+msgstr ""
+
+#: gui_x11.txt:355
+msgid ""
+"\t\t\t\t\t\t*gtk-tooltip-colors*\n"
+"Example, which sets the tooltip colors to black on light-yellow: >"
+msgstr ""
+
+#: gui_x11.txt:358
+msgid ""
+"\tstyle \"tooltips\"\n"
+"\t{\n"
+"\t\tbg[NORMAL] = \"#ffffcc\"\n"
+"\t\tfg[NORMAL] = \"#000000\"\n"
+"\t}"
+msgstr ""
+
+#: gui_x11.txt:364
+msgid "\twidget \"gtk-tooltips*\"\t\tstyle \"tooltips\""
+msgstr ""
+
+#: gui_x11.txt:366
+msgid ""
+"Write this in the file ~/.gtkrc and it will be used by GTK+.  For GTK+ 2\n"
+"you might have to use the file ~/.gtkrc-2.0 instead, depending on your\n"
+"distribution."
+msgstr ""
+
+#: gui_x11.txt:370
+msgid "Using Vim as a GTK+ plugin\t\t\t\t*gui-gtk-socketid*"
+msgstr ""
+
+#: gui_x11.txt:372
+msgid ""
+"When the GTK+ version of Vim starts up normally, it creates its own top "
+"level\n"
+"window (technically, a 'GtkWindow').  GTK+ provides an embedding facility "
+"with\n"
+"its GtkSocket and GtkPlug widgets.  If one GTK+ application creates a\n"
+"GtkSocket widget in one of its windows, an entirely different GTK+ "
+"application\n"
+"may embed itself into the first application by creating a top-level GtkPlug\n"
+"widget using the socket's ID."
+msgstr ""
+
+#: gui_x11.txt:379
+msgid ""
+"If you pass Vim the command-line option '--socketid' with a decimal or\n"
+"hexadecimal value, Vim will create a GtkPlug widget using that value instead\n"
+"of the normal GtkWindow.  This enables Vim to act as a GTK+ plugin."
+msgstr ""
+
+#: gui_x11.txt:383
+msgid ""
+"This really is a programmer's interface, and is of no use without a "
+"supporting\n"
+"application to spawn the Vim correctly.  For more details on GTK+ sockets, "
+"see\n"
+"http://www.gtk.org/api/"
+msgstr ""
+
+#: gui_x11.txt:387
+msgid ""
+"Note that this feature requires the latest GTK version.  GTK 1.2.10 still "
+"has\n"
+"a small problem.  The socket feature has not yet been tested with GTK+ 2 --\n"
+"feel free to volunteer."
+msgstr ""
+
+#: gui_x11.txt:391
+msgid ""
+"============================================================================"
+"==\n"
+"6. GNOME version\t\t\t\t*gui-gnome* *Gnome* *GNOME*"
+msgstr ""
+
+#: gui_x11.txt:394
+msgid ""
+"The GNOME GUI works just like the GTK+ version.  See |GTK+| above for how it\n"
+"works.  It looks a bit different though, and implements one important "
+"feature\n"
+"that's not available in the plain GTK+ GUI:  Interaction with the session\n"
+"manager. |gui-gnome-session|"
+msgstr ""
+
+#: gui_x11.txt:399
+msgid ""
+"These are the different looks:\n"
+"- Uses GNOME dialogs (GNOME 1 only).  The GNOME 2 GUI uses the same nice\n"
+"  dialogs as the GTK+ 2 version.\n"
+"- Uses the GNOME dock, so that the toolbar and menubar can be moved to\n"
+"  different locations other than the top (e.g., the toolbar can be placed on\n"
+"  the left, right, top, or bottom).  The placement of the menubar and\n"
+"  toolbar is only saved in the GNOME 2 version.\n"
+"- That means the menubar and toolbar handles are back!  Yeah!  And the\n"
+"  resizing grid still works too."
+msgstr ""
+
+#: gui_x11.txt:409
+msgid ""
+"GNOME is compiled with if it was found by configure and the\n"
+"--enable-gnome-check argument was used."
+msgstr ""
+
+#: gui_x11.txt:413
+msgid "GNOME session support\t\t\t*gui-gnome-session* *gnome-session*"
+msgstr ""
+
+#: gui_x11.txt:415
+msgid ""
+"On logout, Vim shows the well-known exit confirmation dialog if any buffers\n"
+"are modified.  Clicking [Cancel] will stop the logout process.  Otherwise "
+"the\n"
+"current session is stored to disk by using the |:mksession| command, and\n"
+"restored the next time you log in."
+msgstr ""
+
+#: gui_x11.txt:420
+msgid ""
+"The GNOME session support should also work with the KDE session manager.\n"
+"If you are experiencing any problems please report them as bugs."
+msgstr ""
+
+#: gui_x11.txt:423
+msgid ""
+"Note: The automatic session save works entirely transparent, in order to\n"
+"avoid conflicts with your own session files, scripts and autocommands.  That\n"
+"means in detail:\n"
+"- The session file is stored to a separate directory (usually "
+"$HOME/.gnome2).\n"
+"- 'sessionoptions' is ignored, and a hardcoded set of appropriate flags is\n"
+"  used instead: >\n"
+"\tblank,curdir,folds,globals,help,options,tabpages,winsize\n"
+"- The internal variable |v:this_session| is not changed when storing the\n"
+"  session.  Also, it is restored to its old value when logging in again."
+msgstr ""
+
+#: gui_x11.txt:433
+msgid ""
+"The position and size of the GUI window is not saved by Vim since doing so\n"
+"is the window manager's job.  But if compiled with GTK+ 2 support, Vim helps\n"
+"the WM to identify the window by restoring the window role (using the "
+"|--role|\n"
+"command line argument)."
+msgstr ""
+
+#: gui_x11.txt:438
+msgid ""
+"============================================================================"
+"==\n"
+"7. KDE version\t\t\t\t\t*gui-kde* *kde* *KDE* *KVim*\n"
+"\t\t\t\t\t\t\t*gui-x11-kde*\n"
+"There is no KDE version of Vim.  There has been some work on a port using "
+"the\n"
+"Qt toolkit, but it never worked properly and it has been abandoned.  Work\n"
+"continues on Yzis: www.yzis.org."
+msgstr ""
+
+#: gui_x11.txt:445
+msgid ""
+"============================================================================"
+"==\n"
+"8. Compiling\t\t\t\t\t\t*gui-x11-compiling*"
+msgstr ""
+
+#: gui_x11.txt:448
+msgid ""
+"If using X11, Vim's Makefile will by default first try to find the necessary\n"
+"GTK+ files on your system.  If the GTK+ files cannot be found, then the "
+"Motif\n"
+"files will be searched for.  Finally, if this fails, the Athena files will "
+"be\n"
+"searched for.  If all three fail, the GUI will be disabled."
+msgstr ""
+
+#: gui_x11.txt:453
+msgid ""
+"For GTK+, Vim's configuration process requires that GTK+ be properly\n"
+"installed.  That is, the shell script 'gtk-config' must be in your PATH, and\n"
+"you can already successful compile, build, and execute a GTK+ program.  The\n"
+"reason for this is because the compiler flags (CFLAGS) and link flags\n"
+"(LDFLAGS) are obtained through the 'gtk-config' shell script."
+msgstr ""
+
+#: gui_x11.txt:459
+msgid ""
+"If you want to build with GTK+ 2 support pass the --enable-gtk2-check "
+"argument\n"
+"to ./configure.  Optionally, support for GNOME 2 will be compiled if the\n"
+"--enable-gnome-check option is also given.  Note that the support for GTK+ 2\n"
+"is still experimental.  However, many people have reported that it works "
+"just\n"
+"fine for them."
+msgstr ""
+
+#: gui_x11.txt:465
+msgid ""
+"Otherwise, if you are using Motif or Athena, when you have the Motif or "
+"Athena\n"
+"files in a directory where configure doesn't look, edit the Makefile to "
+"enter\n"
+"the names of the directories.  Search for \"GUI_INC_LOC\" for an example to "
+"set\n"
+"the Motif directories, \"CONF_OPT_X\" for Athena."
+msgstr ""
+
+#: gui_x11.txt:470
+msgid ""
+"\t\t\t\t\t\t\t*gui-x11-gtk*\n"
+"At the time of this writing, you may use either GTK+ version 1.0.6 or 1.2.  "
+"It\n"
+"is suggested that you use v1.2 since not all of Vim's GUI features are "
+"present\n"
+"if using v1.0.6.  For instance, there are no tearoff menus present in "
+"v1.0.6.\n"
+"Using a version from GTK+'s CVS tree may or may not work, and is therefore "
+"not\n"
+"supported and not recommended."
+msgstr ""
+
+#: gui_x11.txt:477
+msgid ""
+"For the experimental GTK+ 2 GUI, using the latest release of the GTK+ 2.0 or\n"
+"GTK+ 2.2 series is recommended.  CVS HEAD seems to work fine most of time as\n"
+"well."
+msgstr ""
+
+#: gui_x11.txt:481
+msgid ""
+"Lastly, although GTK+ has supposedly been ported to the Win32 platform, this\n"
+"has not been tested with Vim and is also unsupported.  Also, it's unlikely "
+"to\n"
+"even compile since GTK+ GUI uses parts of the generic X11 code.  This might\n"
+"change in distant future; particularly because getting rid of the X11 "
+"centric\n"
+"code parts is also required for GTK+ framebuffer support."
+msgstr ""
+
+#: gui_x11.txt:487
+msgid ""
+"\t\t\t\t\t\t\t*gui-x11-motif*\n"
+"For Motif, you need at least Motif version 1.2 and/or X11R5.  Motif 2.0 and\n"
+"X11R6 are OK.  Motif 1.1 and X11R4 might work, no guarantee (there may be a\n"
+"few problems, but you might make it compile and run with a bit of work, "
+"please\n"
+"send me the patches if you do).  The newest releases of LessTif have been\n"
+"reported to work fine too."
+msgstr ""
+
+#: gui_x11.txt:494
+msgid ""
+"\t\t\t\t\t\t\t*gui-x11-athena*\n"
+"The Athena version uses the Xaw widget set by default.  If you have the 3D\n"
+"version, you might want to link with Xaw3d instead.  This will make the\n"
+"menus look a bit better.  Edit the Makefile and look for \"XAW_LIB\".  The\n"
+"scrollbars will remain the same, because Vim has its own, which are already\n"
+"3D (in fact, they look more like Motif)."
+msgstr ""
+
+#: gui_x11.txt:501
+msgid ""
+"\t\t\t\t\t\t\t*gui-x11-neXtaw*\n"
+"The neXtaw version is mostly like Athena, but uses different widgets."
+msgstr ""
+
+#: gui_x11.txt:504
+msgid ""
+"\t\t\t\t\t\t\t*gui-x11-misc*\n"
+"In general, do not try to mix files from different GTK+, Motif, Athena and "
+"X11\n"
+"versions.  This will cause problems.  For example, using header files for\n"
+"X11R5 with a library for X11R6 probably doesn't work (although the linking\n"
+"won't give an error message, Vim will crash later)."
+msgstr ""
+
+#: gui_x11.txt:510
+msgid ""
+"============================================================================"
+"==\n"
+"9. X11 selection mechanism\t\t\t\t*x11-selection*"
+msgstr ""
+
+#: gui_x11.txt:513
+msgid ""
+"If using X11, in either the GUI or an xterm with an X11-aware Vim, then Vim\n"
+"provides varied access to the X11 selection and clipboard.  These are "
+"accessed\n"
+"by using the two selection registers \"* and \"+."
+msgstr ""
+
+#: gui_x11.txt:517
+msgid ""
+"X11 provides two basic types of global store, selections and cut-buffers,\n"
+"which differ in one important aspect: selections are \"owned\" by an\n"
+"application, and disappear when that application (e.g., Vim) exits, thus\n"
+"losing the data, whereas cut-buffers, are stored within the X-server itself\n"
+"and remain until written over or the X-server exits (e.g., upon logging "
+"out)."
+msgstr ""
+
+#: gui_x11.txt:523
+msgid ""
+"The contents of selections are held by the originating application (e.g., "
+"upon\n"
+"a copy), and only passed on to another application when that other "
+"application\n"
+"asks for them (e.g., upon a paste)."
+msgstr ""
+
+#: gui_x11.txt:527
+msgid ""
+"The contents of cut-buffers are immediately written to, and are then\n"
+"accessible directly from the X-server, without contacting the originating\n"
+"application."
+msgstr ""
+
+#: gui_x11.txt:531
+msgid ""
+"\t\t\t\t\t\t\t*quoteplus* *quote+*\n"
+"There are three documented X selections: PRIMARY (which is expected to\n"
+"represent the current visual selection - as in Vim's Visual mode), SECONDARY\n"
+"(which is ill-defined) and CLIPBOARD (which is expected to be used for\n"
+"cut, copy and paste operations)."
+msgstr ""
+
+#: gui_x11.txt:537
+msgid ""
+"Of these three, Vim uses PRIMARY when reading and writing the \"* register\n"
+"(hence when the X11 selections are available, Vim sets a default value for\n"
+"|'clipboard'| of \"autoselect\"), and CLIPBOARD when reading and writing the "
+"\"+\n"
+"register.  Vim does not access the SECONDARY selection."
+msgstr ""
+
+#: gui_x11.txt:542
+msgid ""
+"Examples: (assuming the default option values)\n"
+"- Select an URL in Visual mode in Vim.  Go to a text field in Netscape and\n"
+"  click the middle mouse button.  The selected text will be inserted\n"
+"  (hopefully!).\n"
+"- Select some text in Netscape by dragging with the mouse.  Go to Vim and\n"
+"  press the middle mouse button: The selected text is inserted.\n"
+"- Select some text in Vim and do \"+y.  Go to Netscape, select some text in a\n"
+"  textfield by dragging with the mouse.  Now use the right mouse button and\n"
+"  select \"Paste\" from the popup menu.  The selected text is overwritten by "
+"the\n"
+"  text from Vim.\n"
+"Note that the text in the \"+ register remains available when making a Visual\n"
+"selection, which makes other text available in the \"* register.  That allows\n"
+"overwriting selected text.\n"
+"\t\t\t\t\t\t\t*x11-cut-buffer*\n"
+"There are, by default, 8 cut-buffers: CUT_BUFFER0 to CUT_BUFFER7.  Vim only\n"
+"uses CUT_BUFFER0, which is the one that xterm uses by default."
+msgstr ""
+
+#: gui_x11.txt:559
+msgid ""
+"Whenever Vim is about to become unavailable (either via exiting or becoming\n"
+"suspended), and thus unable to respond to another application's selection\n"
+"request, it writes the contents of any owned selection to CUT_BUFFER0.  If "
+"the\n"
+"\"+ CLIPBOARD selection is owned by Vim, then this is written in preference,\n"
+"otherwise if the \"* PRIMARY selection is owned by Vim, then that is written."
+msgstr ""
+
+#: gui_x11.txt:565
+msgid ""
+"Similarly, when Vim tries to paste from \"* or \"+ (either explicitly, or, in\n"
+"the case of the \"* register, when the middle mouse button is clicked), if "
+"the\n"
+"requested X selection is empty or unavailable, Vim reverts to reading the\n"
+"current value of the CUT_BUFFER0."
+msgstr ""
+
+#: gui_x11.txt:570
+msgid ""
+"Note that when text is copied to CUT_BUFFER0 in this way, the type of\n"
+"selection (character, line or block) is always lost, even if it is a Vim "
+"which\n"
+"later pastes it."
+msgstr ""
+
+#: gui_x11.txt:574
+msgid ""
+"Xterm, by default, always writes visible selections to both PRIMARY and\n"
+"CUT_BUFFER0.  When it pastes, it uses PRIMARY if this is available, or else\n"
+"falls back upon CUT_BUFFER0.  For this reason, when cutting and pasting\n"
+"between Vim and an xterm, you should use the \"* register.  Xterm doesn't use\n"
+"CLIPBOARD, thus the \"+ doesn't work with xterm."
+msgstr ""
+
+#: gui_x11.txt:580
+msgid ""
+"Most newer applications will provide their current selection via PRIMARY "
+"(\"*)\n"
+"and use CLIPBOARD (\"+) for cut/copy/paste operations.  You thus have access "
+"to\n"
+"both by choosing to use either of the \"* or \"+ registers."
+msgstr ""
+
+#: gui_x11.txt:585
+msgid " vim:tw=78:sw=4:ts=8:ft=help:norl:"
+msgstr ""

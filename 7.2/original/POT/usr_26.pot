@@ -1,0 +1,402 @@
+#. extracted from usr_26.txt
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-04 13:40+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.3.0\n"
+
+#: usr_26.txt:1
+msgid "*usr_26.txt*\tFor Vim version 7.2.  Last change: 2006 Apr 24"
+msgstr ""
+
+#: usr_26.txt:3
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar"
+msgstr ""
+
+#: usr_26.txt:5
+msgid "\t\t\t\t  Repeating"
+msgstr ""
+
+#: usr_26.txt:8
+msgid ""
+"An editing task is hardly ever unstructured.  A change often needs to be "
+"made\n"
+"several times.  In this chapter a number of useful ways to repeat a change\n"
+"will be explained."
+msgstr ""
+
+#: usr_26.txt:12
+msgid ""
+"|26.1|\tRepeating with Visual mode\n"
+"|26.2|\tAdd and subtract\n"
+"|26.3|\tMaking a change in many files\n"
+"|26.4|\tUsing Vim from a shell script"
+msgstr ""
+
+#: usr_26.txt:17
+msgid ""
+"     Next chapter: |usr_27.txt|  Search commands and patterns\n"
+" Previous chapter: |usr_25.txt|  Editing formatted text\n"
+"Table of contents: |usr_toc.txt|"
+msgstr ""
+
+#: usr_26.txt:21
+msgid ""
+"============================================================================"
+"==\n"
+"*26.1*\tRepeating with Visual mode"
+msgstr ""
+
+#: usr_26.txt:24
+msgid ""
+"Visual mode is very handy for making a change in any sequence of lines.  You\n"
+"can see the highlighted text, thus you can check if the correct lines are\n"
+"changed.  But making the selection takes some typing.  The \"gv\" command\n"
+"selects the same area again.  This allows you to do another operation on the\n"
+"same text.\n"
+"   Suppose you have some lines where you want to change \"2001\" to \"2002\" and\n"
+"\"2000\" to \"2001\":"
+msgstr ""
+
+#: usr_26.txt:32
+msgid ""
+"\tThe financial results for 2001 are better ~\n"
+"\tthan for 2000.  The income increased by 50%, ~\n"
+"\teven though 2001 had more rain than 2000. ~\n"
+"\t\t\t2000\t\t2001 ~\n"
+"\tincome\t\t45,403\t\t66,234 ~"
+msgstr ""
+
+#: usr_26.txt:38
+msgid ""
+"First change \"2001\" to \"2002\".  Select the lines in Visual mode, and use: >"
+msgstr ""
+
+#: usr_26.txt:40
+msgid "\t:s/2001/2002/g"
+msgstr ""
+
+#: usr_26.txt:42
+msgid ""
+"Now use \"gv\" to reselect the same text.  It doesn't matter where the cursor\n"
+"is.  Then use \":s/2000/2001/g\" to make the second change.\n"
+"   Obviously, you can repeat these changes several times."
+msgstr ""
+
+#: usr_26.txt:46
+msgid ""
+"============================================================================"
+"==\n"
+"*26.2*\tAdd and subtract"
+msgstr ""
+
+#: usr_26.txt:49
+msgid ""
+"When repeating the change of one number into another, you often have a fixed\n"
+"offset.  In the example above, one was added to each year.  Instead of "
+"typing\n"
+"a substitute command for each year that appears, the CTRL-A command can be\n"
+"used.\n"
+"   Using the same text as above, search for a year: >"
+msgstr ""
+
+#: usr_26.txt:55
+msgid "\t/19[0-9][0-9]\\|20[0-9][0-9]"
+msgstr ""
+
+#: usr_26.txt:57
+msgid "Now press CTRL-A.  The year will be increased by one:"
+msgstr ""
+
+#: usr_26.txt:59
+msgid ""
+"\tThe financial results for 2002 are better ~\n"
+"\tthan for 2000.  The income increased by 50%, ~\n"
+"\teven though 2001 had more rain than 2000. ~\n"
+"\t\t\t2000\t\t2001 ~\n"
+"\tincome\t\t45,403\t\t66,234 ~"
+msgstr ""
+
+#: usr_26.txt:65
+msgid ""
+"Use \"n\" to find the next year, and press \".\" to repeat the CTRL-A (\".\" is a\n"
+"bit quicker to type).  Repeat \"n\" and \".\" for all years that appear.\n"
+"   Hint: set the 'hlsearch' option to see the matches you are going to "
+"change,\n"
+"then you can look ahead and do it faster."
+msgstr ""
+
+#: usr_26.txt:70
+msgid ""
+"Adding more than one can be done by prepending the number to CTRL-A.  "
+"Suppose\n"
+"you have this list:"
+msgstr ""
+
+#: usr_26.txt:73
+msgid ""
+"\t1.  item four ~\n"
+"\t2.  item five ~\n"
+"\t3.  item six ~"
+msgstr ""
+
+#: usr_26.txt:77
+msgid "Move the cursor to \"1.\" and type: >"
+msgstr ""
+
+#: usr_26.txt:79
+msgid "\t3 CTRL-A"
+msgstr ""
+
+#: usr_26.txt:81
+msgid ""
+"The \"1.\" will change to \"4.\".  Again, you can use \".\" to repeat this on the\n"
+"other numbers."
+msgstr ""
+
+#: usr_26.txt:84
+msgid "Another example:"
+msgstr ""
+
+#: usr_26.txt:86
+msgid ""
+"\t006\tfoo bar ~\n"
+"\t007\tfoo bar ~"
+msgstr ""
+
+#: usr_26.txt:89
+msgid "Using CTRL-A on these numbers results in:"
+msgstr ""
+
+#: usr_26.txt:91
+msgid ""
+"\t007\tfoo bar ~\n"
+"\t010\tfoo bar ~"
+msgstr ""
+
+#: usr_26.txt:94
+msgid ""
+"7 plus one is 10?  What happened here is that Vim recognized \"007\" as an "
+"octal\n"
+"number, because there is a leading zero.  This notation is often used in C\n"
+"programs.  If you do not want a number with leading zeros to be handled as\n"
+"octal, use this: >"
+msgstr ""
+
+#: usr_26.txt:99
+msgid "\t:set nrformats-=octal"
+msgstr ""
+
+#: usr_26.txt:101
+msgid "The CTRL-X command does subtraction in a similar way."
+msgstr ""
+
+#: usr_26.txt:103
+msgid ""
+"============================================================================"
+"==\n"
+"*26.3*\tMaking a change in many files"
+msgstr ""
+
+#: usr_26.txt:106
+msgid ""
+"Suppose you have a variable called \"x_cnt\" and you want to change it to\n"
+"\"x_counter\".  This variable is used in several of your C files.  You need to\n"
+"change it in all files.  This is how you do it.\n"
+"   Put all the relevant files in the argument list: >"
+msgstr ""
+
+#: usr_26.txt:111
+msgid ""
+"\t:args *.c\n"
+"<\n"
+"This finds all C files and edits the first one.  Now you can perform a\n"
+"substitution command on all these files: >"
+msgstr ""
+
+#: usr_26.txt:116
+msgid "\t:argdo %s/\\<x_cnt\\>/x_counter/ge | update"
+msgstr ""
+
+#: usr_26.txt:118
+msgid ""
+"The \":argdo\" command takes an argument that is another command.  That "
+"command\n"
+"will be executed on all files in the argument list.\n"
+"   The \"%s\" substitute command that follows works on all lines.  It finds "
+"the\n"
+"word \"x_cnt\" with \"\\<x_cnt\\>\".  The \"\\<\" and \"\\>\" are used to match the "
+"whole\n"
+"word only, and not \"px_cnt\" or \"x_cnt2\".\n"
+"   The flags for the substitute command include \"g\" to replace all "
+"occurrences\n"
+"of \"x_cnt\" in the same line.  The \"e\" flag is used to avoid an error message\n"
+"when \"x_cnt\" does not appear in the file.  Otherwise \":argdo\" would abort on\n"
+"the first file where \"x_cnt\" was not found.\n"
+"   The \"|\" separates two commands.  The following \"update\" command writes "
+"the\n"
+"file only if it was changed.  If no \"x_cnt\" was changed to \"x_counter\" "
+"nothing\n"
+"happens."
+msgstr ""
+
+#: usr_26.txt:131
+msgid ""
+"There is also the \":windo\" command, which executes its argument in all\n"
+"windows.  And \":bufdo\" executes its argument on all buffers.  Be careful "
+"with\n"
+"this, because you might have more files in the buffer list than you think.\n"
+"Check this with the \":buffers\" command (or \":ls\")."
+msgstr ""
+
+#: usr_26.txt:136
+msgid ""
+"============================================================================"
+"==\n"
+"*26.4*\tUsing Vim from a shell script"
+msgstr ""
+
+#: usr_26.txt:139
+msgid ""
+"Suppose you have a lot of files in which you need to change the string\n"
+"\"-person-\" to \"Jones\" and then print it.  How do you do that?  One way is to\n"
+"do a lot of typing.  The other is to write a shell script to do the work.\n"
+"   The Vim editor does a superb job as a screen-oriented editor when using\n"
+"Normal mode commands.  For batch processing, however, Normal mode commands "
+"do\n"
+"not result in clear, commented command files; so here you will use Ex mode\n"
+"instead.  This mode gives you a nice command-line interface that makes it "
+"easy\n"
+"to put into a batch file.  (\"Ex command\" is just another name for a\n"
+"command-line (:) command.)\n"
+"   The Ex mode commands you need are as follows: >"
+msgstr ""
+
+#: usr_26.txt:150
+msgid ""
+"\t%s/-person-/Jones/g\n"
+"\twrite tempfile\n"
+"\tquit"
+msgstr ""
+
+#: usr_26.txt:154
+msgid ""
+"You put these commands in the file \"change.vim\".  Now to run the editor in\n"
+"batch mode, use this shell script: >"
+msgstr ""
+
+#: usr_26.txt:157
+msgid ""
+"\tfor file in *.txt; do\n"
+"\t  vim -e -s $file < change.vim\n"
+"\t  lpr -r tempfile\n"
+"\tdone"
+msgstr ""
+
+#: usr_26.txt:162
+msgid ""
+"The for-done loop is a shell construct to repeat the two lines in between,\n"
+"while the $file variable is set to a different file name each time.\n"
+"   The second line runs the Vim editor in Ex mode (-e argument) on the file\n"
+"$file and reads commands from the file \"change.vim\".  The -s argument tells\n"
+"Vim to operate in silent mode.  In other words, do not keep outputting the\n"
+":prompt, or any other prompt for that matter.\n"
+"   The \"lpr -r tempfile\" command prints the resulting \"tempfile\" and deletes\n"
+"it (that's what the -r argument does)."
+msgstr ""
+
+#: usr_26.txt:172
+msgid "READING FROM STDIN"
+msgstr ""
+
+#: usr_26.txt:174
+msgid ""
+"Vim can read text on standard input.  Since the normal way is to read "
+"commands\n"
+"there, you must tell Vim to read text instead.  This is done by passing the\n"
+"\"-\" argument in place of a file.  Example: >"
+msgstr ""
+
+#: usr_26.txt:178
+msgid "\tls | vim -"
+msgstr ""
+
+#: usr_26.txt:180
+msgid ""
+"This allows you to edit the output of the \"ls\" command, without first saving\n"
+"the text in a file.\n"
+"   If you use the standard input to read text from, you can use the \"-S\"\n"
+"argument to read a script: >"
+msgstr ""
+
+#: usr_26.txt:185
+msgid "\tproducer | vim -S change.vim -"
+msgstr ""
+
+#: usr_26.txt:188
+msgid "NORMAL MODE SCRIPTS"
+msgstr ""
+
+#: usr_26.txt:190
+msgid ""
+"If you really want to use Normal mode commands in a script, you can use it\n"
+"like this: >"
+msgstr ""
+
+#: usr_26.txt:193
+msgid ""
+"\tvim -s script file.txt ...\n"
+"<\n"
+"\tNote:\n"
+"\t\"-s\" has a different meaning when it is used without \"-e\".  Here it\n"
+"\tmeans to source the \"script\" as Normal mode commands.  When used with\n"
+"\t\"-e\" it means to be silent, and doesn't use the next argument as a\n"
+"\tfile name."
+msgstr ""
+
+#: usr_26.txt:201
+msgid ""
+"The commands in \"script\" are executed like you typed them.  Don't forget "
+"that\n"
+"a line break is interpreted as pressing <Enter>.  In Normal mode that moves\n"
+"the cursor to the next line.\n"
+"   To create the script you can edit the script file and type the commands.\n"
+"You need to imagine what the result would be, which can be a bit difficult.\n"
+"Another way is to record the commands while you perform them manually.  This\n"
+"is how you do that: >"
+msgstr ""
+
+#: usr_26.txt:209
+msgid "\tvim -w script file.txt ..."
+msgstr ""
+
+#: usr_26.txt:211
+msgid ""
+"All typed keys will be written to \"script\".  If you make a small mistake you\n"
+"can just continue and remember to edit the script later.\n"
+"   The \"-w\" argument appends to an existing script.  That is good when you\n"
+"want to record the script bit by bit.  If you want to start from scratch and\n"
+"start all over, use the \"-W\" argument.  It overwrites any existing file."
+msgstr ""
+
+#: usr_26.txt:217
+msgid ""
+"============================================================================"
+"=="
+msgstr ""
+
+#: usr_26.txt:219
+msgid "Next chapter: |usr_27.txt|  Search commands and patterns"
+msgstr ""
+
+#: usr_26.txt:221
+msgid "Copyright: see |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
+msgstr ""

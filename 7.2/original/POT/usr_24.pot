@@ -1,0 +1,1125 @@
+#. extracted from usr_24rightformat.txt
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-04 22:26+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.3.0\n"
+
+#: usr_24rightformat.txt:1
+msgid "*usr_24.txt*\tFor Vim version 7.2.  Last change: 2006 Jul 23"
+msgstr ""
+
+#: usr_24rightformat.txt:3
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar"
+msgstr ""
+
+#: usr_24rightformat.txt:5
+msgid "\t\t\t     Inserting quickly"
+msgstr ""
+
+#: usr_24rightformat.txt:8
+msgid ""
+"When entering text, Vim offers various ways to reduce the number of "
+"keystrokes\n"
+"and avoid typing mistakes.  Use Insert mode completion to repeat previously\n"
+"typed words.  Abbreviate long words to short ones.  Type characters that\n"
+"aren't on your keyboard."
+msgstr ""
+
+#: usr_24rightformat.txt:13
+msgid ""
+"|24.1|\tMaking corrections\n"
+"|24.2|\tShowing matches\n"
+"|24.3|\tCompletion\n"
+"|24.4|\tRepeating an insert\n"
+"|24.5|\tCopying from another line\n"
+"|24.6|\tInserting a register\n"
+"|24.7|\tAbbreviations\n"
+"|24.8|\tEntering special characters\n"
+"|24.9|\tDigraphs\n"
+"|24.10|\tNormal mode commands"
+msgstr ""
+
+#: usr_24rightformat.txt:24
+msgid ""
+"     Next chapter: |usr_25.txt|  Editing formatted text\n"
+" Previous chapter: |usr_23.txt|  Editing other files\n"
+"Table of contents: |usr_toc.txt|"
+msgstr ""
+
+#: usr_24rightformat.txt:28
+msgid ""
+"============================================================================"
+"==\n"
+"*24.1*\tMaking corrections"
+msgstr ""
+
+#: usr_24rightformat.txt:31
+msgid ""
+"The <BS> key was already mentioned.  It deletes the character just before "
+"the\n"
+"cursor.  The <Del> key does the same for the character under (after) the\n"
+"cursor.\n"
+"   When you typed a whole word wrong, use CTRL-W:"
+msgstr ""
+
+#: usr_24rightformat.txt:36
+msgid ""
+"\tThe horse had fallen to the sky ~\n"
+"\t\t\t\t       CTRL-W\n"
+"\tThe horse had fallen to the ~"
+msgstr ""
+
+#: usr_24rightformat.txt:40
+msgid ""
+"If you really messed up a line and want to start over, use CTRL-U to delete\n"
+"it.  This keeps the text after the cursor and the indent.  Only the text "
+"from\n"
+"the first non-blank to the cursor is deleted.  With the cursor on the \"f\" of\n"
+"\"fallen\" in the next line pressing CTRL-U does this:"
+msgstr ""
+
+#: usr_24rightformat.txt:45
+msgid ""
+"\tThe horse had fallen to the ~\n"
+"\t\t      CTRL-U\n"
+"\tfallen to the ~"
+msgstr ""
+
+#: usr_24rightformat.txt:49
+msgid ""
+"When you spot a mistake a few words back, you need to move the cursor there "
+"to\n"
+"correct it.  For example, you typed this:"
+msgstr ""
+
+#: usr_24rightformat.txt:52
+msgid "\tThe horse had follen to the ground ~"
+msgstr ""
+
+#: usr_24rightformat.txt:54
+msgid ""
+"You need to change \"follen\" to \"fallen\".  With the cursor at the end, you\n"
+"would type this to correct it: >"
+msgstr ""
+
+#: usr_24rightformat.txt:57
+msgid "\t\t\t\t\t<Esc>4blraA"
+msgstr ""
+
+#: usr_24rightformat.txt:59
+msgid ""
+"<\tget out of Insert mode\t\t<Esc>\n"
+"\tfour words back\t\t\t     4b\n"
+"\tmove on top of the \"o\"\t\t       l\n"
+"\treplace with \"a\"\t\t\tra\n"
+"\trestart Insert mode\t\t\t  A"
+msgstr ""
+
+#: usr_24rightformat.txt:65
+msgid "Another way to do this: >"
+msgstr ""
+
+#: usr_24rightformat.txt:67
+msgid "\t\t<C-Left><C-Left><C-Left><C-Left><Right><Del>a<End>"
+msgstr ""
+
+#: usr_24rightformat.txt:69
+msgid ""
+"<\tfour words back\t\t     <C-Left><C-Left><C-Left><C-Left>\n"
+"\tmove on top of the \"o\"\t\t\t<Right>\n"
+"\tdelete the \"o\"\t\t\t\t       <Del>\n"
+"\tinsert an \"a\"\t\t\t\t\t    a\n"
+"\tgo to end of the line\t\t\t\t     <End>"
+msgstr ""
+
+#: usr_24rightformat.txt:75
+msgid ""
+"This uses special keys to move around, while remaining in Insert mode.  This\n"
+"resembles what you would do in a modeless editor.  It's easier to remember,\n"
+"but takes more time (you have to move your hand from the letters to the "
+"cursor\n"
+"keys, and the <End> key is hard to press without looking at the keyboard).\n"
+"   These special keys are most useful when writing a mapping that doesn't\n"
+"leave Insert mode.  The extra typing doesn't matter then.\n"
+"   An overview of the keys you can use in Insert mode:"
+msgstr ""
+
+#: usr_24rightformat.txt:83
+msgid ""
+"\t<C-Home>\tto start of the file\n"
+"\t<PageUp>\ta whole screenful up\n"
+"\t<Home>\t\tto start of line\n"
+"\t<S-Left>\tone word left\n"
+"\t<C-Left>\tone word left\n"
+"\t<S-Right>\tone word right\n"
+"\t<C-Right>\tone word right\n"
+"\t<End>\t\tto end of the line\n"
+"\t<PageDown>\ta whole screenful down\n"
+"\t<C-End>\t\tto end of the file"
+msgstr ""
+
+#: usr_24rightformat.txt:94
+msgid "There are a few more, see |ins-special-special|."
+msgstr ""
+
+#: usr_24rightformat.txt:96
+msgid ""
+"============================================================================"
+"==\n"
+"*24.2*\tShowing matches"
+msgstr ""
+
+#: usr_24rightformat.txt:99
+msgid ""
+"When you type a ) it would be nice to see with which ( it matches.  To make\n"
+"Vim do that use this command: >"
+msgstr ""
+
+#: usr_24rightformat.txt:102
+msgid "\t:set showmatch"
+msgstr ""
+
+#: usr_24rightformat.txt:104
+msgid ""
+"When you now type a text like \"(example)\", as soon as you type the ) Vim "
+"will\n"
+"briefly move the cursor to the matching (, keep it there for half a second,\n"
+"and move back to where you were typing.\n"
+"   In case there is no matching (, Vim will beep.  Then you know that you\n"
+"might have forgotten the ( somewhere, or typed a ) too many.\n"
+"   The match will also be shown for [] and {} pairs.  You don't have to wait\n"
+"with typing the next character, as soon as Vim sees it the cursor will move\n"
+"back and inserting continues as before.\n"
+"   You can change the time Vim waits with the 'matchtime' option.  For\n"
+"example, to make Vim wait one and a half second: >"
+msgstr ""
+
+#: usr_24rightformat.txt:115
+msgid "\t:set matchtime=15"
+msgstr ""
+
+#: usr_24rightformat.txt:117
+msgid "The time is specified in tenths of a second."
+msgstr ""
+
+#: usr_24rightformat.txt:119
+msgid ""
+"============================================================================"
+"==\n"
+"*24.3*\tCompletion"
+msgstr ""
+
+#: usr_24rightformat.txt:122
+msgid ""
+"Vim can automatically complete words on insertion.  You type the first part "
+"of\n"
+"a word, press CTRL-P, and Vim guesses the rest.\n"
+"   Suppose, for example, that you are creating a C program and want to type "
+"in\n"
+"the following:"
+msgstr ""
+
+#: usr_24rightformat.txt:127
+msgid "\ttotal = ch_array[0] + ch_array[1] + ch_array[2]; ~"
+msgstr ""
+
+#: usr_24rightformat.txt:129
+msgid "You start by entering the following:"
+msgstr ""
+
+#: usr_24rightformat.txt:131
+msgid "\ttotal = ch_array[0] + ch_ ~"
+msgstr ""
+
+#: usr_24rightformat.txt:133
+msgid ""
+"At this point, you tell Vim to complete the word using the command CTRL-P.\n"
+"Vim searches for a word that starts with what's in front of the cursor.  In\n"
+"this case, it is \"ch_\", which matches with the word ch_array.  So typing\n"
+"CTRL-P gives you the following:"
+msgstr ""
+
+#: usr_24rightformat.txt:138
+msgid "\ttotal = ch_array[0] + ch_array ~"
+msgstr ""
+
+#: usr_24rightformat.txt:140
+msgid "After a little more typing, you get this (ending in a space):"
+msgstr ""
+
+#: usr_24rightformat.txt:142
+msgid "\ttotal = ch_array[0] + ch_array[1] +  ~"
+msgstr ""
+
+#: usr_24rightformat.txt:144
+msgid ""
+"If you now type CTRL-P Vim will search again for a word that completes the\n"
+"word before the cursor.  Since there is nothing in front of the cursor, it\n"
+"finds the first word backwards, which is \"ch_array\".  Typing CTRL-P again\n"
+"gives you the next word that matches, in this case \"total\".  A third CTRL-P\n"
+"searches further back.  If there is nothing else, it causes the editor to "
+"run\n"
+"out of words, so it returns to the original text, which is nothing.  A "
+"fourth\n"
+"CTRL-P causes the editor to start over again with \"ch_array\"."
+msgstr ""
+
+#: usr_24rightformat.txt:152
+msgid ""
+"To search forward, use CTRL-N.  Since the search wraps around the end of the\n"
+"file, CTRL-N and CTRL-P will find the same matches, but in a different\n"
+"sequence.  Hint: CTRL-N is Next-match and CTRL-P is Previous-match."
+msgstr ""
+
+#: usr_24rightformat.txt:156
+msgid ""
+"The Vim editor goes through a lot of effort to find words to complete.  By\n"
+"default, it searches the following places:"
+msgstr ""
+
+#: usr_24rightformat.txt:159
+msgid ""
+"\t1. Current file\n"
+"\t2. Files in other windows\n"
+"\t3. Other loaded files (hidden buffers)\n"
+"\t4. Files which are not loaded (inactive buffers)\n"
+"\t5. Tag files\n"
+"\t6. All files #included by the current file"
+msgstr ""
+
+#: usr_24rightformat.txt:167
+msgid "OPTIONS"
+msgstr ""
+
+#: usr_24rightformat.txt:169
+msgid "You can customize the search order with the 'complete' option."
+msgstr ""
+
+#: usr_24rightformat.txt:171
+msgid ""
+"The 'ignorecase' option is used.  When it is set, case differences are "
+"ignored\n"
+"when searching for matches."
+msgstr ""
+
+#: usr_24rightformat.txt:174
+msgid ""
+"A special option for completion is 'infercase'.  This is useful to find\n"
+"matches while ignoring case ('ignorecase' must be set) but still using the\n"
+"case of the word typed so far.  Thus if you type \"For\" and Vim finds a match\n"
+"\"fortunately\", it will result in \"Fortunately\"."
+msgstr ""
+
+#: usr_24rightformat.txt:180
+msgid "COMPLETING SPECIFIC ITEMS"
+msgstr ""
+
+#: usr_24rightformat.txt:182
+msgid ""
+"If you know what you are looking for, you can use these commands to complete\n"
+"with a certain type of item:"
+msgstr ""
+
+#: usr_24rightformat.txt:185
+msgid ""
+"\tCTRL-X CTRL-F\t\tfile names\n"
+"\tCTRL-X CTRL-L\t\twhole lines\n"
+"\tCTRL-X CTRL-D\t\tmacro definitions (also in included files)\n"
+"\tCTRL-X CTRL-I\t\tcurrent and included files\n"
+"\tCTRL-X CTRL-K\t\twords from a dictionary\n"
+"\tCTRL-X CTRL-T\t\twords from a thesaurus\n"
+"\tCTRL-X CTRL-]\t\ttags\n"
+"\tCTRL-X CTRL-V\t\tVim command line"
+msgstr ""
+
+#: usr_24rightformat.txt:194
+msgid ""
+"After each of them CTRL-N can be used to find the next match, CTRL-P to find\n"
+"the previous match.\n"
+"   More information for each of these commands here: |ins-completion|."
+msgstr ""
+
+#: usr_24rightformat.txt:199
+msgid "COMPLETING FILE NAMES"
+msgstr ""
+
+#: usr_24rightformat.txt:201
+msgid ""
+"Let's take CTRL-X CTRL-F as an example.  This will find file names.  It "
+"scans\n"
+"the current directory for files and displays each one that matches the word "
+"in\n"
+"front of the cursor.\n"
+"   Suppose, for example, that you have the following files in the current\n"
+"directory:"
+msgstr ""
+
+#: usr_24rightformat.txt:207
+msgid "\tmain.c  sub_count.c  sub_done.c  sub_exit.c"
+msgstr ""
+
+#: usr_24rightformat.txt:209
+msgid "Now enter Insert mode and start typing:"
+msgstr ""
+
+#: usr_24rightformat.txt:211
+msgid "\tThe exit code is in the file sub ~"
+msgstr ""
+
+#: usr_24rightformat.txt:213
+msgid ""
+"At this point, you enter the command CTRL-X CTRL-F.  Vim now completes the\n"
+"current word \"sub\" by looking at the files in the current directory.  The\n"
+"first match is sub_count.c.  This is not the one you want, so you match the\n"
+"next file by typing CTRL-N.  This match is sub_done.c.  Typing CTRL-N again\n"
+"takes you to sub_exit.c.  The results:"
+msgstr ""
+
+#: usr_24rightformat.txt:219
+msgid "\tThe exit code is in the file sub_exit.c ~"
+msgstr ""
+
+#: usr_24rightformat.txt:221
+msgid ""
+"If the file name starts with / (Unix) or C:\\ (MS-Windows) you can find all\n"
+"files in the file system.  For example, type \"/u\" and CTRL-X CTRL-F.  This\n"
+"will match \"/usr\" (this is on Unix):"
+msgstr ""
+
+#: usr_24rightformat.txt:225
+msgid "\tthe file is found in /usr/ ~"
+msgstr ""
+
+#: usr_24rightformat.txt:227
+msgid ""
+"If you now press CTRL-N you go back to \"/u\".  Instead, to accept the \"/usr/\"\n"
+"and go one directory level deeper, use CTRL-X CTRL-F again:"
+msgstr ""
+
+#: usr_24rightformat.txt:230
+msgid "\tthe file is found in /usr/X11R6/ ~"
+msgstr ""
+
+#: usr_24rightformat.txt:232
+msgid ""
+"The results depend on what is found in your file system, of course.  The\n"
+"matches are sorted alphabetically."
+msgstr ""
+
+#: usr_24rightformat.txt:236
+msgid "COMPLETING IN SOURCE CODE"
+msgstr ""
+
+#: usr_24rightformat.txt:238
+msgid ""
+"Source code files are well structured.  That makes it possible to do\n"
+"completion in an intelligent way.  In Vim this is called Omni completion.  "
+"In\n"
+"some other editors it's called intellisense, but that is a trademark."
+msgstr ""
+
+#: usr_24rightformat.txt:242
+msgid ""
+"The key to Omni completion is CTRL-X CTRL-O.  Obviously the O stands for "
+"Omni\n"
+"here, so that you can remember it easier.  Let's use an example for editing "
+"C\n"
+"source:"
+msgstr ""
+
+#: usr_24rightformat.txt:246
+msgid ""
+"\t{ ~\n"
+"\t    struct foo *p; ~\n"
+"\t    p-> ~"
+msgstr ""
+
+#: usr_24rightformat.txt:250
+msgid ""
+"The cursor is after \"p->\".  Now type CTRL-X CTRL-O.  Vim will offer you a "
+"list\n"
+"of alternatives, which are the items that \"struct foo\" contains.  That is\n"
+"quite different from using CTRL-P, which would complete any word, while only\n"
+"members of \"struct foo\" are valid here."
+msgstr ""
+
+#: usr_24rightformat.txt:255
+msgid ""
+"For Omni completion to work you may need to do some setup.  At least make "
+"sure\n"
+"filetype plugins are enabled.  Your vimrc file should contain a line like\n"
+"this: >\n"
+"\tfiletype plugin on\n"
+"Or: >\n"
+"\tfiletype plugin indent on"
+msgstr ""
+
+#: usr_24rightformat.txt:262
+msgid ""
+"For C code you need to create a tags file and set the 'tags' option.  That "
+"is\n"
+"explained |ft-c-omni|.  For other filetypes you may need to do something\n"
+"similar, look below |compl-omni-filetypes|.  It only works for specific\n"
+"filetypes.  Check the value of the 'omnifunc' option to find out if it would\n"
+"work."
+msgstr ""
+
+#: usr_24rightformat.txt:268
+msgid ""
+"============================================================================"
+"==\n"
+"*24.4*\tRepeating an insert"
+msgstr ""
+
+#: usr_24rightformat.txt:271
+msgid ""
+"If you press CTRL-A, the editor inserts the text you typed the last time you\n"
+"were in Insert mode.\n"
+"   Assume, for example, that you have a file that begins with the following:"
+msgstr ""
+
+#: usr_24rightformat.txt:275
+msgid ""
+"\t\"file.h\" ~\n"
+"\t/* Main program begins */ ~"
+msgstr ""
+
+#: usr_24rightformat.txt:278
+msgid ""
+"You edit this file by inserting \"#include \" at the beginning of the first\n"
+"line:"
+msgstr ""
+
+#: usr_24rightformat.txt:281
+msgid ""
+"\t#include \"file.h\" ~\n"
+"\t/* Main program begins */ ~"
+msgstr ""
+
+#: usr_24rightformat.txt:284
+msgid ""
+"You go down to the beginning of the next line using the commands \"j^\".  You\n"
+"now start to insert a new \"#include\" line.  So you type: >"
+msgstr ""
+
+#: usr_24rightformat.txt:287
+msgid "\ti CTRL-A"
+msgstr ""
+
+#: usr_24rightformat.txt:289
+msgid "The result is as follows:"
+msgstr ""
+
+#: usr_24rightformat.txt:291
+msgid ""
+"\t#include \"file.h\" ~\n"
+"\t#include /* Main program begins */ ~"
+msgstr ""
+
+#: usr_24rightformat.txt:294
+msgid ""
+"The \"#include \" was inserted because CTRL-A inserts the text of the previous\n"
+"insert.  Now you type  \"main.h\"<Enter>  to finish the line:"
+msgstr ""
+
+#: usr_24rightformat.txt:298
+msgid ""
+"\t#include \"file.h\" ~\n"
+"\t#include \"main.h\" ~\n"
+"\t/* Main program begins */ ~"
+msgstr ""
+
+#: usr_24rightformat.txt:302
+msgid ""
+"The CTRL-@ command does a CTRL-A and then exits Insert mode.  That's a quick\n"
+"way of doing exactly the same insertion again."
+msgstr ""
+
+#: usr_24rightformat.txt:305
+msgid ""
+"============================================================================"
+"==\n"
+"*24.5*\tCopying from another line"
+msgstr ""
+
+#: usr_24rightformat.txt:308
+msgid ""
+"The CTRL-Y command inserts the character above the cursor.  This is useful\n"
+"when you are duplicating a previous line.  For example, you have this line "
+"of\n"
+"C code:"
+msgstr ""
+
+#: usr_24rightformat.txt:312
+msgid "\tb_array[i]->s_next = a_array[i]->s_next; ~"
+msgstr ""
+
+#: usr_24rightformat.txt:314
+msgid ""
+"Now you need to type the same line, but with \"s_prev\" instead of \"s_next\".\n"
+"Start the new line, and press CTRL-Y 14 times, until you are at the \"n\" of\n"
+"\"next\":"
+msgstr ""
+
+#: usr_24rightformat.txt:318
+msgid ""
+"\tb_array[i]->s_next = a_array[i]->s_next; ~\n"
+"\tb_array[i]->s_ ~"
+msgstr ""
+
+#: usr_24rightformat.txt:321
+msgid "Now you type \"prev\":"
+msgstr ""
+
+#: usr_24rightformat.txt:323
+msgid ""
+"\tb_array[i]->s_next = a_array[i]->s_next; ~\n"
+"\tb_array[i]->s_prev ~"
+msgstr ""
+
+#: usr_24rightformat.txt:326
+msgid "Continue pressing CTRL-Y until the following \"next\":"
+msgstr ""
+
+#: usr_24rightformat.txt:328
+msgid ""
+"\tb_array[i]->s_next = a_array[i]->s_next; ~\n"
+"\tb_array[i]->s_prev = a_array[i]->s_ ~"
+msgstr ""
+
+#: usr_24rightformat.txt:331
+msgid "Now type \"prev;\" to finish it off."
+msgstr ""
+
+#: usr_24rightformat.txt:333
+msgid ""
+"The CTRL-E command acts like CTRL-Y except it inserts the character below "
+"the\n"
+"cursor."
+msgstr ""
+
+#: usr_24rightformat.txt:336
+msgid ""
+"============================================================================"
+"==\n"
+"*24.6*\tInserting a register"
+msgstr ""
+
+#: usr_24rightformat.txt:339
+msgid ""
+"The command CTRL-R {register} inserts the contents of the register.  This is\n"
+"useful to avoid having to type a long word.  For example, you need to type\n"
+"this:"
+msgstr ""
+
+#: usr_24rightformat.txt:343
+msgid "\tr = VeryLongFunction(a) + VeryLongFunction(b) + VeryLongFunction(c) ~"
+msgstr ""
+
+#: usr_24rightformat.txt:345
+msgid ""
+"The function name is defined in a different file.  Edit that file and move "
+"the\n"
+"cursor on top of the function name there, and yank it into register v: >"
+msgstr ""
+
+#: usr_24rightformat.txt:348
+msgid "\t\"vyiw"
+msgstr ""
+
+#: usr_24rightformat.txt:350
+msgid ""
+"\"v is the register specification, \"yiw\" is yank-inner-word.  Now edit the "
+"file\n"
+"where the new line is to be inserted, and type the first letters:"
+msgstr ""
+
+#: usr_24rightformat.txt:353
+msgid "\tr = ~"
+msgstr ""
+
+#: usr_24rightformat.txt:355
+msgid "Now use CTRL-R v to insert the function name:"
+msgstr ""
+
+#: usr_24rightformat.txt:357
+msgid "\tr = VeryLongFunction ~"
+msgstr ""
+
+#: usr_24rightformat.txt:359
+msgid ""
+"You continue to type the characters in between the function name, and use\n"
+"CTRL-R v two times more.\n"
+"   You could have done the same with completion.  Using a register is useful\n"
+"when there are many words that start with the same characters."
+msgstr ""
+
+#: usr_24rightformat.txt:364
+msgid ""
+"If the register contains characters such as <BS> or other special "
+"characters,\n"
+"they are interpreted as if they had been typed from the keyboard.  If you do\n"
+"not want this to happen (you really want the <BS> to be inserted in the "
+"text),\n"
+"use the command CTRL-R CTRL-R {register}."
+msgstr ""
+
+#: usr_24rightformat.txt:369
+msgid ""
+"============================================================================"
+"==\n"
+"*24.7*\tAbbreviations"
+msgstr ""
+
+#: usr_24rightformat.txt:372
+msgid ""
+"An abbreviation is a short word that takes the place of a long one.  For\n"
+"example, \"ad\" stands for \"advertisement\".  Vim enables you to type an\n"
+"abbreviation and then will automatically expand it for you.\n"
+"   To tell Vim to expand \"ad\" into \"advertisement\" every time you insert it,\n"
+"use the following command: >"
+msgstr ""
+
+#: usr_24rightformat.txt:378
+msgid "\t:iabbrev ad advertisement"
+msgstr ""
+
+#: usr_24rightformat.txt:380
+msgid ""
+"Now, when you type \"ad\", the whole word \"advertisement\" will be inserted "
+"into\n"
+"the text.  This is triggered by typing a character that can't be part of a\n"
+"word, for example a space:"
+msgstr ""
+
+#: usr_24rightformat.txt:384
+msgid ""
+"\tWhat Is Entered\t\tWhat You See\n"
+"\tI saw the a\t\tI saw the a ~\n"
+"\tI saw the ad\t\tI saw the ad ~\n"
+"\tI saw the ad<Space>\tI saw the advertisement<Space> ~"
+msgstr ""
+
+#: usr_24rightformat.txt:389
+msgid ""
+"The expansion doesn't happen when typing just \"ad\".  That allows you to type "
+"a\n"
+"word like \"add\", which will not get expanded.  Only whole words are checked\n"
+"for abbreviations."
+msgstr ""
+
+#: usr_24rightformat.txt:394
+msgid "ABBREVIATING SEVERAL WORDS"
+msgstr ""
+
+#: usr_24rightformat.txt:396
+msgid ""
+"It is possible to define an abbreviation that results in multiple words.  "
+"For\n"
+"example, to define \"JB\" as \"Jack Benny\", use the following command: >"
+msgstr ""
+
+#: usr_24rightformat.txt:399
+msgid "\t:iabbrev JB Jack Benny"
+msgstr ""
+
+#: usr_24rightformat.txt:401
+msgid "As a programmer, I use two rather unusual abbreviations: >"
+msgstr ""
+
+#: usr_24rightformat.txt:403
+msgid ""
+"\t:iabbrev #b /****************************************\n"
+"\t:iabbrev #e <Space>****************************************/"
+msgstr ""
+
+#: usr_24rightformat.txt:406
+msgid ""
+"These are used for creating boxed comments.  The comment starts with #b, "
+"which\n"
+"draws the top line.  I then type the comment text and use #e to draw the\n"
+"bottom line.\n"
+"   Notice that the #e abbreviation begins with a space.  In other words, the\n"
+"first two characters are space-star.  Usually Vim ignores spaces between the\n"
+"abbreviation and the expansion.  To avoid that problem, I spell space as "
+"seven\n"
+"characters: <, S, p, a, c, e, >."
+msgstr ""
+
+#: usr_24rightformat.txt:414
+msgid ""
+"\tNote:\n"
+"\t\":iabbrev\" is a long word to type.  \":iab\" works just as well.\n"
+"\tThat's abbreviating the abbreviate command!"
+msgstr ""
+
+#: usr_24rightformat.txt:419
+msgid "FIXING TYPING MISTAKES"
+msgstr ""
+
+#: usr_24rightformat.txt:421
+msgid ""
+"It's very common to make the same typing mistake every time.  For example,\n"
+"typing \"teh\" instead of \"the\".  You can fix this with an abbreviation: >"
+msgstr ""
+
+#: usr_24rightformat.txt:424
+msgid "\t:abbreviate teh the"
+msgstr ""
+
+#: usr_24rightformat.txt:426
+msgid ""
+"You can add a whole list of these.  Add one each time you discover a common\n"
+"mistake."
+msgstr ""
+
+#: usr_24rightformat.txt:430
+msgid "LISTING ABBREVIATIONS"
+msgstr ""
+
+#: usr_24rightformat.txt:432
+msgid "The \":abbreviate\" command lists the abbreviations:"
+msgstr ""
+
+#: usr_24rightformat.txt:434
+msgid ""
+"\t:abbreviate\n"
+"\ti  #e\t\t  ****************************************/\n"
+"\ti  #b\t\t /****************************************\n"
+"\ti  JB\t\t Jack Benny\n"
+"\ti  ad\t\t advertisement\n"
+"\t!  teh\t\t the"
+msgstr ""
+
+#: usr_24rightformat.txt:441
+msgid ""
+"The \"i\" in the first column indicates Insert mode.  These abbreviations are\n"
+"only active in Insert mode.  Other possible characters are:"
+msgstr ""
+
+#: usr_24rightformat.txt:444
+msgid ""
+"\tc\tCommand-line mode\t\t\t:cabbrev\n"
+"\t!\tboth Insert and Command-line mode\t:abbreviate"
+msgstr ""
+
+#: usr_24rightformat.txt:447
+msgid ""
+"Since abbreviations are not often useful in Command-line mode, you will "
+"mostly\n"
+"use the \":iabbrev\" command.  That avoids, for example, that \"ad\" gets "
+"expanded\n"
+"when typing a command like: >"
+msgstr ""
+
+#: usr_24rightformat.txt:451
+msgid "\t:edit ad"
+msgstr ""
+
+#: usr_24rightformat.txt:454
+msgid "DELETING ABBREVIATIONS"
+msgstr ""
+
+#: usr_24rightformat.txt:456
+msgid ""
+"To get rid of an abbreviation, use the \":unabbreviate\" command.  Suppose you\n"
+"have the following abbreviation: >"
+msgstr ""
+
+#: usr_24rightformat.txt:459
+msgid "\t:abbreviate @f fresh"
+msgstr ""
+
+#: usr_24rightformat.txt:461
+msgid "You can remove it with this command: >"
+msgstr ""
+
+#: usr_24rightformat.txt:463
+msgid "\t:unabbreviate @f"
+msgstr ""
+
+#: usr_24rightformat.txt:465
+msgid ""
+"While you type this, you will notice that @f is expanded to \"fresh\".  Don't\n"
+"worry about this, Vim understands it anyway (except when you have an\n"
+"abbreviation for \"fresh\", but that's very unlikely).\n"
+"   To remove all the abbreviations: >"
+msgstr ""
+
+#: usr_24rightformat.txt:470
+msgid "\t:abclear"
+msgstr ""
+
+#: usr_24rightformat.txt:472
+msgid ""
+"\":unabbreviate\" and \":abclear\" also come in the variants for Insert mode\n"
+"(\":iunabbreviate and \":iabclear\") and Command-line mode (\":cunabbreviate\" "
+"and\n"
+"\":cabclear\")."
+msgstr ""
+
+#: usr_24rightformat.txt:477
+msgid "REMAPPING ABBREVIATIONS"
+msgstr ""
+
+#: usr_24rightformat.txt:479
+msgid ""
+"There is one thing to watch out for when defining an abbreviation: The\n"
+"resulting string should not be mapped.  For example: >"
+msgstr ""
+
+#: usr_24rightformat.txt:482
+msgid ""
+"\t:abbreviate @a adder\n"
+"\t:imap dd disk-door"
+msgstr ""
+
+#: usr_24rightformat.txt:485
+msgid ""
+"When you now type @a, you will get \"adisk-doorer\".  That's not what you "
+"want.\n"
+"To avoid this, use the \":noreabbrev\" command.  It does the same as\n"
+"\":abbreviate\", but avoids that the resulting string is used for mappings: >"
+msgstr ""
+
+#: usr_24rightformat.txt:489
+msgid "\t:noreabbrev @a adder"
+msgstr ""
+
+#: usr_24rightformat.txt:491
+msgid ""
+"Fortunately, it's unlikely that the result of an abbreviation is mapped."
+msgstr ""
+
+#: usr_24rightformat.txt:493
+msgid ""
+"============================================================================"
+"==\n"
+"*24.8*\tEntering special characters"
+msgstr ""
+
+#: usr_24rightformat.txt:496
+msgid ""
+"The CTRL-V command is used to insert the next character literally.  In other\n"
+"words, any special meaning the character has, it will be ignored.  For\n"
+"example: >"
+msgstr ""
+
+#: usr_24rightformat.txt:500
+msgid "\tCTRL-V <Esc>"
+msgstr ""
+
+#: usr_24rightformat.txt:502
+msgid ""
+"Inserts an escape character.  Thus you don't leave Insert mode.  (Don't type\n"
+"the space after CTRL-V, it's only to make this easier to read)."
+msgstr ""
+
+#: usr_24rightformat.txt:505
+msgid ""
+"\tNote:\n"
+"\tOn MS-Windows CTRL-V is used to paste text.  Use CTRL-Q instead of\n"
+"\tCTRL-V.  On Unix, on the other hand, CTRL-Q does not work on some\n"
+"\tterminals, because it has a special meaning."
+msgstr ""
+
+#: usr_24rightformat.txt:510
+msgid ""
+"You can also use the command CTRL-V {digits} to insert a character with the\n"
+"decimal number {digits}.  For example, the character number 127 is the <Del>\n"
+"character (but not necessarily the <Del> key!).  To insert <Del> type: >"
+msgstr ""
+
+#: usr_24rightformat.txt:514
+msgid "\tCTRL-V 127"
+msgstr ""
+
+#: usr_24rightformat.txt:516
+msgid ""
+"You can enter characters up to 255 this way.  When you type fewer than two\n"
+"digits, a non-digit will terminate the command.  To avoid the need of typing "
+"a\n"
+"non-digit, prepend one or two zeros to make three digits.\n"
+"   All the next commands insert a <Tab> and then a dot:"
+msgstr ""
+
+#: usr_24rightformat.txt:521
+msgid ""
+"\tCTRL-V 9.\n"
+"\tCTRL-V 09.\n"
+"\tCTRL-V 009."
+msgstr ""
+
+#: usr_24rightformat.txt:525
+msgid "To enter a character in hexadecimal, use an \"x\" after the CTRL-V: >"
+msgstr ""
+
+#: usr_24rightformat.txt:527
+msgid "\tCTRL-V x7f"
+msgstr ""
+
+#: usr_24rightformat.txt:529
+msgid ""
+"This also goes up to character 255 (CTRL-V xff).  You can use \"o\" to type a\n"
+"character as an octal number and two more methods allow you to type up to\n"
+"a 16 bit and a 32 bit number (e.g., for a Unicode character): >"
+msgstr ""
+
+#: usr_24rightformat.txt:533
+msgid ""
+"\tCTRL-V o123\n"
+"\tCTRL-V u1234\n"
+"\tCTRL-V U12345678"
+msgstr ""
+
+#: usr_24rightformat.txt:537
+msgid ""
+"============================================================================"
+"==\n"
+"*24.9*\tDigraphs"
+msgstr ""
+
+#: usr_24rightformat.txt:540
+msgid ""
+"Some characters are not on the keyboard.  For example, the copyright "
+"character\n"
+"(©).  To type these characters in Vim, you use digraphs, where two "
+"characters\n"
+"represent one.  To enter a ©, for example, you press three keys: >"
+msgstr ""
+
+#: usr_24rightformat.txt:544
+msgid "\tCTRL-K Co"
+msgstr ""
+
+#: usr_24rightformat.txt:546
+msgid "To find out what digraphs are available, use the following command: >"
+msgstr ""
+
+#: usr_24rightformat.txt:548
+msgid "\t:digraphs"
+msgstr ""
+
+#: usr_24rightformat.txt:550
+msgid "Vim will display the digraph table.  Here are three lines of it:"
+msgstr ""
+
+#: usr_24rightformat.txt:552
+msgid ""
+"  AC ~_ 159  NS |  160  !I ¡  161  Ct ¢  162  Pd £  163  Cu ¤  164  Ye ¥  "
+"165 ~\n"
+"  BB ¦  166  SE §  167  ': ¨  168  Co ©  169  -a ª  170  << «  171  NO ¬  "
+"172 ~\n"
+"  -- ­  173  Rg ®  174  'm ¯  175  DG °  176  +- ±  177  2S ²  178  3S ³  "
+"179 ~"
+msgstr ""
+
+#: usr_24rightformat.txt:556
+msgid ""
+"This shows, for example, that the digraph you get by typing CTRL-K Pd is the\n"
+"character (£).  This is character number 163 (decimal).\n"
+"   Pd is short for Pound.  Most digraphs are selected to give you a hint "
+"about\n"
+"the character they will produce.  If you look through the list you will\n"
+"understand the logic.\n"
+"   You can exchange the first and second character, if there is no digraph "
+"for\n"
+"that combination.  Thus CTRL-K dP also works.  Since there is no digraph for\n"
+"\"dP\" Vim will also search for a \"Pd\" digraph."
+msgstr ""
+
+#: usr_24rightformat.txt:565
+msgid ""
+"\tNote:\n"
+"\tThe digraphs depend on the character set that Vim assumes you are\n"
+"\tusing.  On MS-DOS they are different from MS-Windows.  Always use\n"
+"\t\":digraphs\" to find out which digraphs are currently available."
+msgstr ""
+
+#: usr_24rightformat.txt:570
+msgid "You can define your own digraphs.  Example: >"
+msgstr ""
+
+#: usr_24rightformat.txt:572
+msgid "\t:digraph a\" ä"
+msgstr ""
+
+#: usr_24rightformat.txt:574
+msgid ""
+"This defines that CTRL-K a\" inserts an ä character.  You can also specify "
+"the\n"
+"character with a decimal number.  This defines the same digraph: >"
+msgstr ""
+
+#: usr_24rightformat.txt:577
+msgid "\t:digraph a\" 228"
+msgstr ""
+
+#: usr_24rightformat.txt:579
+msgid ""
+"More information about digraphs here: |digraphs|\n"
+"   Another way to insert special characters is with a keymap.  More about "
+"that\n"
+"here: |45.5|"
+msgstr ""
+
+#: usr_24rightformat.txt:583
+msgid ""
+"============================================================================"
+"==\n"
+"*24.10*\tNormal mode commands"
+msgstr ""
+
+#: usr_24rightformat.txt:586
+msgid ""
+"Insert mode offers a limited number of commands.  In Normal mode you have "
+"many\n"
+"more.  When you want to use one, you usually leave Insert mode with <Esc>,\n"
+"execute the Normal mode command, and re-enter Insert mode with \"i\" or \"a\".\n"
+"   There is a quicker way.  With CTRL-O {command} you can execute any Normal\n"
+"mode command from Insert mode.  For example, to delete from the cursor to "
+"the\n"
+"end of the line: >"
+msgstr ""
+
+#: usr_24rightformat.txt:593
+msgid "\tCTRL-O D"
+msgstr ""
+
+#: usr_24rightformat.txt:595
+msgid ""
+"You can execute only one Normal mode command this way.  But you can specify "
+"a\n"
+"register or a count.  A more complicated example: >"
+msgstr ""
+
+#: usr_24rightformat.txt:598
+msgid "\tCTRL-O \"g3dw"
+msgstr ""
+
+#: usr_24rightformat.txt:600
+msgid "This deletes up to the third word into register g."
+msgstr ""
+
+#: usr_24rightformat.txt:602
+msgid ""
+"============================================================================"
+"=="
+msgstr ""
+
+#: usr_24rightformat.txt:604
+msgid "Next chapter: |usr_25.txt|  Editing formatted text"
+msgstr ""
+
+#: usr_24rightformat.txt:606
+msgid "Copyright: see |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
+msgstr ""

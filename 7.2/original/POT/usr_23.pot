@@ -1,0 +1,634 @@
+#. extracted from usr_23.txt
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-04 13:39+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.3.0\n"
+
+#: usr_23.txt:1
+msgid "*usr_23.txt*\tFor Vim version 7.2.  Last change: 2006 Apr 24"
+msgstr ""
+
+#: usr_23.txt:3
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar"
+msgstr ""
+
+#: usr_23.txt:5
+msgid "\t\t\t     Editing other files"
+msgstr ""
+
+#: usr_23.txt:8
+msgid ""
+"This chapter is about editing files that are not ordinary files.  With Vim "
+"you\n"
+"can edit files that are compressed or encrypted.  Some files need to be\n"
+"accessed over the internet.  With some restrictions, binary files can be\n"
+"edited as well."
+msgstr ""
+
+#: usr_23.txt:13
+msgid ""
+"|23.1|\tDOS, Mac and Unix files\n"
+"|23.2|\tFiles on the internet\n"
+"|23.3|\tEncryption\n"
+"|23.4|\tBinary files\n"
+"|23.5|\tCompressed files"
+msgstr ""
+
+#: usr_23.txt:19
+msgid ""
+"     Next chapter: |usr_24.txt|  Inserting quickly\n"
+" Previous chapter: |usr_22.txt|  Finding the file to edit\n"
+"Table of contents: |usr_toc.txt|"
+msgstr ""
+
+#: usr_23.txt:23
+msgid ""
+"============================================================================"
+"==\n"
+"*23.1*\tDOS, Mac and Unix files"
+msgstr ""
+
+#: usr_23.txt:26
+msgid ""
+"Back in the early days, the old Teletype machines used two characters to\n"
+"start a new line.  One to move the carriage back to the first position\n"
+"(carriage return, <CR>), another to move the paper up (line feed, <LF>).\n"
+"   When computers came out, storage was expensive.  Some people decided that\n"
+"they did not need two characters for end-of-line.  The UNIX people decided\n"
+"they could use <Line Feed> only for end-of-line.  The Apple people\n"
+"standardized on <CR>.  The MS-DOS (and Microsoft Windows) folks decided to\n"
+"keep the old <CR><LF>.\n"
+"   This means that if you try to move a file from one system to another, you\n"
+"have line-break problems.  The Vim editor automatically recognizes the\n"
+"different file formats and handles things properly behind your back.\n"
+"   The option 'fileformats' contains the various formats that will be tried\n"
+"when a new file is edited.  The following command, for example, tells Vim to\n"
+"try UNIX format first and MS-DOS format second: >"
+msgstr ""
+
+#: usr_23.txt:41
+msgid "\t:set fileformats=unix,dos"
+msgstr ""
+
+#: usr_23.txt:43
+msgid ""
+"You will notice the format in the message you get when editing a file.  You\n"
+"don't see anything if you edit a native file format.  Thus editing a Unix "
+"file\n"
+"on Unix won't result in a remark.  But when you edit a dos file, Vim will\n"
+"notify you of this:"
+msgstr ""
+
+#: usr_23.txt:48
+msgid "\t\"/tmp/test\" [dos] 3L, 71C ~"
+msgstr ""
+
+#: usr_23.txt:50
+msgid ""
+"For a Mac file you would see \"[mac]\".\n"
+"   The detected file format is stored in the 'fileformat' option.  To see\n"
+"which format you have, execute the following command: >"
+msgstr ""
+
+#: usr_23.txt:54
+msgid "\t:set fileformat?"
+msgstr ""
+
+#: usr_23.txt:56
+msgid "The three names that Vim uses are:"
+msgstr ""
+
+#: usr_23.txt:58
+msgid ""
+"\tunix\t\t<LF>\n"
+"\tdos\t\t<CR><LF>\n"
+"\tmac\t\t<CR>"
+msgstr ""
+
+#: usr_23.txt:63
+msgid "USING THE MAC FORMAT"
+msgstr ""
+
+#: usr_23.txt:65
+msgid ""
+"On Unix, <LF> is used to break a line.  It's not unusual to have a <CR>\n"
+"character halfway a line.  Incidentally, this happens quite often in Vi (and\n"
+"Vim) scripts.\n"
+"   On the Macintosh, where <CR> is the line break character, it's possible "
+"to\n"
+"have a <LF> character halfway a line.\n"
+"   The result is that it's not possible to be 100% sure whether a file\n"
+"containing both <CR> and <LF> characters is a Mac or a Unix file.  "
+"Therefore,\n"
+"Vim assumes that on Unix you probably won't edit a Mac file, and doesn't "
+"check\n"
+"for this type of file.  To check for this format anyway, add \"mac\" to\n"
+"'fileformats': >"
+msgstr ""
+
+#: usr_23.txt:76
+msgid "\t:set fileformats+=mac"
+msgstr ""
+
+#: usr_23.txt:78
+msgid ""
+"Then Vim will take a guess at the file format.  Watch out for situations "
+"where\n"
+"Vim guesses wrong."
+msgstr ""
+
+#: usr_23.txt:82
+msgid "OVERRULING THE FORMAT"
+msgstr ""
+
+#: usr_23.txt:84
+msgid ""
+"If you use the good old Vi and try to edit an MS-DOS format file, you will\n"
+"find that each line ends with a ^M character.  (^M is <CR>).  The automatic\n"
+"detection avoids this.  Suppose you do want to edit the file that way?  Then\n"
+"you need to overrule the format: >"
+msgstr ""
+
+#: usr_23.txt:89
+msgid "\t:edit ++ff=unix file.txt"
+msgstr ""
+
+#: usr_23.txt:91
+msgid ""
+"The \"++\" string is an item that tells Vim that an option name follows, which\n"
+"overrules the default for this single command.  \"++ff\" is used for\n"
+"'fileformat'.  You could also use \"++ff=mac\" or \"++ff=dos\".\n"
+"   This doesn't work for any option, only \"++ff\" and \"++enc\" are currently\n"
+"implemented.  The full names \"++fileformat\" and \"++encoding\" also work."
+msgstr ""
+
+#: usr_23.txt:98
+msgid "CONVERSION"
+msgstr ""
+
+#: usr_23.txt:100
+msgid ""
+"You can use the 'fileformat' option to convert from one file format to\n"
+"another.  Suppose, for example, that you have an MS-DOS file named "
+"README.TXT\n"
+"that you want to convert to UNIX format.  Start by editing the MS-DOS format\n"
+"file: >\n"
+"\tvim README.TXT"
+msgstr ""
+
+#: usr_23.txt:106
+msgid ""
+"Vim will recognize this as a dos format file.  Now change the file format to\n"
+"UNIX: >"
+msgstr ""
+
+#: usr_23.txt:109
+msgid ""
+"\t:set fileformat=unix\n"
+"\t:write"
+msgstr ""
+
+#: usr_23.txt:112
+msgid "The file is written in Unix format."
+msgstr ""
+
+#: usr_23.txt:114
+msgid ""
+"============================================================================"
+"==\n"
+"*23.2*\tFiles on the internet"
+msgstr ""
+
+#: usr_23.txt:117
+msgid ""
+"Someone sends you an e-mail message, which refers to a file by its URL.  For\n"
+"example:"
+msgstr ""
+
+#: usr_23.txt:120
+msgid ""
+"\tYou can find the information here: ~\n"
+"\t\tftp://ftp.vim.org/pub/vim/README ~"
+msgstr ""
+
+#: usr_23.txt:123
+msgid ""
+"You could start a program to download the file, save it on your local disk "
+"and\n"
+"then start Vim to edit it.\n"
+"   There is a much simpler way.  Move the cursor to any character of the "
+"URL.\n"
+"Then use this command: >"
+msgstr ""
+
+#: usr_23.txt:128
+msgid "\tgf"
+msgstr ""
+
+#: usr_23.txt:130
+msgid ""
+"With a bit of luck, Vim will figure out which program to use for downloading\n"
+"the file, download it and edit the copy.  To open the file in a new window "
+"use\n"
+"CTRL-W f.\n"
+"   If something goes wrong you will get an error message.  It's possible "
+"that\n"
+"the URL is wrong, you don't have permission to read it, the network "
+"connection\n"
+"is down, etc.  Unfortunately, it's hard to tell the cause of the error.  You\n"
+"might want to try the manual way of downloading the file."
+msgstr ""
+
+#: usr_23.txt:138
+msgid ""
+"Accessing files over the internet works with the netrw plugin.  Currently "
+"URLs\n"
+"with these formats are recognized:"
+msgstr ""
+
+#: usr_23.txt:141
+msgid ""
+"\tftp://\t\tuses ftp\n"
+"\trcp://\t\tuses rcp\n"
+"\tscp://\t\tuses scp\n"
+"\thttp://\t\tuses wget (reading only)"
+msgstr ""
+
+#: usr_23.txt:146
+msgid ""
+"Vim doesn't do the communication itself, it relies on the mentioned programs\n"
+"to be available on your computer.  On most Unix systems \"ftp\" and \"rcp\" will\n"
+"be present.  \"scp\" and \"wget\" might need to be installed."
+msgstr ""
+
+#: usr_23.txt:150
+msgid ""
+"Vim detects these URLs for each command that starts editing a new file, also\n"
+"with \":edit\" and \":split\", for example.  Write commands also work, except "
+"for\n"
+"http://."
+msgstr ""
+
+#: usr_23.txt:154
+msgid "For more information, also about passwords, see |netrw|."
+msgstr ""
+
+#: usr_23.txt:156
+msgid ""
+"============================================================================"
+"==\n"
+"*23.3*\tEncryption"
+msgstr ""
+
+#: usr_23.txt:159
+msgid ""
+"Some information you prefer to keep to yourself.  For example, when writing\n"
+"a test on a computer that students also use.  You don't want clever students\n"
+"to figure out a way to read the questions before the exam starts.  Vim can\n"
+"encrypt the file for you, which gives you some protection.\n"
+"   To start editing a new file with encryption, use the \"-x\" argument to "
+"start\n"
+"Vim.  Example: >"
+msgstr ""
+
+#: usr_23.txt:166
+msgid "\tvim -x exam.txt"
+msgstr ""
+
+#: usr_23.txt:168
+msgid "Vim prompts you for a key used for encrypting and decrypting the file:"
+msgstr ""
+
+#: usr_23.txt:170
+msgid "\tEnter encryption key: ~"
+msgstr ""
+
+#: usr_23.txt:172
+msgid ""
+"Carefully type the secret key now.  You cannot see the characters you type,\n"
+"they will be replaced by stars.  To avoid the situation that a typing "
+"mistake\n"
+"will cause trouble, Vim asks you to enter the key again:"
+msgstr ""
+
+#: usr_23.txt:176
+msgid "\tEnter same key again: ~"
+msgstr ""
+
+#: usr_23.txt:178
+msgid ""
+"You can now edit this file normally and put in all your secrets.  When you\n"
+"finish editing the file and tell Vim to exit, the file is encrypted and\n"
+"written.\n"
+"   When you edit the file with Vim, it will ask you to enter the same key\n"
+"again.  You don't need to use the \"-x\" argument.  You can also use the "
+"normal\n"
+"\":edit\" command.  Vim adds a magic string to the file by which it recognizes\n"
+"that the file was encrypted.\n"
+"   If you try to view this file using another program, all you get is "
+"garbage.\n"
+"Also, if you edit the file with Vim and enter the wrong key, you get "
+"garbage.\n"
+"Vim does not have a mechanism to check if the key is the right one (this "
+"makes\n"
+"it much harder to break the key)."
+msgstr ""
+
+#: usr_23.txt:191
+msgid "SWITCHING ENCRYPTION ON AND OFF"
+msgstr ""
+
+#: usr_23.txt:193
+msgid ""
+"To disable the encryption of a file, set the 'key' option to an empty "
+"string:\n"
+">\n"
+"\t:set key="
+msgstr ""
+
+#: usr_23.txt:197
+msgid ""
+"The next time you write the file this will be done without encryption.\n"
+"   Setting the 'key' option to enable encryption is not a good idea, because\n"
+"the password appears in the clear.  Anyone shoulder-surfing can read your\n"
+"password.\n"
+"   To avoid this problem, the \":X\" command was created.  It asks you for an\n"
+"encryption key, just like the \"-x\" argument did: >"
+msgstr ""
+
+#: usr_23.txt:204
+msgid ""
+"\t:X\n"
+"\tEnter encryption key: ******\n"
+"\tEnter same key again: ******"
+msgstr ""
+
+#: usr_23.txt:209
+msgid "LIMITS ON ENCRYPTION"
+msgstr ""
+
+#: usr_23.txt:211
+msgid ""
+"The encryption algorithm used by Vim is weak.  It is good enough to keep out\n"
+"the casual prowler, but not good enough to keep out a cryptology expert with\n"
+"lots of time on his hands.  Also you should be aware that the swap file is "
+"not\n"
+"encrypted; so while you are editing, people with superuser privileges can "
+"read\n"
+"the unencrypted text from this file.\n"
+"   One way to avoid letting people read your swap file is to avoid using "
+"one.\n"
+"If the -n argument is supplied on the command line, no swap file is used\n"
+"(instead, Vim puts everything in memory).  For example, to edit the "
+"encrypted\n"
+"file \"file.txt\" without a swap file use the following command: >"
+msgstr ""
+
+#: usr_23.txt:221
+msgid "\tvim -x -n file.txt"
+msgstr ""
+
+#: usr_23.txt:223
+msgid "When already editing a file, the swapfile can be disabled with: >"
+msgstr ""
+
+#: usr_23.txt:225
+msgid "\t:setlocal noswapfile"
+msgstr ""
+
+#: usr_23.txt:227
+msgid ""
+"Since there is no swapfile, recovery will be impossible.  Save the file a "
+"bit\n"
+"more often to avoid the risk of losing your changes."
+msgstr ""
+
+#: usr_23.txt:230
+msgid ""
+"While the file is in memory, it is in plain text.  Anyone with privilege can\n"
+"look in the editor's memory and discover the contents of the file.\n"
+"   If you use a viminfo file, be aware that the contents of text registers "
+"are\n"
+"written out in the clear as well.\n"
+"   If you really want to secure the contents of a file, edit it only on a\n"
+"portable computer not connected to a network, use good encryption tools, and\n"
+"keep the computer locked up in a big safe when not in use."
+msgstr ""
+
+#: usr_23.txt:238
+msgid ""
+"============================================================================"
+"==\n"
+"*23.4*\tBinary files"
+msgstr ""
+
+#: usr_23.txt:241
+msgid ""
+"You can edit binary files with Vim.  Vim wasn't really made for this, thus\n"
+"there are a few restrictions.  But you can read a file, change a character "
+"and\n"
+"write it back, with the result that only that one character was changed and\n"
+"the file is identical otherwise.\n"
+"   To make sure that Vim does not use its clever tricks in the wrong way, "
+"add\n"
+"the \"-b\" argument when starting Vim: >"
+msgstr ""
+
+#: usr_23.txt:248
+msgctxt "usr_23.txt:248"
+msgid "\tvim -b datafile"
+msgstr ""
+
+#: usr_23.txt:250
+msgid ""
+"This sets the 'binary' option.  The effect of this is that unexpected side\n"
+"effects are turned off.  For example, 'textwidth' is set to zero, to avoid\n"
+"automatic formatting of lines.  And files are always read in Unix file "
+"format."
+msgstr ""
+
+#: usr_23.txt:254
+msgid ""
+"Binary mode can be used to change a message in a program.  Be careful not to\n"
+"insert or delete any characters, it would stop the program from working.  "
+"Use\n"
+"\"R\" to enter replace mode."
+msgstr ""
+
+#: usr_23.txt:258
+msgid ""
+"Many characters in the file will be unprintable.  To see them in Hex format: "
+">"
+msgstr ""
+
+#: usr_23.txt:260
+msgid "\t:set display=uhex"
+msgstr ""
+
+#: usr_23.txt:262
+msgid ""
+"Otherwise, the \"ga\" command can be used to see the value of the character\n"
+"under the cursor.  The output, when the cursor is on an <Esc>, looks like\n"
+"this:"
+msgstr ""
+
+#: usr_23.txt:266
+msgid "\t<^[>  27,  Hex 1b,  Octal 033 ~"
+msgstr ""
+
+#: usr_23.txt:268
+msgid ""
+"There might not be many line breaks in the file.  To get some overview "
+"switch\n"
+"the 'wrap' option off: >"
+msgstr ""
+
+#: usr_23.txt:271
+msgid "\t:set nowrap"
+msgstr ""
+
+#: usr_23.txt:274
+msgid "BYTE POSITION"
+msgstr ""
+
+#: usr_23.txt:276
+msgid "To see on which byte you are in the file use this command: >"
+msgstr ""
+
+#: usr_23.txt:278
+msgid "\tg CTRL-G"
+msgstr ""
+
+#: usr_23.txt:280
+msgid "The output is verbose:"
+msgstr ""
+
+#: usr_23.txt:282
+msgid ""
+"    Col 9-16 of 9-16; Line 277 of 330; Word 1806 of 2058; Byte 10580 of "
+"12206 ~"
+msgstr ""
+
+#: usr_23.txt:284
+msgid ""
+"The last two numbers are the byte position in the file and the total number "
+"of\n"
+"bytes.  This takes into account how 'fileformat' changes the number of bytes\n"
+"that a line break uses.\n"
+"    To move to a specific byte in the file, use the \"go\" command.  For\n"
+"example, to move to byte 2345: >"
+msgstr ""
+
+#: usr_23.txt:290
+msgid "\t2345go"
+msgstr ""
+
+#: usr_23.txt:293
+msgid "USING XXD"
+msgstr ""
+
+#: usr_23.txt:295
+msgid ""
+"A real binary editor shows the text in two ways: as it is and in hex format.\n"
+"You can do this in Vim by first converting the file with the \"xxd\" program.\n"
+"This comes with Vim.\n"
+"   First edit the file in binary mode: >"
+msgstr ""
+
+#: usr_23.txt:300
+msgctxt "usr_23.txt:300"
+msgid "\tvim -b datafile"
+msgstr ""
+
+#: usr_23.txt:302
+msgid "Now convert the file to a hex dump with xxd: >"
+msgstr ""
+
+#: usr_23.txt:304
+msgid "\t:%!xxd"
+msgstr ""
+
+#: usr_23.txt:306
+msgid "The text will look like this:"
+msgstr ""
+
+#: usr_23.txt:308
+msgid ""
+"\t0000000: 1f8b 0808 39d7 173b 0203 7474 002b 4e49  ....9..;..tt.+NI ~\n"
+"\t0000010: 4b2c 8660 eb9c ecac c462 eb94 345e 2e30  K,.`.....b..4^.0 ~\n"
+"\t0000020: 373b 2731 0b22 0ca6 c1a2 d669 1035 39d9  7;'1.\".....i.59. ~"
+msgstr ""
+
+#: usr_23.txt:312
+msgid ""
+"You can now view and edit the text as you like.  Vim treats the information "
+"as\n"
+"ordinary text.  Changing the hex does not cause the printable character to "
+"be\n"
+"changed, or the other way around.\n"
+"   Finally convert it back with:\n"
+">\n"
+"\t:%!xxd -r"
+msgstr ""
+
+#: usr_23.txt:319
+msgid ""
+"Only changes in the hex part are used.  Changes in the printable text part "
+"on\n"
+"the right are ignored."
+msgstr ""
+
+#: usr_23.txt:322
+msgid "See the manual page of xxd for more information."
+msgstr ""
+
+#: usr_23.txt:324
+msgid ""
+"============================================================================"
+"==\n"
+"*23.5*\tCompressed files"
+msgstr ""
+
+#: usr_23.txt:327
+msgid ""
+"This is easy: You can edit a compressed file just like any other file.  The\n"
+"\"gzip\" plugin takes care of decompressing the file when you edit it.  And\n"
+"compressing it again when you write it.\n"
+"   These compression methods are currently supported:"
+msgstr ""
+
+#: usr_23.txt:332
+msgid ""
+"\t.Z\tcompress\n"
+"\t.gz\tgzip\n"
+"\t.bz2\tbzip2"
+msgstr ""
+
+#: usr_23.txt:336
+msgid ""
+"Vim uses the mentioned programs to do the actual compression and\n"
+"decompression.  You might need to install the programs first."
+msgstr ""
+
+#: usr_23.txt:339
+msgid ""
+"============================================================================"
+"=="
+msgstr ""
+
+#: usr_23.txt:341
+msgid "Next chapter: |usr_24.txt|  Inserting quickly"
+msgstr ""
+
+#: usr_23.txt:343
+msgid "Copyright: see |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
+msgstr ""
