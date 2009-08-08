@@ -1,0 +1,965 @@
+#. extracted from usr_20.txt
+msgid ""
+msgstr ""
+"Project-Id-Version: Vim 7.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-01 19:55+0200\n"
+"PO-Revision-Date: 2009-08-08 11:55+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: Documentación de Vim en español\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.4.0-rc2\n"
+
+#: usr_20.txt:1
+msgid "*usr_20.txt*\tFor Vim version 7.2.  Last change: 2006 Apr 24"
+msgstr "*usr_20.txt*\tPara la versión Vim 7.2. Último cambio: 2006 Apr 24"
+
+#: usr_20.txt:3
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar"
+msgstr "\t\t    MANUAL DE USUARIO DE VIM - por Bram Moolenaar"
+
+#: usr_20.txt:5
+msgid "\t\t     Typing command-line commands quickly"
+msgstr "\t\t    Teclear con rapidez órdenes de la línea de órdenes"
+
+#: usr_20.txt:8
+msgid ""
+"Vim has a few generic features that makes it easier to enter commands.  "
+"Colon\n"
+"commands can be abbreviated, edited and repeated.  Completion is available "
+"for\n"
+"nearly everything."
+msgstr ""
+"Vim posee algunas características genéricas que le facilitan introducir "
+"órdenes.\n"
+"Las órdenes de colon («:») se pueden abreviar, editar y repetir. Dispone de \n"
+"auto compleción para prácticamente todo."
+
+#: usr_20.txt:12
+msgid ""
+"|20.1|\tCommand line editing\n"
+"|20.2|\tCommand line abbreviations\n"
+"|20.3|\tCommand line completion\n"
+"|20.4|\tCommand line history\n"
+"|20.5|\tCommand line window"
+msgstr ""
+"|20.1|\tEdición en línea de órdenes\n"
+"|20.2|\tAbreviaturas en línea de órdenes\n"
+"|20.3|\tCompleción en línea de órdenes\n"
+"|20.4|\tHistórico de la línea de órdenes\n"
+"|20.5|\tVentana de la línea de órdenes"
+
+#: usr_20.txt:18
+msgid ""
+"     Next chapter: |usr_21.txt|  Go away and come back\n"
+" Previous chapter: |usr_12.txt|  Clever tricks\n"
+"Table of contents: |usr_toc.txt|"
+msgstr ""
+" Capítulo siguiente: |usr_21.txt| Abandonar el editor y volver\n"
+"  Capítulo anterior: |usr_12.txt| Trucos ingeniosos\n"
+"Tabla de contenidos: |usr_toc.txt|"
+
+#: usr_20.txt:22
+msgid ""
+"==============================================================================\n"
+"*20.1*\tCommand line editing"
+msgstr ""
+"==============================================================================\n"
+"*20.1*\tEdición en línea de órdenes"
+
+#: usr_20.txt:25
+msgid ""
+"When you use a colon (:) command or search for a string with / or ?, Vim "
+"puts\n"
+"the cursor on the bottom of the screen.  There you type the command or "
+"search\n"
+"pattern.  This is called the Command line.  Also when it's used for entering "
+"a\n"
+"search command."
+msgstr ""
+"Cuando usa una orden de colon («:») o busca una cadena con «/» o «?», Vim\n"
+"sitúa el cursor en la parte inferior de la pantalla. Ahí es donde introduce "
+"la\n"
+"orden o el patrón de búsqueda. A esto se le llama la línea de órdenes.\n"
+"También cuando se usa para introducir una orden de búsqueda."
+
+#: usr_20.txt:30
+msgid ""
+"The most obvious way to edit the command you type is by pressing the <BS> "
+"key.\n"
+"This erases the character before the cursor.  To erase another character,\n"
+"typed earlier, first move the cursor with the cursor keys.\n"
+"   For example, you have typed this: >"
+msgstr ""
+"La manera más obvia de editar la orden introducida es pulsando la tecla "
+"<BS>.\n"
+"Esto borra el carácter anterior al cursor. Para borrar otro carácter "
+"introducido\n"
+"previamente, desplace antes el cursor con las teclas del cursos.\n"
+"   Por ejemplo, suponga que ha tecleado esto: >"
+
+#: usr_20.txt:35
+msgid "\t:s/col/pig/"
+msgstr "\t:s/vaba/cerdo/"
+
+#: usr_20.txt:37
+msgid ""
+"Before you hit <Enter>, you notice that \"col\" should be \"cow\".  To "
+"correct\n"
+"this, you type <Left> five times.  The cursor is now just after \"col\".  "
+"Type\n"
+"<BS> and \"w\" to correct: >"
+msgstr ""
+"Antes de pulsar <Intro>, notará que «vaba» debería ser «vaca». Para\n"
+"corregir esto, pulse <Izquierda> seis veces. El cursor está ahora sobre "
+"«vaba».\n"
+"Teclee <BS> y «w» para corregirlo: >"
+
+#: usr_20.txt:41
+msgid "\t:s/cow/pig/"
+msgstr "\t:s/vaca/cerdo/"
+
+#: usr_20.txt:43
+msgid ""
+"Now you can press <Enter> directly.  You don't have to move the cursor to "
+"the\n"
+"end of the line before executing the command."
+msgstr ""
+"Ya puede pulsar <Intro> directamente. No tiene que desplazar el cursor al\n"
+"final de la línea antes de ejecutar la orden."
+
+#: usr_20.txt:46
+msgid "The most often used keys to move around in the command line:"
+msgstr "Las teclas más usadas para desplazarse en la línea de órdenes:"
+
+#: usr_20.txt:48
+msgid ""
+"\t<Left>\t\t\tone character left\n"
+"\t<Right>\t\t\tone character right\n"
+"\t<S-Left> or <C-Left>\tone word left\n"
+"\t<S-Right> or <C-Right>\tone word right\n"
+"\tCTRL-B or <Home>\tto begin of command line\n"
+"\tCTRL-E or <End>\t\tto end of command line"
+msgstr ""
+"\t<Izquierda>\t\tun carácter a la izquierda\n"
+"\t<Derecha>\t\tun carácter a la derecha\n"
+"\t<S-Izq.> o <C-Izq.>\tuna palabra a la izquierda\n"
+"\t<S-Der.> o <C-Der.>\tuna palabra a la derecha\n"
+"\tCTRL-B o <Inicio>\tal inicio de la línea de órdenes\n"
+"\tCTRL-E o <Fin>\t\tal final de la línea de órdenes"
+
+#: usr_20.txt:55
+msgid ""
+"\tNote:\n"
+"\t<S-Left> (cursor left key with Shift key pressed) and <C-Left> (cursor\n"
+"\tleft key with Control pressed) will not work on all keyboards.  Same\n"
+"\tfor the other Shift and Control combinations."
+msgstr ""
+"\tNota:\n"
+"\t<S-Izq.> (tecla izquierda del cursor con la tecla Shift pulsada) y\n"
+"\t<C-Izq.> (tecla izquierda del cursor con la tecla Control pulsada) no\n"
+"\t funciona en todos los teclados. Ocurre lo mismo con las otras\n"
+"\t combinaciones con Shift y Control."
+
+#: usr_20.txt:60
+msgid "You can also use the mouse to move the cursor."
+msgstr "También puede usar el ratón para mover el cursor."
+
+#: usr_20.txt:63
+msgid "DELETING"
+msgstr "BORRAR"
+
+#: usr_20.txt:65
+msgid ""
+"As mentioned, <BS> deletes the character before the cursor.  To delete a "
+"whole\n"
+"word use CTRL-W."
+msgstr ""
+"Como ya se ha dicho, <BS> elimina el carácter anterior al cursor. Para "
+"borrar\n"
+"toda una palabra, use CTRL-W."
+
+#: usr_20.txt:68
+msgctxt "usr_20.txt:68"
+msgid "\t/the fine pig ~"
+msgstr "\t/el sutil cerdo ~"
+
+#: usr_20.txt:70
+msgid "\t\t     CTRL-W"
+msgstr "\t\t     CTRL-W"
+
+#: usr_20.txt:72
+msgid "\t/the fine ~"
+msgstr "\t/el sutil ~"
+
+#: usr_20.txt:74
+msgid "CTRL-U removes all text, thus allows you to start all over again."
+msgstr "CTRL-U elimina todo el texto, permitiéndole iniciar todo otra vez."
+
+#: usr_20.txt:77
+msgid "OVERSTRIKE"
+msgstr "SUPERPOSICIÓN"
+
+#: usr_20.txt:79
+msgid ""
+"The <Insert> key toggles between inserting characters and replacing the\n"
+"existing ones.  Start with this text:"
+msgstr ""
+"La tecla <Insertar> conmuta entra insertar caracteres y reemplaza los\n"
+"existentes. Comience con este texto."
+
+#: usr_20.txt:82
+msgctxt "usr_20.txt:82"
+msgid "\t/the fine pig ~"
+msgstr "\t/el cerdo sutil ~"
+
+#: usr_20.txt:84
+msgid ""
+"Move the cursor to the start of \"fine\" with <S-Left> twice (or <Left> eight\n"
+"times, if <S-Left> doesn't work).  Now press <Insert> to switch to "
+"overstrike\n"
+"and type \"great\":"
+msgstr ""
+"Desplace el cursor al inicio de «sutil» con <S-Izq.> dos veces (o <Izq.> "
+"ocho\n"
+"veces, si <S-Izq.> no funciona. Pulse ahora <Insertar> para pasar a\n"
+"superposición y teclee «gran»:"
+
+#: usr_20.txt:88
+msgid "\t/the greatpig ~"
+msgstr "\t/el grancerdo ~"
+
+#: usr_20.txt:90
+msgid ""
+"Oops, we lost the space.  Now, don't use <BS>, because it would delete the\n"
+"\"t\" (this is different from Replace mode).  Instead, press <Insert> to "
+"switch\n"
+"from overstrike to inserting, and type the space:"
+msgstr ""
+"Vaya, hemos perdido un espacio. Ahora, no use <BS> porque eliminaría la «t»\n"
+"(a diferencia del modo Reemplazar). En lugar de ello, pulse <Insertar> para\n"
+"pasar de superposición a insertar, e introduzca el espacio:"
+
+#: usr_20.txt:94
+msgid "\t/the great pig ~"
+msgstr "\t/el gran cerdo ~"
+
+#: usr_20.txt:97
+msgid "CANCELLING"
+msgstr "CANCELAR"
+
+#: usr_20.txt:99
+msgid ""
+"You thought of executing a : or / command, but changed your mind.  To get "
+"rid\n"
+"of what you already typed, without executing it, press CTRL-C or <Esc>."
+msgstr ""
+"Se le ocurrió ejecutar una orden «:» o «/», pero cambió de opinión. Para "
+"desechar\n"
+"de lo que ya tecleó sin ejecutarlo pulse CTRL-C o <Esc>."
+
+#: usr_20.txt:102
+msgid ""
+"\tNote:\n"
+"\t<Esc> is the universal \"get out\" key.  Unfortunately, in the good old\n"
+"\tVi pressing <Esc> in a command line executed the command!  Since that\n"
+"\tmight be considered to be a bug, Vim uses <Esc> to cancel the command.\n"
+"\tBut with the 'cpoptions' option it can be made Vi compatible.  And\n"
+"\twhen using a mapping (which might be written for Vi) <Esc> also works\n"
+"\tVi compatible.  Therefore, using CTRL-C is a method that always works."
+msgstr ""
+"\tNota:\n"
+"\t<Esc> es la tecla universal de salir. Desafortunadamente, en el\n"
+"\tbueno y viejo Vi, pulsar <Esc> la línea de órdenes ejecutaba la orden.\n"
+"\tYa que\testo se puede considerar un fallo, Vim usa <Esc> para cancelar\n"
+"\tla orden.\n"
+"\tPero puede hacer que sea compatible con Vi con la opción 'cpoptions'.\n"
+"\tY cuando usa un mapeado (quizá escrito para Vi) <Esc> también funciona\n"
+"\tde manera compatible con Vi. Por ello, siempre funcionará el metodo\n"
+" \tCTRL-C."
+
+#: usr_20.txt:110
+msgid ""
+"If you are at the start of the command line, pressing <BS> will cancel the\n"
+"command.  It's like deleting the \":\" or \"/\" that the line starts with."
+msgstr ""
+"Si se halla al inicio de la línea de órdenes, pulsar <BS> cancelaría la\n"
+"orden. Es como eliminar el «:» o «/» al inicio de la línea."
+
+#: usr_20.txt:113
+msgid ""
+"============================================================================"
+"==\n"
+"*20.2*\tCommand line abbreviations"
+msgstr ""
+"============================================================================"
+"==\n"
+"*20.2*\tAbreviaturas en línea de órdenes"
+
+#: usr_20.txt:116
+msgid ""
+"Some of the \":\" commands are really long.  We already mentioned that\n"
+"\":substitute\" can be abbreviated to \":s\".  This is a generic mechanism, all\n"
+"\":\" commands can be abbreviated."
+msgstr ""
+"Algunas de las órdenes «:» son muy largas. Ya hemos mencionado que\n"
+"«:substitute» se puede abreviar con «:s». Este es un mecanismo genérico, "
+"todas\n"
+"las órdenes «:» se pueden abreviar."
+
+#: usr_20.txt:120
+msgid ""
+"How short can a command get?  There are 26 letters, and many more commands.\n"
+"For example, \":set\" also starts with \":s\", but \":s\" doesn't start a \":set\"\n"
+"command.  Instead \":set\" can be abbreviated to \":se\".\n"
+"   When the shorter form of a command could be used for two commands, it\n"
+"stands for only one of them.  There is no logic behind which one, you have "
+"to\n"
+"learn them.  In the help files the shortest form that works is mentioned.  "
+"For\n"
+"example: >"
+msgstr ""
+"¿Como de corto puede ser una orden? Hay unas 30 letras, y muchas más "
+"órdenes.\n"
+"Por ejemplo, «:set» también empieza con «:s», pero «:s» no inicia la orden\n"
+"«:set». En lugar de ello, puede abreviar «:set» con «:se».\n"
+"   Cuando se podría usar la forma corta de una orden para dos órdenes, sólo\n"
+"simboliza uno de ellos. No hay una lógica detrás de cada elección, tendrá "
+"que\n"
+"aprenderlos. En los archivos de ayuda se menciona la forma más corta que\n"
+"funciona.\n"
+"Por ejemplo: >"
+
+#: usr_20.txt:128
+msgid "\t:s[ubstitute]"
+msgstr "\t:s[ubstitute]"
+
+#: usr_20.txt:130
+msgid ""
+"This means that the shortest form of \":substitute\" is \":s\".  The following\n"
+"characters are optional.  Thus \":su\" and \":sub\" also work."
+msgstr ""
+"Esto significa que la forma corta de «:substitute» es «:s». Los siguientes\n"
+"caracteres son opcionales. Por ello, también funcionan «:su» y «:sub»."
+
+#: usr_20.txt:133
+msgid ""
+"In the user manual we will either use the full name of command, or a short\n"
+"version that is still readable.  For example, \":function\" can be abbreviated\n"
+"to \":fu\".  But since most people don't understand what that stands for, we\n"
+"will use \":fun\".  (Vim doesn't have a \":funny\" command, otherwise \":fun\" "
+"would\n"
+"be confusing too.)"
+msgstr ""
+"En el manual de usuario usaremos o bien el nombre completo de la orden, o "
+"una\n"
+"versión corta pero legible. Por ejemplo, se puede acortar «:function» a "
+"«:fu».\n"
+"Pero debido a que la mayoría de la gente no entiende qué simboliza,\n"
+"nosotros usaremos «:fun». (Vim no tiene una orden llamada «:funny», de\n"
+"no ser así, esto también sería confuso.)\n"
+
+#: usr_20.txt:139
+msgid ""
+"It is recommended that in Vim scripts you write the full command name.  That\n"
+"makes it easier to read back when you make later changes.  Except for some\n"
+"often used commands like \":w\" (\":write\") and \":r\" (\":read\").\n"
+"   A particularly confusing one is \":end\", which could stand for \":endif\",\n"
+"\":endwhile\" or \":endfunction\".  Therefore, always use the full name."
+msgstr ""
+"Recomendamos que escriba la orden completa en los Vim scripts. Esto hace\n"
+"más fácil leerlo cuando introduce cambios más tarde. A excepción de órdenes\n"
+"usadas con frecuencia como «:w» («:write») y «:r» («:read»).\n"
+"  Un caso particularmente confuso es «:end», que podría simbolizar «:endif»,\n"
+"«:endwhile» o «:endfunction». Por ello, use siempre el nombre completo."
+
+#: usr_20.txt:146
+msgid "SHORT OPTION NAMES"
+msgstr "NOMBRES DE OPCIÓN CORTOS "
+
+#: usr_20.txt:148
+msgid ""
+"In the user manual the long version of the option names is used.  Many "
+"options\n"
+"also have a short name.  Unlike \":\" commands, there is only one short name\n"
+"that works.  For example, the short name of 'autoindent' is 'ai'.  Thus "
+"these\n"
+"two commands do the same thing: >"
+msgstr ""
+"En el manual de usuario se usa la versión larga de los nombres de opción. "
+"Varias\n"
+"opciones tienen también un nombre corto. A diferencia de las órdenes «:»,\n"
+"sólo hay un nombre corto que funcione. Por ejemplo, el nombre corto de\n"
+"'autoindent' es 'ai'. Por ello, estas dos órdenes hacen lo mismo: >"
+
+#: usr_20.txt:153
+msgid ""
+"\t:set autoindent\n"
+"\t:set ai"
+msgstr ""
+"\t:set autoindent\n"
+"\t:set ai"
+
+#: usr_20.txt:156
+msgid "You can find the full list of long and short names here: |option-list|."
+msgstr ""
+"Aquí puede encontrar la lista completa de nombres largos y cortos: |option-"
+"list|"
+
+#: usr_20.txt:158
+msgid ""
+"============================================================================"
+"==\n"
+"*20.3*\tCommand line completion"
+msgstr ""
+"============================================================================"
+"==\n"
+"*20.3* Compleción en línea de órdenes\t"
+
+#: usr_20.txt:161
+msgid ""
+"This is one of those Vim features that, by itself, is a reason to switch "
+"from\n"
+"Vi to Vim.  Once you have used this, you can't do without."
+msgstr ""
+"Esta es una opción que en si misma hace que merezca la pena pasar de Vi a "
+"Vim.\n"
+"Una vez que haya usado esto, no podrá vivir sin el."
+
+#: usr_20.txt:164
+msgid "Suppose you have a directory that contains these files:"
+msgstr "Suponga que tiene un directorio que contiene estos archivos:"
+
+#: usr_20.txt:166
+msgid ""
+"\tinfo.txt\n"
+"\tintro.txt\n"
+"\tbodyofthepaper.txt"
+msgstr ""
+"\tinfo.txt\n"
+"\tintro.txt\n"
+"\tbodyofthepaper.txt"
+
+#: usr_20.txt:170
+msgid "To edit the last one, you use the command: >"
+msgstr "Use la siguiente orden para editar el último: >"
+
+#: usr_20.txt:172
+msgid "\t:edit bodyofthepaper.txt"
+msgstr "\t:edit bodyofthepaper.txt"
+
+#: usr_20.txt:174
+msgid "It's easy to type this wrong.  A much quicker way is: >"
+msgstr "Es fácil equivocarse al teclear esto. Una manera más rápida es: >"
+
+#: usr_20.txt:176
+msgid "\t:edit b<Tab>"
+msgstr "\t:edit b<Tab>"
+
+#: usr_20.txt:178
+msgid ""
+"Which will result in the same command.  What happened?  The <Tab> key does\n"
+"completion of the word before the cursor.  In this case \"b\".  Vim looks in "
+"the\n"
+"directory and finds only one file that starts with a \"b\".  That must be the\n"
+"one you are looking for, thus Vim completes the file name for you."
+msgstr ""
+"Esto viene a ser la misma orden. ¿Qué ocurrió? La tecla <Tab> realiza la\n"
+"compleción de la palabra anterior al cursor. «b» en este caso. Vim busca en\n"
+"el directorio y encuentra sólo un archivo cuyo nombre empieza por «b».\n"
+"Este ha de ser el que está buscando, y por ello Vim completa por usted el\n"
+"nombre del archivo."
+
+#: usr_20.txt:183
+msgid "Now type: >"
+msgstr "Teclee ahora: >"
+
+#: usr_20.txt:185
+msgid "\t:edit i<Tab>"
+msgstr "\t:edit i<Tab>"
+
+#: usr_20.txt:187
+msgid "Vim will beep, and give you: >"
+msgstr "Vim emitirá un pitido, y le dará: >"
+
+#: usr_20.txt:189
+msgid "\t:edit info.txt"
+msgstr "\t:edit info.txt"
+
+#: usr_20.txt:191
+msgid ""
+"The beep means that Vim has found more than one match.  It then uses the "
+"first\n"
+"match it found (alphabetically).  If you press <Tab> again, you get: >"
+msgstr ""
+"El pitido significa que Vim encontró más de una coincidencia. Entonces usa\n"
+"la primera coincidencia encontrada (en orden alfabético). Si pulsa <Tab> "
+"otra\n"
+"vez, obtendrá: >"
+
+#: usr_20.txt:194
+msgid "\t:edit intro.txt"
+msgstr "\t:edit intro.txt"
+
+#: usr_20.txt:196
+msgid ""
+"Thus, if the first <Tab> doesn't give you the file you were looking for, "
+"press\n"
+"it again.  If there are more matches, you will see them all, one at a time.\n"
+"   If you press <Tab> on the last matching entry, you will go back to what "
+"you\n"
+"first typed: >"
+msgstr ""
+"Por ello, si el primer <Tab> no le da el archivo que está buscando, púlselo\n"
+"otra vez. Si hay más coincidencias, las verá todas de una en una.\n"
+"Si pulsa <Tab> otra vez en la última entrada coincidente, volverá a lo que\n"
+"tecleo en un principio: >"
+
+#: usr_20.txt:201
+msgid "\t:edit i"
+msgstr "\t:edit i"
+
+#: usr_20.txt:203
+msgid ""
+"Then it starts all over again.  Thus Vim cycles through the list of matches.\n"
+"Use CTRL-P to go through the list in the other direction:"
+msgstr ""
+"En este punto todo vuelve a empezar, y por ello, Vim realiza un ciclo a\n"
+"través de la lista de coincidencias."
+
+#: usr_20.txt:206
+msgid ""
+"\t      <------------------- <Tab> -------------------------+\n"
+"\t\t\t\t\t\t\t\t  |\n"
+"\t\t  <Tab> -->\t\t       <Tab> -->\n"
+"\t:edit i\t\t      :edit info.txt\t\t   :edit intro.txt\n"
+"\t\t  <-- CTRL-P\t\t       <-- CTRL-P\n"
+"\t   |\n"
+"\t   +---------------------- CTRL-P ------------------------>"
+msgstr ""
+"\t      <------------------- <Tab> -------------------------+\n"
+"\t\t\t\t\t\t\t\t  |\n"
+"\t\t  <Tab> -->\t\t       <Tab> -->\n"
+"\t:edit i\t\t      :edit info.txt\t\t   :edit intro.txt\n"
+"\t\t  <-- CTRL-P\t\t       <-- CTRL-P\n"
+"\t   |\n"
+"\t   +---------------------- CTRL-P ------------------------>"
+
+#: usr_20.txt:215
+msgid "CONTEXT"
+msgstr "CONTEXTO"
+
+#: usr_20.txt:217
+msgid "When you type \":set i\" instead of \":edit i\" and press <Tab> you get: >"
+msgstr "Cuando teclea «:set i» en lugar de «:edit i», y pulsa <Tab>, obtiene: >"
+
+#: usr_20.txt:219
+msgid "\t:set icon"
+msgstr "\t:set icon"
+
+#: usr_20.txt:221
+msgid ""
+"Hey, why didn't you get \":set info.txt\"?  That's because Vim has context\n"
+"sensitive completion.  The kind of words Vim will look for depends on the\n"
+"command before it.  Vim knows that you cannot use a file name just after a\n"
+"\":set\" command, but you can use an option name.\n"
+"   Again, if you repeat typing the <Tab>, Vim will cycle through all "
+"matches.\n"
+"There are quite a few, it's better to type more characters first: >"
+msgstr ""
+"¡Oye! ¿Porqué no obtuvo «:set info.txt»? Es debido a que Vim tiene una\n"
+"compleción contextual. El tipo de palabras que Vim buscará depende de la\n"
+"orden que lo preceda. Vim sabe que no puede usar un nombre de archivo tras\n"
+"la orden «:set», pero que puede usar el nombre de una opción.\n"
+"   Una vez más, si sigue pulsando <Tab>, Vim navegará a través de todas las\n"
+"coincidencias.\n"
+"Hay varias, es mejor teclear antes varios caracteres: >"
+
+#: usr_20.txt:228
+msgid "\t:set isk<Tab>"
+msgstr "\t:set isk<Tab>"
+
+#: usr_20.txt:230
+msgid "Gives: >"
+msgstr "Devuelve: >"
+
+#: usr_20.txt:232
+msgid "\t:set iskeyword"
+msgstr "\t:set iskeyword"
+
+#: usr_20.txt:234
+msgid "Now type \"=\" and press <Tab>: >"
+msgstr "Teclee ahora «=» y pulse <Tab>: >"
+
+#: usr_20.txt:236
+msgid "\t:set iskeyword=@,48-57,_,192-255"
+msgstr "\t:set iskeyword=@,48-57,_,192-255"
+
+#: usr_20.txt:238
+msgid ""
+"What happens here is that Vim inserts the old value of the option.  Now you\n"
+"can edit it.\n"
+"   What is completed with <Tab> is what Vim expects in that place.  Just try\n"
+"it out to see how it works.  In some situations you will not get what you\n"
+"want.  That's either because Vim doesn't know what you want, or because\n"
+"completion was not implemented for that situation.  In that case you will "
+"get\n"
+"a <Tab> inserted (displayed as ^I)."
+msgstr ""
+"Lo que aquí ocurre es que Vim inserta el valor antiguo de la opción. Puede\n"
+"editarla ahora.\n"
+"   Lo que se completó con <Tab> es lo que Vim espera en primer lugar. Pruebe\n"
+"esto ahora para ver su funcionamiento. En algunas situaciones no obtendrá lo\n"
+"que desea. Esto es debido a que Vim no sabe lo que quiere, o porque no se ha\n"
+"implementado la compleción para este evento. En ese caso, obtendrá un <Tab>\n"
+"insertado (se mostrará como ^I)."
+
+#: usr_20.txt:247
+msgid "LIST MATCHES"
+msgstr "LISTA DE COINCIDENCIAS"
+
+#: usr_20.txt:249
+msgid ""
+"When there are many matches, you would like to see an overview.  Do this by\n"
+"pressing CTRL-D.  For example, pressing CTRL-D after: >"
+msgstr ""
+"Cuando haya coinicidencias, querrá una vista general. Obtenga esto pulsando\n"
+"CTRL-D. Por ejemplo, si pulsa CTRL-D después de: >"
+
+#: usr_20.txt:252
+msgid "\t:set is"
+msgstr "\t:set is"
+
+#: usr_20.txt:254
+msgid "results in: >"
+msgstr "obtendrá esto: >"
+
+#: usr_20.txt:256
+msgid ""
+"\t:set is\n"
+"\tincsearch  isfname    isident    iskeyword  isprint\n"
+"\t:set is"
+msgstr ""
+"\t:set is\n"
+"\tincsearch  isfname    isident    iskeyword  isprint\n"
+"\t:set is"
+
+#: usr_20.txt:260
+msgid ""
+"Vim lists the matches and then comes back with the text you typed.  You can\n"
+"now check the list for the item you wanted.  If it isn't there, you can use\n"
+"<BS> to correct the word.  If there are many matches, type a few more\n"
+"characters before pressing <Tab> to complete the rest.\n"
+"   If you have watched carefully, you will have noticed that \"incsearch\"\n"
+"doesn't start with \"is\".  In this case \"is\" stands for the short name of\n"
+"\"incsearch\".  (Many options have a short and a long name.)  Vim is clever\n"
+"enough to know that you might have wanted to expand the short name of the\n"
+"option into the long name."
+msgstr ""
+"Vim crea un listado de las coincidencias y devuelve entonces el texto que\n"
+"tecleó. Ahora puede revisar la lista en busca del elemento que desea. Si no\n"
+"se encuentra ahí, puede usar <BS> para corregir la palabra. De existir\n"
+"cualquier coincidencia, introduzca unos cuantos caracteres más para\n"
+"completar el resto.\n"
+"  Si ha estado atento habrá notado que «incsearch» no empieza con «is».\n"
+"En este caso, «is» es el nombre corto de «incsearch». (Muchas opciones\n"
+"tienen un nombre largo y un nombre corto). Vim es suficientemente\n"
+"inteligente para saber que puede que desee expandir el nombre corto de una\n"
+"opción al nombre largo."
+
+#: usr_20.txt:271
+msgid "THERE IS MORE"
+msgstr "HAY MÁS"
+
+#: usr_20.txt:273
+msgid ""
+"The CTRL-L command completes the word to the longest unambiguous string.  If\n"
+"you type \":edit i\" and there are files \"info.txt\" and \"info_backup.txt\" you\n"
+"will get \":edit info\"."
+msgstr ""
+"La orden CTRL-L completa la palabra hasta llegar a la cadena no ambigua más\n"
+"larga. Si teclea «:edit i» y hay archivos «info.txt» e «info_backup.txt»\n"
+"obtendrá «:edit info»."
+
+#: usr_20.txt:277
+msgid ""
+"The 'wildmode' option can be used to change the way completion works.\n"
+"The 'wildmenu' option can be used to get a menu-like list of matches.\n"
+"Use the 'suffixes' option to specify files that are less important and "
+"appear\n"
+"at the end of the list of files.\n"
+"The 'wildignore' option specifies files that are not listed at all."
+msgstr ""
+"La opción 'wildmode' se puede usar para modificar el funcionamiento de la\n"
+"compleción. la opción 'wildmenu' se puede usar para obtener una lista de\n"
+"tipo menú de las coincidencias. Use la opción 'suffixes' para especificar\n"
+"archivos de menor importancia y que aparecen al final de la lista de\n"
+"archivos"
+
+#: usr_20.txt:283
+msgid "More about all of this here: |cmdline-completion|"
+msgstr "Puede leer más acerca de esto aquí: |cmdline-completion|"
+
+#: usr_20.txt:285
+msgid ""
+"============================================================================"
+"==\n"
+"*20.4*\tCommand line history"
+msgstr ""
+"============================================================================"
+"==\n"
+"*20.4*\tHistórico de la línea de órdenes"
+
+#: usr_20.txt:288
+msgid ""
+"In chapter 3 we briefly mentioned the history.  The basics are that you can\n"
+"use the <Up> key to recall an older command line.  <Down> then takes you "
+"back\n"
+"to newer commands."
+msgstr ""
+"En el capítulo 3 mencionamos de manera breve el histórico. Lo básico es que\n"
+"puede usar la tecla <Arriba> para invocar una orden ya pasada. <Abajo> le\n"
+"lleva a aquellas órdenes más recientes."
+
+#: usr_20.txt:292
+msgid ""
+"There are actually four histories.  The ones we will mention here are for "
+"\":\"\n"
+"commands and for \"/\" and \"?\" search commands.  The \"/\" and \"?\" commands "
+"share\n"
+"the same history, because they are both search commands.  The two other\n"
+"histories are for expressions and input lines for the input() function.\n"
+"|cmdline-history|"
+msgstr ""
+"De hecho, hay cuatro históricos. Los que vamos a mencionar aquí son las\n"
+"órdenes «:» y las órdenes de búsqueda «/» y «?». Las órdenes «/» y «?»\n"
+"comparten el mismo histórico, ya que ambos son órdenes de búsqueda. Los "
+"otros\n"
+"dos históricos sirven para las expresiones y líneas de entrada de la función\n"
+"input().\n"
+"|cmdline-history|"
+
+#: usr_20.txt:298
+msgid ""
+"Suppose you have done a \":set\" command, typed ten more colon commands and "
+"then\n"
+"want to repeat that \":set\" command again.  You could press \":\" and then ten\n"
+"times <Up>.  There is a quicker way: >"
+msgstr ""
+"Suponga que ejecutó una orden «:set», introdujo diez órdenes «:» más y que\n"
+"después quiera repetir la orden «:set» otra vez. Puede pulsar «:» y diez "
+"veces\n"
+"<Arriba>. Existe una manera más rápida."
+
+#: usr_20.txt:302
+msgid "\t:se<Up>"
+msgstr "\t:se<Up>"
+
+#: usr_20.txt:304
+msgid ""
+"Vim will now go back to the previous command that started with \"se\".  You "
+"have\n"
+"a good chance that this is the \":set\" command you were looking for.  At "
+"least\n"
+"you should not have to press <Up> very often (unless \":set\" commands is all\n"
+"you have done)."
+msgstr ""
+"Vim volverá ahora a la orden anterior que empezase con «se». Tendrá muchas\n"
+"posibilidades de que esta sea la oren «:set» que estaba buscando. Por lo\n"
+"menos no tendrá que pulsar <Arriba> varias veces (a menos que las órdenes\n"
+"«:set» sea todo lo que ha hecho)."
+
+#: usr_20.txt:309
+msgid ""
+"The <Up> key will use the text typed so far and compare it with the lines in\n"
+"the history.  Only matching lines will be used.\n"
+"   If you do not find the line you were looking for, use <Down> to go back "
+"to\n"
+"what you typed and correct that.  Or use CTRL-U to start all over again."
+msgstr ""
+"La tecla <Arriba> usará el texto introducido hasta el momento y lo comparará\n"
+"con las líneas en el histórico. Solo se usarán las líneas coincidentes.\n"
+"   En caso de no encontrar la línea que buscaba, use <Down> para volver a lo\n"
+"que tecleó y corrija eso. O use CTRL-U para iniciar el proceso otra vez. "
+
+#: usr_20.txt:314
+msgid "To see all the lines in the history: >"
+msgstr "Para ver todas las líneas del histórico: >"
+
+#: usr_20.txt:316
+msgid "\t:history"
+msgstr "\t:history"
+
+#: usr_20.txt:318
+msgid ""
+"That's the history of \":\" commands.  The search history is displayed with "
+"this\n"
+"command: >"
+msgstr ""
+"Este es el histórico de las órdenes «:». Puede ver el histórico de búsquedas\n"
+"con esta orden: >"
+
+#: usr_20.txt:321
+msgid "\t:history /"
+msgstr "\t:history /"
+
+#: usr_20.txt:323
+msgid ""
+"CTRL-P will work like <Up>, except that it doesn't matter what you already\n"
+"typed.  Similarly for CTRL-N and <Down>.  CTRL-P stands for previous, CTRL-N\n"
+"for next."
+msgstr ""
+"CTRL-P funcionará como <Arriba>, pero no importará que introdujo con\n"
+"anterioridad, de manera parecida a CTRL-N y <Abajo>. CTRl-P simboliza\n"
+"anterior, CTRL-N, siguiente."
+
+#: usr_20.txt:327
+msgid ""
+"============================================================================"
+"==\n"
+"*20.5*\tCommand line window"
+msgstr ""
+"============================================================================"
+"==\n"
+"*20.5*\tVentana de la línea de órdenes"
+
+#: usr_20.txt:330
+msgid ""
+"Typing the text in the command line works different from typing text in "
+"Insert\n"
+"mode.  It doesn't allow many commands to change the text.  For most commands\n"
+"that's OK, but sometimes you have to type a complicated command.  That's "
+"where\n"
+"the command line window is useful."
+msgstr ""
+"Teclear el texto en la línea de órdenes funciona de manera distinta a "
+"teclear\n"
+"texto en el modo Insertar. No permite a varias órdenes modificar el texto.\n"
+"Esto está bien para varias órdenes, aunque a veces tiene que teclear una\n"
+"orden complicada. En esta situación es cuando la ventana de línea de\n"
+"órdenes es útil."
+
+#: usr_20.txt:335
+msgid "Open the command line window with this command: >"
+msgstr "Abra la ventana de línea de órdenes con esta orden: >"
+
+#: usr_20.txt:337
+msgid "\tq:"
+msgstr "\tq:"
+
+#: usr_20.txt:339
+msgid ""
+"Vim now opens a (small) window at the bottom.  It contains the command line\n"
+"history, and an empty line at the end:"
+msgstr ""
+"Vim abrirá ahora una pequeña ventana en la base. Contiene el histórico de la\n"
+"línea de órdenes, y una línea vacía al final."
+
+#: usr_20.txt:342
+msgid ""
+"\t+-------------------------------------+\n"
+"\t|other window\t\t\t      |\n"
+"\t|~\t\t\t\t      |\n"
+"\t|file.txt=============================|\n"
+"\t|:e c\t\t\t\t      |\n"
+"\t|:e config.h.in\t\t\t      |\n"
+"\t|:set path=.,/usr/include,,\t      |\n"
+"\t|:set iskeyword=@,48-57,_,192-255     |\n"
+"\t|:set is\t\t\t      |\n"
+"\t|:q\t\t\t\t      |\n"
+"\t|:\t\t\t\t      |\n"
+"\t|command-line=========================|\n"
+"\t|\t\t\t\t      |\n"
+"\t+-------------------------------------+"
+msgstr ""
+"\t+-------------------------------------+\n"
+"\t|otra ventana\t\t\t      |\n"
+"\t|~\t\t\t\t      |\n"
+"\t|file.txt=============================|\n"
+"\t|:e c\t\t\t\t      |\n"
+"\t|:e config.h.in\t\t\t      |\n"
+"\t|:set path=.,/usr/include,,\t      |\n"
+"\t|:set iskeyword=@,48-57,_,192-255     |\n"
+"\t|:set is\t\t\t      |\n"
+"\t|:q\t\t\t\t      |\n"
+"\t|:\t\t\t\t      |\n"
+"\t|línea de órdenes=====================|\n"
+"\t|\t\t\t\t      |\n"
+"\t+-------------------------------------+"
+
+#: usr_20.txt:357
+msgid ""
+"You are now in Normal mode.  You can use the \"hjkl\" keys to move around.  "
+"For\n"
+"example, move up with \"5k\" to the \":e config.h.in\" line.  Type \"$h\" to go to\n"
+"the \"i\" of \"in\" and type \"cwout\".  Now you have changed the line to:"
+msgstr ""
+"Ahora se encuentra en el modo Normal. Puede usar las teclas «hjkl» para\n"
+"desplazarse. Por ejemplo, desplácese con «5k» hasta la línea\n"
+"«:e config.h.in». Teclee «$h» para ir a la «i» de «in» y teclee «cwout».\n"
+"Ahora, ha cambiado la línea a:"
+
+#: usr_20.txt:361
+msgid "\t:e config.h.out ~"
+msgstr "\t:e config.h.out ~"
+
+#: usr_20.txt:363
+msgid ""
+"Now press <Enter> and this command will be executed.  The command line "
+"window\n"
+"will close.\n"
+"   The <Enter> command will execute the line under the cursor.  It doesn't\n"
+"matter whether Vim is in Insert mode or in Normal mode.\n"
+"   Changes in the command line window are lost.  They do not result in the\n"
+"history to be changed.  Except that the command you execute will be added to\n"
+"the end of the history, like with all executed commands."
+msgstr ""
+"Pulse ahora <Intro> y se ejecutará esta orden. La ventana de línea de "
+"órdenes\n"
+"se cerrará.\n"
+"   La orden <Intro> ejecutará la línea bajo el cursor. No importa si Vim "
+"está\n"
+"en el modo Normal o Insertar.\n"
+"   Perderá los cambios en la ventana de línea de órdenes, no resulta en\n"
+"cambios en el histórico. Excepto que la orden que ejecute se añadira al "
+"final\n"
+"del histórico, como todas las órdenes ejecutadas."
+
+#: usr_20.txt:371
+msgid ""
+"The command line window is very useful when you want to have overview of the\n"
+"history, lookup a similar command, change it a bit and execute it.  A search\n"
+"command can be used to find something.\n"
+"   In the previous example the \"?config\" search command could have been used\n"
+"to find the previous command that contains \"config\".  It's a bit strange,\n"
+"because you are using a command line to search in the command line window.\n"
+"While typing that search command you can't open another command line window,\n"
+"there can be only one."
+msgstr ""
+"La ventana de línea de órdenes es muy útil cuando quiere una vista general\n"
+"del histórico, mirar una orden similar, modificarlo y ejecutarlo. Puede usar\n"
+"una orden de búsqueda para buscar algo.\n"
+"   En el ejemplo anterior, la orden de búsqueda «?config» se podría haber\n"
+"usado para encontrar una orden anterior que contenga «?config». Es un poco\n"
+"extraño, pues está usando una línea de órdenes para buscar en la ventana de\n"
+"línea de órdenes. No podrá abrir otra ventana de línea de órdenes mientras\n"
+"teclee la orden de búsqueda, ya que sólo puede haber una."
+
+#: usr_20.txt:380
+msgid ""
+"============================================================================"
+"=="
+msgstr ""
+"============================================================================"
+"=="
+
+#: usr_20.txt:382
+msgid "Next chapter: |usr_21.txt|  Go away and come back"
+msgstr "Siguiente capítulo: |usr_21.txt| Abandonar el editor y volver"
+
+#: usr_20.txt:384
+msgid "Copyright: see |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: véase |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"

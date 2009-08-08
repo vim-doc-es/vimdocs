@@ -1,0 +1,705 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#. extracted from usr_11es.txt
+#, fuzzy
+msgid ""
+msgstr "Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-08 11:57+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: usr_11es.txt:1
+#, fuzzy
+msgid "*usr_11.txt*\tFor Vim version 7.2.  Last change: 2006 Apr 24"
+msgstr "*usr_11.txt*\tFor Vim version 7.2.  Last change: 2006 Apr 24"
+
+#: usr_11es.txt:3
+#, fuzzy
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar"
+msgstr "                MANUAL DE USUARIO DE VIM - por Bram Moolenaar"
+
+#: usr_11es.txt:5
+#, fuzzy
+msgid "\t\t\t   Recovering from a crash"
+msgstr "\t\t\t   Recuperación de errores"
+
+#: usr_11es.txt:8
+#, fuzzy
+msgid "Did your computer crash?  And you just spent hours editing?  Don't panic!  "
+"Vim\n"
+"keeps enough information on harddisk to be able to restore most of your "
+"work.\n"
+"This chapter shows you how to get your work back and explains how the swap\n"
+"file is used."
+msgstr "¿Se colgó tu ordenador después de horas editando?  ¡No entres en pánico!  "
+"Vim\n"
+"mantiene suficiente información en el disco duro como para recuperar la "
+"mayor\n"
+"parte del trabajo.  Este capítulo te mostrará cómo recuperar tu trabajo y "
+"cómo\n"
+"funciona el archivo de recuperación."
+
+#: usr_11es.txt:13
+#, fuzzy
+msgid "|11.1|\tBasic recovery\n"
+"|11.2|\tWhere is the swap file?\n"
+"|11.3|\tCrashed or not?\n"
+"|11.4|\tFurther reading"
+msgstr "|11.1|  Recuperación básica\n"
+"|11.2|  ¿Dónde está el archivo de recuperación?\n"
+"|11.3|  ¿Se ha colgado o no?\n"
+"|11.4|  Más allá de lo explicado"
+
+#: usr_11es.txt:18
+#, fuzzy
+msgid "     Next chapter: |usr_12.txt|  Clever tricks\n"
+" Previous chapter: |usr_10.txt|  Making big changes\n"
+"Table of contents: |usr_toc.txt|"
+msgstr " Capítulo siguiente: |usr_12.txt|  Trucos\n"
+"  Capítulo anterior: |usr_10.txt|  Realizar grandes cambios\n"
+"         Contenidos: |usr_toc.txt|"
+
+#: usr_11es.txt:22
+#, fuzzy
+#: usr_11es.txt:66
+#, fuzzy
+#: usr_11es.txt:126
+#, fuzzy
+#: usr_11es.txt:268
+#, fuzzy
+#: usr_11es.txt:283
+#, fuzzy
+msgid "==============================================================================\n"
+"*11.1*\tBasic recovery"
+msgstr "==============================================================================\n"
+"*11.1*  Recuperación básica"
+
+#: usr_11es.txt:25
+#, fuzzy
+msgid "In most cases recovering a file is quite simple, assuming you know which "
+"file\n"
+"you were editing (and the harddisk is still working).  Start Vim on the "
+"file,\n"
+"with the \"-r\" argument added: >"
+msgstr "En la mayoría de los casos, recuperar un archivo es bastante sencillo, si\n"
+"asumimos que sabes que archivo estabas editando (y el disco duro aún\n"
+"funciona).  Arranca Vim con el archivo y el argumento \"-r\": >"
+
+#: usr_11es.txt:29
+#, fuzzy
+msgid "\tvim -r help.txt"
+msgstr "\tvim -r ayuda.txt"
+
+#: usr_11es.txt:31
+#, fuzzy
+msgid "Vim will read the swap file (used to store text you were editing) and may "
+"read\n"
+"bits and pieces of the original file.  If all is well, you will see these\n"
+"messages (with different file names, of course):"
+msgstr "Vim leerá el archivo de recuperación (empleado para almacenar el texto\n"
+"editado) y puede que lea bits y porciones del texto original.  Si todo ha\n"
+"funcionado correctamente, verás los siguientes mensajes (con otros nombres):"
+
+#: usr_11es.txt:35
+#, fuzzy
+msgid "\tUsing swap file \".help.txt.swp\" ~\n"
+"\tOriginal file \"~/vim/runtime/doc/help.txt\" ~\n"
+"\tRecovery completed. You should check if everything is OK. ~\n"
+"\t(You might want to write out this file under another name ~\n"
+"\tand run diff with the original file to check for changes) ~\n"
+"\tDelete the .swp file afterwards. ~"
+msgstr "\tUsing swap file \".ayuda.txt.swp\" ~\n"
+"\tOriginal file \"~/vim/runtime/doc/ayuda.txt\" ~\n"
+"\tRecovery completed. You should check if everything is OK. ~\n"
+"\t(You might want to write out this file under another name ~\n"
+"\tand run diff with the original file to check for changes) ~\n"
+"\tDelete the .swp file afterwards. ~"
+
+#: usr_11es.txt:42
+#, fuzzy
+msgid "To be on the safe side, write this file under another name: >"
+msgstr "Para ponerse del lado de la seguridad, escribe este archivo con otro nombre: "
+">"
+
+#: usr_11es.txt:44
+#, fuzzy
+msgid "\t:write help.txt.recovered"
+msgstr "\t:write ayuda.txt.recuperado"
+
+#: usr_11es.txt:46
+#, fuzzy
+msgid "Compare the file with the original file to check if you ended up with what "
+"you\n"
+"expected.  Vimdiff is very useful for this |08.7|.  Watch out for the "
+"original\n"
+"file to contain a more recent version (you saved the file just before the\n"
+"computer crashed).  And check that no lines are missing (something went "
+"wrong\n"
+"that Vim could not recover).\n"
+"   If Vim produces warning messages when recovering, read them carefully.\n"
+"This is rare though."
+msgstr "Compara el archivo con el original y comprueba que obtuviste lo que "
+"esperabas.\n"
+"Vimdiff es muy útil para esto |08.7|.  Comprueba que el archivo original no\n"
+"contenga una versión reciente (guardaste el archivo justo antes de que el\n"
+"ordenador se colgase).  Comprueba también que no hay líneas que falten "
+"(algo\n"
+"que fue mal y Vim no pudo recuperar).\n"
+"   Si Vim produce mensajes de advertencia mientras se produce la "
+"recuperación,\n"
+"léelos con detenimiento.  En todo caso, no es habitual."
+
+#: usr_11es.txt:54
+#, fuzzy
+msgid "It's normal that the last few changes can not be recovered.  Vim flushes "
+"the\n"
+"changes to disk when you don't type for about four seconds, or after typing\n"
+"about two hundred characters.  This is set with the 'updatetime' and\n"
+"'updatecount' options.  Thus when Vim didn't get a chance to save itself "
+"when\n"
+"the system went down, the changes after the last flush will be lost."
+msgstr "Es normal que los últimos cambios no se puedan recuperar.  Vim vuelca los\n"
+"cambios al disco duro cuando no tecleas durante cuatro segundos, o tras\n"
+"escribir unos doscientos caracteres.  Esto se puede modificar con las "
+"opciones\n"
+"'updatetime' y 'updatecount'.  De esta forma, cuando Vim no tiene "
+"posibilidad\n"
+"de guardar cuando el sistema cae, tendrás los cambios del último volcado."
+
+#: usr_11es.txt:60
+#, fuzzy
+msgid "If you were editing without a file name, give an empty string as argument: >"
+msgstr "si estabas editando sin un nombre de archivo designado, dale este "
+"argumento:\n"
+">\n"
+"\tvim -r \"\""
+
+#: usr_11es.txt:64
+#, fuzzy
+msgid "You must be in the right directory, otherwise Vim can't find the swap file."
+msgstr "Deberás estar en el mismo directorio para poder recuperar la información."
+
+#: usr_11es.txt:69
+#, fuzzy
+msgid "Vim can store the swap file in several places.  Normally it is in the same\n"
+"directory as the original file.  To find it, change to the directory of the\n"
+"file, and use: >"
+msgstr "Vim puede guardar el archivo de recuperación en distintos lugares.\n"
+"Normalmente se encuentra en el mismo directorio que el archivo original.  "
+"Para\n"
+"encontrarlo, cambia al directorio del archivo y escribe: >"
+
+#: usr_11es.txt:73
+#, fuzzy
+msgid "\tvim -r"
+msgstr "\tvim -r"
+
+#: usr_11es.txt:75
+#, fuzzy
+msgid "Vim will list the swap files that it can find.  It will also look in other\n"
+"directories where the swap file for files in the current directory may be\n"
+"located.  It will not find swap files in any other directories though, it\n"
+"doesn't search the directory tree.\n"
+"   The output could look like this:"
+msgstr "Vim usará una lista de archivos de recuperación que ha encontrado.  También\n"
+"buscará en otros directorios donde los archivos de recuperación de archivos\n"
+"en el actual puedan encontrarse.  No buscará archivos de recuperación en "
+"otros\n"
+"directorios, ni siquiera en los subdirectorios.\n"
+"   La salida se parecerá a esto:"
+
+#: usr_11es.txt:81
+#, fuzzy
+msgid "\tSwap files found: ~\n"
+"\t   In current directory: ~\n"
+"\t1.    .main.c.swp ~\n"
+"\t\t  owned by: mool   dated: Tue May 29 21:00:25 2001 ~\n"
+"\t\t file name: ~mool/vim/vim6/src/main.c ~\n"
+"\t\t  modified: YES ~\n"
+"\t\t user name: mool   host name: masaka.moolenaar.net ~\n"
+"\t\tprocess ID: 12525 ~\n"
+"\t   In directory ~/tmp: ~\n"
+"\t      -- none -- ~\n"
+"\t   In directory /var/tmp: ~\n"
+"\t      -- none -- ~\n"
+"\t   In directory /tmp: ~\n"
+"\t      -- none -- ~"
+msgstr "\tSwap files found: ~\n"
+"\t   In current directory: ~\n"
+"\t1.    .main.c.swp ~\n"
+"\t\t  owned by: mool   dated: Tue May 29 21:00:25 2001 ~\n"
+"\t\t file name: ~mool/vim/vim6/src/main.c ~\n"
+"\t\t  modified: YES ~\n"
+"\t\t user name: mool   host name: masaka.moolenaar.net ~\n"
+"\t\tprocess ID: 12525 ~\n"
+"\t   In directory ~/tmp: ~\n"
+"\t      -- none -- ~\n"
+"\t   In directory /var/tmp: ~\n"
+"\t      -- none -- ~\n"
+"\t   In directory /tmp: ~\n"
+"\t      -- none -- ~"
+
+#: usr_11es.txt:96
+#, fuzzy
+msgid "If there are several swap files that look like they may be the one you want "
+"to\n"
+"use, a list is given of these swap files and you are requested to enter the\n"
+"number of the one you want to use.  Carefully look at the dates to decide\n"
+"which one you want to use.\n"
+"   In case you don't know which one to use, just try them one by one and "
+"check\n"
+"the resulting files if they are what you expected."
+msgstr "Si hay varios archivos de recuperación que tienen pinta de ser el que "
+"quieres\n"
+"usar, se mostrará una lista y se requerirá que introduzcas el número del "
+"que\n"
+"quieres seleccionar.  Observa con cuidado las fechas para decidir cuál "
+"quieres\n"
+"usar.\n"
+"   En caso de que no sepas cuál seleccionar, pruébalos uno a uno y "
+"comprueba\n"
+"que los archivos resultantes sean el que deseas."
+
+#: usr_11es.txt:104
+#, fuzzy
+msgid "USING A SPECIFIC SWAP FILE"
+msgstr "USAR UN ARCHIVO DE RECUPERACIÓN ESPECÍFICO"
+
+#: usr_11es.txt:106
+#, fuzzy
+msgid "If you know which swap file needs to be used, you can recover by giving the\n"
+"swap file name.  Vim will then finds out the name of the original file from\n"
+"the swap file."
+msgstr "Si sabes qué archivo de recuperación quieres usar, puedes realizar la\n"
+"recuperación dando como argumento el nombre de este archivo.  Vim "
+"encontrará\n"
+"el nombre del archivo original del cuál este es el archivo de recuperación."
+
+#: usr_11es.txt:110
+#, fuzzy
+msgid "Example: >\n"
+"\tvim -r .help.txt.swo"
+msgstr "Por ejemplo: >\n"
+"\tvim -r .help.txt.swo"
+
+#: usr_11es.txt:113
+#, fuzzy
+msgid "This is also handy when the swap file is in another directory than "
+"expected.\n"
+"If this still does not work, see what file names Vim reports and rename the\n"
+"files accordingly.  Check the 'directory' option to see where Vim may have\n"
+"put the swap file."
+msgstr "Esto resulta útil cuando el archivo de recuperación está en otro directorio\n"
+"diferente al esperado.  Si esto tampoco funciona, mira los nombres de "
+"archivo\n"
+"que Vim reporta y renómbralos acordemente.  Comprueba la opción 'directory'\n"
+"para ver dónde ha podido poner Vim los archivos de recuperación."
+
+#: usr_11es.txt:118
+#, fuzzy
+msgid "\tNote:\n"
+"\tVim tries to find the swap file by searching the directories in the\n"
+"\t'dir' option, looking for files that match \"filename.sw?\".  If\n"
+"\twildcard expansion doesn't work (e.g., when the 'shell' option is\n"
+"\tinvalid), Vim does a desperate try to find the file \"filename.swp\".\n"
+"\tIf that fails too, you will have to give the name of the swapfile\n"
+"\titself to be able to recover the file."
+msgstr "\tNote:\n"
+"\tVim intenta encontrar los archivos de recuperación buscando los\n"
+"\tdirectorios de la opción 'dir' por nombres que coincidan con\n"
+"\t\"nombredearchivo.sw?\".  Si la expansión del nombre no funciona (p.ej.\n"
+"\tla opción 'shell' es inválida), Vim intenta buscar el archivo\n"
+"\t\"nombredearchivo.swp\".  Si esto también falla, tendrás que darle el\n"
+"\tnombre del archivo a mano para que pueda recuperarlo."
+
+#: usr_11es.txt:129
+#, fuzzy
+msgid "Vim tries to protect you from doing stupid things.  Suppose you innocently\n"
+"start editing a file, expecting the contents of the file to show up.  "
+"Instead,\n"
+"Vim produces a very long message:"
+msgstr "Vim intenta protegerte de cometer estupideces.  Supón que inocentemente\n"
+"comienzas la edición de un archivo, a esperas de que los contenidos se\n"
+"muestren.  En su lugar, Vim produce un mensaje muy largo:"
+
+#: usr_11es.txt:133
+#, fuzzy
+msgid "\t\tE325: ATTENTION ~\n"
+"\tFound a swap file by the name \".main.c.swp\" ~\n"
+"\t\t  owned by: mool   dated: Tue May 29 21:09:28 2001 ~\n"
+"\t\t file name: ~mool/vim/vim6/src/main.c ~\n"
+"\t\t  modified: no ~\n"
+"\t\t user name: mool   host name: masaka.moolenaar.net ~\n"
+"\t\tprocess ID: 12559 (still running) ~\n"
+"\tWhile opening file \"main.c\" ~\n"
+"\t\t     dated: Tue May 29 19:46:12 2001 ~\n"
+" ~\n"
+"\t(1) Another program may be editing the same file. ~\n"
+"\t    If this is the case, be careful not to end up with two ~\n"
+"\t    different instances of the same file when making changes. ~\n"
+"\t    Quit, or continue with caution. ~\n"
+" ~\n"
+"\t(2) An edit session for this file crashed. ~\n"
+"\t    If this is the case, use \":recover\" or \"vim -r main.c\" ~\n"
+"\t    to recover the changes (see \":help recovery\"). ~\n"
+"\t    If you did this already, delete the swap file \".main.c.swp\" ~\n"
+"\t    to avoid this message. ~"
+msgstr "\t\tE325: ATTENTION ~\n"
+"\tFound a swap file by the name \".main.c.swp\" ~\n"
+"\t\t  owned by: mool   dated: Tue May 29 21:09:28 2001 ~\n"
+"\t\t file name: ~mool/vim/vim6/src/main.c ~\n"
+"\t\t  modified: no ~\n"
+"\t\t user name: mool   host name: masaka.moolenaar.net ~\n"
+"\t\tprocess ID: 12559 (still running) ~\n"
+"\tWhile opening file \"main.c\" ~\n"
+"\t\t     dated: Tue May 29 19:46:12 2001 ~\n"
+" ~\n"
+"\t(1) Another program may be editing the same file. ~\n"
+"\t    If this is the case, be careful not to end up with two ~\n"
+"\t    different instances of the same file when making changes. ~\n"
+"\t    Quit, or continue with caution. ~\n"
+" ~\n"
+"\t(2) An edit session for this file crashed. ~\n"
+"\t    If this is the case, use \":recover\" or \"vim -r main.c\" ~\n"
+"\t    to recover the changes (see \":help recovery\"). ~\n"
+"\t    If you did this already, delete the swap file \".main.c.swp\" ~\n"
+"\t    to avoid this message. ~"
+
+#: usr_11es.txt:154
+#, fuzzy
+msgid "You get this message, because, when starting to edit a file, Vim checks if "
+"a\n"
+"swap file already exists for that file.  If there is one, there must be\n"
+"something wrong.  It may be one of these two situations."
+msgstr "Has recibido este mensaje porque cuando comienzas a editar un archivo, Vim\n"
+"comprueba que exista un archivo de recuperación para este archivo.  Si hay\n"
+"uno, algo debe estar pasando.  Puede ocurrir cualquiera de estas situaciones:"
+
+#: usr_11es.txt:158
+#: usr_11es.txt:173
+msgid ""
+msgstr "1. Otra sesión está editando este archivo.  Mira el mensaje con la línea\n"
+"    \"process ID\".  Se parecerá a esta:"
+
+#: usr_11es.txt:161
+#, fuzzy
+msgid "\t\tprocess ID: 12559 (still running) ~"
+msgstr "\t\tprocess ID: 12559 (still running) ~"
+
+#: usr_11es.txt:163
+#, fuzzy
+msgid "   The text \"(still running)\" indicates that the process editing this "
+"file\n"
+"   runs on the same computer.  When working on a non-Unix system you will "
+"not\n"
+"   get this extra hint.  When editing a file over a network, you may not "
+"see\n"
+"   the hint, because the process might be running on another computer.  In\n"
+"   those two cases you must find out what the situation is yourself.\n"
+"      If there is another Vim editing the same file, continuing to edit "
+"will\n"
+"   result in two versions of the same file.  The one that is written last "
+"will\n"
+"   overwrite the other one, resulting in loss of changes.  You better quit\n"
+"   this Vim."
+msgstr "   El text \"(still running)\" indica que el proceso que edita este archivo "
+"está\n"
+"   corriendo en el mismo ordenador.  Cuando estés bajo un sistema no Unix, "
+"no\n"
+"   obtendrás esta información extra.  Cuando edites un archivo a través de "
+"red, \n"
+"   seguramente no verás esta información, porque el proceso estará en otro\n"
+"   ordenador.  Tendrás que averiguarlo por tu cuenta.\n"
+"      Si hay otro Vim editando el mismo archivo, continuar editándolo\n"
+"   conllevará a que tengas dos versiones del mismo archivo.  La última que\n"
+"   guardes sobreescribirá a la otra, con la consecuente pérdida de los\n"
+"   cambios.  Mejor salir de este Vim."
+
+#: usr_11es.txt:177
+#, fuzzy
+msgid "\t\tmodified: YES ~"
+msgstr "\t\tmodified: YES ~"
+
+#: usr_11es.txt:179
+#, fuzzy
+msgid "   Then you very likely have a crashed edit session that is worth "
+"recovering.\n"
+"      If the date of the file is newer than the date of the swap file, then\n"
+"   either it was changed after the crash (perhaps you recovered it earlier,\n"
+"   but didn't delete the swap file?), or else the file was saved before the\n"
+"   crash but after the last write of the swap file (then you're lucky: you\n"
+"   don't even need that old swap file).  Vim will warn you for this with "
+"this\n"
+"   extra line:"
+msgstr "   entonces es muy probable que haya ocurrido algo con la sesión.\n"
+"      Si la fecha del archivo es posterior a la fecha del archivo de\n"
+"   recuperación, es que o cambiado tras el cuelgue (quizá la recuperaste "
+"antes\n"
+"   y no eliminaste el archivo de recuperación), o es que el archivo fue\n"
+"   guardado después de la última grabación del archivo de recuperación\n"
+"   (entonces tienes suerte: no necesitas ni ese viejo archivo de\n"
+"   recuperación).  Vim te advertirá de esto:"
+
+#: usr_11es.txt:187
+#, fuzzy
+msgid "      NEWER than swap file! ~"
+msgstr "      NEWER than swap file! ~"
+
+#: usr_11es.txt:190
+#, fuzzy
+msgid "UNREADABLE SWAP FILE"
+msgstr "ARCHIVO DE RECUPERACIÓN ILEGIBLE"
+
+#: usr_11es.txt:192
+#, fuzzy
+msgid "Sometimes the line"
+msgstr "A veces la línea"
+
+#: usr_11es.txt:194
+#, fuzzy
+msgid "\t[cannot be read] ~"
+msgstr "\t[cannot be read] ~"
+
+#: usr_11es.txt:196
+#, fuzzy
+msgid "will appear under the name of the swap file.  This can be good or bad,\n"
+"depending on circumstances."
+msgstr "aparecerá bajo el nombre del archivo de recuperación.  Esto puede ser bueno "
+"o\n"
+"malo dependiendo de las circunstancias."
+
+#: usr_11es.txt:199
+#, fuzzy
+msgid "It is good if a previous editing session crashed without having made any\n"
+"changes to the file.  Then a directory listing of the swap file will show\n"
+"that it has zero bytes.  You may delete it and proceed."
+msgstr "Son buenas noticias si la sesión anterior se colgó sin haber hecho ningún\n"
+"cambio al archivo.  En tal caso un listado de archivos del directorio "
+"mostrará\n"
+"que tiene cero bytes.  Tal vez quieras eliminarla y continuar."
+
+#: usr_11es.txt:203
+#, fuzzy
+msgid "It is slightly bad if you don't have read permission for the swap file.  "
+"You\n"
+"may want to view the file read-only, or quit.  On multi-user systems, if "
+"you\n"
+"yourself did the last changes under a different login name, a logout\n"
+"followed by a login under that other name might cure the \"read error\".  "
+"Or\n"
+"else you might want to find out who last edited (or is editing) the file "
+"and\n"
+"have a talk with them."
+msgstr "No son muy buenas noticias si lo que ocurre es que no tienes permisos de\n"
+"lectura del archivo de recuperación.  Tal vez quieras ver el archivo en "
+"modo\n"
+"sólo lectura o salir.  En sistemas multiusuario si empleaste otro usuario,\n"
+"salir y volver a identificarte tal vez resuelva el \"error de lectura\".  O "
+"en\n"
+"su defecto quizá quieras encontrar quien lo editó por última vez (o está\n"
+"editándolo ahora mismo) y hablar con él."
+
+#: usr_11es.txt:210
+#, fuzzy
+msgid "It is very bad if it means there is a physical read error on the disk\n"
+"containing the swap file.  Fortunately, this almost never happens.\n"
+"You may want to view the file read-only at first (if you can), to see the\n"
+"extent of the changes that were \"forgotten\".  If you are the one in charge "
+"of\n"
+"that file, be prepared to redo your last changes."
+msgstr "Son muy malas noticias si significa que hay un error de lectura a nivel "
+"físico\n"
+"del disco duro.  Afortunadamente, esto no ocurre casi nunca.  Quizá quieras\n"
+"ver el archivo en modo sólo lectura inicialmente (si puedes), para ver el\n"
+"alcance de los cambios que fueron \"olvidados\".  Si eres el que está a "
+"cargo\n"
+"del archivo, prepárate para rehacer los últimos cambios."
+
+#: usr_11es.txt:217
+#, fuzzy
+msgid "WHAT TO DO?"
+msgstr "¿QUÉ HACER?"
+
+#: usr_11es.txt:219
+#, fuzzy
+msgid "If dialogs are supported you will be asked to select one of five choices:"
+msgstr "Si tienes soporte para diálogos, se te pedirá que elijas uno de los "
+"siguiente:"
+
+#: usr_11es.txt:221
+#, fuzzy
+msgid "  Swap file \".main.c.swp\" already exists! ~\n"
+"  [O]pen Read-Only, (E)dit anyway, (R)ecover, (Q)uit, (A)bort, (D)elete it: ~"
+msgstr "  Swap file \".main.c.swp\" already exists! ~\n"
+"  [O]pen Read-Only, (E)dit anyway, (R)ecover, (Q)uit, (A)bort, (D)elete it: ~"
+
+#: usr_11es.txt:224
+#, fuzzy
+msgid "O  Open the file readonly.  Use this when you just want to view the file "
+"and\n"
+"   don't need to recover it.  You might want to use this when you know "
+"someone\n"
+"   else is editing the file, but you just want to look in it and not make\n"
+"   changes."
+msgstr "O  Abrir el archivo en modo sólo lectura.  Usa esto cuando sólo quieras ver "
+"el\n"
+"   archivo y no necesites recuperarlo.  Tal vez quieras usar esto cuando "
+"sepas\n"
+"   que alguien está usando el archivo y tú solo quieras echar un vistazo "
+"sin\n"
+"   hacer cambios."
+
+#: usr_11es.txt:229
+#, fuzzy
+msgid "E  Edit the file anyway.  Use this with caution!  If the file is being "
+"edited\n"
+"   in another Vim, you might end up with two versions of the file.  Vim "
+"will\n"
+"   try to warn you when this happens, but better be safe then sorry."
+msgstr "E  Editar el archivo igualmente.  ¡Usa esto con cuidado!  Si el archivo "
+"está\n"
+"   siendo utilizado por otro Vim, terminarás con dos versiones del archivo.\n"
+"   Vim intentará advertirte si esto va a ocurrir, pero más vale prevenir."
+
+#: usr_11es.txt:233
+#, fuzzy
+msgid "R  Recover the file from the swap file.  Use this if you know that the swap\n"
+"   file contains changes that you want to recover."
+msgstr "R  Recuperar el archivo del archivo de recuperación.  Emplea esto si sabes "
+"que\n"
+"   el archivo de recuperación contiene los cambios que quieres."
+
+#: usr_11es.txt:236
+#, fuzzy
+msgid "Q  Quit.  This avoids starting to edit the file.  Use this if there is "
+"another\n"
+"   Vim editing the same file.\n"
+"      When you just started Vim, this will exit Vim.  When starting Vim "
+"with\n"
+"   files in several windows, Vim quits only if there is a swap file for the\n"
+"   first one.  When using an edit command, the file will not be loaded and "
+"you\n"
+"   are taken back to the previously edited file."
+msgstr "Q  Salir.  Esto evita la edición.  Esa esto si hay otro Vim editando el "
+"mismo\n"
+"   archivo.\n"
+"      Tras iniciar Vim, esto saldrá de él.  Cuando comiences Vim con "
+"archivos\n"
+"   en varias ventanas, Vim sale sólo si hay un archivo de recuperación para "
+"el\n"
+"   primero.  Cuando uses un comando de edición, el archivo no será cargado "
+"y\n"
+"   serás devuelto al archivo previamente editado."
+
+#: usr_11es.txt:243
+#, fuzzy
+msgid "A  Abort.  Like Quit, but also abort further commands.  This is useful when\n"
+"   loading a script that edits several files, such as a session with "
+"multiple\n"
+"   windows."
+msgstr "A  Abortar.  Como salir (Q), pero también aborta los comando posteriores.\n"
+"   Esto es útil cuando cargues un script que edita varios archivos, como "
+"una\n"
+"   sesión con múltiples ventanas."
+
+#: usr_11es.txt:247
+#, fuzzy
+msgid "D  Delete the swap file.  Use this when you are sure you no longer need it.\n"
+"   For example, when it doesn't contain changes, or when the file itself is\n"
+"   newer than the swap file.\n"
+"      On Unix this choice is only offered when the process that created the\n"
+"   swap file does not appear to be running."
+msgstr "D  Eliminar el archivo de recuperación.  Usa esto cuando estés seguro de "
+"que\n"
+"   no lo necesitas.  Por ejemplo, cuando no contenga cambios o cuando el\n"
+"   archivo en sí sea más nuevo que el archivo de recuperación.\n"
+"      En Unix esta opción sólo se ofrece cuando el proceso que creó el "
+"archivo\n"
+"   de recuperación no parece que esté corriendo."
+
+#: usr_11es.txt:253
+#, fuzzy
+msgid "If you do not get the dialog (you are running a version of Vim that does "
+"not\n"
+"support it), you will have to do it manually.  To recover the file, use "
+"this\n"
+"command: >"
+msgstr "Si no ves el diálogo (estás haciendo funcionar una versión de Vim que no lo\n"
+"soporta), tendrás que hacerlo a mano.  Para recuperar el archivo usa el\n"
+"siguiente comando: >"
+
+#: usr_11es.txt:257
+#, fuzzy
+msgid "\t:recover"
+msgstr "\t:recover"
+
+#: usr_11es.txt:260
+#, fuzzy
+msgid "Vim cannot always detect that a swap file already exists for a file.  This "
+"is\n"
+"the case when the other edit session puts the swap files in another "
+"directory\n"
+"or when the path name for the file is different when editing it on "
+"different\n"
+"machines.  Therefore, don't rely on Vim always warning you."
+msgstr "Vim no puede detectar siempre que un archivo de recuperación ya existe para "
+"un\n"
+"archivo.  Este es el caso cuando otras sesiones de edición ponen los "
+"archivos\n"
+"en otro directorio o cuando una ruta de archivo difiere en máquinas "
+"distintas. \n"
+"Por lo tanto, no confíes en que Vim siempre te vaya a alertar."
+
+#: usr_11es.txt:265
+#, fuzzy
+msgid "If you really don't want to see this message, you can add the 'A' flag to "
+"the\n"
+"'shortmess' option.  But it's very unusual that you need this."
+msgstr "Si realmente no quieres ver este mensaje, puedes añadir la bandera 'A' a la\n"
+"opción 'shortmess'.  Pero es poco habitual que lo necesites."
+
+#: usr_11es.txt:271
+#, fuzzy
+msgid "|swap-file|\tAn explanation about where the swap file will be created and\n"
+"\t\twhat its name is.\n"
+"|:preserve|\tManually flushing the swap file to disk.\n"
+"|:swapname|\tSee the name of the swap file for the current file.\n"
+"'updatecount'\tNumber of key strokes after which the swap file is flushed "
+"to\n"
+"\t\tdisk.\n"
+"'updatetime'\tTimeout after which the swap file is flushed to disk.\n"
+"'swapsync'\tWhether the disk is synced when the swap file is flushed.\n"
+"'directory'\tList of directory names where to store the swap file.\n"
+"'maxmem'\tLimit for memory usage before writing text to the swap file.\n"
+"'maxmemtot'\tSame, but for all files in total."
+msgstr "|swap-file|\tUna explicación sobre dónde será creado el archivo de\n"
+"\t\trecuperación y cuál es su nombre.\n"
+"|:preserve|\tVolcado manual de un archivo de recuperación al disco.\n"
+"|:swapname|\tVer el nombre del archivo de recuperación para el actual.\n"
+"'updatecount'\tNúmero de pulsación tras las cuales el archivo de "
+"recuperación\n"
+"\t\tes volcado al disco.\n"
+"'updatetime'\tTemporizador tras el cuál se producirá el volcado a disco.\n"
+"'swapsync'\tSi el disco duro debe ser sincronizado tras el volcado.\n"
+"'directory'\tListado de directorios para el archivo de recuperación.\n"
+"'maxmem'\tLimitar el uso de memoria antes de hacer el volcado.\n"
+"'maxmemtot'\tLo mismo pero incluyendo todos los archivos en total."
+
+#: usr_11es.txt:285
+#, fuzzy
+msgid "Next chapter: |usr_12.txt|  Clever tricks"
+msgstr "Capítulo siguiente: |usr_12.txt|  Trucos"
+
+#: usr_11es.txt:287
+#, fuzzy
+msgid "Copyright: see |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: ver |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
+
