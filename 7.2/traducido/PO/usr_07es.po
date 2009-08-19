@@ -5,12 +5,12 @@
 #. extracted from usr_07.txt
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-01 19:54+0200\n"
 "PO-Revision-Date: 2009-08-19 19:48+0200\n"
-"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
-"Language-Team: Documentación de VIm en español\n"
+"Last-Translator: Álvaro Castro Castillo <alvaro.castro.castilla@gmail.com>\n"
+"Language-Team: Documentación de Vim en español\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,11 +24,11 @@ msgstr "*usr_07.txt*\tPara Vim version 7.2.  Último cambio: 2006 Apr 24"
 
 #: usr_07.txt:3
 msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar"
-msgstr "\t\t     VIM USER MANUAL - por Bram Moolenaar\n"
+msgstr "\t\t     VIM USER MANUAL - por Bram Moolenaar"
 
 #: usr_07.txt:5
 msgid "\t\t\t  Editing more than one file"
-msgstr "\t\t\t  Editar más de un archivo\n"
+msgstr "\t\t\t  Editar más de un archivo"
 
 #: usr_07.txt:8
 msgid ""
@@ -66,7 +66,7 @@ msgid ""
 msgstr ""
 " Capítulo siguiente: |usr_08.txt|  Dividir en ventanas\n"
 "  Capítulo anterior: |usr_06.txt|  Uso del coloreado de sintaxis\n"
-"Tabla de contenidos: |usr_toc.txt|\n"
+"Tabla de contenidos: |usr_toc.txt|"
 
 #: usr_07.txt:24
 msgid ""
@@ -88,7 +88,7 @@ msgstr ""
 
 #: usr_07.txt:30
 msgid "\t:edit foo.txt"
-msgstr "\t:edit foo.txt\n"
+msgstr "\t:edit foo.txt"
 
 #: usr_07.txt:32
 msgid ""
@@ -255,7 +255,7 @@ msgstr ""
 "Para ver qué archivo de la lista de argumentos está editando, mire en el\n"
 "título de la ventana. Debería mostrar algo como «(2 de 3)». Esto significa\n"
 "que está editando un segundo archivo de una lista de tres.\n"
-"   Si quieres ver la lista de archivos, usa esta orden: >"
+"   Si quieres ver la lista de archivos, use esta orden: >"
 
 #: usr_07.txt:100
 msgid "\t:args"
@@ -1027,7 +1027,7 @@ msgid ""
 msgstr ""
 "Ahora está editando «archivo» en modo sólo lectura. Cuando pruebe a usar\n"
 "«:w» se dará cuenta de que aparecerá un mensaje de error y no se guardará.\n"
-"   Cuando intente hacer un cambio al archivo, Vim le advertirá: \n"
+"   Cuando intente hacer un cambio al archivo, Vim le dará un aviso:"
 
 #: usr_07.txt:422
 msgid "\tW10: Warning: Changing a readonly file ~"

@@ -2,9 +2,7 @@
 
 		     VIM USER MANUAL - por Bram Moolenaar
 
-
 			  Editar más de un archivo
-
 
 No importa cuántos archivos tenga, puede editarlos todos sin salir de Vim.
 Defina una lista de archivos de trabajo y pase de uno a otro. Copie texto de
@@ -22,7 +20,6 @@ un archivo a otro.
   Capítulo anterior: |usr_06.txt|  Uso del coloreado de sintaxis
 Tabla de contenidos: |usr_toc.txt|
 
-
 ==============================================================================
 *07.1*	Editar otro archivo
 
@@ -30,7 +27,6 @@ Hasta ahora ha tenido que iniciar Vim para cada archivo que quería editar.
 Hay una manera más sencilla: Para editar otro archivo, use esta orden: >
 
 	:edit foo.txt
-
 
 Puede usar cualquier nombre de archivo en lugar de «foo.txt». Vim cerrará
 el archivo actual y abrirá uno nuevo. Sin embargo, si el archivo actual tiene
@@ -98,7 +94,7 @@ Esto hace lo mismo que usar las siguientes órdenes: >
 Para ver qué archivo de la lista de argumentos está editando, mire en el
 título de la ventana. Debería mostrar algo como «(2 de 3)». Esto significa
 que está editando un segundo archivo de una lista de tres.
-   Si quieres ver la lista de archivos, usa esta orden: >
+   Si quieres ver la lista de archivos, use esta orden: >
 
 	:args
 
@@ -417,8 +413,7 @@ En Unix esta orden debería funcionar igualmente: >
 
 Ahora está editando «archivo» en modo sólo lectura. Cuando pruebe a usar
 «:w» se dará cuenta de que aparecerá un mensaje de error y no se guardará.
-   Cuando intente hacer un cambio al archivo, Vim le advertirá: 
-
+   Cuando intente hacer un cambio al archivo, Vim le dará un aviso:
 
 	W10: Advertencia: cambiando un fichero de solo lectura ~
 
