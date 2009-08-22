@@ -98,11 +98,11 @@ menutrans Toggle\ &Bottom\ Scrollbar	Ocultar/Mostrar\ barra\ de\ desplazamiento\
 menutrans Toggle\ &Left\ Scrollbar	Ocultar/Mostrar\ barra\ de\ desplazamiento\ i&zquierda
 menutrans Toggle\ &Right\ Scrollbar	Ocultar/Mostrar\ barra\ de\ desplazamiento\ &derecha
 
-let g:menutrans_path_dialog = "Introduzca la ruta de búsqueda para los ficheros.\nSepare los nombres de los directorios con una coma."
-let g:menutrans_tags_dialog = "Introduzca los nombres de los fichero de tags.\nSepare los nombres con una coma."
+let g:menutrans_path_dialog = "Introduzca la ruta de búsqueda para los archivos.\nSepare los nombres de los directorios con una coma."
+let g:menutrans_tags_dialog = "Introduzca los nombres de los archivos de tags.\nSepare los nombres con una coma."
 
 " Edit/File Settings
-menutrans F&ile\ Settings		Opciones\ del\ &fichero
+menutrans F&ile\ Settings		Opciones\ del\ &archivo
 
 " Boolean options
 menutrans Toggle\ Line\ &Numbering<Tab>:set\ nu!	Activar/Desactivar\ &numeración\ de\ líneas<Tab>:set\ nu!
@@ -121,8 +121,8 @@ menutrans Soft\ &Tabstop		&Tabulado\ «blando»
 menutrans Te&xt\ Width\.\.\.		Anchura\ del\ te&xto\.\.\.
 let g:menutrans_textwidth_dialog = "Introduzca el nuevo ancho del texto (0 para desactivar el quiebre de línea): "
 
-menutrans &File\ Format\.\.\.		&Formato\ del\ fichero\.\.\.
-let g:menutrans_fileformat_dialog = "Seleccione el formato para escribir el fichero"
+menutrans &File\ Format\.\.\.		&Formato\ del\ archivo\.\.\.
+let g:menutrans_fileformat_dialog = "Seleccione el formato para escribir el archivo"
 
 menutrans C&olor\ Scheme		Esquema\ de\ c&olores
 menutrans blue		azul
@@ -157,7 +157,7 @@ menutrans slovak	eslovaco
 menutrans &Tools			&Herramientas
 menutrans &Jump\ to\ this\ tag<Tab>g^]	&Saltar\ a\ este\ etiqueta<Tab>g^]
 menutrans Jump\ &back<Tab>^T		Saltar\ &atrás<Tab>^T
-menutrans Build\ &Tags\ File		Crear\ fichero\ de\ &etiquetas\
+menutrans Build\ &Tags\ File		Crear\ archivo\ de\ &etiquetas\
 menutrans &Diff				Modo\ de\ &diferencias
 menutrans &Folding			&Plegado
 menutrans &Make<Tab>:make		Ejecutar\ «&Make»<Tab>:make
@@ -224,7 +224,7 @@ menutrans &Delete		&Suprimir
 menutrans &Alternate		&Alternar
 menutrans &Next			Si&guiente
 menutrans &Previous		&Previo
-let g:menutrans_no_file = "[Sin fichero]"
+let g:menutrans_no_file = "[Sin archivo]"
 
 " Window menu
 menutrans &Window			&Ventana
@@ -232,7 +232,7 @@ menutrans &New<Tab>^Wn			Ventana\ &nueva<Tab>^Wn
 menutrans S&plit<Tab>^Ws		&Dividir\ la\ ventana<Tab>^Ws
 menutrans Sp&lit\ To\ #<Tab>^W^^	D&ividir\ en\ el\ marcador\ (#)<Tab>^W^^
 menutrans Split\ &Vertically<Tab>^Wv    Dividir\ &verticalmente<Tab>^Wv
-menutrans Split\ File\ E&xplorer	&Abrir\ el\ «Explorador\ de\ ficheros»
+menutrans Split\ File\ E&xplorer	&Abrir\ el\ «Explorador\ de\ archivos»
 menutrans &Close<Tab>^Wc		&Cerrar\ esta\ ventana<Tab>^Wc
 menutrans Close\ &Other(s)<Tab>^Wo	Cerrar\ &otra(s)\ ventana(s)<Tab>^Wo
 menutrans Move\ &To			Mov&er\ a
@@ -266,9 +266,9 @@ if has("toolbar")
     delfun Do_toolbar_tmenu
   endif
   fun Do_toolbar_tmenu()
-    tmenu ToolBar.Open		Abrir fichero
-    tmenu ToolBar.Save		Guardar fichero
-    tmenu ToolBar.SaveAll	Guardar todos los ficheros
+    tmenu ToolBar.Open		Abrir archivo
+    tmenu ToolBar.Save		Guardar archivo
+    tmenu ToolBar.SaveAll	Guardar todos los archivos
     tmenu ToolBar.Print		Imprimir
     tmenu ToolBar.Undo		Deshacer
     tmenu ToolBar.Redo		Rehacer
@@ -294,7 +294,7 @@ if has("toolbar")
     tmenu ToolBar.RunScript	Ejecutar un archivo de órdenes
     tmenu ToolBar.Make		Ejecutar «Make»
     tmenu ToolBar.Shell		Abrir un intérprete de comandos
-    tmenu ToolBar.RunCtags	Generar un fichero de etiquetas
+    tmenu ToolBar.RunCtags	Generar un archivo de etiquetas
     tmenu ToolBar.TagJump	Saltar a una etiqueta
     tmenu ToolBar.Help		Ayuda
     tmenu ToolBar.FindHelp	Buscar en la ayuda...
@@ -303,13 +303,13 @@ endif
 
 " Syntax menu
 menutrans &Syntax			&Sintaxis
-menutrans &Show\ filetypes\ in\ menu	&Mostrar\ listas\ de\ «tipo\ de\ fichero»
+menutrans &Show\ filetypes\ in\ menu	&Mostrar\ listas\ de\ «tipo\ de\ archivo»
 menutrans Set\ '&syntax'\ only		Activar\ sólo\ sintaxis
-menutrans Set\ '&filetype'\ too		Activar\ también\ «tipo\ de\ fichero»
+menutrans Set\ '&filetype'\ too		Activar\ también\ «tipo\ de\ archivo»
 menutrans &Off				&Desactivar\ sintaxis
 menutrans &Manual			Sintaxis\ &manual
 menutrans A&utomatic			Sintaxis\ a&utomática
-menutrans on/off\ for\ &This\ file	Activar/Desactivar\ en\ es&te\ fichero
+menutrans on/off\ for\ &This\ file	Activar/Desactivar\ en\ es&te\ archivo
 menutrans Co&lor\ test			&Prueba\ de\ colores
 menutrans &Highlight\ test		Prueba\ de\ &realzado
 menutrans &Convert\ to\ HTML		&Convertir\ a\ HTML
