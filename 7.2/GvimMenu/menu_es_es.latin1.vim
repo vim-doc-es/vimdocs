@@ -1,7 +1,8 @@
 " Menu Translations:	Español
-" Maintainer:		Alejandro López-Valencia <dradul@users.sourceforge.net>
-" Version:		6.4.p0-1
-" Last Change:		2005 Dec 01
+" Previous translator:	Alejandro López-Valencia <dradul@users.sourceforge.net>
+" Last translator:	Omar Campagne Polaino <ocampagne@gmail.com>
+" Version:		7.2.245
+" Last Change:		2009 Aug 22
 "
 
 " Quit when menu translations have already been done.
