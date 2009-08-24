@@ -72,7 +72,7 @@ menutrans Startup\ &Settings		Opciones\ de\ arranque
 " Edit/Global Settings
 menutrans &Global\ Settings		Opciones\ &globales
 
-menutrans Toggle\ Pattern\ &Highlight<Tab>:set\ hls!	Activar/Desactivar\ &realzado\ de\ sintaxis<Tab>:set\ hls!
+menutrans Toggle\ Pattern\ &Highlight<Tab>:set\ hls!	Activar/Desactivar\ &resaltado\ de\ sintaxis<Tab>:set\ hls!
 menutrans Toggle\ &Ignore-case<Tab>:set\ ic!		Activar/Desactivar\ &ignorar\ mayúsculas\ y\ minúsculas<Tab>:set\ ic!
 menutrans Toggle\ &Showmatch<Tab>:set\ sm!		Activar/Desactivar\ &mostrar\ coincidencias<Tab>:set\ sm!
 
@@ -311,7 +311,7 @@ menutrans &Manual			Sintaxis\ &manual
 menutrans A&utomatic			Sintaxis\ a&utomática
 menutrans on/off\ for\ &This\ file	Activar/Desactivar\ en\ es&te\ archivo
 menutrans Co&lor\ test			&Prueba\ de\ colores
-menutrans &Highlight\ test		Prueba\ de\ &realzado
+menutrans &Highlight\ test		Prueba\ de\ &resaltado
 menutrans &Convert\ to\ HTML		&Convertir\ a\ HTML
 
 " Find Help dialog text
