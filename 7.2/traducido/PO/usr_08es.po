@@ -1,39 +1,40 @@
-#Spanish translation for vim usr_02.txt
+# Spanish translation for vim usr_02.txt
 # Copyright (C) 2009
-# Álvaro Castro Castillo <alvaro.castro.castilla@gmail.com>
 # Omar Campagne <ocampagne@gmail.com>, 2009.
-#. extracted from usr_08es.txt
+# Álvaro Castro Castillo <alvaro.castro.castilla@gmail.com>, 2009.
+#. extracted from usr_08.txt
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
-"Report-Msgid-Bugs-To: www.vim.org\n"
-"POT-Creation-Date: 2009-08-05 23:06+0200\n"
-"PO-Revision-Date: 2009-08-25 10:19+0200\n"
+"Report-Msgid-Bugs-To: bugs@vim.org \n"
+"POT-Creation-Date: 2009-08-01 19:54+0200\n"
+"PO-Revision-Date: 2009-08-25 16:29+0200\n"
 "Last-Translator: Álvaro Castro Castillo <alvaro.castro.castilla@gmail.com>\n"
-"Language-Team: Documentación de Vim en español\n"
-"Language: es\n"
+"Language-Team: Documentación de Vim en español <>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Virtaal 0.4.0\n"
 
-#: usr_08es.txt:1
+#: usr_08.txt:1
 msgid "*usr_08.txt*\tFor Vim version 7.2.  Last change: 2006 Jul 18"
 msgstr "*usr_08.txt*\tPara Vim versión 7.2.  Último cambio: 2006 Jul 18"
 
-#: usr_08es.txt:3
+#: usr_08.txt:3
 msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar"
 msgstr "\t\t MANUAL DE USUARIO DE VIM - por Bram Moolenaar"
 
-#: usr_08es.txt:5
+#: usr_08.txt:5
 msgid "\t\t\t      Splitting windows"
 msgstr "\t\t\t    Dividir en ventanas"
 
-#: usr_08es.txt:8
+#: usr_08.txt:8
 msgid ""
 "Display two different files above each other.  Or view two locations in the\n"
-"file at the same time.  See the difference between two files by putting them\n"
+"file at the same time.  See the difference between two files by putting "
+"them\n"
 "side by side.  All this is possible with split windows."
 msgstr ""
 "Mostrar dos archivos diferentes uno encima del otro. Mirar dos puntos del\n"
@@ -41,7 +42,7 @@ msgstr ""
 "poniéndolos uno al lado del otro. Todo esto es posible dividiendo en "
 "ventanas."
 
-#: usr_08es.txt:12
+#: usr_08.txt:12
 msgid ""
 "|08.1|\tSplit a window\n"
 "|08.2|\tSplit a window on another file\n"
@@ -53,17 +54,17 @@ msgid ""
 "|08.8|\tVarious\n"
 "|08.9|  Tab pages"
 msgstr ""
-"|08.1|  Dividir una ventana\n"
-"|08.2|  Dividir una ventana con otro archivo\n"
-"|08.3|  Tamaño de ventana\n"
-"|08.4|  Divisiones verticales\n"
-"|08.5|  Mover ventanas\n"
-"|08.6|  Comandos sobre todas las ventanas\n"
-"|08.7|  Ver las diferencias con vimdiff\n"
-"|08.8|  Varios\n"
-"|08.9|  Pestañas"
+"|08.1|\tDividir una ventana\n"
+"|08.2|\tDividir una ventana con otro archivo\n"
+"|08.3|\tTamaño de ventana\n"
+"|08.4|\tDivisiones verticales\n"
+"|08.5|\tMover ventanas\n"
+"|08.6|\tÓrdenes sobre todas las ventanas\n"
+"|08.7|\tVer las diferencias con «vimdiff»\n"
+"|08.8|\tVarios\n"
+"|08.9|\tPestañas"
 
-#: usr_08es.txt:22
+#: usr_08.txt:22
 msgid ""
 "     Next chapter: |usr_09.txt|  Using the GUI\n"
 " Previous chapter: |usr_07.txt|  Editing more than one file\n"
@@ -73,44 +74,34 @@ msgstr ""
 "  Capítulo anterior: |usr_07.txt|  Editar más de un archivo\n"
 "Tabla de contenidos: |usr_toc.txt|"
 
-#: usr_08es.txt:26
-#: usr_08es.txt:82
-#: usr_08es.txt:109
-#: usr_08es.txt:161
-#: usr_08es.txt:215
-#: usr_08es.txt:278
-#: usr_08es.txt:337
-#: usr_08es.txt:477
-#: usr_08es.txt:509
-#: usr_08es.txt:597
+#: usr_08.txt:26
 msgid ""
-"============================================================================"
-"==\n"
+"==============================================================================\n"
 "*08.1*\tSplit a window"
 msgstr ""
-"============================================================================"
-"==\n"
+"==============================================================================\n"
 "*08.1*  Dividir una ventana"
 
-#: usr_08es.txt:29
+#: usr_08.txt:29
 msgid "The easiest way to open a new window is to use the following command: >"
 msgstr ""
 "La manera más sencilla de abrir una nueva ventana es usando\n"
 "la siguiente orden: >"
 
-#: usr_08es.txt:31
+#: usr_08.txt:31
 msgid "\t:split"
 msgstr "\t:split"
 
-#: usr_08es.txt:33
+#: usr_08.txt:33
 msgid ""
-"This command splits the screen into two windows and leaves the cursor in the\n"
+"This command splits the screen into two windows and leaves the cursor in "
+"the\n"
 "top one:"
 msgstr ""
 "Esta orden divide la pantalla en dos ventanas y pone el cursor en la que se\n"
 "encuentre más arriba:"
 
-#: usr_08es.txt:36
+#: usr_08.txt:36
 msgid ""
 "\t+----------------------------------+\n"
 "\t|/* file one.c */\t\t   |\n"
@@ -134,9 +125,10 @@ msgstr ""
 "\t|\t\t\t\t   |\n"
 "\t+----------------------------------+"
 
-#: usr_08es.txt:47
+#: usr_08.txt:47
 msgid ""
-"What you see here is two windows on the same file.  The line with \"====\" is\n"
+"What you see here is two windows on the same file.  The line with \"====\" "
+"is\n"
 "that status line.  It displays information about the window above it.  (In\n"
 "practice the status line will be in reverse video.)\n"
 "   The two windows allow you to view two parts of the same file.  For "
@@ -149,12 +141,14 @@ msgstr ""
 "con «====» es la línea de estado. Muestra información sobre la ventana\n"
 "situada encima. (En la práctica esta línea estará en «vídeo inverso»).\n"
 "   Las dos ventanas le permiten ver dos partes del mismo archivo. Por\n"
-"ejemplo, puede hacer que la ventana superior le muestre las declaraciones de\n"
+"ejemplo, puede hacer que la ventana superior le muestre las declaraciones "
+"de\n"
 "variables de un programa, y la de abajo el código que usa esas variables."
 
-#: usr_08es.txt:54
+#: usr_08.txt:54
 msgid ""
-"The CTRL-W w command can be used to jump between the windows.  If you are in\n"
+"The CTRL-W w command can be used to jump between the windows.  If you are "
+"in\n"
 "the top window, CTRL-W w jumps to the window below it.  If you are in the\n"
 "bottom window it will jump to the first window.  (CTRL-W CTRL-W does the "
 "same\n"
@@ -165,34 +159,35 @@ msgstr ""
 "en la ventana inferior saltará a la primera ventana. (CTRL-W CTRL-W hace lo\n"
 "mismo, en caso de que suelte la tecla CTRL un poco después.)"
 
-#: usr_08es.txt:60
+#: usr_08.txt:60
 msgid "CLOSE THE WINDOW"
 msgstr "CERRAR LA VENTANA"
 
-#: usr_08es.txt:62
+#: usr_08.txt:62
 msgid "To close a window, use the command: >"
 msgstr "Para cerrar la ventana usa la orden: >"
 
-#: usr_08es.txt:64
+#: usr_08.txt:64
 msgid "\t:close"
 msgstr "\t:close"
 
-#: usr_08es.txt:66
+#: usr_08.txt:66
 msgid ""
 "Actually, any command that quits editing a file works, like \":quit\" and "
 "\"ZZ\".\n"
-"But \":close\" prevents you from accidentally exiting Vim when you close the\n"
+"But \":close\" prevents you from accidentally exiting Vim when you close "
+"the\n"
 "last window."
 msgstr ""
 "De hecho, cualquier orden que salga del archivo funciona, como «:quit» y\n"
 "«ZZ». Pero «:close» evitará que salga accidentalmente de Vim cuando cierre\n"
 "la última ventana."
 
-#: usr_08es.txt:71
+#: usr_08.txt:71
 msgid "CLOSING ALL OTHER WINDOWS"
 msgstr "CERRAR TODAS LAS OTRAS VENTANAS"
 
-#: usr_08es.txt:73
+#: usr_08.txt:73
 msgid ""
 "If you have opened a whole bunch of windows, but now want to concentrate on\n"
 "one of them, this command will be useful: >"
@@ -200,11 +195,11 @@ msgstr ""
 "Si ha abierto un montón de ventanas y ahora quiere concentrarse en una de\n"
 "ellas, esta orden puede serle de útilidad: >"
 
-#: usr_08es.txt:76
+#: usr_08.txt:76
 msgid "\t:only"
 msgstr "\t:only"
 
-#: usr_08es.txt:78
+#: usr_08.txt:78
 msgid ""
 "This closes all windows, except for the current one.  If any of the other\n"
 "windows has changes, you will get an error message and that window won't be\n"
@@ -214,7 +209,15 @@ msgstr ""
 "otras ventanas tiene cambios, obtendrá un mensaje de error y esa ventana no\n"
 "se cerrará."
 
-#: usr_08es.txt:85
+#: usr_08.txt:82
+msgid ""
+"==============================================================================\n"
+"*08.2*\tSplit a window on another file"
+msgstr ""
+"==============================================================================\n"
+"*08.2*\tDividir una ventana con otro archivo"
+
+#: usr_08.txt:85
 msgid ""
 "The following command opens a second window and starts editing the given "
 "file:\n"
@@ -226,12 +229,12 @@ msgstr ""
 ">\n"
 "\t:split dos.c"
 
-#: usr_08es.txt:89
+#: usr_08.txt:89
 msgid "If you were editing one.c, then the result looks like this:"
 msgstr ""
 "Si estuviese editando uno.c, entonces el resultado tendría este aspecto:"
 
-#: usr_08es.txt:91
+#: usr_08.txt:91
 msgid ""
 "\t+----------------------------------+\n"
 "\t|/* file two.c */\t\t   |\n"
@@ -255,37 +258,49 @@ msgstr ""
 "\t|\t\t\t\t   |\n"
 "\t+----------------------------------+"
 
-#: usr_08es.txt:102
+#: usr_08.txt:102
 msgid "To open a window on a new, empty file, use this: >"
-msgstr "Para abrir una ventana en un archivo nuevo y vacío, use lo siguiente: >"
+msgstr ""
+"Para abrir una ventana en un archivo nuevo y vacío, use lo siguiente: >"
 
-#: usr_08es.txt:104
+#: usr_08.txt:104
 msgid "\t:new"
 msgstr "\t:new"
 
-#: usr_08es.txt:106
+#: usr_08.txt:106
 msgid ""
-"You can repeat the \":split\" and \":new\" commands to create as many windows as\n"
+"You can repeat the \":split\" and \":new\" commands to create as many "
+"windows as\n"
 "you like."
 msgstr ""
 "Puede repetir las órdenes «:split» y «:new» para crear tantas ventanas como\n"
 "quiera."
 
-#: usr_08es.txt:112
+#: usr_08.txt:109
 msgid ""
-"The \":split\" command can take a number argument.  If specified, this will be\n"
-"the height of the new window.  For example, the following opens a new window\n"
+"==============================================================================\n"
+"*08.3*\tWindow size"
+msgstr ""
+"==============================================================================\n"
+"*08.3*\tTamaño de ventana"
+
+#: usr_08.txt:112
+msgid ""
+"The \":split\" command can take a number argument.  If specified, this will "
+"be\n"
+"the height of the new window.  For example, the following opens a new "
+"window\n"
 "three lines high and starts editing the file alpha.c: >"
 msgstr ""
 "La orden «:split» puede recibir un argumento numérico. Si se especifica,\n"
 "este será la altura de la nueva ventana. Por ejemplo, el siguiente abre una\n"
 "nueva ventana con una altura de tres líneas y edita el archivo alpha.c: >"
 
-#: usr_08es.txt:116
+#: usr_08.txt:116
 msgid "\t:3split alpha.c"
 msgstr "\t:3split alpha.c"
 
-#: usr_08es.txt:118
+#: usr_08.txt:118
 msgid ""
 "For existing windows you can change the size in several ways.  When you have "
 "a\n"
@@ -297,45 +312,47 @@ msgstr ""
 "que\n"
 "separa las dos ventanas y arrástrela."
 
-#: usr_08es.txt:122
+#: usr_08.txt:122
 msgid "To increase the size of a window: >"
 msgstr "Para incrementar el tamaño de una ventana: >"
 
-#: usr_08es.txt:124
+#: usr_08.txt:124
 msgid "\tCTRL-W +"
 msgstr "\tCTRL-W +"
 
-#: usr_08es.txt:126
+#: usr_08.txt:126
 msgid "To decrease it: >"
 msgstr "Para disminuirlo: >"
 
-#: usr_08es.txt:128
+#: usr_08.txt:128
 msgid "\tCTRL-W -"
 msgstr "\tCTRL-W -"
 
-#: usr_08es.txt:130
+#: usr_08.txt:130
 msgid ""
-"Both of these commands take a count and increase or decrease the window size\n"
+"Both of these commands take a count and increase or decrease the window "
+"size\n"
 "by that many lines.  Thus \"4 CTRL-W +\" make the window four lines higher."
 msgstr ""
 "Ambas órdenes reciben un multiplicador que modificará la altura de ventana\n"
 "ese número de líneas. «4 CTRL-W +» hará la ventana cuatro líneas más alta."
 
-#: usr_08es.txt:133
+#: usr_08.txt:133
 msgid "To set the window height to a specified number of lines: >"
 msgstr ""
 "Para definir la altura de la ventana con un número específico de líneas: >"
 
-#: usr_08es.txt:135
+#: usr_08.txt:135
 msgid "\t{height}CTRL-W _"
 msgstr "\t{altura}CTRL-W _"
 
-#: usr_08es.txt:137
+#: usr_08.txt:137
 msgid ""
 "That's: a number {height}, CTRL-W and then an underscore (the - key with "
 "Shift\n"
 "on English-US keyboards).\n"
-"   To make a window as high as it can be, use the CTRL-W _ command without a\n"
+"   To make a window as high as it can be, use the CTRL-W _ command without "
+"a\n"
 "count."
 msgstr ""
 "O sea: un número {altura}, CTRL-W y luego una barra baja (Mayúsculas más la\n"
@@ -343,11 +360,11 @@ msgstr ""
 "   Para maximizar una ventana, use la orden CTRL-W _ sin ningún\n"
 "multiplicador ni argumento."
 
-#: usr_08es.txt:143
+#: usr_08.txt:143
 msgid "USING THE MOUSE"
 msgstr "USO DEL RATÓN"
 
-#: usr_08es.txt:145
+#: usr_08.txt:145
 msgid ""
 "In Vim you can do many things very quickly from the keyboard.  "
 "Unfortunately,\n"
@@ -365,11 +382,11 @@ msgstr ""
 "estado. Ahora presione el botón izquierdo y arrastre. La línea de estado se\n"
 "desplazará, ajustando el tamaño de la ventana."
 
-#: usr_08es.txt:152
+#: usr_08.txt:152
 msgid "OPTIONS"
 msgstr "OPCIONES"
 
-#: usr_08es.txt:154
+#: usr_08.txt:154
 msgid ""
 "The 'winheight' option can be set to a minimal desired height of a window "
 "and\n"
@@ -381,24 +398,34 @@ msgid ""
 msgstr ""
 "La opción 'winheight' se puede ajustar a una altura mínima de ventana y\n"
 "'winminheight' a un mínimo estricto.\n"
-"   Del mismo modo, hay un ancho 'winwidth' para el ancho mínimo deseado y un\n"
+"   Del mismo modo, hay un ancho 'winwidth' para el ancho mínimo deseado y "
+"un\n"
 "'winminheight' para un ancho mínimo estricto.\n"
 "   La opción 'equalalways', cuando está activa, hace que Vim equilibre el\n"
 "tamaño de las ventanas cuando éstas se cierran o se abren nuevas."
 
-#: usr_08es.txt:164
+#: usr_08.txt:161
 msgid ""
-"The \":split\" command creates the new window above the current one.  To make\n"
+"==============================================================================\n"
+"*08.4*\tVertical splits"
+msgstr ""
+"==============================================================================\n"
+"*08.4*\tDivisiones verticales"
+
+#: usr_08.txt:164
+msgid ""
+"The \":split\" command creates the new window above the current one.  To "
+"make\n"
 "the window appear at the left side, use: >"
 msgstr ""
 "La orden «:split» crea una nueva ventana sobre la actual. Para hacer que\n"
 "una ventana aparezca en el lateral izquierda, use: >"
 
-#: usr_08es.txt:167
+#: usr_08.txt:167
 msgid "\t:vsplit"
 msgstr "\t:vsplit"
 
-#: usr_08es.txt:169
+#: usr_08.txt:169
 msgid ""
 "or: >\n"
 "\t:vsplit two.c"
@@ -406,11 +433,11 @@ msgstr ""
 "o: >\n"
 "\t:vsplit two.c"
 
-#: usr_08es.txt:172
+#: usr_08.txt:172
 msgid "The result looks something like this:"
 msgstr "El resultado tiene el siguiente aspecto:"
 
-#: usr_08es.txt:174
+#: usr_08.txt:174
 msgid ""
 "\t+--------------------------------------+\n"
 "\t|/* file two.c */   |/* file one.c */  |\n"
@@ -430,7 +457,7 @@ msgstr ""
 "\t|                                      |\n"
 "\t+--------------------------------------+"
 
-#: usr_08es.txt:183
+#: usr_08.txt:183
 msgid ""
 "Actually, the | lines in the middle will be in reverse video.  This is "
 "called\n"
@@ -439,7 +466,7 @@ msgstr ""
 "De hecho, la línea de «|» en el centro estará en vídeo inverso. A esto se le\n"
 "llama separador vertical."
 
-#: usr_08es.txt:186
+#: usr_08.txt:186
 msgid ""
 "There is also the \":vnew\" command, to open a vertically split window on a "
 "new,\n"
@@ -448,29 +475,33 @@ msgstr ""
 "También hay una orden «:vnew», para abrir una partición vertical con un\n"
 "archivo nuevo. Otra forma de hacer esto es la siguiente: >"
 
-#: usr_08es.txt:189
+#: usr_08.txt:189
 msgid "\t:vertical new"
 msgstr "\t:vertical new"
 
-#: usr_08es.txt:191
+#: usr_08.txt:191
 msgid ""
-"The \":vertical\" command can be inserted before another command that splits a\n"
-"window.  This will cause that command to split the window vertically instead\n"
+"The \":vertical\" command can be inserted before another command that splits "
+"a\n"
+"window.  This will cause that command to split the window vertically "
+"instead\n"
 "of horizontally.  (If the command doesn't split a window, it works\n"
 "unmodified.)"
 msgstr ""
 "La orden «:vertical» se puede insertar justo antes de otra orden que divida\n"
-"la ventana. Esto puede hacer que la ventana se divida verticalmente en lugar\n"
+"la ventana. Esto puede hacer que la ventana se divida verticalmente en "
+"lugar\n"
 "de horizontalmente. (Si la orden no divide ventanas se ejecuta de modo\n"
 "normal.)"
 
-#: usr_08es.txt:197
+#: usr_08.txt:197
 msgid "MOVING BETWEEN WINDOWS"
 msgstr "MOVERSE DE UNA VENTANA A OTRA"
 
-#: usr_08es.txt:199
+#: usr_08.txt:199
 msgid ""
-"Since you can split windows horizontally and vertically as much as you like,\n"
+"Since you can split windows horizontally and vertically as much as you "
+"like,\n"
 "you can create almost any layout of windows.  Then you can use these "
 "commands\n"
 "to move between them:"
@@ -479,7 +510,7 @@ msgstr ""
 "crear casi cualquier estructura. Una vez las haya creado se puede desplazar\n"
 "por ellas:"
 
-#: usr_08es.txt:203
+#: usr_08.txt:203
 msgid ""
 "\tCTRL-W h\tmove to the window on the left\n"
 "\tCTRL-W j\tmove to the window below\n"
@@ -491,7 +522,7 @@ msgstr ""
 "\tCTRL-W k        moverse a la ventana de arriba\n"
 "\tCTRL-W l        moverse a la ventana de la derecha"
 
-#: usr_08es.txt:208
+#: usr_08.txt:208
 msgid ""
 "\tCTRL-W t\tmove to the TOP window\n"
 "\tCTRL-W b\tmove to the BOTTOM window"
@@ -499,7 +530,7 @@ msgstr ""
 "\tCTRL-W t        moverse a la ventana superior (TOP)\n"
 "\tCTRL-W b        moverse a la ventana inferior (BOTTOM)"
 
-#: usr_08es.txt:211
+#: usr_08.txt:211
 msgid ""
 "You will notice the same letters as used for moving the cursor.  And the\n"
 "cursor keys can also be used, if you like.\n"
@@ -509,9 +540,18 @@ msgstr ""
 "cursor. También puede usar las teclas de flechas si lo desea.\n"
 "   Más órdenes para moverse a otras ventanas: |Q_wi|."
 
-#: usr_08es.txt:218
+#: usr_08.txt:215
 msgid ""
-"You have split a few windows, but now they are in the wrong place.  Then you\n"
+"==============================================================================\n"
+"*08.5*\tMoving windows"
+msgstr ""
+"==============================================================================\n"
+"*08.5*\tMover ventanas"
+
+#: usr_08.txt:218
+msgid ""
+"You have split a few windows, but now they are in the wrong place.  Then "
+"you\n"
 "need a command to move the window somewhere else.  For example, you have "
 "three\n"
 "windows like this:"
@@ -520,7 +560,7 @@ msgstr ""
 "equivocado. Necesitará una orden para mover las ventanas a otro lugar. Por\n"
 "ejemplo, tiene tres ventanas como estas:"
 
-#: usr_08es.txt:222
+#: usr_08.txt:222
 msgid ""
 "\t+----------------------------------+\n"
 "\t|/* file two.c */\t\t   |\n"
@@ -552,7 +592,7 @@ msgstr ""
 "\t|\t\t\t\t   |\n"
 "\t+----------------------------------+"
 
-#: usr_08es.txt:237
+#: usr_08.txt:237
 msgid ""
 "Clearly the last one should be at the top.  Go to that window (using CTRL-W "
 "w)\n"
@@ -561,11 +601,11 @@ msgstr ""
 "Obviamente la última ventana debería estar en la parte superior. Vaya a esa\n"
 "ventana (usando CTRL-W w) y luego teclee la siguiente orden: >"
 
-#: usr_08es.txt:240
+#: usr_08.txt:240
 msgid "\tCTRL-W K"
 msgstr "\tCTRL-W K"
 
-#: usr_08es.txt:242
+#: usr_08.txt:242
 msgid ""
 "This uses the uppercase letter K.  What happens is that the window is moved "
 "to\n"
@@ -577,12 +617,13 @@ msgid ""
 msgstr ""
 "Esto emplea la letra mayúscula K. Lo que ocurre a continuación es que la\n"
 "ventana se mueve a la parte superior.  \n"
-"   Cuando tiene divisiones verticales, CTRL-W K desplazará la ventana actual\n"
+"   Cuando tiene divisiones verticales, CTRL-W K desplazará la ventana "
+"actual\n"
 "a la parte superior y la hará ocupar la anchura completa de la ventana de "
 "Vim.\n"
 "Si este es el esqueleto:"
 
-#: usr_08es.txt:248
+#: usr_08.txt:248
 msgid ""
 "\t+-------------------------------------------+\n"
 "\t|/* two.c */  |/* three.c */  |/* one.c */  |\n"
@@ -606,11 +647,11 @@ msgstr ""
 "\t|\t\t\t\t\t    |\n"
 "\t+-------------------------------------------+"
 
-#: usr_08es.txt:259
+#: usr_08.txt:259
 msgid "Then using CTRL-W K in the middle window (three.c) will result in:"
 msgstr "Usar CTRL-W K en la ventana central (tres.c) producirá lo siguiente:"
 
-#: usr_08es.txt:261
+#: usr_08.txt:261
 msgid ""
 "\t+-------------------------------------------+\n"
 "\t|/* three.c */\t\t\t\t    |\n"
@@ -634,12 +675,12 @@ msgstr ""
 "\t|\t\t\t\t\t    |\n"
 "\t+-------------------------------------------+"
 
-#: usr_08es.txt:272
+#: usr_08.txt:272
 msgid "The other three similar commands (you can probably guess these now):"
 msgstr ""
 "Hay otras tres órdenes similares (probablemente pueda adivinar qué hacen):"
 
-#: usr_08es.txt:274
+#: usr_08.txt:274
 msgid ""
 "\tCTRL-W H\tmove window to the far left\n"
 "\tCTRL-W J\tmove window to the bottom\n"
@@ -649,7 +690,15 @@ msgstr ""
 "\tCTRL-W J\tmover la ventana al extremo inferior\n"
 "\tCTRL-W L\tmover la ventana al extremo derecho"
 
-#: usr_08es.txt:281
+#: usr_08.txt:278
+msgid ""
+"==============================================================================\n"
+"*08.6*\tCommands for all windows"
+msgstr ""
+"==============================================================================\n"
+"*08.6*\tÓrdenes sobre todas las ventanas"
+
+#: usr_08.txt:281
 msgid ""
 "When you have several windows open and you want to quit Vim, you can close\n"
 "each window separately.  A quicker way is using this command: >"
@@ -657,16 +706,17 @@ msgstr ""
 "Cuando tiene varias ventanas abiertas y quiere salir de Vim, puede cerrar\n"
 "cada ventana por su cuenta. Una forma más rápida es la siguiente: >"
 
-#: usr_08es.txt:284
+#: usr_08.txt:284
 msgid "\t:qall"
 msgstr "\t:qall"
 
-#: usr_08es.txt:286
+#: usr_08.txt:286
 msgid ""
-"This stands for \"quit all\".  If any of the windows contain changes, Vim will\n"
+"This stands for \"quit all\".  If any of the windows contain changes, Vim "
+"will\n"
 "not exit.  The cursor will automatically be positioned in a window with\n"
-"changes.  You can then either use \":write\" to save the changes, or \":quit!\" "
-"to\n"
+"changes.  You can then either use \":write\" to save the changes, or \":quit!"
+"\" to\n"
 "throw them away."
 msgstr ""
 "Esto viene de «quit all» (cerrar todo). Si alguna de las ventanas contiene\n"
@@ -674,7 +724,7 @@ msgstr ""
 "con cambios. Puede usar «:w» para guardar los cambios, o «:q!» para\n"
 "eliminarlos completamente."
 
-#: usr_08es.txt:291
+#: usr_08.txt:291
 msgid ""
 "If you know there are windows with changes, and you want to save all these\n"
 "changes, use this command: >"
@@ -682,16 +732,17 @@ msgstr ""
 "Si sabe que hay ventanas con cambios, y quiere guardar todos estos cambios,\n"
 "puede usar la siguiente orden: >"
 
-#: usr_08es.txt:294
+#: usr_08.txt:294
 msgid "\t:wall"
 msgstr "\t:wall"
 
-#: usr_08es.txt:296
+#: usr_08.txt:296
 msgid ""
 "This stands for \"write all\".  But actually, it only writes files with\n"
 "changes.  Vim knows it doesn't make sense to write files that were not\n"
 "changed.\n"
-"   And then there is the combination of \":qall\" and \":wall\": the \"write and\n"
+"   And then there is the combination of \":qall\" and \":wall\": the \"write "
+"and\n"
 "quit all\" command: >"
 msgstr ""
 "Esto viene de «write all» (escribir/guardar todo). Pero, de hecho, sólo\n"
@@ -700,12 +751,11 @@ msgstr ""
 "   También hay una combinación de «:qall» y «:wall»: la orden «guardar y\n"
 "salir de todas las ventanas»: >"
 
-#: usr_08es.txt:302
-#, fuzzy
+#: usr_08.txt:302
 msgid "\t:wqall"
 msgstr "\t:wqall"
 
-#: usr_08es.txt:304
+#: usr_08.txt:304
 msgid ""
 "This writes all modified files and quits Vim.\n"
 "   Finally, there is a command that quits Vim and throws away all changes: >"
@@ -713,34 +763,33 @@ msgstr ""
 "Esto guarda todos los archivos modificados y sale de Vim.\n"
 "   Por último, hay una orden que sale de Vim y no guarda nada: >"
 
-#: usr_08es.txt:307
+#: usr_08.txt:307
 msgid "\t:qall!"
 msgstr "\t:qall!"
 
-#: usr_08es.txt:309
+#: usr_08.txt:309
 msgid "Be careful, there is no way to undo this command!"
 msgstr "¡Tenga cuidado, no hay modo de deshacer esta orden!"
 
-#: usr_08es.txt:312
+#: usr_08.txt:312
 msgid "OPENING A WINDOW FOR ALL ARGUMENTS"
 msgstr "ABRIR UNA VENTANA PARA CADA ARGUMENTO"
 
-#: usr_08es.txt:314
+#: usr_08.txt:314
 msgid ""
 "To make Vim open a window for each file, start it with the \"-o\" argument: >"
 msgstr ""
-"Para hacer que Vim abra una ventana para cada archivo, arránquelo con «-o»: "
-">"
+"Para hacer que Vim abra una ventana para cada archivo, arránquelo con «-o»: >"
 
-#: usr_08es.txt:316
+#: usr_08.txt:316
 msgid "\tvim -o one.txt two.txt three.txt"
 msgstr "\tvim -o uno.txt dos.txt tres.txt"
 
-#: usr_08es.txt:318
+#: usr_08.txt:318
 msgid "This results in:"
 msgstr "Esto da como resultado: >"
 
-#: usr_08es.txt:320
+#: usr_08.txt:320
 msgid ""
 "\t+-------------------------------+\n"
 "\t|file one.txt\t\t\t|\n"
@@ -768,44 +817,57 @@ msgstr ""
 "\t|\t\t\t\t|\n"
 "\t+-------------------------------+"
 
-#: usr_08es.txt:333
+#: usr_08.txt:333
 msgid ""
 "The \"-O\" argument is used to get vertically split windows.\n"
-"   When Vim is already running, the \":all\" command opens a window for each\n"
+"   When Vim is already running, the \":all\" command opens a window for "
+"each\n"
 "file in the argument list.  \":vertical all\" does it with vertical splits."
 msgstr ""
 "El argumento «-O\"» se usa para que las divisiones se hagan verticalmente.\n"
 "   Cuando Vim está ejecutándose, la orden «:all» abre una ventana para cada\n"
 "archivo en la lista de argumentos.  «:vertical all» lo hace verticalmente."
 
-#: usr_08es.txt:340
+#: usr_08.txt:337
 msgid ""
-"There is a special way to start Vim, which shows the differences between two\n"
-"files.  Let's take a file \"main.c\" and insert a few characters in one line.\n"
+"==============================================================================\n"
+"*08.7*\tViewing differences with vimdiff"
+msgstr ""
+"==============================================================================\n"
+"*08.7*\tVer las diferencias con «vimdiff»"
+
+#: usr_08.txt:340
+msgid ""
+"There is a special way to start Vim, which shows the differences between "
+"two\n"
+"files.  Let's take a file \"main.c\" and insert a few characters in one "
+"line.\n"
 "Write this file with the 'backup' option set, so that the backup file\n"
 "\"main.c~\" will contain the previous version of the file.\n"
 "   Type this command in a shell (not in Vim): >"
 msgstr ""
-"Existe una manera especial de arrancar Vim que muestra las diferencias entre\n"
+"Existe una manera especial de arrancar Vim que muestra las diferencias "
+"entre\n"
 "dos archivos. Cojamos un archivo «main.c» e insertemos unos caracteres en "
 "una\n"
 "línea. Escriba el archivo con la opción 'backup' activada, de manera que el\n"
 "archivo «main.c~» contendrá la versión anterior.\n"
 "   Escribe la siguiente orden en una consola (no en Vim): >"
 
-#: usr_08es.txt:346
+#: usr_08.txt:346
 msgid "\tvimdiff main.c~ main.c"
 msgstr "\tvimdiff main.c~ main.c"
 
-#: usr_08es.txt:348
+#: usr_08.txt:348
 msgid ""
 "Vim will start, with two windows side by side.  You will only see the line\n"
 "in which you added characters, and a few lines above and below it."
 msgstr ""
-"Vim arrancará con dos ventanas verticales. Verá solamente la línea en la que\n"
+"Vim arrancará con dos ventanas verticales. Verá solamente la línea en la "
+"que\n"
 "ha añadido los cambios y unas cuántas líneas por debajo."
 
-#: usr_08es.txt:351
+#: usr_08.txt:351
 msgid ""
 "\t VV\t\t      VV\n"
 "\t+-----------------------------------------+\n"
@@ -845,7 +907,7 @@ msgstr ""
 "\t|\t\t\t\t\t  |\n"
 "\t+-----------------------------------------+"
 
-#: usr_08es.txt:370
+#: usr_08.txt:370
 msgid ""
 "(This picture doesn't show the highlighting, use the vimdiff command for a\n"
 "better look.)"
@@ -853,20 +915,25 @@ msgstr ""
 "(Esta figura no muestra los colores, pruebe vimdiff para hacerse una mejor\n"
 "idea.)"
 
-#: usr_08es.txt:373
+#: usr_08.txt:373
 msgid ""
-"The lines that were not modified have been collapsed into one line.  This is\n"
+"The lines that were not modified have been collapsed into one line.  This "
+"is\n"
 "called a closed fold.  They are indicated in the picture with \"<- fold\".  "
 "Thus\n"
 "the single fold line at the top stands for 123 text lines.  These lines are\n"
 "equal in both files.\n"
-"   The line marked with \"<- changed line\" is highlighted, and the inserted\n"
+"   The line marked with \"<- changed line\" is highlighted, and the "
+"inserted\n"
 "text is displayed with another color.  This clearly shows what the "
 "difference\n"
 "is between the two files.\n"
-"   The line that was deleted is displayed with \"---\" in the main.c window.\n"
-"See the \"<- deleted line\" marker in the picture.  These characters are not\n"
-"really there.  They just fill up main.c, so that it displays the same number\n"
+"   The line that was deleted is displayed with \"---\" in the main.c "
+"window.\n"
+"See the \"<- deleted line\" marker in the picture.  These characters are "
+"not\n"
+"really there.  They just fill up main.c, so that it displays the same "
+"number\n"
 "of lines as the other window."
 msgstr ""
 "Las líneas que no se modificaron se han agrupado en una sola línea. A\n"
@@ -881,15 +948,16 @@ msgstr ""
 "realmente. Simplemente llenan el espacio necesario en «main.c» para que\n"
 "ambos archivos tengan el mismo número de líneas."
 
-#: usr_08es.txt:386
+#: usr_08.txt:386
 msgid "THE FOLD COLUMN"
 msgstr "LA COLUMNA DE PLIEGUE"
 
-#: usr_08es.txt:388
+#: usr_08.txt:388
 msgid ""
 "Each window has a column on the left with a slightly different background.  "
 "In\n"
-"the picture above these are indicated with \"VV\".  You notice there is a plus\n"
+"the picture above these are indicated with \"VV\".  You notice there is a "
+"plus\n"
 "character there, in front of each closed fold.  Move the mouse pointer to "
 "that\n"
 "plus and click the left button.  The fold will open, and you can see the "
@@ -908,14 +976,15 @@ msgstr ""
 "Esto abrirá el pliegue, mostrando el texto que contiene.\n"
 "   La columna del pliegue muestra un «-» para un pliegue abierto. Si pulsa\n"
 "este «-», el pliegue se cerrará.\n"
-"   Obviamente, esto sólo funciona cuando tiene un ratón configurado. También\n"
+"   Obviamente, esto sólo funciona cuando tiene un ratón configurado. "
+"También\n"
 "puedes usar «zo» para abrir un pliegue y «zc» para cerrarlo."
 
-#: usr_08es.txt:399
+#: usr_08.txt:399
 msgid "DIFFING IN VIM"
 msgstr "DIFF DENTRO DE VIM"
 
-#: usr_08es.txt:401
+#: usr_08.txt:401
 msgid ""
 "Another way to start in diff mode can be done from inside Vim.  Edit the\n"
 "\"main.c\" file, then make a split and show the differences: >"
@@ -923,7 +992,7 @@ msgstr ""
 "Otra manera de iniciar el modo diff es hacerlo desde Vim. Edite el archivo\n"
 "«main.c», haga después un «split» y muestre las diferencias: >"
 
-#: usr_08es.txt:404
+#: usr_08.txt:404
 msgid ""
 "\t:edit main.c\n"
 "\t:vertical diffsplit main.c~ "
@@ -931,15 +1000,16 @@ msgstr ""
 "\t:edit main.c\n"
 "\t:vertical diffsplit main.c~ "
 
-#: usr_08es.txt:407
+#: usr_08.txt:407
 msgid ""
-"The \":vertical\" command is used to make the window split vertically.  If you\n"
+"The \":vertical\" command is used to make the window split vertically.  If "
+"you\n"
 "omit this, you will get a horizontal split."
 msgstr ""
 "La orden «:vertical» se usa para hacer que las ventanas se dividan\n"
 "verticalmente. Si omite esto, obtendrá una división horizontal."
 
-#: usr_08es.txt:410
+#: usr_08.txt:410
 msgid ""
 "If you have a patch or diff file, you can use the third way to start diff\n"
 "mode.  First edit the file to which the patch applies.  Then tell Vim the "
@@ -950,7 +1020,7 @@ msgstr ""
 "de iniciar el modo diff. Primero edite el archivo sobre el cuál se aplica\n"
 "el parche. Entonces escribe la siguiente orden: >"
 
-#: usr_08es.txt:414
+#: usr_08.txt:414
 msgid ""
 "\t:edit main.c\n"
 "\t:vertical diffpatch main.c.diff"
@@ -958,7 +1028,7 @@ msgstr ""
 "\t:edit main.c\n"
 "\t:vertical diffpatch main.c.diff"
 
-#: usr_08es.txt:417
+#: usr_08.txt:417
 msgid ""
 "WARNING: The patch file must contain only one patch, for the file you are\n"
 "editing.  Otherwise you will get a lot of error messages, and some files "
@@ -974,13 +1044,14 @@ msgstr ""
 "   El parcheo será realizado sólo sobre una copia del archivo en Vim. El\n"
 "archivo del disco duro no se modificará hasta que no lo guardes."
 
-#: usr_08es.txt:424
+#: usr_08.txt:424
 msgid "SCROLL BINDING"
 msgstr "VINCULACIÓN DEL DESPLAZAMIENTO"
 
-#: usr_08es.txt:426
+#: usr_08.txt:426
 msgid ""
-"When the files have more changes, you can scroll in the usual way.  Vim will\n"
+"When the files have more changes, you can scroll in the usual way.  Vim "
+"will\n"
 "try to keep both the windows start at the same position, so you can easily "
 "see\n"
 "the differences side by side.\n"
@@ -991,15 +1062,15 @@ msgstr ""
 "desplazamiento, para que pueda ver las diferencias en cada lado.\n"
 "   Cuando no quiera que esto ocurra, use lo siguiente: >"
 
-#: usr_08es.txt:431
+#: usr_08.txt:431
 msgid "\t:set noscrollbind"
 msgstr "\t:set noscrollbind"
 
-#: usr_08es.txt:434
+#: usr_08.txt:434
 msgid "JUMPING TO CHANGES"
 msgstr "IR A LOS CAMBIOS"
 
-#: usr_08es.txt:436
+#: usr_08.txt:436
 msgid ""
 "When you have disabled folding in some way, it may be difficult to find the\n"
 "changes.  Use this command to jump forward to the next change: >"
@@ -1007,27 +1078,27 @@ msgstr ""
 "Cuando haya desactivado los pliegues de algún modo, puede ser más difícil\n"
 "encontrar los cambios. Use esta orden para saltar al siguiente cambio: >"
 
-#: usr_08es.txt:439
+#: usr_08.txt:439
 msgid "\t]c"
 msgstr "\t]c"
 
-#: usr_08es.txt:441
+#: usr_08.txt:441
 msgid "To go the other way use: >"
 msgstr "Para ir en la otra dirección use: >"
 
-#: usr_08es.txt:443
+#: usr_08.txt:443
 msgid "\t[c"
 msgstr "\t[c"
 
-#: usr_08es.txt:445
+#: usr_08.txt:445
 msgid "Prepended a count to jump further away."
 msgstr "Anexe un número multiplicador para saltar más lejos."
 
-#: usr_08es.txt:448
+#: usr_08.txt:448
 msgid "REMOVING CHANGES"
 msgstr "ELIMINAR CAMBIOS"
 
-#: usr_08es.txt:450
+#: usr_08.txt:450
 msgid ""
 "You can move text from one window to the other.  This either removes\n"
 "differences or adds new ones.  Vim doesn't keep the highlighting updated in\n"
@@ -1037,16 +1108,18 @@ msgstr ""
 "unas nuevas. Vim no mantiene el texto resaltado en todas las situaciones.\n"
 "Para actualizarlo deberá escribir: >"
 
-#: usr_08es.txt:454
+#: usr_08.txt:454
 msgid "\t:diffupdate"
 msgstr "\t:diffupdate"
 
-#: usr_08es.txt:456
+#: usr_08.txt:456
 msgid ""
 "To remove a difference, you can move the text in a highlighted block from "
 "one\n"
-"window to another.  Take the \"main.c\" and \"main.c~\" example above.  Move the\n"
-"cursor to the left window, on the line that was deleted in the other window.\n"
+"window to another.  Take the \"main.c\" and \"main.c~\" example above.  Move "
+"the\n"
+"cursor to the left window, on the line that was deleted in the other "
+"window.\n"
 "Now type this command: >"
 msgstr ""
 "Para eliminar una diferencia, puede mover el texto de un bloque resaltado\n"
@@ -1054,11 +1127,11 @@ msgstr ""
 "Mueva el cursor a la izquierda de la ventana, sobre la línea que se eliminó\n"
 "en la otra ventana. Ahora escriba esta orden: >"
 
-#: usr_08es.txt:461
+#: usr_08.txt:461
 msgid "\tdp"
 msgstr "\tdp"
 
-#: usr_08es.txt:463
+#: usr_08.txt:463
 msgid ""
 "The change will be removed by putting the text of the current window in the\n"
 "other window.  \"dp\" stands for \"diff put\".\n"
@@ -1070,11 +1143,11 @@ msgstr ""
 "   Puede hacerlo también de la forma completamente opuesta. Mueva el cursor\n"
 "a la ventana de la derecha, donde se insertó el cambio. Escriba: >"
 
-#: usr_08es.txt:468
+#: usr_08.txt:468
 msgid "\tdo"
 msgstr "\tdo"
 
-#: usr_08es.txt:470
+#: usr_08.txt:470
 msgid ""
 "The change will now be removed by getting the text from the other window.\n"
 "Since there are no changes left now, Vim puts all text in a closed fold.\n"
@@ -1087,15 +1160,22 @@ msgstr ""
 "Ya\n"
 "que no hay cambios restantes, Vim pondrá todo el texto en un pliegue "
 "cerrado.\n"
-"«do» viene de «diff obtain» (obtain = obtener). «dg» podría ser mejor (de g "
-"=\n"
+"«do» viene de «diff obtain» (obtain = obtener). «dg» podría ser mejor (de g =\n"
 "get = obtener) pero «dgg» ya tenía un significado diferente."
 
-#: usr_08es.txt:475
+#: usr_08.txt:475
 msgid "For details about diff mode, see |vimdiff|."
 msgstr "Para más detalles sobre el modo diff, véase |vimdiff|."
 
-#: usr_08es.txt:480
+#: usr_08.txt:477
+msgid ""
+"==============================================================================\n"
+"*08.8*\tVarious"
+msgstr ""
+"==============================================================================\n"
+"*08.8*\tVarios"
+
+#: usr_08.txt:480
 msgid ""
 "The 'laststatus' option can be used to specify when the last window has a\n"
 "statusline:"
@@ -1103,7 +1183,7 @@ msgstr ""
 "La opción 'laststatus' se puede emplear para especificar cuándo la última\n"
 "ventana tiene una línea de estado:"
 
-#: usr_08es.txt:483
+#: usr_08.txt:483
 msgid ""
 "\t0\tnever\n"
 "\t1\tonly when there are split windows (the default)\n"
@@ -1113,15 +1193,15 @@ msgstr ""
 "\t1\tsólo cuando hay más ventanas (predeterminado)\n"
 "\t2\tsiempre"
 
-#: usr_08es.txt:487
+#: usr_08.txt:487
 msgid ""
 "Many commands that edit another file have a variant that splits the window.\n"
-"For Command-line commands this is done by prepending an \"s\".  For example:\n"
+"For Command-line commands this is done by prepending an \"s\".  For "
+"example:\n"
 "\":tag\" jumps to a tag, \":stag\" splits the window and jumps to a\n"
 "tag.\n"
 "   For Normal mode commands a CTRL-W is prepended.  CTRL-^ jumps to the\n"
-"alternate file, CTRL-W CTRL-^ splits the window and edits the alternate "
-"file."
+"alternate file, CTRL-W CTRL-^ splits the window and edits the alternate file."
 msgstr ""
 "Muchas órdenes que editan otro archivo disponen de una variante que divide "
 "la\n"
@@ -1131,7 +1211,7 @@ msgstr ""
 "   Para órdenes del modo normal se teclea CTRL-W antes. CTRL-^ salta al\n"
 "archivo alterno, CTRL-W CTRL-^ divide la ventana y edita el archivo alterno."
 
-#: usr_08es.txt:494
+#: usr_08.txt:494
 msgid ""
 "The 'splitbelow' option can be set to make a new window appear below the\n"
 "current window.  The 'splitright' option can be set to make a vertically "
@@ -1143,15 +1223,16 @@ msgstr ""
 "hacer que una partición vertical aparezca a la derecha de la ventana\n"
 "actual."
 
-#: usr_08es.txt:498
+#: usr_08.txt:498
 msgid ""
-"When splitting a window you can prepend a modifier command to tell where the\n"
+"When splitting a window you can prepend a modifier command to tell where "
+"the\n"
 "window is to appear:"
 msgstr ""
 "Cuando divida una ventana puede poner un prefijo modificador que diga dónde\n"
 "debe aparecer la ventana: "
 
-#: usr_08es.txt:501
+#: usr_08.txt:501
 msgid ""
 "\t:leftabove {cmd}\tleft or above the current window\n"
 "\t:aboveleft {cmd}\tidem\n"
@@ -1167,7 +1248,15 @@ msgstr ""
 "\t:topleft {cmd}\t\tencima o a la izquierda de la ventana de \t\t\t\t\tVim\n"
 "\t:botright {cmd}\t\tdebajo o a la derecha de la ventana de Vim"
 
-#: usr_08es.txt:512
+#: usr_08.txt:509
+msgid ""
+"==============================================================================\n"
+"*08.9*\tTab pages"
+msgstr ""
+"==============================================================================\n"
+"*08.9*\tPestañas"
+
+#: usr_08.txt:512
 msgid ""
 "You will have noticed that windows never overlap.  That means you quickly "
 "run\n"
@@ -1176,26 +1265,27 @@ msgstr ""
 "Habrá notado que las ventanas no se superponen. Esto significa que puede\n"
 "rápidamente acabar sin espacio suficiente. La solución son las pestañas:"
 
-#: usr_08es.txt:515
+#: usr_08.txt:515
 msgid ""
 "Assume you are editing \"thisfile\".  To create a new tab page use this "
 "command: >"
 msgstr ""
 "Suponga que está editando «estearchivo». Para crear una nueva pestaña: >"
 
-#: usr_08es.txt:517
+#: usr_08.txt:517
 msgid "\t:tabedit thatfile"
 msgstr "\t:tabedit «aquélarchivo»"
 
-#: usr_08es.txt:519
+#: usr_08.txt:519
 msgid ""
-"This will edit the file \"thatfile\" in a window that occupies the whole Vim\n"
+"This will edit the file \"thatfile\" in a window that occupies the whole "
+"Vim\n"
 "window.  And you will notice a bar at the top with the two file names:"
 msgstr ""
 "Esto editará el archivo «aquélarchivo» en una ventana que ocupe todo el\n"
 "espacio de Vim. Verá que hay una nueva barra en la parte superior:"
 
-#: usr_08es.txt:522
+#: usr_08.txt:522
 msgid ""
 "\t+----------------------------------+\n"
 "\t| thisfile | /thatfile/ __________X|    (thatfile is bold)\n"
@@ -1220,24 +1310,25 @@ msgstr ""
 "\t|\t\t\t\t   |\n"
 "\t+----------------------------------+"
 
-#: usr_08es.txt:533
+#: usr_08.txt:533
 msgid ""
 "You now have two tab pages.  The first one has a window for \"thisfile\" and "
 "the\n"
-"second one a window for \"thatfile\".  It's like two pages that are on top of\n"
+"second one a window for \"thatfile\".  It's like two pages that are on top "
+"of\n"
 "eachother, with a tab sticking out of each page showing the file name."
 msgstr ""
 "Ahora tiene dos pestañas. La primera tiene tiene una ventana para\n"
 "«estearchivo» y la segunda para «aquélarchivo». Es como dos páginas una\n"
 "encima de la otra, con una pestaña sobresaliendo de cada página."
 
-#: usr_08es.txt:537
+#: usr_08.txt:537
 msgid ""
 "Now use the mouse to click on \"thisfile\" in the top line.  The result is"
 msgstr ""
 "Ahora use el ratón para pulsar sobre «estearchivo» sobre la línea superior."
 
-#: usr_08es.txt:539
+#: usr_08.txt:539
 msgid ""
 "\t+----------------------------------+\n"
 "\t| /thisfile/ | thatfile __________X|    (thisfile is bold)\n"
@@ -1262,7 +1353,7 @@ msgstr ""
 "\t|\t\t\t\t   |\n"
 "\t+----------------------------------+"
 
-#: usr_08es.txt:550
+#: usr_08.txt:550
 msgid ""
 "Thus you can switch between tab pages by clicking on the label in the top\n"
 "line.  If you don't have a mouse or don't want to use it, you can use the "
@@ -1273,23 +1364,24 @@ msgstr ""
 "línea superior. Si no dispone del ratón o no lo quiere usar, puede emplear\n"
 "la orden «gt».  Nemotecnia: Goto Tab (ir a pestaña)."
 
-#: usr_08es.txt:554
+#: usr_08.txt:554
 msgid "Now let's create another tab page with the command: >"
 msgstr "A continuación creemos otra pestaña con la orden: >"
 
-#: usr_08es.txt:556
+#: usr_08.txt:556
 msgid "\t:tab split"
 msgstr "\t:tab split"
 
-#: usr_08es.txt:558
+#: usr_08.txt:558
 msgid ""
-"This makes a new tab page with one window that is editing the same buffer as\n"
+"This makes a new tab page with one window that is editing the same buffer "
+"as\n"
 "the window we were in:"
 msgstr ""
 "Esto hace que se muestre una nueva página con el mismo búfer que teníamos\n"
 "abierto:"
 
-#: usr_08es.txt:561
+#: usr_08.txt:561
 msgid ""
 "\t+-------------------------------------+\n"
 "\t| thisfile | /thisfile/ | thatfile __X|   (thisfile is bold)\n"
@@ -1313,7 +1405,7 @@ msgstr ""
 "\t|\t\t\t\t\t       |\n"
 "\t+----------------------------------------------+"
 
-#: usr_08es.txt:572
+#: usr_08.txt:572
 msgid ""
 "You can put \":tab\" before any Ex command that opens a window.  The window "
 "will\n"
@@ -1322,19 +1414,19 @@ msgstr ""
 "Puede poner «:tab» antes de cualquier orden «Ex» que abra una ventana. La\n"
 "ventana se abrirá en una nueva ventana. Otro ejemplo: >"
 
-#: usr_08es.txt:575
+#: usr_08.txt:575
 msgid "\t:tab help gt"
 msgstr "\t:tab help gt"
 
-#: usr_08es.txt:577
+#: usr_08.txt:577
 msgid "Will show the help text for \"gt\" in a new tab page."
 msgstr "Esto mostrará el texto de ayuda para «gt» en una ventana nueva."
 
-#: usr_08es.txt:579
+#: usr_08.txt:579
 msgid "A few more things you can do with tab pages:"
 msgstr "Un par de cosas más que puede hacer con las pestañas:"
 
-#: usr_08es.txt:581
+#: usr_08.txt:581
 msgid ""
 "- click with the mouse in the space after the last label\n"
 "\tThe next tab page will be selected, like with \"gt\"."
@@ -1342,7 +1434,7 @@ msgstr ""
 "- pulse con el ratón en el espacio después de la última pestaña.\n"
 "\tLa próxima pestaña será seleccionada, igual que si escribiese «qt»."
 
-#: usr_08es.txt:584
+#: usr_08.txt:584
 msgid ""
 "- click with the mouse on the \"X\" in the top right corner\n"
 "\tThe current tab page will be closed.  Unless there are unsaved\n"
@@ -1352,7 +1444,7 @@ msgstr ""
 "\tLa pestaña actual se cerrará a menos que haya cambios sin guardar en la\n"
 "\tpestaña."
 
-#: usr_08es.txt:588
+#: usr_08.txt:588
 msgid ""
 "- double click with the mouse in the top line\n"
 "\tA new tab page will be created."
@@ -1360,7 +1452,7 @@ msgstr ""
 "- doble pulsación con el ratón sobre la línea superior\n"
 "\tSe creará una nueva ventana."
 
-#: usr_08es.txt:591
+#: usr_08.txt:591
 msgid ""
 "- the \"tabonly\" command\n"
 "\tCloses all tab pages except the current one.  Unless there are unsaved\n"
@@ -1370,14 +1462,18 @@ msgstr ""
 "\tCierra todas las pestañas excepto la actual (a menos que haya cambios\n"
 "\tsin guardar en las otras pestañas)."
 
-#: usr_08es.txt:595
+#: usr_08.txt:595
 msgid "For more information about tab pages see |tab-page|."
 msgstr "Para más información sobre pestañas véase |tab-page|."
 
-#: usr_08es.txt:599
+#: usr_08.txt:597
+msgid "=============================================================================="
+msgstr "=============================================================================="
+
+#: usr_08.txt:599
 msgid "Next chapter: |usr_09.txt|  Using the GUI"
 msgstr "Capítulo siguiente: |usr_09.txt|  Uso de la GUI"
 
-#: usr_08es.txt:601
+#: usr_08.txt:601
 msgid "Copyright: see |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
 msgstr "Copyright: véase |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"

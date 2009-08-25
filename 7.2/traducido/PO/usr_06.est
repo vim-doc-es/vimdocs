@@ -9,7 +9,7 @@ vida. No sólo adquieren mejor apariencia, si no que acelera la producción.
 Cambie los colores para distintos tipos de texto. Imprima sus textos con los
 colores que ve en pantalla.
 
-|06.1|	Activación
+|06.1|	Activar
 |06.2|	¿Colores incorrectos o ausentes?
 |06.3|	Diferentes colores
 |06.4|	Con colores o sin colores
@@ -21,8 +21,7 @@ colores que ve en pantalla.
 Tabla de contenidos: |usr_toc.txt|
 
 ==============================================================================
-*06.1*	Activación
-
+*06.1*	Activar
 
 Comencemos con una simple orden: >
 
@@ -47,6 +46,9 @@ puede poner esto en su archivo |vimrc|: >
 
 Si quiere resaltado de sintaxis sólo en la versión GUI, ponga la orden
 «:syntax enable» únicamente en el archivo |gvimrc|.
+
+==============================================================================
+*06.2*	¿Colores incorrectos o ausentes?
 
 Puede haber una serie de motivos por los que no vea colores:
 
@@ -129,6 +131,9 @@ O los colores están mal:
 	el texto hacia atrás, mire la ayuda específica para la sintaxis. Por
 	ejemplo, |tex.vim| para la sintaxis de TeX.
 
+==============================================================================
+*06.3*	Diferentes colores				*:syn-default-override*
+
 Si no le gustan los colores predeterminados, puede seleccionar otro
 esquema de colores. En GVim, use el menú Edit/Color. También puede usar la
 orden: >
@@ -180,6 +185,9 @@ orden: >
 
 Verá texto en varias combinaciones de colores. Puede comprobar cuáles son
 legibles y que tienen un apariencia agradable.
+
+==============================================================================
+*06.4*	Con colores o sin colores
 
 Mostrar texto en color conlleva un gran uso del procesador. Si le parece que el
 texto se muestra muy lentamente, puede desactivar el resaltado momentáneamente: >
@@ -256,8 +264,13 @@ Véase |2html.vim| para más detalles. No se olvide de eliminar el archivo HTML.
 En lugar de imprimir, puede poner el archivo HTML en un servidor, y permitir a
 otros ver el texto resaltado.
 
+==============================================================================
+*06.6*	Más información
+
 |usr_44.txt|  Su propio resaltado de sintaxis.
 |syntax|      Todos los detalles.
+
+==============================================================================
 
 Capítulo siguiente: |usr_07.txt|  Editar más de un archivo
 

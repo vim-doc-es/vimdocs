@@ -1,6 +1,6 @@
-*usr_02.txt*	Para Vim version 7.2.  Último cambio: 2006 Jun 21
+*usr_03.txt*	Para Vim version 7.2.  Último cambio: 2006 Jun 21
 
-		     MANUAL DE USUARIO DE VIM - por Bram Moolenaar
+		    MANUAL DE USUARIO DE VIM - por Bram Moolenaar
 
 			     Movimiento
 
@@ -11,7 +11,7 @@ lista de estas órdenes a continuación |Q_lr|.
 
 |03.1|	Movimiento sobre palabras
 |03.2|	Moverse al principio o al final de la línea
-|03.3|	Moverse a un carácter
+|03.3|	Moverse a un caracter
 |03.4|	Emparejar un paréntesis
 |03.5|	Moverse a un línea específica
 |03.6|	Indicar dónde estás
@@ -20,9 +20,9 @@ lista de estas órdenes a continuación |Q_lr|.
 |03.9|	Patrones sencillos de búsqueda
 |03.10|	Uso de marcadores o marcas
 
-Capítulo siguiente: |usr_04.txt|  Hacer cambios pequeños
- Capítulo anterior: |usr_02.txt|  Primeros pasos en Vim
-        Contenidos: |usr_toc.txt|
+   Capítulo siguiente: |usr_04.txt|  Hacer cambios pequeños
+     Capítulo anterior: |usr_02.txt|  Primeros pasos en Vim
+Tabla de contenidos: |usr_toc.txt|
 
 ==============================================================================
 *03.1*	Movimiento sobre palabras
@@ -40,7 +40,7 @@ encuentra al comienzo de una palabra.
    La orden «b» le desplaza al comienzo de la palabra anterior:
 
 	Ésta es una línea con texto de ejemplo ~
-	<----<--<-<---------<---
+	<----<--<---<---------<---
 	   b   b b    2b    b
 
 Existe también la orden «e» que le desplaza hasta el final de la siguiente
@@ -72,6 +72,9 @@ también en mayúsculas, como muestra la siguiente figura:
 Con esta combinación de órdenes en mayúsculas y minúsculas, puede moverse
 rápidamente hacia atrás y hacia delante por un párrafo.
 
+==============================================================================
+*03.2*	Moverse al principio o al final de la línea
+
 La orden «$» mueve el cursor al final de la línea. Si su teclado tiene la
 tecla <Fin>, conseguirá el mismo resultado pulsándola.
 
@@ -94,6 +97,9 @@ ejemplo, «1$» le mueve hacia el final de la primera línea (en la que está),
 «2$» te mueve al final de la siguiente línea, y así en adelante.
    La orden «0» no admite ningún multiplicador, porque el «0» podría ser parte
 del número. Usar un multiplicador con «^» tampoco tiene ningún efecto.
+
+==============================================================================
+*03.3*	Moverse a un caracter
 
 Uno de las órdenes de movimiento más útiles es la orden de búsqueda de un
 único carácter. La orden «fx» busca hacia delante en la línea el carácter
@@ -139,6 +145,9 @@ búsqueda, pulse <Esc>. Por lo tanto, «f<Esc>» es una búsqueda
 abortada. Nota: <Esc> cancela la mayoría de las operaciones,
 no sólo búsquedas.
 
+==============================================================================
+*03.4*	Emparejar un paréntesis
+
 Al escribir código, a menudo usa constructos anidados del tipo ().
 Para ello la orden «%x resulta muy útil: le desplaza hasta el paréntesis
 opuesto. Si el cursor está en un «(», le moverá hasta el «)». Si está en un
@@ -160,6 +169,9 @@ ejemplo anterior, «%» buscará hacia delante hasta el primer «(».
 		if (a == (b * c) / d) ~
 		---+---------------->
 			   %
+
+==============================================================================
+*03.2*	Moverse a una línea específica
 
 Si eres un programador de C o C++, estará familiarizado con los mensajes de
 error del tipo presente a continuación:
@@ -209,6 +221,9 @@ que puede ver? Esta figura le muestra las tres órdenes que puede emplear:
 
 Pista: «H» viene de «Home», «M» de «Middle» y «L» de «Last».
 
+==============================================================================
+*03.6*	Indicar donde estás
+
 Para ver dónde está en un archivo, hay tres maneras:
 
 1.  Use la orden CTRL-G. Obtendrá un mensaje como este (asumiendo que la
@@ -247,6 +262,9 @@ Para ver dónde está en un archivo, hay tres maneras:
 
 Usar la opción 'ruler' tiene la ventaja de que no ocupa mucho espacio, con lo
 que no quitará mucho espacio para el texto.
+
+==============================================================================
+*03.7*	Desplazar el texto
 
 La orden CTRL-U desplaza el texto hacia abajo. Imagine que mira a
 través de una ventana hacia un texto y mueve esta ventana hacia arriba una
@@ -300,6 +318,9 @@ La orden «zt» pone la línea del cursor arriba, «zb» la situa en la parte
 inferior. Hay algunas órdenes más de desplazamiento de texto, véase |Q_sc|.
 Para mantener siempre contexto alrededor del cursor, use la opción 'scrolloff'.
 
+==============================================================================
+*03.8*	Búsquedas simples
+
 Para buscar una cadena, use la orden «/cadena». Para encontrar la palabra
 «include», por ejemplo, use la orden: >
 
@@ -344,7 +365,7 @@ concordar con mayúsculas y minúsculas de nuevo: >
 
 	:set noignorecase
 
-HISTORIA
+HISTÓRICO
 
 Suponga que realiza tres búsquedas: >
 
@@ -396,7 +417,7 @@ Esto no encontrará «ellos» o «mantel». Fíjese en que las órdenes «*» y 
 usan estos marcadores de comienzo y final de palabra para encontrar únicamente
 palabras completas (puede usar «g*» y «g#» para concordancias parciales).
 
-DESTACAR COINCIDENCIAS
+RESALTAR COINCIDENCIAS
 
 Al editar un programa verá una variable llamada «nr». Quiere comprobar dónde se
 usa. Puede mover el cursor a «nr» y usar la orden «*» y presionar «n» para
@@ -462,6 +483,9 @@ la orden «:set». Salga del modo insertar con <Esc>. Guarde el archivo. >
 
 Si reinicia ahora Vim, la opción 'hlsearch' se activará siempre.
 
+==============================================================================
+*03.9*	Patrones sencillos de búsqueda
+
 El editor Vim usa expresiones regulares para especificar búsquedas  Las
 expresiones regulares son un modo extremadamente potente y compacto de
 especificar un patrón de búsqueda. Por desgracia, esta potencia tiene un
@@ -497,7 +521,7 @@ Puede intentar buscar con «/^que$», que sólo se emparejará con una única
 línea consistente en «que». El espacio en blanco se considera, por lo que si
 contiene un espacio tras la palabra, como «que», el patrón no coincide.
 
-CONCORDAR CUALQUIER CARÁCTER
+EMPAREJAR CUALQUIER CARACTER
 
 El carácter . (punto) concuerda cualquier carácter existente. Por ejemplo, el
 patrón «a.i» se identifica con cadenas cuyo primer carácter es una «a», su
@@ -516,6 +540,9 @@ poniendo antes una barra invertida.
 		      xxxx			    xxxx
 
 Buscar «an\.» te daría sólo el segundo.
+
+==============================================================================
+*03.10*	Uso de marcadores o marcas
 
 Cuando hace un salto a una posición con la orden «G», Vim recuerda la
 posición antes de el salto. Esta posición se llama marca o marcador. Para
@@ -610,6 +637,8 @@ Verá unos cuantos marcadores especiales. Entre ellos:
 	[	Comienzo del último cambio
 	]	Final del último cambio
 
+==============================================================================
+
 Capítulo siguiente: |usr_04.txt|  Hacer cambios pequeños
 
-Copyright: ver |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:
+Copyright: véase |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:

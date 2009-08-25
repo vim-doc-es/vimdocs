@@ -1,32 +1,32 @@
 # Spanish translation of Vim's help file usr_04.txt 
 #
 # Álvaro Castro Castilla <alvaro.castro.castilla@gmail.com>, 2009.
-#. extracted from usr_04es.txt
+#. extracted from usr_04.txt
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-04 18:28+0200\n"
-"PO-Revision-Date: 2009-08-07 17:40+0200\n"
+"Report-Msgid-Bugs-To: bugs@vim.org \n"
+"POT-Creation-Date: 2009-08-01 19:53+0200\n"
+"PO-Revision-Date: 2009-08-25 16:28+0200\n"
 "Last-Translator: Álvaro Castro Castilla <alvaro.castro.castilla@gmail.com>\n"
-"Language-Team: Documentación de Vim en español\n"
+"Language-Team: Documentación de Vim en español \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: usr_04es.txt:1
+#: usr_04.txt:1
 msgid "*usr_04.txt*\tFor Vim version 7.2.  Last change: 2006 Jun 21"
 msgstr "*usr_04.txt*\tPara Vim version 7.2.  Último cambio: 2007 Feb 08"
 
-#: usr_04es.txt:3
+#: usr_04.txt:3
 msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar"
 msgstr "\t\t    MANUAL DE USUARIO DE VIM - por Bram Moolenaar"
 
-#: usr_04es.txt:5
+#: usr_04.txt:5
 msgid "\t\t\t     Making small changes"
 msgstr "\t\t\t    Hacer cambios pequeños"
 
-#: usr_04es.txt:8
+#: usr_04.txt:8
 msgid ""
 "This chapter shows you several ways of making corrections and moving text\n"
 "around.  It teaches you the three basic ways to change text: operator-"
@@ -37,7 +37,7 @@ msgstr ""
 "en el texto. Le muestra los tres modos básicos de cambiar texto:\n"
 "operador-movimiento, modo Visual y objetos de texto."
 
-#: usr_04es.txt:12
+#: usr_04.txt:12
 msgid ""
 "|04.1|\tOperators and motions\n"
 "|04.2|\tChanging text\n"
@@ -61,7 +61,7 @@ msgstr ""
 "|04.9|\tModo reemplazar\n"
 "|04.10|\tConclusión"
 
-#: usr_04es.txt:23
+#: usr_04.txt:23
 msgid ""
 "     Next chapter: |usr_05.txt|  Set your settings\n"
 " Previous chapter: |usr_03.txt|  Moving around\n"
@@ -71,9 +71,7 @@ msgstr ""
 " Capítulo anterior: |usr_03.txt|  Movimiento\n"
 "        Contenidos: |usr_toc.txt|"
 
-#: usr_04es.txt:27 usr_04es.txt:74 usr_04es.txt:160 usr_04es.txt:194
-#: usr_04es.txt:269 usr_04es.txt:324 usr_04es.txt:360 usr_04es.txt:390
-#: usr_04es.txt:446 usr_04es.txt:469 usr_04es.txt:510
+#: usr_04.txt:27
 msgid ""
 "==============================================================================\n"
 "*04.1*\tOperators and motions"
@@ -81,7 +79,7 @@ msgstr ""
 "==============================================================================\n"
 "*04.1*\tOperadores y movimiento"
 
-#: usr_04es.txt:30
+#: usr_04.txt:30
 msgid ""
 "In chapter 2 you learned the \"x\" command to delete a single character.  "
 "And\n"
@@ -105,7 +103,7 @@ msgstr ""
 "   La orden «4w», por ejemplo, mueve el cursor cuatro palabras. La orden\n"
 "d4w elimina cuatro palabras."
 
-#: usr_04es.txt:39
+#: usr_04.txt:39
 msgid ""
 "\tTo err is human. To really foul up you need a computer. ~\n"
 "\t\t\t ------------------>\n"
@@ -115,11 +113,11 @@ msgstr ""
 "\t\t\t  ---------------------->\n"
 "\t\t\t\t d4w"
 
-#: usr_04es.txt:43
+#: usr_04.txt:43
 msgid "\tTo err is human. you need a computer. ~"
 msgstr "\tErrar es humano.  necesitas un ordenador. ~"
 
-#: usr_04es.txt:45
+#: usr_04.txt:45
 msgid ""
 "Vim only deletes up to the position where the motion takes the cursor.  "
 "That's\n"
@@ -133,7 +131,7 @@ msgstr ""
 "de una palabra. Si usa la orden «ex para desplazarse hasta el final de una\n"
 "palabra, Vim adivina que quiere incluir el último carácter:"
 
-#: usr_04es.txt:50
+#: usr_04.txt:50
 msgid ""
 "\tTo err is human. you need a computer. ~\n"
 "\t\t\t-------->\n"
@@ -143,11 +141,11 @@ msgstr ""
 "\t\t\t------------->\n"
 "\t\t\t   d2e"
 
-#: usr_04es.txt:54
+#: usr_04.txt:54
 msgid "\tTo err is human. a computer. ~"
 msgstr "\tErrar es humano. ordenador. ~"
 
-#: usr_04es.txt:56
+#: usr_04.txt:56
 msgid ""
 "Whether the character under the cursor is included depends on the command "
 "you\n"
@@ -159,7 +157,7 @@ msgstr ""
 "movimiento empleado. El manual de referencia llama a esto «exclusivo» cuando\n"
 "el carácter no se incluye e «inclusivo» en caso contrario."
 
-#: usr_04es.txt:60
+#: usr_04.txt:60
 msgid ""
 "The \"$\" command moves to the end of a line.  The \"d$\" command deletes "
 "from the\n"
@@ -171,7 +169,7 @@ msgstr ""
 "inclusivo,\n"
 "por lo que el último carácter de la línea se incluye en la operación:"
 
-#: usr_04es.txt:64
+#: usr_04.txt:64
 msgid ""
 "\tTo err is human. a computer. ~\n"
 "\t\t       ------------>\n"
@@ -181,11 +179,11 @@ msgstr ""
 "\t\t       ----------->\n"
 "\t\t\t    d$"
 
-#: usr_04es.txt:68
+#: usr_04.txt:68
 msgid "\tTo err is human ~"
 msgstr "\tErrar es humano ~"
 
-#: usr_04es.txt:70
+#: usr_04.txt:70
 msgid ""
 "There is a pattern here: operator-motion.  You first type an operator "
 "command.\n"
@@ -198,7 +196,15 @@ msgstr ""
 "introduce una orden de movimiento «4l» o «w». De esta manera, puede\n"
 "operar sobre cualquier texto en el que se pueda desplazar."
 
-#: usr_04es.txt:77
+#: usr_04.txt:74
+msgid ""
+"==============================================================================\n"
+"*04.2*\tChanging text"
+msgstr ""
+"==============================================================================\n"
+"*04.2*\tCambiar texto"
+
+#: usr_04.txt:77
 msgid ""
 "Another operator is \"c\", change.  It acts just like the \"d\" operator, "
 "except\n"
@@ -209,7 +215,7 @@ msgstr ""
 "excepto que le deja en modo Insertar. Por ejemplo «cw» cambia una palabra.\n"
 "Es decir, elimina una palabra y le deja en modo Insertar."
 
-#: usr_04es.txt:81
+#: usr_04.txt:81
 msgid ""
 "\tTo err is human ~\n"
 "\t   ------->\n"
@@ -219,15 +225,15 @@ msgstr ""
 "\t--------->\n"
 "\t c2wEl ser<Esc>"
 
-#: usr_04es.txt:85
+#: usr_04.txt:85
 msgid "\tTo be human ~"
 msgstr "\tEl ser humano ~"
 
-#: usr_04es.txt:87
+#: usr_04.txt:87
 msgid "This \"c2wbe<Esc>\" contains these bits:"
 msgstr "Este «c2wEl ser<Esc>» contiene las siguientes partes:"
 
-#: usr_04es.txt:89
+#: usr_04.txt:89
 msgid ""
 "\tc\tthe change operator\n"
 "\t2w\tmove two words (they are deleted and Insert mode started)\n"
@@ -239,7 +245,7 @@ msgstr ""
 "\tEl ser\tinserta el siguiente texto\n"
 "\t<Esc>\tde vuelta al modo Normal"
 
-#: usr_04es.txt:94
+#: usr_04.txt:94
 msgid ""
 "If you have paid attention, you will have noticed something strange: The "
 "space\n"
@@ -264,11 +270,11 @@ msgstr ""
 "palabra no se incluye. Esta excepción data de Vi. Ya que mucha gente se ha\n"
 "acostumbrado a ella, ha permanecido con Vim."
 
-#: usr_04es.txt:104
+#: usr_04.txt:104
 msgid "MORE CHANGES"
 msgstr "MÁS CAMBIOS"
 
-#: usr_04es.txt:106
+#: usr_04.txt:106
 msgid ""
 "Like \"dd\" deletes a whole line, \"cc\" changes a whole line.  It keeps "
 "the\n"
@@ -277,7 +283,7 @@ msgstr ""
 "Del mismo modo que «dd» elimina una línea completa, «cc» la cambia. Además,\n"
 "mantiene la sangría (los espacios en blanco precedentes)."
 
-#: usr_04es.txt:109
+#: usr_04.txt:109
 msgid ""
 "Just like \"d$\" deletes until the end of the line, \"c$\" changes until the "
 "end\n"
@@ -290,11 +296,11 @@ msgstr ""
 "Es como pulsar «d$» para eliminar el texto y luego «a» para activar el modo\n"
 "Insertar y añadir más texto."
 
-#: usr_04es.txt:114
+#: usr_04.txt:114
 msgid "SHORTCUTS"
 msgstr "ACCESOS DIRECTOS"
 
-#: usr_04es.txt:116
+#: usr_04.txt:116
 msgid ""
 "Some operator-motion commands are used so often that they have been given a\n"
 "single letter command:"
@@ -302,7 +308,7 @@ msgstr ""
 "Algunas órdenes de operación-movimiento se usan tan a menudo que se les ha\n"
 "asignado una orden de una sola letra:"
 
-#: usr_04es.txt:119
+#: usr_04.txt:119
 msgid ""
 "\tx  stands for  dl  (delete character under the cursor)\n"
 "\tX  stands for  dh  (delete character left of the cursor)\n"
@@ -318,11 +324,11 @@ msgstr ""
 "\ts  equivale a  cl  (cambiar un carácter)\n"
 "\tS  equivale a  cc  (cambiar una única línea)"
 
-#: usr_04es.txt:127
+#: usr_04.txt:127
 msgid "WHERE TO PUT THE COUNT"
 msgstr "DÓNDE PONER EL CONTADOR"
 
-#: usr_04es.txt:129
+#: usr_04.txt:129
 msgid ""
 "The commands \"3dw\" and \"d3w\" delete three words.  If you want to get "
 "really\n"
@@ -339,11 +345,11 @@ msgstr ""
 "distinguir. Sin embargo, puede poner dos multiplicadores. Por ejemplo\n"
 "«3d2w» elimina dos palabras y lo repite 3 veces, un total de seis palabras."
 
-#: usr_04es.txt:136
+#: usr_04.txt:136
 msgid "REPLACING WITH ONE CHARACTER"
 msgstr "REEMPLAZAR CON UN CARÁCTER"
 
-#: usr_04es.txt:138
+#: usr_04.txt:138
 msgid ""
 "The \"r\" command is not an operator.  It waits for you to type a character, "
 "and\n"
@@ -355,7 +361,7 @@ msgstr ""
 "reemplazará el carácter bajo el cursor con él. Puedes hacer lo mismo con la\n"
 "orden «cl» o con «s», pero con «r» no tendrá que pulsar <Esc>"
 
-#: usr_04es.txt:142
+#: usr_04.txt:142
 msgid ""
 "\tthere is somerhing grong here ~\n"
 "\trT\t     rt    rw"
@@ -363,11 +369,11 @@ msgstr ""
 "\taquí hay algo tue esná mal ~\n"
 "\trA\t      rq    rt"
 
-#: usr_04es.txt:145
+#: usr_04.txt:145
 msgid "\tThere is something wrong here ~"
 msgstr "\tAquí hay algo que está mal ~"
 
-#: usr_04es.txt:147
+#: usr_04.txt:147
 msgid ""
 "Using a count with \"r\" causes that many characters to be replaced with "
 "the\n"
@@ -376,7 +382,7 @@ msgstr ""
 "Usar un multiplicador con «r» causa que se reemplacen muchos caracteres con\n"
 "el mismo carácter. Por ejemplo:"
 
-#: usr_04es.txt:150
+#: usr_04.txt:150
 msgid ""
 "\tThere is something wrong here ~\n"
 "\t\t\t   5rx"
@@ -384,11 +390,11 @@ msgstr ""
 "\tAquí hay algo que está mal ~\n"
 "\t\t\t   5rx"
 
-#: usr_04es.txt:153
+#: usr_04.txt:153
 msgid "\tThere is something xxxxx here ~"
 msgstr "\tAquí hay algo que exxxxxal ~"
 
-#: usr_04es.txt:155
+#: usr_04.txt:155
 msgid ""
 "To replace a character with a line break use \"r<Enter>\".  This deletes "
 "one\n"
@@ -403,7 +409,15 @@ msgstr ""
 "al número de caracteres eliminados: «4r<Entrar>» reemplaza cuatro caracteres\n"
 "con un salto."
 
-#: usr_04es.txt:163
+#: usr_04.txt:160
+msgid ""
+"==============================================================================\n"
+"*04.3*\tRepeating a change"
+msgstr ""
+"==============================================================================\n"
+"*04.3*\tRepetir un cambio"
+
+#: usr_04.txt:163
 msgid ""
 "The \".\" command is one of the most simple yet powerful commands in Vim.  "
 "It\n"
@@ -427,7 +441,7 @@ msgstr ""
 "cambio (en este caso «df>»). Para eliminar otra etiqueta, coloque el cursor\n"
 "sobre el < y vuelve a pulsar la orden «.»."
 
-#: usr_04es.txt:171
+#: usr_04.txt:171
 msgid ""
 "\t\t\t      To <B>generate</B> a table of <B>contents ~\n"
 "\tf<   find first <     --->\n"
@@ -445,7 +459,7 @@ msgstr ""
 "\tf<   ir al siguiente <\t\t     ------------------>\n"
 "\t.    repetir df>\t\t\t\t       -->"
 
-#: usr_04es.txt:179
+#: usr_04.txt:179
 msgid ""
 "The \".\" command works for all changes you make, except for the \"u"
 "\" (undo),\n"
@@ -454,7 +468,7 @@ msgstr ""
 "La orden «.» funciona para todos los cambios que haga excepto para la\n"
 "orden «u» (deshacer), CTRL-R, (rehacer) y todos los que comienzan con «:»."
 
-#: usr_04es.txt:182
+#: usr_04.txt:182
 msgid ""
 "Another example: You want to change the word \"four\" to \"five\".  It "
 "appears\n"
@@ -465,7 +479,7 @@ msgstr ""
 "veces en su texto. Puede hacer esto rápidamente en una secuencia de\n"
 "órdenes:"
 
-#: usr_04es.txt:186
+#: usr_04.txt:186
 msgid ""
 "\t/four<Enter>\tfind the first string \"four\"\n"
 "\tcwfive<Esc>\tchange the word to \"five\"\n"
@@ -483,7 +497,15 @@ msgstr ""
 "\t.\t\trepite el cambio\n"
 "\t\t\tetc."
 
-#: usr_04es.txt:197
+#: usr_04.txt:194
+msgid ""
+"==============================================================================\n"
+"*04.4*\tVisual mode"
+msgstr ""
+"==============================================================================\n"
+"*04.4*\tModo visual"
+
+#: usr_04.txt:197
 msgid ""
 "To delete simple items the operator-motion changes work quite well.  But "
 "often\n"
@@ -496,7 +518,7 @@ msgstr ""
 "movimiento le desplazará hasta el texto que quiere modificar.\n"
 "Es el momento de usar el modo Visual."
 
-#: usr_04es.txt:201
+#: usr_04.txt:201
 msgid ""
 "You start Visual mode by pressing \"v\".  You move the cursor over the text "
 "you\n"
@@ -509,7 +531,7 @@ msgstr ""
 "Finalmente, teclee la orden del operador.\n"
 "   Por ejemplo, para eliminar de la mitad de una palabra a la mitad de otra:"
 
-#: usr_04es.txt:206
+#: usr_04.txt:206
 msgid ""
 "\t\tThis is an examination sample of visual mode ~\n"
 "\t\t\t       ---------->\n"
@@ -519,11 +541,11 @@ msgstr ""
 "\t\t\t\t ---------->\n"
 "\t\t\t\t veehhd"
 
-#: usr_04es.txt:210
+#: usr_04.txt:210
 msgid "\t\tThis is an example of visual mode ~"
 msgstr "\t\tEsto es una muestra del modo Visual ~"
 
-#: usr_04es.txt:212
+#: usr_04.txt:212
 msgid ""
 "When doing this you don't really have to count how many times you have to\n"
 "press \"l\" to end up in the right position.  You can immediately see what "
@@ -535,7 +557,7 @@ msgstr ""
 "pulsar\n"
 "«d»."
 
-#: usr_04es.txt:216
+#: usr_04.txt:216
 msgid ""
 "If at any time you decide you don't want to do anything with the "
 "highlighted\n"
@@ -544,11 +566,11 @@ msgstr ""
 "Si en cualquier momento decide que no quiere hacer nada con el texto\n"
 "resaltado, simplemente pulse <Esc> y el modo Visual parará sin hacer nada."
 
-#: usr_04es.txt:220
+#: usr_04.txt:220
 msgid "SELECTING LINES"
 msgstr "SELECCIONAR LÍNEAS"
 
-#: usr_04es.txt:222
+#: usr_04.txt:222
 msgid ""
 "If you want to work on whole lines, use \"V\" to start Visual mode.  You "
 "will\n"
@@ -563,7 +585,7 @@ msgstr ""
 "hacia arriba o hacia abajo, la selección se extenderá a líneas completas.\n"
 "   Por ejemplo, seleccione tres líneas con «Vjj»:"
 
-#: usr_04es.txt:228
+#: usr_04.txt:228
 msgid ""
 "\t\t\t  +------------------------+\n"
 "\t\t\t  | text more text\t   |\n"
@@ -581,11 +603,11 @@ msgstr ""
 "\t\t\t  | más texto más\t   |\n"
 "\t\t\t  +------------------------+"
 
-#: usr_04es.txt:237
+#: usr_04.txt:237
 msgid "SELECTING BLOCKS"
 msgstr "SELECCIONAR BLOQUES"
 
-#: usr_04es.txt:239
+#: usr_04.txt:239
 msgid ""
 "If you want to work on a rectangular block of characters, use CTRL-V to "
 "start\n"
@@ -594,7 +616,7 @@ msgstr ""
 "Si desea trabajar en un bloque rectangular de caracteres, use CTRL-V para\n"
 "iniciar el modo Visual. Esto es muy útil si trabaja con tablas."
 
-#: usr_04es.txt:242
+#: usr_04.txt:242
 msgid ""
 "\t\tname\t\tQ1\tQ2\tQ3\n"
 "\t\tpierre\t\t123\t455\t234\n"
@@ -606,7 +628,7 @@ msgstr ""
 "\t\tjuan\t\t0\t90\t39\n"
 "\t\testéban\t\t392\t63\t334"
 
-#: usr_04es.txt:247
+#: usr_04.txt:247
 msgid ""
 "To delete the middle \"Q2\" column, move the cursor to the \"Q\" of \"Q2\".  "
 "Press\n"
@@ -627,11 +649,11 @@ msgstr ""
 "«h».\n"
 "Si ahora pulsa «d» la columna central desaparecerá."
 
-#: usr_04es.txt:254
+#: usr_04.txt:254
 msgid "GOING TO THE OTHER SIDE"
 msgstr "IR AL OTRO LADO"
 
-#: usr_04es.txt:256
+#: usr_04.txt:256
 msgid ""
 "If you have selected some text in Visual mode, and discover that you need "
 "to\n"
@@ -649,7 +671,7 @@ msgstr ""
 "otro\n"
 "lado."
 
-#: usr_04es.txt:262
+#: usr_04.txt:262
 msgid ""
 "When using blockwise selection, you have four corners.  \"o\" only takes you "
 "to\n"
@@ -661,7 +683,7 @@ msgstr ""
 "a una de las otras líneas diagonalmente. Use «O» para moverse hacia el otro\n"
 "final de la misma línea."
 
-#: usr_04es.txt:266
+#: usr_04.txt:266
 msgid ""
 "Note that \"o\" and \"O\" in Visual mode work very different from Normal "
 "mode,\n"
@@ -671,7 +693,15 @@ msgstr ""
 "cómo lo\n"
 "hacen en el modo Normal, donde abririán una nueva línea."
 
-#: usr_04es.txt:272
+#: usr_04.txt:269
+msgid ""
+"==============================================================================\n"
+"*04.5*\tMoving text"
+msgstr ""
+"==============================================================================\n"
+"*04.5*\tMover texto"
+
+#: usr_04.txt:272
 msgid ""
 "When you delete something with the \"d\", \"x\", or another command, the "
 "text is\n"
@@ -691,7 +721,7 @@ msgstr ""
 "cursor allá donde quiera poner la línea y use la orden «p». La línea se\n"
 "insertará en la línea siguiente a donde se encuentra el cursor."
 
-#: usr_04es.txt:280
+#: usr_04.txt:280
 msgid ""
 "\ta line\t\ta line\t      a line\n"
 "\tline 2\t  dd\tline 3\t  p   line 3\n"
@@ -701,7 +731,7 @@ msgstr ""
 "\tlínea 2\t   dd\tlínea 3\t   p  línea 3\n"
 "\tlínea 3\t\t\t      línea 2"
 
-#: usr_04es.txt:284
+#: usr_04.txt:284
 msgid ""
 "Because you deleted an entire line, the \"p\" command placed the text line "
 "below\n"
@@ -713,7 +743,7 @@ msgstr ""
 "ejemplo),\n"
 "la orden «px la pone justo después del cursor."
 
-#: usr_04es.txt:288
+#: usr_04.txt:288
 msgid ""
 "\tSome more boring try text to out commands. ~\n"
 "\t\t\t ---->\n"
@@ -723,7 +753,7 @@ msgstr ""
 "\t\t  ---->\n"
 "\t\t  dw"
 
-#: usr_04es.txt:292
+#: usr_04.txt:292
 msgid ""
 "\tSome more boring text to out commands. ~\n"
 "\t\t\t ------->\n"
@@ -733,15 +763,15 @@ msgstr ""
 "\t\t  ----->\n"
 "\t\t  whp"
 
-#: usr_04es.txt:296
+#: usr_04.txt:296
 msgid "\tSome more boring text to try out commands. ~"
 msgstr "\tMás de lo mismo para probar órdenes ~"
 
-#: usr_04es.txt:299
+#: usr_04.txt:299
 msgid "MORE ON PUTTING"
 msgstr "MÁS SOBRE LA ORDEN PONER"
 
-#: usr_04es.txt:301
+#: usr_04.txt:301
 msgid ""
 "The \"P\" command puts text like \"p\", but before the cursor.  When you "
 "deleted a\n"
@@ -753,14 +783,14 @@ msgstr ""
 "una línea con «dd», «P» lo pondrá de vuelta sobre el cursor. Cuando elimine\n"
 "una palabra con «dw», «P» lo pondrá antes del cursor."
 
-#: usr_04es.txt:305
+#: usr_04.txt:305
 msgid ""
 "You can repeat putting as many times as you like.  The same text will be "
 "used."
 msgstr ""
 "Puede repetir la orden tantas veces como quiera. Se usará el mismo texto."
 
-#: usr_04es.txt:307
+#: usr_04.txt:307
 msgid ""
 "You can use a count with \"p\" and \"P\".  The text will be repeated as many "
 "times\n"
@@ -772,11 +802,11 @@ msgstr ""
 "como especifique con el multiplicador. Por ejemplo, usar «dd» y luego «3p»\n"
 "pone tres copias de la misma línea eliminada."
 
-#: usr_04es.txt:312
+#: usr_04.txt:312
 msgid "SWAPPING TWO CHARACTERS"
 msgstr "INTERCAMBIAR DOS CARACTERES"
 
-#: usr_04es.txt:314
+#: usr_04.txt:314
 msgid ""
 "Frequently when you are typing, your fingers get ahead of your brain (or "
 "the\n"
@@ -796,7 +826,7 @@ msgstr ""
 "modo: «x» elimina el carácter «u» y lo coloca en un registro. «p» pone el\n"
 "texto después del cursor, justo después de la «q»."
 
-#: usr_04es.txt:321
+#: usr_04.txt:321
 msgid ""
 "\tteh     th     the ~\n"
 "\t x       p"
@@ -804,7 +834,15 @@ msgstr ""
 "\tuqe     qe     que ~\n"
 "\tx       p"
 
-#: usr_04es.txt:327
+#: usr_04.txt:324
+msgid ""
+"==============================================================================\n"
+"*04.6*\tCopying text"
+msgstr ""
+"==============================================================================\n"
+"*04.6*\tCopiar texto"
+
+#: usr_04.txt:327
 msgid ""
 "To copy text from one place to another, you could delete it, use \"u\" to "
 "undo\n"
@@ -826,7 +864,7 @@ msgstr ""
 "estaba en uso por el operador «cambiar», y la «y» estaba aún disponible.\n"
 "Llamar a este el operador «yank» hizo que fuera más fácil recordar la «y»."
 
-#: usr_04es.txt:335
+#: usr_04.txt:335
 msgid ""
 "Since \"y\" is an operator, you use \"yw\" to yank a word.  A count is "
 "possible as\n"
@@ -835,7 +873,7 @@ msgstr ""
 "Ya que «y» es un operador, se usa «yw» para copiar una palabra. Se puede usar\n"
 "un multiplicador. Para copiar dos palabras usa «y2w». Por ejemplo:"
 
-#: usr_04es.txt:338
+#: usr_04.txt:338
 msgid ""
 "\tlet sqr = LongVariable * ~\n"
 "\t\t -------------->\n"
@@ -845,7 +883,7 @@ msgstr ""
 "\t\t -------------->\n"
 "\t\t       y2w"
 
-#: usr_04es.txt:342
+#: usr_04.txt:342
 msgid ""
 "\tlet sqr = LongVariable * ~\n"
 "\t\t\t       p"
@@ -853,11 +891,11 @@ msgstr ""
 "\tlet sqr = LongVariable * ~\n"
 "\t\t\t       p"
 
-#: usr_04es.txt:345
+#: usr_04.txt:345
 msgid "\tlet sqr = LongVariable * LongVariable ~"
 msgstr "\tlet sqr = LongVariable * LongVariable ~"
 
-#: usr_04es.txt:347
+#: usr_04.txt:347
 msgid ""
 "Notice that \"yw\" includes the white space after a word.  If you don't "
 "want\n"
@@ -866,7 +904,7 @@ msgstr ""
 "Observe que «yw» incluye el espacio en blanco después de la palabra. Si no\n"
 "quiere que esto ocurra, us «ye»."
 
-#: usr_04es.txt:350
+#: usr_04.txt:350
 msgid ""
 "The \"yy\" command yanks a whole line, just like \"dd\" deletes a whole "
 "line.\n"
@@ -882,7 +920,7 @@ msgstr ""
 "«Y» funciona como «yy», copiando la línea completa. ¡Cuidado con esta\n"
 "inconsistencia! Use «y$» para copiar sólo hasta el final."
 
-#: usr_04es.txt:355
+#: usr_04.txt:355
 msgid ""
 "\ta text line   yy\ta text line\t       a text line\n"
 "\tline 2\t\t\tline 2\t\tp      line 2\n"
@@ -894,7 +932,15 @@ msgstr ""
 "\túltima línea\t\túltima línea\t       línea de texto\n"
 "\t\t\t\t\t\t       última línea"
 
-#: usr_04es.txt:363
+#: usr_04.txt:360
+msgid ""
+"==============================================================================\n"
+"*04.7*\tUsing the clipboard"
+msgstr ""
+"==============================================================================\n"
+"*04.7*\tUso del portapapeles"
+
+#: usr_04.txt:363
 msgid ""
 "If you are using the GUI version of Vim (gvim), you can find the \"Copy\" "
 "item\n"
@@ -908,7 +954,7 @@ msgstr ""
 "el menú Editar/Copiar. Así, el texto seleccionado se copia al portapapeles.\n"
 "Ahora puede pegarlo en otros programas o en el propio Vim."
 
-#: usr_04es.txt:368
+#: usr_04.txt:368
 msgid ""
 "If you have copied text to the clipboard in another application, you can "
 "paste\n"
@@ -919,7 +965,7 @@ msgstr ""
 "en Vim con el menú Editar/Pegar. Esto funciona en modo Normal y en modo\n"
 "Insertar. En modo Visual el texto seleccionado es reemplazado."
 
-#: usr_04es.txt:372
+#: usr_04.txt:372
 msgid ""
 "The \"Cut\" menu item deletes the text before it's put on the clipboard.  "
 "The\n"
@@ -934,7 +980,7 @@ msgstr ""
 "barra\n"
 "de tareas, puede encontrar estos botones allí también."
 
-#: usr_04es.txt:377
+#: usr_04.txt:377
 msgid ""
 "If you are not using the GUI, or if you don't like using a menu, you have "
 "to\n"
@@ -947,19 +993,19 @@ msgstr ""
 "«y» normal (copiar) y «p» (poner), pero antes escriba «\"*» (comillas dobles,\n"
 "asterisco). Para copiar una línea en el portapapeles: >"
 
-#: usr_04es.txt:381
+#: usr_04.txt:381
 msgid "\t\"*yy"
 msgstr "\t\"*yy"
 
-#: usr_04es.txt:383
+#: usr_04.txt:383
 msgid "To put text from the clipboard back into the text: >"
 msgstr "Para poner texto desde el portapapeles en el texto: >"
 
-#: usr_04es.txt:385
+#: usr_04.txt:385
 msgid "\t\"*p"
 msgstr "\t\"*p"
 
-#: usr_04es.txt:387
+#: usr_04.txt:387
 msgid ""
 "This only works on versions of Vim that include clipboard support.  More "
 "about\n"
@@ -969,7 +1015,15 @@ msgstr ""
 "portapapeles.\n"
 "Más sobre el portapapeles en la sección |09.3| y aquí: |clipboard|."
 
-#: usr_04es.txt:393
+#: usr_04.txt:390
+msgid ""
+"==============================================================================\n"
+"*04.8*\tText objects"
+msgstr ""
+"==============================================================================\n"
+"*04.8*\tObjetos de texto"
+
+#: usr_04.txt:393
 msgid ""
 "If the cursor is in the middle of a word and you want to delete that word, "
 "you\n"
@@ -981,7 +1035,7 @@ msgstr ""
 "desplazarse hasta su comienzo antes de que pueda hacer «dw». Hay un modo más\n"
 "sencillo de hacer esto: «daw»."
 
-#: usr_04es.txt:397
+#: usr_04.txt:397
 msgid ""
 "\tthis is some example text. ~\n"
 "\t\t       daw"
@@ -989,11 +1043,11 @@ msgstr ""
 "\testo es texto de ejemplo. ~\n"
 "\t\t daw"
 
-#: usr_04es.txt:400
+#: usr_04.txt:400
 msgid "\tthis is some text. ~"
 msgstr "\testo es de ejemplo. ~"
 
-#: usr_04es.txt:402
+#: usr_04.txt:402
 msgid ""
 "The \"d\" of \"daw\" is the delete operator.  \"aw\" is a text object.  "
 "Hint: \"aw\"\n"
@@ -1008,7 +1062,7 @@ msgstr ""
 "más precisos, el espacio después de la palabra se elimina también (el\n"
 "espacio antes de la palabra si ésta se encuentra al final de una línea)."
 
-#: usr_04es.txt:407
+#: usr_04.txt:407
 msgid ""
 "Using text objects is the third way to make changes in Vim.  We already had\n"
 "operator-motion and Visual mode.  Now we add operator-text object.\n"
@@ -1029,11 +1083,11 @@ msgstr ""
 "su totalidad. No importa en que lugar del objeto se encontraba el cursor\n"
 "antes de la orden."
 
-#: usr_04es.txt:414
+#: usr_04.txt:414
 msgid "To change a whole sentence use \"cis\".  Take this text:"
 msgstr "Para cambiar una oración completa use «cis». Suponga este texto:"
 
-#: usr_04es.txt:416
+#: usr_04.txt:416
 msgid ""
 "\tHello there.  This ~\n"
 "\tis an example.  Just ~\n"
@@ -1043,12 +1097,12 @@ msgstr ""
 "\tes un ejemplo.  Algo ~\n"
 "\tde texto. ~"
 
-#: usr_04es.txt:420
+#: usr_04.txt:420
 msgid "Move to the start of the second line, on \"is an\".  Now use \"cis\":"
 msgstr ""
 "Vaya al comienzo de la segunda línea, sobre el «es un». Ahora, use «cis»:"
 
-#: usr_04es.txt:422
+#: usr_04.txt:422
 msgid ""
 "\tHello there.    Just ~\n"
 "\tsome text. ~"
@@ -1056,7 +1110,7 @@ msgstr ""
 "\t¿Qué tal?    Algo ~\n"
 "\tde texto. ~"
 
-#: usr_04es.txt:425
+#: usr_04.txt:425
 msgid ""
 "The cursor is in between the blanks in the first line.  Now you type the "
 "new\n"
@@ -1066,7 +1120,7 @@ msgstr ""
 "nueva\n"
 "frase «Otra línea.»:"
 
-#: usr_04es.txt:428
+#: usr_04.txt:428
 msgid ""
 "\tHello there.  Another line.  Just ~\n"
 "\tsome text. ~"
@@ -1074,7 +1128,7 @@ msgstr ""
 "\t¿Qué tal?  Otra línea.  Algo ~\n"
 "\tde texto. ~"
 
-#: usr_04es.txt:431
+#: usr_04.txt:431
 msgid ""
 "\"cis\" consists of the \"c\" (change) operator and the \"is\" text object.  "
 "This\n"
@@ -1095,7 +1149,7 @@ msgstr ""
 "espacio en blanco posterior, use entonces «das». Si quiere escribir otro\n"
 "texto, el espacio puede permanecer, con lo que puedes usar «cis»."
 
-#: usr_04es.txt:438
+#: usr_04.txt:438
 msgid ""
 "You can also use text objects in Visual mode.  It will include the text "
 "object\n"
@@ -1113,12 +1167,20 @@ msgstr ""
 "frase con «as». Ahora puede repetir «as» para incluir más frases.\n"
 "Por último, use un operador para hacer algo con las frases seleccionadas."
 
-#: usr_04es.txt:444
+#: usr_04.txt:444
 msgid "You can find a long list of text objects here: |text-objects|."
 msgstr ""
 "Puede encontrar una larga lista de objetos de texto aquí: |text-objects|."
 
-#: usr_04es.txt:449
+#: usr_04.txt:446
+msgid ""
+"==============================================================================\n"
+"*04.9*\tReplace mode"
+msgstr ""
+"==============================================================================\n"
+"*04.9*\tModo reemplazar"
+
+#: usr_04.txt:449
 msgid ""
 "The \"R\" command causes Vim to enter replace mode.  In this mode, each\n"
 "character you type replaces the one under the cursor.  This continues until\n"
@@ -1131,7 +1193,7 @@ msgstr ""
 "   En este ejemplo, Ud. comienza el modo Reemplazar en la primera «t» de "
 "«texto»:"
 
-#: usr_04es.txt:454
+#: usr_04.txt:454
 msgid ""
 "\tThis is text. ~\n"
 "\t\tRinteresting.<Esc>"
@@ -1139,11 +1201,11 @@ msgstr ""
 "\tEsto es texto. ~\n"
 "\t\tRinteresante.<Esc>"
 
-#: usr_04es.txt:457
+#: usr_04.txt:457
 msgid "\tThis is interesting. ~"
 msgstr "\tEsto es interesante. ~"
 
-#: usr_04es.txt:459
+#: usr_04.txt:459
 msgid ""
 "You may have noticed that this command replaced 5 characters in the line "
 "with\n"
@@ -1155,12 +1217,12 @@ msgstr ""
 "con otros doce. La orden «R» extiende automáticamente la línea si se queda\n"
 "sin caracteres que reemplazar. Esto no ocurrirá en la siguiente línea."
 
-#: usr_04es.txt:463
+#: usr_04.txt:463
 msgid ""
 "You can switch between Insert mode and Replace mode with the <Insert> key."
 msgstr "Puede alternar el modo Insertar y Reemplazar con la tecla <Insert>."
 
-#: usr_04es.txt:465
+#: usr_04.txt:465
 msgid ""
 "When you use <BS> (backspace) to make correction, you will notice that the\n"
 "old text is put back.  Thus it works like an undo command for the last "
@@ -1171,7 +1233,15 @@ msgstr ""
 "anterior reaparece. Por lo tanto, funciona como la orden deshacer para el\n"
 "último carácter tecleado."
 
-#: usr_04es.txt:472
+#: usr_04.txt:469
+msgid ""
+"==============================================================================\n"
+"*04.10*\tConclusion"
+msgstr ""
+"==============================================================================\n"
+"*04.10*\tConclusión"
+
+#: usr_04.txt:472
 msgid ""
 "The operators, movement commands and text objects give you the possibility "
 "to\n"
@@ -1183,11 +1253,11 @@ msgstr ""
 "Ahora que sabe cómo funciona, puede usar N operadores con M\n"
 "órdenes de movimiento para hacer M * N órdenes!"
 
-#: usr_04es.txt:476
+#: usr_04.txt:476
 msgid "You can find a list of operators here: |operator|"
 msgstr "Puede usar la lista completa de operadores aquí: |operator|"
 
-#: usr_04es.txt:478
+#: usr_04.txt:478
 msgid ""
 "For example, there are many other ways to delete pieces of text.  Here are "
 "a\n"
@@ -1196,7 +1266,7 @@ msgstr ""
 "Por ejemplo, hay otras muchas maneras de eliminar porciones de texto.  Aquí\n"
 "tiene algunas de las más empleadas:"
 
-#: usr_04es.txt:481
+#: usr_04.txt:481
 msgid ""
 "x\tdelete character under the cursor (short for \"dl\")\n"
 "X\tdelete character before the cursor (short for \"dh\")\n"
@@ -1218,7 +1288,7 @@ msgstr ""
 "dG\telimina hasta el final del archivo\n"
 "dgg\telimina hasta el final del archivo"
 
-#: usr_04es.txt:491
+#: usr_04.txt:491
 msgid ""
 "If you use \"c\" instead of \"d\" they become change commands.  And with \"y"
 "\" you\n"
@@ -1227,7 +1297,7 @@ msgstr ""
 "Si usa «c» en lugar de «d»,estos se convierten en órdenes de cambio.\n"
 "Y con «y» copias el texto. Y así en adelante."
 
-#: usr_04es.txt:495
+#: usr_04.txt:495
 msgid ""
 "There are a few often used commands to make changes that didn't fit "
 "somewhere\n"
@@ -1236,7 +1306,7 @@ msgstr ""
 "Hay algunas otras órdenes que no encajan en ningún otro lugar, por lo tanto\n"
 "se explican a continuación:"
 
-#: usr_04es.txt:498
+#: usr_04.txt:498
 msgid ""
 "\t~\tchange case of the character under the cursor, and move the\n"
 "\t\tcursor to the next character.  This is not an operator (unless\n"
@@ -1250,7 +1320,7 @@ msgstr ""
 "\t\tusar con un movimiento. Funciona en modo Visual y cambia todo\n"
 "\t\tlo que está seleccionado."
 
-#: usr_04es.txt:504
+#: usr_04.txt:504
 msgid ""
 "\tI\tStart Insert mode after moving the cursor to the first\n"
 "\t\tnon-blank in the line."
@@ -1258,7 +1328,7 @@ msgstr ""
 "\tI\tInicia el modo insertar y desplaza el cursor al primer\n"
 "\t\tcarácter no vacío de la línea."
 
-#: usr_04es.txt:507
+#: usr_04.txt:507
 msgid ""
 "\tA\tStart Insert mode after moving the cursor to the end of the\n"
 "\t\tline."
@@ -1266,10 +1336,14 @@ msgstr ""
 "\tA\tInicia el modo insertar y desplaza el cursor al último\n"
 "\t\tcarácter de la línea."
 
-#: usr_04es.txt:512
+#: usr_04.txt:510
+msgid "=============================================================================="
+msgstr "=============================================================================="
+
+#: usr_04.txt:512
 msgid "Next chapter: |usr_05.txt|  Set your settings"
 msgstr "Capítulo siguiente: |usr_05.txt|  Configuración"
 
-#: usr_04es.txt:514
+#: usr_04.txt:514
 msgid "Copyright: see |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
-msgstr "Copyright: ver |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: véase |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"

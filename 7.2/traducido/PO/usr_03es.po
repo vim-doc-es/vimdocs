@@ -1,32 +1,30 @@
-# Spanish translation of Vim usr_03.txt help file
-#. extracted from usr_03es.txt
+#. extracted from usr_03.txt
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-04 13:18+0200\n"
-"PO-Revision-Date: 2009-08-07 17:01+0200\n"
-"Last-Translator: Álvaro Castro Castilla <alvaro.castro.castilla@gmail.com> \n"
+"Report-Msgid-Bugs-To: bugs@vim.org \n"
+"POT-Creation-Date: 2009-08-01 19:53+0200\n"
+"PO-Revision-Date: 2009-08-25 16:28+0200\n"
+"Last-Translator: Álvaro Castro Castilla <alvaro.castro.castilla@gmail.com>\n"
 "Language-Team: Documentación de Vim en español\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.4.0-rc2\n"
+"X-Generator: Translate Toolkit 1.3.0\n"
 
-#: usr_03es.txt:1
+#: usr_03.txt:1
 msgid "*usr_03.txt*\tFor Vim version 7.2.  Last change: 2006 Jun 21"
-msgstr "*usr_02.txt*\tPara Vim version 7.2.  Último cambio: 2006 Jun 21"
+msgstr "*usr_03.txt*\tPara Vim version 7.2.  Último cambio: 2006 Jun 21"
 
-#: usr_03es.txt:3
+#: usr_03.txt:3
 msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar"
 msgstr "\t\t    MANUAL DE USUARIO DE VIM - por Bram Moolenaar"
 
-#: usr_03es.txt:5
+#: usr_03.txt:5
 msgid "\t\t\t     Moving around"
 msgstr "\t\t\t     Movimiento"
 
-#: usr_03es.txt:8
+#: usr_03.txt:8
 msgid ""
 "Before you can insert or delete text the cursor has to be moved to the "
 "right\n"
@@ -42,7 +40,7 @@ msgstr ""
 "Este capítulo muestra cómo usar los más importantes. Puede encontrar una\n"
 "lista de estas órdenes a continuación |Q_lr|."
 
-#: usr_03es.txt:13
+#: usr_03.txt:13
 msgid ""
 "|03.1|\tWord movement\n"
 "|03.2|\tMoving to the start or end of a line\n"
@@ -57,7 +55,7 @@ msgid ""
 msgstr ""
 "|03.1|\tMovimiento sobre palabras\n"
 "|03.2|\tMoverse al principio o al final de la línea\n"
-"|03.3|\tMoverse a un carácter\n"
+"|03.3|\tMoverse a un caracter\n"
 "|03.4|\tEmparejar un paréntesis\n"
 "|03.5|\tMoverse a un línea específica\n"
 "|03.6|\tIndicar dónde estás\n"
@@ -66,19 +64,17 @@ msgstr ""
 "|03.9|\tPatrones sencillos de búsqueda\n"
 "|03.10|\tUso de marcadores o marcas"
 
-#: usr_03es.txt:24
+#: usr_03.txt:24
 msgid ""
 "     Next chapter: |usr_04.txt|  Making small changes\n"
 " Previous chapter: |usr_02.txt|  The first steps in Vim\n"
 "Table of contents: |usr_toc.txt|"
 msgstr ""
-"Capítulo siguiente: |usr_04.txt|  Hacer cambios pequeños\n"
-" Capítulo anterior: |usr_02.txt|  Primeros pasos en Vim\n"
-"        Contenidos: |usr_toc.txt|"
+"   Capítulo siguiente: |usr_04.txt|  Hacer cambios pequeños\n"
+"     Capítulo anterior: |usr_02.txt|  Primeros pasos en Vim\n"
+"Tabla de contenidos: |usr_toc.txt|"
 
-#: usr_03es.txt:28 usr_03es.txt:75 usr_03es.txt:101 usr_03es.txt:147
-#: usr_03es.txt:172 usr_03es.txt:223 usr_03es.txt:265 usr_03es.txt:320
-#: usr_03es.txt:489 usr_03es.txt:550 usr_03es.txt:648
+#: usr_03.txt:28
 msgid ""
 "==============================================================================\n"
 "*03.1*\tWord movement"
@@ -86,7 +82,7 @@ msgstr ""
 "==============================================================================\n"
 "*03.1*\tMovimiento sobre palabras"
 
-#: usr_03es.txt:31
+#: usr_03.txt:31
 msgid ""
 "To move the cursor forward one word, use the \"w\" command.  Like most Vim\n"
 "commands, you can use a numeric prefix to move past multiple words.  For\n"
@@ -96,7 +92,7 @@ msgstr ""
 "modo que la mayoría de órdenes Vim, puede usar un prefijo numérico. Por\n"
 "ejemplos, «3w» se mueve tres palabras. Esta figura muestra cómo funciona:"
 
-#: usr_03es.txt:35
+#: usr_03.txt:35
 msgid ""
 "\tThis is a line with example text ~\n"
 "\t  --->-->->----------------->\n"
@@ -106,7 +102,7 @@ msgstr ""
 "\t  --->-->--->--------------->\n"
 "\t   w  w  w    3w"
 
-#: usr_03es.txt:39
+#: usr_03.txt:39
 msgid ""
 "Notice that \"w\" moves to the start of the next word if it already is at "
 "the\n"
@@ -117,17 +113,17 @@ msgstr ""
 "encuentra al comienzo de una palabra.\n"
 "   La orden «b» le desplaza al comienzo de la palabra anterior:"
 
-#: usr_03es.txt:43
+#: usr_03.txt:43
 msgid ""
 "\tThis is a line with example text ~\n"
 "\t<----<--<-<---------<---\n"
 "\t   b   b b    2b      b"
 msgstr ""
 "\tÉsta es una línea con texto de ejemplo ~\n"
-"\t<----<--<-<---------<---\n"
+"\t<----<--<---<---------<---\n"
 "\t   b   b b    2b    b"
 
-#: usr_03es.txt:47
+#: usr_03.txt:47
 msgid ""
 "There is also the \"e\" command that moves to the next end of a word and \"ge"
 "\",\n"
@@ -136,7 +132,7 @@ msgstr ""
 "Existe también la orden «e» que le desplaza hasta el final de la siguiente\n"
 "palabra, y «ge» que le desplaza hasta el final de la palabra anterior:"
 
-#: usr_03es.txt:50
+#: usr_03.txt:50
 msgid ""
 "\tThis is a line with example text ~\n"
 "\t   <-   <--- ----->   ---->\n"
@@ -146,7 +142,7 @@ msgstr ""
 "\t   <- <--- ----->     ---->\n"
 "\t   ge  ge     e        e"
 
-#: usr_03es.txt:54
+#: usr_03.txt:54
 msgid ""
 "If you are at the last word of a line, the \"w\" command will take you to "
 "the\n"
@@ -160,7 +156,7 @@ msgstr ""
 "para moverse por un párrafo, mucho más rápido que usando «l», «b» hace lo\n"
 "mismo en la otra dirección."
 
-#: usr_03es.txt:59
+#: usr_03.txt:59
 msgid ""
 "A word ends at a non-word character, such as a \".\", \"-\" or \")\".  To "
 "change\n"
@@ -178,7 +174,7 @@ msgstr ""
 "mayúsculas para designarla. Las órdenes para desplazarse por PALABRAS están\n"
 "también en mayúsculas, como muestra la siguiente figura:"
 
-#: usr_03es.txt:66
+#: usr_03.txt:65
 msgid ""
 "\t       ge      b\t  w\t\t\t\te\n"
 "\t       <-     <-\t --->\t\t\t       --->\n"
@@ -193,7 +189,7 @@ msgstr ""
 "\t   <----- <-----\t -------------------->\t       ----->\n"
 "\t     gE      B\t\t\t W\t\t\t E"
 
-#: usr_03es.txt:72
+#: usr_03.txt:71
 msgid ""
 "With this mix of lowercase and uppercase commands, you can quickly move\n"
 "forward and backward through a paragraph."
@@ -201,7 +197,15 @@ msgstr ""
 "Con esta combinación de órdenes en mayúsculas y minúsculas, puede moverse\n"
 "rápidamente hacia atrás y hacia delante por un párrafo."
 
-#: usr_03es.txt:78
+#: usr_03.txt:74
+msgid ""
+"==============================================================================\n"
+"*03.2*\tMoving to the start or end of a line"
+msgstr ""
+"==============================================================================\n"
+"*03.2*\tMoverse al principio o al final de la línea"
+
+#: usr_03.txt:77
 msgid ""
 "The \"$\" command moves the cursor to the end of a line.  If your keyboard "
 "has\n"
@@ -210,7 +214,7 @@ msgstr ""
 "La orden «$» mueve el cursor al final de la línea. Si su teclado tiene la\n"
 "tecla <Fin>, conseguirá el mismo resultado pulsándola."
 
-#: usr_03es.txt:81
+#: usr_03.txt:80
 msgid ""
 "The \"^\" command moves to the first non-blank character of the line.  The "
 "\"0\"\n"
@@ -222,7 +226,7 @@ msgstr ""
 "orden «0» (cero) le mueve al primer carácter de la línea. La tecla <Inicio>\n"
 "hace lo mismo. En una imagen:"
 
-#: usr_03es.txt:85
+#: usr_03.txt:84
 msgid ""
 "\t\t  ^\n"
 "\t     <------------\n"
@@ -236,11 +240,11 @@ msgstr ""
 "\t<-----------------   --------------->\n"
 "\t\t0\t\t   $"
 
-#: usr_03es.txt:91
+#: usr_03.txt:90
 msgid "(the \".....\" indicates blanks here)"
 msgstr "(los «.....» aquí indican espacios)"
 
-#: usr_03es.txt:93
+#: usr_03.txt:92
 msgid ""
 "   The \"$\" command takes a count, like most movement commands.  But moving "
 "to\n"
@@ -267,7 +271,15 @@ msgstr ""
 "parte\n"
 "del número. Usar un multiplicador con «^» tampoco tiene ningún efecto."
 
-#: usr_03es.txt:104
+#: usr_03.txt:101
+msgid ""
+"==============================================================================\n"
+"*03.3*\tMoving to a character"
+msgstr ""
+"==============================================================================\n"
+"*03.3*\tMoverse a un caracter"
+
+#: usr_03.txt:104
 msgid ""
 "One of the most useful movement commands is the single-character search\n"
 "command.  The command \"fx\" searches forward in the line for the single\n"
@@ -285,7 +297,7 @@ msgstr ""
 "ir a la «h» de «humano». Ejecute la orden «fh» y el cursor se posicionará\n"
 "sobre la h:"
 
-#: usr_03es.txt:111
+#: usr_03.txt:111
 msgid ""
 "\tTo err is human.  To really foul up you need a computer. ~\n"
 "\t---------->--------------->\n"
@@ -295,7 +307,7 @@ msgstr ""
 "\t---------->--------------->\n"
 "\t    fh\t\t fy"
 
-#: usr_03es.txt:115
+#: usr_03.txt:115
 msgid ""
 "This also shows that the command \"fy\" moves to the end of the word "
 "really.\n"
@@ -307,7 +319,7 @@ msgstr ""
 "«de». Puede especificar un multiplicador; por lo tanto, puede ir a la «r»\n"
 "de «verdad» con «3fr»:"
 
-#: usr_03es.txt:119
+#: usr_03.txt:119
 msgid ""
 "\tTo err is human.  To really foul up you need a computer. ~\n"
 "\t\t  --------------------->\n"
@@ -317,11 +329,11 @@ msgstr ""
 "\t\t  --------------------->\n"
 "\t\t\t   3fl"
 
-#: usr_03es.txt:123
+#: usr_03.txt:123
 msgid "The \"F\" command searches to the left:"
 msgstr "La orden «F» busca hacia la izquierda:"
 
-#: usr_03es.txt:125
+#: usr_03.txt:125
 msgid ""
 "\tTo err is human.  To really foul up you need a computer. ~\n"
 "\t\t  <---------------------\n"
@@ -331,7 +343,7 @@ msgstr ""
 "\t\t  <---------------------\n"
 "\t\t\t    Fh"
 
-#: usr_03es.txt:129
+#: usr_03.txt:129
 msgid ""
 "The \"tx\" command works like the \"fx\" command, except it stops one "
 "character\n"
@@ -343,7 +355,7 @@ msgstr ""
 "antes del buscado. Truco: «t» viene de «To». La versión inversa de esta\n"
 "orden es «Tx»."
 
-#: usr_03es.txt:133
+#: usr_03.txt:133
 msgid ""
 "\tTo err is human.  To really foul up you need a computer. ~\n"
 "\t\t   <------------  ------------->\n"
@@ -353,7 +365,7 @@ msgstr ""
 "\t\t   <------------  ------------->\n"
 "\t\t\tTh\t\ttn"
 
-#: usr_03es.txt:137
+#: usr_03.txt:137
 msgid ""
 "These four commands can be repeated with \";\".  \",\" repeats in the other\n"
 "direction.  The cursor is never moved to another line.  Not even when the\n"
@@ -363,7 +375,7 @@ msgstr ""
 "dirección. El cursor nunca se mueve a otra línea. Ni siquiera cuando la\n"
 "frase continúa."
 
-#: usr_03es.txt:141
+#: usr_03.txt:141
 msgid ""
 "Sometimes you will start a search, only to realize that you have typed the\n"
 "wrong command.  You type \"f\" to search backward, for example, only to "
@@ -380,7 +392,15 @@ msgstr ""
 "abortada. Nota: <Esc> cancela la mayoría de las operaciones,\n"
 "no sólo búsquedas."
 
-#: usr_03es.txt:150
+#: usr_03.txt:147
+msgid ""
+"==============================================================================\n"
+"*03.4*\tMatching a parenthesis"
+msgstr ""
+"==============================================================================\n"
+"*03.4*\tEmparejar un paréntesis"
+
+#: usr_03.txt:150
 msgid ""
 "When writing a program you often end up with nested () constructs.  Then "
 "the\n"
@@ -395,7 +415,7 @@ msgstr ""
 "opuesto. Si el cursor está en un «(», le moverá hasta el «)». Si está en un\n"
 "«)» le moverá hasta el «(» correspondiente."
 
-#: usr_03es.txt:155
+#: usr_03.txt:155
 msgid ""
 "\t\t\t    %\n"
 "\t\t\t <----->\n"
@@ -409,7 +429,7 @@ msgstr ""
 "\t\t   <---------------->\n"
 "\t\t\t    %"
 
-#: usr_03es.txt:161
+#: usr_03.txt:161
 msgid ""
 "This also works for [] and {} pairs.  (This can be defined with the\n"
 "'matchpairs' option.)"
@@ -417,7 +437,7 @@ msgstr ""
 "Esto también funciona para parejas de [] y {}. (Esto se puede\n"
 "definido con la opción 'matchpairs'.) "
 
-#: usr_03es.txt:164
+#: usr_03.txt:164
 msgid ""
 "When the cursor is not on a useful character, \"%\" will search forward to "
 "find\n"
@@ -430,7 +450,7 @@ msgstr ""
 "para buscar uno. Si el cursor se encuentra al comienzo de la línea del\n"
 "ejemplo anterior, «%» buscará hacia delante hasta el primer «(»."
 
-#: usr_03es.txt:168
+#: usr_03.txt:168
 msgid ""
 "\t\tif (a == (b * c) / d) ~\n"
 "\t\t---+---------------->\n"
@@ -440,7 +460,15 @@ msgstr ""
 "\t\t---+---------------->\n"
 "\t\t\t   %"
 
-#: usr_03es.txt:175
+#: usr_03.txt:172
+msgid ""
+"==============================================================================\n"
+"*03.5*\tMoving to a specific line"
+msgstr ""
+"==============================================================================\n"
+"*03.2*\tMoverse a una línea específica"
+
+#: usr_03.txt:175
 msgid ""
 "If you are a C or C++ programmer, you are familiar with error messages such "
 "as\n"
@@ -449,11 +477,11 @@ msgstr ""
 "Si eres un programador de C o C++, estará familiarizado con los mensajes de\n"
 "error del tipo presente a continuación:"
 
-#: usr_03es.txt:178
+#: usr_03.txt:178
 msgid "\tprog.c:33: j   undeclared (first use in this function) ~"
 msgstr "\tprog.c:33: j   undeclared (first use in this function) ~"
 
-#: usr_03es.txt:180
+#: usr_03.txt:180
 msgid ""
 "This tells you that you might want to fix something on line 33.  So how do "
 "you\n"
@@ -484,7 +512,7 @@ msgstr ""
 "ir al comienzo de la línea es usar «gg». «1G» hará lo mismo, pero es una\n"
 "pizca más lento de escribir."
 
-#: usr_03es.txt:191
+#: usr_03.txt:191
 msgid ""
 "\t    |\tfirst line of a file   ^\n"
 "\t    |\ttext text text text    |\n"
@@ -508,7 +536,7 @@ msgstr ""
 "\t\ttexto texto texto texto        |\n"
 "\t\túltima línea de un archivo     V"
 
-#: usr_03es.txt:202
+#: usr_03.txt:202
 msgid ""
 "Another way to move to a line is using the \"%\" command with a count.  For\n"
 "example \"50%\" moves you to halfway the file.  \"90%\" goes to near the end."
@@ -516,7 +544,7 @@ msgstr ""
 "Otra manera de ir a una línea es con la orden «%» y un multiplicador.\n"
 "Por ejemplo «50%» le mueve a la mitad del archivo. «90%» va casi al final."
 
-#: usr_03es.txt:205
+#: usr_03.txt:205
 msgid ""
 "The previous assumes that you want to move to a line in the file, no matter "
 "if\n"
@@ -528,7 +556,7 @@ msgstr ""
 "si está visible o no. Pero ¿qué pasa si se quiere mover a una de las líneas\n"
 "que puede ver? Esta figura le muestra las tres órdenes que puede emplear:"
 
-#: usr_03es.txt:209
+#: usr_03.txt:209
 msgid ""
 "\t\t\t+---------------------------+\n"
 "\t\tH -->\t| text sample text\t    |\n"
@@ -554,15 +582,23 @@ msgstr ""
 "\t\tL -->\t| texto ejemplo texto\t    |\n"
 "\t\t\t+---------------------------+"
 
-#: usr_03es.txt:221
+#: usr_03.txt:221
 msgid "Hints: \"H\" stands for Home, \"M\" for Middle and \"L\" for Last."
 msgstr "Pista: «H» viene de «Home», «M» de «Middle» y «L» de «Last»."
 
-#: usr_03es.txt:226
+#: usr_03.txt:223
+msgid ""
+"==============================================================================\n"
+"*03.6*\tTelling where you are"
+msgstr ""
+"==============================================================================\n"
+"*03.6*\tIndicar donde estás"
+
+#: usr_03.txt:226
 msgid "To see where you are in a file, there are three ways:"
 msgstr "Para ver dónde está en un archivo, hay tres maneras:"
 
-#: usr_03es.txt:228
+#: usr_03.txt:228
 msgid ""
 "1.  Use the CTRL-G command.  You get a message like this (assuming the "
 "'ruler'\n"
@@ -571,11 +607,11 @@ msgstr ""
 "1.  Use la orden CTRL-G. Obtendrá un mensaje como este (asumiendo que la\n"
 "    opción 'ruler' está apagada):"
 
-#: usr_03es.txt:231
+#: usr_03.txt:231
 msgid "\t\"usr_03.txt\" line 233 of 650 --35%-- col 45-52 ~"
 msgstr "\t\"usr_03.txt\" line 233 of 650 --35%-- col 45-52 ~"
 
-#: usr_03es.txt:233
+#: usr_03.txt:233
 msgid ""
 "    This shows the name of the file you are editing, the line number where "
 "the\n"
@@ -599,7 +635,7 @@ msgstr ""
 "columnas,\n"
 "    y la columna en pantalla será 9."
 
-#: usr_03es.txt:241
+#: usr_03.txt:241
 msgid ""
 "2.  Set the 'number' option.  This will display a line number in front of\n"
 "    every line: >"
@@ -607,7 +643,7 @@ msgstr ""
 "2.  Activa la variable 'number'. Esto le mostrará el número de línea al\n"
 "    principio de cada línea: >"
 
-#: usr_03es.txt:244
+#: usr_03.txt:244
 msgid ""
 "\t:set number\n"
 "<\n"
@@ -617,7 +653,7 @@ msgstr ""
 "<\n"
 "    Para apagar esto de nuevo: >"
 
-#: usr_03es.txt:248
+#: usr_03.txt:248
 msgid ""
 "\t:set nonumber\n"
 "<\n"
@@ -643,7 +679,7 @@ msgstr ""
 "    valor numérico y otras de cadenas de caracteres. Verá ejemplos de esto\n"
 "    donde sean usados."
 
-#: usr_03es.txt:257
+#: usr_03.txt:257
 msgid ""
 "3.  Set the 'ruler' option.  This will display the cursor position in the\n"
 "    lower right corner of the Vim window: >"
@@ -651,11 +687,11 @@ msgstr ""
 "3.  Activa la opción 'ruler'. Esto mostrará la posición del cursor en la\n"
 "    esquina de abajo a la derecha de la ventana de Vim: >"
 
-#: usr_03es.txt:260
+#: usr_03.txt:260
 msgid "\t:set ruler"
 msgstr "\t:set ruler"
 
-#: usr_03es.txt:262
+#: usr_03.txt:262
 msgid ""
 "Using the 'ruler' option has the advantage that it doesn't take much room,\n"
 "thus there is more space for your text."
@@ -664,7 +700,15 @@ msgstr ""
 "lo\n"
 "que no quitará mucho espacio para el texto."
 
-#: usr_03es.txt:268
+#: usr_03.txt:265
+msgid ""
+"==============================================================================\n"
+"*03.7*\tScrolling around"
+msgstr ""
+"==============================================================================\n"
+"*03.7*\tDesplazar el texto"
+
+#: usr_03.txt:268
 msgid ""
 "The CTRL-U command scrolls down half a screen of text.  Think of looking\n"
 "through a viewing window at the text and moving this window up by half the\n"
@@ -685,7 +729,7 @@ msgstr ""
 "   La orden CTRL-D mueve la ventana de visualización media pantalla hacia\n"
 "abajo, con lo que desplaza el texto hacia arriba media pantalla."
 
-#: usr_03es.txt:276
+#: usr_03.txt:276
 msgid ""
 "\t\t\t\t       +----------------+\n"
 "\t\t\t\t       | some text\t|\n"
@@ -723,7 +767,7 @@ msgstr ""
 "\t\t\t\t       | ejemplo\t|\n"
 "\t\t\t\t       +----------------+"
 
-#: usr_03es.txt:294
+#: usr_03.txt:294
 msgid ""
 "To scroll one line at a time use CTRL-E (scroll up) and CTRL-Y (scroll "
 "down).\n"
@@ -737,7 +781,7 @@ msgstr ""
 "compatible\n"
 "con MS-Windows CTRL-Y rehará un cambio en lugar de desplazar el texto.)"
 
-#: usr_03es.txt:298
+#: usr_03.txt:298
 msgid ""
 "To scroll forward by a whole screen (except for two lines) use CTRL-F.  The\n"
 "other way is backward, CTRL-B is the command to use.  Fortunately CTRL-F is\n"
@@ -747,7 +791,7 @@ msgstr ""
 "manera es hacia atrás, y se usa CTRL-B. Afortunadamente CTRL-F es Forward y\n"
 "CTRL-B es Backward, lo cuál lo hace fácil de recordar si sabe algo de inglés."
 
-#: usr_03es.txt:302
+#: usr_03.txt:302
 msgid ""
 "A common issue is that after moving down many lines with \"j\" your cursor "
 "is at\n"
@@ -761,7 +805,7 @@ msgstr ""
 "el\n"
 "contexto alrededor del cursor, pulsa la orden «zz»."
 
-#: usr_03es.txt:306
+#: usr_03.txt:306
 msgid ""
 "\t+------------------+\t\t +------------------+\n"
 "\t| some text\t   |\t\t | some text\t    |\n"
@@ -783,7 +827,7 @@ msgstr ""
 "\t| línea con el cursor |\t\t | un texto\t       |\n"
 "\t+---------------------+\t\t +---------------------+"
 
-#: usr_03es.txt:316
+#: usr_03.txt:316
 msgid ""
 "The \"zt\" command puts the cursor line at the top, \"zb\" at the bottom.  "
 "There\n"
@@ -796,7 +840,15 @@ msgstr ""
 "Para mantener siempre contexto alrededor del cursor, use la opción "
 "'scrolloff'."
 
-#: usr_03es.txt:323
+#: usr_03.txt:320
+msgid ""
+"==============================================================================\n"
+"*03.8*\tSimple searches"
+msgstr ""
+"==============================================================================\n"
+"*03.8*\tBúsquedas simples"
+
+#: usr_03.txt:323
 msgid ""
 "To search for a string, use the \"/string\" command.  To find the word "
 "include,\n"
@@ -805,11 +857,11 @@ msgstr ""
 "Para buscar una cadena, use la orden «/cadena». Para encontrar la palabra\n"
 "«include», por ejemplo, use la orden: >"
 
-#: usr_03es.txt:326
+#: usr_03.txt:326
 msgid "\t/include"
 msgstr "\t/include"
 
-#: usr_03es.txt:328
+#: usr_03.txt:328
 msgid ""
 "You will notice that when you type the \"/\" the cursor jumps to the last "
 "line\n"
@@ -826,7 +878,7 @@ msgstr ""
 "las teclas de cursor cuando sea necesario.\n"
 "   Presione <Intro> para ejecutar la orden."
 
-#: usr_03es.txt:334
+#: usr_03.txt:334
 msgid ""
 "\tNote:\n"
 "\tThe characters .*[]^%/\\?~$ have special meanings.  If you want to use\n"
@@ -836,7 +888,7 @@ msgstr ""
 "\tLos caracteres .*[]^%/\\?~$ tienen significados especiales. Si quiere\n"
 "        usarlos en una búsqueda tiene que poner \\ delante de ellos."
 
-#: usr_03es.txt:338
+#: usr_03.txt:338
 msgid ""
 "To find the next occurrence of the same string use the \"n\" command.  Use "
 "this\n"
@@ -846,11 +898,11 @@ msgstr ""
 "el\n"
 "primer #include después del cursor: >"
 
-#: usr_03es.txt:341
+#: usr_03.txt:341
 msgid "\t/#include"
 msgstr "\t/#include"
 
-#: usr_03es.txt:343
+#: usr_03.txt:343
 msgid ""
 "And then type \"n\" several times.  You will move to each #include in the "
 "text.\n"
@@ -862,15 +914,15 @@ msgstr ""
 "también usar un multiplicador si sabe qué cadenas coincidentes quiere.\n"
 "Por lo tanto «3n» va a la tercera. No se puede usar con «/»."
 
-#: usr_03es.txt:347
+#: usr_03.txt:347
 msgid "The \"?\" command works like \"/\" but searches backwards: >"
 msgstr "La orden «?» funciona como «/» pero busca hacia atrás: >"
 
-#: usr_03es.txt:349
+#: usr_03.txt:349
 msgid "\t?word"
 msgstr "\t?word"
 
-#: usr_03es.txt:351
+#: usr_03.txt:351
 msgid ""
 "The \"N\" command repeats the last search the opposite direction.  Thus "
 "using\n"
@@ -883,11 +935,11 @@ msgstr ""
 "usar «N» después de una orden «/» busca hacia atrás, usar «N» tras «?» busca\n"
 "hacia delante."
 
-#: usr_03es.txt:356
+#: usr_03.txt:356
 msgid "IGNORING CASE"
 msgstr "IGNORAR MAYÚSCULAS/MINÚSCULAS"
 
-#: usr_03es.txt:358
+#: usr_03.txt:358
 msgid ""
 "Normally you have to type exactly what you want to find.  If you don't care\n"
 "about upper or lowercase in a word, set the 'ignorecase' option: >"
@@ -897,11 +949,11 @@ msgstr ""
 "importa si los caracteres están en mayúscula/minúscula, active 'ignorecase': "
 ">"
 
-#: usr_03es.txt:361
+#: usr_03.txt:361
 msgid "\t:set ignorecase"
 msgstr "\t:set ignorecase"
 
-#: usr_03es.txt:363
+#: usr_03.txt:363
 msgid ""
 "If you now search for \"word\", it will also match \"Word\" and \"WORD\".  "
 "To match\n"
@@ -910,19 +962,19 @@ msgstr ""
 "Si ahora busca «palabra», también le identificará «Palabra» y «PALABRA». Para\n"
 "concordar con mayúsculas y minúsculas de nuevo: >"
 
-#: usr_03es.txt:366
+#: usr_03.txt:366
 msgid "\t:set noignorecase"
 msgstr "\t:set noignorecase"
 
-#: usr_03es.txt:369
+#: usr_03.txt:369
 msgid "HISTORY"
-msgstr "HISTORIA"
+msgstr "HISTÓRICO"
 
-#: usr_03es.txt:371
+#: usr_03.txt:371
 msgid "Suppose you do three searches: >"
 msgstr "Suponga que realiza tres búsquedas: >"
 
-#: usr_03es.txt:373
+#: usr_03.txt:373
 msgid ""
 "\t/one\n"
 "\t/two\n"
@@ -932,7 +984,7 @@ msgstr ""
 "\t/dos\n"
 "\t/tres"
 
-#: usr_03es.txt:377
+#: usr_03.txt:377
 msgid ""
 "Now let's start searching by typing a simple \"/\" without pressing "
 "<Enter>.  If\n"
@@ -947,14 +999,13 @@ msgstr ""
 "Ahora comience a buscar tecleando un simple «/» sin presionar <Intro>. Si\n"
 "presiona <Arriba> (la tecla de cursor), Vim introduce «tres» en la línea de\n"
 "órdenes. Presionar <Intro> en este punto busca «tres». Si no pulsa\n"
-"<Intro> y presiona <Arriba>, Vim cambia el texto a «/dos». Si pulsa de "
-"nuevo\n"
+"<Intro> y presiona <Arriba>, Vim cambia el texto a «/dos». Si pulsa de nuevo\n"
 "<Arriba>, verá «/uno».\n"
 "   Puede usar también la tecla de cursor <Abajo> para moverse por el "
 "histórico\n"
 "de órdenes de búsqueda en la otra dirección."
 
-#: usr_03es.txt:385
+#: usr_03.txt:385
 msgid ""
 "If you know what a previously used pattern starts with, and you want to use "
 "it\n"
@@ -966,7 +1017,7 @@ msgstr ""
 "nuevo, introduzca ese carácter antes de presionar <Arriba>. En el ejemplo\n"
 "anterior, teclea «/u<Arriba>» y Vim pondrá «/uno» en la línea de órdenes."
 
-#: usr_03es.txt:389
+#: usr_03.txt:389
 msgid ""
 "The commands starting with \":\" also have a history.  That allows you to "
 "recall\n"
@@ -976,11 +1027,11 @@ msgstr ""
 "ayuda a reutilizar órdenes que ha usado antes. Estos dos históricos\n"
 "son independientes."
 
-#: usr_03es.txt:393
+#: usr_03.txt:393
 msgid "SEARCHING FOR A WORD IN THE TEXT"
 msgstr "BUSCAR UNA PALABRA EN EL TEXTO"
 
-#: usr_03es.txt:395
+#: usr_03.txt:395
 msgid ""
 "Suppose you see the word \"TheLongFunctionName\" in the text and you want "
 "to\n"
@@ -1006,11 +1057,11 @@ msgstr ""
 "   La orden «#x hace lo mismo en la otra dirección. Puede atribuirle un\n"
 "multiplicador: «3*» busca la tercera ocurrencia de la palabra bajo el cursor."
 
-#: usr_03es.txt:405
+#: usr_03.txt:405
 msgid "SEARCHING FOR WHOLE WORDS"
 msgstr "BUSCAR PALABRAS COMPLETAS"
 
-#: usr_03es.txt:407
+#: usr_03.txt:407
 msgid ""
 "If you type \"/the\" it will also match \"there\".  To only find words that "
 "end\n"
@@ -1020,11 +1071,11 @@ msgstr ""
 "que\n"
 "terminen en «el», use: >"
 
-#: usr_03es.txt:410
+#: usr_03.txt:410
 msgid "\t/the\\>"
 msgstr "\t/el\\>"
 
-#: usr_03es.txt:412
+#: usr_03.txt:412
 msgid ""
 "The \"\\>\" item is a special marker that only matches at the end of a "
 "word.\n"
@@ -1037,11 +1088,11 @@ msgstr ""
 "palabra. De igual modo, «\\<» identifica el comienzo de una palabra. Por lo\n"
 "tanto para buscar únicamente la palabra completa: >"
 
-#: usr_03es.txt:416
+#: usr_03.txt:416
 msgid "\t/\\<the\\>"
 msgstr "\t/\\<el\\>"
 
-#: usr_03es.txt:418
+#: usr_03.txt:418
 msgid ""
 "This does not match \"there\" or \"soothe\".  Notice that the \"*\" and \"#"
 "\" commands\n"
@@ -1054,11 +1105,11 @@ msgstr ""
 "únicamente\n"
 "palabras completas (puede usar «g*» y «g#» para concordancias parciales)."
 
-#: usr_03es.txt:423
+#: usr_03.txt:423
 msgid "HIGHLIGHTING MATCHES"
-msgstr "DESTACAR COINCIDENCIAS"
+msgstr "RESALTAR COINCIDENCIAS"
 
-#: usr_03es.txt:425
+#: usr_03.txt:425
 msgid ""
 "While editing a program you see a variable called \"nr\".  You want to "
 "check\n"
@@ -1073,11 +1124,11 @@ msgstr ""
 "ir de cadena en cadena.\n"
 "   Pero hay otro modo.  Teclee la siguiente orden: >"
 
-#: usr_03es.txt:430
+#: usr_03.txt:430
 msgid "\t:set hlsearch"
 msgstr "\t:set hlsearch"
 
-#: usr_03es.txt:432
+#: usr_03.txt:432
 msgid ""
 "If you now search for \"nr\", Vim will highlight all matches.  That is a "
 "very\n"
@@ -1090,11 +1141,11 @@ msgstr ""
 "«n».\n"
 "   Para desactivarlo: >"
 
-#: usr_03es.txt:436
+#: usr_03.txt:436
 msgid "\t:set nohlsearch"
 msgstr "\t:set nohlsearch"
 
-#: usr_03es.txt:438
+#: usr_03.txt:438
 msgid ""
 "Then you need to switch it on again if you want to use it for the next "
 "search\n"
@@ -1103,11 +1154,11 @@ msgstr ""
 "Necesita activarlo de nuevo si quiere usarlo para la siguiente orden de\n"
 "búsqueda. Si sólo quiere que desaparezca, use: >"
 
-#: usr_03es.txt:441
+#: usr_03.txt:441
 msgid "\t:nohlsearch"
 msgstr "\t:nohlsearch"
 
-#: usr_03es.txt:443
+#: usr_03.txt:443
 msgid ""
 "This doesn't reset the option.  Instead, it disables the highlighting.  As\n"
 "soon as you execute a search command, the highlighting will be used again.\n"
@@ -1118,11 +1169,11 @@ msgstr ""
 "con\n"
 "las órdenes «n» y «N»."
 
-#: usr_03es.txt:448
+#: usr_03.txt:448
 msgid "TUNING SEARCHES"
 msgstr "OPCIONES DE BÚSQUEDAS"
 
-#: usr_03es.txt:450
+#: usr_03.txt:450
 msgid ""
 "There are a few options that change how searching works.  These are the\n"
 "essential ones:\n"
@@ -1135,7 +1186,7 @@ msgstr ""
 ">\n"
 "\t:set incsearch"
 
-#: usr_03es.txt:453
+#: usr_03.txt:455
 msgid ""
 "This makes Vim display the match for the string while you are still typing "
 "it.\n"
@@ -1152,7 +1203,7 @@ msgstr ""
 ">\n"
 "\t:set nowrapscan"
 
-#: usr_03es.txt:459
+#: usr_03.txt:461
 msgid ""
 "This stops the search at the end of the file.  Or, when you are searching\n"
 "backwards, at the start of the file.  The 'wrapscan' option is on by "
@@ -1164,11 +1215,11 @@ msgstr ""
 "comienzo del archivo. La opción 'wrapscan' se activa por omisión, por lo\n"
 "que buscará dando la vuelta al texto."
 
-#: usr_03es.txt:464
+#: usr_03.txt:466
 msgid "INTERMEZZO"
 msgstr "INTERMEZZO"
 
-#: usr_03es.txt:466
+#: usr_03.txt:468
 msgid ""
 "If you like one of the options mentioned before, and set it each time you "
 "use\n"
@@ -1182,19 +1233,19 @@ msgstr ""
 "   Edite el archivo, como se describe en |not-compatible|. Puede usar la\n"
 "siguiente orden para ver dónde se encuentra: >"
 
-#: usr_03es.txt:471
+#: usr_03.txt:473
 msgid "\t:scriptnames"
 msgstr "\t:scriptnames"
 
-#: usr_03es.txt:473
+#: usr_03.txt:475
 msgid "Edit the file, for example with: >"
 msgstr "Edite el archivo, por ejemplo con: >"
 
-#: usr_03es.txt:475
+#: usr_03.txt:477
 msgid "\t:edit ~/.vimrc"
 msgstr "\t:edit ~/.vimrc"
 
-#: usr_03es.txt:477
+#: usr_03.txt:479
 msgid ""
 "Then add a line with the command to set the option, just like you typed it "
 "in\n"
@@ -1204,11 +1255,11 @@ msgstr ""
 "que\n"
 "lo introdujo en Vim. Por ejemplo: >"
 
-#: usr_03es.txt:480
+#: usr_03.txt:482
 msgid "\tGo:set hlsearch<Esc>"
 msgstr "\tGo:set hlsearch<Esc>"
 
-#: usr_03es.txt:482
+#: usr_03.txt:484
 msgid ""
 "\"G\" moves to the end of the file.  \"o\" starts a new line, where you type "
 "the\n"
@@ -1217,15 +1268,23 @@ msgstr ""
 "«G» le lleva al final del archivo. «o» comienza una nueva línea donde tecleó\n"
 "la orden «:set». Salga del modo insertar con <Esc>. Guarde el archivo. >"
 
-#: usr_03es.txt:485
+#: usr_03.txt:487
 msgid "\tZZ"
 msgstr "\tZZ"
 
-#: usr_03es.txt:487
+#: usr_03.txt:489
 msgid "If you now start Vim again, the 'hlsearch' option will already be set."
 msgstr "Si reinicia ahora Vim, la opción 'hlsearch' se activará siempre."
 
-#: usr_03es.txt:492
+#: usr_03.txt:491
+msgid ""
+"==============================================================================\n"
+"*03.9*\tSimple search patterns"
+msgstr ""
+"==============================================================================\n"
+"*03.9*\tPatrones sencillos de búsqueda"
+
+#: usr_03.txt:494
 msgid ""
 "The Vim editor uses regular expressions to specify what to search for.\n"
 "Regular expressions are an extremely powerful and compact way to specify a\n"
@@ -1244,11 +1303,11 @@ msgstr ""
 "Encontrará más sobre patrones de búsqueda y órdenes en el capítulo\n"
 "27 |usr_27.txt|. Puede encontrar una explicación completa en: |pattern|."
 
-#: usr_03es.txt:501
+#: usr_03.txt:503
 msgid "BEGINNING AND END OF A LINE"
 msgstr "COMIENZO Y FINAL DE LÍNEA"
 
-#: usr_03es.txt:503
+#: usr_03.txt:505
 msgid ""
 "The ^ character matches the beginning of a line.  On an English-US keyboard\n"
 "you find it above the 6.  The pattern \"include\" matches the word include\n"
@@ -1268,13 +1327,13 @@ msgstr ""
 "concuerda\n"
 "la palabra «era» sólo si esta se encuentra al final de una línea."
 
-#: usr_03es.txt:510
+#: usr_03.txt:512
 msgid ""
 "Let's mark the places where \"the\" matches in this example line with \"x\"s:"
 msgstr ""
 "Vamos a marcar los lugares donde «que» concuerda con esta línea con «x»s:"
 
-#: usr_03es.txt:512
+#: usr_03.txt:514
 msgid ""
 "\tthe solder holding one of the chips melted and the ~\n"
 "\txxx\t\t\t  xxx\t\t       xxx"
@@ -1282,11 +1341,11 @@ msgstr ""
 "\tque este sobredicho hidalgo, los ratos que estaba ocioso (que ~\n"
 "\txxx\t\t\t  xxx\t\t       xxx"
 
-#: usr_03es.txt:515
+#: usr_03.txt:517
 msgid "Using \"/the$\" we find this match:"
 msgstr "Usando «/que$» se produce la siguiente concordancia:"
 
-#: usr_03es.txt:517
+#: usr_03.txt:519
 msgid ""
 "\tthe solder holding one of the chips melted and the ~\n"
 "\t\t\t\t\t\t       xxx"
@@ -1294,7 +1353,7 @@ msgstr ""
 "\tque este sobredicho hidalgo, los ratos que estaba ocioso (que~\n"
 "\t\t\t\t\t\t       xxx"
 
-#: usr_03es.txt:520
+#: usr_03.txt:522
 msgid ""
 "And with \"/^the\" we find this one:\n"
 "\tthe solder holding one of the chips melted and the ~\n"
@@ -1304,7 +1363,7 @@ msgstr ""
 "\tque este sobredicho hidalgo, los ratos que estaba ocioso (que ~\n"
 "\txxx"
 
-#: usr_03es.txt:524
+#: usr_03.txt:526
 msgid ""
 "You can try searching with \"/^the$\", it will only match a single line\n"
 "consisting of \"the\".  White space does matter here, thus if a line "
@@ -1315,11 +1374,11 @@ msgstr ""
 "línea consistente en «que». El espacio en blanco se considera, por lo que si\n"
 "contiene un espacio tras la palabra, como «que», el patrón no coincide."
 
-#: usr_03es.txt:529
+#: usr_03.txt:531
 msgid "MATCHING ANY SINGLE CHARACTER"
-msgstr "CONCORDAR CUALQUIER CARÁCTER"
+msgstr "EMPAREJAR CUALQUIER CARACTER"
 
-#: usr_03es.txt:531
+#: usr_03.txt:533
 msgid ""
 "The . (dot) character matches any existing character.  For example, the\n"
 "pattern \"c.m\" matches a string whose first character is a c, whose second\n"
@@ -1330,7 +1389,7 @@ msgstr ""
 "patrón «a.i» se identifica con cadenas cuyo primer carácter es una «a», su\n"
 "segundo es cualquiera, y su tercero es el carácter «i»:"
 
-#: usr_03es.txt:535
+#: usr_03.txt:537
 msgid ""
 "\tWe use a computer that became the cummin winter. ~\n"
 "\t\t xxx\t\t xxx\t  xxx"
@@ -1338,11 +1397,11 @@ msgstr ""
 "\t...afición y gusto, que olvidó casi de todo punto el ejercicio ~\n"
 "\t\t xxx\t\t xxx\t  xxx"
 
-#: usr_03es.txt:539
+#: usr_03.txt:541
 msgid "MATCHING SPECIAL CHARACTERS"
 msgstr "CONCORDAR CARACTERES ESPECIALES"
 
-#: usr_03es.txt:541
+#: usr_03.txt:543
 msgid ""
 "If you really want to match a dot, you must avoid its special meaning by\n"
 "putting a backslash before it.\n"
@@ -1353,7 +1412,7 @@ msgstr ""
 "poniendo antes una barra invertida.\n"
 "   Si busca «an.», obtendría las siguientes coincidencias:"
 
-#: usr_03es.txt:545
+#: usr_03.txt:547
 msgid ""
 "\tWe use a computer that became the cummin winter. ~\n"
 "\t\t      xxxx\t\t\t    xxxx"
@@ -1361,11 +1420,19 @@ msgstr ""
 "\t...tan altas doncellas, como vuestras presencias demuestran.~\n"
 "\t\t      xxxx\t\t\t    xxxx"
 
-#: usr_03es.txt:548
+#: usr_03.txt:550
 msgid "Searching for \"ter\\.\" only finds the second match."
 msgstr "Buscar «an\\.» te daría sólo el segundo."
 
-#: usr_03es.txt:553
+#: usr_03.txt:552
+msgid ""
+"==============================================================================\n"
+"*03.10*\tUsing marks"
+msgstr ""
+"==============================================================================\n"
+"*03.10*\tUso de marcadores o marcas"
+
+#: usr_03.txt:555
 msgid ""
 "When you make a jump to a position with the \"G\" command, Vim remembers "
 "the\n"
@@ -1377,11 +1444,11 @@ msgstr ""
 "posición antes de el salto. Esta posición se llama marca o marcador. Para\n"
 "volver al punto anterior del que te encuentras, use la siguiente orden: >"
 
-#: usr_03es.txt:557
+#: usr_03.txt:559
 msgid "\t``"
 msgstr "\t``"
 
-#: usr_03es.txt:559
+#: usr_03.txt:561
 msgid ""
 "This ` is a backtick or open single-quote character.\n"
 "   If you use the same command a second time you will jump back again.  "
@@ -1395,7 +1462,7 @@ msgstr ""
 "porque la orden «`» es un salto en si mismo, y la posición anterior al\n"
 "salto también se registra."
 
-#: usr_03es.txt:564
+#: usr_03.txt:566
 msgid ""
 "Generally, every time you do a command that can move the cursor further "
 "than\n"
@@ -1418,7 +1485,7 @@ msgstr ""
 "   Tampoco «j» ni «k» se consideran un salto. Incluso cuando usa un\n"
 "multiplicador para hacer que se mueva el cursor muy lejos."
 
-#: usr_03es.txt:571
+#: usr_03.txt:573
 msgid ""
 "The `` command jumps back and forth, between two points.  The CTRL-O "
 "command\n"
@@ -1435,7 +1502,7 @@ msgstr ""
 "en\n"
 "el teclado). Observe esta secuencia de órdenes: >"
 
-#: usr_03es.txt:576
+#: usr_03.txt:578
 msgid ""
 "\t33G\n"
 "\t/^The\n"
@@ -1445,7 +1512,7 @@ msgstr ""
 "\t/^El\n"
 "\tCTRL-O"
 
-#: usr_03es.txt:580
+#: usr_03.txt:582
 msgid ""
 "You first jump to line 33, then search for a line that starts with \"The\".\n"
 "Then with CTRL-O you jump back to line 33.  Another CTRL-O takes you back "
@@ -1458,7 +1525,7 @@ msgstr ""
 "comenzó. Si ahora usa CTRL-I, volverá a la línea 33. Con otro\n"
 "CTRL-I vuelve al «El» identificado."
 
-#: usr_03es.txt:586
+#: usr_03.txt:588
 msgid ""
 "\t     |\texample text   ^\t     |\n"
 "\t33G  |\texample text   |  CTRL-O     | CTRL-I\n"
@@ -1478,7 +1545,7 @@ msgstr ""
 "\t     V\tAquí estás            |\t       V\n"
 "\t\ttexto de ejemplo"
 
-#: usr_03es.txt:595
+#: usr_03.txt:597
 msgid ""
 "\tNote:\n"
 "\tCTRL-I is the same as <Tab>."
@@ -1486,7 +1553,7 @@ msgstr ""
 "\tNota:\n"
 "\tCTRL-I hace lo mismo que <Tab>."
 
-#: usr_03es.txt:598
+#: usr_03.txt:600
 msgid ""
 "The \":jumps\" command gives a list of positions you jumped to.  The entry "
 "which\n"
@@ -1495,11 +1562,11 @@ msgstr ""
 "La orden «:jumps» le da una lista de posiciones a las que ha saltado. La\n"
 "última entrada que ha usado está marcada con un «>»."
 
-#: usr_03es.txt:602
+#: usr_03.txt:604
 msgid "NAMED MARKS\t\t\t\t\t\t\t*bookmark*"
 msgstr "MARCADORES\t\t\t\t\t\t\t*bookmark*"
 
-#: usr_03es.txt:604
+#: usr_03.txt:606
 msgid ""
 "Vim enables you to place your own marks in the text.  The command \"ma\" "
 "marks\n"
@@ -1521,7 +1588,7 @@ msgstr ""
 ">\n"
 "\t`a"
 
-#: usr_03es.txt:612
+#: usr_03.txt:614
 msgid ""
 "The command 'mark (single quotation mark, or apostrophe) moves you to the\n"
 "beginning of the line containing the mark.  This differs from the `mark\n"
@@ -1533,7 +1600,7 @@ msgstr ""
 "le\n"
 "desplaza a la columna donde se hizo la marca."
 
-#: usr_03es.txt:616
+#: usr_03.txt:618
 msgid ""
 "The marks can be very useful when working on two related parts in a file.\n"
 "Suppose you have some text near the start of the file you need to look at,\n"
@@ -1546,21 +1613,21 @@ msgstr ""
 "necesitas mirar mientras trabaja en otra parte.\n"
 "   Vaya al texto del comienzo y ponga un marcador «s» (start) allí: >"
 
-#: usr_03es.txt:621
+#: usr_03.txt:623
 msgid "\tms"
 msgstr "\tms"
 
-#: usr_03es.txt:623
+#: usr_03.txt:625
 msgid ""
 "Then move to the text you want to work on and put the e (end) mark there: >"
 msgstr ""
 "Para ir al texto sobre el que desea trabajar ponga la marca «e» (end) allí: >"
 
-#: usr_03es.txt:625
+#: usr_03.txt:627
 msgid "\tme"
 msgstr "\tme"
 
-#: usr_03es.txt:627
+#: usr_03.txt:629
 msgid ""
 "Now you can move around, and when you want to look at the start of the "
 "file,\n"
@@ -1569,11 +1636,11 @@ msgstr ""
 "Puede ahora moverse por el archivo, y cuando quiera mirar el comienzo del\n"
 "archivo, use esto para saltar a ese punto: >"
 
-#: usr_03es.txt:630
+#: usr_03.txt:632
 msgid "\t's"
 msgstr "\t's"
 
-#: usr_03es.txt:632
+#: usr_03.txt:634
 msgid ""
 "Then you can use '' to jump back to where you were, or 'e to jump to the "
 "text\n"
@@ -1587,19 +1654,19 @@ msgstr ""
 "   No hay nada especial en usar s para el comienzo o e para el final, son\n"
 "simplemente fáciles de recordar."
 
-#: usr_03es.txt:637
+#: usr_03.txt:639
 msgid "You can use this command to get a list of marks: >"
 msgstr "Puedes usar esta orden para obtener una lista de marcadores: >"
 
-#: usr_03es.txt:639
+#: usr_03.txt:641
 msgid "\t:marks"
 msgstr "\t:marks"
 
-#: usr_03es.txt:641
+#: usr_03.txt:643
 msgid "You will notice a few special marks.  These include:"
 msgstr "Verá unos cuantos marcadores especiales. Entre ellos:"
 
-#: usr_03es.txt:643
+#: usr_03.txt:645
 msgid ""
 "\t'\tThe cursor position before doing a jump\n"
 "\t\"\tThe cursor position when last editing the file\n"
@@ -1611,10 +1678,14 @@ msgstr ""
 "\t[\tComienzo del último cambio\n"
 "\t]\tFinal del último cambio"
 
-#: usr_03es.txt:650
+#: usr_03.txt:650
+msgid "=============================================================================="
+msgstr "=============================================================================="
+
+#: usr_03.txt:652
 msgid "Next chapter: |usr_04.txt|  Making small changes"
 msgstr "Capítulo siguiente: |usr_04.txt|  Hacer cambios pequeños"
 
-#: usr_03es.txt:652
+#: usr_03.txt:654
 msgid "Copyright: see |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
-msgstr "Copyright: ver |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: véase |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"

@@ -8,15 +8,15 @@ Mostrar dos archivos diferentes uno encima del otro. Mirar dos puntos del
 mismo archivo a la vez. Ver las diferencias entre un archivo y otro
 poniéndolos uno al lado del otro. Todo esto es posible dividiendo en ventanas.
 
-|08.1|  Dividir una ventana
-|08.2|  Dividir una ventana con otro archivo
-|08.3|  Tamaño de ventana
-|08.4|  Divisiones verticales
-|08.5|  Mover ventanas
-|08.6|  Comandos sobre todas las ventanas
-|08.7|  Ver las diferencias con vimdiff
-|08.8|  Varios
-|08.9|  Pestañas
+|08.1|	Dividir una ventana
+|08.2|	Dividir una ventana con otro archivo
+|08.3|	Tamaño de ventana
+|08.4|	Divisiones verticales
+|08.5|	Mover ventanas
+|08.6|	Órdenes sobre todas las ventanas
+|08.7|	Ver las diferencias con «vimdiff»
+|08.8|	Varios
+|08.9|	Pestañas
 
  Capítulo siguiente: |usr_09.txt|  Uso de la GUI
   Capítulo anterior: |usr_07.txt|  Editar más de un archivo
@@ -77,6 +77,9 @@ Esto cierra todas las ventanas, excepto la actual. Si cualquiera de las
 otras ventanas tiene cambios, obtendrá un mensaje de error y esa ventana no
 se cerrará.
 
+==============================================================================
+*08.2*	Dividir una ventana con otro archivo
+
 La siguiente orden abre una segunda ventana y comienza la edición de un
 archivo:
 >
@@ -101,6 +104,9 @@ Para abrir una ventana en un archivo nuevo y vacío, use lo siguiente: >
 
 Puede repetir las órdenes «:split» y «:new» para crear tantas ventanas como
 quiera.
+
+==============================================================================
+*08.3*	Tamaño de ventana
 
 La orden «:split» puede recibir un argumento numérico. Si se especifica,
 este será la altura de la nueva ventana. Por ejemplo, el siguiente abre una
@@ -148,6 +154,9 @@ La opción 'winheight' se puede ajustar a una altura mínima de ventana y
 'winminheight' para un ancho mínimo estricto.
    La opción 'equalalways', cuando está activa, hace que Vim equilibre el
 tamaño de las ventanas cuando éstas se cierran o se abren nuevas.
+
+==============================================================================
+*08.4*	Divisiones verticales
 
 La orden «:split» crea una nueva ventana sobre la actual. Para hacer que
 una ventana aparezca en el lateral izquierda, use: >
@@ -198,6 +207,9 @@ por ellas:
 Se habrá dado cuenta de que son las mismas teclas empleadas para mover el
 cursor. También puede usar las teclas de flechas si lo desea.
    Más órdenes para moverse a otras ventanas: |Q_wi|.
+
+==============================================================================
+*08.5*	Mover ventanas
 
 Imagine que ha creado unas cuantas ventanas, pero están en el lugar
 equivocado. Necesitará una orden para mover las ventanas a otro lugar. Por
@@ -259,6 +271,9 @@ Hay otras tres órdenes similares (probablemente pueda adivinar qué hacen):
 	CTRL-W J	mover la ventana al extremo inferior
 	CTRL-W L	mover la ventana al extremo derecho
 
+==============================================================================
+*08.6*	Órdenes sobre todas las ventanas
+
 Cuando tiene varias ventanas abiertas y quiere salir de Vim, puede cerrar
 cada ventana por su cuenta. Una forma más rápida es la siguiente: >
 
@@ -313,6 +328,9 @@ Esto da como resultado: >
 El argumento «-O"» se usa para que las divisiones se hagan verticalmente.
    Cuando Vim está ejecutándose, la orden «:all» abre una ventana para cada
 archivo en la lista de argumentos.  «:vertical all» lo hace verticalmente.
+
+==============================================================================
+*08.7*	Ver las diferencias con «vimdiff»
 
 Existe una manera especial de arrancar Vim que muestra las diferencias entre
 dos archivos. Cojamos un archivo «main.c» e insertemos unos caracteres en una
@@ -446,6 +464,9 @@ get = obtener) pero «dgg» ya tenía un significado diferente.
 
 Para más detalles sobre el modo diff, véase |vimdiff|.
 
+==============================================================================
+*08.8*	Varios
+
 La opción 'laststatus' se puede emplear para especificar cuándo la última
 ventana tiene una línea de estado:
 
@@ -474,6 +495,9 @@ debe aparecer la ventana:
 	:belowright {cmd}	ídem
 	:topleft {cmd}		encima o a la izquierda de la ventana de 					Vim
 	:botright {cmd}		debajo o a la derecha de la ventana de Vim
+
+==============================================================================
+*08.9*	Pestañas
 
 Habrá notado que las ventanas no se superponen. Esto significa que puede
 rápidamente acabar sin espacio suficiente. La solución son las pestañas:
@@ -561,6 +585,8 @@ Un par de cosas más que puede hacer con las pestañas:
 	sin guardar en las otras pestañas).
 
 Para más información sobre pestañas véase |tab-page|.
+
+==============================================================================
 
 Capítulo siguiente: |usr_09.txt|  Uso de la GUI
 

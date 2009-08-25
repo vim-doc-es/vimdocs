@@ -71,6 +71,9 @@ introduce el operador. Por ejemplo, «d» es el operador de eliminación. Luego
 introduce una orden de movimiento «4l» o «w». De esta manera, puede
 operar sobre cualquier texto en el que se pueda desplazar.
 
+==============================================================================
+*04.2*	Cambiar texto
+
 Otro operador es «c», cambiar (change). Actúa justo como el operador «d»,
 excepto que le deja en modo Insertar. Por ejemplo «cw» cambia una palabra.
 Es decir, elimina una palabra y le deja en modo Insertar.
@@ -150,6 +153,9 @@ elimina un carácter e inserta un salto. Usar un multiplicador aquí sólo afect
 al número de caracteres eliminados: «4r<Entrar>» reemplaza cuatro caracteres
 con un salto.
 
+==============================================================================
+*04.3*	Repetir un cambio
+
 La orden «.» es uno de los más sencillos pero más potentes de Vim. Repite
 el último cambio. Por ejemplo, suponga que está editando un archivo HTML y
 desea eliminar todas las etiquetas <B>. Para ello, coloque el cursor sobre
@@ -180,6 +186,9 @@ veces en su texto. Puede hacer esto rápidamente en una secuencia de
 	n		encuentra la siguiente cadena «cuatro»
 	.		repite el cambio
 			etc.
+
+==============================================================================
+*04.4*	Modo visual
 
 Los cambios operador-movimiento funcionan bastante bien para eliminar
 elementos sencillos. Pero a menudo, no es fácil decidir que orden de
@@ -251,6 +260,9 @@ final de la misma línea.
 Observe que «o» y «O» en el modo Visual funcionan de forma muy diferente a cómo lo
 hacen en el modo Normal, donde abririán una nueva línea.
 
+==============================================================================
+*04.5*	Mover texto
+
 Cuando elimina algo con «d», «x», u otra orden, el texto se guarda.
 Puede pegarlo usando la orden «p».  (El nombre de Vim para esto es «poner»,
 del inglés «put»).
@@ -301,6 +313,9 @@ texto después del cursor, justo después de la «q».
 	uqe     qe     que ~
 	x       p
 
+==============================================================================
+*04.6*	Copiar texto
+
 Para copiar texto de un lugar a otro, puede eliminarlo, usar «u» para
 deshacer la eliminación y después usar «p» para colocarlo en otro lugar. Hay
 un modo mejor: «yank» (dar un tirón). El operador «y» copia texto en un
@@ -334,6 +349,9 @@ inconsistencia! Use «y$» para copiar sólo hasta el final.
 	última línea		última línea	       línea de texto
 						       última línea
 
+==============================================================================
+*04.7*	Uso del portapapeles
+
 Si está usando la versión GUI de Vim (gvim), puede usar la opción «Copiar»
 del menú «Edit». Seleccione primero el texto en modo Visual, use después
 el menú Editar/Copiar. Así, el texto seleccionado se copia al portapapeles.
@@ -360,6 +378,9 @@ Para poner texto desde el portapapeles en el texto: >
 
 Esto sólo funciona en versiones de Vim que incluyen soporte para portapapeles.
 Más sobre el portapapeles en la sección |09.3| y aquí: |clipboard|.
+
+==============================================================================
+*04.8*	Objetos de texto
 
 Si el cursor está en medio de una palabra y la quiere eliminar, tiene que
 desplazarse hasta su comienzo antes de que pueda hacer «dw». Hay un modo más
@@ -414,6 +435,9 @@ Por último, use un operador para hacer algo con las frases seleccionadas.
 
 Puede encontrar una larga lista de objetos de texto aquí: |text-objects|.
 
+==============================================================================
+*04.9*	Modo reemplazar
+
 La orden «R» hace que Vim entre en modo reemplazar. En este modo, cada
 carácter que introduzca reemplaza al que está debajo del cursor. Esto
 continúa hasta que pulse <Esc>.
@@ -433,6 +457,9 @@ Puede alternar el modo Insertar y Reemplazar con la tecla <Insert>.
 Cuando use <Retroceso> para hacer una corrección comprobará que el texto
 anterior reaparece. Por lo tanto, funciona como la orden deshacer para el
 último carácter tecleado.
+
+==============================================================================
+*04.10*	Conclusión
 
 Los operadores, órdenes de movimiento y los objetos de texto le dan
 múltiples posibilidades para hacer muchas combinaciones.
@@ -472,6 +499,8 @@ se explican a continuación:
 	A	Inicia el modo insertar y desplaza el cursor al último
 		carácter de la línea.
 
+==============================================================================
+
 Capítulo siguiente: |usr_05.txt|  Configuración
 
-Copyright: ver |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:
+Copyright: véase |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:

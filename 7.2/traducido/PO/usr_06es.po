@@ -1,33 +1,32 @@
-# Omar Campagne <ocampagne@gmail.com>, 2009.
-#. extracted from usr_06es.txt
+#. extracted from usr_06.txt
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-05 22:40+0200\n"
-"PO-Revision-Date: 2009-08-13 13:28+0200\n"
+"Report-Msgid-Bugs-To: bugs@vim.org \n"
+"POT-Creation-Date: 2009-08-01 19:54+0200\n"
+"PO-Revision-Date: 2009-08-25 16:28+0200\n"
 "Last-Translator: Álvaro Castro Castillo <alvaro.castro.castilla@gmail.com>\n"
-"Language-Team: Documentación de Vim en español\n"
-"Language: es\n"
+"Language-Team: Documentación de Vim en español <>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Virtaal 0.4.0-rc2\n"
 
-#: usr_06es.txt:1
+#: usr_06.txt:1
 msgid "*usr_06.txt*\tFor Vim version 7.2.  Last change: 2006 Apr 24"
 msgstr "*usr_06.txt*\tPara Vim version 7.2.  Último cambio: 2006 Apr 24"
 
-#: usr_06es.txt:3
+#: usr_06.txt:3
 msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar"
 msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar"
 
-#: usr_06es.txt:5
+#: usr_06.txt:5
 msgid "\t\t\t  Using syntax highlighting"
 msgstr "\t\t\tUso del resaltado de sintaxis"
 
-#: usr_06es.txt:8
+#: usr_06.txt:8
 msgid ""
 "Black and white text is boring.  With colors your file comes to life.  This\n"
 "not only looks nice, it also speeds up your work.  Change the colors used "
@@ -38,10 +37,11 @@ msgid ""
 msgstr ""
 "El texto en blanco y negro es aburrido. Con colores los archivos tienen más\n"
 "vida. No sólo adquieren mejor apariencia, si no que acelera la producción.\n"
-"Cambie los colores para distintos tipos de texto. Imprima sus textos con los\n"
+"Cambie los colores para distintos tipos de texto. Imprima sus textos con "
+"los\n"
 "colores que ve en pantalla."
 
-#: usr_06es.txt:13
+#: usr_06.txt:13
 msgid ""
 "|06.1|\tSwitching it on\n"
 "|06.2|\tNo or wrong colors?\n"
@@ -50,14 +50,14 @@ msgid ""
 "|06.5|\tPrinting with colors\n"
 "|06.6|\tFurther reading"
 msgstr ""
-"|06.1|\tActivación\n"
+"|06.1|\tActivar\n"
 "|06.2|\t¿Colores incorrectos o ausentes?\n"
 "|06.3|\tDiferentes colores\n"
 "|06.4|\tCon colores o sin colores\n"
 "|06.5|\tImprimir con colores\n"
 "|06.6|\tMás información"
 
-#: usr_06es.txt:20
+#: usr_06.txt:20
 msgid ""
 "     Next chapter: |usr_07.txt|  Editing more than one file\n"
 " Previous chapter: |usr_05.txt|  Set your settings\n"
@@ -67,30 +67,23 @@ msgstr ""
 "  Capítulo anterior: |usr_05.txt|  Configuración\n"
 "Tabla de contenidos: |usr_toc.txt|"
 
-#: usr_06es.txt:24
-#: usr_06es.txt:50
-#: usr_06es.txt:135
-#: usr_06es.txt:189
-#: usr_06es.txt:267
-#: usr_06es.txt:273
+#: usr_06.txt:24
 msgid ""
-"============================================================================"
-"==\n"
+"==============================================================================\n"
 "*06.1*\tSwitching it on"
 msgstr ""
-"============================================================================"
-"==\n"
-"*06.1*\tActivación\n"
+"==============================================================================\n"
+"*06.1*\tActivar"
 
-#: usr_06es.txt:27
+#: usr_06.txt:27
 msgid "It all starts with one simple command: >"
 msgstr "Comencemos con una simple orden: >"
 
-#: usr_06es.txt:29
+#: usr_06.txt:29
 msgid "\t:syntax enable"
 msgstr "\t:syntax enable"
 
-#: usr_06es.txt:31
+#: usr_06.txt:31
 msgid ""
 "That should work in most situations to get color in your files.  Vim will\n"
 "automagically detect the type of file and load the right syntax "
@@ -107,7 +100,7 @@ msgstr ""
 "¡Tras usarlo un poco se dará cuenta de lo que le ralentizaba la edición el\n"
 "blanco y negro!"
 
-#: usr_06es.txt:37
+#: usr_06.txt:37
 msgid ""
 "If you always want to use syntax highlighting, put the \":syntax enable\"\n"
 "command in your |vimrc| file."
@@ -115,7 +108,7 @@ msgstr ""
 "Si siempre quiere usar el resaltado de sintaxis, ponga la orden «:syntax\n"
 "enable» en su archivo |vimrc|."
 
-#: usr_06es.txt:40
+#: usr_06.txt:40
 msgid ""
 "If you want syntax highlighting only when the terminal supports colors, you\n"
 "can put this in your |vimrc| file: >"
@@ -123,7 +116,7 @@ msgstr ""
 "Si desea el resaltado de sintaxis sólo cuando la terminal soporte colores,\n"
 "puede poner esto en su archivo |vimrc|: >"
 
-#: usr_06es.txt:43
+#: usr_06.txt:43
 msgid ""
 "\tif &t_Co > 1\n"
 "\t   syntax enable\n"
@@ -133,7 +126,7 @@ msgstr ""
 "\t   syntax enable\n"
 "\tendif"
 
-#: usr_06es.txt:47
+#: usr_06.txt:47
 msgid ""
 "If you want syntax highlighting only in the GUI version, put the \":syntax\n"
 "enable\" command in your |gvimrc| file."
@@ -141,11 +134,19 @@ msgstr ""
 "Si quiere resaltado de sintaxis sólo en la versión GUI, ponga la orden\n"
 "«:syntax enable» únicamente en el archivo |gvimrc|."
 
-#: usr_06es.txt:53
+#: usr_06.txt:50
+msgid ""
+"==============================================================================\n"
+"*06.2*\tNo or wrong colors?"
+msgstr ""
+"==============================================================================\n"
+"*06.2*\t¿Colores incorrectos o ausentes?"
+
+#: usr_06.txt:53
 msgid "There can be a number of reasons why you don't see colors:"
 msgstr "Puede haber una serie de motivos por los que no vea colores:"
 
-#: usr_06es.txt:55
+#: usr_06.txt:55
 msgid ""
 "- Your terminal does not support colors.\n"
 "\tVim will use bold, italic and underlined text, but this doesn't look\n"
@@ -159,7 +160,7 @@ msgstr ""
 "\tPara Unix, se recomienda usar la xterm del proyecto XFree86:\n"
 "\t|xfree-xterm|."
 
-#: usr_06es.txt:61
+#: usr_06.txt:61
 msgid ""
 "- Your terminal does support colors, but Vim doesn't know this.\n"
 "\tMake sure your $TERM setting is correct.  For example, when using an\n"
@@ -169,7 +170,7 @@ msgstr ""
 "\tAsegúrese de que la variable $TERM es correcta. Por ejemplo, cuando\n"
 "\tuse una xterm que soporte colores: >"
 
-#: usr_06es.txt:65
+#: usr_06.txt:65
 msgid ""
 "\t\tsetenv TERM xterm-color\n"
 "<\n"
@@ -179,11 +180,11 @@ msgstr ""
 "<\n"
 "\to (dependiendo de su consola): >"
 
-#: usr_06es.txt:69
+#: usr_06.txt:69
 msgid "\t\tTERM=xterm-color; export TERM"
 msgstr "\t\tTERM=xterm-color; export TERM"
 
-#: usr_06es.txt:71
+#: usr_06.txt:71
 msgid ""
 "<\tThe terminal name must match the terminal you are using.  If it\n"
 "\tstill doesn't work, have a look at |xterm-color|, which shows a few\n"
@@ -193,7 +194,7 @@ msgstr ""
 "\tusando. Si aún así no funciona, véase |xterm-color|,\n"
 "\tdonde puede ver unas cuantas maneras de hacer que se vean colores."
 
-#: usr_06es.txt:75
+#: usr_06.txt:75
 msgid ""
 "- The file type is not recognized.\n"
 "\tVim doesn't know all file types, and sometimes it's near to impossible\n"
@@ -203,7 +204,7 @@ msgstr ""
 "\tVim no conoce todos los tipos de archivos, y a veces es casi imposible\n"
 "\tdecir que lenguaje usa un archivo. Pruebe esta orden: >"
 
-#: usr_06es.txt:79
+#: usr_06.txt:79
 msgid ""
 "\t\t:set filetype\n"
 "<\n"
@@ -217,11 +218,11 @@ msgstr ""
 "\tque de qué tipo de archivo se trata. Puede decirle el tipo de archivo\n"
 "\tde forma manual: >"
 
-#: usr_06es.txt:85
+#: usr_06.txt:85
 msgid "\t\t:set filetype=fortran"
 msgstr "\t\t:set filetype=fortran"
 
-#: usr_06es.txt:87
+#: usr_06.txt:87
 msgid ""
 "<\tTo see which types are available, look in the directory\n"
 "\t$VIMRUNTIME/syntax.  For the GUI you can use the Syntax menu.\n"
@@ -232,16 +233,17 @@ msgid ""
 msgstr ""
 "<\tPara ver qué tipos de archivos están disponibles,  mire en el\n"
 "\tdirectorio «$VIMRUNTIME/syntax». Para la GUI puede usar el menú Syntax.\n"
-"        También puede activar el tipo de archivo con un |modeline|, de forma\n"
+"        También puede activar el tipo de archivo con un |modeline|, de "
+"forma\n"
 "\tque el archivo se resaltará cada vez que lo edite. Por ejemplo, puede\n"
 "\templear esta línea para los Makefiles (insértela cerca del principio o\n"
 "\tel final del archivo): >"
 
-#: usr_06es.txt:94
+#: usr_06.txt:94
 msgid "\t\t# vim: syntax=make"
 msgstr "\t\t# vim: syntax=make"
 
-#: usr_06es.txt:96
+#: usr_06.txt:96
 msgid ""
 "<\tYou might know how to detect the file type yourself.  Often the file\n"
 "\tname extension (after the dot) can be used.\n"
@@ -251,7 +253,7 @@ msgstr ""
 "\tmenudo se puede emplear la extensión del nombre de archivo.\n"
 "\tVéase |new-filetype| para ver cómo decirle a Vim que detecte el tipo."
 
-#: usr_06es.txt:100
+#: usr_06.txt:100
 msgid ""
 "- There is no highlighting for your file type.\n"
 "\tYou could try using a similar file type by manually setting it as\n"
@@ -263,11 +265,11 @@ msgstr ""
 "\texplica más arriba. Si no tiene suficiente, puede escribir su propio\n"
 "\tarchivo de sintaxis, véase |mysyntaxfile|."
 
-#: usr_06es.txt:106
+#: usr_06.txt:106
 msgid "Or the colors could be wrong:"
 msgstr "O los colores están mal:"
 
-#: usr_06es.txt:108
+#: usr_06.txt:108
 msgid ""
 "- The colored text is very hard to read.\n"
 "\tVim guesses the background color that you are using.  If it is black\n"
@@ -283,19 +285,19 @@ msgstr ""
 "\tacertado, el texto se hará difícil de leer. Para solucionar esto,\n"
 "\tactive la opción 'background'. Para un fondo oscuro: >"
 
-#: usr_06es.txt:115
+#: usr_06.txt:115
 msgid "\t\t:set background=dark"
 msgstr "\t\t:set background=dark"
 
-#: usr_06es.txt:117
+#: usr_06.txt:117
 msgid "<\tAnd for a light background: >"
 msgstr "<\tY para un fondo claro: >"
 
-#: usr_06es.txt:119
+#: usr_06.txt:119
 msgid "\t\t:set background=light"
 msgstr "\t\t:set background=light"
 
-#: usr_06es.txt:121
+#: usr_06.txt:121
 msgid ""
 "<\tMake sure you put this _before_ the \":syntax enable\" command,\n"
 "\totherwise the colors will already have been set.  You could do\n"
@@ -307,7 +309,7 @@ msgstr ""
 "\treset» tras activar 'background' para hacer que Vim vuelva a redefinir\n"
 "\tlos colores."
 
-#: usr_06es.txt:126
+#: usr_06.txt:126
 msgid ""
 "- The colors are wrong when scrolling bottom to top.\n"
 "\tVim doesn't read the whole file to parse the text.  It starts parsing\n"
@@ -327,7 +329,15 @@ msgstr ""
 "\tel texto hacia atrás, mire la ayuda específica para la sintaxis. Por\n"
 "\tejemplo, |tex.vim| para la sintaxis de TeX."
 
-#: usr_06es.txt:138
+#: usr_06.txt:135
+msgid ""
+"==============================================================================\n"
+"*06.3*\tDifferent colors\t\t\t\t*:syn-default-override*"
+msgstr ""
+"==============================================================================\n"
+"*06.3*\tDiferentes colores\t\t\t\t*:syn-default-override*"
+
+#: usr_06.txt:138
 msgid ""
 "If you don't like the default colors, you can select another color scheme.  "
 "In\n"
@@ -337,11 +347,11 @@ msgstr ""
 "esquema de colores. En GVim, use el menú Edit/Color. También puede usar la\n"
 "orden: >"
 
-#: usr_06es.txt:141
+#: usr_06.txt:141
 msgid "\t:colorscheme evening"
 msgstr "\t:colorscheme evening"
 
-#: usr_06es.txt:143
+#: usr_06.txt:143
 msgid ""
 "\"evening\" is the name of the color scheme.  There are several others you "
 "might\n"
@@ -350,23 +360,22 @@ msgstr ""
 "«evening» es el nombre del esquema de colores. Hay muchos otros que quizá\n"
 "quiera probar. Mire en el directorio «$MYVIMRUNTIME/colors»."
 
-#: usr_06es.txt:146
+#: usr_06.txt:146
 msgid ""
 "When you found the color scheme that you like, add the \":colorscheme\" "
 "command\n"
 "to your |vimrc| file."
 msgstr ""
-"Cuando haya encontrado un esquema que le guste, añada la orden "
-"«:colorscheme»\n"
+"Cuando haya encontrado un esquema que le guste, añada la orden «:"
+"colorscheme»\n"
 "a su archivo |vimrc|."
 
-#: usr_06es.txt:149
+#: usr_06.txt:149
 msgid "You could also write your own color scheme.  This is how you do it:"
 msgstr ""
-"También puede escribir su propio esquema de colores. Así es que como se "
-"hace:"
+"También puede escribir su propio esquema de colores. Así es que como se hace:"
 
-#: usr_06es.txt:151
+#: usr_06.txt:151
 msgid ""
 "1. Select a color scheme that comes close.  Copy this file to your own Vim\n"
 "   directory.  For Unix, this should work: >"
@@ -374,7 +383,7 @@ msgstr ""
 "1. Seleccionar un esquema que se parezca. Copie ese archivo a su propio\n"
 "   directorio Vim. Para Unix, esto debería funcionar: >"
 
-#: usr_06es.txt:154
+#: usr_06.txt:154
 msgid ""
 "\t!mkdir ~/.vim/colors\n"
 "\t!cp $VIMRUNTIME/colors/morning.vim ~/.vim/colors/mine.vim\n"
@@ -386,11 +395,12 @@ msgstr ""
 "<\n"
 "   Esto se hace desde Vim, porque conoce el valor de $VIMRUNTIME."
 
-#: usr_06es.txt:159
+#: usr_06.txt:159
 msgid "2. Edit the color scheme file.  These entries are useful:"
-msgstr "2. Editar el archivo del esquema de colores. Estas entradas son útiles:"
+msgstr ""
+"2. Editar el archivo del esquema de colores. Estas entradas son útiles:"
 
-#: usr_06es.txt:161
+#: usr_06.txt:161
 msgid ""
 "\tterm\t\tattributes in a B&W terminal\n"
 "\tcterm\t\tattributes in a color terminal\n"
@@ -408,37 +418,38 @@ msgstr ""
 "\tguifg\t\tcolor frontal de la GUI\n"
 "\tguibg\t\tcolor de fondo de la GUI"
 
-#: usr_06es.txt:169
+#: usr_06.txt:169
 msgid "   For example, to make comments green: >"
 msgstr "   Por ejemplo, para hacer los comentarios en verde: >"
 
-#: usr_06es.txt:171
+#: usr_06.txt:171
 msgid ""
 "\t:highlight Comment ctermfg=green guifg=green\n"
 "<\n"
-"   Attributes you can use for \"cterm\" and \"gui\" are \"bold\" and \"underline\".\n"
-"   If you want both, use \"bold,underline\".  For details see the |:highlight|\n"
+"   Attributes you can use for \"cterm\" and \"gui\" are \"bold\" and "
+"\"underline\".\n"
+"   If you want both, use \"bold,underline\".  For details see the |:"
+"highlight|\n"
 "   command."
 msgstr ""
 "\t:highlight Comment ctermfg=green guifg=green\n"
 "<\n"
-"   Los atributos que puede usar para «cterm» y «gui» son «bold» y "
-"«underline».\n"
+"   Los atributos que puede usar para «cterm» y «gui» son «bold» y «underline».\n"
 "   Si quiere los dos, escriba «bold,underline». Para más detalles, véase la\n"
 "   orden |:highlight|."
 
-#: usr_06es.txt:177
+#: usr_06.txt:177
 msgid ""
 "3. Tell Vim to always use your color scheme.  Put this line in your |vimrc|: "
 ">"
 msgstr ""
 "3. Decir a Vim que use siempre su esquema. Inserte esto en su |vimrc|: >"
 
-#: usr_06es.txt:179
+#: usr_06.txt:179
 msgid "\tcolorscheme mine"
 msgstr "\tcolorscheme mine"
 
-#: usr_06es.txt:181
+#: usr_06.txt:181
 msgid ""
 "If you want to see what the most often used color combinations look like, "
 "use\n"
@@ -447,11 +458,11 @@ msgstr ""
 "Si quiere ver cómo son los colores más habitualmente usados, emplee esta\n"
 "orden: >"
 
-#: usr_06es.txt:184
+#: usr_06.txt:184
 msgid "\t:runtime syntax/colortest.vim"
 msgstr "\t:runtime syntax/colortest.vim"
 
-#: usr_06es.txt:186
+#: usr_06.txt:186
 msgid ""
 "You will see text in various color combinations.  You can check which ones "
 "are\n"
@@ -460,7 +471,15 @@ msgstr ""
 "Verá texto en varias combinaciones de colores. Puede comprobar cuáles son\n"
 "legibles y que tienen un apariencia agradable."
 
-#: usr_06es.txt:192
+#: usr_06.txt:189
+msgid ""
+"==============================================================================\n"
+"*06.4*\tWith colors or without colors"
+msgstr ""
+"==============================================================================\n"
+"*06.4*\tCon colores o sin colores"
+
+#: usr_06.txt:192
 msgid ""
 "Displaying text in color takes a lot of effort.  If you find the displaying\n"
 "too slow, you might want to disable syntax highlighting for a moment: >"
@@ -470,15 +489,15 @@ msgstr ""
 "texto se muestra muy lentamente, puede desactivar el resaltado "
 "momentáneamente: >"
 
-#: usr_06es.txt:196
+#: usr_06.txt:195
 msgid "\t:syntax clear"
 msgstr "\t:syntax clear"
 
-#: usr_06es.txt:198
+#: usr_06.txt:197
 msgid "When editing another file (or the same one) the colors will come back."
 msgstr "Cuando edite otro archivo (o el mismo) los colores reaparecerán."
 
-#: usr_06es.txt:200
+#: usr_06.txt:199
 msgid ""
 "\t\t\t\t\t\t\t*:syn-off*\n"
 "If you want to stop highlighting completely use: >"
@@ -486,11 +505,11 @@ msgstr ""
 "\t\t\t\t\t\t\t*:syn-off*\n"
 "Si quiere desactivar el resaltado por completo use: >"
 
-#: usr_06es.txt:203
+#: usr_06.txt:202
 msgid "\t:syntax off"
 msgstr "\t:syntax off"
 
-#: usr_06es.txt:205
+#: usr_06.txt:204
 msgid ""
 "This will completely disable syntax highlighting and remove it immediately "
 "for\n"
@@ -499,7 +518,7 @@ msgstr ""
 "Esto desactivará completamente el resaltado de sintaxis y eliminará\n"
 "inmediatamente de todos los búfers. "
 
-#: usr_06es.txt:208
+#: usr_06.txt:207
 msgid ""
 "\t\t\t\t\t\t\t*:syn-manual*\n"
 "If you want syntax highlighting only for specific files, use this: >"
@@ -507,13 +526,14 @@ msgstr ""
 "\t\t\t\t\t\t\t*:syn-manual*\n"
 "Si desea resaltado de sintaxis sólo para archivos específicos, use esto: >"
 
-#: usr_06es.txt:211
+#: usr_06.txt:210
 msgid "\t:syntax manual"
 msgstr "\t:syntax manual"
 
-#: usr_06es.txt:213
+#: usr_06.txt:212
 msgid ""
-"This will enable the syntax highlighting, but not switch it on automatically\n"
+"This will enable the syntax highlighting, but not switch it on "
+"automatically\n"
 "when starting to edit a buffer.  To switch highlighting on for the current\n"
 "buffer, set the 'syntax' option: >"
 msgstr ""
@@ -521,46 +541,46 @@ msgstr ""
 "edites un búfer. Para activarla en el búfer actual, asigne la opción\n"
 "'syntax' del siguiente modo: >"
 
-#: usr_06es.txt:217
+#: usr_06.txt:216
 msgid ""
 "\t:set syntax=ON\n"
 "<\n"
-"============================================================================"
-"==\n"
+"==============================================================================\n"
 "*06.5*\tPrinting with colors\t\t\t\t*syntax-printing*"
 msgstr ""
 "\t:set syntax=ON\n"
 "<\n"
-"============================================================================"
-"==\n"
+"==============================================================================\n"
 "*06.5*\tImprimir con colores\t\t\t\t*syntax-printing*"
 
-#: usr_06es.txt:222
+#: usr_06.txt:221
 msgid ""
-"In the MS-Windows version you can print the current file with this command: "
-">"
+"In the MS-Windows version you can print the current file with this command: >"
 msgstr ""
 "En la version MS-Windows puede imprimir el archivo actual del siguiente "
 "modo: >"
 
-#: usr_06es.txt:224
+#: usr_06.txt:223
 msgid "\t:hardcopy"
 msgstr "\t:hardcopy"
 
-#: usr_06es.txt:226
+#: usr_06.txt:225
 msgid ""
 "You will get the usual printer dialog, where you can select the printer and "
 "a\n"
-"few settings.  If you have a color printer, the paper output should look the\n"
+"few settings.  If you have a color printer, the paper output should look "
+"the\n"
 "same as what you see inside Vim.  But when you use a dark background the\n"
 "colors will be adjusted to look good on white paper."
 msgstr ""
-"Le aparecerá el típico diálogo de impresora, donde puede seleccionarla junto\n"
-"con algunas opciones. Si tiene una impresora a color, la salida impresa debe\n"
+"Le aparecerá el típico diálogo de impresora, donde puede seleccionarla "
+"junto\n"
+"con algunas opciones. Si tiene una impresora a color, la salida impresa "
+"debe\n"
 "ser similar a lo que aparece en pantalla. Sin embargo, cuando tiene un\n"
 "fondo oscuro, los colores se ajustarán para verse bien sobre blanco."
 
-#: usr_06es.txt:231
+#: usr_06.txt:230
 msgid ""
 "There are several options that change the way Vim prints:\n"
 "\t'printdevice'\n"
@@ -574,7 +594,7 @@ msgstr ""
 "\t'printfont'\n"
 "\t'printoptions'"
 
-#: usr_06es.txt:237
+#: usr_06.txt:236
 msgid ""
 "To print only a range of lines,  use Visual mode to select the lines and "
 "then\n"
@@ -584,13 +604,14 @@ msgstr ""
 "seleccionarlas e introduzca luego\n"
 "la orden: >"
 
-#: usr_06es.txt:240
+#: usr_06.txt:239
 msgid "\tv100j:hardcopy"
 msgstr "\tv100j:hardcopy"
 
-#: usr_06es.txt:242
+#: usr_06.txt:241
 msgid ""
-"\"v\" starts Visual mode.  \"100j\" moves a hundred lines down, they will be\n"
+"\"v\" starts Visual mode.  \"100j\" moves a hundred lines down, they will "
+"be\n"
 "highlighted.  Then \":hardcopy\" will print those lines.  You can use other\n"
 "commands to move in Visual mode, of course."
 msgstr ""
@@ -598,7 +619,7 @@ msgstr ""
 "resaltarán. Por último «:hardcopy» imprimirá las líneas destacadas. Puede\n"
 "usar otras órdenes para moverse en modo Visual, por supuesto."
 
-#: usr_06es.txt:246
+#: usr_06.txt:245
 msgid ""
 "This also works on Unix, if you have a PostScript printer.  Otherwise, you\n"
 "will have to do a bit more work.  You need to convert the text to HTML "
@@ -609,15 +630,15 @@ msgstr ""
 "contrario tendrá que hacer un poco más de trabajo. Tendrá que convertir a\n"
 "HTML primero y luego imprimirlo desde un navegador web como Netscape."
 
-#: usr_06es.txt:250
+#: usr_06.txt:249
 msgid "Convert the current file to HTML with this command: >"
 msgstr "Convierta el archivo a HTML con esta orden: >"
 
-#: usr_06es.txt:252
+#: usr_06.txt:251
 msgid "\t:source $VIMRUNTIME/syntax/2html.vim"
 msgstr "\t:source $VIMRUNTIME/syntax/2html.vim"
 
-#: usr_06es.txt:254
+#: usr_06.txt:253
 msgid ""
 "You will see it crunching away, this can take quite a while for a large "
 "file.\n"
@@ -634,11 +655,12 @@ msgstr ""
 ">\n"
 "\t:write main.c.html"
 
-#: usr_06es.txt:260
+#: usr_06.txt:259
 msgid ""
 "Open this file in your favorite browser and print it from there.  If all "
 "goes\n"
-"well, the output should look exactly as it does in Vim.  See |2html.vim| for\n"
+"well, the output should look exactly as it does in Vim.  See |2html.vim| "
+"for\n"
 "details.  Don't forget to delete the HTML file when you are done with it."
 msgstr ""
 "Abra este archivo en su navegador favorito e imprímalo desde allí. Si todo "
@@ -647,7 +669,7 @@ msgstr ""
 "Véase |2html.vim| para más detalles. No se olvide de eliminar el archivo "
 "HTML."
 
-#: usr_06es.txt:264
+#: usr_06.txt:263
 msgid ""
 "Instead of printing, you could also put the HTML file on a web server, and "
 "let\n"
@@ -657,7 +679,15 @@ msgstr ""
 "a\n"
 "otros ver el texto resaltado."
 
-#: usr_06es.txt:270
+#: usr_06.txt:266
+msgid ""
+"==============================================================================\n"
+"*06.6*\tFurther reading"
+msgstr ""
+"==============================================================================\n"
+"*06.6*\tMás información"
+
+#: usr_06.txt:269
 msgid ""
 "|usr_44.txt|  Your own syntax highlighted.\n"
 "|syntax|      All the details."
@@ -665,10 +695,14 @@ msgstr ""
 "|usr_44.txt|  Su propio resaltado de sintaxis.\n"
 "|syntax|      Todos los detalles."
 
-#: usr_06es.txt:275
+#: usr_06.txt:272
+msgid "=============================================================================="
+msgstr "=============================================================================="
+
+#: usr_06.txt:274
 msgid "Next chapter: |usr_07.txt|  Editing more than one file"
 msgstr "Capítulo siguiente: |usr_07.txt|  Editar más de un archivo"
 
-#: usr_06es.txt:277
+#: usr_06.txt:276
 msgid "Copyright: see |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
 msgstr "Copyright: véase |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
