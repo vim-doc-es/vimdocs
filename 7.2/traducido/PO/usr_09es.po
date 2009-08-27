@@ -1,24 +1,71 @@
-#. extracted from usr_09.txt
+# Vim l10n es http://code.assembla.com/vim-doc-es/git/nodes/master 
+# extracted from usr_09.txt  
+# Copyright (C) 2009 
+# This file is distributed under the same license as the Vim 7.2 package.
+#
+# Translators credits:
+#   - Initial translation
+#       Álvaro Castro Castilla <alvaro.castro.castilla@gmail.com>O
+#
+#   - Updates
+#       TRADUCTOR <CORREO>, AÑO 
+#
+# Empieza por leerte los tickets referidos al tratamiento de los archivos PO,
+# así como las órdenes básicas para su uso. 
+#
+#  - http://www.assembla.com/spaces/vim-doc-es/tickets
+#
+# Debido al formato (txt) y al máximo de 80 columnas que pueden tener 
+# los textos de ayuda en Vim, así como el formato PO, por favor, leete los
+# apuntes concernientes a la edición de los archivos PO relativos a la
+# aplicación que desees usar.
+#
+# - http://www.assembla.com/wiki/show/vim-doc-es
+#
+# No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
+# este enlace puede ser de interés. A pesar de no formar parte, nuestra 
+# intención es homologarnos con su terminología y uso de la lengua 
+# en la medida de lo útil y posible.
+#
+#  - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/notas
+#
+# La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
+# pero también puede servir de referencia para otros términos no técnicos.
+# No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
+# traducción sea comprensible independientemente de la nacionalidad del
+# usuario. Si crees que alguna traducción puede llevar a confusión, consulta
+# la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
+#
+#  - www.rae.es 
+#  - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages   
+#
+# Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
+# se puede consultar con un simple grep, pogrep o cargado en Virtaal.
+#
+# Álvaro Castro Castilla <alvaro.castro.castilla@gmail.com>>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: dfsdf\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: Vim 7.2\n"
+"Report-Msgid-Bugs-To: bugs@vim.org \n"
 "POT-Creation-Date: 2009-08-01 19:54+0200\n"
-"PO-Revision-Date: 2009-08-05 23:47+0200\n"
-"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
-"Language-Team: Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"PO-Revision-Date: 2009-08-27 15:57+0200\n"
+"Last-Translator: Álvaro Castro Castilla <alvaro.castro.castilla@gmail.com>>\n"
+"Language-Team: Documentación de VIm en español <>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.3.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.4.0\n"
 
 #: usr_09.txt:1
 msgid "*usr_09.txt*\tFor Vim version 7.2.  Last change: 2006 Apr 24"
-msgstr ""
+msgstr "*usr_09.txt*\tPara Vim versión 7.2. Último cambio: 2006 Apr 24"
 
 #: usr_09.txt:3
 msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar"
-msgstr "                MANUAL DE USUARIO DE VIM - por Bram Moolenaar"
+msgstr "\t\t   MANUAL DE USUARIO DE VIM - por Bram Moolenaar"
 
 #: usr_09.txt:5
 msgid "\t\t\t\tUsing the GUI"
@@ -30,9 +77,10 @@ msgid ""
 "more.  The GUI offers menus, a toolbar, scrollbars and other items.  This\n"
 "chapter is about these extra things that the GUI offers."
 msgstr ""
-"Vim funciona en una terminal normal.  GVIM puede hacer las mismas cosas y\n"
-"algunas más.  La GUI ofrece menús, una barra de menú, barras de\n"
-"desplazamiento y otros.  Este capítulo es sobre las funcionalidades extra."
+"Vim funciona en una terminal normal. GVim puede hacer las mismas cosas y\n"
+"algunas más. La interfaz gráfica ofrece menús, una barra de menú, barras de\n"
+"desplazamiento y otros. Este capítulo trata de las funcionalidades\n"
+"adicionales que la interfaz gráfica ofrece."
 
 #: usr_09.txt:12
 msgid ""
@@ -54,7 +102,7 @@ msgid ""
 msgstr ""
 " Capítulo siguiente: |usr_10.txt|  Realizar grandes cambios\n"
 "  Capítulo anterior: |usr_08.txt|  Dividir en ventanas\n"
-"         Contenidos: |usr_toc.txt|"
+"Tabla de contenidos: |usr_toc.txt|"
 
 #: usr_09.txt:21
 msgid ""
@@ -69,8 +117,8 @@ msgid ""
 "You might have an icon on your desktop that starts gVim.  Otherwise, one of\n"
 "these commands should do it: >"
 msgstr ""
-"Puede que tengas un icono en tu escritorio que arranca gVim.  En caso\n"
-"contrario, uno de estos comandos lo hará: >"
+"Puede que tenga un icono en su escritorio que arranca gVim. En caso\n"
+"contrario, una de estas órdenes lo hará: >"
 
 #: usr_09.txt:27
 msgid ""
@@ -90,13 +138,11 @@ msgid ""
 "picture\n"
 "(for as far as this can be shown in ASCII!)."
 msgstr ""
-"Si esto no funciona es que no tienes la versión de Vim con soporte para "
-"GUI.\n"
-"Tendrás que instalar una primero.\n"
-"   Vim abrirá una ventana y mostrará \"archivo.txt\".  Cómo sea la ventana\n"
-"dependerá de la versión de Vim.  Se parecerá a la siguiente figura (¡tanto "
-"como\n"
-"esto se puede parecer con texto ASCII!)."
+"Si esto no funciona es que no tiene la versión de Vim con soporte para GUI.\n"
+"Tendrá que instalar una primero.\n"
+"   Vim abrirá una ventana y mostrará «archivo.txt». El aspecto de la\n"
+"ventana dependerá de la versión de Vim. Se debería parecer a la siguiente\n"
+"figura (¡tanto como se pueda parecer con texto ASCII!)."
 
 #: usr_09.txt:36
 msgid ""
@@ -123,9 +169,9 @@ msgstr ""
 "\t| File\tEdit  Tools  Syntax  Buffers  Window  Help   |\t<- barra de\n"
 "\t+----------------------------------------------------+     menú\n"
 "\t| aaa  bbb  ccc  ddd  eee  fff\tggg  hhh  iii  jjj   |\t<- barra de\n"
-"\t| aaa  bbb  ccc  ddd  eee  fff\tggg  hhh  iii  jjj   |     herramientas\n"
-"\t+----------------------------------------------------+\n"
-"\t| file text\t\t\t\t\t | ^ |\n"
+"\t| aaa  bbb  ccc  ddd  eee  fff\tggg  hhh  iii  jjj   |     herramientas"
+"\t       \t+----------------------------------------------------+\n"
+"\t| archivo de texto\t\t\t\t | ^ |\n"
 "\t| ~\t\t\t\t\t\t | # |\n"
 "\t| ~\t\t\t\t\t\t | # |\t<- barra de\n"
 "\t| ~\t\t\t\t\t\t | # |     desplazam.\n"
@@ -140,10 +186,9 @@ msgid ""
 "same way as in a terminal.  With some different colors and another font\n"
 "perhaps."
 msgstr ""
-"El espacio más grande está ocupado por el archivo de texto.  Esto muestra "
-"el\n"
-"archivo de una manera similar a una terminal.  Con algunas diferencias de\n"
-"fuente y color, quizá."
+"El espacio más grande está ocupado por el archivo de texto. Esto muestra el\n"
+"archivo de una manera similar a una terminal. Con algunas diferencias de\n"
+"tipo de letra y color, quizá."
 
 #: usr_09.txt:58
 msgid "THE WINDOW TITLE"
@@ -158,11 +203,10 @@ msgid ""
 "file\n"
 "in parens.  These special character can be present:"
 msgstr ""
-"En la parte superior se encuentra el título.  Esto es dibujado por tu "
-"sistema\n"
-"de ventanas.  Vim pondrá en título el nombre del archivo actual.  Primero\n"
+"En la parte superior se encuentra el título. Esto se genera por su sistema\n"
+"de ventanas. Vim pondrá en título el nombre del archivo actual. Primero\n"
 "viene el nombre del archivo, luego algunos caracteres especiales y el\n"
-"directorio del archivo entre paréntesis.  Los caracteres especiales son:"
+"directorio del archivo entre paréntesis. Los caracteres especiales son:"
 
 #: usr_09.txt:65
 msgid ""
@@ -171,7 +215,7 @@ msgid ""
 "\t=\tThe file is read-only\n"
 "\t=+\tThe file is read-only, contains changes anyway"
 msgstr ""
-"\t-\tEl archivo no puede ser modificado (por ej. la ayuda)\n"
+"\t-\tEl archivo no se puede modificar (por ej. la ayuda)\n"
 "\t+\tEl archivo contiene cambios\n"
 "\t=\tEl archivo es de sólo lectura\n"
 "\t=+\tEl archivo es de sólo lectura pero contiene cambios"
@@ -191,9 +235,10 @@ msgid ""
 "submenu\n"
 "is Edit/Global Settings.  You will find these entries:"
 msgstr ""
-"Vim tiene los elementos habituales, con algunos más.  Explóralos para tener\n"
-"una idea de cómo podrías usarlos.  Un submenú relevante es Edit/Global\n"
-"Settings.  Encontrarás los siguientes elementos:"
+"Ya sabe como funcionan los menús, ¿no? Vim tiene los elementos habituales,\n"
+"además de otros. Explórelos para tener\n"
+"una idea de cómo podría usarlos. Un submenú relevante es «Editar/Opciones\n"
+"globlales». Encontrará los siguientes elementos:"
 
 #: usr_09.txt:79
 msgid ""
@@ -214,9 +259,9 @@ msgid ""
 "the one that looks like a dashed line.  You will get a separate window with\n"
 "the items of the menu.  It will hang around until you close the window."
 msgstr ""
-"En la mayoría de los sistemas puedes arrancar los menús.  Selecciona el\n"
-"elemento superior del menú que parece una línea a rayas.  Ahora tendrás una\n"
-"ventanita aparte con el menú."
+"En la mayoría de los sistemas puede seccionar los menús. Seleccione el\n"
+"elemento superior del menú que parece una línea a rayas. Ahora tendrá una\n"
+"pequeña ventana aparte con el menú."
 
 #: usr_09.txt:89
 msgid "THE TOOLBAR"
@@ -229,9 +274,9 @@ msgid ""
 "self-explanatory.  There are tooltips to get an extra hint (move the mouse\n"
 "pointer to the icon without clicking and don't move it for a second)."
 msgstr ""
-"Esto contiene los iconos para las acciones más empleadas.  La intención es "
+"Este contiene los iconos para las acciones más empleadas. La intención es "
 "que\n"
-"los iconos se expliquen a sí mismos.  Hay globos de ayuda que te aconsejan\n"
+"los iconos se expliquen a sí mismos. Hay globos de ayuda que le aconsejan\n"
 "(pon el puntero sobre un botón y no lo muevas durante un segundo)."
 
 #: usr_09.txt:95
@@ -241,10 +286,10 @@ msgid ""
 "toolbar disappear.  If you never want a toolbar, use this command in your\n"
 "vimrc file: >"
 msgstr ""
-"La opción \"Edit/Global Settings/Toogle Toolbar\" puede ser empleada para "
-"hacer\n"
-"que la barra de herramientas desaparezca.  Si no vas a querer una barra de\n"
-"herramientas nunca, pon esto en tu vimrc: >"
+"La opción «Editar/Opciones globales/Ocultar/Mostrar barra de herramientas»\n"
+"se puede emplear para hacer que la barra de herramientas desaparezca.\n"
+"Si no desea tener una barra de herramientas en ningún momento,\n"
+"escriba esto en su «vimrc»: >"
 
 #: usr_09.txt:99
 msgid "\t:set guioptions-=T"
@@ -255,10 +300,9 @@ msgid ""
 "This removes the 'T' flag from the 'guioptions' option.  Other parts of the\n"
 "GUI can also be enabled or disabled with this option.  See the help for it."
 msgstr ""
-"Esto elimina la bandera 'T' de la opción 'guioptions'.  Otras partes del "
-"GUI\n"
-"también pueden ser activadas o desactivadas del mismo modo. Consulta la "
-"ayuda."
+"Esto elimina la marca 'T' de la opción 'guioptions'. Otras partes de la\n"
+"interfaz gráfica se pueden también activar o desactivar del mismo modo.\n"
+"Consulte la ayuda."
 
 #: usr_09.txt:105
 msgid "THE SCROLLBARS"
@@ -273,13 +317,12 @@ msgid ""
 "or\n"
 "when the 'wrap' option has been reset (more about that later)."
 msgstr ""
-"Por defecto sólo hay una barra de desplazamiento en la derecha.  Hace lo "
-"que\n"
-"se espera de ella.  Cada ventana tendrá su barra de desplazamiento.\n"
-"   Puedes hacer que una barra horizontal aparezca con la opción Edit/Global\n"
-"Settings/Toggle Bottom Scrollbar.  Esto es útil en el modo diff, o cuando "
-"la\n"
-"opción 'wrap' está desactivada (eso lo veremos después)."
+"Por omisión sólo hay una barra de desplazamiento en la derecha. Hace lo que\n"
+"se espera de ella. Cada ventana tendrá su barra de desplazamiento.\n"
+"   Puede hacer que una barra horizontal aparezca con la opción «Editar/\n"
+"Opciones globales/Ocultar/Mostrar barra de desplazamiento inferior».\n"
+"Esto es útil en el modo diff, o cuando la opción 'wrap' está desactivada\n"
+"(eso lo veremos más adelante)."
 
 #: usr_09.txt:113
 msgid ""
@@ -296,18 +339,18 @@ msgid ""
 "\t:set guioptions+=l"
 msgstr ""
 "Cuando hay ventanas divididas verticalmente, sólo las de la derecha tendrán\n"
-"barra de desplazamiento.  Sin embargo, si mueves el cursor a una ventana en "
+"barra de desplazamiento. Sin embargo, si mueve el cursor a una ventana en "
 "la\n"
-"izquierda, será esta la que la barra controle.  Lleva cierto tiempo\n"
+"izquierda, será esta la que la barra controle. Lleva cierto tiempo\n"
 "acostumbrarse a esto.\n"
-"   Cuando trabajes con ventanas divididas verticalmente, considera la\n"
-"posibilidad de añadir barras en la izquierda.  Prueba con esta opción: \n"
+"   Cuando trabaje con ventanas divididas verticalmente, considere la\n"
+"posibilidad de añadir barras en la izquierda. Pruebe con esta opción: \n"
 ">\n"
 "\t\t:set guioptions+=1"
 
 #: usr_09.txt:122
 msgid "This adds the 'l' flag to 'guioptions'."
-msgstr "Esto añade la bandera 'l' a 'guioptions'."
+msgstr "Esto añade la marca 'l' a 'guioptions'."
 
 #: usr_09.txt:124
 msgid ""
@@ -329,14 +372,13 @@ msgid ""
 "following\n"
 "command makes the mouse behave like an X Window mouse: >"
 msgstr ""
-"Los estándares son maravillosos.  En Microsoft Windows, puedes usar el "
-"ratón\n"
-"para seleccionar texto de una forma estándar.  El sistema X de ventanas\n"
-"también tiene un estándar para el uso del ratón.  Por desgracia, estos dos\n"
-"estándares no son compatibles.\n"
-"   Afortunadamente, puedes personalizarlo en Vim.  Puedes hacer que el\n"
-"comportamiento del ratón sea el mismo que el de las X o el de Windows.  El\n"
-"siguiente comando hace que el ratón se comporte como en las X: >"
+"Los estándares son maravillosos. En Microsoft Windows, puede usar el ratón\n"
+"para seleccionar texto de una forma estándar. El sistema de ventanas X\n"
+"Window System también tiene un estándar para el uso del ratón. Por\n"
+"desgracia, estos dos estándares no son compatibles.\n"
+"   Afortunadamente, puede personalizarlo en Vim. Puede hacer que el\n"
+"comportamiento del ratón sea el mismo que bajo X o el de Windows. La\n"
+"siguiente orden hace que el ratón se comporte como bajo X: >"
 
 #: usr_09.txt:135
 msgid "\t:behave xterm"
@@ -345,7 +387,7 @@ msgstr "\t:behave xterm"
 #: usr_09.txt:137
 msgid ""
 "The following command makes the mouse work like a Microsoft Windows mouse: >"
-msgstr "El siguiente comando hace que el ratón se comporte como en Windows: >"
+msgstr "La siguiente orden hace que el ratón se comporte como en Windows: >"
 
 #: usr_09.txt:139
 msgid "\t:behave mswin"
@@ -359,10 +401,11 @@ msgid ""
 "Here\n"
 "follows a summary."
 msgstr ""
-"El comportamiento por defecto de un ratón en los sistemas UNIX es xterm.  "
+"El comportamiento predefinido de un ratón en los sistemas UNIX es xterm.  "
 "El\n"
-"comportamiento por defecto en un sistema Windows es seleccionado durante la\n"
-"instalación.  Para más detalles sobre estos comportamientos, ver |:behave|.\n"
+"comportamiento predefinido en un sistema Windows se selecciona durante la\n"
+"instalación. Para más detalles sobre estos comportamientos, véase\n"
+"|:behave|.\n"
 "Esto es un pequeño resumen:"
 
 #: usr_09.txt:147
@@ -409,8 +452,8 @@ msgid ""
 "change\n"
 "the way how the mouse works:"
 msgstr ""
-"El ratón puede ser ajustado con más detalle.  Échale un vistazo a estas\n"
-"opciones para ver cómo funciona el ratón:"
+"Puede configurar el ratón con más detalle. Léa estas opciones para ver cómo\n"
+"funciona el ratón:"
 
 #: usr_09.txt:169
 msgid ""
@@ -420,11 +463,13 @@ msgid ""
 "\t'mousehide'\t\thide the mouse while typing\n"
 "\t'selectmode'\t\twhether the mouse starts Visual or Select mode"
 msgstr ""
-"\t'mouse'\t\t\ten qué modo el ratón se usa por Vim\n"
-"\t'mousemodel'\t\tqué efectos tiene hacer click con el ratón\n"
-"\t'mousetime'\t\ttiempo entre dos clicks para un doble click\n"
-"\t'mousehide'\t\tesconde el ratón mientras tecleas\n"
-"\t'selectmode'\t\tel ratón comienza el modo Visual o Seleccionar"
+"\t'mouse'\t\t\ten qué modo Vim usa el ratón\n"
+"\t'mousemodel'\t\tqué efectos tiene pulsar con el ratón\n"
+"\t'mousetime'\t\ttiempo entre dos pulsacionespara un doble\n"
+"\t\t\t\tclick\n"
+"\t'mousehide'\t\tesconde el ratón mientras teclea\n"
+"\t'selectmode'\t\tsi el ratón comienza el modo Visual o\n"
+"\t\t\t\tSeleccionar"
 
 #: usr_09.txt:175
 msgid ""
@@ -442,9 +487,9 @@ msgid ""
 "to\n"
 "exchange text between programs.  MS-Windows doesn't have this."
 msgstr ""
-"En la sección |04.7| se explica el uso básico del portapapeles.  Hay algo\n"
+"En la sección |04.7| se explica el uso básico del portapapeles. Hay algo\n"
 "esencial que debe ser explicado sobre las X-windows: Hay dos lugares para\n"
-"intercambiar texto entre programas.  MS-Windows sólo tiene uno."
+"intercambiar texto entre programas. MS-Windows sólo tiene uno."
 
 #: usr_09.txt:182
 msgid ""
@@ -461,17 +506,14 @@ msgid ""
 "middle\n"
 "mouse button.  The selected text will be inserted."
 msgstr ""
-"En las X-windows hay una \"selección actual\".  Esto es el texto que está\n"
-"actualmente marcado.  En Vim esto es el área Visual (asumiendo que uses las\n"
-"opciones por defecto).  Puedes pegar esta selección en otra aplicación sin\n"
+"En X-Windows hay una «selección actual». Esto es el texto que está\n"
+"actualmente marcado. En Vim esto es el área Visual (suponiendo que usa las\n"
+"opciones predefinidas). Puede pegar esta selección en otra aplicación sin\n"
 "ninguna acción ulterior.\n"
-"   Por ejemplo, en este texto selecciona unas cuantas palabras con el "
-"ratón.\n"
-"Vim cambiará al modo Visual y marcará el texto.  Ahora comienza otro gVim, "
-"sin\n"
-"un nombre de archivo, de forma que muestre una ventana vacía.  Haz click "
-"con\n"
-"el botón central del ratón.  El texto seleccionado será insertado."
+"   Por ejemplo, en este texto seleccione unas cuantas palabras con el\n"
+"ratón. Vim pasará al modo Visual y resaltará el texto. Ahora inicie otro\n"
+"gVim, sin un nombre de archivo, de forma que muestre una ventana vacía.\n"
+"Pulse el botón central del ratón. El texto seleccionado se insertará."
 
 #: usr_09.txt:191
 msgid ""
@@ -483,13 +525,11 @@ msgid ""
 "in the other gVim window are displayed differently.  This means that it no\n"
 "longer is the current selection."
 msgstr ""
-"La \"selección actual\" sólo permanecerá válida hasta que otro texto sea\n"
-"seleccionado.  Tras pegar en otro gVim, ahora selecciona algunos caracteres "
-"en\n"
-"esa ventana.  Te darás cuenta de que las palabras que estaban previamente\n"
-"seleccionadas en otra ventana gVim se muestran de otro modo.  Esto "
-"significa\n"
-"que ya no están en la \"selección actual\"."
+"La «selección actual» sólo será válida hasta que seleccione otro texto.\n"
+"Tras pegar el texto en otro gVim, seleccione ahora algunos caracteres en\n"
+"esa ventana. Se dará cuenta de que las palabras que estaban previamente\n"
+"seleccionadas en otra ventana gVim se muestran de otro modo. Esto significa\n"
+"que ya no están en la «selección actual»."
 
 #: usr_09.txt:197
 msgid ""
@@ -520,22 +560,19 @@ msgid ""
 "   Now select the other gVim, position the cursor somewhere and use the\n"
 "Edit/Paste menu.  You will see the text from the real clipboard is inserted."
 msgstr ""
-"Llamamos al otro portapapeles el \"verdadero portapapeles\", para evitar la\n"
-"confusión.  A menudo la \"selección actual\" y el \"verdadero portapapeles\" "
-"son\n"
-"denominados indistintamente \"portapapeles\".  Tendrás que acostumbrarte a "
+"Tratemos ahora el otro lugar en el que puede intercambiar texto. Llamamos\n"
+"al otro portapapeles el «verdadero portapapeles», para evitar la\n"
+"confusión. A menudo la «selección actual» y el «verdadero portapapeles» son\n"
+"denominados indistintamente «portapapeles». Tendrá que acostumbrarse a\n"
 "esto.\n"
-"   Para poner el texto en el verdadero portapapeles, selecciona unas "
-"palabras\n"
-"en uno de los gVims que tengas funcionando.  Usa la entrada de menú Edit/"
-"Copy.\n"
-"El texto será copiado al verdadero portapapeles.  No podrás comprobar esto "
-"a\n"
-"menos que tengas alguna aplicación que muestre el contenido del "
+"   Para poner el texto en el verdadero portapapeles, seleccione unas\n"
+"palabras en uno de los gVims que tenga en ejecución. Use la entrada de\n"
+"menú Editar/Copiar.\n"
+"El texto será copiado al verdadero portapapeles. No podrá comprobar esto a\n"
+"menos que tenga alguna aplicación que muestre el contenido del\n"
 "portapapeles.\n"
-"   Ahora selecciona otro gVim, coloca el cursor en algún lugar y usa el "
-"menú\n"
-"Edit/Paste.  Verás que se inserta el texto del verdadero portapapeles."
+"   Ahora seleccione otro gVim, coloque el cursor en algún lugar y use el\n"
+"menú Editar/Pegar. Verá que se inserta el texto del verdadero portapapeles."
 
 #: usr_09.txt:214
 msgid "USING BOTH"
@@ -548,10 +585,10 @@ msgid ""
 "a bit confusing.  But it is very useful.  Let's show this with an example.\n"
 "Use one gVim with a text file and perform these actions:"
 msgstr ""
-"Esto de usar simultáneamente la \"selección actual\" y el \"verdadero\n"
-"portapapeles\" puede sonar un poco confuso.  Pero es muy útil.  Veámoslo con "
+"Esto de usar simultáneamente la «selección actual» y el «verdadero\n"
+"portapapeles» puede sonar un poco confuso. Pero es muy útil. Veámoslo con "
 "un\n"
-"ejemplo.  Abre un gVim con un archivo de texto y haz lo siguiente:"
+"ejemplo. Abra un gVim con un archivo de texto y haga lo siguiente:"
 
 #: usr_09.txt:220
 msgid ""
@@ -565,16 +602,14 @@ msgid ""
 "   will see that the word you just overwrote with the clipboard is inserted\n"
 "   here."
 msgstr ""
-"-  Selecciona dos palabras en modo Visual.\n"
-"-  Pon esas palabras en el portapapeles con Edit/Copy.\n"
+"-  Seleccione dos palabras en modo Visual.\n"
+"-  Ponga esas palabras en el portapapeles con Editar/Copiar.\n"
 "-  Selecciona otra palabra en modo Visual.\n"
-"-  Accede al elemento del menú Edit/Paste.  Lo que ocurrirá es que la "
-"palabra\n"
-"   seleccionada será sustituida con las palabras del portapapeles.\n"
-"-  Pon el puntero del ratón en algún lugar y haz click con el botón "
-"central.\n"
-"   Verás que la palabra que sobreescribiste con el portapapeles se "
-"insertará\n"
+"-  Accede al elemento del menú Editar/Pegar. Lo que ocurrirá es que la\n"
+"   palabra\n"
+"   seleccionada se sustituirá con las palabras del portapapeles.\n"
+"-  Ponga el puntero del ratón en algún lugar y pulse el botón central.\n"
+"   Verá que la palabra que sobreescribió con el portapapeles se insertará\n"
 "   en ese lugar."
 
 #: usr_09.txt:229
@@ -583,9 +618,8 @@ msgid ""
 "you can\n"
 "do a lot of useful editing with them."
 msgstr ""
-"Si usas la \"selección actual\" y el \"verdadero portapapeles\" con "
-"cuidado,\n"
-"puedes llevar a cabo una gran variedad de trucos de edición."
+"Si usa la «selección actual» y el «verdadero portapapeles» con cuidado,\n"
+"puede llevar a cabo una gran variedad de trucos de edición."
 
 #: usr_09.txt:233
 msgid "USING THE KEYBOARD"
@@ -601,12 +635,11 @@ msgid ""
 "to select a whole line just press \"V\".\n"
 "   To insert the current selection before the cursor: >"
 msgstr ""
-"Si no te gusta usar el ratón, puedes acceder a la selección actual y al\n"
-"verdadero portapapeles con dos registros.  El registro \"* es para la "
-"selección\n"
-"actual.\n"
-"   Para hacer que el texto se convierta en selección actual, usa el modo\n"
-"Visual.  Por ejemplo, para seleccionar una línea completa usa \"V\".\n"
+"Si no le gusta usar el ratón, puede acceder a la selección actual y al\n"
+"verdadero portapapeles con dos registros. El registro \"* es para la\n"
+"selección actual.\n"
+"   Para hacer que el texto se convierta en selección actual, use el modo\n"
+"Visual. Por ejemplo, para seleccionar una línea completa use «V».\n"
 "   Para insertar la selección actual antes del cursor: >"
 
 #: usr_09.txt:242
@@ -618,8 +651,7 @@ msgid ""
 "Notice the uppercase \"P\".  The lowercase \"p\" puts the text after the "
 "cursor."
 msgstr ""
-"Comprueba que es una \"P\" mayúscula.  La \"p\" minúscula la pone tras el "
-"cursor."
+"Observe que es una «P» mayúscula. La «p» minúscula la pone tras el cursor."
 
 #: usr_09.txt:246
 msgid ""
@@ -627,7 +659,7 @@ msgid ""
 "text\n"
 "from the cursor position until the end of the line to the clipboard: >"
 msgstr ""
-"El registro \"+ se usa para el verdadero portapapeles.  Por ejemplo, para\n"
+"El registro \"+ se usa para el verdadero portapapeles. Por ejemplo, para\n"
 "copiar el texto desde la posición del cursor hasta el final de línea: >"
 
 #: usr_09.txt:249
@@ -639,7 +671,7 @@ msgid ""
 "Remember, \"y\" is yank, which is Vim's copy command.\n"
 "   To insert the contents of the real clipboard before the cursor: >"
 msgstr ""
-"Recuerda, \"y\" es copiar (yank).\n"
+"Recuerde, «y» es copiar («yank»).\n"
 "   Para insertar los contenidos del verdadero portapapeles antes del cursor: "
 ">"
 
@@ -674,19 +706,18 @@ msgid ""
 "text\n"
 "replaces it."
 msgstr ""
-"Esto algo que es empleado más habitualmente en MS-Windows que en X-Windows.\n"
-"Aún así, ambos pueden hacerlo.  Ya conoces el modo Visual.  El modo\n"
-"Seleccionar es como el modo Visual, también empleado para la selección.  "
-"Pero\n"
-"hay una diferencia básica: Cuando escribas texto, el texto seleccionado se\n"
-"elimina y el texto introducido lo sustituye."
+"Ahora algo que se emplea más habitualmente en MS-Windows que en X-Windows.\n"
+"Aún así, ambos pueden hacerlo. Ya conoce el modo Visual. El modo\n"
+"Seleccionar es como el modo Visual, también empleado para la selección.\n"
+"Pero hay una diferencia básica: Cuando escriba texto, el texto\n"
+"seleccionado se elimina y el texto introducido lo sustituye."
 
 #: usr_09.txt:268
 msgid ""
 "To start working with Select mode, you must first enable it (for MS-Windows\n"
 "it is probably already enabled, but you can do this anyway): >"
 msgstr ""
-"Para iniciar el modo Seleccionar, debes activarlo primero (para MS-Windows\n"
+"Para iniciar el modo Seleccionar, debe activarlo primero (para MS-Windows\n"
 "está probablemente activado, pero puedes hacer esto igualmente): >"
 
 #: usr_09.txt:271
@@ -700,10 +731,10 @@ msgid ""
 "Now press a letter.  The selected text is deleted, and the single letter\n"
 "replaces it.  You are in Insert mode now, thus you can continue typing."
 msgstr ""
-"A continuación usa el ratón para seleccionar algún texto.  Será coloreado "
+"A continuación, use el ratón para seleccionar algún texto. Se resaltará "
 "como\n"
-"con el modo Visual.  Ahora pulsa un carácter.  El texto seleccionado se\n"
-"eliminará, y ese carácter lo reemplazará.  Entrarás en modo Insertar."
+"con el modo Visual. Pulse ahora un carácter. El texto seleccionado se\n"
+"eliminará, y ese carácter lo reemplazará. Entrará en modo Insertar."
 
 #: usr_09.txt:277
 msgid ""
@@ -718,17 +749,16 @@ msgid ""
 "do what you expect.  <S-End> and <S-Home> also work."
 msgstr ""
 "Ya que escribir texto normal hace que el texto seleccionado se elimine, no\n"
-"podrás usar los comandos de movimiento \"hjkl\", \"w\", etc.  En su lugar, "
-"usa las\n"
-"teclas de las flechas con mayúsculas.  <S-izquierda> mueve el cursor a la\n"
-"izquierda.  El texto seleccionado cambiará como en el modo Visual.  <S-Fin> "
-"y\n"
-"<S-Inicio> también funcionan."
+"podrá usar las órdenes de movimiento «hjkl», «w», etc. En su lugar, use las\n"
+"teclas de las flechas con mayúsculas. <S-izquierda> mueve el cursor a la\n"
+"izquierda. El texto seleccionado cambiará como en el modo Visual. <S-Fin>\n"
+"y <S-Inicio> también funcionan."
 
 #: usr_09.txt:283
 msgid "You can tune the way Select mode works with the 'selectmode' option."
 msgstr ""
-"Puedes ajustar cómo el modo Seleccionar funciona mediante 'selectmode'."
+"Puedes ajustar el funcionamiento del modo Seleccionar mediante\n"
+"la opción 'selectmode'."
 
 #: usr_09.txt:285
 msgid "=============================================================================="
@@ -740,4 +770,4 @@ msgstr "Capítulo siguiente: |usr_10.txt|  Hacer cambios grandes"
 
 #: usr_09.txt:289
 msgid "Copyright: see |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
-msgstr "Copyright: ver |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: véase |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
