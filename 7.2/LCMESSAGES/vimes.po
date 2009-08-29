@@ -3,14 +3,16 @@
 # Do ":help uganda"  in Vim to read copying and usage conditions.
 # Do ":help credits" in Vim to see a list of people who contributed.
 #
-# FIRST AUTHOR Pedro A. López-Valencia <vorbote@users.sourceforge.net>, 2003-06,2009
+# FIRST AUTHOR Pedro A. López-Valencia <vorbote@users.sourceforge.net>,
+# 2003-06,2009
 # SECOND AUTHOR Nelson López Villarroel <tuxero@users.sourceforge.net>, 2006
-#
+# THIRD AUTHOR Omar Campagne Polaino <ocampagne@gmail.com> 2009
 # Based on work by Eduardo F. Amatria <eferna1@platea.pntic.mec.es>, 2001.
 #
 # NOTE TO BUG REPORTERS:
-# Please check http://vim-es.sourceforge.net for the latest working version
-# before reporting a bug in the tracker. Thanks.
+# Please check http://vim-es.sourceforge.net and 
+# http://code.assembla.com/vim-doc-es/git/nodes/master for the latest working
+# version before reporting a bug in the tracker. Thanks.
 #
 # 2003-01-xx:
 #            PALV - Did a first effort at editing and correcting a
@@ -43,24 +45,29 @@
 # 2006-04-03:
 #          PALV: Whoever complains for the change from "fichero" to "archivo",
 #          read entry 5 here:
-#  http://buscon.rae.es/draeI/SrvltGUIBusUsual?LEMA=archivo&TIPO_HTML=2&FORMATO=ampliado
-#          If you have reasons to complain, may those reasons be good and be ready
-#          to take over the maintenance of this file (and you better be a member of
+#  	   http://buscon.rae.es/draeI/SrvltGUIBusUsual
+#	   LEMA=archivo&TIPO_HTML=2&FORMATO=ampliado
+#          If you have reasons to complain, may those reasons be good and be
+#	   ready
+#          to take over the maintenance of this file (and you better be a
+#	    member of
 #          Debian's or Ubuntu's localization teams I can't take seriously anyone
 #          else's offer). The need of the many override the need of the few 
 #          (as in language use of 300 million Spanish speaking americans weigh a
 #          lot more than that of a mere 50 million europeans). 
 #
 #          PALV: Although correct typographic rules in Spanish require the use
-#          of French quote marks or guillemots (\"\"), the use of typewriter straight
-#          quotes is pervasive and easier to type in a computer (You can't type
-#          guillemots with a Spanish/Latin American keyboard easily unless you use
+#          of French quote marks or guillemots (\"\"), the use of typewriter
+#	   straight quotes is pervasive and easier to type in a computer (You
+# 	   can't type guillemots with a Spanish/Latin American keyboard easily
+#	   unless you use
 #          an Apple Macintosh), so for the sake of K.I.S.S.[1], I'm changing 
 #          everything to straight quote marks.
 #
 #          [1] Keep It Simple, Stupid.
 #
-#          PALV: Cleaning up past editing that has no real justification anymore.
+#          PALV: Cleaning up past editing that has no real justification
+#	   anymore.
 #
 # 2009-08-22: PALV: Bring this file from the dead in the SVN repo. Change e-mail
 #          addresses, and finally bring the file encoding to the XIX Century.
@@ -68,15 +75,15 @@
 #          
 msgid ""
 msgstr ""
-"Project-Id-Version: Vim 7.0.f-1 (Castellano)\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: Vim 7.2-245 (Castellano)\n"
+"Report-Msgid-Bugs-To: bugs@vim.org\n"
 "POT-Creation-Date: 2009-08-20 17:41+0200\n"
-"Last-Translator: Vim-ES project <http://vim-es.sourceforge.net>\n"
-"Language-Team: Vim-ES project <>\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: Vim-ES http://code.assembla.com/vim-doc-es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: octet-stream\n"
-"POT-Revision-Date: 2009-08-22 11:27-0500\n"
+"PO-Revision-Date: 2009-08-29 12:38+0200\n"
 
 #: buffer.c:102
 msgid "E82: Cannot allocate any buffer, exiting..."
@@ -542,7 +549,7 @@ msgstr "E118: Demasiados argumentos para la función: %s"
 #: eval.c:106
 #, c-format
 msgid "E716: Key not present in Dictionary: %s"
-msgstr "E716: No se encuentra la llave en el diccionario"
+msgstr "E716: No se encuentra la llave en el diccionario. %s"
 
 #: eval.c:107
 #, c-format
@@ -2155,7 +2162,7 @@ msgstr "[cifrado]"
 #: fileio.c:2421
 #, c-format
 msgid "[CONVERSION ERROR in line %ld]"
-msgstr "[ERROR DE CONVERSIÓN en linea %ld]"
+msgstr "[ERROR DE CONVERSIÓN en línea %ld]"
 
 #: fileio.c:2427
 #, c-format
@@ -3262,9 +3269,9 @@ msgid "cscope commands:\n"
 msgstr "órdenes de \"cscope\":\n"
 
 #: if_cscope.c:1316
-#, fuzzy, c-format
+#, c-format
 msgid "%-5s: %s%*s (Usage: %s)"
-msgstr "%-5s: %-30s (Modo de uso: %s)"
+msgstr "%-5s: %s%*s (Modo de uso: %s)"
 
 #: if_cscope.c:1321
 msgid ""
@@ -3305,7 +3312,7 @@ msgstr "E568: Intentó añadir una base de datos de \"cscope\" duplicada"
 #: if_cscope.c:1597
 #, c-format
 msgid "E261: cscope connection %s not found"
-msgstr "E261: no se ha encontrado la conexión \"cscope\" %s"
+msgstr "E261: No se ha encontrado la conexión \"cscope\" %s"
 
 #: if_cscope.c:1631
 #, c-format
@@ -3353,13 +3360,12 @@ msgid " # pid    database name                       prepend path\n"
 msgstr " nº pid    base de datos                       prefijo ruta\n"
 
 #: if_mzsch.c:1043
-#, fuzzy
 msgid ""
 "E815: Sorry, this command is disabled, the MzScheme libraries could not be "
 "loaded."
 msgstr ""
-"???: Lo siento, esta orden está desactivada, no se pudo cargar la biblioteca "
-"de MzScheme"
+"E815: Lo siento, esta orden está desactivada, no se pudo cargar las "
+"bibliotecas de MzScheme"
 
 #: if_mzsch.c:1467 if_python.c:1265 if_tcl.c:1404
 msgid "invalid expression"
@@ -3371,7 +3377,7 @@ msgstr "expresiones desactivadas al compilar"
 
 #: if_mzsch.c:1564
 msgid "hidden option"
-msgstr "opcion oculta"
+msgstr "opción oculta"
 
 #: if_mzsch.c:1566 if_tcl.c:501
 msgid "unknown option"
@@ -3383,7 +3389,7 @@ msgstr "indice de ventana fuera del rango"
 
 #: if_mzsch.c:1885
 msgid "couldn't open buffer"
-msgstr "No se pudo abrir el buffer"
+msgstr "No se pudo abrir el búfer"
 
 #: if_mzsch.c:2165 if_mzsch.c:2195 if_mzsch.c:2292 if_mzsch.c:2356
 #: if_mzsch.c:2477 if_mzsch.c:2534 if_python.c:2495 if_python.c:2529
@@ -3400,12 +3406,12 @@ msgstr "no puedo suprimir la línea"
 #: if_mzsch.c:2201 if_mzsch.c:2385 if_python.c:2534 if_python.c:2682
 #: if_tcl.c:690 if_tcl.c:2039
 msgid "cannot replace line"
-msgstr "no puedo reemplazar la línea"
+msgstr "no se pudo reemplazar la línea"
 
 #: if_mzsch.c:2400 if_mzsch.c:2483 if_mzsch.c:2544 if_python.c:2700
 #: if_python.c:2779 if_python.c:2837
 msgid "cannot insert line"
-msgstr "no puedo insertar la línea"
+msgstr "no se pudo insertar la línea"
 
 #: if_mzsch.c:2635 if_python.c:2949
 msgid "string cannot contain newlines"
@@ -3413,23 +3419,23 @@ msgstr "La cadena no puede contener quiebres de línea"
 
 #: if_mzsch.c:2857
 msgid "Vim error: ~a"
-msgstr "error de vim: ~a"
+msgstr "Error de Vim: ~a"
 
 #: if_mzsch.c:2890
 msgid "Vim error"
-msgstr "error de vim"
+msgstr "Error de Vim"
 
 #: if_mzsch.c:2956
 msgid "buffer is invalid"
-msgstr "El buffer es invalido"
+msgstr "El búfer no es valido"
 
 #: if_mzsch.c:2965
 msgid "window is invalid"
-msgstr "La ventana es invalida"
+msgstr "La ventana no es válida"
 
 #: if_mzsch.c:2985
 msgid "linenr out of range"
-msgstr "número de la línea fuera del rango"
+msgstr "El número de la línea está fuera del rango"
 
 #: if_mzsch.c:3136 if_mzsch.c:3178
 msgid "not allowed in the Vim sandbox"
@@ -3440,7 +3446,7 @@ msgid ""
 "E263: Sorry, this command is disabled, the Python library could not be "
 "loaded."
 msgstr ""
-"E263: Lo siento, esta orden está desactivada pues no se pudo cargar la \n"
+"E263: Lo siento, esta orden está desactivada, no se pudo cargar la \n"
 "biblioteca de Python"
 
 #: if_python.c:577
@@ -3449,7 +3455,7 @@ msgstr "E659: No se pudo invocar a Python recursivamente"
 
 #: if_python.c:770
 msgid "can't delete OutputObject attributes"
-msgstr "no se pueden borrar los atributos de \"OutputObject\""
+msgstr "No se pueden borrar los atributos de \"OutputObject\""
 
 #: if_python.c:777
 msgid "softspace must be an integer"
@@ -3457,7 +3463,7 @@ msgstr "\"softspace\" debe ser un entero"
 
 #: if_python.c:785
 msgid "invalid attribute"
-msgstr "atributo no válido"
+msgstr "Atributo no válido"
 
 #: if_python.c:824 if_python.c:838
 msgid "writelines() requires list of strings"
@@ -3469,46 +3475,46 @@ msgstr "E264: Python: error de iniciación de los objetos de I/O"
 
 #: if_python.c:1297
 msgid "attempt to refer to deleted buffer"
-msgstr "intento de referirse a un búfer suprimido"
+msgstr "Intento de referirse a un búfer suprimido"
 
 #: if_python.c:1312 if_python.c:1353 if_python.c:1417 if_tcl.c:1216
 msgid "line number out of range"
-msgstr "número de la línea fuera del rango"
+msgstr "El número de la línea está fuera del rango"
 
 #: if_python.c:1552
-#, fuzzy, c-format
+#, c-format
 msgid "<buffer object (deleted) at %p>"
-msgstr "<objeto búfer (suprimido) en %8lX>"
+msgstr "<objeto de búfer (suprimido) en %p>"
 
 #: if_python.c:1643 if_tcl.c:836
 msgid "invalid mark name"
-msgstr "nombre de marca no válido"
+msgstr "Nombre de marca no válido"
 
 #: if_python.c:1921
 msgid "no such buffer"
-msgstr "no existe tal búfer"
+msgstr "No existe tal búfer"
 
 #: if_python.c:2009
 msgid "attempt to refer to deleted window"
-msgstr "intento de referirse a una ventana suprimida"
+msgstr "Intento de referirse a una ventana suprimida"
 
 #: if_python.c:2054
 msgid "readonly attribute"
-msgstr "atributo de solo lectura"
+msgstr "Atributo de solo lectura"
 
 #: if_python.c:2067
 msgid "cursor position outside buffer"
-msgstr "posición del cursor fuera del búfer"
+msgstr "Posición del cursor fuera del búfer"
 
 #: if_python.c:2144
-#, fuzzy, c-format
+#, c-format
 msgid "<window object (deleted) at %p>"
-msgstr "<objeto ventana (suprimido) en %.8lX>"
+msgstr "<objeto ventana (suprimido) en %p>"
 
 #: if_python.c:2156
-#, fuzzy, c-format
+#, c-format
 msgid "<window object (unknown) at %p>"
-msgstr "<objeto ventana (desconocido) en %.8lX>"
+msgstr "<objeto ventana (desconocido) en %p>"
 
 #: if_python.c:2159
 #, c-format
@@ -3517,17 +3523,17 @@ msgstr "<ventana %d>"
 
 #: if_python.c:2233
 msgid "no such window"
-msgstr "no existe tal ventana"
+msgstr "No existe tal ventana"
 
 #: if_ruby.c:365
 msgid "E265: $_ must be an instance of String"
-msgstr "E265: $_ debe ser una instacia de String"
+msgstr "E265: $_ debe ser una instancia de \"String\""
 
 #: if_ruby.c:426
 msgid ""
 "E266: Sorry, this command is disabled, the Ruby library could not be loaded."
 msgstr ""
-"E266: Lo siento, esta orden está desactivada pues no se pudo cargar\n"
+"E266: Lo siento, esta orden está desactivada, no se pudo cargar\n"
 "la biblioteca de Ruby"
 
 #: if_ruby.c:455
@@ -3548,7 +3554,7 @@ msgstr "E270: \"redo\" inesperado"
 
 #: if_ruby.c:467
 msgid "E271: retry outside of rescue clause"
-msgstr "E271: \"retry\" por fuera de una cláusula \"rescue\""
+msgstr "E271: \"retry\" fuera de una cláusula \"rescue\""
 
 #: if_ruby.c:474
 msgid "E272: unhandled exception"
@@ -3625,19 +3631,19 @@ msgstr "Xref usada por"
 
 #: if_sniff.c:83
 msgid "Show docu of"
-msgstr "Mostrar docu de"
+msgstr "Mostrar «docu» de"
 
 #: if_sniff.c:84
 msgid "Generate docu for"
-msgstr "Generar docu de"
+msgstr "Generar «docu» de"
 
 #: if_sniff.c:96
 msgid ""
 "Cannot connect to SNiFF+. Check environment (sniffemacs must be found in "
 "$PATH).\n"
 msgstr ""
-"No se pudo conectarme a SNiFF+. Verifique el entorno (\"sniffemacs\" debe\n"
-"estar en $PATH).\n"
+"No se pudo conectar a SNiFF+. Verifique el entorno (\"sniffemacs\" debe\n"
+"estar en \"$PATH\").\n"
 
 #: if_sniff.c:424
 msgid "E274: Sniff: Error during read. Disconnected"
@@ -3678,21 +3684,21 @@ msgstr "Sniff: error al escribir. Desconectado"
 
 #: if_tcl.c:419
 msgid "invalid buffer number"
-msgstr "número de búfer no válido"
+msgstr "Número de búfer no válido"
 
 #: if_tcl.c:465 if_tcl.c:935 if_tcl.c:1115
 msgid "not implemented yet"
-msgstr "no implementado aún"
+msgstr "Aún no implementado"
 
 # ???
 #. ???
 #: if_tcl.c:774
 msgid "cannot set line(s)"
-msgstr "no se puede(n) poner la/s línea/s"
+msgstr "No se puede(n) definir la/s línea/s"
 
 #: if_tcl.c:845
 msgid "mark not set"
-msgstr "marca sin poner"
+msgstr "Marca sin definir"
 
 #: if_tcl.c:852 if_tcl.c:1071
 #, c-format
@@ -3701,11 +3707,11 @@ msgstr "fila %d columna %d"
 
 #: if_tcl.c:884
 msgid "cannot insert/append line"
-msgstr "no se puede insertar/añadir línea"
+msgstr "No se puede insertar/añadir línea"
 
 #: if_tcl.c:1270
 msgid "unknown flag: "
-msgstr "indicador desconocido: "
+msgstr "Indicador desconocido: "
 
 #: if_tcl.c:1340
 msgid "unknown vimOption"
@@ -3713,22 +3719,22 @@ msgstr "\"vimOption\" desconocida"
 
 #: if_tcl.c:1425
 msgid "keyboard interrupt"
-msgstr "interrupción desde el teclado"
+msgstr "Interrupción desde el teclado"
 
 #: if_tcl.c:1430
 msgid "vim error"
-msgstr "error de vim"
+msgstr "Error de Vim"
 
 #: if_tcl.c:1474
 msgid "cannot create buffer/window command: object is being deleted"
-msgstr "no puedo crear la orden de búfer/ventana: el objeto será suprimido"
+msgstr "No se pudo crear la orden de búfer/ventana: el objeto se suprimirá"
 
 #: if_tcl.c:1550
 msgid ""
 "cannot register callback command: buffer/window is already being deleted"
 msgstr ""
-"No se pudo registrar el orden \"callback\": El búfer o la ventana ya fué \n"
-"eliminado"
+"No se pudo registrar el orden \"callback\": El búfer o la ventana ya se \n"
+"eliminó"
 
 # This should never happen.  Famous last word?
 #. This should never happen.  Famous last word?
@@ -3767,7 +3773,7 @@ msgstr "E572: código de salida %d"
 
 #: if_tcl.c:2025
 msgid "cannot get line"
-msgstr "no puedo obtener la línea"
+msgstr "No puedo obtener la línea"
 
 #: if_xcmdsrv.c:233
 msgid "Unable to register a command server name"
@@ -3819,16 +3825,15 @@ msgstr "%d archivos que editar\n"
 
 #: main.c:1492
 msgid "This Vim was not compiled with the diff feature."
-msgstr "Este Vim no ha sido compilado con la opción \"diff\""
+msgstr "Este Vim no se ha compilado con la opción \"diff\""
 
 #: main.c:1594
-#, fuzzy
 msgid "'-nb' cannot be used: not enabled at compile time\n"
-msgstr "E26: No se pudo usar el hebreo: no se ha activado al compilar\n"
+msgstr "'-nb' no se puede usar: no se ha activado al compilar\n"
 
 #: main.c:2107
 msgid "Attempt to open script file again: \""
-msgstr "Intento de abrir de nuevo el archivo de órdenes:"
+msgstr "Intento de abrir de nuevo el archivo de órdenes: \""
 
 #: main.c:2116
 msgid "Cannot open for reading: \""
@@ -3908,13 +3913,12 @@ msgstr ""
 "  o:"
 
 #: main.c:3030
-#, fuzzy
 msgid ""
 "\n"
 "Where case is ignored prepend / to make flag upper case"
-msgstr ""
-"donde es insensible a mayúscula y minusculas prependa \"/\" para \n"
-"hacer el parámetro una mayúscula"
+msgstr "\n"
+"Cuando mayúscula y minuscula son ignoradas prependa \"/\" para \n"
+"cambiar el «flag» a mayúscula"
 
 #: main.c:3033
 msgid ""
@@ -3928,7 +3932,7 @@ msgstr ""
 
 #: main.c:3034
 msgid "--\t\t\tOnly file names after this"
-msgstr "--\t\t\tSolo nombres de archivos desde aquí"
+msgstr "--\t\t\tSolo nombres de archivos a partir de aquí"
 
 #: main.c:3036
 msgid "--literal\t\tDon't expand wildcards"
@@ -4156,11 +4160,12 @@ msgstr ""
 "                                        \tservidor disponible"
 
 #: main.c:3118
-#, fuzzy
 msgid ""
 "--remote-tab[-wait][-silent] <files>  As --remote but use tab page per file"
 msgstr ""
-"--remote-tab <archivos>\tComo --remote pero abre una ventana por cada archivo"
+"--remote-tab[-wait][-silent] <archivos>  Como «--remote» pero usa una " 
+"pestaña por página"
+
 
 #: main.c:3120
 msgid "--remote-send <keys>\tSend <keys> to a Vim server and exit"
@@ -4330,9 +4335,8 @@ msgid "-P <parent title>\tOpen Vim inside parent application"
 msgstr "-P <título ventana padre>\tAbrir a Vim dentro de la aplicación padre"
 
 #: main.c:3182
-#, fuzzy
 msgid "--windowid <HWND>\tOpen Vim inside another win32 widget"
-msgstr "--socketid <xid>\tAbre a Vim dentro de otro \"widget\" GTK"
+msgstr "--windowid <HWND>\tAbrir Vim dentro de otro objeto de win32"
 
 #: main.c:3526
 msgid "No display"
@@ -4342,7 +4346,7 @@ msgstr "No hay una ventana"
 #. Failed to send, abort.
 #: main.c:3541
 msgid ": Send failed.\n"
-msgstr ": Falló el envio.\n"
+msgstr ": Falló el envío.\n"
 
 # Let vim start normally.
 #. Let vim start normally.
@@ -4359,11 +4363,11 @@ msgstr "%d de %d editados"
 
 #: main.c:3628
 msgid "No display: Send expression failed.\n"
-msgstr "No hay una ventana en el destino: El envio de la expresión falló.\n"
+msgstr "No hay una ventana en el destino: El envío de la expresión falló.\n"
 
 #: main.c:3640
 msgid ": Send expression failed.\n"
-msgstr ": Falló el envio de la expresión.\n"
+msgstr ": Falló el envío de la expresión.\n"
 
 #: mark.c:761
 msgid "No marks set"
@@ -5030,9 +5034,8 @@ msgstr "E329: No existe el menú \"%s\""
 
 #. Only a mnemonic or accelerator is not valid.
 #: menu.c:519
-#, fuzzy
 msgid "E792: Empty menu name"
-msgstr "E791: Definición de \"keymap\" vacía"
+msgstr "E792: Nombre de menú vacío"
 
 #: menu.c:537
 msgid "E330: Menu path must not lead to a sub-menu"
@@ -5041,7 +5044,7 @@ msgstr "E330: La ruta del menú no debe conducir a un sub-menú"
 #: menu.c:576
 msgid "E331: Must not add menu items directly to menu bar"
 msgstr ""
-"E331: No se deben añadir items del menú directamente a la barra del menú"
+"E331: No se deben añadir elementos del menú directamente a la barra del menú"
 
 #: menu.c:582
 msgid "E332: Separator cannot be part of a menu path"
@@ -5174,27 +5177,24 @@ msgid "E766: Insufficient arguments for printf()"
 msgstr "E766: Argumentos insuficientes para printf()"
 
 #: message.c:3924
-#, fuzzy
 msgid "E807: Expected Float argument for printf()"
-msgstr "E766: Argumentos insuficientes para printf()"
+msgstr "E807: Se esperaba un argumento «Float» para printf()"
 
 #: message.c:4812
 msgid "E767: Too many arguments to printf()"
-msgstr "E118: Demasiados argumentos para printf()"
+msgstr "E767: Demasiados argumentos para printf()"
 
 #: misc1.c:2966
 msgid "W10: Warning: Changing a readonly file"
 msgstr "W10: Advertencia: cambiando un archivo de solo lectura"
 
 #: misc1.c:3260
-#, fuzzy
 msgid "Type number and <Enter> or click with mouse (empty cancels): "
-msgstr "Escriba un número o haga click con el ratón (<Enter> para cancelar): "
+msgstr "Escriba un número e <Intro> o pulse con el ratón (la omisión cancela) "
 
 #: misc1.c:3262
-#, fuzzy
 msgid "Type number and <Enter> (empty cancels): "
-msgstr "Escoja un número (<Enter> para cancelar): "
+msgstr "Escoja un número e <Intro> (la omisión cancela la acción): "
 
 #: misc1.c:3314
 msgid "1 more line"
@@ -5709,9 +5709,9 @@ msgstr "E355: Opción desconocida: %s"
 #. * is empty.  In both cases, we are trying to set a
 #. * num option using a string.
 #: option.c:8371
-#, fuzzy, c-format
+#, c-format
 msgid "E521: Number required: &%s = '%s'"
-msgstr "E521: Se necesita un número despues de \"=\""
+msgstr "E521: Se requiere un número: &%s = '%s'"
 
 #: option.c:8495
 msgid ""
@@ -5910,13 +5910,16 @@ msgstr "El \"display\" de X no abrió a tiempo"
 msgid ""
 "\n"
 "Could not get security context for "
-msgstr "No se pudo obtener el contexto de seguridad para "
+msgstr ""
+"\n" 
+"No se pudo obtener el contexto de seguridad para "
 
 #: os_unix.c:2675
 msgid ""
 "\n"
 "Could not set security context for "
-msgstr "No se pudo definir el contexto de seguridad para "
+msgstr "\n" 
+"No se pudo definir el contexto de seguridad para "
 
 #: os_unix.c:3695 os_unix.c:4620
 msgid ""
@@ -5973,7 +5976,7 @@ msgstr "XSMP perdió la conexión ICE"
 #: os_unix.c:6192 os_unix.c:6295
 #, c-format
 msgid "dlerror = \"%s\""
-msgstr ""
+msgstr "dlerror = \"%s\""
 
 #: os_unix.c:6377
 msgid "Opening the X display failed"
@@ -6401,9 +6404,8 @@ msgid "E389: Couldn't find pattern"
 msgstr "E389: No pude encontrar el patrón"
 
 #: search.c:5391
-#, fuzzy
 msgid "Substitute "
-msgstr "una (1) sustitución"
+msgstr "Sustitución"
 
 #: search.c:5404
 #, c-format
@@ -6413,7 +6415,7 @@ msgid ""
 "~"
 msgstr ""
 "\n"
-"# Ültimo %sPatrón de búsqueda:\n"
+"# Último %sPatrón de búsqueda:\n"
 "~"
 
 #: spell.c:989
@@ -6432,7 +6434,7 @@ msgstr "Texto de sobra en %s línea %d: %s"
 #: spell.c:992
 #, c-format
 msgid "Affix name too long in %s line %d: %s"
-msgstr "iNombre de afijo muy largo en &s línea %d: %s"
+msgstr "Nombre de afijo muy largo en %s línea %d: %s"
 
 #: spell.c:993
 msgid "E761: Format error in affix file FOL, LOW or UPP"
@@ -6506,7 +6508,7 @@ msgstr "La conversión a %s no es posible en esta versión"
 #: spell.c:5420
 #, c-format
 msgid "Invalid value for FLAG in %s line %d: %s"
-msgstr "El valor para \"FLAG\" no es válido en % línea %d: %s"
+msgstr "El valor para \"FLAG\" no es válido en la %s línea %d: %s"
 
 #: spell.c:5433
 #, c-format
@@ -6534,9 +6536,9 @@ msgstr ""
 "en %s línea %d"
 
 #: spell.c:5554
-#, fuzzy, c-format
+#, c-format
 msgid "Wrong COMPOUNDRULES value in %s line %d: %s"
-msgstr "Valor equivocado de COMPOUNDMIN en %s línea %d: %s"
+msgstr "Valor equivocado de COMPOUNDRULES %s línea %d: %s"
 
 #: spell.c:5581
 #, c-format
@@ -6628,14 +6630,13 @@ msgid "Too many compound flags"
 msgstr "Demasiados parámetros compuestos"
 
 #: spell.c:6153
-#, fuzzy
 msgid "Too many postponed prefixes and/or compound flags"
-msgstr "Demasiados prefijos postpuestos y/o parámetros compuestos"
+msgstr "Demasiados prefijos postpuestos y/o «flags» compuestos"
 
 #: spell.c:6165
 #, c-format
 msgid "Missing SOFO%s line in %s"
-msgstr "Línea SOFO%s faltante en %s"
+msgstr "Falta una línea SOFO%s en %s"
 
 #: spell.c:6168
 #, c-format
@@ -7324,7 +7325,7 @@ msgstr "Una línea más"
 
 #: undo.c:1340
 msgid "more lines"
-msgstr "más lineas"
+msgstr "más líneas"
 
 #: undo.c:1342
 msgid "line less"
@@ -7332,7 +7333,7 @@ msgstr "una línea menos"
 
 #: undo.c:1344
 msgid "fewer lines"
-msgstr "menosi lineas"
+msgstr "menos líneas"
 
 #: undo.c:1349
 msgid "change"
@@ -7370,7 +7371,7 @@ msgstr "hace %ld segundos"
 
 #: undo.c:1541
 msgid "E790: undojoin is not allowed after undo"
-msgstr "E790: \"undojoin\" no está permitido despues de \"undo\""
+msgstr "E790: \"undojoin\" no está permitido después de \"undo\""
 
 #: undo.c:1591
 msgid "E439: undo list corrupt"
@@ -7388,7 +7389,7 @@ msgid ""
 "MS-Windows 16/32-bit GUI version"
 msgstr ""
 "\n"
-"Versión GUI de 16/32 bits para MS-Windows"
+"Versión de interfaz gráfica (GUI) de 16/32 bits para MS-Windows"
 
 #: version.c:1248
 msgid ""
@@ -7396,16 +7397,15 @@ msgid ""
 "MS-Windows 64-bit GUI version"
 msgstr ""
 "\n"
-"Versión GUI de 64 bits para MS-Windows"
+"Versión de interfaz gráfica (GUI) de 64 bits para MS-Windows"
 
 #: version.c:1250
-#, fuzzy
 msgid ""
 "\n"
 "MS-Windows 32-bit GUI version"
 msgstr ""
 "\n"
-"Versión GUI de 32 bits para MS-Windows"
+"Versión de interfaz gráfica (GUI) de 32 bits para MS-Windows"
 
 #: version.c:1254
 msgid " in Win32s mode"
@@ -7416,7 +7416,6 @@ msgid " with OLE support"
 msgstr " con compatibilidad con OLE"
 
 #: version.c:1260
-#, fuzzy
 msgid ""
 "\n"
 "MS-Windows 64-bit console version"
@@ -7425,7 +7424,6 @@ msgstr ""
 "Versión de 64 bits para consola de MS-Windows"
 
 #: version.c:1262
-#, fuzzy
 msgid ""
 "\n"
 "MS-Windows 32-bit console version"
@@ -7434,7 +7432,6 @@ msgstr ""
 "Versión de 32 bits para consola de MS-Windows"
 
 #: version.c:1267
-#, fuzzy
 msgid ""
 "\n"
 "MS-Windows 16-bit version"
@@ -7443,7 +7440,6 @@ msgstr ""
 "Versión de 16 bits para MS-Windows"
 
 #: version.c:1271
-#, fuzzy
 msgid ""
 "\n"
 "32-bit MS-DOS version"
@@ -7452,7 +7448,6 @@ msgstr ""
 "Versión de 32 bits para MS-DOS"
 
 #: version.c:1273
-#, fuzzy
 msgid ""
 "\n"
 "16-bit MS-DOS version"
@@ -7466,7 +7461,7 @@ msgid ""
 "MacOS X (unix) version"
 msgstr ""
 "\n"
-"Versión X (Unix) para MacOS"
+"Versión para X (Unix) para MacOS"
 
 #: version.c:1281
 msgid ""
@@ -7493,13 +7488,12 @@ msgstr ""
 "Versión para RISC OS"
 
 #: version.c:1292
-#, fuzzy
 msgid ""
 "\n"
 "OpenVMS version"
 msgstr ""
 "\n"
-"Versión para MacOS"
+"Versión para OpenVMS"
 
 #: version.c:1307
 msgid ""
@@ -7510,11 +7504,12 @@ msgstr ""
 "Parches incluidos: "
 
 #: version.c:1334
-#, fuzzy
 msgid ""
 "\n"
 "Extra patches: "
-msgstr "Subcoincidencias externas:\n"
+msgstr ""
+"\n"
+"Parches extra: "
 
 #: version.c:1346 version.c:1710
 msgid "Modified by "
@@ -7574,43 +7569,43 @@ msgstr ""
 
 #: version.c:1385
 msgid "without GUI."
-msgstr "sin GUI."
+msgstr "sin interfaz gráfica (GUI)."
 
 #: version.c:1390
 msgid "with GTK2-GNOME GUI."
-msgstr "con GUI GTK2-GNOME."
+msgstr "con interfaz gráfica (GUI) para GTK2-GNOME."
 
 #: version.c:1392
 msgid "with GTK-GNOME GUI."
-msgstr "con GUI GTK-GNOME."
+msgstr "con interfaz gráfica (GUI) para GTK-GNOME."
 
 #: version.c:1396
 msgid "with GTK2 GUI."
-msgstr "con GUI GTK2."
+msgstr "con interfaz gráfica (GUI) en GTK2."
 
 #: version.c:1398
 msgid "with GTK GUI."
-msgstr "con GUI GTK."
+msgstr "con interfaz gráfica (GUI) GTK."
 
 #: version.c:1403
 msgid "with X11-Motif GUI."
-msgstr "con GUI X11-Motif."
+msgstr "con interfaz gráfica (GUI) X11-Motif."
 
 #: version.c:1407
 msgid "with X11-neXtaw GUI."
-msgstr "con GUI X11-neXtaw."
+msgstr "con interfaz gráfica (GUI) X11-neXtaw."
 
 #: version.c:1409
 msgid "with X11-Athena GUI."
-msgstr "con GUI X11-Athena."
+msgstr "con interfaz gráfica (GUI) X11-Athena."
 
 #: version.c:1413
 msgid "with Photon GUI."
-msgstr "con GUI para Photon."
+msgstr "con interfaz gráfica (GUI) para Photon."
 
 #: version.c:1416
 msgid "with GUI."
-msgstr "con GUI."
+msgstr "con interfaz gráfica (GUI)."
 
 #: version.c:1419
 msgid "with Carbon GUI."
@@ -7622,7 +7617,7 @@ msgstr "con GUI Cocoa."
 
 #: version.c:1425
 msgid "with (classic) GUI."
-msgstr "con GUI (clásico)."
+msgstr "con interfaz gráfica (clásica)."
 
 #: version.c:1435
 msgid "  Features included (+) or not (-):\n"
@@ -7823,9 +7818,9 @@ msgid "E813: Cannot close autocmd window"
 msgstr "E444: No se puede cerrar ventana autocmd"
 
 #: window.c:2125
-#, fuzzy
 msgid "E814: Cannot close window, only autocmd window would remain"
-msgstr "E444: No se pudo cerrar la última ventana"
+msgstr "E814: No se pudo cerrar la última ventana, solo quedará\n"
+"la ventana e autocmd"
 
 #: window.c:3188
 msgid "E445: Other window contains changes"
@@ -8217,9 +8212,9 @@ msgid "E46: Cannot change read-only variable \"%s\""
 msgstr "E46: No se pudo definir la variable de solo lectura \"%s\""
 
 #: globals.h:1495
-#, fuzzy, c-format
+#, c-format
 msgid "E794: Cannot set variable in the sandbox: \"%s\""
-msgstr "E46: No se pudo definir la variable de solo lectura \"%s\""
+msgstr "E794: No se pudo definir la variable de la «sandbox» \"%s\""
 
 #: globals.h:1498
 msgid "E47: Error while reading errorfile"
