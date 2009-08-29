@@ -83,7 +83,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: octet-stream\n"
-"PO-Revision-Date: 2009-08-29 12:38+0200\n"
+"PO-Revision-Date: 2009-08-29 16:03+0200\n"
 
 #: buffer.c:102
 msgid "E82: Cannot allocate any buffer, exiting..."
@@ -2874,12 +2874,12 @@ msgstr "&Deshacer"
 #: gui_riscos.c:953
 #, c-format
 msgid "E610: Can't load Zap font '%s'"
-msgstr "E610: No se pudo cargar la fuente de impresión Zap '%s'"
+msgstr "E610: No se pudo cargar el tipo de letra de impresión Zap '%s'"
 
 #: gui_riscos.c:1052
 #, c-format
 msgid "E611: Can't use font %s"
-msgstr "E611: No se puede usar la tipografía de impresión %s"
+msgstr "E611: No se puede el tipo de letra de impresión %s"
 
 #: gui_riscos.c:3282
 msgid ""
@@ -2965,19 +2965,19 @@ msgstr "Tipografía de impresión 0: %s\n"
 #: gui_x11.c:2203
 #, c-format
 msgid "Font1: %s\n"
-msgstr "Fuente de impresión 1: %s\n"
+msgstr "Tipo de letra de impresión 1: %s\n"
 
 #: gui_x11.c:2204
 #, c-format
 msgid "Font%ld width is not twice that of font0\n"
 msgstr ""
-"La anchura de la tipografía de impresión %ld no es el doble de la \n"
+"La anchura del tipo de letra de impresión %ld no es el doble de la \n"
 "de la tipografía de impresión 0\n"
 
 #: gui_x11.c:2205
 #, c-format
 msgid "Font0 width: %ld\n"
-msgstr "Anchura de la tipografía de impresión 0: %ld\n"
+msgstr "Anchura del tipo de letra de impresión 0: %ld\n"
 
 #: gui_x11.c:2206
 #, c-format
@@ -2985,12 +2985,12 @@ msgid ""
 "Font1 width: %ld\n"
 "\n"
 msgstr ""
-"Anchura de la tipografía de impresión 1: %ld\n"
+"Anchura del tipo de letra de impresión 1: %ld\n"
 "\n"
 
 #: gui_xmdlg.c:687 gui_xmdlg.c:806
 msgid "Invalid font specification"
-msgstr "La especificación de tipografía no es válida"
+msgstr "La especificación de tipo de letra no es válida"
 
 #: gui_xmdlg.c:688 gui_xmdlg.c:807
 msgid "&Dismiss"
@@ -3114,7 +3114,8 @@ msgstr ""
 #: hardcopy.c:2578
 msgid "E675: No default font specified for multi-byte printing."
 msgstr ""
-"E675: No se ha definido una fuente por defecto para impresión multi-byte"
+"E675: No se ha definido un tipo de letra predeterminado para impresión\n"
+"multi-byte"
 
 #: hardcopy.c:2771
 msgid "E324: Can't open PostScript output file"
@@ -4251,20 +4252,23 @@ msgstr "-foreground <color>\tUsa <color> para el texto normal (también: -fg)"
 #: main.c:3151 main.c:3171
 msgid "-font <font>\t\tUse <font> for normal text (also: -fn)"
 msgstr ""
-"-font <tipo>\t\tUsa <fuente de impresión> para el texto normal (también: -fn)"
+"-font <tipo>\t\tUse <tipo de letra de impresión> para el texto normal\n"
+"(también: -fn)"
 
 #: main.c:3152
 msgid "-boldfont <font>\tUse <font> for bold text"
-msgstr "-boldfont <tipo>\tUsa <fuente de impresión> para texto en negrita"
+msgstr "-boldfont <tipo>\tUsa <tipo de letra de impresión> para texto en\n"
+"negrita"
 
 #: main.c:3153
 msgid "-italicfont <font>\tUse <font> for italic text"
-msgstr "-italicfont <tipo>\tUsa <fuente de impresión> para texto en cursiva"
+msgstr "-italicfont <tipo>\tUse <tipo de letra de impresión> para texto\n"
+"en cursiva"
 
 #: main.c:3154 main.c:3172
 msgid "-geometry <geom>\tUse <geom> for initial geometry (also: -geom)"
 msgstr ""
-"-geometry <geom>\tUsa <geom> para la geometría inicial (también: -geom)"
+"-geometry <geom>\tUse <geom> para la geometría inicial (también: -geom)"
 
 #: main.c:3155
 msgid "-borderwidth <width>\tUse a border width of <width> (also: -bw)"
@@ -5645,12 +5649,12 @@ msgstr "E598: El conjunto de fuentes de impresión no es válido"
 #: option.c:6149
 msgid "E533: can't select wide font"
 msgstr ""
-"E533: No se pudo seleccionar la fuente de impresión \"ancha\"\n"
+"E533: No se pudo seleccionar el tipo de letra de impresión \"ancho\"\n"
 "(de \"byte\" doble)"
 
 #: option.c:6151
 msgid "E534: Invalid wide font"
-msgstr "E534: Fuente de impresión \"ancha\" inválida"
+msgstr "E534: Tipo de letra de impresión \"ancho\" inválida"
 
 #: option.c:6477
 #, c-format
@@ -5843,7 +5847,7 @@ msgstr "para %s en %s"
 #: os_mswin.c:2198
 #, c-format
 msgid "E613: Unknown printer font: %s"
-msgstr "E613: Fuente de impresión desconocida en la impresora: %s"
+msgstr "E613: Tipo de letra de impresión desconocida en la impresora: %s"
 
 #: os_mswin.c:2247 os_mswin.c:2257
 #, c-format
@@ -5859,13 +5863,14 @@ msgstr "Imprimiendo %s"
 #, c-format
 msgid "E244: Illegal charset name \"%s\" in font name \"%s\""
 msgstr ""
-"E244: El nombre del conjunto de caracteres %s no es válido en el\n"
-"nombre de la fuente de impresión %s"
+"E244: El nombre del conjunto de caracteres \"%s\" no es válido en el\n"
+"nombre del tipo de letra de impresión \"%s\""
 
 #: os_mswin.c:3471
 #, c-format
 msgid "E245: Illegal char '%c' in font name \"%s\""
-msgstr "E245: Carácter %c ilegal en el nombre de la fuente de impresión %s"
+msgstr "E245: Carácter '%c' ilegal en el nombre del tipo de letra de\n"
+"impresión %s"
 
 #: os_riscos.c:1263
 msgid "E366: Invalid 'osfiletype' option - using Text"
@@ -7713,19 +7718,19 @@ msgstr "¡Ayude a los niños pobres de Uganda!"
 
 #: version.c:1581
 msgid "type  :help iccf<Enter>       for information "
-msgstr "escriba  \":help iccf<Intro>\"    para más información  "
+msgstr "escriba  «:help iccf<Intro>»    para más información  "
 
 #: version.c:1583
 msgid "type  :q<Enter>               to exit         "
-msgstr "escriba  \":q<Intro>\"            para salir             "
+msgstr "escriba  «:q<Intro>»            para salir             "
 
 #: version.c:1584
 msgid "type  :help<Enter>  or  <F1>  for on-line help"
-msgstr "escriba  \":help<Intro> o <F1>\"  para obtener ayuda     "
+msgstr "escriba  «:help<Intro>» o <F1>  para obtener ayuda     "
 
 #: version.c:1585
 msgid "type  :help version7<Enter>   for version info"
-msgstr "escriba \":help version7<Intro>\" para información de la versión"
+msgstr "escriba «:help version7<Intro>» para información de la versión"
 
 #: version.c:1588
 msgid "Running in Vi compatible mode"
@@ -7733,11 +7738,11 @@ msgstr "Ejecutando en modo compatible con Vi"
 
 #: version.c:1589
 msgid "type  :set nocp<Enter>        for Vim defaults"
-msgstr "escriba  \":set nocp<Intro>\"  para los valores predefinidos de Vim"
+msgstr "escriba  «:set nocp<Intro>»  para los valores predefinidos de Vim"
 
 #: version.c:1590
 msgid "type  :help cp-default<Enter> for info on this"
-msgstr "escriba \":help cp-default<Intro>\"        para más información"
+msgstr "escriba «:help cp-default<Intro>»        para más información"
 
 #: version.c:1605
 msgid "menu  Help->Orphans           for information    "
@@ -7758,7 +7763,7 @@ msgstr "                                                 para dos modos     "
 #: version.c:1613
 msgid "menu  Edit->Global Settings->Toggle Vi Compatible"
 msgstr ""
-"menu Editar->Opciones globales->Activar/Desactivar compatibilidad con Vi"
+"menú Editar->Opciones globales->Activar/Desactivar compatibilidad con Vi"
 
 #: version.c:1614
 msgid "                              for Vim defaults   "
@@ -7775,23 +7780,23 @@ msgstr "¡Conviértase en un usuario registrado de Vim!"
 
 #: version.c:1665
 msgid "type  :help sponsor<Enter>    for information "
-msgstr "escriba  :help sponsor<Intro>     para más información  "
+msgstr "escriba  «:help sponsor<Intro>»     para más información  "
 
 #: version.c:1666
 msgid "type  :help register<Enter>   for information "
-msgstr "escriba \":help register<Intro>\"    para más información  "
+msgstr "escriba «:help register<Intro>»    para más información  "
 
 #: version.c:1668
 msgid "menu  Help->Sponsor/Register  for information    "
-msgstr "menu  Ayuda->Benefactor/Regístrese  para más información"
+msgstr "menú  Ayuda->Benefactor/Regístrese  para más información"
 
 #: version.c:1678
 msgid "WARNING: Windows 95/98/ME detected"
-msgstr "AVISO: se ha detectado Windows 95/98/ME"
+msgstr "ADVERTENCIA: se ha detectado Windows 95/98/ME"
 
 #: version.c:1681
 msgid "type  :help windows95<Enter>  for info on this"
-msgstr "escriba: \":help windows95<Intro>\" para más información"
+msgstr "escriba «:help windows95<Intro>» para más información"
 
 #: window.c:88
 msgid "Already only one window"
@@ -7815,12 +7820,12 @@ msgstr "E444: No se puede cerrar la última ventana"
 
 #: window.c:2120
 msgid "E813: Cannot close autocmd window"
-msgstr "E444: No se puede cerrar ventana autocmd"
+msgstr "E813: No se puede cerrar la ventana autocmd"
 
 #: window.c:2125
 msgid "E814: Cannot close window, only autocmd window would remain"
 msgstr "E814: No se pudo cerrar la última ventana, solo quedará\n"
-"la ventana e autocmd"
+"la ventana de autocmd"
 
 #: window.c:3188
 msgid "E445: Other window contains changes"
@@ -7833,7 +7838,7 @@ msgstr "E446: No hay un nombre de archivo bajo el cursor"
 #: window.c:6005
 #, c-format
 msgid "E447: Can't find file \"%s\" in path"
-msgstr "E447: No se pudo encontrar el archivo %s en la ruta"
+msgstr "E447: No se pudo encontrar el archivo \"%s\" en la ruta"
 
 #: if_perl.xs:420 globals.h:1420
 #, c-format
@@ -7854,7 +7859,7 @@ msgstr ""
 
 #: GvimExt/gvimext.cpp:587
 msgid "Edit with &multiple Vims"
-msgstr "Editar con Vims &múltiples"
+msgstr "Editar con &múltiples Vims"
 
 #: GvimExt/gvimext.cpp:593
 msgid "Edit with single &Vim"
@@ -7963,17 +7968,17 @@ msgstr "E472: La orden falló"
 #: globals.h:1392
 #, c-format
 msgid "E234: Unknown fontset: %s"
-msgstr "E234: Conjunto de fuentes de impresión desconocido: %s"
+msgstr "E234: Conjunto de tipo de letra de impresión desconocido: %s"
 
 #: globals.h:1396
 #, c-format
 msgid "E235: Unknown font: %s"
-msgstr "E235: Fuente de impresión desconocida: %s"
+msgstr "E235: Tipo de letra de impresión desconocida: %s"
 
 #: globals.h:1399
 #, c-format
 msgid "E236: Font \"%s\" is not fixed-width"
-msgstr "E236: La fuente de impresión %s no es de ancho fijo"
+msgstr "E236: El tipo de letra de impresión \"%s\" no es de ancho fijo"
 
 #: globals.h:1401
 msgid "E473: Internal error"
@@ -7989,7 +7994,7 @@ msgstr "E14: La dirección no es válida"
 
 #: globals.h:1404
 msgid "E474: Invalid argument"
-msgstr "E474: el argumento no es válido"
+msgstr "E474: El argumento no es válido"
 
 #: globals.h:1405
 #, c-format
@@ -8012,12 +8017,12 @@ msgstr "E476: La orden no es válida"
 #: globals.h:1412
 #, c-format
 msgid "E17: \"%s\" is a directory"
-msgstr "E17: %s es un directorio"
+msgstr "E17: \"%s\" es un directorio"
 
 #: globals.h:1415
 #, c-format
 msgid "E364: Library call failed for \"%s()\""
-msgstr "E364: Falló la llamada a biblioteca para %s()"
+msgstr "E364: Falló la llamada a biblioteca para \"%s()\""
 
 #: globals.h:1421
 #, c-format
@@ -8054,7 +8059,8 @@ msgstr "E477: \"!\" no está permitido"
 
 #: globals.h:1431
 msgid "E25: GUI cannot be used: Not enabled at compile time"
-msgstr "E25: No se pudo usar el GUI: no se ha activado al compilar"
+msgstr "E25: No se puede usar la interfaz gráfica (GUI): No se activó " 
+"al compilar"
 
 #: globals.h:1434
 msgid "E26: Hebrew cannot be used: Not enabled at compile time\n"
@@ -8121,7 +8127,7 @@ msgstr "E36: No hay espacio suficiente"
 #: globals.h:1459
 #, c-format
 msgid "E247: no registered server named \"%s\""
-msgstr "E247: El servidor %s no está registrado"
+msgstr "E247: El servidor denominado \"%s\" no está registrado"
 
 #: globals.h:1461
 #, c-format
@@ -8135,12 +8141,12 @@ msgstr "E483: No se pudo obtener el nombre del archivo temporal"
 #: globals.h:1463
 #, c-format
 msgid "E484: Can't open file %s"
-msgstr "E484: No se pudo abrir el archivo %s"
+msgstr "E484: No se pudo abrir el archivo \"%s\""
 
 #: globals.h:1464
 #, c-format
 msgid "E485: Can't read file %s"
-msgstr "E485: No se pudo leer el archivo %s"
+msgstr "E485: No se pudo leer el archivo \"%s\""
 
 #: globals.h:1465
 msgid "E37: No write since last change (add ! to override)"
@@ -8159,7 +8165,7 @@ msgstr "E39: Esperaba un número"
 #: globals.h:1471
 #, c-format
 msgid "E40: Can't open errorfile %s"
-msgstr "E40: No se pudo abrir el archivo de errores %s"
+msgstr "E40: No se pudo abrir el archivo de errores \"%s\""
 
 #: globals.h:1474
 msgid "E233: cannot open display"
