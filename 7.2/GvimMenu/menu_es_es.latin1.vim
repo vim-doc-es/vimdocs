@@ -90,7 +90,7 @@ menutrans Toggle\ Vi\ C&ompatible<Tab>:set\ cp!	Activar/Desactivar\ compatiblida
 
 menutrans Search\ &Path\.\.\.		Ruta\ de\ &búsqueda\.\.\.
 
-menutrans Ta&g\ Files\.\.\.		Ficheros\ de\ &etiquetas\.\.\.
+menutrans Ta&g\ Files\.\.\.		Archivos\ de\ &etiquetas\.\.\.
 
 " GUI options
 menutrans Toggle\ &Toolbar		Ocultar/Mostrar\ barra\ de\ &herramientas
@@ -155,7 +155,7 @@ menutrans slovak	eslovaco
 
 " Programming menu
 menutrans &Tools			&Herramientas
-menutrans &Jump\ to\ this\ tag<Tab>g^]	&Saltar\ a\ este\ etiqueta<Tab>g^]
+menutrans &Jump\ to\ this\ tag<Tab>g^]	&Saltar\ a\ esta\ etiqueta<Tab>g^]
 menutrans Jump\ &back<Tab>^T		Saltar\ &atrás<Tab>^T
 menutrans Build\ &Tags\ File		Crear\ archivo\ de\ &etiquetas\
 menutrans &Diff				Modo\ de\ &diferencias
