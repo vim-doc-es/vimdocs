@@ -218,7 +218,7 @@ menutrans &Open<Tab>:copen	A&brir
 menutrans &Close<Tab>:cclose	&Cerrar
 
 " Names for buffer menu.
-menutrans &Buffers		&Buffers
+menutrans &Buffers		&Búfers
 menutrans &Refresh\ menu	&Refrescar\ menú
 menutrans &Delete		&Suprimir
 menutrans &Alternate		&Alternar
@@ -315,4 +315,4 @@ menutrans &Highlight\ test		Prueba\ de\ &resaltado
 menutrans &Convert\ to\ HTML		&Convertir\ a\ HTML
 
 " Find Help dialog text
-let g:menutrans_help_dialog = "Introduzca un nombre de comando o palabra para obtener ayuda;\n\nAnteponga i_ para comandos de entrada (e.g.: i_CTRL-X)\nAnteponga c_ para comandos de la línea de comandos (e.g.: c_<Del>)\nAnteponga ` para un nombre de opción (e.g.: `shiftwidth`)"
+let g:menutrans_help_dialog = "Introduzca un nombre de orden o palabra para obtener ayuda;\n\nAnteponga «i_» para órdenes de entrada (e.g.: i_CTRL-X)\nAnteponga «c_» para órdenes de la línea de órdenes (e.g.: c_<Del>)\nAnteponga ` para un nombre de opción (e.g.: `shiftwidth`)"
