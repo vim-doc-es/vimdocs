@@ -1,3 +1,49 @@
+# Vim l10n es http://code.assembla.com/vim-doc-es/git/nodes/master 
+#
+# Copyright (C) AÑOS 
+# This file is distributed under the same license as the Vim (version) package.
+#
+# Translators credits:
+#   - Initial translation
+#       Eduardo F. Amatria <eferna1@platea.pntic.mec.es>, 2001
+#
+#   - Updates
+#        Pedro A. López-Valencia <vorbote@users.sourceforge.net>, 2003-06,2009
+#        Nelson López Villarroel <tuxero@users.sourceforge.net>, 2006
+#        Omar Campagne Polaino <ocampagne@gmail.com> 2009
+#
+# 
+#
+# Debido al formato (txt) y al máximo de 80 columnas que pueden tener 
+# los textos de ayuda en Vim, así como el formato PO, por favor, leete los
+# apuntes concernientes a la edición de los archivos PO relativos a la
+# aplicación que desees usar.
+# También encontrarás información acerca del uso de herramientas gettext en el 
+# proyecto de localización (l10n) de Vim.
+# 
+# - http://www.assembla.com/wiki/show/vim-doc-es
+#
+# No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
+# este enlace puede ser de interés. A pesar de no formar parte, nuestra 
+# intención es homologarnos con su terminología y uso de la lengua 
+# en la medida de lo útil y posible.
+# 
+#  - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/notas
+# 
+# La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
+# pero también puede servir de referencia para otros términos no técnicos.
+# No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
+# traducción sea comprensible independientemente de la nacionalidad del
+# usuario. Si crees que alguna traducción puede llevar a confusión, consulta
+# la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
+# 
+#  - www.rae.es 
+#  - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages   
+# 
+# Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
+# se puede consultar con un simple grep, pogrep o cargado en Virtaal.
+# 
 # Castillian translation for Vim
 #
 # Do ":help uganda"  in Vim to read copying and usage conditions.
@@ -83,7 +129,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: octet-stream\n"
-"PO-Revision-Date: 2009-08-30 15:45+0200\n"
+"PO-Revision-Date: 2009-08-31 13:58+0200\n"
 
 #: buffer.c:102
 msgid "E82: Cannot allocate any buffer, exiting..."
@@ -5191,7 +5237,7 @@ msgstr "E767: Demasiados argumentos para printf()"
 
 #: misc1.c:2966
 msgid "W10: Warning: Changing a readonly file"
-msgstr "W10: Advertencia: cambiando un archivo de solo lectura"
+msgstr "W10: Advertencia: cambiando un archivo de sólo lectura"
 
 #: misc1.c:3260
 msgid "Type number and <Enter> or click with mouse (empty cancels): "
@@ -7719,19 +7765,19 @@ msgstr "¡Ayude a los niños pobres de Uganda!"
 
 #: version.c:1581
 msgid "type  :help iccf<Enter>       for information "
-msgstr "escriba  \":help iccf<Intro>\"    para más información  "
+msgstr "escriba  «:help iccf<Intro>»    para más información  "
 
 #: version.c:1583
 msgid "type  :q<Enter>               to exit         "
-msgstr "escriba  \":q<Intro>\"            para salir             "
+msgstr "escriba  «:q<Intro>»            para salir             "
 
 #: version.c:1584
 msgid "type  :help<Enter>  or  <F1>  for on-line help"
-msgstr "escriba  \":help<Intro>\" o <F1>  para obtener ayuda     "
+msgstr "escriba  «:help<Intro>» o <F1>  para obtener ayuda     "
 
 #: version.c:1585
 msgid "type  :help version7<Enter>   for version info"
-msgstr "escriba \":help version7<Intro>\" para información de la versión"
+msgstr "escriba «:help version7<Intro>» para información de la versión"
 
 #: version.c:1588
 msgid "Running in Vi compatible mode"
@@ -7739,11 +7785,11 @@ msgstr "Ejecutando en modo compatible con Vi"
 
 #: version.c:1589
 msgid "type  :set nocp<Enter>        for Vim defaults"
-msgstr "escriba  \":set nocp<Intro>\"  para los valores predefinidos de Vim"
+msgstr "escriba  «:set nocp<Intro>»  para los valores predefinidos de Vim"
 
 #: version.c:1590
 msgid "type  :help cp-default<Enter> for info on this"
-msgstr "escriba \":help cp-default<Intro>\"        para más información"
+msgstr "escriba «:help cp-default<Intro>»        para más información"
 
 #: version.c:1605
 msgid "menu  Help->Orphans           for information    "
@@ -7781,11 +7827,11 @@ msgstr "¡Conviértase en un usuario registrado de Vim!"
 
 #: version.c:1665
 msgid "type  :help sponsor<Enter>    for information "
-msgstr "escriba  \":help sponsor<Intro>\"     para más información  "
+msgstr "escriba  «:help sponsor<Intro>»     para más información  "
 
 #: version.c:1666
 msgid "type  :help register<Enter>   for information "
-msgstr "escriba \":help register<Intro>\"    para más información  "
+msgstr "escriba «:help register<Intro>»    para más información  "
 
 #: version.c:1668
 msgid "menu  Help->Sponsor/Register  for information    "
@@ -7797,7 +7843,7 @@ msgstr "ADVERTENCIA: se ha detectado Windows 95/98/ME"
 
 #: version.c:1681
 msgid "type  :help windows95<Enter>  for info on this"
-msgstr "escriba \":help windows95<Intro>\" para más información"
+msgstr "escriba «:help windows95<Intro>» para más información"
 
 #: window.c:88
 msgid "Already only one window"
