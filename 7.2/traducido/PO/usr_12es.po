@@ -1,52 +1,85 @@
-# SOME DESCRIPTIVE TITLE
-# Copyright (C) YEAR Free Software Foundation, Inc.
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Vim l10n es http://code.assembla.com/vim-doc-es/git/nodes/master 
 #
+# Copyright (C) AÑOS 
+# This file is distributed under the same license as the Vim 7.2 package.
+#
+# Translators credits:
+#   - Initial translation
+#       Álvaro Castro Castillo <alvaro.castro.castilla@gmail.com>
+#
+#   - Updates
+#       TRADUCTOR <CORREO>, AÑO 
+#
+# 
+#
+# Debido al formato (txt) y al máximo de 80 columnas que pueden tener 
+# los textos de ayuda en Vim, así como el formato PO, por favor, leete los
+# apuntes concernientes a la edición de los archivos PO relativos a la
+# aplicación que desees usar.
+# También encontrarás información acerca del uso de herramientas gettext en el 
+# proyecto de localización (l10n) de Vim.
+# 
+# - http://www.assembla.com/wiki/show/vim-doc-es
+#
+# No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
+# este enlace puede ser de interés. A pesar de no formar parte, nuestra 
+# intención es homologarnos con su terminología y uso de la lengua 
+# en la medida de lo útil y posible.
+# 
+#  - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/notas
+# 
+# La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
+# pero también puede servir de referencia para otros términos no técnicos.
+# No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
+# traducción sea comprensible independientemente de la nacionalidad del
+# usuario. Si crees que alguna traducción puede llevar a confusión, consulta
+# la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
+# 
+#  - www.rae.es 
+#  - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages   
+# 
+# Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
+# se puede consultar con un simple grep, pogrep o cargado en Virtaal.
+# 
 #. extracted from usr_12.txt
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: Vim 7.2\n"
+"Report-Msgid-Bugs-To: bugs@vim.org\n"
 "POT-Creation-Date: 2009-08-01 19:54+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2009-09-05 13:00+0200\n"
+"Last-Translator: Álvaro Castro Castillo <alvaro.castro.castilla@gmail.com>\n"
+"Language-Team: Documentación de Vim en español\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: ENCODING\n"
+"Content-Transfer-Encoding: 8bit\n"
 
 #: usr_12.txt:1
-#, fuzzy
 msgid "*usr_12.txt*\tFor Vim version 7.2.  Last change: 2007 May 11"
-msgstr "*usr_12.txt*\tFor Vim version 7.2.  Last change: 2007 May 11"
+msgstr "*usr_12.est*\tPara Vim versión 7.2.  Último cambio: 2007 May 11"
 
 #: usr_12.txt:3
-#, fuzzy
 msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar"
-msgstr "                MANUAL DE USUARIO DE VIM - por Bram Moolenaar"
+msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar"
 
 #: usr_12.txt:5
-#, fuzzy
 msgid "\t\t\t\tClever tricks"
-msgstr "\t\t\t\t    Trucos"
+msgstr "\t\t\t\tTrucos"
 
 #: usr_12.txt:8
-#, fuzzy
 msgid ""
 "By combining several commands you can make Vim do nearly everything.  In "
 "this\n"
 "chapter a number of useful combinations will be presented.  This uses the\n"
 "commands introduced in the previous chapters and a few more."
 msgstr ""
-"Combinando varios comandos puedes conseguir que Vim haga casi cualquier "
-"cosa.\n"
-"En este capítulo, presentaremos una serie de combinaciones útiles.  Esto\n"
-"emplea los comandos introducidos en capítulos anteriores y algunos más."
+"Puedes conseguir que Vim haga casi cualquier cosa,.mediante la combinación\n"
+"varias órdenes. En este capítulo, presentaremos una serie de combinaciones\n"
+"útiles. Esto emplea las órdenes introducidos en capítulos anteriores y\n"
+"algunos más."
 
 #: usr_12.txt:12
-#, fuzzy
 msgid ""
 "|12.1|\tReplace a word\n"
 "|12.2|\tChange \"Last, First\" to \"First Last\"\n"
@@ -57,28 +90,26 @@ msgid ""
 "|12.7|\tTrim blanks\n"
 "|12.8|\tFind where a word is used"
 msgstr ""
-"|12.1|  Reemplazar una palabra\n"
-"|12.2|  Cambiar \"Último, Primero\" a \"Primero Último\"\n"
-"|12.3|  Ordenar una lista\n"
-"|12.4|  Invertir el orden de las líneas\n"
-"|12.5|  Contar palabras\n"
-"|12.6|  Encontrar una página del manual\n"
-"|12.7|  Eliminar espacios en blanco sobrantes\n"
-"|12.8|  Buscar dónde se emplea una palabra"
+"|12.1|\tReemplazar una palabra\n"
+"|12.2|\tCambiar «Último, Primero» a «Primero Último»\n"
+"|12.3|\tOrdenar una lista\n"
+"|12.4|\tInvertir el orden de las líneas\n"
+"|12.5|\tContar palabras\n"
+"|12.6|\tEncontrar una página de manual\n"
+"|12.7|\tEliminar espacios en blanco sobrantes\n"
+"|12.8|\tBuscar dónde se emplea una palabra"
 
 #: usr_12.txt:21
-#, fuzzy
 msgid ""
 "     Next chapter: |usr_20.txt|  Typing command-line commands quickly\n"
 " Previous chapter: |usr_11.txt|  Recovering from a crash\n"
 "Table of contents: |usr_toc.txt|"
 msgstr ""
-" Capítulo siguiente: |usr_20.txt|  Ser eficaz con la línea de comandos\n"
+" Capítulo siguiente: |usr_20.txt|  Ser eficaz con la línea de órdenes\n"
 "  Capítulo anterior: |usr_11.txt|  Recuperación de errores\n"
-"         Contenidos: |usr_toc.txt|"
+"Tabla de contenidos: |usr_toc.txt|"
 
 #: usr_12.txt:25
-#, fuzzy
 msgid ""
 "==============================================================================\n"
 "*12.1*\tReplace a word"
@@ -87,23 +118,19 @@ msgstr ""
 "*12.1*  Reemplazar una palabra"
 
 #: usr_12.txt:28
-#, fuzzy
 msgid ""
 "The substitute command can be used to replace all occurrences of a word "
 "with\n"
 "another word: >"
 msgstr ""
-"El comando sustituir puede ser empleado para reemplazar todos los casos de "
-"una\n"
-"palabra con otra: >"
+"La orden sustituir se puede emplear para reemplazar todas las apariciones\n"
+"de una palabra con otra: >"
 
 #: usr_12.txt:31
-#, fuzzy
 msgid "\t:%s/four/4/g"
 msgstr "\t:%s/cuatro/4/g"
 
 #: usr_12.txt:33
-#, fuzzy
 msgid ""
 "The \"%\" range means to replace in all lines.  The \"g\" flag at the end "
 "causes\n"
@@ -114,38 +141,30 @@ msgid ""
 "to\n"
 "match the start of a word: >"
 msgstr ""
-"El rango \"%\" significa reemplazar en todas las líneas.  La bandera \"g\" "
-"al final\n"
+"El rango «%» significa reemplazar en todas las líneas. La marca «g» al final\n"
 "hace que todas las palabras de una línea sean sustituidas.\n"
-"   Esto no hará lo que deseas si tu archivo también contiene \"veinticuatro"
-"\".\n"
-"Será reemplazado por \"veinti4\".  Para evitar que esto ocurra usa el \"\\<"
-"\" para\n"
-"concordar el comienzo de una palabra. >"
+"   Esto no hará lo que desea si su archivo también contiene «veinticuatro».\n"
+"Será reemplazado por «veinti4». Para evitar que esto ocurra, use el «\\<»\n"
+"para concordar con el comienzo de una palabra. >"
 
 #: usr_12.txt:39
-#, fuzzy
 msgid "\t:%s/\\<four/4/g"
 msgstr "\t:%s/\\<cuatro/4/g"
 
 #: usr_12.txt:41
-#, fuzzy
 msgid ""
 "Obviously, this still goes wrong on \"fourteen\".  Use \"\\>\" to match the "
 "end of\n"
 "a word: >"
 msgstr ""
-"Obviamente, esto también funcionará mal con \"cuatrocientos\".  Usa \"\\>\" "
-"para\n"
-"concordar el final de una palabra: >"
+"Obviamente, esto también funcionará mal con «cuatrocientos». Use «\\>»\n"
+"para concordar el final de una palabra: >"
 
 #: usr_12.txt:44
-#, fuzzy
 msgid "\t:%s/\\<four\\>/4/g"
 msgstr "\t:%s/\\<cuatro\\>/4/g"
 
 #: usr_12.txt:46
-#, fuzzy
 msgid ""
 "If you are programming, you might want to replace \"four\" in comments, but "
 "not\n"
@@ -153,24 +172,20 @@ msgid ""
 "the\n"
 "substitute command prompt you for each replacement: >"
 msgstr ""
-"Si estás programando, quizá quieras reemplazar \"cuatro\" en los "
-"comentarios,\n"
-"pero no en el código.  Ya que es difícil de especificar, añade la bandera \"c"
-"\"\n"
-"para ser preguntado cada vez que se vaya a reemplazar la palabra: >"
+"Si está programando, quizá desee reemplazar «cuatro» en los comentarios,\n"
+"pero no en el código. Ya que es difícil de especificar, añada la marca «c»\n"
+"para que se le pida una confirmación cada vez que se vaya a reemplazar\n"
+"la palabra: >"
 
 #: usr_12.txt:51
-#, fuzzy
 msgid "\t:%s/\\<four\\>/4/gc"
 msgstr "\t:%s/\\<cuatro\\>/4/gc"
 
 #: usr_12.txt:54
-#, fuzzy
 msgid "REPLACING IN SEVERAL FILES"
 msgstr "REEMPLAZAR EN VARIOS ARCHIVOS"
 
 #: usr_12.txt:56
-#, fuzzy
 msgid ""
 "Suppose you want to replace a word in more than one file.  You could edit "
 "each\n"
@@ -181,16 +196,13 @@ msgid ""
 "There is a function called \"GetResp\" that you want to rename to \"GetAnswer"
 "\"."
 msgstr ""
-"Supón que quieres reemplazar una palabra en más de un archivo.  Puedes "
-"editar\n"
-"cada archivo y escribir el comando manualmente.  Es mucho más fácil usar la\n"
-"grabación y reproducción.\n"
-"   Vamos a asumir que tienes un directorio con archivos C++ en el que todos\n"
-"terminan en \".cpp\".  Quieres renombrar la función \"GetResp\" a \"GetAnswer"
-"\"."
+"Suponga que quiere reemplazar una palabra en más de un archivo. Puede\n"
+"editar cada archivo y escribir la orden manualmente. Es mucho más fácil\n"
+"usar la grabación y reproducción.\n"
+"   Vamos a suponer que tiene un directorio con archivos C++ en el que todos\n"
+"terminan en «.cpp». Quiere renombrar la función «GetResp» a «GetAnswer»."
 
 #: usr_12.txt:62
-#, fuzzy
 msgid ""
 "\tvim *.cpp\t\tStart Vim, defining the argument list to\n"
 "\t\t\t\tcontain all the C++ files.  You are now in the\n"
@@ -205,43 +217,40 @@ msgid ""
 "\t\t\t\tthat this doesn't produce an error message.\n"
 "\t999@q\t\t\tExecute the q register on the remaining files."
 msgstr ""
-"\tvim *.cpp\t\tArranca Vim definiendo la lista de argumentos\n"
-"\t\t\t\tconteniendo todos los archivos C++.  Estarás\n"
+"\tvim *.cpp\t\tInicie Vim definiendo la lista de argumentos\n"
+"\t\t\t\tconteniendo todos los archivos C++. Estará\n"
 "\t\t\t\tahora en el primer archivo.\n"
-"\tqq\t\t\tComienza a grabar en el registro q.\n"
+"\tqq\t\t\tComience a grabar en el registro «q».\n"
 "\t:%s/\\<GetResp\\>/GetAnswer/g\n"
-"\t\t\t\tReemplaza en el primer archivo.\n"
-"\t:wnext\t\t\tGraba este archivo y ve al siguiente.\n"
-"\tq\t\t\tPara la grabación.\n"
-"\t@q\t\t\tEjecuta el registro q.  Esto ejecutará la\n"
-"\t\t\t\tsustitución y el comando \":wnext\".  Puedes\n"
+"\t\t\t\tReemplace en el primer archivo.\n"
+"\t:wnext\t\t\tGrabe este archivo y vaya al siguiente.\n"
+"\tq\t\t\tDetiene la grabación.\n"
+"\t@q\t\t\tEjecute el registro «q». Esto ejecutará la\n"
+"\t\t\t\tsustitución y el comando «:wnext». Puede\n"
 "\t\t\t\tcomprobar que esto no produzca ningún error.\n"
-"\t999@q\t\t\tEjecuta el registro q en el resto de archivos."
+"\t999@q\t\t\tEjecute el registro «q» en el resto de archivos."
 
 #: usr_12.txt:75
-#, fuzzy
 msgid ""
 "At the last file you will get an error message, because \":wnext\" cannot "
 "move\n"
 "to the next file.  This stops the execution, and everything is done."
 msgstr ""
-"En el último archivo obtendrás un mensaje de error, porque \"wnext\" no "
-"puede ir\n"
-"a un archivo siguiente.  Esto parará la ejecución y todo terminará."
+"En el último archivo obtendrá un mensaje de error, porque «wnext» no puede "
+"ir\n"
+"a un archivo siguiente. Esto parará la ejecución y todo terminará."
 
 #: usr_12.txt:78
-#, fuzzy
 msgid ""
 "\tNote:\n"
 "\tWhen playing back a recorded sequence, an error stops the execution.\n"
 "\tTherefore, make sure you don't get an error message when recording."
 msgstr ""
-"\tNote:\n"
-"\tCuando vuelvas a reproducir una secuencia grabada, un error parará la\n"
-"\tejecución.  Cuida de no producir errores cuando grabes."
+"\tNota:\n"
+"\tCuando vuelva a reproducir una secuencia grabada, un error detendrá la\n"
+"\tejecución. Cuide de no producir errores cuando grabes."
 
 #: usr_12.txt:82
-#, fuzzy
 msgid ""
 "There is one catch: If one of the .cpp files does not contain the word\n"
 "\"GetResp\", you will get an error and replacing will stop.  To avoid this, "
@@ -249,40 +258,33 @@ msgid ""
 "the \"e\" flag to the substitute command: >"
 msgstr ""
 "Hay un pequeño problema: Si uno de los archivos .cpp no contiene la palabra\n"
-"\"GetResp\", obtendrás un error y la ejecución se parará.  Para evitar "
-"esto,\n"
-"añade la bandera \"e\" al comando sustituir: >"
+"«GetResp», obtendrá un error y la ejecución se detendrá. Para evitar esto,\n"
+"añada la marca «e» a la orden de sustituir: >"
 
 #: usr_12.txt:86
-#, fuzzy
 msgid "\t:%s/\\<GetResp\\>/GetAnswer/ge"
 msgstr "\t:%s/\\<GetResp\\>/GetAnswer/ge"
 
 #: usr_12.txt:88
-#, fuzzy
 msgid ""
 "The \"e\" flag tells \":substitute\" that not finding a match is not an "
 "error."
 msgstr ""
-"La bandera \"e\" le dice a \":substitute\" que ninguna coincidencia no es un "
-"error."
+"La marca «e» le dice a «:substitute» que ninguna coincidencia no es un error."
 
 #: usr_12.txt:90
-#, fuzzy
 msgid ""
 "==============================================================================\n"
 "*12.2*\tChange \"Last, First\" to \"First Last\""
 msgstr ""
 "==============================================================================\n"
-"*12.1*  Reemplazar una palabra"
+"*12.2*\tCambiar «Último, Primero» a «Primero Último»"
 
 #: usr_12.txt:93
-#, fuzzy
 msgid "You have a list of names in this form:"
-msgstr "Tienes una lista de nombre de la siguiente forma:"
+msgstr "Tiene una lista de nombre de la siguiente forma:"
 
 #: usr_12.txt:95
-#, fuzzy
 msgid ""
 "\tDoe, John ~\n"
 "\tSmith, Peter ~"
@@ -291,12 +293,10 @@ msgstr ""
 "\tAmancio, Pedro ~"
 
 #: usr_12.txt:98
-#, fuzzy
 msgid "You want to change that to:"
-msgstr "Quieres cambiarlo a:"
+msgstr "Quiere cambiarlo a:"
 
 #: usr_12.txt:100
-#, fuzzy
 msgid ""
 "\tJohn Doe ~\n"
 "\tPeter Smith ~"
@@ -305,17 +305,14 @@ msgstr ""
 "\tPedro Amancio ~"
 
 #: usr_12.txt:103
-#, fuzzy
 msgid "This can be done with just one command: >"
-msgstr "Esto se puede hacer con un solo comando: >"
+msgstr "Esto se puede hacer con una  sola orden: >"
 
 #: usr_12.txt:105
-#, fuzzy
 msgid "\t:%s/\\([^,]*\\), \\(.*\\)/\\2 \\1/"
 msgstr "\t:%s/\\([^,]*\\), \\(.*\\)/\\2 \\1/"
 
 #: usr_12.txt:107
-#, fuzzy
 msgid ""
 "Let's break this down in parts.  Obviously it starts with a substitute\n"
 "command.  The \"%\" is the line range, which stands for the whole file.  "
@@ -327,18 +324,15 @@ msgid ""
 "pattern contains:\n"
 "\t\t\t\t\t\t\t\\([^,]*\\), \\(.*\\) ~"
 msgstr ""
-"Veámoslo por partes.  Obviamente comienza con el comando substitute .  El \"%"
-"\"\n"
-"es el rango de líneas, que se refiere al archivo completo.  Por lo tanto la\n"
-"sustitución se producirá en cada línea del archivo.\n"
-"   Los argumentos para el comando sustituir son \"/desde/a/\".  Las barras\n"
-"separan el patrón \"desde\" y la cadena \"hacia\".  Esto es lo que el "
-"patrón\n"
-"\"desde\" contiene:\n"
+"Veámoslo por partes. Obviamente comienza con la orden «substitute».\n"
+"El «%» es el rango de líneas, que se refiere al archivo completo. Por lo\n"
+"tanto la sustitución se producirá en cada línea del archivo.\n"
+"   Los argumentos para la orden sustituir son «/desde/a/». Las barras\n"
+"separan el patrón «desde» y la cadena \"hacia\". Esto es lo que el patrón\n"
+"«desde» contiene:\n"
 "\t\t\t\t\t\t\t\\([^,]*\\), \\(.*\\) ~"
 
 #: usr_12.txt:115
-#, fuzzy
 msgid ""
 "\tThe first part between \\( \\) matches \"Last\"\t\\(     \\)\n"
 "\t    match anything but a comma\t\t\t  [^,]\n"
@@ -348,16 +342,15 @@ msgid ""
 "\t    any character\t\t\t\t\t     .\n"
 "\t    any number of times\t\t\t\t\t      *"
 msgstr ""
-"\tLa primera parte entre \\( \\) concuerda \"Último\" \\(     \\)\n"
+"\tLa primera parte entre \\( \\) concuerda «Último» \\(     \\)\n"
 "\t    concordar cualquier cosa excepto una coma     [^,]\n"
 "\t    cualquier número de veces                         *\n"
 "\tconcuerda literalmente \", \"                              ,\n"
-"\tLa segunda parte entre \\(  \\) concuerda \"Primero\"          \\(  \\)\n"
+"\tLa segunda parte entre \\(  \\) concuerda «Primero»\t\t   \\(  \\)\n"
 "\t    cualquier carácter                                       .\n"
-"\t    cualquier número de veces                                 *"
+"\t    cualquier número de veces \t\t\t\t\t     *"
 
 #: usr_12.txt:123
-#, fuzzy
 msgid ""
 "In the \"to\" part we have \"\\2\" and \"\\1\".  These are called "
 "backreferences.\n"
@@ -371,37 +364,30 @@ msgid ""
 "more\n"
 "special items in a substitute command, see |sub-replace-special|."
 msgstr ""
-"En la parte \"a\" tenemos \"\\2\" y \"\\1\".  A esto se le llaman "
-"referencias \"vuelta\n"
-"atrás\".  Refieren al texto encontrado por los \"\\( \\)\" del patrón.  \"\\2"
-"\" se\n"
-"refiere al texto del segundo \"\\( \\)\", que es el nombre \"Pimero\".  \"\\1"
-"\" se\n"
-"refiere al primer \"\\( \\)\", que es el nombre \"Último\".\n"
-"   Puedes usar hasta nueve referencias \"vuelta atrás\" en la parte \"a\" de "
-"un\n"
-"comando sustitución.  \"\\0\" se refiere a la cadena coincidente completa.  "
-"Hay\n"
-"otros elementos especiales en un comando sustituir, ver |sub-replace-"
-"special|."
+"En la parte «a» tenemos «\\2» y «\\1». A esto se le llaman referencias\n"
+"«inversas». Se refieren al texto encontrado por los «\\( \\)» del patrón. «\\2» "
+"se\n"
+"refiere al texto del segundo «\\( \\)», que es el nombre «Primero». «\\1» se\n"
+"refiere al primer «\\( \\)», que es el nombre «Último».\n"
+"   Puede usar hasta nueve referencias «inversas» en la parte «a» de una\n"
+"orden de sustitución. «\\0x se refiere a la cadena coincidente completa. Hay\n"
+"otros elementos especiales en una orden sustituir,\n"
+"véase |sub-replace-special|."
 
 #: usr_12.txt:131
-#, fuzzy
 msgid ""
 "==============================================================================\n"
 "*12.3*\tSort a list"
 msgstr ""
 "==============================================================================\n"
-"*12.1*  Reemplazar una palabra"
+"*12.3*\tOrdenar una lista"
 
 #: usr_12.txt:134
-#, fuzzy
 msgid "In a Makefile you often have a list of files.  For example:"
 msgstr ""
-"En un archivo Makefile tienes a menudo una lista de archivos.  Por ejemplo:"
+"A menudo, en un archivo Makefile tiene una lista de archivos. Por ejemplo:"
 
 #: usr_12.txt:136
-#, fuzzy
 msgid ""
 "\tOBJS = \\ ~\n"
 "\t\tversion.o \\ ~\n"
@@ -424,13 +410,12 @@ msgstr ""
 "\t\tbackup.o ~"
 
 #: usr_12.txt:146
-#, fuzzy
 msgid "To sort this list, filter the text through the external sort command: >"
 msgstr ""
-"Para ordenar esta lista, filtra el texto a través del comando externo sort: >"
+"Para ordenar esta lista, filtre el texto a través de la orden externa «sort»: "
+">"
 
 #: usr_12.txt:148
-#, fuzzy
 msgid ""
 "\t/^OBJS\n"
 "\tj\n"
@@ -441,7 +426,6 @@ msgstr ""
 "\t:.,/^$/-1!sort"
 
 #: usr_12.txt:152
-#, fuzzy
 msgid ""
 "This goes to the first line, where \"OBJS\" is the first thing in the line.\n"
 "Then it goes one line down and filters the lines until the next empty line.\n"
@@ -450,16 +434,14 @@ msgid ""
 "easier to type, but more work when there are many lines.\n"
 "   The result is this:"
 msgstr ""
-"Esto va a la primera línea, donde \"OBJS\" es lo primero que se encuentra en "
+"Esto va a la primera línea, donde «OBJS» es lo primero que se encuentra en "
 "una\n"
-"línea.  Luego baja una línea y filtra las líneas hasta encontrar una línea\n"
-"vacía.  También podrías seleccionar las líneas en modo Visual y escribir\n"
-"\"!sort\".  Es más fácil pero conlleva más trabajo cuando hay muchas "
-"líneas.\n"
+"línea. Luego baja una línea y filtra las líneas hasta encontrar una línea\n"
+"vacía. También podría seleccionar las líneas en modo Visual y escribir\n"
+"«!sort». Es más fácil pero conlleva más trabajo cuando hay muchas líneas.\n"
 "   El resultado es el siguiente:"
 
 #: usr_12.txt:158
-#, fuzzy
 msgid ""
 "\tOBJS = \\ ~\n"
 "\t\tbackup.o ~\n"
@@ -482,7 +464,6 @@ msgstr ""
 "\t\tversion.o \\ ~"
 
 #: usr_12.txt:169
-#, fuzzy
 msgid ""
 "Notice that a backslash at the end of each line is used to indicate the "
 "line\n"
@@ -495,56 +476,47 @@ msgid ""
 "keep the backslash in the last line, if you make sure an empty line comes\n"
 "after it.  That way you don't have this problem again."
 msgstr ""
-"Observa que una barra invertida al final de cada línea se usa para indicar "
-"que\n"
-"la línea continúa.  Tras ordenar, está mal puesto.  La línea de \"backup.o\" "
-"que\n"
-"estaba al final no tenía una barra invertida.  Ahora que se sitúa en otro\n"
+"Observe que una barra invertida al final de cada línea se usa para indicar\n"
+"que la línea continúa. Tras ordenar, está mal puesto. La línea de «backup.o»\n"
+"que estaba al final no tenía una barra invertida. Ahora que se sitúa en "
+"otro\n"
 "lugar debe tener una barra invertida.\n"
-"   La solución más sencilla es añadirla con \"A \\<Esc>\".  Puedes mantener "
-"la\n"
-"barra en la última línea si te aseguras de que una línea en blanco viene "
+"   La solución más sencilla es añadirla con «A \\<Esc>». Puede mantener la\n"
+"barra en la última línea si se asegura de que una línea en blanco viene "
 "justo\n"
-"después.  De este modo no tendrás este problema de nuevo."
+"después. De este modo no tendrá este problema de nuevo."
 
 #: usr_12.txt:177
-#, fuzzy
 msgid ""
 "==============================================================================\n"
 "*12.4*\tReverse line order"
 msgstr ""
 "==============================================================================\n"
-"*12.1*  Reemplazar una palabra"
+"*12.4*\tInvertir el orden de las líneas"
 
 #: usr_12.txt:180
-#, fuzzy
 msgid ""
 "The |:global| command can be combined with the |:move| command to move all "
 "the\n"
 "lines before the first line, resulting in a reversed file.  The command is: >"
 msgstr ""
-"El comando |:global| debe ser combinado con el comando |:move| para mover\n"
-"todas las líneas antes de la primera línea, invirtiendo el archivo.  "
-"Escribe:\n"
-">"
+"La orden «|:global|» se debe combinar con la orden «|:move|» para mover\n"
+"todas las líneas antes de la primera línea, invirtiendo el archivo.\n"
+"La orden es: >"
 
 #: usr_12.txt:183
-#, fuzzy
 msgid "\t:global/^/m 0"
 msgstr "\t:global/^/m 0"
 
 #: usr_12.txt:185
-#, fuzzy
 msgid "Abbreviated: >"
 msgstr "Abreviado: >"
 
 #: usr_12.txt:187
-#, fuzzy
 msgid "\t:g/^/m 0"
 msgstr "\t:g/^/m 0"
 
 #: usr_12.txt:189
-#, fuzzy
 msgid ""
 "The \"^\" regular expression matches the beginning of the line (even if the "
 "line\n"
@@ -557,18 +529,15 @@ msgid ""
 "as\n"
 "the first."
 msgstr ""
-"La expresión regular \"^\" coincide con el comienzo de línea (incluso si la\n"
-"línea está en blanco).  El comando |:move| mueve la línea justo después de "
-"la\n"
-"mítica \"línea cero\", de forma que se convierte en la primera línea.  Como "
-"el\n"
-"comando |:global| no se confunde al cambiar la numeración de las líneas,\n"
-"|:global| procede a concordar el resto de líneas del archivo y pone cada "
+"La expresión regular «^» coincide con el comienzo de línea (incluso si la\n"
+"línea está en blanco). La orden «|:move|» mueve la línea justo después de la\n"
+"mítica «línea cero», de forma que se convierte en la primera línea. Como la\n"
+"orden «|:global|» no se confunde al cambiar la numeración de las líneas,\n"
+"«|:global|» procede a concordar el resto de líneas del archivo y pone cada "
 "una\n"
 "como la primera."
 
 #: usr_12.txt:196
-#, fuzzy
 msgid ""
 "This also works on a range of lines.  First move to above the first line "
 "and\n"
@@ -576,73 +545,64 @@ msgid ""
 "and\n"
 "type: >"
 msgstr ""
-"Esto también funciona sobre un rango de líneas.  Primero ve a la línea de\n"
+"Esto también funciona sobre un rango de líneas. Vaya primero a la línea de\n"
 "encima de la primera y márcala con \"mt\".  Luego pon el cursor en la "
 "última\n"
 "línea del rango y escribe: >"
 
 #: usr_12.txt:200
-#, fuzzy
 msgid "\t:'t+1,.g/^/m 't"
 msgstr "\t:'t+1,.g/^/m 't"
 
 #: usr_12.txt:202
-#, fuzzy
 msgid ""
 "==============================================================================\n"
 "*12.5*\tCount words"
 msgstr ""
 "==============================================================================\n"
-"*12.1*  Reemplazar una palabra"
+"*12.5*\tContar palabras"
 
 #: usr_12.txt:205
-#, fuzzy
 msgid ""
 "Sometimes you have to write a text with a maximum number of words.  Vim can\n"
 "count the words for you.\n"
 "   When the whole file is what you want to count the words in, use this\n"
 "command: >"
 msgstr ""
-"A veces puedes escribir un texto con un número máximo de palabras.  Vim "
-"puede\n"
-"contar las palabras por ti.\n"
-"   Cuando quieres usar el archivo completo para contar las palabras, usa el\n"
-"siguiente comando: >"
+"A veces puede escribir un texto con un número máximo de palabras. Vim\n"
+"puede contar las palabras por Ud.\n"
+"   Cuando quiera usar el archivo completo para contar las palabras, use la\n"
+"siguiente orden: >"
 
 #: usr_12.txt:210
-#, fuzzy
 msgid "\tg CTRL-G"
 msgstr "\tg CTRL-G"
 
 #: usr_12.txt:212
-#, fuzzy
 msgid ""
 "Do not type a space after the g, this is just used here to make the command\n"
 "easy to read.\n"
 "   The output looks like this:"
 msgstr ""
-"No teclees un espacio tras la g, esto está aquí para hacer que el comando "
-"sea\n"
+"No teclee un espacio tras la «g», esto está aquí para hacer que la orden sea\n"
 "fácil de leer.\n"
 "   La salida tendrá este aspecto:"
 
 #: usr_12.txt:216
-#, fuzzy
 msgid "\tCol 1 of 0; Line 141 of 157; Word 748 of 774; Byte 4489 of 4976 ~"
-msgstr "\tCol 1 of 0; Line 141 of 157; Word 748 of 774; Byte 4489 of 4976 ~"
+msgstr ""
+"\tCol 1 of 0; Línea 141 of 157; Palabra 748 of 774; Carácter 4489 of 4976 ~"
 
 #: usr_12.txt:218
-#, fuzzy
 msgid ""
 "You can see on which word you are (748), and the total number of words in "
 "the\n"
 "file (774)."
 msgstr ""
-"Puedes ver en qué palabra estás (748), y el número total de palabras en el\n"
+"Puede ver en qué palabra está (748), y el número total de palabras en el\n"
 "archivo (774)."
 
 #: usr_12.txt:221
-#, fuzzy
 msgid ""
 "When the text is only part of a file, you could move to the start of the "
 "text,\n"
@@ -654,38 +614,33 @@ msgid ""
 "you\n"
 "want to count words in.  Then type g CTRL-G.  The result:"
 msgstr ""
-"Cuando el texto sea sólo una parte del archivo, puedes ir al comienzo del\n"
-"texto, escribir \"g CTRL-G\", ir al final del texto y volver a escribir \"g\n"
-"CTRL-G\" y usar la cabeza para calcular la diferencia.  Es un buen "
+"Cuando el texto sea sólo una parte del archivo, puede ir al comienzo del\n"
+"texto, pulsar «g CTRL-G», ir al final del texto y volver a escribir\n"
+"«g CTRL-G» y usar la cabeza para calcular la diferencia. Es un buen "
 "ejercicio,\n"
-"pero hay un modo más sencillo.  Con el modo Visual, selecciona el texto "
-"sobre\n"
-"el que quieres contar las palabras.  Escribe \"g CTRL-G\".  El resultado "
-"será:"
+"pero hay un modo más sencillo. En el modo Visual, seleccione el texto sobre\n"
+"el que quiera contar las palabras. Escriba «g CTRL-G». El resultado será:"
 
 #: usr_12.txt:227
-#, fuzzy
 msgid "\tSelected 5 of 293 Lines; 70 of 1884 Words; 359 of 10928 Bytes ~"
-msgstr "\tSelected 5 of 293 Lines; 70 of 1884 Words; 359 of 10928 Bytes ~"
+msgstr "\tSelección 5 of 293 Líneas; 70 of 1884 Palabras; 359 of 10928 Bytes ~"
 
 #: usr_12.txt:229
-#, fuzzy
 msgid ""
 "For other ways to count words, lines and other items, see |count-items|."
 msgstr ""
-"Para otras formas de contar las palabras, líneas y otros, ver |count-items|."
+"Para otras formas de contar las palabras, líneas y otros, véase |count-"
+"items|."
 
 #: usr_12.txt:231
-#, fuzzy
 msgid ""
 "==============================================================================\n"
 "*12.6*\tFind a man page\t\t\t\t\t*find-manpage*"
 msgstr ""
 "==============================================================================\n"
-"*12.1*  Reemplazar una palabra"
+"*12.6*\tEncontrar una página de manual\t\t*find-manpage*"
 
 #: usr_12.txt:234
-#, fuzzy
 msgid ""
 "While editing a shell script or C program, you are using a command or "
 "function\n"
@@ -693,19 +648,16 @@ msgid ""
 "a\n"
 "simple way: Move the cursor to the word you want to find help on and press >"
 msgstr ""
-"Mientras editas un script de shell o un programa C, estás usando un comando "
-"o\n"
-"función para el que quieres encontrar una página de manual (en Unix).  Vamos "
-"a\n"
-"usar la forma sencilla.  Pon el cursor sobre la palabra y pulsa: >"
+"Mientras edita un script de consola o un programa C, está usando una orden\n"
+"o función para el que quiera encontrar una página de manual (en Unix). "
+"Vamos\n"
+"a usar la forma sencilla. Ponga el cursor sobre la palabra y pulse: >"
 
 #: usr_12.txt:238
-#, fuzzy
 msgid "\tK"
 msgstr "\tK"
 
 #: usr_12.txt:240
-#, fuzzy
 msgid ""
 "Vim will run the external \"man\" program on the word.  If the man page is\n"
 "found, it is displayed.  This uses the normal pager to scroll through the "
@@ -714,49 +666,41 @@ msgid ""
 "will\n"
 "get you back into Vim."
 msgstr ""
-"Vim ejecutará el programa externo \"man\" sobre la palabra.  Si la página "
-"man es\n"
-"encontrada, se mostrará.  Esto usa el paginador normal para desplazarse por "
-"el\n"
-"texto (con el programa \"more\").  Cuando llegues al final, presionando "
-"<Entrar>\n"
-"te devolverá a Vim."
+"Vim ejecutará el programa externo «man» sobre la palabra. Si se encuentra\n"
+"la página de manual, se mostrará. Esto usa el paginador normal para\n"
+"desplazarse por el texto (con el programa «more»). Cuando llegue al final,\n"
+"presionando <Intro> le devolverá a Vim."
 
 #: usr_12.txt:245
-#, fuzzy
 msgid ""
 "A disadvantage is that you can't see the man page and the text you are "
 "working\n"
 "on at the same time.  There is a trick to make the man page appear in a Vim\n"
 "window.  First, load the man filetype plugin: >"
 msgstr ""
-"Una desventaja es que no puedes ver la página man y el texto en el que\n"
-"trabajas al mismo tiempo.  Hay un truco para hacer que la página man "
-"aparezca\n"
-"en una ventana de Vim.  Primero carga el plugin del tipo de archivo man: >"
+"Una desventaja es que no puede ver la página de manual y el texto en el que\n"
+"trabaja al mismo tiempo. Hay un truco para hacer que la página de manual\n"
+"aparezca en una ventana de Vim. Primero cargue la extensión del tipo de\n"
+"archivo man: >"
 
 #: usr_12.txt:249
-#, fuzzy
 msgid "\t:runtime! ftplugin/man.vim"
 msgstr "\t:runtime! ftplugin/man.vim"
 
 #: usr_12.txt:251
-#, fuzzy
 msgid ""
 "Put this command in your vimrc file if you intend to do this often.  Now "
 "you\n"
 "can use the \":Man\" command to open a window on a man page: >"
 msgstr ""
-"Pon este comando en tu archivo vimrc si tienes intención de hacer esto a\n"
-"menudo.  Ahora puedes usar \":Man\" para ver una página man en una ventana: >"
+"Ponga esta orden en su archivo «vimrc» si tiene la intención de hacer esto a\n"
+"menudo. Ahora puede usar «:Man» para ver una página man en una ventana: >"
 
 #: usr_12.txt:254
-#, fuzzy
 msgid "\t:Man csh"
 msgstr "\t:Man csh"
 
 #: usr_12.txt:256
-#, fuzzy
 msgid ""
 "You can scroll around and the text is highlighted.  This allows you to find\n"
 "the help you were looking for.  Use CTRL-W w to jump to the window with the\n"
@@ -764,101 +708,87 @@ msgid ""
 "   To find a man page in a specific section, put the section number first.\n"
 "For example, to look in section 3 for \"echo\": >"
 msgstr ""
-"Puedes desplazarte alrededor y el texto será coloreado.  Esto te permite\n"
-"encontrar la ayuda que estabas buscando.  Usa CTRL-W w para saltar a la\n"
-"ventana con el texto en el que trabajabas.\n"
-"   Para encontrar la página man en una sección específica, pon el número de\n"
-"sección primero.  Por ejemplo, para ver \"echo\" en la sección 3: >"
+"Puede desplazarse alrededor y el texto se resaltará. Esto le permite\n"
+"encontrar la ayuda que estaba buscando. Use «CTRL-W w» para saltar a la\n"
+"ventana con el texto en el que trabajaba.\n"
+"   Para encontrar la página de manua en una sección específica, ponga el\n"
+"número de sección primero. Por ejemplo, para ver «echo» en la sección 3: >"
 
 #: usr_12.txt:262
-#, fuzzy
 msgid "\t:Man 3 echo"
 msgstr "\t:Man 3 echo"
 
 #: usr_12.txt:264
-#, fuzzy
 msgid ""
 "To jump to another man page, which is in the text with the typical form\n"
 "\"word(1)\", press CTRL-] on it.  Further \":Man\" commands will use the "
 "same\n"
 "window."
 msgstr ""
-"Para saltar a otra página man, la cuál está en el texto con la forma típica\n"
-"\"word(1)\", pulsa CTRL-] sobre ella.  Otros llamadas a \":Man\" emplearán "
-"la\n"
+"Para saltar a otra página de manual, la cuál está en el texto con la forma "
+"típica\n"
+"«word(1)», pulse «CTRL-]» sobre ella. Otras llamadas a «:Man» emplearán la\n"
 "misma ventana."
 
 #: usr_12.txt:268
-#, fuzzy
 msgid "To display a man page for the word under the cursor, use this: >"
 msgstr ""
-"Para mostrar una página man para la palabra bajo el cursor usa lo siguiente: "
-">"
+"Para mostrar una página de manual para la palabra bajo el cursor use\n"
+"lo siguiente: >"
 
 #: usr_12.txt:270
-#, fuzzy
 msgid "\t\\K"
 msgstr "\t\\K"
 
 #: usr_12.txt:272
-#, fuzzy
 msgid ""
 "(If you redefined the <Leader>, use it instead of the backslash).\n"
 "For example, you want to know the return value of \"strstr()\" while "
 "editing\n"
 "this line:"
 msgstr ""
-"(Si has redefinido <Leader>, úsalo en lugar de la barra invertida).  Por\n"
-"ejemplo, puede que quieras saber el valor que te devuelve \"strstr()\" "
-"mientras\n"
-"editas esta línea:"
+"(Si ha redefinido <Leader>, úselo en lugar de la barra invertida). Por\n"
+"ejemplo, puede que quiera saber el valor que le devuelve «strstr()» mientras\n"
+"edita esta línea:"
 
 #: usr_12.txt:276
-#, fuzzy
 msgid "\tif ( strstr (input, \"aap\") == ) ~"
 msgstr "\tif ( strstr (input, \"aap\") == ) ~"
 
 #: usr_12.txt:278
-#, fuzzy
 msgid ""
 "Move the cursor to somewhere on \"strstr\" and type \"\\K\".  A window will "
 "open\n"
 "to display the man page for strstr()."
 msgstr ""
-"Pon el cursor en alguna parte de \"strstr\" y escribe \"\\K\".  A "
-"continuación una\n"
-"ventana se abrirá para mostrar la página man de strstr()."
+"Ponga el cursor en alguna parte de «strstr» y escriba «\\K». Una ventana\n"
+"se abrirá a continuación para mostrar la página de manual de «strstr()»."
 
 #: usr_12.txt:281
-#, fuzzy
 msgid ""
 "==============================================================================\n"
 "*12.7*\tTrim blanks"
 msgstr ""
 "==============================================================================\n"
-"*12.1*  Reemplazar una palabra"
+"*12.7*\tEliminar espacios en blanco sobrantes"
 
 #: usr_12.txt:284
-#, fuzzy
 msgid ""
 "Some people find spaces and tabs at the end of a line useless, wasteful, "
 "and\n"
 "ugly.  To remove whitespace at the end of every line, execute the following\n"
 "command: >"
 msgstr ""
-"Algunas personas encuentras los espacios y los tabuladores al final de "
+"Algunas personas encuentran los espacios y los tabuladores al final de "
 "línea\n"
-"inútiles y feos.  Para eliminar el espacio en blando al final de cada "
-"línea,\n"
-"ejecuta el siguiente comando: >"
+"inútiles y feos. Para eliminar el espacio en blanco al final de cada línea,\n"
+"ejecute la siguiente orden: >"
 
 #: usr_12.txt:288
-#, fuzzy
 msgid "\t:%s/\\s\\+$//"
 msgstr "\t:%s/\\s\\+$//"
 
 #: usr_12.txt:290
-#, fuzzy
 msgid ""
 "The line range \"%\" is used, thus this works on the whole file.  The "
 "pattern\n"
@@ -871,36 +801,33 @@ msgid ""
 "replaces\n"
 "with nothing, effectively deleting the matched white space."
 msgstr ""
-"El rango de línea \"%\" es empleado, funcionando sobre todo el archivo.  El\n"
-"patrón que el comando \":substitute\" concuerda es el \"\\s\\+$\".  Esto "
-"encuentra\n"
-"los caracteres en blanco (\\s), 1 o más (\\+), antes del final de línea "
-"($).\n"
+"El rango de línea «%» es empleado, funcionando sobre todo en el archivo\n"
+"completo. El patrón que la orden «:substitute» concuerda es el «\\s\\+$».\n"
+"Esto encuentra los caracteres en blanco (\\s), 1 o más (\\+), antes del "
+"final\n"
+"de línea ($).\n"
 "Más tarde explicaremos cómo se escriben patrones como este |usr_27.txt|.\n"
-"   La parte \"hacia\" del comando sustituir está vacía: \"//\".  Por lo "
-"tanto\n"
+"   La parte «hacia» de la orden de sustituxión está vacía: «//». Por lo tanto\n"
 "reemplaza con nada, lo que de hecho elimina el espacio en blanco."
 
 #: usr_12.txt:297
-#, fuzzy
 msgid ""
 "Another wasteful use of spaces is placing them before a tab.  Often these "
 "can\n"
 "be deleted without changing the amount of white space.  But not always!\n"
 "Therefore, you can best do this manually.  Use this search command: >"
 msgstr ""
-"Otro uso desafortunado de los espacios es colocarlos antes de un tabulador.  "
+"Otro uso desafortunado de los espacios es colocarlos antes de un tabulador. "
 "A\n"
-"menudo pueden ser eliminados sin cambiar la cantidad de espacio en blanco.\n"
-"¡Pero no siempre! Por lo tanto, lo mejor es que lo hagas a mano. Usa esto: >"
+"menudo, se pueden eliminar sin cambiar la cantidad de espacio en blanco.\n"
+"¡Pero no siempre! Por lo tanto, lo mejor es que lo haga a mano. Use esta\n"
+"orden de búsqueda: >"
 
 #: usr_12.txt:301
-#, fuzzy
 msgid "\t/ \t"
 msgstr "\t/\t"
 
 #: usr_12.txt:303
-#, fuzzy
 msgid ""
 "You cannot see it, but there is a space before a tab in this command.  Thus\n"
 "it's \"/<Space><Tab>\".   Now use \"x\" to delete the space and check that "
@@ -909,26 +836,22 @@ msgid ""
 "does change.  Type \"n\" to find the next match.  Repeat this until no more\n"
 "matches can be found."
 msgstr ""
-"No puedes verlo, pero hay un espacio antes de un tabulador en este comando.\n"
-"De hecho, es \"/<Espacio><Tabulador>\".  Ahora usa \"x\" para eliminar el "
-"espacio\n"
-"y comprobar que la cantidad de espacio en blanco no cambia.  Puede que "
-"tengas\n"
-"que insertar un tabulador si cambia.  Teclea \"n\" para encontrar la "
-"próxima\n"
-"coincidencia.  Repite esto hasta que no se encuentren más concordancias."
+"No puede verlo, pero hay un espacio antes de un tabulador en esta orden.\n"
+"De hecho, es «/<Espacio><Tabulador>». Use ahora «x» para eliminar el\n"
+"espacio y comprobar que la cantidad de espacio en blanco no cambia. Puede\n"
+"que tenga que insertar un tabulador si cambia. Teclee «n» para encontrar la\n"
+"próxima coincidencia. Repita esto hasta que no se encuentren más\n"
+"concordancias."
 
 #: usr_12.txt:309
-#, fuzzy
 msgid ""
 "==============================================================================\n"
 "*12.8*\tFind where a word is used"
 msgstr ""
 "==============================================================================\n"
-"*12.1*  Reemplazar una palabra"
+"*12.8*\tBuscar donde se emplea una palabra"
 
 #: usr_12.txt:312
-#, fuzzy
 msgid ""
 "If you are a UNIX user, you can use a combination of Vim and the grep "
 "command\n"
@@ -940,24 +863,18 @@ msgid ""
 "contain\n"
 "the word \"frame_counter\".  To do this you use the command: >"
 msgstr ""
-"Si eres un usuario UNIX, puedes usar una combinación de Vim y grep para "
-"editar\n"
-"todos los archivos que contengan la palabra dada.  Esto es extremadamente "
-"útil\n"
-"si estás trabajando en un programa y quieres ver o editar todos los "
-"archivos\n"
-"que contienen una variable específica.\n"
-"   Por ejemplo, supón que quieres editar todos los archivos C que contengan "
-"la\n"
-"palabra \"frame_counter\".  Para hacer esto usa el comando: >"
+"Si eres un usuario de sistemas UNIX, puede usar una combinación de Vim\n"
+"y «grep» para editar todos los archivos que contengan la palabra dada.\n"
+"Esto es extremadamente útil si está trabajando en un programa y quiere\n"
+"ver o editar todos los archivos que contienen una variable específica.\n"
+"   Por ejemplo, suponga que desea editar todos los archivos C que contengan\n"
+"la palabra «frame_counter». Para hacer esto, use la orden: >"
 
 #: usr_12.txt:319
-#, fuzzy
 msgid "\tvim `grep -l frame_counter *.c`"
 msgstr "\tvim `grep -l frame_counter *.c`"
 
 #: usr_12.txt:321
-#, fuzzy
 msgid ""
 "Let's look at this command in detail.  The grep command searches through a "
 "set\n"
@@ -979,32 +896,26 @@ msgid ""
 "commands\n"
 "like \":next\" and \":first\" to browse through the files."
 msgstr ""
-"Veamos este comando en detalle.  El comando grep busca a través de un "
-"conjunto\n"
-"de archivos una palabra dada.  Ya que especificamos el argumento -l, el\n"
-"comando sólo listará archivos que contengan la palabra y no impriman las\n"
-"líneas coincidentes.  La palabra que está buscando es \"frame_counter\".  "
-"De\n"
-"hecho, esto puede ser cualquier expresión regular.  (Note: las expresiones\n"
-"regulares en Vim y grep no siguen las mismas convenciones.)\n"
-"   El comando está arropado por acentos invertidos (`).  Esto le dice al "
-"shell\n"
-"de UNIX que ejecute el comando y haga como si el resultado hubiese sido\n"
-"escrito en la línea de comandos.  Por lo tanto el comando grep será "
-"ejecutado\n"
-"y producirá una lista de archivos, estos archivos serán puestos en la línea "
-"de\n"
-"comandos de Vim.  Podrás usar los comandos \":next\" y \":first\" para "
-"navegar\n"
+"Veamos esta orden en detalle. La orden «grep» busca a través de un\n"
+"conjunto de archivos una palabra dada. Ya que especificamos el argumento\n"
+"«-l», la orden sólo listará archivos que contengan la palabra y no impriman\n"
+"las líneas coincidentes. La palabra que está buscando es «frame_counter».\n"
+"De hecho, esto puede ser cualquier expresión regular. (Nota: las "
+"expresiones\n"
+"regulares en Vim y «grep» no siguen las mismas convenciones.)\n"
+"   La orden está arropada por acentos invertidos (`). Esto le dice a la "
+"consola\n"
+"de UNIX que ejecute la orden y haga como si el resultado se hubiese\n"
+"escrito en la línea de órdenes. Por lo tanto la orden «grep» se ejecutará\n"
+"y producirá una lista de archivos, estos archivos serán puestos en la línea\n"
+"de órdenes de Vim. Podrá usar las órdenes «:next» y «:first» para navegar\n"
 "entre los archivos."
 
 #: usr_12.txt:335
-#, fuzzy
 msgid "FINDING EACH LINE"
 msgstr "ENCONTRAR CADA LÍNEA"
 
 #: usr_12.txt:337
-#, fuzzy
 msgid ""
 "The above command only finds the files in which the word is found.  You "
 "still\n"
@@ -1015,21 +926,18 @@ msgid ""
 "all C\n"
 "program files, for example, enter the following command: >"
 msgstr ""
-"El comando de arriba sólo dice los archivos en los cuáles se encuentra la\n"
-"palabra.  Todavía tendrás que encontrar la palabra entre los archivos.\n"
-"   Vim tiene un comando embebido que puedes usar para buscar una cadena en "
-"un\n"
-"conjunto de archivos.  Si quieres encontrar todas las coincidencias de\n"
-"\"error_string\" en todos los archivos C, por ejemplo, introduce lo "
-"siguiente: >"
+"La orden anterior sólo dice los archivos en los cuáles se encuentra la\n"
+"palabra. Todavía tendrás que encontrar la palabra entre los archivos.\n"
+"   Vim tiene una orden integrada que puede usar para buscar una cadena\n"
+"en un conjunto de archivos. Si desea encontrar todas las coincidencias de\n"
+"«error_string» en todos los archivos C, por ejemplo, introduzca lo siguiente: "
+">"
 
 #: usr_12.txt:343
-#, fuzzy
 msgid "\t:grep error_string *.c"
 msgstr "\t:grep error_string *.c"
 
 #: usr_12.txt:345
-#, fuzzy
 msgid ""
 "This causes Vim to search for the string \"error_string\" in all the "
 "specified\n"
@@ -1045,33 +953,26 @@ msgid ""
 "findstr\n"
 "(on Windows).  You can change this by setting the option 'grepprg'."
 msgstr ""
-"Esto hace que Vim busque la cadena \"error_string\" en cada uno de los "
-"archivos\n"
-"especificados (*.c).  El editor abrirá el primer archivo donde se produzca "
-"una\n"
-"concordancia y posicionará el cursor en la primera línea coincidente.\n"
-"Para ir a la siguiente línea (no importa en que archivo se encuentre), usa "
-"el\n"
-"comando \":cnext\".  Para ir a la anterior, usa \":cprev\".  Usa \":clist\" "
-"para ver\n"
+"Esto hace que Vim busque la cadena «error_string» en cada uno de los\n"
+"archivos especificados (*.c). El editor abrirá el primer archivo donde se\n"
+"produzca una concordancia y posicionará el cursor en la primera línea\n"
+"coincidente.\n"
+"Para ir a la siguiente línea (no importa en que archivo se encuentre), use "
+"la\n"
+"orden «:cnext». Para ir a la anterior, use «:cprev». Use «:clist» para ver\n"
 "todas las coincidencias y dónde están.\n"
-"  El comando \":grep\" usa el comando externo grep en Unix y findstr en "
+"  La orden «:grep\"» usa la orden externa «grep» en Unix y «findstr» en\n"
 "Windows.\n"
 "Puedes cambiar esto modificando la opción 'grepprg'."
 
 #: usr_12.txt:354
-#, fuzzy
 msgid "=============================================================================="
-msgstr ""
-"==============================================================================\n"
-"*12.1*  Reemplazar una palabra"
+msgstr "=============================================================================="
 
 #: usr_12.txt:356
-#, fuzzy
 msgid "Next chapter: |usr_20.txt|  Typing command-line commands quickly"
-msgstr "Capítulo siguiente: |usr_20.txt|  Ser eficaz con la línea de comandos"
+msgstr "Capítulo siguiente: |usr_20.txt|  Ser eficaz con la línea de órdenes"
 
 #: usr_12.txt:358
-#, fuzzy
 msgid "Copyright: see |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
-msgstr "Copyright: ver |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: véase |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
