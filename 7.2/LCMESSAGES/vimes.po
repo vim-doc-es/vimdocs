@@ -125,11 +125,11 @@ msgstr ""
 "Report-Msgid-Bugs-To: bugs@vim.org\n"
 "POT-Creation-Date: 2009-08-20 17:41+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
-"Language-Team: Vim-ES http://code.assembla.com/vim-doc-es\n"
+"Language-Team: vim-doc-es http://code.assembla.com/vim-doc-es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: octet-stream\n"
-"PO-Revision-Date: 2009-09-03 20:19+0200\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2009-09-16 21:38+0200\n"
 
 #: buffer.c:102
 msgid "E82: Cannot allocate any buffer, exiting..."
@@ -5156,7 +5156,7 @@ msgstr "E354: Nombre de registro no válido: '%s'"
 
 #: message.c:833
 msgid "Messages maintainer: Bram Moolenaar <Bram@vim.org>"
-msgstr "Traductor: Vim-ES project <http://vim-es.linuxhost.cl>"
+msgstr "Traductor: Proyecto Vim-doc-es <http://code.assembla.com/vim-doc-es>"
 
 #: message.c:1090
 msgid "Interrupt: "
@@ -5281,7 +5281,7 @@ msgstr "Vim: preservando archivos...\n"
 #. close all memfiles, without deleting
 #: misc1.c:8381
 msgid "Vim: Finished.\n"
-msgstr "Vim: Terminado.\n"
+msgstr "Vim: Finalizado.\n"
 
 #: misc2.c:718 misc2.c:734
 #, c-format
@@ -5323,7 +5323,7 @@ msgstr "E342: ¡Memoria agotada! (al asignar %lu bytes)"
 #: misc2.c:3028
 #, c-format
 msgid "Calling shell to execute: \"%s\""
-msgstr "Llamando al intérprete de órdenes para ejecutar: %s"
+msgstr "Invocando al intérprete de órdenes para ejecutar: %s"
 
 #: misc2.c:3297
 msgid "E545: Missing colon"
@@ -5389,11 +5389,11 @@ msgstr "E347: No se han encontrado mas archivos \"%s\" en la ruta"
 # Get here when the server can't be found.
 #: netbeans.c:406
 msgid "Cannot connect to Netbeans #2"
-msgstr "No se pudo conectarme a NetBeans #2"
+msgstr "No se pudo conectar a NetBeans #2"
 
 #: netbeans.c:415
 msgid "Cannot connect to Netbeans"
-msgstr "No se pudo conectarme a NetBeans"
+msgstr "No se pudo conectar a NetBeans"
 
 # c-format
 #: netbeans.c:461
@@ -5424,7 +5424,7 @@ msgstr "E774: 'operatorfunc' está vacío"
 
 #: normal.c:2217
 msgid "E775: Eval feature not available"
-msgstr "E775: La opción \"eval\" no está disponible"
+msgstr "E775: La característica \"eval\" no está disponible"
 
 #: normal.c:3221
 msgid "Warning: terminal cannot highlight"
@@ -5452,7 +5452,7 @@ msgstr "E663: Al final de la lista de cambios"
 
 #: normal.c:8734
 msgid "Type  :quit<Enter>  to exit Vim"
-msgstr "Escriba \":quit<enter>\" para salir de Vim"
+msgstr "Escriba \":quit<intro>\" para salir de Vim"
 
 #: ops.c:293
 #, c-format
