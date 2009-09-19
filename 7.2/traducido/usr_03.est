@@ -2,18 +2,18 @@
 
 		  MANUAL DE USUARIO DE VIM - por Bram Moolenaar
 
-			     Movimiento
+			   Desplazamiento
 
 Antes de que pueda insertar o eliminar texto, el cursor tiene que desplazarse
 al lugar adecuado. Vim tiene una gran cantidad de órdenes para situar el cursor.
 Este capítulo muestra cómo usar los más importantes. Puede encontrar una
 lista de estas órdenes a continuación |Q_lr|.
 
-|03.1|	Movimiento sobre palabras
-|03.2|	Moverse al principio o al final de la línea
-|03.3|	Moverse a un caracter
+|03.1|	Desplazarse sobre palabras
+|03.2|	Desplazarse al principio o al final de la línea
+|03.3|	Desplazarse a un caracter
 |03.4|	Emparejar un paréntesis
-|03.5|	Moverse a un línea específica
+|03.5|	Desplazarse a una línea específica
 |03.6|	Indicar dónde estás
 |03.7|	Desplazar el texto
 |03.8|	Búsquedas simples
@@ -25,7 +25,7 @@ lista de estas órdenes a continuación |Q_lr|.
 Tabla de contenidos: |usr_toc.txt|
 
 ==============================================================================
-*03.1*	Movimiento sobre palabras
+*03.1*	Desplazarse sobre palabras
 
 Para mover el cursor una palabra hacia delante, use la orden «w». Del mismo
 modo que la mayoría de órdenes Vim, puede usar un prefijo numérico. Por
@@ -73,7 +73,7 @@ Con esta combinación de órdenes en mayúsculas y minúsculas, puede moverse
 rápidamente hacia atrás y hacia delante por un párrafo.
 
 ==============================================================================
-*03.2*	Moverse al principio o al final de la línea
+*03.2*	Desplazarse al principio o al final de la línea
 
 La orden «$» mueve el cursor al final de la línea. Si su teclado tiene la
 tecla <Fin>, conseguirá el mismo resultado pulsándola.
@@ -99,7 +99,7 @@ ejemplo, «1$» le mueve hacia el final de la primera línea (en la que está),
 del número. Usar un multiplicador con «^» tampoco tiene ningún efecto.
 
 ==============================================================================
-*03.3*	Moverse a un caracter
+*03.3*	Desplazarse a un carácter
 
 Uno de las órdenes de movimiento más útiles es la orden de búsqueda de un
 único carácter. La orden «fx» busca hacia delante en la línea el carácter
@@ -171,7 +171,7 @@ ejemplo anterior, «%» buscará hacia delante hasta el primer «(».
 			   %
 
 ==============================================================================
-*03.2*	Moverse a una línea específica
+*03.5*	Desplazarse a una línea específica
 
 Si eres un programador de C o C++, estará familiarizado con los mensajes de
 error del tipo presente a continuación:
@@ -222,7 +222,7 @@ que puede ver? Esta figura le muestra las tres órdenes que puede emplear:
 Pista: «H» viene de «Home», «M» de «Middle» y «L» de «Last».
 
 ==============================================================================
-*03.6*	Indicar donde estás
+*03.6*	Indicar donde está
 
 Para ver dónde está en un archivo, hay tres maneras:
 
