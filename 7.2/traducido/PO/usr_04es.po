@@ -40,7 +40,6 @@
 # Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
 # se puede consultar con un simple grep, pogrep o cargado en Virtaal.
 # 
-
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
@@ -624,6 +623,7 @@ msgstr ""
 "hacia arriba o hacia abajo, la selección se extenderá a líneas completas.\n"
 "   Por ejemplo, seleccione tres líneas con «Vjj»:"
 
+# (pofilter) doublewords: The word '|' is repeated
 #: usr_04.txt:228
 msgid ""
 "\t\t\t  +------------------------+\n"
@@ -760,6 +760,7 @@ msgstr ""
 "cursor allá donde quiera poner la línea y use la orden «p». La línea se\n"
 "insertará en la línea siguiente a donde se encuentra el cursor."
 
+# (pofilter) doublewords: The word 'línea' is repeated
 #: usr_04.txt:280
 msgid ""
 "\ta line\t\ta line\t      a line\n"
@@ -959,6 +960,7 @@ msgstr ""
 "«Y» funciona como «yy», copiando la línea completa. ¡Cuidado con esta\n"
 "inconsistencia! Use «y$» para copiar sólo hasta el final."
 
+# (pofilter) doublewords: The word 'línea' is repeated
 #: usr_04.txt:355
 msgid ""
 "\ta text line   yy\ta text line\t       a text line\n"

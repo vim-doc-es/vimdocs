@@ -43,7 +43,6 @@
 # se puede consultar con un simple grep, pogrep o cargado en Virtaal.
 # 
 #. extracted from usr_10.txt
-
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
@@ -1157,6 +1156,7 @@ msgstr ""
 "Si la cadena que insertó contiene una nueva línea, el «I» actúa justo como\n"
 "una inserción normal y únicamente afecta a la primera línea del bloque."
 
+# (pofilter) doublewords: The word 'se' is repeated
 #: usr_10.txt:440
 msgid ""
 "The \"A\" command works the same way, except that it appends after the "
@@ -1172,8 +1172,8 @@ msgid ""
 "get\n"
 "this result:"
 msgstr ""
-"La orden «A» funciona de la misma manera, excepto que añade a la derecha\n"
-"del bloque. En este caso sí se se añade al final de la línea corta. De este\n"
+"La orden «A» funciona de la misma manera, excepto que se añade a la derecha\n"
+"del bloque. En este caso sí se añade al final de la línea corta. De este\n"
 "modo puede elegir si quieres añadir o no un texto a la línea corta.\n"
 "   Hay un caso especial para «Ax: seleccione un bloque Visual y pulsw «$» "
 "para\n"
@@ -1885,7 +1885,6 @@ msgstr ""
 "El resultado es que se ejecuta el programa «sort» sobre las 5 primeras\n"
 "líneas. La salida del programa reemplaza estas líneas."
 
-
 #: usr_10.txt:727
 msgid ""
 "\tline 55\t\t\t      line 11\n"
@@ -1926,10 +1925,9 @@ msgid ""
 "knows how the shell works exactly.  When you have problems with filtering,\n"
 "check the values of these options:"
 msgstr ""
-"Iniciar la consola, enviarle texto y capturar la salida requiere que Vim \n" 
+"Iniciar la consola, enviarle texto y capturar la salida requiere que Vim \n"
 "sepa exactamente cómo funciona la consola de forma precisa. Cuando tenga\n"
 "problemas con el filtrado, comprueba los valores de las siguientes opciones:"
-
 
 #: usr_10.txt:745
 msgid ""
@@ -1974,7 +1972,6 @@ msgstr ""
 "ajustar las opciones para hacer que el filtrado funcione correctamente.\n"
 "Busque en la ayuda más información sobre las opciones de configuración\n"
 "de la consola para poder solucionarlo."
-
 
 #: usr_10.txt:764
 msgid "READING COMMAND OUTPUT"
@@ -2031,7 +2028,6 @@ msgstr ""
 "archivo. (Bueno, si tienes una orden «date» que acepta el argumento «-u».)\n"
 "Observe la diferencia de usar «!!date»: esto reemplazó una línea, mientras\n"
 "que «:read !date» insertó una línea."
-
 
 #: usr_10.txt:787
 msgid "WRITING TEXT TO A COMMAND"

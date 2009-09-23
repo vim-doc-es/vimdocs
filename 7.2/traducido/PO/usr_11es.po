@@ -43,7 +43,6 @@
 # se puede consultar con un simple grep, pogrep o cargado en Virtaal.
 # 
 #. extracted from usr_11.txt
-
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
@@ -385,6 +384,7 @@ msgstr ""
 "comienza la edición de un archivo, a la espera de que los contenidos se\n"
 "muestren. En su lugar, Vim produce un mensaje muy largo:"
 
+# (pofilter) doublewords: The word '~' is repeated
 #: usr_11.txt:133
 msgid ""
 "\t\tE325: ATTENTION ~\n"
@@ -426,8 +426,8 @@ msgstr ""
 "\t(2) Falló una sesión de edición de este archivo. ~\n"
 "\t    Si es así, use \\\":recover\\\" o \\\"vim -r  main.c\" ~\n"
 "\t    para recuperar los cambios (véa \\\":help recovery\\\"). ~\n"
-"\t    Si Ud. ya ha hecho esto, borre el archivo de intercambio \".main.c.swp"
-"\" ~\n"
+"\t    Si Ud. ya ha hecho esto, borre el archivo de intercambio \".main.c.swp\" "
+"~\n"
 "\t    para evitar este mensaje. ~"
 
 #: usr_11.txt:154
@@ -441,6 +441,7 @@ msgstr ""
 "comprueba que exista un archivo de recuperación para este archivo. Si hay\n"
 "uno, algo debe estar pasando. Puede ocurrir cualquiera de estas situaciones:"
 
+# (pofilter) doublewords: The word 'la' is repeated
 #: usr_11.txt:158
 msgid ""
 "1. Another edit session is active on this file.  Look in the message for "
@@ -449,7 +450,7 @@ msgid ""
 msgstr ""
 "1. Hay otra sesión de edición activa en este archivo. Busque en el mensaje "
 "la\n"
-"    la línea con «ID del proceso». Puede parecerse a esto:"
+"    línea con «ID del proceso». Puede parecerse a esto:"
 
 #: usr_11.txt:161
 msgid "\t\tprocess ID: 12559 (still running) ~"
