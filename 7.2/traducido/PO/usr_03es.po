@@ -45,7 +45,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: bugs@vim.org \n"
 "POT-Creation-Date: 2009-08-01 19:53+0200\n"
-"PO-Revision-Date: 2009-09-19 20:31+0200\n"
+"PO-Revision-Date: 2009-09-22 22:36-0400\n"
 "Last-Translator: Álvaro Castro Castilla <alvaro.castro.castilla@gmail.com>\n"
 "Language-Team: Documentación de Vim en español\n"
 "MIME-Version: 1.0\n"
@@ -133,7 +133,6 @@ msgstr ""
 "modo que la mayoría de órdenes Vim, puede usar un prefijo numérico. Por\n"
 "ejemplos, «3w» se mueve tres palabras. Esta figura muestra cómo funciona:"
 
-# (pofilter) doublewords: The word 'w' is repeated
 #: usr_03.txt:35
 msgid ""
 "\tThis is a line with example text ~\n"
@@ -155,7 +154,6 @@ msgstr ""
 "encuentra al comienzo de una palabra.\n"
 "   La orden «b» le desplaza al comienzo de la palabra anterior:"
 
-# (pofilter) doublewords: The word 'b' is repeated
 #: usr_03.txt:43
 msgid ""
 "\tThis is a line with example text ~\n"
@@ -175,7 +173,6 @@ msgstr ""
 "Existe también la orden «e» que le desplaza hasta el final de la siguiente\n"
 "palabra, y «ge» que le desplaza hasta el final de la palabra anterior:"
 
-# (pofilter) doublewords: The word 'ge' is repeated
 #: usr_03.txt:50
 msgid ""
 "\tThis is a line with example text ~\n"
@@ -218,7 +215,6 @@ msgstr ""
 "mayúsculas para designarla. Las órdenes para desplazarse por PALABRAS están\n"
 "también en mayúsculas, como muestra la siguiente figura:"
 
-# (pofilter) doublewords: The word '<-' is repeated
 #: usr_03.txt:65
 msgid ""
 "\t       ge      b\t  w\t\t\t\te\n"
@@ -557,7 +553,6 @@ msgstr ""
 "ir al comienzo de la línea es usar «gg». «1G» hará lo mismo, pero es una\n"
 "pizca más lento de escribir."
 
-# (pofilter) doublewords: The word 'texto' is repeated
 #: usr_03.txt:191
 msgid ""
 "\t    |\tfirst line of a file   ^\n"
@@ -602,7 +597,6 @@ msgstr ""
 "si está visible o no. Pero ¿qué pasa si se quiere mover a una de las líneas\n"
 "que puede ver? Esta figura le muestra las tres órdenes que puede emplear:"
 
-# (pofilter) doublewords: The word '|' is repeated
 #: usr_03.txt:209
 msgid ""
 "\t\t\t+---------------------------+\n"
@@ -776,7 +770,6 @@ msgstr ""
 "   La orden CTRL-D mueve la ventana de visualización media pantalla hacia\n"
 "abajo, con lo que desplaza el texto hacia arriba media pantalla."
 
-# (pofilter) doublewords: The word '|' is repeated
 #: usr_03.txt:276
 msgid ""
 "\t\t\t\t       +----------------+\n"
@@ -853,7 +846,6 @@ msgstr ""
 "el\n"
 "contexto alrededor del cursor, pulsa la orden «zz»."
 
-# (pofilter) doublewords: The word '+---------------------+' is repeated
 #: usr_03.txt:306
 msgid ""
 "\t+------------------+\t\t +------------------+\n"
@@ -1382,7 +1374,6 @@ msgid ""
 msgstr ""
 "Vamos a marcar los lugares donde «que» concuerda con esta línea con «x»s:"
 
-# (pofilter) doublewords: The word 'xxx' is repeated
 #: usr_03.txt:514
 msgid ""
 "\tthe solder holding one of the chips melted and the ~\n"
@@ -1439,7 +1430,6 @@ msgstr ""
 "patrón «a.i» se identifica con cadenas cuyo primer carácter es una «a», su\n"
 "segundo es cualquiera, y su tercero es el carácter «i»:"
 
-# (pofilter) doublewords: The word 'xxx' is repeated
 #: usr_03.txt:537
 msgid ""
 "\tWe use a computer that became the cummin winter. ~\n"
@@ -1463,7 +1453,6 @@ msgstr ""
 "poniendo antes una barra invertida.\n"
 "   Si busca «an.», obtendría las siguientes coincidencias:"
 
-# (pofilter) doublewords: The word 'xxxx' is repeated
 #: usr_03.txt:547
 msgid ""
 "\tWe use a computer that became the cummin winter. ~\n"
@@ -1577,7 +1566,6 @@ msgstr ""
 "comenzó. Si ahora usa CTRL-I, volverá a la línea 33. Con otro\n"
 "CTRL-I vuelve al «El» identificado."
 
-# (pofilter) doublewords: The word '|' is repeated
 #: usr_03.txt:588
 msgid ""
 "\t     |\texample text   ^\t     |\n"
