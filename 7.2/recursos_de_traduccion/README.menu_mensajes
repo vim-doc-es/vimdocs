@@ -1,0 +1,12 @@
+*Instalación del menú y mensajes del programa*
+----------------------------------------------
+
+Copia los archivos del menú en «$VIMRUNTIME/lang».
+Copia «vim.mo» en «$VIMRUNTIME/lang/es/LC_MESSAGES».
+
+Si tu sistema está en inglés, añade en «.vimrc»
+
+set langmenu=es_es.utf8
+lan es_ES
+
+Lista de correo del proyecto: <vim-doc-es@freelists.org>
