@@ -1,91 +1,105 @@
-.TH XXD 1 "August 1996" "Manual page for xxd"
 .\"
 .\" 21st May 1996
 .\" Man page author:
 .\"    Tony Nugent <tony@sctnugen.ppp.gu.edu.au> <T.Nugent@sct.gu.edu.au>
 .\"    Changes by Bram Moolenaar <Bram@vim.org>
-.SH NAME
+.TH XXD 1 "Agosto 1996" "Página de manual para xxd"
+.SH NOMBRE
+.PP
 .I xxd
-\- make a hexdump or do the reverse.
-.SH SYNOPSIS
+\- Crear un «dump» hexadecimal o lo contrario.
+.SH SINOPSIS
+.PP
 .B xxd
 \-h[elp]
-.br
-.B xxd
-[options] [infile [outfile]]
-.br
-.B xxd
-\-r[evert] [options] [infile [outfile]]
-.SH DESCRIPTION
-.I xxd
-creates a hex dump of a given file or standard input.
-It can also convert a hex dump back to its original binary form.
-Like
-.BR uuencode (1)
-and
-.BR uudecode (1)
-it allows the transmission of binary data in a `mail-safe' ASCII representation,
-but has the advantage of decoding to standard output.
-Moreover, it can be used to perform binary file patching.
-.SH OPTIONS
-If no
-.I infile
-is given, standard input is read.
-If
-.I infile
-is specified as a
-.RB \` \- '
-character, then input is taken from standard input.
-If no
-.I outfile
-is given (or a
-.RB \` \- '
-character is in its place), results are sent to standard output.
 .PP
-Note that a "lazy" parser is used which does not check for more than the first
-option letter, unless the option is followed by a parameter.
-Spaces between a single option letter and its parameter are optional.
-Parameters to options can be specified in decimal, hexadecimal or octal
-notation.
-Thus
+.B xxd
+[opciones] [entrada [salida]]
+.PP
+.B xxd
+\-r[evertir] [opciones] [entrada [salida]]
+.SH DESCRIPCIÓN
+.I xxd
+crea un «dump» hexadecimal de un archivo dado o de la entrada standard.
+Puede convertir un «dump» hexadecimal a su forma binaria original.
+Tal y como
+.BR uuencode (1)
+y
+.BR uudecode (1)
+permite la transmisión de datos binarios en una representación ASCII que la
+hace segura para el correo electrónico pero tiene la ventaja de decodificar
+a la salida estándar.
+Mas aún, puede usarse para parchear archivos binarios.
+.SH OPCIONES
+Si no se suministra un 
+.I archivo de entrada
+se leerá la entrada estándar.
+Si se especifica un
+.I archivo de entrada
+como el caracter
+.RB \` \- '
+se tomarán los datos de la entrada estándad.
+Si no se suministra un
+.I archivo de salida
+o se suministra un caracter
+.RB \` \- '
+en su lugar, los resultados se enviarán a la salida estándar.
+.PP
+Nótese que se usa un analizador ``perezoso'' que no revisa mas que la
+primera letra de la opción, a menos que la opción sea seguida por un
+parametro.
+Los espacios entre una opción de letra única y su parámetro son
+opcionales.
+Los parámetros pueden especificarse en notación decimal,
+hexadecimal u octal.
+Así
 .BR \-c8 ,
 .BR "\-c 8" ,
 .B \-c 010
-and
+y
 .B \-cols 8
-are all equivalent.
+son equivalentes.
 .PP
 .TP
 .IR \-a " | " \-autoskip
-toggle autoskip: A single '*' replaces nul-lines.  Default off.
+Activa/desactiva autoskip.
+Un `*' replace lineas nulas. Desactivado por defecto.
 .TP
 .IR \-b " | " \-bits
-Switch to bits (binary digits) dump, rather than hexdump.
-This option writes octets as eight digits "1"s and "0"s instead of a normal
-hexadecimal dump. Each line is preceded by a line number in hexadecimal and
-followed by an ascii (or ebcdic) representation. The command line switches
-\-r, \-p, \-i do not work with this mode.
+Hace un dump en bits (digitos binarios) en vez de hexadecimal.
+Esta opción escribe octetos como ocho dígitos de unos y ceros
+en vez de un dump hexadecimal normal.
+Cada línea se precede de un número de línea en hexadecimal
+y es seguida de una representación en ASCII (o EBCDIC).
+Las opciones de línea de comando \-r, \-p e \-i no funcionan en
+este modo de operación.
 .TP
-.IR "\-c cols " | " \-cols cols"
-format
-.RI < cols >
-octets per line. Default 16 (\-i: 12, \-ps: 30, \-b: 6). Max 256.
+.IR "\-c columnas " | " \-cols columnas"
+especifica un formato de
+.RI < columnas >
+de octetos por línea.
+El valod por defecto es 16 (\-i: 12, \-ps: 30, \-b: 6). 
+El valor máximo es de 256.
 .TP
 .IR \-E " | " \-EBCDIC
-Change the character encoding in the righthand column from ASCII to EBCDIC.
-This does not change the hexadecimal representation. The option is
-meaningless in combinations with \-r, \-p or \-i.
+Cambia el vector de codificación en la columna de la derecha de
+ASCII a EBCDIC.
+Esto no cambia la representación hexadecimal. Esta opción no funciona
+en combinación con las opciones \-r, \-p o \-i.
 .TP
 .IR "\-g bytes " | " \-groupsize bytes"
-separate the output of every
+separa la salida de cada número de
 .RI < bytes >
-bytes (two hex characters or eight bit-digits each) by a whitespace.
-Specify
+(dos caracteres hexadecimales u ocho dígitos binarios) con un espacio.
+Use
 .I \-g 0
-to suppress grouping.
-.RI < Bytes "> defaults to " 2
-in normal mode and \fI1\fP in bits mode.
-Grouping does not apply to postscript or include style.
+para suprimir el espaciamiento.
+< Bytes > 
+.I tiene un valor por defecto de 
+2 en modo normal y de
+.I 1
+en modo binario.
+El agrupamiento no se aplica a PostScript o incluye estilos.
 .TP
 .IR \-h " | " \-help
 print a summary of available commands and exit.  No hex dumping is performed.
