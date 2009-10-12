@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-04 13:39+0200\n"
-"PO-Revision-Date: 2009-09-30 16:47+0200\n"
+"PO-Revision-Date: 2009-10-12 18:00+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -256,13 +256,17 @@ msgid ""
 "page.\n"
 "Its a regular help page; use the usual |CTRL-]| to jump to tagged help items\n"
 "and |CTRL-O| to jump back."
-msgstr ""
+msgstr "La tecla <F1> le lleva un directorio netrw explorando los contenidos\n"
+"de la página de ayuda.\n"
+"Ésta es una página de ayuda normal; use |CTRL-]| para saltar entre los\n"
+"elementos de ayuda, y |CTRL-O| para volver atrás."
 
 #: usr_22.txt:104
 msgid ""
 "To select files for display and editing: (with the cursor is atop a "
 "filename)"
-msgstr ""
+msgstr "Selección de archivos para su visionado y edición: (con el cursor\n"
+"sobre un nombre de archivo."
 
 #: usr_22.txt:106
 msgid ""
@@ -273,12 +277,19 @@ msgid ""
 "\tP\t\tEdit in the previous window\t\t   |netrw-P|\n"
 "\tt\t\tOpen file in a new tab\t\t\t   |netrw-t|"
 msgstr ""
+"\t<enter>\t\tAbrir el archivo en la ventana actual.\t   |netrw-cr|\n"
+"\to\t\tDividir la ventana horizontalmente y mostrar el archivo |netrw-o|\n"
+"\tv\t\tDividir la ventana verticalmente y mostrar el archivo   |netrw-v|\n"
+"\tp\t\tUsar la |preview-window| (ventana de previsualización)\t\t  |netrw-p|\n"
+"\tP\t\tEditar en la ventana anterior\t\t   |netrw-P|\n"
+"\tt\t\tAbrir el archivo en una nueva pestaña\t\t\t   |netrw-t|"
 
 #: usr_22.txt:113
 msgid ""
 "The following normal-mode commands may be used to control the browser "
 "display:"
-msgstr ""
+msgstr "Las siguientes órdenes del modo normal se pueden emplear para\n"
+"configurar la ventana del navegador:"
 
 #: usr_22.txt:115
 msgid ""
@@ -289,10 +300,16 @@ msgid ""
 "\t\t\tor size.\n"
 "\tr\t\tReverse the sorting order."
 msgstr ""
+"\ti\t\tControl el formato de la lista (estrecho, largo, ancho, y árbol).\n"
+"\t\t\tEl formato de lista largo incluye información de tamaño y fecha.\n"
+"\ts\t\tPulsar «s» repetidas veces modifica la manera en que se organizan\n"
+"\t\t\tlos archivos; una para ordenar por nombre, fecha de modificación,\n"
+"\t\t\to tamaño.\n"
+"\tr\t\tInvertir el orden de presentación."
 
 #: usr_22.txt:122
 msgid "As a sampling of extra normal-mode commands:"
-msgstr ""
+msgstr "Esta es una muestra de órdenes adicionales en el modo normal:"
 
 #: usr_22.txt:124
 msgid ""
@@ -308,7 +325,7 @@ msgstr ""
 
 #: usr_22.txt:134
 msgid "One may also use command mode; again, just a sampling:"
-msgstr ""
+msgstr "Puede también usar el modo de órdenes; aquí tiene un extracto:"
 
 #: usr_22.txt:136
 msgid ""
@@ -321,17 +338,21 @@ msgstr ""
 msgid ""
 "The netrw browser is not limited to just your local machine; one may use\n"
 "urls such as:    (that trailing / is important)"
-msgstr ""
+msgstr "El explorador netrw no esta limitado al sistema local; puede usar\n"
+"direcciones url tales como:    (espacio en blanco / es importante)."
 
 #: usr_22.txt:143
 msgid ""
 "\t:Explore ftp://somehost/path/to/dir/\n"
 "\t:e scp://somehost/path/to/dir/"
 msgstr ""
+"\t:Explore ftp://sistema_anfitrión/ruta/al/directorio/\n"
+"\t:e scp://sistema_anfitrión/ruta/al/directorio/"
 
 #: usr_22.txt:146
 msgid "See |netrw-browse| for more."
-msgstr ""
+msgstr "Para más detalles, véase |netrw-browse|."
+
 
 #: usr_22.txt:148
 msgid ""
@@ -339,6 +360,9 @@ msgid ""
 "==\n"
 "*22.2*\tThe current directory"
 msgstr ""
+"============================================================================"
+"==\n"
+"*22.2*\tEl directorio actual"
 
 #: usr_22.txt:151
 msgid ""
@@ -346,7 +370,9 @@ msgid ""
 "you\n"
 "are in your home directory and want to edit several files in a directory\n"
 "\"VeryLongFileName\".  You could do: >"
-msgstr ""
+msgstr "Al igual que la consola, Vim tiene el concepto de directorio actual.\n"
+"Suponga que está en su directorio de incio, y que desea editar varios\n"
+"archivos en el directorio «../Nombre_Largo_de_Directorio»"
 
 #: usr_22.txt:155
 msgid ""
@@ -354,10 +380,13 @@ msgid ""
 "\t:edit VeryLongFileName/file2.txt\n"
 "\t:edit VeryLongFileName/file3.txt"
 msgstr ""
+"\t:edit Nombre_Largo_de_Directorio/archivo1.txt\n"
+"\t:edit Nombre_Largo_de_Directorio/archivo2.txt\n"
+"\t:edit Nombre_Largo_de_Directorio/archivo3.txt"
 
 #: usr_22.txt:159
 msgid "To avoid much of the typing, do this: >"
-msgstr ""
+msgstr "Para evitar teclear tanto, haga lo siguiente: >"
 
 #: usr_22.txt:161
 msgid ""
@@ -366,26 +395,34 @@ msgid ""
 "\t:edit file2.txt\n"
 "\t:edit file3.txt"
 msgstr ""
+"\t:cd Nombre_Largo_de_Directorio\n"
+"\t:edit archivo1.txt\n"
+"\t:edit archivo2.txt\n"
+"\t:edit archivo3.txt"
 
 #: usr_22.txt:166
 msgid ""
 "The \":cd\" command changes the current directory.  You can see what the "
 "current\n"
 "directory is with the \":pwd\" command: >"
-msgstr ""
+msgstr "La orden «:cd» le permite cambiar a otro directorio. Puede ver cual\n"
+"es el directorio actual con la orden «:pwd»: >"
 
 #: usr_22.txt:169
 msgid ""
 "\t:pwd\n"
 "\t/home/Bram/VeryLongFileName"
 msgstr ""
+"\t:pwd\n"
+"\t/home/Bram/Nombre_Largo_de_Directorio"
 
 #: usr_22.txt:172
 msgid ""
 "Vim remembers the last directory that you used.  Use \"cd -\" to go back to "
 "it.\n"
 "Example: >"
-msgstr ""
+msgstr "Vim recuerda el último directorio que usó. Use «cd -» para volver a\n"
+"él. Ejemplo: >()"
 
 #: usr_22.txt:175
 msgid ""
@@ -401,10 +438,21 @@ msgid ""
 "\t:pwd\n"
 "\t/etc"
 msgstr ""
+"\t:pwd\n"
+"\t/home/Bram/Nombre_Largo_de_Directorio\n"
+"\t:cd /etc\n"
+"\t:pwd\n"
+"\t/etc\n"
+"\t:cd -\n"
+"\t:pwd\n"
+"\t/home/Bram/Nombre_Largo_de_Directorio\n"
+"\t:cd -\n"
+"\t:pwd\n"
+"\t/etc"
 
 #: usr_22.txt:188
 msgid "WINDOW LOCAL DIRECTORY"
-msgstr ""
+msgstr "EL DIRECTORIO DE LA VENTANA LOCAL"
 
 #: usr_22.txt:190
 msgid ""
