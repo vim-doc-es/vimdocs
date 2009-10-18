@@ -1,9 +1,8 @@
-*usr_12.esx*	Para Vim versión 7.2.  Último cambio: 2007 May 11
+*usr_12.esx*	Para Vim versión 7.2.  Último cambio: 11/6/2007
 
 		MANUAL DE USUARIO DE VIM - por Bram Moolenaar
 
 				Trucos
-
 
 Puedes conseguir que Vim haga casi cualquier cosa,.mediante la combinación
 varias órdenes. En este capítulo, presentaremos una serie de combinaciones
@@ -49,9 +48,7 @@ pero no en el código. Ya que es difícil de especificar, añada la marca «c»
 para que se le pida una confirmación cada vez que se vaya a reemplazar
 la palabra: >
 
-
 	:%s/\<cuatro\>/4/gc
-
 
 REEMPLAZAR EN VARIOS ARCHIVOS
 
@@ -167,7 +164,6 @@ vacía. También podría seleccionar las líneas en modo Visual y escribir
 		pch.o \ ~
 		util.o \ ~
 		version.o \ ~
-
 
 Observe que una barra invertida al final de cada línea se usa para indicar
 que la línea continúa. Tras ordenar, está mal puesto. La línea de «backup.o»
@@ -339,7 +335,6 @@ escrito en la línea de órdenes. Por lo tanto la orden «grep» se ejecutará
 y producirá una lista de archivos, estos archivos serán puestos en la línea
 de órdenes de Vim. Podrá usar las órdenes «:next» y «:first» para navegar
 entre los archivos.
-
 
 ENCONTRAR CADA LÍNEA
 
