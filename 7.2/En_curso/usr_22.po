@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-04 13:39+0200\n"
-"PO-Revision-Date: 2009-10-18 13:44+0200\n"
+"PO-Revision-Date: 2009-10-18 15:40+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -60,8 +60,8 @@ msgid ""
 "Table of contents: |usr_toc.txt|"
 msgstr ""
 " Capítulo siguiente: |usr_23.txt|  Editar otros archivos\n"
-"  Capítulo anterior: |usr_21.txt|  Abandonar el editor y volver\n"
-"Tabla de contenidos: |usr_toc.txt|"
+"  Capítulo anterior: |usr_21.est|  Abandonar el editor y volver\n"
+"Tabla de contenidos: |usr_toc.est|"
 
 #: usr_22.txt:22
 msgid ""
@@ -322,6 +322,14 @@ msgid ""
 "\t\t\tconfirmation request will be issued.\n"
 "\tmb gb\t\tMake bookmark/goto bookmark"
 msgstr ""
+"\tc\t\tCambiar la noción de directorio actual de Vim, para\n"
+"\t\t\tcoincidir con el directorio del navegador. (Véase\n"
+"\t\t\t|g:netrw_keepdir| para controlare esto también.)\n"
+"\tR\t\tRenombrar el archivo o directorio bajo el cursor; verá\n"
+"\t\t\tuna ventana de dialogo para introducir el nombre nuevo.\n"
+"\tD\t\tBorrar el archivo o directorio bajo el cursor; un\n"
+"\t\t\tdialogo le pedirá confirmación.\n"
+"\tmb gb\t\tCrear marcador/ir a bookmark"
 
 #: usr_22.txt:134
 msgid "One may also use command mode; again, just a sampling:"
@@ -333,6 +341,9 @@ msgid ""
 "\t:NetrwSettings\t\tA comprehensive list of your current netrw\n"
 "\t\t\t\tsettings with help linkage."
 msgstr ""
+"\t:Explore [directory]\tExplorar el directorio actual o especificado\n"
+"\t:NetrwSettings\t\tUna completa lista de su configuración actual de\n"
+"\t\t\t\tnetrw, con enlaces de ayuda."
 
 #: usr_22.txt:140
 msgid ""
@@ -593,6 +604,11 @@ msgid ""
 "file name, and which ones are not (e.g., the \" character in the example\n"
 "above)."
 msgstr ""
+"La opción 'path' permite especificar de muchas más maneras los directorios\n"
+"donde buscar los archivos. Véase la ayuda de la opción 'path'.\n"
+"   La opción 'isfname' se usa para decidir qué caracteres están incluidos\n"
+"en el nombre del archivo, y cuales no lo están (p. ej., el carácter \" en\n"
+"el ejemplo anterior)."
 
 #: usr_22.txt:253
 msgid ""
@@ -657,7 +673,7 @@ msgstr ""
 
 #: usr_22.txt:282
 msgid "HIDDEN BUFFERS"
-msgstr ""
+msgstr "BÚFERS OCULTOS"
 
 #: usr_22.txt:284
 msgid ""
@@ -666,10 +682,15 @@ msgid ""
 "that won't work.  You also don't want to write one.txt yet.  Vim has a\n"
 "solution for you: >"
 msgstr ""
+"Suponga que está editando el archivo «uno.txt», y necesita editar el archivo\n"
+"«dos.txt». Puede simplemente usar «:edit dos.txt», pero esto no funcionará,\n"
+"ya que modificó «uno.txt» Además, no desea editar «uno.txt» ahora mismo. Vim\n"
+"ofrece la siguiente solución a este problema: >"
+
 
 #: usr_22.txt:289
 msgid "\t:hide edit two.txt"
-msgstr ""
+msgstr "\t:hide edit dos.txt"
 
 #: usr_22.txt:291
 msgid ""
@@ -687,7 +708,7 @@ msgstr ""
 
 #: usr_22.txt:301
 msgid "INACTIVE BUFFERS"
-msgstr ""
+msgstr "BÚFERS INACTIVOS"
 
 #: usr_22.txt:303
 msgid ""
@@ -716,30 +737,31 @@ msgstr ""
 
 #: usr_22.txt:316
 msgid "LISTING BUFFERS"
-msgstr ""
+msgstr "LISTAR BÚFERS"
 
 #: usr_22.txt:318
 msgid "View the buffer list with this command: >"
-msgstr ""
+msgstr "Use esta orden para ver la lista de búfers: >"
 
 #: usr_22.txt:320
 msgid "\t:buffers"
-msgstr ""
+msgstr "\t:buffers"
 
 #: usr_22.txt:322
 msgid ""
 "A command which does the same, is not so obvious to list buffers, but is "
 "much\n"
 "shorter to type: >"
-msgstr ""
+msgstr "Hay otra orden que realiza la misma función, mucho más corta de\n"
+"teclear, pero menos obvia, para listar búfers: >"
 
 #: usr_22.txt:325
 msgid "\t:ls"
-msgstr ""
+msgstr "\t:ls"
 
 #: usr_22.txt:327
 msgid "The output could look like this:"
-msgstr ""
+msgstr "La salida puede presentar este aspecto:"
 
 #: usr_22.txt:329
 msgid ""
@@ -747,6 +769,9 @@ msgid ""
 "  2 %a+\t\"usr_21.txt\"\t\t\tline 1 ~\n"
 "  3\t\"usr_toc.txt\"\t\t\tline 1 ~"
 msgstr ""
+"  1 #h\t\"help.txt\"\t\t\tlínea 62 ~\n"
+"  2 %a+\t\"usr_21.txt\"\t\t\tlínea 1 ~\n"
+"  3\t\"usr_toc.txt\"\t\t\tlínea 1 ~"
 
 #: usr_22.txt:333
 msgid ""
@@ -755,7 +780,12 @@ msgid ""
 "   After the buffer number come the flags.  Then the name of the file\n"
 "and the line number where the cursor was the last time.\n"
 "   The flags that can appear are these (from left to right):"
-msgstr ""
+msgstr "La primera columna contiene el número de búfer. Puede usar esto para\n"
+"editar el búfer sin tener que introducir el nombre, explicado a\n"
+"continuación.\n"
+"   Después del número aparecen las marcas. Por último, el nombre del archivo\n"
+"y el número de línea en el que estaba el cursor al última vez.\n"
+"   Las marcas que pueden aparecer son estas (de izquierda a derecha):"
 
 #: usr_22.txt:339
 msgid ""
@@ -771,51 +801,55 @@ msgstr ""
 
 #: usr_22.txt:349
 msgid "EDITING A BUFFER"
-msgstr ""
+msgstr "EDITAR UN BÚFER"
 
 #: usr_22.txt:351
 msgid ""
 "You can edit a buffer by its number.  That avoids having to type the file\n"
 "name: >"
-msgstr ""
+msgstr "Puede editar un búfer por su número. Esto evita tener que introducir\n"
+"el nombre del archivo: >"
 
 #: usr_22.txt:354
 msgid "\t:buffer 2"
-msgstr ""
+msgstr "\t:buffer 2"
 
 #: usr_22.txt:356
 msgid ""
 "But the only way to know the number is by looking in the buffer list.  You "
 "can\n"
 "use the name, or part of it, instead: >"
-msgstr ""
+msgstr "Pero la única manera de saber el número es a través de la lista de\n"
+"de búfers. En lugar de esto, puede usar el nombre, o parte de él: >"
 
 #: usr_22.txt:359
 msgid "\t:buffer help"
-msgstr ""
+msgstr "\t:buffer help"
 
 #: usr_22.txt:361
 msgid ""
 "Vim will find a best match for the name you type.  If there is only one\n"
 "buffer that matches the name, it will be used.  In this case \"help.txt\".\n"
 "   To open a buffer in a new window: >"
-msgstr ""
+msgstr "Vim mostrará la coincidencia más cercana al nombre que introduzca. De\n"
+"sólo haber un búfer que coincida con el nombre, este se usará. En este caso,\n"
+"«help.txt». Use lo siguiente para abrir un búfer en una nueva ventana: >"
 
 #: usr_22.txt:365
 msgid "\t:sbuffer 3"
-msgstr ""
+msgstr "\t:sbuffer 3"
 
 #: usr_22.txt:367
 msgid "This works with a name as well."
-msgstr ""
+msgstr "Esto también funciona con un nombre."
 
 #: usr_22.txt:370
 msgid "USING THE BUFFER LIST"
-msgstr ""
+msgstr "USAR LA LISTA DE BÚFERS"
 
 #: usr_22.txt:372
 msgid "You can move around in the buffer list with these commands:"
-msgstr ""
+msgstr "Puede navegar por la lista de búfers con estas órdenes:"
 
 #: usr_22.txt:374
 msgid ""
@@ -824,14 +858,18 @@ msgid ""
 "\t:bfirst\t\tgo to the first buffer\n"
 "\t:blast\t\tgo to the last buffer"
 msgstr ""
+"\t:bnext\t\tIr al siguiente búfer\n"
+"\t:bprevious\tIr al búfer anterior\n"
+"\t:bfirst\t\tIr al primer búfer\n"
+"\t:blast\t\tIr al último búfer"
 
 #: usr_22.txt:379
 msgid "To remove a buffer from the list, use this command: >"
-msgstr ""
+msgstr "Use esta orden para eliminar un búfer de la lista: >"
 
 #: usr_22.txt:381
 msgid "\t:bdelete 3"
-msgstr ""
+msgstr "\t:bdelete 3"
 
 #: usr_22.txt:383
 msgid ""
@@ -842,7 +880,11 @@ msgid ""
 "closed.  If it was the last window, Vim will find another buffer to edit.  "
 "You\n"
 "can't be editing nothing!"
-msgstr ""
+msgstr "Una vez más, esto también funciona con un nombre.\n"
+"   Si elimina un búfer que estaba activo (visible en una ventana), esa\n"
+"ventana se cerrará. Si elimina el búfer actual, se cerrará la ventana\n"
+"actual. Si era la última ventana, Vim encontrará otro búfer que editar. ¡No\n"
+"editar la nada!"
 
 #: usr_22.txt:389
 msgid ""
@@ -859,11 +901,13 @@ msgid ""
 "============================================================================"
 "=="
 msgstr ""
+"============================================================================"
+"=="
 
 #: usr_22.txt:398
 msgid "Next chapter: |usr_23.txt|  Editing other files"
-msgstr ""
+msgstr "Siguiente capítulo: |usr_23.txt|  Editar otros archivos"
 
 #: usr_22.txt:400
 msgid "Copyright: see |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
-msgstr ""
+msgstr "Copyright: véase |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
