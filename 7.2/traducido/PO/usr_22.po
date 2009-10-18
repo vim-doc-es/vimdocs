@@ -1,13 +1,55 @@
-# Omar Campagne <ocampagne@gmail.com>, 2009.
+# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es 
+# extracted from usr_04.txt 
+# Copyright (C) 2009 
+# This file is distributed under the same license as the Vim 7.2 package.
+#
+# Translators credits:
+#   - Initial translation
+#       Omar Campagne <ocampagne@gmail.com>, 2009., 2009
+#
+#   - Updates
+#       TRADUCTOR <CORREO>, AÑO 
+#
+# Debido al formato (txt) y al máximo de 80 columnas que pueden tener 
+# los textos de ayuda en Vim, así como el formato PO, por favor, leete los
+# apuntes concernientes a la edición de los archivos PO relativos a la
+# aplicación que desees usar.
+# También encontrarás información acerca del uso de herramientas gettext en el 
+# proyecto de localización (l10n) de Vim.
+# 
+# - http://www.assembla.com/wiki/show/vim-doc-es
+#
+# No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
+# este enlace puede ser de interés. A pesar de no formar parte, nuestra 
+# intención es homologarnos con su terminología y uso de la lengua 
+# en la medida de lo útil y posible.
+# 
+#  - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/notas
+# 
+# La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
+# pero también puede servir de referencia para otros términos no técnicos.
+# No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
+# traducción sea comprensible independientemente de la nacionalidad del
+# usuario. Si crees que alguna traducción puede llevar a confusión, consulta
+# la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
+# 
+#  - www.rae.es 
+#  - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages   
+# 
+# Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
+# se puede consultar con un simple grep, pogrep o cargado en Virtaal.
+#
 #. extracted from usr_22.txt
+
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-04 13:39+0200\n"
-"PO-Revision-Date: 2009-10-18 15:40+0200\n"
+"PO-Revision-Date: 2009-10-18 16:40+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
-"Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"Language-Team: Documentación de Vim en español\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -249,6 +291,33 @@ msgid ""
 "     \t r................Reversing Sorting Order....................|netrw-r|\n"
 "<    \t(etc)"
 msgstr ""
+"    MAPS\t\t\t\t\t\t\t\t netrw-maps \n"
+"     \t <F1>.............Ayuda......................................|netrw-"
+"help|\n"
+"     \t <cr>.............Explorar...................................|netrw-"
+"cr|\n"
+"     \t <del>............Borrar archivos o directorios..............|netrw-"
+"delete|\n"
+"     \t -................Subir......................................|netrw--|\n"
+"     \t a................Ocultar archivos o directorios.............|netrw-a|\n"
+"     \t mb...............Marcar un directorio como favorito.........|netrw-"
+"mb|\n"
+"     \t gb...............Pasar a un directorio favorito.............|netrw-"
+"gb|\n"
+"     \t c................Hacer del directorio explorado el actual...|netrw-c|\n"
+"     \t d................Crear un directorio........................|netrw-d|\n"
+"     \t D................Borrar archivos o directorios..............|netrw-D|\n"
+"     \t <c-h>............Editar la lista de archivos/dir ocultos....|netrw-"
+"ctrl-h|\n"
+"     \t i................Cambiar el estilo de la lista..............|netrw-i|\n"
+"     \t <c-l>............Refrescar la lista.........................|netrw-"
+"ctrl-l|\n"
+"     \t o................Explorar con una división horizontal.......|netrw-o|\n"
+"     \t p................Usar la ventana de previsualización........|netrw-p|\n"
+"     \t P................Editar en la anterior ventana..............|netrw-p|\n"
+"     \t q................Listar favoritos y el histório.............|netrw-q|\n"
+"     \t r................Invertir el orden de agrupación............|netrw-r|\n"
+"<    \t(etc)"
 
 #: usr_22.txt:100
 msgid ""
@@ -557,8 +626,8 @@ msgid ""
 "command will add it to the 'path' option: >"
 msgstr "Vim encontrará el archivo y lo editará.\n"
 "   ¿Y en el caso de que el archivo no está en el directorio actual? Vim\n"
-"usará la opción 'path' para encontrar el archivo. Esta opción es una lista\n"
-"de nombres de directorio donde buscar su archivo.\n"
+"usará la opción 'path' (ruta) para encontrar el archivo. Esta opción es una\n"
+"lista de nombres de directorio donde buscar su archivo.\n"
 "   Suponga que tiene sus archivos include en «c:/prog/include». Esta orden\n"
 "la añadiría a la opción 'path': >"
 
@@ -592,7 +661,13 @@ msgid ""
 "below the current directory.  And the current directory might not be where "
 "the\n"
 "file that you are editing is located."
-msgstr ""
+msgstr "Esto hace que Vim mire en el directorio «proto», debajo del\n"
+"directorio en el que está el archivo sobre el que usa «gf». Por ello, usar\n"
+"«gf» con «inits.h» hace que Vim busque «proto/inits.h», empezando por el\n"
+"directorio del archivo.\n"
+"   Sin el «./», en este caso «proto», Vim buscará en el directorio «proto»\n"
+"por debajo del directorio actual. Y puede que el directorio actual no sea\n"
+"en el que se ubica el archivo que está editando."
 
 #: usr_22.txt:247
 msgid ""
@@ -607,14 +682,17 @@ msgstr ""
 "La opción 'path' permite especificar de muchas más maneras los directorios\n"
 "donde buscar los archivos. Véase la ayuda de la opción 'path'.\n"
 "   La opción 'isfname' se usa para decidir qué caracteres están incluidos\n"
-"en el nombre del archivo, y cuales no lo están (p. ej., el carácter \" en\n"
+"en el nombre del archivo, y cuales no lo están (p. ej., el carácter «\"» en\n"
 "el ejemplo anterior)."
 
+
+# Nota dl T: No encuentro puto sentido a esta frase. 
 #: usr_22.txt:253
 msgid ""
 "When you know the file name, but it's not to be found in the file, you can\n"
 "type it: >"
-msgstr ""
+msgstr "Cuando conoce el nombre del archivo, pero no se encuentra en el\n"
+"archivo en edición, puede introducirla: >"
 
 #: usr_22.txt:256
 msgid "\t:find inits.h"
@@ -624,7 +702,7 @@ msgstr "\t:find inits.h"
 msgid ""
 "Vim will then use the 'path' option to try and locate the file.  This is the\n"
 "same as the \":edit\" command, except for the use of 'path'."
-msgstr "Vim usará entonces la opción 'path' para probar y ubicar el archivo.\n"
+msgstr "Vim usará entonces la opción 'path' para buscar y ubicar el archivo.\n"
 "Esto equivale a la orden «:edit», excepto por el uso de 'path'."
 
 #: usr_22.txt:261
@@ -638,7 +716,8 @@ msgstr ""
 #: usr_22.txt:265
 msgid ""
 "A nice way to directly start Vim to edit a file somewhere in the 'path': >"
-msgstr ""
+msgstr "Esta es una buena manera de iniciar Vim editando un archivo ubicado\n"
+"en el 'path': >"
 
 #: usr_22.txt:267
 msgid "\tvim \"+find stdio.h\""
@@ -669,7 +748,11 @@ msgid ""
 "Buffers not only contain file contents, but also all the marks, settings, "
 "and\n"
 "other stuff that goes with it."
-msgstr ""
+msgstr "El editor Vim usa el término búfer para describir un archivo en\n"
+"edición. En realidad, un búfer es una copia del archivo que edita. Cuando\n"
+"termina de modificar el búfer, escribe los contenidos del búfer en el\n"
+"archivo. Los búfers no solo contienen los contenidos de al archivo, sino\n"
+"también las marcas, configuraciones y otros elementos que lo acompañan."
 
 #: usr_22.txt:282
 msgid "HIDDEN BUFFERS"
@@ -705,6 +788,15 @@ msgid ""
 "   Be careful!  When you have hidden buffers with changes, don't exit Vim\n"
 "without making sure you have saved all the buffers."
 msgstr ""
+"El búfer «uno.txt» desaparece de la pantalla, pero Vim sabe aún sabe que\n"
+"esté editando el búfer, así que guarda el texto modificado. A esto se le\n"
+"llama un búfer oculto: El búfer contiene texto, pero no puede verlo.\n"
+"   El argumento de «:hide» es otra orden. «:hide» hace que una orden se\n"
+"comporte como si la opción 'hidden' estuviese activada. También podría\n"
+"configurar usted mismo esta opción. El efecto que esto tiene es que cuando\n"
+"cualquier búfer, éste se ocultará.\n"
+"¡Cuidado! Cuando tenga búfers ocultos con cambios, no cierre Vim antes de\n"
+"asegurarse de haber guardado todos los búfers."
 
 #: usr_22.txt:301
 msgid "INACTIVE BUFFERS"
@@ -718,6 +810,9 @@ msgid ""
 "the\n"
 "buffer list.  This is called an inactive buffer.  Overview:"
 msgstr ""
+"Si un búfer se ha usado una vez, Vim recordará alguna información del búfer.\n"
+"Cuando no está activa en una ventana y no oculta, aún se encontrará en la \n"
+"lista de búfers. A esto se le llama un búfer inactivo. Vista general:"
 
 #: usr_22.txt:307
 msgid ""
@@ -725,6 +820,9 @@ msgid ""
 "   Hidden\t\tNot in a window, text loaded.\n"
 "   Inactive\t\tNot in a window, no text loaded."
 msgstr ""
+"   Activo\t\tAparece en una ventana, texto cargado.\n"
+"   Hidden\t\tNo aparece en una ventana, texto cargado.\n"
+"   Inactive\t\tNo aparece en una ventana, texto no cargado."
 
 #: usr_22.txt:311
 msgid ""
@@ -734,6 +832,9 @@ msgid ""
 "see\n"
 "which files you have edited.  And edit them again."
 msgstr ""
+"Los búfers inactivos se recuerdan, porque Vim guarda información acerca de\n"
+"como marcas. Y recordar el nombre del archivo también es de utilidad, para\n"
+"así ver qué archivos ha editado, y editarlos otra vez."
 
 #: usr_22.txt:316
 msgid "LISTING BUFFERS"
@@ -798,6 +899,14 @@ msgid ""
 "\t   -\tBuffer is not modifiable, the 'modifiable' option is off.\n"
 "\t    +\tBuffer has been modified."
 msgstr ""
+"\tu\tBuffer no está listado |unlisted-buffer|.\n"
+"\t %\tBúfer actual.\n"
+"\t #\tBúfer alternativo.\n"
+"\t  a\tEl búfer está cargado y visible.\n"
+"\t  h\tEl búfer está cargado pero oculto.\n"
+"\t   =\tEl búfer es de sólo lectura.\n"
+"\t   -\tEl búfer no es modificable, la opción 'modifiable' está desactivada.\n"
+"\t    +\tEl búfer se ha modificado."
 
 #: usr_22.txt:349
 msgid "EDITING A BUFFER"
@@ -884,7 +993,7 @@ msgstr "Una vez más, esto también funciona con un nombre.\n"
 "   Si elimina un búfer que estaba activo (visible en una ventana), esa\n"
 "ventana se cerrará. Si elimina el búfer actual, se cerrará la ventana\n"
 "actual. Si era la última ventana, Vim encontrará otro búfer que editar. ¡No\n"
-"editar la nada!"
+"puede editar la nada!"
 
 #: usr_22.txt:389
 msgid ""
@@ -895,6 +1004,13 @@ msgid ""
 "\tVim can do the impossible).  To really make Vim forget about a buffer,\n"
 "\tuse \":bwipe\".  Also see the 'buflisted' option."
 msgstr ""
+"\tNota:\n"
+"\tAún después de eliminar un búfer con «:bdelete», Vim aún lo recuerda.\n"
+"\tEn realidad, pasa a no «unlisted» (no listado), ya que no aparece en la\n"
+"\tlista de «:buffers». La orden «:buffers!» muestra los búfers no listados\n"
+"\t(sí, Vim es capaz de lo imposible). Para hacer que Vim olvide\n"
+"\tcompletamente un búfer, use «:bwipe». Véase también la opción" 
+"\t'buflisted'."
 
 #: usr_22.txt:396
 msgid ""
