@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-04 13:39+0200\n"
-"PO-Revision-Date: 2009-10-12 18:00+0200\n"
+"PO-Revision-Date: 2009-10-18 13:44+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -460,7 +460,10 @@ msgid ""
 "you want to edit a number of files somewhere else in the new window, you can\n"
 "make it use a different directory, without changing the current directory in\n"
 "the other window.  This is called a local directory. >"
-msgstr ""
+msgstr "Cuando divide una ventana, ambas ventanas usan el mismo directorio\n"
+"actual. Cuando desea editar un nombre de archivos en otra ubicación en la\n"
+"ventana nueva, puede usar un directorio diferente, sin cambiar el directorio\n"
+"actual en la otra ventana. A esto se le llama el directorio local. >"
 
 #: usr_22.txt:195
 msgid ""
@@ -474,6 +477,15 @@ msgid ""
 "\t:pwd\n"
 "\t/home/Bram/VeryLongFileName"
 msgstr ""
+"\t:pwd\n"
+"\t/home/Bram/Nombre_Largo_de_Archivo\n"
+"\t:split\n"
+"\t:lcd /etc\n"
+"\t:pwd\n"
+"\t/etc\n"
+"\tCTRL-W w\n"
+"\t:pwd\n"
+"\t/home/Bram/Nombre_Largo_de_Archivo"
 
 #: usr_22.txt:205
 msgid ""
@@ -485,7 +497,13 @@ msgid ""
 "remembered.  Using \":cd\" or \":lcd\" in other windows will not change it.\n"
 "   When using a \":cd\" command in a window that uses a different current\n"
 "directory, it will go back to using the shared directory."
-msgstr ""
+msgstr "Mientras no use ninguna orden «:lcd», todas las ventanas comparten\n"
+"el directorio actual. Ejecutar una orden «:cd» en una ventana cambiará\n"
+"también el directorio de la otra ventana.\n"
+"   Si se usa con «:lcd» con una ventana, se recordará otro directorio\n"
+"actual. Usar «:cd» o «:lcd» en otras ventanas no modificará esta.\n"
+"  Cuando use la orden «:cd» en una ventana que usa un directorio actual\n"
+"diferente, esta volverá al directorio compartido."
 
 #: usr_22.txt:213
 msgid ""
@@ -493,24 +511,29 @@ msgid ""
 "==\n"
 "*22.3*\tFinding a file"
 msgstr ""
+"============================================================================"
+"==\n"
+"*22.3*\tEncontrar un archivo"
 
 #: usr_22.txt:216
 msgid "You are editing a C program that contains this line:"
-msgstr ""
+msgstr "Suponga que está editando un programa un C que contiene esta línea:"
 
 #: usr_22.txt:218
 msgid "\t#include \"inits.h\" ~"
-msgstr ""
+msgstr "\t#include \"inits.h\" ~"
 
 #: usr_22.txt:220
 msgid ""
 "You want to see what is in that \"inits.h\" file.  Move the cursor on the name\n"
 "of the file and type: >"
 msgstr ""
+"Desea ver el contenido del archivo «inits.h». Desplace el cursor al nombre\n"
+"del archivo y teclee: >"
 
 #: usr_22.txt:223
 msgid "\tgf"
-msgstr ""
+msgstr "\tgf"
 
 #: usr_22.txt:225
 msgid ""
@@ -521,11 +544,16 @@ msgid ""
 "look for your file.\n"
 "   Suppose you have your include files located in \"c:/prog/include\".  This\n"
 "command will add it to the 'path' option: >"
-msgstr ""
+msgstr "Vim encontrará el archivo y lo editará.\n"
+"   ¿Y en el caso de que el archivo no está en el directorio actual? Vim\n"
+"usará la opción 'path' para encontrar el archivo. Esta opción es una lista\n"
+"de nombres de directorio donde buscar su archivo.\n"
+"   Suponga que tiene sus archivos include en «c:/prog/include». Esta orden\n"
+"la añadiría a la opción 'path': >"
 
 #: usr_22.txt:232
 msgid "\t:set path+=c:/prog/include"
-msgstr ""
+msgstr "\t:set path+=c:/prog/include"
 
 #: usr_22.txt:234
 msgid ""
@@ -536,7 +564,12 @@ msgid ""
 "dot:\n"
 ">\n"
 "\t:set path+=./proto"
-msgstr ""
+msgstr "Este directorio es una ruta absoluta. No importa donde esté, tendrá\n"
+"la misma ubicación. ¿Y en el caso de que tiene archivos ubicados en un\n"
+"subdirectorio, debajo de donde está el archivo? Puede especificar en este\n"
+"caso un nombre de ruta relativo. Esto empieza con un punto:\n()"
+">\n"
+"\t:set path+=./proto"
 
 #: usr_22.txt:240
 msgid ""
@@ -569,19 +602,22 @@ msgstr ""
 
 #: usr_22.txt:256
 msgid "\t:find inits.h"
-msgstr ""
+msgstr "\t:find inits.h"
 
 #: usr_22.txt:258
 msgid ""
 "Vim will then use the 'path' option to try and locate the file.  This is the\n"
 "same as the \":edit\" command, except for the use of 'path'."
-msgstr ""
+msgstr "Vim usará entonces la opción 'path' para probar y ubicar el archivo.\n"
+"Esto equivale a la orden «:edit», excepto por el uso de 'path'."
 
 #: usr_22.txt:261
 msgid ""
 "To open the found file in a new window use CTRL-W f instead of \"gf\", or use\n"
 "\":sfind\" instead of \":find\"."
 msgstr ""
+"Para abrir el archivo encontrado en una nueva ventana, use CTRL-W en lugar\n"
+"de «gf», o use «:sfind» en lugar de «:find»."
 
 #: usr_22.txt:265
 msgid ""
@@ -590,13 +626,14 @@ msgstr ""
 
 #: usr_22.txt:267
 msgid "\tvim \"+find stdio.h\""
-msgstr ""
+msgstr "\tvim \"+find stdio.h\""
 
 #: usr_22.txt:269
 msgid ""
 "This finds the file \"stdio.h\" in your value of 'path'.  The quotes are\n"
 "necessary to have one argument |-+c|."
-msgstr ""
+msgstr "Esto encuentra el archivo «stdio.h» en su valor de 'path'. Las\n"
+"comillas son necesarias para tener un argumento |-+c|."
 
 #: usr_22.txt:272
 msgid ""
@@ -604,6 +641,9 @@ msgid ""
 "==\n"
 "*22.4*\tThe buffer list"
 msgstr ""
+"============================================================================"
+"==\n"
+"*22.4*\tLa lista de búfers."
 
 #: usr_22.txt:275
 msgid ""
