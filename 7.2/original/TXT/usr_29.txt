@@ -30,9 +30,9 @@ tag, the place where an identifier is defined.
    To generate the tags file for all C files in the current directory, use the
 following command: >
 
-	exuberant-ctags *.c
+	ctags *.c
 
-"exuberant-ctags" is a separate program.  Most Unix systems already have it installed.
+"ctags" is a separate program.  Most Unix systems already have it installed.
 If you do not have it yet, you can find Exuberant ctags here:
 
 	http://ctags.sf.net ~
@@ -146,7 +146,7 @@ time while generating one big tags file.  You might do this overnight.
 argument to search a whole directory tree: >
 
 	cd ~/proj
-	exuberant-ctags -R .
+	ctags -R .
 
 The nice thing about this is that Exuberant ctags recognizes various file
 types.  Thus this doesn't work just for C and C++ programs, also for Eiffel
@@ -234,7 +234,7 @@ you can use a list of identifier names as a table of contents.  Here is an
 example.
    First create a list of identifiers (this requires Exuberant ctags): >
 
-	exuberant-ctags --c-types=f -f functions *.c
+	ctags --c-types=f -f functions *.c
 
 Now start Vim without a file, and edit this file in Vim, in a vertically split
 window: >
