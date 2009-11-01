@@ -48,7 +48,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: bugs@vim.org\n"
 "POT-Creation-Date: 2009-08-04 13:39+0200\n"
-"PO-Revision-Date: 2009-10-31 22:22+0100\n"
+"PO-Revision-Date: 2009-11-01 18:19+0100\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es <https://www.assembla.com/wiki/show/vim-doc-es>\n"
 "MIME-Version: 1.0\n"
@@ -332,12 +332,16 @@ msgid ""
 "Someone sends you an e-mail message, which refers to a file by its URL.  For\n"
 "example:"
 msgstr ""
+"Suponga que alguien le manda un correo electrónico que le remite a un archivo\n"
+"según su URL. Por ejemplo:"
 
 #: usr_23.txt:120
 msgid ""
 "\tYou can find the information here: ~\n"
 "\t\tftp://ftp.vim.org/pub/vim/README ~"
 msgstr ""
+"\tPuedes encontrar la información aquí: ~\n"
+"\t\tftp://ftp.vim.org/pub/vim/README ~"
 
 #: usr_23.txt:123
 msgid ""
@@ -348,10 +352,15 @@ msgid ""
 "URL.\n"
 "Then use this command: >"
 msgstr ""
+"Puede iniciar un programa para descargar el archivo, guardarlo en su disco\n"
+"e iniciar Vim para editarlo.\n"
+"   Existe una manera mucho más simple. Desplace el cursor hacia cualquier\n"
+"carácter del URL.\n"
+"Después ejecute esta orden: >"
 
 #: usr_23.txt:128
 msgid "\tgf"
-msgstr ""
+msgstr "\tgf"
 
 #: usr_23.txt:130
 msgid ""
@@ -366,6 +375,14 @@ msgid ""
 "is down, etc.  Unfortunately, it's hard to tell the cause of the error.  You\n"
 "might want to try the manual way of downloading the file."
 msgstr ""
+"Con un poco de suerte, Vim escogerá qué programa usar para descargarse el\n"
+"archivo, lo descargará y editara la copia. Para abrir el archivo en una\n"
+"ventana nueva use CTRL-W f.\n"
+"   Se le informará de cualquier incidencia en el proceso. Es posible que\n"
+"el URL sea erróneo, que no tiene los permisos necesarios para leerlo, que\n"
+"la conexion a Internet se ha interrumpido, etc. Desafortunadamente, es\n"
+"difícil conocer la causa del error. Puede que desee probar una descarga\n"
+"manual."
 
 #: usr_23.txt:138
 msgid ""
@@ -373,6 +390,8 @@ msgid ""
 "URLs\n"
 "with these formats are recognized:"
 msgstr ""
+"El acceso a archivos en Internet es posible gracias a la extensión netrw.\n"
+"A día de hoy se reconocen los siguientes formatos de URL:"
 
 #: usr_23.txt:141
 msgid ""
@@ -381,6 +400,10 @@ msgid ""
 "\tscp://\t\tuses scp\n"
 "\thttp://\t\tuses wget (reading only)"
 msgstr ""
+"\tftp://\t\tusa ftp\n"
+"\trcp://\t\tusa rcp\n"
+"\tscp://\t\tusa scp\n"
+"\thttp://\t\tusa wget (sólo lectura)"
 
 #: usr_23.txt:146
 msgid ""
@@ -388,6 +411,9 @@ msgid ""
 "to be available on your computer.  On most Unix systems \"ftp\" and \"rcp\" will\n"
 "be present.  \"scp\" and \"wget\" might need to be installed."
 msgstr ""
+"Vim no realiza la conexión por si mismo, sino que depende de que los programas\n"
+"mencionados estén instalados en su ordenador. La mayoría de los sistemas Unix\n"
+"incluyen ftp y rcp. Puede que tenga instalar scp y wget."
 
 #: usr_23.txt:150
 msgid ""
@@ -396,10 +422,13 @@ msgid ""
 "for\n"
 "http://."
 msgstr ""
+"Vim detecta estas URL para cada orden que inicia la edición de un archivo\n"
+"nuevo, también con «:edit» y «:split», por ejemplo. Las órdenes de escritura\n"
+"también funcionan, a excepción de «http://»."
 
 #: usr_23.txt:154
 msgid "For more information, also about passwords, see |netrw|."
-msgstr ""
+msgstr "Para más información, también acerca de contraseñas, véase |netrw|."
 
 #: usr_23.txt:156
 msgid ""
@@ -407,6 +436,9 @@ msgid ""
 "==\n"
 "*23.3*\tEncryption"
 msgstr ""
+"============================================================================"
+"==\n"
+"*23.3*\tCifrado"
 
 #: usr_23.txt:159
 msgid ""
