@@ -118,13 +118,19 @@
 # 2009-08-22: PALV: Bring this file from the dead in the SVN repo. Change e-mail
 #          addresses, and finally bring the file encoding to the XIX Century.
 #          We do UTF-8 now.
-#          
+#
+#	NOTA DE TRADUCCIÓN
+#
+# * No se puede insertar «\n» en las msgstr, a menos que aparezca en el msgid.
+#   La línea de órdenes de Vim auto-justificará la salida cuando la cadena
+#   traducida sea más larga que la original.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2-245 (Castellano)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-20 17:41+0200\n"
-"PO-Revision-Date: 2009-10-28 19:32+0100\n"
+"PO-Revision-Date: 2009-11-01 23:22+0100\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es http://code.assembla.com/vim-doc-es\n"
 "MIME-Version: 1.0\n"
@@ -1004,7 +1010,7 @@ msgstr "W15: Advertencia: separador de línea incorrecto, puede que falte ^M"
 
 msgid "E167: :scriptencoding used outside of a sourced file"
 msgstr ""
-"E167: Ha usado \":scriptencoding\" fuera de un archivo de \n"
+"E167: Ha usado \":scriptencoding\" fuera de un archivo de "
 "instrucciones ejecutables"
 
 msgid "E168: :finish used outside of a sourced file"
@@ -1252,7 +1258,7 @@ msgstr "E153: Incapaz de abrir %s para lectura"
 #, c-format
 msgid "E670: Mix of help file encodings within a language: %s"
 msgstr ""
-"E670: Mezcla de codificaciones en archivos de ayuda dentro \n"
+"E670: Mezcla de codificaciones en archivos de ayuda dentro "
 "de un lenguaje: %s"
 
 #, c-format
@@ -1456,7 +1462,7 @@ msgstr "Posición de la ventana: X %d, Y %d"
 
 msgid "E188: Obtaining window position not implemented for this platform"
 msgstr ""
-"E188: Obtener la posición de la ventana no está implementado \n"
+"E188: Obtener la posición de la ventana no está implementado "
 "en esta plataforma"
 
 msgid "E466: :winpos requires two number arguments"
@@ -1490,7 +1496,7 @@ msgstr "E190: No se pudo abrir \"%s\" para escrbir"
 #. set mark
 msgid "E191: Argument must be a letter or forward/backward quote"
 msgstr ""
-"E191: El argumento debe ser una letra o una comilla simple/comilla \n"
+"E191: El argumento debe ser una letra o una comilla simple/comilla "
 "simple invertida"
 
 msgid "E192: Recursive use of :normal too deep"
@@ -1504,7 +1510,7 @@ msgstr "E194: No hay un nombre de archivo alterno que sustituya a '#'"
 
 msgid "E495: no autocommand file name to substitute for \"<afile>\""
 msgstr ""
-"E495: No se ha dado un nombre de archivo de auto-órdenes para \n"
+"E495: No se ha dado un nombre de archivo de auto-órdenes para "
 "sustituir a  \"<afile>\""
 
 msgid "E496: no autocommand buffer number to substitute for \"<abuf>\""
@@ -1521,7 +1527,7 @@ msgstr ""
 #, no-c-format
 msgid "E499: Empty file name for '%' or '#', only works with \":p:h\""
 msgstr ""
-"E499: Un nombre de archivo vacío para \"%\" o \"#\" solo funciona\n"
+"E499: Un nombre de archivo vacío para \"%\" o \"#\" solo funciona "
 "con \":p:h\""
 
 msgid "E500: Evaluates to an empty string"
@@ -1787,7 +1793,7 @@ msgstr "E676: No coincide ninguna auto-orden para \"acwrite\"en el búfer"
 
 msgid "E203: Autocommands deleted or unloaded buffer to be written"
 msgstr ""
-"E203: Las auto-órdenes fueron suprimidas o el búfer se \n"
+"E203: Las auto-órdenes fueron suprimidas o el búfer se "
 "descargó para ser grabado en disco"
 
 msgid "E204: Autocommand changed number of lines in unexpected way"
@@ -1817,27 +1823,27 @@ msgstr ""
 
 msgid "E507: Close error for backup file (add ! to override)"
 msgstr ""
-"E507: Error al cerrar el archivo de la copia de seguridad\n"
+"E507: Error al cerrar el archivo de la copia de seguridad "
 "(añada ! para forzar la orden)"
 
 msgid "E508: Can't read file for backup (add ! to override)"
 msgstr ""
-"E508: No se pudo leer el archivo para crear la copia de seguridad\n"
+"E508: No se pudo leer el archivo para crear la copia de seguridad "
 "(añada ! para forzar la orden)"
 
 msgid "E509: Cannot create backup file (add ! to override)"
 msgstr ""
-"E509: No se pudo crear el archivo para la copia de seguridad\n"
+"E509: No se pudo crear el archivo para la copia de seguridad "
 "(añada ! para forzar la orden)"
 
 msgid "E510: Can't make backup file (add ! to override)"
 msgstr ""
-"E510: No se pudo hacer un archivo de copia de seguridad\n"
+"E510: No se pudo hacer un archivo de copia de seguridad "
 "(añada ! para forzar la orden)"
 
 msgid "E460: The resource fork would be lost (add ! to override)"
 msgstr ""
-"E460: Se perdería el segmento (\"fork\") de recursos\n"
+"E460: Se perdería el segmento (\"fork\") de recursos "
 "(añada ! para forzar la orden)"
 
 msgid "E214: Can't find temp file for writing"
@@ -1845,11 +1851,11 @@ msgstr "E214: No se pudo encontrar el archivo temporal para escribir en él"
 
 msgid "E213: Cannot convert (add ! to write without conversion)"
 msgstr ""
-"E213: No se pudo convertir (añada \"!\" para escribir el archivo\n"
+"E213: No se pudo convertir (añada \"!\" para escribir el archivo "
 "sin conversión)"
 
 msgid "E166: Can't open linked file for writing"
-msgstr "E166: No se pudo abrir el archivo enlazado para escribir en él"
+msgstr "E166: No se pudo abrir el archivo enlazado para escribir"
 
 msgid "E212: Can't open file for writing"
 msgstr "E212: No se pudo abrir el archivo para escribir en él"
@@ -1863,15 +1869,15 @@ msgstr "E512: Falló el cierre del archivo"
 
 msgid "E513: write error, conversion failed (make 'fenc' empty to override)"
 msgstr ""
-"E513: Error de escritura, la conversión falló (vacíe 'fenc' para \n"
-"forzar)"
+"E513: Error de escritura, la conversión falló (vacíe 'fenc' para "
+"forzar)."
 
 #, c-format
 msgid ""
 "E513: write error, conversion failed in line %ld (make 'fenc' empty to "
 "override)"
 msgstr ""
-"E513: Error de escritura, la conversión falló en la línea %ld \n"
+"E513: Error de escritura, la conversión falló en la línea %ld"
 "(vacíe 'fenc' para forzar)"
 
 msgid "E514: write error (file system full?)"
@@ -2185,7 +2191,7 @@ msgstr ""
 
 msgid "E232: Cannot create BalloonEval with both message and callback"
 msgstr ""
-"E232: No se pudo crear un \"BalloonEval\" que contenga tanto el mensaje\n"
+"E232: No se pudo crear un \"BalloonEval\" que contenga tanto el mensaje "
 "como la llamada de retorno"
 
 msgid "E229: Cannot start the GUI"
@@ -2197,7 +2203,7 @@ msgstr "E230: No se pudo leer desde \"%s\""
 
 msgid "E665: Cannot start GUI, no valid font found"
 msgstr ""
-"E665: No se pudo iniciar la interfaz gráfica (GUI), no encontré\n"
+"E665: No se pudo iniciar la interfaz gráfica (GUI), no se encontró "
 "ninguna tipografía de impresión válida"
 
 msgid "E231: 'guifontwide' invalid"
@@ -2373,7 +2379,7 @@ msgstr "Directorio\t*.nada\n"
 
 msgid "Vim E458: Cannot allocate colormap entry, some colors may be incorrect"
 msgstr ""
-"Vim E458: no se puede asignar una entrada al mapa de colores;\n"
+"Vim E458: no se puede asignar una entrada al mapa de colores; "
 "algunos colores tal vez no sean correctos"
 
 #, c-format
@@ -4440,20 +4446,20 @@ msgid ""
 "Selected %s%ld of %ld Lines; %ld of %ld Words; %ld of %ld Chars; %ld of %ld "
 "Bytes"
 msgstr ""
-"Selección %s%ld de %ld Líneas; %ld de %ld Palabras;\n"
+"Selección %s%ld de %ld Líneas; %ld de %ld Palabras; "
 "%ld de %ld Caracteres; %ld de %ld Bytes"
 
 #, c-format
 msgid "Col %s of %s; Line %ld of %ld; Word %ld of %ld; Byte %ld of %ld"
 msgstr ""
-"Col %s de %s; Línea %ld de %ld; Palabra %ld de %ld; Carácter %ld de %ld"
+"Col %s de %s; Línea %ld de %ld; Palabra %ld de %ld; Byte %ld de %ld"
 
 #, c-format
 msgid ""
 "Col %s of %s; Line %ld of %ld; Word %ld of %ld; Char %ld of %ld; Byte %ld of "
 "%ld"
 msgstr ""
-"Col %s de %s; Línea %ld de %ld; Palabra %ld de %ld; Carácter %ld de %ld\n"
+"Col %s de %s; Línea %ld de %ld; Palabra %ld de %ld; Carácter %ld de %ld "
 "Byte %ld de %ld"
 
 #, c-format
@@ -4530,7 +4536,7 @@ msgstr "E598: El conjunto de tipos de letra de impresión no es válido"
 
 msgid "E533: can't select wide font"
 msgstr ""
-"E533: No se pudo seleccionar el tipo de letra de impresión \"ancho\"\n"
+"E533: No se pudo seleccionar el tipo de letra de impresión \"ancho\" "
 "(de \"byte\" doble)"
 
 msgid "E534: Invalid wide font"
