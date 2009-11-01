@@ -48,7 +48,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: bugs@vim.org\n"
 "POT-Creation-Date: 2009-08-04 13:39+0200\n"
-"PO-Revision-Date: 2009-11-01 19:59+0100\n"
+"PO-Revision-Date: 2009-11-01 22:04+0100\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es <https://www.assembla.com/wiki/show/vim-doc-es>\n"
 "MIME-Version: 1.0\n"
@@ -622,6 +622,14 @@ msgid ""
 "portable computer not connected to a network, use good encryption tools, and\n"
 "keep the computer locked up in a big safe when not in use."
 msgstr ""
+"Un archivo está en texto simple mientras esté en memoria. Cualquiera con los\n"
+"privilegios necesarios puede mirar en la memoria del editor y descubrir los\n"
+"contenidos del archivo.\n"
+"   Si está usando un archivo viminfo, sea consciente de que los contenidos del\n"
+"registro del texto también se escriben de manera abierta.\n"
+"   Si realmente desea proteger los contenidos de un archivo, edítelo sólo en\n"
+"un ordenador portátil sin conexión a ninguna red, use buenas herramientas de\n"
+"cifrado, y guarde el ordenador en una gran caja fuerte cuando no esté en uso."
 
 #: usr_23.txt:238
 msgid ""
@@ -629,6 +637,9 @@ msgid ""
 "==\n"
 "*23.4*\tBinary files"
 msgstr ""
+"============================================================================"
+"==\n"
+"*23.4*\tArchivos binarios"
 
 #: usr_23.txt:241
 msgid ""
@@ -641,11 +652,17 @@ msgid ""
 "add\n"
 "the \"-b\" argument when starting Vim: >"
 msgstr ""
+"Puede editar archivos binarios con Vim. Vim no se creó para esta labor, y\n"
+"por ello hay ciertas restricciones. Pero puede leer el archivo, cambiar un\n"
+"carácter y escribir esto en el archivo, con el resultado de que sólo cambió\n"
+"un carácter y que en todo lo demás, el archivo es idéntico.\n"
+"   Para impedir que Vim use sus ingeniosos trucos de manera inapropiada,\n"
+"añada el argumento «-b» al iniciar Vim: >"
 
 #: usr_23.txt:248
 msgctxt "usr_23.txt:248"
 msgid "\tvim -b datafile"
-msgstr ""
+msgstr "\tvim -b archivo_de_datos"
 
 #: usr_23.txt:250
 msgid ""
@@ -654,6 +671,10 @@ msgid ""
 "automatic formatting of lines.  And files are always read in Unix file "
 "format."
 msgstr ""
+"Esto activa la opción 'binary'. El efecto que tiene es que se desactivan\n"
+"ciertos efectos secundarios inesperados. Por ejemplo, 'textwidth' recibe un\n"
+"valor 0, para evitar el formateo automático de las líneas. Y los archivos se\n"
+"leen siempre en el formato de archivo UNIX."
 
 #: usr_23.txt:254
 msgid ""
@@ -662,16 +683,22 @@ msgid ""
 "Use\n"
 "\"R\" to enter replace mode."
 msgstr ""
+"El modo binario se puede usar para cambiar el mensaje de un programa. Tenga\n"
+"cuidado de no insertar o borrar cualquier carácter, ya que impediría el\n"
+"funcionamiento del programa.\n"
+"Use «-R» para pasar al modo «replace» (reemplazar)."
 
 #: usr_23.txt:258
 msgid ""
 "Many characters in the file will be unprintable.  To see them in Hex format: "
 ">"
 msgstr ""
+"Muchos caracteres en el archivo no se pueden imprimir. Para verlos en\n"
+"formato Hex: >"
 
 #: usr_23.txt:260
 msgid "\t:set display=uhex"
-msgstr ""
+msgstr "\t:set display=uhex"
 
 #: usr_23.txt:262
 msgid ""
@@ -679,10 +706,12 @@ msgid ""
 "under the cursor.  The output, when the cursor is on an <Esc>, looks like\n"
 "this:"
 msgstr ""
+"Por otro lado, puede usar la orden «ga» para ver el valor del carácter bajo\n"
+"el cursor. La salida, si el cursor está sobre un <Esc>, tiene este aspecto:"
 
 #: usr_23.txt:266
 msgid "\t<^[>  27,  Hex 1b,  Octal 033 ~"
-msgstr ""
+msgstr "\t<^[>  27,  Hex 1b,  Octal 033 ~"
 
 #: usr_23.txt:268
 msgid ""
@@ -690,32 +719,37 @@ msgid ""
 "switch\n"
 "the 'wrap' option off: >"
 msgstr ""
+"Puede que no haya demasiados retornos de línea en el archivo. Para obtener\n"
+"una visión de conjunto, desactive la opción 'wrap': >"
 
 #: usr_23.txt:271
 msgid "\t:set nowrap"
-msgstr ""
+msgstr "\t:set nowrap"
 
 #: usr_23.txt:274
 msgid "BYTE POSITION"
-msgstr ""
+msgstr "BYTE POSICIÓN"
 
 #: usr_23.txt:276
 msgid "To see on which byte you are in the file use this command: >"
-msgstr ""
+msgstr "Use esta orden para ver en que byte se encuentra dentro de un\n"
+"archivo: >"
 
 #: usr_23.txt:278
 msgid "\tg CTRL-G"
-msgstr ""
+msgstr "\tg CTRL-G"
 
 #: usr_23.txt:280
 msgid "The output is verbose:"
-msgstr ""
+msgstr "La salida es verbosa:"
 
 #: usr_23.txt:282
 msgid ""
 "    Col 9-16 of 9-16; Line 277 of 330; Word 1806 of 2058; Byte 10580 of "
 "12206 ~"
 msgstr ""
+"    Col 9-16 of 9-16; Línea 277 of 330; Palabra 1806 de 2058; Byte 10580 de "
+"12206 ~"
 
 #: usr_23.txt:284
 msgid ""
@@ -726,14 +760,19 @@ msgid ""
 "    To move to a specific byte in the file, use the \"go\" command.  For\n"
 "example, to move to byte 2345: >"
 msgstr ""
+"Los dos últimos números son el byte posición en el archivo y el número total\n"
+"de bytes. Tiene en cuenta cómo 'fileformat' cambia el número de bytes que\n"
+"emplea un retorno de línea.\n"
+"   Para desplazarse a un byte específico en el archivo, use la orden «go».\n"
+"Por ejemplo, para ir al byte 2345: >"
 
 #: usr_23.txt:290
 msgid "\t2345go"
-msgstr ""
+msgstr "\t2345go"
 
 #: usr_23.txt:293
 msgid "USING XXD"
-msgstr ""
+msgstr "USAR XXD"
 
 #: usr_23.txt:295
 msgid ""
@@ -742,23 +781,28 @@ msgid ""
 "This comes with Vim.\n"
 "   First edit the file in binary mode: >"
 msgstr ""
+"Un editor realmente binario muestra el texto de dos formas: tal cual y en\n"
+"formato hexadecimal. Vim hace esto posible si primero convierte el archivo\n"
+"con el programa «xxd».\n"
+"Este programa está incluido en Vim.\n"
+"   Primero edite el archivo en modo binario: >"
 
 #: usr_23.txt:300
 msgctxt "usr_23.txt:300"
 msgid "\tvim -b datafile"
-msgstr ""
+msgstr "\tvim -b datafile"
 
 #: usr_23.txt:302
 msgid "Now convert the file to a hex dump with xxd: >"
-msgstr ""
+msgstr "Convierta ahora el archivo a un volcado hexadecimal con xxd: >"
 
 #: usr_23.txt:304
 msgid "\t:%!xxd"
-msgstr ""
+msgstr "\t:%!xxd"
 
 #: usr_23.txt:306
 msgid "The text will look like this:"
-msgstr ""
+msgstr "El texto presentará este aspecto:"
 
 #: usr_23.txt:308
 msgid ""
@@ -766,6 +810,9 @@ msgid ""
 "\t0000010: 4b2c 8660 eb9c ecac c462 eb94 345e 2e30  K,.`.....b..4^.0 ~\n"
 "\t0000020: 373b 2731 0b22 0ca6 c1a2 d669 1035 39d9  7;'1.\".....i.59. ~"
 msgstr ""
+"\t0000000: 1f8b 0808 39d7 173b 0203 7474 002b 4e49  ....9..;..tt.+NI ~\n"
+"\t0000010: 4b2c 8660 eb9c ecac c462 eb94 345e 2e30  K,.`.....b..4^.0 ~\n"
+"\t0000020: 373b 2731 0b22 0ca6 c1a2 d669 1035 39d9  7;'1.\".....i.59. ~"
 
 #: usr_23.txt:312
 msgid ""
@@ -778,6 +825,12 @@ msgid ""
 ">\n"
 "\t:%!xxd -r"
 msgstr ""
+"Ahora puede ver y editar el texto como desee. Vim trata la información como\n"
+"texto normal. Cambiar el valor hexadecimal no provoca un cambio en el\n"
+"carácter imprimible, o vicecersa.\n"
+"Por último, conviertalo otra vez con:\n"
+">\n"
+"\t:%!xxd -r"
 
 #: usr_23.txt:319
 msgid ""
@@ -785,10 +838,12 @@ msgid ""
 "on\n"
 "the right are ignored."
 msgstr ""
+"Sólo se usan los cambios en la parte hexadecimal. Los cambios en la parte\n"
+"imprimible de texto se ignoran."
 
 #: usr_23.txt:322
 msgid "See the manual page of xxd for more information."
-msgstr ""
+msgstr "Vea la página de manual de xxd para más información."
 
 #: usr_23.txt:324
 msgid ""
@@ -796,6 +851,9 @@ msgid ""
 "==\n"
 "*23.5*\tCompressed files"
 msgstr ""
+"============================================================================"
+"==\n"
+"*23.5*\tArchivos comprimidos"
 
 #: usr_23.txt:327
 msgid ""
@@ -804,6 +862,9 @@ msgid ""
 "compressing it again when you write it.\n"
 "   These compression methods are currently supported:"
 msgstr ""
+"Esto es fácil: Puede editar un archivo comprimido al igual que cualquier\n"
+"otro archivo. La extensión para «gzip» se ocupa de descomprimir el archivo\n"
+"al iniciar la edición, y lo comprime cuando finaliza."
 
 #: usr_23.txt:332
 msgid ""
@@ -811,23 +872,30 @@ msgid ""
 "\t.gz\tgzip\n"
 "\t.bz2\tbzip2"
 msgstr ""
+"\t.Z\tcompress\n"
+"\t.gz\tgzip\n"
+"\t.bz2\tbzip2"
 
 #: usr_23.txt:336
 msgid ""
 "Vim uses the mentioned programs to do the actual compression and\n"
 "decompression.  You might need to install the programs first."
 msgstr ""
+"Vim realiza la compresión y descompresión mediante los programas\n"
+"mencionados. Puede que primero tenga instalar los programas."
 
 #: usr_23.txt:339
 msgid ""
 "============================================================================"
 "=="
 msgstr ""
+"============================================================================"
+"=="
 
 #: usr_23.txt:341
 msgid "Next chapter: |usr_24.txt|  Inserting quickly"
-msgstr ""
+msgstr "Siguiente capìtulo: |usr_24.txt| Insertar con rápidez"
 
 #: usr_23.txt:343
 msgid "Copyright: see |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
-msgstr ""
+msgstr "Copyright: véase |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
