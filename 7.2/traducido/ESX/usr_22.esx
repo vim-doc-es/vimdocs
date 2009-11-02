@@ -4,7 +4,6 @@
 
 			Encontrar el archivo a editar
 
-
 Puede encontrar archivos en cualquier lugar, así que, ¿cómo encontrarlos? Vim
 ofrece varias maneras de explorar el árbol de directorios. Hay órdenes para
 saltar a un archivo mencionado en otro. Vim también recuerda qué archivos se
@@ -15,7 +14,7 @@ editaron con anterioridad.
 |22.3|	Encontrar un archivo
 |22.4|	La lista de búfers
 
- Capítulo siguiente: |usr_23.txt|  Editar otros archivos
+ Capítulo siguiente: |usr_23.esx|  Editar otros archivos
   Capítulo anterior: |usr_21.est|  Abandonar el editor y volver
 Tabla de contenidos: |usr_toc.est|
 
@@ -134,7 +133,6 @@ Esta es una muestra de órdenes adicionales en el modo normal:
 			dialogo le pedirá confirmación.
 	mb gb		Crear marcador/ir a bookmark
 
-
 Puede también usar el modo de órdenes; aquí tiene un extracto:
 
 	:Explore [directory]	Explorar el directorio actual o especificado
@@ -188,7 +186,6 @@ Vim recuerda el último directorio que usó. Use «cd -» para volver a
 	:pwd
 	/etc
 
-
 EL DIRECTORIO DE LA VENTANA LOCAL
 
 Cuando divide una ventana, ambas ventanas usan el mismo directorio
@@ -197,14 +194,14 @@ ventana nueva, puede usar un directorio diferente, sin cambiar el directorio
 actual en la otra ventana. A esto se le llama el directorio local. >
 
 	:pwd
-	/home/Bram/Nombre_Largo_de_Directorio
+	/home/Bram/Nombre_Largo_de_Archivo
 	:split
 	:lcd /etc
 	:pwd
 	/etc
 	CTRL-W w
 	:pwd
-	/home/Bram/Nombre_Largo_de_Directorio
+	/home/Bram/Nombre_Largo_de_Archivo
 
 Mientras no use ninguna orden «:lcd», todas las ventanas comparten
 el directorio actual. Ejecutar una orden «:cd» en una ventana cambiará
@@ -267,7 +264,6 @@ Esto equivale a la orden «:edit», excepto por el uso de 'path'.
 Para abrir el archivo encontrado en una nueva ventana, use CTRL-W en lugar
 de «gf», o use «:sfind» en lugar de «:find».
 
-
 Esta es una buena manera de iniciar Vim editando un archivo ubicado
 en el 'path': >
 
@@ -284,7 +280,6 @@ edición. En realidad, un búfer es una copia del archivo que edita. Cuando
 termina de modificar el búfer, escribe los contenidos del búfer en el
 archivo. Los búfers no solo contienen los contenidos de al archivo, sino
 también las marcas, configuraciones y otros elementos que lo acompañan.
-
 
 BÚFERS OCULTOS
 
@@ -305,7 +300,6 @@ cualquier búfer, éste se ocultará.
 ¡Cuidado! Cuando tenga búfers ocultos con cambios, no cierre Vim antes de
 asegurarse de haber guardado todos los búfers.
 
-
 BÚFERS INACTIVOS
 
 Si un búfer se ha usado una vez, Vim recordará alguna información del búfer.
@@ -319,7 +313,6 @@ lista de búfers. A esto se le llama un búfer inactivo. Vista general:
 Los búfers inactivos se recuerdan, porque Vim guarda información acerca de
 como marcas. Y recordar el nombre del archivo también es de utilidad, para
 así ver qué archivos ha editado, y editarlos otra vez.
-
 
 LISTAR BÚFERS
 
@@ -354,7 +347,6 @@ y el número de línea en el que estaba el cursor al última vez.
 	   -	El búfer no es modificable, la opción 'modifiable' está desactivada.
 	    +	El búfer se ha modificado.
 
-
 EDITAR UN BÚFER
 
 Puede editar un búfer por su número. Esto evita tener que introducir
@@ -374,7 +366,6 @@ sólo haber un búfer que coincida con el nombre, este se usará. En este caso,
 	:sbuffer 3
 
 Esto también funciona con un nombre.
-
 
 USAR LA LISTA DE BÚFERS
 
@@ -404,6 +395,6 @@ puede editar la nada!
 
 ==============================================================================
 
-Siguiente capítulo: |usr_23.txt|  Editar otros archivos
+Siguiente capítulo: |usr_23.esx|  Editar otros archivos
 
 Copyright: véase |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:
