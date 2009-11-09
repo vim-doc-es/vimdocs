@@ -48,7 +48,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2009-08-04 13:46+0200\n"
-"PO-Revision-Date: 2009-11-02 14:25+0100\n"
+"PO-Revision-Date: 2009-11-09 22:01+0100\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es <http://www.assembla.com/wiki/show/vim-doc-es>\n"
 "MIME-Version: 1.0\n"
@@ -58,15 +58,15 @@ msgstr ""
 
 #: intro.txt:1
 msgid "*intro.txt*     For Vim version 7.2.  Last change: 2008 Jun 24"
-msgstr ""
+msgstr "*intro.es*   Para Vim versión 7.2. Último cambio: 24/6/2008"
 
 #: intro.txt:4
 msgid "\t\t  VIM REFERENCE MANUAL    by Bram Moolenaar"
-msgstr ""
+msgstr "\t\tMANUAL DE REFERENCIA DE VIM  por Bram Moolenar"
 
 #: intro.txt:7
 msgid "Introduction to Vim\t\t\t\t\t*ref* *reference*"
-msgstr ""
+msgstr "Introducción a Vim\t\t\t\t\t*ref* *referencia* *reference*"
 
 #: intro.txt:9
 msgid ""
@@ -79,6 +79,14 @@ msgid ""
 "7. The window contents\t\t|window-contents|\n"
 "8. Definitions\t\t\t|definitions|"
 msgstr ""
+"1. Introducción\t\t\t|intro|\n"
+"2. Vim en internet\t\t|internet|\n"
+"3. Créditos\t\t\t|credits|\n"
+"4. Notación\t\t\t|notation|\n"
+"5. Modos, introducción\t\t|vim-modes-intro|\n"
+"6. Cambiar de Modos\t|mode-switching|\n"
+"7. El contenido de la ventana\t\t|window-contents|\n"
+"8. Definiciones\t\t\t|definitions|"
 
 #: intro.txt:18
 msgid ""
@@ -86,6 +94,9 @@ msgid ""
 "==\n"
 "1. Introduction\t\t\t\t\t\t*intro*"
 msgstr ""
+"============================================================================"
+"==\n"
+"1. Introducción\t\t\t\t\t\t*intro*"
 
 #: intro.txt:21
 msgid ""
@@ -101,6 +112,17 @@ msgid ""
 "who want it, there is mouse support and a GUI version with scrollbars and\n"
 "menus (see |gui.txt|)."
 msgstr ""
+"Vim son las siglas de Vi Improved («Vi mejorado»). Solía significar Vi\n"
+"IMitation, pero hay tantas mejoras que se consideró que era apropiado cambiar\n"
+"de nombre. Vim es un editor de texto que incluye casi todas las órdenes del\n"
+"programa para Unix, Vi, así como otras más. Es muy útil para la edición de\n"
+"programas y archivos de formato de texto normal.\n"
+"   Todas las órdenes se introducen mediante el teclado. Ésto ofrece la ventaja\n"
+"de poder tener sus dedos en el teclado y sus ojos en la pantalla. Para\n"
+"aquellos que lo deseen, también tiene compatibilidad con ratón y una versión\n"
+"que ofrece una interfaz gráfica con barras de desplazamiento y menús (véase\n"
+"|gui.txt|)."
+
 
 #: intro.txt:30
 msgid ""
@@ -112,6 +134,13 @@ msgid ""
 "tags:\n"
 "Use CTRL-] to jump to a subject under the cursor, use CTRL-T to jump back."
 msgstr ""
+"Encontrará una visión general de este manual en el archivo «help.txt»,\n"
+"|help.txt|. Puede acceder a él a través de Vim con la tecla <Ayuda> o <F1> y\n"
+"con la orden |:help| (sólo teclee «:help», sin las comilllas).\n"
+"   La opción 'helpfile' se puede configurar con el nombre del archivo de ayuda\n"
+"en caso de no encontrarse en la ubicación habitual. Puede saltar de un tema\n"
+"a otro como si fuesen etiquetas\n:"
+"Use CTRL-] para pasar al tema bajo el cursor, y CTRL-T para volver."
 
 #: intro.txt:37
 msgid ""
@@ -119,6 +148,9 @@ msgid ""
 "curly braces, like this: {Vi does not have on-line help}.  See |vi_diff.txt|\n"
 "for a summary of the differences between Vim and Vi."
 msgstr ""
+"Las diferencias entre Vi y Vim se señalarán con corchetas, por ejemplo: {Vi\n"
+"no tiene ayuda en línea}. Consulte |vi_diff.txt| para un resumen de las\n"
+"diferencias entre Vim y Vi."
 
 #: intro.txt:41
 msgid ""
@@ -129,6 +161,10 @@ msgid ""
 "document, there is a separate document for each supported system, see\n"
 "|sys-file-list|."
 msgstr ""
+"Este manual trata el uso de Vim en varios sistemas. Pueden existir pequeñas\n"
+"diferencias entre computadoras y terminales. Además de los comentarios que se\n"
+"ofrecen en este documento, hay un documento aparte para cada sistema\n"
+"compatible, véase |sys-file-list|."
 
 #: intro.txt:46
 msgid ""
@@ -139,6 +175,10 @@ msgid ""
 "read\n"
 "the user manual |usr_toc.txt|."
 msgstr ""
+"Este manual es una referencia para todas las órdenes y opciones de Vim. No es\n"
+"una introducción al uso de Vi o Vim, y algunas secciones son complejas. Hay\n"
+"una tutoría práctica, |tutor|. Si quiere aprender a usar Vim, lea el manual\n"
+"de usuario |usr_toc.txt|."
 
 #: intro.txt:51
 msgid ""
