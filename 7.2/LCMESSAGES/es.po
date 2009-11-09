@@ -130,7 +130,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2-245 (Castellano)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-20 17:41+0200\n"
-"PO-Revision-Date: 2009-11-01 23:30+0100\n"
+"PO-Revision-Date: 2009-11-09 14:50+0100\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es http://code.assembla.com/vim-doc-es\n"
 "MIME-Version: 1.0\n"
@@ -6336,14 +6336,14 @@ msgid "E470: Command aborted"
 msgstr "E470: La orden se ha interrumpido"
 
 msgid "E471: Argument required"
-msgstr "E471: Se requiere un argumento"
+msgstr "E471: Es necesario un argumento"
 
 msgid "E10: \\ should be followed by /, ? or &"
 msgstr "E10: \\ debería ir seguido de \"/\", \"?\" o \"&\""
 
 msgid "E11: Invalid in command-line window; <CR> executes, CTRL-C quits"
 msgstr ""
-"E11: Inválido en la ventana de la línea de órdenes: <CR> ejecuta,CTRL-C "
+"E11: Inválido en la ventana de la línea de órdenes: <CR> ejecuta, CTRL-C "
 "cierra"
 
 msgid "E12: Command not allowed from exrc/vimrc in current dir or tag search"
@@ -6367,10 +6367,10 @@ msgid "E588: :endwhile without :while"
 msgstr "E588: \":endwhile\" sin \":while\""
 
 msgid "E588: :endfor without :for"
-msgstr "E588: ¡\":endfor\" sin un \":for\"!"
+msgstr "E588: \":endfor\" sin un \":for\""
 
 msgid "E13: File exists (add ! to override)"
-msgstr "E13: El archivo ya existe (use ! para sobreescribir)"
+msgstr "E13: El archivo ya existe (use \"!\" para sobreescribir)"
 
 msgid "E472: Command failed"
 msgstr "E472: La orden falló"
@@ -6571,7 +6571,7 @@ msgstr "E46: No puede cambiar la variable de solo lectura \"%s\""
 
 #, c-format
 msgid "E794: Cannot set variable in the sandbox: \"%s\""
-msgstr "E794: No se pudo definir la variable de la \"sandbox\" \"%s\""
+msgstr "E794: No se puede definir la variable en el \"sandbox\": \"%s\""
 
 msgid "E47: Error while reading errorfile"
 msgstr "E47: Error al leer el archivo de errores"
@@ -6586,7 +6586,7 @@ msgid "E359: Screen mode setting not supported"
 msgstr "E359: La configuración de la pantalla no es válida"
 
 msgid "E49: Invalid scroll size"
-msgstr "E49: El longitud de desplazamiento no válida"
+msgstr "E49: La longitud de desplazamiento no es válida"
 
 msgid "E91: 'shell' option is empty"
 msgstr "E91: La opción 'shell' (intérprete de órdenes) está vacía"
@@ -6598,7 +6598,7 @@ msgid "E72: Close error on swap file"
 msgstr "E72: Error de cierre en el archivo de intercambio"
 
 msgid "E73: tag stack empty"
-msgstr "E73: La pila de etiquetas está vacía"
+msgstr "E73: El almacén de etiquetas está vacío"
 
 msgid "E74: Command too complex"
 msgstr "E74: La orden es demasiado compleja"
