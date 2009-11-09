@@ -130,7 +130,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2-245 (Castellano)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-20 17:41+0200\n"
-"PO-Revision-Date: 2009-11-09 14:50+0100\n"
+"PO-Revision-Date: 2009-11-09 21:34+0100\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es http://code.assembla.com/vim-doc-es\n"
 "MIME-Version: 1.0\n"
@@ -194,8 +194,8 @@ msgstr "E88: No se pudo regresar antes del primer búfer"
 #, c-format
 msgid "E89: No write since last change for buffer %ld (add ! to override)"
 msgstr ""
-"E89: No se guardó el archivo desde el último cambio del búfer %ld (añada ! "
-"para forzar)"
+"E89: No se guardó el archivo desde el último cambio del búfer %ld (añada "
+"\"!\" para forzar)"
 
 msgid "E90: Cannot unload last buffer"
 msgstr "E90: No se pudo descargar el último búfer"
@@ -6598,7 +6598,7 @@ msgid "E72: Close error on swap file"
 msgstr "E72: Error de cierre en el archivo de intercambio"
 
 msgid "E73: tag stack empty"
-msgstr "E73: El almacén de etiquetas está vacío"
+msgstr "E73: La pila de etiquetas ('tagstack') está vacía"
 
 msgid "E74: Command too complex"
 msgstr "E74: La orden es demasiado compleja"
@@ -6656,7 +6656,7 @@ msgid "E749: empty buffer"
 msgstr "E749: Búfer vacío"
 
 msgid "E682: Invalid search pattern or delimiter"
-msgstr "E682: Cadena de búsqueda o delimitador no válido"
+msgstr "E682: Patrón de búsqueda o delimitador no válido"
 
 # Overwriting a file that is loaded in another buffer is not a
 # * good idea.
