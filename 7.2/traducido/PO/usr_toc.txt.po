@@ -1,110 +1,165 @@
-# SOME DESCRIPTIVE TITLE
-# Copyright (C) YEAR Free Software Foundation, Inc.
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es 
 #
-#, fuzzy
+# Copyright (C) 2009 
+# This file is distributed under the same license as the Vim 7.2 package.
+#
+# Translators credits:
+#   - Initial translation
+#       Omar Campagne <ocampagne@gmail.com>, 2009
+#
+#   - Updates
+#       TRADUCTOR <CORREO>, AÑO 
+#
+#
+#
+# Debido al formato (txt) y al máximo de 80 columnas que pueden tener 
+# los textos de ayuda en Vim, así como el formato PO, por favor, leete los
+# apuntes concernientes a la edición de los archivos PO relativos a la
+# aplicación que desees usar.
+# También encontrarás información acerca del uso de herramientas gettext en el 
+# proyecto de localización (l10n) de Vim.
+#
+# - http://www.assembla.com/wiki/show/vim-doc-es
+#
+# No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
+# este enlace puede ser de interés. A pesar de no formar parte, nuestra 
+# intención es homologarnos con su terminología y uso de la lengua 
+# en la medida de lo útil y posible.
+#
+#  - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/notas
+#
+# La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
+# pero también puede servir de referencia para otros términos no técnicos.
+# No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
+# traducción sea comprensible independientemente de la nacionalidad del
+# usuario. Si crees que alguna traducción puede llevar a confusión, consulta
+# la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
+#
+#  - www.rae.es 
+#  - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages   
+#
+# Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
+# se puede consultar con un simple grep, pogrep o cargado en Virtaal.
+#
+#. extracted from usr_toc.txt
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-11-20 20:50+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Project-Id-Version: Vim 7.2\n"
+"POT-Creation-Date: 2009-11-20 21:25+0100\n"
+"PO-Revision-Date: 2009-11-20 21:29+0100\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: vim-doc-es <>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: ENCODING"
+"Content-Transfer-Encoding: 8bit"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:2
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "*usr_toc.txt*\tFor Vim version 7.2.  Last change: 2006 Apr 24\n"
 msgstr "*usr_toc.esx*\tPara Vim versión 7.2.  Último cambio: 24/5/2006\n"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:4
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
 msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:6
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t\t\t      Table Of Contents\t\t\t*user-manual*\n"
 msgstr "\t\t\t  Tabla de contenidos\t\t\t*user-manual*\n"
 
 #. type: Plain text
-#: original/TXT/usr_toc.txt:7 original/TXT/usr_toc.txt:58 original/TXT/usr_toc.txt:172 original/TXT/usr_toc.txt:280 original/TXT/usr_toc.txt:339 original/TXT/usr_toc.txt:351
-#, fuzzy, no-wrap
+#: original/TXT/usr_toc.txt:7 original/TXT/usr_toc.txt:58
+#: original/TXT/usr_toc.txt:172 original/TXT/usr_toc.txt:280
+#: original/TXT/usr_toc.txt:339 original/TXT/usr_toc.txt:351
+#, no-wrap
 msgid "==============================================================================\n"
 msgstr "==============================================================================\n"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:9
-#, fuzzy
 msgid "Overview ~"
 msgstr "Vista general ~"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:23
-#, fuzzy
 msgid ""
 "Getting Started |usr_01.txt| About the manuals |usr_02.txt| The first steps "
-"in Vim |usr_03.txt| Moving around |usr_04.txt| Making small changes "
-"|usr_05.txt| Set your settings |usr_06.txt| Using syntax highlighting "
-"|usr_07.txt| Editing more than one file |usr_08.txt| Splitting windows "
-"|usr_09.txt| Using the GUI |usr_10.txt| Making big changes |usr_11.txt| "
-"Recovering from a crash |usr_12.txt| Clever tricks"
+"in Vim |usr_03.txt| Moving around |usr_04.txt| Making small changes |usr_05."
+"txt| Set your settings |usr_06.txt| Using syntax highlighting |usr_07.txt| "
+"Editing more than one file |usr_08.txt| Splitting windows |usr_09.txt| Using "
+"the GUI |usr_10.txt| Making big changes |usr_11.txt| Recovering from a crash "
+"|usr_12.txt| Clever tricks"
 msgstr ""
-"Empezar |usr_01.esx| Acerca de los manuales |usr_02.esx| Primeros pasos en "
-"Vim |usr_03.esx| Desplazamiento |usr_04.esx| Hacer cambios pequeños "
-"|usr_05.esx| Configuración |usr_06.esx| Uso del resaltado de sintaxis "
-"|usr_07.esx| Editar más de un archivo |usr_08.esx| Dividir en ventanas "
-"|usr_09.esx| Uso de la interfaz gráfica |usr_10.esx| Realizar grandes "
-"cambios |usr_11.esx| Restaurar después de un fallo |usr_12.esx| Trucos"
+"Empezar\n"
+"|usr_01.esx| Acerca de los manuales\n"
+"|usr_02.esx| Primeros pasos en Vim\n"
+"|usr_03.esx| Desplazamiento\n"
+"|usr_04.esx| Hacer cambios pequeños\n"
+"|usr_05.esx| Configuración\n"
+"|usr_06.esx| Uso del resaltado de sintaxis\n"
+"|usr_07.esx| Editar más de un archivo\n"
+"|usr_08.esx| Dividir en ventanas\n"
+"|usr_09.esx| Uso de la interfaz gráfica\n"
+"|usr_10.esx| Realizar grandes cambios\n"
+"|usr_11.esx| Restaurar después de un fallo\n"
+"|usr_12.esx| Trucos"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:38
-#, fuzzy
 msgid ""
-"Editing Effectively |usr_20.txt| Typing command-line commands quickly "
-"|usr_21.txt| Go away and come back |usr_22.txt| Finding the file to edit "
-"|usr_23.txt| Editing other files |usr_24.txt| Inserting quickly |usr_25.txt| "
+"Editing Effectively |usr_20.txt| Typing command-line commands quickly |"
+"usr_21.txt| Go away and come back |usr_22.txt| Finding the file to edit |"
+"usr_23.txt| Editing other files |usr_24.txt| Inserting quickly |usr_25.txt| "
 "Editing formatted text |usr_26.txt| Repeating |usr_27.txt| Search commands "
-"and patterns |usr_28.txt| Folding |usr_29.txt| Moving through programs "
-"|usr_30.txt| Editing programs |usr_31.txt| Exploiting the GUI |usr_32.txt| "
+"and patterns |usr_28.txt| Folding |usr_29.txt| Moving through programs |"
+"usr_30.txt| Editing programs |usr_31.txt| Exploiting the GUI |usr_32.txt| "
 "The undo tree"
 msgstr ""
-"Editar con efectividad ~ |usr_20.esx| Ser eficaz en la línea de órdenes "
-"|usr_21.esx| Abandonar el editor y volver |usr_22.esx| Encontrar el archivo "
-"a editar |usr_23.esx| Editar otros archivos |usr_24.txt| Insertar con "
-"rapidez |usr_25.txt| Editar texto con formato |usr_26.txt| Repetir "
-"|usr_27.txt| Órdenes y patrones de búsqueda |usr_28.txt| Plegar |usr_29.txt| "
-"Navegar a través de los programas |usr_30.txt| Editar programas |usr_31.txt| "
-"Aprovechar la interfaz gráfica |usr_32.txt| El árbol de deshacer"
+"Editar con efectividad ~\n"
+"|usr_20.esx| Ser eficaz en la línea de órdenes\n"
+"|usr_21.esx| Abandonar el editor y volver\n"
+"|usr_22.esx| Encontrar el archivo a editar\n"
+"|usr_23.esx| Editar otros archivos\n"
+"|usr_24.txt| Insertar con rapidez\n"
+"|usr_25.txt| Editar texto con formato\n"
+"|usr_26.txt| Repetir\n"
+"|usr_27.txt| Órdenes y patrones de búsqueda\n"
+"|usr_28.txt| Plegar\n"
+"|usr_29.txt| Navegar a través de los programas\n"
+"|usr_30.txt| Editar programas\n"
+"|usr_31.txt| Aprovechar la interfaz gráfica\n"
+"|usr_32.txt| El árbol de deshacer"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:46
-#, fuzzy
 msgid ""
-"Tuning Vim |usr_40.txt| Make new commands |usr_41.txt| Write a Vim script "
-"|usr_42.txt| Add new menus |usr_43.txt| Using filetypes |usr_44.txt| Your "
-"own syntax highlighted |usr_45.txt| Select your language"
+"Tuning Vim |usr_40.txt| Make new commands |usr_41.txt| Write a Vim script |"
+"usr_42.txt| Add new menus |usr_43.txt| Using filetypes |usr_44.txt| Your own "
+"syntax highlighted |usr_45.txt| Select your language"
 msgstr ""
-"Configurar Vim ~ |usr_40.txt| Crear órdenes nuevas |usr_41.txt| Crear un Vim "
-"script |usr_42.txt| Añadir menús nuevos |usr_43.txt| Usar tipos de archivo "
-"(filetypes)  |usr_44.txt| Crear su propio resaltado de sintaxis |usr_45.txt| "
-"Seleccionar su idioma"
+"Configurar Vim ~\n"
+"|usr_40.txt| Crear órdenes nuevas\n"
+"|usr_41.txt| Crear un Vim script\n"
+"|usr_42.txt| Añadir menús nuevos\n"
+"|usr_43.txt| Usar tipos de archivo (filetypes)\n"
+"|usr_44.txt| Crear su propio resaltado de sintaxis\n"
+"|usr_45.txt| Seleccionar su idioma"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:49
-#, fuzzy
 msgid "Making Vim Run |usr_90.txt| Installing Vim"
-msgstr "Iniciar Vim ~ |usr_90.txt| Instalar Vim"
+msgstr ""
+"Iniciar Vim ~\n"
+"|usr_90.txt| Instalar Vim"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:53
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "Reference manual\n"
 "|reference_toc|     More detailed information for all commands\n"
@@ -114,30 +169,29 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:57
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "The user manual is available as a single, ready to print HTML and PDF file\n"
 "here:\n"
 "\thttp://vimdoc.sf.net\n"
 msgstr ""
 "El manual de usuario está disponible en un único archivo listo para su\n"
-"impresión, en formato PDF y HTML, en está ubicación:\thttp://vimdoc.sf.net\n"
+"impresión, en formato PDF y HTML, en está ubicación:\n"
+"\thttp://vimdoc.sf.net\n"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:60
-#, fuzzy
 msgid "Getting Started ~"
 msgstr "Empezar ~"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:62
-#, fuzzy
 msgid "Read this from start to end to learn the essential commands."
 msgstr "Lea esto de principio a final para aprender las órdenes esenciales."
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:68
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|usr_01.txt|  About the manuals\n"
 "\t\t|01.1|\tTwo manuals\n"
@@ -153,7 +207,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:78
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|usr_02.txt|  The first steps in Vim\n"
 "\t\t|02.1|\tRunning Vim for the First Time\n"
@@ -177,7 +231,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:90
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|usr_03.txt|  Moving around\n"
 "\t\t|03.1|\tWord movement\n"
@@ -205,7 +259,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:102
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|usr_04.txt|  Making small changes\n"
 "\t\t|04.1|\tOperators and motions\n"
@@ -233,7 +287,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:111
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|usr_05.txt|  Set your settings\n"
 "\t\t|05.1|\tThe vimrc file\n"
@@ -255,7 +309,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:119
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|usr_06.txt|  Using syntax highlighting\n"
 "\t\t|06.1|\tSwitching it on\n"
@@ -275,7 +329,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:128
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|usr_07.txt|  Editing more than one file\n"
 "\t\t|07.1|\tEdit another file\n"
@@ -297,7 +351,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:138
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|usr_08.txt|  Splitting windows\n"
 "\t\t|08.1|\tSplit a window\n"
@@ -321,7 +375,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:144
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|usr_09.txt|  Using the GUI\n"
 "\t\t|09.1|\tParts of the GUI\n"
@@ -337,7 +391,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:155
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|usr_10.txt|  Making big changes\n"
 "\t\t|10.1|\tRecord and playback commands\n"
@@ -363,7 +417,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:161
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|usr_11.txt|  Recovering from a crash\n"
 "\t\t|11.1|\tBasic recovery\n"
@@ -379,7 +433,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:171
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|usr_12.txt|  Clever tricks\n"
 "\t\t|12.1|\tReplace a word\n"
@@ -403,19 +457,17 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:174
-#, fuzzy
 msgid "Editing Effectively ~"
 msgstr "Editar con efectividad ~"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:176
-#, fuzzy
 msgid "Subjects that can be read independently."
 msgstr "Temas que se pueden leer independientemente."
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:183
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|usr_20.txt|  Typing command-line commands quickly\n"
 "\t\t|20.1|\tCommand line editing\n"
@@ -433,7 +485,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:191
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|usr_21.txt|  Go away and come back\n"
 "\t\t|21.1|\tSuspend and resume\n"
@@ -453,7 +505,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:197
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|usr_22.txt|  Finding the file to edit\n"
 "\t\t|22.1|\tThe file explorer\n"
@@ -461,15 +513,14 @@ msgid ""
 "\t\t|22.3|\tFinding a file\n"
 "\t\t|22.4|\tThe buffer list\n"
 msgstr ""
-"|usr_22.esx| Encontrar el archivo a editar|22.1|\tEl explorador de "
-"archivos\n"
+"|usr_22.esx| Encontrar el archivo a editar|22.1|\tEl explorador de archivos\n"
 "|22.2|\tEl directorio actual\n"
 "|22.3|\tEncontrar un archivo\n"
 "|22.4|\tLa lista de búfers\n"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:204
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|usr_23.txt|  Editing other files\n"
 "\t\t|23.1|\tDOS, Mac and Unix files\n"
