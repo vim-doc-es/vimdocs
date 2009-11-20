@@ -4,6 +4,7 @@
 
 			 Editar más de un archivo
 
+
 No importa cuántos archivos tenga, puede editarlos todos sin salir de Vim.
 Defina una lista de archivos de trabajo y pase de uno a otro. Copie texto de
 un archivo a otro.
@@ -29,8 +30,9 @@ Hay una manera más sencilla: Para editar otro archivo, use esta orden: >
 	:edit foo.txt
 
 Puede usar cualquier nombre de archivo en lugar de «foo.txt». Vim cerrará
-el archivo actual y abrirá uno nuevo. Sin embargo, si el archivo actual tiene
-cambios no guardados, Vim mostrará un error y no abrirá el archivo nuevo:
+el archivo actual y abrirá uno nuevo. Sin embargo, si el archivo actual
+tiene cambios no guardados, Vim mostrará un error y no abrirá el archivo
+nuevo:
 
 	E37: No se ha guardado el fichero desde el último cambio
 	(añada ! para forzar) ~
@@ -89,6 +91,7 @@ Esto hace lo mismo que usar las siguientes órdenes: >
 	:write
 	:next
 
+
 ¿DÓNDE ESTOY?
 
 Para ver qué archivo de la lista de argumentos está editando, mire en el
@@ -105,15 +108,16 @@ Esta es la abreviatura de «argumentos». La salida será algo así:
 Estos son los archivos con los que ha iniciado Vim. El que está editando
 actualmente «dos.c», se encuentra entre corchetes.
 
+
 DESPLAZARSE A OTROS ARGUMENTOS
 
 Para ir hacia atrás un archivo: >
 
 	:previous
 
-Esto es justo como la orden «:next», excepto que va en la otra dirección. 
-Una vez más, existe una orden para cuando quiera escribir el archivo
-primero: >
+Esto es justo como la orden «:next», excepto que va en la otra
+dirección.  Una vez más, existe una orden para cuando quiera escribir el
+archivo primero: >
 
 	:wprevious
 
@@ -132,19 +136,21 @@ archivos: >
 
 	:2next
 
+
 GUARDAR AUTOMÁTICAMENTE
 
 Cuando se mueva por los archivos y haga cambios, tiene que recordar usar
-«:write». En caso contrario, obtendrá mensajes de error. Si está seguro de
-que siempre va a escribir los archivos modificados, puede decirle a Vim que
-los escriba automáticamente: >
+«:write». En caso contrario, obtendrá mensajes de error. Si está seguro
+de que siempre va a escribir los archivos modificados, puede decirle a Vim
+que los escriba automáticamente: >
 
 	:set autowrite
 
-Cuando edite un archivo que no quiera escribir automáticamente, desactívelo
-de nuevo: >
+Cuando edite un archivo que no quiera escribir automáticamente,
+desactívelo de nuevo: >
 
 	:set noautowrite
+
 
 EDITAR OTRA LISTA DE ARCHIVOS
 
@@ -157,9 +163,10 @@ O use comodines, del mismo modo que se hace en la shell: >
 
 	:args *.txt
 
-Vim le llevará al primer archivo en la lista. De nuevo, si el archivo actual
-cambia, puede tanto guardar el archivo antes como usar «:args!» (con el !
-añadido) para abandonar los cambios.
+Vim le llevará al primer archivo en la lista. De nuevo, si el archivo
+actual cambia, puede tanto guardar el archivo antes como usar «:args!»
+(con el ! añadido) para abandonar los cambios.
+
 
 ¿HA EDITADO EL HASTA EL ÚLTIMO ARCHIVO?
 							*arglist-quit*
@@ -185,16 +192,18 @@ Ahora está en uno.c >
 	:next
 
 Ahora está en two.c. Use CTRL-^ para volver a uno.c. Use CTRL-^ otra vez y
-estará de vuelta en dos.c. Otro CTRL-^ y estará en uno.c de nuevo. Si ahora
-hace: >
+estará de vuelta en dos.c. Otro CTRL-^ y estará en uno.c de nuevo. Si
+ahora hace: >
 
 	:next
 
-Está en tres.c. Observe que la orden CTRL-^ no cambia la idea de dónde está
-en la lista de archivos. Sólo órdenes como «:next» y «:previous» lo hacen.
+Está en tres.c. Observe que la orden CTRL-^ no cambia la idea de dónde
+está en la lista de archivos. Sólo órdenes como «:next» y «:previous»
+lo hacen.
 
 El archivo que haya estado editando anteriormente se llama el archivo
 «alterno». Hasta que no haya un archivo anterior, CTRL-^ no funcionará.
+
 
 MARCAS PREDEFINIDAS
 
@@ -209,14 +218,15 @@ cambio: >
 
 	`.
 
-Suponga que está editando el archivo «uno». En algún lugar a mitad de camino
-en el archivo, use «x» para eliminar un carácter. Vaya ahora a la última
-línea con «G» y escriba el archivo con «:w». Edite otros archivos y use
-«:edit uno.txt» para volver a «uno.txt». Si ahora usa `", Vim saltará a la
-última línea del archivo. Usar `. le llevará a la posición donde eliminó el
-carácter. Incluso cuando se mueva por el archivo, `" y `. le llevará a la
-posición recordada. Al menos hasta que realice otro cambio o salga del
-archivo.
+Suponga que está editando el archivo «uno». En algún lugar a mitad de
+camino en el archivo, use «x» para eliminar un carácter. Vaya ahora a la
+última línea con «G» y escriba el archivo con «:w». Edite otros
+archivos y use «:edit uno.txt» para volver a «uno.txt». Si ahora usa `",
+Vim saltará a la última línea del archivo. Usar `. le llevará a la
+posición donde eliminó el carácter. Incluso cuando se mueva por el
+archivo, `" y `. le llevará a la posición recordada. Al menos hasta que
+realice otro cambio o salga del archivo.
+
 
 MARCAS DE ARCHIVO
 
@@ -236,7 +246,8 @@ Edite ahora el archivo «bar.txt» y coloque el marcador B en su última línea:
 	GmB
 
 Ahora puede usar la orden «'F» para saltar al punto marcado de foo.txt. O
-edite otro archivo, escriba «'B» y estará en el final de bar.txt de nuevo.
+edite otro archivo, escriba «'B» y estará en el final de bar.txt de
+nuevo.
 
 Estas marcas de archivo se recordarán hasta que se coloquen en algún
 otro lugar. Así podrás colocar los marcadores, trabajar durante horas y aún
@@ -245,8 +256,8 @@ tendrá la posibilidad de volver al punto marcado.
 lugar donde se coloca. Por ejemplo, use la letra H para un archivo de
 cabecera (*.h), M para un Makefile y C para código C.
 
-Para ver dónde está un marcador específico, escriba la orden «:marks» con un
-argumento: >
+Para ver dónde está un marcador específico, escriba la orden «:marks»
+con un argumento: >
 
 	:marks M
 
@@ -286,6 +297,7 @@ copia de seguridad en el mismo directorio, es habitualmente la mejor.
 	funciona como seguridad ante la pérdida de su archivo original cuando
 	la escritura falla por algún motivo (un disco lleno es el más habitual,
 	un rayo puede ser otra causa aunque menos común).
+
 
 MANTENER EL ARCHIVO ORIGINAL
 
@@ -336,6 +348,7 @@ copiar una línea, «yaw» para pegar una palabra (yank-a-word).
 antes del cursor. Repare en el hecho de que Vim recuerda si ha copiado una
 línea completa o un bloque y lo pondrá del mismo modo.
 
+
 USAR REGISTROS
 
 Cuando quiera copiar diversas porciones de un texto de un archivo a otro,
@@ -380,6 +393,7 @@ eliminar una palabra y ponerla en el registro w (delete-a-word): >
 
 Una vez más, la especificación del registro viene antes de la orden
 eliminar, «d».
+
 
 AÑADIR A UN ARCHIVO
 
@@ -427,7 +441,8 @@ Si realmente quiere prohibir los cambios en un archivo, haga lo siguiente: >
 	vim -M file
 
 Ahora, cualquier intento de cambiar el texto fallará. Los archivos de ayuda
-son así, por ejemplo. Si intenta cambiar algo, obtendrá el siguiente error:
+son así, por ejemplo. Si intenta cambiar algo, obtendrá el siguiente
+error:
 
 	E21: No se pueden hacer cambios, «modifiable» está desactivado ~
 
@@ -448,7 +463,8 @@ que copia archivos, así que podría comenzar con él: >
 	:edit copiar.c
 
 Puede eliminar lo que no necesita. A continuación tendrá que guardar el
-archivo bajo un nombre distinto. La orden «:saveas» es adecuado para esto: >
+archivo bajo un nombre distinto. La orden «:saveas» es adecuado para esto:
+>
 
 	:saveas filtrar.c
 
