@@ -46,40 +46,46 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
-"Report-Msgid-Bugs-To: bugs@vim.org\n"
-"POT-Creation-Date: 2009-08-01 19:53+0200\n"
-"PO-Revision-Date: 2009-10-18 18:17+0200\n"
+"POT-Creation-Date: 2009-11-20 17:50+0100\n"
+"PO-Revision-Date: 2009-11-20 17:55+0100\n"
 "Last-Translator: Álvaro Castro Castillo <alvaro.castro.castilla@gmail.com>\n"
-"Language-Team: Documentación de Vim en español\n"
+"Language-Team: vim-doc-es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.4.0-rc2\n"
+"Content-Type: text/plain; charset=utf8\n"
+"Content-Transfer-Encoding: 8bit"
 
-#: usr_02.txt:1
-msgid "*usr_02.txt*\tFor Vim version 7.2.  Last change: 2007 Feb 28"
-msgstr "*usr_02.esx*\tPara Vim version 7.2.  Último cambio: 8/2/2007"
+#. type: Plain text
+#: original/TXT/usr_02.txt:2
+#, no-wrap
+msgid "*usr_02.txt*\tFor Vim version 7.2.  Last change: 2007 Feb 28\n"
+msgstr "*usr_02.esx*\tPara Vim version 7.2.  Último cambio: 8/2/2007\n"
 
-#: usr_02.txt:3
-msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar"
-msgstr "\t\t  MANUAL DE USUARIO DE VIM - por Bram Moolenaar"
+#. type: Plain text
+#: original/TXT/usr_02.txt:4
+#, no-wrap
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
+msgstr "\t\t  MANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
 
-#: usr_02.txt:5
-msgid "\t\t\t    The first steps in Vim"
-msgstr "\t\t\t  Primeros pasos en Vim"
+#. type: Plain text
+#: original/TXT/usr_02.txt:6
+#, no-wrap
+msgid "\t\t\t    The first steps in Vim\n"
+msgstr "\t\t\t  Primeros pasos en Vim\n"
 
-#: usr_02.txt:8
+#. type: Plain text
+#: original/TXT/usr_02.txt:11
 msgid ""
-"This chapter provides just enough information to edit a file with Vim.  Not\n"
-"well or fast, but you can edit.  Take some time to practice with these\n"
+"This chapter provides just enough information to edit a file with Vim.  Not "
+"well or fast, but you can edit.  Take some time to practice with these "
 "commands, they form the base for what follows."
 msgstr ""
-"Este capítulo ofrece suficiente información para editar un archivo con Vim.\n"
-"No bien ni rápido, pero podrá editar. Tómese un tiempo para practicar estas\n"
-"órdenes, son la base de lo que sigue."
+"Este capítulo ofrece suficiente información para editar un archivo con "
+"Vim.  No bien ni rápido, pero podrá editar. Tómese un tiempo para "
+"practicar estas órdenes, son la base de lo que sigue."
 
-#: usr_02.txt:12
+#. type: Plain text
+#: original/TXT/usr_02.txt:20
+#, no-wrap
 msgid ""
 "|02.1|\tRunning Vim for the First Time\n"
 "|02.2|\tInserting text\n"
@@ -88,7 +94,7 @@ msgid ""
 "|02.5|\tUndo and Redo\n"
 "|02.6|\tOther editing commands\n"
 "|02.7|\tGetting out\n"
-"|02.8|\tFinding help"
+"|02.8|\tFinding help\n"
 msgstr ""
 "|02.1|\tEjecutar Vim por primera vez\n"
 "|02.2|\tInsertar texto\n"
@@ -97,53 +103,67 @@ msgstr ""
 "|02.5|\tDeshacer y rehacer\n"
 "|02.6|\tOtras órdenes de edición\n"
 "|02.7|\tSalir\n"
-"|02.8|\tEncontrar ayuda"
+"|02.8|\tEncontrar ayuda\n"
 
-#: usr_02.txt:21
+#. type: Plain text
+#: original/TXT/usr_02.txt:24
+#, no-wrap
 msgid ""
 "     Next chapter: |usr_03.txt|  Moving around\n"
 " Previous chapter: |usr_01.txt|  About the manuals\n"
-"Table of contents: |usr_toc.txt|"
+"Table of contents: |usr_toc.txt|\n"
 msgstr ""
 " Capítulo siguiente: |usr_03.esx|  Desplazamiento\n"
 "  Capítulo anterior: |usr_01.esx|  Acerca de los manuales\n"
-"Tabla de contenidos: |usr_toc.esx|"
+"Tabla de contenidos: |usr_toc.esx|\n"
 
-#: usr_02.txt:25
-msgid ""
-"==============================================================================\n"
-"*02.1*\tRunning Vim for the First Time"
-msgstr ""
-"==============================================================================\n"
-"*02.1*\tEjecutar Vim por primera vez"
+#. type: Plain text
+#: original/TXT/usr_02.txt:25 original/TXT/usr_02.txt:69 original/TXT/usr_02.txt:130 original/TXT/usr_02.txt:179 original/TXT/usr_02.txt:239 original/TXT/usr_02.txt:307 original/TXT/usr_02.txt:369 original/TXT/usr_02.txt:406 original/TXT/usr_02.txt:560
+#, no-wrap
+msgid "==============================================================================\n"
+msgstr "==============================================================================\n"
 
-#: usr_02.txt:28
+#. type: Plain text
+#: original/TXT/usr_02.txt:27
+#, no-wrap
+msgid "*02.1*\tRunning Vim for the First Time\n"
+msgstr "*02.1*\tEjecutar Vim por primera vez\n"
+
+#. type: Plain text
+#: original/TXT/usr_02.txt:29
 msgid "To start Vim, enter this command: >"
 msgstr "Para ejecutar Vim, introduzca esta orden: >"
 
-#: usr_02.txt:30
-msgid "\tgvim file.txt"
-msgstr "\tgvim file.txt"
+#. type: Plain text
+#: original/TXT/usr_02.txt:31
+#, no-wrap
+msgid "\tgvim file.txt\n"
+msgstr "\tgvim file.txt\n"
 
-#: usr_02.txt:32
+#. type: Plain text
+#: original/TXT/usr_02.txt:37
+#, no-wrap
 msgid ""
 "In UNIX you can type this at any command prompt.  If you are running "
 "Microsoft\n"
 "Windows, open an MS-DOS prompt window and enter the command.\n"
-"   In either case, Vim starts editing a file called file.txt.  Because this\n"
+"   In either case, Vim starts editing a file called file.txt.  Because "
+"this\n"
 "is a new file, you get a blank window. This is what your screen will look\n"
-"like:"
+"like:\n"
 msgstr ""
 "En UNIX puede introducir esta orden en cualquier interprete de órdenes. Si "
 "está\n"
 "bajo Microsoft Windows, abra una terminal de MS-DOS e introduzca la orden.\n"
-"   En ambos casos, Vim se inicia con la edición de un archivo llamado file."
-"txt.\n"
+"   En ambos casos, Vim se inicia con la edición de un archivo llamado "
+"file.txt.\n"
 "Ya que es un archivo nuevo, obtendrá un ventana vacía. Así es como su "
 "pantalla\n"
-"debería aparecer:"
+"debería aparecer:\n"
 
-#: usr_02.txt:38
+#. type: Plain text
+#: original/TXT/usr_02.txt:47
+#, no-wrap
 msgid ""
 "\t+---------------------------------------+\n"
 "\t|#\t\t\t\t\t|\n"
@@ -153,7 +173,7 @@ msgid ""
 "\t|~\t\t\t\t\t|\n"
 "\t|\"file.txt\" [New file]\t\t\t|\n"
 "\t+---------------------------------------+\n"
-"\t\t('#\" is the cursor position.)"
+"\t\t('#\" is the cursor position.)\n"
 msgstr ""
 "\t+---------------------------------------+\n"
 "\t|#\t\t\t\t\t|\n"
@@ -163,120 +183,123 @@ msgstr ""
 "\t|~\t\t\t\t\t|\n"
 "\t|\"file.txt\" [Archivo nuevo]\t\t|\n"
 "\t+---------------------------------------+\n"
-"\t\t('#\" es la posición del cursor.)"
+"\t\t('#\" es la posición del cursor.)\n"
 
-#: usr_02.txt:48
+#. type: Plain text
+#: original/TXT/usr_02.txt:53
 msgid ""
 "The tilde (~) lines indicate lines not in the file.  In other words, when "
-"Vim\n"
-"runs out of file to display, it displays tilde lines.  At the bottom of the\n"
-"screen, a message line indicates the file is named file.txt and shows that "
-"you\n"
-"are creating a new file.  The message information is temporary and other\n"
-"information overwrites it."
+"Vim runs out of file to display, it displays tilde lines.  At the bottom of "
+"the screen, a message line indicates the file is named file.txt and shows "
+"that you are creating a new file.  The message information is temporary and "
+"other information overwrites it."
 msgstr ""
-"Las líneas con tilde (~) indican líneas que no se hallan en el archivo.\n"
-"En otras palabras, cuando Vim se queda sin archivo que mostrar\n"
-"muestra líneas con tilde. En la parte inferior de la pantalla, un mensaje\n"
-"muestra que el archivo se llama file.txt y que está creando un archivo\n"
-"nuevo. La información del mensaje es temporal y otra información\n"
-"la sobreescribirá."
+"Las líneas con tilde (~) indican líneas que no se hallan en el archivo.  "
+"En otras palabras, cuando Vim se queda sin archivo que mostrar muestra "
+"líneas con tilde. En la parte inferior de la pantalla, un mensaje muestra "
+"que el archivo se llama file.txt y que está creando un archivo nuevo. La "
+"información del mensaje es temporal y otra información la sobreescribirá."
 
-#: usr_02.txt:55
+#. type: Plain text
+#: original/TXT/usr_02.txt:56
 msgid "THE VIM COMMAND"
 msgstr "LA ORDEN VIM"
 
-#: usr_02.txt:57
+#. type: Plain text
+#: original/TXT/usr_02.txt:59
 msgid ""
 "The gvim command causes the editor to create a new window for editing.  If "
-"you\n"
-"use this command: >"
+"you use this command: >"
 msgstr ""
-"La orden «gvim» hace que el editor cree una nueva ventana para editar.\n"
-"Si usa la orden: >"
+"La orden «gvim» hace que el editor cree una nueva ventana para editar.  Si "
+"usa la orden: >"
 
-#: usr_02.txt:60
-msgid "\tvim file.txt"
-msgstr "\tvim file.txt"
+#. type: Plain text
+#: original/TXT/usr_02.txt:61
+#, no-wrap
+msgid "\tvim file.txt\n"
+msgstr "\tvim file.txt\n"
 
-#: usr_02.txt:62
+#. type: Plain text
+#: original/TXT/usr_02.txt:68
 msgid ""
-"the editing occurs inside your command window.  In other words, if you are\n"
+"the editing occurs inside your command window.  In other words, if you are "
 "running inside an xterm, the editor uses your xterm window.  If you are "
-"using\n"
-"an MS-DOS command prompt window under Microsoft Windows, the editing occurs\n"
-"inside this window.  The text in the window will look the same for both\n"
-"versions, but with gvim you have extra features, like a menu bar.  More "
-"about\n"
-"that later."
+"using an MS-DOS command prompt window under Microsoft Windows, the editing "
+"occurs inside this window.  The text in the window will look the same for "
+"both versions, but with gvim you have extra features, like a menu bar.  More "
+"about that later."
 msgstr ""
 "la edición ocurre dentro de la ventana de llamada. En otras palabras, si "
-"está\n"
-"dentro de una xterm, el editor usa su ventana xterm. Si está usando una\n"
-"terminal de MS-DOS bajo Windows, la edición tendrá lugar dentro de esta "
-"ventana.\n"
-"El texto en la ventana tendrá el mismo aspecto en ambas versiones, pero con "
-"gvim\n"
-"tiene características extra, como una barra de menú. Volveremos a este\n"
-"punto posteriormente."
+"está dentro de una xterm, el editor usa su ventana xterm. Si está usando "
+"una terminal de MS-DOS bajo Windows, la edición tendrá lugar dentro de "
+"esta ventana.  El texto en la ventana tendrá el mismo aspecto en ambas "
+"versiones, pero con gvim tiene características extra, como una barra de "
+"menú. Volveremos a este punto posteriormente."
 
-#: usr_02.txt:69
-msgid ""
-"==============================================================================\n"
-"*02.2*\tInserting text"
-msgstr ""
-"==============================================================================\n"
-"*02.2*\tInsertar texto"
+#. type: Plain text
+#: original/TXT/usr_02.txt:71
+#, no-wrap
+msgid "*02.2*\tInserting text\n"
+msgstr "*02.2*\tInsertar texto\n"
 
-#: usr_02.txt:72
+#. type: Plain text
+#: original/TXT/usr_02.txt:81
+#, no-wrap
 msgid ""
 "The Vim editor is a modal editor.  That means that the editor behaves\n"
 "differently, depending on which mode you are in.  The two basic modes are\n"
-"called Normal mode and Insert mode.  In Normal mode the characters you type\n"
+"called Normal mode and Insert mode.  In Normal mode the characters you "
+"type\n"
 "are commands.  In Insert mode the characters are inserted as text.\n"
 "   Since you have just started Vim it will be in Normal mode.  To start "
 "Insert\n"
 "mode you type the \"i\" command (i for Insert).  Then you can enter\n"
 "the text.  It will be inserted into the file.  Do not worry if you make\n"
 "mistakes; you can correct them later.  To enter the following programmer's\n"
-"limerick, this is what you type: >"
+"limerick, this is what you type: >\n"
 msgstr ""
 "El editor Vim es un editor modal. Esto significa que el editor se comporta "
 "de\n"
-"manera diferente, dependiendo del modo en el que está. Los dos modos básicos "
-"se\n"
+"manera diferente, dependiendo del modo en el que está. Los dos modos "
+"básicos se\n"
 "denominan modo Normal y modo Insertar. En modo Normal, los caracteres que\n"
 "introduzca son órdenes. En modo Insertar, los caracteres insertados son "
 "texto.\n"
-"   Ya que acaba de iniciar Vim, estará en modo Normal. Para iniciar el modo\n"
-"Insertar introduzca la orden «i» (i de Insertar). Entonces podrá introducir\n"
+"   Ya que acaba de iniciar Vim, estará en modo Normal. Para iniciar el "
+"modo\n"
+"Insertar introduzca la orden «i» (i de Insertar). Entonces podrá "
+"introducir\n"
 "texto y este se insertará en el archivo. No se preocupe si comete\n"
-"errores; puede corregirlos después. Teclee esto para introducir la siguiente\n"
-"quintilla: >"
+"errores; puede corregirlos después. Teclee esto para introducir la "
+"siguiente\n"
+"quintilla: >\n"
 
-#: usr_02.txt:82
+#. type: Plain text
+#: original/TXT/usr_02.txt:84
+#, no-wrap
 msgid ""
 "\tiA very intelligent turtle\n"
-"\tFound programming UNIX a hurdle"
+"\tFound programming UNIX a hurdle\n"
 msgstr ""
 "\tiA very intelligent turtle\n"
-"\tFound programming UNIX a hurdle"
+"\tFound programming UNIX a hurdle\n"
 
-#: usr_02.txt:85
+#. type: Plain text
+#: original/TXT/usr_02.txt:88
 msgid ""
 "After typing \"turtle\" you press the <Enter> key to start a new line.  "
-"Finally\n"
-"you press the <Esc> key to stop Insert mode and go back to Normal mode.  "
-"You\n"
-"now have two lines of text in your Vim window:"
+"Finally you press the <Esc> key to stop Insert mode and go back to Normal "
+"mode.  You now have two lines of text in your Vim window:"
 msgstr ""
 "Tras teclear «turtle», pulse la tecla <Intro> para comenzar una nueva "
-"línea.\n"
-"Por último, presione la tecla <Esc> para salir del modo Insertar y volver "
-"al\n"
-"modo Normal. Ahora tienes dos línea de texto en su ventana de Vim:"
+"línea.  Por último, presione la tecla <Esc> para salir del modo Insertar y "
+"volver al modo Normal. Ahora tienes dos línea de texto en su ventana de "
+"Vim:"
 
-#: usr_02.txt:89
+#. type: Plain text
+#: original/TXT/usr_02.txt:96
+#, no-wrap
 msgid ""
 "\t+---------------------------------------+\n"
 "\t|A very intelligent turtle\t\t|\n"
@@ -284,7 +307,7 @@ msgid ""
 "\t|~\t\t\t\t\t|\n"
 "\t|~\t\t\t\t\t|\n"
 "\t|\t\t\t\t\t|\n"
-"\t+---------------------------------------+"
+"\t+---------------------------------------+\n"
 msgstr ""
 "\t+---------------------------------------+\n"
 "\t|A very intelligent turtle\t\t|\n"
@@ -292,23 +315,30 @@ msgstr ""
 "\t|~\t\t\t\t\t|\n"
 "\t|~\t\t\t\t\t|\n"
 "\t|\t\t\t\t\t|\n"
-"\t+---------------------------------------+"
+"\t+---------------------------------------+\n"
 
-#: usr_02.txt:98
+#. type: Plain text
+#: original/TXT/usr_02.txt:99
 msgid "WHAT IS THE MODE?"
 msgstr "¿QUÉ ES EL MODO?"
 
-#: usr_02.txt:100
+#. type: Plain text
+#: original/TXT/usr_02.txt:101
 msgid "To be able to see what mode you are in, type this command: >"
 msgstr "Para ver en que modo está, teclee la siguiente orden: >"
 
-#: usr_02.txt:102
-msgid "\t:set showmode"
-msgstr "\t:set showmode"
+#. type: Plain text
+#: original/TXT/usr_02.txt:103
+#, no-wrap
+msgid "\t:set showmode\n"
+msgstr "\t:set showmode\n"
 
-#: usr_02.txt:104
+#. type: Plain text
+#: original/TXT/usr_02.txt:110
+#, no-wrap
 msgid ""
-"You will notice that when typing the colon Vim moves the cursor to the last\n"
+"You will notice that when typing the colon Vim moves the cursor to the "
+"last\n"
 "line of the window.  That's where you type colon commands (commands that "
 "start\n"
 "with a colon).  Finish this command by pressing the <Enter> key (all "
@@ -316,7 +346,7 @@ msgid ""
 "that start with a colon are finished this way).\n"
 "   Now, if you type the \"i\" command Vim will display --INSERT-- at the "
 "bottom\n"
-"of the window.  This indicates you are in Insert mode."
+"of the window.  This indicates you are in Insert mode.\n"
 msgstr ""
 "Comprobará que cuando introduce dos puntos, Vim desplaza el cursor a la\n"
 "última línea de la ventana. Allí es donde introducirá órdenes con dos "
@@ -324,9 +354,11 @@ msgstr ""
 "(órdenes que comienzan con dos puntos). Finalice la orden presionando la\n"
 "tecla <Intro> (todas estas órdenes se finalizan de este modo).\n"
 "   Si pulsase ahora la orden «i», Vim mostrará --INSERT-- en la parte\n"
-"inferior de la ventana. Esto indica que está en el modo Insertar."
+"inferior de la ventana. Esto indica que está en el modo Insertar.\n"
 
-#: usr_02.txt:111
+#. type: Plain text
+#: original/TXT/usr_02.txt:118
+#, no-wrap
 msgid ""
 "\t+---------------------------------------+\n"
 "\t|A very intelligent turtle\t\t|\n"
@@ -334,7 +366,7 @@ msgid ""
 "\t|~\t\t\t\t\t|\n"
 "\t|~\t\t\t\t\t|\n"
 "\t|-- INSERT --\t\t\t\t|\n"
-"\t+---------------------------------------+"
+"\t+---------------------------------------+\n"
 msgstr ""
 "\t+---------------------------------------+\n"
 "\t|A very intelligent turtle\t\t|\n"
@@ -342,83 +374,84 @@ msgstr ""
 "\t|~\t\t\t\t\t|\n"
 "\t|~\t\t\t\t\t|\n"
 "\t|-- INSERT --\t\t\t\t|\n"
-"\t+---------------------------------------+"
+"\t+---------------------------------------+\n"
 
-#: usr_02.txt:119
+#. type: Plain text
+#: original/TXT/usr_02.txt:120
 msgid ""
 "If you press <Esc> to go back to Normal mode the last line will be made "
 "blank."
 msgstr ""
-"La última línea desaparecerá si presiona <Esc> para volver al modo Normal."
+"La última línea desaparecerá si presiona <Esc> para volver al modo "
+"Normal."
 
-#: usr_02.txt:122
+#. type: Plain text
+#: original/TXT/usr_02.txt:123
 msgid "GETTING OUT OF TROUBLE"
 msgstr "LA CONFUSIÓN DE LOS MODOS"
 
-#: usr_02.txt:124
+#. type: Plain text
+#: original/TXT/usr_02.txt:129
 msgid ""
-"One of the problems for Vim novices is mode confusion, which is caused by\n"
-"forgetting which mode you are in or by accidentally typing a command that\n"
-"switches modes.  To get back to Normal mode, no matter what mode you are "
-"in,\n"
+"One of the problems for Vim novices is mode confusion, which is caused by "
+"forgetting which mode you are in or by accidentally typing a command that "
+"switches modes.  To get back to Normal mode, no matter what mode you are in, "
 "press the <Esc> key.  Sometimes you have to press it twice.  If Vim beeps "
-"back\n"
-"at you, you already are in Normal mode."
+"back at you, you already are in Normal mode."
 msgstr ""
-"Uno de los problemas para los que comienzan a usar Vim es la confusión de\n"
-"los modos, que se produce al olvidar en qué modo está o por teclear\n"
-"accidentalmente una orden que cambia de modo. Para volver al modo\n"
-"Normal, no importa el modo en el que esté,presione la tecla <Esc>. En "
-"algunas\n"
+"Uno de los problemas para los que comienzan a usar Vim es la confusión de "
+"los modos, que se produce al olvidar en qué modo está o por teclear "
+"accidentalmente una orden que cambia de modo. Para volver al modo Normal, no "
+"importa el modo en el que esté,presione la tecla <Esc>. En algunas "
 "ocasiones, tendrá que presionarlo dos veces. Si Vim emite un pitido, "
-"entonces\n"
-"es que está de vuelta al modo Normal."
+"entonces es que está de vuelta al modo Normal."
 
-#: usr_02.txt:130
-msgid ""
-"==============================================================================\n"
-"*02.3*\tMoving around"
-msgstr ""
-"==============================================================================\n"
-"*02.3*\tMovimiento"
+#. type: Plain text
+#: original/TXT/usr_02.txt:132
+#, no-wrap
+msgid "*02.3*\tMoving around\n"
+msgstr "*02.3*\tMovimiento\n"
 
-#: usr_02.txt:133
-msgid ""
-"After you return to Normal mode, you can move around by using these keys:"
+#. type: Plain text
+#: original/TXT/usr_02.txt:134
+msgid "After you return to Normal mode, you can move around by using these keys:"
 msgstr "Una vez en el modo Normal, puede moverse usando éstas teclas:"
 
-#: usr_02.txt:135
+#. type: Plain text
+#: original/TXT/usr_02.txt:139
+#, no-wrap
 msgid ""
 "\th   left\t\t\t\t\t\t*hjkl*\n"
 "\tj   down\n"
 "\tk   up\n"
-"\tl   right"
+"\tl   right\n"
 msgstr ""
 "\th   izquierda\t\t\t\t\t\t*hjkl*\n"
 "\tj   abajo\n"
 "\tk   arriba\n"
-"\tl   derecha"
+"\tl   derecha\n"
 
-#: usr_02.txt:140
+#. type: Plain text
+#: original/TXT/usr_02.txt:146
 msgid ""
 "At first, it may appear that these commands were chosen at random.  After "
-"all,\n"
-"who ever heard of using l for right?  But actually, there is a very good\n"
+"all, who ever heard of using l for right? But actually, there is a very good "
 "reason for these choices: Moving the cursor is the most common thing you do "
-"in\n"
-"an editor, and these keys are on the home row of your right hand.  In other\n"
-"words, these commands are placed where you can type them the fastest\n"
+"in an editor, and these keys are on the home row of your right hand.  In "
+"other words, these commands are placed where you can type them the fastest "
 "(especially when you type with ten fingers)."
 msgstr ""
-"En un principio, puede parecer que estas órdenes se han elegido\n"
-"arbitrariamente. Después de todo, ¿quién ha visto usar l para derecha?\n"
-"De hecho, hay una buena razón para esto: mover el cursor es una de\n"
-"las cosas más comunes que hará en un editor, y estas teclas están en\n"
-"la fila central de su mano derecha. En otras palabras, estas órdenes se\n"
-"sitúan donde puede teclearlos de manera más rápida (especialmente\n"
-"cuando escribe con diez dedos)."
+"En un principio, puede parecer que estas órdenes se han elegido "
+"arbitrariamente. Después de todo, ¿quién ha visto usar l para derecha? De "
+"hecho, hay una buena razón para esto: mover el cursor es una de las cosas "
+"más comunes que hará en un editor, y estas teclas están en la fila "
+"central de su mano derecha. En otras palabras, estas órdenes se sitúan "
+"donde puede teclearlos de manera más rápida (especialmente cuando escribe "
+"con diez dedos)."
 
-#: usr_02.txt:147
+#. type: Plain text
+#: original/TXT/usr_02.txt:156
+#, no-wrap
 msgid ""
 "\tNote:\n"
 "\tYou can also move the cursor by using the arrow keys.  If you do,\n"
@@ -428,7 +461,7 @@ msgid ""
 "\tcan take a significant amount of time.\n"
 "\t   Also, there are keyboards which do not have arrow keys, or which\n"
 "\tlocate them in unusual places; therefore, knowing the use of the hjkl\n"
-"\tkeys helps in those situations."
+"\tkeys helps in those situations.\n"
 msgstr ""
 "\tNota:\n"
 "\tTambién puede mover el cursor usando las flechas. Si lo haces, sin\n"
@@ -438,45 +471,51 @@ msgstr ""
 "\thora, esto puede llevar un tiempo considerable.\n"
 "\t   Además, hay teclados que no tienen teclas de flechas, o que las\n"
 "\tcolocan en lugares inusuales; por lo tanto, conocer el uso de hjkl\n"
-"\tayuda en esas situaciones."
+"\tayuda en esas situaciones.\n"
 
-#: usr_02.txt:157
+#. type: Plain text
+#: original/TXT/usr_02.txt:159
 msgid ""
-"One way to remember these commands is that h is on the left, l is on the\n"
+"One way to remember these commands is that h is on the left, l is on the "
 "right and j points down.  In a picture: >"
 msgstr ""
-"Una manera de recordar estas órdenes es que la h está a la izquierda,\n"
-"l en la derecha y j apunta hacia abajo. En un esquema: >"
+"Una manera de recordar estas órdenes es que la h está a la izquierda, l en "
+"la derecha y j apunta hacia abajo. En un esquema: >"
 
-#: usr_02.txt:160
+#. type: Plain text
+#: original/TXT/usr_02.txt:163
+#, no-wrap
 msgid ""
 "\t\t       k\n"
 "\t\t   h     l\n"
-"\t\t     j"
+"\t\t     j\n"
 msgstr ""
 "\t\t      k\n"
 "\t\t   h     l\n"
-"\t\t      j"
+"\t\t      j\n"
 
-#: usr_02.txt:164
+#. type: Plain text
+#: original/TXT/usr_02.txt:168
 msgid ""
 "The best way to learn these commands is by using them.  Use the \"i\" "
-"command to\n"
-"insert some more lines of text.  Then use the hjkl keys to move around and\n"
-"insert a word somewhere.  Don't forget to press <Esc> to go back to Normal\n"
-"mode.  The |vimtutor| is also a nice way to learn by doing."
+"command to insert some more lines of text.  Then use the hjkl keys to move "
+"around and insert a word somewhere.  Don't forget to press <Esc> to go back "
+"to Normal mode.  The |vimtutor| is also a nice way to learn by doing."
 msgstr ""
-"La mejor manera de aprender estas órdenes es usándolas. Use la orden «i»\n"
+"La mejor manera de aprender estas órdenes es usándolas. Use la orden «i» "
 "para insertar algunas líneas de texto más. Use entonces las teclas hjkl "
-"para\n"
-"moverse e insertar palabras. No se olvide de presionar <Esc> para volver al\n"
-"modo Normal. El |vimtutor| es también una práctica manera de aprender."
+"para moverse e insertar palabras. No se olvide de presionar <Esc> para "
+"volver al modo Normal. El |vimtutor| es también una práctica manera de "
+"aprender."
 
-#: usr_02.txt:169
+#. type: Plain text
+#: original/TXT/usr_02.txt:170
 msgid "For Japanese users, Hiroshi Iwatani suggested using this:"
 msgstr "Para usuarios japoneses, Hiroshi Iwatani sugiere lo siguiente:"
 
-#: usr_02.txt:171
+#. type: Plain text
+#: original/TXT/usr_02.txt:178
+#, no-wrap
 msgid ""
 "\t\t\tKomsomolsk\n"
 "\t\t\t    ^\n"
@@ -484,7 +523,7 @@ msgid ""
 "\t   Huan Ho\t<--- --->  Los Angeles\n"
 "\t(Yellow river)\t    |\n"
 "\t\t\t    v\n"
-"\t\t\t  Java (the island, not the programming language)"
+"\t\t\t  Java (the island, not the programming language)\n"
 msgstr ""
 "\t\t\tKomsomolsk\n"
 "\t\t\t    ^\n"
@@ -492,35 +531,32 @@ msgstr ""
 "\t   Huan Ho\t<--- --->  Los Angeles\n"
 "\t(Río amarillo)\t    |\n"
 "\t\t\t    v\n"
-"\t\t\t  Java (la isla, no el lenguaje de programación)"
+"\t\t\t  Java (la isla, no el lenguaje de programación)\n"
 
-#: usr_02.txt:179
-msgid ""
-"==============================================================================\n"
-"*02.4*\tDeleting characters"
-msgstr ""
-"==============================================================================\n"
-"*02.4*\tEliminar caracteres"
+#. type: Plain text
+#: original/TXT/usr_02.txt:181
+#, no-wrap
+msgid "*02.4*\tDeleting characters\n"
+msgstr "*02.4*\tEliminar caracteres\n"
 
-#: usr_02.txt:182
+#. type: Plain text
+#: original/TXT/usr_02.txt:187
 msgid ""
-"To delete a character, move the cursor over it and type \"x\".  (This is a\n"
+"To delete a character, move the cursor over it and type \"x\".  (This is a "
 "throwback to the old days of the typewriter, when you deleted things by "
-"typing\n"
-"xxxx over them.)  Move the cursor to the beginning of the first line, for\n"
-"example, and type xxxxxxx (seven x's) to delete \"A very \".  The result "
-"should\n"
-"look like this:"
+"typing xxxx over them.)  Move the cursor to the beginning of the first line, "
+"for example, and type xxxxxxx (seven x's) to delete \"A very \".  The result "
+"should look like this:"
 msgstr ""
-"Para eliminar un carácter, sitúe el cursor encima de él y presione «x». "
-"(Esto\n"
-"es una reminiscencia de los días de las máquinas de escribir, cuando se\n"
-"eliminaban caracteres escribiendo xxxx sobre ellos.) Sitúe el cursor al\n"
-"comienzo de la primera línea, por ejemplo, y pulse xxxxxxx (siete «xx») "
-"para\n"
-"eliminar «A very». El resultado debería ser:"
+"Para eliminar un carácter, sitúe el cursor encima de él y presione "
+"«x». (Esto es una reminiscencia de los días de las máquinas de escribir, "
+"cuando se eliminaban caracteres escribiendo xxxx sobre ellos.) Sitúe el "
+"cursor al comienzo de la primera línea, por ejemplo, y pulse xxxxxxx (siete "
+"«xx») para eliminar «A very». El resultado debería ser:"
 
-#: usr_02.txt:188
+#. type: Plain text
+#: original/TXT/usr_02.txt:195
+#, no-wrap
 msgid ""
 "\t+---------------------------------------+\n"
 "\t|intelligent turtle\t\t\t|\n"
@@ -528,7 +564,7 @@ msgid ""
 "\t|~\t\t\t\t\t|\n"
 "\t|~\t\t\t\t\t|\n"
 "\t|\t\t\t\t\t|\n"
-"\t+---------------------------------------+"
+"\t+---------------------------------------+\n"
 msgstr ""
 "\t+---------------------------------------+\n"
 "\t|intelligent turtle\t\t\t|\n"
@@ -536,27 +572,33 @@ msgstr ""
 "\t|~\t\t\t\t\t|\n"
 "\t|~\t\t\t\t\t|\n"
 "\t|\t\t\t\t\t|\n"
-"\t+---------------------------------------+"
+"\t+---------------------------------------+\n"
 
-#: usr_02.txt:196
+#. type: Plain text
+#: original/TXT/usr_02.txt:197
 msgid "Now you can insert new text, for example by typing: >"
 msgstr "Ahora puede insertar texto nuevo, tecleando por ejemplo: >"
 
-#: usr_02.txt:198
-msgid "\tiA young <Esc>"
-msgstr "\tiA young <Esc>"
+#. type: Plain text
+#: original/TXT/usr_02.txt:199
+#, no-wrap
+msgid "\tiA young <Esc>\n"
+msgstr "\tiA young <Esc>\n"
 
-#: usr_02.txt:200
+#. type: Plain text
+#: original/TXT/usr_02.txt:202
+#, no-wrap
 msgid ""
 "This begins an insert (the i), inserts the words \"A young\", and then "
 "exits\n"
-"insert mode (the final <Esc>).\tThe result:"
+"insert mode (the final <Esc>).\tThe result:\n"
 msgstr ""
-"Esto inicia una inserción (la «i»), inserta las palabras «A young», y "
-"sale\n"
-"del modo insertar (el <Esc> final). El resultado:"
+"Esto inicia una inserción (la «i»), inserta las palabras «A young», y\n"
+"sale del modo insertar (el <Esc> final). El resultado:"
 
-#: usr_02.txt:203
+#. type: Plain text
+#: original/TXT/usr_02.txt:210
+#, no-wrap
 msgid ""
 "\t+---------------------------------------+\n"
 "\t|A young intelligent turtle\t\t|\n"
@@ -564,7 +606,7 @@ msgid ""
 "\t|~\t\t\t\t\t|\n"
 "\t|~\t\t\t\t\t|\n"
 "\t|\t\t\t\t\t|\n"
-"\t+---------------------------------------+"
+"\t+---------------------------------------+\n"
 msgstr ""
 "\t+---------------------------------------+\n"
 "\t|A young intelligent turtle\t\t|\n"
@@ -572,21 +614,25 @@ msgstr ""
 "\t|~\t\t\t\t\t|\n"
 "\t|~\t\t\t\t\t|\n"
 "\t|\t\t\t\t\t|\n"
-"\t+---------------------------------------+"
+"\t+---------------------------------------+\n"
 
-#: usr_02.txt:212
+#. type: Plain text
+#: original/TXT/usr_02.txt:213
 msgid "DELETING A LINE"
 msgstr "ELIMINAR UNA LÍNEA"
 
-#: usr_02.txt:214
+#. type: Plain text
+#: original/TXT/usr_02.txt:216
 msgid ""
-"To delete a whole line use the \"dd\" command.  The following line will\n"
-"then move up to fill the gap:"
+"To delete a whole line use the \"dd\" command.  The following line will then "
+"move up to fill the gap:"
 msgstr ""
-"Para eliminar una línea entera use la orden «dd». La siguiente línea\n"
-"se moverá hacia arriba para rellenar el hueco:"
+"Para eliminar una línea entera use la orden «dd». La siguiente línea se "
+"moverá hacia arriba para rellenar el hueco:"
 
-#: usr_02.txt:217
+#. type: Plain text
+#: original/TXT/usr_02.txt:224
+#, no-wrap
 msgid ""
 "\t+---------------------------------------+\n"
 "\t|Found programming UNIX a hurdle\t|\n"
@@ -594,7 +640,7 @@ msgid ""
 "\t|~\t\t\t\t\t|\n"
 "\t|~\t\t\t\t\t|\n"
 "\t|\t\t\t\t\t|\n"
-"\t+---------------------------------------+"
+"\t+---------------------------------------+\n"
 msgstr ""
 "\t+---------------------------------------+\n"
 "\t|Found programming UNIX a hurdle\t|\n"
@@ -602,115 +648,133 @@ msgstr ""
 "\t|~\t\t\t\t\t|\n"
 "\t|~\t\t\t\t\t|\n"
 "\t|\t\t\t\t\t|\n"
-"\t+---------------------------------------+"
+"\t+---------------------------------------+\n"
 
-#: usr_02.txt:226
+#. type: Plain text
+#: original/TXT/usr_02.txt:227
 msgid "DELETING A LINE BREAK"
 msgstr "ELIMINAR UN SALTO DE LÍNEA"
 
-#: usr_02.txt:228
+#. type: Plain text
+#: original/TXT/usr_02.txt:231
+#, no-wrap
 msgid ""
 "In Vim you can join two lines together, which means that the line break\n"
 "between them is deleted.  The \"J\" command does this.\n"
-"   Take these two lines:"
+"   Take these two lines:\n"
 msgstr ""
-"En Vim puede unir dos líneas, lo que significa que el salto de línea entre\n"
+"En Vim puede unir dos líneas, lo que significa que el salto de línea "
+"entre\n"
 "ellas se elimina. La orden «J» hace esto. \n"
-"   Suponga estas dos líneas:"
+"   Suponga estas dos líneas:\n"
 
-#: usr_02.txt:232
+#. type: Plain text
+#: original/TXT/usr_02.txt:234
+#, no-wrap
 msgid ""
 "\tA young intelligent ~\n"
-"\tturtle ~"
+"\tturtle ~\n"
 msgstr ""
 "\tA young intelligent ~\n"
-"\tturtle ~"
+"\tturtle ~\n"
 
-#: usr_02.txt:235
+#. type: Plain text
+#: original/TXT/usr_02.txt:236
 msgid "Move the cursor to the first line and press \"J\":"
 msgstr "Mueva el cursor a la primera línea y pulse «J»:"
 
-#: usr_02.txt:237
-msgctxt "usr_02.txt:237"
-msgid "\tA young intelligent turtle ~"
-msgstr "\tA young intelligent turtle ~"
+#. type: Plain text
+#: original/TXT/usr_02.txt:238 original/TXT/usr_02.txt:248
+#, no-wrap
+msgid "\tA young intelligent turtle ~\n"
+msgstr "\tA young intelligent turtle ~\n"
 
-#: usr_02.txt:239
-msgid ""
-"==============================================================================\n"
-"*02.5*\tUndo and Redo"
-msgstr ""
-"==============================================================================\n"
-"*02.5*\tDeshacer y rehacer"
+#. type: Plain text
+#: original/TXT/usr_02.txt:241
+#, no-wrap
+msgid "*02.5*\tUndo and Redo\n"
+msgstr "*02.5*\tDeshacer y rehacer\n"
 
-#: usr_02.txt:242
+#. type: Plain text
+#: original/TXT/usr_02.txt:246
+#, no-wrap
 msgid ""
-"Suppose you delete too much.  Well, you can type it in again, but an easier\n"
+"Suppose you delete too much.  Well, you can type it in again, but an "
+"easier\n"
 "way exists.  The \"u\" command undoes the last edit.  Take a look at this "
 "in\n"
 "action: After using \"dd\" to delete the first line, \"u\" brings it back.\n"
-"   Another one: Move the cursor to the A in the first line:"
+"   Another one: Move the cursor to the A in the first line:\n"
 msgstr ""
 "Suponga que elimina demasiado. Puede teclearlo de nuevo, pero existe una\n"
 "manera más fácil. La orden «u» deshace la última edición. Vea\n"
 "esto en acción: Tras usar «dd» para eliminar la última línea, «u» la "
 "devuelve.\n"
-"   Otra más: mueve el cursor a la A en la primera línea:"
+"   Otra más: mueve el cursor a la A en la primera línea:\n"
 
-#: usr_02.txt:247
-msgctxt "usr_02.txt:247"
-msgid "\tA young intelligent turtle ~"
-msgstr "\tA young intelligent turtle ~"
-
-#: usr_02.txt:249
+#. type: Plain text
+#: original/TXT/usr_02.txt:250
 msgid "Now type xxxxxxx to delete \"A young\".  The result is as follows:"
 msgstr ""
 "Ahora teclee xxxxxxx para eliminar «A young».  El resultado es el "
 "siguiente:"
 
-#: usr_02.txt:251
-msgid "\t intelligent turtle ~"
-msgstr "\t intelligent turtle ~"
+#. type: Plain text
+#: original/TXT/usr_02.txt:252
+#, no-wrap
+msgid "\t intelligent turtle ~\n"
+msgstr "\t intelligent turtle ~\n"
 
-#: usr_02.txt:253
+#. type: Plain text
+#: original/TXT/usr_02.txt:255
 msgid ""
-"Type \"u\" to undo the last delete.  That delete removed the g, so the undo\n"
+"Type \"u\" to undo the last delete.  That delete removed the g, so the undo "
 "restores the character."
 msgstr ""
-"Teclee «u» para deshacer la última eliminación. Esa última eliminación\n"
+"Teclee «u» para deshacer la última eliminación. Esa última eliminación "
 "quitó la g, por lo que deshacer la devuelve."
 
-#: usr_02.txt:256
-msgid "\tg intelligent turtle ~"
-msgstr "\tg intelligent turtle ~"
+#. type: Plain text
+#: original/TXT/usr_02.txt:257
+#, no-wrap
+msgid "\tg intelligent turtle ~\n"
+msgstr "\tg intelligent turtle ~\n"
 
-#: usr_02.txt:258
+#. type: Plain text
+#: original/TXT/usr_02.txt:259
 msgid "The next u command restores the next-to-last character deleted:"
 msgstr "La siguiente orden «u» le devuelve el último carácter eliminado:"
 
-#: usr_02.txt:260
-msgid "\tng intelligent turtle ~"
-msgstr "\tng intelligent turtle ~"
+#. type: Plain text
+#: original/TXT/usr_02.txt:261
+#, no-wrap
+msgid "\tng intelligent turtle ~\n"
+msgstr "\tng intelligent turtle ~\n"
 
-#: usr_02.txt:262
+#. type: Plain text
+#: original/TXT/usr_02.txt:263
 msgid "The next u command gives you the u, and so on:"
 msgstr "La siguiente orden «u» le devuelve la u, y así en adelante:"
 
-#: usr_02.txt:264
+#. type: Plain text
+#: original/TXT/usr_02.txt:269
+#, no-wrap
 msgid ""
 "\tung intelligent turtle ~\n"
 "\toung intelligent turtle ~\n"
 "\tyoung intelligent turtle ~\n"
 "\t young intelligent turtle ~\n"
-"\tA young intelligent turtle ~"
+"\tA young intelligent turtle ~\n"
 msgstr ""
 "\tung intelligent turtle ~\n"
 "\toung intelligent turtle ~\n"
 "\tyoung intelligent turtle ~\n"
 "\t young intelligent turtle ~\n"
-"\tA young intelligent turtle ~"
+"\tA young intelligent turtle ~\n"
 
-#: usr_02.txt:270
+#. type: Plain text
+#: original/TXT/usr_02.txt:277
+#, no-wrap
 msgid ""
 "\tNote:\n"
 "\tIf you type \"u\" twice, and the result is that you get the same text\n"
@@ -718,7 +782,7 @@ msgid ""
 "\tthis: |not-compatible|.\n"
 "\t   This text assumes you work \"The Vim Way\".  You might prefer to use\n"
 "\tthe good old Vi way, but you will have to watch out for small\n"
-"\tdifferences in the text then."
+"\tdifferences in the text then.\n"
 msgstr ""
 "\tNota:\n"
 "\tSi teclea la «u» dos veces, y el resultado que obtendrá es el mismo\n"
@@ -726,105 +790,116 @@ msgstr ""
 "\tVi-compatible. Véase aquí para solucionarlo: |not-compatible|.\n"
 "\t   Este texto asume que trabaja en «El Modo Vim». Quizá quiera usar\n"
 "\tel viejo modo Vi, pero entonces tendrá que observar las pequeñas\n"
-"\tdiferencias."
+"\tdiferencias.\n"
 
-#: usr_02.txt:279
+#. type: Plain text
+#: original/TXT/usr_02.txt:280
 msgid "REDO"
 msgstr "REHACER"
 
-#: usr_02.txt:281
+#. type: Plain text
+#: original/TXT/usr_02.txt:284
 msgid ""
-"If you undo too many times, you can press CTRL-R (redo) to reverse the\n"
-"preceding command.  In other words, it undoes the undo.  To see this in\n"
+"If you undo too many times, you can press CTRL-R (redo) to reverse the "
+"preceding command.  In other words, it undoes the undo.  To see this in "
 "action, press CTRL-R twice.  The character A and the space after it "
 "disappear:"
 msgstr ""
-"Si deshace de más, puede pulsar CTRL-R (rehacer) para revertir la orden\n"
-"precedente. En otras palabras, deshace el deshacer. Para ver esto en\n"
-"acción, presione CTRL-R dos veces. El carácter A y el espacio desaparecerían:"
+"Si deshace de más, puede pulsar CTRL-R (rehacer) para revertir la orden "
+"precedente. En otras palabras, deshace el deshacer. Para ver esto en "
+"acción, presione CTRL-R dos veces. El carácter A y el espacio "
+"desaparecerían:"
 
-#: usr_02.txt:285
-msgid "\tyoung intelligent turtle ~"
-msgstr "\tyoung intelligent turtle ~"
+#. type: Plain text
+#: original/TXT/usr_02.txt:286
+#, no-wrap
+msgid "\tyoung intelligent turtle ~\n"
+msgstr "\tyoung intelligent turtle ~\n"
 
-#: usr_02.txt:287
+#. type: Plain text
+#: original/TXT/usr_02.txt:290
 msgid ""
 "There's a special version of the undo command, the \"U\" (undo line) "
-"command.\n"
-"The undo line command undoes all the changes made on the last line that was\n"
-"edited.  Typing this command twice cancels the preceding \"U\"."
+"command.  The undo line command undoes all the changes made on the last line "
+"that was edited.  Typing this command twice cancels the preceding \"U\"."
 msgstr ""
 "Hay una versión especial de la orden deshacer, la orden «U» (deshacer "
-"línea).\n"
-"La orden deshacer línea deshace todos los cambios realizados en la última "
-"línea\n"
-"editada. Si teclea esta orden dos veces, deshará la «U» precedente."
+"línea).  La orden deshacer línea deshace todos los cambios realizados en "
+"la última línea editada. Si teclea esta orden dos veces, deshará la «U» "
+"precedente."
 
-#: usr_02.txt:291
+#. type: Plain text
+#: original/TXT/usr_02.txt:293
+#, no-wrap
 msgid ""
 "\tA very intelligent turtle ~\n"
-"\t  xxxx\t\t\t\tDelete very"
+"\t  xxxx\t\t\t\tDelete very\n"
 msgstr ""
 "\tA very intelligent turtle ~\n"
-"\t  xxxx\t\t\t\tEliminar very"
+"\t  xxxx\t\t\t\tEliminar very\n"
 
-#: usr_02.txt:294
+#. type: Plain text
+#: original/TXT/usr_02.txt:296
+#, no-wrap
 msgid ""
 "\tA intelligent turtle ~\n"
-"\t\t      xxxxxx\t\tDelete turtle"
+"\t\t      xxxxxx\t\tDelete turtle\n"
 msgstr ""
 "\tA intelligent turtle ~\n"
-"\t\t      xxxxxx\t\tEliminar turtle"
+"\t\t      xxxxxx\t\tEliminar turtle\n"
 
-#: usr_02.txt:297
+#. type: Plain text
+#: original/TXT/usr_02.txt:302
+#, no-wrap
 msgid ""
 "\tA intelligent ~\n"
 "\t\t\t\t\tRestore line with \"U\"\n"
 "\tA very intelligent turtle ~\n"
 "\t\t\t\t\tUndo \"U\" with \"u\"\n"
-"\tA intelligent ~"
+"\tA intelligent ~\n"
 msgstr ""
 "\tA intelligent ~\n"
 "\t\t\t\t\tRestaurar línea con «U»\n"
 "\tA very intelligent turtle ~\n"
 "\t\t\t\t\tDeshacer «U» con «u»\n"
-"\tA intelligent ~"
+"\tA intelligent ~\n"
 
-#: usr_02.txt:303
+#. type: Plain text
+#: original/TXT/usr_02.txt:306
 msgid ""
 "The \"U\" command is a change by itself, which the \"u\" command undoes and "
-"CTRL-R\n"
-"redoes.  This might be a bit confusing.  Don't worry, with \"u\" and CTRL-R "
-"you\n"
-"can go to any of the situations you had.  More about that in section |32.1|."
+"CTRL-R redoes.  This might be a bit confusing.  Don't worry, with \"u\" and "
+"CTRL-R you can go to any of the situations you had.  More about that in "
+"section |32.1|."
 msgstr ""
-"La orden «U» es un cambio en sí mismo, que la orden «u» deshace y CTRL-R "
-"rehace.\n"
-"Esto puede resultar confuso. No se preocupe, con «u» y CTRL-R puede\n"
-"ir a cualquier situación anterior. Más información en la sección |32.1|."
+"La orden «U» es un cambio en sí mismo, que la orden «u» deshace y "
+"CTRL-R rehace.  Esto puede resultar confuso. No se preocupe, con «u» y "
+"CTRL-R puede ir a cualquier situación anterior. Más información en la "
+"sección |32.1|."
 
-#: usr_02.txt:307
-msgid ""
-"==============================================================================\n"
-"*02.6*\tOther editing commands"
-msgstr ""
-"==============================================================================\n"
-"*02.6*\tOtras órdenes de edición"
+#. type: Plain text
+#: original/TXT/usr_02.txt:309
+#, no-wrap
+msgid "*02.6*\tOther editing commands\n"
+msgstr "*02.6*\tOtras órdenes de edición\n"
 
-#: usr_02.txt:310
+#. type: Plain text
+#: original/TXT/usr_02.txt:312
 msgid ""
 "Vim has a large number of commands to change the text.  See |Q_in| and "
-"below.\n"
-"Here are a few often used ones."
+"below.  Here are a few often used ones."
 msgstr ""
-"Vim tiene una larga lista de órdenes para modificar texto. Véase |Q_in| y a\n"
-"continuación. Aquí hay algunos de uso frecuente."
+"Vim tiene una larga lista de órdenes para modificar texto. Véase |Q_in| y "
+"a continuación. Aquí hay algunos de uso frecuente."
 
-#: usr_02.txt:314
+#. type: Plain text
+#: original/TXT/usr_02.txt:315
 msgid "APPENDING"
 msgstr "AÑADIR"
 
-#: usr_02.txt:316
+#. type: Plain text
+#: original/TXT/usr_02.txt:321
+#, no-wrap
 msgid ""
 "The \"i\" command inserts a character before the character under the "
 "cursor.\n"
@@ -833,247 +908,275 @@ msgid ""
 "line?  For that you need to insert text after the cursor.  This is done "
 "with\n"
 "the \"a\" (append) command.\n"
-"   For example, to change the line"
+"   For example, to change the line\n"
 msgstr ""
-"La orden «i» inserta un carácter antes del carácter bajo el cursor. Esto\n"
+"La orden «i» inserta un carácter antes del carácter bajo el "
+"cursor. Esto\n"
 "funciona bien; pero ¿qué ocurre si quieres añadir algo al final de la "
 "línea?\n"
 "Para ello necesita insertar texto después del cursor. Esto se hace con la\n"
 "orden «a» (añadir).\n"
-" Por ejemplo, para modificar la línea"
+" Por ejemplo, para modificar la línea\n"
 
-#: usr_02.txt:322
+#. type: Plain text
+#: original/TXT/usr_02.txt:325
+#, no-wrap
 msgid ""
 "\tand that's not saying much for the turtle. ~\n"
 "to\n"
-"\tand that's not saying much for the turtle!!! ~"
+"\tand that's not saying much for the turtle!!! ~\n"
 msgstr ""
 "\tand that's not saying much for the turtle. ~\n"
 "a\n"
-"\tand that's not saying much for the turtle!!! ~"
+"\tand that's not saying much for the turtle!!! ~\n"
 
-#: usr_02.txt:326
+#. type: Plain text
+#: original/TXT/usr_02.txt:329
 msgid ""
-"move the cursor over to the dot at the end of the line. Then type \"x\" to\n"
+"move the cursor over to the dot at the end of the line. Then type \"x\" to "
 "delete the period.  The cursor is now positioned at the end of the line on "
-"the\n"
-"e in turtle.  Now type >"
+"the e in turtle.  Now type >"
 msgstr ""
 "Mueva el cursor sobre el punto al final de la línea. Pulse «x» para "
-"eliminar\n"
-"el punto. El cursor estará situado ahora al final de la línea, en\n"
+"eliminar el punto. El cursor estará situado ahora al final de la línea, en "
 "la «e» de turtle.Teclee ahora: >"
 
-#: usr_02.txt:330
-msgid "\ta!!!<Esc>"
-msgstr "\ta!!!<Esc>"
+#. type: Plain text
+#: original/TXT/usr_02.txt:331
+#, no-wrap
+msgid "\ta!!!<Esc>\n"
+msgstr "\ta!!!<Esc>\n"
 
-#: usr_02.txt:332
+#. type: Plain text
+#: original/TXT/usr_02.txt:333
 msgid "to append three exclamation points after the e in turtle:"
 msgstr "para añadir tres signos de exclamación después de la e en turtle:"
 
-#: usr_02.txt:334
-msgid "\tand that's not saying much for the turtle!!! ~"
-msgstr "\tand that's not saying much for the turtle!!! ~"
+#. type: Plain text
+#: original/TXT/usr_02.txt:335
+#, no-wrap
+msgid "\tand that's not saying much for the turtle!!! ~\n"
+msgstr "\tand that's not saying much for the turtle!!! ~\n"
 
-#: usr_02.txt:337
+#. type: Plain text
+#: original/TXT/usr_02.txt:338
 msgid "OPENING UP A NEW LINE"
 msgstr "ABRIR UNA NUEVA LÍNEA"
 
-#: usr_02.txt:339
+#. type: Plain text
+#: original/TXT/usr_02.txt:342
+#, no-wrap
 msgid ""
 "The \"o\" command creates a new, empty line below the cursor and puts Vim "
 "in\n"
 "Insert mode.  Then you can type the text for the new line.\n"
-"   Suppose the cursor is somewhere in the first of these two lines:"
+"   Suppose the cursor is somewhere in the first of these two lines:\n"
 msgstr ""
 "La orden «o» crea una nueva línea vacía debajo del cursor y pone Vim en "
 "modo\n"
 "insertar. Puede introducir el texto de la nueva línea.\n"
-"   Suponga que el cursor está en algún lugar de la primera de estas líneas:"
+"   Suponga que el cursor está en algún lugar de la primera de estas "
+"líneas:\n"
 
-#: usr_02.txt:343
+#. type: Plain text
+#: original/TXT/usr_02.txt:345
+#, no-wrap
 msgid ""
 "\tA very intelligent turtle ~\n"
-"\tFound programming UNIX a hurdle ~"
+"\tFound programming UNIX a hurdle ~\n"
 msgstr ""
 "\tA very intelligent turtle ~\n"
-"\tFound programming UNIX a hurdle ~"
+"\tFound programming UNIX a hurdle ~\n"
 
-#: usr_02.txt:346
+#. type: Plain text
+#: original/TXT/usr_02.txt:347
 msgid "If you now use the \"o\" command and type new text: >"
 msgstr "Si ahora usa la orden «o» e introduce más texto: >"
 
-#: usr_02.txt:348
-msgid "\toThat liked using Vim<Esc>"
-msgstr "\toThat liked using Vim<Esc>"
+#. type: Plain text
+#: original/TXT/usr_02.txt:349
+#, no-wrap
+msgid "\toThat liked using Vim<Esc>\n"
+msgstr "\toThat liked using Vim<Esc>\n"
 
-#: usr_02.txt:350
+#. type: Plain text
+#: original/TXT/usr_02.txt:351
 msgid "The result is:"
 msgstr "El resultado es:"
 
-#: usr_02.txt:352
+#. type: Plain text
+#: original/TXT/usr_02.txt:355
+#, no-wrap
 msgid ""
 "\tA very intelligent turtle ~\n"
 "\tThat liked using Vim ~\n"
-"\tFound programming UNIX a hurdle ~"
+"\tFound programming UNIX a hurdle ~\n"
 msgstr ""
 "\tA very intelligent turtle ~\n"
 "\tThat liked using Vim ~\n"
-"\tFound programming UNIX a hurdle ~"
+"\tFound programming UNIX a hurdle ~\n"
 
-#: usr_02.txt:356
+#. type: Plain text
+#: original/TXT/usr_02.txt:357
 msgid "The \"O\" command (uppercase) opens a line above the cursor."
 msgstr "La orden «O» (mayúscula) abre una nueva línea encima del cursor."
 
-#: usr_02.txt:359
+#. type: Plain text
+#: original/TXT/usr_02.txt:360
 msgid "USING A COUNT"
 msgstr "USAR UN MULTIPLICADOR"
 
-#: usr_02.txt:361
+#. type: Plain text
+#: original/TXT/usr_02.txt:368
 msgid ""
 "Suppose you want to move up nine lines.  You can type \"kkkkkkkkk\" or you "
-"can\n"
-"enter the command \"9k\".  In fact, you can precede many commands with a "
-"number.\n"
-"Earlier in this chapter, for instance, you added three exclamation points "
-"to\n"
-"the end of a line by typing \"a!!!<Esc>\".  Another way to do this is to use "
-"the\n"
-"command \"3a!<Esc>\".  The count of 3 tells the command that follows to "
-"triple\n"
-"its effect.  Similarly, to delete three characters, use the command \"3x\".  "
-"The\n"
-"count always comes before the command it applies to."
+"can enter the command \"9k\".  In fact, you can precede many commands with a "
+"number.  Earlier in this chapter, for instance, you added three exclamation "
+"points to the end of a line by typing \"a!!!<Esc>\".  Another way to do this "
+"is to use the command \"3a!<Esc>\".  The count of 3 tells the command that "
+"follows to triple its effect.  Similarly, to delete three characters, use "
+"the command \"3x\".  The count always comes before the command it applies "
+"to."
 msgstr ""
-"Suponga que quiera desplazarse nueve líneas hacia arriba. Puede teclear\n"
-"«kkkkkkkkk» o puede teclear la orden «9k». De hecho, se puede emplear "
-"el\n"
-"multiplicador con muchas órdenes. Anteriormente en este capítulo, añadió\n"
+"Suponga que quiera desplazarse nueve líneas hacia arriba. Puede teclear "
+"«kkkkkkkkk» o puede teclear la orden «9k». De hecho, se puede emplear el "
+"multiplicador con muchas órdenes. Anteriormente en este capítulo, añadió "
 "tres exclamaciones al final de la línea con «a!!!<Esc>». Otra forma de "
-"hacer\n"
-"esto es usar la orden «3a!<Esc>». El multiplicador 3 hace que la orden a\n"
-"continuación triplique su efecto. De igual modo, para eliminar tres "
-"caracteres,\n"
-"use «3x». El multiplicador siempre va delante de la orden sobre el\n"
-"que se aplica."
+"hacer esto es usar la orden «3a!<Esc>». El multiplicador 3 hace que la "
+"orden a continuación triplique su efecto. De igual modo, para eliminar tres "
+"caracteres, use «3x». El multiplicador siempre va delante de la orden "
+"sobre el que se aplica."
 
-#: usr_02.txt:369
-msgid ""
-"==============================================================================\n"
-"*02.7*\tGetting out"
-msgstr ""
-"==============================================================================\n"
-"*02.7*\tSalir"
+#. type: Plain text
+#: original/TXT/usr_02.txt:371
+#, no-wrap
+msgid "*02.7*\tGetting out\n"
+msgstr "*02.7*\tSalir\n"
 
-#: usr_02.txt:372
-msgid ""
-"To exit, use the \"ZZ\" command.  This command writes the file and exits."
-msgstr ""
-"Para salir, use la orden «ZZ». Esta orden escribe el archivo y sale."
+#. type: Plain text
+#: original/TXT/usr_02.txt:373
+msgid "To exit, use the \"ZZ\" command.  This command writes the file and exits."
+msgstr "Para salir, use la orden «ZZ». Esta orden escribe el archivo y sale."
 
-#: usr_02.txt:374
+#. type: Plain text
+#: original/TXT/usr_02.txt:379
+#, no-wrap
 msgid ""
 "\tNote:\n"
 "\tUnlike many other editors, Vim does not automatically make a backup\n"
 "\tfile.  If you type \"ZZ\", your changes are committed and there's no\n"
 "\tturning back.  You can configure the Vim editor to produce backup\n"
-"\tfiles, see |07.4|."
+"\tfiles, see |07.4|.\n"
 msgstr ""
 "\tNota:\n"
 "\tAl revés que muchos otros editores, Vim no hace un archivo de\n"
 "\tseguridad automático. Si escribe «ZZ», sus cambios se comprometen\n"
 "\tsin vuelta atrás. Puede configurar el editor Vim para que haga\n"
-"\tcopias de seguridad, véase |07.4|."
+"\tcopias de seguridad, véase |07.4|.\n"
 
-#: usr_02.txt:381
+#. type: Plain text
+#: original/TXT/usr_02.txt:382
 msgid "DISCARDING CHANGES"
 msgstr "DESCARTAR CAMBIOS"
 
-#: usr_02.txt:383
+#. type: Plain text
+#: original/TXT/usr_02.txt:386
 msgid ""
-"Sometimes you will make a sequence of changes and suddenly realize you were\n"
-"better off before you started.  Not to worry; Vim has a\n"
+"Sometimes you will make a sequence of changes and suddenly realize you were "
+"better off before you started.  Not to worry; Vim has a "
 "quit-and-throw-things-away command.  It is: >"
 msgstr ""
-"En ocasiones se dará cuenta de que tras una serie de cambios, estaba mejor\n"
-"donde comenzó. No se preocupe; Vim tiene una orden para salir y descartar\n"
+"En ocasiones se dará cuenta de que tras una serie de cambios, estaba mejor "
+"donde comenzó. No se preocupe; Vim tiene una orden para salir y descartar "
 "todos los cambios. Es: >"
 
-#: usr_02.txt:387
-msgid "\t:q!"
-msgstr "\t:q!"
+#. type: Plain text
+#: original/TXT/usr_02.txt:388
+#, no-wrap
+msgid "\t:q!\n"
+msgstr "\t:q!\n"
 
-#: usr_02.txt:389
+#. type: Plain text
+#: original/TXT/usr_02.txt:390
 msgid "Don't forget to press <Enter> to finish the command."
 msgstr "No se olvide de presionar <Intro> para finalizar la orden."
 
-#: usr_02.txt:391
+#. type: Plain text
+#: original/TXT/usr_02.txt:397
+#, no-wrap
 msgid ""
-"For those of you interested in the details, the three parts of this command\n"
+"For those of you interested in the details, the three parts of this "
+"command\n"
 "are the colon (:), which enters Command-line mode; the q command, which "
 "tells\n"
 "the editor to quit; and the override command modifier (!).\n"
 "   The override command modifier is needed because Vim is reluctant to "
 "throw\n"
 "away changes.  If you were to just type \":q\", Vim would display an error\n"
-"message and refuse to exit:"
+"message and refuse to exit:\n"
 msgstr ""
 "Para aquellos de vosotros interesados en los detalles, las tres partes de "
 "esta\n"
-"orden son los dos puntos (:), que entra en el modo en línea de órdenes; la\n"
+"orden son los dos puntos (:), que entra en el modo en línea de órdenes; "
+"la\n"
 "orden «q», para salir; y el modificador de anulación (!).\n"
 "   El modificador de anulación es necesario porque Vim se resiste a perder "
 "los\n"
-"cambios. Si escribiese sólo «:q», Vim mostraría un mensaje de error y se\n"
-"negaría a salir:"
+"cambios. Si escribiese sólo «:q», Vim mostraría un mensaje de error y "
+"se\n"
+"negaría a salir:\n"
 
-#: usr_02.txt:398
-msgctxt "usr_02.txt:398"
-msgid "\tE37: No write since last change (use ! to override) ~"
-msgstr "\tE37: No write since last change (use ! to override) ~"
+#. type: Plain text
+#: original/TXT/usr_02.txt:399 original/TXT/usr_02.txt:495
+#, no-wrap
+msgid "\tE37: No write since last change (use ! to override) ~\n"
+msgstr "\tE37: No write since last change (use ! to override) ~\n"
 
-#: usr_02.txt:400
+#. type: Plain text
+#: original/TXT/usr_02.txt:402
 msgid ""
 "By specifying the override, you are in effect telling Vim, \"I know that "
-"what\n"
-"I'm doing looks stupid, but I'm a big boy and really want to do this.\""
+"what I'm doing looks stupid, but I'm a big boy and really want to do this.\""
 msgstr ""
-"Si especifica el operador de anulación, le está diciendo a Vim «Sé que lo "
-"que\n"
-"hago parece una estupidez, pero ya soy mayorcito y sé lo que hago.»"
+"Si especifica el operador de anulación, le está diciendo a Vim «Sé que "
+"lo que hago parece una estupidez, pero ya soy mayorcito y sé lo que hago.»"
 
-#: usr_02.txt:403
+#. type: Plain text
+#: original/TXT/usr_02.txt:405
 msgid ""
-"If you want to continue editing with Vim: The \":e!\" command reloads the\n"
+"If you want to continue editing with Vim: The \":e!\" command reloads the "
 "original version of the file."
 msgstr ""
-"Si desea continuar editando con Vim: la orden «:e!» vuelve a cargar la\n"
+"Si desea continuar editando con Vim: la orden «:e!» vuelve a cargar la "
 "versión original del archivo."
 
-#: usr_02.txt:406
-msgid ""
-"==============================================================================\n"
-"*02.8*\tFinding help"
-msgstr ""
-"==============================================================================\n"
-"*02.8*\tEncontrar ayuda"
+#. type: Plain text
+#: original/TXT/usr_02.txt:408
+#, no-wrap
+msgid "*02.8*\tFinding help\n"
+msgstr "*02.8*\tEncontrar ayuda\n"
 
-#: usr_02.txt:409
+#. type: Plain text
+#: original/TXT/usr_02.txt:412
+#, no-wrap
 msgid ""
 "Everything you always wanted to know can be found in the Vim help files.\n"
 "Don't be afraid to ask!\n"
-"   To get generic help use this command: >"
+"   To get generic help use this command: >\n"
 msgstr ""
 "Todo lo que quiera saber puede encontrarlo en los archivos de ayuda.\n"
 "¡No tenga miedo a preguntar!\n"
-"   Use la siguiente orden para obtener ayuda genérica:"
+"   Use la siguiente orden para obtener ayuda genérica:\n"
 
-#: usr_02.txt:413
-msgid "\t:help"
-msgstr "\t:help"
+#. type: Plain text
+#: original/TXT/usr_02.txt:414
+#, no-wrap
+msgid "\t:help\n"
+msgstr "\t:help\n"
 
-#: usr_02.txt:415
+#. type: Plain text
+#: original/TXT/usr_02.txt:424
+#, no-wrap
 msgid ""
 "You could also use the first function key <F1>.  If your keyboard has a "
 "<Help>\n"
@@ -1081,13 +1184,14 @@ msgid ""
 "   If you don't supply a subject, \":help\" displays the general help "
 "window.\n"
 "The creators of Vim did something very clever (or very lazy) with the help\n"
-"system: They made the help window a normal editing window.  You can use all\n"
+"system: They made the help window a normal editing window.  You can use "
+"all\n"
 "the normal Vim commands to move through the help information.  Therefore h, "
 "j,\n"
 "k, and l move left, down, up and right.\n"
 "   To get out of the help window, use the same command you use to get out "
 "of\n"
-"the editor: \"ZZ\".  This will only close the help window, not exit Vim."
+"the editor: \"ZZ\".  This will only close the help window, not exit Vim.\n"
 msgstr ""
 "También puede usar la tecla <F1>. Si su teclado tiene tecla <Ayuda> puede "
 "que\n"
@@ -1102,9 +1206,11 @@ msgstr ""
 "abajo.\n"
 "   Para salir de la ventana de ayuda, usa el mismo comando que usas para "
 "salir\n"
-"del editor: «ZZ». Esto sólo cierra la ayuda, no sale de Vim."
+"del editor: «ZZ». Esto sólo cierra la ayuda, no sale de Vim.\n"
 
-#: usr_02.txt:425
+#. type: Plain text
+#: original/TXT/usr_02.txt:438
+#, no-wrap
 msgid ""
 "As you read the help text, you will notice some text enclosed in vertical "
 "bars\n"
@@ -1117,21 +1223,23 @@ msgid ""
 "of the tag given by the word under the cursor.)\n"
 "   After a few jumps, you might want to go back.  CTRL-T (pop tag) takes "
 "you\n"
-"back to the preceding position.  CTRL-O (jump to older position) also works\n"
+"back to the preceding position.  CTRL-O (jump to older position) also "
+"works\n"
 "nicely here.\n"
 "   At the top of the help screen, there is the notation *help.txt*.  This "
 "name\n"
 "between \"*\" characters is used by the help system to define a tag "
 "(hyperlink\n"
 "destination).\n"
-"   See |29.1| for details about using tags."
+"   See |29.1| for details about using tags.\n"
 msgstr ""
 "A medida que lea el texto de ayuda, notará que hay texto entre barras\n"
 "verticales (por ejemplo, |help|). Esto indica un hiperenlace. Si sitúa el\n"
 "cursor en cualquier lugar entre las barras y presiona CTRL-] (saltar a\n"
 "etiqueta), el sistema de ayuda le llevará al tema indicado, (por motivos "
 "que\n"
-"no corresponden a esta explicación). La terminología Vim para hiperenlace es\n"
+"no corresponden a esta explicación). La terminología Vim para hiperenlace "
+"es\n"
 "etiqueta o «tag». Por lo tanto, CTRL-] salta a la ubicación del «tag» "
 "dado\n"
 "por la palabra bajo el cursor.)\n"
@@ -1140,157 +1248,183 @@ msgstr ""
 "atrás en la pila) le devuelve a la posición precedente  CTRL-O (saltar "
 "hacia\n"
 "la posición anterior) también funciona bien aquí.\n"
-"   En la parte superior de la pantalla de ayuda, hay una notación *help."
-"txt*.\n"
+"   En la parte superior de la pantalla de ayuda, hay una notación "
+"*help.txt*.\n"
 "El nombre entre caracteres «*» se usa por el sistema de ayuda para "
 "definir\n"
 "una etiqueta (destino del hiperenlace).\n"
-"   Véase |29.1| para detalles sobre el uso de etiquetas."
+"   Véase |29.1| para detalles sobre el uso de etiquetas.\n"
 
-#: usr_02.txt:439
+#. type: Plain text
+#: original/TXT/usr_02.txt:440
 msgid "To get help on a given subject, use the following command: >"
 msgstr "Para obtener ayuda sobre un tema concreto, use la siguiente orden: >"
 
-#: usr_02.txt:441
-msgid "\t:help {subject}"
-msgstr "\t:help {subject}"
+#. type: Plain text
+#: original/TXT/usr_02.txt:442
+#, no-wrap
+msgid "\t:help {subject}\n"
+msgstr "\t:help {subject}\n"
 
-#: usr_02.txt:443
+#. type: Plain text
+#: original/TXT/usr_02.txt:444
 msgid "To get help on the \"x\" command, for example, enter the following: >"
 msgstr "Para obtener ayuda sobre la orden «x», por ejemplo, introduzca: >"
 
-#: usr_02.txt:445
-msgid "\t:help x"
-msgstr "\t:help x"
+#. type: Plain text
+#: original/TXT/usr_02.txt:446
+#, no-wrap
+msgid "\t:help x\n"
+msgstr "\t:help x\n"
 
-#: usr_02.txt:447
+#. type: Plain text
+#: original/TXT/usr_02.txt:448
 msgid "To find out how to delete text, use this command: >"
 msgstr "Para averiguar cómo eliminar texto, use la orden: >"
 
-#: usr_02.txt:449
-msgid "\t:help deleting"
-msgstr "\t:help deleting"
+#. type: Plain text
+#: original/TXT/usr_02.txt:450
+#, no-wrap
+msgid "\t:help deleting\n"
+msgstr "\t:help deleting\n"
 
-#: usr_02.txt:451
-msgid ""
-"To get a complete index of all Vim commands, use the following command: >"
+#. type: Plain text
+#: original/TXT/usr_02.txt:452
+msgid "To get a complete index of all Vim commands, use the following command: >"
 msgstr "Para obtener un índice completo de todas los órdenes de Vim, use: >"
 
-#: usr_02.txt:453
-msgid "\t:help index"
-msgstr "\t:help index"
+#. type: Plain text
+#: original/TXT/usr_02.txt:454
+#, no-wrap
+msgid "\t:help index\n"
+msgstr "\t:help index\n"
 
-#: usr_02.txt:455
+#. type: Plain text
+#: original/TXT/usr_02.txt:457
 msgid ""
-"When you need to get help for a control character command (for example,\n"
+"When you need to get help for a control character command (for example, "
 "CTRL-A), you need to spell it with the prefix \"CTRL-\". >"
 msgstr ""
-"Cuando necesite obtener ayuda para las órdenes de control de carácter\n"
-"(por ejemplo, CTRL-A), debe escribirlo con el prefijo «CTRL-». >"
+"Cuando necesite obtener ayuda para las órdenes de control de carácter (por "
+"ejemplo, CTRL-A), debe escribirlo con el prefijo «CTRL-». >"
 
-#: usr_02.txt:458
-msgid "\t:help CTRL-A"
-msgstr "\t:help CTRL-A"
+#. type: Plain text
+#: original/TXT/usr_02.txt:459
+#, no-wrap
+msgid "\t:help CTRL-A\n"
+msgstr "\t:help CTRL-A\n"
 
-#: usr_02.txt:460
+#. type: Plain text
+#: original/TXT/usr_02.txt:463
 msgid ""
 "The Vim editor has many different modes.  By default, the help system "
-"displays\n"
-"the normal-mode commands.  For example, the following command displays help\n"
-"for the normal-mode CTRL-H command: >"
+"displays the normal-mode commands.  For example, the following command "
+"displays help for the normal-mode CTRL-H command: >"
 msgstr ""
-"El editor Vim tiene muchos modos diferentes. De manera predeterminada, el\n"
+"El editor Vim tiene muchos modos diferentes. De manera predeterminada, el "
 "sistema de ayuda muestra las ordenes del modo normal. Por ejemplo, la "
-"siguiente\n"
-"orden muestra la ayuda para la orden CTRL-H en modo normal: >"
+"siguiente orden muestra la ayuda para la orden CTRL-H en modo normal: >"
 
-#: usr_02.txt:464
-msgid "\t:help CTRL-H"
-msgstr "\t:help CTRL-H"
+#. type: Plain text
+#: original/TXT/usr_02.txt:465
+#, no-wrap
+msgid "\t:help CTRL-H\n"
+msgstr "\t:help CTRL-H\n"
 
-#: usr_02.txt:466
+#. type: Plain text
+#: original/TXT/usr_02.txt:469
 msgid ""
-"To identify other modes, use a mode prefix.  If you want the help for the\n"
-"insert-mode version of a command, use \"i_\".  For CTRL-H this gives you "
-"the\n"
+"To identify other modes, use a mode prefix.  If you want the help for the "
+"insert-mode version of a command, use \"i_\".  For CTRL-H this gives you the "
 "following command: >"
 msgstr ""
-"Para identificar otros modos, se necesita un prefijo de modo. Si quiere\n"
-"ayuda para la versión en modo insertar del comando, use «i_».  Para,\n"
+"Para identificar otros modos, se necesita un prefijo de modo. Si quiere "
+"ayuda para la versión en modo insertar del comando, use «i_».  Para, "
 "CTRL-H es la siguiente orden: >"
 
-#: usr_02.txt:470
-msgid "\t:help i_CTRL-H"
-msgstr "\t:help i_CTRL-H"
+#. type: Plain text
+#: original/TXT/usr_02.txt:471
+#, no-wrap
+msgid "\t:help i_CTRL-H\n"
+msgstr "\t:help i_CTRL-H\n"
 
-#: usr_02.txt:472
+#. type: Plain text
+#: original/TXT/usr_02.txt:475
 msgid ""
-"When you start the Vim editor, you can use several command-line arguments.\n"
-"These all begin with a dash (-).  To find what the -t argument does, for\n"
+"When you start the Vim editor, you can use several command-line arguments.  "
+"These all begin with a dash (-).  To find what the -t argument does, for "
 "example, use the command: >"
 msgstr ""
-"Cuando arranque el editor Vim, puede usar diversos argumentos de línea de\n"
-"órdenes. Todos ellos comienzan con guión (-)  Para buscar lo que el\n"
+"Cuando arranque el editor Vim, puede usar diversos argumentos de línea de "
+"órdenes. Todos ellos comienzan con guión (-)  Para buscar lo que el "
 "argumento «-t» hace, por ejemplo, use la orden: >"
 
-#: usr_02.txt:476
-msgid "\t:help -t"
-msgstr "\t:help -t"
+#. type: Plain text
+#: original/TXT/usr_02.txt:477
+#, no-wrap
+msgid "\t:help -t\n"
+msgstr "\t:help -t\n"
 
-#: usr_02.txt:478
+#. type: Plain text
+#: original/TXT/usr_02.txt:482
 msgid ""
-"The Vim editor has a number of options that enable you to configure and\n"
+"The Vim editor has a number of options that enable you to configure and "
 "customize the editor.  If you want help for an option, you need to enclose "
-"it\n"
-"in single quotation marks.  To find out what the 'number' option does, for\n"
-"example, use the following command: >"
+"it in single quotation marks.  To find out what the 'number' option does, "
+"for example, use the following command: >"
 msgstr ""
-"El editor Vim tiene una serie de opciones que le permiten configurar y\n"
+"El editor Vim tiene una serie de opciones que le permiten configurar y "
 "personalizar el editor. Si quiere ayuda para una opción, tiene que "
-"escribirla\n"
-"entre comillas simples. Para encontrar lo que hace la opción 'number'\n"
-"por ejemplo, usa la orden siguiente: >"
+"escribirla entre comillas simples. Para encontrar lo que hace la opción "
+"'number' por ejemplo, usa la orden siguiente: >"
 
-#: usr_02.txt:483
-msgid "\t:help 'number'"
-msgstr "\t:help 'number'"
+#. type: Plain text
+#: original/TXT/usr_02.txt:484
+#, no-wrap
+msgid "\t:help 'number'\n"
+msgstr "\t:help 'number'\n"
 
-#: usr_02.txt:485
+#. type: Plain text
+#: original/TXT/usr_02.txt:486
 msgid "The table with all mode prefixes can be found here: |help-context|."
 msgstr ""
-"Puede encontrar aquí la tabla con todos los prefijos de modo: |help-context|."
+"Puede encontrar aquí la tabla con todos los prefijos de modo: "
+"|help-context|."
 
-#: usr_02.txt:487
+#. type: Plain text
+#: original/TXT/usr_02.txt:489
 msgid ""
 "Special keys are enclosed in angle brackets.  To find help on the up-arrow "
-"key\n"
-"in Insert mode, for instance, use this command: >"
+"key in Insert mode, for instance, use this command: >"
 msgstr ""
-"Las teclas especiales se escriben entre corchetes angulares. Para encontrar\n"
+"Las teclas especiales se escriben entre corchetes angulares. Para encontrar "
 "ayuda sobre la flecha hacia arriba en modo insertar, use: >"
 
-#: usr_02.txt:490
-msgid "\t:help i_<Up>"
-msgstr "\t:help i_<Up>"
+#. type: Plain text
+#: original/TXT/usr_02.txt:491
+#, no-wrap
+msgid "\t:help i_<Up>\n"
+msgstr "\t:help i_<Up>\n"
 
-#: usr_02.txt:492
+#. type: Plain text
+#: original/TXT/usr_02.txt:493
 msgid "If you see an error message that you don't understand, for example:"
 msgstr "Si ve un mensaje de error que no entiende, por ejemplo:"
 
-#: usr_02.txt:494
-msgctxt "usr_02.txt:494"
-msgid "\tE37: No write since last change (use ! to override) ~"
-msgstr "\tE37: No write since last change (use ! to override) ~"
-
-#: usr_02.txt:496
+#. type: Plain text
+#: original/TXT/usr_02.txt:497
 msgid "You can use the error ID at the start to find help about it: >"
 msgstr "Puede usar el código de error del principio para encontrar ayuda: >"
 
-#: usr_02.txt:498
-msgid "\t:help E37"
-msgstr "\t:help E37"
+#. type: Plain text
+#: original/TXT/usr_02.txt:499
+#, no-wrap
+msgid "\t:help E37\n"
+msgstr "\t:help E37\n"
 
-#: usr_02.txt:501
+#. type: Plain text
+#: original/TXT/usr_02.txt:558
+#, no-wrap
 msgid ""
 "Summary: \t\t\t\t\t*help-summary*  >\n"
 "\t:help\n"
@@ -1348,7 +1482,7 @@ msgid ""
 "\t    :copen\n"
 "\t    :cclose\n"
 "<\t\t\topen/close the quickfix window; press <Enter> to jump\n"
-"\t\t\tto the item under the cursor"
+"\t\t\tto the item under the cursor\n"
 msgstr ""
 "Resumen:\t\t\t\t\t*help-summary*  >\n"
 "\t:help\n"
@@ -1406,16 +1540,14 @@ msgstr ""
 "\t    :copen\n"
 "\t    :cclose\n"
 "<\t\t\tabrir/cerrar la ventana «quickfix» (arreglos rápidos);\n"
-"\t\t\tpulsa <Intro> para ir al elemento bajo el cursor."
+"\t\t\tpulsa <Intro> para ir al elemento bajo el cursor.\n"
 
-#: usr_02.txt:560
-msgid "=============================================================================="
-msgstr "=============================================================================="
-
-#: usr_02.txt:562
-msgid "Next chapter: |usr_03.txt|  Moving around"
+#. type: Plain text
+#: original/TXT/usr_02.txt:563
+msgid "Next chapter: |usr_03.txt| Moving around"
 msgstr "Capítulo siguiente: |usr_03.esx| Desplazamiento"
 
-#: usr_02.txt:564
-msgid "Copyright: see |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:"
+#. type: Plain text
+#: original/TXT/usr_02.txt:564
+msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 msgstr "Copyright: ver |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
