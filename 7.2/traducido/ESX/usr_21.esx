@@ -4,9 +4,10 @@
 
 			  Abandonar el editor y volver
 
+
 Esta capítulo versa acerca del uso combinado de otros programas con Vim,
-bien ejecutando el programa desde Vim o bien cerrándolo para volver más tarde.
-Más aún, esto explica las maneras de recordar el estado de Vim para
+bien ejecutando el programa desde Vim o bien cerrándolo para volver más
+tarde.  Más aún, esto explica las maneras de recordar el estado de Vim para
 restaurarlo más tarde.
 
 |21.1|	Suspender y continuar
@@ -23,8 +24,8 @@ Tabla de contenidos: |usr_toc.esx|
 ==============================================================================
 *21.1*	Suspender y continuar
 
-Al igual que la mayoría de programas Unix, puede suspender Vim
-pulsando CTRL-Z. Esto cierra Vim y le devuelve a la consola desde la cual se
+Al igual que la mayoría de programas Unix, puede suspender Vim pulsando
+CTRL-Z. Esto cierra Vim y le devuelve a la consola desde la cual se
 inicio. Puede entonces ejecutar cualquier número de órdenes hasta que se
 aburra. Una vez que haya acabado, vuelva a Vim con la orden «fg».
 
@@ -48,8 +49,8 @@ de Vim.
 ==============================================================================
 *21.2*	Ejecutar órdenes de consola
 
-Use «:!{orden}» para ejecutar una sola orden de consola desde Vim.
-Por ejemplo, para ver el listado de un directorio: >
+Use «:!{orden}» para ejecutar una sola orden de consola desde Vim.  Por
+ejemplo, para ver el listado de un directorio: >
 
 	:!ls
 	:!dir
@@ -66,18 +67,18 @@ Veamos com funciona esto de una manera general.
 	:w !{programa}		execute {programa} y envíe texto a su entrada
 	:[range]!{programa}	filtra texto a través de {programa}
 
-Nótese que la presencia de un rango antes de «!{programa}» marca una
-gran diferencia. Sin él, ejecuta el programa de manera normal, con el rango
-se filtran un número de líneas a través del programa.
+Nótese que la presencia de un rango antes de «!{programa}» marca una gran
+diferencia. Sin él, ejecuta el programa de manera normal, con el rango se
+filtran un número de líneas a través del programa.
 
-Es imposible ejecutar una fila de programas de esta manera. Pero una
-consola es mejor para estas funciones. Puede iniciar una nueva consola de la
+Es imposible ejecutar una fila de programas de esta manera. Pero una consola
+es mejor para estas funciones. Puede iniciar una nueva consola de la
 siguiente manera: >
 
 	:shell
 
-Esto es parecido al uso de «CTRL-Z» para suspender Vim. La diferencia
-es que se inicia una nueva consola.
+Esto es parecido al uso de «CTRL-Z» para suspender Vim. La diferencia es que
+se inicia una nueva consola.
 
 Al usar la GUI, la consola usará la ventana de Vim para entrada y salida. Ya
 que Vim no es una terminal, esto no funcionará perfectamente.
@@ -90,9 +91,10 @@ Por ejemplo, con:
 ==============================================================================
 *21.3*	Recordar información; viminfo
 
-Tras llevar un rato editando, tendrá texto en los registros, marcas en varios
-archivos, y un histórico de la línea de órdenes con órdenes compuestos
-cuidadosamente. ¡Todo esto se pierde al cerrar Vim, pero puede recuperarlo!
+Tras llevar un rato editando, tendrá texto en los registros, marcas en
+varios archivos, y un histórico de la línea de órdenes con órdenes
+compuestos cuidadosamente. ¡Todo esto se pierde al cerrar Vim, pero puede
+recuperarlo!
 
 El archivo viminfo está diseñado para almacenar información del estado:
 
@@ -108,7 +110,7 @@ restaurará la información.
 
 La opción 'viminfo' esta configurada por omisión para almacenar un limitado
 número de elementos. Puede que desee configurarlo para que recuerde más
-información. Esto se hace con la siguiente orden: > 
+información. Esto se hace con la siguiente orden: >
 
 	:set viminfo=string
 
@@ -122,9 +124,9 @@ orden presenta este aspecto: >
 
 	:set viminfo='1000
 
-La opción «f» controla si se guardan las marcas globales (A-Z y 0-9). Si esta
-opción es 0, no se guarda nada. Si es 1 o no especificó una opción «f», las
-marcas se guardan. Desea esta función, y por ello ahora obtiene esto: > 
+La opción «f» controla si se guardan las marcas globales (A-Z y 0-9). Si
+esta opción es 0, no se guarda nada. Si es 1 o no especificó una opción «f»,
+las marcas se guardan. Desea esta función, y por ello ahora obtiene esto: >
 
 	:set viminfo='1000,f1
 
@@ -154,9 +156,10 @@ Otras opciones que puede que desee usar:
 
 Para más información, véase la opción 'viminfo' y |viminfo-file|.
 
-Cuando inicia varias instancias de Vim, la última que cierre
-guardará su información. Esto puede causar que se pierda información
-que otras instancias anteriores guardaron.
+Cuando inicia varias instancias de Vim, la última que cierre guardará su
+información. Esto puede causar que se pierda información que otras
+instancias anteriores guardaron.
+
 
 VOLVER AL PUNTO EN QUE CERRÓ VIM
 
@@ -172,11 +175,12 @@ La posición a la que '0 apuntaba se convierte en '1. Y '1 se convierte en'2,
 y así en adelante. La marca '9 se pierde.
    La orden |:marks| es útil para ver a donde le llevarían '0 t '9.
 
+
 VOLVER A UN ARCHIVO
 
-Si desea volver a un archivo que editó recientemente, pero no al
-cerrar Vim, hay una manera un tanto más complicada. Puede ver una lista
-de archivos tecleando la orden: >
+Si desea volver a un archivo que editó recientemente, pero no al cerrar Vim,
+hay una manera un tanto más complicada. Puede ver una lista de archivos
+tecleando la orden: >
 
 	:oldfiles
 <	1: ~/.viminfo ~
@@ -205,13 +209,15 @@ Afortunadamente, hay una manera más simple: >
 	-- Más --
 
 Obtendrá la misma lista de archivos que con |:oldfiles|. Si desea editar
-«resume.txt», pulse primero «q» para detener el listado. Obtendrá un dialogo:
+«resume.txt», pulse primero «q» para detener el listado. Obtendrá un
+dialogo:
 
 	Teclee el número y pulse <Intro> (vaciar cancelaciones): ~
 
 Teclee «2» y pulse <Intro> para editar el segundo archivo.
 
 Más información en |:oldfiles|, |v:oldfiles| y |c_#<|.
+
 
 MOVER INFO DE UN VIM A OTRO
 
@@ -278,10 +284,11 @@ valor predeterminado es «blank,buffers,curdir,folds,help,options,winsize».
 	options		todas las opciones y mapeados
 	winsize		tamaño de ventanas
 
-Modifique esto según su convenienvia. Para también restaurar el tamaño de
-la ventana de Vim use, por ejemplo: >
+Modifique esto según su convenienvia. Para también restaurar el tamaño de la
+ventana de Vim use, por ejemplo: >
 
 	:set sessionoptions+=resize
+
 
 SESIÓN AQUÍ, SESIÓN ALLÁ
 
@@ -353,10 +360,11 @@ Pista: Para abrir un archivo que vea listado en la ventana del explorador en
 la ventana vacía, mueva el cursor al nombre del archivo y pulse «O». Pulsar
 dos veces con el ratón le daría el mismo resultado.
 
+
 UNIX Y MS-WINDOWS
 
-Hay gente que tiene que trabajar un día con sistemas MS-WINDOWS y con Unix al
-siguiente. Si es uno de ellos, considere añadir «slash» y «unix» a
+Hay gente que tiene que trabajar un día con sistemas MS-WINDOWS y con Unix
+al siguiente. Si es uno de ellos, considere añadir «slash» y «unix» a
 'sessionoptions'. Los archivos de sesión se guardarán en un formato que les
 permita ser usados en ambos sistemas. Esta es una orden para poner en su
 archivo vimrc: >
@@ -368,6 +376,7 @@ archivos de Unix, pero Vim para Unix no puede leer los archivos de sesión
 con formato de MS-Windows. De manera similar, Vim para MS-Windows entiene
 los nombres de archivo con «/» como diferentes palabras, pero Vim para Unix
 no entiende «\».
+
 
 SESIONES Y VIMINFO
 
@@ -425,9 +434,9 @@ Obviamente, puede recuperar ésto con: >
 	:loadview 1
 
 Ahora puede pasar de una vista a otra del archivo usando «:loadview» con y
-sin el argumento «1».
-De esta forma, puede guardar hasta diez vistas para el mismo archivo, uno
-sin numerar y nueve numerados del 1 al 9.
+sin el argumento «1».  De esta forma, puede guardar hasta diez vistas para el
+mismo archivo, uno sin numerar y nueve numerados del 1 al 9.
+
 
 UNA VISTA CON NOMBRE
 
@@ -501,9 +510,9 @@ Otro ejemplo:
 
 	// vim:set textwidth=72 dir=c\:\tmp:  use c:\tmp here ~
 
-Hay una barra invertida extra antes del primer colon, y por ello se incluye en
-la orden «:set». Se ignora el texto antes del segundo colon, y por ello puede
-introducir aquí un comentario.
+Hay una barra invertida extra antes del primer colon, y por ello se incluye
+en la orden «:set». Se ignora el texto antes del segundo colon, y por ello
+puede introducir aquí un comentario.
 
 Para más detalles, véase |modeline|.
 
@@ -511,4 +520,4 @@ Para más detalles, véase |modeline|.
 
 Siguiente capítulo: |usr_22.esx| Encontrar el archivo a editar
 
-Copyright: véase |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:
+Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
