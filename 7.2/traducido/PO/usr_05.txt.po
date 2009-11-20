@@ -1,0 +1,1775 @@
+# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es
+# extracted from usr_05.txt 
+# Copyright (C) 2009 
+# This file is distributed under the same license as the Vim 7.2 package.
+#
+# Translators credits:
+#   - Initial translation
+#       Álvaro Castro Castillo <alvaro.castro.castilla@gmail.com>
+#
+#   - Updates
+#       TRADUCTOR <CORREO>, AÑO 
+#
+# Debido al formato (txt) y al máximo de 80 columnas que pueden tener 
+# los textos de ayuda en Vim, así como el formato PO, por favor, leete los
+# apuntes concernientes a la edición de los archivos PO relativos a la
+# aplicación que desees usar.
+# También encontrarás información acerca del uso de herramientas gettext en el 
+# proyecto de localización (l10n) de Vim.
+# 
+# - http://www.assembla.com/wiki/show/vim-doc-es
+#
+# No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
+# este enlace puede ser de interés. A pesar de no formar parte, nuestra 
+# intención es homologarnos con su terminología y uso de la lengua 
+# en la medida de lo útil y posible.
+# 
+#  - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/notas
+# 
+# La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
+# pero también puede servir de referencia para otros términos no técnicos.
+# No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
+# traducción sea comprensible independientemente de la nacionalidad del
+# usuario. Si crees que alguna traducción puede llevar a confusión, consulta
+# la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
+# 
+#  - www.rae.es 
+#  - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages   
+# 
+# Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
+# se puede consultar con un simple grep, pogrep o cargado en Virtaal.
+# 
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Vim 7.2\n"
+"POT-Creation-Date: 2009-11-20 18:14+0100\n"
+"PO-Revision-Date: 2009-11-20 18:16+0100\n"
+"Last-Translator: Álvaro Castro Castillo <alvaro.castro.castilla@gmail.com>\n"
+"Language-Team: vim-doc-es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:2
+#, no-wrap
+msgid "*usr_05.txt*\tFor Vim version 7.2.  Last change: 2007 May 11\n"
+msgstr "*usr_05.esx*\tPara Vim version 7.2.  Último cambio: 11/6/2007\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:4
+#, no-wrap
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
+msgstr "\t\t  MANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:6
+#, no-wrap
+msgid "\t\t\t      Set your settings\n"
+msgstr " \t\t\t     Configuración\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:11
+msgid ""
+"Vim can be tuned to work like you want it to.  This chapter shows you how to "
+"make Vim start with options set to different values.  Add plugins to extend "
+"Vim's capabilities.  Or define your own macros."
+msgstr ""
+"Puede ajustar Vim para que funcione como desee. Este capítulo le muestra "
+"cómo iniciar Vim con opciones ajustadas a diferentes valores, añadir "
+"extensiones o definir sus propias macros."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:19
+#, no-wrap
+msgid ""
+"|05.1|\tThe vimrc file\n"
+"|05.2|\tThe example vimrc file explained\n"
+"|05.3|\tSimple mappings\n"
+"|05.4|\tAdding a plugin\n"
+"|05.5|\tAdding a help file\n"
+"|05.6|\tThe option window\n"
+"|05.7|\tOften used options\n"
+msgstr ""
+"|05.1|\tEl archivo vimrc\n"
+"|05.2|\tEl archivo vimrc de ejemplo, explicado\n"
+"|05.3|\tMapeos sencillos\n"
+"|05.4|\tAñadir una extensión\n"
+"|05.5|\tAñadir un archivo de ayuda\n"
+"|05.6|\tLa ventana de opciones\n"
+"|05.7|\tOpciones más comunes\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:23
+#, no-wrap
+msgid ""
+"     Next chapter: |usr_06.txt|  Using syntax highlighting\n"
+" Previous chapter: |usr_04.txt|  Making small changes\n"
+"Table of contents: |usr_toc.txt|\n"
+msgstr ""
+" Capítulo siguiente: |usr_06.esx|  Uso del resaltado de sintaxis\n"
+"  Capítulo anterior: |usr_04.esx|  Hacer cambios pequeños\n"
+"Tabla de contenidos: |usr_toc.esx|\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:24 original/TXT/usr_05.txt:63 original/TXT/usr_05.txt:219 original/TXT/usr_05.txt:266 original/TXT/usr_05.txt:418 original/TXT/usr_05.txt:467 original/TXT/usr_05.txt:506 original/TXT/usr_05.txt:621
+#, no-wrap
+msgid "==============================================================================\n"
+msgstr "==============================================================================\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:26
+#, no-wrap
+msgid "*05.1*\tThe vimrc file\t\t\t\t\t*vimrc-intro*\n"
+msgstr "*05.1*\tEl archivo «vimrc»\t\t\t\t*vimrc-intro*\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:31
+msgid ""
+"You probably got tired of typing commands that you use very often.  To start "
+"Vim with all your favorite option settings and mappings, you write them in "
+"what is called the vimrc file.  Vim executes the commands in this file when "
+"it starts up."
+msgstr ""
+"Probablemente se haya cansado de introducir órdenes que usa muy a menudo.  "
+"Para iniciar Vim con todas sus opciones y mapeos favoritos, los define en lo "
+"que se llama el archivo vimrc. Vim ejecuta las órdenes en este archivo al "
+"inicio."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:34
+msgid ""
+"If you already have a vimrc file (e.g., when your sysadmin has one setup for "
+"you), you can edit it this way: >"
+msgstr ""
+"Si ya tiene un archivo vimrc (por ejemplo, si su administrador ha puesto uno "
+"por ti), puede editarlo de este modo: >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:36
+#, no-wrap
+msgid "\t:edit $MYVIMRC\n"
+msgstr "\t:edit $MYVIMRC\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:40
+msgid ""
+"If you don't have a vimrc file yet, see |vimrc| to find out where you can "
+"create a vimrc file.  Also, the \":version\" command mentions the name of "
+"the \"user vimrc file\" Vim looks for."
+msgstr ""
+"Si todavía no tiene un archivo vimrc, lea |vimrc| para saber dónde puede "
+"crear un archivo vimrc. La orden «:version» también menciona el nombre "
+"del «archivo vimrc de usuario» que Vim busca."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:42
+msgid "For Unix and Macintosh this file is always used and is recommended:"
+msgstr "En Unix y Macintosh este archivo siempre se usa y recomienda:"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:44
+#, no-wrap
+msgid "\t~/.vimrc ~\n"
+msgstr "\t~/.vimrc ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:46
+msgid "For MS-DOS and MS-Windows you can use one of these:"
+msgstr "En MS-DOS y MS-Windows puede usar uno de los siguientes:"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:49
+#, no-wrap
+msgid ""
+"\t$HOME/_vimrc ~\n"
+"\t$VIM/_vimrc ~\n"
+msgstr ""
+"\t$HOME/_vimrc ~\n"
+"\t$VIM/_vimrc ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:54
+msgid ""
+"The vimrc file can contain all the commands that you type after a colon.  "
+"The most simple ones are for setting options.  For example, if you want Vim "
+"to always start with the 'incsearch' option on, add this line you your vimrc "
+"file: >"
+msgstr ""
+"El archivo vimrc puede contener todas las órdenes que se pueden teclear "
+"tras «:». Los más sencillos son los que se usan para ajustar "
+"opciones. Por ejemplo, si quiere que Vim comience siempre con la opción "
+"'incsearch' activada, añada la siguiente línea al archivo: >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:56
+#, no-wrap
+msgid "\tset incsearch\n"
+msgstr "\tset incsearch\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:59
+msgid ""
+"For this new line to take effect you need to exit Vim and start it again.  "
+"Later you will learn how to do this without exiting Vim."
+msgstr ""
+"Necesita salir de Vim e iniciarlo otra vez para que esta nueva línea tenga "
+"efecto. Luego verá cómo hacer esto sin salir de Vim."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:62
+msgid ""
+"This chapter only explains the most basic items.  For more information on "
+"how to write a Vim script file: |usr_41.txt|."
+msgstr ""
+"Este capítulo sólo explica los elementos más básicos. Para más "
+"información sobre cómo escribir un archivo de script de Vim: |usr_41.txt|."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:65
+#, no-wrap
+msgid "*05.2*\tThe example vimrc file explained\t\t*vimrc_example.vim*\n"
+msgstr "*05.2*\tEl archivo vimrc de ejemplo, explicado\t\t*vimrc_example.vim*\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:69
+msgid ""
+"In the first chapter was explained how the example vimrc (included in the "
+"Vim distribution) file can be used to make Vim startup in not-compatible "
+"mode (see |not-compatible|).  The file can be found here:"
+msgstr ""
+"En el primer capítulo se explicó como el archivo vimrc de ejemplo "
+"(incluido en la distribución de Vim) se puede emplear para iniciar Vim en "
+"modo no-compatible (ver |not-compatible|). Puede encontrar el archivo aquí:"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:71
+#, no-wrap
+msgid "\t$VIMRUNTIME/vimrc_example.vim ~\n"
+msgstr "\t$VIMRUNTIME/vimrc_example.vim ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:75
+msgid ""
+"In this section we will explain the various commands used in this file.  "
+"This will give you hints about how to set up your own preferences.  Not "
+"everything will be explained though.  Use the \":help\" command to find out "
+"more."
+msgstr ""
+"En esta sección explicaremos las diferentes órdenes empleadas en este "
+"archivo. Esto le dará pistas sobre cómo preparar su propia "
+"configuración.  No todo se explicará, en cualquier caso. Use la orden "
+"\":help\" e investigue."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:78
+#, no-wrap
+msgid ""
+">\n"
+"\tset nocompatible\n"
+msgstr ""
+">\n"
+"\tset nocompatible\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:82
+msgid ""
+"As mentioned in the first chapter, these manuals explain Vim working in an "
+"improved way, thus not completely Vi compatible.  Setting the 'compatible' "
+"option off, thus 'nocompatible' takes care of this."
+msgstr ""
+"Tal y como se mencionó en el primer capítulo, estos manuales explican un "
+"Vim funcionando en un modo mejorado, y por lo tanto no completamente "
+"Vi-compatible. Desactivar la opción 'compatible' o activar 'nocompatible' "
+"se encarga de esto."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:85
+#, no-wrap
+msgid ""
+">\n"
+"\tset backspace=indent,eol,start\n"
+msgstr ""
+">\n"
+"\tset backspace=indent,eol,start\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:91
+msgid ""
+"This specifies where in Insert mode the <BS> is allowed to delete the "
+"character in front of the cursor.  The three items, separated by commas, "
+"tell Vim to delete the white space at the start of the line, a line break "
+"and the character before where Insert mode started.  >"
+msgstr ""
+"Esto especifica que se permita en el modo Insertar que <Retroceso> pueda "
+"eliminar el carácter delante del cursor. Los tres elementos, separados por "
+"comas, le dicen a Vim que puede eliminar el espacio en blanco al comienzo de "
+"la línea, un salto de línea y el carácter anterior a donde inició el "
+"modo Insertar.  >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:93
+#, no-wrap
+msgid "\tset autoindent\n"
+msgstr "\tset autoindent\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:99
+msgid ""
+"This makes Vim use the indent of the previous line for a newly created "
+"line.  Thus there is the same amount of white space before the new line.  "
+"For example when pressing <Enter> in Insert mode, and when using the \"o\" "
+"command to open a new line.  >"
+msgstr ""
+"Esto hace que Vim use la sangría de la línea anterior para una nueva "
+"línea, con lo que tendrá la misma cantidad de espacio en blanco al "
+"comienzo. Por ejemplo, cuando pulsa <Entrar> en modo Insertar, y cuando usa "
+"la orden «o» para iniciar una nueva línea.  >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:105
+#, no-wrap
+msgid ""
+"\tif has(\"vms\")\n"
+"\t  set nobackup\n"
+"\telse\n"
+"\t  set backup\n"
+"\tendif\n"
+msgstr ""
+"\tif has(\"vms\")\n"
+"\t  set nobackup\n"
+"\telse\n"
+"\t  set backup\n"
+"\tendif\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:110
+msgid ""
+"This tells Vim to keep a backup copy of a file when overwriting it.  But not "
+"on the VMS system, since it keeps old versions of files already.  The backup "
+"file will have the same name as the original file with \"~\" added.  See "
+"|07.4| >"
+msgstr ""
+"Esto le dice a Vim que mantenga una copia de seguridad de un archivo cuando "
+"lo sobreescribe. Pero no en el sistema VMS, ya que éste mantiene versiones "
+"anteriores por su cuenta. El backup tendrá el mismo nombre con un «~» "
+"delante.  Véase |07.4| >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:112
+#, no-wrap
+msgid "\tset history=50\n"
+msgstr "\tset history=50\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:116
+msgid ""
+"Keep 50 commands and 50 search patterns in the history.  Use another number "
+"if you want to remember fewer or more lines.  >"
+msgstr ""
+"Mantiene 50 órdenes y 50 patrones de búsqueda en el histórico. Use otro "
+"número si quiere almacenar más o menos líneas.  >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:118
+#, no-wrap
+msgid "\tset ruler\n"
+msgstr "\tset ruler\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:121
+msgid ""
+"Always display the current cursor position in the lower right corner of the "
+"Vim window."
+msgstr ""
+"Muestra siempre la posición actual en la esquina inferior derecha de la "
+"ventana de Vim."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:124
+#, no-wrap
+msgid ""
+">\n"
+"\tset showcmd\n"
+msgstr ""
+">\n"
+"\tset showcmd\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:129
+msgid ""
+"Display an incomplete command in the lower right corner of the Vim window, "
+"left of the ruler.  For example, when you type \"2f\", Vim is waiting for "
+"you to type the character to find and \"2f\" is displayed.  When you press "
+"\"w\" next, the \"2fw\" command is executed and the displayed \"2f\" is "
+"removed."
+msgstr ""
+"Muestra una orden incompleta en la esquina inferior derecha de la ventana de "
+"Vim, a la izquierda del «ruler» (regla). Por ejemplo, cuando pulsa «2f», "
+"Vim está esperando que introduzcas el carácter a encontrar y muestra "
+"«2f» es mostrado.  Cuando pulse «w», la orden «2fw» es ejecutará y el "
+"«2f» se eliminará."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:138
+#, no-wrap
+msgid ""
+"\t+-------------------------------------------------+\n"
+"\t|text in the Vim window\t\t\t\t  |\n"
+"\t|~\t\t\t\t\t\t  |\n"
+"\t|~\t\t\t\t\t\t  |\n"
+"\t|-- VISUAL --\t\t\t2f     43,8   17% |\n"
+"\t+-------------------------------------------------+\n"
+"\t ^^^^^^^^^^^\t\t      ^^^^^^^^ ^^^^^^^^^^\n"
+"\t  'showmode'\t\t     'showcmd'\t'ruler'\n"
+msgstr ""
+"\t+-------------------------------------------------+\n"
+"\t|texto en la ventana de Vim\t\t\t  |\n"
+"\t|~\t\t\t\t\t\t  |\n"
+"\t|~\t\t\t\t\t\t  |\n"
+"\t|-- VISUAL --\t\t\t2f     43,8   17% |\n"
+"\t+-------------------------------------------------+\n"
+"\t ^^^^^^^^^^^\t\t      ^^^^^^^^ ^^^^^^^^^^\n"
+"\t  'showmode'\t\t     'showcmd'\t'ruler'\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:141
+#, no-wrap
+msgid ""
+">\n"
+"\tset incsearch\n"
+msgstr ""
+">\n"
+"\tset incsearch\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:143
+msgid "Display the match for a search pattern when halfway typing it."
+msgstr "Mostrar la coincidencia de un patrón de búsqueda antes de pulsar <Entrar>."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:146
+#, no-wrap
+msgid ""
+">\n"
+"\tmap Q gq\n"
+msgstr ""
+">\n"
+"\tmap Q gq\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:151
+msgid ""
+"This defines a key mapping.  More about that in the next section.  This "
+"defines the \"Q\" command to do formatting with the \"gq\" operator.  This "
+"is how it worked before Vim 5.0.  Otherwise the \"Q\" command starts Ex "
+"mode, but you will not need it."
+msgstr ""
+"Define el mapeo de una tecla (más información en la próxima "
+"sección). Esto define la orden «Q» para que de formato con el operador "
+"«gq». Así es como funcionaba antes de Vim 5.0. En ausencia de esto, la "
+"orden «Q» inicia el modo Ex, pero no lo necesitará."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:154
+#, no-wrap
+msgid ""
+">\n"
+"\tvnoremap _g y:exe \"grep /\" . escape(@\", '\\\\/') . \"/ *.c *.h\"<CR>\n"
+msgstr ""
+">\n"
+"\tvnoremap _g y:exe \"grep /\" . escape(@\", '\\\\/') . \"/ *.c *.h\"<CR>\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:159
+msgid ""
+"This mapping yanks the visually selected text and searches for it in C "
+"files.  This is a complicated mapping.  You can see that mappings can be "
+"used to do quite complicated things.  Still, it is just a sequence of "
+"commands that are executed like you typed them."
+msgstr ""
+"Este mapeo copia el texto seleccionado visualmente y lo busca en archivos "
+"C.  Este es un mapeo complicado. Aquí puede ver que los mapeos se pueden "
+"emplear para hacer cosas realmente complicadas. En cualquier caso, es "
+"simplemente una secuencia de órdenes que se ejecutan justo como los "
+"tecleas."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:165
+#, no-wrap
+msgid ""
+">\n"
+"\tif &t_Co > 2 || has(\"gui_running\")\n"
+"\t  syntax on\n"
+"\t  set hlsearch\n"
+"\tendif\n"
+msgstr ""
+">\n"
+"\tif &t_Co > 2 || has(\"gui_running\")\n"
+"\t  syntax on\n"
+"\t  set hlsearch\n"
+"\tendif\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:170
+msgid ""
+"This switches on syntax highlighting, but only if colors are available.  And "
+"the 'hlsearch' option tells Vim to highlight matches with the last used "
+"search pattern.  The \"if\" command is very useful to set options only when "
+"some condition is met.  More about that in |usr_41.txt|."
+msgstr ""
+"Esto activa el resaltado de sintaxis, pero sólo si hay colores "
+"disponibles. Y la opción 'hlsearch' le dice a Vim que resalte las "
+"coincidencias con el último patrón de búsqueda empleado. La orden «if» "
+"es muy útil para activar opciones sólo cuando se cumple alguna "
+"condición.  Véase |usr_41.txt|"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:173
+#, no-wrap
+msgid ""
+"\t\t\t\t\t\t\t*vimrc-filetype*  >\n"
+"\tfiletype plugin indent on\n"
+msgstr ""
+"\t\t\t\t\t\t\t*vimrc-filetype*  >\n"
+"\tfiletype plugin indent on\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:183
+#, no-wrap
+msgid ""
+"This switches on three very clever mechanisms:\n"
+"1. Filetype detection.\n"
+"   Whenever you start editing a file, Vim will try to figure out what kind "
+"of\n"
+"   file this is.  When you edit \"main.c\", Vim will see the \".c\" "
+"extension and\n"
+"   recognize this as a \"c\" filetype.  When you edit a file that starts "
+"with\n"
+"   \"#!/bin/sh\", Vim will recognize it as a \"sh\" filetype.\n"
+"   The filetype detection is used for syntax highlighting and the other "
+"two\n"
+"   items below.\n"
+"   See |filetypes|.\n"
+msgstr ""
+"Esto activa tres mecanismos muy interesantes:\n"
+"1. Detección de tipo de archivo\n"
+"   Cuando comienza a editar un archivo, Vim intentará averiguar qué tipo "
+"de\n"
+"   archivo es. Cuando edita «main.c», Vim verá la extensión «.c» y\n"
+"   la reconocerá como archivo de tipo C. Cuando edite un archivo que\n"
+"   comience con \"#!/bin/sh\", Vim reconocerá el tipo de archivo «sh».\n"
+"   La detección de tipo de archivo se usa para resaltar sintaxis y los\n"
+"   otros  dos aspectos de abajo.\n"
+"   Véase |filetypes|.\n"
+
+#. type: Bullet: '2. '
+#: original/TXT/usr_05.txt:190
+msgid ""
+"Using filetype plugin files Many different filetypes are edited with "
+"different options.  For example, when you edit a \"c\" file, it's very "
+"useful to set the 'cindent' option to automatically indent the lines.  These "
+"commonly useful option settings are included with Vim in filetype plugins.  "
+"You can also add your own, see |write-filetype-plugin|."
+msgstr ""
+"Usar extensiones de tipo de archivo Muchos tipos de archivo se editan con "
+"diferentes opciones. Por ejemplo, cuando edita un archivo «c», es muy "
+"útil activar la opción «cindent» para sangrar las líneas "
+"automáticamente. Estas opciones empleadas comúnmente están incluidas con "
+"Vim en las extensiones de tipos de archivo. También puede incluir las tuyas "
+"propias, véase |write-filetype-plugin|."
+
+#. type: Bullet: '3. '
+#: original/TXT/usr_05.txt:195
+msgid ""
+"Using indent files When editing programs, the indent of a line can often be "
+"computed automatically.  Vim comes with these indent rules for a number of "
+"filetypes.  See |:filetype-indent-on| and 'indentexpr'."
+msgstr ""
+"Usar archivos de sangría Cuando edita programas, la sangría de una línea "
+"puede a menudo ser computada de manera automática. Vim viene con esas "
+"reglas de sangrado para diversos tipos de archivo.  Véase "
+"|:filetype-indent-on| y 'indentexpr'."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:198
+#, no-wrap
+msgid ""
+">\n"
+"\tautocmd FileType text setlocal textwidth=78\n"
+msgstr ""
+">\n"
+"\tautocmd FileType text setlocal textwidth=78\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:205
+msgid ""
+"This makes Vim break text to avoid lines getting longer than 78 characters.  "
+"But only for files that have been detected to be plain text.  There are "
+"actually two parts here.  \"autocmd FileType text\" is an autocommand.  This "
+"defines that when the file type is set to \"text\" the following command is "
+"automatically executed.  \"setlocal textwidth=78\" sets the 'textwidth' "
+"option to 78, but only locally in one file."
+msgstr ""
+"Esto hace que Vim divida el texto para evitar que las líneas sean más "
+"largas de 78 caracteres. Pero sólo para archivos que se han identificado "
+"como de texto regular. Aqui hay dos aspectos. «autocmd FileType text» es "
+"una autoorden. Esto define que cuando el tipo de archivo sea «texto», la "
+"orden posterior se ejecute automáticamente. «setlocal textwidth=78» "
+"ajusta la opción 'textwidth' a 78, pero sólo localmente a un archivo."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:211
+#, no-wrap
+msgid ""
+"\t\t\t\t\t\t\t*restore-cursor*  >\n"
+"\tautocmd BufReadPost *\n"
+"\t    \\ if line(\"'\\\"\") > 0 && line(\"'\\\"\") <= line(\"$\") |\n"
+"\t    \\   exe \"normal g`\\\"\" |\n"
+"\t    \\ endif\n"
+msgstr ""
+"\t\t\t\t\t\t\t*restore-cursor*  >\n"
+"\tautocmd BufReadPost *\n"
+"\t    \\ if line(\"'\\\"\") > 0 && line(\"'\\\"\") <= line(\"$\") |\n"
+"\t    \\   exe \"normal g`\\\"\" |\n"
+"\t    \\ endif\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:218
+msgid ""
+"Another autocommand.  This time it is used after reading any file.  The "
+"complicated stuff after it checks if the '\" mark is defined, and jumps to "
+"it if so.  The backslash at the start of a line is used to continue the "
+"command from the previous line.  That avoids a line getting very long.  See "
+"|line-continuation|.  This only works in a Vim script file, not when typing "
+"commands at the command-line."
+msgstr ""
+"Otra autoorden. Esta vez se ejecuta tras leer cualquier archivo. Las cosas "
+"tan complicadas que hay después de él comprueban si la marca '\" está "
+"definida, y salta hacia ella si lo está. La barra invertida al comienzo de "
+"la línea se emplea para continuarla desde la anterior. Esto ayuda a acortar "
+"las líneas.  Véase |line-continuation|. Esto funciona sólo dentro de un "
+"script de Vim, no cuando se teclean órdenes en la línea de órdenes."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:221
+#, no-wrap
+msgid "*05.3*\tSimple mappings\n"
+msgstr "*05.3*\tMapeos sencillos\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:227
+msgid ""
+"A mapping enables you to bind a set of Vim commands to a single key.  "
+"Suppose, for example, that you need to surround certain words with curly "
+"braces.  In other words, you need to change a word such as \"amount\" into "
+"\"{amount}\".  With the :map command, you can tell Vim that the F5 key does "
+"this job.  The command is as follows: >"
+msgstr ""
+"Un mapeo le permite atar un conjunto de órdenes Vim a una sola tecla.  "
+"Suponga, por ejemplo, que necesita poner una palabra entre llaves. En otras "
+"palabras necesita cambiar una palabra como «cantidad» a "
+"«{cantidad}». Con la orden :map, puede decirle a Vim que la tecla F5 haga "
+"precisamente eso. La orden es la siguiente: >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:235
+#, no-wrap
+msgid ""
+"\t:map <F5> i{<Esc>ea}<Esc>\n"
+"<\n"
+"\tNote:\n"
+"\tWhen entering this command, you must enter <F5> by typing four\n"
+"\tcharacters.  Similarly, <Esc> is not entered by pressing the <Esc>\n"
+"\tkey, but by typing five characters.  Watch out for this difference\n"
+"\twhen reading the manual!\n"
+msgstr ""
+"\t:map <F5> i{<Esc>ea}<Esc>\n"
+"<\n"
+"\tNota:\n"
+"\tCuando introduzca esta orden, debe introducir <F5> tecleando\n"
+"        cuatro caracteres. De igual manera, <Esc> no se introduce pulsando\n"
+"        la tecla <Esc>, sino tecleando cinco caracteres. De hecho, ¡¡has "
+"de\n"
+"\tponer los nombres en inglés, no la versión traducida!!\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:239
+#, no-wrap
+msgid ""
+"Let's break this down:\n"
+"    <F5>\tThe F5 function key.  This is the trigger key that causes the\n"
+"\t\tcommand to be executed as the key is pressed.\n"
+msgstr ""
+"Veámoslo por partes:\n"
+"    <F5>\tLa tecla de función F5.  Esta es la tecla que lanzará la\n"
+"                orden para que éste se ejecute al ser pulsada.\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:241
+#, no-wrap
+msgid "    i{<Esc>\tInsert the { character.  The <Esc> key ends Insert mode.\n"
+msgstr "    i{<Esc>\tInsertar el carácter {. <Esc> sale del modo Insertar.\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:243
+#, no-wrap
+msgid "    e\t\tMove to the end of the word.\n"
+msgstr "    e\t\tMoverse al final de la palabra.\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:245
+#, no-wrap
+msgid "    a}<Esc>\tAppend the } to the word.\n"
+msgstr "    a}<Esc>\tAñadir el } a la palabra.\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:248
+msgid ""
+"After you execute the \":map\" command, all you have to do to put {} around "
+"a word is to put the cursor on the first character and press F5."
+msgstr ""
+"Tras ejecutar la orden «:map», todo lo que tiene que hacer para rodear la "
+"palabra con {} es poner el cursor en el primer carácter y pulsar F5."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:256
+#, no-wrap
+msgid ""
+"In this example, the trigger is a single key; it can be any string.  But "
+"when\n"
+"you use an existing Vim command, that command will no longer be available.\n"
+"You better avoid that.\n"
+"   One key that can be used with mappings is the backslash.  Since you\n"
+"probably want to define more than one mapping, add another character.  You\n"
+"could map \"\\p\" to add parentheses around a word, and \"\\c\" to add curly "
+"braces,\n"
+"for example: >\n"
+msgstr ""
+"En este ejemplo, el lanzador es una simple tecla; pero puede ser una\n"
+"cadena. Pero cuando use una orden de Vim preexistente, esa orden ya no\n"
+"volverá a estar disponible.\n"
+"   Una tecla que puede usar con los mapeos es la barra invertida o\n"
+"<Leader>. Ya que querrá definir más de un mapeo, añada otro carácter.\n"
+"Puedes mapear \"\\p\" para que añada paréntesis alrededor de una palabra, "
+"y\n"
+"«\\c» para que añada llaves, por ejemplo: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:259
+#, no-wrap
+msgid ""
+"\t:map \\p i(<Esc>ea)<Esc>\n"
+"\t:map \\c i{<Esc>ea}<Esc>\n"
+msgstr ""
+"\t:map \\p i(<Esc>ea)<Esc>\n"
+"\t:map \\c i{<Esc>ea}<Esc>\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:262
+msgid ""
+"You need to type the \\ and the p quickly after another, so that Vim knows "
+"they belong together."
+msgstr ""
+"Necesita teclear la «\\» y la «p» rápidamente una detrás de la otra, "
+"para que Vim sepa que van juntas."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:265
+msgid ""
+"The \":map\" command (with no arguments) lists your current mappings.  At "
+"least the ones for Normal mode.  More about mappings in section |40.1|."
+msgstr ""
+"La orden «:map» (sin argumentos) le da un listado de sus mapeos actuales.  "
+"Al menos aquellos en el modo Normal. Más sobre mapeos en la sección "
+"|40.1|."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:268
+#, no-wrap
+msgid "*05.4*\tAdding a plugin\t\t\t\t\t*add-plugin* *plugin*\n"
+msgstr "*05.4*\tAñadir una extensión\t\t\t\t*add-plugin* *plugin*\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:273
+msgid ""
+"Vim's functionality can be extended by adding plugins.  A plugin is nothing "
+"more than a Vim script file that is loaded automatically when Vim starts.  "
+"You can add a plugin very easily by dropping it in your plugin directory.  "
+"{not available when Vim was compiled without the |+eval| feature}"
+msgstr ""
+"La funcionalidad de Vim puede ser extendida añadiendo extensiones. Una "
+"extensiones no es nada más que un script de Vim que se carga "
+"automáticamente cuando Vim arranca. Puede añadir nuevas extensiones "
+"añadiéndolos al directorio de extensiones.  {no disponible si no se ha "
+"compilad con Vim con la opción |+eval|}."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:275
+msgid "There are two types of plugins:"
+msgstr "Hay dos tipos de extensiones:"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:278
+#, no-wrap
+msgid ""
+"    global plugin: Used for all kinds of files\n"
+"  filetype plugin: Only used for a specific type of file\n"
+msgstr ""
+"               Extensión global: Empleado para todos los tipos de archivo\n"
+"   Extensión de tipo de archivo: Empleado para un tipo de archivo "
+"específico\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:281
+msgid ""
+"The global plugins will be discussed first, then the filetype ones "
+"|add-filetype-plugin|."
+msgstr ""
+"Las extensiones globales se explicarán primero, se pasará después a los "
+"específicos de tipo de archivo |add-filetype.plugin|."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:284
+#, no-wrap
+msgid "GLOBAL PLUGINS\t\t\t\t\t\t*standard-plugin*\n"
+msgstr "EXTENSIONES GLOBALES\t\t\t\t\t*standard-plugin*\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:290
+msgid ""
+"When you start Vim, it will automatically load a number of global plugins.  "
+"You don't have to do anything for this.  They add functionality that most "
+"people will want to use, but which was implemented as a Vim script instead "
+"of being compiled into Vim.  You can find them listed in the help index "
+"|standard-plugin-list|.  Also see |load-plugins|."
+msgstr ""
+"Cuando arranque Vim, verá que carga automáticamente un grupo de "
+"extensiones globales. No tiene que hacer nada al respecto. Éstos añaden "
+"funcionalidad que le interesan a la mayoría de gente, pero que se "
+"implementaron como scripts de Vim en lugar de compilarlos en Vim. Puedes "
+"verlos listados en el índice de ayuda |standard-plugin-list|. Véase "
+"también |load-plugins|."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:296
+#, no-wrap
+msgid ""
+"\t\t\t\t\t\t\t*add-global-plugin*\n"
+"You can add a global plugin to add functionality that will always be "
+"present\n"
+"when you use Vim.  There are only two steps for adding a global plugin:\n"
+"1. Get a copy of the plugin.\n"
+"2. Drop it in the right directory.\n"
+msgstr ""
+"\t\t\t\t\t\t\t*add-global-plugin*\n"
+"Puede poner un extensión global para añadir funcionalidad que deba estar\n"
+"siempre presente cuando use Vim. Sólo tiene que seguir dos pasos para\n"
+"añadir una extensión global:\n"
+"1. Conseguir una copia de la extensión.\n"
+"2. Ubicar en el directorio adecuado\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:299
+msgid "GETTING A GLOBAL PLUGIN"
+msgstr "CONSEGUIR UNA EXTENSIÓN GLOBAL"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:306
+#, no-wrap
+msgid ""
+"Where can you find plugins?\n"
+"- Some come with Vim.  You can find them in the directory "
+"$VIMRUNTIME/macros\n"
+"  and its sub-directories.\n"
+"- Download from the net.  There is a large collection on "
+"http://www.vim.org.\n"
+"- They are sometimes posted in a Vim |maillist|.\n"
+"- You could write one yourself, see |write-plugin|.\n"
+msgstr ""
+"¿Dónde encontrar extensiones?\n"
+"- Algunos vienen con Vim. Puede encontrarlos en el directorio\n"
+"  $VIMRUNTIME/macro y sus subdirectorios.\n"
+"- Descargarlos de la red. Hay una buena colección en http://www.vim.org.\n"
+"- Algunas veces se envían a la |maillist| de Vim.\n"
+"- Puede escribir uno usted mismo, véase |write-plugin|.\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:309
+msgid ""
+"Some plugins come as a vimball archive, see |vimball|.  Some plugins can be "
+"updated automatically, see |getscript|."
+msgstr ""
+"Algunas extensiones vienen como un archivo comprimido, véase |vimball|.  "
+"Algunas extensiones pueden ser actualizados automáticamente, véase "
+"|getscript|."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:312
+msgid "USING A GLOBAL PLUGIN"
+msgstr "USAR UNA EXTENSIÓN GLOBAL"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:315
+msgid ""
+"First read the text in the plugin itself to check for any special "
+"conditions.  Then copy the file to your plugin directory:"
+msgstr ""
+"Lea primero el texto en la extensión descargada para comprobar cualquier "
+"requerimiento. A continuación copielo al directorio de extensiones:"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:323
+#, no-wrap
+msgid ""
+"\tsystem\t\tplugin directory ~\n"
+"\tUnix\t\t~/.vim/plugin/\n"
+"\tPC and OS/2\t$HOME/vimfiles/plugin or $VIM/vimfiles/plugin\n"
+"\tAmiga\t\ts:vimfiles/plugin\n"
+"\tMacintosh\t$VIM:vimfiles:plugin\n"
+"\tMac OS X\t~/.vim/plugin/\n"
+"\tRISC-OS\t\tChoices:vimfiles.plugin\n"
+msgstr ""
+"\tsistema\t\tdirectorio de extensiones  ~\n"
+"\tUnix\t\t~/.vim/plugin/\n"
+"\tPC and OS/2\t$HOME/vimfiles/plugin or $VIM/vimfiles/plugin\n"
+"\tAmiga\t\ts:vimfiles/plugin\n"
+"\tMacintosh\t$VIM:vimfiles:plugin\n"
+"\tMac OS X\t~/.vim/plugin/\n"
+"\tRISC-OS\t\tChoices:vimfiles.plugin\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:325
+msgid "Example for Unix (assuming you didn't have a plugin directory yet): >"
+msgstr "Ejemplo para Unix (asumiendo que no tiene un directorio de extensiones): >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:329
+#, no-wrap
+msgid ""
+"\tmkdir ~/.vim\n"
+"\tmkdir ~/.vim/plugin\n"
+"\tcp /usr/local/share/vim/vim60/macros/justify.vim ~/.vim/plugin\n"
+msgstr ""
+"\tmkdir ~/.vim\n"
+"\tmkdir ~/.vim/plugin\n"
+"\tcp /usr/local/share/vim/vim60/macros/justify.vim ~/.vim/plugin\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:332
+msgid ""
+"That's all! Now you can use the commands defined in this plugin to justify "
+"text."
+msgstr ""
+"¡Esto es todo! Ahora puede usar las órdenes definidas en esta extensión "
+"para justificar texto."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:337
+msgid ""
+"Instead of putting plugins directly into the plugin/ directory, you may "
+"better organize them by putting them into subdirectories under plugin/.  As "
+"an example, consider using \"~/.vim/plugin/perl/*.vim\" for all your Perl "
+"plugins."
+msgstr ""
+"En lugar de poner las extensiones directamente en el directorio "
+"«plugins/», quizá prefiera organizarlos poniéndolos en subdirectorios "
+"dentro de «plugins/». Por ejemplo, ponga todas sus extensiones de Perl "
+"bajo el subdirectorio «~/.vim/plugin/perl/*.vim»."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:340
+#, no-wrap
+msgid "FILETYPE PLUGINS\t\t\t*add-filetype-plugin* *ftplugins*\n"
+msgstr "EXTENSIONES DE TIPO DE ARCHIVO\t\t*add-filetype-plugin* *ftplugins*\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:343
+msgid ""
+"The Vim distribution comes with a set of plugins for different filetypes "
+"that you can start using with this command: >"
+msgstr ""
+"La distribución de Vim viene con un conjunto de extensiones para diferentes "
+"tipos de archivo, que puede comenzar a usar con esta orden: >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:345
+#, no-wrap
+msgid "\t:filetype plugin on\n"
+msgstr "\t:filetype plugin on\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:347
+msgid "That's all! See |vimrc-filetype|."
+msgstr "Eso es todo. Véase |vimrc-filetype|."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:352
+msgid ""
+"If you are missing a plugin for a filetype you are using, or you found a "
+"better one, you can add it.  There are two steps for adding a filetype "
+"plugin: 1. Get a copy of the plugin.  2. Drop it in the right directory."
+msgstr ""
+"Si echa de menos una extensión para un tipo de archivo que esté usando, o "
+"encontró uno mejor, puede añadirlo. Hay dos pasos para conseguirlo: "
+"1. Conseguir una copia de la extensión.  2. Copiar en el directorio "
+"adecuado."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:355
+msgid "GETTING A FILETYPE PLUGIN"
+msgstr "CONSEGUIR UNA EXTENSIÓN DE TIPO DE ARCHIVO"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:360
+msgid ""
+"You can find them in the same places as the global plugins.  Watch out if "
+"the type of file is mentioned, then you know if the plugin is a global or a "
+"filetype one.  The scripts in $VIMRUNTIME/macros are global ones, the "
+"filetype plugins are in $VIMRUNTIME/ftplugin."
+msgstr ""
+"Puede encontrarlos en los mismos sitios que las extensiones globales.  "
+"Compruebe si el tipo de archivo se menciona o no, de ese modo puede saber si "
+"la extensión es global o de tipo de archivo. Los scripts en "
+"«$VIMRUNTIME/macros» son globales, los específicos están en "
+"«$VIMRUNTIME/ftplugin»."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:363
+#, no-wrap
+msgid "USING A FILETYPE PLUGIN\t\t\t\t\t*ftplugin-name*\n"
+msgstr "USAR UNA EXTENSIÓN DE TIPO DE ARCHIVO\t\t\t*ftplugin-name*\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:369
+msgid ""
+"You can add a filetype plugin by dropping it in the right directory.  The "
+"name of this directory is in the same directory mentioned above for global "
+"plugins, but the last part is \"ftplugin\".  Suppose you have found a plugin "
+"for the \"stuff\" filetype, and you are on Unix.  Then you can move this "
+"file to the ftplugin directory: >"
+msgstr ""
+"Puede añadir una extensión de tipo de archivo ubicándolo en el directorio "
+"adecuado. El nombre de este directorio está en el mismo directorio "
+"mencionado previamente para extensiones globales, pero la última parte es "
+"«ftplugin». Suponga que ha encontrado una extensión para el tipo de "
+"archivo «cosas» y que está bajo Unix.  Puede mover este archivo al "
+"directorio «ftplugin/»: >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:371
+#, no-wrap
+msgid "\tmv thefile ~/.vim/ftplugin/stuff.vim\n"
+msgstr "\tmv thefile ~/.vim/ftplugin/cosas.vim\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:375
+msgid ""
+"If that file already exists you already have a plugin for \"stuff\".  You "
+"might want to check if the existing plugin doesn't conflict with the one you "
+"are adding.  If it's OK, you can give the new one another name: >"
+msgstr ""
+"Si ese archivo ya existe, es que ya tiene una extensión para «cosas». Tal "
+"vez desee comprobar si la extensión existente no es conflictivo con el que "
+"añade. Si no hay conflicto, puede darle otro nombre:"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:377
+#, no-wrap
+msgid "\tmv thefile ~/.vim/ftplugin/stuff_too.vim\n"
+msgstr "\tmv thefile ~/.vim/ftplugin/cosas_dos.vim\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:381
+msgid ""
+"The underscore is used to separate the name of the filetype from the rest, "
+"which can be anything.  If you use \"otherstuff.vim\" it wouldn't work, it "
+"would be loaded for the \"otherstuff\" filetype."
+msgstr ""
+"El guión bajo se usa para separar el nombre del tipo de archivo del resto, "
+"que puede ser cualquier cosa. Si usa «otrascosas.vim» no funcionaría, ya "
+"que se cargaría como tipo de archivo «otrascosas»."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:385
+msgid ""
+"On MS-DOS you cannot use long filenames.  You would run into trouble if you "
+"add a second plugin and the filetype has more than six characters.  You can "
+"use an extra directory to get around this: >"
+msgstr ""
+"En MS-DOS no puede usar nombres de archivo largos. Tendrá problemas si "
+"añades una segunda extensión el tipo de archivo tiene más de seis "
+"caracteres. Puede añadir un directorio extra para evitar este problema: >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:388
+#, no-wrap
+msgid ""
+"\tmkdir $VIM/vimfiles/ftplugin/fortran\n"
+"\tcopy thefile $VIM/vimfiles/ftplugin/fortran/too.vim\n"
+msgstr ""
+"\tmkdir $VIM/vimfiles/ftplugin/fortran\n"
+"\tcopy thefile $VIM/vimfiles/ftplugin/fortran/dos.vim\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:390
+msgid "The generic names for the filetype plugins are: >"
+msgstr "Los nombres genéricos para las extensiones de tipo de archivo son: >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:394
+#, no-wrap
+msgid ""
+"\tftplugin/<filetype>.vim\n"
+"\tftplugin/<filetype>_<name>.vim\n"
+"\tftplugin/<filetype>/<name>.vim\n"
+msgstr ""
+"\tftplugin/<tipo_de_archivo>.vim\n"
+"\tftplugin/<tipo_de_archivo>_<nombre>.vim\n"
+"\tftplugin/<tipo_de_archivo>/<nombre>.vim\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:397
+msgid ""
+"Here \"<name>\" can be any name that you prefer.  Examples for the \"stuff\" "
+"filetype on Unix: >"
+msgstr ""
+"Aquí, «<nombre>» puede ser cualquier nombre que quieras.  Ejemplos para "
+"el tipo de archivo «cosas» en Unix: >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:401
+#, no-wrap
+msgid ""
+"\t~/.vim/ftplugin/stuff.vim\n"
+"\t~/.vim/ftplugin/stuff_def.vim\n"
+"\t~/.vim/ftplugin/stuff/header.vim\n"
+msgstr ""
+"\t~/.vim/ftplugin/cosas.vim\n"
+"\t~/.vim/ftplugin/cosas_def.vim\n"
+"\t~/.vim/ftplugin/cosas/header.vim\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:406
+msgid ""
+"The <filetype> part is the name of the filetype the plugin is to be used "
+"for.  Only files of this filetype will use the settings from the plugin.  "
+"The <name> part of the plugin file doesn't matter, you can use it to have "
+"several plugins for the same filetype.  Note that it must end in \".vim\"."
+msgstr ""
+"La parte <tipo_de_archivo> es el nombre del tipo de archivo para el cuál se "
+"usa la extensión. Sólo los archivos de este tipo cargarán esta "
+"extensión.  La parte <nombre> de la extensión no importa, puede usarlo "
+"para tener varias extensiones del mismo tipo de archivo. Observe que debe "
+"terminar con la extensión «.vim»."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:417
+#, no-wrap
+msgid ""
+"Further reading:\n"
+"|filetype-plugins|\tDocumentation for the filetype plugins and information\n"
+"\t\t\tabout how to avoid that mappings cause problems.\n"
+"|load-plugins|\t\tWhen the global plugins are loaded during startup.\n"
+"|ftplugin-overrule|\tOverruling the settings from a global plugin.\n"
+"|write-plugin|\t\tHow to write a plugin script.\n"
+"|plugin-details|\tFor more information about using plugins or when your\n"
+"\t\t\tplugin doesn't work.\n"
+"|new-filetype|\t\tHow to detect a new file type.\n"
+msgstr ""
+"Lecturas de ampliación:\n"
+"|filetype-plugins|\tDocumentación para las extensiones de tipo de\n"
+"\t\t\tarchivo e información sobre como evitar problemas\n"
+"\t\t\tcon mapeos.\n"
+"|load-plugins|\t\tCuándo las extensiones globales se cargan.\n"
+"|ftplugin-overrule|\tSobreescribir las opciones de una extensión global.\n"
+"|write-plugin|\t\tCómo escribir un script de extensión.\n"
+"|plugin-details|\tPara más información sobre cómo usar extensiones o\n"
+"\t\t\tcuando la extensión no funciona.\n"
+"|new-filetype|\t\tCómo detectar un nuevo tipo de archivo.\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:420
+#, no-wrap
+msgid "*05.5*\tAdding a help file\t\t*add-local-help* *matchit-install*\n"
+msgstr "*05.5*\tAñadir un archivo de ayuda\t*add-local-help* *matchit-install*\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:432
+#, no-wrap
+msgid ""
+"If you are lucky, the plugin you installed also comes with a help file.  "
+"We\n"
+"will explain how to install the help file, so that you can easily find "
+"help\n"
+"for your new plugin.\n"
+"   Let us use the \"matchit.vim\" plugin as an example (it is included "
+"with\n"
+"Vim).  This plugin makes the \"%\" command jump to matching HTML tags,\n"
+"if/else/endif in Vim scripts, etc.  Very useful, although it's not "
+"backwards\n"
+"compatible (that's why it is not enabled by default).\n"
+"   This plugin comes with documentation: \"matchit.txt\".  Let's first copy "
+"the\n"
+"plugin to the right directory.  This time we will do it from inside Vim, "
+"so\n"
+"that we can use $VIMRUNTIME.  (You may skip some of the \"mkdir\" commands "
+"if\n"
+"you already have the directory.) >\n"
+msgstr ""
+"Si tiene suerte, la extensión que instaló viene con un archivo de ayuda.  "
+"Le\n"
+"explicaremos cómo instalar el archivo de ayuda, para que pueda encontrar\n"
+"ayuda fácilmente para su nueva extensión.\n"
+"   Usemos el plugin «matchit.vim» como ejemplo (viene incluido con Vim).\n"
+"Esta extensión hace que la orden «%» salte a tags emparejados de HTML,\n"
+"«if/else/endif» en scripts de Vim, etc. Muy útil, pero no es compatible\n"
+"con versiones anteriores (por lo que no está activado por defecto).\n"
+"   Esta extensión viene con la documentación «matchit.txt». Primero\n"
+"copiemos la extensión al directorio adecuado. Esta vez lo haremos desde\n"
+"dentro de Vim, así podremos usar $VIMRUNTIME. (Puede omitir la orden\n"
+"«mkdir» si ya tiene el directorio.) >\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:436
+#, no-wrap
+msgid ""
+"\t:!mkdir ~/.vim\n"
+"\t:!mkdir ~/.vim/plugin\n"
+"\t:!cp $VIMRUNTIME/macros/matchit.vim ~/.vim/plugin\n"
+msgstr ""
+"\t:!mkdir ~/.vim\n"
+"\t:!mkdir ~/.vim/plugin\n"
+"\t:!cp $VIMRUNTIME/macros/matchit.vim ~/.vim/plugin\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:438
+msgid "The \"cp\" command is for Unix, on MS-DOS you can use \"copy\"."
+msgstr "La orden «cp» es para Unix, en MS-DOS puedes usar «copy»."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:440
+msgid "Now create a \"doc\" directory in one of the directories in 'runtimepath'. >"
+msgstr ""
+"Ahora cree un directorio «doc» en una de los directorios de "
+"'runtimepath'. >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:442
+#, no-wrap
+msgid "\t:!mkdir ~/.vim/doc\n"
+msgstr "\t:!mkdir ~/.vim/doc\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:444
+msgid "Copy the help file to the \"doc\" directory. >"
+msgstr "Copie el archivo de ayuda al directorio «doc». >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:446
+#, no-wrap
+msgid "\t:!cp $VIMRUNTIME/macros/matchit.txt ~/.vim/doc\n"
+msgstr "\t:!cp $VIMRUNTIME/macros/matchit.txt ~/.vim/doc\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:449
+msgid ""
+"Now comes the trick, which allows you to jump to the subjects in the new "
+"help file: Generate the local tags file with the |:helptags| command. >"
+msgstr ""
+"Por último el truco que le permite ir a los temas en el nuevo archivo de "
+"ayuda: Genere el archivo de tags locales con la orden |:helptags|. >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:451
+#, no-wrap
+msgid "\t:helptags ~/.vim/doc\n"
+msgstr "\t:helptags ~/.vim/doc\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:453
+msgid "Now you can use the >"
+msgstr "Ahora puede usar la orden >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:455
+#, no-wrap
+msgid "\t:help g%\n"
+msgstr "\t:help g%\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:458
+msgid ""
+"command to find help for \"g%\" in the help file you just added.  You can "
+"see an entry for the local help file when you do: >"
+msgstr ""
+"para buscar ayuda para «g%» en el archivo de ayuda que acaba de añadir.  "
+"Puede ver una entrada correspondiente al archivo local cuando escriba: >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:460
+#, no-wrap
+msgid "\t:help local-additions\n"
+msgstr "\t:help local-additions\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:464
+msgid ""
+"The title lines from the local help files are automagically added to this "
+"section.  There you can see which local help files have been added and jump "
+"to them through the tag."
+msgstr ""
+"Las líneas con los títulos de los archivos de ayuda locales son añadidos "
+"automágicamente a la sección. Allí puede ver que archivos locales se han "
+"añadido e ir a ellos a través del tag creado."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:466
+msgid "For writing a local help file, see |write-local-help|."
+msgstr "Para escribir un archivo local de ayuda, véase |write-local-help|."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:469
+#, no-wrap
+msgid "*05.6*\tThe option window\n"
+msgstr "*05.6*\tLa ventana de opciones\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:472
+msgid ""
+"If you are looking for an option that does what you want, you can search in "
+"the help files here: |options|.  Another way is by using this command: >"
+msgstr ""
+"Si busca una opción que haga lo que quiere, puede buscarla en los archivos "
+"de ayuda aquí: |options|. Otra forma es usar la orden: >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:474
+#, no-wrap
+msgid "\t:options\n"
+msgstr "\t:options\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:478
+msgid ""
+"This opens a new window, with a list of options with a one-line "
+"explanation.  The options are grouped by subject.  Move the cursor to a "
+"subject and press <Enter> to jump there.  Press <Enter> again to jump back.  "
+"Or use CTRL-O."
+msgstr ""
+"Esto abre una nueva ventana que contiene una lista de opciones con una "
+"explicación en una línea. Coloque el cursor sobre un tema y pulse <Intro> "
+"para ir a él. Pulse <Intro> de nuevo para volver atrás. O pulse CTRL-O."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:481
+msgid ""
+"You can change the value of an option.  For example, move to the "
+"\"displaying text\" subject.  Then move the cursor down to this line:"
+msgstr ""
+"Puede cambiar el valor de una opción. Por ejemplo, vaya al tema "
+"«displaying text». Luego ponga el cursor abajo, en esta línea:"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:483
+#, no-wrap
+msgid "\tset wrap\tnowrap ~\n"
+msgstr "\tset wrap\tnowrap ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:485
+msgid "When you hit <Enter>, the line will change to:"
+msgstr "Cuando pulse <Intro>, la línea cambiará a:"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:487
+#, no-wrap
+msgid "\tset nowrap\twrap ~\n"
+msgstr "\tset nowrap\twrap ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:489
+msgid "The option has now been switched off."
+msgstr "La opción se ha desactivado."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:493
+msgid ""
+"Just above this line is a short description of the 'wrap' option.  Move the "
+"cursor one line up to place it in this line.  Now hit <Enter> and you jump "
+"to the full help on the 'wrap' option."
+msgstr ""
+"Justo sobre esta línea hay una descripción corta de la opción 'wrap'.  "
+"Ponga el cursor una línea arriba para colocarlos sobre esta línea. Ahora "
+"pulse <Intro> e irá hacia la descripción completa de la opción 'wrap'."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:497
+msgid ""
+"For options that take a number or string argument you can edit the value.  "
+"Then press <Enter> to apply the new value.  For example, move the cursor a "
+"few lines up to this line:"
+msgstr ""
+"Para opciones que toman un número o una cadena de caracteres puede editar "
+"el valor. Pulse <Intro> para aplicar el nuevo valor. Por ejemplo, mueva el "
+"cursor unas cuantas líneas arriba hasta esta línea:"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:499
+#, no-wrap
+msgid "\tset so=0 ~\n"
+msgstr "\tset so=0 ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:505
+msgid ""
+"Position the cursor on the zero with \"$\".  Change it into a five with "
+"\"r5\".  Then press <Enter> to apply the new value.  When you now move the "
+"cursor around you will notice that the text starts scrolling before you "
+"reach the border.  This is what the 'scrolloff' option does, it specifies an "
+"offset from the window border where scrolling starts."
+msgstr ""
+"Posicione el cursor sobre el cero con «$». Modifiqueló a un cinco con "
+"«r5». Luego pulse <Intro> para aplicar el nuevo valor. Cuando mueva el "
+"cursor por un texto, notará que el texto se desplazará (scroll) antes de "
+"que llegue al borde. Esto es lo que la opción 'scrolloff' hace, especifica "
+"una compensación (offset) del punto donde comienza el desplazamiento "
+"(respecto al borde)."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:508
+#, no-wrap
+msgid "*05.7*\tOften used options\n"
+msgstr "*05.7*\tOpciones más comunes\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:513
+msgid ""
+"There are an awful lot of options.  Most of them you will hardly ever use.  "
+"Some of the more useful ones will be mentioned here.  Don't forget you can "
+"find more help on these options with the \":help\" command, with single "
+"quotes before and after the option name.  For example: >"
+msgstr ""
+"Hay una cantidad de opciones inmensa. Difícilmente llegará a usar gran "
+"parte de ellas. Algunas de las más comunes se citarán a continuación. No "
+"se olvide de que puede encontrar más ayuda con la orden «:help», con "
+"comillas simples alrededor del nombre de la opción. Por ejemplo: >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:515
+#, no-wrap
+msgid "\t:help 'wrap'\n"
+msgstr "\t:help 'wrap'\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:518
+msgid ""
+"In case you have messed up an option value, you can set it back to the "
+"default by putting an ampersand (&) after the option name.  Example: >"
+msgstr ""
+"En caso de que haya descolocado el valor de una opción, puede devolverlo a "
+"la opción por defecto con un et (&) tras el nombre de la opción.  Por "
+"ejemplo: >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:520
+#, no-wrap
+msgid "\t:set iskeyword&\n"
+msgstr "\t:set iskeyword&\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:523
+msgid "NOT WRAPPING LINES"
+msgstr "LÍNEAS QUE NO DOBLAN"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:528
+msgid ""
+"Vim normally wraps long lines, so that you can see all of the text.  "
+"Sometimes it's better to let the text continue right of the window.  Then "
+"you need to scroll the text left-right to see all of a long line.  Switch "
+"wrapping off with this command: >"
+msgstr ""
+"Vim normalmente dobla líneas largas, de forma que pueda ver todo el "
+"texto. A veces es mejor dejar que el texto continúe a la derecha de la "
+"ventana. De este modo tiene que desplazarse de izquierda a derecha para ver "
+"toda una línea larga. Puede intercambiar el valor con la siguiente orden: >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:530
+#, no-wrap
+msgid "\t:set nowrap\n"
+msgstr "\t:set nowrap\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:533
+msgid ""
+"Vim will automatically scroll the text when you move to text that is not "
+"displayed.  To see a context of ten characters, do this: >"
+msgstr ""
+"Vim automáticamente desplazará el texto cuando se desplace hacia el texto "
+"que no se muestra en pantalla. Para ver un contexto de diez caracteres: >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:535
+#, no-wrap
+msgid "\t:set sidescroll=10\n"
+msgstr "\t:set sidescroll=10\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:537
+msgid "This doesn't change the text in the file, only the way it is displayed."
+msgstr "Esto no cambia el texto en el archivo, sólo la forma en la que se muestra."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:540
+msgid "WRAPPING MOVEMENT COMMANDS"
+msgstr "MOVIMIENTO SOBRE LÍNEAS DOBLADAS"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:544
+msgid ""
+"Most commands for moving around will stop moving at the start and end of a "
+"line.  You can change that with the 'whichwrap' option.  This sets it to the "
+"default value: >"
+msgstr ""
+"La mayoría de las órdenes para desplazarse dejarán de funcionar al "
+"comienzo o al final de una línea. Puede cambiar esto con la opción "
+"'whichwrap'. Esto la cambia al valor predeterminado: >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:546
+#, no-wrap
+msgid "\t:set whichwrap=b,s\n"
+msgstr "\t:set whichwrap=b,s\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:550
+msgid ""
+"This allows the <BS> key, when used in the first position of a line, to move "
+"the cursor to the end of the previous line.  And the <Space> key moves from "
+"the end of a line to the start of the next one."
+msgstr ""
+"Esto permite que la tecla <Retroceso>, cuando se emplea en la primera "
+"posición de una línea se mueva al final de la línea anterior. También la "
+"tecla <Espacio> le desplazará desde el final de una línea hasta el "
+"comienzo de la siguiente."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:552
+msgid ""
+"To allow the cursor keys <Left> and <Right> to also wrap, use this command: "
+">"
+msgstr ""
+"Para permitir que las teclas de cursor <Izq> y <Der> también lo hagan use "
+"esta orden: >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:554
+#, no-wrap
+msgid "\t:set whichwrap=b,s,<,>\n"
+msgstr "\t:set whichwrap=b,s,<,>\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:557
+msgid ""
+"This is still only for Normal mode.  To let <Left> and <Right> do this in "
+"Insert mode as well: >"
+msgstr ""
+"Esto es exclusivamente en el modo Normal. Para permitir que <Izq> y <Der> "
+"haga esto en también modo Insertar, escriba: >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:559
+#, no-wrap
+msgid "\t:set whichwrap=b,s,<,>,[,]\n"
+msgstr "\t:set whichwrap=b,s,<,>,[,]\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:561
+msgid "There are a few other flags that can be added, see 'whichwrap'."
+msgstr "Hay unas cuantas banderas que se pueden ser añadir, véase 'whichwrap'."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:564
+msgid "VIEWING TABS"
+msgstr "VISTA DE PESTAÑAS"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:567
+msgid ""
+"When there are tabs in a file, you cannot see where they are.  To make them "
+"visible: >"
+msgstr ""
+"Cuando hay pestañas en un archivo, no puede ver dónde están. Para "
+"hacerlas visibles: >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:569
+#, no-wrap
+msgid "\t:set list\n"
+msgstr "\t:set list\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:575
+#, no-wrap
+msgid ""
+"Now every tab is displayed as ^I.  And a $ is displayed at the end of each\n"
+"line, so that you can spot trailing spaces that would otherwise go "
+"unnoticed.\n"
+"   A disadvantage is that this looks ugly when there are many Tabs in a "
+"file.\n"
+"If you have a color terminal, or are using the GUI, Vim can show the "
+"spaces\n"
+"and tabs as highlighted characters.  Use the 'listchars' option: >\n"
+msgstr ""
+"Ahora todas las pestañas se mostrarán como ^I. Un «$» se mostrará al "
+"final de\n"
+"cada línea, permitiéndole ver espacios finales que pasarían "
+"desapercibidos.\n"
+"   Una desventaja de esto es que tiene una apariencia desagradable cuando\n"
+"hay muchas pestañas. Si tiene una terminal con colores o usa GVim, puede\n"
+"ver los espacios y las pestañas como marcas de color. Use la opción\n"
+"'listchars': >\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:577
+#, no-wrap
+msgid "\t:set listchars=tab:>-,trail:-\n"
+msgstr "\t:set listchars=tab:>-,trail:-\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:580
+msgid ""
+"Now every tab will be displayed as \">---\" (with more or less \"-\") and "
+"trailing white space as \"-\".  Looks a lot better, doesn't it?"
+msgstr ""
+"Ahora cada pestaña se mostrará como «>---» (con más o menos «-») y "
+"los espacios al final de la línea como «-».  Más agradable, o no?"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:583
+msgid "KEYWORDS"
+msgstr "PALABRAS CLAVES"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:585
+msgid "The 'iskeyword' option specifies which characters can appear in a word: >"
+msgstr "The 'iskeyword' option specifies which characters can appear in a word: >"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:588
+#, no-wrap
+msgid ""
+"\t:set iskeyword\n"
+"<\t  iskeyword=@,48-57,_,192-255 ~\n"
+msgstr ""
+"\t:set iskeyword\n"
+"<\t  iskeyword=@,48-57,_,192-255 ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:594
+#, no-wrap
+msgid ""
+"The \"@\" stands for all alphabetic letters.  \"48-57\" stands for ASCII\n"
+"characters 48 to 57, which are the numbers 0 to 9.  \"192-255\" are the\n"
+"printable latin characters.\n"
+"   Sometimes you will want to include a dash in keywords, so that commands\n"
+"like \"w\" consider \"upper-case\" to be one word.  You can do it like this: "
+">\n"
+msgstr ""
+"El «@» implica todas las letras del alfabeto. «48-57» significa los\n"
+"caracteres ASCII 48 a 57, que son los números 0 a 9. «192-255» son los\n"
+"caracteres latinos imprimibles.\n"
+"   A veces querrá incluir un guión en las palabras clave, para que "
+"órdenes\n"
+"como «w» consideren «upper-case» como una sola palabra.\n"
+"Puede hacerlo así: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:598
+#, no-wrap
+msgid ""
+"\t:set iskeyword+=-\n"
+"\t:set iskeyword\n"
+"<\t  iskeyword=@,48-57,_,192-255,- ~\n"
+msgstr ""
+"\t:set iskeyword+=-\n"
+"\t:set iskeyword\n"
+"<\t  iskeyword=@,48-57,_,192-255,- ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:601
+#, no-wrap
+msgid ""
+"If you look at the new value, you will see that Vim has added a comma for "
+"you.\n"
+"   To remove a character use \"-=\".  For example, to remove the underscore: "
+">\n"
+msgstr ""
+"Si miras el nuevo valor, comprobará que Vim ha añadido una coma por Ud.\n"
+"   Para eliminar un carácter usa «-=». Por ejemplo, el guión bajo: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:605
+#, no-wrap
+msgid ""
+"\t:set iskeyword-=_\n"
+"\t:set iskeyword\n"
+"<\t  iskeyword=@,48-57,192-255,- ~\n"
+msgstr ""
+"\t:set iskeyword-=_\n"
+"\t:set iskeyword\n"
+"<\t  iskeyword=@,48-57,192-255,- ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:607
+msgid "This time a comma is automatically deleted."
+msgstr "En esta ocasión la coma se elimina automáticamente."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:610
+msgid "ROOM FOR MESSAGES"
+msgstr "ESPACIO PARA MENSAJES"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:616
+#, no-wrap
+msgid ""
+"When Vim starts there is one line at the bottom that is used for messages.\n"
+"When a message is long, it is either truncated, thus you can only see part "
+"of\n"
+"it, or the text scrolls and you have to press <Enter> to continue.\n"
+"   You can set the 'cmdheight' option to the number of lines used for\n"
+"messages.  Example: >\n"
+msgstr ""
+"Cuando Vim arranca hay una línea en la parte de abajo que se usa para\n"
+"mensajes. Cuando un mensaje es largo, o se trunca (con lo que sólo puede\n"
+"ver una parte) o el texto se desplaza y tienes que pulsar <Intro> para\n"
+"continuar.\n"
+"   Puedes asignar a la opción 'cmdheight' el número de líneas usado "
+"para\n"
+"mensajes. Por ejemplo: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:618
+#, no-wrap
+msgid "\t:set cmdheight=3\n"
+msgstr "\t:set cmdheight=3\n"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:620
+msgid "This does mean there is less room to edit text, thus it's a compromise."
+msgstr "Esto significa que hay menos espacio para editar texto, tú decides."
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:624
+msgid "Next chapter: |usr_06.txt| Using syntax highlighting"
+msgstr "Capítulo siguiente: |usr_06.esx| Uso del resaltado de sintaxis"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:625
+msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
