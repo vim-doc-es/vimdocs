@@ -4,8 +4,9 @@
 
 			    Acerca de los manuales
 
-Este capítulo le introduce a los manuales disponibles con Vim. Lea esto para
-conocer las condiciones bajo las cuales se explican las órdenes.
+
+Este capítulo le introduce a los manuales disponibles con Vim. Lea esto
+para conocer las condiciones bajo las cuales se explican las órdenes.
 
 |01.1|	Dos manuales
 |01.2|	Vim instalado
@@ -20,28 +21,29 @@ Tabla de contenidos: |usr_toc.esx|
 
 La documentación de Vim consiste de dos partes:
 
-1. El manual de usuario
-   Explicaciones orientadas a tareas, de las simples a las más complejas. Se
-   puede leer de principio a fin, como un libro.
+1. El manual de usuario Explicaciones orientadas a tareas, de las simples a
+   las más complejas. Se puede leer de principio a fin, como un libro.
 
-2. El manual de referencia
-   Una precisa descripción del funcionamiento de cada elemento dentro de Vim.
+2. El manual de referencia Una precisa descripción del funcionamiento de
+   cada elemento dentro de Vim.
 
 La notación usada en estos manuales se explica aqui: |notation|
 
+
 SALTAR DE UN PUNTO A OTRO
 
-El texto contiene hiperenlaces entre las dos partes, lo cual le  permite
-saltar rápidamente de la descripción de una tarea de edición a una precisa
-explicación de las órdenes y opciones que se emplean. Use estas dos órdenes:
+El texto contiene hiperenlaces entre las dos partes, lo cual le permite
+saltar rápidamente de la descripción de una tarea de edición a una
+precisa explicación de las órdenes y opciones que se emplean. Use estas
+dos órdenes:
 
 	Pulse «CTRL-]» para saltar al tema bajo el cursor.
 	Pulse «CTRL-O» para saltar atrás (repita para volver más allá de ese punto).
 
-Hay varios enlaces entre barras verticales, como este: |bars|. También puede
-usar como enlace un nombre de opción, como 'number', una orden
-entrecomillada, como «:write», o cualquier otra palabra. Pruebelo: mueva el
-cursor a «CTRL-]» y pulse «CTRL-]» sobre él.
+Hay varios enlaces entre barras verticales, como este: |bars|. También
+puede usar como enlace un nombre de opción, como 'number', una orden
+entrecomillada, como «:write», o cualquier otra palabra. Pruebelo: mueva
+el cursor a «CTRL-]» y pulse «CTRL-]» sobre él.
 
 Puede encontrar otros temas con la orden «:help», véase |help.esx|.
 
@@ -71,15 +73,15 @@ Amiga: >
 
 Si el archivo ya existe, probablemente desee guardarlo.
 
-Si inicia ahora Vim, la opción 'compatible' debería estar desactivada. Puede
-asegurarse con esta orden: >
+Si inicia ahora Vim, la opción 'compatible' debería estar
+desactivada. Puede asegurarse con esta orden: >
 
 	:set compatible?
 
 Si devuelve "nocompatible", es que todo va bien. Si la respuesta es
-«compatible», tiene un problema. Tendrá que encontrar porqué esta opción
-está aún definida. Puede que no se encontrase el archivo que copió antes.
-Use esta orden para ver el problema: >
+«compatible», tiene un problema. Tendrá que encontrar porqué esta
+opción está aún definida. Puede que no se encontrase el archivo que
+copió antes.  Use esta orden para ver el problema: >
 
 	:scriptnames
 
@@ -100,8 +102,8 @@ Para más información, véase |vimrc| y |compatible-default|.
 ==============================================================================
 *01.3*	Usar el tutor de Vim				*tutor* *vimtutor*
 
-En lugar de leer el texto (¡aburre!), puede usar vimtutor para aprender
-sus primeras órdenes con Vim. Éste es un tutorial de treinta minutos que
+En lugar de leer el texto (¡aburre!), puede usar vimtutor para aprender sus
+primeras órdenes con Vim. Éste es un tutorial de treinta minutos que
 enseña las funcionalidades básicas de Vim a través de la práctica.
 
 En Unix, si Vim se instaló adecuadamente, puede iniciar Vim desde la
@@ -127,8 +129,9 @@ vimtutor desde una consola con: >
 
 	@VIM:vimtutor
 
-Tiene la opción de añadir el código de idioma de dos letras tal y
-se vio anteriormente.
+Tiene la opción de añadir el código de idioma de dos letras tal y se vio
+anteriormente.
+
 
 En otros sistema, tendrá que realizar un poco de trabajo:
 
@@ -162,20 +165,21 @@ términos de licencia y condiciones expuestas en la Open Publication License,
 versión 1.0 o posterior. La versión más actual está ahora disponible en:
 	     http://www.opencontent.org/openpub/
 
-Las personas que contribuyan al manual también tienen que aceptar con el
+Las personas que contribuyan al manual también tienen que aceptar el
 copyright expuesto anteriormente.
+							*frombook*
 Hay partes del manual de usuario que proceden del libro «Vi IMproved - Vim»,
-por Steve Oualline (publicado por New Riders Publishing,
-ISBN: 0735710015). La Open Publication License también cubre a este libro.
+por Steve Oualline (publicado por New Riders Publishing, ISBN: 0735710015).
+La Open Publication License también cubre a este libro.
 Sólo se incluyen partes seleccionadas, y estas se han modificado (p. ej. se
-eliminaron las fotos, se actualizó el texto para Vim 6.0 y posteriores,
+eliminaron las fotos, se actualizó el textp para Vim 6.0 y posteriores,
 corrección de errata). La omisión de la etiqueta |frombook| no significa
 que el texto no proceda del libro.
 
 ¡Muchas gracias a Steve Oualline y a New Riders por crear este libro, y
 publicarlo bajo la licencia OPL! Ha servido de gran ayuda a la hora de
-escribir este manual. No sólo por el texto literal, sino también al definir
-el tono y estilo.
+escribir este manual. No sólo por el texto literal, sino también al
+definir el tono y estilo.
 
 Si obtiene beneficios mediante la venta de los manuales, le animamos a que
 done parte de los beneficios para ayudar a las victimas del SIDA en Uganda.
@@ -185,4 +189,4 @@ Véase |iccf|.
 
 Capítulo siguiente: |usr_02.esx| Primeros pasos en Vim
 
-Copyright: véase |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:
+Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
