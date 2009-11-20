@@ -4,15 +4,16 @@
 
 			  Recuperarse de un fallo
 
-¿Se colgó su ordenador después de horas editando? ¡No entre en pánico! Vim
-mantiene suficiente información en el disco duro como para recuperar la
-mayor parte del trabajo. Este capítulo le mostrará cómo recuperar su trabajo
-y cómo funciona el archivo de recuperación.
 
-|11.1|  Recuperación básica
-|11.2|  ¿Dónde está el archivo de recuperación?
-|11.3|  ¿Se ha colgado o no?
-|11.4|  Más información
+¿Se colgó su ordenador después de horas editando? ¡No entre en pánico!
+Vim mantiene suficiente información en el disco duro como para recuperar la
+mayor parte del trabajo. Este capítulo le mostrará cómo recuperar su
+trabajo y cómo funciona el archivo de recuperación.
+
+|11.1|	Recuperación básica
+|11.2|	¿Dónde está el archivo de recuperación?
+|11.3|	¿Se ha colgado o no?
+|11.4|	Más información
 
  Capítulo siguiente: |usr_12.esx|  Trucos
   Capítulo anterior: |usr_10.esx|  Realizar grandes cambios
@@ -38,7 +39,8 @@ funcionado correctamente, verá los siguientes mensajes (con otros nombres):
 	and run diff with the original file to check for changes) ~
 	Delete the .swp file afterwards. ~
 
-Para ponerse del lado de la seguridad, escriba este archivo con otro nombre: >
+Para ponerse del lado de la seguridad, escriba este archivo con otro nombre:
+>
 
 	:write ayuda.txt.recuperado
 
@@ -54,12 +56,13 @@ Es normal que los últimos cambios no se puedan recuperar. Vim vuelca los
 cambios al disco duro cuando no teclea durante cuatro segundos, o tras
 escribir unos doscientos caracteres. Esto se puede modificar con las
 opciones 'updatetime' y 'updatecount'. De esta forma, cuando Vim no tiene
-posibilidad de guardar cuando el sistema cae, tendrá los cambios del último
-volcado.
+posibilidad de guardar cuando el sistema cae, tendrá los cambios del
+último volcado.
 
 Si estaba editando sin un nombre de archivo designado, dele este argumento:
 >
 	vim -r ""
+
 
 	vim -r ""
 
@@ -102,18 +105,20 @@ quieres usar.
    En caso de que no sepa cuál seleccionar, pruébelos uno a uno y compruebe
 que los archivos resultantes son el que deseas.
 
+
 USAR UN ARCHIVO DE RECUPERACIÓN ESPECÍFICO
 
 Si sabe qué archivo de recuperación quiere usar, puede realizar la
-recuperación dando como argumento el nombre de este archivo. Vim encontrará
-el nombre del archivo original del cuál éste es el archivo de recuperación.
+recuperación dando como argumento el nombre de este archivo. Vim
+encontrará el nombre del archivo original del cuál éste es el archivo de
+recuperación.
 
 Ejemplo: >
 	vim -r .help.txt.swo
 
-Esto resulta útil cuando el archivo de recuperación está en otro directorio
-diferente al esperado. Si esto tampoco funciona, mire los nombres de
-archivo que Vim reporta y renombre los archivos acordemente. Compruebe la
+Esto resulta útil cuando el archivo de recuperación está en otro
+directorio diferente al esperado. Si esto tampoco funciona, mire los nombres
+de archivo que Vim reporta y renombre los archivos acordemente. Compruebe la
 opción 'directory' para ver dónde ha podido poner Vim los archivos de
 recuperación.
 
@@ -157,8 +162,8 @@ Ha recibido este mensaje porque cuando comienza a editar un archivo, Vim
 comprueba que exista un archivo de recuperación para este archivo. Si hay
 uno, algo debe estar pasando. Puede ocurrir cualquiera de estas situaciones:
 
-1. Hay otra sesión de edición activa en este archivo. Busque en el mensaje la
-    línea con «ID del proceso». Puede parecerse a esto:
+1. Another edit session is active on this file.  Look in the message for the
+   line with "process ID".  It might look like this:
 
 		process ID: 12559 ((aún en ejecución) ~
 
@@ -172,10 +177,9 @@ de red, seguramente no verá esta información, porque el proceso estará en otr
    guarde sobreescribirá a la otra, con la consecuente pérdida de los
    cambios. Mejor salir de este Vim.
 
-2. El archivo de recuperación puede ser el resultado de un cuelgue anterior de
-   Vim o del ordenador. Revise las fechas mencionadas en el mensaje. Si la
-   fecha del archivo de recuperación es más reciente que la del archivo que
-   está editando, y aparece esta línea:
+2. The swap file might be the result from a previous crash of Vim or the
+   computer.  Check the dates mentioned in the message.  If the date of the
+   swap file is newer than the file you were editing, and this line appears:
 
 		modificado: YES ~
 
@@ -189,36 +193,38 @@ de red, seguramente no verá esta información, porque el proceso estará en otr
 
       MÁS NUEVO que el archivo de intercambio! ~
 
+
 ARCHIVO DE RECUPERACIÓN ILEGIBLE
 
 A veces la línea
 
 	[no se puede leer] ~
 
-aparecerá bajo el nombre del archivo de recuperación.  Esto puede ser bueno o
-malo dependiendo de las circunstancias.
+aparecerá bajo el nombre del archivo de recuperación.  Esto puede ser
+bueno o malo dependiendo de las circunstancias.
 
 Son buenas noticias si la sesión anterior se colgó sin haber hecho ningún
-cambio al archivo. En tal caso un listado de archivos del directorio mostrará
-que tiene cero bytes. Tal vez quiera eliminarla y continuar.
+cambio al archivo. En tal caso un listado de archivos del directorio
+mostrará que tiene cero bytes. Tal vez quiera eliminarla y continuar.
 
 No son muy buenas noticias si lo que ocurre es que no tiene permisos de
 lectura del archivo de recuperación. Tal vez desee ver el archivo en modo
 sólo lectura o salir. En sistemas multiusuario, si empleó otro usuario,
-salir y volver a identificarte tal vez resuelva el «error de lectura». O en
-su defecto quizá quiera encontrar quien lo editó por última vez (o está
-editándolo ahora mismo) y hablar con él.
+salir y volver a identificarte tal vez resuelva el «error de lectura». O
+en su defecto quizá quiera encontrar quien lo editó por última vez (o
+está editándolo ahora mismo) y hablar con él.
 
-Son muy malas noticias si significa que hay un error de lectura a nivel físico
-del disco duro. Afortunadamente, esto no ocurre casi nunca. Quizá quiera
-ver el archivo en modo sólo lectura inicialmente (si puede), para ver el
-alcance de los cambios que fueron «olvidados». Si eres el que está a cargo
-del archivo, prepárate para rehacer los últimos cambios.
+Son muy malas noticias si significa que hay un error de lectura a nivel
+físico del disco duro. Afortunadamente, esto no ocurre casi nunca. Quizá
+quiera ver el archivo en modo sólo lectura inicialmente (si puede), para
+ver el alcance de los cambios que fueron «olvidados». Si eres el que está
+a cargo del archivo, prepárate para rehacer los últimos cambios.
+
 
 ¿QUÉ HACER?
 
-Si tiene soporte para diálogos, se le pedirá que elija una de las siguientes
-opciones:
+Si tiene soporte para diálogos, se le pedirá que elija una de las
+siguientes opciones:
 
   Swap file ".main.c.swp" already exists! ~
   [O]pen Read-Only, (E)dit anyway, (R)ecover, (Q)uit, (A)bort, (D)elete it: ~
@@ -252,16 +258,18 @@ D  Eliminar el archivo de recuperación. Use esto cuando esté seguro de que
       En Unix esta opción sólo se ofrece cuando el proceso que creó el archivo
    de recuperación no parece que estar en ejecución.
 
-Si no ve el diálogo (está ejecutando una versión de Vim que no lo soporta,
-tendrá que hacerlo a mano. Para recuperar el archivo, use la siguiente
-orden: >
+Si no ve el diálogo (está ejecutando una versión de Vim que no lo
+soporta, tendrá que hacerlo a mano. Para recuperar el archivo, use la
+siguiente orden: >
 
 	:recover
 
+
 Vim no puede siempre detectar cuando ya existe un archivo de recuperación
 para un archivo. Este es el caso cuando otras sesiones de edición ponen los
-archivos en otro directorio o cuando una ruta de archivo difiere en máquinas distintas. 
-Por lo tanto, no confíe en que Vim siempre le vaya a alertar.
+archivos en otro directorio o cuando una ruta de archivo difiere en
+máquinas distintas.  Por lo tanto, no confíe en que Vim siempre le vaya a
+alertar.
 
 Si realmente no quiere ver este mensaje, puede añadir la marca 'A' a la
 opción 'shortmess'. Pero es poco habitual que lo necesite.
@@ -283,6 +291,6 @@ opción 'shortmess'. Pero es poco habitual que lo necesite.
 
 ==============================================================================
 
-Capítulo siguiente: |usr_12.esx|  Trucos
+Capítulo siguiente: |usr_12.esx| Trucos
 
-Copyright: véase |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:
+Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:

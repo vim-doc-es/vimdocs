@@ -1,0 +1,448 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2009-11-20 20:05+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf8\n"
+"Content-Transfer-Encoding: ENCODING"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:2
+#, fuzzy, no-wrap
+msgid "*usr_11.txt*\tFor Vim version 7.2.  Last change: 2006 Apr 24\n"
+msgstr "*usr_11.esx*\tPara Vim versión 7.2.  Último cambio: 24/5/2006\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:4
+#, fuzzy, no-wrap
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
+msgstr "\t\t   MANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:6
+#, fuzzy, no-wrap
+msgid "\t\t\t   Recovering from a crash\n"
+msgstr "\t\t\t  Recuperarse de un fallo\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:12
+#, fuzzy
+msgid ""
+"Did your computer crash? And you just spent hours editing? Don't panic! Vim "
+"keeps enough information on harddisk to be able to restore most of your "
+"work.  This chapter shows you how to get your work back and explains how the "
+"swap file is used."
+msgstr ""
+"¿Se colgó su ordenador después de horas editando? ¡No entre en pánico! "
+"Vim mantiene suficiente información en el disco duro como para recuperar la "
+"mayor parte del trabajo. Este capítulo le mostrará cómo recuperar su "
+"trabajo y cómo funciona el archivo de recuperación."
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:17
+#, fuzzy
+msgid ""
+"|11.1|\tBasic recovery |11.2|\tWhere is the swap file? |11.3|\tCrashed or "
+"not? |11.4|\tFurther reading"
+msgstr ""
+"|11.1| Recuperación básica |11.2| ¿Dónde está el archivo de "
+"recuperación? |11.3| ¿Se ha colgado o no? |11.4| Más información"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:21
+#, fuzzy, no-wrap
+msgid ""
+"     Next chapter: |usr_12.txt|  Clever tricks\n"
+" Previous chapter: |usr_10.txt|  Making big changes\n"
+"Table of contents: |usr_toc.txt|\n"
+msgstr ""
+" Capítulo siguiente: |usr_12.esx|  Trucos\n"
+"  Capítulo anterior: |usr_10.esx|  Realizar grandes cambios\n"
+"Tabla de contenidos: |usr_toc.esx|\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:22 original/TXT/usr_11.txt:66 original/TXT/usr_11.txt:126 original/TXT/usr_11.txt:268 original/TXT/usr_11.txt:283
+#, fuzzy, no-wrap
+msgid "==============================================================================\n"
+msgstr "==============================================================================\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:24
+#, fuzzy, no-wrap
+msgid "*11.1*\tBasic recovery\n"
+msgstr "*11.1*  Recuperación básica\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:28
+#, fuzzy
+msgid ""
+"In most cases recovering a file is quite simple, assuming you know which "
+"file you were editing (and the harddisk is still working).  Start Vim on the "
+"file, with the \"-r\" argument added: >"
+msgstr ""
+"En la mayoría de los casos, recuperar un archivo es bastante sencillo, si "
+"suponemos que sabe qué archivo estaba editando (y el disco duro aún "
+"funciona). Inicie Vim con el archivo y el argumento «-r»: >"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:30
+#, fuzzy, no-wrap
+msgid "\tvim -r help.txt\n"
+msgstr "\tvim -r ayuda.txt\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:34
+#, fuzzy
+msgid ""
+"Vim will read the swap file (used to store text you were editing) and may "
+"read bits and pieces of the original file.  If all is well, you will see "
+"these messages (with different file names, of course):"
+msgstr ""
+"Vim leerá el archivo de recuperación (empleado para almacenar el texto "
+"editado) y puede que lea bits y porciones del texto original. Si todo ha "
+"funcionado correctamente, verá los siguientes mensajes (con otros nombres):"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:41
+#, fuzzy, no-wrap
+msgid ""
+"\tUsing swap file \".help.txt.swp\" ~\n"
+"\tOriginal file \"~/vim/runtime/doc/help.txt\" ~\n"
+"\tRecovery completed. You should check if everything is OK. ~\n"
+"\t(You might want to write out this file under another name ~\n"
+"\tand run diff with the original file to check for changes) ~\n"
+"\tDelete the .swp file afterwards. ~\n"
+msgstr ""
+"\tUsing swap file \".ayuda.txt.swp\" ~\n"
+"\tOriginal file \"~/vim/runtime/doc/ayuda.txt\" ~\n"
+"\tRecovery completed. You should check if everything is OK. ~\n"
+"\t(You might want to write out this file under another name ~\n"
+"\tand run diff with the original file to check for changes) ~\n"
+"\tDelete the .swp file afterwards. ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:43
+#, fuzzy
+msgid "To be on the safe side, write this file under another name: >"
+msgstr ""
+"Para ponerse del lado de la seguridad, escriba este archivo con otro nombre: "
+">"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:45
+#, fuzzy, no-wrap
+msgid "\t:write help.txt.recovered\n"
+msgstr "\t:write ayuda.txt.recuperado\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:53
+#, fuzzy, no-wrap
+msgid ""
+"Compare the file with the original file to check if you ended up with what "
+"you\n"
+"expected.  Vimdiff is very useful for this |08.7|.  Watch out for the "
+"original\n"
+"file to contain a more recent version (you saved the file just before the\n"
+"computer crashed).  And check that no lines are missing (something went "
+"wrong\n"
+"that Vim could not recover).\n"
+"   If Vim produces warning messages when recovering, read them carefully.\n"
+"This is rare though.\n"
+msgstr ""
+"Compare el archivo con el original y compruebe que obtuvo lo que esperaba.\n"
+"Vimdiff es muy útil para esto |08.7|. Compruebe que el archivo original "
+"no\n"
+"contiene una versión reciente (guardó el archivo justo antes de que el\n"
+"ordenador se colgase). Compruebe también que no hay líneas que falten "
+"(algo\n"
+"que fue mal y Vim no pudo recuperar).\n"
+"   Si Vim produce mensajes de advertencia mientras se produce la\n"
+"recuperación, léalos con detenimiento. En todo caso, no es habitual.\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:59
+#, fuzzy
+msgid ""
+"It's normal that the last few changes can not be recovered.  Vim flushes the "
+"changes to disk when you don't type for about four seconds, or after typing "
+"about two hundred characters.  This is set with the 'updatetime' and "
+"'updatecount' options.  Thus when Vim didn't get a chance to save itself "
+"when the system went down, the changes after the last flush will be lost."
+msgstr ""
+"Es normal que los últimos cambios no se puedan recuperar. Vim vuelca los "
+"cambios al disco duro cuando no teclea durante cuatro segundos, o tras "
+"escribir unos doscientos caracteres. Esto se puede modificar con las "
+"opciones 'updatetime' y 'updatecount'. De esta forma, cuando Vim no tiene "
+"posibilidad de guardar cuando el sistema cae, tendrá los cambios del "
+"último volcado."
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:61
+#, fuzzy
+msgid "If you were editing without a file name, give an empty string as argument: >"
+msgstr ""
+"Si estaba editando sin un nombre de archivo designado, dele este "
+"argumento:\n"
+">\n"
+"\tvim -r \"\"\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:63
+#, fuzzy, no-wrap
+msgid "\tvim -r \"\"\n"
+msgstr "\tvim -r \"\"\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:65
+#, fuzzy
+msgid "You must be in the right directory, otherwise Vim can't find the swap file."
+msgstr "Deberá estar en el mismo directorio para poder recuperar la información."
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:68
+#, fuzzy, no-wrap
+msgid "*11.2*\tWhere is the swap file?\n"
+msgstr "*11.2*  ¿Dónde está el archivo de recuperación?\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:72
+#, fuzzy
+msgid ""
+"Vim can store the swap file in several places.  Normally it is in the same "
+"directory as the original file.  To find it, change to the directory of the "
+"file, and use: >"
+msgstr ""
+"Vim puede guardar el archivo de recuperación en distintos lugares.  "
+"Normalmente se encuentra en el mismo directorio que el archivo original.  "
+"Para encontrarlo, cambie al directorio del archivo y escriba: >"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:74
+#, fuzzy, no-wrap
+msgid "\tvim -r\n"
+msgstr "\tvim -r\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:80
+#, fuzzy, no-wrap
+msgid ""
+"Vim will list the swap files that it can find.  It will also look in other\n"
+"directories where the swap file for files in the current directory may be\n"
+"located.  It will not find swap files in any other directories though, it\n"
+"doesn't search the directory tree.\n"
+"   The output could look like this:\n"
+msgstr ""
+"Vim usará una lista de archivos de recuperación que ha "
+"encontrado. También\n"
+"buscará en otros directorios donde los archivos de recuperación de "
+"archivos\n"
+"en el actual puedan encontrarse.  No buscará archivos de recuperación en\n"
+"otros directorios, ni siquiera en los subdirectorios.\n"
+"   La salida se parecerá a esto:\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:95
+#, fuzzy, no-wrap
+msgid ""
+"\tSwap files found: ~\n"
+"\t   In current directory: ~\n"
+"\t1.    .main.c.swp ~\n"
+"\t\t  owned by: mool   dated: Tue May 29 21:00:25 2001 ~\n"
+"\t\t file name: ~mool/vim/vim6/src/main.c ~\n"
+"\t\t  modified: YES ~\n"
+"\t\t user name: mool   host name: masaka.moolenaar.net ~\n"
+"\t\tprocess ID: 12525 ~\n"
+"\t   In directory ~/tmp: ~\n"
+"\t      -- none -- ~\n"
+"\t   In directory /var/tmp: ~\n"
+"\t      -- none -- ~\n"
+"\t   In directory /tmp: ~\n"
+"\t      -- none -- ~\n"
+msgstr ""
+"\tSwap files found: ~\n"
+"\t   In current directory: ~\n"
+"\t1.    .main.c.swp ~\n"
+"\t\t  owned by: mool   dated: Tue May 29 21:00:25 2001 ~\n"
+"\t\t file name: ~mool/vim/vim6/src/main.c ~\n"
+"\t\t  modified: YES ~\n"
+"\t\t user name: mool   host name: masaka.moolenaar.net ~\n"
+"\t\tprocess ID: 12525 ~\n"
+"\t   In directory ~/tmp: ~\n"
+"\t      -- none -- ~\n"
+"\t   In directory /var/tmp: ~\n"
+"\t      -- none -- ~\n"
+"\t   In directory /tmp: ~\n"
+"\t      -- none -- ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:102
+#, fuzzy, no-wrap
+msgid ""
+"If there are several swap files that look like they may be the one you want "
+"to\n"
+"use, a list is given of these swap files and you are requested to enter "
+"the\n"
+"number of the one you want to use.  Carefully look at the dates to decide\n"
+"which one you want to use.\n"
+"   In case you don't know which one to use, just try them one by one and "
+"check\n"
+"the resulting files if they are what you expected.\n"
+msgstr ""
+"Si hay varios archivos de recuperación que parecen ser el que quiere\n"
+"usar, se mostrará una lista y se requerirá que introduzcas el número del "
+"que\n"
+"quiere seleccionar. Observe con cuidado las fechas para decidir cuál\n"
+"quieres usar.\n"
+"   En caso de que no sepa cuál seleccionar, pruébelos uno a uno y "
+"compruebe\n"
+"que los archivos resultantes son el que deseas.\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:105
+#, fuzzy
+msgid "USING A SPECIFIC SWAP FILE"
+msgstr "USAR UN ARCHIVO DE RECUPERACIÓN ESPECÍFICO"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:109
+#, fuzzy
+msgid ""
+"If you know which swap file needs to be used, you can recover by giving the "
+"swap file name.  Vim will then finds out the name of the original file from "
+"the swap file."
+msgstr ""
+"Si sabe qué archivo de recuperación quiere usar, puede realizar la "
+"recuperación dando como argumento el nombre de este archivo. Vim "
+"encontrará el nombre del archivo original del cuál éste es el archivo de "
+"recuperación."
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:112
+#, fuzzy, no-wrap
+msgid ""
+"Example: >\n"
+"\tvim -r .help.txt.swo\n"
+msgstr ""
+"Ejemplo: >\n"
+"\tvim -r .help.txt.swo\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:117
+#, fuzzy
+msgid ""
+"This is also handy when the swap file is in another directory than "
+"expected.  If this still does not work, see what file names Vim reports and "
+"rename the files accordingly.  Check the 'directory' option to see where Vim "
+"may have put the swap file."
+msgstr ""
+"Esto resulta útil cuando el archivo de recuperación está en otro "
+"directorio diferente al esperado. Si esto tampoco funciona, mire los nombres "
+"de archivo que Vim reporta y renombre los archivos acordemente. Compruebe la "
+"opción 'directory' para ver dónde ha podido poner Vim los archivos de "
+"recuperación."
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:125
+#, fuzzy, no-wrap
+msgid ""
+"\tNote:\n"
+"\tVim tries to find the swap file by searching the directories in the\n"
+"\t'dir' option, looking for files that match \"filename.sw?\".  If\n"
+"\twildcard expansion doesn't work (e.g., when the 'shell' option is\n"
+"\tinvalid), Vim does a desperate try to find the file \"filename.swp\".\n"
+"\tIf that fails too, you will have to give the name of the swapfile\n"
+"\titself to be able to recover the file.\n"
+msgstr ""
+"\tNota:\n"
+"\tVim intenta encontrar los archivos de recuperación buscando los\n"
+"\tdirectorios de la opción 'dir' por nombres que coincidan con\n"
+"\t«nombredearchivo.sw?». Si la expansión del nombre no funciona (p.ej.\n"
+"\tla opción 'shell' es inválida), Vim intenta buscar el archivo\n"
+"\t«nombredearchivo.swp». Si esto también falla, tendrá que darle el\n"
+"\tnombre del archivo a mano para que pueda recuperarlo.\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:128
+#, fuzzy, no-wrap
+msgid "*11.3*\tCrashed or not?\t\t\t\t\t*ATTENTION* *E325*\n"
+msgstr "*11.3*  ¿Se ha colgado o no?\t\t\t\t\t*ATTENTION* *E325*\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:132
+#, fuzzy
+msgid ""
+"Vim tries to protect you from doing stupid things.  Suppose you innocently "
+"start editing a file, expecting the contents of the file to show up.  "
+"Instead, Vim produces a very long message:"
+msgstr ""
+"Vim intenta protegerle de cometer estupideces. Suponga que inocentemente "
+"comienza la edición de un archivo, a la espera de que los contenidos se "
+"muestren. En su lugar, Vim produce un mensaje muy largo:"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:153
+#, fuzzy, no-wrap
+msgid ""
+"\t\tE325: ATTENTION ~\n"
+"\tFound a swap file by the name \".main.c.swp\" ~\n"
+"\t\t  owned by: mool   dated: Tue May 29 21:09:28 2001 ~\n"
+"\t\t file name: ~mool/vim/vim6/src/main.c ~\n"
+"\t\t  modified: no ~\n"
+"\t\t user name: mool   host name: masaka.moolenaar.net ~\n"
+"\t\tprocess ID: 12559 (still running) ~\n"
+"\tWhile opening file \"main.c\" ~\n"
+"\t\t     dated: Tue May 29 19:46:12 2001 ~\n"
+" ~\n"
+"\t(1) Another program may be editing the same file. ~\n"
+"\t    If this is the case, be careful not to end up with two ~\n"
+"\t    different instances of the same file when making changes. ~\n"
+"\t    Quit, or continue with caution. ~\n"
+" ~\n"
+"\t(2) An edit session for this file crashed. ~\n"
+"\t    If this is the case, use \":recover\" or \"vim -r main.c\" ~\n"
+"\t    to recover the changes (see \":help recovery\"). ~\n"
+"\t    If you did this already, delete the swap file \".main.c.swp\" ~\n"
+"\t    to avoid this message. ~\n"
+msgstr ""
+"\t\tE325: ATENCIÓN ~\n"
+"Se ha encontrado un archivo de intercambio con el nombre \".main.c.swp\" ~\n"
+"\t\tpropiedad de: mool   de fecha: Tue May 29 21:09:28 2001 ~\n"
+"\t\tnombre del archivo: ~mool/vim/vim6/src/main.c ~\n"
+"\t\tmodificado: no ~\n"
+"\t\tnombre del usuario: mool   host name: masaka.moolenaar.net ~\n"
+"\t\tID del proceso: 12559 (aún en ejecución) ~\n"
+"\t\tal abrir el archivo \"main.c\" ~\n"
+"\t\tde fecha: Tue May 29 19:46:12 2001 ~\n"
+" ~\n"
+"\t(1)  Puede que otro programa esté editando el mismo archivo. ~\n"
+"\t    De ser así, tenga cuidado de no acabar con dos ~\n"
+"\t    ejemplares diferentes del mismo archivo al hacer cambios. ~\n"
+"\t    Salga del programa o continúe con precaución. ~\n"
+" ~\n"
+"\t(2) Falló una sesión de edición de este archivo. ~\n"
+"\t    Si es así, use \\\":recover\\\" o \\\"vim -r  main.c\" ~\n"
+"\t    para recuperar los cambios (véa \\\":help recovery\\\"). ~\n"
+"\t    Si Ud. ya ha hecho esto, borre el archivo de intercambio "
+"\".main.c.swp\" ~\n"
+"\t    para evitar este mensaje. ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:157
+#, fuzzy
+msgid ""
+"You get this message, because, when starting to edit a file, Vim checks if a "
+"swap file already exists for that file.  If there is one, there must be "
+"something wrong.  It may be one of these two situations."
+msgstr ""
+"Ha recibido este mensaje porque cuando comienza a editar un archivo, Vim "
+"comprueba que exista un archivo de recuperación para este archivo. Si hay "
+"uno, algo debe estar pasando. Puede ocurrir cualquiera de estas situaciones:"
