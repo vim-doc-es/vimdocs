@@ -4,10 +4,11 @@
 
 			 Uso del resaltado de sintaxis
 
+
 El texto en blanco y negro es aburrido. Con colores los archivos tienen más
-vida. No sólo adquieren mejor apariencia, si no que acelera la producción.
-Cambie los colores para distintos tipos de texto. Imprima sus textos con los
-colores que ve en pantalla.
+vida. No sólo adquieren mejor apariencia, si no que acelera la
+producción.  Cambie los colores para distintos tipos de texto. Imprima sus
+textos con los colores que ve en pantalla.
 
 |06.1|	Activar
 |06.2|	¿Colores incorrectos o ausentes?
@@ -31,8 +32,8 @@ Esto debería funcionar en la mayoría de las situaciones para obtener el
 coloreado. Vim detectará automágicamente el tipo de archivo y cargará la
 sintaxis correspondiente. De repente, los comentarios, las palabras clave y
 las cadenas se colorean. Esto facilita una vista general del archivo.
-¡Tras usarlo un poco se dará cuenta de lo que le ralentizaba la edición el
-blanco y negro!
+¡Tras usarlo un poco se dará cuenta de lo que le ralentizaba la edición
+el blanco y negro!
 
 Si siempre quiere usar el resaltado de sintaxis, ponga la orden «:syntax
 enable» en su archivo |vimrc|.
@@ -102,6 +103,7 @@ Puede haber una serie de motivos por los que no vea colores:
 	explica más arriba. Si no tiene suficiente, puede escribir su propio
 	archivo de sintaxis, véase |mysyntaxfile|.
 
+
 O los colores están mal:
 
 - El texto coloreado es muy difícil de leer.
@@ -134,19 +136,20 @@ O los colores están mal:
 ==============================================================================
 *06.3*	Diferentes colores				*:syn-default-override*
 
-Si no le gustan los colores predeterminados, puede seleccionar otro
-esquema de colores. En GVim, use el menú Edit/Color. También puede usar la
-orden: >
+Si no le gustan los colores predeterminados, puede seleccionar otro esquema
+de colores. En GVim, use el menú Edit/Color. También puede usar la orden:
+>
 
 	:colorscheme evening
 
 «evening» es el nombre del esquema de colores. Hay muchos otros que quizá
 quiera probar. Mire en el directorio «$MYVIMRUNTIME/colors».
 
-Cuando haya encontrado un esquema que le guste, añada la orden «:colorscheme»
-a su archivo |vimrc|.
+Cuando haya encontrado un esquema que le guste, añada la orden
+«:colorscheme» a su archivo |vimrc|.
 
-También puede escribir su propio esquema de colores. Así es que como se hace:
+También puede escribir su propio esquema de colores. Así es que como se
+hace:
 
 1. Seleccionar un esquema que se parezca. Copie ese archivo a su propio
    directorio Vim. Para Unix, esto debería funcionar: >
@@ -189,8 +192,9 @@ legibles y que tienen un apariencia agradable.
 ==============================================================================
 *06.4*	Con colores o sin colores
 
-Mostrar texto en color conlleva un gran uso del procesador. Si le parece que el
-texto se muestra muy lentamente, puede desactivar el resaltado momentáneamente: >
+Mostrar texto en color conlleva un gran uso del procesador. Si le parece que
+el texto se muestra muy lentamente, puede desactivar el resaltado
+momentáneamente: >
 
 	:syntax clear
 
@@ -202,7 +206,7 @@ Si quiere desactivar el resaltado por completo use: >
 	:syntax off
 
 Esto desactivará completamente el resaltado de sintaxis y eliminará
-inmediatamente de todos los búfers. 
+inmediatamente de todos los búfers.
 
 							*:syn-manual*
 Si desea resaltado de sintaxis sólo para archivos específicos, use esto: >
@@ -218,14 +222,16 @@ edites un búfer. Para activarla en el búfer actual, asigne la opción
 ==============================================================================
 *06.5*	Imprimir con colores				*syntax-printing*
 
-En la version MS-Windows puede imprimir el archivo actual del siguiente modo: >
+En la version MS-Windows puede imprimir el archivo actual del siguiente
+modo: >
 
 	:hardcopy
 
-Le aparecerá el típico diálogo de impresora, donde puede seleccionarla junto
-con algunas opciones. Si tiene una impresora a color, la salida impresa debe
-ser similar a lo que aparece en pantalla. Sin embargo, cuando tiene un
-fondo oscuro, los colores se ajustarán para verse bien sobre blanco.
+Le aparecerá el típico diálogo de impresora, donde puede seleccionarla
+junto con algunas opciones. Si tiene una impresora a color, la salida
+impresa debe ser similar a lo que aparece en pantalla. Sin embargo, cuando
+tiene un fondo oscuro, los colores se ajustarán para verse bien sobre
+blanco.
 
 Hay diversas opciones que modifican el modo en el que Vim imprime:
 	'printdevice'
@@ -234,14 +240,14 @@ Hay diversas opciones que modifican el modo en el que Vim imprime:
 	'printoptions'
 
 Para imprimir sólo un rango de líneas, use el modo Visual para
-seleccionarlas e introduzca luego
-la orden: >
+seleccionarlas e introduzca luego la orden: >
 
 	v100j:hardcopy
 
-«v» inicia el modo Visual. «100j» le mueve 100 líneas hacia abajo, que se
-resaltarán. Por último «:hardcopy» imprimirá las líneas destacadas. Puede
-usar otras órdenes para moverse en modo Visual, por supuesto.
+«v» inicia el modo Visual. «100j» le mueve 100 líneas hacia abajo, que
+se resaltarán. Por último «:hardcopy» imprimirá las líneas
+destacadas. Puede usar otras órdenes para moverse en modo Visual, por
+supuesto.
 
 Esto también funciona en Unix si tiene una impresora PostScript. En caso
 contrario tendrá que hacer un poco más de trabajo. Tendrá que convertir a
@@ -257,12 +263,13 @@ lugar (no importa dónde, lo eliminará en cuanto termine de imprimir):
 >
 	:write main.c.html
 
-Abra este archivo en su navegador favorito e imprímalo desde allí. Si todo ha
-salido bien, la salida debe tener la misma apariencia que tenía en Vim.
-Véase |2html.vim| para más detalles. No se olvide de eliminar el archivo HTML.
+Abra este archivo en su navegador favorito e imprímalo desde allí. Si todo
+ha salido bien, la salida debe tener la misma apariencia que tenía en Vim.
+Véase |2html.vim| para más detalles. No se olvide de eliminar el archivo
+HTML.
 
-En lugar de imprimir, puede poner el archivo HTML en un servidor, y permitir a
-otros ver el texto resaltado.
+En lugar de imprimir, puede poner el archivo HTML en un servidor, y permitir
+a otros ver el texto resaltado.
 
 ==============================================================================
 *06.6*	Más información
@@ -272,6 +279,6 @@ otros ver el texto resaltado.
 
 ==============================================================================
 
-Capítulo siguiente: |usr_07.esx|  Editar más de un archivo
+Capítulo siguiente: |usr_07.esx| Editar más de un archivo
 
-Copyright: véase |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:
+Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
