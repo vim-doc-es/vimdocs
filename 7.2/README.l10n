@@ -1,0 +1,24 @@
+Algunas instrucciones para el uso de po4a.
+
+Para poder reusar las traducciones antiguas, y regenerar archivos po con
+la estructura apropiada para po4a:
+
+>
+po4a-gettextize -f text -o tabs=verbatim -M utf8 -L utf8 -m original/TXT/usr_04.txt\
+ -l traducido/ESX/usr_04.esx -p traducido/PO/usr_04.txt.po
+<
+
+es de suma importancia usar «-o tabs=verbatim» para que el analizador de po4a no "rompa"
+el índice al inicio de cada capítulo.
+
+Para después convertir un po en un archivo de texto:
+
+>
+po4a-translate -f text -o tabs=verbatim -m original/TXT/usr_04.txt -p\
+ traducido/PO/usr_04.txt.po -l traducido/ESX/usr_04.esx
+<
+
+TODO
+
+Instrucciones para po4a po4a.cfg.
+
