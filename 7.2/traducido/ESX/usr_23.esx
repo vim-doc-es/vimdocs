@@ -4,10 +4,11 @@
 
 			    Editar otros archivos
 
+
 Este capítulo trata acerca de editar archivos que no son archivos
-ordinarios. Con Vim, puede editar archivos comprimidos o cifrados.
-Necesita acceder a algunos archivos a través de Internet. Con
-alguna restricción, también puede editar archivos binarios.
+ordinarios. Con Vim, puede editar archivos comprimidos o cifrados.  Necesita
+acceder a algunos archivos a través de Internet. Con alguna restricción,
+también puede editar archivos binarios.
 
 |23.1|	Archivos de DOS, Mac y Unix
 |23.2|	Archivos en Internet
@@ -41,10 +42,10 @@ Vim que primero pruebe con el formato UNIX, y después con el formato MS-DOS: >
 
 	:set fileformats=unix,dos
 
-Reconocerá el formato por el mensaje que obtendrá al editar un archivo.
-No verá nada si edita un formato de archivo nativo. Por ello, editar un
-archivo UNIX en Unix no resultará en un aviso. Pero cuando edite un archivo
-DOS, Vim le notificará de ello:
+Reconocerá el formato por el mensaje que obtendrá al editar un archivo.  No
+verá nada si edita un formato de archivo nativo. Por ello, editar un archivo
+UNIX en Unix no resultará en un aviso. Pero cuando edite un archivo DOS, Vim
+le notificará de ello:
 
 	"/tmp/test" [dos] 3L, 71C ~
 
@@ -59,6 +60,7 @@ Los tres nombres que Vim usa son:
 	unix		<LF>
 	dos		<CR><LF>
 	mac		<CR>
+
 
 USAR EL FORMATO MAC
 
@@ -78,6 +80,7 @@ añada «mac» a 'fileformats'.
 Vim intentará entonces dilucidar el formato del archivo. Esté atento a las
 situaciones en las que Vim erra en su conclusión.
 
+
 OBVIAR EL FORMATO
 
 Si está usando el clásico Vi e intenta editar un archivo con formato MS-DOS
@@ -90,10 +93,10 @@ entonces obviar el formato: >
 La cadena «++» es un elemento que informa a Vim de que a continuación hay
 un nombre de opción que invalida el valor predeterminado, sólo de esta
 orden. «++ff» se usa para 'fileformat'. También puede usar «++ff=mac» o
-«++ff=dos».
-Esto no funciona con cualquier opción, y sólo está implementado «++ff» y
-«++enc». Los nombres completos, «++fileformat» y «++encoding», también
-funcionan.
+«++ff=dos».  Esto no funciona con cualquier opción, y sólo está
+implementado «++ff» y «++enc». Los nombres completos, «++fileformat» y
+«++encoding», también funcionan.
+
 
 CONVERSIÓN
 
@@ -114,8 +117,8 @@ El archivo se escribe entonces en formato Unix.
 ==============================================================================
 *23.2*	Archivos en Internet
 
-Suponga que alguien le manda un correo electrónico que le remite a un archivo
-a través de su URL. Por ejemplo:
+Suponga que alguien le manda un correo electrónico que le remite a un
+archivo a través de su URL. Por ejemplo:
 
 	Puedes encontrar la información aquí: ~
 	ftp://ftp.vim.org/pub/vim/README ~
@@ -137,17 +140,17 @@ la conexion a Internet se ha interrumpido, etc. Desafortunadamente, es
 difícil conocer la causa del error. Puede que desee intentar una descarga
 manual.
 
-El acceso a archivos en Internet es posible gracias a la extensión netrw.
-A día de hoy se reconocen los siguientes formatos de URL:
+El acceso a archivos en Internet es posible gracias a la extensión netrw.  A
+día de hoy se reconocen los siguientes formatos de URL:
 
 	ftp://		usa ftp
 	rcp://		usa rcp
 	scp://		usa scp
 	http://		usa wget (sólo lectura)
 
-Vim no realiza la conexión por si mismo, sino que depende de que los programas
-mencionados estén instalados en su ordenador. La mayoría de los sistemas Unix
-incluyen ftp y rcp. Puede que tenga que instalar scp y wget.
+Vim no realiza la conexión por si mismo, sino que depende de que los
+programas mencionados estén instalados en su ordenador. La mayoría de los
+sistemas Unix incluyen ftp y rcp. Puede que tenga que instalar scp y wget.
 
 Vim detecta estas URL para cada orden que inicia la edición de un archivo
 nuevo, también con «:edit» y «:split», por ejemplo. Las órdenes de escritura
@@ -162,8 +165,8 @@ Existe información que desea ocultar a otros. Por ejemplo, cuando escribe un
 examen en un ordenador que los estudiantes también usan. No desea que el
 alumno ingenioso descubra cómo leer las preguntas antes del inicio del
 examen.Vim puede cifrar el archivo para usted, lo cual le ofrece
-cierta protección.   Para iniciar la edición de un archivo cifrado nuevo, use el argumento «-x»
-cuando inicie Vim. Ejemplo: >
+cierta protección.   Para iniciar la edición de un archivo cifrado nuevo,
+use el argumento «-x» cuando inicie Vim. Ejemplo: >
 
 	vim -x examen.txt
 
@@ -172,8 +175,8 @@ Vim pedirá que introduzca una clave para cifrar y descifrar el archivo:
 	Introduzca la clave de cifrado: ~
 
 Escriba ahora la clave con cuidado. No puede ver los caracteres que teclea,
-sino que serán reemplazados por estrellas. Para evitar problemas debidos a un
-error mecanográfico, Vim le pedirá que introduzca la clave otra vez:
+sino que serán reemplazados por estrellas. Para evitar problemas debidos a
+un error mecanográfico, Vim le pedirá que introduzca la clave otra vez:
 
 	Introduzca la misma clave de cifrado otra vez: ~
 
@@ -189,6 +192,7 @@ Así mismo, si lo abre con Vim pero introduce mal la contraseña también
 obtendrá basura.
 Vim no posee un mecanismo para revisar si la clave es correcta (lo cual hace
 más difícil descifrar la clave).
+
 
 CONMUTAR EL CIFRADO
 
@@ -207,6 +211,7 @@ cifrado, al igual que hizo el argumento «-x»: >
 	Introduzca la clave de cifrado: ******
 	Introduzca la misma clave de cifrado otra vez: ******
 
+
 LIMITES DEL CIFRADO
 
 El algoritmo de cifrado de Vim es débil. Es suficiente para mantener alejado
@@ -223,15 +228,14 @@ intercambio, use la siguiente orden: >
 
 	vim -x -n archivo.txt
 
-Si ya está editando un archivo, puede desactivar el archivo de
-intercambio con: >
+Si ya está editando un archivo, puede desactivar el archivo de intercambio
+con: >
 
 	:setlocal noswapfile
 
 Es imposible recuperar un archivo si no existe un archivo de intercambio.
 Guarde los datos en el archivo más regularmente para evitar perder sus
-cambios
-.
+cambios .
 
 Un archivo está en texto simple mientras esté en memoria. Cualquiera con los
 privilegios necesarios puede mirar en la memoria del editor y descubrir los
@@ -252,7 +256,11 @@ un carácter y que en todo lo demás, el archivo es idéntico.
    Para impedir que Vim use sus ingeniosos trucos de manera inapropiada,
 añada el argumento «-b» al iniciar Vim: >
 
+#-#-#-#-#  traducido/ESX/usr_23.esx:256  #-#-#-#-#
 	vim -b archivo_de_datos
+
+#-#-#-#-#  traducido/ESX/usr_23.esx:310  #-#-#-#-#
+	vim -b datafile
 
 Esto activa la opción 'binary'. El efecto que tiene es que se desactivan
 ciertos efectos secundarios inesperados. Por ejemplo, 'textwidth' recibe un
@@ -261,8 +269,8 @@ leen siempre en el formato de archivo UNIX.
 
 El modo binario se puede usar para cambiar el mensaje de un programa. Tenga
 cuidado de no insertar o borrar cualquier carácter, ya que impediría el
-funcionamiento del programa.
-Use «-R» para pasar al modo «replace» (reemplazar).
+funcionamiento del programa.  Use «-R» para pasar al modo «replace»
+(reemplazar).
 
 Muchos caracteres en el archivo no se pueden imprimir. Para verlos en
 formato Hex: >
@@ -279,10 +287,10 @@ una visión de conjunto, desactive la opción 'wrap': >
 
 	:set nowrap
 
+
 BYTE POSICIÓN
 
-Use esta orden para ver en que byte se encuentra dentro de un
-archivo: >
+Use esta orden para ver en que byte se encuentra dentro de un archivo: >
 
 	g CTRL-G
 
@@ -298,6 +306,7 @@ Por ejemplo, para ir al byte 2345: >
 
 	2345go
 
+
 USAR XXD
 
 Un editor realmente binario muestra el texto de dos formas: tal cual y en
@@ -306,6 +315,10 @@ con el programa «xxd».
 Este programa está incluido en Vim.
    Primero edite el archivo en modo binario: >
 
+#-#-#-#-#  traducido/ESX/usr_23.esx:256  #-#-#-#-#
+	vim -b archivo_de_datos
+
+#-#-#-#-#  traducido/ESX/usr_23.esx:310  #-#-#-#-#
 	vim -b datafile
 
 Convierta ahora el archivo a un volcado hexadecimal con xxd: >
@@ -332,9 +345,9 @@ Vea la página de manual de xxd para más información.
 ==============================================================================
 *23.5*	Archivos comprimidos
 
-Esto es fácil: Puede editar un archivo comprimido al igual que cualquier
-otro archivo. La extensión para «gzip» se ocupa de descomprimir el archivo
-al iniciar la edición, y lo comprime cuando finaliza.
+Esto es fácil: Puede editar un archivo comprimido al igual que cualquier otro
+archivo. La extensión para «gzip» se ocupa de descomprimir el archivo al
+iniciar la edición, y lo comprime cuando finaliza.
 
 	.Z	compress
 	.gz	gzip
@@ -347,4 +360,4 @@ mencionados. Puede que primero tenga instalar los programas.
 
 Siguiente capìtulo: |usr_24.txt| Insertar con rápidez
 
-Copyright: véase |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:
+Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
