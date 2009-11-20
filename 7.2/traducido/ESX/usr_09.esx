@@ -4,9 +4,10 @@
 
 		Uso de la interfaz gráfica (GUI)
 
+
 Vim funciona en una terminal normal. GVim puede hacer las mismas cosas y
-algunas más. La interfaz gráfica ofrece menús, una barra de menú, barras de
-desplazamiento y otros. Este capítulo trata de las funcionalidades
+algunas más. La interfaz gráfica ofrece menús, una barra de menú, barras
+de desplazamiento y otros. Este capítulo trata de las funcionalidades
 adicionales que la interfaz gráfica ofrece.
 
 |09.1|	Partes de la interfaz gráfica
@@ -39,7 +40,8 @@ figura (¡tanto como se pueda parecer con texto ASCII!).
 	| File	Edit  Tools  Syntax  Buffers  Window  Help   |	<- barra de
 	+----------------------------------------------------+     menú
 	| aaa  bbb  ccc  ddd  eee  fff	ggg  hhh  iii  jjj   |	<- barra de
-	| aaa  bbb  ccc  ddd  eee  fff	ggg  hhh  iii  jjj   |     herramientas	       	+----------------------------------------------------+
+	| aaa  bbb  ccc  ddd  eee  fff	ggg  hhh  iii  jjj   |     herramientas
+	+----------------------------------------------------+
 	| archivo de texto				 | ^ |
 	| ~						 | # |
 	| ~						 | # |	<- barra de
@@ -49,9 +51,10 @@ figura (¡tanto como se pueda parecer con texto ASCII!).
 	|						 | V |
 	+----------------------------------------------------+
 
-El espacio más grande está ocupado por el archivo de texto. Esto muestra el
-archivo de una manera similar a una terminal. Con algunas diferencias de
+El espacio más grande está ocupado por el archivo de texto. Esto muestra
+el archivo de una manera similar a una terminal. Con algunas diferencias de
 tipo de letra y color, quizá.
+
 
 EL TÍTULO DE LA VENTANA
 
@@ -67,12 +70,13 @@ directorio del archivo entre paréntesis. Los caracteres especiales son:
 
 Si no hay ningún símbolo se trata de un archivo normal, sin cambios.
 
+
 LA BARRA DE MENÚ
 
 Ya sabe como funcionan los menús, ¿no? Vim tiene los elementos habituales,
-además de otros. Explórelos para tener
-una idea de cómo podría usarlos. Un submenú relevante es «Editar/Opciones
-globlales». Encontrará los siguientes elementos:
+además de otros. Explórelos para tener una idea de cómo podría
+usarlos. Un submenú relevante es «Editar/Opciones globlales». Encontrará
+los siguientes elementos:
 
 	Toggle Toolbar		barra de herramientas aparece/desaparece
 	Toggle Bottom Scrollbar	barra de despl. aparece/desaparece abajo
@@ -83,22 +87,25 @@ En la mayoría de los sistemas puede seccionar los menús. Seleccione el
 elemento superior del menú que parece una línea a rayas. Ahora tendrá una
 pequeña ventana aparte con el menú.
 
+
 LA BARRA DE HERRAMIENTAS
 
-Este contiene los iconos para las acciones más empleadas. La intención es que
-los iconos se expliquen a sí mismos. Hay globos de ayuda que le aconsejan
-(pon el puntero sobre un botón y no lo muevas durante un segundo).
+Este contiene los iconos para las acciones más empleadas. La intención es
+que los iconos se expliquen a sí mismos. Hay globos de ayuda que le
+aconsejan (pon el puntero sobre un botón y no lo muevas durante un
+segundo).
 
-La opción «Editar/Opciones globales/Ocultar/Mostrar barra de herramientas»
-se puede emplear para hacer que la barra de herramientas desaparezca.
-Si no desea tener una barra de herramientas en ningún momento,
-escriba esto en su «vimrc»: >
+La opción «Editar/Opciones globales/Ocultar/Mostrar barra de
+herramientas» se puede emplear para hacer que la barra de herramientas
+desaparezca.  Si no desea tener una barra de herramientas en ningún
+momento, escriba esto en su «vimrc»: >
 
 	:set guioptions-=T
 
 Esto elimina la marca 'T' de la opción 'guioptions'. Otras partes de la
 interfaz gráfica se pueden también activar o desactivar del mismo modo.
 Consulte la ayuda.
+
 
 LAS BARRAS DE DESPLAZAMIENTO
 
@@ -137,11 +144,11 @@ La siguiente orden hace que el ratón se comporte como en Windows: >
 
 	:behave mswin
 
-El comportamiento predefinido de un ratón en los sistemas UNIX es xterm.  El
-comportamiento predefinido en un sistema Windows se selecciona durante la
+El comportamiento predefinido de un ratón en los sistemas UNIX es xterm.
+El comportamiento predefinido en un sistema Windows se selecciona durante la
 instalación. Para más detalles sobre estos comportamientos, véase
-|:behave|.
-Esto es un pequeño resumen:
+|:behave|.  Esto es un pequeño resumen:
+
 
 COMPORTAMIENTO DEL RATÓN XTERM
 
@@ -150,6 +157,7 @@ Arrastrar botón izquierdo	seleccionar texto en modo Visual
 Click botón central		pegar texto desde el portapapeles
 Click botón derecho		extender el texto seleccionado hasta el
 				puntero del ratón
+
 
 COMPORTAMIENTO DEL RATÓN MSWIN
 
@@ -160,8 +168,9 @@ Click botón izquierdo, con May. extender el texto seleccionado hasta el
 Click botón central		pegar texto desde el portapapeles
 Click botón derecho		mostrar un menú pop-up
 
-Puede configurar el ratón con más detalle. Léa estas opciones para ver cómo
-funciona el ratón:
+
+Puede configurar el ratón con más detalle. Léa estas opciones para ver
+cómo funciona el ratón:
 
 	'mouse'			en qué modo Vim usa el ratón
 	'mousemodel'		qué efectos tiene pulsar con el ratón
@@ -187,14 +196,15 @@ ratón. Vim pasará al modo Visual y resaltará el texto. Ahora inicie otro
 gVim, sin un nombre de archivo, de forma que muestre una ventana vacía.
 Pulse el botón central del ratón. El texto seleccionado se insertará.
 
-La «selección actual» sólo será válida hasta que seleccione otro texto.
-Tras pegar el texto en otro gVim, seleccione ahora algunos caracteres en
-esa ventana. Se dará cuenta de que las palabras que estaban previamente
-seleccionadas en otra ventana gVim se muestran de otro modo. Esto significa
-que ya no están en la «selección actual».
+La «selección actual» sólo será válida hasta que seleccione otro
+texto.  Tras pegar el texto en otro gVim, seleccione ahora algunos
+caracteres en esa ventana. Se dará cuenta de que las palabras que estaban
+previamente seleccionadas en otra ventana gVim se muestran de otro
+modo. Esto significa que ya no están en la «selección actual».
 
 No necesitas seleccionar texto con el ratón, el uso de comandos del teclado
 para el modo Visual funciona igual.
+
 
 EL VERDADERO PORTAPAPELES
 
@@ -212,24 +222,25 @@ portapapeles.
    Ahora seleccione otro gVim, coloque el cursor en algún lugar y use el
 menú Editar/Pegar. Verá que se inserta el texto del verdadero portapapeles.
 
+
 USAR AMBOS
 
 Esto de usar simultáneamente la «selección actual» y el «verdadero
-portapapeles» puede sonar un poco confuso. Pero es muy útil. Veámoslo con un
-ejemplo. Abra un gVim con un archivo de texto y haga lo siguiente:
+portapapeles» puede sonar un poco confuso. Pero es muy útil. Veámoslo con
+un ejemplo. Abra un gVim con un archivo de texto y haga lo siguiente:
 
 -  Seleccione dos palabras en modo Visual.
 -  Ponga esas palabras en el portapapeles con Editar/Copiar.
 -  Selecciona otra palabra en modo Visual.
 -  Accede al elemento del menú Editar/Pegar. Lo que ocurrirá es que la
-   palabra
-   seleccionada se sustituirá con las palabras del portapapeles.
+   palabra seleccionada se sustituirá con las palabras del portapapeles.
 -  Ponga el puntero del ratón en algún lugar y pulse el botón central.
    Verá que la palabra que sobreescribió con el portapapeles se insertará
    en ese lugar.
 
 Si usa la «selección actual» y el «verdadero portapapeles» con cuidado,
 puede llevar a cabo una gran variedad de trucos de edición.
+
 
 USO DEL TECLADO
 
@@ -242,7 +253,8 @@ Visual. Por ejemplo, para seleccionar una línea completa use «V».
 
 	"*P
 
-Observe que es una «P» mayúscula. La «p» minúscula la pone tras el cursor.
+Observe que es una «P» mayúscula. La «p» minúscula la pone tras el
+cursor.
 
 El registro "+ se usa para el verdadero portapapeles. Por ejemplo, para
 copiar el texto desde la posición del cursor hasta el final de línea: >
@@ -263,29 +275,29 @@ del registro estrella (*).
 Ahora algo que se emplea más habitualmente en MS-Windows que en X-Windows.
 Aún así, ambos pueden hacerlo. Ya conoce el modo Visual. El modo
 Seleccionar es como el modo Visual, también empleado para la selección.
-Pero hay una diferencia básica: Cuando escriba texto, el texto
-seleccionado se elimina y el texto introducido lo sustituye.
+Pero hay una diferencia básica: Cuando escriba texto, el texto seleccionado
+se elimina y el texto introducido lo sustituye.
 
 Para iniciar el modo Seleccionar, debe activarlo primero (para MS-Windows
 está probablemente activado, pero puedes hacer esto igualmente): >
 
 	:set selectmode+=mouse
 
-A continuación, use el ratón para seleccionar algún texto. Se resaltará como
-con el modo Visual. Pulse ahora un carácter. El texto seleccionado se
+A continuación, use el ratón para seleccionar algún texto. Se resaltará
+como con el modo Visual. Pulse ahora un carácter. El texto seleccionado se
 eliminará, y ese carácter lo reemplazará. Entrará en modo Insertar.
 
 Ya que escribir texto normal hace que el texto seleccionado se elimine, no
-podrá usar las órdenes de movimiento «hjkl», «w», etc. En su lugar, use las
-teclas de las flechas con mayúsculas. <S-izquierda> mueve el cursor a la
-izquierda. El texto seleccionado cambiará como en el modo Visual. <S-Fin>
-y <S-Inicio> también funcionan.
+podrá usar las órdenes de movimiento «hjkl», «w», etc. En su lugar,
+use las teclas de las flechas con mayúsculas. <S-izquierda> mueve el cursor
+a la izquierda. El texto seleccionado cambiará como en el modo
+Visual. <S-Fin> y <S-Inicio> también funcionan.
 
-Puedes ajustar el funcionamiento del modo Seleccionar mediante
-la opción 'selectmode'.
+Puedes ajustar el funcionamiento del modo Seleccionar mediante la opción
+'selectmode'.
 
 ==============================================================================
 
-Capítulo siguiente: |usr_10.esx|  Hacer cambios grandes
+Capítulo siguiente: |usr_10.esx| Hacer cambios grandes
 
-Copyright: véase |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:
+Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
