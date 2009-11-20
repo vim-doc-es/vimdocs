@@ -18,6 +18,12 @@ po4a-translate -f text -o tabs=verbatim -m original/TXT/usr_04.txt -p\
  traducido/PO/usr_04.txt.po -l traducido/ESX/usr_04.esx
 <
 
+usr_toc precisa una opción más:
+
+>
+po4a-gettextize -f text -o nobullets -o tabs=verbatim -o breaks="(<|>)" -M utf-8 -L utf-8\
+ -m original/TXT/usr_toc.txt -l traducido/ESX/usr_toc.esx -p traducido/PO/usr_toc.txt.po
+
 TODO
 
 Instrucciones para po4a po4a.cfg.
