@@ -1,7 +1,14 @@
 Algunas instrucciones para el uso de po4a.
 
 Ejecutar en esta carpeta «po4a po4a.cfg» actualiza los pot y po, y crea los documentos
-traducidos.
+traducidos. También se le pueden introducir opciones, p. ej.:
+
+«po4a --no-translations po4a.cfg» Esto regenera los POT y PO de ser necesario, pero no
+genera la documentación traducida. Útil para cuando hay varios cambios (cadenas borrosas),
+pero se desea evitar que esas cadenas en inglés lleguen a la versión del documento en
+español.
+
+#### Sintaxis de po4a.cfg######################################
 
 [po4a_paths] especifica rutas de archivos pot y po
 
@@ -12,6 +19,8 @@ traducidos.
 [type:formato/alias] <ruta al original> <ruta al traducido>
 
 Uno por cada documento que entre en juego...
+
+###############################################################
 
 Para poder reusar las traducciones antiguas, y regenerar archivos po con
 la estructura apropiada para po4a:
