@@ -2,19 +2,21 @@
 # Copyright (C) 2009 Free Software Foundation, Inc.
 # This file is distributed under the same license as the Vim package.
 # Automatically generated, 2009.
-#
+# Omar Campagne <ocampagne@gmail.com>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2009-11-24 01:31+0100\n"
-"PO-Revision-Date: 2009-11-24 01:12+0100\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2009-11-24 13:54+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: none\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.4.1\n"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:4 original/TXT/usr_01.txt:4
@@ -124,15 +126,15 @@ msgstr "OPCIONES"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:2
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "*usr_24.txt*\tFor Vim version 7.2.  Last change: 2006 Jul 23\n"
-msgstr "*usr_04.esx*\tPara Vim version 7.2.  Último cambio: 8/2/2007\n"
+msgstr "*usr_24.txt*\tPara Vim versión 7.2.  Último cambio: 23/6/2006"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:6
 #, no-wrap
 msgid "\t\t\t     Inserting quickly\n"
-msgstr ""
+msgstr "\t\t\t     Insertar con rapidez\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:12
@@ -142,10 +144,14 @@ msgid ""
 "previously typed words.  Abbreviate long words to short ones.  Type "
 "characters that aren't on your keyboard."
 msgstr ""
+"Al introducir texto, Vim ofrece varias maneras de reducir el número de "
+"teclas que pulsa, evitando teclear errores. Use el modo de auto-compleción "
+"del modo Insertar para repetir palabras anteriormente tecleadas. Abrevie las "
+"palabras largas. Teclee caracteres que no están en su teclado."
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:23
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|24.1|\tMaking corrections\n"
 "|24.2|\tShowing matches\n"
@@ -158,45 +164,49 @@ msgid ""
 "|24.9|\tDigraphs\n"
 "|24.10|\tNormal mode commands\n"
 msgstr ""
-"|usr_24.txt|  Inserting quickly\n"
-"\t\t|24.1|\tMaking corrections\n"
-"\t\t|24.2|\tShowing matches\n"
-"\t\t|24.3|\tCompletion\n"
-"\t\t|24.4|\tRepeating an insert\n"
-"\t\t|24.5|\tCopying from another line\n"
-"\t\t|24.6|\tInserting a register\n"
-"\t\t|24.7|\tAbbreviations\n"
-"\t\t|24.8|\tEntering special characters\n"
-"\t\t|24.9|\tDigraphs\n"
-"\t\t|24.10|\tNormal mode commands\n"
+"|24.1|\tCorregir\n"
+"|24.2|\tMostrar coincidencias\n"
+"|24.3|\tCompleción\n"
+"|24.4|\tRepetir una inserción\n"
+"|24.5|\tCopiar desde otra línea\n"
+"|24.6|\tInsertar un registro\n"
+"|24.7|\tAbreviaturas\n"
+"|24.8|\tIntroducir caracteres especiales\n"
+"|24.9|\tDígrafos\n"
+"|24.10|\tÓrdenes del modo Normal\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:27
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "     Next chapter: |usr_25.txt|  Editing formatted text\n"
 " Previous chapter: |usr_23.txt|  Editing other files\n"
 "Table of contents: |usr_toc.txt|\n"
 msgstr ""
-" Capítulo siguiente: |usr_09.esx|  Uso de la interfaz gráfica\n"
-"  Capítulo anterior: |usr_07.esx|  Editar más de un archivo\n"
-"Tabla de contenidos: |usr_toc.esx|\n"
+" Capítulos siguiente: |usr_25.txt|  Editar texto con formato\n"
+"     Capitulo anterior: |usr_23.txt|  Editar otros archivos\n"
+"Tabla de contenidos: |usr_toc.txt|\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:30
 #, no-wrap
 msgid "*24.1*\tMaking corrections\n"
-msgstr ""
+msgstr "*24.1*\tCorregir\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:35
 #, no-wrap
 msgid ""
-"The <BS> key was already mentioned.  It deletes the character just before the\n"
+"The <BS> key was already mentioned.  It deletes the character just before "
+"the\n"
 "cursor.  The <Del> key does the same for the character under (after) the\n"
 "cursor.\n"
 "   When you typed a whole word wrong, use CTRL-W:\n"
 msgstr ""
+"La tecla <BS> ya se ha mencionado. Borra el carácter que precede al cursor.\n"
+"La tecla <Del> hace lo mismo con el carácter debajo (después) del cursor.\n"
+"   Use CTRL-W en caso de haber tecleado una palabra completamente\n"
+"   errónea:\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:39
@@ -206,6 +216,9 @@ msgid ""
 "\t\t\t\t       CTRL-W\n"
 "\tThe horse had fallen to the ~\n"
 msgstr ""
+"\tEl caballo cayó del cielo ~\n"
+"\t\t\t\t\tCTRL-W\n"
+"\tEl caballo cayó del ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:44
@@ -215,6 +228,11 @@ msgid ""
 "from the first non-blank to the cursor is deleted.  With the cursor on the "
 "\"f\" of \"fallen\" in the next line pressing CTRL-U does this:"
 msgstr ""
+"En caso de haber realizado errores en una línea, y desea empezar otra vez, "
+"use CTRL-U para borrarlo. Esto mantiene el texto después del cursor, así "
+"como la tabulación. Sólo se borra el texto desde el primer espacio que no "
+"esté vacío hasta el cursor. Pulsar CTRL-U con el cursor sobre la «c» de "
+"«cayó» hace lo siguiente:"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:48
@@ -224,6 +242,9 @@ msgid ""
 "\t\t      CTRL-U\n"
 "\tfallen to the ~\n"
 msgstr ""
+"\tEl caballo cayó del cielo ~\n"
+"\t\t\t\t\tCTRL-W\n"
+"\tcayó del ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:51
@@ -231,25 +252,29 @@ msgid ""
 "When you spot a mistake a few words back, you need to move the cursor there "
 "to correct it.  For example, you typed this:"
 msgstr ""
+"Cuando detecta un error en alguna palabra anterior, necesita desplazar el "
+"cursor hasta ese punto para corregirlo. Por ejemplo, escribió lo siguiente:"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:53
 #, no-wrap
 msgid "\tThe horse had follen to the ground ~\n"
-msgstr ""
+msgstr "\tEl caballo cayú al suelo ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:56
 msgid ""
-"You need to change \"follen\" to \"fallen\".  With the cursor at the end, "
-"you would type this to correct it: >"
+"You need to change \"follen\" to \"fallen\".  With the cursor at the end, you "
+"would type this to correct it: >"
 msgstr ""
+"Necesita cambiar «cayú» a «cayó». Con el cursor al final,  teclearía esto "
+"para corregirlo: >"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:58
 #, no-wrap
 msgid "\t\t\t\t\t<Esc>4blraA\n"
-msgstr ""
+msgstr "\t\t\t\t\t<Esc>4blraA\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:64
@@ -261,6 +286,11 @@ msgid ""
 "\treplace with \"a\"\t\t\tra\n"
 "\trestart Insert mode\t\t\t  A\n"
 msgstr ""
+"<\tAbandonar el modo insertar   <Esc>\n"
+"\tfour words back\t\t\t     4b\n"
+"\tmove on top of the \"o\"\t\t       l\n"
+"\treplace with \"a\"\t\t\tra\n"
+"\trestart Insert mode\t\t\t  A\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:66
@@ -361,9 +391,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:116
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t:set matchtime=15\n"
-msgstr "\t:set patchmode=.orig\n"
+msgstr "\t:set matchtime=15\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:118
@@ -390,7 +420,7 @@ msgstr ""
 #: original/TXT/usr_24.txt:128
 #, no-wrap
 msgid "\ttotal = ch_array[0] + ch_array[1] + ch_array[2]; ~\n"
-msgstr ""
+msgstr "\ttotal = ch_array[0] + ch_array[1] + ch_array[2]; ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:130
@@ -417,7 +447,7 @@ msgstr ""
 #: original/TXT/usr_24.txt:139
 #, no-wrap
 msgid "\ttotal = ch_array[0] + ch_array ~\n"
-msgstr ""
+msgstr "\ttotal = ch_array[0] + ch_array ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:141
@@ -428,7 +458,7 @@ msgstr ""
 #: original/TXT/usr_24.txt:143
 #, no-wrap
 msgid "\ttotal = ch_array[0] + ch_array[1] +  ~\n"
-msgstr ""
+msgstr "\ttotal = ch_array[0] + ch_array[1] +  ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:151
@@ -549,7 +579,7 @@ msgstr ""
 #: original/TXT/usr_24.txt:208
 #, no-wrap
 msgid "\tmain.c  sub_count.c  sub_done.c  sub_exit.c\n"
-msgstr ""
+msgstr "\tmain.c  sub_count.c  sub_done.c  sub_exit.c\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:210
