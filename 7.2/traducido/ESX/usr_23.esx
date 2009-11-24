@@ -256,11 +256,7 @@ un carácter y que en todo lo demás, el archivo es idéntico.
    Para impedir que Vim use sus ingeniosos trucos de manera inapropiada,
 añada el argumento «-b» al iniciar Vim: >
 
-#-#-#-#-#  traducido/ESX/usr_23.esx:256  #-#-#-#-#
 	vim -b archivo_de_datos
-
-#-#-#-#-#  traducido/ESX/usr_23.esx:310  #-#-#-#-#
-	vim -b datafile
 
 Esto activa la opción 'binary'. El efecto que tiene es que se desactivan
 ciertos efectos secundarios inesperados. Por ejemplo, 'textwidth' recibe un
@@ -315,11 +311,7 @@ con el programa «xxd».
 Este programa está incluido en Vim.
    Primero edite el archivo en modo binario: >
 
-#-#-#-#-#  traducido/ESX/usr_23.esx:256  #-#-#-#-#
 	vim -b archivo_de_datos
-
-#-#-#-#-#  traducido/ESX/usr_23.esx:310  #-#-#-#-#
-	vim -b datafile
 
 Convierta ahora el archivo a un volcado hexadecimal con xxd: >
 

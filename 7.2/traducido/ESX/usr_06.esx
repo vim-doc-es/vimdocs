@@ -1,14 +1,14 @@
 *usr_06.esx*	Para Vim version 7.2.  Último cambio: 24/5/2006
 
-		  MANUAL DE USUARIO DE VIM - por Bram Moolenaar
+		MANUAL DE USUARIO DE VIM - por Bram Moolenaar
 
 			 Uso del resaltado de sintaxis
 
 
 El texto en blanco y negro es aburrido. Con colores los archivos tienen más
-vida. No sólo adquieren mejor apariencia, si no que acelera la
-producción.  Cambie los colores para distintos tipos de texto. Imprima sus
-textos con los colores que ve en pantalla.
+vida. No sólo adquieren mejor apariencia, si no que acelera la producción.
+Cambie los colores para distintos tipos de texto. Imprima sus textos con los
+colores que ve en pantalla.
 
 |06.1|	Activar
 |06.2|	¿Colores incorrectos o ausentes?
@@ -31,9 +31,9 @@ Comencemos con una simple orden: >
 Esto debería funcionar en la mayoría de las situaciones para obtener el
 coloreado. Vim detectará automágicamente el tipo de archivo y cargará la
 sintaxis correspondiente. De repente, los comentarios, las palabras clave y
-las cadenas se colorean. Esto facilita una vista general del archivo.
-¡Tras usarlo un poco se dará cuenta de lo que le ralentizaba la edición
-el blanco y negro!
+las cadenas se colorean. Esto facilita una vista general del archivo.  ¡Tras
+usarlo un poco se dará cuenta de lo que le ralentizaba la edición el blanco
+y negro!
 
 Si siempre quiere usar el resaltado de sintaxis, ponga la orden «:syntax
 enable» en su archivo |vimrc|.
@@ -137,8 +137,7 @@ O los colores están mal:
 *06.3*	Diferentes colores				*:syn-default-override*
 
 Si no le gustan los colores predeterminados, puede seleccionar otro esquema
-de colores. En GVim, use el menú Edit/Color. También puede usar la orden:
->
+de colores. En GVim, use el menú Edit/Color. También puede usar la orden: >
 
 	:colorscheme evening
 
@@ -151,15 +150,16 @@ Cuando haya encontrado un esquema que le guste, añada la orden
 También puede escribir su propio esquema de colores. Así es que como se
 hace:
 
-1. Seleccionar un esquema que se parezca. Copie ese archivo a su propio
-   directorio Vim. Para Unix, esto debería funcionar: >
+1. Seleccione un esquema que se parezca. Copie ese archivo a su propio
+   directorio de Vim. Bajo Unix, esto debería funcionar: >
 
 	!mkdir ~/.vim/colors
 	!cp $VIMRUNTIME/colors/morning.vim ~/.vim/colors/mine.vim
 <
    Esto se hace desde Vim, porque conoce el valor de $VIMRUNTIME.
 
-2. Editar el archivo del esquema de colores. Estas entradas son útiles:
+2. Editar el archivo del esquema de colores. Estas entradas son
+   útiles:
 
 	term		atributos en una terminal B/N
 	cterm		atributos en una terminal a color
@@ -177,7 +177,7 @@ hace:
    Si quiere los dos, escriba «bold,underline». Para más detalles, véase la
    orden |:highlight|.
 
-3. Decir a Vim que use siempre su esquema. Inserte esto en su |vimrc|: >
+3.  Decir a Vim que use siempre su esquema. Incluya esto en su |vimrc|: >
 
 	colorscheme mine
 
@@ -227,11 +227,10 @@ modo: >
 
 	:hardcopy
 
-Le aparecerá el típico diálogo de impresora, donde puede seleccionarla
-junto con algunas opciones. Si tiene una impresora a color, la salida
-impresa debe ser similar a lo que aparece en pantalla. Sin embargo, cuando
-tiene un fondo oscuro, los colores se ajustarán para verse bien sobre
-blanco.
+Le aparecerá el típico diálogo de impresora, donde puede seleccionarla junto
+con algunas opciones. Si tiene una impresora a color, la salida impresa debe
+ser similar a lo que aparece en pantalla. Sin embargo, cuando tiene un fondo
+oscuro, los colores se ajustarán para verse bien sobre blanco.
 
 Hay diversas opciones que modifican el modo en el que Vim imprime:
 	'printdevice'
@@ -244,10 +243,9 @@ seleccionarlas e introduzca luego la orden: >
 
 	v100j:hardcopy
 
-«v» inicia el modo Visual. «100j» le mueve 100 líneas hacia abajo, que
-se resaltarán. Por último «:hardcopy» imprimirá las líneas
-destacadas. Puede usar otras órdenes para moverse en modo Visual, por
-supuesto.
+«v» inicia el modo Visual. «100j» le mueve 100 líneas hacia abajo, que se
+resaltarán. Por último «:hardcopy» imprimirá las líneas destacadas. Puede
+usar otras órdenes para moverse en modo Visual, por supuesto.
 
 Esto también funciona en Unix si tiene una impresora PostScript. En caso
 contrario tendrá que hacer un poco más de trabajo. Tendrá que convertir a

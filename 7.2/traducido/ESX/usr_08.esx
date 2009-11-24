@@ -1,6 +1,6 @@
 *usr_08.esx*	Para Vim versión 7.2.  Último cambio: 18/6/2006
 
-		  MANUAL DE USUARIO DE VIM - por Bram Moolenaar
+		MANUAL DE USUARIO DE VIM - por Bram Moolenaar
 
 			    Dividir en ventanas
 
@@ -55,8 +55,8 @@ variables de un programa, y la de abajo el código que usa esas variables.
 
 La orden CTRL-W w se puede usar para saltar de una ventana a otra. Si está
 en la ventana superior, CTRL-W w salta a la ventana inferior. Si está en la
-ventana inferior saltará a la primera ventana. (CTRL-W CTRL-W hace lo
-mismo, en caso de que suelte la tecla CTRL un poco después.)
+ventana inferior saltará a la primera ventana. (CTRL-W CTRL-W hace lo mismo,
+en caso de que suelte la tecla CTRL un poco después.)
 
 
 CERRAR LA VENTANA
@@ -66,8 +66,8 @@ Para cerrar la ventana usa la orden: >
 	:close
 
 De hecho, cualquier orden que salga del archivo funciona, como «:quit» y
-«ZZ». Pero «:close» evitará que salga accidentalmente de Vim cuando
-cierre la última ventana.
+«ZZ». Pero «:close» evitará que salga accidentalmente de Vim cuando cierre
+la última ventana.
 
 
 CERRAR TODAS LAS OTRAS VENTANAS
@@ -106,8 +106,8 @@ Para abrir una ventana en un archivo nuevo y vacío, use lo siguiente: >
 
 	:new
 
-Puede repetir las órdenes «:split» y «:new» para crear tantas ventanas
-como quiera.
+Puede repetir las órdenes «:split» y «:new» para crear tantas ventanas como
+quiera.
 
 ==============================================================================
 *08.3*	Tamaño de ventana
@@ -131,11 +131,9 @@ Para disminuirlo: >
 	CTRL-W -
 
 Ambas órdenes reciben un multiplicador que modificará la altura de ventana
-ese número de líneas. «4 CTRL-W +» hará la ventana cuatro líneas más
-alta.
+ese número de líneas. «4 CTRL-W +» hará la ventana cuatro líneas más alta.
 
-Para definir la altura de la ventana con un número específico de líneas:
->
+Para definir la altura de la ventana con un número específico de líneas: >
 
 	{altura}CTRL-W _
 
@@ -149,9 +147,9 @@ USO DEL RATÓN
 
 En Vim puede hacer muchas cosas muy rápidamente desde el teclado. Por
 desgracia, las órdenes de ajuste de las ventanas requieren mucho trabajo.
-En este caso, usar el ratón es más rápido. Coloque el ratón sobre la
-línea de estado. Ahora presione el botón izquierdo y arrastre. La línea
-de estado se desplazará, ajustando el tamaño de la ventana.
+En este caso, usar el ratón es más rápido. Coloque el ratón sobre la línea
+de estado. Ahora presione el botón izquierdo y arrastre. La línea de estado
+se desplazará, ajustando el tamaño de la ventana.
 
 
 OPCIONES
@@ -166,8 +164,8 @@ tamaño de las ventanas cuando éstas se cierran o se abren nuevas.
 ==============================================================================
 *08.4*	Divisiones verticales
 
-La orden «:split» crea una nueva ventana sobre la actual. Para hacer que
-una ventana aparezca en el lateral izquierda, use: >
+La orden «:split» crea una nueva ventana sobre la actual. Para hacer que una
+ventana aparezca en el lateral izquierda, use: >
 
 	:vsplit
 
@@ -185,18 +183,18 @@ El resultado tiene el siguiente aspecto:
 	|                                      |
 	+--------------------------------------+
 
-De hecho, la línea de «|» en el centro estará en vídeo inverso. A esto
-se le llama separador vertical.
+De hecho, la línea de «|» en el centro estará en vídeo inverso. A esto se le
+llama separador vertical.
 
 También hay una orden «:vnew», para abrir una partición vertical con un
 archivo nuevo. Otra forma de hacer esto es la siguiente: >
 
 	:vertical new
 
-La orden «:vertical» se puede insertar justo antes de otra orden que
-divida la ventana. Esto puede hacer que la ventana se divida verticalmente
-en lugar de horizontalmente. (Si la orden no divide ventanas se ejecuta de
-modo normal.)
+La orden «:vertical» se puede insertar justo antes de otra orden que divida
+la ventana. Esto puede hacer que la ventana se divida verticalmente en lugar
+de horizontalmente. (Si la orden no divide ventanas se ejecuta de modo
+normal.)
 
 
 MOVERSE DE UNA VENTANA A OTRA
@@ -239,8 +237,8 @@ ejemplo, tiene tres ventanas como estas:
 	|				   |
 	+----------------------------------+
 
-Obviamente la última ventana debería estar en la parte superior. Vaya a
-esa ventana (usando CTRL-W w) y luego teclee la siguiente orden: >
+Obviamente la última ventana debería estar en la parte superior. Vaya a esa
+ventana (usando CTRL-W w) y luego teclee la siguiente orden: >
 
 	CTRL-W K
 
@@ -316,8 +314,8 @@ Esto guarda todos los archivos modificados y sale de Vim.
 
 ABRIR UNA VENTANA PARA CADA ARGUMENTO
 
-Para hacer que Vim abra una ventana para cada archivo, arránquelo con
-«-o»: >
+Para hacer que Vim abra una ventana para cada archivo, arránquelo con «-o»:
+>
 
 	vim -o uno.txt dos.txt tres.txt
 
@@ -351,8 +349,8 @@ archivo «main.c~» contendrá la versión anterior.
 
 	vimdiff main.c~ main.c
 
-Vim arrancará con dos ventanas verticales. Verá solamente la línea en la
-que ha añadido los cambios y unas cuántas líneas por debajo.
+Vim arrancará con dos ventanas verticales. Verá solamente la línea en la que
+ha añadido los cambios y unas cuántas líneas por debajo.
 
 	 VV		      VV
 	+-----------------------------------------+
@@ -414,8 +412,8 @@ La orden «:vertical» se usa para hacer que las ventanas se dividan
 verticalmente. Si omite esto, obtendrá una división horizontal.
 
 Si tiene un parche o un archivo diff, puede usarlo como una tercera manera
-de iniciar el modo diff. Primero edite el archivo sobre el cuál se aplica
-el parche. Entonces escribe la siguiente orden: >
+de iniciar el modo diff. Primero edite el archivo sobre el cuál se aplica el
+parche. Entonces escribe la siguiente orden: >
 
 	:edit main.c
 	:vertical diffpatch main.c.diff
@@ -460,9 +458,9 @@ Para actualizarlo deberá escribir: >
 	:diffupdate
 
 Para eliminar una diferencia, puede mover el texto de un bloque resaltado
-desde una ventana a otra. Suponga el «main.c» y el «main.c~» del
-ejemplo.  Mueva el cursor a la izquierda de la ventana, sobre la línea que
-se eliminó en la otra ventana. Ahora escriba esta orden: >
+desde una ventana a otra. Suponga el «main.c» y el «main.c~» del ejemplo.
+Mueva el cursor a la izquierda de la ventana, sobre la línea que se eliminó
+en la otra ventana. Ahora escriba esta orden: >
 
 	dp
 
@@ -475,9 +473,8 @@ a la ventana de la derecha, donde se insertó el cambio. Escriba: >
 
 El cambio será ahora eliminado obteniendo el texto desde la otra ventana.
 Ya que no hay cambios restantes, Vim pondrá todo el texto en un pliegue
-cerrado.  «do» viene de «diff obtain» (obtain = obtener). «dg» podría
-ser mejor (de g = get = obtener) pero «dgg» ya tenía un significado
-diferente.
+cerrado.  «do» viene de «diff obtain» (obtain = obtener). «dg» podría ser
+mejor (de g = get = obtener) pero «dgg» ya tenía un significado diferente.
 
 Para más detalles sobre el modo diff, véase |vimdiff|.
 
@@ -500,8 +497,7 @@ archivo alterno, CTRL-W CTRL-^ divide la ventana y edita el archivo alterno.
 
 Puede activar la opción 'splitbelow' para hacer que la nueva ventana
 aparezca debajo de la actual. Puede activar la opción 'splitright' para
-hacer que una partición vertical aparezca a la derecha de la ventana
-actual.
+hacer que una partición vertical aparezca a la derecha de la ventana actual.
 
 Cuando divida una ventana puede poner un prefijo modificador que diga dónde
 debe aparecer la ventana:
@@ -539,12 +535,11 @@ espacio de Vim. Verá que hay una nueva barra en la parte superior:
 	|				   |
 	+----------------------------------+
 
-Ahora tiene dos pestañas. La primera tiene una ventana para «estearchivo»
-y la segunda para «aquélarchivo». Es como dos páginas una encima de la
-otra, con una pestaña sobresaliendo de cada página.
+Ahora tiene dos pestañas. La primera tiene una ventana para «estearchivo» y
+la segunda para «aquélarchivo». Es como dos páginas una encima de la otra,
+con una pestaña sobresaliendo de cada página.
 
-Ahora use el ratón para pulsar sobre «estearchivo» sobre la línea
-superior.
+Ahora use el ratón para pulsar sobre «estearchivo» sobre la línea superior.
 
 	+----------------------------------+
 	| /estearchivo/ | aquélarchivo ___X|   (estearchivo está en
@@ -580,8 +575,8 @@ abierto:
 	|					       |
 	+----------------------------------------------+
 
-Puede poner «:tab» antes de cualquier orden «Ex» que abra una
-ventana. La ventana se abrirá en una nueva ventana. Otro ejemplo: >
+Puede poner «:tab» antes de cualquier orden «Ex» que abra una ventana. La
+ventana se abrirá en una nueva ventana. Otro ejemplo: >
 
 	:tab help gt
 

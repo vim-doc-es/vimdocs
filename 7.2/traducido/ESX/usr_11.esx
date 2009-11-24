@@ -1,14 +1,14 @@
 *usr_11.esx*	Para Vim versión 7.2.  Último cambio: 24/5/2006
 
-		   MANUAL DE USUARIO DE VIM - por Bram Moolenaar
+		MANUAL DE USUARIO DE VIM - por Bram Moolenaar
 
 			  Recuperarse de un fallo
 
 
-¿Se colgó su ordenador después de horas editando? ¡No entre en pánico!
-Vim mantiene suficiente información en el disco duro como para recuperar la
-mayor parte del trabajo. Este capítulo le mostrará cómo recuperar su
-trabajo y cómo funciona el archivo de recuperación.
+¿Se colgó su ordenador después de horas editando? ¡No entre en pánico! Vim
+mantiene suficiente información en el disco duro como para recuperar la
+mayor parte del trabajo. Este capítulo le mostrará cómo recuperar su trabajo
+y cómo funciona el archivo de recuperación.
 
 |11.1|	Recuperación básica
 |11.2|	¿Dónde está el archivo de recuperación?
@@ -56,13 +56,11 @@ Es normal que los últimos cambios no se puedan recuperar. Vim vuelca los
 cambios al disco duro cuando no teclea durante cuatro segundos, o tras
 escribir unos doscientos caracteres. Esto se puede modificar con las
 opciones 'updatetime' y 'updatecount'. De esta forma, cuando Vim no tiene
-posibilidad de guardar cuando el sistema cae, tendrá los cambios del
-último volcado.
+posibilidad de guardar cuando el sistema cae, tendrá los cambios del último
+volcado.
 
 Si estaba editando sin un nombre de archivo designado, dele este argumento:
 >
-	vim -r ""
-
 
 	vim -r ""
 
@@ -109,18 +107,16 @@ que los archivos resultantes son el que deseas.
 USAR UN ARCHIVO DE RECUPERACIÓN ESPECÍFICO
 
 Si sabe qué archivo de recuperación quiere usar, puede realizar la
-recuperación dando como argumento el nombre de este archivo. Vim
-encontrará el nombre del archivo original del cuál éste es el archivo de
-recuperación.
+recuperación dando como argumento el nombre de este archivo. Vim encontrará
+el nombre del archivo original del cuál éste es el archivo de recuperación.
 
 Ejemplo: >
 	vim -r .help.txt.swo
 
-Esto resulta útil cuando el archivo de recuperación está en otro
-directorio diferente al esperado. Si esto tampoco funciona, mire los nombres
-de archivo que Vim reporta y renombre los archivos acordemente. Compruebe la
-opción 'directory' para ver dónde ha podido poner Vim los archivos de
-recuperación.
+Esto resulta útil cuando el archivo de recuperación está en otro directorio
+diferente al esperado. Si esto tampoco funciona, mire los nombres de archivo
+que Vim reporta y renombre los archivos acordemente. Compruebe la opción
+'directory' para ver dónde ha podido poner Vim los archivos de recuperación.
 
 	Nota:
 	Vim intenta encontrar los archivos de recuperación buscando los
@@ -200,8 +196,8 @@ A veces la línea
 
 	[no se puede leer] ~
 
-aparecerá bajo el nombre del archivo de recuperación.  Esto puede ser
-bueno o malo dependiendo de las circunstancias.
+aparecerá bajo el nombre del archivo de recuperación.  Esto puede ser bueno
+o malo dependiendo de las circunstancias.
 
 Son buenas noticias si la sesión anterior se colgó sin haber hecho ningún
 cambio al archivo. En tal caso un listado de archivos del directorio
@@ -210,21 +206,21 @@ mostrará que tiene cero bytes. Tal vez quiera eliminarla y continuar.
 No son muy buenas noticias si lo que ocurre es que no tiene permisos de
 lectura del archivo de recuperación. Tal vez desee ver el archivo en modo
 sólo lectura o salir. En sistemas multiusuario, si empleó otro usuario,
-salir y volver a identificarte tal vez resuelva el «error de lectura». O
-en su defecto quizá quiera encontrar quien lo editó por última vez (o
-está editándolo ahora mismo) y hablar con él.
+salir y volver a identificarte tal vez resuelva el «error de lectura». O en
+su defecto quizá quiera encontrar quien lo editó por última vez (o está
+editándolo ahora mismo) y hablar con él.
 
 Son muy malas noticias si significa que hay un error de lectura a nivel
 físico del disco duro. Afortunadamente, esto no ocurre casi nunca. Quizá
-quiera ver el archivo en modo sólo lectura inicialmente (si puede), para
-ver el alcance de los cambios que fueron «olvidados». Si eres el que está
-a cargo del archivo, prepárate para rehacer los últimos cambios.
+quiera ver el archivo en modo sólo lectura inicialmente (si puede), para ver
+el alcance de los cambios que fueron «olvidados». Si eres el que está a
+cargo del archivo, prepárate para rehacer los últimos cambios.
 
 
 ¿QUÉ HACER?
 
-Si tiene soporte para diálogos, se le pedirá que elija una de las
-siguientes opciones:
+Si tiene soporte para diálogos, se le pedirá que elija una de las siguientes
+opciones:
 
   Swap file ".main.c.swp" already exists! ~
   [O]pen Read-Only, (E)dit anyway, (R)ecover, (Q)uit, (A)bort, (D)elete it: ~
@@ -258,18 +254,17 @@ D  Eliminar el archivo de recuperación. Use esto cuando esté seguro de que
       En Unix esta opción sólo se ofrece cuando el proceso que creó el archivo
    de recuperación no parece que estar en ejecución.
 
-Si no ve el diálogo (está ejecutando una versión de Vim que no lo
-soporta, tendrá que hacerlo a mano. Para recuperar el archivo, use la
-siguiente orden: >
+Si no ve el diálogo (está ejecutando una versión de Vim que no lo soporta,
+tendrá que hacerlo a mano. Para recuperar el archivo, use la siguiente
+orden: >
 
 	:recover
 
 
 Vim no puede siempre detectar cuando ya existe un archivo de recuperación
 para un archivo. Este es el caso cuando otras sesiones de edición ponen los
-archivos en otro directorio o cuando una ruta de archivo difiere en
-máquinas distintas.  Por lo tanto, no confíe en que Vim siempre le vaya a
-alertar.
+archivos en otro directorio o cuando una ruta de archivo difiere en máquinas
+distintas.  Por lo tanto, no confíe en que Vim siempre le vaya a alertar.
 
 Si realmente no quiere ver este mensaje, puede añadir la marca 'A' a la
 opción 'shortmess'. Pero es poco habitual que lo necesite.
