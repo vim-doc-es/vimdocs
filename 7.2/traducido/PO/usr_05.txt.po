@@ -44,7 +44,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
-"POT-Creation-Date: 2009-11-24 01:12+0100\n"
+"POT-Creation-Date: 2009-11-24 01:31+0100\n"
 "PO-Revision-Date: 2009-11-24 01:17+0100\n"
 "Last-Translator: Álvaro Castro Castillo <alvaro.castro.castilla@gmail.com>\n"
 "Language-Team: vim-doc-es\n"
@@ -646,33 +646,27 @@ msgstr ""
 "   otros  dos aspectos de abajo.\n"
 "   Véase |filetypes|.\n"
 
-#. type: Bullet: '2. '
+#. type: Plain text
 #: original/TXT/usr_05.txt:190
+#, fuzzy, no-wrap
 msgid ""
-"Using filetype plugin files Many different filetypes are edited with "
-"different options.  For example, when you edit a \"c\" file, it's very "
-"useful to set the 'cindent' option to automatically indent the lines.  These "
-"commonly useful option settings are included with Vim in filetype plugins.  "
-"You can also add your own, see |write-filetype-plugin|."
-msgstr ""
-"Usar extensiones de tipo de archivo Muchos tipos de archivo se editan con "
-"diferentes opciones. Por ejemplo, cuando edita un archivo «c», es muy útil "
-"activar la opción «cindent» para sangrar las líneas automáticamente. Estas "
-"opciones empleadas comúnmente están incluidas con Vim en las extensiones de "
-"tipos de archivo. También puede incluir las tuyas propias, véase |write-"
-"filetype-plugin|."
+"2. Using filetype plugin files\n"
+"   Many different filetypes are edited with different options.  For example,\n"
+"   when you edit a \"c\" file, it's very useful to set the 'cindent' option to\n"
+"   automatically indent the lines.  These commonly useful option settings are\n"
+"   included with Vim in filetype plugins.  You can also add your own, see\n"
+"   |write-filetype-plugin|.\n"
+msgstr "Usar extensiones de tipo de archivo Muchos tipos de archivo se editan con diferentes opciones. Por ejemplo, cuando edita un archivo «c», es muy útil activar la opción «cindent» para sangrar las líneas automáticamente. Estas opciones empleadas comúnmente están incluidas con Vim en las extensiones de tipos de archivo. También puede incluir las tuyas propias, véase |write-filetype-plugin|."
 
-#. type: Bullet: '3. '
+#. type: Plain text
 #: original/TXT/usr_05.txt:195
+#, fuzzy, no-wrap
 msgid ""
-"Using indent files When editing programs, the indent of a line can often be "
-"computed automatically.  Vim comes with these indent rules for a number of "
-"filetypes.  See |:filetype-indent-on| and 'indentexpr'."
-msgstr ""
-"Usar archivos de sangría Cuando edita programas, la sangría de una línea "
-"puede a menudo ser computada de manera automática. Vim viene con esas reglas "
-"de sangrado para diversos tipos de archivo.  Véase |:filetype-indent-on| y "
-"'indentexpr'."
+"3. Using indent files\n"
+"   When editing programs, the indent of a line can often be computed\n"
+"   automatically.  Vim comes with these indent rules for a number of\n"
+"   filetypes.  See |:filetype-indent-on| and 'indentexpr'.\n"
+msgstr "Usar archivos de sangría Cuando edita programas, la sangría de una línea puede a menudo ser computada de manera automática. Vim viene con esas reglas de sangrado para diversos tipos de archivo.  Véase |:filetype-indent-on| y 'indentexpr'."
 
 #. type: Plain text
 #: original/TXT/usr_05.txt:198

@@ -44,7 +44,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7,2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
-"POT-Creation-Date: 2009-11-24 01:12+0100\n"
+"POT-Creation-Date: 2009-11-24 01:31+0100\n"
 "PO-Revision-Date: 2009-11-24 01:15+0100\n"
 "Last-Translator: Álvaro Castro Castilla <alvaro.castro.castilla@gmail.com>\n"
 "Language-Team: vim-doc-es>\n"
@@ -750,14 +750,13 @@ msgstr "*03.6*\tIndicar donde está\n"
 msgid "To see where you are in a file, there are three ways:"
 msgstr "Para ver dónde está en un archivo, hay tres maneras:"
 
-#. type: Bullet: '1.  '
+#. type: Plain text
 #: original/TXT/usr_03.txt:230
+#, fuzzy, no-wrap
 msgid ""
-"Use the CTRL-G command.  You get a message like this (assuming the 'ruler' "
-"option is off):"
-msgstr ""
-"Use la orden CTRL-G. Obtendrá un mensaje como este (asumiendo que la opción "
-"'ruler' está apagada):"
+"1.  Use the CTRL-G command.  You get a message like this (assuming the 'ruler'\n"
+"    option is off):\n"
+msgstr "Use la orden CTRL-G. Obtendrá un mensaje como este (asumiendo que la opción 'ruler' está apagada):"
 
 #. type: Plain text
 #: original/TXT/usr_03.txt:232
@@ -785,14 +784,13 @@ msgstr ""
 "    que el primer carácter es un tabulador, ocupará ocho espacios de columnas,\n"
 "    y la columna en pantalla será 9.\n"
 
-#. type: Bullet: '2.  '
+#. type: Plain text
 #: original/TXT/usr_03.txt:243
+#, fuzzy, no-wrap
 msgid ""
-"Set the 'number' option.  This will display a line number in front of every "
-"line: >"
-msgstr ""
-"Activa la variable 'number'. Esto le mostrará el número de línea al "
-"principio de cada línea: >"
+"2.  Set the 'number' option.  This will display a line number in front of\n"
+"    every line: >\n"
+msgstr "Activa la variable 'number'. Esto le mostrará el número de línea al principio de cada línea: >"
 
 #. type: Plain text
 #: original/TXT/usr_03.txt:247
@@ -828,14 +826,13 @@ msgstr ""
 "    valor numérico y otras de cadenas de caracteres. Verá ejemplos de esto\n"
 "    donde sean usados.\n"
 
-#. type: Bullet: '3.  '
+#. type: Plain text
 #: original/TXT/usr_03.txt:259
+#, fuzzy, no-wrap
 msgid ""
-"Set the 'ruler' option.  This will display the cursor position in the lower "
-"right corner of the Vim window: >"
-msgstr ""
-"Activa la opción 'ruler'. Esto mostrará la posición del cursor en la esquina "
-"de abajo a la derecha de la ventana de Vim: >"
+"3.  Set the 'ruler' option.  This will display the cursor position in the\n"
+"    lower right corner of the Vim window: >\n"
+msgstr "Activa la opción 'ruler'. Esto mostrará la posición del cursor en la esquina de abajo a la derecha de la ventana de Vim: >"
 
 #. type: Plain text
 #: original/TXT/usr_03.txt:261

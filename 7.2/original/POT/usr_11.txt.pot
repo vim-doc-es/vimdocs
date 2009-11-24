@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
-"POT-Creation-Date: 2009-11-24 01:12+0100\n"
+"POT-Creation-Date: 2009-11-24 01:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -403,11 +403,12 @@ msgid ""
 "something wrong.  It may be one of these two situations."
 msgstr ""
 
-#. type: Bullet: '1. '
+#. type: Plain text
 #: original/TXT/usr_11.txt:160
+#, no-wrap
 msgid ""
-"Another edit session is active on this file.  Look in the message for the "
-"line with \"process ID\".  It might look like this:"
+"1. Another edit session is active on this file.  Look in the message for the\n"
+"   line with \"process ID\".  It might look like this:\n"
 msgstr ""
 
 #. type: Plain text
@@ -431,12 +432,13 @@ msgid ""
 "   this Vim.\n"
 msgstr ""
 
-#. type: Bullet: '2. '
+#. type: Plain text
 #: original/TXT/usr_11.txt:176
+#, no-wrap
 msgid ""
-"The swap file might be the result from a previous crash of Vim or the "
-"computer.  Check the dates mentioned in the message.  If the date of the "
-"swap file is newer than the file you were editing, and this line appears:"
+"2. The swap file might be the result from a previous crash of Vim or the\n"
+"   computer.  Check the dates mentioned in the message.  If the date of the\n"
+"   swap file is newer than the file you were editing, and this line appears:\n"
 msgstr ""
 
 #. type: Plain text
