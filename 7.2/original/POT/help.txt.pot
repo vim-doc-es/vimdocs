@@ -1,0 +1,334 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the Vim package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Vim 7.2\n"
+"Report-Msgid-Bugs-To: vim@bugs.org\n"
+"POT-Creation-Date: 2009-11-24 01:12+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING"
+
+#. type: Plain text
+#: original/TXT/help.txt:2
+#, no-wrap
+msgid "*help.txt*\tFor Vim version 7.2.  Last change: 2008 Jul 21\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:9
+#, no-wrap
+msgid ""
+"\t\t\tVIM - main help file\n"
+"\t\t\t\t\t\t\t\t\t k\n"
+"      Move around:  Use the cursor keys, or \"h\" to go left,\t       h   l\n"
+"\t\t    \"j\" to go down, \"k\" to go up, \"l\" to go right.\t j\n"
+"Close this window:  Use \":q<Enter>\".\n"
+"   Get out of Vim:  Use \":qa!<Enter>\" (careful, all changes are lost!).\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:14
+#, no-wrap
+msgid ""
+"Jump to a subject:  Position the cursor on a tag (e.g. |bars|) and hit CTRL-].\n"
+"   With the mouse:  \":set mouse=a\" to enable the mouse (in xterm or GUI).\n"
+"\t\t    Double-click the left mouse button on a tag, e.g. |bars|.\n"
+"\tJump back:  Type CTRL-T or CTRL-O (repeat to go further back).\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:29
+#, no-wrap
+msgid ""
+"Get specific help:  It is possible to go directly to whatever you want help\n"
+"\t\t    on, by giving an argument to the |:help| command.\n"
+"\t\t    It is possible to further specify the context:\n"
+"\t\t\t\t\t\t\t*help-context*\n"
+"\t\t\t  WHAT\t\t\tPREPEND    EXAMPLE\t~\n"
+"\t\t      Normal mode command      (nothing)   :help x\n"
+"\t\t      Visual mode command\t  v_\t   :help v_u\n"
+"\t\t      Insert mode command\t  i_\t   :help i_<Esc>\n"
+"\t\t      Command-line command\t  :\t   :help :quit\n"
+"\t\t      Command-line editing\t  c_\t   :help c_<Del>\n"
+"\t\t      Vim command argument\t  -\t   :help -r\n"
+"\t\t      Option\t\t\t  '\t   :help 'textwidth'\n"
+"  Search for help:  Type \":help word\", then hit CTRL-D to see matching\n"
+"\t\t    help entries for \"word\".\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:32
+#, no-wrap
+msgid ""
+"VIM stands for Vi IMproved.  Most of VIM was made by Bram Moolenaar, but only\n"
+"through the help of many others.  See |credits|.\n"
+"------------------------------------------------------------------------------\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:42
+#, no-wrap
+msgid ""
+"\t\t\t\t\t\t*doc-file-list* *Q_ct*\n"
+"BASIC:\n"
+"|quickref|\tOverview of the most common commands you will use\n"
+"|tutor|\t\t30 minutes training course for beginners\n"
+"|copying|\tAbout copyrights\n"
+"|iccf|\t\tHelping poor children in Uganda\n"
+"|sponsor|\tSponsor Vim development, become a registered Vim user\n"
+"|www|\t\tVim on the World Wide Web\n"
+"|bugs|\t\tWhere to send bug reports\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:44
+msgid "USER MANUAL: These files explain how to accomplish an editing task."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:46
+#, no-wrap
+msgid "|usr_toc.txt|\tTable Of Contents\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:60
+msgid ""
+"Getting Started ~ |usr_01.txt| About the manuals |usr_02.txt| The first "
+"steps in Vim |usr_03.txt| Moving around |usr_04.txt| Making small changes |"
+"usr_05.txt| Set your settings |usr_06.txt| Using syntax highlighting |usr_07."
+"txt| Editing more than one file |usr_08.txt| Splitting windows |usr_09.txt| "
+"Using the GUI |usr_10.txt| Making big changes |usr_11.txt| Recovering from a "
+"crash |usr_12.txt| Clever tricks"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:75
+msgid ""
+"Editing Effectively ~ |usr_20.txt| Typing command-line commands quickly |"
+"usr_21.txt| Go away and come back |usr_22.txt| Finding the file to edit |"
+"usr_23.txt| Editing other files |usr_24.txt| Inserting quickly |usr_25.txt| "
+"Editing formatted text |usr_26.txt| Repeating |usr_27.txt| Search commands "
+"and patterns |usr_28.txt| Folding |usr_29.txt| Moving through programs |"
+"usr_30.txt| Editing programs |usr_31.txt| Exploiting the GUI |usr_32.txt| "
+"The undo tree"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:83
+msgid ""
+"Tuning Vim ~ |usr_40.txt| Make new commands |usr_41.txt| Write a Vim script |"
+"usr_42.txt| Add new menus |usr_43.txt| Using filetypes |usr_44.txt| Your own "
+"syntax highlighted |usr_45.txt| Select your language"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:86
+msgid "Making Vim Run ~ |usr_90.txt| Installing Vim"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:89
+#, no-wrap
+msgid "REFERENCE MANUAL: These files explain every detail of Vim.\t*reference_toc*\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:103
+#, no-wrap
+msgid ""
+"General subjects ~\n"
+"|intro.txt|\tgeneral introduction to Vim; notation used in help files\n"
+"|help.txt|\toverview and quick reference (this file)\n"
+"|index.txt|\talphabetical index of all commands\n"
+"|help-tags|\tall the tags you can jump to (index of tags)\n"
+"|howto.txt|\thow to do the most common editing tasks\n"
+"|tips.txt|\tvarious tips on using Vim\n"
+"|message.txt|\t(error) messages and explanations\n"
+"|quotes.txt|\tremarks from users of Vim\n"
+"|todo.txt|\tknown problems and desired extensions\n"
+"|develop.txt|\tdevelopment of Vim\n"
+"|debug.txt|\tdebugging Vim itself\n"
+"|uganda.txt|\tVim distribution conditions and what to do with your money\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:117
+#, no-wrap
+msgid ""
+"Basic editing ~\n"
+"|starting.txt|\tstarting Vim, Vim command arguments, initialisation\n"
+"|editing.txt|\tediting and writing files\n"
+"|motion.txt|\tcommands for moving around\n"
+"|scroll.txt|\tscrolling the text in the window\n"
+"|insert.txt|\tInsert and Replace mode\n"
+"|change.txt|\tdeleting and replacing text\n"
+"|indent.txt|\tautomatic indenting for C and other languages\n"
+"|undo.txt|\tUndo and Redo\n"
+"|repeat.txt|\trepeating commands, Vim scripts and debugging\n"
+"|visual.txt|\tusing the Visual mode (selecting a text area)\n"
+"|various.txt|\tvarious remaining commands\n"
+"|recover.txt|\trecovering from a crash\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:134
+#, no-wrap
+msgid ""
+"Advanced editing ~\n"
+"|cmdline.txt|\tCommand-line editing\n"
+"|options.txt|\tdescription of all options\n"
+"|pattern.txt|\tregexp patterns and search commands\n"
+"|map.txt|\tkey mapping and abbreviations\n"
+"|tagsrch.txt|\ttags and special searches\n"
+"|quickfix.txt|\tcommands for a quick edit-compile-fix cycle\n"
+"|windows.txt|\tcommands for using multiple windows and buffers\n"
+"|tabpage.txt|\tcommands for using multiple tab pages\n"
+"|syntax.txt|\tsyntax highlighting\n"
+"|spell.txt|\tspell checking\n"
+"|diff.txt|\tworking with two to four versions of the same file\n"
+"|autocmd.txt|\tautomatically executing commands on an event\n"
+"|filetype.txt|\tsettings done specifically for a type of file\n"
+"|eval.txt|\texpression evaluation, conditional commands\n"
+"|fold.txt|\thide (fold) ranges of lines\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:149
+#, no-wrap
+msgid ""
+"Special issues ~\n"
+"|print.txt|\tprinting\n"
+"|remote.txt|\tusing Vim as a server or client\n"
+"|term.txt|\tusing different terminals and mice\n"
+"|digraph.txt|\tlist of available digraphs\n"
+"|mbyte.txt|\tmulti-byte text support\n"
+"|mlang.txt|\tnon-English language support\n"
+"|arabic.txt|\tArabic language support and editing\n"
+"|farsi.txt|\tFarsi (Persian) editing\n"
+"|hebrew.txt|\tHebrew language support and editing\n"
+"|russian.txt|\tRussian language support and editing\n"
+"|ft_ada.txt|\tAda (the programming language) support\n"
+"|hangulin.txt|\tHangul (Korean) input mode\n"
+"|rileft.txt|\tright-to-left editing mode\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:155
+#, no-wrap
+msgid ""
+"GUI ~\n"
+"|gui.txt|\tGraphical User Interface (GUI)\n"
+"|gui_w16.txt|\tWindows 3.1 GUI\n"
+"|gui_w32.txt|\tWin32 GUI\n"
+"|gui_x11.txt|\tX11 GUI\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:169
+#, no-wrap
+msgid ""
+"Interfaces ~\n"
+"|if_cscop.txt|\tusing Cscope with Vim\n"
+"|if_mzsch.txt|\tMzScheme interface\n"
+"|if_perl.txt|\tPerl interface\n"
+"|if_pyth.txt|\tPython interface\n"
+"|if_sniff.txt|\tSNiFF+ interface\n"
+"|if_tcl.txt|\tTcl interface\n"
+"|if_ole.txt|\tOLE automation interface for Win32\n"
+"|if_ruby.txt|\tRuby interface\n"
+"|debugger.txt|\tInterface with a debugger\n"
+"|workshop.txt|\tSun Visual Workshop interface\n"
+"|netbeans.txt|\tNetBeans External Editor interface\n"
+"|sign.txt|\tdebugging signs\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:200
+#, no-wrap
+msgid ""
+"Versions ~\n"
+"|vi_diff.txt|\tMain differences between Vim and Vi\n"
+"|version4.txt|\tDifferences between Vim version 3.0 and 4.x\n"
+"|version5.txt|\tDifferences between Vim version 4.6 and 5.x\n"
+"|version6.txt|\tDifferences between Vim version 5.7 and 6.x\n"
+"|version7.txt|\tDifferences between Vim version 6.4 and 7.x\n"
+"\t\t\t\t\t\t*sys-file-list*\n"
+"Remarks about specific systems ~\n"
+"|os_390.txt|\tOS/390 Unix\n"
+"|os_amiga.txt|\tAmiga\n"
+"|os_beos.txt|\tBeOS and BeBox\n"
+"|os_dos.txt|\tMS-DOS and MS-Windows NT/95 common items\n"
+"|os_mac.txt|\tMacintosh\n"
+"|os_mint.txt|\tAtari MiNT\n"
+"|os_msdos.txt|\tMS-DOS (plain DOS and DOS box under Windows)\n"
+"|os_os2.txt|\tOS/2\n"
+"|os_qnx.txt|\tQNX\n"
+"|os_risc.txt|\tRISC-OS\n"
+"|os_unix.txt|\tUnix\n"
+"|os_vms.txt|\tVMS\n"
+"|os_win32.txt|\tMS-Windows 95/98/NT\n"
+"\t\t\t\t\t\t*standard-plugin-list*\n"
+"Standard plugins ~\n"
+"|pi_getscript.txt| Downloading latest version of Vim scripts\n"
+"|pi_gzip.txt|\t   Reading and writing compressed files\n"
+"|pi_netrw.txt|\t   Reading and writing files over a network\n"
+"|pi_paren.txt|\t   Highlight matching parens\n"
+"|pi_tar.txt|\t   Tar file explorer\n"
+"|pi_vimball.txt|   Create a self-installing Vim script\n"
+"|pi_zip.txt|\t   Zip archive explorer\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:202
+#, no-wrap
+msgid "LOCAL ADDITIONS:\t\t\t\t*local-additions*\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:203 original/TXT/help.txt:215
+#, no-wrap
+msgid "------------------------------------------------------------------------------\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:205
+#, no-wrap
+msgid "*bars*\t\tBars example\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:208
+msgid ""
+"Now that you've jumped here with CTRL-] or a double mouse click, you can use "
+"CTRL-T, CTRL-O, g<RightMouse>, or <C-RightMouse> to go back to where you "
+"were."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:211
+msgid ""
+"Note that tags are within | characters, but when highlighting is enabled "
+"these are hidden.  That makes it easier to read a command."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:214
+msgid ""
+"Anyway, you can use CTRL-] on any word, also when it is not within |, and "
+"Vim will try to find help for it."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/help.txt:216
+#, no-wrap
+msgid " vim:tw=78:fo=tcq2:isk=!-~,^*,^\\|,^\\\":ts=8:ft=help:norl:\n"
+msgstr ""

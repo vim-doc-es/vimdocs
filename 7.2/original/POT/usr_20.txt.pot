@@ -1,56 +1,20 @@
-# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es
-# extracted from usr_20.txt 
-# Copyright (C) 2009 
-# This file is distributed under the same license as the Vim 7.2 package.
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the Vim package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# Translators credits:
-#   - Initial translation
-#       Omar Campagne <ocampagne@gmail.com>
-#
-#   - Updates
-#       TRADUCTOR <CORREO>, AÑO 
-#
-# Debido al formato (txt) y al máximo de 80 columnas que pueden tener 
-# los textos de ayuda en Vim, así como el formato PO, por favor, leete los
-# apuntes concernientes a la edición de los archivos PO relativos a la
-# aplicación que desees usar.
-# También encontrarás información acerca del uso de herramientas gettext en el 
-# proyecto de localización (l10n) de Vim.
-#
-# - http://www.assembla.com/wiki/show/vim-doc-es
-#
-# No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
-# este enlace puede ser de interés. A pesar de no formar parte, nuestra 
-# intención es homologarnos con su terminología y uso de la lengua 
-# en la medida de lo útil y posible.
-#
-#  - El proyecto de traducción de Debian al español
-#     http://www.debian.org/intl/spanish/notas
-#
-# La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
-# pero también puede servir de referencia para otros términos no técnicos.
-# No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
-# traducción sea comprensible independientemente de la nacionalidad del
-# usuario. Si crees que alguna traducción puede llevar a confusión, consulta
-# la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
-#
-#  - www.rae.es 
-#  - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages   
-#
-# Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
-# se puede consultar con un simple grep, pogrep o cargado en Virtaal.
-#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2009-11-24 01:12+0100\n"
-"PO-Revision-Date: 2009-11-20 20:31+0100\n"
-"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
-"Language-Team: vim-doc-es\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:4 original/TXT/usr_01.txt:4
@@ -64,7 +28,7 @@ msgstr ""
 #: original/TXT/usr_23.txt:4 original/TXT/usr_24.txt:4
 #, no-wrap
 msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
-msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:7 original/TXT/usr_toc.txt:58
@@ -138,7 +102,7 @@ msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
 #: original/TXT/usr_24.txt:602
 #, no-wrap
 msgid "==============================================================================\n"
-msgstr "==============================================================================\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:353 original/TXT/usr_01.txt:185
@@ -151,19 +115,19 @@ msgstr "========================================================================
 #: original/TXT/usr_21.txt:499 original/TXT/usr_22.txt:400
 #: original/TXT/usr_23.txt:343 original/TXT/usr_24.txt:606
 msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
-msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:2
 #, no-wrap
 msgid "*usr_20.txt*\tFor Vim version 7.2.  Last change: 2006 Apr 24\n"
-msgstr "*usr_20.esx*\tPara Vim versión 7.2. Último cambio: 24/5/2006\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:6
 #, no-wrap
 msgid "\t\t     Typing command-line commands quickly\n"
-msgstr "\t\t    Ser eficaz con la línea de órdenes\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:11
@@ -172,9 +136,6 @@ msgid ""
 "Colon commands can be abbreviated, edited and repeated.  Completion is "
 "available for nearly everything."
 msgstr ""
-"Vim posee algunas características genéricas que le facilitan introducir "
-"órdenes.  Las órdenes de colon («:») se pueden abreviar, editar y repetir. "
-"Dispone de auto compleción para prácticamente todo."
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:17
@@ -186,11 +147,6 @@ msgid ""
 "|20.4|\tCommand line history\n"
 "|20.5|\tCommand line window\n"
 msgstr ""
-"|20.1|\tEdición en línea de órdenes\n"
-"|20.2|\tAbreviaturas en línea de órdenes\n"
-"|20.3|\tCompleción en línea de órdenes\n"
-"|20.4|\tHistórico de la línea de órdenes\n"
-"|20.5|\tVentana de la línea de órdenes\n"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:21
@@ -200,15 +156,12 @@ msgid ""
 " Previous chapter: |usr_12.txt|  Clever tricks\n"
 "Table of contents: |usr_toc.txt|\n"
 msgstr ""
-" Capítulo siguiente: |usr_21.esx| Abandonar el editor y volver\n"
-"  Capítulo anterior: |usr_12.esx| Trucos ingeniosos\n"
-"Tabla de contenidos: |usr_toc.esx|\n"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:24
 #, no-wrap
 msgid "*20.1*\tCommand line editing\n"
-msgstr "*20.1*\tEdición en línea de órdenes\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:29
@@ -218,10 +171,6 @@ msgid ""
 "search pattern.  This is called the Command line.  Also when it's used for "
 "entering a search command."
 msgstr ""
-"Cuando usa una orden de colon («:») o busca una cadena con «/» o «?», Vim sitúa "
-"el cursor en la parte inferior de la pantalla. Ahí es donde introduce la "
-"orden o el patrón de búsqueda. A esto se le llama la línea de órdenes.  "
-"También cuando se usa para introducir una orden de búsqueda."
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:34
@@ -232,16 +181,12 @@ msgid ""
 "typed earlier, first move the cursor with the cursor keys.\n"
 "   For example, you have typed this: >\n"
 msgstr ""
-"La manera más obvia de editar la orden introducida es pulsando la tecla <BS>.\n"
-"Esto borra el carácter anterior al cursor. Para borrar otro carácter introducido\n"
-"previamente, desplace antes el cursor con las teclas del cursos.\n"
-"   Por ejemplo, suponga que ha tecleado esto: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:36
 #, no-wrap
 msgid "\t:s/col/pig/\n"
-msgstr "\t:s/vaba/cerdo/\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:40
@@ -250,15 +195,12 @@ msgid ""
 "correct this, you type <Left> five times.  The cursor is now just after \"col"
 "\".  Type <BS> and \"w\" to correct: >"
 msgstr ""
-"Antes de pulsar <Intro>, notará que «vaba» debería ser «vaca». Para corregir "
-"esto, pulse <Izquierda> seis veces. El cursor está ahora sobre «vaba».  "
-"Teclee <BS> y «w» para corregirlo: >"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:42
 #, no-wrap
 msgid "\t:s/cow/pig/\n"
-msgstr "\t:s/vaca/cerdo/\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:45
@@ -266,13 +208,11 @@ msgid ""
 "Now you can press <Enter> directly.  You don't have to move the cursor to "
 "the end of the line before executing the command."
 msgstr ""
-"Ya puede pulsar <Intro> directamente. No tiene que desplazar el cursor al "
-"final de la línea antes de ejecutar la orden."
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:47
 msgid "The most often used keys to move around in the command line:"
-msgstr "Las teclas más usadas para desplazarse en la línea de órdenes:"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:54
@@ -285,12 +225,6 @@ msgid ""
 "\tCTRL-B or <Home>\tto begin of command line\n"
 "\tCTRL-E or <End>\t\tto end of command line\n"
 msgstr ""
-"\t<Izquierda>\t\tun carácter a la izquierda\n"
-"\t<Derecha>\t\tun carácter a la derecha\n"
-"\t<S-Izq.> o <C-Izq.>\tuna palabra a la izquierda\n"
-"\t<S-Der.> o <C-Der.>\tuna palabra a la derecha\n"
-"\tCTRL-B o <Inicio>\tal inicio de la línea de órdenes\n"
-"\tCTRL-E o <Fin>\t\tal final de la línea de órdenes\n"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:59
@@ -301,21 +235,16 @@ msgid ""
 "\tleft key with Control pressed) will not work on all keyboards.  Same\n"
 "\tfor the other Shift and Control combinations.\n"
 msgstr ""
-"\tNota:\n"
-"\t<S-Izq.> (tecla izquierda del cursor con la tecla Shift pulsada) y\n"
-"\t<C-Izq.> (tecla izquierda del cursor con la tecla Control pulsada) no\n"
-"\t funciona en todos los teclados. Ocurre lo mismo con las otras\n"
-"\t combinaciones con Shift y Control.\n"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:61
 msgid "You can also use the mouse to move the cursor."
-msgstr "También puede usar el ratón para mover el cursor."
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:64
 msgid "DELETING"
-msgstr "BORRAR"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:67
@@ -323,41 +252,34 @@ msgid ""
 "As mentioned, <BS> deletes the character before the cursor.  To delete a "
 "whole word use CTRL-W."
 msgstr ""
-"Como ya se ha dicho, <BS> elimina el carácter anterior al cursor. Para "
-"borrar toda una palabra, use CTRL-W."
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:69 original/TXT/usr_20.txt:83
 #, no-wrap
 msgid "\t/the fine pig ~\n"
 msgstr ""
-"#-#-#-#-#  traducido/ESX/usr_20.esx:68  #-#-#-#-#\n"
-"\t/el sutil cerdo ~\n"
-"\n"
-"#-#-#-#-#  traducido/ESX/usr_20.esx:81  #-#-#-#-#\n"
-"\t/el cerdo sutil ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:71
 #, no-wrap
 msgid "\t\t     CTRL-W\n"
-msgstr "\t\t     CTRL-W\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:73
 #, no-wrap
 msgid "\t/the fine ~\n"
-msgstr "\t/el sutil ~\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:75
 msgid "CTRL-U removes all text, thus allows you to start all over again."
-msgstr "CTRL-U elimina todo el texto, permitiéndole iniciar todo otra vez."
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:78
 msgid "OVERSTRIKE"
-msgstr "SUPERPOSICIÓN"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:81
@@ -365,8 +287,6 @@ msgid ""
 "The <Insert> key toggles between inserting characters and replacing the "
 "existing ones.  Start with this text:"
 msgstr ""
-"La tecla <Insertar> conmuta entra insertar caracteres y reemplaza los "
-"existentes. Comience con este texto."
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:87
@@ -375,15 +295,12 @@ msgid ""
 "eight times, if <S-Left> doesn't work).  Now press <Insert> to switch to "
 "overstrike and type \"great\":"
 msgstr ""
-"Desplace el cursor al inicio de «sutil» con <S-Izq.> dos veces (o <Izq.> ocho "
-"veces, si <S-Izq.> no funciona. Pulse ahora <Insertar> para pasar a "
-"superposición y teclee «gran»:"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:89
 #, no-wrap
 msgid "\t/the greatpig ~\n"
-msgstr "\t/el grancerdo ~\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:93
@@ -392,20 +309,17 @@ msgid ""
 "\"t\" (this is different from Replace mode).  Instead, press <Insert> to "
 "switch from overstrike to inserting, and type the space:"
 msgstr ""
-"Vaya, hemos perdido un espacio. Ahora, no use <BS> porque eliminaría la "
-"«t» (a diferencia del modo Reemplazar). En lugar de ello, pulse <Insertar> "
-"para pasar de superposición a insertar, e introduzca el espacio:"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:95
 #, no-wrap
 msgid "\t/the great pig ~\n"
-msgstr "\t/el gran cerdo ~\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:98
 msgid "CANCELLING"
-msgstr "CANCELAR"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:101
@@ -413,8 +327,6 @@ msgid ""
 "You thought of executing a : or / command, but changed your mind.  To get "
 "rid of what you already typed, without executing it, press CTRL-C or <Esc>."
 msgstr ""
-"Se le ocurrió ejecutar una orden «:» o «/», pero cambió de opinión. Para "
-"desechar de lo que ya tecleó sin ejecutarlo pulse CTRL-C o <Esc>."
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:109
@@ -428,15 +340,6 @@ msgid ""
 "\twhen using a mapping (which might be written for Vi) <Esc> also works\n"
 "\tVi compatible.  Therefore, using CTRL-C is a method that always works.\n"
 msgstr ""
-"\tNota:\n"
-"\t<Esc> es la tecla universal de salir. Desafortunadamente, en el\n"
-"\tbueno y viejo Vi, pulsar <Esc> la línea de órdenes ejecutaba la orden.\n"
-"\tYa que\testo se puede considerar un fallo, Vim usa <Esc> para cancelar\n"
-"\tla orden.\n"
-"\tPero puede hacer que sea compatible con Vi con la opción 'cpoptions'.\n"
-"\tY cuando usa un mapeado (quizá escrito para Vi) <Esc> también funciona\n"
-"\tde manera compatible con Vi. Por ello, siempre funcionará el metodo\n"
-" \tCTRL-C.\n"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:112
@@ -444,14 +347,12 @@ msgid ""
 "If you are at the start of the command line, pressing <BS> will cancel the "
 "command.  It's like deleting the \":\" or \"/\" that the line starts with."
 msgstr ""
-"Si se halla al inicio de la línea de órdenes, pulsar <BS> cancelaría la "
-"orden. Es como eliminar el «:» o «/» al inicio de la línea."
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:115
 #, no-wrap
 msgid "*20.2*\tCommand line abbreviations\n"
-msgstr "*20.2*\tAbreviaturas en línea de órdenes\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:119
@@ -460,9 +361,6 @@ msgid ""
 "substitute\" can be abbreviated to \":s\".  This is a generic mechanism, all "
 "\":\" commands can be abbreviated."
 msgstr ""
-"Algunas de las órdenes «:» son muy largas. Ya hemos mencionado que «:"
-"substitute» se puede abreviar con «:s». Este es un mecanismo genérico, todas "
-"las órdenes «:» se pueden abreviar."
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:127
@@ -476,20 +374,12 @@ msgid ""
 "learn them.  In the help files the shortest form that works is mentioned.  For\n"
 "example: >\n"
 msgstr ""
-"¿Como de corto puede ser una orden? Hay unas 30 letras, y muchas más órdenes.\n"
-"Por ejemplo, «:set» también empieza con «:s», pero «:s» no inicia la orden\n"
-"«:set». En lugar de ello, puede abreviar «:set» con «:se».\n"
-"   Cuando se podría usar la forma corta de una orden para dos órdenes, sólo\n"
-"simboliza uno de ellos. No hay una lógica detrás de cada elección, tendrá que\n"
-"aprenderlos. En los archivos de ayuda se menciona la forma más corta que\n"
-"funciona.\n"
-"Por ejemplo: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:129
 #, no-wrap
 msgid "\t:s[ubstitute]\n"
-msgstr "\t:s[ubstitute]\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:132
@@ -497,8 +387,6 @@ msgid ""
 "This means that the shortest form of \":substitute\" is \":s\".  The "
 "following characters are optional.  Thus \":su\" and \":sub\" also work."
 msgstr ""
-"Esto significa que la forma corta de «:substitute» es «:s». Los siguientes "
-"caracteres son opcionales. Por ello, también funcionan «:su» y «:sub»."
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:138
@@ -509,11 +397,6 @@ msgid ""
 "stands for, we will use \":fun\".  (Vim doesn't have a \":funny\" command, "
 "otherwise \":fun\" would be confusing too.)"
 msgstr ""
-"En el manual de usuario usaremos o bien el nombre completo de la orden, o "
-"una versión corta pero legible. Por ejemplo, se puede acortar «:function» a «:"
-"fu».  Pero debido a que la mayoría de la gente no entiende qué simboliza, "
-"nosotros usaremos «:fun». (Vim no tiene una orden llamada «:funny», de no ser "
-"así, esto también sería confuso.)"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:144
@@ -525,16 +408,11 @@ msgid ""
 "   A particularly confusing one is \":end\", which could stand for \":endif\",\n"
 "\":endwhile\" or \":endfunction\".  Therefore, always use the full name.\n"
 msgstr ""
-"Recomendamos que escriba la orden completa en los Vim scripts. Esto hace\n"
-"más fácil leerlo cuando introduce cambios más tarde. A excepción de órdenes\n"
-"usadas con frecuencia como «:w» («:write») y «:r» («:read»).\n"
-"  Un caso particularmente confuso es «:end», que podría simbolizar «:endif»,\n"
-"«:endwhile» o «:endfunction». Por ello, use siempre el nombre completo.\n"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:147
 msgid "SHORT OPTION NAMES"
-msgstr "NOMBRES DE OPCIÓN CORTOS"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:152
@@ -544,10 +422,6 @@ msgid ""
 "short name that works.  For example, the short name of 'autoindent' is "
 "'ai'.  Thus these two commands do the same thing: >"
 msgstr ""
-"En el manual de usuario se usa la versión larga de los nombres de opción. "
-"Varias opciones tienen también un nombre corto. A diferencia de las órdenes "
-"«:», sólo hay un nombre corto que funcione. Por ejemplo, el nombre corto de "
-"'autoindent' es 'ai'. Por ello, estas dos órdenes hacen lo mismo: >"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:155
@@ -556,21 +430,17 @@ msgid ""
 "\t:set autoindent\n"
 "\t:set ai\n"
 msgstr ""
-"\t:set autoindent\n"
-"\t:set ai\n"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:157
 msgid "You can find the full list of long and short names here: |option-list|."
 msgstr ""
-"Aquí puede encontrar la lista completa de nombres largos y cortos: |option-"
-"list|"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:160
 #, no-wrap
 msgid "*20.3*\tCommand line completion\n"
-msgstr "*20.3* Compleción en línea de órdenes\t\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:163
@@ -578,13 +448,11 @@ msgid ""
 "This is one of those Vim features that, by itself, is a reason to switch "
 "from Vi to Vim.  Once you have used this, you can't do without."
 msgstr ""
-"Esta es una opción que en si misma hace que merezca la pena pasar de Vi a "
-"Vim.  Una vez que haya usado esto, no podrá vivir sin el."
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:165
 msgid "Suppose you have a directory that contains these files:"
-msgstr "Suponga que tiene un directorio que contiene estos archivos:"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:169
@@ -594,31 +462,28 @@ msgid ""
 "\tintro.txt\n"
 "\tbodyofthepaper.txt\n"
 msgstr ""
-"\tinfo.txt\n"
-"\tintro.txt\n"
-"\tbodyofthepaper.txt\n"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:171
 msgid "To edit the last one, you use the command: >"
-msgstr "Use la siguiente orden para editar el último: >"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:173
 #, no-wrap
 msgid "\t:edit bodyofthepaper.txt\n"
-msgstr "\t:edit bodyofthepaper.txt\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:175
 msgid "It's easy to type this wrong.  A much quicker way is: >"
-msgstr "Es fácil equivocarse al teclear esto. Una manera más rápida es: >"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:177
 #, no-wrap
 msgid "\t:edit b<Tab>\n"
-msgstr "\t:edit b<Tab>\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:182
@@ -628,33 +493,28 @@ msgid ""
 "the directory and finds only one file that starts with a \"b\".  That must "
 "be the one you are looking for, thus Vim completes the file name for you."
 msgstr ""
-"Esto viene a ser la misma orden. ¿Qué ocurrió? La tecla <Tab> realiza la "
-"compleción de la palabra anterior al cursor. «b» en este caso. Vim busca en "
-"el directorio y encuentra sólo un archivo cuyo nombre empieza por «b».  Este "
-"ha de ser el que está buscando, y por ello Vim completa por usted el nombre "
-"del archivo."
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:184
 msgid "Now type: >"
-msgstr "Teclee ahora: >"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:186
 #, no-wrap
 msgid "\t:edit i<Tab>\n"
-msgstr "\t:edit i<Tab>\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:188
 msgid "Vim will beep, and give you: >"
-msgstr "Vim emitirá un pitido, y le dará: >"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:190
 #, no-wrap
 msgid "\t:edit info.txt\n"
-msgstr "\t:edit info.txt\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:193
@@ -662,15 +522,12 @@ msgid ""
 "The beep means that Vim has found more than one match.  It then uses the "
 "first match it found (alphabetically).  If you press <Tab> again, you get: >"
 msgstr ""
-"El pitido significa que Vim encontró más de una coincidencia. Entonces usa "
-"la primera coincidencia encontrada (en orden alfabético). Si pulsa <Tab> "
-"otra vez, obtendrá: >"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:195
 #, no-wrap
 msgid "\t:edit intro.txt\n"
-msgstr "\t:edit intro.txt\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:200
@@ -681,16 +538,12 @@ msgid ""
 "   If you press <Tab> on the last matching entry, you will go back to what you\n"
 "first typed: >\n"
 msgstr ""
-"Por ello, si el primer <Tab> no le da el archivo que está buscando, púlselo\n"
-"otra vez. Si hay más coincidencias, las verá todas de una en una.  Si pulsa\n"
-"<Tab> otra vez en la última entrada coincidente, volverá a lo que tecleo en un\n"
-"principio: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:202
 #, no-wrap
 msgid "\t:edit i\n"
-msgstr "\t:edit i\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:205
@@ -698,8 +551,6 @@ msgid ""
 "Then it starts all over again.  Thus Vim cycles through the list of "
 "matches.  Use CTRL-P to go through the list in the other direction:"
 msgstr ""
-"En este punto todo vuelve a empezar, y por ello, Vim realiza un ciclo a "
-"través de la lista de coincidencias."
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:213
@@ -713,30 +564,23 @@ msgid ""
 "\t   |\n"
 "\t   +---------------------- CTRL-P ------------------------>\n"
 msgstr ""
-"\t      <------------------- <Tab> -------------------------+\n"
-"\t\t\t\t\t\t\t\t  |\n"
-"\t\t  <Tab> -->\t\t       <Tab> -->\n"
-"\t:edit i\t\t      :edit info.txt\t\t   :edit intro.txt\n"
-"\t\t  <-- CTRL-P\t\t       <-- CTRL-P\n"
-"\t   |\n"
-"\t   +---------------------- CTRL-P ------------------------>\n"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:216
 msgid "CONTEXT"
-msgstr "CONTEXTO"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:218
 msgid ""
 "When you type \":set i\" instead of \":edit i\" and press <Tab> you get: >"
-msgstr "Cuando teclea «:set i» en lugar de «:edit i», y pulsa <Tab>, obtiene: >"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:220
 #, no-wrap
 msgid "\t:set icon\n"
-msgstr "\t:set icon\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:227
@@ -749,41 +593,34 @@ msgid ""
 "   Again, if you repeat typing the <Tab>, Vim will cycle through all matches.\n"
 "There are quite a few, it's better to type more characters first: >\n"
 msgstr ""
-"¡Oye! ¿Porqué no obtuvo «:set info.txt»? Es debido a que Vim tiene una\n"
-"compleción contextual. El tipo de palabras que Vim buscará depende de la\n"
-"orden que lo preceda. Vim sabe que no puede usar un nombre de archivo tras\n"
-"la orden «:set», pero que puede usar el nombre de una opción.\n"
-"   Una vez más, si sigue pulsando <Tab>, Vim navegará a través de todas las\n"
-"coincidencias.\n"
-"Hay varias, es mejor teclear antes varios caracteres: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:229
 #, no-wrap
 msgid "\t:set isk<Tab>\n"
-msgstr "\t:set isk<Tab>\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:231
 msgid "Gives: >"
-msgstr "Devuelve: >"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:233
 #, no-wrap
 msgid "\t:set iskeyword\n"
-msgstr "\t:set iskeyword\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:235
 msgid "Now type \"=\" and press <Tab>: >"
-msgstr "Teclee ahora «=» y pulse <Tab>: >"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:237
 #, no-wrap
 msgid "\t:set iskeyword=@,48-57,_,192-255\n"
-msgstr "\t:set iskeyword=@,48-57,_,192-255\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:245
@@ -797,18 +634,11 @@ msgid ""
 "completion was not implemented for that situation.  In that case you will get\n"
 "a <Tab> inserted (displayed as ^I).\n"
 msgstr ""
-"Lo que aquí ocurre es que Vim inserta el valor antiguo de la opción. Puede\n"
-"editarla ahora.\n"
-"   Lo que se completó con <Tab> es lo que Vim espera en primer lugar. Pruebe\n"
-"esto ahora para ver su funcionamiento. En algunas situaciones no obtendrá lo\n"
-"que desea. Esto es debido a que Vim no sabe lo que quiere, o porque no se ha\n"
-"implementado la compleción para este evento. En ese caso, obtendrá un <Tab>\n"
-"insertado (se mostrará como ^I).\n"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:248
 msgid "LIST MATCHES"
-msgstr "LISTA DE COINCIDENCIAS"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:251
@@ -816,19 +646,17 @@ msgid ""
 "When there are many matches, you would like to see an overview.  Do this by "
 "pressing CTRL-D.  For example, pressing CTRL-D after: >"
 msgstr ""
-"Cuando haya coinicidencias, querrá una vista general. Obtenga esto pulsando "
-"CTRL-D. Por ejemplo, si pulsa CTRL-D después de: >"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:253
 #, no-wrap
 msgid "\t:set is\n"
-msgstr "\t:set is\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:255
 msgid "results in: >"
-msgstr "obtendrá esto: >"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:259
@@ -838,9 +666,6 @@ msgid ""
 "\tincsearch  isfname    isident    iskeyword  isprint\n"
 "\t:set is\n"
 msgstr ""
-"\t:set is\n"
-"\tincsearch  isfname    isident    iskeyword  isprint\n"
-"\t:set is\n"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:269
@@ -856,21 +681,11 @@ msgid ""
 "enough to know that you might have wanted to expand the short name of the\n"
 "option into the long name.\n"
 msgstr ""
-"Vim crea un listado de las coincidencias y devuelve entonces el texto que\n"
-"tecleó. Ahora puede revisar la lista en busca del elemento que desea. Si no\n"
-"se encuentra ahí, puede usar <BS> para corregir la palabra. De existir\n"
-"cualquier coincidencia, introduzca unos cuantos caracteres más para\n"
-"completar el resto.\n"
-"  Si ha estado atento habrá notado que «incsearch» no empieza con «is».\n"
-"En este caso, «is» es el nombre corto de «incsearch». (Muchas opciones\n"
-"tienen un nombre largo y un nombre corto). Vim es suficientemente\n"
-"inteligente para saber que puede que desee expandir el nombre corto de una\n"
-"opción al nombre largo.\n"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:272
 msgid "THERE IS MORE"
-msgstr "HAY MÁS"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:276
@@ -879,9 +694,6 @@ msgid ""
 "you type \":edit i\" and there are files \"info.txt\" and \"info_backup.txt"
 "\" you will get \":edit info\"."
 msgstr ""
-"La orden CTRL-L completa la palabra hasta llegar a la cadena no ambigua más "
-"larga. Si teclea «:edit i» y hay archivos «info.txt» e «info_backup.txt» "
-"obtendrá «:edit info»."
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:282
@@ -892,21 +704,17 @@ msgid ""
 "end of the list of files.  The 'wildignore' option specifies files that are "
 "not listed at all."
 msgstr ""
-"La opción 'wildmode' se puede usar para modificar el funcionamiento de la "
-"compleción. la opción 'wildmenu' se puede usar para obtener una lista de "
-"tipo menú de las coincidencias. Use la opción 'suffixes' para especificar "
-"archivos de menor importancia y que aparecen al final de la lista de archivos"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:284
 msgid "More about all of this here: |cmdline-completion|"
-msgstr "Puede leer más acerca de esto aquí: |cmdline-completion|"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:287
 #, no-wrap
 msgid "*20.4*\tCommand line history\n"
-msgstr "*20.4*\tHistórico de la línea de órdenes\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:291
@@ -915,9 +723,6 @@ msgid ""
 "use the <Up> key to recall an older command line.  <Down> then takes you "
 "back to newer commands."
 msgstr ""
-"En el capítulo 3 mencionamos de manera breve el histórico. Lo básico es que "
-"puede usar la tecla <Arriba> para invocar una orden ya pasada. <Abajo> le "
-"lleva a aquellas órdenes más recientes."
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:297
@@ -928,11 +733,6 @@ msgid ""
 "two other histories are for expressions and input lines for the input() "
 "function.  |cmdline-history|"
 msgstr ""
-"De hecho, hay cuatro históricos. Los que vamos a mencionar aquí son las "
-"órdenes «:» y las órdenes de búsqueda «/» y «?». Las órdenes «/» y «?» comparten "
-"el mismo histórico, ya que ambos son órdenes de búsqueda. Los otros dos "
-"históricos sirven para las expresiones y líneas de entrada de la función "
-"input().  |cmdline-history|"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:301
@@ -941,15 +741,12 @@ msgid ""
 "then want to repeat that \":set\" command again.  You could press \":\" and "
 "then ten times <Up>.  There is a quicker way: >"
 msgstr ""
-"Suponga que ejecutó una orden «:set», introdujo diez órdenes «:» más y que "
-"después quiera repetir la orden «:set» otra vez. Puede pulsar «:» y diez veces "
-"<Arriba>. Existe una manera más rápida."
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:303
 #, no-wrap
 msgid "\t:se<Up>\n"
-msgstr "\t:se<Up>\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:308
@@ -959,10 +756,6 @@ msgid ""
 "At least you should not have to press <Up> very often (unless \":set\" "
 "commands is all you have done)."
 msgstr ""
-"Vim volverá ahora a la orden anterior que empezase con «se». Tendrá muchas "
-"posibilidades de que esta sea la oren «:set» que estaba buscando. Por lo "
-"menos no tendrá que pulsar <Arriba> varias veces (a menos que las órdenes «:"
-"set» sea todo lo que ha hecho)."
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:313
@@ -973,21 +766,17 @@ msgid ""
 "   If you do not find the line you were looking for, use <Down> to go back to\n"
 "what you typed and correct that.  Or use CTRL-U to start all over again.\n"
 msgstr ""
-"La tecla <Arriba> usará el texto introducido hasta el momento y lo comparará\n"
-"con las líneas en el histórico. Solo se usarán las líneas coincidentes.\n"
-"   En caso de no encontrar la línea que buscaba, use <Down> para volver a lo\n"
-"que tecleó y corrija eso. O use CTRL-U para iniciar el proceso otra vez. \n"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:315
 msgid "To see all the lines in the history: >"
-msgstr "Para ver todas las líneas del histórico: >"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:317
 #, no-wrap
 msgid "\t:history\n"
-msgstr "\t:history\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:320
@@ -995,14 +784,12 @@ msgid ""
 "That's the history of \":\" commands.  The search history is displayed with "
 "this command: >"
 msgstr ""
-"Este es el histórico de las órdenes «:». Puede ver el histórico de búsquedas "
-"con esta orden: >"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:322
 #, no-wrap
 msgid "\t:history /\n"
-msgstr "\t:history /\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:326
@@ -1011,15 +798,12 @@ msgid ""
 "typed.  Similarly for CTRL-N and <Down>.  CTRL-P stands for previous, CTRL-N "
 "for next."
 msgstr ""
-"CTRL-P funcionará como <Arriba>, pero no importará que introdujo con "
-"anterioridad, de manera parecida a CTRL-N y <Abajo>. CTRl-P simboliza "
-"anterior, CTRL-N, siguiente."
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:329
 #, no-wrap
 msgid "*20.5*\tCommand line window\n"
-msgstr "*20.5*\tVentana de la línea de órdenes\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:334
@@ -1029,22 +813,17 @@ msgid ""
 "commands that's OK, but sometimes you have to type a complicated command.  "
 "That's where the command line window is useful."
 msgstr ""
-"Teclear el texto en la línea de órdenes funciona de manera distinta a "
-"teclear texto en el modo Insertar. No permite a varias órdenes modificar el "
-"texto.  Esto está bien para varias órdenes, aunque a veces tiene que teclear "
-"una orden complicada. En esta situación es cuando la ventana de línea de "
-"órdenes es útil."
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:336
 msgid "Open the command line window with this command: >"
-msgstr "Abra la ventana de línea de órdenes con esta orden: >"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:338
 #, no-wrap
 msgid "\tq:\n"
-msgstr "\tq:\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:341
@@ -1052,8 +831,6 @@ msgid ""
 "Vim now opens a (small) window at the bottom.  It contains the command line "
 "history, and an empty line at the end:"
 msgstr ""
-"Vim abrirá ahora una pequeña ventana en la base. Contiene el histórico de la "
-"línea de órdenes, y una línea vacía al final."
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:356
@@ -1074,20 +851,6 @@ msgid ""
 "\t|\t\t\t\t      |\n"
 "\t+-------------------------------------+\n"
 msgstr ""
-"\t+-------------------------------------+\n"
-"\t|otra ventana\t\t\t      |\n"
-"\t|~\t\t\t\t      |\n"
-"\t|file.txt=============================|\n"
-"\t|:e c\t\t\t\t      |\n"
-"\t|:e config.h.in\t\t\t      |\n"
-"\t|:set path=.,/usr/include,,\t      |\n"
-"\t|:set iskeyword=@,48-57,_,192-255     |\n"
-"\t|:set is\t\t\t      |\n"
-"\t|:q\t\t\t\t      |\n"
-"\t|:\t\t\t\t      |\n"
-"\t|línea de órdenes=====================|\n"
-"\t|\t\t\t\t      |\n"
-"\t+-------------------------------------+\n"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:360
@@ -1097,16 +860,12 @@ msgid ""
 "\" to go to the \"i\" of \"in\" and type \"cwout\".  Now you have changed "
 "the line to:"
 msgstr ""
-"Ahora se encuentra en el modo Normal. Puede usar las teclas «hjkl» para "
-"desplazarse. Por ejemplo, desplácese con «5k» hasta la línea «:e config.h.in». "
-"Teclee «$h» para ir a la «i» de «in» y teclee «cwout».  Ahora, ha cambiado la "
-"línea a:"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:362
 #, no-wrap
 msgid "\t:e config.h.out ~\n"
-msgstr "\t:e config.h.out ~\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:370
@@ -1120,13 +879,6 @@ msgid ""
 "history to be changed.  Except that the command you execute will be added to\n"
 "the end of the history, like with all executed commands.\n"
 msgstr ""
-"Pulse ahora <Intro> y se ejecutará esta orden. La ventana de línea de órdenes\n"
-"se cerrará.\n"
-"   La orden <Intro> ejecutará la línea bajo el cursor. No importa si Vim está\n"
-"en el modo Normal o Insertar.\n"
-"   Perderá los cambios en la ventana de línea de órdenes, no resulta en\n"
-"cambios en el histórico. Excepto que la orden que ejecute se añadira al final\n"
-"del histórico, como todas las órdenes ejecutadas.\n"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:379
@@ -1141,16 +893,8 @@ msgid ""
 "While typing that search command you can't open another command line window,\n"
 "there can be only one.\n"
 msgstr ""
-"La ventana de línea de órdenes es muy útil cuando quiere una vista general\n"
-"del histórico, mirar una orden similar, modificarlo y ejecutarlo. Puede usar\n"
-"una orden de búsqueda para buscar algo.\n"
-"   En el ejemplo anterior, la orden de búsqueda «?config» se podría haber\n"
-"usado para encontrar una orden anterior que contenga «?config». Es un poco\n"
-"extraño, pues está usando una línea de órdenes para buscar en la ventana de\n"
-"línea de órdenes. No podrá abrir otra ventana de línea de órdenes mientras\n"
-"teclee la orden de búsqueda, ya que sólo puede haber una.\n"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:383
 msgid "Next chapter: |usr_21.txt| Go away and come back"
-msgstr "Siguiente capítulo: |usr_21.esx| Abandonar el editor y volver"
+msgstr ""

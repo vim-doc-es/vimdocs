@@ -1,56 +1,20 @@
-# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es 
-# extracted from usr_21.txt
-# Copyright (C) 2009 
-# This file is distributed under the same license as the Vim 7.2 package.
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the Vim package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# Translators credits:
-#   - Initial translation
-#       Omar Campagne <ocampagne@gmail.com>
-#
-#   - Updates
-#       TRADUCTOR <CORREO>, AÑO 
-#
-# Debido al formato (txt) y al máximo de 80 columnas que pueden tener 
-# los textos de ayuda en Vim, así como el formato PO, por favor, leete los
-# apuntes concernientes a la edición de los archivos PO relativos a la
-# aplicación que desees usar.
-# También encontrarás información acerca del uso de herramientas gettext en el 
-# proyecto de localización (l10n) de Vim.
-#
-# - http://www.assembla.com/wiki/show/vim-doc-es
-#
-# No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
-# este enlace puede ser de interés. A pesar de no formar parte, nuestra 
-# intención es homologarnos con su terminología y uso de la lengua 
-# en la medida de lo útil y posible.
-#
-#  - El proyecto de traducción de Debian al español
-#     http://www.debian.org/intl/spanish/notas
-#
-# La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
-# pero también puede servir de referencia para otros términos no técnicos.
-# No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
-# traducción sea comprensible independientemente de la nacionalidad del
-# usuario. Si crees que alguna traducción puede llevar a confusión, consulta
-# la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
-#
-#  - www.rae.es 
-#  - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages   
-#
-# Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
-# se puede consultar con un simple grep, pogrep o cargado en Virtaal.
-#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2009-11-24 01:12+0100\n"
-"PO-Revision-Date: 2009-11-20 20:30+0100\n"
-"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
-"Language-Team: vim-doc-es <>\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:4 original/TXT/usr_01.txt:4
@@ -64,7 +28,7 @@ msgstr ""
 #: original/TXT/usr_23.txt:4 original/TXT/usr_24.txt:4
 #, no-wrap
 msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
-msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:7 original/TXT/usr_toc.txt:58
@@ -138,7 +102,7 @@ msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
 #: original/TXT/usr_24.txt:602
 #, no-wrap
 msgid "==============================================================================\n"
-msgstr "==============================================================================\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:353 original/TXT/usr_01.txt:185
@@ -151,19 +115,19 @@ msgstr "========================================================================
 #: original/TXT/usr_21.txt:499 original/TXT/usr_22.txt:400
 #: original/TXT/usr_23.txt:343 original/TXT/usr_24.txt:606
 msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
-msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:2
 #, no-wrap
 msgid "*usr_21.txt*\tFor Vim version 7.2.  Last change: 2008 Nov 09\n"
-msgstr "*usr_21.esx*\tPara Vim version 7.2.  Último cambio: 9/11/2008\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:6
 #, no-wrap
 msgid "\t\t\t   Go away and come back\n"
-msgstr "\t\t\t  Abandonar el editor y volver\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:12
@@ -173,10 +137,6 @@ msgid ""
 "Furthermore, this is about the ways to remember the state of Vim and restore "
 "it later."
 msgstr ""
-"Esta capítulo versa acerca del uso combinado de otros programas con Vim, "
-"bien ejecutando el programa desde Vim o bien cerrándolo para volver más "
-"tarde.  Más aún, esto explica las maneras de recordar el estado de Vim para "
-"restaurarlo más tarde."
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:19
@@ -189,12 +149,6 @@ msgid ""
 "|21.5|\tViews\n"
 "|21.6|\tModelines\n"
 msgstr ""
-"|21.1|\tSuspender y continuar\n"
-"|21.2|\tEjecutar órdenes de consola\n"
-"|21.3|\tRecordar información; viminfo\n"
-"|21.4|\tSesiones\n"
-"|21.5|\tVistas\n"
-"|21.6|\t«Modelines»\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:23
@@ -204,15 +158,12 @@ msgid ""
 " Previous chapter: |usr_20.txt|  Typing command-line commands quickly\n"
 "Table of contents: |usr_toc.txt|\n"
 msgstr ""
-" Capítulo siguiente: |usr_22.esx|  Encontrar el archivo a editar\n"
-"  Capítulo anterior: |usr_20.esx|  Teclear con rapidez órdenes de consola\n"
-"Tabla de contenidos: |usr_toc.esx|\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:26
 #, no-wrap
 msgid "*21.1*\tSuspend and resume\n"
-msgstr "*21.1*\tSuspender y continuar\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:31
@@ -222,10 +173,6 @@ msgid ""
 "other commands until you are bored with them.  Then bring back Vim with the "
 "\"fg\" command. >"
 msgstr ""
-"Al igual que la mayoría de programas Unix, puede suspender Vim pulsando CTRL-"
-"Z. Esto cierra Vim y le devuelve a la consola desde la cual se inicio. Puede "
-"entonces ejecutar cualquier número de órdenes hasta que se aburra. Una vez "
-"que haya acabado, vuelva a Vim con la orden «fg»."
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:35
@@ -235,9 +182,6 @@ msgid ""
 "\t{any sequence of shell commands}\n"
 "\tfg\n"
 msgstr ""
-"\tCTRL-Z\n"
-"\t{cualquier secuencia de órdenes de consola}\n"
-"\tfg\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:40
@@ -248,10 +192,6 @@ msgid ""
 "Don't forget to bring Vim back to the foreground, you would lose any changes\n"
 "that you made!\n"
 msgstr ""
-"Ahora está en el punto en que abandonó Vim, nada ha cambiado.\n"
-"   En caso de que CTRL-Z no funcione, puede también usar «suspend»\n"
-"¡No se olvide de devolver Vim a primer plano, o perderá todos los cambios\n"
-"realizados.\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:46
@@ -263,19 +203,12 @@ msgid ""
 "   When you are running the GUI you can't go back to the shell where Vim was\n"
 "started.  CTRL-Z will minimize the Vim window instead.\n"
 msgstr ""
-"Solo Unix es compatible con esta función. Vim iniciará una consola\n"
-"en otros sistemas. Esto también tiene la funcionalidad de permitirle\n"
-"ejecutar órdenes de consola.\n"
-"Pero esta es una nueva consola, no desde la que inició Vim.\n"
-"   Cuando está ejecutando la interfaz gráfica no puede volver a la consola\n"
-"desde la que se inició Vim. En esta situación, CTRL-Z minimizará la ventana\n"
-"de Vim.\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:49
 #, no-wrap
 msgid "*21.2*\tExecuting shell commands\n"
-msgstr "*21.2*\tEjecutar órdenes de consola\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:52
@@ -283,8 +216,6 @@ msgid ""
 "To execute a single shell command from Vim use \":!{command}\".  For "
 "example, to see a directory listing: >"
 msgstr ""
-"Use «:!{orden}» para ejecutar una sola orden de consola desde Vim.  Por "
-"ejemplo, para ver el listado de un directorio: >"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:55
@@ -293,8 +224,6 @@ msgid ""
 "\t:!ls\n"
 "\t:!dir\n"
 msgstr ""
-"\t:!ls\n"
-"\t:!dir\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:62
@@ -307,12 +236,6 @@ msgid ""
 "   The \"!\" is also used in other places where a program is run.  Let's take\n"
 "a look at an overview:\n"
 msgstr ""
-"El primero es para Unix, el segundo para MS-Windows.\n"
-"  Vim ejecutará el programa. Cuando finalice, obtendrá un dialogo para\n"
-"pulsar <Intro>. Esto le permite ver la salida de la orden antes de volver\n"
-"al texto que estaba editando.\n"
-"  El signo «!» también se usa en otros sitios cuando se ejecuta un programa.\n"
-"Veamos com funciona esto de una manera general.\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:67
@@ -323,10 +246,6 @@ msgid ""
 "\t:w !{program}\t\texecute {program} and send text to its input\n"
 "\t:[range]!{program}\tfilter text through {program}\n"
 msgstr ""
-"\t:!{programa}\t\texecute {programa}\n"
-"\t:r !{programa}\t\texecute {programa} y lea su salida\n"
-"\t:w !{programa}\t\texecute {programa} y envíe texto a su entrada\n"
-"\t:[range]!{programa}\tfiltra texto a través de {programa}\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:71
@@ -335,9 +254,6 @@ msgid ""
 "difference.  Without it executes the program normally, with the range a "
 "number of text lines is filtered through the program."
 msgstr ""
-"Nótese que la presencia de un rango antes de «!{programa}» marca una gran "
-"diferencia. Sin él, ejecuta el programa de manera normal, con el rango se "
-"filtran un número de líneas a través del programa."
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:74
@@ -345,15 +261,12 @@ msgid ""
 "Executing a whole row of programs this way is possible.  But a shell is much "
 "better at it.  You can start a new shell this way: >"
 msgstr ""
-"Es imposible ejecutar una fila de programas de esta manera. Pero una consola "
-"es mejor para estas funciones. Puede iniciar una nueva consola de la "
-"siguiente manera: >"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:76
 #, no-wrap
 msgid "\t:shell\n"
-msgstr "\t:shell\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:79
@@ -361,8 +274,6 @@ msgid ""
 "This is similar to using CTRL-Z to suspend Vim.  The difference is that a "
 "new shell is started."
 msgstr ""
-"Esto es parecido al uso de «CTRL-Z» para suspender Vim. La diferencia es que "
-"se inicia una nueva consola."
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:86
@@ -375,19 +286,12 @@ msgid ""
 ">\n"
 "\t:!xterm&\n"
 msgstr ""
-"Al usar la GUI, la consola usará la ventana de Vim para entrada y salida. Ya\n"
-"que Vim no es una terminal, esto no funcionará perfectamente.\n"
-"Si tiene un problema, pruebe a conmutar la opción 'guipty'. Si esto tampoco\n"
-"funciona, inicie una nueva terminal para iniciar el intérprete de órdenes.\n"
-"Por ejemplo, con:\n"
-">\n"
-"\t:!xterm&\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:89
 #, no-wrap
 msgid "*21.3*\tRemembering information; viminfo\n"
-msgstr "*21.3*\tRecordar información; viminfo\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:93
@@ -396,16 +300,11 @@ msgid ""
 "files, a command line history filled with carefully crafted commands.  When "
 "you exit Vim all of this is lost.  But you can get it back!"
 msgstr ""
-"Tras llevar un rato editando, tendrá texto en los registros, marcas en "
-"varios archivos, y un histórico de la línea de órdenes con órdenes "
-"compuestos cuidadosamente. ¡Todo esto se pierde al cerrar Vim, pero puede "
-"recuperarlo!"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:95
 msgid "The viminfo file is designed to store status information:"
 msgstr ""
-"El archivo viminfo está diseñado para almacenar información del estado:"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:101
@@ -417,11 +316,6 @@ msgid ""
 "\tThe buffer list\n"
 "\tGlobal variables\n"
 msgstr ""
-"\tHistórico de la línea de órdenes y patrones de búsqueda\n"
-"\tTexto en registros\n"
-"\tMarcas para varios archivos\n"
-"\tLa lista de búfers\n"
-"\tVariables globales\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:105
@@ -430,9 +324,6 @@ msgid ""
 "file.  When Vim starts again, the viminfo file is read and the information "
 "restored."
 msgstr ""
-"Cada vez que cierre Vim, este guardará esta información en un archivo, el "
-"archivo viminfo. Cuando inicie Vim otra vez, leerá el archivo viminfo y "
-"restaurará la información."
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:109
@@ -441,15 +332,12 @@ msgid ""
 "items.  You might want to set it to remember more information.  This is done "
 "through the following command: >"
 msgstr ""
-"La opción 'viminfo' esta configurada por omisión para almacenar un limitado "
-"número de elementos. Puede que desee configurarlo para que recuerde más "
-"información. Esto se hace con la siguiente orden: >"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:111
 #, no-wrap
 msgid "\t:set viminfo=string\n"
-msgstr "\t:set viminfo=string\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:119
@@ -463,19 +351,12 @@ msgid ""
 "a nice even number for this option (1000, for instance).  Your command now\n"
 "looks like this: >\n"
 msgstr ""
-"La cadena especifica que guardar. La sintaxis de la cadena es un carácter de\n"
-"opción seguido de un argumento. Las parejas opción/argumento se separan con\n"
-"comas.\n"
-"   Explore como puede construir su propia cadena viminfo. Primero, la opción\n"
-"se usa para especificar de cuantos archivos desea guardar marcas (a-z).\n"
-"Escoja un bonito número par para esta opción (1000, por ejemplo), Ahora, su\n"
-"orden presenta este aspecto: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:121
 #, no-wrap
 msgid "\t:set viminfo='1000\n"
-msgstr "\t:set viminfo='1000\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:125
@@ -484,15 +365,12 @@ msgid ""
 "this option is 0, none are stored.  If it is 1 or you do not specify an f "
 "option, the marks are stored.  You want this feature, so now you have this: >"
 msgstr ""
-"La opción «f» controla si se guardan las marcas globales (A-Z y 0-9). Si esta "
-"opción es 0, no se guarda nada. Si es 1 o no especificó una opción «f», las "
-"marcas se guardan. Desea esta función, y por ello ahora obtiene esto: >"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:127
 #, no-wrap
 msgid "\t:set viminfo='1000,f1\n"
-msgstr "\t:set viminfo='1000,f1\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:132
@@ -502,10 +380,6 @@ msgid ""
 "adding thousands of lines to your viminfo file (which might never get used "
 "and makes starting Vim slower) you use a maximum of 500 lines: >"
 msgstr ""
-"La opción «<» define el número de líneas a guardar por cada registro. Por "
-"omisión, todas las líneas se guardan. Si es 0, nada se guarda. Para evitar "
-"que se añadan miles de líneas a su archivo viminfo (que puede que nunca se "
-"usen, y ralenticen el arranque de Vim) puede usar un máximo de 500 líneas: >"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:148
@@ -527,29 +401,11 @@ msgid ""
 "\tc\tconvert the text using 'encoding'\n"
 "\tn\tname used for the viminfo file (must be the last option)\n"
 msgstr ""
-"\t:set viminfo='1000,f1,<500\n"
-"<\n"
-"Otras opciones que puede que desee usar:\n"
-"\t:\tnúmero de líneas a guardar del histórico de la línea\n"
-"\t\tde órdenes\n"
-"\t@\tnúmero de líneas a guardar de la línea de entrada del\n"
-"\t\thistórico\n"
-"\t/\tnúmero de líneas a guardar de del histórico de búsquedas\n"
-"\tr\tdispositivos extraíbles, del cual no se guardan marcas\n"
-"\t\t(se puede introducir varias veces)\n"
-"\t!\tvariables globales que comienzan con mayúscula y que no\n"
-"\t\tcontienen minúsculas\n"
-"\th\tdesactivar el resaltado de 'hlsearch' al inicio\n"
-"\t%\tla lista de búfers (solo se restaura si inicia Vim\n"
-"\t\tsin argumentos de archivo)\n"
-"\tc\tconvertir el texto usando 'encoding'\n"
-"\tn\tnombre usado para el archivo viminfo (tiene que ser la\n"
-"\t\túltima opción)\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:150
 msgid "See the 'viminfo' option and |viminfo-file| for more information."
-msgstr "Para más información, véase la opción 'viminfo' y |viminfo-file|."
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:154
@@ -558,14 +414,11 @@ msgid ""
 "information.  This may cause information that previously exiting Vims stored "
 "to be lost.  Each item can be remembered only once."
 msgstr ""
-"Cuando inicia varias instancias de Vim, la última que cierre guardará su "
-"información. Esto puede causar que se pierda información que otras "
-"instancias anteriores guardaron."
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:157
 msgid "GETTING BACK TO WHERE YOU STOPPED VIM"
-msgstr "VOLVER AL PUNTO EN QUE CERRÓ VIM"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:163
@@ -577,11 +430,6 @@ msgid ""
 ">\n"
 "\t'0\n"
 msgstr ""
-"Si esta a medio camino de editar un archivo, y llegan las vacaciones,\n"
-"cierra Vim y disfruta de la vida, olvidando todo lo respectivo al trabajo.\n"
-"Vuelva a iniciar Vim pasadas un par de semanas, y teclee:\n"
-">\n"
-"\t'0\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:169
@@ -593,16 +441,11 @@ msgid ""
 "Mark '9 is lost.\n"
 "   The |:marks| command is useful to find out where '0 to '9 will take you.\n"
 msgstr ""
-"Y ya está en el punto en que cerró Vim para así volver a su trabajo\n"
-"   Vim crea una marca cada vez que lo cierra. El último es '0. La posición\n"
-"La posición a la que '0 apuntaba se convierte en '1. Y '1 se convierte en'2,\n"
-"y así en adelante. La marca '9 se pierde.\n"
-"   La orden |:marks| es útil para ver a donde le llevarían '0 t '9.\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:172
 msgid "GETTING BACK TO SOME FILE"
-msgstr "VOLVER A UN ARCHIVO"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:176
@@ -611,9 +454,6 @@ msgid ""
 "exiting Vim, there is a slightly more complicated way.  You can see a list "
 "of files by typing the command: >"
 msgstr ""
-"Si desea volver a un archivo que editó recientemente, pero no al cerrar Vim, "
-"hay una manera un tanto más complicada. Puede ver una lista de archivos "
-"tecleando la orden: >"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:181
@@ -624,10 +464,6 @@ msgid ""
 "\t2: ~/text/resume.txt ~\n"
 "\t3: /tmp/draft ~\n"
 msgstr ""
-"\t:oldfiles\n"
-"<\t1: ~/.viminfo ~\n"
-"\t2: ~/text/resume.txt ~\n"
-"\t3: /tmp/draft ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:184
@@ -635,14 +471,12 @@ msgid ""
 "Now you would like to edit the second file, which is in the list preceded by "
 "\"2:\".  You type: >"
 msgstr ""
-"Ahora le gustaría editar el segundo archivo, que está en la lista precedido "
-"por «2:». Teclee: >"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:186
 #, no-wrap
 msgid "\t:e #<2\n"
-msgstr "\t:e #<2\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:191
@@ -652,16 +486,12 @@ msgid ""
 "\" (alternate file name).  So you can also split the window to edit the "
 "third file: >"
 msgstr ""
-"En lugar de «:e», puede usar cualquier orden que tiene un nombre de archivo "
-"como argumento, el elemento «#<2» funciona en el mismo lugar que «%» (nombre "
-"del archivo actual) y «#» (nombre de archivo alterno). Puede también dividir "
-"la ventana para editar el tercer archivo: >"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:193
 #, no-wrap
 msgid "\t:split #<3\n"
-msgstr "\t:split #<3\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:196
@@ -669,8 +499,6 @@ msgid ""
 "That #<123 thing is a bit complicated when you just want to edit a file.  "
 "Fortunately there is a simpler way: >"
 msgstr ""
-"Usar #<123 es poco complicado cuando solo quiere editar un archivo.  "
-"Afortunadamente, hay una manera más simple: >"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:202
@@ -682,11 +510,6 @@ msgid ""
 "\t3: /tmp/draft ~\n"
 "\t-- More --\n"
 msgstr ""
-":browse oldfiles\n"
-"<\t1: ~/.viminfo ~\n"
-"\t2: ~/text/resume.txt ~\n"
-"\t3: /tmp/draft ~\n"
-"\t-- Más --\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:205
@@ -694,29 +517,27 @@ msgid ""
 "You get the same list of files as with |:oldfiles|.  If you want to edit "
 "\"resume.txt\" first press \"q\" to stop the listing.  You will get a prompt:"
 msgstr ""
-"Obtendrá la misma lista de archivos que con |:oldfiles|. Si desea editar "
-"«resume.txt», pulse primero «q» para detener el listado. Obtendrá un dialogo:"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:207
 #, no-wrap
 msgid "\tType number and <Enter> (empty cancels): ~\n"
-msgstr "\tTeclee el número y pulse <Intro> (vaciar cancelaciones): ~\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:209
 msgid "Type \"2\" and press <Enter> to edit the second file."
-msgstr "Teclee «2» y pulse <Intro> para editar el segundo archivo."
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:211
 msgid "More info at |:oldfiles|, |v:oldfiles| and |c_#<|."
-msgstr "Más información en |:oldfiles|, |v:oldfiles| y |c_#<|."
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:214
 msgid "MOVE INFO FROM ONE VIM TO ANOTHER"
-msgstr "MOVER INFO DE UN VIM A OTRO"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:218
@@ -726,27 +547,23 @@ msgid ""
 "register contents between two instances of Vim, for example.  In the first "
 "Vim do: >"
 msgstr ""
-"Puede emplear las órdenes «:wviminfo» y «:rviminfo» para guardar y restaurar "
-"la información mientras Vim se está ejecutando. Ésto es útil para "
-"intercambiar los contenidos del registro de dos instancias de Vim, por "
-"ejemplo. En el primer Vim, haga: >"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:220
 #, no-wrap
 msgid "\t:wviminfo! ~/tmp/viminfo\n"
-msgstr "\t:wviminfo! ~/tmp/viminfo\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:222
 msgid "And in the second Vim do: >"
-msgstr "Y en el segundo Vim haga : >"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:224
 #, no-wrap
 msgid "\t:rviminfo! ~/tmp/viminfo\n"
-msgstr "\t:rviminfo! ~/tmp/viminfo\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:235
@@ -763,22 +580,12 @@ msgid ""
 "could make a directory full of viminfo files, each containing info for a\n"
 "different purpose.\n"
 msgstr ""
-"Obviamente, «w» significa «write», y «r», «read».\n"
-"   El caracter «!» se usa por «:wviminfo» para forzar la sobreescritura de\n"
-"un archivo existente. Cuando se omite, y el archivo existe, la información\n"
-"es fusionada en el archivo.\n"
-"   El caracter «!» usado por «:rviminfo» significa que se usa toda la\n"
-"información, y esto puede sobreescribir información ya presente. Sin «!»\n"
-"sólo se usa la información que no estaba definida.\n"
-"   Estas órdenes se pueden usar también para guardar info y usarlo más tarde.\n"
-"Puede crear un directorio lleno de archivos «viminfo», cada uno con info\n"
-"dependiendo del propósito.\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:238
 #, no-wrap
 msgid "*21.4*\tSessions\n"
-msgstr "*21.4*\tSesiones\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:247
@@ -793,32 +600,23 @@ msgid ""
 "the 'sessionoptions' option, described below.)\n"
 "   The following command creates a session file: >\n"
 msgstr ""
-"Suponga que ha estado editando, y que el día llega a su final. Desea\n"
-"finalizar el trabajo, y continuar en el mismo punto el siguiente día. Puede\n"
-"hacer esto si guarda su sesión de edición para restaurarlo el siguiente día.\n"
-"   Una sesión de Vim contiene toda la información acerca de qué está\n"
-"editando. Ésto incluye datos como la lista de archivos, disposición\n"
-"de la ventana, variables globales, opciones y más información. (Lo que se\n"
-"recuerda se controla mediante la opción 'sessionoptions', descrita más\n"
-"abajo.\n"
-"   La siguiente orden crea un archivo de sesión: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:249
 #, no-wrap
 msgid "\t:mksession vimbook.vim\n"
-msgstr "\t:mksession vimbook.vim\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:251
 msgid "Later if you want to restore this session, you can use this command: >"
-msgstr "Puede usar esta orden para restaurar la sesión más tarde: >"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:253
 #, no-wrap
 msgid "\t:source vimbook.vim\n"
-msgstr "\t:source vimbook.vim\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:256
@@ -826,14 +624,12 @@ msgid ""
 "If you want to start Vim and restore a specific session, you can use the "
 "following command: >"
 msgstr ""
-"Si desea iniciar Vim y restaurar una sesión específica, puede usar la "
-"siguiente orden: >"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:258
 #, no-wrap
 msgid "\tvim -S vimbook.vim\n"
-msgstr "\tvim -S vimbook.vim\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:262
@@ -842,9 +638,6 @@ msgid ""
 "session (actually, you can source any Vim script with -S, thus it might as "
 "well stand for \"source\")."
 msgstr ""
-"Esto le dice a Vim que lea un archivo en particular al inicio. La «S» "
-"significa sesión (en realidad, puede introducir cualquier script a Vim con «-"
-"S», por ello también puede significar «source», fuente)."
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:267
@@ -855,10 +648,6 @@ msgid ""
 "   What exactly is restored depends on the 'sessionoptions' option.  The\n"
 "default value is \"blank,buffers,curdir,folds,help,options,winsize\".\n"
 msgstr ""
-"Las ventanas que estaban abiertas se restauran, con la misma posición y\n"
-"tamaño que antes. Los mapeados y valores de opciones son también las mismas.\n"
-"   Lo que se restaura exactamente depende de la opción 'sessionoptions'. El\n"
-"valor predeterminado es «blank,buffers,curdir,folds,help,options,winsize».\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:275
@@ -872,13 +661,6 @@ msgid ""
 "\toptions\t\tall options and mappings\n"
 "\twinsize\t\twindow sizes\n"
 msgstr ""
-"\tblank\t\tmantener ventanas vacías\n"
-"\tbuffers\t\ttodos los «buffers», no sólo los de una ventana\n"
-"\tcurdir\t\tel directorio actual\n"
-"\tfolds\t\tplegados, también los manualmente creados\n"
-"\thelp\t\tla ventana de ayuda\n"
-"\toptions\t\ttodas las opciones y mapeados\n"
-"\twinsize\t\ttamaño de ventanas\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:278
@@ -886,19 +668,17 @@ msgid ""
 "Change this to your liking.  To also restore the size of the Vim window, for "
 "example, use: >"
 msgstr ""
-"Modifique esto según su convenienvia. Para también restaurar el tamaño de la "
-"ventana de Vim use, por ejemplo: >"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:280
 #, no-wrap
 msgid "\t:set sessionoptions+=resize\n"
-msgstr "\t:set sessionoptions+=resize\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:283
 msgid "SESSION HERE, SESSION THERE"
-msgstr "SESIÓN AQUÍ, SESIÓN ALLÁ"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:288
@@ -908,10 +688,6 @@ msgid ""
 "currently working on the \"secret\" project and have to switch to the "
 "\"boring\" project: >"
 msgstr ""
-"La manera obvia de usar sesiones es cuando trabaja en diferenes proyetos.  "
-"Suponga que guarda sus archivos de sesión en el directorio «~/.vim». Está "
-"trabajando actualmente en el proyecto «secreto» y tiene que cambiar al "
-"proyecto «aburrido»: >"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:292
@@ -921,9 +697,6 @@ msgid ""
 "\t:mksession! ~/.vim/secret.vim\n"
 "\t:source ~/.vim/boring.vim\n"
 msgstr ""
-"\t:wall\n"
-"\t:mksession! ~/.vim/secreto.vim\n"
-"\t:source ~/.vim/aburrido.vim\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:297
@@ -933,10 +706,6 @@ msgid ""
 "session.  The next time you load the secret session you can continue where "
 "you were at this point.  And finally you load the new \"boring\" session."
 msgstr ""
-"El primero usa «:wall» para escribir en todos los archivos modificados.  "
-"Entonces se guarda la sesión actual, usando «:mksession!». Esto sobreescribe "
-"la sesión anterior. La siguiente vez que cargue la sesión «secreto» podrá "
-"continuar en el punto en que lo dejó, y por último carga la sesión «aburrido»."
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:300
@@ -944,15 +713,12 @@ msgid ""
 "If you open help windows, split and close various window, and generally mess "
 "up the window layout, you can go back to the last saved session: >"
 msgstr ""
-"Si abre ventanas de ayuda, divide y cierra varias ventanas, y en general "
-"desordena la disposición de la ventana, puede volver a la última sesión "
-"guardada: >"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:302
 #, no-wrap
 msgid "\t:source ~/.vim/boring.vim\n"
-msgstr "\t:source ~/.vim/aburrido.vim\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:310
@@ -966,13 +732,6 @@ msgid ""
 "you want.\n"
 "   For example, this is a nice layout to use:\n"
 msgstr ""
-"Por ello, ahora tiene un completo control sobre continuar en el mismo punto\n"
-"la siguiente vez que lo abra, guardando la configuración actual en una\n"
-"sesión, o mantener el archivo de sesión como un punto de partida.\n"
-"   Otra manera de usar sesiones es crear una organización de ventana que le\n"
-"gusta usar, y guardarla en una sesión. Después podrá volver a este orden\n"
-"siempre que quiera.\n"
-"   Por ejemplo, esta es una bonita organización que puede usar:\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:326
@@ -994,21 +753,6 @@ msgid ""
 "\t|\t\t\t\t\t |\n"
 "\t+----------------------------------------+\n"
 msgstr ""
-"\t+----------------------------------------+\n"
-"\t|\t\t   VIM - main help file  |\n"
-"\t|\t\t\t\t\t |\n"
-"\t|Desplazarse:  Use las teclas de direcció|\n"
-"\t|help.txt================================|\n"
-"\t|explorer   |\t\t\t\t |\n"
-"\t|dir\t    |~\t\t\t\t |\n"
-"\t|dir\t    |~\t\t\t\t |\n"
-"\t|file\t    |~\t\t\t\t |\n"
-"\t|file\t    |~\t\t\t\t |\n"
-"\t|file\t    |~\t\t\t\t |\n"
-"\t|file\t    |~\t\t\t\t |\n"
-"\t|~/=========|[No File]===================|\n"
-"\t|\t\t\t\t\t |\n"
-"\t+----------------------------------------+\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:332
@@ -1020,12 +764,6 @@ msgid ""
 "More about this in the next chapter.\n"
 "   Create this from a just started Vim with: >\n"
 msgstr ""
-"Ésta tiene una ventana de ayuda en la parte superior, para que pueda leer\n"
-"este texto. La estrecha ventana vertical a la izquierda contiene un\n"
-"explorador de archivos. Este es un complemento de Vim que lista los\n"
-"contenidos de un directorio. Puede seleccionar qué archivos editar ahí.\n"
-"Más acerca de esto en el siguiente capítulo.\n"
-"   Puede crear esto con una instancia nueva de Vim con: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:336
@@ -1035,9 +773,6 @@ msgid ""
 "\tCTRL-W w\n"
 "\t:vertical split ~/\n"
 msgstr ""
-"\t:help\n"
-"\tCTRL-W w\n"
-"\t:vertical split ~/\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:340
@@ -1047,20 +782,17 @@ msgid ""
 ">\n"
 "\t:mksession ~/.vim/mine.vim\n"
 msgstr ""
-"Puede redimensionar las ventanas a su gusto. Guarde entonces la sesión con:\n"
-">\n"
-"\t:mksession ~/.vim/mio.vim\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:342
 msgid "Now you can start Vim with this layout: >"
-msgstr "Ahora puede iniciar Vim con este diseño: >"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:344
 #, no-wrap
 msgid "\tvim -S ~/.vim/mine.vim\n"
-msgstr "\tvim -S ~/.vim/mio.vim\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:348
@@ -1069,14 +801,11 @@ msgid ""
 "window, move the cursor to the filename and press \"O\".  Double clicking "
 "with the mouse will also do this."
 msgstr ""
-"Pista: Para abrir un archivo que vea listado en la ventana del explorador en "
-"la ventana vacía, mueva el cursor al nombre del archivo y pulse «O». Pulsar "
-"dos veces con el ratón le daría el mismo resultado."
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:351
 msgid "UNIX AND MS-WINDOWS"
-msgstr "UNIX Y MS-WINDOWS"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:356
@@ -1087,17 +816,12 @@ msgid ""
 "that can be used on both systems.  This is the command to put in your vimrc "
 "file: >"
 msgstr ""
-"Hay gente que tiene que trabajar un día con sistemas MS-WINDOWS y con Unix "
-"al siguiente. Si es uno de ellos, considere añadir «slash» y «unix» a "
-"'sessionoptions'. Los archivos de sesión se guardarán en un formato que les "
-"permita ser usados en ambos sistemas. Esta es una orden para poner en su "
-"archivo vimrc: >"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:358
 #, no-wrap
 msgid "\t:set sessionoptions+=unix,slash\n"
-msgstr "\t:set sessionoptions+=unix,slash\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:363
@@ -1107,16 +831,11 @@ msgid ""
 "Similarly, MS-Windows Vim understands file names with / to separate names, "
 "but Unix Vim doesn't understand \\."
 msgstr ""
-"Vim usará el formato Unix, porque Vim para MS-Windows puede leer y escribir "
-"archivos de Unix, pero Vim para Unix no puede leer los archivos de sesión "
-"con formato de MS-Windows. De manera similar, Vim para MS-Windows entiene "
-"los nombres de archivo con «/» como diferentes palabras, pero Vim para Unix "
-"no entiende «\\»."
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:366
 msgid "SESSIONS AND VIMINFO"
-msgstr "SESIONES Y VIMINFO"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:376
@@ -1132,16 +851,6 @@ msgid ""
 "   You might prefer to keep the info with the session.  You will have to do\n"
 "this yourself then.  Example: >\n"
 msgstr ""
-"Las sesiones guardan muchas cosas, pero no la posición de las marcas,\n"
-"contenidos de registros e histórios de la línea de órdenes. Precisa emplear\n"
-"«viminfo» para estas cosas.\n"
-"   En la mayoría de las situaciones deseará usar sesiones separadas de\n"
-"viminfo.\n"
-"Puede emplear esto para pasar a otra sesión, pero manteniendo el histórico\n"
-"de la línea de órdenes. También puede copiar el texto de los registros de una\n"
-"sesión, y pegarlos en otra sesión diferente.\n"
-"   Puede que prefiera mantener el información en la sesión. Tendrá que hacer\n"
-"ésto usted mismo. Ejemplo: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:379
@@ -1150,13 +859,11 @@ msgid ""
 "\t:mksession! ~/.vim/secret.vim\n"
 "\t:wviminfo! ~/.vim/secret.viminfo\n"
 msgstr ""
-"\t:mksession! ~/.vim/secreto.vim\n"
-"\t:wviminfo! ~/.vim/secreto.viminfo\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:381
 msgid "And to restore this again: >"
-msgstr "Y para restaurarlo: >"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:384
@@ -1165,14 +872,12 @@ msgid ""
 "\t:source ~/.vim/secret.vim\n"
 "\t:rviminfo! ~/.vim/secret.viminfo\n"
 msgstr ""
-"\t:source ~/.vim/secreto.vim\n"
-"\t:rviminfo! ~/.vim/secreto.viminfo\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:387
 #, no-wrap
 msgid "*21.5*\tViews\n"
-msgstr "*21.5*\tVistas\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:398
@@ -1189,24 +894,12 @@ msgid ""
 "for the view file.  You can restore the view when you later edit the same\n"
 "file.  To store the view for the current window: >\n"
 msgstr ""
-"Una sesión guarda el aspecto completo de Vim. Cuando desea guardar sólo las\n"
-"propiedades de una ventana, use una vista.\n"
-"   El uso de una vista es útil cuando desea editar un archivo de una manera\n"
-"específica.\n"
-"Por ejemplo, ha activado el número de líneas con la opción 'number' y\n"
-"definido algunos plegados. Al igual que con las sesiones, puede guardar esta\n"
-"vista en el archivo y restaurarla más tarde. En realidad, cuando guarda una\n"
-"sesión, éste guarda la vista de cada ventana.\n"
-"   Hay dos maneras básicas de usar las vistas. La primera es dejar que Vim\n"
-"escoja el nombre para el archivo de la vista. Puede restaurar la vista\n"
-"posteriormente cuando edite el mismo archivo. Para guardar la vista de la\n"
-"ventana actual: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:400
 #, no-wrap
 msgid "\t:mkview\n"
-msgstr "\t:mkview\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:403
@@ -1214,14 +907,12 @@ msgid ""
 "Vim will decide where to store the view.  When you later edit the same file "
 "you get the view back with this command: >"
 msgstr ""
-"Vim decidirá donde guardar la vista. Cuando más tarde edite el mismo archivo "
-"puede recuperar la vista con esta orden: >"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:405
 #, no-wrap
 msgid "\t:loadview\n"
-msgstr "\t:loadview\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:410
@@ -1232,27 +923,23 @@ msgid ""
 "folds open, you can set the options to make the window look that way.  Then\n"
 "store this view with: >\n"
 msgstr ""
-"Fácil, ¿no?\n"
-"   Cuando quiere ver el archivo sin la opción 'number' activada, o con todos\n"
-"los plegados abiertos, puede definir las opciones para que la ventana\n"
-"presente ese aspecto. Una vez hecho ésto, guarde ésta vista con: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:412
 #, no-wrap
 msgid "\t:mkview 1\n"
-msgstr "\t:mkview 1\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:414
 msgid "Obviously, you can get this back with: >"
-msgstr "Obviamente, puede recuperar ésto con: >"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:416
 #, no-wrap
 msgid "\t:loadview 1\n"
-msgstr "\t:loadview 1\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:421
@@ -1263,14 +950,11 @@ msgid ""
 "   You can store up to ten views for the same file this way, one unnumbered\n"
 "and nine numbered 1 to 9.\n"
 msgstr ""
-"Ahora puede pasar de una vista a otra del archivo usando «:loadview» con y\n"
-"sin el argumento «1».  De esta forma, puede guardar hasta diez vistas para el\n"
-"mismo archivo, uno sin numerar y nueve numerados del 1 al 9.\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:424
 msgid "A VIEW WITH A NAME"
-msgstr "UNA VISTA CON NOMBRE"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:431
@@ -1283,36 +967,29 @@ msgid ""
 "them.\n"
 "   For example, to save the view of the current file: >\n"
 msgstr ""
-"La segunda manera básica de usar las vistas se puede hacer guardando la vista\n"
-"en un archivo con un nombre de su elección. Puede cargar esta vista mientras\n"
-"edita un archivo distinto. Entonces, Vim pasará a editar el archivo\n"
-"especificado en la vista. Por ello, puede usar ésto para pasar rápidamente\n"
-"a editar otro archivo, con todas las opciones definidas tal y como las\n"
-"guardó.\n"
-"   Por ejemplo, para guardar la vista del archivo actual: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:433
 #, no-wrap
 msgid "\t:mkview ~/.vim/main.vim\n"
-msgstr "\t:mkview ~/.vim/principal.vim\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:435
 msgid "You can restore it with: >"
-msgstr "Puede restaurarla con: >"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:437
 #, no-wrap
 msgid "\t:source ~/.vim/main.vim\n"
-msgstr "\t:source ~/.vim/principal.vim\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:440
 #, no-wrap
 msgid "*21.6*\tModelines\n"
-msgstr "*21.6*\t«Modelines»\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:450
@@ -1328,22 +1005,12 @@ msgid ""
 "spaces.  This requires setting the 'shiftwidth' option to 4.  This modeline\n"
 "will do that:\n"
 msgstr ""
-"Al editar un archivo en particular, puede que defina opciones específicas\n"
-"para ese archivo. Teclear estas órdenes es aburrido. Usar una sesión o vista\n"
-"para editar un archivo no funciona cuando comparte el archivo con varias\n"
-"personas.\n"
-"   La solución para esta situación es añadir un «modeline» al archivo. Éste\n"
-"es una línea de texto que le dice a Vim los valores de las opciones para su\n"
-"uso con este archivo en particular.\n"
-"   Un ejemplo típico es un programa en C en el que introduce los tabulados\n"
-"como múltiplos de 4. Esto requiere que configure la opción 'shiftwidth' a 4.\n"
-"Este «modeline» hará esta función:\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:452
 #, no-wrap
 msgid "\t/* vim:set shiftwidth=4: */ ~\n"
-msgstr "\t/* vim:set shiftwidth=4: */ ~\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:459
@@ -1356,14 +1023,6 @@ msgid ""
 "the top of the file.  For text files and other files where the modeline gets\n"
 "in the way of the normal contents, put it at the end of the file.\n"
 msgstr ""
-"Ponga esta línea como uno de las primeras o cinco últimas líneas en el\n"
-"archivo. Cuando edite el archivo, notará que 'shiftwidth' se ha definido\n"
-"con valor de cuatro. Cuando edite otro archivo, esta opción será devuelta\n"
-"a su valor predeterminado de ocho.\n"
-"   Para algunas líneas, el «modeline» encaja en la cabecera, y por ello puede\n"
-"ponerlo al inicio del archivo. Para los archivos de texto y otros archivos en\n"
-"los que el «modeline» se interpone en el camino de los contenidos normales,\n"
-"póngala al final del archivo.\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:462
@@ -1371,15 +1030,12 @@ msgid ""
 "The 'modelines' option specifies how many lines at the start and end of the "
 "file are inspected for containing a modeline.  To inspect ten lines: >"
 msgstr ""
-"La opción «modelines» especifica cuantas líneas son inspeccionadas al inicio "
-"y final del archivo en busca de un «modeline». Para inspeccionar diez líneas: "
-">"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:464
 #, no-wrap
 msgid "\t:set modelines=10\n"
-msgstr "\t:set modelines=10\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:468
@@ -1388,26 +1044,23 @@ msgid ""
 "working as root on Unix or Administrator on MS-Windows, or when you don't "
 "trust the files you are editing: >"
 msgstr ""
-"Puede usar la opción 'modeline' para desactivar ésto. Haga ésto cuando "
-"trabaje como «root» en Unix, o administrador en MS-Windows; o cuando no "
-"confía en los archivos que está editando: >"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:470
 #, no-wrap
 msgid "\t:set nomodeline\n"
-msgstr "\t:set nomodeline\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:472
 msgid "Use this format for the modeline:"
-msgstr "Use este formato para el «modeline»:"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:474
 #, no-wrap
 msgid "\tany-text vim:set {option}={value} ... : any-text ~\n"
-msgstr "\tany-text vim:set {opción}={valor} ... : any-text ~\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:484
@@ -1423,27 +1076,17 @@ msgid ""
 "typing the \":set\" command, except that you need to insert a backslash before a\n"
 "colon (otherwise it would be seen as the end of the modeline).\n"
 msgstr ""
-"«any-text» indica que puede introducir texto antes y después de la parte\n"
-"que Vim usará. Esto permite que presente el aspecto de un comentario, de la\n"
-"manera en que se hizo antes con /* y */.\n"
-"   La parte de «vim:» es lo que hace que Vim reconozca esta línea. Debe haber\n"
-"un espacio en blanco antes de «vim», o «vim» ha de estar al inicio de la\n"
-"línea. Por ello, usar algo como «gvim» no funcionaría.\n"
-"   La parte entre los dos puntos es una orden «:set». Funciona de la misma\n"
-"manera que teclear la orden «:set», con la excepción de que tiene que\n"
-"introducir una barra invertida antes de un colon (de no ser así, se vería\n"
-"como el final de un «modeline»).\n"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:486
 msgid "Another example:"
-msgstr "Otro ejemplo:"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:488
 #, no-wrap
 msgid "\t// vim:set textwidth=72 dir=c\\:\\tmp:  use c:\\tmp here ~\n"
-msgstr "\t// vim:set textwidth=72 dir=c\\:\\tmp:  use c:\\tmp here ~\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:492
@@ -1452,16 +1095,13 @@ msgid ""
 "the \":set\" command.  The text after the second colon is ignored, thus a "
 "remark can be placed there."
 msgstr ""
-"Hay una barra invertida extra antes del primer colon, y por ello se incluye "
-"en la orden «:set». Se ignora el texto antes del segundo colon, y por ello "
-"puede introducir aquí un comentario."
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:494
 msgid "For more details see |modeline|."
-msgstr "Para más detalles, véase |modeline|."
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:498
 msgid "Next chapter: |usr_22.txt| Finding the file to edit"
-msgstr "Siguiente capítulo: |usr_22.esx| Encontrar el archivo a editar"
+msgstr ""

@@ -16,41 +16,41 @@
 # aplicación que desees usar.
 # También encontrarás información acerca del uso de herramientas gettext en el 
 # proyecto de localización (l10n) de Vim.
-# 
+#
 # - http://www.assembla.com/wiki/show/vim-doc-es
 #
 # No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
 # este enlace puede ser de interés. A pesar de no formar parte, nuestra 
 # intención es homologarnos con su terminología y uso de la lengua 
 # en la medida de lo útil y posible.
-# 
+#
 #  - El proyecto de traducción de Debian al español
 #     http://www.debian.org/intl/spanish/notas
-# 
+#
 # La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
 # pero también puede servir de referencia para otros términos no técnicos.
 # No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
 # traducción sea comprensible independientemente de la nacionalidad del
 # usuario. Si crees que alguna traducción puede llevar a confusión, consulta
 # la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
-# 
+#
 #  - www.rae.es 
 #  - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages   
-# 
+#
 # Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
 # se puede consultar con un simple grep, pogrep o cargado en Virtaal.
-# 
-
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
-"POT-Creation-Date: 2009-11-20 20:44+0100\n"
+"Report-Msgid-Bugs-To: vim@bugs.org\n"
+"POT-Creation-Date: 2009-11-24 01:12+0100\n"
 "PO-Revision-Date: 2009-11-20 22:13+0100\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
 #: original/TXT/help.txt:2
@@ -64,8 +64,7 @@ msgstr "*help.esx* *ayuda*\tPara Vim versión 7.2. Último cambio: 21/7/2008\n"
 msgid ""
 "\t\t\tVIM - main help file\n"
 "\t\t\t\t\t\t\t\t\t k\n"
-"      Move around:  Use the cursor keys, or \"h\" to go left,\t       h   "
-"l\n"
+"      Move around:  Use the cursor keys, or \"h\" to go left,\t       h   l\n"
 "\t\t    \"j\" to go down, \"k\" to go up, \"l\" to go right.\t j\n"
 "Close this window:  Use \":q<Enter>\".\n"
 "   Get out of Vim:  Use \":qa!<Enter>\" (careful, all changes are lost!).\n"
@@ -84,10 +83,8 @@ msgstr ""
 #: original/TXT/help.txt:14
 #, no-wrap
 msgid ""
-"Jump to a subject:  Position the cursor on a tag (e.g. |bars|) and hit "
-"CTRL-].\n"
-"   With the mouse:  \":set mouse=a\" to enable the mouse (in xterm or "
-"GUI).\n"
+"Jump to a subject:  Position the cursor on a tag (e.g. |bars|) and hit CTRL-].\n"
+"   With the mouse:  \":set mouse=a\" to enable the mouse (in xterm or GUI).\n"
 "\t\t    Double-click the left mouse button on a tag, e.g. |bars|.\n"
 "\tJump back:  Type CTRL-T or CTRL-O (repeat to go further back).\n"
 msgstr ""
@@ -103,8 +100,7 @@ msgstr ""
 #: original/TXT/help.txt:29
 #, no-wrap
 msgid ""
-"Get specific help:  It is possible to go directly to whatever you want "
-"help\n"
+"Get specific help:  It is possible to go directly to whatever you want help\n"
 "\t\t    on, by giving an argument to the |:help| command.\n"
 "\t\t    It is possible to further specify the context:\n"
 "\t\t\t\t\t\t\t*help-context*\n"
@@ -139,8 +135,7 @@ msgstr ""
 #: original/TXT/help.txt:32
 #, no-wrap
 msgid ""
-"VIM stands for Vi IMproved.  Most of VIM was made by Bram Moolenaar, but "
-"only\n"
+"VIM stands for Vi IMproved.  Most of VIM was made by Bram Moolenaar, but only\n"
 "through the help of many others.  See |credits|.\n"
 "------------------------------------------------------------------------------\n"
 msgstr ""
@@ -189,44 +184,44 @@ msgstr "|usr_toc.esx|\tTabla de contenidos\n"
 #: original/TXT/help.txt:60
 msgid ""
 "Getting Started ~ |usr_01.txt| About the manuals |usr_02.txt| The first "
-"steps in Vim |usr_03.txt| Moving around |usr_04.txt| Making small changes "
-"|usr_05.txt| Set your settings |usr_06.txt| Using syntax highlighting "
-"|usr_07.txt| Editing more than one file |usr_08.txt| Splitting windows "
-"|usr_09.txt| Using the GUI |usr_10.txt| Making big changes |usr_11.txt| "
-"Recovering from a crash |usr_12.txt| Clever tricks"
+"steps in Vim |usr_03.txt| Moving around |usr_04.txt| Making small changes |"
+"usr_05.txt| Set your settings |usr_06.txt| Using syntax highlighting |usr_07."
+"txt| Editing more than one file |usr_08.txt| Splitting windows |usr_09.txt| "
+"Using the GUI |usr_10.txt| Making big changes |usr_11.txt| Recovering from a "
+"crash |usr_12.txt| Clever tricks"
 msgstr ""
 "Empezar ~ |usr_01.esx| Acerca de los manuales |usr_02.esx| Primeros pasos en "
-"VIM |usr_03.esx| Desplazamiento |usr_04.esx| Hacer cambios pequeños "
-"|usr_05.esx| Configuración |usr_06.esx| Uso del resaltado de sintaxis "
-"|usr_07.esx| Editar más de un archivo |usr_08.esx| Dividir en ventanas "
-"|usr_09.esx| Uso de la interfaz gráfica |usr_10.esx| Hacer cambios grandes "
-"|usr_11.esx| Recuperarse de un fallo |usr_12.esx| Trucos"
+"VIM |usr_03.esx| Desplazamiento |usr_04.esx| Hacer cambios pequeños |usr_05."
+"esx| Configuración |usr_06.esx| Uso del resaltado de sintaxis |usr_07.esx| "
+"Editar más de un archivo |usr_08.esx| Dividir en ventanas |usr_09.esx| Uso "
+"de la interfaz gráfica |usr_10.esx| Hacer cambios grandes |usr_11.esx| "
+"Recuperarse de un fallo |usr_12.esx| Trucos"
 
 #. type: Plain text
 #: original/TXT/help.txt:75
 msgid ""
-"Editing Effectively ~ |usr_20.txt| Typing command-line commands quickly "
-"|usr_21.txt| Go away and come back |usr_22.txt| Finding the file to edit "
-"|usr_23.txt| Editing other files |usr_24.txt| Inserting quickly |usr_25.txt| "
+"Editing Effectively ~ |usr_20.txt| Typing command-line commands quickly |"
+"usr_21.txt| Go away and come back |usr_22.txt| Finding the file to edit |"
+"usr_23.txt| Editing other files |usr_24.txt| Inserting quickly |usr_25.txt| "
 "Editing formatted text |usr_26.txt| Repeating |usr_27.txt| Search commands "
-"and patterns |usr_28.txt| Folding |usr_29.txt| Moving through programs "
-"|usr_30.txt| Editing programs |usr_31.txt| Exploiting the GUI |usr_32.txt| "
+"and patterns |usr_28.txt| Folding |usr_29.txt| Moving through programs |"
+"usr_30.txt| Editing programs |usr_31.txt| Exploiting the GUI |usr_32.txt| "
 "The undo tree"
 msgstr ""
-"Editar con efectividad ~ |usr_20.esx| Ser eficaz en la línea de órdenes "
-"|usr_21.esx| Abandonar el editor y volver |usr_22.esx| Encontrar el archivo "
-"a editar |usr_23.esx| Editar otros archivos |usr_24.txt| Insertar con "
-"rapidez |usr_25.txt| Editar texto con formato |usr_26.txt| Repetir "
-"|usr_27.txt| Órdenes y patrones de búsqueda |usr_28.txt| Plegar |usr_29.txt| "
-"Navegar a través de los programas |usr_30.txt| Editar programas |usr_31.txt| "
+"Editar con efectividad ~ |usr_20.esx| Ser eficaz en la línea de órdenes |"
+"usr_21.esx| Abandonar el editor y volver |usr_22.esx| Encontrar el archivo a "
+"editar |usr_23.esx| Editar otros archivos |usr_24.txt| Insertar con rapidez |"
+"usr_25.txt| Editar texto con formato |usr_26.txt| Repetir |usr_27.txt| "
+"Órdenes y patrones de búsqueda |usr_28.txt| Plegar |usr_29.txt| Navegar a "
+"través de los programas |usr_30.txt| Editar programas |usr_31.txt| "
 "Aprovechar la interfaz gráfica |usr_32.txt| El árbol de deshacer"
 
 #. type: Plain text
 #: original/TXT/help.txt:83
 msgid ""
-"Tuning Vim ~ |usr_40.txt| Make new commands |usr_41.txt| Write a Vim script "
-"|usr_42.txt| Add new menus |usr_43.txt| Using filetypes |usr_44.txt| Your "
-"own syntax highlighted |usr_45.txt| Select your language"
+"Tuning Vim ~ |usr_40.txt| Make new commands |usr_41.txt| Write a Vim script |"
+"usr_42.txt| Add new menus |usr_43.txt| Using filetypes |usr_44.txt| Your own "
+"syntax highlighted |usr_45.txt| Select your language"
 msgstr ""
 "Configurar Vim ~ |usr_40.txt| Crear órdenes nuevas |usr_41.txt| Crear un "
 "script de Vim |usr_42.txt| Añadir menús nuevos |usr_43.txt| Usar tipos de "
@@ -241,12 +236,8 @@ msgstr "Iniciar Vim ~ |usr_90.txt| Instalar Vim"
 #. type: Plain text
 #: original/TXT/help.txt:89
 #, no-wrap
-msgid ""
-"REFERENCE MANUAL: These files explain every detail of "
-"Vim.\t*reference_toc*\n"
-msgstr ""
-"MANUAL DE REFERENCIA: Estos archivos explican cada detalle de Vim.  "
-"\t*reference_toc*\n"
+msgid "REFERENCE MANUAL: These files explain every detail of Vim.\t*reference_toc*\n"
+msgstr "MANUAL DE REFERENCIA: Estos archivos explican cada detalle de Vim.  \t*reference_toc*\n"
 
 #. type: Plain text
 #: original/TXT/help.txt:103
