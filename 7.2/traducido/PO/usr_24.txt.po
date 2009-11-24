@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2009-11-24 01:31+0100\n"
-"PO-Revision-Date: 2009-11-24 13:54+0200\n"
+"PO-Revision-Date: 2009-11-24 20:03+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
-"Language-Team: none\n"
+"Language-Team: vim-doc-es\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -128,7 +128,7 @@ msgstr "OPCIONES"
 #: original/TXT/usr_24.txt:2
 #, no-wrap
 msgid "*usr_24.txt*\tFor Vim version 7.2.  Last change: 2006 Jul 23\n"
-msgstr "*usr_24.txt*\tPara Vim versión 7.2.  Último cambio: 23/6/2006"
+msgstr "*usr_24.txt*\tPara Vim versión 7.2.  Último cambio: 23/6/2006\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:6
@@ -259,7 +259,7 @@ msgstr ""
 #: original/TXT/usr_24.txt:53
 #, no-wrap
 msgid "\tThe horse had follen to the ground ~\n"
-msgstr "\tEl caballo cayú al suelo ~\n"
+msgstr "\tEl caballo cayu al suelo ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:56
@@ -267,14 +267,14 @@ msgid ""
 "You need to change \"follen\" to \"fallen\".  With the cursor at the end, you "
 "would type this to correct it: >"
 msgstr ""
-"Necesita cambiar «cayú» a «cayó». Con el cursor al final,  teclearía esto "
+"Necesita cambiar «cayo» a «cayó». Con el cursor al final,  teclearía esto "
 "para corregirlo: >"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:58
 #, no-wrap
 msgid "\t\t\t\t\t<Esc>4blraA\n"
-msgstr "\t\t\t\t\t<Esc>4blraA\n"
+msgstr "\t\t\t\t\t<Esc>3blróA\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:64
@@ -287,21 +287,21 @@ msgid ""
 "\trestart Insert mode\t\t\t  A\n"
 msgstr ""
 "<\tAbandonar el modo insertar   <Esc>\n"
-"\tfour words back\t\t\t     4b\n"
-"\tmove on top of the \"o\"\t\t       l\n"
-"\treplace with \"a\"\t\t\tra\n"
-"\trestart Insert mode\t\t\t  A\n"
+"\tCuatro palabras hacia atrás          3b\n"
+"\tDesplazarse a la «u»         \t\t  l\n"
+"\tReemplazar con «ó»\t\t\tró\n"
+"\tReiniciar modo insertar\t\t\t A\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:66
 msgid "Another way to do this: >"
-msgstr ""
+msgstr "Existe otra manera de hacer esto: >"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:68
 #, no-wrap
 msgid "\t\t<C-Left><C-Left><C-Left><C-Left><Right><Del>a<End>\n"
-msgstr ""
+msgstr "\t\t<C-Izq><C-Izq><C-Izq><Derecha><Derecha><Derecha><Supr>ó<Fin>\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:74
@@ -313,6 +313,11 @@ msgid ""
 "\tinsert an \"a\"\t\t\t\t\t    a\n"
 "\tgo to end of the line\t\t\t\t     <End>\n"
 msgstr ""
+"<\tTres palabras hacia atrás\t        <C-Izq><C-Izq><C-Izq>\n"
+"\tDesplazarse a la «u»\t<Derecha><Derecha><Derecha>\n"
+"\tBorrar la «u»\t\t\t\t       \t\t\t\t    <Supr>\n"
+"\tInsertar una «ó»\t\t\t\t\t    \t\t\t       ó\n"
+"\tIr al final de la línea\t\t\t\t\t\t       <Fin>\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:82
@@ -320,16 +325,27 @@ msgstr ""
 msgid ""
 "This uses special keys to move around, while remaining in Insert mode.  This\n"
 "resembles what you would do in a modeless editor.  It's easier to remember,\n"
-"but takes more time (you have to move your hand from the letters to the cursor\n"
+"but takes more time (you have to move your hand from the letters to the "
+"cursor\n"
 "keys, and the <End> key is hard to press without looking at the keyboard).\n"
 "   These special keys are most useful when writing a mapping that doesn't\n"
 "leave Insert mode.  The extra typing doesn't matter then.\n"
 "   An overview of the keys you can use in Insert mode:\n"
 msgstr ""
+"Esto emplea teclas especiales para el desplazamiento, a la vez que permanece\n"
+"en el modo Insertar. Esto se parece a lo que haría con un editor sin modos. "
+"Es\n"
+"más fácil de recordar, pero lleva más tiempo (tiene que mover sus manos de\n"
+"las letras a las teclas del cursor, y es difícil pulsar la tecla <Fin> sin "
+"mirar el\n"
+"teclado).\n"
+"   Estas teclas especiales son más útiles cuando escribe un mapeado que no\n"
+"abandona el modo Insertar. El tecleo adicional no importa en este caso.\n"
+"   Este es un resumen de las teclas que puede usar en el modo Insertar:\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:93
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "\t<C-Home>\tto start of the file\n"
 "\t<PageUp>\ta whole screenful up\n"
@@ -342,23 +358,27 @@ msgid ""
 "\t<PageDown>\ta whole screenful down\n"
 "\t<C-End>\t\tto end of the file\n"
 msgstr ""
-"\t<Izquierda>\t\tun carácter a la izquierda\n"
-"\t<Derecha>\t\tun carácter a la derecha\n"
-"\t<S-Izq.> o <C-Izq.>\tuna palabra a la izquierda\n"
-"\t<S-Der.> o <C-Der.>\tuna palabra a la derecha\n"
-"\tCTRL-B o <Inicio>\tal inicio de la línea de órdenes\n"
-"\tCTRL-E o <Fin>\t\tal final de la línea de órdenes\n"
+"\t<C-Inicio>\tal principio del archivo\n"
+"\t<Repág>\tsubir una pantalla\n"
+"\t<Inicio>\t\tal inicio de la línea\n"
+"\t<S-Izq>\t\tuna palabra a la izquierda\n"
+"\t<C-Izq>\t\tuna palabra a la izquierda\n"
+"\t<S-Der>\t\tuna palabra a la derecha\n"
+"\t<C-Der>\t\tuna palabra a la derecha\n"
+"\t<Fin>\t\tal final de la línea\n"
+"\t<Avpág>\tbajar una pantalla\n"
+"\t<C-Fin>\t\tal final del archivo\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:95
 msgid "There are a few more, see |ins-special-special|."
-msgstr ""
+msgstr "Hay aún más, consulte |ins-special-special|."
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:98
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "*24.2*\tShowing matches\n"
-msgstr "*04.2*\tCambiar texto\n"
+msgstr "*24.2*\tMostrar coincidencias\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:101
@@ -366,18 +386,21 @@ msgid ""
 "When you type a ) it would be nice to see with which ( it matches.  To make "
 "Vim do that use this command: >"
 msgstr ""
+"Al teclear una «)» estaría bien ver con qué «(» encaja. Para hacer que Vim "
+"use esta orden: >"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:103
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t:set showmatch\n"
-msgstr "\t:set showmode\n"
+msgstr "\t:set showmatch\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:114
 #, no-wrap
 msgid ""
-"When you now type a text like \"(example)\", as soon as you type the ) Vim will\n"
+"When you now type a text like \"(example)\", as soon as you type the ) Vim "
+"will\n"
 "briefly move the cursor to the matching (, keep it there for half a second,\n"
 "and move back to where you were typing.\n"
 "   In case there is no matching (, Vim will beep.  Then you know that you\n"
@@ -388,6 +411,19 @@ msgid ""
 "   You can change the time Vim waits with the 'matchtime' option.  For\n"
 "example, to make Vim wait one and a half second: >\n"
 msgstr ""
+"Ahora, cuando teclee un texto como «(ejemplo), tan pronto como teclee el «)»\n"
+"Vim moverá el cursor brevemente al «(» correspondiente, lo mantendrá ahí\n"
+"medio segundo, y volverá a donde estaba tecleando.\n"
+"   En caso de no existir un correspondiente «(», Vim pitará. Sabrá entonces "
+"que\n"
+"ha olvidado el «(» en algún lugar, o que escribió una «)» demasiadas veces.\n"
+"   También se mostrará el signo correspondiente en las parejas «[]» «{}». No\n"
+"tiene que esperar a teclear el siguiente carácter, ya que tan pronto como "
+"Vim\n"
+"lo detecte, devolverá el cursor a su posición original, continuando la "
+"inserción.\n"
+"   Puede modificar el tiempo que Vim espera con la opción 'matchtime'. Por\n"
+"ejemplo, para hacer que Vim espere un segundo y medio: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:116
@@ -398,23 +434,29 @@ msgstr "\t:set matchtime=15\n"
 #. type: Plain text
 #: original/TXT/usr_24.txt:118
 msgid "The time is specified in tenths of a second."
-msgstr ""
+msgstr "Esto especifica el tiempo en décimas de segundo."
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:121
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "*24.3*\tCompletion\n"
-msgstr "*20.3* Compleción en línea de órdenes\t\n"
+msgstr "*24.3*\tCompleción\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:126
 #, no-wrap
 msgid ""
-"Vim can automatically complete words on insertion.  You type the first part of\n"
+"Vim can automatically complete words on insertion.  You type the first part "
+"of\n"
 "a word, press CTRL-P, and Vim guesses the rest.\n"
-"   Suppose, for example, that you are creating a C program and want to type in\n"
+"   Suppose, for example, that you are creating a C program and want to type "
+"in\n"
 "the following:\n"
 msgstr ""
+"Vim puede auto-completar palabras durante la inserción. Primero teclea la\n"
+"parte inicial de una palabra, pulse CTRL-P y Vim adivinará el resto.\n"
+"   Suponga, por ejemplo, que está creando un programa en C y que desea\n"
+"teclear lo siguiente:\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:128
@@ -424,15 +466,14 @@ msgstr "\ttotal = ch_array[0] + ch_array[1] + ch_array[2]; ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:130
-#, fuzzy
 msgid "You start by entering the following:"
-msgstr "Y lo que quiere es lo siguiente:"
+msgstr "Empiece introduciendo lo siguiente:"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:132
 #, no-wrap
 msgid "\ttotal = ch_array[0] + ch_ ~\n"
-msgstr ""
+msgstr "\ttotal = ch_array[0] + ch_ ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:137
@@ -442,6 +483,10 @@ msgid ""
 "this case, it is \"ch_\", which matches with the word ch_array.  So typing "
 "CTRL-P gives you the following:"
 msgstr ""
+"En este punto es cuando le dice a Vim que complete la palabra usando la "
+"orden CTRL-P. Vim buscará una palabra que empiece con lo que se haya frente "
+"al cursor. En este caso, es «ch_», el cual encaja con la palabra «ch_array». "
+"Por ello, teclear CTRL-P le daría lo siguiente:"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:139
@@ -453,6 +498,7 @@ msgstr "\ttotal = ch_array[0] + ch_array ~\n"
 #: original/TXT/usr_24.txt:141
 msgid "After a little more typing, you get this (ending in a space):"
 msgstr ""
+"Después de teclear un poco más, obtiene esto (finalizando con un espacio):"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:143
@@ -466,11 +512,18 @@ msgid ""
 "If you now type CTRL-P Vim will search again for a word that completes the "
 "word before the cursor.  Since there is nothing in front of the cursor, it "
 "finds the first word backwards, which is \"ch_array\".  Typing CTRL-P again "
-"gives you the next word that matches, in this case \"total\".  A third CTRL-"
-"P searches further back.  If there is nothing else, it causes the editor to "
+"gives you the next word that matches, in this case \"total\".  A third CTRL-P "
+"searches further back.  If there is nothing else, it causes the editor to "
 "run out of words, so it returns to the original text, which is nothing.  A "
 "fourth CTRL-P causes the editor to start over again with \"ch_array\"."
 msgstr ""
+"Si pulsa ahora CTRL-P, Vim buscará otra vez una palabra que complete la que "
+"se haya frente al cursor. Ya que no hay nada en frente del cursor, busca la "
+"palabra en sentido inverso, el cual es «ch_array». Pulsar CTRL-P otra vez le "
+"daría la siguiente palabra que encaja, en este caso «total». Si lo pulsa "
+"por tercera vez, Vim buscará aún más atrás. Si no hay nada más, al editor se "
+"le acabarían las palabras, volviendo al texto original, que es nada. Una "
+"cuarta CTRL-P causaría al editor empezar otra vez con «ch_array»."
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:155
@@ -479,6 +532,11 @@ msgid ""
 "file, CTRL-N and CTRL-P will find the same matches, but in a different "
 "sequence.  Hint: CTRL-N is Next-match and CTRL-P is Previous-match."
 msgstr ""
+"Use CTRL-N para una búsqueda hacia delante. Ya que la búsqueda vuelve al "
+"inicio cuando llega al final del archivo, CTRL-N y CTRL-P encontrarán las "
+"mismas coincidencias, pero en distinto orden. Consejo: CTRL-N es siguiente "
+"coincidencia («Next-match») y CTRL-P es la coincidencia anterior («Previous-"
+"match»)."
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:158
@@ -486,6 +544,8 @@ msgid ""
 "The Vim editor goes through a lot of effort to find words to complete.  By "
 "default, it searches the following places:"
 msgstr ""
+"Vim realiza un gran esfuerzo por encontrar palabras que completar. Por "
+"omisión, busca en los siguientes lugares:"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:165
@@ -498,14 +558,17 @@ msgid ""
 "\t5. Tag files\n"
 "\t6. All files #included by the current file\n"
 msgstr ""
+"\t1. Archivo actual\n"
+"\t2. Archivos en otras ventanas\n"
+"\t3. Otros archivos cargados (búfers ocultos)\n"
+"\t4. Archivos que no están cargados (búfers inactivos)\n"
+"\t5. Archivos de etiquetas\n"
+"\t6. Todos los archivos #incluidos en el archivo actual\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:170
-#, fuzzy
 msgid "You can customize the search order with the 'complete' option."
-msgstr ""
-"Puedes ajustar el funcionamiento del modo Seleccionar mediante la opción "
-"'selectmode'."
+msgstr "Puede configurar el orden de búsqueda con la opción 'complete'."
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:173
@@ -513,20 +576,27 @@ msgid ""
 "The 'ignorecase' option is used.  When it is set, case differences are "
 "ignored when searching for matches."
 msgstr ""
+"Se emplea la opción 'ignorecase'. Las diferencias entre mayúsculas y "
+"minúsculas se ignorarán al buscar coincidencias de activar esta opción."
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:178
 msgid ""
 "A special option for completion is 'infercase'.  This is useful to find "
 "matches while ignoring case ('ignorecase' must be set) but still using the "
-"case of the word typed so far.  Thus if you type \"For\" and Vim finds a "
-"match \"fortunately\", it will result in \"Fortunately\"."
+"case of the word typed so far.  Thus if you type \"For\" and Vim finds a match "
+"\"fortunately\", it will result in \"Fortunately\"."
 msgstr ""
+"'infercase' es una opción especial para la auto-compleción. Es útil para "
+"encontrar parejas cuando ignora la sensibilidad a mayúsculas y minúsculas "
+"(debe activar 'ignorecase') , y seguir usando con esta palabra la mencionada "
+"sensibilidad. Por ello, si teclea «Para» y Vim encuentra «paramilitar», el "
+"resultado final será «Paramilitar»."
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:181
 msgid "COMPLETING SPECIFIC ITEMS"
-msgstr ""
+msgstr "COMPLETAR ELEMENTOS ESPECÍFICOS"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:184
@@ -534,6 +604,8 @@ msgid ""
 "If you know what you are looking for, you can use these commands to complete "
 "with a certain type of item:"
 msgstr ""
+"Si sabe qué está buscando, puede usar estas órdenes para completar un cierto "
+"tipo de elemento."
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:193
@@ -548,6 +620,14 @@ msgid ""
 "\tCTRL-X CTRL-]\t\ttags\n"
 "\tCTRL-X CTRL-V\t\tVim command line\n"
 msgstr ""
+"\tCTRL-X CTRL-F\t\tNombres de archivo\n"
+"\tCTRL-X CTRL-L\t\tLíneas completas\n"
+"\tCTRL-X CTRL-D\t\tDefiniciiones de macros (también en archivos incluidos)\n"
+"\tCTRL-X CTRL-I\t\tArchivo actual e incluidos\n"
+"\tCTRL-X CTRL-K\t\tPalabras de un diccionario\n"
+"\tCTRL-X CTRL-T\t\tPalabras de un tesauro\n"
+"\tCTRL-X CTRL-]\t\tEtiquetas\n"
+"\tCTRL-X CTRL-V\t\tLínea de órdenes de Vim\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:197
@@ -557,23 +637,33 @@ msgid ""
 "the previous match.\n"
 "   More information for each of these commands here: |ins-completion|.\n"
 msgstr ""
+"Puede usar CTRL-N después de cada uno de estas órdenes para hallar la "
+"siguiente\n"
+"coincidencia, y CTRL-P para hallar la anterior.\n"
+"   Para más información acerca de estas órdenes, consulte |ins-completion|.\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:200
-#, fuzzy
 msgid "COMPLETING FILE NAMES"
-msgstr "SELECCIONAR LÍNEAS"
+msgstr "COMPLETAR NOMBRES DE ARCHIVO"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:206
 #, no-wrap
 msgid ""
-"Let's take CTRL-X CTRL-F as an example.  This will find file names.  It scans\n"
-"the current directory for files and displays each one that matches the word in\n"
+"Let's take CTRL-X CTRL-F as an example.  This will find file names.  It "
+"scans\n"
+"the current directory for files and displays each one that matches the word "
+"in\n"
 "front of the cursor.\n"
 "   Suppose, for example, that you have the following files in the current\n"
 "directory:\n"
 msgstr ""
+"Tomemos CTRL-X CTRL-F como ejemplo. Esto busca nombres de archivo.\n"
+"Examina el directorio actual en busca de archivos, y muestra cada uno que\n"
+"encaja con la palabra frenet al cursor.\n"
+"   Suponga, por ejemplo, que tiene las siguientes líneas en el directorio\n"
+"actual:\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:208
@@ -584,13 +674,13 @@ msgstr "\tmain.c  sub_count.c  sub_done.c  sub_exit.c\n"
 #. type: Plain text
 #: original/TXT/usr_24.txt:210
 msgid "Now enter Insert mode and start typing:"
-msgstr ""
+msgstr "Inicie ahora el modo Insertar y empiece a teclear:"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:212
 #, no-wrap
 msgid "\tThe exit code is in the file sub ~\n"
-msgstr ""
+msgstr "\tThe exit code is in the file sub ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:218
@@ -601,12 +691,17 @@ msgid ""
 "next file by typing CTRL-N.  This match is sub_done.c.  Typing CTRL-N again "
 "takes you to sub_exit.c.  The results:"
 msgstr ""
+"En este momento, introduzca la orden CTRL-X CTRL-F. Vim completará la "
+"palabra «sub» mirando en los ficheros en el directorio actual. La primera "
+"coincidencia es «sub_count.c». Esto no es lo que buscaba, así que busca la "
+"siguiente pareja pulsando CTRL-N. La coincidencia es «sub_done.c». Teclear "
+"CTRL-N otra vez le devolvería a «sub_exit.c». El resultado:"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:220
 #, no-wrap
 msgid "\tThe exit code is in the file sub_exit.c ~\n"
-msgstr ""
+msgstr "\tThe exit code is in the file sub_exit.c ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:224
@@ -615,25 +710,31 @@ msgid ""
 "files in the file system.  For example, type \"/u\" and CTRL-X CTRL-F.  This "
 "will match \"/usr\" (this is on Unix):"
 msgstr ""
+"Si el nombre de archivo empieza con «/» (Unix) o «C:\\» (MS-Windows), puede "
+"buscar todos los archivos en el sistema de archivos. Por ejemplo, teclee "
+"«/u» y CTRL-X CTRL-F. Esto buscará «/usr» (en Unix):"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:226
 #, no-wrap
 msgid "\tthe file is found in /usr/ ~\n"
-msgstr ""
+msgstr "\tse encontró el archivo en /usr/~\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:229
 msgid ""
-"If you now press CTRL-N you go back to \"/u\".  Instead, to accept the \"/"
-"usr/\" and go one directory level deeper, use CTRL-X CTRL-F again:"
+"If you now press CTRL-N you go back to \"/u\".  Instead, to accept the \"/usr/\" "
+"and go one directory level deeper, use CTRL-X CTRL-F again:"
 msgstr ""
+"Si ahora pulsa CTRL-N volvería a «/u». En lugar de ello, para aceptar "
+"«/usr/» y descender un nivel en el árbol de directorios, use otra vez CTRL-X "
+"CTRL-F:"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:231
 #, no-wrap
 msgid "\tthe file is found in /usr/X11R6/ ~\n"
-msgstr ""
+msgstr "\tel archivo se encontró en /usr/X11R6/~\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:234
@@ -641,11 +742,13 @@ msgid ""
 "The results depend on what is found in your file system, of course.  The "
 "matches are sorted alphabetically."
 msgstr ""
+"Los resultados varían según lo que se encuentra en su sistema de archivos. "
+"Las coincidencias aparecen alfabéticamente."
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:237
 msgid "COMPLETING IN SOURCE CODE"
-msgstr ""
+msgstr "COMPLETAR EL CÓDIGO FUENTE"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:241
@@ -654,6 +757,10 @@ msgid ""
 "completion in an intelligent way.  In Vim this is called Omni completion.  "
 "In some other editors it's called intellisense, but that is a trademark."
 msgstr ""
+"Los archivos de código están bien estructurados. Esto posibilita la "
+"compleción de una manera inteligente. En Vim, esto se llama Omni compleción "
+"(Omni completion). Algunos otros editores lo llaman intellisense, pero eso "
+"es una marca."
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:245
@@ -662,6 +769,9 @@ msgid ""
 "Omni here, so that you can remember it easier.  Let's use an example for "
 "editing C source:"
 msgstr ""
+"La tecla para la Omni compleción es CTRL-X CTRL-O. Obviamente, la «O» "
+"significa Omni, para recordarla mejor. Usemos un ejemplo para editar código "
+"C:"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:249
@@ -671,21 +781,29 @@ msgid ""
 "\t    struct foo *p; ~\n"
 "\t    p-> ~\n"
 msgstr ""
+"\t{ ~\n"
+"\t    struct foo *p; ~\n"
+"\t    p-> ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:254
 msgid ""
 "The cursor is after \"p->\".  Now type CTRL-X CTRL-O.  Vim will offer you a "
-"list of alternatives, which are the items that \"struct foo\" contains.  "
-"That is quite different from using CTRL-P, which would complete any word, "
-"while only members of \"struct foo\" are valid here."
+"list of alternatives, which are the items that \"struct foo\" contains.  That "
+"is quite different from using CTRL-P, which would complete any word, while "
+"only members of \"struct foo\" are valid here."
 msgstr ""
+"El cursor está después de «p->». Pulse ahora CTRL-X CTRL-O. Vim le ofrecerá "
+"una lista de alternativas, los cuales son los elementos que contiene «struct "
+"foo». Esto es diferente al uso de CTRL-P, el cual completa cualquier "
+"palabra, mientras que aquí sólo son válidos los miembros de «struct foo»."
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:261
 #, no-wrap
 msgid ""
-"For Omni completion to work you may need to do some setup.  At least make sure\n"
+"For Omni completion to work you may need to do some setup.  At least make "
+"sure\n"
 "filetype plugins are enabled.  Your vimrc file should contain a line like\n"
 "this: >\n"
 "\tfiletype plugin on\n"
