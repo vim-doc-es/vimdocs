@@ -45,7 +45,7 @@ msgstr ""
 "Project-Id-Version: Vim 7,2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2009-11-24 01:31+0100\n"
-"PO-Revision-Date: 2009-11-24 01:15+0100\n"
+"PO-Revision-Date: 2009-11-24 01:37+0100\n"
 "Last-Translator: Álvaro Castro Castilla <alvaro.castro.castilla@gmail.com>\n"
 "Language-Team: vim-doc-es>\n"
 "MIME-Version: 1.0\n"
@@ -752,11 +752,14 @@ msgstr "Para ver dónde está en un archivo, hay tres maneras:"
 
 #. type: Plain text
 #: original/TXT/usr_03.txt:230
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "1.  Use the CTRL-G command.  You get a message like this (assuming the 'ruler'\n"
 "    option is off):\n"
-msgstr "Use la orden CTRL-G. Obtendrá un mensaje como este (asumiendo que la opción 'ruler' está apagada):"
+msgstr ""
+"1.   Use la orden CTRL-G. Obtendrá un mensaje como este (asumiendo que la\n "
+"     opción 'ruler' está desactivada:\n"
+
 
 #. type: Plain text
 #: original/TXT/usr_03.txt:232
@@ -786,11 +789,12 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_03.txt:243
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "2.  Set the 'number' option.  This will display a line number in front of\n"
 "    every line: >\n"
-msgstr "Activa la variable 'number'. Esto le mostrará el número de línea al principio de cada línea: >"
+msgstr "2. Definir la opción 'number'. Esto mostrará el número de línea al\n"
+"    principio de cada línea: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_03.txt:247
@@ -828,11 +832,12 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_03.txt:259
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "3.  Set the 'ruler' option.  This will display the cursor position in the\n"
 "    lower right corner of the Vim window: >\n"
-msgstr "Activa la opción 'ruler'. Esto mostrará la posición del cursor en la esquina de abajo a la derecha de la ventana de Vim: >"
+msgstr "3.   Activar la opción 'ruler'. Esto mostrará la posición del cursor\n"
+"            en la esquina inferior a la derecha de la ventana de Vim: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_03.txt:261

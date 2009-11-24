@@ -45,7 +45,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2009-11-24 01:31+0100\n"
-"PO-Revision-Date: 2009-11-24 01:17+0100\n"
+"PO-Revision-Date: 2009-11-24 01:48+0100\n"
 "Last-Translator: Álvaro Castro Castillo <alvaro.castro.castilla@gmail.com>\n"
 "Language-Team: vim-doc-es\n"
 "MIME-Version: 1.0\n"
@@ -648,7 +648,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_05.txt:190
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "2. Using filetype plugin files\n"
 "   Many different filetypes are edited with different options.  For example,\n"
@@ -656,17 +656,29 @@ msgid ""
 "   automatically indent the lines.  These commonly useful option settings are\n"
 "   included with Vim in filetype plugins.  You can also add your own, see\n"
 "   |write-filetype-plugin|.\n"
-msgstr "Usar extensiones de tipo de archivo Muchos tipos de archivo se editan con diferentes opciones. Por ejemplo, cuando edita un archivo «c», es muy útil activar la opción «cindent» para sangrar las líneas automáticamente. Estas opciones empleadas comúnmente están incluidas con Vim en las extensiones de tipos de archivo. También puede incluir las tuyas propias, véase |write-filetype-plugin|."
+msgstr ""
+"2. Usar extensiones de tipo de archivo («filetype plugin»)\n"
+"   Muchos tipos de archivo se editan con diferentes opciones. Por ejemplo,\n"
+"   cuando edita un archivo «c», es muy útil activar la opción «cindent»\n"
+"   para sangrar las líneas automáticamente. Estas opciones empleadas\n"
+"   comúnmente están incluidas con Vim en las extensiones de tipos de\n"
+"   archivo. También puede incluir las tuyas propias, véase\n"
+"   |write-filetype-plugin|."
 
 #. type: Plain text
 #: original/TXT/usr_05.txt:195
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "3. Using indent files\n"
 "   When editing programs, the indent of a line can often be computed\n"
 "   automatically.  Vim comes with these indent rules for a number of\n"
 "   filetypes.  See |:filetype-indent-on| and 'indentexpr'.\n"
-msgstr "Usar archivos de sangría Cuando edita programas, la sangría de una línea puede a menudo ser computada de manera automática. Vim viene con esas reglas de sangrado para diversos tipos de archivo.  Véase |:filetype-indent-on| y 'indentexpr'."
+msgstr ""
+"3. Usar archivos de tabulación\n"
+"   Cuando edita programas, la sangría de una línea puede a menudo ser\n"
+"   computada de manera automática. Vim viene con esas reglas de sangrado\n"
+"   para diversos tipos de archivo.\n"
+"   Véase |:filetype-indent-on| y 'indentexpr'."
 
 #. type: Plain text
 #: original/TXT/usr_05.txt:198

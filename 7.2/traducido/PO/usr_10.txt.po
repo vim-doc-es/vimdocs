@@ -47,7 +47,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2009-11-24 01:31+0100\n"
-"PO-Revision-Date: 2009-11-20 22:11+0100\n"
+"PO-Revision-Date: 2009-11-24 01:44+0100\n"
 "Last-Translator: Álvaro Castro Castilla <alvaro.castro.castilla@gmail.com>\n"
 "Language-Team: vim-doc-es\n"
 "MIME-Version: 1.0\n"
@@ -245,13 +245,17 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_10.txt:38
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "1. The \"q{register}\" command starts recording keystrokes into the register\n"
 "   named {register}.  The register name must be between a and z.\n"
 "2. Type your commands.\n"
 "3. To finish recording, press q (without any extra character).\n"
-msgstr "La orden «q{registro}» inicia la grabación de teclas pulsadas en un registro llamado {registro}. El nombre del registro es una letra (a-z)."
+msgstr ""
+"1. La orden «q{registro}» inicia la grabación de teclas pulsadas en un registro\n"
+"   llamado{registro}. El nombre del registro debe estar en el rango (a-z).\n"
+"2. Introduzca sus órdenes.\n"
+"3. Pulse q para detener la grabación (sin ningún carácter adicional).\n"
 
 #. type: Plain text
 #: original/TXT/usr_10.txt:40
