@@ -1,5 +1,18 @@
 Algunas instrucciones para el uso de po4a.
 
+Ejecutar en esta carpeta «po4a po4a.cfg» actualiza los pot y po, y crea los documentos
+traducidos.
+
+[po4a_paths] especifica rutas de archivos pot y po
+
+[options] opciones generales de po4a-updatepo y po4a-translate
+
+[po4a_alias] para especificar diferentes archivos o grupos
+
+[type:formato/alias] <ruta al original> <ruta al traducido>
+
+Uno por cada documento que entre en juego...
+
 Para poder reusar las traducciones antiguas, y regenerar archivos po con
 la estructura apropiada para po4a:
 
@@ -23,8 +36,4 @@ usr_toc precisa una opción más:
 >
 po4a-gettextize -f text -o nobullets -o tabs=verbatim -o breaks="(<|>)" -M utf-8 -L utf-8\
  -m original/TXT/usr_toc.txt -l traducido/ESX/usr_toc.esx -p traducido/PO/usr_toc.txt.po
-
-TODO
-
-Instrucciones para po4a po4a.cfg.
 
