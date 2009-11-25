@@ -130,7 +130,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2-245 (Castellano)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-11-25 02:05+0100\n"
-"PO-Revision-Date: 2009-11-09 21:34+0100\n"
+"PO-Revision-Date: 2009-11-25 15:14+0100\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es http://code.assembla.com/vim-doc-es\n"
 "MIME-Version: 1.0\n"
@@ -3922,7 +3922,7 @@ msgstr "Línea de órdenes previa a \"vimrc\""
 #: main.c:2785
 #, c-format
 msgid "E282: Cannot read from \"%s\""
-msgstr "E282: No se pudo leer desde %s"
+msgstr "E282: No se pudo leer desde \"%s\""
 
 #: main.c:3002
 msgid ""
@@ -3934,19 +3934,19 @@ msgstr ""
 
 #: main.c:3035
 msgid "[file ..]       edit specified file(s)"
-msgstr "[archivo ..]   edita el/los archivos/s especificado/s"
+msgstr "[archivo ..]   Editar el/los archivos/s especificado/s"
 
 #: main.c:3036
 msgid "-               read text from stdin"
-msgstr "-               lee texto de la entrada estándar"
+msgstr "-               Leer texto de la entrada estándar"
 
 #: main.c:3037
 msgid "-t tag          edit file where tag is defined"
-msgstr "-t etiqueta    edita el archivo donde está definida la etiqueta"
+msgstr "-t etiqueta    Editar el archivo donde está definida la etiqueta"
 
 #: main.c:3039
 msgid "-q [errorfile]  edit file with first error"
-msgstr "-q [fich. err.] edita el archivo con el primer error"
+msgstr "-q [fich. err.] Editar el archivo con el primer error"
 
 #: main.c:3048
 msgid ""
@@ -3976,8 +3976,8 @@ msgid ""
 "Where case is ignored prepend / to make flag upper case"
 msgstr ""
 "\n"
-"Cuando mayúscula y minuscula son ignoradas prependa \"/\" para \n"
-"cambiar el \"flag\" a mayúscula"
+"Cuando mayúscula y minúscula son ignoradas añada \"/\" para \n"
+"cambiar la marca (\"flag\") a mayúscula"
 
 #: main.c:3061
 msgid ""
@@ -4099,7 +4099,7 @@ msgstr "-f\t\t\tNo usar \"newcli\" para abrir ventanas"
 
 #: main.c:3101
 msgid "-dev <device>\t\tUse <device> for I/O"
-msgstr "-dev \"dispositivo\"\t\tUse \"dispositivo\" para I/O"
+msgstr "-dev <dispositivo>\t\tUsar <dispositivo> para I/O"
 
 #: main.c:3104
 msgid "-A\t\t\tstart in Arabic mode"
@@ -4115,15 +4115,15 @@ msgstr "-F\t\t\tIniciar en modo persa (farsi)"
 
 #: main.c:3112
 msgid "-T <terminal>\tSet terminal type to <terminal>"
-msgstr "-T \"terminal\"\tEstablece el tipo de salida visual a \"terminal\""
+msgstr "-T <terminal>\tEstablecer el tipo de salida visual a <terminal>"
 
 #: main.c:3113
 msgid "-u <vimrc>\t\tUse <vimrc> instead of any .vimrc"
-msgstr "-u \"vimrc\"\t\tUsa \"vimrc\" en lugar de cualquier .vimrc"
+msgstr "-u <vimrc>\t\tUsar <vimrc> en lugar de cualquier \".vimrc\""
 
 #: main.c:3115
 msgid "-U <gvimrc>\t\tUse <gvimrc> instead of any .gvimrc"
-msgstr "-U \"gvimrc\"\t\tUsa \"gvimrc\" en lugar de cualquier .gvimrc"
+msgstr "-U <gvimrc>\t\tUsar <gvimrc> en lugar de otro \".gvimrc\""
 
 #: main.c:3117
 msgid "--noplugin\t\tDon't load plugin scripts"
@@ -4131,11 +4131,11 @@ msgstr "--noplugin\t\tNo cargar los módulos de expansión"
 
 #: main.c:3119
 msgid "-p[N]\t\tOpen N tab pages (default: one for each file)"
-msgstr "-p[N]\t\tAbre N ventanas (valor predeterminado: una por archivo)"
+msgstr "-p[N]\t\tAbrir N ventanas (valor predeterminado: una por archivo)"
 
 #: main.c:3120
 msgid "-o[N]\t\tOpen N windows (default: one for each file)"
-msgstr "-o[N]\t\tAbre N ventanas (valor predeterminado: una por archivo)"
+msgstr "-o[N]\t\tAbrir N ventanas (valor predeterminado: una por archivo)"
 
 #: main.c:3121
 msgid "-O[N]\t\tLike -o but split vertically"
@@ -4143,61 +4143,60 @@ msgstr "-O[N]\t\tComo \"-o\" pero divide las ventanas verticalmente"
 
 #: main.c:3123
 msgid "+\t\t\tStart at end of file"
-msgstr "+\t\t\tComienza al final del archivo"
+msgstr "+\t\t\tComenzar al final del archivo"
 
 #: main.c:3124
 msgid "+<lnum>\t\tStart at line <lnum>"
-msgstr "+\"número línea\"\tComienza en la línea \"número de línea\""
+msgstr "+<número_de_línea>\tComienza en la línea <número_de_línea>"
 
 #: main.c:3125
 msgid "--cmd <command>\tExecute <command> before loading any vimrc file"
-msgstr "--cmd \"orden\"\tEjecuta \"orden\" antes de cargar algún archivo vimrc"
+msgstr "--cmd <orden>\tEjecutar la <orden> antes de cargar algún archivo vimrc"
 
 #: main.c:3126
 msgid "-c <command>\t\tExecute <command> after loading the first file"
-msgstr "-c \"orden\"\t\tEjecuta \"orden\" después de cargar el primer archivo"
+msgstr "-c <orden>\t\tEjecutar <orden> después de cargar el primer archivo"
 
 #: main.c:3127
 msgid "-S <session>\t\tSource file <session> after loading the first file"
 msgstr ""
-"-S \"sesión\"\t\tEjecuta las órdenes del archivo \"sesión\" después\n"
+"-S <sesión>\t\tEjecutar las órdenes del archivo <sesión> después\n"
 "           \t\tde cargar el primer archivo"
 
 #: main.c:3128
 msgid "-s <scriptin>\tRead Normal mode commands from file <scriptin>"
 msgstr ""
-"-s <scriptin>\tLee las órdenes en modo Normal del archivo\n"
-"                    \t\"módulo de expansion\" de entrada>"
+"-s <scriptin>\tLeer las órdenes en modo Normal del archivo\n"
+"                    \t\"módulo de expansión\" de entrada>"
 
 #: main.c:3129
 msgid "-w <scriptout>\tAppend all typed commands to file <scriptout>"
 msgstr ""
-"-w <scriptout>\tAñade todas las órdenes escritas al archivo\n"
+"-w <scriptout>\tAñadir todas las órdenes escritas al archivo\n"
 "                     \t\"módulo de expansión\" de salida"
 
 #: main.c:3130
 msgid "-W <scriptout>\tWrite all typed commands to file <scriptout>"
 msgstr ""
-"-W <scriptout>\tGraba todas las órdenes escritas al archivo\n"
+"-W <scriptout>\tGrabar todas las órdenes escritas al archivo\n"
 "                     \t\"módulo de expansión\" de salida"
 
 #: main.c:3132
 msgid "-x\t\t\tEdit encrypted files"
-msgstr "-x\t\t\tEdita archivos cifrados"
+msgstr "-x\t\t\tEditar archivos cifrados"
 
 #: main.c:3136
 msgid "-display <display>\tConnect vim to this particular X-server"
-msgstr "-display \"pantalla\"\tConecta vim a este servidor X11 en particular"
+msgstr "-display <pantalla>\tConectar vim a este servidor X en particular"
 
 #: main.c:3138
 msgid "-X\t\t\tDo not connect to X server"
-msgstr "-X\t\t\tNo se conecta al servidor X11"
+msgstr "-X\t\t\tEvitar la conexión al servidor X"
 
 #: main.c:3141
 msgid "--remote <files>\tEdit <files> in a Vim server if possible"
 msgstr ""
-"--remote \"archivos\"\tEdite los \"archivos\" en un servidor Vim\n"
-"                          \tsi es posible"
+"--remote <archivos>\tEditar <archivos> en un servidor Vim si es posible"
 
 #: main.c:3142
 msgid "--remote-silent <files>  Same, don't complain if there is no server"
@@ -4228,40 +4227,40 @@ msgstr ""
 
 #: main.c:3148
 msgid "--remote-send <keys>\tSend <keys> to a Vim server and exit"
-msgstr "--remote-send <teclas>\tEnvía \"teclas\" a un servidor Vim y sale"
+msgstr "--remote-send <teclas>\tEnvíar <teclas> a un servidor Vim y cerrar"
 
 #: main.c:3149
 msgid "--remote-expr <expr>\tEvaluate <expr> in a Vim server and print result"
 msgstr ""
-"--remote-expr \"expr\"\tEvalúa \"expr\" en servidor Vim e imprime el "
+"--remote-expr <expr>\tEvaluar <expr> en un servidor Vim e imprimir el "
 "resultado"
 
 #: main.c:3150
 msgid "--serverlist\t\tList available Vim server names and exit"
 msgstr ""
-"--serverlist\t\tEmite una lista de los servidores Vim disponibles y sale"
+"--serverlist\t\tEmitir una lista de los servidores Vim disponibles y cerrar"
 
 #: main.c:3151
 msgid "--servername <name>\tSend to/become the Vim server <name>"
 msgstr ""
-"--servername \"nombre\"\tEnvía a/se convierte en el servidor Vim de nombre "
-"\"nombre\""
+"--servername \"nombre\"\tEnvíar a/se convierte en el servidor Vim con <nombre>"
 
 #: main.c:3154
 msgid "--startuptime <file>\tWrite startup timing messages to <file>"
-msgstr ""
+msgstr "-- startuptime <archivo>\tGuardar los mensajes de tiempo de inicio "
+"a <archivo>."
 
 #: main.c:3157
 msgid "-i <viminfo>\t\tUse <viminfo> instead of .viminfo"
-msgstr "-i \"viminfo\"\t\tUsa \"viminfo\" en lugar de .viminfo"
+msgstr "-i <viminfo>\t\tUsar <viminfo> en lugar de \".viminfo\""
 
 #: main.c:3159
 msgid "-h  or  --help\tPrint Help (this message) and exit"
-msgstr "-h  or  --help\tImprime la ayuda (este mensaje) y termina"
+msgstr "-h  or  --help\tImpresión de la ayuda (este mensaje) y cerrar"
 
 #: main.c:3160
 msgid "--version\t\tPrint version information and exit"
-msgstr "--version\t\tImprime la información de versión y termina"
+msgstr "--version\t\tImpresión de la información de versión y cerrar"
 
 #: main.c:3164
 msgid ""
