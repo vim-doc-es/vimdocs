@@ -1,56 +1,50 @@
-# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es 
-# extracted from help.txt 
-# Copyright (C) 2009 
+# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es
+# extracted from help.txt
+# Copyright (C) 2009
 # This file is distributed under the same license as the Vim 7.2 package.
-#
 # Translators credits:
-#   - Initial translation
-#       Omar Campagne <ocampagne@gmail.com>
-#
-#   - Updates
-#       TRADUCTOR <CORREO>, AÑO 
-#
-# Debido al formato (txt) y al máximo de 80 columnas que pueden tener 
+# - Initial translation
+# Omar Campagne <ocampagne@gmail.com>
+# - Updates
+# TRADUCTOR <CORREO>, AÑO
+# Debido al formato (txt) y al máximo de 80 columnas que pueden tener
 # los textos de ayuda en Vim, así como el formato PO, por favor, leete los
 # apuntes concernientes a la edición de los archivos PO relativos a la
 # aplicación que desees usar.
-# También encontrarás información acerca del uso de herramientas gettext en el 
+# También encontrarás información acerca del uso de herramientas gettext en el
 # proyecto de localización (l10n) de Vim.
-#
 # - http://www.assembla.com/wiki/show/vim-doc-es
-#
 # No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
-# este enlace puede ser de interés. A pesar de no formar parte, nuestra 
-# intención es homologarnos con su terminología y uso de la lengua 
+# este enlace puede ser de interés. A pesar de no formar parte, nuestra
+# intención es homologarnos con su terminología y uso de la lengua
 # en la medida de lo útil y posible.
-#
-#  - El proyecto de traducción de Debian al español
-#     http://www.debian.org/intl/spanish/notas
-#
+# - El proyecto de traducción de Debian al español
+# http://www.debian.org/intl/spanish/notas
 # La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
 # pero también puede servir de referencia para otros términos no técnicos.
 # No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
 # traducción sea comprensible independientemente de la nacionalidad del
 # usuario. Si crees que alguna traducción puede llevar a confusión, consulta
 # la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
-#
-#  - www.rae.es 
-#  - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages   
-#
+# - www.rae.es
+# - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages
 # Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
 # se puede consultar con un simple grep, pogrep o cargado en Virtaal.
-#
+# Omar Campagne <<ocampagne@gmail.com>>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
-"POT-Creation-Date: 2009-11-25 22:46+0100\n"
-"PO-Revision-Date: 2009-11-20 22:13+0100\n"
-"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"POT-Creation-Date: 2009-11-25 23:14+0100\n"
+"PO-Revision-Date: 2009-11-25 23:47+0200\n"
+"Last-Translator: Omar Campagne <<ocampagne@gmail.com>>\n"
 "Language-Team: vim-doc-es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.4.1\n"
 
 #. type: Plain text
 #: original/TXT/help.txt:2
@@ -190,12 +184,19 @@ msgid ""
 "Using the GUI |usr_10.txt| Making big changes |usr_11.txt| Recovering from a "
 "crash |usr_12.txt| Clever tricks"
 msgstr ""
-"Empezar ~ |usr_01.esx| Acerca de los manuales |usr_02.esx| Primeros pasos en "
-"VIM |usr_03.esx| Desplazamiento |usr_04.esx| Hacer cambios pequeños |usr_05."
-"esx| Configuración |usr_06.esx| Uso del resaltado de sintaxis |usr_07.esx| "
-"Editar más de un archivo |usr_08.esx| Dividir en ventanas |usr_09.esx| Uso "
-"de la interfaz gráfica |usr_10.esx| Hacer cambios grandes |usr_11.esx| "
-"Recuperarse de un fallo |usr_12.esx| Trucos"
+"Empezar ~ \n"
+"|usr_01.esx| Acerca de los manuales \n"
+"|usr_02.esx| Primeros pasos en VIM \n"
+"|usr_03.esx| Desplazamiento \n"
+"|usr_04.esx| Hacer cambios pequeños \n"
+"|usr_05.esx| Configuración \n"
+"|usr_06.esx| Uso del resaltado de sintaxis \n"
+"|usr_07.esx| Editar más de un archivo \n"
+"|usr_08.esx| Dividir en ventanas \n"
+"|usr_09.esx| Uso de la interfaz gráfica \n"
+"|usr_10.esx| Hacer cambios grandes \n"
+"|usr_11.esx| Recuperarse de un fallo \n"
+"|usr_12.esx| Trucos"
 
 #. type: Plain text
 #: original/TXT/help.txt:75
@@ -208,13 +209,20 @@ msgid ""
 "usr_30.txt| Editing programs |usr_31.txt| Exploiting the GUI |usr_32.txt| "
 "The undo tree"
 msgstr ""
-"Editar con efectividad ~ |usr_20.esx| Ser eficaz en la línea de órdenes |"
-"usr_21.esx| Abandonar el editor y volver |usr_22.esx| Encontrar el archivo a "
-"editar |usr_23.esx| Editar otros archivos |usr_24.txt| Insertar con rapidez |"
-"usr_25.txt| Editar texto con formato |usr_26.txt| Repetir |usr_27.txt| "
-"Órdenes y patrones de búsqueda |usr_28.txt| Plegar |usr_29.txt| Navegar a "
-"través de los programas |usr_30.txt| Editar programas |usr_31.txt| "
-"Aprovechar la interfaz gráfica |usr_32.txt| El árbol de deshacer"
+"Editar con efectividad ~ \n"
+"|usr_20.esx| Ser eficaz en la línea de órdenes \n"
+"|usr_21.esx| Abandonar el editor y volver \n"
+"|usr_22.esx| Encontrar el archivo a editar \n"
+"|usr_23.esx| Editar otros archivos \n"
+"|usr_24.txt| Insertar con rapidez \n"
+"|usr_25.txt| Editar texto con formato \n"
+"|usr_26.txt| Repetir \n"
+"|usr_27.txt| Órdenes y patrones de búsqueda \n"
+"|usr_28.txt| Plegar \n"
+"|usr_29.txt| Navegar a través de los programas \n"
+"|usr_30.txt| Editar programas \n"
+"|usr_31.txt| Aprovechar la interfaz gráfica \n"
+"|usr_32.txt| El árbol de deshacer"
 
 #. type: Plain text
 #: original/TXT/help.txt:83
@@ -223,10 +231,13 @@ msgid ""
 "usr_42.txt| Add new menus |usr_43.txt| Using filetypes |usr_44.txt| Your own "
 "syntax highlighted |usr_45.txt| Select your language"
 msgstr ""
-"Configurar Vim ~ |usr_40.txt| Crear órdenes nuevas |usr_41.txt| Crear un "
-"script de Vim |usr_42.txt| Añadir menús nuevos |usr_43.txt| Usar tipos de "
-"archivo |usr_44.txt| Crear su propio resaltado de sintaxis |usr_45.txt| "
-"Seleccionar su idioma"
+"Configurar Vim ~ \n"
+"|usr_40.txt| Crear órdenes nuevas \n"
+"|usr_41.txt| Crear un script de Vim \n"
+"|usr_42.txt| Añadir menús nuevos \n"
+"|usr_43.txt| Usar tipos de archivo \n"
+"|usr_44.txt| Crear su propio resaltado de sintaxis \n"
+"|usr_45.txt| Seleccionar su idioma"
 
 #. type: Plain text
 #: original/TXT/help.txt:86
