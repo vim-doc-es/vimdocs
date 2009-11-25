@@ -44,7 +44,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2009-11-25 23:09+0100\n"
-"PO-Revision-Date: 2009-11-24 02:00+0100\n"
+"PO-Revision-Date: 2009-11-25 23:39+0100\n"
 "Last-Translator: Álvaro Castro Castillo <alvaro.castro.castilla@gmail.com>\n"
 "Language-Team: vim-doc-es\n"
 "MIME-Version: 1.0\n"
@@ -320,7 +320,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_06.txt:68
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "\t\tsetenv TERM xterm-color\n"
 "<\n"
@@ -362,7 +362,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_06.txt:84
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "\t\t:set filetype\n"
 "<\n"
@@ -566,7 +566,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_06.txt:158
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "\t!mkdir ~/.vim/colors\n"
 "\t!cp $VIMRUNTIME/colors/morning.vim ~/.vim/colors/mine.vim\n"
@@ -614,7 +614,7 @@ msgstr "   Por ejemplo, para hacer los comentarios en verde: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_06.txt:176
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "\t:highlight Comment ctermfg=green guifg=green\n"
 "<\n"
@@ -745,12 +745,14 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_06.txt:218
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "\t:set syntax=ON\n"
 "<\n"
 "==============================================================================\n"
-msgstr "==============================================================================\n"
+msgstr ""
+"\t:set syntax=ON\n"
+"==============================================================================\n"
 
 #. type: Plain text
 #: original/TXT/usr_06.txt:220
@@ -851,7 +853,7 @@ msgstr "\t:source $VIMRUNTIME/syntax/2html.vim\n"
 
 #. type: Plain text
 #: original/TXT/usr_06.txt:258
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "You will see it crunching away, this can take quite a while for a large file.\n"
 "Some time later another window shows the HTML code.  Now write this somewhere\n"

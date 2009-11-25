@@ -47,7 +47,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2009-11-25 23:09+0100\n"
-"PO-Revision-Date: 2009-11-24 01:44+0100\n"
+"PO-Revision-Date: 2009-11-25 23:41+0100\n"
 "Last-Translator: Álvaro Castro Castilla <alvaro.castro.castilla@gmail.com>\n"
 "Language-Team: vim-doc-es\n"
 "MIME-Version: 1.0\n"
@@ -554,7 +554,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_10.txt:162
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "\t:%substitute/Professor/Teacher/\n"
 "<\n"
@@ -566,7 +566,7 @@ msgstr ""
 "\t:%substitute/profesor/maestro/\n"
 "<\n"
 "\tNota:\n"
-"\tLa orden «:substitute» casi nunca se escribe completo. La mayoría\n"
+"\tLa orden «:substitute» casi nunca se escribe completamente. La mayoría\n"
 "\tde las veces la gente escribe la versión abreviada \":s\". A partir de\n"
 "\tahora, se empleará la abreviatura.\n"
 
@@ -1673,7 +1673,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_10.txt:581
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "The \":read\" command accepts a range.  The file will be put below the last line\n"
 "number of this range.  Thus \":$r patch\" appends the file \"patch\" at the end of\n"
@@ -1690,6 +1690,7 @@ msgstr ""
 "   ¿Qué ocurre si quiere pegar el archivo encima de la primera línea? Esto\n"
 "se puede realizar con el número de línea cero. Este número de línea en\n"
 "realidad no existe, lo cuál hará que con muchas órdenes reciba un error. >\n"
+">\n"
 ":0read parche\n"
 
 #. type: Plain text
