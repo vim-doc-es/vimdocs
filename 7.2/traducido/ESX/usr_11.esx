@@ -158,8 +158,8 @@ Ha recibido este mensaje porque cuando comienza a editar un archivo, Vim
 comprueba que exista un archivo de recuperación para este archivo. Si hay
 uno, algo debe estar pasando. Puede ocurrir cualquiera de estas situaciones:
 
-1. Another edit session is active on this file.  Look in the message for the
-   line with "process ID".  It might look like this:
+1. Hay otra sesión de edición activa en este archivo. Busque en el
+   mensaje la línea con «ID del proceso». Puede parecerse a esto:
 
 		process ID: 12559 ((aún en ejecución) ~
 
@@ -173,9 +173,10 @@ de red, seguramente no verá esta información, porque el proceso estará en otr
    guarde sobreescribirá a la otra, con la consecuente pérdida de los
    cambios. Mejor salir de este Vim.
 
-2. The swap file might be the result from a previous crash of Vim or the
-   computer.  Check the dates mentioned in the message.  If the date of the
-   swap file is newer than the file you were editing, and this line appears:
+2. El archivo de recuperación puede ser el resultado de un cuelgue anterior
+   de Vim o del ordenador. Revise las fechas mencionadas en el mensaje. Si la
+   fecha del archivo de recuperación es más reciente que la del archivo que
+   está editando, y aparece esta línea:
 
 		modificado: YES ~
 
