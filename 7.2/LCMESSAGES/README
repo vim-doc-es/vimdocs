@@ -1,0 +1,49 @@
+###### Proceso e instrucciones para mensajes de Vim ######
+
+--------Crear el último pot:--------
+
+vim7/src/po$ make vim.pot
+
+--------Actualizar es.po:-----------
+
+$msgmerge -U es.po vim.pot 
+
+(esto actualiza el archivo es.po. Usa «-o» y quita «-U» si
+quieres crear otro).
+
+----------Traducir----------
+
+-----Revisión de formato-----
+
+pocount es.po 
+
+(te informa si quedan cadenas difusas
+o por traducir)
+
+pofilter -t numbers es.po >> test.po
+
+FUNDAMENTAL. Revisa que los números sean idénticos en 
+ambas cadenas. Casi todos los mensajes tiene un número, y
+a veces cambia.
+
+En caso de enviar una traducción incompleta, ejectuar antes
+
+:source cleanup.vim
+
+Esto elimina las cadenas difusas  o vacías (que dan problemas
+en sistemas Solaris), así como el número de línea, para facilitar
+el futuro parcheado (dice Bram: «vim7/src/po/README.txt»)
+
+Por último:
+	vim -S  check.vim xx.po
+	make xx.mo
+
+Para encontrar los errores de sintaxis. También serviría 
+
+msgfmt es.po -o vim.mo
+
+o ejectuar «\e» en el modo Normal o Insertar de Vim (si
+tienes la extensión de tipo de archivo po.vim).
+
+---Enviar---
+:-)
