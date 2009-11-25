@@ -154,12 +154,12 @@ Esta orden cambia la cadena «de» por la cadena «a» en las líneas
 especificadas con [rango]. Por ejemplo, puede cambiar «profesor» por
 «maestro» en todas las líneas con la siguiente orden: >
 
-	:%substitute/profesor/maestro/
+	:%substitute/Professor/Teacher/
 <
-	Nota:
-	La orden «:substitute» casi nunca se escribe completo. La mayoría
-	de las veces la gente escribe la versión abreviada ":s". A partir de
-	ahora, se empleará la abreviatura.
+	Note:
+	The ":substitute" command is almost never spelled out completely.
+	Most of the time, people use the abbreviated version ":s".  From here
+	on the abbreviation will be used.
 
 El «%» antes de la orden especifica que se ejecuta en todas las líneas. Sin
 rango, «:s» sólo funciona en la línea actual. Más sobre los rangos en la
@@ -575,13 +575,14 @@ El archivo de nombre «parche» se insertará: con este resultado:
 	>	for (i = 0; i < length; ++i) ~
 	Un saludo, Pedro. ~
 
-La orden «:read» acepta un rango. El archivo será colocado justo debajo de
-la última línea de este rango. Por lo tanto, «:$r parche» añadirá el
-archivo «parche» al final del actual.
-   ¿Qué ocurre si quiere pegar el archivo encima de la primera línea? Esto
-se puede realizar con el número de línea cero. Este número de línea en
-realidad no existe, lo cuál hará que con muchas órdenes reciba un error. >
-:0read parche
+The ":read" command accepts a range.  The file will be put below the last line
+number of this range.  Thus ":$r patch" appends the file "patch" at the end of
+the file.
+   What if you want to read the file above the first line?  This can be done
+with the line number zero.  This line doesn't really exist, you will get an
+error message when using it with most commands.  But this command is allowed:
+>
+	:0read patch
 
 El archivo «parche» se insertará sobre la primera línea del archivo.
 

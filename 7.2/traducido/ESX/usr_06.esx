@@ -65,7 +65,7 @@ Puede haber una serie de motivos por los que no vea colores:
 
 		setenv TERM xterm-color
 <
-	o (dependiendo de su consola): >
+	or (depending on your shell): >
 
 		TERM=xterm-color; export TERM
 
@@ -79,9 +79,9 @@ Puede haber una serie de motivos por los que no vea colores:
 
 		:set filetype
 <
-	Si el resultado es «filetype=» entonces el problema es que Vim no sabe
-	que de qué tipo de archivo se trata. Puede decirle el tipo de archivo
-	de forma manual: >
+	If the result is "filetype=" then the problem is indeed that Vim
+	doesn't know what type of file this is.  You can set the type
+	manually: >
 
 		:set filetype=fortran
 
@@ -156,7 +156,7 @@ hace:
 	!mkdir ~/.vim/colors
 	!cp $VIMRUNTIME/colors/morning.vim ~/.vim/colors/mine.vim
 <
-   Esto se hace desde Vim, porque conoce el valor de $VIMRUNTIME.
+   This is done from Vim, because it knows the value of $VIMRUNTIME.
 
 2. Editar el archivo del esquema de colores. Estas entradas son
    útiles:
@@ -173,9 +173,9 @@ hace:
 
 	:highlight Comment ctermfg=green guifg=green
 <
-   Los atributos que puede usar para «cterm» y «gui» son «bold» y «underline».
-   Si quiere los dos, escriba «bold,underline». Para más detalles, véase la
-   orden |:highlight|.
+   Attributes you can use for "cterm" and "gui" are "bold" and "underline".
+   If you want both, use "bold,underline".  For details see the |:highlight|
+   command.
 
 3.  Decir a Vim que use siempre su esquema. Incluya esto en su |vimrc|: >
 
@@ -255,9 +255,9 @@ Convierta el archivo a HTML con esta orden: >
 
 	:source $VIMRUNTIME/syntax/2html.vim
 
-Lo verá trabajar, esto puede llevar un buen tiempo para archivos grandes.
-Un rato después otra ventana muestra el código HTML. Ahora guarde esto en algún
-lugar (no importa dónde, lo eliminará en cuanto termine de imprimir):
+You will see it crunching away, this can take quite a while for a large file.
+Some time later another window shows the HTML code.  Now write this somewhere
+(doesn't matter where, you throw it away later):
 >
 	:write main.c.html
 

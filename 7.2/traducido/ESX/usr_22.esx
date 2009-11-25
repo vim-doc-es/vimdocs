@@ -239,7 +239,7 @@ Este directorio es una ruta absoluta. No importa donde esté, tendrá
 la misma ubicación. ¿Y en el caso de que tiene archivos ubicados en un
 subdirectorio, debajo de donde está el archivo? Puede especificar en este
 caso un nombre de ruta relativo. Esto empieza con un punto:
-()>
+>
 	:set path+=./proto
 
 Esto hace que Vim mire en el directorio «proto», debajo del
