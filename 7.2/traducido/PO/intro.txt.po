@@ -1,58 +1,48 @@
-# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es 
-#
-# Copyright (C) 2009 
+# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es
+# Copyright (C) 2009
 # This file is distributed under the same license as the Vim 7.2 package.
-#
 # Translators credits:
-#   - Initial translation
-#       Omar Campagne <ocampagne@gmail.com>, 2009
-#
-#   - Updates
-#       TRADUCTOR <CORREO>, AÑO 
-#
-#
-#
-# Debido al formato (txt) y al máximo de 80 columnas que pueden tener 
+# - Initial translation
+# Omar Campagne <ocampagne@gmail.com>, 2009
+# - Updates
+# TRADUCTOR <CORREO>, AÑO
+# Debido al formato (txt) y al máximo de 80 columnas que pueden tener
 # los textos de ayuda en Vim, así como el formato PO, por favor, leete los
 # apuntes concernientes a la edición de los archivos PO relativos a la
 # aplicación que desees usar.
-# También encontrarás información acerca del uso de herramientas gettext en el 
+# También encontrarás información acerca del uso de herramientas gettext en el
 # proyecto de localización (l10n) de Vim.
-#
 # - http://www.assembla.com/wiki/show/vim-doc-es
-#
 # No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
-# este enlace puede ser de interés. A pesar de no formar parte, nuestra 
-# intención es homologarnos con su terminología y uso de la lengua 
+# este enlace puede ser de interés. A pesar de no formar parte, nuestra
+# intención es homologarnos con su terminología y uso de la lengua
 # en la medida de lo útil y posible.
-#
-#  - El proyecto de traducción de Debian al español
-#     http://www.debian.org/intl/spanish/notas
-#
+# - El proyecto de traducción de Debian al español
+# http://www.debian.org/intl/spanish/notas
 # La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
 # pero también puede servir de referencia para otros términos no técnicos.
 # No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
 # traducción sea comprensible independientemente de la nacionalidad del
 # usuario. Si crees que alguna traducción puede llevar a confusión, consulta
 # la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
-#
-#  - www.rae.es 
-#  - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages   
-#
+# - www.rae.es
+# - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages
 # Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
 # se puede consultar con un simple grep, pogrep o cargado en Virtaal.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2009-11-26 17:29+0100\n"
-"PO-Revision-Date: 2009-11-26 17:37+0100\n"
-"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
-"Language-Team: vim-doc-es <http://www.assembla.com/wiki/show/vim-doc-es>\n"
+"PO-Revision-Date: 2009-11-26 22:31+0200\n"
+"Last-Translator: Omar Campagne <<ocampagne@gmail.com>>\n"
+"Language-Team: vim-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.4.1\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:2
@@ -271,20 +261,25 @@ msgid ""
 "There are many books on Vi that contain a section for beginners.  There are\n"
 "two books I can recommend:\n"
 msgstr ""
+"\t\t\t\t\t\t\t*book*\n"
+"Existen muchos libros sobre Vi que contienen una sección para principiantes.\n"
+"Personalmente recomiendo dos libros:\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:56
 #, no-wrap
 msgid "\t\"Vim - Vi Improved\" by Steve Oualline\n"
-msgstr ""
+msgstr "\t«Vim - Vi Improved» por Steve Oualline\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:67
 #, no-wrap
 msgid ""
-"This is the very first book completely dedicated to Vim.  It is very good for\n"
+"This is the very first book completely dedicated to Vim.  It is very good "
+"for\n"
 "beginners.  The most often used commands are explained with pictures and\n"
-"examples.  The less often used commands are also explained, the more advanced\n"
+"examples.  The less often used commands are also explained, the more "
+"advanced\n"
 "features are summarized.  There is a comprehensive index and a quick\n"
 "reference.  Parts of this book have been included in the user manual\n"
 "|frombook|.\n"
@@ -293,12 +288,21 @@ msgid ""
 "\thttp://iccf-holland.org/click5.html\n"
 "\thttp://www.vim.org/iccf/click5.html\n"
 msgstr ""
+"Este es el primer libro completamente dedicado a Vim. Es muy bueno para\n"
+"principiantes. Las órdenes más usadas se explican con imágenes y ejemplos.\n"
+"También se tratan aquellas órdenes menos comunes, y las características más\n"
+"avanzadas son resumidas. Tiene un completo índice y una rápida referencia.\n"
+"Hay partes de este libro incluidas en el manual de usuario |frombook|.\n"
+"Publicado por New Riders Publishing.  ISBN: 0735710015\n"
+"Pruebe estos enlaces para más información:\n"
+"\thttp://iccf-holland.org/click5.html\n"
+"\thttp://www.vim.org/iccf/click5.html\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:69
 #, no-wrap
 msgid "\t\"Learning the Vi editor\" by Linda Lamb and Arnold Robbins\n"
-msgstr ""
+msgstr "\t«Learning the Vi editor» por Linda Lamb y Arnold Robbins\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:74
@@ -308,12 +312,16 @@ msgid ""
 "Vim adds are only briefly mentioned.  There is also a German translation.  "
 "Published by O'Reilly.  ISBN: 1-56592-426-6."
 msgstr ""
+"Este es un libro sobre Vi que incluye un capítulo acercade Vim (en la sexta "
+"edición). Los primeros pasos con Vim se explican con detalle, pero las "
+"órdenes que Vim añade se mencionan de manera superficial. Está también "
+"disponible en alemán. Publicado por O'Reilly.  ISBN: 1-56592-426-6."
 
 #. type: Plain text
 #: original/TXT/intro.txt:77
 #, no-wrap
 msgid "2. Vim on the internet\t\t\t\t\t*internet*\n"
-msgstr ""
+msgstr "2. Vim en internet\t\t\t\t\t*internet*\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:82
@@ -324,6 +332,11 @@ msgid ""
 "contain links to the most recent version of Vim.  The FAQ is a list of\n"
 "Frequently Asked Questions.  Read this if you have problems.\n"
 msgstr ""
+"       \t*www* *WWW*  *faq* *FAQ* *distribution* *download* *descargar*\n"
+"Las páginas de Vim ofrecen la información más actualizada. También\n"
+"contienen enlaces a la versión más reciente de Vim. El FAQ es una lista de\n"
+"las preguntas más frecuentes. Consulte esa página en caso de tener "
+"problemas.\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:86
@@ -333,6 +346,9 @@ msgid ""
 "\tVIM FAQ:\t  http://vimdoc.sf.net/\n"
 "\tDownloading:\t  ftp://ftp.vim.org/pub/vim/MIRRORS\n"
 msgstr ""
+"\tPágina web de VIM http://www.vim.org/\n"
+"\tVIM FAQ:\t  http://vimdoc.sf.net/\n"
+"\tDescargar:\t  ftp://ftp.vim.org/pub/vim/MIRRORS\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:92
@@ -340,9 +356,14 @@ msgstr ""
 msgid ""
 "Usenet News group where Vim is discussed:\t\t*news* *usenet*\n"
 "\tcomp.editors\n"
-"This group is also for other editors.  If you write about Vim, don't forget to\n"
+"This group is also for other editors.  If you write about Vim, don't forget "
+"to\n"
 "mention that.\n"
 msgstr ""
+"Grupo de Usenet News en el que se trata Vim: \t\t*news* *usenet*\n"
+"\tcomp.editors\n"
+"Este grupo también trata de otros editores. Si escribe sobre Vim, no olvide\n"
+"de mencionar esto último.\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:112
@@ -368,11 +389,30 @@ msgid ""
 "\tFor discussions about using and improving the Macintosh version of\n"
 "\tVim.\n"
 msgstr ""
+"\t\t\t\t\t\t*mail-list* *maillist*\n"
+"Existen varias listas de correo acerca de Vim:\n"
+"<vim@vim.org>\n"
+"\tPara discusiones acerca del uso de varias versiones de Vim: Útiles\n"
+"\tmapeados, preguntas, respuestas, dónde obtener una versión especifica.\n"
+"\tHay varias personas mirando esta lista, y que responden a\n"
+"\tpreguntas, también para principiantes. No dude en preguntar.\n"
+"<vim-dev@vim.org>\t\t\t\t*vim-dev* *vimdev*\n"
+"\tPara la discusión de cambios en Vim: Nuevas características,\n"
+"\tportabilidad, parches, versiones beta, etc.\n"
+"<vim-announce@vim.org>\t\t\t\t*vim-announce*\n"
+"\tAnuncios acerca de nuevas versiones de Vim; también para versiones beta\n"
+"\ty la adaptación a otras arquitecturas. Lista de sólo lectura.\n"
+"\n"
+"<vim-multibyte@vim.org>\t\t\t\t*vim-multibyte*\n"
+"\tDiscusión acerca de la mejora de la experiencia multi-byte en Vim.\n"
+"<vim-mac@vim.org>\t\t\t\t*vim-mac*\n"
+"\tDiscusión acerca del uso y la mejora de la versión Macintosh de Vim.\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:114
 msgid "See http://www.vim.org/maillist.php for the latest information."
 msgstr ""
+"Visite http://www.vim.org/maillist.php para la información más reciente."
 
 #. type: Plain text
 #: original/TXT/intro.txt:120
@@ -380,10 +420,16 @@ msgstr ""
 msgid ""
 "NOTE:\n"
 "- You can only send messages to these lists if you have subscribed!\n"
-"- You need to send the messages from the same location as where you subscribed\n"
+"- You need to send the messages from the same location as where you "
+"subscribed\n"
 "  from (to avoid spam mail).\n"
 "- Maximum message size is 40000 characters.\n"
 msgstr ""
+"NOTA:\n"
+"- Sólo puede mandar mensajes a estas listas si esta suscrito.\n"
+"- Debe mandar los mensajes desde la misma dirección desde la cual se\n"
+"  suscribió (para evitar el spam).\n"
+"- El tamaño máximo de un mensaje es de 40000 caracteres.\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:126
@@ -395,6 +441,11 @@ msgid ""
 "Make sure that your \"From:\" address is correct.  Then the list server will\n"
 "give you help on how to subscribe.\n"
 msgstr ""
+"\t\t\t\t\t*lista-correo* *subscribe-maillist*\n"
+"Si desea unirse, envie un mensaje a\n"
+"\t<vim-subscribe@vim.org>\n"
+"Asegúrese de que su dirección «De:» es correcta. El servidor de la lista\n"
+"le asistirá para suscribirse.\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:130
@@ -404,12 +455,18 @@ msgid ""
 "For more information and archives look on the Vim maillist page:\n"
 "http://www.vim.org/maillist.php\n"
 msgstr ""
+"\t\t\t\t\t\t*maillist-archive*\n"
+"Para más información y visitar los archivos, visite la página de listas de\n"
+"correo de Vim:\n"
+"http://www.vim.org/maillist.php\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:133
 #, no-wrap
 msgid "Bug reports:\t\t\t\t*bugs* *bug-reports* *bugreport.vim*\n"
 msgstr ""
+"Informes de fallo:\t*fallos* *informe-de-fallo* *bugs* *bug-reports*\n"
+"\t\t\t\t\t\t\t *bugreport.vim*\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:141
@@ -418,21 +475,36 @@ msgid ""
 "message is redirected to the Vim maintainer.  Please be brief; all the time "
 "that is spent on answering mail is subtracted from the time that is spent on "
 "improving Vim! Always give a reproducible example and try to find out which "
-"settings or other things influence the appearance of the bug.  Try different "
-"machines, if possible.  Send me patches if you can!"
+"settings or other things influence the appearance of the bug.  Try "
+"different machines, if possible.  Send me patches if you can!"
 msgstr ""
+"Envíe los informes de fallo a: Vim Bugs <bugs@vim.org>. Esta no es una lista "
+"de correo, pero el mensaje será redirigido al responsable de Vim. Sea "
+"breve; todo el tiempo empleado en responder correo se sustrae del tiempo "
+"empleado en mejorar Vim. Entregue siempre un ejemplo reproducible, e intente "
+"encontrar la configuración u otros elementos que alimentan el fallo. Pruebe "
+"diferentes sistemas, si es posible. ¡Mandame parches si puedes!"
 
 #. type: Plain text
 #: original/TXT/intro.txt:148
 #, no-wrap
 msgid ""
-"It will help to include information about the version of Vim you are using and\n"
+"It will help to include information about the version of Vim you are using "
+"and\n"
 "your setup.  You can get the information with this command: >\n"
 "   :so $VIMRUNTIME/bugreport.vim\n"
 "This will create a file \"bugreport.txt\" in the current directory, with a lot\n"
 "of information of your environment.  Before sending this out, check if it\n"
 "doesn't contain any confidential information!\n"
 msgstr ""
+"Nos ayudaría si incluye información acerca de su configuración y versión de "
+"Vim.\n"
+"Puede obtener esta información con la siguiente orden: >\n"
+"   :so $VIMRUNTIME/bugreport.vim\n"
+"Esto creará el archivo «bugreport.txt» en el directorio presente, "
+"conteniendo\n"
+"información relativa a su entorno. Antes de enviarlo, revise que no contenga\n"
+"ninguna información confidencial.\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:151
@@ -440,6 +512,8 @@ msgid ""
 "If Vim crashes, please try to find out where.  You can find help on this "
 "here: |debug.txt|."
 msgstr ""
+"Si Vim se cuelga, intente encontrar donde. Puede encontrar ayuda aquí: "
+"|debug.txt|."
 
 #. type: Plain text
 #: original/TXT/intro.txt:155
@@ -448,6 +522,9 @@ msgid ""
 "but you can't find a fix for it, become a member of the vim-dev maillist and "
 "ask your question there. |maillist|"
 msgstr ""
+"En caso de duda, o si se pregunta si el problema ha recibido ya una solución "
+"pero no encuentra el arreglo, únase a la lista de correo vim-dev y haga su "
+"pregunta ahí.|maillist|"
 
 #. type: Plain text
 #: original/TXT/intro.txt:161
