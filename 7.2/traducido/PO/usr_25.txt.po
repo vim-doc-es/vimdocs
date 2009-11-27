@@ -34,7 +34,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2009-11-26 17:29+0100\n"
-"PO-Revision-Date: 2009-11-26 19:54+0200\n"
+"PO-Revision-Date: 2009-11-27 20:05+0200\n"
 "Last-Translator: Omar Campagne <<ocampagne@gmail.com>>\n"
 "Language-Team: vim-doc-es\n"
 "Language: es\n"
@@ -344,7 +344,7 @@ msgid ""
 msgstr ""
 "\tNota:\n"
 "\tLa opción 'wrap' hace que Vim muestre las líneas con un salto de\n"
-"\tlínea, pero no inserta realmente un salto de línea."
+"\tlínea, pero no inserta realmente un salto de línea.\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:68
@@ -524,15 +524,14 @@ msgstr "*25.2*\tAlinear texto\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:136
-#, fuzzy
 msgid "To center a range of lines, use the following command: >"
-msgstr "Para obtener un índice completo de todas los órdenes de Vim, use: >"
+msgstr "Use la siguiente orden para centrar un rango de líneas: >"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:138
 #, no-wrap
 msgid "\t:{range}center [width]\n"
-msgstr ""
+msgstr "\t:{range}center [width]\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:143
@@ -543,12 +542,17 @@ msgid ""
 "'textwidth'.  (If 'textwidth' is 0, the default is 80.)\n"
 "   For example: >\n"
 msgstr ""
+"{range} (rango) is el valor de rango normal en la línea de órdenes. [width] "
+"(ancho) es el valor opcional del ancho usado al centrar. De no especificar "
+"[width], su valor por omisión será el de 'textwidth'. (Si 'textwith' es cero, "
+"el valor será 80.)\n"
+"   Por ejemplo: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:145
 #, no-wrap
 msgid "\t:1,5center 40\n"
-msgstr ""
+msgstr "\t:1,5center 40\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:147
@@ -569,24 +573,23 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/usr_25.txt:156
 msgid "RIGHT ALIGNMENT"
-msgstr ""
+msgstr "ALINEAR	A LA DERECHA"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:158
 msgid "Similarly, the \":right\" command right-justifies the text: >"
-msgstr ""
+msgstr "De manera parecida, la orden «:right» justifica el texto a la derecha: >"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:160
 #, no-wrap
 msgid "\t:1,5right 37\n"
-msgstr ""
+msgstr "\t:1,5right 37\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:162
-#, fuzzy
 msgid "gives this result:"
-msgstr "Esto da como resultado: >"
+msgstr "y da como resultado: >"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:168
@@ -601,21 +604,19 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:170
-#, fuzzy
 msgid "LEFT ALIGNMENT"
-msgstr "ELIMINAR UNA LÍNEA"
+msgstr "ALINEAR A LA IZQUIERDA"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:172
-#, fuzzy
 msgid "Finally there is this command: >"
-msgstr "Use esta orden para ver la lista de búfers: >"
+msgstr "Por último, existe esta orden: >"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:174
 #, no-wrap
 msgid "\t:{range}left [margin]\n"
-msgstr ""
+msgstr "\t:{range}left [margin]\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:180
@@ -626,6 +627,10 @@ msgid ""
 "margin would do the same).  If it is 5, the text will be indented 5 spaces.  "
 "For example, use these commands: >"
 msgstr ""
+"A diferencia de «:center» y «:right», el argumento de «:left» no es la "
+"longitud de la línea, sino que es el margen derecho. Si se omite, el texto "
+"aparecerá a la izquierda de la pantalla (al igual que si usa un margen de "
+"de cero)."
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:183
@@ -634,6 +639,8 @@ msgid ""
 "\t:1left 5\n"
 "\t:2,5left\n"
 msgstr ""
+"\t:1left 5\n"
+"\t:2,5left\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:185
@@ -653,9 +660,8 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:194
-#, fuzzy
 msgid "JUSTIFYING TEXT"
-msgstr "INSERTAR TEXTO"
+msgstr "JUSTIFICAR TEXTO"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:198
@@ -664,55 +670,74 @@ msgid ""
 "package that does the job.  To use this package, execute the following "
 "command: >"
 msgstr ""
+"Vim no posee una herramienta integrada para justificar texto. Por otro lado, "
+"ofrece un excelente macro que realiza esta labor. Ejecute la siguiente orden "
+"para usar este conjunto: >"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:200
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t:runtime macros/justify.vim\n"
-msgstr "\t:runtime syntax/colortest.vim\n"
+msgstr "\t:runtime macros/justify.vim\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:205
 #, no-wrap
 msgid ""
-"This Vim script file defines a new visual command \"_j\".  To justify a block of\n"
+"This Vim script file defines a new visual command \"_j\".  To justify a block "
+"of\n"
 "text, highlight the text in Visual mode and then execute \"_j\".\n"
-"   Look in the file for more explanations.  To go there, do \"gf\" on this name:\n"
+"   Look in the file for more explanations.  To go there, do \"gf\" on this "
+"name:\n"
 "$VIMRUNTIME/macros/justify.vim.\n"
 msgstr ""
+"Este archivo script de Vim define una nueva orden visual, «_j». Para\n"
+"justificar un bloque de texto, resalte el texto en modo Visual y ejecute "
+"«_j».\n"
+"   Consulte el archivo para una explicación más completa. Para ir a ese "
+"punto,\n"
+"pulse «gf» en este nombre:\n"
+"$VIMRUNTIME/macros/justify.vim.\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:207
-#, fuzzy
 msgid ""
-"An alternative is to filter the text through an external program.  Example: >"
-msgstr ""
-"Para ordenar esta lista, filtre el texto a través de la orden externa «sort»: "
+"An alternative is to filter the text through an external program.  Example: "
 ">"
+msgstr ""
+"Una alternativa es filtrar el texto a través de un programa externo. "
+"Ejemplo: >"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:209
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t:%!fmt\n"
-msgstr "\t:first\n"
+msgstr "\t:%!fmt\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:212
 #, no-wrap
 msgid "*25.3*\tIndents and tabs\n"
-msgstr ""
+msgstr "*25.3*\tSangrado y tabulación\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:219
 #, no-wrap
 msgid ""
 "Indents can be used to make text stand out from the rest.  The example texts\n"
-"in this manual, for example, are indented by eight spaces or a tab.  You would\n"
+"in this manual, for example, are indented by eight spaces or a tab.  You "
+"would\n"
 "normally enter this by typing a tab at the start of each line.  Take this\n"
 "text:\n"
 "\tthe first line ~\n"
 "\tthe second line ~\n"
 msgstr ""
+"Puede usar el sangrado para destacar texto con respecto al resto. Los textos\n"
+"de ejemplo en este manual, por ejemplo, están sangrados con ocho espacios, o\n"
+"una tabulación. Generalmente, introduce el sangrado con una tabulación al\n"
+"inicio de cada línea. Suponga este texto:\n"
+"\tla primera línea ~\n"
+"\tla segunda línea ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:222
@@ -721,12 +746,15 @@ msgid ""
 "This is entered by typing a tab, some text, <Enter>, tab and more text.\n"
 "   The 'autoindent' option inserts indents automatically: >\n"
 msgstr ""
+"Puede introducir esto pulsando el botón de tabulado, algo de texto, <Intro>,\n"
+"tabulado, y más texto.\n"
+"   La opción 'autoindent' inserta sangrado automáticamente: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:224
 #, no-wrap
 msgid "\t:set autoindent\n"
-msgstr "\tset autoindent\n"
+msgstr "\t:set autoindent\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:227
@@ -734,49 +762,60 @@ msgid ""
 "When a new line is started it gets the same indent as the previous line.  In "
 "the above example, the tab after the <Enter> is not needed anymore."
 msgstr ""
+"Al iniciar una nueva línea, este recibirá el mismo sangrado que la línea "
+"anterior. En el ejemplo anterior, el tabulado tras <Intro> ya no es "
+"necesario."
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:230
-#, fuzzy
 msgid "INCREASING INDENT"
-msgstr "UNIR LÍNEAS"
+msgstr "AUMENTAR EL SANGRADO"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:236
 #, no-wrap
 msgid ""
-"To increase the amount of indent in a line, use the \">\" operator.  Often this\n"
+"To increase the amount of indent in a line, use the \">\" operator.  Often "
+"this\n"
 "is used as \">>\", which adds indent to the current line.\n"
-"   The amount of indent added is specified with the 'shiftwidth' option.  The\n"
+"   The amount of indent added is specified with the 'shiftwidth' option.  "
+"The\n"
 "default value is 8.  To make \">>\" insert four spaces worth of indent, for\n"
 "example, type this: >\n"
 msgstr ""
+"Para aumentar la cantidad de sangrado en una línea, use el operador «>». A\n"
+"menudo usará esto como «>>», que añade sangrado a la línea actual.\n"
+"   La cantidad de sangrado añadida se especifica con la opción 'shiftwidth'.\n"
+"El valor por omisión es 8. Para lograr que «>>» inserte cuatro espacios de\n"
+"sangrado, por ejemplo, use lo siguiente: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:240
 msgid "When used on the second line of the example text, this is what you get:"
 msgstr ""
+"De usar esto sobre la segunda línea del texto de ejemplo obtendría lo "
+"siguiente: "
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:243
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "\tthe first line ~\n"
 "\t    the second line ~\n"
 msgstr ""
-"\tEsto es una línea larga ~\n"
-"\tcorta ~\n"
-"\tCualquier es una línea larga ~\n"
+"\tla primera línea ~\n"
+"\t    la segunda línea ~\n"
+"\t\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:245
 msgid "\"4>>\" will increase the indent of four lines."
-msgstr ""
+msgstr "«4>>» incrementa el sangrado de 4 líneas."
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:248
 msgid "TABSTOP"
-msgstr ""
+msgstr "FIN DE TABULACIÓN"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:252
@@ -785,6 +824,9 @@ msgid ""
 "when pressing a <Tab> you still get 8 spaces worth of indent.  To change "
 "this, set the 'softtabstop' option: >"
 msgstr ""
+"Si desea que el sangrado sea un múltiplo de 4, defina 'shiftwidth' a 4. Aún "
+"obtendría ocho espacios de sangrado al pulsar <Tab>. Defina la opción "
+"'softtabstop' para modificar esto: >"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:254
@@ -800,6 +842,10 @@ msgid ""
 "the file).  (If you always want spaces and no tab characters, set the "
 "'expandtab' option.)"
 msgstr ""
+"Esto hará que la tecla <Tab> inserte 4 espacios de sangrado. EL carácter "
+"<Tab> se usará en caso ya existir cuatro espacios (ahorrando 7 espacios en "
+"el archivo). (Si desea siempre espacios y no caracteres de tabulado, defina "
+"la opción 'expandtab')."
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:266
@@ -812,23 +858,37 @@ msgid ""
 "\talso be wrong.  Therefore it is recommended to keep 'tabstop' at eight\n"
 "\tall the time.  That's the standard value everywhere.\n"
 msgstr ""
+"\tNota:\n"
+"\tPuede definir la opción 'tabstop' con valor de 4. De todas formas, si\n"
+"\tedita el archivo en otro momento teniendo 'tabstop' su valor\n"
+"\tpredeterminado de 8, el aspecto no será el deseado. Otros programas,\n"
+"\tasí como imprimir el sangrado presentarán un aspecto equivocado. Por\n"
+"\tello, recomendamos mantener 'tabstop' con valor de 8 en todo momento.\n"
+"\tEste es el valor estándar en otras aplicaciones.\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:269
-#, fuzzy
 msgid "CHANGING TABS"
-msgstr "CAMBIAR EL TEXTO"
+msgstr "CAMBIAR LA TABULACIÓN"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:275
 #, no-wrap
 msgid ""
-"You edit a file which was written with a tabstop of 3.  In Vim it looks ugly,\n"
+"You edit a file which was written with a tabstop of 3.  In Vim it looks "
+"ugly,\n"
 "because it uses the normal tabstop value of 8.  You can fix this by setting\n"
 "'tabstop' to 3.  But you have to do this every time you edit this file.\n"
 "   Vim can change the use of tabstops in your file.  First, set 'tabstop' to\n"
 "make the indents look good, then use the \":retab\" command: >\n"
 msgstr ""
+"Suponga que está editando una archivo escrito con una detención de tabulador\n"
+"(«tabstop») de 3. No tiene buen aspecto en Vim, ya que usa el valor de "
+"«tabstop» predeterminado de 8. Puede arreglar esto definiendo 'tabstop' con\n"
+"valor de 3, pero tendría que hacer esto cada vez que editase este archivo.\n"
+"   Vim puede cambiar el uso de las detenciones de tabulador en el archivo.\n"
+"Primero, defina 'tabstop' para que el sangrado encaje, y por último use la\n"
+"orden «:retab»: >"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:278
@@ -843,38 +903,67 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/usr_25.txt:286
 #, no-wrap
+#, fuzzy
 msgid ""
-"The \":retab\" command will change 'tabstop' to 8, while changing the text such\n"
-"that it looks the same.  It changes spans of white space into tabs and spaces\n"
-"for this.  You can now write the file.  Next time you edit it the indents will\n"
+"The \":retab\" command will change 'tabstop' to 8, while changing the text "
+"such\n"
+"that it looks the same.  It changes spans of white space into tabs and "
+"spaces\n"
+"for this.  You can now write the file.  Next time you edit it the indents "
+"will\n"
 "be right without setting an option.\n"
-"   Warning: When using \":retab\" on a program, it may change white space inside\n"
+"   Warning: When using \":retab\" on a program, it may change white space "
+"inside\n"
 "a string constant.  Therefore it's a good habit to use \"\\t\" instead of a\n"
 "real tab.\n"
 msgstr ""
+"La orden «:retab» cambia 'tabstop' a 8, a la vez que modifica el texto para\n"
+"que encaje. Para ello, modifica los tramos de espacio blanco a tabulados y\n"
+"espacios. Ahora puede escribir en el archivo. La siguiente vez que lo edite,\n"
+"la tabulación será la correcta sin necesidad de definir la opción.\n"
+"   Aviso: Si usa «:retab» sobre un programa, cabe que modifique el espacio\n"
+"en blanco dentro de una"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:289
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "*25.4*\tDealing with long lines\n"
-msgstr "*24.4*\tRepetir una inserción\n"
+msgstr "*25.4*\tTratar líneas largas\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:301
 #, no-wrap
 msgid ""
-"Sometimes you will be editing a file that is wider than the number of columns\n"
-"in the window.  When that occurs, Vim wraps the lines so that everything fits\n"
+"Sometimes you will be editing a file that is wider than the number of "
+"columns\n"
+"in the window.  When that occurs, Vim wraps the lines so that everything "
+"fits\n"
 "on the screen.\n"
-"   If you switch the 'wrap' option off, each line in the file shows up as one\n"
-"line on the screen.  Then the ends of the long lines disappear off the screen\n"
+"   If you switch the 'wrap' option off, each line in the file shows up as "
+"one\n"
+"line on the screen.  Then the ends of the long lines disappear off the "
+"screen\n"
 "to the right.\n"
-"   When you move the cursor to a character that can't be seen, Vim will scroll\n"
+"   When you move the cursor to a character that can't be seen, Vim will "
+"scroll\n"
 "the text to show it.  This is like moving a viewport over the text in the\n"
 "horizontal direction.\n"
-"   By default, Vim does not display a horizontal scrollbar in the GUI.  If you\n"
+"   By default, Vim does not display a horizontal scrollbar in the GUI.  If "
+"you\n"
 "want to enable one, use the following command: >\n"
 msgstr ""
+"A veces editará un archivo más ancho que el número de columnas en la "
+"ventana.\n"
+"Cuando esto ocurre, Vim justifica las líneas para encajar todo en la "
+"pantalla.\n"
+"   Si desactiva la opción 'wrap' cada línea en el archivo aparecerá como una\n"
+"sola línea en la pantalla, desapareciendo así la continuación de la línea en\n"
+"el margen derecho de la pantalla.\n"
+"   Cuando desplaza el cursor sobre en carácter que no se puede ver, Vim\n"
+"desplazará el texto para mostrarlo. Esto es como desplazar un punto de vista\n"
+"sobre el texto, en dirección horizontal.\n"
+"   Por omisión, Vim no muestra una barra de desplazamiento horizontal en la\n"
+"interfaz gráfica. Si desea activarla, use la siguiente orden: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:303
@@ -886,14 +975,19 @@ msgstr "\t:set guioptions+=b\n"
 #: original/TXT/usr_25.txt:305
 msgid "One horizontal scrollbar will appear at the bottom of the Vim window."
 msgstr ""
+"Una barra horizontal aparecerá en la parte inferior de la ventana de Vim."
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:309
 msgid ""
 "If you don't have a scrollbar or don't want to use it, use these commands to "
-"scroll the text.  The cursor will stay in the same place, but it's move back "
-"into the visible text if necessary."
+"scroll the text.  The cursor will stay in the same place, but it's move "
+"back into the visible text if necessary."
 msgstr ""
+"Si no tiene una barra de desplazamiento o no quiere usarla, puede usar estas\n"
+"órdenes para desplazar el texto. El cursor permanecerá en el mismo lugar, "
+"pero\n"
+"permitiendo también desplazarlo al texto visible, de ser necesario."
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:318
@@ -908,14 +1002,23 @@ msgid ""
 "\tzL\t\tscroll half a window width left\n"
 "\tzs\t\tscroll left to put the cursor at the start\n"
 msgstr ""
+"\tzh\t\tDesplazarse a la derecha.\n"
+"\t4zh\t\tCuatro caracteres a la derecha.\n"
+"\tzH\t\tDesplazarse a la derecha, la mitad del ancho de la\n"
+"\t\t\tventana.\n"
+"\tze\t\tA la derecha, llevando el cursor al final.\n"
+"\tzl\t\tA la izquierda.\n"
+"\t4zl\t\tCuatro caracteres a la izquierda.\n"
+"\tzL\t\tLa mitad del ancho de la ventana a la izquierda.\n"
+"\tzs\t\tA la izquierda, llevando el cursor al principio.\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:323
 msgid ""
-"Let's attempt to show this with one line of text.  The cursor is on the \"w"
-"\" of \"which\".  The \"current window\" above the line indicates the text "
-"that is currently visible.  The \"window\"s below the text indicate the text "
-"that is visible after the command left of it."
+"Let's attempt to show this with one line of text.  The cursor is on the \"w\" "
+"of \"which\".  The \"current window\" above the line indicates the text that is "
+"currently visible.  The \"window\"s below the text indicate the text that is "
+"visible after the command left of it."
 msgstr ""
 
 #. type: Plain text
@@ -1003,9 +1106,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:374
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t:set linebreak\n"
-msgstr "\t:set ignorecase\n"
+msgstr "\t:set linebreak\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:376
@@ -1063,7 +1166,7 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/usr_25.txt:406
 msgid "TURNING A PARAGRAPH INTO ONE LINE"
-msgstr ""
+msgstr "CONVERTIR UN PÁRRAFO EN UNA LÍNEA"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:410
@@ -1072,17 +1175,21 @@ msgid ""
 "should be a single line.  If your paragraphs are currently separated with "
 "empty lines, this is how you turn each paragraph into a single line: >"
 msgstr ""
+"Si desea importar texto desde un programa como MS-Word, cada párrafo debería "
+"ser una sola línea. De existir una separación entre los párrafos en forma de "
+"de líneas vacías, debe realizar lo siguiente para convertir cada párrafo en "
+"una sola línea: >"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:412
 #, no-wrap
 msgid "\t:g/./,/^$/join\n"
-msgstr ""
+msgstr "\t:g/./,/^$/join\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:414
 msgid "That looks complicated.  Let's break it up in pieces:"
-msgstr ""
+msgstr "Parece complicado. Vamos a dividirlo:"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:421
@@ -1165,9 +1272,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:455
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "*25.5*\tEditing tables\n"
-msgstr "*22.3*\tEncontrar un archivo\n"
+msgstr "*22.5*\tEditar tablas\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:457
@@ -1211,7 +1318,7 @@ msgstr ""
 #: original/TXT/usr_25.txt:473
 #, no-wrap
 msgid "\t/test 3\n"
-msgstr ""
+msgstr "\t/test 3\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:476
@@ -1250,9 +1357,8 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:493
-#, fuzzy
 msgid "COPYING A COLUMN"
-msgstr "USAR UN MULTIPLICADOR"
+msgstr "COPIAR UNA COLUMNA"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:506
@@ -1274,9 +1380,8 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:508
-#, fuzzy
 msgid "The result should be:"
-msgstr "El resultado es:"
+msgstr "El resultado debería ser:"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:512
@@ -1325,7 +1430,7 @@ msgstr ""
 #: original/TXT/usr_25.txt:530 original/TXT/usr_25.txt:540
 #, no-wrap
 msgid "\tinp\t0.693   0.534\t0.693 ~\n"
-msgstr ""
+msgstr "\tinp\t0.693   0.534\t0.693 ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:534
@@ -1343,7 +1448,7 @@ msgstr ""
 #: original/TXT/usr_25.txt:536
 #, no-wrap
 msgid "\tinpx0.693   0.534\t0.693 ~\n"
-msgstr ""
+msgstr "\tinpx0.693   0.534\t0.693 ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:538
@@ -1366,7 +1471,7 @@ msgstr ""
 #: original/TXT/usr_25.txt:546
 #, no-wrap
 msgid "\tinpx\t0.693   0.534\t0.693 ~\n"
-msgstr ""
+msgstr "\tinpx\t0.693   0.534\t0.693 ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:555
@@ -1386,7 +1491,7 @@ msgstr ""
 #: original/TXT/usr_25.txt:557 original/TXT/usr_25.txt:567
 #, no-wrap
 msgid "\tinp\t0\t0.534\t0.693 ~\n"
-msgstr ""
+msgstr "\tinp\t0\t0.534\t0.693 ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:561
@@ -1404,7 +1509,7 @@ msgstr ""
 #: original/TXT/usr_25.txt:563
 #, no-wrap
 msgid "\tinp\t0.78634\t0.693 ~\n"
-msgstr ""
+msgstr "\tinp\t0.78634\t0.693 ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:565
@@ -1427,9 +1532,9 @@ msgstr ""
 #: original/TXT/usr_25.txt:573
 #, no-wrap
 msgid "\tinp\t0.786\t0.534\t0.693 ~\n"
-msgstr ""
+msgstr "\tinp\t0.786\t0.534\t0.693 ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:577
 msgid "Next chapter: |usr_26.txt| Repeating"
-msgstr "Capítulo siguiente: |usr_26.txt| Repetir"
+msgstr "Siguiente capítulo: |usr_26.txt| Repetir"
