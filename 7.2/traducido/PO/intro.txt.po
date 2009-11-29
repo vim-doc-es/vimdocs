@@ -34,7 +34,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2009-11-26 17:29+0100\n"
-"PO-Revision-Date: 2009-11-26 22:31+0200\n"
+"PO-Revision-Date: 2009-11-29 18:07+0200\n"
 "Last-Translator: Omar Campagne <<ocampagne@gmail.com>>\n"
 "Language-Team: vim-doc-es\n"
 "Language: es\n"
@@ -42,7 +42,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.4.1\n"
+"X-Generator: Virtaal 0.5.0-rc1\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:2
@@ -169,7 +169,7 @@ msgstr "========================================================================
 #: original/TXT/intro.txt:20
 #, no-wrap
 msgid "1. Introduction\t\t\t\t\t\t*intro*\n"
-msgstr ""
+msgstr "1. Introducción\t\t\t\t\t\t*intro*\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:29
@@ -536,16 +536,31 @@ msgid ""
 "January 1st 1970.  It is used for a time-stamp check of the edited file and\n"
 "the swap file, which is not critical and should only cause warning messages.\n"
 msgstr ""
+"\t\t\t\t\t\t\t*year-2000* *Y2K*\n"
+"Debido a que Vim no usa fechas en la edición, no hay ningún problema con el\n"
+"año 2000 del que deba preocuparse. Vim sí usa tiempo en forma de segundos "
+"desde\n"
+"el uno de Enero de 1970, y se emplea como una revisión del sello temporal "
+"del\n"
+"archivo editado y el archivo de intercambio, lo cual no es crítico ya que "
+"sólo\n"
+"crearía mensajes de advertencia."
 
 #. type: Plain text
 #: original/TXT/intro.txt:167
 msgid ""
 "There might be a year 2038 problem, when the seconds don't fit in a 32 bit "
-"int anymore.  This depends on the compiler, libraries and operating system.  "
-"Specifically, time_t and the ctime() function are used.  And the time_t is "
+"int anymore.  This depends on the compiler, libraries and operating system. "
+" Specifically, time_t and the ctime() function are used.  And the time_t is "
 "stored in four bytes in the swap file.  But that's only used for printing a "
 "file date/time for recovery, it will never affect normal editing."
 msgstr ""
+"Puede existir un problema en el año 2038, cuando los segundos no quepan en "
+"32 bits. Esto depende del compilador, la bibliotecas y el sistema operativo. "
+"Se usan particularmente las funciones «time_t» y «ctime()». «time_t» se "
+"guarda en cuatro bytes en el archivo de intercambio. Esto último sólo se "
+"emplea para imprimir una fecha/tiempo para la recuperación y en ningún caso "
+"afectará a la edición normal."
 
 #. type: Plain text
 #: original/TXT/intro.txt:172
@@ -555,6 +570,11 @@ msgid ""
 "returned by the stat() system function.  If your system libraries are year "
 "2000 compliant, Vim is too."
 msgstr ""
+"La función de Vim «strftime()» usa directamente la función del sistema "
+"«strftime()». «localtime()» usa la función del sistema «time()». «getftime» "
+"usa el tiempo devuelto por la función del sistema «stat()». Si las "
+"bibliotecas de sus sistema son compatibles con el año 2000, Vim también lo "
+"es."
 
 #. type: Plain text
 #: original/TXT/intro.txt:175
@@ -562,17 +582,19 @@ msgid ""
 "The user may create scripts for Vim that use external commands.  These might "
 "introduce Y2K problems, but those are not really part of Vim itself."
 msgstr ""
+"El usuario puede crear scripts para Vim que usan órdenes externas. Esto "
+"puede introducir problemas Y2K, pero no son parte de Vim."
 
 #. type: Plain text
 #: original/TXT/intro.txt:178
 #, no-wrap
 msgid "3. Credits\t\t\t\t*credits* *author* *Bram* *Moolenaar*\n"
-msgstr ""
+msgstr "3. Creditos\t\t\t*credits* *créditos* *autor* *Bram* *Moolenaar*\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:180
 msgid "Most of Vim was written by Bram Moolenaar <Bram@vim.org>."
-msgstr ""
+msgstr "La mayor parte de Vim la creó Bram Moolenar <Bram@vim.org>"
 
 #. type: Plain text
 #: original/TXT/intro.txt:185
@@ -583,6 +605,11 @@ msgid ""
 "\tAlan P.W. Hewett\n"
 "\tMark Horton\n"
 msgstr ""
+"El origen de algunas partes de la documentación nacen de varios manuales\n"
+"de Vim, escritos por:\n"
+"\tW.N. Joy\n"
+"\tAlan P.W. Hewett\n"
+"\tMark Horton\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:189
@@ -591,12 +618,16 @@ msgid ""
 "worked on by the people mentioned here.  Other people helped by sending me "
 "patches, suggestions and giving feedback about what is good and bad in Vim."
 msgstr ""
+"El editor Vim está basado en Stevie, e incluye ideas procedentes de otro "
+"software, trabajadas por la gente aquí mencionada. Otra gente me ayudó "
+"mediante parches, sugerencias y opiniones acerca de lo bueno y malo de Vim."
 
 #. type: Plain text
 #: original/TXT/intro.txt:191
 msgid ""
-"Vim would never have become what it is now, without the help of these people!"
-msgstr ""
+"Vim would never have become what it is now, without the help of these "
+"people!"
+msgstr "¡Vim nunca sería lo que es ahora, de no ser por estas personas!"
 
 #. type: Plain text
 #: original/TXT/intro.txt:253
@@ -664,6 +695,68 @@ msgid ""
 "\t\t\t\tMS-DOS ports, autoconf\n"
 "\tStefan 'Sec' Zehl\tMaintainer of vim.org\n"
 msgstr ""
+"\tRon Aaron\t\tCambios en la interfaz gráfica de Win32\n"
+"\tZoltan Arpadffy\t\tAdaptación a VMS\n"
+"\tTony Andrews\t\tStevie\n"
+"\tGert van Antwerpen\tCambios en DJGPP para MS-DOS\n"
+"\tBerkeley DB(3)\t\tIdeas para la implementación de archivos de intercambio\n"
+"\tKeith Bostic\t\tNvi\n"
+"\tWalter Briscoe\t\tActualizaciones de Makefile updates, varios parches\n"
+"\tRalf Brown\t\tSBiblioteca PAWNO para MS-DOS\n"
+"\tRobert Colon\t\tApuntes valiosos\n"
+"\tMarcin Dalecki\t\tAdaptación de la interfaz gráfica GTK+,\n"
+"\t\t\t\ticonos de la barra de herramientas, gettext()\n"
+"\tKayhan Demirel\t\tMe mandó noticias desde Uganda\n"
+"\tChris & John Downey\txvi (ideas para a la versión multi-ventanas)\n"
+"\tHenk Elbers\t\tPrimera adaptación a VMS\n"
+"\tDaniel Elstner\t\tAdaptación a GTK+ 2\n"
+"\tEric Fischer\t\tAdaptación a Mac, 'cindent', y otras mejoras\n"
+"\tBenji Fisher\t\tDió respuesta a muchas preguntas de usuarios\n"
+"\tBill Foster\t\tAdaptación a la interfaz gráfica de Athena\n"
+"\tGoogle\t\t\tMe deja trabajar un día a la semana en Vim\n"
+"\tLoic Grenie\t\txvim (ideas para la versión multi-ventana)\n"
+"\tSven Guckes\t\tPromocionador de Vim y antiguo responsable de la página web\n"
+"\tDarren Hiebert\t\tExuberantes ctags\n"
+"\tJason Hildebrand\tAdapatación a GTK+ 2\n"
+"\tBruce Hunsaker\t\tMejoras en la adaptacion a VMS\n"
+"\tAndy Kahn\t\tCompatibilidad con Cscope, adaptación gráfica GTK+\n"
+"\tOezguer Kesim\t\tResponsable de las listas de correo de Vim\n"
+"\tAxel Kielhorn\t\tTrabajo en la adaptación a Macintosh\n"
+"\tSteve Kirkendall\tElvis\n"
+"\tRoger Knobbe\t\tAdaptación original a Windows NT\n"
+"\tSergey Laskavy\t\tAyuda de Vim desde Moscú\n"
+"\tFelix von Leitner\tResponsable anterior de las listas de correo de Vim\n"
+"\tDavid Leonard\t\tAdaptación de las extensiones Python a Unix\n"
+"\tAvner Lottem\t\tVentanas de edición derecha-izquierda\n"
+"\tFlemming Madsen\t\tCliente-servidor X11, características y parches\n"
+"\tMicrosoft\t\tMe entregó una copia de DevStudio para compilar Vim\n"
+"\tPaul Moore\t\tExtensiones a la interfaz Python, muchos parches\n"
+"\tKatsuhito Nagano\tTrabajo en versiones multi-byte\n"
+"\tSung-Hyun Nam\t\tTrabajo en versiones multi-byte\n"
+"\tVince Negri\t\tMejoras en la interfaz gráfica y consola de Win32\n"
+"\tSteve Oualline\t\tAutor del primer libro sobre Vim |frombook|\n"
+"\tDominique Pelle\t\tGestión de informes y arreglos en valgrind\n"
+"\tA.Politz\t\tMuchos informes de fallo y arreglos\n"
+"\tGeorge V. Reilly\tAdaptación a Win32, inicio de la interfaz gráfica en Win32\n"
+"\tStephen Riehm\t\tColector de informes de fallo\n"
+"\tStefan Roemer\t\tVarios parches y ayuda al usuario\n"
+"\tRalf Schandl\t\tAdaptación a IBM OS/390\n"
+"\tOlaf Seibert\t\tVersión DICE y BeBox, mejoras de expresiones regulares\n"
+"\tMortaza Shiran\t\tParches para Farsi\n"
+"\tPeter da Silva\t\ttermlib\n"
+"\tPaul Slootman\t\tAdaptación a OS/2\n"
+"\tHenry Spencer\t\tExpresiones regulares\n"
+"\tDany St-Amant\t\tAdaptación a Macintosh\n"
+"\tTim Thompson\t\tStevie\n"
+"\tG. R. (Fred) Walter\tStevie\n"
+"\tSven Verdoolaege\tInterfaz de Perl\n"
+"\tRobert Webb\t\tCompletado de la línea de órdenes, versiones de interfaz\n"
+"\t\t\t\tgráfica y muchos parches\n"
+"\tIngo Wilken\t\tInterfaz para Tcl\n"
+"\tMike Williams\t\tImpresión PostScript\n"
+"\tJuergen Weigert\t\tVersión Lattice, mejoras de AUX, UNIX y adaptación a\n"
+"\t\t\t\tMS-DOS, autoconf\n"
+"\tStefan 'Sec' Zehl\tResponsable de vim.org\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:257
@@ -672,6 +765,9 @@ msgid ""
 "The list is too long to mention them all here.  Vim would not be the same "
 "without the ideas from all these people: They keep Vim alive!"
 msgstr ""
+"Quisiera agradecer a toda la gente que envió informes de fallo y sugerencias. "
+"La lista es demasiado larga como para mencionarlos a todos aquí. Vim no sería "
+"lo mismo sin las ideas de todas esta gente: ¡Mantienen Vim vivo!"
 
 #. type: Plain text
 #: original/TXT/intro.txt:284
@@ -703,12 +799,38 @@ msgid ""
 "\tThe version used is 2.1.  It is still being developed.  Source code is\n"
 "\tfreely available.\n"
 msgstr ""
+"A lo largo de la documentación verá varias referencias a otras versiones de "
+"Vi:\n"
+"\t\t\t\t\t\t\t*Vi* *vi*\n"
+"Vi\t«El original». Sin mas detalle, esta es la versión de Vim que apareció\n"
+"\ten Sun Os 4.x. «:version» devuelve «Version 3.7, 6/7/85». A veces\n"
+"\tencontrara referencias a otras versiones. Sólo funciona bajo Unix. El\n"
+"\tcódigo sólo está disponible a través de una licencia. Puede encontrar\n"
+"\tmás información a cerca de Vi:\n"
+"\t\thttp://vi-editor.org (no funciona a día de hoy...)\n"
+"\t\t\t\t\t\t\t*Posix*\n"
+"Posix\tPertenece al estándar IEEE 1003.2. Parte 2:Consola y utilidades.\n"
+"\tGeneralmente conocido como «Posix»,  una descripción textual de cómo\n"
+"\tdebe funcionar Vi.\n"
+"\tVéase |posix-compliance|.\n"
+"\t\t\t\t\t\t\t*Nvi*\n"
+"Nvi\tEl «Nuevo» Vi. La versión de Vi que ofrece BSD 4.4 y FreeBSD.\n"
+"\tEs muy compatible con el editor original Vi, con unas cuantas\n"
+"\textensiones. La versión referida es 1.79. «:version» devuelve\n"
+"\t«Version 1.79 (10/23/96). No se ha publicado una nueva versión en\n"
+"\tlos últimos años, aunque existe una versión en desarrollo 1.81.\n"
+"\tEl código se distribuye libremente.\n"
+"\t\t\t\t\t\t\t*Elvis*\n"
+"Elvis\tOtro clon de Vi, hecho por Steve Kirkendall. Muy compacto pero\n"
+"\tmenos flexible que Vim.\n"
+"\tLa versión referida es 2.1. Aún está en desarrollo. El código se\n"
+"\tdistribuye libremente.\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:287
 #, no-wrap
 msgid "4. Notation\t\t\t\t\t\t*notation*\n"
-msgstr ""
+msgstr "4. Notación\t\t\t\t\t*notación* *leyenda*\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:291
@@ -717,6 +839,9 @@ msgid ""
 "literally is often highlighted with the Special group.  These are items in "
 "[], {} and <>, and CTRL-X."
 msgstr ""
+"Si usa el resaltado de sintaxis para leer esto, el texto que no se ha "
+"introducido literalmente será resaltado como perteneciente al grupo Special. "
+"Estos son los elementos [], {}, <> y CTRL-X."
 
 #. type: Plain text
 #: original/TXT/intro.txt:294
@@ -724,12 +849,15 @@ msgid ""
 "Note that Vim uses all possible characters in commands.  Sometimes the [], "
 "{} and <> are part of what you type, the context should make this clear."
 msgstr ""
+"Tenga en cuenta que Vim utiliza todos los caracteres posibles en las "
+"órdenes. El contexto aclarará cuando los signos [], () y <> son parte de "
+"texto literal."
 
 #. type: Plain text
 #: original/TXT/intro.txt:297
 #, no-wrap
 msgid "[]\t\tCharacters in square brackets are optional.\n"
-msgstr ""
+msgstr "[]\t\tLos caracteres entre corchetes son opcionales.\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:307
@@ -745,6 +873,15 @@ msgid ""
 "\t\tthe (partially) entered count is shown at the bottom of the\n"
 "\t\twindow.  You can use <Del> to erase the last digit (|N<Del>|).\n"
 msgstr ""
+"\t\t\t\t\t\t   *[número]* *[count]* *E489*\n"
+"\t\tUn número opcional que puede preceder a la orden para\n"
+"\t\tmultiplicar o cambiar la orden. Si no introduce un número, se\n"
+"\t\tusará uno. Tenga en cuenta que en este manual, el [número]\n"
+"\t\tno se menciona en las descripciones de las órdenes. La razón\n"
+"\t\tpara esto es facilitar la lectura de las órdenes. Si la opción\n"
+"\t\testa activada, el número (parcialmente) introducido se\n"
+"\t\tmostrará en la parte inferior de la ventana. Puede usar <Supr>\n"
+"\t\tpara borrar el último dígito (|N<Supr>|).\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:318
@@ -761,6 +898,16 @@ msgid ""
 "\t\tappend to the previous register contents.  Without the \"\"x\" or\n"
 "\t\twith \"\"\"\" the stored text is put into the unnamed register.\n"
 msgstr ""
+"\t\t\t\t\t\t\t *quotex*\n"
+"[\"x]\t\tUn destino opcional para un registro dónde guardar el texto.\n"
+"\t\tConsulte |registers|. La x es un único carácter entre 'a'\n"
+"\t\ty 'z', o 'A' y 'Z' o '\"', y en algunos casos (con la orden\n"
+"\t\t«put») entre '0' y '9', '%', '#', u otros. Las mayúsculas y\n"
+"\t\ty minúsculas designan el mismo registro, pero la minúscula se\n"
+"\t\tusa para borrar los contenidos anteriores del registro, y\n"
+"\t\tla mayúscula para añadir contenido. El texto se almacenará\n"
+"\t\ten un registro sin nombre en caso de no usar «\"x» o «\"\"».\n"
+"\t\t"
 
 #. type: Plain text
 #: original/TXT/intro.txt:324
@@ -772,6 +919,12 @@ msgid ""
 "\t\tdifferences between Vim and Vi are also given in curly braces\n"
 "\t\t(this will be clear from the context).\n"
 msgstr ""
+"\t\t\t\t\t\t\t*{}*\n"
+"{}\t\tLos corchetes indican que partes de una orden son\n"
+"\t\tobligatorios, pero que pueden tomar distintos valores. Las\n"
+"\t\tdiferencias entre Vim y Vi también se resaltan con corchetes\n"
+"\t\t(el contexto aclarará esto).\n"
+"\t\t"
 
 #. type: Plain text
 #: original/TXT/intro.txt:330
@@ -783,6 +936,11 @@ msgid ""
 "\t\tconcatenated.  For example, {a-zA-Z0-9} is any alphanumeric\n"
 "\t\tcharacter.\n"
 msgstr ""
+"\t\t\t\t\t\t\t*{car1-car2}*\n"
+"{car1-car2}\tUn único carácter entre el rango car1 y car2. Por ejemplo:\n"
+"\t\t{a-z} simboliza un carácter en minúscula. Puede encadenar\n"
+"\t\tvarios rangos. Por ejemplo, {a,zA-Z0-9} es cualquier carácter\n"
+"\t\talfanumérico.\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:360
@@ -818,6 +976,35 @@ msgid ""
 "\t\t  down.  Jumping to another buffer is possible if the current\n"
 "\t\t  buffer is not unloaded.\n"
 msgstr ""
+"\t\t\t\t\t\t*{moción}* *desplazamiento*\n"
+"{moción}\tUna orden que desplaza el cursor. Se explican\n"
+"\t\ten |motion.txt|. Ejemplos:\n"
+"\t\t\tw\t\tDesplazarse al inicio del siguiente\n"
+"\t\t\t\t\tpalabra.\n"
+"\t\t\tb\t\tAl inicio de la palabra actual.\n"
+"\t\t\t4j\t\tCuatro líneas hacia abajo.\n"
+"\t\t\t/El<CR>\t\tLa primera aparición de «El».\n"
+"\t\tEsto se usa después de una orden |operator| (operador) para\n"
+"\t\tdesplazarse sobre el texto en edición.\n"
+"\t\t- Si un elemento de moción incluye un número, y el operador\n"
+"\t\t  también incluye un número, ambos se multiplicarán. Por\n"
+"\t\t  ejemplo, «2d3w» borra 6 palabras.\n"
+"\t\t- Puede desplazarse en sentido inverso. Por ejemplo, «db» para\n"
+"\t\t  borrar hasta el inicio de la palabra.\n"
+"\t\t- El movimiento puede también ser una pulsación del ratón.\n"
+"\t\t  Por otra parte, no todas las terminales son compatibles con\n"
+"\t\t  el ratón.\n"
+"\t\t - Las órdenes Ex se pueden usar para desplazar el cursor,\n"
+"\t\t   lo cual permite invocar una función que realice alguna\n"
+"\t\t   moción compleja. La moción afecta al carácter, sin\n"
+"\t\t   importar que orden «:» use. Esto significa es\n"
+"\t\t   imposible incluir el último carácter de una línea sin\n"
+"\t\t   el retorno de línea (a menos que defina 'virtualedit').\n"
+"\t\t   Si la orden Ex cambia el texto antes de que se inicie el\n"
+"\t\t   operador, o salta a otro búfer, obtendrá resultados\n"
+"\t\t   impredecibles. Es posible cambiar el texto a\n"
+"\t\t   continuación. Puede saltar a otro búfer si el búfer\n"
+"\t\t   actual no está cargado.\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:368
@@ -831,6 +1018,13 @@ msgid ""
 "\t\ttext that is to be operated upon.\n"
 "\t\tSee |Visual-mode|.\n"
 msgstr ""
+"\t\t\t\t\t\t\t*{Visual}*\n"
+"{Visual}\tUn área de texto seleccionado. Se inicia con «v», «V», o\n"
+"\t\tla órden CTRL-V. Podrá usar cualquier tecla de moción para\n"
+"\t\tcambiar la ubicación del final del texto seleccionado.\n"
+"\t\tEsto se usa antes de una orden |operator| (operador) para\n"
+"\t\tresaltar el texto afectado.\n"
+"\t\tConsulte |Visual-mode|.\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:372
@@ -840,6 +1034,10 @@ msgid ""
 "<character>\tA special character from the table below, optionally with\n"
 "\t\tmodifiers, or a single ASCII character with modifiers.\n"
 msgstr ""
+"\t\t\t\t\t\t\t*<carácter>*\n"
+"<carácter>\tUn carácter especial de la tabla a continuación, que acepta\n"
+"\t\tmodificadores opciones, o un único carácter ASCII sin\n"
+"\t\tmodificadores.\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:375
@@ -848,6 +1046,8 @@ msgid ""
 "\t\t\t\t\t\t\t*'character'*\n"
 "'c'\t\tA single ASCII character.\n"
 msgstr ""
+"\t\t\t\t\t\t\t*'carácter'*\n"
+"'c'\t\tUn único carácter ASCII.\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:382
