@@ -130,7 +130,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2-245 (Castellano)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-11-25 02:05+0100\n"
-"PO-Revision-Date: 2009-11-25 15:14+0100\n"
+"PO-Revision-Date: 2009-11-29 16:34+0100\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es http://code.assembla.com/vim-doc-es\n"
 "MIME-Version: 1.0\n"
@@ -355,7 +355,6 @@ msgstr "    línea=%ld id=%d nombre=%s"
 msgid "E96: Can not diff more than %ld buffers"
 msgstr "E96: No se puede usar \"diff\" con más de %ld búfers"
 
-# (pofilter) numbers: checks whether numbers of various forms are consistent between the two strings
 #: diff.c:777
 msgid "E810: Cannot read or write temp files"
 msgstr "E810: No se puede leer o escribir en archivos temporales"
@@ -368,7 +367,6 @@ msgstr "E97: No se pudieron crear las \"diffs\" (diferencias)"
 msgid "Patch file"
 msgstr "Archivo de parches"
 
-# (pofilter) numbers: checks whether numbers of various forms are consistent between the two strings
 #: diff.c:1005
 msgid "E816: Cannot read patch output"
 msgstr "E816: No se pudo leer la salida del parche"
@@ -1427,7 +1425,6 @@ msgstr "E155: Signo desconocido: %s"
 msgid "E159: Missing sign number"
 msgstr "E159: Falta el número del signo"
 
-# (pofilter) numbers: checks whether numbers of various forms are consistent between the two strings
 #: ex_cmds.c:6887
 #, c-format
 msgid "E158: Invalid buffer name: %s"
@@ -2335,7 +2332,6 @@ msgstr "E212: No se pudo abrir el archivo para escribir en él"
 msgid "E667: Fsync failed"
 msgstr "E667: Falló \"fsync\" (sincronización de archivo)"
 
-# (pofilter) numbers: checks whether numbers of various forms are consistent between the two strings
 #: fileio.c:4444
 msgid "E512: Close failed"
 msgstr "E512: Falló el cierre del archivo"
@@ -4869,7 +4865,7 @@ msgid ""
 "         [not usable with this version of Vim]"
 msgstr ""
 "\n"
-"         [no se peude usar con esta versión de Vim]"
+"         [no se puede usar con esta versión de Vim]"
 
 #: memline.c:1772
 msgid ""
@@ -4889,11 +4885,11 @@ msgstr "         [no se puede abrir]"
 
 #: memline.c:1971
 msgid "E313: Cannot preserve, there is no swap file"
-msgstr "E313: No se pudo preservarlo, no existe un archivo de intercambio"
+msgstr "E313: No se pudo preservar, no existe un archivo de intercambio"
 
 #: memline.c:2024
 msgid "File preserved"
-msgstr "archivo preservado"
+msgstr "Archivo preservado"
 
 #: memline.c:2026
 msgid "E314: Preserve failed"
@@ -4907,7 +4903,7 @@ msgstr "E315: \"ml_get\": número de línea no válido: %ld"
 #: memline.c:2138
 #, c-format
 msgid "E316: ml_get: cannot find line %ld"
-msgstr "E316: \"ml_get\": no puedo encontrar la línea %ld"
+msgstr "E316: \"ml_get\": no se pudo encontrar la línea %ld"
 
 #: memline.c:2552
 msgid "E317: pointer block id wrong 3"
@@ -4956,7 +4952,6 @@ msgstr "E323: recuento de líneas erróneo en el bloque %ld"
 msgid "Stack size increases"
 msgstr "El tamaño de la pila aumenta"
 
-# (pofilter) numbers: checks whether numbers of various forms are consistent between the two strings
 #: memline.c:3492
 msgid "E317: pointer block id wrong 2"
 msgstr "E317: El id del bloque de punteros es incorrecto. 2"
@@ -6542,7 +6537,6 @@ msgstr "E757: Esto no parece un archivo de ortografía"
 msgid "E771: Old spell file, needs to be updated"
 msgstr "E771: Archivo de ortografía obsoleto, debe actualizarlo"
 
-# (pofilter) numbers: checks whether numbers of various forms are consistent between the two strings
 #: spell.c:2819
 msgid "E772: Spell file is for newer version of Vim"
 msgstr "E772: El archivo de ortografía es para una versión de Vim más reciente"
@@ -7229,7 +7223,6 @@ msgstr "archivo\n"
 msgid "E427: There is only one matching tag"
 msgstr "E427: Sólo coincide una etiqueta"
 
-# (pofilter) numbers: checks whether numbers of various forms are consistent between the two strings
 #: tag.c:955
 msgid "E428: Cannot go beyond last matching tag"
 msgstr "E428: No se pudo ir más allá de la última etiqueta coincidente"
