@@ -1,47 +1,20 @@
-# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es
-# Copyright (C) 2009
-# This file is distributed under the same license as the Vim 7.2 package.
-# Translators credits:
-# - Initial translation
-# Omar Campagne <ocampagne@gmail.com>, 2009
-# - Updates
-# TRADUCTOR <CORREO>, AÑO
-# Debido al formato (txt) y al máximo de 80 columnas que pueden tener
-# los textos de ayuda en Vim, así como el formato PO, por favor, leete los
-# apuntes concernientes a la edición de los archivos PO relativos a la
-# aplicación que desees usar.
-# También encontrarás información acerca del uso de herramientas gettext en el
-# proyecto de localización (l10n) de Vim.
-# - http://www.assembla.com/wiki/show/vim-doc-es
-# No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
-# este enlace puede ser de interés. A pesar de no formar parte, nuestra
-# intención es homologarnos con su terminología y uso de la lengua
-# en la medida de lo útil y posible.
-# - El proyecto de traducción de Debian al español
-# http://www.debian.org/intl/spanish/notas
-# La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
-# pero también puede servir de referencia para otros términos no técnicos.
-# No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
-# traducción sea comprensible independientemente de la nacionalidad del
-# usuario. Si crees que alguna traducción puede llevar a confusión, consulta
-# la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
-# - www.rae.es
-# - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages
-# Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
-# se puede consultar con un simple grep, pogrep o cargado en Virtaal.
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the Vim package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2009-12-03 19:17+0100\n"
-"PO-Revision-Date: 2009-12-03 19:17+0100\n"
-"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
-"Language-Team: vim-doc-es\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: ENCODING"
 
 #. type: Plain text
 #: original/TXT/intro.txt:18 original/TXT/intro.txt:75
@@ -130,7 +103,7 @@ msgstr ""
 #: original/TXT/usr_27.txt:559
 #, no-wrap
 msgid "==============================================================================\n"
-msgstr "==============================================================================\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:4 original/TXT/usr_01.txt:4
@@ -146,7 +119,7 @@ msgstr "========================================================================
 #: original/TXT/usr_27.txt:4
 #, no-wrap
 msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
-msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:353 original/TXT/usr_01.txt:185
@@ -161,37 +134,37 @@ msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
 #: original/TXT/usr_25.txt:578 original/TXT/usr_26.txt:221
 #: original/TXT/usr_27.txt:563
 msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
-msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_03.txt:261 original/TXT/usr_27.txt:110
 #, no-wrap
 msgid "\t:set ruler\n"
-msgstr "\t:set ruler\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_03.txt:362 original/TXT/usr_27.txt:35
 #, no-wrap
 msgid "\t:set ignorecase\n"
-msgstr "\t:set ignorecase\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_03.txt:367 original/TXT/usr_27.txt:42
 #, no-wrap
 msgid "\t:set noignorecase\n"
-msgstr "\t:set noignorecase\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:2
 #, no-wrap
 msgid "*usr_27.txt*\tFor Vim version 7.2.  Last change: 2007 Nov 10\n"
-msgstr "*usr_27.esx*\tPara Vim versión 7.2.  Último cambio: 9/11/2008\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:6
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t\t\t Search commands and patterns\n"
-msgstr "Siquiente capítulo: |usr_27.esx| Órdenes y patrones de búsqueda"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:11
@@ -203,7 +176,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:21
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|27.1|\tIgnoring case\n"
 "|27.2|\tWrapping around the file end\n"
@@ -215,34 +188,21 @@ msgid ""
 "|27.8|\tMatching a line break\n"
 "|27.9|\tExamples\n"
 msgstr ""
-"|usr_27.txt|  Search commands and patterns\n"
-"\t\t|27.1|\tIgnoring case\n"
-"\t\t|27.2|\tWrapping around the file end\n"
-"\t\t|27.3|\tOffsets\n"
-"\t\t|27.4|\tMatching multiple times\n"
-"\t\t|27.5|\tAlternatives\n"
-"\t\t|27.6|\tCharacter ranges\n"
-"\t\t|27.7|\tCharacter classes\n"
-"\t\t|27.8|\tMatching a line break\n"
-"\t\t|27.9|\tExamples\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:25
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "     Next chapter: |usr_28.txt|  Folding\n"
 " Previous chapter: |usr_26.txt|  Repeating\n"
 "Table of contents: |usr_toc.txt|\n"
 msgstr ""
-" Siguiente capítulo: |usr_26.txt|  Repetición\n"
-"  Capítulo anterior: |usr_24.esx|  Insertar con rapidez\n"
-"Tabla de contenidos: |usr_toc.esx|\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:28
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "*27.1*\tIgnoring case\n"
-msgstr "*10.8*\tCambiar mayúsculas y minúsculas\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:33
@@ -273,9 +233,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:47
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t:set ignorecase smartcase\n"
-msgstr "\t:set ignorecase\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:53
@@ -354,9 +314,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:90
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "*27.2*\tWrapping around the file end\n"
-msgstr "*07.7*\tCambiar el nombre de un archivo\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:98
@@ -399,13 +359,10 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:113
-#, fuzzy
 msgid ""
 "Vim will display the cursor position in the lower righthand corner of the "
 "window (in the status line if there is one).  It looks like this:"
 msgstr ""
-"Muestra siempre la posición actual en la esquina inferior derecha de la "
-"ventana de Vim."
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:115
@@ -422,21 +379,19 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:121
-#, fuzzy
 msgid "NOT WRAPPING"
-msgstr "LÍNEAS QUE NO DOBLAN"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:123
-#, fuzzy
 msgid "To turn off search wrapping, use the following command: >"
-msgstr "Use la siguiente orden para centrar un rango de líneas: >"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:125
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t:set nowrapscan\n"
-msgstr "\t:set nowrap\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:127
@@ -518,9 +473,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:163
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/const/e\n"
-msgstr "\t:close\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:167
@@ -533,9 +488,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:169
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/const/e+1\n"
-msgstr "\t:close\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:172
@@ -546,15 +501,14 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:174
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/const/e-1\n"
-msgstr "\t:close\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:176
-#, fuzzy
 msgid "moves the cursor to the \"s\" of \"const\"."
-msgstr "Mueva el cursor a la primera línea y pulse «J»:"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:181
@@ -580,9 +534,8 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:189
-#, fuzzy
 msgid "REPEATING"
-msgstr "BORRAR"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:192
@@ -593,11 +546,11 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:195
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "\t/that\n"
 "\t//e\n"
-msgstr "\t/el\\>\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:197
@@ -606,21 +559,20 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:199
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/that/e\n"
-msgstr "\t/el\\>\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:201
-#, fuzzy
 msgid "To repeat with the same offset: >"
-msgstr "Para ir en la otra dirección use: >"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:203
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/\n"
-msgstr "\t/\t\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:205
@@ -631,15 +583,14 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:207
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t//\n"
-msgstr "\t/\t\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:210
-#, fuzzy
 msgid "SEARCHING BACKWARDS"
-msgstr "BUSCAR PALABRAS COMPLETAS"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:213
@@ -650,9 +601,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:215
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t?const?e-2\n"
-msgstr "\t:close\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:218
@@ -663,9 +614,8 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:221
-#, fuzzy
 msgid "START POSITION"
-msgstr "BYTE POSICIÓN"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:224
@@ -703,9 +653,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:241
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "*27.4*\tMatching multiple times\n"
-msgstr "*03.4*\tEmparejar un paréntesis\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:244
@@ -716,9 +666,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:246
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/a*\n"
-msgstr "\t\"*p\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:253
@@ -881,9 +831,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:322
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "*27.5*\tAlternatives\n"
-msgstr "*21.5*\tVistas\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:324
@@ -904,12 +854,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:330
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/one\\|two\\|three\n"
 msgstr ""
-"\t/uno\n"
-"\t/dos\n"
-"\t/tres\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:333
@@ -966,9 +913,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:352
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "*27.6*\tCharacter ranges\n"
-msgstr "*06.6*\tMás información\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:355
@@ -1068,9 +1015,8 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:398
-#, fuzzy
 msgid "PREDEFINED RANGES"
-msgstr "MARCAS PREDEFINIDAS"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:401
@@ -1081,9 +1027,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:403
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/\\a\n"
-msgstr "\t\\K\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:406
@@ -1143,9 +1089,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:436
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/\\f\\+\n"
-msgstr "\t:%s/\\s\\+$//\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:442
@@ -1188,9 +1134,8 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:458
-#, fuzzy
 msgid "The character classes are:"
-msgstr "Los tres nombres que Vim usa son:"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:468
@@ -1209,9 +1154,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:471
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "*27.8*\tMatching a line break\n"
-msgstr "*24.4*\tRepetir una inserción\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:476
@@ -1225,9 +1170,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:478
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/the\\nword\n"
-msgstr "\t/el\\>\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:482
@@ -1239,9 +1184,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:484
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/the\\_sword\n"
-msgstr "\t/el\\>\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:486
@@ -1250,9 +1195,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:488
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/the\\_s\\+word\n"
-msgstr "\t/el\\>\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:491
@@ -1307,9 +1252,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:512
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "*27.9*\tExamples\n"
-msgstr "*24.9*\tDígrafos\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:515
@@ -1357,9 +1302,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:532
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/[0-9][A-Z]\\{3}[0-9]\\{3}\n"
-msgstr "\t/19[0-9][0-9]\\|20[0-9][0-9]\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:537
@@ -1372,9 +1317,8 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:540
-#, fuzzy
 msgid "FINDING AN IDENTIFIER"
-msgstr "ENCONTRAR CADA LÍNEA"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:544
@@ -1386,9 +1330,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:546
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/\\<\\h\\w*\\>\n"
-msgstr "\t/\\<el\\>\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:549
@@ -1418,6 +1362,5 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:562
-#, fuzzy
 msgid "Next chapter: |usr_28.txt| Folding"
-msgstr "Siguiente capítulo: |usr_26.txt| Repetición"
+msgstr ""
