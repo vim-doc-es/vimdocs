@@ -34,7 +34,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2009-11-26 17:29+0100\n"
-"PO-Revision-Date: 2009-11-30 01:07+0200\n"
+"PO-Revision-Date: 2009-12-03 17:39+0100\n"
 "Last-Translator: Omar Campagne <<ocampagne@gmail.com>>\n"
 "Language-Team: vim-doc-es\n"
 "MIME-Version: 1.0\n"
@@ -1123,22 +1123,22 @@ msgid ""
 "<xCSI>\t\tCSI when typed in the GUI\t\t*<xCSI>*\n"
 msgstr ""
 "<Nul>\t\tcero\t\t\tCTRL-@\t  0 (stored as 10) *<Nul>*\n"
-"<BS>\t\ttecla de troceso\t\tCTRL-H\t  8\t*backspace*\n"
-"<Tab>\t\ttab\t\t\tCTRL-I\t  9\t*tab* *Tab*\n"
+"<BS>\t\ttecla de retroceso\tCTRL-H\t  8\t*backspace*\n"
+"<Tab>\t\ttabulado\t\t\tCTRL-I\t  9\t*tab* *Tab*\n"
 "\t\t\t\t\t\t\t*linefeed*\n"
-"<NL>\t\tlinefeed\t\tCTRL-J\t 10 (used for <Nul>)\n"
+"<NL>\t\tavanzar una línea\t\tCTRL-J\t 10 (used for <Nul>)\n"
 "<FF>\t\tformfeed\t\tCTRL-L\t 12\t*formfeed*\n"
-"<CR>\t\tcarriage return\t\tCTRL-M\t 13\t*carriage-return*\n"
-"<Return>\tsame as <CR>\t\t\t\t*<Return>*\n"
-"<Enter>\t\tsame as <CR>\t\t\t\t*<Enter>*\n"
+"<CR>\t\tretorno de línea\t\tCTRL-M\t 13\t*carriage-return*\n"
+"<Return>\tidéntico a <CR>\t\t\t\t*<Return>*\n"
+"<Enter>\t\tidéntico a <CR>\t\t\t\t*<Enter>*\n"
 "<Esc>\t\tescape\t\t\tCTRL-[\t 27\t*escape* *<Esc>*\n"
-"<Space>\t\tspace\t\t\t\t 32\t*space*\n"
-"<lt>\t\tless-than\t\t<\t 60\t*<lt>*\n"
-"<Bslash>\tbackslash\t\t\\\t 92\t*backslash* *<Bslash>*\n"
-"<Bar>\t\tvertical bar\t\t|\t124\t*<Bar>*\n"
-"<Del>\t\tdelete\t\t\t\t127\n"
-"<CSI>\t\tcommand sequence intro  ALT-Esc 155\t*<CSI>*\n"
-"<xCSI>\t\tCSI when typed in the GUI\t\t*<xCSI>*\n"
+"<Space>\t\tespacio\t\t\t\t 32\t*space*\n"
+"<lt>\t\tmenos que\t\t<\t 60\t*<lt>*\n"
+"<Bslash>\t\tbarra inversa\t\\\t 92\t*backslash* *<Bslash>*\n"
+"<Bar>\t\tbarra vertical\t\t|\t124\t*<Bar>*\n"
+"<Del>\t\tborrar\t\t\t\t127\n"
+"<CSI>\t\tsecuencia de órdenes intro ALT-Esc 155\t*<CSI>*\n"
+"<xCSI>\t\tCSI introducido en la interfaz gráfica\t*<xCSI>*\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:418
@@ -1287,7 +1287,7 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/intro.txt:517
 msgid "Vim has six BASIC modes:"
-msgstr ""
+msgstr "Vim posee seis modos BÁSICOS:"
 
 #. type: Plain text
 #: original/TXT/intro.txt:523
@@ -1299,6 +1299,11 @@ msgid ""
 "\t\t\tmode (unless you have set the 'insertmode' option,\n"
 "\t\t\tsee below).  This is also known as command mode.\n"
 msgstr ""
+"\t\t\t\t\t*Normal* *modo-Normal* *Normal-mode* *command-mode*\n"
+"Modo Normal\t\tEn modo normal puede introducir todas las órdenes\n"
+"\t\t\tnormales de un editor. Es el modo de arranque predeterminado\n"
+"\t\t\t(a menos que defina la opción 'insertmode', véase más abajo)\n"
+"\t\t\tTambién se conoce como el modo de órdenes.\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:530
@@ -1311,6 +1316,12 @@ msgid ""
 "\t\t\tIf the 'showmode' option is on \"-- VISUAL --\" is shown\n"
 "\t\t\tat the bottom of the window.\n"
 msgstr ""
+"Modo Visual\t\tEs similar al modo Normal, pero las órdenes de\n"
+"\t\t\tmovimiento extienden un área resaltada. Cuando use una orden\n"
+"\t\t\tque no sea de moción, éste afectará a toda el área resaltada.\n"
+"\t\t\tConsulte |Visual-mode|.\n"
+"\t\t\tSi la opción 'showmode' está activada, verá «-- VISUAL --» en\n"
+"\t\t\tla parte inferior de la ventana.\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:536
@@ -1322,6 +1333,11 @@ msgid ""
 "\t\t\tIf the 'showmode' option is on \"-- SELECT --\" is shown\n"
 "\t\t\tat the bottom of the window.\n"
 msgstr ""
+"Modo seleccionar\t\tSimilar al modo de selección de MS-Windows.\n"
+"\t\t\tTeclear un carácter imprimible borra la selección e inicia\n"
+"\t\t\tel modo Insertar. Consulte |Select-mode|.\n"
+"\t\t\tSi la opción 'showmode' esta activada, verá «-- SELECT --» en\n"
+"\t\t\tla parte inferior de la ventana.\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:541
@@ -1332,6 +1348,10 @@ msgid ""
 "\t\t\tIf the 'showmode' option is on \"-- INSERT --\" is shown\n"
 "\t\t\tat the bottom of the window.\n"
 msgstr ""
+"Modo Insertar\t\tEn el modo Insertar, el texto que teclee se introducirá\n"
+"\t\t\ten el búfer. Consulte |Insert-mode|.\n"
+"\t\t\tSi la opción 'showmode' esta activada, verá «-- INSERT --» en\n"
+"\t\t\tla parte inferior de la ventana.\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:547
@@ -1343,6 +1363,11 @@ msgid ""
 "\t\t\tsearch commands, \"?\" and \"/\", and the filter command,\n"
 "\t\t\t\"!\".  |Cmdline-mode|\n"
 msgstr ""
+"Modo Línea de órdenes\tEn este modo (también llamado «Cmdline mode»)\n"
+"Cmdline mode\t\tpuede introducir una línea de texto en la parte inferior\n"
+"\t\t\tde la ventana. Ésto es para las órdenes Ex, «:», las órdenes de\n"
+"\t\t\tbúsqueda de patrón, «?» y «/», y la orden de filtrado,\n"
+"\t\t\t«!». |Cmdline-mode|\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:551
@@ -1352,6 +1377,9 @@ msgid ""
 "\t\t\tyou remain in Ex mode.  Very limited editing of the\n"
 "\t\t\tcommand line.  |Ex-mode|\n"
 msgstr ""
+"Modo Ex\t\t\tEs similar al modo Línea de órdenes, pero permanecerá en\n"
+"\t\t\tmodo Ex después de ejecutar la orden. Ofrece una edición limitada\n"
+"\t\t\tde la línea de órdenes. |Ex-mode|\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:553
