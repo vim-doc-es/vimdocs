@@ -1,0 +1,606 @@
+# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es
+# Copyright (C) 2009
+# This file is distributed under the same license as the Vim 7.2 package.
+# Translators credits:
+# - Initial translation
+# Omar Campagne <ocampagne@gmail.com>, 2009
+# - Updates
+# TRADUCTOR <CORREO>, AÑO
+# Debido al formato (txt) y al máximo de 80 columnas que pueden tener
+# los textos de ayuda en Vim, así como el formato PO, por favor, leete los
+# apuntes concernientes a la edición de los archivos PO relativos a la
+# aplicación que desees usar.
+# También encontrarás información acerca del uso de herramientas gettext en el
+# proyecto de localización (l10n) de Vim.
+# - http://www.assembla.com/wiki/show/vim-doc-es
+# No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
+# este enlace puede ser de interés. A pesar de no formar parte, nuestra
+# intención es homologarnos con su terminología y uso de la lengua
+# en la medida de lo útil y posible.
+# - El proyecto de traducción de Debian al español
+# http://www.debian.org/intl/spanish/notas
+# La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
+# pero también puede servir de referencia para otros términos no técnicos.
+# No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
+# traducción sea comprensible independientemente de la nacionalidad del
+# usuario. Si crees que alguna traducción puede llevar a confusión, consulta
+# la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
+# - www.rae.es
+# - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages
+# Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
+# se puede consultar con un simple grep, pogrep o cargado en Virtaal.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Vim 7.2\n"
+"Report-Msgid-Bugs-To: vim@bugs.org\n"
+"POT-Creation-Date: 2009-12-03 17:15+0100\n"
+"PO-Revision-Date: 2009-12-03 17:15+0100\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: vim-doc-es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:18 original/TXT/intro.txt:75
+#: original/TXT/intro.txt:176 original/TXT/intro.txt:285
+#: original/TXT/intro.txt:513 original/TXT/intro.txt:591
+#: original/TXT/intro.txt:684 original/TXT/intro.txt:812
+#: original/TXT/intro.txt:875 original/TXT/usr_toc.txt:7
+#: original/TXT/usr_toc.txt:58 original/TXT/usr_toc.txt:172
+#: original/TXT/usr_toc.txt:280 original/TXT/usr_toc.txt:339
+#: original/TXT/usr_toc.txt:351 original/TXT/usr_01.txt:19
+#: original/TXT/usr_01.txt:50 original/TXT/usr_01.txt:100
+#: original/TXT/usr_01.txt:181 original/TXT/usr_02.txt:25
+#: original/TXT/usr_02.txt:69 original/TXT/usr_02.txt:130
+#: original/TXT/usr_02.txt:179 original/TXT/usr_02.txt:239
+#: original/TXT/usr_02.txt:307 original/TXT/usr_02.txt:369
+#: original/TXT/usr_02.txt:406 original/TXT/usr_02.txt:560
+#: original/TXT/usr_03.txt:28 original/TXT/usr_03.txt:74
+#: original/TXT/usr_03.txt:101 original/TXT/usr_03.txt:147
+#: original/TXT/usr_03.txt:172 original/TXT/usr_03.txt:223
+#: original/TXT/usr_03.txt:265 original/TXT/usr_03.txt:320
+#: original/TXT/usr_03.txt:491 original/TXT/usr_03.txt:552
+#: original/TXT/usr_03.txt:650 original/TXT/usr_04.txt:27
+#: original/TXT/usr_04.txt:74 original/TXT/usr_04.txt:160
+#: original/TXT/usr_04.txt:194 original/TXT/usr_04.txt:269
+#: original/TXT/usr_04.txt:324 original/TXT/usr_04.txt:360
+#: original/TXT/usr_04.txt:390 original/TXT/usr_04.txt:446
+#: original/TXT/usr_04.txt:469 original/TXT/usr_04.txt:510
+#: original/TXT/usr_05.txt:24 original/TXT/usr_05.txt:63
+#: original/TXT/usr_05.txt:219 original/TXT/usr_05.txt:266
+#: original/TXT/usr_05.txt:418 original/TXT/usr_05.txt:467
+#: original/TXT/usr_05.txt:506 original/TXT/usr_05.txt:621
+#: original/TXT/usr_06.txt:24 original/TXT/usr_06.txt:50
+#: original/TXT/usr_06.txt:135 original/TXT/usr_06.txt:189
+#: original/TXT/usr_06.txt:266 original/TXT/usr_06.txt:272
+#: original/TXT/usr_07.txt:24 original/TXT/usr_07.txt:63
+#: original/TXT/usr_07.txt:179 original/TXT/usr_07.txt:266
+#: original/TXT/usr_07.txt:316 original/TXT/usr_07.txt:404
+#: original/TXT/usr_07.txt:444 original/TXT/usr_07.txt:475
+#: original/TXT/usr_08.txt:26 original/TXT/usr_08.txt:82
+#: original/TXT/usr_08.txt:109 original/TXT/usr_08.txt:161
+#: original/TXT/usr_08.txt:215 original/TXT/usr_08.txt:278
+#: original/TXT/usr_08.txt:337 original/TXT/usr_08.txt:477
+#: original/TXT/usr_08.txt:509 original/TXT/usr_08.txt:597
+#: original/TXT/usr_09.txt:21 original/TXT/usr_09.txt:124
+#: original/TXT/usr_09.txt:175 original/TXT/usr_09.txt:259
+#: original/TXT/usr_09.txt:285 original/TXT/usr_10.txt:27
+#: original/TXT/usr_10.txt:144 original/TXT/usr_10.txt:221
+#: original/TXT/usr_10.txt:342 original/TXT/usr_10.txt:378
+#: original/TXT/usr_10.txt:547 original/TXT/usr_10.txt:621
+#: original/TXT/usr_10.txt:667 original/TXT/usr_10.txt:692
+#: original/TXT/usr_10.txt:820 original/TXT/usr_11.txt:22
+#: original/TXT/usr_11.txt:66 original/TXT/usr_11.txt:126
+#: original/TXT/usr_11.txt:268 original/TXT/usr_11.txt:283
+#: original/TXT/usr_12.txt:25 original/TXT/usr_12.txt:90
+#: original/TXT/usr_12.txt:131 original/TXT/usr_12.txt:177
+#: original/TXT/usr_12.txt:202 original/TXT/usr_12.txt:231
+#: original/TXT/usr_12.txt:281 original/TXT/usr_12.txt:309
+#: original/TXT/usr_12.txt:354 original/TXT/usr_20.txt:22
+#: original/TXT/usr_20.txt:113 original/TXT/usr_20.txt:158
+#: original/TXT/usr_20.txt:285 original/TXT/usr_20.txt:327
+#: original/TXT/usr_20.txt:380 original/TXT/usr_21.txt:24
+#: original/TXT/usr_21.txt:47 original/TXT/usr_21.txt:87
+#: original/TXT/usr_21.txt:236 original/TXT/usr_21.txt:385
+#: original/TXT/usr_21.txt:438 original/TXT/usr_21.txt:495
+#: original/TXT/usr_22.txt:22 original/TXT/usr_22.txt:148
+#: original/TXT/usr_22.txt:213 original/TXT/usr_22.txt:272
+#: original/TXT/usr_22.txt:396 original/TXT/usr_23.txt:23
+#: original/TXT/usr_23.txt:114 original/TXT/usr_23.txt:156
+#: original/TXT/usr_23.txt:238 original/TXT/usr_23.txt:324
+#: original/TXT/usr_23.txt:339 original/TXT/usr_24.txt:28
+#: original/TXT/usr_24.txt:96 original/TXT/usr_24.txt:119
+#: original/TXT/usr_24.txt:268 original/TXT/usr_24.txt:305
+#: original/TXT/usr_24.txt:336 original/TXT/usr_24.txt:369
+#: original/TXT/usr_24.txt:493 original/TXT/usr_24.txt:537
+#: original/TXT/usr_24.txt:583 original/TXT/usr_24.txt:602
+#: original/TXT/usr_25.txt:22 original/TXT/usr_25.txt:132
+#: original/TXT/usr_25.txt:210 original/TXT/usr_25.txt:287
+#: original/TXT/usr_25.txt:453 original/TXT/usr_25.txt:574
+#: original/TXT/usr_26.txt:21 original/TXT/usr_26.txt:46
+#: original/TXT/usr_26.txt:103 original/TXT/usr_26.txt:136
+#: original/TXT/usr_26.txt:217
+#, no-wrap
+msgid "==============================================================================\n"
+msgstr "==============================================================================\n"
+
+#. type: Plain text
+#: original/TXT/usr_toc.txt:4 original/TXT/usr_01.txt:4
+#: original/TXT/usr_02.txt:4 original/TXT/usr_03.txt:4
+#: original/TXT/usr_04.txt:4 original/TXT/usr_05.txt:4
+#: original/TXT/usr_06.txt:4 original/TXT/usr_07.txt:4
+#: original/TXT/usr_08.txt:4 original/TXT/usr_09.txt:4
+#: original/TXT/usr_10.txt:4 original/TXT/usr_11.txt:4
+#: original/TXT/usr_12.txt:4 original/TXT/usr_20.txt:4
+#: original/TXT/usr_21.txt:4 original/TXT/usr_22.txt:4
+#: original/TXT/usr_23.txt:4 original/TXT/usr_24.txt:4
+#: original/TXT/usr_25.txt:4 original/TXT/usr_26.txt:4
+#, no-wrap
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
+msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
+
+#. type: Plain text
+#: original/TXT/usr_toc.txt:353 original/TXT/usr_01.txt:185
+#: original/TXT/usr_02.txt:564 original/TXT/usr_03.txt:654
+#: original/TXT/usr_04.txt:514 original/TXT/usr_05.txt:625
+#: original/TXT/usr_06.txt:276 original/TXT/usr_07.txt:479
+#: original/TXT/usr_08.txt:601 original/TXT/usr_09.txt:289
+#: original/TXT/usr_10.txt:824 original/TXT/usr_11.txt:287
+#: original/TXT/usr_12.txt:358 original/TXT/usr_20.txt:384
+#: original/TXT/usr_21.txt:499 original/TXT/usr_22.txt:400
+#: original/TXT/usr_23.txt:343 original/TXT/usr_24.txt:606
+#: original/TXT/usr_25.txt:578 original/TXT/usr_26.txt:221
+msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+
+#. type: Plain text
+#: original/TXT/usr_21.txt:486 original/TXT/usr_26.txt:85
+msgid "Another example:"
+msgstr "Otro ejemplo:"
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:2
+#, no-wrap
+msgid "*usr_26.txt*\tFor Vim version 7.2.  Last change: 2006 Apr 24\n"
+msgstr "*usr_26.esx*\tPara Vim versión 7.2. Último cambio: 24/5/2006\n"
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:6
+#, no-wrap
+msgid "\t\t\t\t  Repeating\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:11
+msgid ""
+"An editing task is hardly ever unstructured.  A change often needs to be "
+"made several times.  In this chapter a number of useful ways to repeat a "
+"change will be explained."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:16
+#, fuzzy, no-wrap
+msgid ""
+"|26.1|\tRepeating with Visual mode\n"
+"|26.2|\tAdd and subtract\n"
+"|26.3|\tMaking a change in many files\n"
+"|26.4|\tUsing Vim from a shell script\n"
+msgstr ""
+"|usr_26.txt|  Repeating\n"
+"\t\t|26.1|\tRepeating with Visual mode\n"
+"\t\t|26.2|\tAdd and subtract\n"
+"\t\t|26.3|\tMaking a change in many files\n"
+"\t\t|26.4|\tUsing Vim from a shell script\n"
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:20
+#, fuzzy, no-wrap
+msgid ""
+"     Next chapter: |usr_27.txt|  Search commands and patterns\n"
+" Previous chapter: |usr_25.txt|  Editing formatted text\n"
+"Table of contents: |usr_toc.txt|\n"
+msgstr ""
+" Siguiente capítulo: |usr_27.txt|  Editar texto con formato\n"
+"  Capitulo anterior: |usr_24.esx|  Editar otros archivos\n"
+"Tabla de contenidos: |usr_toc.esx|\n"
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:23
+#, fuzzy, no-wrap
+msgid "*26.1*\tRepeating with Visual mode\n"
+msgstr "*24.4*\tRepetir una inserción\n"
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:31
+#, no-wrap
+msgid ""
+"Visual mode is very handy for making a change in any sequence of lines.  You\n"
+"can see the highlighted text, thus you can check if the correct lines are\n"
+"changed.  But making the selection takes some typing.  The \"gv\" command\n"
+"selects the same area again.  This allows you to do another operation on the\n"
+"same text.\n"
+"   Suppose you have some lines where you want to change \"2001\" to \"2002\" and\n"
+"\"2000\" to \"2001\":\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:37
+#, no-wrap
+msgid ""
+"\tThe financial results for 2001 are better ~\n"
+"\tthan for 2000.  The income increased by 50%, ~\n"
+"\teven though 2001 had more rain than 2000. ~\n"
+"\t\t\t2000\t\t2001 ~\n"
+"\tincome\t\t45,403\t\t66,234 ~\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:39
+msgid ""
+"First change \"2001\" to \"2002\".  Select the lines in Visual mode, and "
+"use: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:41
+#, no-wrap
+msgid "\t:s/2001/2002/g\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:45
+#, no-wrap
+msgid ""
+"Now use \"gv\" to reselect the same text.  It doesn't matter where the cursor\n"
+"is.  Then use \":s/2000/2001/g\" to make the second change.\n"
+"   Obviously, you can repeat these changes several times.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:48
+#, no-wrap
+msgid "*26.2*\tAdd and subtract\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:54
+#, no-wrap
+msgid ""
+"When repeating the change of one number into another, you often have a fixed\n"
+"offset.  In the example above, one was added to each year.  Instead of typing\n"
+"a substitute command for each year that appears, the CTRL-A command can be\n"
+"used.\n"
+"   Using the same text as above, search for a year: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:56
+#, no-wrap
+msgid "\t/19[0-9][0-9]\\|20[0-9][0-9]\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:58
+msgid "Now press CTRL-A.  The year will be increased by one:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:64
+#, no-wrap
+msgid ""
+"\tThe financial results for 2002 are better ~\n"
+"\tthan for 2000.  The income increased by 50%, ~\n"
+"\teven though 2001 had more rain than 2000. ~\n"
+"\t\t\t2000\t\t2001 ~\n"
+"\tincome\t\t45,403\t\t66,234 ~\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:69
+#, no-wrap
+msgid ""
+"Use \"n\" to find the next year, and press \".\" to repeat the CTRL-A (\".\" is a\n"
+"bit quicker to type).  Repeat \"n\" and \".\" for all years that appear.\n"
+"   Hint: set the 'hlsearch' option to see the matches you are going to change,\n"
+"then you can look ahead and do it faster.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:72
+msgid ""
+"Adding more than one can be done by prepending the number to CTRL-A.  "
+"Suppose you have this list:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:76
+#, no-wrap
+msgid ""
+"\t1.  item four ~\n"
+"\t2.  item five ~\n"
+"\t3.  item six ~\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:78
+#, fuzzy
+msgid "Move the cursor to \"1.\" and type: >"
+msgstr "Mueva el cursor a la segunda línea y escriba: >"
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:80
+#, fuzzy, no-wrap
+msgid "\t3 CTRL-A\n"
+msgstr "\ti CTRL-A\n"
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:83
+msgid ""
+"The \"1.\" will change to \"4.\".  Again, you can use \".\" to repeat this "
+"on the other numbers."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:88
+#, no-wrap
+msgid ""
+"\t006\tfoo bar ~\n"
+"\t007\tfoo bar ~\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:90
+msgid "Using CTRL-A on these numbers results in:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:93
+#, no-wrap
+msgid ""
+"\t007\tfoo bar ~\n"
+"\t010\tfoo bar ~\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:98
+msgid ""
+"7 plus one is 10? What happened here is that Vim recognized \"007\" as an "
+"octal number, because there is a leading zero.  This notation is often used "
+"in C programs.  If you do not want a number with leading zeros to be handled "
+"as octal, use this: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:100
+#, fuzzy, no-wrap
+msgid "\t:set nrformats-=octal\n"
+msgstr "\t:set fileformats+=mac\n"
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:102
+msgid "The CTRL-X command does subtraction in a similar way."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:105
+#, fuzzy, no-wrap
+msgid "*26.3*\tMaking a change in many files\n"
+msgstr "*22.3*\tEncontrar un archivo\n"
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:110
+#, no-wrap
+msgid ""
+"Suppose you have a variable called \"x_cnt\" and you want to change it to\n"
+"\"x_counter\".  This variable is used in several of your C files.  You need to\n"
+"change it in all files.  This is how you do it.\n"
+"   Put all the relevant files in the argument list: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:115
+#, no-wrap
+msgid ""
+"\t:args *.c\n"
+"<\n"
+"This finds all C files and edits the first one.  Now you can perform a\n"
+"substitution command on all these files: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:117
+#, no-wrap
+msgid "\t:argdo %s/\\<x_cnt\\>/x_counter/ge | update\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:130
+#, no-wrap
+msgid ""
+"The \":argdo\" command takes an argument that is another command.  That command\n"
+"will be executed on all files in the argument list.\n"
+"   The \"%s\" substitute command that follows works on all lines.  It finds the\n"
+"word \"x_cnt\" with \"\\<x_cnt\\>\".  The \"\\<\" and \"\\>\" are used to match the whole\n"
+"word only, and not \"px_cnt\" or \"x_cnt2\".\n"
+"   The flags for the substitute command include \"g\" to replace all occurrences\n"
+"of \"x_cnt\" in the same line.  The \"e\" flag is used to avoid an error message\n"
+"when \"x_cnt\" does not appear in the file.  Otherwise \":argdo\" would abort on\n"
+"the first file where \"x_cnt\" was not found.\n"
+"   The \"|\" separates two commands.  The following \"update\" command writes the\n"
+"file only if it was changed.  If no \"x_cnt\" was changed to \"x_counter\" nothing\n"
+"happens.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:135
+msgid ""
+"There is also the \":windo\" command, which executes its argument in all "
+"windows.  And \":bufdo\" executes its argument on all buffers.  Be careful "
+"with this, because you might have more files in the buffer list than you "
+"think.  Check this with the \":buffers\" command (or \":ls\")."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:138
+#, no-wrap
+msgid "*26.4*\tUsing Vim from a shell script\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:149
+#, no-wrap
+msgid ""
+"Suppose you have a lot of files in which you need to change the string\n"
+"\"-person-\" to \"Jones\" and then print it.  How do you do that?  One way is to\n"
+"do a lot of typing.  The other is to write a shell script to do the work.\n"
+"   The Vim editor does a superb job as a screen-oriented editor when using\n"
+"Normal mode commands.  For batch processing, however, Normal mode commands do\n"
+"not result in clear, commented command files; so here you will use Ex mode\n"
+"instead.  This mode gives you a nice command-line interface that makes it easy\n"
+"to put into a batch file.  (\"Ex command\" is just another name for a\n"
+"command-line (:) command.)\n"
+"   The Ex mode commands you need are as follows: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:153
+#, no-wrap
+msgid ""
+"\t%s/-person-/Jones/g\n"
+"\twrite tempfile\n"
+"\tquit\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:156
+msgid ""
+"You put these commands in the file \"change.vim\".  Now to run the editor in "
+"batch mode, use this shell script: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:161
+#, no-wrap
+msgid ""
+"\tfor file in *.txt; do\n"
+"\t  vim -e -s $file < change.vim\n"
+"\t  lpr -r tempfile\n"
+"\tdone\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:170
+#, no-wrap
+msgid ""
+"The for-done loop is a shell construct to repeat the two lines in between,\n"
+"while the $file variable is set to a different file name each time.\n"
+"   The second line runs the Vim editor in Ex mode (-e argument) on the file\n"
+"$file and reads commands from the file \"change.vim\".  The -s argument tells\n"
+"Vim to operate in silent mode.  In other words, do not keep outputting the\n"
+":prompt, or any other prompt for that matter.\n"
+"   The \"lpr -r tempfile\" command prints the resulting \"tempfile\" and deletes\n"
+"it (that's what the -r argument does).\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:173
+#, fuzzy
+msgid "READING FROM STDIN"
+msgstr "LEER LA SALIDA DE LA ORDEN"
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:177
+msgid ""
+"Vim can read text on standard input.  Since the normal way is to read "
+"commands there, you must tell Vim to read text instead.  This is done by "
+"passing the \"-\" argument in place of a file.  Example: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:179
+#, fuzzy, no-wrap
+msgid "\tls | vim -\n"
+msgstr "\tvim -r\n"
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:184
+#, no-wrap
+msgid ""
+"This allows you to edit the output of the \"ls\" command, without first saving\n"
+"the text in a file.\n"
+"   If you use the standard input to read text from, you can use the \"-S\"\n"
+"argument to read a script: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:186
+#, no-wrap
+msgid "\tproducer | vim -S change.vim -\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:189
+msgid "NORMAL MODE SCRIPTS"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:192
+#, fuzzy
+msgid ""
+"If you really want to use Normal mode commands in a script, you can use it "
+"like this: >"
+msgstr ""
+"Si realmente quiere prohibir los cambios en un archivo, haga lo siguiente: >"
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:200
+#, no-wrap
+msgid ""
+"\tvim -s script file.txt ...\n"
+"<\n"
+"\tNote:\n"
+"\t\"-s\" has a different meaning when it is used without \"-e\".  Here it\n"
+"\tmeans to source the \"script\" as Normal mode commands.  When used with\n"
+"\t\"-e\" it means to be silent, and doesn't use the next argument as a\n"
+"\tfile name.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:208
+#, no-wrap
+msgid ""
+"The commands in \"script\" are executed like you typed them.  Don't forget that\n"
+"a line break is interpreted as pressing <Enter>.  In Normal mode that moves\n"
+"the cursor to the next line.\n"
+"   To create the script you can edit the script file and type the commands.\n"
+"You need to imagine what the result would be, which can be a bit difficult.\n"
+"Another way is to record the commands while you perform them manually.  This\n"
+"is how you do that: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:210
+#, fuzzy, no-wrap
+msgid "\tvim -w script file.txt ...\n"
+msgstr "\tvim -x -n archivo.txt\n"
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:216
+#, no-wrap
+msgid ""
+"All typed keys will be written to \"script\".  If you make a small mistake you\n"
+"can just continue and remember to edit the script later.\n"
+"   The \"-w\" argument appends to an existing script.  That is good when you\n"
+"want to record the script bit by bit.  If you want to start from scratch and\n"
+"start all over, use the \"-W\" argument.  It overwrites any existing file.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_26.txt:220
+#, fuzzy
+msgid "Next chapter: |usr_27.txt| Search commands and patterns"
+msgstr "Capítulo siguiente: |usr_05.esx| Configuración"
