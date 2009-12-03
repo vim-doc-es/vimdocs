@@ -29,19 +29,20 @@
 # - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages
 # Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
 # se puede consultar con un simple grep, pogrep o cargado en Virtaal.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2009-12-03 17:15+0100\n"
-"PO-Revision-Date: 2009-12-03 17:15+0100\n"
-"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"PO-Revision-Date: 2009-12-03 19:09+0100\n"
+"Last-Translator: Omar Campagne <<ocampagne@gmail.com>>\n"
 "Language-Team: vim-doc-es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.5.0-rc1\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:18 original/TXT/intro.txt:75
@@ -171,7 +172,7 @@ msgstr "*usr_26.esx*\tPara Vim versión 7.2. Último cambio: 24/5/2006\n"
 #: original/TXT/usr_26.txt:6
 #, no-wrap
 msgid "\t\t\t\t  Repeating\n"
-msgstr ""
+msgstr "\t\t\t\t Repetición\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:11
@@ -180,39 +181,41 @@ msgid ""
 "made several times.  In this chapter a number of useful ways to repeat a "
 "change will be explained."
 msgstr ""
+"Rara vez, una tarea de edición carece de estructura. A menudo tiene que "
+"realizar un cambio varias veces. En este capítulo se muestran varias maneras "
+"útiles de repetir un cambio."
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:16
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|26.1|\tRepeating with Visual mode\n"
 "|26.2|\tAdd and subtract\n"
 "|26.3|\tMaking a change in many files\n"
 "|26.4|\tUsing Vim from a shell script\n"
 msgstr ""
-"|usr_26.txt|  Repeating\n"
-"\t\t|26.1|\tRepeating with Visual mode\n"
-"\t\t|26.2|\tAdd and subtract\n"
-"\t\t|26.3|\tMaking a change in many files\n"
-"\t\t|26.4|\tUsing Vim from a shell script\n"
+"|26.1|\tRepetir en modo Visual\n"
+"|26.2|\tSumar y restar\n"
+"|26.3|\tRealizar un cambio en varios archivos\n"
+"|26.4|\tUsar Vim desde un script de intérprete de órdenes\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:20
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "     Next chapter: |usr_27.txt|  Search commands and patterns\n"
 " Previous chapter: |usr_25.txt|  Editing formatted text\n"
 "Table of contents: |usr_toc.txt|\n"
 msgstr ""
-" Siguiente capítulo: |usr_27.txt|  Editar texto con formato\n"
+" Siguiente capítulo: |usr_27.esx|  Órdenes y patrones de búsqueda\n"
 "  Capitulo anterior: |usr_24.esx|  Editar otros archivos\n"
 "Tabla de contenidos: |usr_toc.esx|\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:23
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "*26.1*\tRepeating with Visual mode\n"
-msgstr "*24.4*\tRepetir una inserción\n"
+msgstr "*26.1*\tRepetición en modo Visual\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:31
@@ -226,6 +229,13 @@ msgid ""
 "   Suppose you have some lines where you want to change \"2001\" to \"2002\" and\n"
 "\"2000\" to \"2001\":\n"
 msgstr ""
+"El modo Visual es útil cuando desea modificar una secuencia de líneas.\n"
+"Al poder ver el texto resaltado, puede revisar si las líneas a modificar\n"
+"lo han sido correctamente. Pero hacer la selección conlleva teclear. La\n"
+"orden «gv» selecciona la misma área otra vez. Esto le permite realizar otra\n"
+"acción sobre el texto seleccionado.\n"
+"   Suponga que tiene algunas líneas en las que desea cambiar «2001» a «2002»\n"
+"y «2000» a «2001»:\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:37
@@ -237,6 +247,11 @@ msgid ""
 "\t\t\t2000\t\t2001 ~\n"
 "\tincome\t\t45,403\t\t66,234 ~\n"
 msgstr ""
+"\tLos resultados financieros de 2001 son mejores ~\n"
+"\tque para el año 2000. Los ingresos aumentaron un ~\n"
+"\t50%, ~ 2001, más aun cuando había más lluvia que en el 2000. ~\n"
+"\t\t\t2000\t\t2001~\n"
+"\tingresos\t45.403\t\t66.234 ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:39
@@ -244,12 +259,13 @@ msgid ""
 "First change \"2001\" to \"2002\".  Select the lines in Visual mode, and "
 "use: >"
 msgstr ""
+"Primero cambie «2001» a ««2002». Seleccione las líneas en modo Visual y use: >"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:41
 #, no-wrap
 msgid "\t:s/2001/2002/g\n"
-msgstr ""
+msgstr "\t:s/2001/2002/g\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:45
@@ -259,12 +275,15 @@ msgid ""
 "is.  Then use \":s/2000/2001/g\" to make the second change.\n"
 "   Obviously, you can repeat these changes several times.\n"
 msgstr ""
+"Use ahora «gv» para seleccionar otra vez el mismo texto. No importa donde está\n"
+"el cursor. Use entonces «:s/2000/2001/g» para hacer el segundo cambio.\n"
+"   Obviamente, puede repetir estos cambios varias veces.\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:48
 #, no-wrap
 msgid "*26.2*\tAdd and subtract\n"
-msgstr ""
+msgstr "*26.2*\tSumar y restar\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:54
@@ -276,17 +295,21 @@ msgid ""
 "used.\n"
 "   Using the same text as above, search for a year: >\n"
 msgstr ""
+"Al repetir un cambio de un número a otro, lo normal es que tenga una\n"
+"compensación fijada. En el ejemplo anterior, se añado «1» a cada año. Puede\n"
+"usar la orden CTRL-A en lugar de teclear una orden de sustitución para cada\n"
+"año en el texto.\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:56
 #, no-wrap
 msgid "\t/19[0-9][0-9]\\|20[0-9][0-9]\n"
-msgstr ""
+msgstr "\t/19[0-9][0-9]\\|20[0-9][0-9]\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:58
 msgid "Now press CTRL-A.  The year will be increased by one:"
-msgstr ""
+msgstr "Ahora pulse Ctrl-A. El año se incrementará en uno:"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:64
@@ -298,6 +321,11 @@ msgid ""
 "\t\t\t2000\t\t2001 ~\n"
 "\tincome\t\t45,403\t\t66,234 ~\n"
 msgstr ""
+"\tLos resultados financieros de 2002 son mejores ~\n"
+"\tque para el año 2000. Los ingresos aumentaron un ~\n"
+"\t50%, ~ 2001, más aun cuando había más lluvia que en el 2000. ~\n"
+"\t\t\t2000\t\t2001~\n"
+"\tingresos\t45.403\t\t66.234 ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:69
@@ -308,6 +336,11 @@ msgid ""
 "   Hint: set the 'hlsearch' option to see the matches you are going to change,\n"
 "then you can look ahead and do it faster.\n"
 msgstr ""
+"Use «n» para encontrar el siguiente año y pulse «.» para repetir CTRL-A\n"
+"(«.» es más rápido de teclear). Repita «n» y «.» para todos los años.\n"
+"   Pista: active la opción 'hlsearch' para ver las coincidencias que\n"
+"se modificaran. De esta manera, podrá ver los siguientes cambios, y\n"
+"realizarlos rápidamente.\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:72
@@ -315,6 +348,8 @@ msgid ""
 "Adding more than one can be done by prepending the number to CTRL-A.  "
 "Suppose you have this list:"
 msgstr ""
+"Es posible añadir más de uno si prefija un número a CTRL-A.\n"
+"Suponga que tiene esta lista:"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:76
@@ -324,18 +359,20 @@ msgid ""
 "\t2.  item five ~\n"
 "\t3.  item six ~\n"
 msgstr ""
+"\t1.  cuarto elemento ~\n"
+"\t2.  quinto elemento ~\n"
+"\t3.  sexto elemento ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:78
-#, fuzzy
 msgid "Move the cursor to \"1.\" and type: >"
-msgstr "Mueva el cursor a la segunda línea y escriba: >"
+msgstr "Mueva el cursor a «1.» y escriba: >"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:80
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t3 CTRL-A\n"
-msgstr "\ti CTRL-A\n"
+msgstr "\t3 CTRL-A\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:83
@@ -343,6 +380,8 @@ msgid ""
 "The \"1.\" will change to \"4.\".  Again, you can use \".\" to repeat this "
 "on the other numbers."
 msgstr ""
+"El «1.» pasará a ser «4.». Otra vez, puede usar «.» para repetir la misma "
+"acción sobre otros números."
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:88
@@ -351,11 +390,13 @@ msgid ""
 "\t006\tfoo bar ~\n"
 "\t007\tfoo bar ~\n"
 msgstr ""
+"\t006\tfoo bar ~\n"
+"\t007\tfoo bar ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:90
 msgid "Using CTRL-A on these numbers results in:"
-msgstr ""
+msgstr "Usar CTRL-A sobre estos números resulta en:"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:93
@@ -364,6 +405,8 @@ msgid ""
 "\t007\tfoo bar ~\n"
 "\t010\tfoo bar ~\n"
 msgstr ""
+"\t007\tfoo bar ~\n"
+"\t010\tfoo bar ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:98
@@ -373,23 +416,27 @@ msgid ""
 "in C programs.  If you do not want a number with leading zeros to be handled "
 "as octal, use this: >"
 msgstr ""
+"¿7 más 1 igual a 10? Lo que ha ocurrido es que Vim reconoció 007 como un "
+"número octal, ya que hay un cero precediendo el número. Esta notación se usa "
+"a menudo en programas C. Si no desea que un número con ceros a la izquierda "
+"se considere un número octal, use lo siguiente: >"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:100
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t:set nrformats-=octal\n"
-msgstr "\t:set fileformats+=mac\n"
+msgstr "\t:set nrformats-=octal\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:102
 msgid "The CTRL-X command does subtraction in a similar way."
-msgstr ""
+msgstr "La orden CTRL-X realiza la resta de una manera similar."
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:105
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "*26.3*\tMaking a change in many files\n"
-msgstr "*22.3*\tEncontrar un archivo\n"
+msgstr "*26.3*\tRealizar un cambio en varios archivos\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:110
@@ -400,6 +447,10 @@ msgid ""
 "change it in all files.  This is how you do it.\n"
 "   Put all the relevant files in the argument list: >\n"
 msgstr ""
+"Suponga que tiene una variable llamada «x_cnt» y que desea cambiarla a\n"
+"«x_counter». Ya que esta variable aparece en varios de sus archivos C, tendrá\n"
+"que realizar este cambio en todos los archivos. Esta es la manera de hacerlo.\n"
+"   Ponga todos los archivos relevantes en la lista de argumentos: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:115
@@ -410,12 +461,16 @@ msgid ""
 "This finds all C files and edits the first one.  Now you can perform a\n"
 "substitution command on all these files: >\n"
 msgstr ""
+"\t:args *.c\n"
+"<\n"
+"Esto encuentra todos los archivos C y edita el primero. Ahora puede realizar\n"
+"una orden de sustitución sobre todos estos archivos: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:117
 #, no-wrap
 msgid "\t:argdo %s/\\<x_cnt\\>/x_counter/ge | update\n"
-msgstr ""
+msgstr "\t:argdo %s/\\<x_cnt\\>/x_counter/ge | update\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:130
@@ -434,6 +489,19 @@ msgid ""
 "file only if it was changed.  If no \"x_cnt\" was changed to \"x_counter\" nothing\n"
 "happens.\n"
 msgstr ""
+"La orden «:argdo» toma otra orden como argumento. Esta orden se ejecutará\n"
+"sobre todos los archivos en la lista de argumentos.\n"
+"   La orden de sustitución «%s» a continuación afecta a todas las líneas.\n"
+"Busca la palabra «x_cnt» con «\\<x_cnt\\>». Los «\\<» y «\\>» se usan para\n"
+"encontrar sólo la palabra completa, y no «px_cnt» o «x_cnt2».\n"
+"   Las marcas para la orden de sustitución incluyen «g» para reemplazar\n"
+"todas las apariciones de «x_cnt» en la misma línea. La marca «e» se emplea\n"
+"para evitar un mensaje de error cuando «x_cnt» no está presente en el\n"
+"archivo. De otra manera, «:argdo» se interrumpiría en el primer archivo en\n"
+"el que no se encontrase «x_cnt».\n"
+"   La «|» separa dos órdenes. La orden a continuación «update» escribe en el\n"
+"archivo sólo si éste cambió. Si no se cambió ningún «x_cnt» a «x_counter»\n"
+"no ocurrirá nada.\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:135
@@ -443,12 +511,16 @@ msgid ""
 "with this, because you might have more files in the buffer list than you "
 "think.  Check this with the \":buffers\" command (or \":ls\")."
 msgstr ""
+"También dispone de la orden «:windo», que ejecuta su argumento en todas las "
+"ventanas. «:bufdo» ejecuta su argumento en todos los búfers. Sea cuidadoso\n"
+"con esto, porque puede que tenga más archivos de los que crea en su lista\n"
+"de búfers. Revise esto con la orden «:buffers» (o «:ls»)."
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:138
 #, no-wrap
 msgid "*26.4*\tUsing Vim from a shell script\n"
-msgstr ""
+msgstr "*26.4*\tUsar Vim desde un script de intérprete de órdenes\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:149
@@ -465,6 +537,17 @@ msgid ""
 "command-line (:) command.)\n"
 "   The Ex mode commands you need are as follows: >\n"
 msgstr ""
+"Suponga que tiene que cambiar la cadena «-persona-»  a «Juan» en varios\n"
+"archivos, e imprimirlo después. ¿Como se hace? Una manera es teclear mucho.\n"
+"La otra es escribir un script de consola para hacer la tarea.\n"
+"   El editor Vim realiza un trabajo superlativo como un editor orientado a\n"
+"pantalla cuando usa las órdenes de modo Normal. Para un procesamiento en\n"
+"lotes, por otra parte, las órdenes de modo Normal no finalizan correctamente\n"
+"como archivos claros y comentados; para ello tiene que usar el modo Ex.\n"
+"Este modo ofrece una bonita interfaz de línea de órdenes que facilita su\n"
+"inserción en un archivo de lotes. («Orden Ex» es sólo otro nombre para una\n"
+"orden en la línea de órdenes («:»).)\n"
+"   Las órdenes del modo Ex que necesita son las siguientes: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:153
@@ -474,6 +557,9 @@ msgid ""
 "\twrite tempfile\n"
 "\tquit\n"
 msgstr ""
+"\t%s/-persona-/Juan/g\n"
+"\twrite archivo_temporal\n"
+"\tquit\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:156
@@ -481,6 +567,8 @@ msgid ""
 "You put these commands in the file \"change.vim\".  Now to run the editor in "
 "batch mode, use this shell script: >"
 msgstr ""
+"Ponga estas órdenes en el archivo «change.vim». Para ejecutar el editor en "
+"modo de lotes, ese este script de consola: >"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:161
@@ -491,6 +579,10 @@ msgid ""
 "\t  lpr -r tempfile\n"
 "\tdone\n"
 msgstr ""
+"\tfor file in *.txt; do\n"
+"\t  vim -e -s $file < change.vim\n"
+"\t  lpr -r archivo_temporal\n"
+"\tdone\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:170
@@ -505,12 +597,20 @@ msgid ""
 "   The \"lpr -r tempfile\" command prints the resulting \"tempfile\" and deletes\n"
 "it (that's what the -r argument does).\n"
 msgstr ""
+"El bucle for-done es una construcción de consola para repetir las dos\n"
+"líneas entre ellas, mientras que la variable $file es definida con un nombre\n"
+"diferente cada vez.\n"
+"   La segunda línea inicia Vim en modo Ex (argumento «-e») en el archivo\n"
+"$file y lee las órdenes del archivo «change.vim». El argumento «-s» le dice\n"
+"a Vim que opere en modo silencioso. En otras palabras, no mostrar «:prompt»\n"
+"(cuadro de diálogo interactivo), o cualquier otro diálogo.\n"
+"   La orden «lpr -r archivo_temporal» muestra el «archivo_temporal»\n"
+"resultante y lo borra (esto es lo que hace el argumento «-r»).\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:173
-#, fuzzy
 msgid "READING FROM STDIN"
-msgstr "LEER LA SALIDA DE LA ORDEN"
+msgstr "LEER DESDE LA ENTRADA ESTÁNDAR"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:177
@@ -519,12 +619,15 @@ msgid ""
 "commands there, you must tell Vim to read text instead.  This is done by "
 "passing the \"-\" argument in place of a file.  Example: >"
 msgstr ""
+"Vim puede leer texto desde la entrada estándar. Debido a que esta es la "
+"manera normal de leer órdenes, tendrá que decirle a Vim que lea texto. Esto "
+"se hace introduciendo el argumento «-» en lugar de un archivo. Ejemplo: >"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:179
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\tls | vim -\n"
-msgstr "\tvim -r\n"
+msgstr "\tls | vim -\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:184
@@ -535,26 +638,30 @@ msgid ""
 "   If you use the standard input to read text from, you can use the \"-S\"\n"
 "argument to read a script: >\n"
 msgstr ""
+"Esto permite editar la salida de la orden «ls», sin guardar primero el texto\n"
+"en un archivo.\n"
+"   Si usa la entrada estándar para leer texto, puede usar el argumento «-S»\n"
+"para leer un script: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:186
 #, no-wrap
 msgid "\tproducer | vim -S change.vim -\n"
-msgstr ""
+msgstr "\tproducer | vim -S change.vim -\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:189
 msgid "NORMAL MODE SCRIPTS"
-msgstr ""
+msgstr "MODO NORMAL EN SCRIPTS"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:192
-#, fuzzy
 msgid ""
 "If you really want to use Normal mode commands in a script, you can use it "
 "like this: >"
 msgstr ""
-"Si realmente quiere prohibir los cambios en un archivo, haga lo siguiente: >"
+"Si realmente desea usar órdenes de modo Normal en un script, puede hacerlo "
+"del siguiente modo: >"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:200
@@ -568,6 +675,13 @@ msgid ""
 "\t\"-e\" it means to be silent, and doesn't use the next argument as a\n"
 "\tfile name.\n"
 msgstr ""
+"\tvim -s script file.txt ...\n"
+"<\n"
+"\tNota:\n"
+"\t«-s» tiene un significado diferente cuando se usa sin «-e». Aquí\n"
+"\tsignifica que tiene que cargar el script como si fueran órdenes de\n"
+"\tmodo Normal. «-e» significa modo silencioso, y no usa el siguiente\n"
+"\targumento como un nombre de archivo.\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:208
@@ -581,12 +695,19 @@ msgid ""
 "Another way is to record the commands while you perform them manually.  This\n"
 "is how you do that: >\n"
 msgstr ""
+"Las órdenes en «script» se ejecutan como los introdujo. No olvide que un \n"
+"salto de línea se interpreta como <Intro>. En modo Normal, desplaza el cursor\n"
+"a la siguiente línea.\n"
+"   Para crear el script, puede editar el archivo de script y teclear las\n"
+"órdenes. Necesita imaginar el resultado final, lo cual es un poco difícil.\n"
+"Otra manera es grabar las órdenes al ejecutarlas manualmente.\n"
+"Así es como se hace: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:210
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\tvim -w script file.txt ...\n"
-msgstr "\tvim -x -n archivo.txt\n"
+msgstr "\tvim -w script file.txt ...\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:216
@@ -598,9 +719,13 @@ msgid ""
 "want to record the script bit by bit.  If you want to start from scratch and\n"
 "start all over, use the \"-W\" argument.  It overwrites any existing file.\n"
 msgstr ""
+"Todas las teclas pulsadas se escribirán a «script». Si comete errores,\n"
+"continúe, acordándose después de editar el script.\n"
+"   El argumento «-w» añade a un script existente. Esto es útil cuando desea\n"
+"grabar el script poco a poco. Si desea empezar otra vez desde cero, use el\n"
+"argumento «-W», que sobreescribe todo archivo existente.\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:220
-#, fuzzy
 msgid "Next chapter: |usr_27.txt| Search commands and patterns"
-msgstr "Capítulo siguiente: |usr_05.esx| Configuración"
+msgstr "Siquiente capítulo: |usr_27.esx| Órdenes y patrones de búsqueda"
