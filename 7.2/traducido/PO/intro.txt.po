@@ -34,13 +34,13 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2009-11-26 17:29+0100\n"
-"PO-Revision-Date: 2009-12-03 17:39+0100\n"
+"PO-Revision-Date: 2009-12-04 21:58+0200\n"
 "Last-Translator: Omar Campagne <<ocampagne@gmail.com>>\n"
 "Language-Team: vim-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Virtaal 0.5.0-rc1\n"
 
@@ -1097,7 +1097,7 @@ msgid ""
 "notation\tmeaning\t\t    equivalent\tdecimal value(s)\t~\n"
 "-----------------------------------------------------------------------\n"
 msgstr ""
-"notacion\tsignificado\t    equivalente\t    valor(es) decimal  ~\n"
+"notación\tsignificado\t    equivalente\t    valor(es) decimal  ~\n"
 "-----------------------------------------------------------------------\n"
 
 #. type: Plain text
@@ -1134,7 +1134,7 @@ msgstr ""
 "<Esc>\t\tescape\t\t\tCTRL-[\t 27\t*escape* *<Esc>*\n"
 "<Space>\t\tespacio\t\t\t\t 32\t*space*\n"
 "<lt>\t\tmenos que\t\t<\t 60\t*<lt>*\n"
-"<Bslash>\t\tbarra inversa\t\\\t 92\t*backslash* *<Bslash>*\n"
+"<Bslash>\tbarra inversa\t\\\t 92\t*backslash* *<Bslash>*\n"
 "<Bar>\t\tbarra vertical\t\t|\t124\t*<Bar>*\n"
 "<Del>\t\tborrar\t\t\t\t127\n"
 "<CSI>\t\tsecuencia de órdenes intro ALT-Esc 155\t*<CSI>*\n"
@@ -1147,6 +1147,9 @@ msgid ""
 "<EOL>\t\tend-of-line (can be <CR>, <LF> or <CR><LF>,\n"
 "\t\tdepends on system and 'fileformat')\t*<EOL>*\n"
 msgstr ""
+"<EOL>\t\t«end-of-line» (fin de línea, puede ser <CR>, <LF>\n"
+"\t\to <CR><LF>, dependiendo del sistema y de 'fileformat')\n"
+"\t\t<EOL>\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:455
@@ -1384,7 +1387,7 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/intro.txt:553
 msgid "There are six ADDITIONAL modes.  These are variants of the BASIC modes:"
-msgstr ""
+msgstr "Existen otros seis modos adicionales, variantes de los modos básicos:"
 
 #. type: Plain text
 #: original/TXT/intro.txt:558
@@ -1407,6 +1410,12 @@ msgid ""
 "\t\t\tIf the 'showmode' option is on \"-- REPLACE --\" is\n"
 "\t\t\tshown at the bottom of the window.\n"
 msgstr ""
+"Modo Reemplazar\t\tEl modo Reemplazar es un tipo especial del modo\n"
+"\t\t\tInsertar. Puede hacer las mismas cosas que en el modo\n"
+"\t\t\tInsertar, pero sustituirá un carácter existente por\n"
+"\t\t\tcada carácter que inserte. Consulte |Replace-mode|.\n"
+"\t\t\tSi la opción 'showmode' está activada, verá\n"
+"\t\t\t«-- REPLACE --» en la base de la ventana.\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:571
@@ -1429,6 +1438,11 @@ msgid ""
 "\t\t\tIf the 'showmode' option is on \"-- (insert) --\" is\n"
 "\t\t\tshown at the bottom of the window.\n"
 msgstr ""
+"Modo Normal\t\tSe inicia cuando se usa CTRL-O en el modo Insertar.\n"
+"de inserción\t\tEs similar al modo Normal, pero devuelve al modo\n"
+"\t\t\tInsertar después de ejecutar una orden de Vim.\n"
+"\t\t\tSi la opción 'showmode' está activada, verá\n"
+"\t\t\t«-- (insert) --» en la base de la ventana.\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:584
@@ -1441,6 +1455,12 @@ msgid ""
 "\t\t\tIf the 'showmode' option is on \"-- (insert) VISUAL --\"\n"
 "\t\t\tis shown at the bottom of the window.\n"
 msgstr ""
+"Modo Visual\t\tSe inicia cuando realiza una selección Visual desde\n"
+"de inserción\t\tel modo Insertar. Por ejemplo, usando CTRL-O y\n"
+"\t\t\t«v», «V» o CTRL-V después. Vim le devolverá al modo\n"
+"\t\t\tInsertar al finalizar la selección Visual.\n"
+"\t\t\tSi la opción 'showmode' está activada, verá\n"
+"\t\t\t«-- (insert) VISUAL --» en la base de la ventana.\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:590
@@ -1452,12 +1472,18 @@ msgid ""
 "\t\t\tIf the 'showmode' option is on \"-- (insert) SELECT --\"\n"
 "\t\t\tis shown at the bottom of the window.\n"
 msgstr ""
+"Modo Seleccionar\tSe inicia al ejecutar el modo Seleccionar a partir\n"
+"de inserción\t\tdel modo Insertar. Por ejemplo, arrastrando el ratón\n"
+"\t\t\to <S-Derecha>. Vim le devolverá al modo Insertar al\n"
+"\t\t\tfinalizar el modo Seleccionar. Si la opción\n"
+"\t\t\t'showmode' está activada, verá «-- (insert) SELECT --»\n"
+"\t\t\ten la base de la ventana.\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:593
 #, no-wrap
 msgid "6. Switching from mode to mode\t\t\t\t*mode-switching*\n"
-msgstr ""
+msgstr "6. Cambiar de modo\t\t\t*cambiar-modo*  *mode-switching*\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:601
@@ -1469,6 +1495,12 @@ msgid ""
 "pressing <Esc> after using CTRL-O in Insert mode you get a beep but you are "
 "still in Insert mode, type <Esc> again."
 msgstr ""
+"Si por cualquier razón no sabe en qué modo está, siempre puede volver al "
+"modo Normal pulsando <Esc> dos veces. Esto no funciona en el modo Ex, por "
+"otra parte. En ese caso use «:visual». Sabrá que ha vuelto al modo Normal "
+"cuando vea la pantalla parpadear u oiga la campana después de pulsar <Esc>. "
+"Aun así, si pulsa <Esc> al usar CTRL-O en modo Insertar, obtendrá un pitido "
+"pero no abandonará el modo Insertar. Para salir, pulse <Esc> una vez más."
 
 #. type: Plain text
 #: original/TXT/intro.txt:613
@@ -1486,11 +1518,23 @@ msgid ""
 "Command-line\t *3\t  --\t  --\t :start\t    --\t\t      --\n"
 "Ex\t\t :vi\t  --\t  --\t --\t    --\t      --\n"
 msgstr ""
+"\t\t\t\t\t\t\t*i_esc*\n"
+"\t\tDESDE el modo\t\t\t\t\t    ~\n"
+"\t\tNormal\tVisual\tSelección Insertar Reemplazar Línea  Ex ~\n"
+"\t\t\t\t\t\t\t   de órdenes\n"
+"A el modo\t\t\t\t\t\t\t\t ~\n"
+"Normal\t\t\tv V ^V\t  *4\t *1¿\t   R gR     : / ? !   Q\n"
+"Visual\t\t *2\t\t  ^G\t c C\t    --\t      :       --\n"
+"Seleccionar\t *5\t^O ^G\t\t *6\t    --\t      --      --\n"
+"Insertar\t <Esc>\t  --\t  --\t\t  <Insertar>  --      --\n"
+"Reemplazar\t <Esc>\t  --\t  --\t<Insertar>\t      --      --\n"
+"Línea de órdenes *3\t  --\t  --\t :start\t    --\t\t      --\n"
+"Ex\t\t :vi\t  --\t  --\t --\t    --\t      --\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:616
 msgid "- NA -- not possible"
-msgstr ""
+msgstr "- NP -- no es posible"
 
 #. type: Plain text
 #: original/TXT/intro.txt:644
@@ -1498,8 +1542,10 @@ msgstr ""
 msgid ""
 "*1 Go from Normal mode to Insert mode by giving the command \"i\", \"I\", \"a\",\n"
 "   \"A\", \"o\", \"O\", \"c\", \"C\", \"s\" or S\".\n"
-"*2 Go from Visual mode to Normal mode by giving a non-movement command, which\n"
-"   causes the command to be executed, or by hitting <Esc> \"v\", \"V\" or \"CTRL-V\"\n"
+"*2 Go from Visual mode to Normal mode by giving a non-movement command, "
+"which\n"
+"   causes the command to be executed, or by hitting <Esc> \"v\", \"V\" or "
+"\"CTRL-V\"\n"
 "   (see |v_v|), which just stops Visual mode without side effects.\n"
 "*3 Go from Command-line mode to Normal mode by:\n"
 "   - Hitting <CR> or <NL>, which causes the entered command to be executed.\n"
@@ -1508,10 +1554,13 @@ msgid ""
 "     the command.\n"
 "   In the last case <Esc> may be the character defined with the 'wildchar'\n"
 "   option, in which case it will start command-line completion.  You can\n"
-"   ignore that and type <Esc> again.  {Vi: when hitting <Esc> the command-line\n"
-"   is executed.  This is unexpected for most people; therefore it was changed\n"
+"   ignore that and type <Esc> again.  {Vi: when hitting <Esc> the command-"
+"line\n"
+"   is executed.  This is unexpected for most people; therefore it was "
+"changed\n"
 "   in Vim.  But when the <Esc> is part of a mapping, the command-line is\n"
-"   executed.  If you want the Vi behaviour also when typing <Esc>, use \":cmap\n"
+"   executed.  If you want the Vi behaviour also when typing <Esc>, use "
+"\":cmap\n"
 "   ^V<Esc> ^V^M\"}\n"
 "*4 Go from Normal to Select mode by:\n"
 "   - use the mouse to select text while 'selectmode' contains \"mouse\"\n"
@@ -1519,17 +1568,50 @@ msgid ""
 "     key pressed, and the 'selectmode' option contains \"key\"\n"
 "   - use \"v\", \"V\" or \"CTRL-V\" while 'selectmode' contains \"cmd\"\n"
 "   - use \"gh\", \"gH\" or \"g CTRL-H\"  |g_CTRL-H|\n"
-"*5 Go from Select mode to Normal mode by using a non-printable command to move\n"
+"*5 Go from Select mode to Normal mode by using a non-printable command to "
+"move\n"
 "   the cursor, without keeping the Shift key pressed.\n"
 "*6 Go from Select mode to Insert mode by typing a printable character.  The\n"
 "   selection is deleted and the character is inserted.\n"
 msgstr ""
+"*1 Pase del modo Normal a Insertar con las órdenes «i», «I», «a», «A», «o»,\n"
+"   «O», «c», «C», «s», «S».\n"
+"*2 Pase del modo Visual a Normal con una orden de no-moción, causando la\n"
+"   ejecución de una orden. También puede pulsar <Esc> «v», «V» o CTRL-V,\n"
+"   (consulte |v_v|), finalizando el modo Visual sin más efecto.\n"
+"*3 Puede pasar del modo Línea de órdenes a Normal realizando lo siguiente:\n"
+"   - Pulsar <CR> o <NL>, que ejecuta la orden introducida.\n"
+"   - Borrar una línea completa (p. ej., con CTRL-U) seguido de <BS>.\n"
+"   - Pulsar CTRL-C o <Esc>, cerrando la línea de órdenes sin ejecutar la "
+"orden.\n"
+"   En el último caso, puede que <Esc> sea el carácter definido con la opción\n"
+"   'wildchar', lo que iniciaría el auto-completado en línea de órdenes. "
+"Puede\n"
+"   ignorar esto y pulsar <Esc> otra vez. {Vi: pulsar <Esc> ejecuta la orden\n"
+"   en la línea, lo cual sorprendía a la mayoría de la gente; debido a ello,\n"
+"   sufrió un cambio en Vim. Pero si <Esc> es parte de un mapeado, la línea "
+"de\n"
+"   órdenes se ejecutará. Si desea el comportamiento de Vi también al pulsar\n"
+"   <Esc>, use «:cmap^V<Esc> ^V^M»}\n"
+"*4 Pase del modo Normal a Seleccionar con:\n"
+"   - Use el ratón para seleccionar texto cuando 'selectmode' contenga "
+"'mouse'.\n"
+"   - Use una orden no imprimible para desplazar el cursor a la vez que\n"
+"   pulsa la tecla shift. La opción 'selectmode' debe contener «key».\n"
+"   - Use «v», «V» o «CTRL-V» si 'selectmode' contiene «cmd».\n"
+"   - Use «gh», «gH» o «g CTRL-H» |g_CTRL-H|\n"
+"*5 Pase del modo Seleccionar a Normal usando una orden no imprimible para\n"
+"   mover el cursor sin pulsar la tecla shift.\n"
+"*6 Pase del modo Seleccionar a Insertar tecleando un carácter imprimible.\n"
+"   La selección se eliminará y el carácter quedará insertado.\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:646
 msgid ""
 "If the 'insertmode' option is on, editing a file will start in Insert mode."
 msgstr ""
+"Si la opción 'insertmode' está activada, la edición de un archivo se "
+"iniciará en modo Insertar."
 
 #. type: Plain text
 #: original/TXT/intro.txt:653
@@ -1538,7 +1620,8 @@ msgid ""
 "\t*CTRL-\\_CTRL-N* *i_CTRL-\\_CTRL-N* *c_CTRL-\\_CTRL-N* *v_CTRL-\\_CTRL-N*\n"
 "Additionally the command CTRL-\\ CTRL-N or <C-\\><C-N> can be used to go to\n"
 "Normal mode from any other mode.  This can be used to make sure Vim is in\n"
-"Normal mode, without causing a beep like <Esc> would.  However, this does not\n"
+"Normal mode, without causing a beep like <Esc> would.  However, this does "
+"not\n"
 "work in Ex mode.  When used after a command that takes an argument, such as\n"
 "|f| or |m|, the timeout set with 'ttimeoutlen' applies.\n"
 msgstr ""
@@ -1592,22 +1675,32 @@ msgstr ""
 #: original/TXT/intro.txt:686
 #, no-wrap
 msgid "7. The window contents\t\t\t\t\t*window-contents*\n"
-msgstr ""
+msgstr "7. El contenido de las ventanas\t   *ventanas-contenido* *window-contents*\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:696
 #, no-wrap
 msgid ""
-"In Normal mode and Insert/Replace mode the screen window will show the current\n"
+"In Normal mode and Insert/Replace mode the screen window will show the "
+"current\n"
 "contents of the buffer: What You See Is What You Get.  There are two\n"
 "exceptions:\n"
-"- When the 'cpoptions' option contains '$', and the change is within one line,\n"
+"- When the 'cpoptions' option contains '$', and the change is within one "
+"line,\n"
 "  the text is not directly deleted, but a '$' is put at the last deleted\n"
 "  character.\n"
 "- When inserting text in one window, other windows on the same text are not\n"
 "  updated until the insert is finished.\n"
 "{Vi: The screen is not always updated on slow terminals}\n"
 msgstr ""
+"La ventana muestra los contenidos actuales del búfer en modo Normal y modo\n"
+"Insertar/Reemplazar: lo que ve es lo que hay. Hay dos excepciones:\n"
+"- Si la opción 'cppoptions' contiene «$», y el cambio se realizará dentro\n"
+"  de una línea, el texto no se borrará directamente, sino que se insertará\n"
+"  «$» en el último carácter eliminado.\n"
+"- Si inserta texto en una ventana, otras ventanas mostrando el mismo\n"
+"  contenido no se actualizarán hasta finalizar la inserción.\n"
+"{Vi: La pantalla no se refrescará siempre en terminales lentas}\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:699
@@ -1616,6 +1709,10 @@ msgid ""
 "off (see below).  The 'linebreak' option can be set to wrap at a blank "
 "character."
 msgstr ""
+"Las líneas más largas que el ancho de la ventana se justificarán a menos que "
+"la opción 'wrap' esté desactivada (véase a continuación). La opción "
+"'linebreak' se puede configurar para justificar a partir de un carácter "
+"vacío."
 
 #. type: Plain text
 #: original/TXT/intro.txt:702
@@ -1623,6 +1720,9 @@ msgid ""
 "If the window has room after the last line of the buffer, Vim will show '~' "
 "in the first column of the last lines in the window, like this: >"
 msgstr ""
+"Vim mostrará «~» en la primera columna de las últimas líneas de la ventana, "
+"de haber espacio más allá de la última línea del búfer: Presenta este "
+"aspecto: >"
 
 #. type: Plain text
 #: original/TXT/intro.txt:709
@@ -1645,7 +1745,7 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/intro.txt:711
 msgid "Thus the '~' lines indicate that the end of the buffer was reached."
-msgstr ""
+msgstr "Las líneas «~» indican que se alcanzó la última línea del búfer."
 
 #. type: Plain text
 #: original/TXT/intro.txt:714
@@ -1653,6 +1753,9 @@ msgid ""
 "If the last line in a window doesn't fit, Vim will indicate this with a '@' "
 "in the first column of the last lines in the window, like this: >"
 msgstr ""
+"Si la última línea en una ventana no cabe en ella, Vim lo indicará con una "
+"«@\" en la primera columna de las últimas líneas en la ventana. Presenta este "
+"aspecto:>"
 
 #. type: Plain text
 #: original/TXT/intro.txt:721
@@ -1677,7 +1780,7 @@ msgstr ""
 msgid ""
 "Thus the '@' lines indicate that there is a line that doesn't fit in the "
 "window."
-msgstr ""
+msgstr "Las líneas «@» indican que hay una línea que no cabe en la ventana."
 
 #. type: Plain text
 #: original/TXT/intro.txt:729
@@ -1723,6 +1826,8 @@ msgstr ""
 msgid ""
 "The 'showbreak' option contains the string to put in front of wrapped lines."
 msgstr ""
+"La opción 'showbreak' contiene la cadena a colocar en frente de las líneas "
+"justificadas."
 
 #. type: Plain text
 #: original/TXT/intro.txt:757
@@ -1826,6 +1931,9 @@ msgid ""
 "Some commands show how many lines were affected.  Above which threshold this "
 "happens can be controlled with the 'report' option (default 2)."
 msgstr ""
+"Algunas órdenes muestran cuantas líneas fueron afectadas. Puede controlar el "
+"umbral a partir del cual esto ocurre con la opción 'report' (2 por "
+"omisión)."
 
 #. type: Plain text
 #: original/TXT/intro.txt:808
@@ -1849,7 +1957,7 @@ msgstr ""
 #: original/TXT/intro.txt:814
 #, no-wrap
 msgid "8. Definitions\t\t\t\t\t\t*definitions*\n"
-msgstr ""
+msgstr "8. Definiciones\t\t\t\t *definiciones* *definitions*\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:819
@@ -1884,16 +1992,17 @@ msgid ""
 "\t|command line\t\t\t|\n"
 "\t+-------------------------------+\n"
 msgstr ""
-"\t+----------------------------------+\n"
-"\t|/* archivo uno.c */\t\t   |\n"
-"\t|~\t\t\t\t   |\n"
-"\t|~\t\t\t\t   |\n"
-"\t|uno.c=============================|\n"
-"\t|/* archivo uno.c */\t\t   |\n"
-"\t|~\t\t\t\t   |\n"
-"\t|uno.c=============================|\n"
-"\t|\t\t\t\t   |\n"
-"\t+----------------------------------+\n"
+"\t+-------------------------------+\n"
+"pantalla\t| ventana 1\t| ventana 2\t|\n"
+"\t|\t\t|\t\t|\n"
+"\t|\t\t|\t\t|\n"
+"\t|= línea de estado =|= línea de estado =|\n"
+"\t| ventana 3\t\t\t|\n"
+"\t|\t\t\t\t|\n"
+"\t|\t\t\t\t|\n"
+"\t|==== línea de estado ==============|\n"
+"\t|línea de órdenes\t\t\t|\n"
+"\t+-------------------------------+\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:837
