@@ -1,0 +1,1060 @@
+# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es 
+#
+# Copyright (C) 2009 
+# This file is distributed under the same license as the Vim 7.2 package.
+#
+# Translators credits:
+#   - Initial translation
+#       Omar Campagne <ocampagne@gmail.com>, 2009
+#
+#   - Updates
+#       TRADUCTOR <CORREO>, AÑO 
+#
+#
+#
+# Debido al formato (txt) y al máximo de 80 columnas que pueden tener 
+# los textos de ayuda en Vim, así como el formato PO, por favor, leete los
+# apuntes concernientes a la edición de los archivos PO relativos a la
+# aplicación que desees usar.
+# También encontrarás información acerca del uso de herramientas gettext en el 
+# proyecto de localización (l10n) de Vim.
+#
+# - http://www.assembla.com/wiki/show/vim-doc-es
+#
+# No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
+# este enlace puede ser de interés. A pesar de no formar parte, nuestra 
+# intención es homologarnos con su terminología y uso de la lengua 
+# en la medida de lo útil y posible.
+#
+#  - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/notas
+#
+# La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
+# pero también puede servir de referencia para otros términos no técnicos.
+# No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
+# traducción sea comprensible independientemente de la nacionalidad del
+# usuario. Si crees que alguna traducción puede llevar a confusión, consulta
+# la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
+#
+#  - www.rae.es 
+#  - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages   
+#
+# Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
+# se puede consultar con un simple grep, pogrep o cargado en Virtaal.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Vim 7.2\n"
+"Report-Msgid-Bugs-To: vim@bugs.org\n"
+"POT-Creation-Date: 2009-11-26 17:29+0100\n"
+"PO-Revision-Date: 2009-11-25 23:22+0100\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: vim-doc-es <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:18 original/TXT/intro.txt:75
+#: original/TXT/intro.txt:176 original/TXT/intro.txt:285
+#: original/TXT/intro.txt:513 original/TXT/intro.txt:591
+#: original/TXT/intro.txt:684 original/TXT/intro.txt:812
+#: original/TXT/intro.txt:875 original/TXT/usr_toc.txt:7
+#: original/TXT/usr_toc.txt:58 original/TXT/usr_toc.txt:172
+#: original/TXT/usr_toc.txt:280 original/TXT/usr_toc.txt:339
+#: original/TXT/usr_toc.txt:351 original/TXT/usr_01.txt:19
+#: original/TXT/usr_01.txt:50 original/TXT/usr_01.txt:100
+#: original/TXT/usr_01.txt:181 original/TXT/usr_02.txt:25
+#: original/TXT/usr_02.txt:69 original/TXT/usr_02.txt:130
+#: original/TXT/usr_02.txt:179 original/TXT/usr_02.txt:239
+#: original/TXT/usr_02.txt:307 original/TXT/usr_02.txt:369
+#: original/TXT/usr_02.txt:406 original/TXT/usr_02.txt:560
+#: original/TXT/usr_03.txt:28 original/TXT/usr_03.txt:74
+#: original/TXT/usr_03.txt:101 original/TXT/usr_03.txt:147
+#: original/TXT/usr_03.txt:172 original/TXT/usr_03.txt:223
+#: original/TXT/usr_03.txt:265 original/TXT/usr_03.txt:320
+#: original/TXT/usr_03.txt:491 original/TXT/usr_03.txt:552
+#: original/TXT/usr_03.txt:650 original/TXT/usr_04.txt:27
+#: original/TXT/usr_04.txt:74 original/TXT/usr_04.txt:160
+#: original/TXT/usr_04.txt:194 original/TXT/usr_04.txt:269
+#: original/TXT/usr_04.txt:324 original/TXT/usr_04.txt:360
+#: original/TXT/usr_04.txt:390 original/TXT/usr_04.txt:446
+#: original/TXT/usr_04.txt:469 original/TXT/usr_04.txt:510
+#: original/TXT/usr_05.txt:24 original/TXT/usr_05.txt:63
+#: original/TXT/usr_05.txt:219 original/TXT/usr_05.txt:266
+#: original/TXT/usr_05.txt:418 original/TXT/usr_05.txt:467
+#: original/TXT/usr_05.txt:506 original/TXT/usr_05.txt:621
+#: original/TXT/usr_06.txt:24 original/TXT/usr_06.txt:50
+#: original/TXT/usr_06.txt:135 original/TXT/usr_06.txt:189
+#: original/TXT/usr_06.txt:266 original/TXT/usr_06.txt:272
+#: original/TXT/usr_07.txt:24 original/TXT/usr_07.txt:63
+#: original/TXT/usr_07.txt:179 original/TXT/usr_07.txt:266
+#: original/TXT/usr_07.txt:316 original/TXT/usr_07.txt:404
+#: original/TXT/usr_07.txt:444 original/TXT/usr_07.txt:475
+#: original/TXT/usr_08.txt:26 original/TXT/usr_08.txt:82
+#: original/TXT/usr_08.txt:109 original/TXT/usr_08.txt:161
+#: original/TXT/usr_08.txt:215 original/TXT/usr_08.txt:278
+#: original/TXT/usr_08.txt:337 original/TXT/usr_08.txt:477
+#: original/TXT/usr_08.txt:509 original/TXT/usr_08.txt:597
+#: original/TXT/usr_09.txt:21 original/TXT/usr_09.txt:124
+#: original/TXT/usr_09.txt:175 original/TXT/usr_09.txt:259
+#: original/TXT/usr_09.txt:285 original/TXT/usr_10.txt:27
+#: original/TXT/usr_10.txt:144 original/TXT/usr_10.txt:221
+#: original/TXT/usr_10.txt:342 original/TXT/usr_10.txt:378
+#: original/TXT/usr_10.txt:547 original/TXT/usr_10.txt:621
+#: original/TXT/usr_10.txt:667 original/TXT/usr_10.txt:692
+#: original/TXT/usr_10.txt:820 original/TXT/usr_11.txt:22
+#: original/TXT/usr_11.txt:66 original/TXT/usr_11.txt:126
+#: original/TXT/usr_11.txt:268 original/TXT/usr_11.txt:283
+#: original/TXT/usr_12.txt:25 original/TXT/usr_12.txt:90
+#: original/TXT/usr_12.txt:131 original/TXT/usr_12.txt:177
+#: original/TXT/usr_12.txt:202 original/TXT/usr_12.txt:231
+#: original/TXT/usr_12.txt:281 original/TXT/usr_12.txt:309
+#: original/TXT/usr_12.txt:354 original/TXT/usr_20.txt:22
+#: original/TXT/usr_20.txt:113 original/TXT/usr_20.txt:158
+#: original/TXT/usr_20.txt:285 original/TXT/usr_20.txt:327
+#: original/TXT/usr_20.txt:380 original/TXT/usr_21.txt:24
+#: original/TXT/usr_21.txt:47 original/TXT/usr_21.txt:87
+#: original/TXT/usr_21.txt:236 original/TXT/usr_21.txt:385
+#: original/TXT/usr_21.txt:438 original/TXT/usr_21.txt:495
+#: original/TXT/usr_22.txt:22 original/TXT/usr_22.txt:148
+#: original/TXT/usr_22.txt:213 original/TXT/usr_22.txt:272
+#: original/TXT/usr_22.txt:396 original/TXT/usr_23.txt:23
+#: original/TXT/usr_23.txt:114 original/TXT/usr_23.txt:156
+#: original/TXT/usr_23.txt:238 original/TXT/usr_23.txt:324
+#: original/TXT/usr_23.txt:339 original/TXT/usr_24.txt:28
+#: original/TXT/usr_24.txt:96 original/TXT/usr_24.txt:119
+#: original/TXT/usr_24.txt:268 original/TXT/usr_24.txt:305
+#: original/TXT/usr_24.txt:336 original/TXT/usr_24.txt:369
+#: original/TXT/usr_24.txt:493 original/TXT/usr_24.txt:537
+#: original/TXT/usr_24.txt:583 original/TXT/usr_24.txt:602
+#: original/TXT/usr_25.txt:22 original/TXT/usr_25.txt:132
+#: original/TXT/usr_25.txt:210 original/TXT/usr_25.txt:287
+#: original/TXT/usr_25.txt:453 original/TXT/usr_25.txt:574
+#, no-wrap
+msgid "==============================================================================\n"
+msgstr "==============================================================================\n"
+
+#. type: Plain text
+#: original/TXT/usr_toc.txt:4 original/TXT/usr_01.txt:4
+#: original/TXT/usr_02.txt:4 original/TXT/usr_03.txt:4
+#: original/TXT/usr_04.txt:4 original/TXT/usr_05.txt:4
+#: original/TXT/usr_06.txt:4 original/TXT/usr_07.txt:4
+#: original/TXT/usr_08.txt:4 original/TXT/usr_09.txt:4
+#: original/TXT/usr_10.txt:4 original/TXT/usr_11.txt:4
+#: original/TXT/usr_12.txt:4 original/TXT/usr_20.txt:4
+#: original/TXT/usr_21.txt:4 original/TXT/usr_22.txt:4
+#: original/TXT/usr_23.txt:4 original/TXT/usr_24.txt:4
+#: original/TXT/usr_25.txt:4
+#, no-wrap
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
+msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
+
+#. type: Plain text
+#: original/TXT/usr_toc.txt:353 original/TXT/usr_01.txt:185
+#: original/TXT/usr_02.txt:564 original/TXT/usr_03.txt:654
+#: original/TXT/usr_04.txt:514 original/TXT/usr_05.txt:625
+#: original/TXT/usr_06.txt:276 original/TXT/usr_07.txt:479
+#: original/TXT/usr_08.txt:601 original/TXT/usr_09.txt:289
+#: original/TXT/usr_10.txt:824 original/TXT/usr_11.txt:287
+#: original/TXT/usr_12.txt:358 original/TXT/usr_20.txt:384
+#: original/TXT/usr_21.txt:499 original/TXT/usr_22.txt:400
+#: original/TXT/usr_23.txt:343 original/TXT/usr_24.txt:606
+#: original/TXT/usr_25.txt:578
+msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+
+#. type: Plain text
+#: original/TXT/usr_05.txt:530 original/TXT/usr_23.txt:272
+#, no-wrap
+msgid "\t:set nowrap\n"
+msgstr "\t:set nowrap\n"
+
+#. type: Plain text
+#: original/TXT/usr_12.txt:211 original/TXT/usr_23.txt:279
+#, no-wrap
+msgid "\tg CTRL-G\n"
+msgstr "\tg CTRL-G\n"
+
+#. type: Plain text
+#: original/TXT/usr_22.txt:224 original/TXT/usr_23.txt:129
+#, no-wrap
+msgid "\tgf\n"
+msgstr "\tgf\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:2
+#, no-wrap
+msgid "*usr_23.txt*\tFor Vim version 7.2.  Last change: 2006 Apr 24\n"
+msgstr "*usr_23.esx*\tPara Vim version 7.2. Último cambio: 24/6/2006\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:6
+#, no-wrap
+msgid "\t\t\t     Editing other files\n"
+msgstr "\t\t\t    Editar otros archivos\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:12
+msgid ""
+"This chapter is about editing files that are not ordinary files.  With Vim "
+"you can edit files that are compressed or encrypted.  Some files need to be "
+"accessed over the internet.  With some restrictions, binary files can be "
+"edited as well."
+msgstr ""
+"Este capítulo trata acerca de editar archivos que no son archivos "
+"ordinarios. Con Vim, puede editar archivos comprimidos o cifrados.  Necesita "
+"acceder a algunos archivos a través de Internet. Con alguna restricción, "
+"también puede editar archivos binarios."
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:18
+#, no-wrap
+msgid ""
+"|23.1|\tDOS, Mac and Unix files\n"
+"|23.2|\tFiles on the internet\n"
+"|23.3|\tEncryption\n"
+"|23.4|\tBinary files\n"
+"|23.5|\tCompressed files\n"
+msgstr ""
+"|23.1|\tArchivos de DOS, Mac y Unix\n"
+"|23.2|\tArchivos en Internet\n"
+"|23.3|\tCifrado\n"
+"|23.4|\tArchivos binarios\n"
+"|23.5|\tArchivos comprimidos\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:22
+#, no-wrap
+msgid ""
+"     Next chapter: |usr_24.txt|  Inserting quickly\n"
+" Previous chapter: |usr_22.txt|  Finding the file to edit\n"
+"Table of contents: |usr_toc.txt|\n"
+msgstr ""
+"Capítulo siguiente : |usr_24.esx|  Insertar con rapidez\n"
+"  Capítulo anterior: |usr_22.esx|  Encontrar el archivo a editar\n"
+"Tabla de contenidos: |usr_toc.esx|\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:25
+#, no-wrap
+msgid "*23.1*\tDOS, Mac and Unix files\n"
+msgstr "*23.1*\tArchivos de DOS, Mac y Unix\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:40
+#, no-wrap
+msgid ""
+"Back in the early days, the old Teletype machines used two characters to\n"
+"start a new line.  One to move the carriage back to the first position\n"
+"(carriage return, <CR>), another to move the paper up (line feed, <LF>).\n"
+"   When computers came out, storage was expensive.  Some people decided that\n"
+"they did not need two characters for end-of-line.  The UNIX people decided\n"
+"they could use <Line Feed> only for end-of-line.  The Apple people\n"
+"standardized on <CR>.  The MS-DOS (and Microsoft Windows) folks decided to\n"
+"keep the old <CR><LF>.\n"
+"   This means that if you try to move a file from one system to another, you\n"
+"have line-break problems.  The Vim editor automatically recognizes the\n"
+"different file formats and handles things properly behind your back.\n"
+"   The option 'fileformats' contains the various formats that will be tried\n"
+"when a new file is edited.  The following command, for example, tells Vim to\n"
+"try UNIX format first and MS-DOS format second: >\n"
+msgstr ""
+"Antiguamente, las viejas máquinas Teletype usaban dos caracteres para\n"
+"iniciar una nueva línea. Uno desplazaba el transporte de vuelta a la\n"
+"posición inicial («carriage return», <CR>), y el otro desplazaba la\n"
+"la página hacia arriba («line feed», <LF>).\n"
+"   Cuando aparecieron los ordenadores el almacenamiento era caro. Algunas\n"
+"personas decidieron que no necesitaban dos caracteres para marcar el final\n"
+"de la línea. La gente de UNIX decidió usar sólo <Line Feed>. La gente de\n"
+"Apple tomó <CR> como estándar. La gente de MS-DOS (y Microsoft Windows)\n"
+"decidió seguir con el antiguo <CR><LF>.\n"
+"   Esto supone que si intenta mover un archivo de un sistema a otro, tendrá\n"
+"problemas con el retorno de línea. El editor Vim detecta los diferentes\n"
+"formatos de archivos automáticamente y gestiona las cosas adecuadamente\n"
+"sin que usted lo note.\n"
+"   La opción 'fileformats' contiene los diversos formatos que se prueban\n"
+"cuando edite un archivo nuevo. La siguiente orden, por ejemplo, le dice a\n"
+"Vim que primero pruebe con el formato UNIX, y después con el formato MS-DOS: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:42
+#, no-wrap
+msgid "\t:set fileformats=unix,dos\n"
+msgstr "\t:set fileformats=unix,dos\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:47
+msgid ""
+"You will notice the format in the message you get when editing a file.  You "
+"don't see anything if you edit a native file format.  Thus editing a Unix "
+"file on Unix won't result in a remark.  But when you edit a dos file, Vim "
+"will notify you of this:"
+msgstr ""
+"Reconocerá el formato por el mensaje que obtendrá al editar un archivo.  No "
+"verá nada si edita un formato de archivo nativo. Por ello, editar un archivo "
+"UNIX en Unix no resultará en un aviso. Pero cuando edite un archivo DOS, Vim "
+"le notificará de ello:"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:49
+#, no-wrap
+msgid "\t\"/tmp/test\" [dos] 3L, 71C ~\n"
+msgstr "\t\"/tmp/test\" [dos] 3L, 71C ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:53
+#, no-wrap
+msgid ""
+"For a Mac file you would see \"[mac]\".\n"
+"   The detected file format is stored in the 'fileformat' option.  To see\n"
+"which format you have, execute the following command: >\n"
+msgstr ""
+"Verá «[mac]» si es un archivo MAC.\n"
+"   El formato de archivo detectado se guarda en la opción 'fileformat'. Para\n"
+"ver qué formato tiene, ejecute la siguiente orden: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:55
+#, no-wrap
+msgid "\t:set fileformat?\n"
+msgstr "\t:set fileformat?\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:57
+msgid "The three names that Vim uses are:"
+msgstr "Los tres nombres que Vim usa son:"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:61
+#, no-wrap
+msgid ""
+"\tunix\t\t<LF>\n"
+"\tdos\t\t<CR><LF>\n"
+"\tmac\t\t<CR>\n"
+msgstr ""
+"\tunix\t\t<LF>\n"
+"\tdos\t\t<CR><LF>\n"
+"\tmac\t\t<CR>\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:64
+msgid "USING THE MAC FORMAT"
+msgstr "USAR EL FORMATO MAC"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:75
+#, no-wrap
+msgid ""
+"On Unix, <LF> is used to break a line.  It's not unusual to have a <CR>\n"
+"character halfway a line.  Incidentally, this happens quite often in Vi (and\n"
+"Vim) scripts.\n"
+"   On the Macintosh, where <CR> is the line break character, it's possible to\n"
+"have a <LF> character halfway a line.\n"
+"   The result is that it's not possible to be 100% sure whether a file\n"
+"containing both <CR> and <LF> characters is a Mac or a Unix file.  Therefore,\n"
+"Vim assumes that on Unix you probably won't edit a Mac file, and doesn't check\n"
+"for this type of file.  To check for this format anyway, add \"mac\" to\n"
+"'fileformats': >\n"
+msgstr ""
+"En Unix, se emplea <LF> para marcar un retorno de línea. No es inusual\n"
+"obtener un caracter <CR> en mitad de la línea. Fortuitamente, esto ocurre\n"
+"con regularidad en los scripts de Vi (y Vim).\n"
+"   En un Macintosh, donde <CR> marca el retorno de línea, es posible obtener\n"
+"un caracter <LF> en mitad de la línea.\n"
+"   El resultado es que no es posible estar totalmente seguro de si es un\n"
+"archivo MAC o UNIX al estar presentes ambos caracteres <CR> y <LF>. Por\n"
+"ello, Vim asume que probablemente no editaría un archivo MAC bajo Unix, y no\n"
+"revisará el tipo del archivo. Para revisar el formato de todas maneras,\n"
+"añada «mac» a 'fileformats'.\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:77
+#, no-wrap
+msgid "\t:set fileformats+=mac\n"
+msgstr "\t:set fileformats+=mac\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:80
+msgid ""
+"Then Vim will take a guess at the file format.  Watch out for situations "
+"where Vim guesses wrong."
+msgstr ""
+"Vim intentará entonces dilucidar el formato del archivo. Esté atento a las "
+"situaciones en las que Vim erra en su conclusión."
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:83
+msgid "OVERRULING THE FORMAT"
+msgstr "OBVIAR EL FORMATO"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:88
+msgid ""
+"If you use the good old Vi and try to edit an MS-DOS format file, you will "
+"find that each line ends with a ^M character.  (^M is <CR>).  The automatic "
+"detection avoids this.  Suppose you do want to edit the file that way? Then "
+"you need to overrule the format: >"
+msgstr ""
+"Si está usando el clásico Vi e intenta editar un archivo con formato MS-DOS "
+"notará que cada línea termina con un carácter ^M.(^M es <CR>). La detección "
+"automática evita esto. ¿Y si desea editar el archivo de esta manera? Debe "
+"entonces obviar el formato: >"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:90
+#, no-wrap
+msgid "\t:edit ++ff=unix file.txt\n"
+msgstr "\t:edit ++ff=unix file.txt\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:96
+#, no-wrap
+msgid ""
+"The \"++\" string is an item that tells Vim that an option name follows, which\n"
+"overrules the default for this single command.  \"++ff\" is used for\n"
+"'fileformat'.  You could also use \"++ff=mac\" or \"++ff=dos\".\n"
+"   This doesn't work for any option, only \"++ff\" and \"++enc\" are currently\n"
+"implemented.  The full names \"++fileformat\" and \"++encoding\" also work.\n"
+msgstr ""
+"La cadena «++» es un elemento que informa a Vim de que a continuación hay\n"
+"un nombre de opción que invalida el valor predeterminado, sólo de esta\n"
+"orden. «++ff» se usa para 'fileformat'. También puede usar «++ff=mac» o\n"
+"«++ff=dos».  Esto no funciona con cualquier opción, y sólo está\n"
+"implementado «++ff» y «++enc». Los nombres completos, «++fileformat» y\n"
+"«++encoding», también funcionan.\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:99
+msgid "CONVERSION"
+msgstr "CONVERSIÓN"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:105
+#, no-wrap
+msgid ""
+"You can use the 'fileformat' option to convert from one file format to\n"
+"another.  Suppose, for example, that you have an MS-DOS file named README.TXT\n"
+"that you want to convert to UNIX format.  Start by editing the MS-DOS format\n"
+"file: >\n"
+"\tvim README.TXT\n"
+msgstr ""
+"Puede usar la opción 'fileformat' para convertir el formato de un archivo a\n"
+"otro. Suponga, por ejemplo, que tiene un archivo MS-DOS llamado README.TXT,\n"
+"que desea convertir al formato UNIX. Comience editando el archivo de formato\n"
+"MS-DOS: >\n"
+"\tvim README.TXT\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:108
+msgid ""
+"Vim will recognize this as a dos format file.  Now change the file format to "
+"UNIX: >"
+msgstr ""
+"Vim reconocerá esto como un archivo de formato MS-DOS. Ahora cambie el "
+"formato a UNIX: >"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:111
+#, no-wrap
+msgid ""
+"\t:set fileformat=unix\n"
+"\t:write\n"
+msgstr ""
+"\t:set fileformat=unix\n"
+"\t:write\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:113
+msgid "The file is written in Unix format."
+msgstr "El archivo se escribe entonces en formato Unix."
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:116
+#, no-wrap
+msgid "*23.2*\tFiles on the internet\n"
+msgstr "*23.2*\tArchivos en Internet\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:119
+msgid ""
+"Someone sends you an e-mail message, which refers to a file by its URL.  For "
+"example:"
+msgstr ""
+"Suponga que alguien le manda un correo electrónico que le remite a un "
+"archivo a través de su URL. Por ejemplo:"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:122
+#, no-wrap
+msgid ""
+"\tYou can find the information here: ~\n"
+"\t\tftp://ftp.vim.org/pub/vim/README ~\n"
+msgstr ""
+"\tPuedes encontrar la información aquí: ~\n"
+"\tftp://ftp.vim.org/pub/vim/README ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:127
+#, no-wrap
+msgid ""
+"You could start a program to download the file, save it on your local disk and\n"
+"then start Vim to edit it.\n"
+"   There is a much simpler way.  Move the cursor to any character of the URL.\n"
+"Then use this command: >\n"
+msgstr ""
+"Puede iniciar un programa para descargar el archivo, guardarlo en su disco\n"
+"e iniciar Vim para editarlo.\n"
+"   Existe una manera mucho más simple. Desplace el cursor hacia cualquier\n"
+"carácter del URL.\n"
+"Después ejecute esta orden: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:137
+#, no-wrap
+msgid ""
+"With a bit of luck, Vim will figure out which program to use for downloading\n"
+"the file, download it and edit the copy.  To open the file in a new window use\n"
+"CTRL-W f.\n"
+"   If something goes wrong you will get an error message.  It's possible that\n"
+"the URL is wrong, you don't have permission to read it, the network connection\n"
+"is down, etc.  Unfortunately, it's hard to tell the cause of the error.  You\n"
+"might want to try the manual way of downloading the file.\n"
+msgstr ""
+"Con un poco de suerte, Vim escogerá qué programa usar para descargarse el\n"
+"archivo, lo descargará y editará la copia. Para abrir el archivo en una\n"
+"ventana nueva use «CTRL-W f».\n"
+"   Se le informará de cualquier incidencia en el proceso. Es posible que\n"
+"el URL sea erróneo, que no tiene los permisos necesarios para leerlo, que\n"
+"la conexion a Internet se ha interrumpido, etc. Desafortunadamente, es\n"
+"difícil conocer la causa del error. Puede que desee intentar una descarga\n"
+"manual.\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:140
+msgid ""
+"Accessing files over the internet works with the netrw plugin.  Currently "
+"URLs with these formats are recognized:"
+msgstr ""
+"El acceso a archivos en Internet es posible gracias a la extensión netrw.  A "
+"día de hoy se reconocen los siguientes formatos de URL:"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:145
+#, no-wrap
+msgid ""
+"\tftp://\t\tuses ftp\n"
+"\trcp://\t\tuses rcp\n"
+"\tscp://\t\tuses scp\n"
+"\thttp://\t\tuses wget (reading only)\n"
+msgstr ""
+"\tftp://\t\tusa ftp\n"
+"\trcp://\t\tusa rcp\n"
+"\tscp://\t\tusa scp\n"
+"\thttp://\t\tusa wget (sólo lectura)\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:149
+msgid ""
+"Vim doesn't do the communication itself, it relies on the mentioned programs "
+"to be available on your computer.  On most Unix systems \"ftp\" and \"rcp\" "
+"will be present.  \"scp\" and \"wget\" might need to be installed."
+msgstr ""
+"Vim no realiza la conexión por si mismo, sino que depende de que los "
+"programas mencionados estén instalados en su ordenador. La mayoría de los "
+"sistemas Unix incluyen ftp y rcp. Puede que tenga que instalar scp y wget."
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:153
+msgid ""
+"Vim detects these URLs for each command that starts editing a new file, also "
+"with \":edit\" and \":split\", for example.  Write commands also work, "
+"except for http://."
+msgstr ""
+"Vim detecta estas URL para cada orden que inicia la edición de un archivo "
+"nuevo, también con «:edit» y «:split», por ejemplo. Las órdenes de escritura "
+"también funcionan, a excepción de «http://»."
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:155
+msgid "For more information, also about passwords, see |netrw|."
+msgstr "Para más información, también acerca de contraseñas, véase |netrw|."
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:158
+#, no-wrap
+msgid "*23.3*\tEncryption\n"
+msgstr "*23.3*\tCifrado\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:165
+#, no-wrap
+msgid ""
+"Some information you prefer to keep to yourself.  For example, when writing\n"
+"a test on a computer that students also use.  You don't want clever students\n"
+"to figure out a way to read the questions before the exam starts.  Vim can\n"
+"encrypt the file for you, which gives you some protection.\n"
+"   To start editing a new file with encryption, use the \"-x\" argument to start\n"
+"Vim.  Example: >\n"
+msgstr ""
+"Existe información que desea ocultar a otros. Por ejemplo, cuando escribe un\n"
+"examen en un ordenador que los estudiantes también usan. No desea que el\n"
+"alumno ingenioso descubra cómo leer las preguntas antes del inicio del\n"
+"examen.Vim puede cifrar el archivo para usted, lo cual le ofrece\n"
+"cierta protección.   Para iniciar la edición de un archivo cifrado nuevo,\n"
+"use el argumento «-x» cuando inicie Vim. Ejemplo: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:167
+#, no-wrap
+msgid "\tvim -x exam.txt\n"
+msgstr "\tvim -x examen.txt\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:169
+msgid "Vim prompts you for a key used for encrypting and decrypting the file:"
+msgstr ""
+"Vim pedirá que introduzca una clave para cifrar y descifrar el archivo:"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:171
+#, no-wrap
+msgid "\tEnter encryption key: ~\n"
+msgstr "\tIntroduzca la clave de cifrado: ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:175
+msgid ""
+"Carefully type the secret key now.  You cannot see the characters you type, "
+"they will be replaced by stars.  To avoid the situation that a typing "
+"mistake will cause trouble, Vim asks you to enter the key again:"
+msgstr ""
+"Escriba ahora la clave con cuidado. No puede ver los caracteres que teclea, "
+"sino que serán reemplazados por estrellas. Para evitar problemas debidos a "
+"un error mecanográfico, Vim le pedirá que introduzca la clave otra vez:"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:177
+#, no-wrap
+msgid "\tEnter same key again: ~\n"
+msgstr "\tIntroduzca la misma clave de cifrado otra vez: ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:189
+#, no-wrap
+msgid ""
+"You can now edit this file normally and put in all your secrets.  When you\n"
+"finish editing the file and tell Vim to exit, the file is encrypted and\n"
+"written.\n"
+"   When you edit the file with Vim, it will ask you to enter the same key\n"
+"again.  You don't need to use the \"-x\" argument.  You can also use the normal\n"
+"\":edit\" command.  Vim adds a magic string to the file by which it recognizes\n"
+"that the file was encrypted.\n"
+"   If you try to view this file using another program, all you get is garbage.\n"
+"Also, if you edit the file with Vim and enter the wrong key, you get garbage.\n"
+"Vim does not have a mechanism to check if the key is the right one (this makes\n"
+"it much harder to break the key).\n"
+msgstr ""
+"Ahora puede editar este archivo con normalidad e introducir en él todos sus\n"
+"secretos. Cuando haya terminado de editar el archivo este se guarda y es\n"
+"cifrado.\n"
+"   Cuando edite el archivo con Vim, éste le pedirá que introduzca la\n"
+"contraseña otra vez. No necesita emplear el argumento «-x». Puede también\n"
+"usar la orden «:edit». Vim añade una cadena mágica al archivo con el cual\n"
+"reconoce que el archivo está cifrado.\n"
+"   Obtendrá sólo basura si intenta editar este archivo con otro programa.\n"
+"Así mismo, si lo abre con Vim pero introduce mal la contraseña también\n"
+"obtendrá basura.\n"
+"Vim no posee un mecanismo para revisar si la clave es correcta (lo cual hace\n"
+"más difícil descifrar la clave).\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:192
+msgid "SWITCHING ENCRYPTION ON AND OFF"
+msgstr "CONMUTAR EL CIFRADO"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:196
+#, no-wrap
+msgid ""
+"To disable the encryption of a file, set the 'key' option to an empty string:\n"
+">\n"
+"\t:set key=\n"
+msgstr ""
+"Para desactivar el cifrado de un archivo, configure la opción 'key' con una\n"
+"cadena vacía: >\n"
+"\t:set key=\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:203
+#, no-wrap
+msgid ""
+"The next time you write the file this will be done without encryption.\n"
+"   Setting the 'key' option to enable encryption is not a good idea, because\n"
+"the password appears in the clear.  Anyone shoulder-surfing can read your\n"
+"password.\n"
+"   To avoid this problem, the \":X\" command was created.  It asks you for an\n"
+"encryption key, just like the \"-x\" argument did: >\n"
+msgstr ""
+"La siguiente vez que escriba el archivo, ésto se hará sin cifrado.\n"
+"   Configurar la opción 'key' para activar el cifrado no es una buena idea\n"
+"ya que la contraseña aparece sin ocultar. Cualquier persona leyendo por\n"
+"encima de su hombro puede leer su contraseña.\n"
+"   La orden «:X» se creó para evitar este problema. Le pide una clave de\n"
+"cifrado, al igual que hizo el argumento «-x»: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:207
+#, no-wrap
+msgid ""
+"\t:X\n"
+"\tEnter encryption key: ******\n"
+"\tEnter same key again: ******\n"
+msgstr ""
+"\t:X\n"
+"\tIntroduzca la clave de cifrado: ******\n"
+"\tIntroduzca la misma clave de cifrado otra vez: ******\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:210
+msgid "LIMITS ON ENCRYPTION"
+msgstr "LIMITES DEL CIFRADO"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:220
+#, no-wrap
+msgid ""
+"The encryption algorithm used by Vim is weak.  It is good enough to keep out\n"
+"the casual prowler, but not good enough to keep out a cryptology expert with\n"
+"lots of time on his hands.  Also you should be aware that the swap file is not\n"
+"encrypted; so while you are editing, people with superuser privileges can read\n"
+"the unencrypted text from this file.\n"
+"   One way to avoid letting people read your swap file is to avoid using one.\n"
+"If the -n argument is supplied on the command line, no swap file is used\n"
+"(instead, Vim puts everything in memory).  For example, to edit the encrypted\n"
+"file \"file.txt\" without a swap file use the following command: >\n"
+msgstr ""
+"El algoritmo de cifrado de Vim es débil. Es suficiente para mantener alejado\n"
+"al merodeador de turno, pero no lo es para mantener alejado a un experto\n"
+"en cifrado con mucho tiempo libre. Debe ser consciente de que el archivo de\n"
+"de intercambio («swap») no está cifrado; por ello, al editar, personas con\n"
+"privilegios de superusuario pueden leer el texto sin cifrar en este archivo.\n"
+"   Una manera de evitar que le gente lea su archivo de intercambio es evitar\n"
+"tener uno.\n"
+"Si introduce el argumento «-n» en la linea de órdenes, no se usará ningún\n"
+"archivo de intercambio (en lugar de ello, volcará todo en la memoria). Por\n"
+"ejemplo, para editar el archivo cifrado «archivo.txt» si un archivo de\n"
+"intercambio, use la siguiente orden: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:222
+#, no-wrap
+msgid "\tvim -x -n file.txt\n"
+msgstr "\tvim -x -n archivo.txt\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:224
+msgid "When already editing a file, the swapfile can be disabled with: >"
+msgstr ""
+"Si ya está editando un archivo, puede desactivar el archivo de intercambio "
+"con: >"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:226
+#, no-wrap
+msgid "\t:setlocal noswapfile\n"
+msgstr "\t:setlocal noswapfile\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:229
+msgid ""
+"Since there is no swapfile, recovery will be impossible.  Save the file a "
+"bit more often to avoid the risk of losing your changes."
+msgstr ""
+"Es imposible recuperar un archivo si no existe un archivo de intercambio.  "
+"Guarde los datos en el archivo más regularmente para evitar perder sus "
+"cambios ."
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:237
+#, no-wrap
+msgid ""
+"While the file is in memory, it is in plain text.  Anyone with privilege can\n"
+"look in the editor's memory and discover the contents of the file.\n"
+"   If you use a viminfo file, be aware that the contents of text registers are\n"
+"written out in the clear as well.\n"
+"   If you really want to secure the contents of a file, edit it only on a\n"
+"portable computer not connected to a network, use good encryption tools, and\n"
+"keep the computer locked up in a big safe when not in use.\n"
+msgstr ""
+"Un archivo está en texto simple mientras esté en memoria. Cualquiera con los\n"
+"privilegios necesarios puede mirar en la memoria del editor y descubrir los\n"
+"contenidos del archivo.\n"
+"   Si está usando un archivo viminfo, sea consciente de que los contenidos del\n"
+"registro del texto también se escriben de manera abierta.\n"
+"   Si realmente desea proteger los contenidos de un archivo, edítelo sólo en\n"
+"un ordenador portátil sin conexión a ninguna red, use buenas herramientas de\n"
+"cifrado, y guarde el ordenador en una gran caja fuerte cuando no esté en uso.\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:240
+#, no-wrap
+msgid "*23.4*\tBinary files\n"
+msgstr "*23.4*\tArchivos binarios\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:247
+#, no-wrap
+msgid ""
+"You can edit binary files with Vim.  Vim wasn't really made for this, thus\n"
+"there are a few restrictions.  But you can read a file, change a character and\n"
+"write it back, with the result that only that one character was changed and\n"
+"the file is identical otherwise.\n"
+"   To make sure that Vim does not use its clever tricks in the wrong way, add\n"
+"the \"-b\" argument when starting Vim: >\n"
+msgstr ""
+"Puede editar archivos binarios con Vim. Vim no se creó para esta labor, y\n"
+"por ello hay ciertas restricciones. Pero puede leer el archivo, cambiar un\n"
+"carácter y escribir esto en el archivo, con el resultado de que sólo cambió\n"
+"un carácter y que en todo lo demás, el archivo es idéntico.\n"
+"   Para impedir que Vim use sus ingeniosos trucos de manera inapropiada,\n"
+"añada el argumento «-b» al iniciar Vim: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:249 original/TXT/usr_23.txt:301
+#, no-wrap
+msgid "\tvim -b datafile\n"
+msgstr "\tvim -b archivo_de_datos\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:253
+msgid ""
+"This sets the 'binary' option.  The effect of this is that unexpected side "
+"effects are turned off.  For example, 'textwidth' is set to zero, to avoid "
+"automatic formatting of lines.  And files are always read in Unix file "
+"format."
+msgstr ""
+"Esto activa la opción 'binary'. El efecto que tiene es que se desactivan "
+"ciertos efectos secundarios inesperados. Por ejemplo, 'textwidth' recibe un "
+"valor 0, para evitar el formateo automático de las líneas. Y los archivos se "
+"leen siempre en el formato de archivo UNIX."
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:257
+msgid ""
+"Binary mode can be used to change a message in a program.  Be careful not to "
+"insert or delete any characters, it would stop the program from working.  "
+"Use \"R\" to enter replace mode."
+msgstr ""
+"El modo binario se puede usar para cambiar el mensaje de un programa. Tenga "
+"cuidado de no insertar o borrar cualquier carácter, ya que impediría el "
+"funcionamiento del programa.  Use «-R» para pasar al modo "
+"«replace» (reemplazar)."
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:259
+msgid ""
+"Many characters in the file will be unprintable.  To see them in Hex format: "
+">"
+msgstr ""
+"Muchos caracteres en el archivo no se pueden imprimir. Para verlos en "
+"formato Hex: >"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:261
+#, no-wrap
+msgid "\t:set display=uhex\n"
+msgstr "\t:set display=uhex\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:265
+msgid ""
+"Otherwise, the \"ga\" command can be used to see the value of the character "
+"under the cursor.  The output, when the cursor is on an <Esc>, looks like "
+"this:"
+msgstr ""
+"Por otro lado, puede usar la orden «ga» para ver el valor del carácter bajo "
+"el cursor. La salida, si el cursor está sobre un <Esc>, tiene este aspecto:"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:267
+#, no-wrap
+msgid "\t<^[>  27,  Hex 1b,  Octal 033 ~\n"
+msgstr "\t<^[>  27,  Hex 1b,  Octal 033 ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:270
+msgid ""
+"There might not be many line breaks in the file.  To get some overview "
+"switch the 'wrap' option off: >"
+msgstr ""
+"Puede que no haya demasiados retornos de línea en el archivo. Para obtener "
+"una visión de conjunto, desactive la opción 'wrap': >"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:275
+msgid "BYTE POSITION"
+msgstr "BYTE POSICIÓN"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:277
+msgid "To see on which byte you are in the file use this command: >"
+msgstr ""
+"Use esta orden para ver en que byte se encuentra dentro de un archivo: >"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:281
+msgid "The output is verbose:"
+msgstr "La salida es verbosa:"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:283
+#, no-wrap
+msgid "    Col 9-16 of 9-16; Line 277 of 330; Word 1806 of 2058; Byte 10580 of 12206 ~\n"
+msgstr "    Col 9-16 of 9-16; Línea 277 of 330; Palabra 1806 de 2058; Byte 10580 de 12206 ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:289
+#, no-wrap
+msgid ""
+"The last two numbers are the byte position in the file and the total number of\n"
+"bytes.  This takes into account how 'fileformat' changes the number of bytes\n"
+"that a line break uses.\n"
+"    To move to a specific byte in the file, use the \"go\" command.  For\n"
+"example, to move to byte 2345: >\n"
+msgstr ""
+"Los dos últimos números son el byte posición en el archivo y el número total\n"
+"de bytes. Tiene en cuenta cómo 'fileformat' cambia el número de bytes que\n"
+"emplea un retorno de línea.\n"
+"   Para desplazarse a un byte específico en el archivo, use la orden «go».\n"
+"Por ejemplo, para ir al byte 2345: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:291
+#, no-wrap
+msgid "\t2345go\n"
+msgstr "\t2345go\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:294
+msgid "USING XXD"
+msgstr "USAR XXD"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:299
+#, no-wrap
+msgid ""
+"A real binary editor shows the text in two ways: as it is and in hex format.\n"
+"You can do this in Vim by first converting the file with the \"xxd\" program.\n"
+"This comes with Vim.\n"
+"   First edit the file in binary mode: >\n"
+msgstr ""
+"Un editor realmente binario muestra el texto de dos formas: tal cual y en\n"
+"formato hexadecimal. Vim hace esto posible si primero convierte el archivo\n"
+"con el programa «xxd».\n"
+"Este programa está incluido en Vim.\n"
+"   Primero edite el archivo en modo binario: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:303
+msgid "Now convert the file to a hex dump with xxd: >"
+msgstr "Convierta ahora el archivo a un volcado hexadecimal con xxd: >"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:305
+#, no-wrap
+msgid "\t:%!xxd\n"
+msgstr "\t:%!xxd\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:307
+msgid "The text will look like this:"
+msgstr "El texto presentará este aspecto:"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:311
+#, no-wrap
+msgid ""
+"\t0000000: 1f8b 0808 39d7 173b 0203 7474 002b 4e49  ....9..;..tt.+NI ~\n"
+"\t0000010: 4b2c 8660 eb9c ecac c462 eb94 345e 2e30  K,.`.....b..4^.0 ~\n"
+"\t0000020: 373b 2731 0b22 0ca6 c1a2 d669 1035 39d9  7;'1.\".....i.59. ~\n"
+msgstr ""
+"\t0000000: 1f8b 0808 39d7 173b 0203 7474 002b 4e49  ....9..;..tt.+NI ~\n"
+"\t0000010: 4b2c 8660 eb9c ecac c462 eb94 345e 2e30  K,.`.....b..4^.0 ~\n"
+"\t0000020: 373b 2731 0b22 0ca6 c1a2 d669 1035 39d9  7;'1.\".....i.59. ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:318
+#, no-wrap
+msgid ""
+"You can now view and edit the text as you like.  Vim treats the information as\n"
+"ordinary text.  Changing the hex does not cause the printable character to be\n"
+"changed, or the other way around.\n"
+"   Finally convert it back with:\n"
+">\n"
+"\t:%!xxd -r\n"
+msgstr ""
+"Ahora puede ver y editar el texto como desee. Vim trata la información como\n"
+"texto normal. Cambiar el valor hexadecimal no provoca un cambio en el\n"
+"carácter imprimible, o vicecersa.\n"
+"Por último, conviertalo otra vez con: >\n"
+"\t:%!xxd -r\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:321
+msgid ""
+"Only changes in the hex part are used.  Changes in the printable text part "
+"on the right are ignored."
+msgstr ""
+"Sólo se usan los cambios en la parte hexadecimal. Los cambios en la parte "
+"imprimible de texto se ignoran."
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:323
+msgid "See the manual page of xxd for more information."
+msgstr "Vea la página de manual de xxd para más información."
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:326
+#, no-wrap
+msgid "*23.5*\tCompressed files\n"
+msgstr "*23.5*\tArchivos comprimidos\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:331
+#, no-wrap
+msgid ""
+"This is easy: You can edit a compressed file just like any other file.  The\n"
+"\"gzip\" plugin takes care of decompressing the file when you edit it.  And\n"
+"compressing it again when you write it.\n"
+"   These compression methods are currently supported:\n"
+msgstr ""
+"Esto es fácil: Puede editar un archivo comprimido al igual que cualquier otro\n"
+"archivo. La extensión para «gzip» se ocupa de descomprimir el archivo al\n"
+"iniciar la edición, y lo comprime cuando finaliza.\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:335
+#, no-wrap
+msgid ""
+"\t.Z\tcompress\n"
+"\t.gz\tgzip\n"
+"\t.bz2\tbzip2\n"
+msgstr ""
+"\t.Z\tcompress\n"
+"\t.gz\tgzip\n"
+"\t.bz2\tbzip2\n"
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:338
+msgid ""
+"Vim uses the mentioned programs to do the actual compression and "
+"decompression.  You might need to install the programs first."
+msgstr ""
+"Vim realiza la compresión y descompresión mediante los programas "
+"mencionados. Puede que primero tenga instalar los programas."
+
+#. type: Plain text
+#: original/TXT/usr_23.txt:342
+msgid "Next chapter: |usr_24.txt| Inserting quickly"
+msgstr "Siguiente capítulo: |usr_24.esx| Insertar con rapidez"

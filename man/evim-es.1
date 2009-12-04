@@ -1,50 +1,73 @@
+./" vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es 
+./"
+./" Copyright (C) 2009 
+./" This file is distributed under the same license as the Vim 7.2 package.
+./"
+./" Translators credits:
+./"   - Initial translation
+./"       Pedro Alejandro López-Valencia <vorbote@users.sourceforge.net>, 2009
+./"
+./"   - Updates
+./"       TRADUCTOR <CORREO>, AÑO 
+./"
 .TH EVIM 1 "2002 February 16"
-.SH NAME
-evim \- easy Vim, edit a file with Vim and setup for modeless editing
-.SH SYNOPSIS
+.SH NOMBRE
+evim \- Vim fácil («easy Vim», editar un archivo con Vim sin uso de modos de edición.) 
+.SH SINOPSIS
 .br
 .B evim
-[options] [file ..]
+[opciones] [archivo ...]
 .br
 .B eview
-.SH DESCRIPTION
+.SH DESCRIPCIÓN
 .B eVim
-starts
+inicia
 .B Vim
-and sets options to make it behave like a modeless editor.
-This is still Vim but used as a point-and-click editor.
-This feels a lot like using Notepad on MS-Windows.
+y predetermina varias opciones que lo hacen comportarse como
+un editor sin modos.
+Es Vim todavía pero se usa como un editor de
+«apuntar y pulsar».
+La experiencia es muy similar a la de usar Notepad en
+MS Windows.
 .B eVim
-will always run in the GUI, to enable the use of menus and toolbar.
+debe usarse en la versión gráfica para poder acceder a los menús
+y a la barra de botones.
 .PP
-Only to be used for people who really can't work with Vim in the normal way.
-Editing will be much less efficient.
+eVim existe sólo para ser usado por personas que realmente no pueden
+trabajar con Vim de la manera normal.
+La edición será muy poco eficiente.
 .PP
 .B eview
-is the same, but starts in read-only mode.  It works just like evim \-R.
+es igual pero se inicia en modo de solo lectura.
+Su funcionamiento es igual a «evim \-R».
 .PP
-See vim(1) for details about Vim, options, etc.
+Véase vim(1) para los detalles acerca de Vim, sus opciones, etc.
 .PP
-The 'insertmode' option is set to be able to type text directly.
+La opción «insertmode» se usa para habilitar el escribir texto
+directamente.
 .br
-Mappings are setup to make Copy and Paste work with the MS-Windows keys.
-CTRL-X cuts text, CTRL-C copies text and CTRL-V pastes text.
-Use CTRL-Q to obtain the original meaning of CTRL-V.
-.SH OPTIONS
-See vim(1).
-.SH FILES
+Se crean mapas para hacer que copiar y pegar funcionen con las
+combinaciones de teclas usadas en MS Windows (localizado al inglés).
+CTRL-X corta texto, CTRL-C copia texto y CTRL-V pega texto.
+Use CTRL-Q para obtener el significado original de CTRL-V.
+.SH OPCIONES
+Véase vim(1).
+.SH ARCHIVOS
 .TP 15
 /usr/local/lib/vim/evim.vim
-The script loaded to initialize eVim.
-.SH AKA
-Also Known As "Vim for gumbies".
-When using evim you are expected to take a handkerchief,
-make a knot in each corner and wear it on your head.
-.SH SEE ALSO
+El script ejecutado para inicializar eVim.
+.SH APODO
+También conocido como «Vim para gumbies».
+Cuando se usa eVim se espera que ustéd tome un pañuelo,
+haga un nudo en cada punta y lo use como sombrero.
+(Gumby es un personaje animado de Aardman hecho con 
+gomas de borrar, muy famoso a la vuelta del siglo XX en el
+canal 4 de la BBC).
+.SH VÉASE
 vim(1)
-.SH AUTHOR
-Most of
+.SH AUTOR
+La mayor parte de
 .B Vim
-was made by Bram Moolenaar, with a lot of help from others.
-See the Help/Credits menu.
-." vim:fenc=latin1:ft=nroff
+fué hecha por Bram Moolenaar, con mucha ayuda de otros.
+Véase el menú «Ayuda/Créditos».
+.\" vim:fenc=latin1:ft=nroff

@@ -4,9 +4,10 @@
 
 		    Ser eficaz con la línea de órdenes
 
-Vim posee algunas características genéricas que le facilitan introducir órdenes.
-Las órdenes de colon («:») se pueden abreviar, editar y repetir. Dispone de 
-auto compleción para prácticamente todo.
+
+Vim posee algunas características genéricas que le facilitan introducir
+órdenes.  Las órdenes de colon («:») se pueden abreviar, editar y
+repetir. Dispone de auto compleción para prácticamente todo.
 
 |20.1|	Edición en línea de órdenes
 |20.2|	Abreviaturas en línea de órdenes
@@ -22,8 +23,8 @@ Tabla de contenidos: |usr_toc.esx|
 *20.1*	Edición en línea de órdenes
 
 Cuando usa una orden de colon («:») o busca una cadena con «/» o «?», Vim
-sitúa el cursor en la parte inferior de la pantalla. Ahí es donde introduce la
-orden o el patrón de búsqueda. A esto se le llama la línea de órdenes.
+sitúa el cursor en la parte inferior de la pantalla. Ahí es donde introduce
+la orden o el patrón de búsqueda. A esto se le llama la línea de órdenes.
 También cuando se usa para introducir una orden de búsqueda.
 
 La manera más obvia de editar la orden introducida es pulsando la tecla <BS>.
@@ -33,8 +34,8 @@ previamente, desplace antes el cursor con las teclas del cursos.
 
 	:s/vaba/cerdo/
 
-Antes de pulsar <Intro>, notará que «vaba» debería ser «vaca». Para
-corregir esto, pulse <Izquierda> seis veces. El cursor está ahora sobre «vaba».
+Antes de pulsar <Intro>, notará que «vaba» debería ser «vaca». Para corregir
+esto, pulse <Izquierda> seis veces. El cursor está ahora sobre «vaba».
 Teclee <BS> y «w» para corregirlo: >
 
 	:s/vaca/cerdo/
@@ -59,12 +60,17 @@ Las teclas más usadas para desplazarse en la línea de órdenes:
 
 También puede usar el ratón para mover el cursor.
 
+
 BORRAR
 
-Como ya se ha dicho, <BS> elimina el carácter anterior al cursor. Para borrar
-toda una palabra, use CTRL-W.
+Como ya se ha dicho, <BS> elimina el carácter anterior al cursor. Para
+borrar toda una palabra, use CTRL-W.
 
+#-#-#-#-#  traducido/ESX/usr_20.esx:68  #-#-#-#-#
 	/el sutil cerdo ~
+
+#-#-#-#-#  traducido/ESX/usr_20.esx:81  #-#-#-#-#
+	/el cerdo sutil ~
 
 		     CTRL-W
 
@@ -72,15 +78,20 @@ toda una palabra, use CTRL-W.
 
 CTRL-U elimina todo el texto, permitiéndole iniciar todo otra vez.
 
+
 SUPERPOSICIÓN
 
 La tecla <Insertar> conmuta entra insertar caracteres y reemplaza los
 existentes. Comience con este texto.
 
+#-#-#-#-#  traducido/ESX/usr_20.esx:68  #-#-#-#-#
+	/el sutil cerdo ~
+
+#-#-#-#-#  traducido/ESX/usr_20.esx:81  #-#-#-#-#
 	/el cerdo sutil ~
 
-Desplace el cursor al inicio de «sutil» con <S-Izq.> dos veces (o <Izq.> ocho
-veces, si <S-Izq.> no funciona. Pulse ahora <Insertar> para pasar a
+Desplace el cursor al inicio de «sutil» con <S-Izq.> dos veces (o <Izq.>
+ocho veces, si <S-Izq.> no funciona. Pulse ahora <Insertar> para pasar a
 superposición y teclee «gran»:
 
 	/el grancerdo ~
@@ -91,10 +102,11 @@ pasar de superposición a insertar, e introduzca el espacio:
 
 	/el gran cerdo ~
 
+
 CANCELAR
 
-Se le ocurrió ejecutar una orden «:» o «/», pero cambió de opinión. Para desechar
-de lo que ya tecleó sin ejecutarlo pulse CTRL-C o <Esc>.
+Se le ocurrió ejecutar una orden «:» o «/», pero cambió de opinión. Para
+desechar de lo que ya tecleó sin ejecutarlo pulse CTRL-C o <Esc>.
 
 	Nota:
 	<Esc> es la tecla universal de salir. Desafortunadamente, en el
@@ -113,8 +125,8 @@ orden. Es como eliminar el «:» o «/» al inicio de la línea.
 *20.2*	Abreviaturas en línea de órdenes
 
 Algunas de las órdenes «:» son muy largas. Ya hemos mencionado que
-«:substitute» se puede abreviar con «:s». Este es un mecanismo genérico, todas
-las órdenes «:» se pueden abreviar.
+«:substitute» se puede abreviar con «:s». Este es un mecanismo genérico,
+todas las órdenes «:» se pueden abreviar.
 
 ¿Como de corto puede ser una orden? Hay unas 30 letras, y muchas más órdenes.
 Por ejemplo, «:set» también empieza con «:s», pero «:s» no inicia la orden
@@ -130,12 +142,11 @@ Por ejemplo: >
 Esto significa que la forma corta de «:substitute» es «:s». Los siguientes
 caracteres son opcionales. Por ello, también funcionan «:su» y «:sub».
 
-En el manual de usuario usaremos o bien el nombre completo de la orden, o una
-versión corta pero legible. Por ejemplo, se puede acortar «:function» a «:fu».
-Pero debido a que la mayoría de la gente no entiende qué simboliza,
-nosotros usaremos «:fun». (Vim no tiene una orden llamada «:funny», de
-no ser así, esto también sería confuso.)
-
+En el manual de usuario usaremos o bien el nombre completo de la orden, o
+una versión corta pero legible. Por ejemplo, se puede acortar «:function» a
+«:fu».  Pero debido a que la mayoría de la gente no entiende qué simboliza,
+nosotros usaremos «:fun». (Vim no tiene una orden llamada «:funny», de no
+ser así, esto también sería confuso.)
 
 Recomendamos que escriba la orden completa en los Vim scripts. Esto hace
 más fácil leerlo cuando introduce cambios más tarde. A excepción de órdenes
@@ -143,23 +154,25 @@ usadas con frecuencia como «:w» («:write») y «:r» («:read»).
   Un caso particularmente confuso es «:end», que podría simbolizar «:endif»,
 «:endwhile» o «:endfunction». Por ello, use siempre el nombre completo.
 
-NOMBRES DE OPCIÓN CORTOS 
 
-En el manual de usuario se usa la versión larga de los nombres de opción. Varias
-opciones tienen también un nombre corto. A diferencia de las órdenes «:»,
-sólo hay un nombre corto que funcione. Por ejemplo, el nombre corto de
-'autoindent' es 'ai'. Por ello, estas dos órdenes hacen lo mismo: >
+NOMBRES DE OPCIÓN CORTOS
+
+En el manual de usuario se usa la versión larga de los nombres de
+opción. Varias opciones tienen también un nombre corto. A diferencia de las
+órdenes «:», sólo hay un nombre corto que funcione. Por ejemplo, el nombre
+corto de 'autoindent' es 'ai'. Por ello, estas dos órdenes hacen lo mismo: >
 
 	:set autoindent
 	:set ai
 
-Aquí puede encontrar la lista completa de nombres largos y cortos: |option-list|
+Aquí puede encontrar la lista completa de nombres largos y cortos:
+|option-list|
 
 ==============================================================================
 *20.3* Compleción en línea de órdenes	
 
-Esta es una opción que en si misma hace que merezca la pena pasar de Vi a Vim.
-Una vez que haya usado esto, no podrá vivir sin el.
+Esta es una opción que en si misma hace que merezca la pena pasar de Vi a
+Vim.  Una vez que haya usado esto, no podrá vivir sin el.
 
 Suponga que tiene un directorio que contiene estos archivos:
 
@@ -177,9 +190,9 @@ Es fácil equivocarse al teclear esto. Una manera más rápida es: >
 
 Esto viene a ser la misma orden. ¿Qué ocurrió? La tecla <Tab> realiza la
 compleción de la palabra anterior al cursor. «b» en este caso. Vim busca en
-el directorio y encuentra sólo un archivo cuyo nombre empieza por «b».
-Este ha de ser el que está buscando, y por ello Vim completa por usted el
-nombre del archivo.
+el directorio y encuentra sólo un archivo cuyo nombre empieza por «b».  Este
+ha de ser el que está buscando, y por ello Vim completa por usted el nombre
+del archivo.
 
 Teclee ahora: >
 
@@ -190,15 +203,15 @@ Vim emitirá un pitido, y le dará: >
 	:edit info.txt
 
 El pitido significa que Vim encontró más de una coincidencia. Entonces usa
-la primera coincidencia encontrada (en orden alfabético). Si pulsa <Tab> otra
-vez, obtendrá: >
+la primera coincidencia encontrada (en orden alfabético). Si pulsa <Tab>
+otra vez, obtendrá: >
 
 	:edit intro.txt
 
 Por ello, si el primer <Tab> no le da el archivo que está buscando, púlselo
-otra vez. Si hay más coincidencias, las verá todas de una en una.
-Si pulsa <Tab> otra vez en la última entrada coincidente, volverá a lo que
-tecleo en un principio: >
+otra vez. Si hay más coincidencias, las verá todas de una en una.  Si pulsa
+<Tab> otra vez en la última entrada coincidente, volverá a lo que tecleo en un
+principio: >
 
 	:edit i
 
@@ -212,6 +225,7 @@ través de la lista de coincidencias.
 		  <-- CTRL-P		       <-- CTRL-P
 	   |
 	   +---------------------- CTRL-P ------------------------>
+
 
 CONTEXTO
 
@@ -245,6 +259,7 @@ que desea. Esto es debido a que Vim no sabe lo que quiere, o porque no se ha
 implementado la compleción para este evento. En ese caso, obtendrá un <Tab>
 insertado (se mostrará como ^I).
 
+
 LISTA DE COINCIDENCIAS
 
 Cuando haya coinicidencias, querrá una vista general. Obtenga esto pulsando
@@ -269,6 +284,7 @@ tienen un nombre largo y un nombre corto). Vim es suficientemente
 inteligente para saber que puede que desee expandir el nombre corto de una
 opción al nombre largo.
 
+
 HAY MÁS
 
 La orden CTRL-L completa la palabra hasta llegar a la cadena no ambigua más
@@ -292,14 +308,13 @@ lleva a aquellas órdenes más recientes.
 
 De hecho, hay cuatro históricos. Los que vamos a mencionar aquí son las
 órdenes «:» y las órdenes de búsqueda «/» y «?». Las órdenes «/» y «?»
-comparten el mismo histórico, ya que ambos son órdenes de búsqueda. Los otros
-dos históricos sirven para las expresiones y líneas de entrada de la función
-input().
-|cmdline-history|
+comparten el mismo histórico, ya que ambos son órdenes de búsqueda. Los
+otros dos históricos sirven para las expresiones y líneas de entrada de la
+función input().  |cmdline-history|
 
 Suponga que ejecutó una orden «:set», introdujo diez órdenes «:» más y que
-después quiera repetir la orden «:set» otra vez. Puede pulsar «:» y diez veces
-<Arriba>. Existe una manera más rápida.
+después quiera repetir la orden «:set» otra vez. Puede pulsar «:» y diez
+veces <Arriba>. Existe una manera más rápida.
 
 	:se<Up>
 
@@ -329,10 +344,10 @@ anterior, CTRL-N, siguiente.
 ==============================================================================
 *20.5*	Ventana de la línea de órdenes
 
-Teclear el texto en la línea de órdenes funciona de manera distinta a teclear
-texto en el modo Insertar. No permite a varias órdenes modificar el texto.
-Esto está bien para varias órdenes, aunque a veces tiene que teclear una
-orden complicada. En esta situación es cuando la ventana de línea de
+Teclear el texto en la línea de órdenes funciona de manera distinta a
+teclear texto en el modo Insertar. No permite a varias órdenes modificar el
+texto.  Esto está bien para varias órdenes, aunque a veces tiene que teclear
+una orden complicada. En esta situación es cuando la ventana de línea de
 órdenes es útil.
 
 Abra la ventana de línea de órdenes con esta orden: >
@@ -358,9 +373,9 @@ línea de órdenes, y una línea vacía al final.
 	+-------------------------------------+
 
 Ahora se encuentra en el modo Normal. Puede usar las teclas «hjkl» para
-desplazarse. Por ejemplo, desplácese con «5k» hasta la línea
-«:e config.h.in». Teclee «$h» para ir a la «i» de «in» y teclee «cwout».
-Ahora, ha cambiado la línea a:
+desplazarse. Por ejemplo, desplácese con «5k» hasta la línea «:e
+config.h.in». Teclee «$h» para ir a la «i» de «in» y teclee «cwout».  Ahora,
+ha cambiado la línea a:
 
 	:e config.h.out ~
 
@@ -385,4 +400,6 @@ teclee la orden de búsqueda, ya que sólo puede haber una.
 
 Siguiente capítulo: |usr_21.esx| Abandonar el editor y volver
 
-Copyright: véase |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:
+Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
+
+Traducción del documento: |vim-doc-es|

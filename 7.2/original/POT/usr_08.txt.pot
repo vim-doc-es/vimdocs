@@ -1,0 +1,1318 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the Vim package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Vim 7.2\n"
+"Report-Msgid-Bugs-To: vim@bugs.org\n"
+"POT-Creation-Date: 2009-11-26 17:29+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: ENCODING"
+
+#. type: Plain text
+#: original/TXT/intro.txt:18 original/TXT/intro.txt:75
+#: original/TXT/intro.txt:176 original/TXT/intro.txt:285
+#: original/TXT/intro.txt:513 original/TXT/intro.txt:591
+#: original/TXT/intro.txt:684 original/TXT/intro.txt:812
+#: original/TXT/intro.txt:875 original/TXT/usr_toc.txt:7
+#: original/TXT/usr_toc.txt:58 original/TXT/usr_toc.txt:172
+#: original/TXT/usr_toc.txt:280 original/TXT/usr_toc.txt:339
+#: original/TXT/usr_toc.txt:351 original/TXT/usr_01.txt:19
+#: original/TXT/usr_01.txt:50 original/TXT/usr_01.txt:100
+#: original/TXT/usr_01.txt:181 original/TXT/usr_02.txt:25
+#: original/TXT/usr_02.txt:69 original/TXT/usr_02.txt:130
+#: original/TXT/usr_02.txt:179 original/TXT/usr_02.txt:239
+#: original/TXT/usr_02.txt:307 original/TXT/usr_02.txt:369
+#: original/TXT/usr_02.txt:406 original/TXT/usr_02.txt:560
+#: original/TXT/usr_03.txt:28 original/TXT/usr_03.txt:74
+#: original/TXT/usr_03.txt:101 original/TXT/usr_03.txt:147
+#: original/TXT/usr_03.txt:172 original/TXT/usr_03.txt:223
+#: original/TXT/usr_03.txt:265 original/TXT/usr_03.txt:320
+#: original/TXT/usr_03.txt:491 original/TXT/usr_03.txt:552
+#: original/TXT/usr_03.txt:650 original/TXT/usr_04.txt:27
+#: original/TXT/usr_04.txt:74 original/TXT/usr_04.txt:160
+#: original/TXT/usr_04.txt:194 original/TXT/usr_04.txt:269
+#: original/TXT/usr_04.txt:324 original/TXT/usr_04.txt:360
+#: original/TXT/usr_04.txt:390 original/TXT/usr_04.txt:446
+#: original/TXT/usr_04.txt:469 original/TXT/usr_04.txt:510
+#: original/TXT/usr_05.txt:24 original/TXT/usr_05.txt:63
+#: original/TXT/usr_05.txt:219 original/TXT/usr_05.txt:266
+#: original/TXT/usr_05.txt:418 original/TXT/usr_05.txt:467
+#: original/TXT/usr_05.txt:506 original/TXT/usr_05.txt:621
+#: original/TXT/usr_06.txt:24 original/TXT/usr_06.txt:50
+#: original/TXT/usr_06.txt:135 original/TXT/usr_06.txt:189
+#: original/TXT/usr_06.txt:266 original/TXT/usr_06.txt:272
+#: original/TXT/usr_07.txt:24 original/TXT/usr_07.txt:63
+#: original/TXT/usr_07.txt:179 original/TXT/usr_07.txt:266
+#: original/TXT/usr_07.txt:316 original/TXT/usr_07.txt:404
+#: original/TXT/usr_07.txt:444 original/TXT/usr_07.txt:475
+#: original/TXT/usr_08.txt:26 original/TXT/usr_08.txt:82
+#: original/TXT/usr_08.txt:109 original/TXT/usr_08.txt:161
+#: original/TXT/usr_08.txt:215 original/TXT/usr_08.txt:278
+#: original/TXT/usr_08.txt:337 original/TXT/usr_08.txt:477
+#: original/TXT/usr_08.txt:509 original/TXT/usr_08.txt:597
+#: original/TXT/usr_09.txt:21 original/TXT/usr_09.txt:124
+#: original/TXT/usr_09.txt:175 original/TXT/usr_09.txt:259
+#: original/TXT/usr_09.txt:285 original/TXT/usr_10.txt:27
+#: original/TXT/usr_10.txt:144 original/TXT/usr_10.txt:221
+#: original/TXT/usr_10.txt:342 original/TXT/usr_10.txt:378
+#: original/TXT/usr_10.txt:547 original/TXT/usr_10.txt:621
+#: original/TXT/usr_10.txt:667 original/TXT/usr_10.txt:692
+#: original/TXT/usr_10.txt:820 original/TXT/usr_11.txt:22
+#: original/TXT/usr_11.txt:66 original/TXT/usr_11.txt:126
+#: original/TXT/usr_11.txt:268 original/TXT/usr_11.txt:283
+#: original/TXT/usr_12.txt:25 original/TXT/usr_12.txt:90
+#: original/TXT/usr_12.txt:131 original/TXT/usr_12.txt:177
+#: original/TXT/usr_12.txt:202 original/TXT/usr_12.txt:231
+#: original/TXT/usr_12.txt:281 original/TXT/usr_12.txt:309
+#: original/TXT/usr_12.txt:354 original/TXT/usr_20.txt:22
+#: original/TXT/usr_20.txt:113 original/TXT/usr_20.txt:158
+#: original/TXT/usr_20.txt:285 original/TXT/usr_20.txt:327
+#: original/TXT/usr_20.txt:380 original/TXT/usr_21.txt:24
+#: original/TXT/usr_21.txt:47 original/TXT/usr_21.txt:87
+#: original/TXT/usr_21.txt:236 original/TXT/usr_21.txt:385
+#: original/TXT/usr_21.txt:438 original/TXT/usr_21.txt:495
+#: original/TXT/usr_22.txt:22 original/TXT/usr_22.txt:148
+#: original/TXT/usr_22.txt:213 original/TXT/usr_22.txt:272
+#: original/TXT/usr_22.txt:396 original/TXT/usr_23.txt:23
+#: original/TXT/usr_23.txt:114 original/TXT/usr_23.txt:156
+#: original/TXT/usr_23.txt:238 original/TXT/usr_23.txt:324
+#: original/TXT/usr_23.txt:339 original/TXT/usr_24.txt:28
+#: original/TXT/usr_24.txt:96 original/TXT/usr_24.txt:119
+#: original/TXT/usr_24.txt:268 original/TXT/usr_24.txt:305
+#: original/TXT/usr_24.txt:336 original/TXT/usr_24.txt:369
+#: original/TXT/usr_24.txt:493 original/TXT/usr_24.txt:537
+#: original/TXT/usr_24.txt:583 original/TXT/usr_24.txt:602
+#: original/TXT/usr_25.txt:22 original/TXT/usr_25.txt:132
+#: original/TXT/usr_25.txt:210 original/TXT/usr_25.txt:287
+#: original/TXT/usr_25.txt:453 original/TXT/usr_25.txt:574
+#, no-wrap
+msgid "==============================================================================\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_toc.txt:4 original/TXT/usr_01.txt:4
+#: original/TXT/usr_02.txt:4 original/TXT/usr_03.txt:4
+#: original/TXT/usr_04.txt:4 original/TXT/usr_05.txt:4
+#: original/TXT/usr_06.txt:4 original/TXT/usr_07.txt:4
+#: original/TXT/usr_08.txt:4 original/TXT/usr_09.txt:4
+#: original/TXT/usr_10.txt:4 original/TXT/usr_11.txt:4
+#: original/TXT/usr_12.txt:4 original/TXT/usr_20.txt:4
+#: original/TXT/usr_21.txt:4 original/TXT/usr_22.txt:4
+#: original/TXT/usr_23.txt:4 original/TXT/usr_24.txt:4
+#: original/TXT/usr_25.txt:4
+#, no-wrap
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_toc.txt:353 original/TXT/usr_01.txt:185
+#: original/TXT/usr_02.txt:564 original/TXT/usr_03.txt:654
+#: original/TXT/usr_04.txt:514 original/TXT/usr_05.txt:625
+#: original/TXT/usr_06.txt:276 original/TXT/usr_07.txt:479
+#: original/TXT/usr_08.txt:601 original/TXT/usr_09.txt:289
+#: original/TXT/usr_10.txt:824 original/TXT/usr_11.txt:287
+#: original/TXT/usr_12.txt:358 original/TXT/usr_20.txt:384
+#: original/TXT/usr_21.txt:499 original/TXT/usr_22.txt:400
+#: original/TXT/usr_23.txt:343 original/TXT/usr_24.txt:606
+#: original/TXT/usr_25.txt:578
+msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:2
+#, no-wrap
+msgid "*usr_08.txt*\tFor Vim version 7.2.  Last change: 2006 Jul 18\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:6
+#, no-wrap
+msgid "\t\t\t      Splitting windows\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:11
+msgid ""
+"Display two different files above each other.  Or view two locations in the "
+"file at the same time.  See the difference between two files by putting them "
+"side by side.  All this is possible with split windows."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:21
+#, no-wrap
+msgid ""
+"|08.1|\tSplit a window\n"
+"|08.2|\tSplit a window on another file\n"
+"|08.3|\tWindow size\n"
+"|08.4|\tVertical splits\n"
+"|08.5|\tMoving windows\n"
+"|08.6|\tCommands for all windows\n"
+"|08.7|\tViewing differences with vimdiff\n"
+"|08.8|\tVarious\n"
+"|08.9|  Tab pages\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:25
+#, no-wrap
+msgid ""
+"     Next chapter: |usr_09.txt|  Using the GUI\n"
+" Previous chapter: |usr_07.txt|  Editing more than one file\n"
+"Table of contents: |usr_toc.txt|\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:28
+#, no-wrap
+msgid "*08.1*\tSplit a window\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:30
+msgid "The easiest way to open a new window is to use the following command: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:32
+#, no-wrap
+msgid "\t:split\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:35
+msgid ""
+"This command splits the screen into two windows and leaves the cursor in the "
+"top one:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:46
+#, no-wrap
+msgid ""
+"\t+----------------------------------+\n"
+"\t|/* file one.c */\t\t   |\n"
+"\t|~\t\t\t\t   |\n"
+"\t|~\t\t\t\t   |\n"
+"\t|one.c=============================|\n"
+"\t|/* file one.c */\t\t   |\n"
+"\t|~\t\t\t\t   |\n"
+"\t|one.c=============================|\n"
+"\t|\t\t\t\t   |\n"
+"\t+----------------------------------+\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:53
+#, no-wrap
+msgid ""
+"What you see here is two windows on the same file.  The line with \"====\" is\n"
+"that status line.  It displays information about the window above it.  (In\n"
+"practice the status line will be in reverse video.)\n"
+"   The two windows allow you to view two parts of the same file.  For example,\n"
+"you could make the top window show the variable declarations of a program, and\n"
+"the bottom one the code that uses these variables.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:58
+msgid ""
+"The CTRL-W w command can be used to jump between the windows.  If you are in "
+"the top window, CTRL-W w jumps to the window below it.  If you are in the "
+"bottom window it will jump to the first window.  (CTRL-W CTRL-W does the "
+"same thing, in case you let go of the CTRL key a bit later.)"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:61
+msgid "CLOSE THE WINDOW"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:63
+msgid "To close a window, use the command: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:65
+#, no-wrap
+msgid "\t:close\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:69
+msgid ""
+"Actually, any command that quits editing a file works, like \":quit\" and "
+"\"ZZ\".  But \":close\" prevents you from accidentally exiting Vim when you "
+"close the last window."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:72
+msgid "CLOSING ALL OTHER WINDOWS"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:75
+msgid ""
+"If you have opened a whole bunch of windows, but now want to concentrate on "
+"one of them, this command will be useful: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:77
+#, no-wrap
+msgid "\t:only\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:81
+msgid ""
+"This closes all windows, except for the current one.  If any of the other "
+"windows has changes, you will get an error message and that window won't be "
+"closed."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:84
+#, no-wrap
+msgid "*08.2*\tSplit a window on another file\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:88
+#, no-wrap
+msgid ""
+"The following command opens a second window and starts editing the given file:\n"
+">\n"
+"\t:split two.c\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:90
+msgid "If you were editing one.c, then the result looks like this:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:101
+#, no-wrap
+msgid ""
+"\t+----------------------------------+\n"
+"\t|/* file two.c */\t\t   |\n"
+"\t|~\t\t\t\t   |\n"
+"\t|~\t\t\t\t   |\n"
+"\t|two.c=============================|\n"
+"\t|/* file one.c */\t\t   |\n"
+"\t|~\t\t\t\t   |\n"
+"\t|one.c=============================|\n"
+"\t|\t\t\t\t   |\n"
+"\t+----------------------------------+\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:103
+msgid "To open a window on a new, empty file, use this: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:105
+#, no-wrap
+msgid "\t:new\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:108
+msgid ""
+"You can repeat the \":split\" and \":new\" commands to create as many "
+"windows as you like."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:111
+#, no-wrap
+msgid "*08.3*\tWindow size\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:115
+msgid ""
+"The \":split\" command can take a number argument.  If specified, this will "
+"be the height of the new window.  For example, the following opens a new "
+"window three lines high and starts editing the file alpha.c: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:117
+#, no-wrap
+msgid "\t:3split alpha.c\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:121
+msgid ""
+"For existing windows you can change the size in several ways.  When you have "
+"a working mouse, it is easy: Move the mouse pointer to the status line that "
+"separates two windows, and drag it up or down."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:123
+msgid "To increase the size of a window: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:125
+#, no-wrap
+msgid "\tCTRL-W +\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:127
+msgid "To decrease it: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:129
+#, no-wrap
+msgid "\tCTRL-W -\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:132
+msgid ""
+"Both of these commands take a count and increase or decrease the window size "
+"by that many lines.  Thus \"4 CTRL-W +\" make the window four lines higher."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:134
+msgid "To set the window height to a specified number of lines: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:136
+#, no-wrap
+msgid "\t{height}CTRL-W _\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:141
+#, no-wrap
+msgid ""
+"That's: a number {height}, CTRL-W and then an underscore (the - key with Shift\n"
+"on English-US keyboards).\n"
+"   To make a window as high as it can be, use the CTRL-W _ command without a\n"
+"count.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:144
+msgid "USING THE MOUSE"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:150
+msgid ""
+"In Vim you can do many things very quickly from the keyboard.  "
+"Unfortunately, the window resizing commands require quite a bit of typing.  "
+"In this case, using the mouse is faster.  Position the mouse pointer on a "
+"status line.  Now press the left mouse button and drag.  The status line "
+"will move, thus making the window on one side higher and the other smaller."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:153 original/TXT/usr_24.txt:168
+msgid "OPTIONS"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:160
+#, no-wrap
+msgid ""
+"The 'winheight' option can be set to a minimal desired height of a window and\n"
+"'winminheight' to a hard minimum height.\n"
+"   Likewise, there is 'winwidth' for the minimal desired width and\n"
+"'winminwidth' for the hard minimum width.\n"
+"   The 'equalalways' option, when set, makes Vim equalize the windows sizes\n"
+"when a window is closed or opened.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:163
+#, no-wrap
+msgid "*08.4*\tVertical splits\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:166
+msgid ""
+"The \":split\" command creates the new window above the current one.  To "
+"make the window appear at the left side, use: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:168
+#, no-wrap
+msgid "\t:vsplit\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:171
+#, no-wrap
+msgid ""
+"or: >\n"
+"\t:vsplit two.c\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:173
+msgid "The result looks something like this:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:182
+#, no-wrap
+msgid ""
+"\t+--------------------------------------+\n"
+"\t|/* file two.c */   |/* file one.c */  |\n"
+"\t|~\t\t    |~\t\t       |\n"
+"\t|~\t\t    |~\t\t       |\n"
+"\t|~\t\t    |~\t\t       |\n"
+"\t|two.c===============one.c=============|\n"
+"\t|\t\t\t\t       |\n"
+"\t+--------------------------------------+\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:185
+msgid ""
+"Actually, the | lines in the middle will be in reverse video.  This is "
+"called the vertical separator.  It separates the two windows left and right "
+"of it."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:188
+msgid ""
+"There is also the \":vnew\" command, to open a vertically split window on a "
+"new, empty file.  Another way to do this: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:190
+#, no-wrap
+msgid "\t:vertical new\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:195
+msgid ""
+"The \":vertical\" command can be inserted before another command that splits "
+"a window.  This will cause that command to split the window vertically "
+"instead of horizontally.  (If the command doesn't split a window, it works "
+"unmodified.)"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:198
+msgid "MOVING BETWEEN WINDOWS"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:202
+msgid ""
+"Since you can split windows horizontally and vertically as much as you like, "
+"you can create almost any layout of windows.  Then you can use these "
+"commands to move between them:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:207
+#, no-wrap
+msgid ""
+"\tCTRL-W h\tmove to the window on the left\n"
+"\tCTRL-W j\tmove to the window below\n"
+"\tCTRL-W k\tmove to the window above\n"
+"\tCTRL-W l\tmove to the window on the right\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:210
+#, no-wrap
+msgid ""
+"\tCTRL-W t\tmove to the TOP window\n"
+"\tCTRL-W b\tmove to the BOTTOM window\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:214
+#, no-wrap
+msgid ""
+"You will notice the same letters as used for moving the cursor.  And the\n"
+"cursor keys can also be used, if you like.\n"
+"   More commands to move to other windows: |Q_wi|.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:217
+#, no-wrap
+msgid "*08.5*\tMoving windows\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:221
+msgid ""
+"You have split a few windows, but now they are in the wrong place.  Then you "
+"need a command to move the window somewhere else.  For example, you have "
+"three windows like this:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:236
+#, no-wrap
+msgid ""
+"\t+----------------------------------+\n"
+"\t|/* file two.c */\t\t   |\n"
+"\t|~\t\t\t\t   |\n"
+"\t|~\t\t\t\t   |\n"
+"\t|two.c=============================|\n"
+"\t|/* file three.c */\t\t   |\n"
+"\t|~\t\t\t\t   |\n"
+"\t|~\t\t\t\t   |\n"
+"\t|three.c===========================|\n"
+"\t|/* file one.c */\t\t   |\n"
+"\t|~\t\t\t\t   |\n"
+"\t|one.c=============================|\n"
+"\t|\t\t\t\t   |\n"
+"\t+----------------------------------+\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:239
+msgid ""
+"Clearly the last one should be at the top.  Go to that window (using CTRL-W "
+"w)  and the type this command: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:241
+#, no-wrap
+msgid "\tCTRL-W K\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:247
+#, no-wrap
+msgid ""
+"This uses the uppercase letter K.  What happens is that the window is moved to\n"
+"the very top.  You will notice that K is again used for moving upwards.\n"
+"   When you have vertical splits, CTRL-W K will move the current window to the\n"
+"top and make it occupy the full width of the Vim window.  If this is your\n"
+"layout:\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:258
+#, no-wrap
+msgid ""
+"\t+-------------------------------------------+\n"
+"\t|/* two.c */  |/* three.c */  |/* one.c */  |\n"
+"\t|~\t      |~\t      |~\t    |\n"
+"\t|~\t      |~\t      |~\t    |\n"
+"\t|~\t      |~\t      |~\t    |\n"
+"\t|~\t      |~\t      |~\t    |\n"
+"\t|~\t      |~\t      |~\t    |\n"
+"\t|two.c=========three.c=========one.c========|\n"
+"\t|\t\t\t\t\t    |\n"
+"\t+-------------------------------------------+\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:260
+msgid "Then using CTRL-W K in the middle window (three.c) will result in:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:271
+#, no-wrap
+msgid ""
+"\t+-------------------------------------------+\n"
+"\t|/* three.c */\t\t\t\t    |\n"
+"\t|~\t\t\t\t\t    |\n"
+"\t|~\t\t\t\t\t    |\n"
+"\t|three.c====================================|\n"
+"\t|/* two.c */\t       |/* one.c */\t    |\n"
+"\t|~\t\t       |~\t\t    |\n"
+"\t|two.c==================one.c===============|\n"
+"\t|\t\t\t\t\t    |\n"
+"\t+-------------------------------------------+\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:273
+msgid "The other three similar commands (you can probably guess these now):"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:277
+#, no-wrap
+msgid ""
+"\tCTRL-W H\tmove window to the far left\n"
+"\tCTRL-W J\tmove window to the bottom\n"
+"\tCTRL-W L\tmove window to the far right\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:280
+#, no-wrap
+msgid "*08.6*\tCommands for all windows\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:283
+msgid ""
+"When you have several windows open and you want to quit Vim, you can close "
+"each window separately.  A quicker way is using this command: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:285
+#, no-wrap
+msgid "\t:qall\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:290
+msgid ""
+"This stands for \"quit all\".  If any of the windows contain changes, Vim "
+"will not exit.  The cursor will automatically be positioned in a window with "
+"changes.  You can then either use \":write\" to save the changes, or \":quit!"
+"\" to throw them away."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:293
+msgid ""
+"If you know there are windows with changes, and you want to save all these "
+"changes, use this command: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:295
+#, no-wrap
+msgid "\t:wall\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:301
+#, no-wrap
+msgid ""
+"This stands for \"write all\".  But actually, it only writes files with\n"
+"changes.  Vim knows it doesn't make sense to write files that were not\n"
+"changed.\n"
+"   And then there is the combination of \":qall\" and \":wall\": the \"write and\n"
+"quit all\" command: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:303
+#, no-wrap
+msgid "\t:wqall\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:306
+#, no-wrap
+msgid ""
+"This writes all modified files and quits Vim.\n"
+"   Finally, there is a command that quits Vim and throws away all changes: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:308
+#, no-wrap
+msgid "\t:qall!\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:310
+msgid "Be careful, there is no way to undo this command!"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:313
+msgid "OPENING A WINDOW FOR ALL ARGUMENTS"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:315
+msgid ""
+"To make Vim open a window for each file, start it with the \"-o\" argument: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:317
+#, no-wrap
+msgid "\tvim -o one.txt two.txt three.txt\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:319
+msgid "This results in:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:332
+#, no-wrap
+msgid ""
+"\t+-------------------------------+\n"
+"\t|file one.txt\t\t\t|\n"
+"\t|~\t\t\t\t|\n"
+"\t|one.txt========================|\n"
+"\t|file two.txt\t\t\t|\n"
+"\t|~\t\t\t\t|\n"
+"\t|two.txt========================|\n"
+"\t|file three.txt\t\t\t|\n"
+"\t|~\t\t\t\t|\n"
+"\t|three.txt======================|\n"
+"\t|\t\t\t\t|\n"
+"\t+-------------------------------+\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:336
+#, no-wrap
+msgid ""
+"The \"-O\" argument is used to get vertically split windows.\n"
+"   When Vim is already running, the \":all\" command opens a window for each\n"
+"file in the argument list.  \":vertical all\" does it with vertical splits.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:339
+#, no-wrap
+msgid "*08.7*\tViewing differences with vimdiff\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:345
+#, no-wrap
+msgid ""
+"There is a special way to start Vim, which shows the differences between two\n"
+"files.  Let's take a file \"main.c\" and insert a few characters in one line.\n"
+"Write this file with the 'backup' option set, so that the backup file\n"
+"\"main.c~\" will contain the previous version of the file.\n"
+"   Type this command in a shell (not in Vim): >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:347
+#, no-wrap
+msgid "\tvimdiff main.c~ main.c\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:350
+msgid ""
+"Vim will start, with two windows side by side.  You will only see the line "
+"in which you added characters, and a few lines above and below it."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:369
+#, no-wrap
+msgid ""
+"\t VV\t\t      VV\n"
+"\t+-----------------------------------------+\n"
+"\t|+ +--123 lines: /* a|+ +--123 lines: /* a|  <- fold\n"
+"\t|  text\t\t     |\ttext\t\t  |\n"
+"\t|  text\t\t     |\ttext\t\t  |\n"
+"\t|  text\t\t     |\ttext\t\t  |\n"
+"\t|  text\t\t     |\tchanged text\t  |  <- changed line\n"
+"\t|  text\t\t     |\ttext\t\t  |\n"
+"\t|  text\t\t     |\t------------------|  <- deleted line\n"
+"\t|  text\t\t     |\ttext\t\t  |\n"
+"\t|  text\t\t     |\ttext\t\t  |\n"
+"\t|  text\t\t     |\ttext\t\t  |\n"
+"\t|+ +--432 lines: text|+ +--432 lines: text|  <- fold\n"
+"\t|  ~\t\t     |\t~\t\t  |\n"
+"\t|  ~\t\t     |\t~\t\t  |\n"
+"\t|main.c~==============main.c==============|\n"
+"\t|\t\t\t\t\t  |\n"
+"\t+-----------------------------------------+\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:372
+msgid ""
+"(This picture doesn't show the highlighting, use the vimdiff command for a "
+"better look.)"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:384
+#, no-wrap
+msgid ""
+"The lines that were not modified have been collapsed into one line.  This is\n"
+"called a closed fold.  They are indicated in the picture with \"<- fold\".  Thus\n"
+"the single fold line at the top stands for 123 text lines.  These lines are\n"
+"equal in both files.\n"
+"   The line marked with \"<- changed line\" is highlighted, and the inserted\n"
+"text is displayed with another color.  This clearly shows what the difference\n"
+"is between the two files.\n"
+"   The line that was deleted is displayed with \"---\" in the main.c window.\n"
+"See the \"<- deleted line\" marker in the picture.  These characters are not\n"
+"really there.  They just fill up main.c, so that it displays the same number\n"
+"of lines as the other window.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:387
+msgid "THE FOLD COLUMN"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:397
+#, no-wrap
+msgid ""
+"Each window has a column on the left with a slightly different background.  In\n"
+"the picture above these are indicated with \"VV\".  You notice there is a plus\n"
+"character there, in front of each closed fold.  Move the mouse pointer to that\n"
+"plus and click the left button.  The fold will open, and you can see the text\n"
+"that it contains.\n"
+"   The fold column contains a minus sign for an open fold.  If you click on\n"
+"this -, the fold will close.\n"
+"   Obviously, this only works when you have a working mouse.  You can also use\n"
+"\"zo\" to open a fold and \"zc\" to close it.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:400
+msgid "DIFFING IN VIM"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:403
+msgid ""
+"Another way to start in diff mode can be done from inside Vim.  Edit the "
+"\"main.c\" file, then make a split and show the differences: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:406
+#, no-wrap
+msgid ""
+"\t:edit main.c\n"
+"\t:vertical diffsplit main.c~ \n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:409
+msgid ""
+"The \":vertical\" command is used to make the window split vertically.  If "
+"you omit this, you will get a horizontal split."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:413
+msgid ""
+"If you have a patch or diff file, you can use the third way to start diff "
+"mode.  First edit the file to which the patch applies.  Then tell Vim the "
+"name of the patch file: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:416
+#, no-wrap
+msgid ""
+"\t:edit main.c\n"
+"\t:vertical diffpatch main.c.diff\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:422
+#, no-wrap
+msgid ""
+"WARNING: The patch file must contain only one patch, for the file you are\n"
+"editing.  Otherwise you will get a lot of error messages, and some files might\n"
+"be patched unexpectedly.\n"
+"   The patching will only be done to the copy of the file in Vim.  The file on\n"
+"your harddisk will remain unmodified (until you decide to write the file).\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:425
+msgid "SCROLL BINDING"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:430
+#, no-wrap
+msgid ""
+"When the files have more changes, you can scroll in the usual way.  Vim will\n"
+"try to keep both the windows start at the same position, so you can easily see\n"
+"the differences side by side.\n"
+"   When you don't want this for a moment, use this command: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:432
+#, no-wrap
+msgid "\t:set noscrollbind\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:435
+msgid "JUMPING TO CHANGES"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:438
+msgid ""
+"When you have disabled folding in some way, it may be difficult to find the "
+"changes.  Use this command to jump forward to the next change: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:440
+#, no-wrap
+msgid "\t]c\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:442
+msgid "To go the other way use: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:444
+#, no-wrap
+msgid "\t[c\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:446
+msgid "Prepended a count to jump further away."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:449
+msgid "REMOVING CHANGES"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:453
+msgid ""
+"You can move text from one window to the other.  This either removes "
+"differences or adds new ones.  Vim doesn't keep the highlighting updated in "
+"all situations.  To update it use this command: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:455
+#, no-wrap
+msgid "\t:diffupdate\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:460
+msgid ""
+"To remove a difference, you can move the text in a highlighted block from "
+"one window to another.  Take the \"main.c\" and \"main.c~\" example above.  "
+"Move the cursor to the left window, on the line that was deleted in the "
+"other window.  Now type this command: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:462
+#, no-wrap
+msgid "\tdp\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:467
+#, no-wrap
+msgid ""
+"The change will be removed by putting the text of the current window in the\n"
+"other window.  \"dp\" stands for \"diff put\".\n"
+"   You can also do it the other way around.  Move the cursor to the right\n"
+"window, to the line where \"changed\" was inserted.  Now type this command: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:469
+#, no-wrap
+msgid "\tdo\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:474
+msgid ""
+"The change will now be removed by getting the text from the other window.  "
+"Since there are no changes left now, Vim puts all text in a closed fold.  "
+"\"do\" stands for \"diff obtain\".  \"dg\" would have been better, but that "
+"already has a different meaning (\"dgg\" deletes from the cursor until the "
+"first line)."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:476
+msgid "For details about diff mode, see |vimdiff|."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:479
+#, no-wrap
+msgid "*08.8*\tVarious\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:482
+msgid ""
+"The 'laststatus' option can be used to specify when the last window has a "
+"statusline:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:486
+#, no-wrap
+msgid ""
+"\t0\tnever\n"
+"\t1\tonly when there are split windows (the default)\n"
+"\t2\talways\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:493
+#, no-wrap
+msgid ""
+"Many commands that edit another file have a variant that splits the window.\n"
+"For Command-line commands this is done by prepending an \"s\".  For example:\n"
+"\":tag\" jumps to a tag, \":stag\" splits the window and jumps to a\n"
+"tag.\n"
+"   For Normal mode commands a CTRL-W is prepended.  CTRL-^ jumps to the\n"
+"alternate file, CTRL-W CTRL-^ splits the window and edits the alternate file.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:497
+msgid ""
+"The 'splitbelow' option can be set to make a new window appear below the "
+"current window.  The 'splitright' option can be set to make a vertically "
+"split window appear right of the current window."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:500
+msgid ""
+"When splitting a window you can prepend a modifier command to tell where the "
+"window is to appear:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:507
+#, no-wrap
+msgid ""
+"\t:leftabove {cmd}\tleft or above the current window\n"
+"\t:aboveleft {cmd}\tidem\n"
+"\t:rightbelow {cmd}\tright or below the current window\n"
+"\t:belowright {cmd}\tidem\n"
+"\t:topleft {cmd}\t\tat the top or left of the Vim window\n"
+"\t:botright {cmd}\t\tat the bottom or right of the Vim window\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:511
+#, no-wrap
+msgid "*08.9*\tTab pages\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:514
+msgid ""
+"You will have noticed that windows never overlap.  That means you quickly "
+"run out of screen space.  The solution for this is called Tab pages."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:516
+msgid ""
+"Assume you are editing \"thisfile\".  To create a new tab page use this "
+"command: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:518
+#, no-wrap
+msgid "\t:tabedit thatfile\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:521
+msgid ""
+"This will edit the file \"thatfile\" in a window that occupies the whole Vim "
+"window.  And you will notice a bar at the top with the two file names:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:532
+#, no-wrap
+msgid ""
+"\t+----------------------------------+\n"
+"\t| thisfile | /thatfile/ __________X|    (thatfile is bold)\n"
+"\t|/* thatfile */\t\t\t   |\n"
+"\t|that\t\t\t\t   |\n"
+"\t|that\t\t\t\t   |\n"
+"\t|~\t\t\t\t   |\n"
+"\t|~\t\t\t\t   |\n"
+"\t|~\t\t\t\t   |\n"
+"\t|\t\t\t\t   |\n"
+"\t+----------------------------------+\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:536
+msgid ""
+"You now have two tab pages.  The first one has a window for \"thisfile\" and "
+"the second one a window for \"thatfile\".  It's like two pages that are on "
+"top of eachother, with a tab sticking out of each page showing the file name."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:538
+msgid ""
+"Now use the mouse to click on \"thisfile\" in the top line.  The result is"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:549
+#, no-wrap
+msgid ""
+"\t+----------------------------------+\n"
+"\t| /thisfile/ | thatfile __________X|    (thisfile is bold)\n"
+"\t|/* thisfile */\t\t\t   |\n"
+"\t|this\t\t\t\t   |\n"
+"\t|this\t\t\t\t   |\n"
+"\t|~\t\t\t\t   |\n"
+"\t|~\t\t\t\t   |\n"
+"\t|~\t\t\t\t   |\n"
+"\t|\t\t\t\t   |\n"
+"\t+----------------------------------+\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:553
+msgid ""
+"Thus you can switch between tab pages by clicking on the label in the top "
+"line.  If you don't have a mouse or don't want to use it, you can use the "
+"\"gt\" command.  Mnemonic: Goto Tab."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:555
+msgid "Now let's create another tab page with the command: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:557
+#, no-wrap
+msgid "\t:tab split\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:560
+msgid ""
+"This makes a new tab page with one window that is editing the same buffer as "
+"the window we were in:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:571
+#, no-wrap
+msgid ""
+"\t+-------------------------------------+\n"
+"\t| thisfile | /thisfile/ | thatfile __X|   (thisfile is bold)\n"
+"\t|/* thisfile */\t\t\t      |\n"
+"\t|this\t\t\t\t      |\n"
+"\t|this\t\t\t\t      |\n"
+"\t|~\t\t\t\t      |\n"
+"\t|~\t\t\t\t      |\n"
+"\t|~\t\t\t\t      |\n"
+"\t|\t\t\t\t      |\n"
+"\t+-------------------------------------+\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:574
+msgid ""
+"You can put \":tab\" before any Ex command that opens a window.  The window "
+"will be opened in a new tab page.  Another example: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:576
+#, no-wrap
+msgid "\t:tab help gt\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:578
+msgid "Will show the help text for \"gt\" in a new tab page."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:580
+msgid "A few more things you can do with tab pages:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:583
+#, no-wrap
+msgid ""
+"- click with the mouse in the space after the last label\n"
+"\tThe next tab page will be selected, like with \"gt\".\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:587
+#, no-wrap
+msgid ""
+"- click with the mouse on the \"X\" in the top right corner\n"
+"\tThe current tab page will be closed.  Unless there are unsaved\n"
+"\tchanges in the current tab page.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:590
+#, no-wrap
+msgid ""
+"- double click with the mouse in the top line\n"
+"\tA new tab page will be created.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:594
+#, no-wrap
+msgid ""
+"- the \"tabonly\" command\n"
+"\tCloses all tab pages except the current one.  Unless there are unsaved\n"
+"\tchanges in other tab pages.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:596
+msgid "For more information about tab pages see |tab-page|."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:600
+msgid "Next chapter: |usr_09.txt| Using the GUI"
+msgstr ""

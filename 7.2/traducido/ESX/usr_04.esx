@@ -1,8 +1,9 @@
 *usr_04.esx*	Para Vim version 7.2.  Último cambio: 8/2/2007
 
-		  MANUAL DE USUARIO DE VIM - por Bram Moolenaar
+		MANUAL DE USUARIO DE VIM - por Bram Moolenaar
 
 			   Hacer cambios pequeños
+
 
 Este capítulo le muestra diferentes formas de hacer correcciones y moverse
 en el texto. Le muestra los tres modos básicos de cambiar texto:
@@ -68,8 +69,8 @@ por lo que el último carácter de la línea se incluye en la operación:
 
 Esto sigue siempre la misma estructura: operador-movimiento. Primero
 introduce el operador. Por ejemplo, «d» es el operador de eliminación. Luego
-introduce una orden de movimiento «4l» o «w». De esta manera, puede
-operar sobre cualquier texto en el que se pueda desplazar.
+introduce una orden de movimiento «4l» o «w». De esta manera, puede operar
+sobre cualquier texto en el que se pueda desplazar.
 
 ==============================================================================
 *04.2*	Cambiar texto
@@ -93,21 +94,23 @@ Este «c2wEl ser<Esc>» contiene las siguientes partes:
 
 Si ha prestado atención, se habrá dado cuenta de que hay algo raro: El
 espacio antes de «humano» no se ha eliminado. Hay un dicho: para cada
-problema hay una solución que es simple, clara y errónea. Este es el caso con
-el ejemplo usado aquí con la orden «cw». El operador «c» funciona justo
-como el operador «d», con una excepción: «cw». De hecho, funciona justo igual
-que «ce», cambiar hasta el final de la palabra. El espacio después de la
-palabra no se incluye. Esta excepción data de Vi. Ya que mucha gente se ha
-acostumbrado a ella, ha permanecido con Vim.
+problema hay una solución que es simple, clara y errónea. Este es el caso
+con el ejemplo usado aquí con la orden «cw». El operador «c» funciona justo
+como el operador «d», con una excepción: «cw». De hecho, funciona justo
+igual que «ce», cambiar hasta el final de la palabra. El espacio después de
+la palabra no se incluye. Esta excepción data de Vi. Ya que mucha gente se
+ha acostumbrado a ella, ha permanecido con Vim.
+
 
 MÁS CAMBIOS
 
 Del mismo modo que «dd» elimina una línea completa, «cc» la cambia. Además,
 mantiene la sangría (los espacios en blanco precedentes).
 
-Así como «d$» elimina hasta el final de la línea, «c$» la cambia hasta el final.
-Es como pulsar «d$» para eliminar el texto y luego «a» para activar el modo
-Insertar y añadir más texto.
+Así como «d$» elimina hasta el final de la línea, «c$» la cambia hasta el
+final.  Es como pulsar «d$» para eliminar el texto y luego «a» para activar
+el modo Insertar y añadir más texto.
+
 
 ACCESOS DIRECTOS
 
@@ -121,13 +124,15 @@ asignado una orden de una sola letra:
 	s  equivale a  cl  (cambiar un carácter)
 	S  equivale a  cc  (cambiar una única línea)
 
+
 DÓNDE PONER EL CONTADOR
 
 Las órdenes «3dw» y «d3wx eliminan tres palabras. Si quiere ponerse
 detallista, la primera ordem, «3dw», elimina una palabra tres veces; la
 orden «d3w» elimina tres palabras de una vez. Esta diferencia no se puede
-distinguir. Sin embargo, puede poner dos multiplicadores. Por ejemplo
-«3d2w» elimina dos palabras y lo repite 3 veces, un total de seis palabras.
+distinguir. Sin embargo, puede poner dos multiplicadores. Por ejemplo «3d2w»
+elimina dos palabras y lo repite 3 veces, un total de seis palabras.
+
 
 REEMPLAZAR CON UN CARÁCTER
 
@@ -149,20 +154,20 @@ el mismo carácter. Por ejemplo:
 	Aquí hay algo que exxxxxal ~
 
 Para reemplazar un carácter con un salto de línea use «r<Entrar>». Esto
-elimina un carácter e inserta un salto. Usar un multiplicador aquí sólo afecta
-al número de caracteres eliminados: «4r<Entrar>» reemplaza cuatro caracteres
-con un salto.
+elimina un carácter e inserta un salto. Usar un multiplicador aquí sólo
+afecta al número de caracteres eliminados: «4r<Entrar>» reemplaza cuatro
+caracteres con un salto.
 
 ==============================================================================
 *04.3*	Repetir un cambio
 
-La orden «.» es uno de los más sencillos pero más potentes de Vim. Repite
-el último cambio. Por ejemplo, suponga que está editando un archivo HTML y
+La orden «.» es uno de los más sencillos pero más potentes de Vim. Repite el
+último cambio. Por ejemplo, suponga que está editando un archivo HTML y
 desea eliminar todas las etiquetas <B>. Para ello, coloque el cursor sobre
-el primer < y luego elimine el <B> con la orden «df>». Entonces va al
-< del </B> y lo elimina con la orden «.». La orden «.» ejecuta el último
-cambio (en este caso «df>»). Para eliminar otra etiqueta, coloque el cursor
-sobre el < y vuelve a pulsar la orden «.».
+el primer < y luego elimine el <B> con la orden «df>». Entonces va al < del
+</B> y lo elimina con la orden «.». La orden «.» ejecuta el último cambio
+(en este caso «df>»). Para eliminar otra etiqueta, coloque el cursor sobre
+el < y vuelve a pulsar la orden «.».
 
 			      Para <B>generar</B> una tabla de <B>contenidos ~
 	f<   ir al primer  <    --->
@@ -172,12 +177,11 @@ sobre el < y vuelve a pulsar la orden «.».
 	f<   ir al siguiente <		     ------------------>
 	.    repetir df>				       -->
 
-La orden «.» funciona para todos los cambios que haga excepto para la
-orden «u» (deshacer), CTRL-R, (rehacer) y todos los que comienzan con «:».
+La orden «.» funciona para todos los cambios que haga excepto para la orden
+«u» (deshacer), CTRL-R, (rehacer) y todos los que comienzan con «:».
 
 Otro ejemplo: Desea cambiar la palabra «cuatro» por «cinco». Aparece varias
-veces en su texto. Puede hacer esto rápidamente en una secuencia de
-órdenes:
+veces en su texto. Puede hacer esto rápidamente en una secuencia de órdenes:
 
 	/cuatro<Entrar>	encuentra la primera cadena «cuatro»
 	cwcinco<Esc>	cambia la palabra a «cinco»
@@ -192,8 +196,8 @@ veces en su texto. Puede hacer esto rápidamente en una secuencia de
 
 Los cambios operador-movimiento funcionan bastante bien para eliminar
 elementos sencillos. Pero a menudo, no es fácil decidir que orden de
-movimiento le desplazará hasta el texto que quiere modificar.
-Es el momento de usar el modo Visual.
+movimiento le desplazará hasta el texto que quiere modificar.  Es el momento
+de usar el modo Visual.
 
 Puede iniciar el modo Visual pulsando «v». Puede mover el cursor sobre el
 texto que desea modificar. Mientras haces esto, el texto se resalta.
@@ -213,6 +217,7 @@ llegar a la posición deseada. Puede verlo de forma inmediata antes de pulsar
 Si en cualquier momento decide que no quiere hacer nada con el texto
 resaltado, simplemente pulse <Esc> y el modo Visual parará sin hacer nada.
 
+
 SELECCIONAR LÍNEAS
 
 Si quiere trabajar con líneas completas, use «V» para iniciar el modo
@@ -229,6 +234,7 @@ hacia arriba o hacia abajo, la selección se extenderá a líneas completas.
 			  | más texto más	   |
 			  +------------------------+
 
+
 SELECCIONAR BLOQUES
 
 Si desea trabajar en un bloque rectangular de caracteres, use CTRL-V para
@@ -239,26 +245,27 @@ iniciar el modo Visual. Esto es muy útil si trabaja con tablas.
 		juan		0	90	39
 		estéban		392	63	334
 
-Para eliminar la columna central «Q2» desplaze el cursor a la «Q» de «Q2». Pulse
-CTRL-V para iniciar el modo Visual de bloques. Ahora mueva el cursor tres
-líneas abajo con «3j» y a la siguiente palabra con «w». Puede comprobar que el
-primer carácter de la última columna se ha incluido. Para excluirlo, use «h».
-Si ahora pulsa «d» la columna central desaparecerá.
+Para eliminar la columna central «Q2» desplaze el cursor a la «Q» de
+«Q2». Pulse CTRL-V para iniciar el modo Visual de bloques. Ahora mueva el
+cursor tres líneas abajo con «3j» y a la siguiente palabra con «w». Puede
+comprobar que el primer carácter de la última columna se ha incluido. Para
+excluirlo, use «h».  Si ahora pulsa «d» la columna central desaparecerá.
+
 
 IR AL OTRO LADO
 
 Si ha seleccionado algo de texto en modo Visual, y descubre que necesita
 cambiar el otro lado de la selección, use la orden «o» (Truco: o para el
 «otro» lado). El cursor irá hasta el otro final de la selección, y podrá
-modificar dónde comienza la selección. Pulsa «o» de nuevo para volver al otro
-lado.
+modificar dónde comienza la selección. Pulsa «o» de nuevo para volver al
+otro lado.
 
 Cuando usa el modo Visual de bloques, tiene cuatro esquinas. «o» le llevará
 a una de las otras líneas diagonalmente. Use «O» para moverse hacia el otro
 final de la misma línea.
 
-Observe que «o» y «O» en el modo Visual funcionan de forma muy diferente a cómo lo
-hacen en el modo Normal, donde abririán una nueva línea.
+Observe que «o» y «O» en el modo Visual funcionan de forma muy diferente a
+cómo lo hacen en el modo Normal, donde abririán una nueva línea.
 
 ==============================================================================
 *04.5*	Mover texto
@@ -289,6 +296,7 @@ la orden «px la pone justo después del cursor.
 
 	Más de lo mismo para probar órdenes ~
 
+
 MÁS SOBRE LA ORDEN PONER
 
 La orden «P» pone una línea como «p», pero antes del cursor. Cuando elimine
@@ -301,14 +309,15 @@ Puede usar un multiplicador con «p» y «P». El texto se repetirá tantas vece
 como especifique con el multiplicador. Por ejemplo, usar «dd» y luego «3p»
 pone tres copias de la misma línea eliminada.
 
+
 INTERCAMBIAR DOS CARACTERES
 
-Más de una vez, mientras teclea, sus dedos irán por delante de su cerebro (¿o
-al revés?). El resultado es un error del tipo «uqe» en lugar de «que». Vim
-hace que corregir estos problemas sea sencillo. Simplemente ponga el cursor
-sobre la «u» de «uqe» y ejecute la orden «xp». Esto funciona del siguiente
-modo: «x» elimina el carácter «u» y lo coloca en un registro. «p» pone el
-texto después del cursor, justo después de la «q».
+Más de una vez, mientras teclea, sus dedos irán por delante de su cerebro
+(¿o al revés?). El resultado es un error del tipo «uqe» en lugar de
+«que». Vim hace que corregir estos problemas sea sencillo. Simplemente ponga
+el cursor sobre la «u» de «uqe» y ejecute la orden «xp». Esto funciona del
+siguiente modo: «x» elimina el carácter «u» y lo coloca en un registro. «p»
+pone el texto después del cursor, justo después de la «q».
 
 	uqe     qe     que ~
 	x       p
@@ -324,8 +333,8 @@ registro. Puede usar una orden «p» para ponerlo.
 estaba en uso por el operador «cambiar», y la «y» estaba aún disponible.
 Llamar a este el operador «yank» hizo que fuera más fácil recordar la «y».
 
-Ya que «y» es un operador, se usa «yw» para copiar una palabra. Se puede usar
-un multiplicador. Para copiar dos palabras usa «y2w». Por ejemplo:
+Ya que «y» es un operador, se usa «yw» para copiar una palabra. Se puede
+usar un multiplicador. Para copiar dos palabras usa «y2w». Por ejemplo:
 
 	let sqr = LongVariable * ~
 		 -------------->
@@ -340,8 +349,8 @@ Observe que «yw» incluye el espacio en blanco después de la palabra. Si no
 quiere que esto ocurra, us «ye».
 
 La orden «yy» copia una sola línea, al igual que «dd» la elimina. Sin
-embargo, mientras que «D» elimina desde el cursor hasta el final de la línea,
-«Y» funciona como «yy», copiando la línea completa. ¡Cuidado con esta
+embargo, mientras que «D» elimina desde el cursor hasta el final de la
+línea, «Y» funciona como «yy», copiando la línea completa. ¡Cuidado con esta
 inconsistencia! Use «y$» para copiar sólo hasta el final.
 
 	línea de texto   yy	línea de texto         línea de texto
@@ -353,8 +362,8 @@ inconsistencia! Use «y$» para copiar sólo hasta el final.
 *04.7*	Uso del portapapeles
 
 Si está usando la versión GUI de Vim (gvim), puede usar la opción «Copiar»
-del menú «Edit». Seleccione primero el texto en modo Visual, use después
-el menú Editar/Copiar. Así, el texto seleccionado se copia al portapapeles.
+del menú «Edit». Seleccione primero el texto en modo Visual, use después el
+menú Editar/Copiar. Así, el texto seleccionado se copia al portapapeles.
 Ahora puede pegarlo en otros programas o en el propio Vim.
 
 Si ha copiado texto en el portapapeles desde otra aplicación, puede pegarlo
@@ -363,8 +372,8 @@ Insertar. En modo Visual el texto seleccionado es reemplazado.
 
 La opción «Cortar» del menú elimina el texto antes de ponerlo en el
 portapapeles. Las opciones «Cortar», «Copiar» y «Pegar» están también
-disponibles en el menú popup (sólo cuando esté disponible). Si su Vim tiene barra
-de tareas, puede encontrar estos botones allí también.
+disponibles en el menú popup (sólo cuando esté disponible). Si su Vim tiene
+barra de tareas, puede encontrar estos botones allí también.
 
 Si no usa la GUI o no te gusta usar el menú, tiene otro modo. Use la orden
 «y» normal (copiar) y «p» (poner), pero antes escriba «"*» (comillas dobles,
@@ -376,8 +385,9 @@ Para poner texto desde el portapapeles en el texto: >
 
 	"*p
 
-Esto sólo funciona en versiones de Vim que incluyen soporte para portapapeles.
-Más sobre el portapapeles en la sección |09.3| y aquí: |clipboard|.
+Esto sólo funciona en versiones de Vim que incluyen soporte para
+portapapeles.  Más sobre el portapapeles en la sección |09.3| y aquí:
+|clipboard|.
 
 ==============================================================================
 *04.8*	Objetos de texto
@@ -414,24 +424,24 @@ Vaya al comienzo de la segunda línea, sobre el «es un». Ahora, use «cis»:
 	¿Qué tal?    Algo ~
 	de texto. ~
 
-El cursor está entre los espacios de la primera línea. Escriba ahora la nueva
-frase «Otra línea.»:
+El cursor está entre los espacios de la primera línea. Escriba ahora la
+nueva frase «Otra línea.»:
 
 	¿Qué tal?  Otra línea.  Algo ~
 	de texto. ~
 
 «cis» consiste del operador «c» (cambiar) y el objeto de texto «is». Esto
 viene de «Inner Sentence». También hay un objeto «as» (a sentence). La
-diferencia es que «as» incluye el espacio en blanco después de la frase e «is»
-no. Si desea eliminar la frase y quiere eliminar al mismo tiempo el
+diferencia es que «as» incluye el espacio en blanco después de la frase e
+«is» no. Si desea eliminar la frase y quiere eliminar al mismo tiempo el
 espacio en blanco posterior, use entonces «das». Si quiere escribir otro
 texto, el espacio puede permanecer, con lo que puedes usar «cis».
 
 También puede usar los objetos de texto on modo Visual. Incluirá el objeto
 de texto en la selección. El modo Visual permanece, así que puede hacerlo
 varias veces. Por ejemplo, inicie el modo Visual con «v» y seleccione una
-frase con «as». Ahora puede repetir «as» para incluir más frases.
-Por último, use un operador para hacer algo con las frases seleccionadas.
+frase con «as». Ahora puede repetir «as» para incluir más frases.  Por
+último, use un operador para hacer algo con las frases seleccionadas.
 
 Puede encontrar una larga lista de objetos de texto aquí: |text-objects|.
 
@@ -448,9 +458,9 @@ continúa hasta que pulse <Esc>.
 
 	Esto es interesante. ~
 
-Puede que haya notado que ha reemplazado 5 caracteres en la línea
-con otros doce. La orden «R» extiende automáticamente la línea si se queda
-sin caracteres que reemplazar. Esto no ocurrirá en la siguiente línea.
+Puede que haya notado que ha reemplazado 5 caracteres en la línea con otros
+doce. La orden «R» extiende automáticamente la línea si se queda sin
+caracteres que reemplazar. Esto no ocurrirá en la siguiente línea.
 
 Puede alternar el modo Insertar y Reemplazar con la tecla <Insert>.
 
@@ -462,9 +472,9 @@ anterior reaparece. Por lo tanto, funciona como la orden deshacer para el
 *04.10*	Conclusión
 
 Los operadores, órdenes de movimiento y los objetos de texto le dan
-múltiples posibilidades para hacer muchas combinaciones.
-Ahora que sabe cómo funciona, puede usar N operadores con M
-órdenes de movimiento para hacer M * N órdenes!
+múltiples posibilidades para hacer muchas combinaciones.  Ahora que sabe
+cómo funciona, puede usar N operadores con M órdenes de movimiento para
+hacer M * N órdenes!
 
 Puede usar la lista completa de operadores aquí: |operator|
 
@@ -481,8 +491,9 @@ daw	elimina la palabra bajo el cursor (incluyendo el espacio en blanco)
 dG	elimina hasta el final del archivo
 dgg	elimina hasta el final del archivo
 
-Si usa «c» en lugar de «d»,estos se convierten en órdenes de cambio.
-Y con «y» copias el texto. Y así en adelante.
+Si usa «c» en lugar de «d»,estos se convierten en órdenes de cambio.  Y con
+«y» copias el texto. Y así en adelante.
+
 
 Hay algunas otras órdenes que no encajan en ningún otro lugar, por lo tanto
 se explican a continuación:
@@ -501,6 +512,8 @@ se explican a continuación:
 
 ==============================================================================
 
-Capítulo siguiente: |usr_05.esx|  Configuración
+Capítulo siguiente: |usr_05.esx| Configuración
 
-Copyright: véase |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:
+Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
+
+Traducción del documento: |vim-doc-es|

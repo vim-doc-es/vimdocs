@@ -4,6 +4,7 @@
 
 				Trucos
 
+
 Puedes conseguir que Vim haga casi cualquier cosa,.mediante la combinación
 varias órdenes. En este capítulo, presentaremos una serie de combinaciones
 útiles. Esto emplea las órdenes introducidos en capítulos anteriores y
@@ -25,8 +26,8 @@ Tabla de contenidos: |usr_toc.esx|
 ==============================================================================
 *12.1*  Reemplazar una palabra
 
-La orden sustituir se puede emplear para reemplazar todas las apariciones
-de una palabra con otra: >
+La orden sustituir se puede emplear para reemplazar todas las apariciones de
+una palabra con otra: >
 
 	:%s/cuatro/4/g
 
@@ -38,17 +39,19 @@ para concordar con el comienzo de una palabra. >
 
 	:%s/\<cuatro/4/g
 
-Obviamente, esto también funcionará mal con «cuatrocientos». Use «\>»
-para concordar el final de una palabra: >
+Obviamente, esto también funcionará mal con «cuatrocientos». Use «\>» para
+concordar el final de una palabra: >
 
 	:%s/\<cuatro\>/4/g
 
 Si está programando, quizá desee reemplazar «cuatro» en los comentarios,
 pero no en el código. Ya que es difícil de especificar, añada la marca «c»
-para que se le pida una confirmación cada vez que se vaya a reemplazar
-la palabra: >
+para que se le pida una confirmación cada vez que se vaya a reemplazar la
+palabra: >
+
 
 	:%s/\<cuatro\>/4/gc
+
 
 REEMPLAZAR EN VARIOS ARCHIVOS
 
@@ -71,8 +74,8 @@ terminan en «.cpp». Quiere renombrar la función «GetResp» a «GetAnswer».
 				comprobar que esto no produzca ningún error.
 	999@q			Ejecute el registro «q» en el resto de archivos.
 
-En el último archivo obtendrá un mensaje de error, porque «wnext» no puede ir
-a un archivo siguiente. Esto parará la ejecución y todo terminará.
+En el último archivo obtendrá un mensaje de error, porque «wnext» no puede
+ir a un archivo siguiente. Esto parará la ejecución y todo terminará.
 
 	Nota:
 	Cuando vuelva a reproducir una secuencia grabada, un error detendrá la
@@ -84,7 +87,8 @@ añada la marca «e» a la orden de sustituir: >
 
 	:%s/\<GetResp\>/GetAnswer/ge
 
-La marca «e» le dice a «:substitute» que ninguna coincidencia no es un error.
+La marca «e» le dice a «:substitute» que ninguna coincidencia no es un
+error.
 
 ==============================================================================
 *12.2*	Cambiar «Último, Primero» a «Primero Último»
@@ -99,7 +103,7 @@ Quiere cambiarlo a:
 	Juan Pepe ~
 	Pedro Amancio ~
 
-Esto se puede hacer con una  sola orden: >
+Esto se puede hacer con una sola orden: >
 
 	:%s/\([^,]*\), \(.*\)/\2 \1/
 
@@ -115,7 +119,7 @@ separan el patrón «desde» y la cadena "hacia". Esto es lo que el patrón
 	    concordar cualquier cosa excepto una coma     [^,]
 	    cualquier número de veces                         *
 	concuerda literalmente ", "                              ,
-	La segunda parte entre \(  \) concuerda «Primero»		   \(  \)
+	La segunda parte entre \(  \) concuerda «Primero»	   \(  \)
 	    cualquier carácter                                       .
 	    cualquier número de veces 					     *
 
@@ -143,7 +147,8 @@ A menudo, en un archivo Makefile tiene una lista de archivos. Por ejemplo:
 		patch.o \ ~
 		backup.o ~
 
-Para ordenar esta lista, filtre el texto a través de la orden externa «sort»: >
+Para ordenar esta lista, filtre el texto a través de la orden externa
+«sort»: >
 
 	/^OBJS
 	j
@@ -165,6 +170,7 @@ vacía. También podría seleccionar las líneas en modo Visual y escribir
 		util.o \ ~
 		version.o \ ~
 
+
 Observe que una barra invertida al final de cada línea se usa para indicar
 que la línea continúa. Tras ordenar, está mal puesto. La línea de «backup.o»
 que estaba al final no tenía una barra invertida. Ahora que se sitúa en otro
@@ -177,8 +183,8 @@ después. De este modo no tendrá este problema de nuevo.
 *12.4*	Invertir el orden de las líneas
 
 La orden «|:global|» se debe combinar con la orden «|:move|» para mover
-todas las líneas antes de la primera línea, invirtiendo el archivo.
-La orden es: >
+todas las líneas antes de la primera línea, invirtiendo el archivo.  La
+orden es: >
 
 	:global/^/m 0
 
@@ -190,8 +196,8 @@ La expresión regular «^» coincide con el comienzo de línea (incluso si la
 línea está en blanco). La orden «|:move|» mueve la línea justo después de la
 mítica «línea cero», de forma que se convierte en la primera línea. Como la
 orden «|:global|» no se confunde al cambiar la numeración de las líneas,
-«|:global|» procede a concordar el resto de líneas del archivo y pone cada una
-como la primera.
+«|:global|» procede a concordar el resto de líneas del archivo y pone cada
+una como la primera.
 
 Esto también funciona sobre un rango de líneas. Vaya primero a la línea de
 encima de la primera y márcala con "mt".  Luego pon el cursor en la última
@@ -219,28 +225,29 @@ Puede ver en qué palabra está (748), y el número total de palabras en el
 archivo (774).
 
 Cuando el texto sea sólo una parte del archivo, puede ir al comienzo del
-texto, pulsar «g CTRL-G», ir al final del texto y volver a escribir
-«g CTRL-G» y usar la cabeza para calcular la diferencia. Es un buen ejercicio,
+texto, pulsar «g CTRL-G», ir al final del texto y volver a escribir «g
+CTRL-G» y usar la cabeza para calcular la diferencia. Es un buen ejercicio,
 pero hay un modo más sencillo. En el modo Visual, seleccione el texto sobre
 el que quiera contar las palabras. Escriba «g CTRL-G». El resultado será:
 
 	Selección 5 of 293 Líneas; 70 of 1884 Palabras; 359 of 10928 Bytes ~
 
-Para otras formas de contar las palabras, líneas y otros, véase |count-items|.
+Para otras formas de contar las palabras, líneas y otros, véase
+|count-items|.
 
 ==============================================================================
 *12.6*	Encontrar una página de manual		*find-manpage*
 
-Mientras edita un script de consola o un programa C, está usando una orden
-o función para el que quiera encontrar una página de manual (en Unix). Vamos
-a usar la forma sencilla. Ponga el cursor sobre la palabra y pulse: >
+Mientras edita un script de consola o un programa C, está usando una orden o
+función para el que quiera encontrar una página de manual (en Unix). Vamos a
+usar la forma sencilla. Ponga el cursor sobre la palabra y pulse: >
 
 	K
 
-Vim ejecutará el programa externo «man» sobre la palabra. Si se encuentra
-la página de manual, se mostrará. Esto usa el paginador normal para
-desplazarse por el texto (con el programa «more»). Cuando llegue al final,
-presionando <Intro> le devolverá a Vim.
+Vim ejecutará el programa externo «man» sobre la palabra. Si se encuentra la
+página de manual, se mostrará. Esto usa el paginador normal para desplazarse
+por el texto (con el programa «more»). Cuando llegue al final, presionando
+<Intro> le devolverá a Vim.
 
 Una desventaja es que no puede ver la página de manual y el texto en el que
 trabaja al mismo tiempo. Hay un truco para hacer que la página de manual
@@ -262,12 +269,12 @@ número de sección primero. Por ejemplo, para ver «echo» en la sección 3: >
 
 	:Man 3 echo
 
-Para saltar a otra página de manual, la cuál está en el texto con la forma típica
-«word(1)», pulse «CTRL-]» sobre ella. Otras llamadas a «:Man» emplearán la
-misma ventana.
+Para saltar a otra página de manual, la cuál está en el texto con la forma
+típica «word(1)», pulse «CTRL-]» sobre ella. Otras llamadas a «:Man»
+emplearán la misma ventana.
 
-Para mostrar una página de manual para la palabra bajo el cursor use
-lo siguiente: >
+Para mostrar una página de manual para la palabra bajo el cursor use lo
+siguiente: >
 
 	\K
 
@@ -277,8 +284,8 @@ edita esta línea:
 
 	if ( strstr (input, "aap") == ) ~
 
-Ponga el cursor en alguna parte de «strstr» y escriba «\K». Una ventana
-se abrirá a continuación para mostrar la página de manual de «strstr()».
+Ponga el cursor en alguna parte de «strstr» y escriba «\K». Una ventana se
+abrirá a continuación para mostrar la página de manual de «strstr()».
 
 ==============================================================================
 *12.7*	Eliminar espacios en blanco sobrantes
@@ -297,17 +304,17 @@ Más tarde explicaremos cómo se escriben patrones como este |usr_27.txt|.
    La parte «hacia» de la orden de sustituxión está vacía: «//». Por lo tanto
 reemplaza con nada, lo que de hecho elimina el espacio en blanco.
 
-Otro uso desafortunado de los espacios es colocarlos antes de un tabulador. A
-menudo, se pueden eliminar sin cambiar la cantidad de espacio en blanco.
-¡Pero no siempre! Por lo tanto, lo mejor es que lo haga a mano. Use esta
-orden de búsqueda: >
+Otro uso desafortunado de los espacios es colocarlos antes de un
+tabulador. A menudo, se pueden eliminar sin cambiar la cantidad de espacio
+en blanco.  ¡Pero no siempre! Por lo tanto, lo mejor es que lo haga a
+mano. Use esta orden de búsqueda: >
 
 	/	
 
-No puede verlo, pero hay un espacio antes de un tabulador en esta orden.
-De hecho, es «/<Espacio><Tabulador>». Use ahora «x» para eliminar el
-espacio y comprobar que la cantidad de espacio en blanco no cambia. Puede
-que tenga que insertar un tabulador si cambia. Teclee «n» para encontrar la
+No puede verlo, pero hay un espacio antes de un tabulador en esta orden. De
+hecho, es «/<Espacio><Tabulador>». Use ahora «x» para eliminar el espacio
+y comprobar que la cantidad de espacio en blanco no cambia. Puede que
+tenga que insertar un tabulador si cambia. Teclee «n» para encontrar la
 próxima coincidencia. Repita esto hasta que no se encuentren más
 concordancias.
 
@@ -336,6 +343,7 @@ y producirá una lista de archivos, estos archivos serán puestos en la línea
 de órdenes de Vim. Podrá usar las órdenes «:next» y «:first» para navegar
 entre los archivos.
 
+
 ENCONTRAR CADA LÍNEA
 
 La orden anterior sólo dice los archivos en los cuáles se encuentra la
@@ -359,6 +367,8 @@ Puedes cambiar esto modificando la opción 'grepprg'.
 
 ==============================================================================
 
-Capítulo siguiente: |usr_20.esx|  Ser eficaz con la línea de órdenes
+Capítulo siguiente: |usr_20.esx| Ser eficaz con la línea de órdenes
 
-Copyright: véase |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:
+Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
+
+Traducción del documento: |vim-doc-es|

@@ -5,17 +5,17 @@
 			Encontrar el archivo a editar
 
 
-Puede encontrar archivos en cualquier lugar, así que, ¿cómo encontrarlos? Vim
-ofrece varias maneras de explorar el árbol de directorios. Hay órdenes para
-saltar a un archivo mencionado en otro. Vim también recuerda qué archivos se
-editaron con anterioridad.
+Puede encontrar archivos en cualquier lugar, así que, ¿cómo encontrarlos?
+Vim ofrece varias maneras de explorar el árbol de directorios. Hay órdenes
+para saltar a un archivo mencionado en otro. Vim también recuerda qué
+archivos se editaron con anterioridad.
 
 |22.1|	El explorador de archivos
 |22.2|	El directorio actual
 |22.3|	Encontrar un archivo
 |22.4|	La lista de búfers
 
- Capítulo siguiente: |usr_23.txt|  Editar otros archivos
+ Capítulo siguiente: |usr_23.esx|  Editar otros archivos
   Capítulo anterior: |usr_21.est|  Abandonar el editor y volver
 Tabla de contenidos: |usr_toc.est|
 
@@ -26,8 +26,8 @@ Vim tiene una extensión que permita editar un directorio. Pruebe esto: >
 
 	:edit .
 
-Mediante la magia de las autoórdenes y de scripts de Vim, la pantalla mostrará
-los contenidos del directorio. Tiene este aspecto:
+Mediante la magia de las autoórdenes y de scripts de Vim, la pantalla
+mostrará los contenidos del directorio. Tiene este aspecto:
 
 " ============================================================================ ~
 " Netrw Directory Listing                                        (netrw v109) ~
@@ -47,26 +47,27 @@ help.txt.info ~
 
 Ahora puede ver estos elementos:
 
-1. El nombre de la herramienta de exploración y su número de versión.
-2. El nombre del directorio a explorar.
-3. El método de ordenación (por nombre, fecha o tamaño).
-4. El orden de los nombres (directorios en primer lugar, después archivos
-   *.h, archivos *.c, etc...).
-5. Como obtener ayuda (use la tecla F1), y un resumen de las órdenes
-   disponibles.
-6. Una lista de los archivos, incluyendo «../», que permite acceder al
-   directorio padre.
+1.  El nombre de la herramienta de exploración y su número de versión
+2.  El nombre del directorio presente
+3.  La directriz de ordenación (puede ser por nombre, tiempo o tamaño)
+4.  El orden de aparición de los nombre (primero directorios, después 
+    archivos *.h, archivos *.c, etc)
+5.  Cómo obtener ayuda (use la tecla <F1>), y una lista abreviada
+    de las órdenes disponibles
+6.  Una lista de archivos, incluyendo «../», que permite acceder al
+    al directorio padre.
 
-Si el resaltado de sintaxis está activado, las diferentes partes se resaltarán, facilitando su visionado.
+Si el resaltado de sintaxis está activado, las diferentes partes se
+resaltarán, facilitando su visionado.
 
-Puede usar las órdenes de Vim en el modo normal para desplazarse a
-a través del texto. Por ejemplo, mueva el cursor al inicio del archivo y
-pulse <Intro>; estará ahora editando ese archivo. Para volver al explorador,
-use «:edit» otra vez, o use «:Explore». CTRL-O también funciona.
+Puede usar las órdenes de Vim en el modo normal para desplazarse a a través
+del texto. Por ejemplo, mueva el cursor al inicio del archivo y pulse
+<Intro>; estará ahora editando ese archivo. Para volver al explorador, use
+«:edit» otra vez, o use «:Explore». CTRL-O también funciona.
 
-Use <Intro> mientras el cursor está sobre un nombre de directorio. El
-el resultado es que el explorador de archivos entra en ese directorio y
-muestra los elementos que ahí se encuentran. Si pulsa <Intro> en el primer
+Use <Intro> mientras el cursor está sobre un nombre de directorio. El el
+resultado es que el explorador de archivos entra en ese directorio y muestra
+los elementos que ahí se encuentran. Si pulsa <Intro> en el primer
 directorio «../», se desplazará al nivel superior. Pulsar «-» realiza la
 misma acción, sin la necesidad de posicionarse primero sobre el elemento
 «../».
@@ -98,13 +99,12 @@ obtiene.
      	 r................Invertir el orden de agrupación............|netrw-r|
 <    	(etc)
 
-La tecla <F1> le lleva un directorio netrw explorando los contenidos
-de la página de ayuda.
-Ésta es una página de ayuda normal; use |CTRL-]| para saltar entre los
-elementos de ayuda, y |CTRL-O| para volver atrás.
+La tecla <F1> le lleva un directorio netrw explorando los contenidos de la
+página de ayuda.  Ésta es una página de ayuda normal; use |CTRL-]| para
+saltar entre los elementos de ayuda, y |CTRL-O| para volver atrás.
 
-Selección de archivos para su visionado y edición: (con el cursor
-sobre un nombre de archivo.
+Selección de archivos para su visionado y edición: (con el cursor sobre un
+nombre de archivo.
 
 	<enter>		Abrir el archivo en la ventana actual.	   |netrw-cr|
 	o		Dividir la ventana horizontalmente y mostrar el archivo |netrw-o|
@@ -113,8 +113,8 @@ sobre un nombre de archivo.
 	P		Editar en la ventana anterior		   |netrw-P|
 	t		Abrir el archivo en una nueva pestaña			   |netrw-t|
 
-Las siguientes órdenes del modo normal se pueden emplear para
-configurar la ventana del navegador:
+Las siguientes órdenes del modo normal se pueden emplear para configurar la
+ventana del navegador:
 
 	i		Control el formato de la lista (estrecho, largo, ancho, y árbol).
 			El formato de lista largo incluye información de tamaño y fecha.
@@ -167,8 +167,8 @@ Para evitar teclear tanto, haga lo siguiente: >
 	:edit archivo2.txt
 	:edit archivo3.txt
 
-La orden «:cd» le permite cambiar a otro directorio. Puede ver cual
-es el directorio actual con la orden «:pwd»: >
+La orden «:cd» le permite cambiar a otro directorio. Puede ver cual es el
+directorio actual con la orden «:pwd»: >
 
 	:pwd
 	/home/Bram/Nombre_Largo_de_Directorio
@@ -197,14 +197,14 @@ ventana nueva, puede usar un directorio diferente, sin cambiar el directorio
 actual en la otra ventana. A esto se le llama el directorio local. >
 
 	:pwd
-	/home/Bram/Nombre_Largo_de_Directorio
+	/home/Bram/Nombre_Largo_de_Archivo
 	:split
 	:lcd /etc
 	:pwd
 	/etc
 	CTRL-W w
 	:pwd
-	/home/Bram/Nombre_Largo_de_Directorio
+	/home/Bram/Nombre_Largo_de_Archivo
 
 Mientras no use ninguna orden «:lcd», todas las ventanas comparten
 el directorio actual. Ejecutar una orden «:cd» en una ventana cambiará
@@ -239,7 +239,7 @@ Este directorio es una ruta absoluta. No importa donde esté, tendrá
 la misma ubicación. ¿Y en el caso de que tiene archivos ubicados en un
 subdirectorio, debajo de donde está el archivo? Puede especificar en este
 caso un nombre de ruta relativo. Esto empieza con un punto:
-()>
+>
 	:set path+=./proto
 
 Esto hace que Vim mire en el directorio «proto», debajo del
@@ -256,34 +256,34 @@ donde buscar los archivos. Véase la ayuda de la opción 'path'.
 en el nombre del archivo, y cuales no lo están (p. ej., el carácter «"» en
 el ejemplo anterior).
 
-Cuando conoce el nombre del archivo, pero no se encuentra en el
-archivo en edición, puede introducirla: >
+Cuando conoce el nombre del archivo, pero no se encuentra en el archivo en
+edición, puede introducirla: >
 
 	:find inits.h
 
-Vim usará entonces la opción 'path' para buscar y ubicar el archivo.
-Esto equivale a la orden «:edit», excepto por el uso de 'path'.
+Vim usará entonces la opción 'path' para buscar y ubicar el archivo.  Esto
+equivale a la orden «:edit», excepto por el uso de 'path'.
 
 Para abrir el archivo encontrado en una nueva ventana, use CTRL-W en lugar
 de «gf», o use «:sfind» en lugar de «:find».
 
 
-Esta es una buena manera de iniciar Vim editando un archivo ubicado
-en el 'path': >
+Esta es una buena manera de iniciar Vim editando un archivo ubicado en el
+'path': >
 
 	vim "+find stdio.h"
 
-Esto encuentra el archivo «stdio.h» en su valor de 'path'. Las
-comillas son necesarias para tener un argumento |-+c|.
+Esto encuentra el archivo «stdio.h» en su valor de 'path'. Las comillas son
+necesarias para tener un argumento |-+c|.
 
 ==============================================================================
 *22.4*	La lista de búfers.
 
-El editor Vim usa el término búfer para describir un archivo en
-edición. En realidad, un búfer es una copia del archivo que edita. Cuando
-termina de modificar el búfer, escribe los contenidos del búfer en el
-archivo. Los búfers no solo contienen los contenidos de al archivo, sino
-también las marcas, configuraciones y otros elementos que lo acompañan.
+El editor Vim usa el término búfer para describir un archivo en edición. En
+realidad, un búfer es una copia del archivo que edita. Cuando termina de
+modificar el búfer, escribe los contenidos del búfer en el archivo. Los
+búfers no solo contienen los contenidos de al archivo, sino también las
+marcas, configuraciones y otros elementos que lo acompañan.
 
 
 BÚFERS OCULTOS
@@ -309,7 +309,7 @@ asegurarse de haber guardado todos los búfers.
 BÚFERS INACTIVOS
 
 Si un búfer se ha usado una vez, Vim recordará alguna información del búfer.
-Cuando no está activa en una ventana y no oculta, aún se encontrará en la 
+Cuando no está activa en una ventana y no oculta, aún se encontrará en la
 lista de búfers. A esto se le llama un búfer inactivo. Vista general:
 
    Activo		Aparece en una ventana, texto cargado.
@@ -327,8 +327,8 @@ Use esta orden para ver la lista de búfers: >
 
 	:buffers
 
-Hay otra orden que realiza la misma función, mucho más corta de
-teclear, pero menos obvia, para listar búfers: >
+Hay otra orden que realiza la misma función, mucho más corta de teclear,
+pero menos obvia, para listar búfers: >
 
 	:ls
 
@@ -357,13 +357,13 @@ y el número de línea en el que estaba el cursor al última vez.
 
 EDITAR UN BÚFER
 
-Puede editar un búfer por su número. Esto evita tener que introducir
-el nombre del archivo: >
+Puede editar un búfer por su número. Esto evita tener que introducir el
+nombre del archivo: >
 
 	:buffer 2
 
-Pero la única manera de saber el número es a través de la lista de
-de búfers. En lugar de esto, puede usar el nombre, o parte de él: >
+Pero la única manera de saber el número es a través de la lista de de
+búfers. En lugar de esto, puede usar el nombre, o parte de él: >
 
 	:buffer help
 
@@ -404,6 +404,8 @@ puede editar la nada!
 
 ==============================================================================
 
-Siguiente capítulo: |usr_23.txt|  Editar otros archivos
+Siguiente capítulo: |usr_23.esx| Editar otros archivos
 
-Copyright: véase |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:
+Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
+
+Traducción del documento: |vim-doc-es|

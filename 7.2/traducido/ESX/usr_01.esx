@@ -1,8 +1,9 @@
 *usr_01.esx*	Para Vim versión 7.2.  Último cambio: 7/6/2008
 
-		   MANUAL DE USUARIO DE VIM - por Bram Moolenaar
+		MANUAL DE USUARIO DE VIM - por Bram Moolenaar
 
 			    Acerca de los manuales
+
 
 Este capítulo le introduce a los manuales disponibles con Vim. Lea esto para
 conocer las condiciones bajo las cuales se explican las órdenes.
@@ -21,22 +22,25 @@ Tabla de contenidos: |usr_toc.esx|
 La documentación de Vim consiste de dos partes:
 
 1. El manual de usuario
-   Explicaciones orientadas a tareas, de las simples a las más complejas. Se
-   puede leer de principio a fin, como un libro.
+   Explicaciones orientadas a tareas, de las simples a las más complejas.
+   Se puede leer de principio a fin, como un libro.
 
 2. El manual de referencia
-   Una precisa descripción del funcionamiento de cada elemento dentro de Vim.
+   Una precisa descripción del funcionamiento de cada elemento dentro
+   de Vim.
 
 La notación usada en estos manuales se explica aqui: |notation|
 
+
 SALTAR DE UN PUNTO A OTRO
 
-El texto contiene hiperenlaces entre las dos partes, lo cual le  permite
+El texto contiene hiperenlaces entre las dos partes, lo cual le permite
 saltar rápidamente de la descripción de una tarea de edición a una precisa
 explicación de las órdenes y opciones que se emplean. Use estas dos órdenes:
 
 	Pulse «CTRL-]» para saltar al tema bajo el cursor.
-	Pulse «CTRL-O» para saltar atrás (repita para volver más allá de ese punto).
+	Pulse «CTRL-O» para saltar atrás (repita para volver más allá de ese
+	punto).
 
 Hay varios enlaces entre barras verticales, como este: |bars|. También puede
 usar como enlace un nombre de opción, como 'number', una orden
@@ -100,9 +104,9 @@ Para más información, véase |vimrc| y |compatible-default|.
 ==============================================================================
 *01.3*	Usar el tutor de Vim				*tutor* *vimtutor*
 
-En lugar de leer el texto (¡aburre!), puede usar vimtutor para aprender
-sus primeras órdenes con Vim. Éste es un tutorial de treinta minutos que
-enseña las funcionalidades básicas de Vim a través de la práctica.
+En lugar de leer el texto (¡aburre!), puede usar vimtutor para aprender sus
+primeras órdenes con Vim. Éste es un tutorial de treinta minutos que enseña
+las funcionalidades básicas de Vim a través de la práctica.
 
 En Unix, si Vim se instaló adecuadamente, puede iniciar Vim desde la
 consola:
@@ -127,8 +131,9 @@ vimtutor desde una consola con: >
 
 	@VIM:vimtutor
 
-Tiene la opción de añadir el código de idioma de dos letras tal y
-se vio anteriormente.
+Tiene la opción de añadir el código de idioma de dos letras tal y se vio
+anteriormente.
+
 
 En otros sistema, tendrá que realizar un poco de trabajo:
 
@@ -149,10 +154,9 @@ archivo. Para francés:
 <
    Los argumentos extra se aseguran de que Vim se inicie adecuadamente:
 
-3. Borre la copia del archivo una vez que haya finalizado:
+3. Borrar el archivo copiado cuando haya acabado con él:
 >
 	del TUTORCOPY
-<
 ==============================================================================
 *01.4*	Copyright					*manual-copyright*
 
@@ -162,11 +166,12 @@ términos de licencia y condiciones expuestas en la Open Publication License,
 versión 1.0 o posterior. La versión más actual está ahora disponible en:
 	     http://www.opencontent.org/openpub/
 
-Las personas que contribuyan al manual también tienen que aceptar con el
+Las personas que contribuyan al manual también tienen que aceptar el
 copyright expuesto anteriormente.
+							*frombook*
 Hay partes del manual de usuario que proceden del libro «Vi IMproved - Vim»,
-por Steve Oualline (publicado por New Riders Publishing,
-ISBN: 0735710015). La Open Publication License también cubre a este libro.
+por Steve Oualline (publicado por New Riders Publishing, ISBN: 0735710015).
+La Open Publication License también cubre a este libro.
 Sólo se incluyen partes seleccionadas, y estas se han modificado (p. ej. se
 eliminaron las fotos, se actualizó el texto para Vim 6.0 y posteriores,
 corrección de errata). La omisión de la etiqueta |frombook| no significa
@@ -185,4 +190,6 @@ Véase |iccf|.
 
 Capítulo siguiente: |usr_02.esx| Primeros pasos en Vim
 
-Copyright: véase |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:
+Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
+
+Traducción del documento: |vim-doc-es|

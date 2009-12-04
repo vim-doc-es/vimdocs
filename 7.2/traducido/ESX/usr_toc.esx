@@ -8,50 +8,52 @@
 Vista general ~
 
 Empezar
-|usr_01.esx|  Acerca de los manuales
-|usr_02.esx|  Primeros pasos en Vim
-|usr_03.esx|  Desplazamiento
-|usr_04.esx|  Hacer cambios pequeños
-|usr_05.esx|  Configuración
-|usr_06.esx|  Uso del resaltado de sintaxis
-|usr_07.esx|  Editar más de un archivo
-|usr_08.esx|  Dividir en ventanas
-|usr_09.esx|  Uso de la interfaz gráfica
-|usr_10.esx|  Realizar grandes cambios
-|usr_11.esx|  Restaurar después de un fallo
-|usr_12.esx|  Trucos
+|usr_01.esx| Acerca de los manuales
+|usr_02.esx| Primeros pasos en Vim
+|usr_03.esx| Desplazamiento
+|usr_04.esx| Hacer cambios pequeños
+|usr_05.esx| Configuración
+|usr_06.esx| Uso del resaltado de sintaxis
+|usr_07.esx| Editar más de un archivo
+|usr_08.esx| Dividir en ventanas
+|usr_09.esx| Uso de la interfaz gráfica
+|usr_10.esx| Realizar grandes cambios
+|usr_11.esx| Restaurar después de un fallo
+|usr_12.esx| Trucos
 
 Editar con efectividad ~
-|usr_20.esx|  Ser eficaz en la línea de órdenes
-|usr_21.esx|  Abandonar el editor y volver
-|usr_22.esx|  Encontrar el archivo a editar
-|usr_23.txt|  Editar otros archivos
-|usr_24.txt|  Insertar con rapidez
-|usr_25.txt|  Editar texto con formato
-|usr_26.txt|  Repetir
-|usr_27.txt|  Órdenes y patrones de búsqueda
-|usr_28.txt|  Plegar
-|usr_29.txt|  Navegar a través de los programas
-|usr_30.txt|  Editar programas
-|usr_31.txt|  Aprovechar la interfaz gráfica
-|usr_32.txt|  El árbol de deshacer
+|usr_20.esx| Ser eficaz en la línea de órdenes
+|usr_21.esx| Abandonar el editor y volver
+|usr_22.esx| Encontrar el archivo a editar
+|usr_23.esx| Editar otros archivos
+|usr_24.esx| Insertar con rapidez
+|usr_25.txt| Editar texto con formato
+|usr_26.txt| Repetir
+|usr_27.txt| Órdenes y patrones de búsqueda
+|usr_28.txt| Plegar
+|usr_29.txt| Navegar a través de los programas
+|usr_30.txt| Editar programas
+|usr_31.txt| Aprovechar la interfaz gráfica
+|usr_32.txt| El árbol de deshacer
 
 Configurar Vim ~
-|usr_40.txt|  Crear órdenes nuevas
-|usr_41.txt|  Crear un Vim script
-|usr_42.txt|  Añadir menús nuevos
-|usr_43.txt|  Usar tipos de archivo (filetypes)
-|usr_44.txt|  Crear su propio resaltado de sintaxis
-|usr_45.txt|  Seleccionar su idioma
+|usr_40.txt| Crear órdenes nuevas
+|usr_41.txt| Crear un Vim script
+|usr_42.txt| Añadir menús nuevos
+|usr_43.txt| Usar tipos de archivo (filetypes)
+|usr_44.txt| Crear su propio resaltado de sintaxis
+|usr_45.txt| Seleccionar su idioma
 
 Iniciar Vim ~
-|usr_90.txt|  Instalar Vim
+|usr_90.txt| Instalar Vim
+
 
 Manual de referencia
 |reference_toc|     Más información detallada de todas las órdenes
 
 El manual de usuario está disponible en un único archivo listo para su
-impresión, en formato PDF y HTML, en está ubicación:	http://vimdoc.sf.net
+impresión, en formato PDF y HTML, en está ubicación:
+	http://vimdoc.sf.net
 
 ==============================================================================
 Empezar ~
@@ -134,7 +136,6 @@ Lea esto de principio a final para aprender las órdenes esenciales.
 		|08.7|	Ver las diferencias con «vimdiff»
 		|08.8|	Varios
 
-
 |usr_09.esx|  Uso de la interfaz gráfica (GUI)
 		|09.1|	Partes de la interfaz gráfica
 		|09.2|	Uso del ratón
@@ -188,37 +189,37 @@ Temas que se pueden leer independientemente.
 		|21.5|	Vistas
 		|21.6|	«Modelines»
 
-|usr_22.txt|  Finding the file to edit
-		|22.1|	The file explorer
-		|22.2|	The current directory
-		|22.3|	Finding a file
-		|22.4|	The buffer list
+|usr_22.esx| Encontrar el archivo a editar
+		|22.1|	El explorador de archivos
+		|22.2|	El directorio actual
+		|22.3|	Encontrar un archivo
+		|22.4|	La lista de búfers
 
-|usr_23.txt|  Editing other files
-		|23.1|	DOS, Mac and Unix files
-		|23.2|	Files on the internet
-		|23.3|	Encryption
-		|23.4|	Binary files
-		|23.5|	Compressed files
+|usr_23.esx|  Editar otros archivos
+		|23.1|	Archivos de DOS, Mac y Unix
+		|23.2|	Archivos en Internet
+		|23.3|	Cifrado
+		|23.4|	Archivos binarios
+		|23.5|	Archivos comprimidos
 
-|usr_24.txt|  Inserting quickly
-		|24.1|	Making corrections
-		|24.2|	Showing matches
-		|24.3|	Completion
-		|24.4|	Repeating an insert
-		|24.5|	Copying from another line
-		|24.6|	Inserting a register
-		|24.7|	Abbreviations
-		|24.8|	Entering special characters
-		|24.9|	Digraphs
-		|24.10|	Normal mode commands
+|usr_24.esx|  Insertar con rapidez
+		|24.1|	Corregir
+|		24.2|	Mostrar coincidencias
+		|24.3|	Compleción
+		|24.4|	Repetir una inserción
+		|24.5|	Copiar desde otra línea
+		|24.6|	Insertar un registro
+		|24.7|	Abreviaturas
+		|24.8|	Introducir caracteres especiales
+		|24.9|	Dígrafos
+		|24.10|	Órdenes del modo Normal
 
-|usr_25.txt|  Editing formatted text
-		|25.1|	Breaking lines
-		|25.2|	Aligning text
-		|25.3|	Indents and tabs
-		|25.4|	Dealing with long lines
-		|25.5|	Editing tables
+|usr_25.txt|  Editar texto con formato
+		|25.1|	Dividir líneas
+		|25.2|	Alinear texto
+		|25.3|	Sangrado y tabulación
+		|25.4|	Tratar líneas largas
+		|25.5|	Editar tablas
 
 |usr_26.txt|  Repeating
 		|26.1|	Repeating with Visual mode
@@ -349,4 +350,6 @@ Before you can use Vim.
 
 ==============================================================================
 
-Copyright: véase |manual-copyright|  vim:tw=78:ts=8:ft=help:norl:
+Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
+
+Traducción del documento: |vim-doc-es|
