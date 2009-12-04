@@ -185,7 +185,7 @@ msgstr "\t:set noignorecase\n"
 #: original/TXT/usr_27.txt:2
 #, no-wrap
 msgid "*usr_27.txt*\tFor Vim version 7.2.  Last change: 2007 Nov 10\n"
-msgstr "*usr_27.esx*\tPara Vim versión 7.2.  Último cambio: 9/11/2008\n"
+msgstr "*usr_27.esx*\tPara Vim versión 7.2.  Último cambio: 10/11/2007\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:6
@@ -273,9 +273,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:47
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t:set ignorecase smartcase\n"
-msgstr "\t:set ignorecase\n"
+msgstr "\t:set ignorecase smartcase\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:53
@@ -399,19 +399,18 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:113
-#, fuzzy
 msgid ""
 "Vim will display the cursor position in the lower righthand corner of the "
 "window (in the status line if there is one).  It looks like this:"
 msgstr ""
 "Muestra siempre la posición actual en la esquina inferior derecha de la "
-"ventana de Vim."
+"ventana (en la línea de estado, de existir). Presenta este aspecto:"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:115
 #, no-wrap
 msgid "\t101,29       84% ~\n"
-msgstr ""
+msgstr "\t101,29       84% ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:118
@@ -424,7 +423,7 @@ msgstr ""
 #: original/TXT/usr_27.txt:121
 #, fuzzy
 msgid "NOT WRAPPING"
-msgstr "LÍNEAS QUE NO DOBLAN"
+msgstr "NOT WRAPPING"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:123
@@ -434,9 +433,9 @@ msgstr "Use la siguiente orden para centrar un rango de líneas: >"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:125
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t:set nowrapscan\n"
-msgstr "\t:set nowrap\n"
+msgstr "\t:set nowrapscan\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:127
@@ -518,9 +517,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:163
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/const/e\n"
-msgstr "\t:close\n"
+msgstr "\t/const/e\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:167
@@ -533,9 +532,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:169
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/const/e+1\n"
-msgstr "\t:close\n"
+msgstr "\t/const/e+1\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:172
@@ -546,9 +545,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:174
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/const/e-1\n"
-msgstr "\t:close\n"
+msgstr "\t/const/e-1\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:176
@@ -593,11 +592,13 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:195
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "\t/that\n"
 "\t//e\n"
-msgstr "\t/el\\>\n"
+msgstr ""
+"\t/that\n"
+"\t//e\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:197
@@ -606,9 +607,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:199
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/that/e\n"
-msgstr "\t/el\\>\n"
+msgstr "\t/that/e\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:201
@@ -618,9 +619,9 @@ msgstr "Para ir en la otra dirección use: >"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:203
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/\n"
-msgstr "\t/\t\n"
+msgstr "\t/\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:205
@@ -631,9 +632,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:207
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t//\n"
-msgstr "\t/\t\n"
+msgstr "\t//\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:210
@@ -650,9 +651,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:215
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t?const?e-2\n"
-msgstr "\t:close\n"
+msgstr "\t?const?e-2\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:218
@@ -716,9 +717,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:246
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/a*\n"
-msgstr "\t\"*p\n"
+msgstr "\t/a*\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:253
@@ -1081,9 +1082,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:403
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/\\a\n"
-msgstr "\t\\K\n"
+msgstr "\t/\\a\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:406
@@ -1143,9 +1144,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:436
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/\\f\\+\n"
-msgstr "\t:%s/\\s\\+$//\n"
+msgstr "\t/\\f\\+\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:442
@@ -1357,9 +1358,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:532
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/[0-9][A-Z]\\{3}[0-9]\\{3}\n"
-msgstr "\t/19[0-9][0-9]\\|20[0-9][0-9]\n"
+msgstr "\t/[0-9][A-Z]\\{3}[0-9]\\{3}\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:537
@@ -1386,9 +1387,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:546
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/\\<\\h\\w*\\>\n"
-msgstr "\t/\\<el\\>\n"
+msgstr "\t/\\<\\h\\w*\\>\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:549
