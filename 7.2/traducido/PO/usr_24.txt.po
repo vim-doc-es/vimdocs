@@ -33,8 +33,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
-"POT-Creation-Date: 2009-11-26 17:29+0100\n"
-"PO-Revision-Date: 2009-11-26 00:50+0100\n"
+"POT-Creation-Date: 2009-12-05 15:59+0100\n"
+"PO-Revision-Date: 2009-12-05 16:10+0100\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es\n"
 "MIME-Version: 1.0\n"
@@ -121,6 +121,14 @@ msgstr ""
 #: original/TXT/usr_25.txt:22 original/TXT/usr_25.txt:132
 #: original/TXT/usr_25.txt:210 original/TXT/usr_25.txt:287
 #: original/TXT/usr_25.txt:453 original/TXT/usr_25.txt:574
+#: original/TXT/usr_26.txt:21 original/TXT/usr_26.txt:46
+#: original/TXT/usr_26.txt:103 original/TXT/usr_26.txt:136
+#: original/TXT/usr_26.txt:217 original/TXT/usr_27.txt:26
+#: original/TXT/usr_27.txt:88 original/TXT/usr_27.txt:136
+#: original/TXT/usr_27.txt:239 original/TXT/usr_27.txt:320
+#: original/TXT/usr_27.txt:350 original/TXT/usr_27.txt:427
+#: original/TXT/usr_27.txt:469 original/TXT/usr_27.txt:510
+#: original/TXT/usr_27.txt:559
 #, no-wrap
 msgid "==============================================================================\n"
 msgstr "==============================================================================\n"
@@ -135,7 +143,8 @@ msgstr "========================================================================
 #: original/TXT/usr_12.txt:4 original/TXT/usr_20.txt:4
 #: original/TXT/usr_21.txt:4 original/TXT/usr_22.txt:4
 #: original/TXT/usr_23.txt:4 original/TXT/usr_24.txt:4
-#: original/TXT/usr_25.txt:4
+#: original/TXT/usr_25.txt:4 original/TXT/usr_26.txt:4
+#: original/TXT/usr_27.txt:4
 #, no-wrap
 msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
 msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
@@ -149,8 +158,9 @@ msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
 #: original/TXT/usr_10.txt:824 original/TXT/usr_11.txt:287
 #: original/TXT/usr_12.txt:358 original/TXT/usr_20.txt:384
 #: original/TXT/usr_21.txt:499 original/TXT/usr_22.txt:400
-#: original/TXT/usr_23.txt:343 original/TXT/usr_24.txt:606
-#: original/TXT/usr_25.txt:578
+#: original/TXT/usr_23.txt:343 original/TXT/usr_24.txt:607
+#: original/TXT/usr_25.txt:578 original/TXT/usr_26.txt:221
+#: original/TXT/usr_27.txt:563
 msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 
@@ -218,7 +228,7 @@ msgid ""
 " Previous chapter: |usr_23.txt|  Editing other files\n"
 "Table of contents: |usr_toc.txt|\n"
 msgstr ""
-"Capítulo siguiente: |usr_25.txt|  Editar texto con formato\n"
+" Capítulo siguiente: |usr_25.txt|  Editar texto con formato\n"
 "  Capitulo anterior: |usr_23.esx|  Editar otros archivos\n"
 "Tabla de contenidos: |usr_toc.esx|\n"
 
@@ -322,9 +332,9 @@ msgid ""
 msgstr ""
 "<\tAbandonar el modo insertar   <Esc>\n"
 "\tCuatro palabras hacia atrás          3b\n"
-"\tDesplazarse a la «u»         \t\t  l\n"
+"\tDesplazarse a la «u»         \t\tl\n"
 "\tReemplazar con «ó»\t\t\tró\n"
-"\tReiniciar modo insertar\t\t\t A\n"
+"\tReiniciar modo insertar\t\t\t  A\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:66
@@ -449,8 +459,8 @@ msgstr ""
 "   También se mostrará el signo correspondiente en las parejas «[]» «{}». No\n"
 "tiene que esperar a teclear el siguiente carácter, ya que tan pronto como Vim\n"
 "lo detecte, devolverá el cursor a su posición original, continuando la\n"
-"inserción. Puede modificar el tiempo que Vim espera con la opción 'matchtime'. Por\n"
-"ejemplo, para hacer que Vim espere un segundo y medio: >\n"
+"inserción. Puede modificar el tiempo que Vim espera con la opción 'matchtime'.\n"
+"Por ejemplo, para hacer que Vim espere un segundo y medio: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:116
@@ -1254,7 +1264,8 @@ msgstr ""
 "cual escribe la línea superior. Después escribo el texto del comentario y uso\n"
 "«#e» para dibujar la línea inferior.\n"
 "   Observe que la abreviatura «#e» empieza con un espacio. En otras palabras,\n"
-"los primeros dos caracteres son espacio-asterisco. Por lo general, Vim ignora los espacios entre la abreviatura y la expansión. Para evitar tal\n"
+"los primeros dos caracteres son espacio-asterisco. Por lo general, Vim\n"
+"ignora los espacios entre la abreviatura y la expansión. Para evitar tal\n"
 "problema, deletreo espacio («space») como siete caracters: <, S, p, a, c, e,>.\n"
 
 #. type: Plain text
@@ -1609,13 +1620,13 @@ msgstr "*24.9*\tDígrafos\n"
 #: original/TXT/usr_24.txt:543
 msgid ""
 "Some characters are not on the keyboard.  For example, the copyright "
-"character (�).  To type these characters in Vim, you use digraphs, where two "
-"characters represent one.  To enter a �, for example, you press three keys: >"
+"character (©).  To type these characters in Vim, you use digraphs, where two "
+"characters represent one.  To enter a ©, for example, you press three keys: >"
 msgstr ""
 "Algunos caracteres no se encuentran en el teclado. Por ejemplo, el carácter "
-"de derechos de autor (©). Para escribir estos caracteres en Vim emplee "
-"dígrafos, en los que dos caracteres representan a uno. Para introducir ©, "
-"por ejemplo, pulse tres teclas: >"
+"de derechos de autor (©). Emplee dígrafos para escribir estos caracteres en "
+"Vim, en los que dos caracteres representan a uno. Para introducir ©, por "
+"ejemplo, pulse tres teclas: >"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:545
@@ -1643,20 +1654,20 @@ msgstr "Vim mostrará la tabla de dígrafos. Aquí puede ver tres líneas:"
 #: original/TXT/usr_24.txt:555
 #, no-wrap
 msgid ""
-"  AC ~_ 159  NS |  160  !I �  161  Ct �  162  Pd �  163  Cu �  164  Ye �  165 ~\n"
-"  BB �  166  SE �  167  ': �  168  Co �  169  -a �  170  << �  171  NO �  172 ~\n"
-"  -- �  173  Rg �  174  'm �  175  DG �  176  +- �  177  2S �  178  3S �  179 ~\n"
+"  AC ~_ 159  NS |  160  !I ¡  161  Ct ¢  162  Pd £  163  Cu ¤  164  Ye ¥  165 ~\n"
+"  BB ¦  166  SE §  167  ': ¨  168  Co ©  169  -a ª  170  << «  171  NO ¬  172 ~\n"
+"  -- ­  173  Rg ®  174  'm ¯  175  DG °  176  +- ±  177  2S ²  178  3S ³  179 ~\n"
 msgstr ""
-"  AC ~_ 159  NS |  160  !I �  161  Ct �  162  Pd �  163  Cu �  164  Ye �  165 ~\n"
-"  BB �  166  SE �  167  ': �  168  Co �  169  -a �  170  << �  171  NO �  172 ~\n"
-"  -- �  173  Rg �  174  'm �  175  DG �  176  +- �  177  2S �  178  3S �  179 ~\n"
+"  AC ~_ 159  NS |  160  !I ¡  161  Ct ¢  162  Pd £  163  Cu ¤  164  Ye ¥  165 ~\n"
+"  BB ¦  166  SE §  167  ': ¨  168  Co ©  169  -a ª  170  << «  171  NO ¬  172 ~\n"
+"  -- ­  173  Rg ®  174  'm ¯  175  DG °  176  +- ±  177  2S ²  178  3S ³  179 ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:564
 #, no-wrap
 msgid ""
 "This shows, for example, that the digraph you get by typing CTRL-K Pd is the\n"
-"character (�).  This is character number 163 (decimal).\n"
+"character (£).  This is character number 163 (decimal).\n"
 "   Pd is short for Pound.  Most digraphs are selected to give you a hint about\n"
 "the character they will produce.  If you look through the list you will\n"
 "understand the logic.\n"
@@ -1695,16 +1706,16 @@ msgstr "Puede configurar sus propios dígrafos. Ejemplo: >"
 #. type: Plain text
 #: original/TXT/usr_24.txt:573
 #, no-wrap
-msgid "\t:digraph a\" �\n"
-msgstr "\t:digraph a\" X\n"
+msgid "\t:digraph a\" ä\n"
+msgstr "\t:digraph a\" ä\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:576
 msgid ""
-"This defines that CTRL-K a\" inserts an � character.  You can also specify "
+"This defines that CTRL-K a\" inserts an ä character.  You can also specify "
 "the character with a decimal number.  This defines the same digraph: >"
 msgstr ""
-"Esto define que «CTRL-K a\"» inserta un carácter X. Puede también especificar "
+"Esto hace que «CTRL-K a\"» inserte el carácter ä. Puede también especificar "
 "el carácter con un número decimal. Esto define el mismo dígrafo: >"
 
 #. type: Plain text
