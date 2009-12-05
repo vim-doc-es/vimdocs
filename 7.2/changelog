@@ -1,0 +1,111 @@
+
+* 4/12/2009 Publicación: vim-doc-es_0.2. Omar Campagne <ocampagne@gmail.com>
+
+	* commit 3ffe0b56b8e25544cbccf2ed085cb885c892ee6c
+	
+	* Traducción: usr_23.txt usr_25 añadidos
+
+* 3/12/2009 Fin de conversión a po4a. 
+
+	* commit 3ced4a90dde41282b4f5eb406c8a0cc853223f97
+
+* 25/11/2009 LCMESSAGES actualizados para vim 7.2.284 (último chequeo:rev
+  1674 de svn de Vim). Enviado a Bram. Omar Campagne.
+
+	* commit 36ddea0b1dcb302aa6b617ab357ef2a3e0b9630c 
+
+* 28/10/2009 Traducción de evim por Pedro Alejandro Lopez Valencia
+				    <vorbote@users.sourceforge.net>.
+
+	* commit 1ed66504a5f05b43ef19f16f4994570a95371b90 
+
+* 21/10/2009 Publicación: vim-doc-es_0.1. Primer lanzamiento.
+
+	* commit a51eeff8c11f83ca672a29101fe6296ddb140763 
+
+	* Traducción: usr_01.txt - usr_22.txt, help.txt, usr_toc.txt
+	  nuevas traducciones por Omar Campagne <ocampagne@gmail.com>
+
+* 1/10/2009 Primer commit y envío de es.po bajo vim-doc-es
+  (pensábamos que esto iba a ir sólo de documentación). 
+	
+	* commit 56278c7f28470835140907ee60aa750ca63283f0
+
+* 31/7/2009 Inicio del repositorio por Álvaro Castro Castilla
+  <alvaro.castro.castilla@gmail.com>, y del proyecto (aproximadamente). 
+	
+	* commit 9bc46ecaac6ac7ddd697438c5f0d0132fb27a4ae 
+	
+	* Traducción de usr_02.txt - usr_12.txt realizada por
+	  Álvaro Castro Castilla
+			
+
+	               === vim/src/po/es.po ===
+
+Cabecera «histórica» del archivo es.po. Informativa :) Gracias a Pedro
+et al. por los años dando vida a este archivo.
+
+# FIRST AUTHOR Pedro A. López-Valencia <vorbote@users.sourceforge.net>,
+# 2003-06,2009
+# SECOND AUTHOR Nelson López Villarroel <tuxero@users.sourceforge.net>, 2006
+# THIRD AUTHOR Omar Campagne Polaino <ocampagne@gmail.com> 2009
+# Based on work by Eduardo F. Amatria <eferna1@platea.pntic.mec.es>, 2001.
+# 2003-01-xx:
+#            PALV - Did a first effort at editing and correcting a
+#            incredibly poor translation. Talk about functional 
+#            analphabetism!
+#
+# 2004-12-26:
+#            PALV - Started reediting the file completely, based on
+#            the ORCA EN->ES glossary:
+#            <http://quark.fe.up.pt/cgi-bin/orca/glosario>
+#
+# 2004-12-27:
+#            PALV - Several Error mesages had the wrong number.
+#
+# 2005-01-10:
+#            PALV - Finished reediting the file with the ORCA glossary
+#            as guideline. Found two messages without translation.
+#
+# 2005-03-26:
+#            PALV - Merged editing changes provided by 
+#            Javier Fernández-Sanguino Peña <jfs@debian.org>.
+#
+# 2005-10-05:
+#           PALV - After a long delay, fixed the bug reported by
+#           Paco Arjonilla <pacoarjonilla@yahoo.es> on early July
+#           in preparation for the release of Vim 6.4. The menu
+#           shortcuts for "Abortar" and "Borrarlo" where in conflict
+#           with each other and a third entry in a couple menus.
+#
+# 2006-04-03:
+#          PALV: Whoever complains for the change from "fichero" to "archivo",
+#          read entry 5 here:
+#  	   http://buscon.rae.es/draeI/SrvltGUIBusUsual
+# 	   LEMA=archivo&TIPO_HTML=2&FORMATO=ampliado
+#          If you have reasons to complain, may those reasons be good and be
+# 	   ready
+#          to take over the maintenance of this file (and you better be a
+# 	    member of
+#          Debian's or Ubuntu's localization teams I can't take seriously anyone
+#          else's offer). The need of the many override the need of the few 
+#          (as in language use of 300 million Spanish speaking americans weigh a
+#          lot more than that of a mere 50 million europeans). 
+#
+#          PALV: Although correct typographic rules in Spanish require the use
+#          of French quote marks or guillemots (\"\"), the use of typewriter
+# 	   straight quotes is pervasive and easier to type in a computer (You
+# 	   can't type guillemots with a Spanish/Latin American keyboard easily
+# 	   unless you use
+#          an Apple Macintosh), so for the sake of K.I.S.S.[1], I'm changing 
+#          everything to straight quote marks.
+#
+#          [1] Keep It Simple, Stupid.
+#
+#          PALV: Cleaning up past editing that has no real justification
+# 	   anymore.
+#
+# 2009-08-22: PALV: Bring this file from the dead in the SVN repo. Change e-mail
+#          addresses, and finally bring the file encoding to the XIX Century.
+#          We do UTF-8 now.
+#
