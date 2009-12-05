@@ -11,7 +11,7 @@ repetir. Dispone de auto compleción para prácticamente todo.
 
 |20.1|	Edición en línea de órdenes
 |20.2|	Abreviaturas en línea de órdenes
-|20.3|	Compleción en línea de órdenes
+|20.3|	Autocompletado en la línea de órdenes
 |20.4|	Histórico de la línea de órdenes
 |20.5|	Ventana de la línea de órdenes
 
@@ -169,7 +169,7 @@ Aquí puede encontrar la lista completa de nombres largos y cortos:
 |option-list|
 
 ==============================================================================
-*20.3* Compleción en línea de órdenes	
+*20.3*	Autocompletado en la línea de órdenes
 
 Esta es una opción que en si misma hace que merezca la pena pasar de Vi a
 Vim.  Una vez que haya usado esto, no podrá vivir sin el.
@@ -188,11 +188,11 @@ Es fácil equivocarse al teclear esto. Una manera más rápida es: >
 
 	:edit b<Tab>
 
-Esto viene a ser la misma orden. ¿Qué ocurrió? La tecla <Tab> realiza la
-compleción de la palabra anterior al cursor. «b» en este caso. Vim busca en
-el directorio y encuentra sólo un archivo cuyo nombre empieza por «b».  Este
-ha de ser el que está buscando, y por ello Vim completa por usted el nombre
-del archivo.
+Esto viene a ser la misma orden. ¿Qué ocurrió? La tecla <Tab> realiza el
+autocompletado de la palabra anterior al cursor. «b» en este caso. Vim busca
+en el directorio y encuentra sólo un archivo cuyo nombre empieza por
+«b». Este debe ser el que está buscando, y por ello Vim completa por usted
+el nombre del archivo.
 
 Teclee ahora: >
 
@@ -233,8 +233,8 @@ Cuando teclea «:set i» en lugar de «:edit i», y pulsa <Tab>, obtiene: >
 
 	:set icon
 
-¡Oye! ¿Porqué no obtuvo «:set info.txt»? Es debido a que Vim tiene una
-compleción contextual. El tipo de palabras que Vim buscará depende de la
+¡Oye! ¿Porqué no obtuvo «:set info.txt»? Es debido a que Vim tiene un
+autocompletado contextual. El tipo de palabras que Vim buscará depende de la
 orden que lo preceda. Vim sabe que no puede usar un nombre de archivo tras
 la orden «:set», pero que puede usar el nombre de una opción.
    Una vez más, si sigue pulsando <Tab>, Vim navegará a través de todas las
@@ -256,8 +256,8 @@ editarla ahora.
    Lo que se completó con <Tab> es lo que Vim espera en primer lugar. Pruebe
 esto ahora para ver su funcionamiento. En algunas situaciones no obtendrá lo
 que desea. Esto es debido a que Vim no sabe lo que quiere, o porque no se ha
-implementado la compleción para este evento. En ese caso, obtendrá un <Tab>
-insertado (se mostrará como ^I).
+implementado el autocompletado para este evento. En ese caso, obtendrá un
+<Tab> insertado (se mostrará como ^I).
 
 
 LISTA DE COINCIDENCIAS
@@ -291,8 +291,8 @@ La orden CTRL-L completa la palabra hasta llegar a la cadena no ambigua más
 larga. Si teclea «:edit i» y hay archivos «info.txt» e «info_backup.txt»
 obtendrá «:edit info».
 
-La opción 'wildmode' se puede usar para modificar el funcionamiento de la
-compleción. la opción 'wildmenu' se puede usar para obtener una lista de
+La opción 'wildmode' se puede usar para modificar el funcionamiento del
+autocompletado. La opción 'wildmenu' se puede usar para obtener una lista de
 tipo menú de las coincidencias. Use la opción 'suffixes' para especificar
 archivos de menor importancia y que aparecen al final de la lista de
 archivos
