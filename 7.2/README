@@ -1,6 +1,21 @@
+			     == Apuntes ==
+
+
+* El archivo del proyecto. vim-doc-es.esx
+
+Todos los archivos de ayuda de una lengua deben tener la misma codificación,
+que Vim detecta en la primera línea del archivo al crear tags-es.
+De ahí la inclusión de la cabecera común a todos los archivos 
+(Para Vim versión...) en vim-doc-es.esx. De poner una línea sin
+acentos, «:helptags» devolvería un error.
+
+
+* gettext se come caracteres «exóticos» en la conversión.
+
 El archivo original usr_24.txt presenta problemas al convertirlo a
 formato po debido a varios caracteres extraños, tanto con po4a como
 con translate-toolkit.
 La solución es... copiar y pegar el contenido del txt original a otro
 archivo nuevo «original/POT/usr_24rightformat.txt», y sustuir
-usr_24.txt por ese.
+usr_24.txt por ese. «po4a po4a.cfg» regenerará entonces los archivos
+correctamente, y marcará las cadenas afectadas como borrosas («fuzzy»).

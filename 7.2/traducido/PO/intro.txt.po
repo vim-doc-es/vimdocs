@@ -34,13 +34,13 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2009-11-26 17:29+0100\n"
-"PO-Revision-Date: 2009-12-04 21:58+0200\n"
+"PO-Revision-Date: 2009-12-05 19:08+0200\n"
 "Last-Translator: Omar Campagne <<ocampagne@gmail.com>>\n"
 "Language-Team: vim-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Virtaal 0.5.0-rc1\n"
 
@@ -80,8 +80,8 @@ msgstr ""
 "3. Créditos\t\t\t|credits|\n"
 "4. Notación\t\t\t|notation|\n"
 "5. Modos, introducción\t\t|vim-modes-intro|\n"
-"6. Cambiar de Modos\t|mode-switching|\n"
-"7. El contenido de la ventana\t\t|window-contents|\n"
+"6. Cambiar de Modos\t\t|mode-switching|\n"
+"7. El contenido de la ventana\t|window-contents|\n"
 "8. Definiciones\t\t\t|definitions|\n"
 
 #. type: Plain text
@@ -613,8 +613,9 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/intro.txt:191
 msgid ""
-"Vim would never have become what it is now, without the help of these people!"
-msgstr "¡Vim nunca sería lo que es ahora, de no ser por estas personas!"
+"Vim would never have become what it is now, without the help of these "
+"people!"
+msgstr "¡Vim nunca sería lo que es ahora de no ser por estas personas!"
 
 #. type: Plain text
 #: original/TXT/intro.txt:253
@@ -1285,7 +1286,7 @@ msgstr ""
 #: original/TXT/intro.txt:515
 #, no-wrap
 msgid "5. Modes, introduction\t\t\t\t*vim-modes-intro* *vim-modes*\n"
-msgstr ""
+msgstr "5. Introducción a los modos\t*modos-vim* *vim-modes-intro* *vim-modes*\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:517
@@ -1427,6 +1428,12 @@ msgid ""
 "\t\t\tIf the 'showmode' option is on \"-- VREPLACE --\" is\n"
 "\t\t\tshown at the bottom of the window.\n"
 msgstr ""
+"Modo Reemplazar Virtual El modo Reemplazar Virtual es similar al modo\n"
+"\t\t\tReemplazar, pero en lugar de reemplazar caracteres,\n"
+"\t\t\treemplaza el estado real de la pantalla.\n"
+"\t\t\tConsulte |Virtual-Replace-mode|.\n"
+"\t\t\tSi la opción 'showmode' está activada, verá\n"
+"\t\t\t«-- VREPLACE --» en la base de la ventana."
 
 #. type: Plain text
 #: original/TXT/intro.txt:577
@@ -1610,21 +1617,37 @@ msgid ""
 "\t*CTRL-\\_CTRL-N* *i_CTRL-\\_CTRL-N* *c_CTRL-\\_CTRL-N* *v_CTRL-\\_CTRL-N*\n"
 "Additionally the command CTRL-\\ CTRL-N or <C-\\><C-N> can be used to go to\n"
 "Normal mode from any other mode.  This can be used to make sure Vim is in\n"
-"Normal mode, without causing a beep like <Esc> would.  However, this does not\n"
+"Normal mode, without causing a beep like <Esc> would.  However, this does "
+"not\n"
 "work in Ex mode.  When used after a command that takes an argument, such as\n"
 "|f| or |m|, the timeout set with 'ttimeoutlen' applies.\n"
 msgstr ""
+"\t*CTRL-\\_CTRL-N* *i_CTRL-\\_CTRL-N* *c_CTRL-\\_CTRL-N* *v_CTRL-\\_CTRL-N*\n"
+"De forma adicional, puede usar CTRL-\\ CTRL-N o <C-\\><C-N> para pasar al modo\n"
+"Normal a partir de cualquier otro. Puede usar esto para asegurarse de que "
+"Vim\n"
+"está en modo Normal, sin causar el pitido que <Esc> realiza. Por otra parte,\n"
+"esto no funciona en modo Ex. Si usa esto después de una orden que toma un\n"
+"argumento, como |f| o |m|, se aplicará la cuenta atrás definida con\n"
+"'ttimeoutlen'.\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:659
 #, no-wrap
 msgid ""
 "\t*CTRL-\\_CTRL-G* *i_CTRL-\\_CTRL-G* *c_CTRL-\\_CTRL-G* *v_CTRL-\\_CTRL-G*\n"
-"The command CTRL-\\ CTRL-G or <C-\\><C-G> can be used to go to Insert mode when\n"
+"The command CTRL-\\ CTRL-G or <C-\\><C-G> can be used to go to Insert mode "
+"when\n"
 "'insertmode' is set.  Otherwise it goes to Normal mode.  This can be used to\n"
 "make sure Vim is in the mode indicated by 'insertmode', without knowing in\n"
 "what mode Vim currently is.\n"
 msgstr ""
+"\t*CTRL-\\_CTRL-G* *i_CTRL-\\_CTRL-G* *c_CTRL-\\_CTRL-G* *v_CTRL-\\_CTRL-G*\n"
+"La orden CTRL-\\ CTRL-G o <C-\\><C-G> se puede usar para pasar al modo "
+"Insertar\n"
+"cuando 'insertmode' está definido. De no ser así, vuelve al modo Normal.\n"
+"Puede usar esto para asegurarse de que Vim está en el modo indicado por\n"
+"'insertmode', sin conocer el modo actual en el que está Vim.\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:676
@@ -1777,6 +1800,10 @@ msgid ""
 "completely, only the part that fits is shown, and the last three characters "
 "of the last line are replaced with \"@@@\", like this: >"
 msgstr ""
+"No verá caracteres «@» en la parte izquierda de la ventana de estar presente "
+"la marca «lastline» en la opción 'display'. Si la última línea no encaja, "
+"sólo verá la parte que sí lo hace. Los tres últimos caracteres de está línea "
+"aparecerá como «@@@», como en el siguiente ejemplo: >"
 
 #. type: Plain text
 #: original/TXT/intro.txt:736
@@ -1789,6 +1816,12 @@ msgid ""
 "\t|oesn't fit in the wi@@@|\n"
 "\t+-----------------------+\n"
 msgstr ""
+"\t+-----------------------+\n"
+"\t|primera línea\t\t|\n"
+"\t|segunda línea\t\t|\n"
+"\t|una línea muy larga que|\n"
+"\t|no encaja en la vent@@@|\n"
+"\t+-----------------------+\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:742
@@ -1796,9 +1829,14 @@ msgid ""
 "If there is a single line that is too long to fit in the window, this is a "
 "special situation.  Vim will show only part of the line, around where the "
 "cursor is.  There are no special characters shown, so that you can edit all "
-"parts of this line.  {Vi: gives an \"internal error\" on lines that do not "
-"fit in the window}"
+"parts of this line.  {Vi: gives an \"internal error\" on lines that do not fit "
+"in the window}"
 msgstr ""
+"Una situación particular es cuando existe una sola línea que no encaja en la "
+"ventana. Vim mostrará solo la parte de la línea en torno al cursor. No verá "
+"caracteres especiales, para que así pueda editar esa parte de la línea. "
+"{Vi: devuelve un «error interno» en las líneas que no encajan en la "
+"ventana.}"
 
 #. type: Plain text
 #: original/TXT/intro.txt:746
@@ -1807,6 +1845,9 @@ msgid ""
 "highlighting for the '@' and '~' characters.  This makes it possible to "
 "distinguish them from real characters in the buffer."
 msgstr ""
+"La aparición de «@» en la opción 'highlight' (resaltar) se puede usar para "
+"dar un resaltado especial a los caracteres «@» y «~». Esto posibilita "
+"distinguirlos de aquellos caracteres reales en el búfer."
 
 #. type: Plain text
 #: original/TXT/intro.txt:748
@@ -1825,10 +1866,21 @@ msgid ""
 "fits on the screen is shown.  If the cursor is moved to a part of the line\n"
 "that is not shown, the screen is scrolled horizontally.  The advantage of\n"
 "this method is that columns are shown as they are and lines that cannot fit\n"
-"on the screen can be edited.  The disadvantage is that you cannot see all the\n"
+"on the screen can be edited.  The disadvantage is that you cannot see all "
+"the\n"
 "characters of a line at once.  The 'sidescroll' option can be set to the\n"
 "minimal number of columns to scroll.  {Vi: has no 'wrap' option}\n"
 msgstr ""
+"\t\t\t\t\t\t\t*wrap-off*\n"
+"Las líneas no se justificarán si la opción 'wrap' está desactivada, y sólo "
+"se\n"
+"mostrará la parte que encaje en la pantalla. Si desplaza el cursor a una\n"
+"parte de la línea que no se muestra, la ventana se desplazara\n"
+"horizontalmente. La ventaja de este método es que las columnas aparecen como\n"
+"son y que además puede editar las líneas que no encajan en la pantalla. La\n"
+"desventaja es que no puede ver todos los caracteres de una línea a la vez.\n"
+"Puede configurar la opción 'sidescroll' para desplazarse un número mínimo de\n"
+"columnas. {Vi: no hay opción 'wrap'}\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:765
@@ -1842,6 +1894,15 @@ msgid ""
 "than one position on the screen.  The cursor can only be positioned on the "
 "first one."
 msgstr ""
+"Todos los caracteres normales ASCII aparecerán directamente en la pantalla.\n"
+"La tecla <Tab> será reemplazada por el número de espacios que representa.\n"
+"Otros caracteres no imprimibles se reemplazarán por «^{char}», donde\n"
+"{char} es el carácter no imprimible más la suma de 64. Por ello, el carácter\n"
+"7 (campana) aparecerá como «^G». Los caracteres entre el 127 y el 160 serán\n"
+"reemplazados por «~{char}», donde {char} es el carácter menos la resta de "
+"64.\n"
+"Estos caracteres tomarán más de un espacio en la pantalla. El cursor sólo\n"
+"aparecerá sobre el primero."
 
 #. type: Plain text
 #: original/TXT/intro.txt:770
@@ -1852,6 +1913,10 @@ msgid ""
 "set the 'showbreak' option to eight spaces:\n"
 "\t\":set showbreak=\\ \\ \\ \\ \\ \\ \\ \\ \"\n"
 msgstr ""
+"Si activa la opción 'number', todas las líneas estarán precedidas por su\n"
+"número. Consejo: Si no le gusta que el justificado de línea se mezcle con\n"
+"los números de línea, configure la opción 'showbreak' con 8 espacios:\n"
+"\t«:set showbreak=\\ \\ \\ \\ \\ \\ \\ \\ »"
 
 #. type: Plain text
 #: original/TXT/intro.txt:774
@@ -1860,6 +1925,9 @@ msgid ""
 "spaces, but as \"^I\".  A '$' will be placed at the end of the line, so you "
 "can find trailing blanks."
 msgstr ""
+"Los caracteres <Tab> aparecerán como ^I, en lugar de como varios espacios, "
+"en caso de activar la opción 'list'. Se insertará un «$» al final de la\n"
+"línea para así poder encontrar caracteres en exceso al final de la línea."
 
 #. type: Plain text
 #: original/TXT/intro.txt:778
@@ -1868,6 +1936,9 @@ msgid ""
 "display of the buffer contents is updated as soon as you go back to Command "
 "mode."
 msgstr ""
+"En el modo Línea de órdenes, sólo la misma línea de órdenes se mostrará "
+"correctamente. La vista de los contenidos del búfer se actualizarán tan "
+"pronto como vuelva al modo de órdenes."
 
 #. type: Plain text
 #: original/TXT/intro.txt:781
@@ -1875,6 +1946,8 @@ msgid ""
 "The last line of the window is used for status and other messages.  The "
 "status messages will only be used if an option is on:"
 msgstr ""
+"La última línea de la ventana se usa para mostrar el estado y otros "
+"mensajes. Sólo se mostrarán los mensajes de estado si activa una opción:"
 
 #. type: Plain text
 #: original/TXT/intro.txt:786
@@ -1885,15 +1958,22 @@ msgid ""
 "command characters\t\t'showcmd'\ton\t    off\n"
 "cursor position\t\t\t'ruler'\t\toff\t    off\n"
 msgstr ""
+"mensaje de estado\t\t option\t   por omisión\tEn Unix por om.\t~\n"
+"modo actual\t\t\t'showmode'\ton\t    on\n"
+"caracteres de la orden\t\t'showcmd'\ton\t    off\n"
+"posición del cursor\t\t'ruler'\t\toff\t    off\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:790
 msgid ""
-"The current mode is \"-- INSERT --\" or \"-- REPLACE --\", see "
-"|'showmode'|.  The command characters are those that you typed but were not "
-"used yet.  {Vi: does not show the characters you typed or the cursor "
-"position}"
+"The current mode is \"-- INSERT --\" or \"-- REPLACE --\", see |'showmode'|.  "
+"The command characters are those that you typed but were not used yet.  {Vi: "
+"does not show the characters you typed or the cursor position}"
 msgstr ""
+"El modo actual es «-- INSERT --» o «-- REPLACE --», consulte |'showmode|. "
+"Los caracteres de la orden son aquellos que tecleó pero que aún no ha "
+"ejectuado. {Vi: no muestra los caracteres que ha introducido, o la posición "
+"del cursor.}"
 
 #. type: Plain text
 #: original/TXT/intro.txt:794
@@ -1903,6 +1983,10 @@ msgid ""
 "up editing:\n"
 "\t:set nosc noru nosm\n"
 msgstr ""
+"Puede desactivar los mensajes de estado para agilizar la edición si tiene "
+"una\n"
+"terminal lenta:\n"
+"\t:set nosc noru nosm"
 
 #. type: Plain text
 #: original/TXT/intro.txt:798
@@ -1911,6 +1995,9 @@ msgid ""
 "(in reverse video).  {Vi: error messages may be overwritten with other "
 "messages before you have a chance to read them}"
 msgstr ""
+"En caso de error, verá un mensaje de error durante al menos un segundo (en "
+"vídeo inverso). {Vi: puede que los mensajes de error sean sobreescritos "
+"antes de poder leerlos.}"
 
 #. type: Plain text
 #: original/TXT/intro.txt:801
@@ -1938,6 +2025,8 @@ msgid ""
 "On most Unix systems, resizing the window is recognized and handled "
 "correctly by Vim.  {Vi: not ok}"
 msgstr ""
+"En la mayoría de sistemas Unix Vim trata adecuadamente redimensionar las "
+"ventanas. {Vi: no tan bien.}"
 
 #. type: Plain text
 #: original/TXT/intro.txt:814
