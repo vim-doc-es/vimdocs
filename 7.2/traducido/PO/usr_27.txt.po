@@ -29,19 +29,20 @@
 # - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages
 # Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
 # se puede consultar con un simple grep, pogrep o cargado en Virtaal.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2009-12-03 19:17+0100\n"
-"PO-Revision-Date: 2009-12-03 19:17+0100\n"
-"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"PO-Revision-Date: 2009-12-07 19:57+0200\n"
+"Last-Translator: Omar Campagne <<ocampagne@gmail.com>>\n"
 "Language-Team: vim-doc-es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.5.0\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:18 original/TXT/intro.txt:75
@@ -200,6 +201,9 @@ msgid ""
 "much more complex searches.  This chapter explains the most often used "
 "ones.  A detailed specification can be found here: |pattern|"
 msgstr ""
+"El capítulo 3 trató superficialmente los patrones de búsqueda |03.9|, pero "
+"Vim puede realizar búsquedas más complejas. Este capítulo explica los más "
+"comunes. Dispone de una explicación más detallada: |pattern|"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:21
@@ -239,9 +243,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:28
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "*27.1*\tIgnoring case\n"
-msgstr "*10.8*\tCambiar mayúsculas y minúsculas\n"
+msgstr "*27.1*\tIgnorar la distinción entre mayúsculas y minúsculas\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:33
@@ -252,6 +256,10 @@ msgid ""
 "only one of them.\n"
 "   Now switch on the 'ignorecase' option: >\n"
 msgstr ""
+"Vim distingue entre mayúsculas y minúsculas al realizar un búsqueda, por\n"
+"omisión. «INCLUDE», «Include» e «include»  son por ello tres palabras\n"
+"distintas, y una búsqueda encontraría sólo una de ellas.\n"
+"   Active ahora la opción 'ignorecase': >\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:40
@@ -262,6 +270,9 @@ msgid ""
 "matches.)\n"
 "   You can switch this off again with: >\n"
 msgstr ""
+"Si realiza otra búsqueda de «include», ésta devolvería «Include», «INCLUDE» e «InCLUEDe». Puede activar la opción 'hlsearch' (resaltar búsquedas) para\n"
+"ver fácilmente los patrones coincidentes.\n"
+"   Puede desactivar esta opción con: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:45
@@ -269,6 +280,8 @@ msgid ""
 "But lets keep it set, and search for \"INCLUDE\".  It will match exactly the "
 "same text as \"include\" did.  Now set the 'smartcase' option: >"
 msgstr ""
+"Vamos a dejar esta opción activada, y realizar una búsqueda de «INCLUDE». "
+"Encontrará el mismo texto que «include». Active ahora la opción 'smartcase': >"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:47
@@ -286,6 +299,12 @@ msgid ""
 "match.  That's smart!\n"
 "    With these two options set you find the following matches:\n"
 msgstr ""
+"Si tiene un patrón con al menos un carácter en mayúscula, la búsqueda no\n"
+"distinguirá entre mayúsculas y minúsculas. La idea es que no necesitaba\n"
+"escribir ese carácter en mayúscula, y que por ello lo que deseaba era\n"
+"encontrar coincidencias con distinción entre mayúsculas y minúsculas. ¡Qué\n"
+"inteligente!\n"
+"   Obtendría las siguientes coincidencias de activar ambas opciones:\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:59
@@ -297,11 +316,16 @@ msgid ""
 "\tWORD\t\t\tWORD\n"
 "\tWoRd\t\t\tWoRd\n"
 msgstr ""
+"\tpatrón\t\t\tcoincidencias\t~\n"
+"\tpalabra\t\t\tpalabra, Palabra, PALABRA, PaLaBRa etc.\n"
+"\tPalabra\t\t\tPalabra\n"
+"\tPALABRA\t\t\tPALABRA\n"
+"\tPaLaBRa\t\t\tPaLaBRa\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:62
 msgid "CASE IN ONE PATTERN"
-msgstr ""
+msgstr "DISTINCIÓN ENTRE MAYÚSCULAS Y MINÚSCULAS EN UN PATRÓN"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:67
@@ -311,6 +335,10 @@ msgid ""
 "case.  This overrules the 'ignorecase' and 'smartcase' options, when \"\\c\" "
 "or \"\\C\" is used their value doesn't matter."
 msgstr ""
+"Puede anexar la cadena «\\c» si desea ignorar esta distinción para un patrón "
+"en particular. Usar «\\C» activará la distinción. Esto invalida las opciones "
+"'ignorecase' y 'smartcase', ya que usar «\\c» o «\\C» obvia el valor de estas "
+"opciones."
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:73
@@ -330,6 +358,10 @@ msgid ""
 "pattern.  Thus if you repeat a pattern from the search history, the same "
 "will happen, no matter if 'ignorecase' or 'smartcase' was changed."
 msgstr ""
+"Una enorme ventaja de usar «\\c» y «\\C» es que se mantienen ligadas al "
+"patrón. Por ello, si repite un patrón desde el registro de búsquedas "
+"obtendrá el mismo resultado sin importar si cualquier cambio de 'ignorecase' "
+"y 'smartcase'. "
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:83
@@ -341,6 +373,12 @@ msgid ""
 "\tstandard and recommended setting.  If you would change 'magic', many\n"
 "\tsearch patterns would suddenly become invalid.\n"
 msgstr ""
+"\tNota:\n"
+"\tEl uso del elemento «\\» en patrones de búsqueda depende de la opción\n"
+"\t'magic'.\n"
+"\tEn estos capítulos daremos por sentado que 'magic' está activada, ya\n"
+"\tque es la configuración estándar y recomendad. De cambiar 'magic'\n"
+"\tmuchos patrones de búsqueda no serían válidos.\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:87
@@ -350,12 +388,15 @@ msgid ""
 "\tIf your search takes much longer than you expected, you can interrupt\n"
 "\tit with CTRL-C on Unix and  CTRL-Break on MS-DOS and MS-Windows.\n"
 msgstr ""
+"\tNota:\n"
+"\tSi la búsqueda lleva más tiempo del esperado, puede interrumpir esta\n"
+"\tcon CTRL-C en Unix y CTRL-Break en MS-DOS y MS-Windows.\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:90
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "*27.2*\tWrapping around the file end\n"
-msgstr "*07.7*\tCambiar el nombre de un archivo\n"
+msgstr "*27.2*\tJustificar el fin del archivo\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:98
@@ -382,6 +423,8 @@ msgid ""
 "If you use the \"?\" command, to search in the other direction, you get this "
 "message:"
 msgstr ""
+"Si usa la orden «?» para buscar en dirección inversa obtendrá el siguiente "
+"mensaje:"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:105
@@ -441,6 +484,7 @@ msgstr "\t:set nowrapscan\n"
 msgid ""
 "Now when the search hits the end of the file, an error message displays:"
 msgstr ""
+"Ahora verá un mensaje de error cuando la búsqueda llega al final del archivo:"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:129
@@ -658,12 +702,13 @@ msgid ""
 "The \"b\" and \"e\" keep their meaning, they don't change direction with the "
 "use of \"?\"."
 msgstr ""
+"La «b» y la «e» mantienen su significado, no cambien de dirección con el uso "
+"de «?»."
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:221
-#, fuzzy
 msgid "START POSITION"
-msgstr "BYTE POSICIÓN"
+msgstr "POSICIÓN INICIAL"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:224
@@ -711,6 +756,8 @@ msgid ""
 "The \"*\" item specifies that the item before it can match any number of "
 "times.  Thus: >"
 msgstr ""
+"El elemento «*» especifica que el elemento precedente puede emparejarse un "
+"número ilimitado de veces. Por ello: >"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:246
@@ -729,17 +776,24 @@ msgid ""
 "must be grouped into one item.  This is done by putting \"\\(\" before it and\n"
 "\"\\)\" after it.  Thus this command: >\n"
 msgstr ""
+"coincide con «a», «aa», «aaa», etc. Pero también « » (una cadena vacía), ya\n"
+"que se incluye por omisión cero veces.\n"
+"   «*» sólo afecta al su elemento precedente. Por ello, «ab*» encuentra «a»,\n"
+"«ab», «abb», «abbb», etc. Para encontrar varias apariciones de una cadena\n"
+"completa, ésta ha de estar agrupada bajo un mismo elemento. Esto se hace\n"
+"colocando «\\(» antes de la cadena, y «\\)» después. Por ello, la siguiente\n"
+"orden: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:255
 #, no-wrap
 msgid "\t/\\(ab\\)*\n"
-msgstr ""
+msgstr "\t/\\(ab\\)*\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:257
 msgid "Matches: \"ab\", \"abab\", \"ababab\", etc.  And also \"\"."
-msgstr ""
+msgstr "encuentra «ab», «abab», «ababab», etc. También « »."
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:260
@@ -747,12 +801,15 @@ msgid ""
 "To avoid matching the empty string, use \"\\+\".  This makes the previous "
 "item match one or more times. >"
 msgstr ""
+"Para evitar que coincida con una cadena vacía, use «\\+». Esto encuentra una "
+"o\n"
+"más apariciones del elemento precedente. >"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:262
 #, no-wrap
 msgid "\t/ab\\+\n"
-msgstr ""
+msgstr "\t/ab\\+\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:264
@@ -760,22 +817,23 @@ msgid ""
 "Matches \"ab\", \"abb\", \"abbb\", etc.  It does not match \"a\" when no \"b"
 "\" follows."
 msgstr ""
+"Encuentra «ab», «abb», «abbb», etc. No coincide con «a» si no va seguido de «b»."
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:266
 msgid "To match an optional item, use \"\\=\".  Example: >"
-msgstr ""
+msgstr "Para hacer coincidir un elemento opcional, utilice «\\=». Ejemplo:>"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:268
 #, no-wrap
 msgid "\t/folders\\=\n"
-msgstr ""
+msgstr "\t/directorio\\=\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:270
 msgid "Matches \"folder\" and \"folders\"."
-msgstr ""
+msgstr "Encuentra «directorio» y «directorios»."
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:273
@@ -879,35 +937,32 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:322
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "*27.5*\tAlternatives\n"
-msgstr "*21.5*\tVistas\n"
+msgstr "*27.5*\tAlternativas\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:324
 msgid "The \"or\" operator in a pattern is \"\\|\".  Example: >"
-msgstr ""
+msgstr "El operador «or» dentro de un patrón es «\\|». Ejemplo: >"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:326
 #, no-wrap
 msgid "\t/foo\\|bar\n"
-msgstr ""
+msgstr "\t/foo\\|bar\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:328
 msgid ""
 "This matches \"foo\" or \"bar\".  More alternatives can be concatenated: >"
-msgstr ""
+msgstr "Esto encuentra «foo» o «bar». Puede concatenar más alternativas: >"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:330
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/one\\|two\\|three\n"
-msgstr ""
-"\t/uno\n"
-"\t/dos\n"
-"\t/tres\n"
+msgstr "\t/uno\\|dos\\|tres\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:333
@@ -916,12 +971,15 @@ msgid ""
 "Matches \"one\", \"two\" and \"three\".\n"
 "   To match multiple times, the whole thing must be placed in \"\\(\" and \"\\)\": >\n"
 msgstr ""
+"Coincide con «uno», «dos» y «tres».\n"
+"   Para encontrar varias coincidencias debe insertar la cadena completa entre\n"
+"«\\(» y «\\)»: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:335
 #, no-wrap
 msgid "\t/\\(foo\\|bar\\)\\+\n"
-msgstr ""
+msgstr "\t/\\(foo\\|bar\\)\\+\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:338
@@ -930,17 +988,19 @@ msgid ""
 "This matches \"foo\", \"foobar\", \"foofoo\", \"barfoobar\", etc.\n"
 "   Another example: >\n"
 msgstr ""
+"Esto encuentra «foo», «foobar», «foofoo», «barfoobar», etc.\n"
+"   Otro ejemplo: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:340
 #, no-wrap
 msgid "\t/end\\(if\\|while\\|for\\)\n"
-msgstr ""
+msgstr "\t/end\\(if\\|while\\|for\\)\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:342
 msgid "This matches \"endif\", \"endwhile\" and \"endfor\"."
-msgstr ""
+msgstr "Esto coincide con «endif», «endwhile» y «endfor»."
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:345
@@ -948,12 +1008,15 @@ msgid ""
 "A related item is \"\\&\".  This requires that both alternatives match in "
 "the same place.  The resulting match uses the last alternative.  Example: >"
 msgstr ""
+"Un elemento relacionado es «\\&». Esto requiere que ambas alternativas "
+"coincidan en el mismo lugar. La coincidencia resultante usa la última "
+"alternativa. Ejemplo: >"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:347
 #, no-wrap
 msgid "\t/forever\\&...\n"
-msgstr ""
+msgstr "\t/forever\\&...\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:349
@@ -961,12 +1024,13 @@ msgid ""
 "This matches \"for\" in \"forever\".  It will not match \"fortuin\", for "
 "example."
 msgstr ""
+"Esto coincide on «for» en «forever». No coincide con «fortuin», por ejemplo."
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:352
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "*27.6*\tCharacter ranges\n"
-msgstr "*06.6*\tMás información\n"
+msgstr "*27.6*\tRangos de caracteres\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:355
@@ -980,7 +1044,7 @@ msgstr ""
 #: original/TXT/usr_27.txt:357
 #, no-wrap
 msgid "\t/[a-z]\n"
-msgstr ""
+msgstr "\t/[a-z]\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:360
@@ -993,7 +1057,7 @@ msgstr ""
 #: original/TXT/usr_27.txt:362
 #, no-wrap
 msgid "\t/[0123456789abcdef]\n"
-msgstr ""
+msgstr "\t/[0123456789abcdef]\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:366
@@ -1007,7 +1071,7 @@ msgstr ""
 #: original/TXT/usr_27.txt:368
 #, no-wrap
 msgid "\t/[0-9a-f]\n"
-msgstr ""
+msgstr "\t/[0-9a-f]\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:372
@@ -1026,6 +1090,10 @@ msgid ""
 "\t\\r\t<CR>\n"
 "\t\\b\t<BS>\n"
 msgstr ""
+"\t\\e\t<Esc>\n"
+"\t\\t\t<Tab>\n"
+"\t\\r\t<CR>\n"
+"\t\\b\t<BS>\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:380
@@ -1186,9 +1254,8 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:458
-#, fuzzy
 msgid "The character classes are:"
-msgstr "Los tres nombres que Vim usa son:"
+msgstr "Las clases de caracteres son:"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:468
@@ -1207,9 +1274,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:471
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "*27.8*\tMatching a line break\n"
-msgstr "*24.4*\tRepetir una inserción\n"
+msgstr "*27.8*\tCoincidir con un salto de línea\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:476
@@ -1223,9 +1290,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:478
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/the\\nword\n"
-msgstr "\t/el\\>\n"
+msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:482
@@ -1305,9 +1372,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:512
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "*27.9*\tExamples\n"
-msgstr "*24.9*\tDígrafos\n"
+msgstr "*27.9*\tEjemplos\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:515
@@ -1370,9 +1437,8 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:540
-#, fuzzy
 msgid "FINDING AN IDENTIFIER"
-msgstr "ENCONTRAR CADA LÍNEA"
+msgstr "ENCONTRAR UN IDENTIFICADOR"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:544
