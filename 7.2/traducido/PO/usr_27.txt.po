@@ -34,7 +34,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2009-12-03 19:17+0100\n"
-"PO-Revision-Date: 2010-01-30 19:26+0200\n"
+"PO-Revision-Date: 2010-02-01 22:53+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
 "Language: es\n"
@@ -42,7 +42,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.5.1\n"
+"X-Generator: Virtaal 0.5.2\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:18 original/TXT/intro.txt:75
@@ -258,8 +258,8 @@ msgid ""
 "only one of them.\n"
 "   Now switch on the 'ignorecase' option: >\n"
 msgstr ""
-"Vim distingue entre mayúsculas y minúsculas al realizar un búsqueda, por\n"
-"omisión. «INCLUDE», «Include» e «include»  son por ello tres palabras\n"
+"Vim distingue entre mayúsculas y minúsculas al realizar un búsqueda de forma\n"
+"predefinida. «INCLUDE», «Include» e «include»  son por ello tres palabras\n"
 "distintas, y una búsqueda encontraría sólo una de ellas.\n"
 "   Active ahora la opción 'ignorecase': >\n"
 
@@ -272,7 +272,8 @@ msgid ""
 "matches.)\n"
 "   You can switch this off again with: >\n"
 msgstr ""
-"Si realiza otra búsqueda de «include», ésta devolvería «Include», «INCLUDE» e «InCLUEDe». Puede activar la opción 'hlsearch' (resaltar búsquedas) para\n"
+"Si realiza otra búsqueda de «include», ésta devolvería «Include», «INCLUDE» "
+"e «InClUDe». Puede activar la opción 'hlsearch' (resaltar búsquedas) para\n"
 "ver fácilmente los patrones coincidentes.\n"
 "   Puede desactivar esta opción con: >\n"
 
@@ -352,6 +353,11 @@ msgid ""
 "\t\\cword\t\t\tword, Word, WORD, WoRd, etc.\n"
 "\t\\cWord\t\t\tword, Word, WORD, WoRd, etc.\n"
 msgstr ""
+"\tpatrón\t\t\tcoincidencias\t~\n"
+"\t\\Cpalabra\t\tpalabra\n"
+"\t\\CPalabra\t\tPalabra\n"
+"\t\\cpalabra\t\tpalabra, Palabra, PALABRA, PaLaBrA, etc.\n"
+"\t\\cPalabra\t\tpalabra, Palabra, PALABRA, PaLaBrA, etc.\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:77
@@ -405,13 +411,22 @@ msgstr "*27.2*\tJustificar el fin del archivo\n"
 #, no-wrap
 msgid ""
 "By default, a forward search starts searching for the given string at the\n"
-"current cursor location.  It then proceeds to the end of the file.  If it has\n"
+"current cursor location.  It then proceeds to the end of the file.  If it "
+"has\n"
 "not found the string by that time, it starts from the beginning and searches\n"
 "from the start of the file to the cursor location.\n"
 "   Keep in mind that when repeating the \"n\" command to search for the next\n"
 "match, you eventually get back to the first match.  If you don't notice this\n"
 "you keep searching forever!  To give you a hint, Vim displays this message:\n"
 msgstr ""
+"Por omisión, una búsqueda hacia adelante se inicia buscando la cadena dada\n"
+"en la ubicación presente del cursor. Después continua hasta el final del\n"
+"archivo. Si no ha encontrado ninguna cadena, vuelve al inicio y busca desde\n"
+"el principio del archivo.\n"
+"   Tenga en cuenta que, de repetir la orden «n» para buscar la siguiente\n"
+"coincidencia, al final volverá a la primera. ¡Buscará para siempre si no "
+"nota\n"
+"esto! Vim le da una pista con la forma del siguiente mensaje:\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:100
@@ -502,10 +517,14 @@ msgstr ""
 #: original/TXT/usr_27.txt:133
 #, no-wrap
 msgid ""
-"Thus you can find all matches by going to the start of the file with \"gg\" and\n"
+"Thus you can find all matches by going to the start of the file with \"gg\" "
+"and\n"
 "keep searching until you see this message.\n"
 "   If you search in the other direction, using \"?\", you get:\n"
 msgstr ""
+"Así, puede encontrar todas las coincidencias desplazándose al inicio del\n"
+"archivo con «gg», y buscar hasta ver este mensaje.\n"
+"   Si busca en otra dirección, usando, «?», obtendrá:\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:135
@@ -517,22 +536,26 @@ msgstr ""
 #: original/TXT/usr_27.txt:138
 #, no-wrap
 msgid "*27.3*\tOffsets\n"
-msgstr ""
+msgstr "*27.3*\tDirección relativa («Offsets»)\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:143
 msgid ""
 "By default, the search command leaves the cursor positioned on the beginning "
-"of the pattern.  You can tell Vim to leave it some other place by specifying "
-"an offset.  For the forward search command \"/\", the offset is specified by "
-"appending a slash (/) and the offset: >"
+"of the pattern.  You can tell Vim to leave it some other place by "
+"specifying an offset.  For the forward search command \"/\", the offset is "
+"specified by appending a slash (/) and the offset: >"
 msgstr ""
+"Por omisión, la orden de búsqueda posiciona el cursor al inicio del patrón. "
+"Puede hacer que Vim lo posicione en algún lugar especificando una dirección "
+"relativa. Para la orden de búsqueda hacia delante «/», la dirección relativa "
+"se especifica añadiendo una barra inversa («/») y la dirección relativa: >"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:145
 #, no-wrap
 msgid "\t/default/2\n"
-msgstr ""
+msgstr "\t/omisión/2\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:150
@@ -542,6 +565,11 @@ msgid ""
 "paragraph above, Vim finds the word \"default\" in the first line.  Then the "
 "cursor is moved two lines down and lands on \"an offset\"."
 msgstr ""
+"Esta orden busca el patrón «omisión», y después se desplaza al inicio de la "
+"segunda línea, más allá del patrón. De usar esta orden en el párrafo "
+"anterior, Vim encontraría la palabra «omisión» en la primera línea. Acto "
+"seguido, el cursor se posicionaría dos líneas más abajo, para acabar en la "
+"dirección relativa."
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:155
@@ -551,18 +579,26 @@ msgid ""
 "positive or negative.  If it is positive, the cursor moves down that many "
 "lines; if negative, it moves up."
 msgstr ""
+"El cursor se posicionara al inicio de la línea presente un número n de "
+"líneas a partir de la coincidencia, si la dirección relativa es un simple "
+"número. El número de dirección relativa puede ser positivo o negativo. De "
+"ser positivo, el cursor se desplaza hacia abajo un número n de líneas; si es "
+"negativo, se desplaza hacia arriba.  "
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:158
 msgid "CHARACTER OFFSETS"
-msgstr ""
+msgstr "DIRECCIÓN RELATIVA DE CARÁCTER"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:161
 msgid ""
-"The \"e\" offset indicates an offset from the end of the match.  It moves "
-"the cursor onto the last character of the match.  The command: >"
+"The \"e\" offset indicates an offset from the end of the match.  It moves the "
+"cursor onto the last character of the match.  The command: >"
 msgstr ""
+"La dirección relativa «e» indica una dirección a partir del final de la "
+"coincidencia. Desplaza el cursor al último carácter de la coincidencia. La "
+"orden :>"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:163
@@ -578,6 +614,10 @@ msgid ""
 "   From that position, adding a number moves forward that many characters.\n"
 "This command moves to the character just after the match: >\n"
 msgstr ""
+"pone el cursor sobre la «t» de «const».\n"
+"   Añadir un número le desplazará hacia delante tantos caracteres desde la\n"
+"posición inicial. Esta orden desplaza el carácter a la posición anterior\n"
+"a la coincidencia: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:169
@@ -602,9 +642,8 @@ msgstr "\t/const/e-1\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:176
-#, fuzzy
 msgid "moves the cursor to the \"s\" of \"const\"."
-msgstr "mueve el cursor:"
+msgstr "desplaza el cursor a la «s» de «const»."
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:181
@@ -614,6 +653,10 @@ msgid ""
 "thing.  It does get useful when a number is added or subtracted.  The cursor "
 "then goes forward or backward that many characters.  For example: >"
 msgstr ""
+"Si la dirección empieza con una «b», el cursor se desplazará al inicio del "
+"patrón. No es muy útil, ya que se logra lo mismo dejando la «b». Es de "
+"utilidad al añadir o sustraer un número. Entonces, el cursor se desplaza "
+"hacia delante o atrás tantos caracteres. Por ejemplo: >"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:183
@@ -627,6 +670,8 @@ msgid ""
 "Moves the cursor to the beginning of the match and then two characters to "
 "the right.  Thus it lands on the \"n\"."
 msgstr ""
+"Desplaza el cursor al principio de la coincidencia, dos caracteres a la "
+"derecha. Por ello, finaliza en «n»."
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:189
@@ -639,10 +684,12 @@ msgid ""
 "To repeat searching for the previously used search pattern, but with a "
 "different offset, leave out the pattern: >"
 msgstr ""
+"Para repetir una búsqueda del último patrón dado, pero con una dirección "
+"relativa distinta, omita el patrón: >"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:195
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "\t/that\n"
 "\t//e\n"
@@ -657,15 +704,14 @@ msgstr "Equivale a: >"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:199
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/that/e\n"
 msgstr "\t/that/e\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:201
-#, fuzzy
 msgid "To repeat with the same offset: >"
-msgstr "Para ir en la otra dirección use: >"
+msgstr "Para repetir con el mismo desplazamiento:>"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:203
@@ -676,9 +722,11 @@ msgstr "\t/\n"
 #. type: Plain text
 #: original/TXT/usr_27.txt:205
 msgid ""
-"\"n\" does the same thing.  To repeat while removing a previously used "
-"offset: >"
+"\"n\" does the same thing.  To repeat while removing a previously used offset: "
+">"
 msgstr ""
+"«n» hace lo mismo. Para repetir mientras elimina una dirección usada "
+"anteriormente: >"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:207
@@ -697,6 +745,8 @@ msgid ""
 "The \"?\" command uses offsets in the same way, but you must use \"?\" to "
 "separate the offset from the pattern, instead of \"/\": >"
 msgstr ""
+"La orden «?» usa las direcciones relativas de la misma forma, pero debe usar "
+"«?» para separar la dirección del patrón, en lugar de «/»: >"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:215
@@ -724,25 +774,40 @@ msgid ""
 "When starting a search, it normally starts at the cursor position.  When you "
 "specify a line offset, this can cause trouble.  For example: >"
 msgstr ""
+"Al iniciar una búsqueda, generalmente comienza por la posición del cursor. "
+"Esto puede causar problemas cuando especifica un desplazamiento relativo de "
+"línea. Por ejemplo: >"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:226
 #, no-wrap
 msgid "\t/const/-2\n"
-msgstr ""
+msgstr "\t/const/-2\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:234
 #, no-wrap
 msgid ""
 "This finds the next word \"const\" and then moves two lines up.  If you\n"
-"use \"n\" to search again, Vim could start at the current position and find the same\n"
-"\"const\" match.  Then using the offset again, you would be back where you started.\n"
+"use \"n\" to search again, Vim could start at the current position and find "
+"the same\n"
+"\"const\" match.  Then using the offset again, you would be back where you "
+"started.\n"
 "You would be stuck!\n"
-"   It could be worse: Suppose there is another match with \"const\" in the next\n"
+"   It could be worse: Suppose there is another match with \"const\" in the "
+"next\n"
 "line.  Then repeating the forward search would find this match and move two\n"
 "lines up.  Thus you would actually move the cursor back!\n"
 msgstr ""
+"Esto encuentra la siguiente aparición de «const», y después se desplaza dos\n"
+"líneas haci arriba. Si usa «n» para repetir la búsqueda, puede que Vim la\n"
+"inicie en la posición actual, encontrando la misma coincidencia de «const».\n"
+"Al usar el mismo desplazamiento relativo, ha vuelto al punto inicio.\n"
+"¡Se quedaría atascado!\n"
+"   Aún pero: supongo que existe otra aparición de «const» en la siguiente\n"
+"línea. Repetir la búsqueda hacia adelante encontraría esta coincidencia,\n"
+"y desplazaría el cursor dos líneas atrás. ¡Estaría desplazando el cursor\n"
+"hacia atrás todo el rato!\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:238
@@ -751,6 +816,9 @@ msgid ""
 "search starts a few characters forward or backward, so that the same match "
 "isn't found again."
 msgstr ""
+"Al especificar un carácter de desplazamiento relativo, Vim dará una "
+"compensación. Por ello, la búsqueda se inicia unos cuantos caracteres "
+"delante o detrás, para no encontrar otra vez la misma coincidencia."
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:241
@@ -846,21 +914,24 @@ msgstr "Encuentra «directorio» y «directorios»."
 #. type: Plain text
 #: original/TXT/usr_27.txt:273
 msgid "SPECIFIC COUNTS"
-msgstr ""
+msgstr "RECUENTOS ESPECÍFICOS"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:277
 msgid ""
-"To match a specific number of items use the form \"\\{n,m}\".  \"n\" and \"m"
-"\" are numbers.  The item before it will be matched \"n\" to \"m\" times |"
-"inclusive|.  Example: >"
+"To match a specific number of items use the form \"\\{n,m}\".  \"n\" and \"m\" are "
+"numbers.  The item before it will be matched \"n\" to \"m\" times |inclusive|.  "
+"Example: >"
 msgstr ""
+"Use la forma «\\{n,m}» para emparejar un número específico de elementos. «n» "
+"y «m» son números. El elemento anterior a éstos se emparejará con «n» un "
+"número «m» de veces |inclusive|. Ejemplo: >"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:279
 #, no-wrap
 msgid "\t/ab\\{3,5}\n"
-msgstr ""
+msgstr "\t/ab\\{3,5}\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:284
@@ -871,6 +942,11 @@ msgid ""
 "to infinity.  When \",m\" is omitted, it matches exactly \"n\" times.\n"
 "Examples:\n"
 msgstr ""
+"empareja «abbb», «abbbb» y «abbbbb».\n"
+"  El valor predefinido cero en ausencia de «n». El valor predefinido es\n"
+"infinito en ausencia de «m». En ausencia de «m», se empareja exactamente\n"
+"«n» veces.\n"
+"Ejemplos:\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:292
@@ -1153,10 +1229,12 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/usr_27.txt:386
 msgid ""
-"To avoid matching a specific character, use \"^\" at the start of the "
-"range.  The [] item then matches everything but the characters included.  "
-"Example: >"
+"To avoid matching a specific character, use \"^\" at the start of the range.  "
+"The [] item then matches everything but the characters included.  Example: >"
 msgstr ""
+"Use «^» al principio del rango para evitar emparejar un carácter en "
+"particular. El elemento [] emparejará todo menos los caracteres incluidos. "
+"Ejemplo: >"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:393
@@ -1177,16 +1255,17 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:398
-#, fuzzy
 msgid "PREDEFINED RANGES"
-msgstr "MARCAS PREDEFINIDAS"
+msgstr "RANGOS PREDEFINIDOS"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:401
 msgid ""
-"A number of ranges are used very often.  Vim provides a shortcut for these.  "
-"For example: >"
+"A number of ranges are used very often.  Vim provides a shortcut for these. "
+" For example: >"
 msgstr ""
+"Existe un número de rangos usados a menudo. Vim ofrece accesos directos para "
+"esto. Por ejemplo: >"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:403
@@ -1197,9 +1276,11 @@ msgstr "\t/\\a\n"
 #. type: Plain text
 #: original/TXT/usr_27.txt:406
 msgid ""
-"Finds alphabetic characters.  This is equal to using \"/[a-zA-Z]\".  Here "
-"are a few more of these:"
+"Finds alphabetic characters.  This is equal to using \"/[a-zA-Z]\".  Here are "
+"a few more of these:"
 msgstr ""
+"Encuentra caracteres alfabéticos. Esto equivale a usar «/[a-zA-Z]». Aquí hay "
+"más ejemplos:"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:418
@@ -1249,6 +1330,10 @@ msgid ""
 "redefined without changing the search pattern.\n"
 "   For example, search for this pattern: >\n"
 msgstr ""
+"El rango de carácter empareja un conjunto específico de caracteres. Se\n"
+"parece una clase de carácter, pero con una importante diferencia: puede\n"
+"redefinir el conjunto de caracteres sin cambiar el patrón de búsqueda.\n"
+"   Por ejemplo, busque este patrón: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:436
@@ -1260,12 +1345,20 @@ msgstr "\t/\\f\\+\n"
 #: original/TXT/usr_27.txt:442
 #, no-wrap
 msgid ""
-"The \"\\f\" items stands for file name characters.  Thus this matches a sequence\n"
+"The \"\\f\" items stands for file name characters.  Thus this matches a "
+"sequence\n"
 "of characters that can be a file name.\n"
 "   Which characters can be part of a file name depends on the system you are\n"
-"using.  On MS-Windows, the backslash is included, on Unix it is not.  This is\n"
+"using.  On MS-Windows, the backslash is included, on Unix it is not.  This "
+"is\n"
 "specified with the 'isfname' option.  The default value for Unix is: >\n"
 msgstr ""
+"Los elementos «\\f» simbolizan caracteres de nombre de archivo. Así, esto "
+"empareja una secuencia de caracteres que pueden ser un nombre de archivo.\n"
+"   Qué caracteres pueden formar parte de un nombre de archivo dependen del "
+"sistema que esté usando. En MS-Windows, la barra inversa está incluida, pero "
+"no en Unix. Puede especificar esto con la opción 'isfname'. El valor por "
+"omisión en Unix es: >"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:445
@@ -1274,6 +1367,8 @@ msgid ""
 "\t:set isfname\n"
 "\tisfname=@,48-57,/,.,-,_,+,,,#,$,%,~,=\n"
 msgstr ""
+"\t:set isfname\n"
+"\tisfname=@,48-57,/,.,-,_,+,,,#,$,%,~,=\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:449
@@ -1282,6 +1377,9 @@ msgid ""
 "search pattern with \"\\f\" to match a file name, and it will automatically "
 "adjust to the system you are using it on."
 msgstr ""
+"El valor predefinido depende del sistema. Así, puede crear un patrón de "
+"búsqueda con «\\f» para emparejar un nombre de archivo, y ajustarse "
+"automáticamente al sistema en el que lo está usando."
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:456
@@ -1294,6 +1392,11 @@ msgid ""
 "\tend of a file name in text.  Thus the default value of 'isfname' is a\n"
 "\tcompromise.\n"
 msgstr ""
+"\tNota:\n"
+"\tEn realidad, Unix permita usar casi cualquier carácter, incluyendo\n"
+"\tespacios. Incluir estos caracteres en 'isfname' sería teóricamente\n"
+"\tcorrecto, pero imposibilitaría encontrar el fin del nombre de archivo\n"
+"\ten el texto. Así, el valor predefinido de 'isfname' es importante.\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:458
@@ -1325,42 +1428,55 @@ msgstr "*27.8*\tCoincidir con un salto de línea\n"
 #: original/TXT/usr_27.txt:476
 #, no-wrap
 msgid ""
-"Vim can find a pattern that includes a line break.  You need to specify where\n"
-"the line break happens, because all items mentioned so far don't match a line\n"
+"Vim can find a pattern that includes a line break.  You need to specify "
+"where\n"
+"the line break happens, because all items mentioned so far don't match a "
+"line\n"
 "break.\n"
 "   To check for a line break in a specific place, use the \"\\n\" item: >\n"
 msgstr ""
+"Vim puede encontrar un patrón que incluye un salto de línea. Debe "
+"especificar\n"
+"la aparición del salto de línea, ya que todos los elementos mencionados "
+"hasta\n"
+"ahora no se emparejan con un salto de línea.\n"
+"   Para comprobar si hay un salto de línea en un lugar específico, use el\n"
+"elemento «\\n»: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:478
 #, no-wrap
 msgid "\t/the\\nword\n"
-msgstr ""
+msgstr "\t/la\\npalabra\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:482
 msgid ""
 "This will match at a line that ends in \"the\" and the next line starts with "
-"\"word\".  To match \"the word\" as well, you need to match a space or a "
-"line break.  The item to use for it is \"\\_s\": >"
+"\"word\".  To match \"the word\" as well, you need to match a space or a line "
+"break.  The item to use for it is \"\\_s\": >"
 msgstr ""
+"Esto coincidiría en una línea que termina con «la», seguida de una que "
+"comienza con «palabra». Para encontrar también «la palabra», tendrá que "
+"emparejar el espacio o el salto de línea. Para ello, use el elemento «\\_s»: "
+">"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:484
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/the\\_sword\n"
-msgstr "\t/el\\>\n"
+msgstr "\t/la\\_spalabra\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:486
 msgid "To allow any amount of white space: >"
-msgstr ""
+msgstr "Para permitir cualquier cantidad de espacio en blanco:>"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:488
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "\t/the\\_s\\+word\n"
-msgstr "\t/el\\>\n"
+msgstr "\t/la\\_s\\+palabra\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:491
@@ -1368,7 +1484,8 @@ msgstr "\t/el\\>\n"
 msgid ""
 "This also matches when \"the  \" is at the end of a line and \"   word\" at the\n"
 "start of the next one.\n"
-msgstr ""
+msgstr "Esto también coincide cuando «la » está al final de la línea, y «palabra» al "
+"inicio de la siguiente.\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:496
@@ -1378,13 +1495,20 @@ msgid ""
 "alphabetic character or a line break.  The other character classes and "
 "ranges can be modified in the same way by inserting a \"_\"."
 msgstr ""
+"«\\s» coincide con espacio en blanco, «\\_s» coincide con espacio en blanco o "
+"un salto de línea. De forma parecida, «\\a» coincide con un carácter "
+"alfabético o un salto de línea. Las otras clases de caracteres y rangos se "
+"pueden modificar de la misma forma insertando un «_»."
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:499
 msgid ""
-"Many other items can be made to match a line break by prepending \"\\_\".  "
-"For example: \"\\_.\" matches any character or a line break."
+"Many other items can be made to match a line break by prepending \"\\_\".  For "
+"example: \"\\_.\" matches any character or a line break."
 msgstr ""
+"Puede hacer coincidir muchos otros elementos con un salto de línea "
+"prefijando «\\_». Por ejemplo, «\\_.» coincide con cualquier carácter o salto "
+"de línea."
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:503
@@ -1394,24 +1518,31 @@ msgid ""
 "\t\"\\_.*\" matches everything until the end of the file.  Be careful with\n"
 "\tthis, it can make a search command very slow.\n"
 msgstr ""
+"\tNota:\n"
+"\t«\\_.*» empareja todo hasta el final del archivo. Use esto con\n"
+"\tcuidado, ya que puede reducir la velocidad de una orden de búsqueda.\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:505
 msgid ""
 "Another example is \"\\_[]\", a character range that includes a line break: >"
 msgstr ""
+"Otro ejemplo es «\\_[]», un rango de carácter que incluye un salto de línea: "
+">"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:507
 #, no-wrap
 msgid "\t/\"\\_[^\"]*\"\n"
-msgstr ""
+msgstr "\t/\"\\_[^\"]*\"\n"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:509
 msgid ""
 "This finds a text in double quotes that may be split up in several lines."
 msgstr ""
+"Esto encuentra un texto entre comillas dobles que se puede dividir en varias "
+"líneas."
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:512
