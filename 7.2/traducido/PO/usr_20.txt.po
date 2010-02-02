@@ -197,7 +197,7 @@ msgid ""
 msgstr ""
 "|20.1|\tEdición en línea de órdenes\n"
 "|20.2|\tAbreviaturas en línea de órdenes\n"
-"|20.3|\tCompleción en línea de órdenes\n"
+"|20.3|\tAutocompletado en la línea de órdenes\n"
 "|20.4|\tHistórico de la línea de órdenes\n"
 "|20.5|\tVentana de la línea de órdenes\n"
 
@@ -579,7 +579,7 @@ msgstr ""
 #: original/TXT/usr_20.txt:160
 #, no-wrap
 msgid "*20.3*\tCommand line completion\n"
-msgstr "*20.3* Compleción en línea de órdenes\t\n"
+msgstr "*20.3*\tAutocompletado en la línea de órdenes\n"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:163
@@ -637,11 +637,11 @@ msgid ""
 "the directory and finds only one file that starts with a \"b\".  That must "
 "be the one you are looking for, thus Vim completes the file name for you."
 msgstr ""
-"Esto viene a ser la misma orden. ¿Qué ocurrió? La tecla <Tab> realiza la "
-"compleción de la palabra anterior al cursor. «b» en este caso. Vim busca en "
-"el directorio y encuentra sólo un archivo cuyo nombre empieza por «b».  Este "
-"ha de ser el que está buscando, y por ello Vim completa por usted el nombre "
-"del archivo."
+"Esto viene a ser la misma orden. ¿Qué ocurrió? La tecla <Tab> realiza el "
+"autocompletado de la palabra anterior al cursor. «b» en este caso. Vim busca "
+"en el directorio y encuentra sólo un archivo cuyo nombre empieza por «b». "
+"Este debe ser el que está buscando, y por ello Vim completa por usted el "
+"nombre del archivo."
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:184
@@ -758,8 +758,8 @@ msgid ""
 "   Again, if you repeat typing the <Tab>, Vim will cycle through all matches.\n"
 "There are quite a few, it's better to type more characters first: >\n"
 msgstr ""
-"¡Oye! ¿Porqué no obtuvo «:set info.txt»? Es debido a que Vim tiene una\n"
-"compleción contextual. El tipo de palabras que Vim buscará depende de la\n"
+"¡Oye! ¿Porqué no obtuvo «:set info.txt»? Es debido a que Vim tiene un\n"
+"autocompletado contextual. El tipo de palabras que Vim buscará depende de la\n"
 "orden que lo preceda. Vim sabe que no puede usar un nombre de archivo tras\n"
 "la orden «:set», pero que puede usar el nombre de una opción.\n"
 "   Una vez más, si sigue pulsando <Tab>, Vim navegará a través de todas las\n"
@@ -811,8 +811,8 @@ msgstr ""
 "   Lo que se completó con <Tab> es lo que Vim espera en primer lugar. Pruebe\n"
 "esto ahora para ver su funcionamiento. En algunas situaciones no obtendrá lo\n"
 "que desea. Esto es debido a que Vim no sabe lo que quiere, o porque no se ha\n"
-"implementado la compleción para este evento. En ese caso, obtendrá un <Tab>\n"
-"insertado (se mostrará como ^I).\n"
+"implementado el autocompletado para este evento. En ese caso, obtendrá un\n"
+"<Tab> insertado (se mostrará como ^I).\n"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:248
@@ -901,8 +901,8 @@ msgid ""
 "end of the list of files.  The 'wildignore' option specifies files that are "
 "not listed at all."
 msgstr ""
-"La opción 'wildmode' se puede usar para modificar el funcionamiento de la "
-"compleción. la opción 'wildmenu' se puede usar para obtener una lista de "
+"La opción 'wildmode' se puede usar para modificar el funcionamiento del "
+"autocompletado. La opción 'wildmenu' se puede usar para obtener una lista de "
 "tipo menú de las coincidencias. Use la opción 'suffixes' para especificar "
 "archivos de menor importancia y que aparecen al final de la lista de archivos"
 

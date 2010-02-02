@@ -1,138 +1,20 @@
-# Vim l10n es http://code.assembla.com/vim-doc-es/git/nodes/master 
+# Vim7/src/po/vim.pot translation to Spanish.
 #
-# Copyright (C) AÑOS 
-# This file is distributed under the same license as the Vim (version) package.
+# Translation project homepage:
+# vim-doc-es http://www.assembla.com/wiki/show/vim-doc-es
 #
-# Translators credits:
-#   - Initial translation
-#       Eduardo F. Amatria <eferna1@platea.pntic.mec.es>, 2001
-#
-#   - Updates
-#        Pedro A. López-Valencia <vorbote@users.sourceforge.net>, 2003-06,2009
-#        Nelson López Villarroel <tuxero@users.sourceforge.net>, 2006
-#        Omar Campagne Polaino <ocampagne@gmail.com> 2009
-#
-#
-#
-# Debido al formato (txt) y al máximo de 80 columnas que pueden tener 
-# los textos de ayuda en Vim, así como el formato PO, por favor, leete los
-# apuntes concernientes a la edición de los archivos PO relativos a la
-# aplicación que desees usar.
-# También encontrarás información acerca del uso de herramientas gettext en el 
-# proyecto de localización (l10n) de Vim.
-#
-# - http://www.assembla.com/wiki/show/vim-doc-es
-#
-# No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
-# este enlace puede ser de interés. A pesar de no formar parte, nuestra 
-# intención es homologarnos con su terminología y uso de la lengua 
-# en la medida de lo útil y posible.
-#
-#  - El proyecto de traducción de Debian al español
-#     http://www.debian.org/intl/spanish/notas
-#
-# La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
-# pero también puede servir de referencia para otros términos no técnicos.
-# No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
-# traducción sea comprensible independientemente de la nacionalidad del
-# usuario. Si crees que alguna traducción puede llevar a confusión, consulta
-# la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
-#
-#  - www.rae.es 
-#  - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages   
-#
-# Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
-# se puede consultar con un simple grep, pogrep o cargado en Virtaal.
-#
-# Castillian translation for Vim
-#
-# Do ":help uganda"  in Vim to read copying and usage conditions.
-# Do ":help credits" in Vim to see a list of people who contributed.
-#
-# FIRST AUTHOR Pedro A. López-Valencia <vorbote@users.sourceforge.net>,
-# 2003-06,2009
-# SECOND AUTHOR Nelson López Villarroel <tuxero@users.sourceforge.net>, 2006
-# THIRD AUTHOR Omar Campagne Polaino <ocampagne@gmail.com> 2009
-# Based on work by Eduardo F. Amatria <eferna1@platea.pntic.mec.es>, 2001.
-#
-# NOTE TO BUG REPORTERS:
-# Please check http://vim-es.sourceforge.net and 
-# http://code.assembla.com/vim-doc-es/git/nodes/master for the latest working
-# version before reporting a bug in the tracker. Thanks.
-#
-# 2003-01-xx:
-#            PALV - Did a first effort at editing and correcting a
-#            incredibly poor translation. Talk about functional 
-#            analphabetism!
-#
-# 2004-12-26:
-#            PALV - Started reediting the file completely, based on
-#            the ORCA EN->ES glossary:
-#            <http://quark.fe.up.pt/cgi-bin/orca/glosario>
-#
-# 2004-12-27:
-#            PALV - Several Error mesages had the wrong number.
-#
-# 2005-01-10:
-#            PALV - Finished reediting the file with the ORCA glossary
-#            as guideline. Found two messages without translation.
-#
-# 2005-03-26:
-#            PALV - Merged editing changes provided by 
-#            Javier Fernández-Sanguino Peña <jfs@debian.org>.
-#
-# 2005-10-05:
-#           PALV - After a long delay, fixed the bug reported by
-#           Paco Arjonilla <pacoarjonilla@yahoo.es> on early July
-#           in preparation for the release of Vim 6.4. The menu
-#           shortcuts for "Abortar" and "Borrarlo" where in conflict
-#           with each other and a third entry in a couple menus.
-#
-# 2006-04-03:
-#          PALV: Whoever complains for the change from "fichero" to "archivo",
-#          read entry 5 here:
-#  	   http://buscon.rae.es/draeI/SrvltGUIBusUsual
-# 	   LEMA=archivo&TIPO_HTML=2&FORMATO=ampliado
-#          If you have reasons to complain, may those reasons be good and be
-# 	   ready
-#          to take over the maintenance of this file (and you better be a
-# 	    member of
-#          Debian's or Ubuntu's localization teams I can't take seriously anyone
-#          else's offer). The need of the many override the need of the few 
-#          (as in language use of 300 million Spanish speaking americans weigh a
-#          lot more than that of a mere 50 million europeans). 
-#
-#          PALV: Although correct typographic rules in Spanish require the use
-#          of French quote marks or guillemots (\"\"), the use of typewriter
-# 	   straight quotes is pervasive and easier to type in a computer (You
-# 	   can't type guillemots with a Spanish/Latin American keyboard easily
-# 	   unless you use
-#          an Apple Macintosh), so for the sake of K.I.S.S.[1], I'm changing 
-#          everything to straight quote marks.
-#
-#          [1] Keep It Simple, Stupid.
-#
-#          PALV: Cleaning up past editing that has no real justification
-# 	   anymore.
-#
-# 2009-08-22: PALV: Bring this file from the dead in the SVN repo. Change e-mail
-#          addresses, and finally bring the file encoding to the XIX Century.
-#          We do UTF-8 now.
-#
-# 	NOTA DE TRADUCCIÓN
-#
-# * No se puede insertar «\n» en las msgstr, a menos que aparezca en el msgid.
-#   La línea de órdenes de Vim auto-justificará la salida cuando la cadena
-#   traducida sea más larga que la original.
+# Last translators:
+# Pedro A. López-Valencia <vorbote@users.sourceforge.net>, 2003-06,2009
+# Omar Campagne Polaino <ocampagne@gmail.com> 2009
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Vim 7.2-245 (Castellano)\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: Vim 7.2.284 (rev 1692)\n"
+"Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2009-11-25 02:05+0100\n"
-"PO-Revision-Date: 2009-11-29 16:34+0100\n"
+"PO-Revision-Date: 2010-02-02 19:33+0100\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
-"Language-Team: vim-doc-es http://code.assembla.com/vim-doc-es\n"
+"Language-Team: vim-doc-es http://www.assembla.com/wiki/show/vim-doc-es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: octect-stream\n"
@@ -5168,7 +5050,8 @@ msgstr "E354: Nombre de registro no válido: '%s'"
 
 #: message.c:833
 msgid "Messages maintainer: Bram Moolenaar <Bram@vim.org>"
-msgstr "Traducción: Proyecto vim-doc-es <http://code.assembla.com/vim-doc-es>"
+msgstr ""
+"Traducción: Proyecto vim-doc-es <http://www.assembla.com/wiki/show/vim-doc-es>"
 
 #: message.c:1090
 msgid "Interrupt: "
@@ -6406,7 +6289,7 @@ msgstr "E384: La búsqueda ha llegado al PRINCIPIO sin coincidir con: %s"
 #: search.c:986
 #, c-format
 msgid "E385: search hit BOTTOM without match for: %s"
-msgstr "E385: La búsqueda ha llegado al FINAL sin coincidir con: %s"
+msgstr "E385: La búsqueda ha llegado al FINAL sin una coincidencia para: %s"
 
 #: search.c:1415
 msgid "E386: Expected '?' or '/'  after ';'"

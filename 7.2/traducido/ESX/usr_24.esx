@@ -6,13 +6,13 @@
 
 
 Al introducir texto, Vim ofrece varias maneras de reducir el número de
-teclas que pulsa, evitando teclear errores. Use el modo de auto-compleción
+teclas que pulsa, evitando teclear errores. Use el modo de autocompletado
 del modo Insertar para repetir palabras anteriormente tecleadas. Abrevie las
 palabras largas. Teclee caracteres que no están en su teclado.
 
 |24.1|	Corregir
 |24.2|	Mostrar coincidencias
-|24.3|	Compleción
+|24.3|	Autocompletado
 |24.4|	Repetir una inserción
 |24.5|	Copiar desde otra línea
 |24.6|	Insertar un registro
@@ -21,7 +21,7 @@ palabras largas. Teclee caracteres que no están en su teclado.
 |24.9|	Dígrafos
 |24.10|	Órdenes del modo Normal
 
-Capítulo siguiente: |usr_25.txt|  Editar texto con formato
+ Capítulo siguiente: |usr_25.txt|  Editar texto con formato
   Capitulo anterior: |usr_23.esx|  Editar otros archivos
 Tabla de contenidos: |usr_toc.esx|
 
@@ -59,9 +59,9 @@ para corregirlo: >
 
 <	Abandonar el modo insertar   <Esc>
 	Cuatro palabras hacia atrás          3b
-	Desplazarse a la «u»         		  l
+	Desplazarse a la «u»         		l
 	Reemplazar con «ó»			ró
-	Reiniciar modo insertar			 A
+	Reiniciar modo insertar			  A
 
 Existe otra manera de hacer esto: >
 
@@ -111,15 +111,15 @@ ha olvidado el «(» en algún lugar, o que escribió una «)» demasiadas veces
    También se mostrará el signo correspondiente en las parejas «[]» «{}». No
 tiene que esperar a teclear el siguiente carácter, ya que tan pronto como Vim
 lo detecte, devolverá el cursor a su posición original, continuando la
-inserción. Puede modificar el tiempo que Vim espera con la opción 'matchtime'. Por
-ejemplo, para hacer que Vim espere un segundo y medio: >
+inserción. Puede modificar el tiempo que Vim espera con la opción 'matchtime'.
+Por ejemplo, para hacer que Vim espere un segundo y medio: >
 
 	:set matchtime=15
 
 Esto especifica el tiempo en décimas de segundo.
 
 ==============================================================================
-*24.3*	Compleción
+*24.3*	Autocompletado
 
 Vim puede auto-completar palabras durante la inserción. Escriba primero la
 parte inicial de una palabra, pulse CTRL-P y Vim adivinará el resto.
@@ -175,7 +175,7 @@ Puede configurar el orden de búsqueda con la opción 'complete'.
 La opción 'ignorecase' es empleada. Las diferencias entre mayúsculas y
 minúsculas se ignorarán al buscar coincidencias de activar esta opción.
 
-'infercase' es una opción especial para la auto-compleción. Es útil para
+'infercase' es una opción especial para el autocompletado. Es útil para
 encontrar parejas cuando ignora la sensibilidad a mayúsculas y minúsculas
 (debe activar 'ignorecase') , y seguir usando con esta palabra la mencionada
 sensibilidad. Por ello, si teclea «Para» y Vim encuentra «paramilitar», el
@@ -242,14 +242,14 @@ archivos. Las coincidencias aparecen alfabéticamente.
 
 COMPLETAR EL CÓDIGO FUENTE
 
-Los archivos de código están bien estructurados. Esto posibilita la
-compleción de una manera inteligente. En Vim, esto se llama Omni compleción
-(Omni completion). Algunos otros editores lo llaman intellisense, pero eso
+Los archivos de código están bien estructurados. Esto posibilita un
+autocompletado inteligente. En Vim, esto se llama autocompletado global
+(«Omni completion»). Algunos otros editores lo llaman intellisense, pero eso
 es una marca.
 
-La tecla para la Omni compleción es CTRL-X CTRL-O. Obviamente, la «O»
-significa Omni, para recordarla mejor. Usemos un ejemplo para editar código
-C:
+La tecla para el autocompletado global es CTRL-X CTRL-O. Obviamente, la «O»
+significa «Omni», para recordarla mejor. Usemos un ejemplo para editar
+código C:
 
 	{ ~
 	    struct foo *p; ~
@@ -260,9 +260,9 @@ una lista de alternativas, los cuales son los elementos que contiene «struct
 foo». Esto es diferente al uso de CTRL-P, el cual completa cualquier
 palabra, mientras que aquí sólo son válidos los miembros de «struct foo».
 
-Necesita realizar alguna configuración para que funcione la Omni compleción.
-Asegúrese al menos de que las extensiones de tipo de archivo (filetype) están
-activadas. El archivo vimrc debería tener esta línea: >
+Necesita realizar alguna configuración para que funcione el autocompletado
+global. Asegúrese al menos de que las extensiones de tipo de archivo
+(filetype) están activadas. El archivo vimrc debería tener esta línea: >
 	filetype plugin on
 O: >
 	filetype plugin indent on
@@ -367,8 +367,8 @@ Use ahora CTRL-R para insertar el nombre de la función:
 
 Continua insertando caracteres en medio del nombre de la función, y usa
 «CTRL-R v» dos veces más.
-   Podría haber realizado la misma compleción. Usar un registro es útil cuando
-hay varias palabras que empiezan con el mismo carácter.
+   Podría haber realizado lo mismo con el autocompletado. Usar un registro
+es útil cuando hay varias palabras que empiezan con el mismo carácter.
 
 Si el registro contiene caracteres tales como <BS> o otros caracteres
 especiales, se interpretarán como introducidos a través del teclado. Si no
@@ -416,7 +416,8 @@ Uso esto para crear comentarios en cajas. El comentario empieza con «#b», el
 cual escribe la línea superior. Después escribo el texto del comentario y uso
 «#e» para dibujar la línea inferior.
    Observe que la abreviatura «#e» empieza con un espacio. En otras palabras,
-los primeros dos caracteres son espacio-asterisco. Por lo general, Vim ignora los espacios entre la abreviatura y la expansión. Para evitar tal
+los primeros dos caracteres son espacio-asterisco. Por lo general, Vim
+ignora los espacios entre la abreviatura y la expansión. Para evitar tal
 problema, deletreo espacio («space») como siete caracters: <, S, p, a, c, e,>.
 
 	Nota:
@@ -549,9 +550,9 @@ escribir hasta un número en 16 y 32 bit (p, ej., un carácter Unicode): >
 *24.9*	Dígrafos
 
 Algunos caracteres no se encuentran en el teclado. Por ejemplo, el carácter
-de derechos de autor (©). Para escribir estos caracteres en Vim emplee
-dígrafos, en los que dos caracteres representan a uno. Para introducir ©,
-por ejemplo, pulse tres teclas: >
+de derechos de autor (©). Emplee dígrafos para escribir estos caracteres en
+Vim, en los que dos caracteres representan a uno. Para introducir ©, por
+ejemplo, pulse tres teclas: >
 
 	CTRL-K Co
 
@@ -561,9 +562,9 @@ Use la siguiente orden para ver qué dígrafos están disponibles: >
 
 Vim mostrará la tabla de dígrafos. Aquí puede ver tres líneas:
 
-  AC ~_ 159  NS |  160  !I �  161  Ct �  162  Pd �  163  Cu �  164  Ye �  165 ~
-  BB �  166  SE �  167  ': �  168  Co �  169  -a �  170  << �  171  NO �  172 ~
-  -- �  173  Rg �  174  'm �  175  DG �  176  +- �  177  2S �  178  3S �  179 ~
+  AC ~_ 159  NS |  160  !I ¡  161  Ct ¢  162  Pd £  163  Cu ¤  164  Ye ¥  165 ~
+  BB ¦  166  SE §  167  ': ¨  168  Co ©  169  -a ª  170  << «  171  NO ¬  172 ~
+  -- ­  173  Rg ®  174  'm ¯  175  DG °  176  +- ±  177  2S ²  178  3S ³  179 ~
 
 Esto muestra, por ejemplo, que el dígrafo que obtiene pulsando «CTRL-K Pd»
 muestra el carácter (£). Este carácter es el número 163 (decimal).
@@ -581,9 +582,9 @@ dígrafo para «dP», Vim buscará también un dígrafo «Pd».
 
 Puede configurar sus propios dígrafos. Ejemplo: >
 
-	:digraph a" X
+	:digraph a" ä
 
-Esto define que «CTRL-K a"» inserta un carácter X. Puede también especificar
+Esto hace que «CTRL-K a"» inserte el carácter ä. Puede también especificar
 el carácter con un número decimal. Esto define el mismo dígrafo: >
 
 	:digraph a" 228
@@ -616,5 +617,6 @@ Esto borra hasta la tercera palabra en el registro «g».
 Siguiente capítulo: |usr_25.esx| Editar text con formato
 
 Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
+
 
 Traducción del documento: |vim-doc-es|

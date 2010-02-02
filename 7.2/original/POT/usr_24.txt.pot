@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
-"POT-Creation-Date: 2009-11-26 17:29+0100\n"
+"POT-Creation-Date: 2009-12-05 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,6 +93,14 @@ msgstr ""
 #: original/TXT/usr_25.txt:22 original/TXT/usr_25.txt:132
 #: original/TXT/usr_25.txt:210 original/TXT/usr_25.txt:287
 #: original/TXT/usr_25.txt:453 original/TXT/usr_25.txt:574
+#: original/TXT/usr_26.txt:21 original/TXT/usr_26.txt:46
+#: original/TXT/usr_26.txt:103 original/TXT/usr_26.txt:136
+#: original/TXT/usr_26.txt:217 original/TXT/usr_27.txt:26
+#: original/TXT/usr_27.txt:88 original/TXT/usr_27.txt:136
+#: original/TXT/usr_27.txt:239 original/TXT/usr_27.txt:320
+#: original/TXT/usr_27.txt:350 original/TXT/usr_27.txt:427
+#: original/TXT/usr_27.txt:469 original/TXT/usr_27.txt:510
+#: original/TXT/usr_27.txt:559
 #, no-wrap
 msgid "==============================================================================\n"
 msgstr ""
@@ -107,7 +115,8 @@ msgstr ""
 #: original/TXT/usr_12.txt:4 original/TXT/usr_20.txt:4
 #: original/TXT/usr_21.txt:4 original/TXT/usr_22.txt:4
 #: original/TXT/usr_23.txt:4 original/TXT/usr_24.txt:4
-#: original/TXT/usr_25.txt:4
+#: original/TXT/usr_25.txt:4 original/TXT/usr_26.txt:4
+#: original/TXT/usr_27.txt:4
 #, no-wrap
 msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
 msgstr ""
@@ -121,8 +130,9 @@ msgstr ""
 #: original/TXT/usr_10.txt:824 original/TXT/usr_11.txt:287
 #: original/TXT/usr_12.txt:358 original/TXT/usr_20.txt:384
 #: original/TXT/usr_21.txt:499 original/TXT/usr_22.txt:400
-#: original/TXT/usr_23.txt:343 original/TXT/usr_24.txt:606
-#: original/TXT/usr_25.txt:578
+#: original/TXT/usr_23.txt:343 original/TXT/usr_24.txt:607
+#: original/TXT/usr_25.txt:578 original/TXT/usr_26.txt:221
+#: original/TXT/usr_27.txt:563
 msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 msgstr ""
 
@@ -1273,8 +1283,8 @@ msgstr ""
 #: original/TXT/usr_24.txt:543
 msgid ""
 "Some characters are not on the keyboard.  For example, the copyright "
-"character (�).  To type these characters in Vim, you use digraphs, where two "
-"characters represent one.  To enter a �, for example, you press three keys: >"
+"character (©).  To type these characters in Vim, you use digraphs, where two "
+"characters represent one.  To enter a ©, for example, you press three keys: >"
 msgstr ""
 
 #. type: Plain text
@@ -1303,9 +1313,9 @@ msgstr ""
 #: original/TXT/usr_24.txt:555
 #, no-wrap
 msgid ""
-"  AC ~_ 159  NS |  160  !I �  161  Ct �  162  Pd �  163  Cu �  164  Ye �  165 ~\n"
-"  BB �  166  SE �  167  ': �  168  Co �  169  -a �  170  << �  171  NO �  172 ~\n"
-"  -- �  173  Rg �  174  'm �  175  DG �  176  +- �  177  2S �  178  3S �  179 ~\n"
+"  AC ~_ 159  NS |  160  !I ¡  161  Ct ¢  162  Pd £  163  Cu ¤  164  Ye ¥  165 ~\n"
+"  BB ¦  166  SE §  167  ': ¨  168  Co ©  169  -a ª  170  << «  171  NO ¬  172 ~\n"
+"  -- ­  173  Rg ®  174  'm ¯  175  DG °  176  +- ±  177  2S ²  178  3S ³  179 ~\n"
 msgstr ""
 
 #. type: Plain text
@@ -1313,7 +1323,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "This shows, for example, that the digraph you get by typing CTRL-K Pd is the\n"
-"character (�).  This is character number 163 (decimal).\n"
+"character (£).  This is character number 163 (decimal).\n"
 "   Pd is short for Pound.  Most digraphs are selected to give you a hint about\n"
 "the character they will produce.  If you look through the list you will\n"
 "understand the logic.\n"
@@ -1340,13 +1350,13 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/usr_24.txt:573
 #, no-wrap
-msgid "\t:digraph a\" �\n"
+msgid "\t:digraph a\" ä\n"
 msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:576
 msgid ""
-"This defines that CTRL-K a\" inserts an � character.  You can also specify "
+"This defines that CTRL-K a\" inserts an ä character.  You can also specify "
 "the character with a decimal number.  This defines the same digraph: >"
 msgstr ""
 
