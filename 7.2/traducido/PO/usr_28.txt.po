@@ -8,13 +8,15 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-02-03 12:48+0100\n"
-"PO-Revision-Date: 2010-02-03 12:48+0100\n"
+"PO-Revision-Date: 2010-02-15 21:50+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.5.2\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:18 original/TXT/intro.txt:75
@@ -107,8 +109,10 @@ msgstr ""
 #: original/TXT/usr_28.txt:331 original/TXT/usr_28.txt:375
 #: original/TXT/usr_28.txt:389 original/TXT/usr_28.txt:422
 #, no-wrap
-msgid "==============================================================================\n"
-msgstr "==============================================================================\n"
+msgid "============================================================================"
+"==\n"
+msgstr "============================================================================"
+"==\n"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:4 original/TXT/usr_01.txt:4
@@ -155,29 +159,33 @@ msgstr "\t:loadview\n"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:2
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "*usr_04.txt*\tFor Vim version 7.2.  Last change: 2006 Jun 21\n"
 msgid "*usr_28.txt*\tFor Vim version 7.2.  Last change: 2008 Jun 14\n"
-msgstr "*usr_04.esx*\tPara Vim version 7.2.  Último cambio: 8/2/2007\n"
+msgstr "*usr_28.esx*\tPara Vim versión 7.2.  Último cambio: 8/2/2007\n"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:6
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t\t\t\t  Repeating\n"
 msgid "\t\t\t\t   Folding\n"
-msgstr "\t\t\t\t Repetición\n"
+msgstr "\t\t\t\t Plegar\n"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:11
 msgid ""
-"Structured text can be separated in sections.  And sections in sub-"
-"sections.  Folding allows you to display a section as one line, providing an "
+"Structured text can be separated in sections.  And sections in sub-sections. "
+" Folding allows you to display a section as one line, providing an "
 "overview.  This chapter explains the different ways this can be done."
 msgstr ""
+"El texto estructurado se puede separar en secciones, y éstas en sub-"
+"secciones. Plegar le permite mostrar una sección como una sola línea, "
+"ofreciendo una vista general. Este capítulo explica las diferentes maneras "
+"de hacerlo."
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:22
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|28.1|\tWhat is folding?\n"
 "|28.2|\tManual folding\n"
@@ -190,21 +198,20 @@ msgid ""
 "|28.9|\tFolding unchanged lines\n"
 "|28.10| Which fold method to use?\n"
 msgstr ""
-"|usr_28.txt|  Folding\n"
-"\t\t|28.1|\tWhat is folding?\n"
-"\t\t|28.2|\tManual folding\n"
-"\t\t|28.3|\tWorking with folds\n"
-"\t\t|28.4|\tSaving and restoring folds\n"
-"\t\t|28.5|\tFolding by indent\n"
-"\t\t|28.6|\tFolding with markers\n"
-"\t\t|28.7|\tFolding by syntax\n"
-"\t\t|28.8|\tFolding by expression\n"
-"\t\t|28.9|\tFolding unchanged lines\n"
-"\t\t|28.10| Which fold method to use?\n"
+"|28.1|\t¿Qué es plegar?\n"
+"|28.2|\tPlegar manualmente\n"
+"|28.3|\tTrabajar con pliegues\n"
+"|28.4|\tGuardar y restaurar pliegues\n"
+"|28.5|\tPlegar por tabulado\n"
+"|28.6|\tPlegar con marcadores\n"
+"|28.7|\tPlegar por sintaxis\n"
+"|28.8|\tPlegar por expresión\n"
+"|28.9|\tPlegar líneas sin cambios\n"
+"|28.10¿| ¿Qué método de plegar debería usar?\n"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:26
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid ""
 #| "     Next chapter: |usr_03.txt|  Moving around\n"
 #| " Previous chapter: |usr_01.txt|  About the manuals\n"
@@ -214,15 +221,15 @@ msgid ""
 " Previous chapter: |usr_27.txt|  Search commands and patterns\n"
 "Table of contents: |usr_toc.txt|\n"
 msgstr ""
-" Capítulo siguiente: |usr_03.esx|  Desplazamiento\n"
-"  Capítulo anterior: |usr_01.esx|  Acerca de los manuales\n"
+" Capítulo siguiente: |usr_29.esx|  Desplazar entre programas\n"
+"  Capítulo anterior: |usr_27.esx|  Órdenes de búsqueda y patrones\n"
 "Tabla de contenidos: |usr_toc.esx|\n"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:29
 #, no-wrap
 msgid "*28.1*\tWhat is folding?\n"
-msgstr ""
+msgstr "*28.1¿*\t¿Qué es plegar?\n"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:32
@@ -230,6 +237,8 @@ msgid ""
 "Folding is used to show a range of lines in the buffer as a single line on "
 "the screen.  Like a piece of paper which is folded to make it shorter:"
 msgstr ""
+"Plegar se usa para mostrar un rango de líneas en un búfer como una sola "
+"línea en la pantalla. Como un trozo de papel plegado para acortarlo."
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:46
@@ -249,6 +258,19 @@ msgid ""
 "\t| line 14\t\t |\n"
 "\t+------------------------+\n"
 msgstr ""
+"\t+------------------------+\n"
+"\t| línea 1\t\t |\n"
+"\t| línea 2\t\t |\n"
+"\t| línea 3\t\t |\n"
+"\t|_______________________ |\n"
+"\t\\\t\t\t \\\n"
+"\t \\________________________\\\n"
+"\t / líneas plegadas\t  /\n"
+"\t/________________________/\n"
+"\t| línea 12\t\t |\n"
+"\t| línea 13\t\t |\n"
+"\t| línea 14\t\t |\n"
+"\t+------------------------+\n"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:49
@@ -256,6 +278,8 @@ msgid ""
 "The text is still in the buffer, unchanged.  Only the way lines are "
 "displayed is affected by folding."
 msgstr ""
+"El texto aún está en el búfer, sin cambios. Plegar sólo afecta a la manera "
+"en que se muestran las líneas."
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:53
@@ -264,67 +288,76 @@ msgid ""
 "structure of text, by folding lines of a section and replacing it with a "
 "line that indicates that there is a section."
 msgstr ""
+"La ventaja de plegar es que obtiene una mejor vista general de la estructura "
+"del texto mediante plegar líneas de una sección reemplazando éstos con una "
+"línea indicando que hay una sección."
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:56
 #, no-wrap
 msgid "*28.2*\tManual folding\n"
-msgstr ""
+msgstr "*28.2*\tPlegar manualmente\n"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:58
 msgid "Try it out: Position the cursor in a paragraph and type: >"
-msgstr ""
+msgstr "Pruebe esto: posicione el cursor en un párrafo y teclee: >"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:60
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t\"fp\n"
 msgid "\tzfap\n"
-msgstr "\t\"fp\n"
+msgstr "\tzfap\n"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:65
 msgid ""
 "You will see that the paragraph is replaced by a highlighted line.  You have "
 "created a fold.  |zf| is an operator and |ap| a text object selection.  You "
-"can use the |zf| operator with any movement command to create a fold for the "
-"text that it moved over.  |zf| also works in Visual mode."
+"can use the |zf| operator with any movement command to create a fold for "
+"the text that it moved over.  |zf| also works in Visual mode."
 msgstr ""
+"Verá que una línea resaltada reemplaza al párrafo. Ha creado un pliegue. "
+"|zf| es un operando y |ap| una selección de un objeto textual. Puede usar el "
+"operando |zf| con cualquier orden de desplazamiento para crear un pliegue "
+"para el texto reemplazado. |zf| funciona también en el modo Visual."
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:67
 msgid "To view the text again, open the fold by typing: >"
-msgstr ""
+msgstr "Para ver el texto otra vez, abra el pliegue con lo siguiente: >"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:69
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\tdo\n"
 msgid "\tzo\n"
-msgstr "\tdo\n"
+msgstr "\tzo\n"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:71
-#, fuzzy
 #| msgid "And what you want is the following:"
 msgid "And you can close the fold again with: >"
-msgstr "Y lo que quiere es lo siguiente:"
+msgstr "Y puede cerrar el pliegue otra vez con: >"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:73
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t]c\n"
 msgid "\tzc\n"
-msgstr "\t]c\n"
+msgstr "\tzc\n"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:77
 msgid ""
-"All the folding commands start with \"z\".  With some fantasy, this looks "
-"like a folded piece of paper, seen from the side.  The letter after the \"z"
-"\" has a mnemonic meaning to make it easier to remember the commands:"
+"All the folding commands start with \"z\".  With some fantasy, this looks like "
+"a folded piece of paper, seen from the side.  The letter after the \"z\" has "
+"a mnemonic meaning to make it easier to remember the commands:"
 msgstr ""
+"Todas las órdenes de plegado empiezan con «z». Si usa la imaginación, se "
+"asemeja a un papel plegado visto de lado. La letra a continuación de «z» "
+"tiene un significado nemónico que facilita recordar las órdenes:"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:81
@@ -334,6 +367,9 @@ msgid ""
 "\tzo\tO-pen a fold\n"
 "\tzc\tC-lose a fold\n"
 msgstr ""
+"\tzf\tF-old creation (crear pliegue)\n"
+"\tzo\tO-pen a fold (abrir pliegue)\n"
+"\tzc\tC-lose a fold (cerrar pliegue)\n"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:87
@@ -344,6 +380,11 @@ msgid ""
 "opening the fold for the whole chapter will restore the nested folds as they "
 "were, some may be open and some may be closed."
 msgstr ""
+"Puede anidar los pliegues: Una región de texto que contiene pliegues se "
+"puede anidar nuevamente. Por ejemplo, puede plegar cada párrafo de esto "
+"sección, y después plegar todas las secciones en este capítulo. Pruebe. "
+"Notará que abrir el pliegue del capítulo completo devolverá los pliegues "
+"anidados a su forma previa, algunos abiertos y otros cerrados."
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:90
@@ -352,24 +393,27 @@ msgid ""
 "You could go to each fold and type \"zo\".  To do this faster, use this "
 "command: >"
 msgstr ""
+"Imagine que ha creado varios pliegues, y que ahora desea ver todo el texto. "
+"Puede ir a cada pliegue y teclear «zo». Use la siguiente orden para hacer "
+"esto mismo con rapidez: >"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:92
 #, no-wrap
 msgid "\tzr\n"
-msgstr ""
+msgstr "\tzr\n"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:94
 msgid "This will R-educe the folding.  The opposite is: >"
-msgstr ""
+msgstr "Esto r_educe el plegado. Lo opuesto es: >"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:96
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\tms\n"
 msgid "\tzm\n"
-msgstr "\tms\n"
+msgstr "\tzm\n"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:99
@@ -377,18 +421,22 @@ msgid ""
 "This folds M-ore.  You can repeat \"zr\" and \"zm\" to open and close nested "
 "folds of several levels."
 msgstr ""
+"Esto pliega m_ás. Puede repetir «zr» y «zm» para abrir y cerrar pliegues "
+"anidados en varios niveles."
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:101
 msgid ""
 "If you have nested several levels deep, you can open all of them with: >"
 msgstr ""
+"Si ha anidado pliegues con varios niveles de profundidad, puede abrirlos "
+"todos con: >"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:103
 #, no-wrap
 msgid "\tzR\n"
-msgstr ""
+msgstr "\tzR\n"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:106
@@ -396,47 +444,59 @@ msgid ""
 "This R-educes folds until there are none left.  And you can close all folds "
 "with: >"
 msgstr ""
+"Esto r_educe los pliegues hasta que no queda ninguno, Y puede cerrar todos "
+"los pliegues con: >"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:108
 #, no-wrap
 msgid "\tzM\n"
-msgstr ""
+msgstr "\tzM\n"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:110
 msgid "This folds M-ore and M-ore."
-msgstr ""
+msgstr "Esto pliega m_ás y m_ás."
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:118
 msgid ""
 "You can quickly disable the folding with the |zn| command.  Then |zN| brings "
-"back the folding as it was.  |zi| toggles between the two.  This is a useful "
-"way of working: - create folds to get overview on your file - move around to "
-"where you want to do your work - do |zi| to look at the text and edit it - "
-"do |zi| again to go back to moving around"
+"back the folding as it was.  |zi| toggles between the two.  This is a "
+"useful way of working: - create folds to get overview on your file - move "
+"around to where you want to do your work - do |zi| to look at the text and "
+"edit it - do |zi| again to go back to moving around"
 msgstr ""
+"Puede desactivar el plegado rápidamente con la orden |zn|. |Zn| devuelve el "
+"plegado a su estado previo. |zi| pasa de uno a otro. Esta es una útil forma "
+"de trabajar: creación de pliegues para obtener una visión general de su "
+"archivo - desplazarse a las áreas que desea modificar - visionado y edición "
+"del texto con |zi| - repita |zi| para seguir desplazándose."
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:120
 msgid "More about manual folding in the reference manual: |fold-manual|"
 msgstr ""
+"Para más información acerca del plegado manual, consulte la siguiente "
+"sección en el manual de referencia: |fold-manual|."
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:123
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "*25.4*\tDealing with long lines\n"
 msgid "*28.3*\tWorking with folds\n"
-msgstr "*25.4*\tTratar líneas largas\n"
+msgstr "*28.3*\tTrabajar con pliegues\n"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:127
 msgid ""
-"When some folds are closed, movement commands like \"j\" and \"k\" move over "
-"a fold like it was a single, empty line.  This allows you to quickly move "
+"When some folds are closed, movement commands like \"j\" and \"k\" move over a "
+"fold like it was a single, empty line.  This allows you to quickly move "
 "around over folded text."
 msgstr ""
+"De haber algunos pliegues cerrados, las órdenes de movimiento como «j» y «k» "
+"se desplazarán sobre el pliegue como si fuese una única línea vacía. Esto "
+"permite un desplazamiento más rápido sobre texto plegado."
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:139
@@ -445,12 +505,22 @@ msgid ""
 "useful if you want to reorder functions in a program.  First make sure that "
 "each fold contains a whole function (or a bit less) by selecting the right "
 "'foldmethod'.  Then delete the function with \"dd\", move the cursor and put "
-"it with \"p\".  If some lines of the function are above or below the fold, "
-"you can use Visual selection: - put the cursor on the first line to be moved "
-"- hit \"V\" to start Visual mode - put the cursor on the last line to be "
-"moved - hit \"d\" to delete the selected lines.  - move the cursor to the "
-"new position and \"p\"ut the lines there."
+"it with \"p\".  If some lines of the function are above or below the fold, you "
+"can use Visual selection: - put the cursor on the first line to be moved - "
+"hit \"V\" to start Visual mode - put the cursor on the last line to be moved - "
+"hit \"d\" to delete the selected lines.  - move the cursor to the new "
+"position and \"p\"ut the lines there."
 msgstr ""
+"Puede copiar, eliminar y mover pliegues como si fuesen una sola línea. Esto "
+"es útil si desea reordenar las funciones de un programa. Primero asegúrese "
+"de que cada pliegue contiene un función completa (o casi) seleccionado el "
+"método 'foldmethod' adecuado. Elimine después la función con «dd», desplaze "
+"el cursor y pegue el texto con «p». Puede usar la selección Visual de "
+"existir algunas líneas de la función por encima o a continuación del "
+"pliegue: coloque el cursor sobre la primera línea a mover - pulse «V» para "
+"iniciar el modo Visual - coloque el cursor sobre la última línea a mover - "
+"pulse «d» para borrar las líneas seleccionadas - desplace el cursor a la "
+"nueva posición y «p»onga ahí las líneas."
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:142
@@ -458,21 +528,26 @@ msgid ""
 "It is sometimes difficult to see or remember where a fold is located, thus "
 "where a |zo| command would actually work.  To see the defined folds: >"
 msgstr ""
+"A veces es difícil ver o recordar la ubicación de un pliegue; la orden |zo| "
+"es de utilidad en estos caso. Para ver los pliegues definidos: >"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:144
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:set icon\n"
 msgid "\t:set foldcolumn=4\n"
-msgstr "\t:set icon\n"
+msgstr "\t:set foldcolumn=4\n"
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:148
 msgid ""
 "This will show a small column on the left of the window to indicate folds.  "
-"A \"+\" is shown for a closed fold.  A \"-\" is shown at the start of each "
-"open fold and \"|\" at following lines of the fold."
+"A \"+\" is shown for a closed fold.  A \"-\" is shown at the start of each open "
+"fold and \"|\" at following lines of the fold."
 msgstr ""
+"Esto muestra una pequeña columna a la izquierda de la ventana que indica los "
+"pliegues. Un «+» simboliza un pliegue cerrado. Un «-» aparece al principio "
+"de cada pliegue abierto y «|» simboliza líneas del pliegue a continuación. "
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:151
@@ -981,10 +1056,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:388
-#, fuzzy
 #| msgid "For more details see |modeline|."
 msgid "For more details see |fold-diff|."
-msgstr "Para más detalles, véase |modeline|."
+msgstr "Para más detalles, véase |fold-diff|."
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:391
