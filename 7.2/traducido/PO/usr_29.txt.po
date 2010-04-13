@@ -148,10 +148,10 @@ msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:2
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "*usr_04.txt*\tFor Vim version 7.2.  Last change: 2006 Jun 21\n"
 msgid "*usr_29.txt*\tFor Vim version 7.2.  Last change: 2008 Jun 28\n"
-msgstr "*usr_04.esx*\tPara Vim version 7.2.  Último cambio: 8/2/2007\n"
+msgstr "*usr_29.esx*\tPara Vim versión 7.2.  Último cambio: 8/6/2008\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:6
@@ -168,10 +168,15 @@ msgid ""
 "where identifiers are defined and used.  Preview declarations in a separate "
 "window.  There is more in the next chapter."
 msgstr ""
+"El creador de Vim es un programador informático. Por ello, no sorprende que "
+"Vim integre tantas características que facilitan la edición de programas. "
+"Salte de un punto a otro para ver dónde se definen y usan los identificadores."
+"Previsualize declaraciones en una ventana distinta. Hay aún más en el "
+"siguiente capítulo."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:18
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|29.1|\tUsing tags\n"
 "|29.2|\tThe preview window\n"
@@ -179,35 +184,29 @@ msgid ""
 "|29.4|\tFinding global identifiers\n"
 "|29.5|\tFinding local identifiers\n"
 msgstr ""
-"|usr_29.txt|  Moving through programs\n"
-"\t\t|29.1|\tUsing tags\n"
-"\t\t|29.2|\tThe preview window\n"
-"\t\t|29.3|\tMoving through a program\n"
-"\t\t|29.4|\tFinding global identifiers\n"
-"\t\t|29.5|\tFinding local identifiers\n"
+"|29.1|\tUsar etiquetas\n"
+"|29.2|\tLa ventana de previsualización\n"
+"|29.3|\tDesplazarse a través de un programa\n"
+"|29.4|\tBuscar identificadores globales\n"
+"|29.5|\tBuscar identificadores locales\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:22
-#, fuzzy, no-wrap
-#| msgid ""
-#| "     Next chapter: |usr_28.txt|  Folding\n"
-#| " Previous chapter: |usr_26.txt|  Repeating\n"
-#| "Table of contents: |usr_toc.txt|\n"
+#, no-wrap
 msgid ""
 "     Next chapter: |usr_30.txt|  Editing programs\n"
 " Previous chapter: |usr_28.txt|  Folding\n"
 "Table of contents: |usr_toc.txt|\n"
 msgstr ""
-" Siguiente capítulo: |usr_28.txt|  Plegar\n"
-"  Capítulo anterior: |usr_25.esx|  Repetición\n"
+" Siguiente capítulo: |usr_30.txt|  Editar programas\n"
+"  Capítulo anterior: |usr_28.esx|  Plegado\n"
 "Tabla de contenidos: |usr_toc.esx|\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:25
-#, fuzzy, no-wrap
-#| msgid "*03.10*\tUsing marks\n"
+#, no-wrap
 msgid "*29.1*\tUsing tags\n"
-msgstr "*03.10*\tUso de marcadores o marcas\n"
+msgstr "*29.1*\tUsar etiquetas\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:32
@@ -220,13 +219,20 @@ msgid ""
 "   To generate the tags file for all C files in the current directory, use the\n"
 "following command: >\n"
 msgstr ""
+"¿Qué es una etiqueta? Es la ubicación donde un identificador se define. Un\n"
+"ejemplo es la definición de una función en un programa escrito en C o C++.\n"
+"La lista de etiquetas se guarda en un fichero de etiquetas, que Vim puede\n"
+"usar para saltar de cualquier punto a la etiqueta, donde se define un\n"
+"identificador.\n"
+"   Use la siguiente orden para generar el fichero de etiquetas para todos\n"
+"los ficheros C en el directorio actual: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:34
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:args *.txt\n"
 msgid "\tctags *.c\n"
-msgstr "\t:args *.txt\n"
+msgstr "\tctags *.c\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:37
@@ -234,32 +240,30 @@ msgid ""
 "\"ctags\" is a separate program.  Most Unix systems already have it "
 "installed.  If you do not have it yet, you can find Exuberant ctags here:"
 msgstr ""
+"«ctags» es un programa aparte. Se encuentra instalado en la mayoría de "
+"sistemas Unix.Si no lo tiene, puede encontrar Exhuberant ctags aquí:"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:39
 #, no-wrap
 msgid "\thttp://ctags.sf.net ~\n"
-msgstr ""
+msgstr "\thttp://ctags.sf.net ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:42
-#, fuzzy
-#| msgid ""
-#| "If you want to start Vim and restore a specific session, you can use the "
-#| "following command: >"
 msgid ""
 "Now when you are in Vim and you want to go to a function definition, you can "
 "jump to it by using the following command: >"
 msgstr ""
-"Si desea iniciar Vim y restaurar una sesión específica, puede usar la "
-"siguiente orden: >"
+"Ahora, cuando esté en Vim y desee ir a la definición de una función, puede "
+"saltar directamente a esta usando la siguiente orden: >"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:44
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:tab split\n"
 msgid "\t:tag startlist\n"
-msgstr "\t:tab split\n"
+msgstr "\t:tag startlist\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:55
@@ -333,10 +337,10 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:97
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:args\n"
 msgid "\t:tag\n"
-msgstr "\t:args\n"
+msgstr "\t:tag\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:102
@@ -350,10 +354,8 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:105
-#, fuzzy
-#| msgid "CLOSE THE WINDOW"
 msgid "SPLIT WINDOWS"
-msgstr "CERRAR LA VENTANA"
+msgstr "DIVIDIR VENTANAS"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:112
@@ -380,10 +382,10 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:117
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\tCTRL-W +\n"
 msgid "\tCTRL-W ]\n"
-msgstr "\tCTRL-W +\n"
+msgstr "\tCTRL-W ]\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:119
@@ -473,10 +475,8 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:160
-#, fuzzy
-#| msgid "LIST MATCHES"
 msgid "MULTIPLE MATCHES"
-msgstr "LISTA DE COINCIDENCIAS"
+msgstr "VARIAS COINCIDENCIAS"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:165
@@ -490,10 +490,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:167
-#, fuzzy, no-wrap
-#| msgid "\t:next\n"
+#, no-wrap
 msgid "\t:tnext\n"
-msgstr "\t:next\n"
+msgstr "\t:tnext\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:170
@@ -574,10 +573,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:206
-#, fuzzy, no-wrap
-#| msgid "\t:edit i<Tab>\n"
+#, no-wrap
 msgid "\t:tag write_<Tab>\n"
-msgstr "\t:edit i<Tab>\n"
+msgstr "\t:tag write_<Tab>\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:214
@@ -594,10 +592,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:216
-#, fuzzy, no-wrap
-#| msgid "\t:set backup\n"
+#, no-wrap
 msgid "\t:tag /block\n"
-msgstr "\t:set backup\n"
+msgstr "\t:tag /block\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:222
@@ -612,10 +609,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:224
-#, fuzzy, no-wrap
-#| msgid "\t:set autowrite\n"
+#, no-wrap
 msgid "\t:tselect /^write_\n"
-msgstr "\t:set autowrite\n"
+msgstr "\t:tselect /^write_\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:228
@@ -725,10 +721,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:275
-#, fuzzy, no-wrap
-#| msgid "*05.6*\tThe option window\n"
+#, no-wrap
 msgid "*29.2*\tThe preview window\n"
-msgstr "*05.6*\tLa ventana de opciones\n"
+msgstr "*29.2*\tLa ventana de previsualización\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:282
@@ -744,10 +739,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:284
-#, fuzzy, no-wrap
-#| msgid "\t:write\n"
+#, no-wrap
 msgid "\t:ptag write_char\n"
-msgstr "\t:write\n"
+msgstr "\t:ptag write_char\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:290
@@ -762,10 +756,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:292
-#, fuzzy, no-wrap
-#| msgid "\tCTRL-W +\n"
+#, no-wrap
 msgid "\tCTRL-W }\n"
-msgstr "\tCTRL-W +\n"
+msgstr "\tCTRL-W }\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:295
@@ -783,10 +776,9 @@ msgstr "Para cerrar la ventana usa la orden: >"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:299
-#, fuzzy, no-wrap
-#| msgid "\t:close\n"
+#, no-wrap
 msgid "\t:pclose\n"
-msgstr "\t:close\n"
+msgstr "\t:pclose\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:302
@@ -797,10 +789,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:304
-#, fuzzy, no-wrap
-#| msgid "\t:edit .\n"
+#, no-wrap
 msgid "\t:pedit defs.h\n"
-msgstr "\t:edit .\n"
+msgstr "\t:pedit defs.h\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:309
@@ -813,10 +804,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:311
-#, fuzzy, no-wrap
-#| msgid "\t:set icon\n"
+#, no-wrap
 msgid "\t:psearch popen\n"
-msgstr "\t:set icon\n"
+msgstr "\t:psearch popen\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:314
@@ -880,10 +870,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:342
-#, fuzzy, no-wrap
-#| msgid "\t[c\n"
+#, no-wrap
 msgid "\t[#\n"
-msgstr "\t[c\n"
+msgstr "\t[#\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:345
@@ -894,10 +883,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:347
-#, fuzzy, no-wrap
-#| msgid "\t]c\n"
+#, no-wrap
 msgid "\t]#\n"
-msgstr "\t]c\n"
+msgstr "\t]#\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:350
@@ -1076,10 +1064,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:449
-#, fuzzy, no-wrap
-#| msgid "\t[c\n"
+#, no-wrap
 msgid "\t[I\n"
-msgstr "\t[c\n"
+msgstr "\t[I\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:453
@@ -1128,10 +1115,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:473
-#, fuzzy, no-wrap
-#| msgid "\t:read patch\n"
+#, no-wrap
 msgid "\t:checkpath\n"
-msgstr "\t:read parche\n"
+msgstr "\t:checkpath\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:476
@@ -1181,10 +1167,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:499
-#, fuzzy, no-wrap
-#| msgid "\t:set path+=c:/prog/include\n"
+#, no-wrap
 msgid "\t:set path+=/usr/local/X11\n"
-msgstr "\t:set path+=c:/prog/include\n"
+msgstr "\t:set path+=/usr/local/X11\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:501
@@ -1201,10 +1186,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:503
-#, fuzzy, no-wrap
-#| msgid "\t:set path+=c:/prog/include\n"
+#, no-wrap
 msgid "\t:set path+=/usr/*/include\n"
-msgstr "\t:set path+=c:/prog/include\n"
+msgstr "\t:set path+=/usr/*/include\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:505
@@ -1223,10 +1207,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:510
-#, fuzzy, no-wrap
-#| msgid "\t:set path+=c:/prog/include\n"
+#, no-wrap
 msgid "\t:set path+=/projects/invent/**/include\n"
-msgstr "\t:set path+=c:/prog/include\n"
+msgstr "\t:set path+=/projects/invent/**/include\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:512
@@ -1254,10 +1237,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:523
-#, fuzzy, no-wrap
-#| msgid "\t:read patch\n"
+#, no-wrap
 msgid "\t:checkpath!\n"
-msgstr "\t:read parche\n"
+msgstr "\t:checkpath!\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:527
@@ -1284,10 +1266,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:535
-#, fuzzy, no-wrap
-#| msgid "\t:edit b<Tab>\n"
+#, no-wrap
 msgid "\t[<Tab>\n"
-msgstr "\t:edit b<Tab>\n"
+msgstr "\t[<Tab>\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:537
@@ -1304,10 +1285,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:542
-#, fuzzy, no-wrap
-#| msgid "\t:edit b<Tab>\n"
+#, no-wrap
 msgid "\t3[<Tab>\n"
-msgstr "\t:edit b<Tab>\n"
+msgstr "\t3[<Tab>\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:545
@@ -1348,10 +1328,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:560
-#, fuzzy, no-wrap
-#| msgid "\t[c\n"
+#, no-wrap
 msgid "\t[D\n"
-msgstr "\t[c\n"
+msgstr "\t[D\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:565
@@ -1388,10 +1367,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:577
-#, fuzzy, no-wrap
-#| msgid "\tgf\n"
+#, no-wrap
 msgid "\tgD\n"
-msgstr "\tgf\n"
+msgstr "\tgD\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:581
@@ -1423,10 +1401,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:594
-#, fuzzy, no-wrap
-#| msgid "\tgf\n"
+#, no-wrap
 msgid "\tgd\n"
-msgstr "\tgf\n"
+msgstr "\tgd\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:599
@@ -1453,7 +1430,5 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:612
-#, fuzzy
-#| msgid "Next chapter: |usr_23.txt| Editing other files"
 msgid "Next chapter: |usr_30.txt| Editing programs"
-msgstr "Siguiente capítulo: |usr_23.esx| Editar otros archivos"
+msgstr "Siguiente capítulo: |usr_30.txt| Editar programas"
