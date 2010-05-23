@@ -2,19 +2,22 @@
 # Copyright (C) 2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the Vim package.
 # Automatically generated, 2010.
-#
+# Omar Campagne, 2010.
+# Omar Campagne, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-02-03 13:07+0100\n"
-"PO-Revision-Date: 2010-02-03 13:07+0100\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2010-04-30 09:47+0200\n"
+"Last-Translator: Omar Campagne <>\n"
 "Language-Team: none\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.6.0\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:18 original/TXT/intro.txt:75
@@ -110,8 +113,10 @@ msgstr ""
 #: original/TXT/usr_29.txt:320 original/TXT/usr_29.txt:441
 #: original/TXT/usr_29.txt:570 original/TXT/usr_29.txt:609
 #, no-wrap
-msgid "==============================================================================\n"
-msgstr "==============================================================================\n"
+msgid "============================================================================"
+"==\n"
+msgstr "============================================================================"
+"==\n"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:4 original/TXT/usr_01.txt:4
@@ -269,17 +274,29 @@ msgstr "\t:tag startlist\n"
 #: original/TXT/usr_29.txt:55
 #, no-wrap
 msgid ""
-"This command will find the function \"startlist\" even if it is in another file.\n"
+"This command will find the function \"startlist\" even if it is in another "
+"file.\n"
 "   The CTRL-] command jumps to the tag of the word that is under the cursor.\n"
-"This makes it easy to explore a tangle of C code.  Suppose, for example, that\n"
+"This makes it easy to explore a tangle of C code.  Suppose, for example, "
+"that\n"
 "you are in the function \"write_block\".  You can see that it calls\n"
 "\"write_line\".  But what does \"write_line\" do?  By placing the cursor on the\n"
 "call to \"write_line\" and pressing CTRL-], you jump to the definition of this\n"
 "function.\n"
-"   The \"write_line\" function calls \"write_char\".  You need to figure out what\n"
+"   The \"write_line\" function calls \"write_char\".  You need to figure out "
+"what\n"
 "it does.  So you position the cursor over the call to \"write_char\" and press\n"
 "CTRL-].  Now you are at the definition of \"write_char\".\n"
 msgstr ""
+"Esta orden encontraría la función «startlist» aunque esté en otro fichero.\n"
+"   La orden «CTRL-]» salta a la etiqueta de la palabra bajo el cursor. Esto\n"
+"facilita explorar un conjunto de código C. Suponga, por ejemplo, que está\n"
+"en una función llamada «write_block». Puede ver que invoca «write_line».\n"
+"¿Pero qué hace «write_line»? Si pone el cursor sobre «write_line» y pulsa\n"
+"«CTRL-]», saltará a la definición de esta función.\n"
+"   La función «write_line» invoca «write_char», y necesita comprender su\n"
+"funcionamiento. Por ello, pone el cursor sobre «write_char» y pulsa\n"
+"«CTRL-]». Ahora se encuentra sobre la definición de «write_char».\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:81
@@ -311,12 +328,36 @@ msgid ""
 "\t\t\t\t       |}\t\t\t\t    |\n"
 "\t\t\t\t       +------------------------------------+\n"
 msgstr ""
+"\t+-------------------------------------+\n"
+"\t|void write_block(char **s; int cnt)  |\n"
+"\t|{\t\t\t\t      |\n"
+"\t|   int i;\t\t\t      |\n"
+"\t|   for (i = 0; i < cnt; ++i)\t      |\n"
+"\t|      write_line(s[i]);\t      |\n"
+"\t|}\t    |\t\t\t      |\n"
+"\t+-----------|-------------------------+\n"
+"\t\t    |\n"
+"\t     CTRL-] |\n"
+"\t\t    |\t +----------------------------+\n"
+"\t\t    +--> |void write_line(char *s)    |\n"
+"\t\t\t |{\t\t\t      |\n"
+"\t\t\t |   while (*s != 0)\t      |\n"
+"\t\t\t |\twrite_char(*s++);     |\n"
+"\t\t\t |}\t  |\t\t      |\n"
+"\t\t\t +--------|-------------------+\n"
+"\t\t\t\t  |\n"
+"\t\t\t   CTRL-] |\n"
+"\t\t\t\t  |    +------------------------------------+\n"
+"\t\t\t\t  +--> |void write_char(char c)\t\t    |\n"
+"\t\t\t\t       |{\t\t\t\t    |\n"
+"\t\t\t\t       |    putchar((int)(unsigned char)c); |\n"
+"\t\t\t\t       |}\t\t\t\t    |\n"
+"\t\t\t\t       +------------------------------------+\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:83
-msgid ""
-"The \":tags\" command shows the list of tags that you traversed through:"
-msgstr ""
+msgid "The \":tags\" command shows the list of tags that you traversed through:"
+msgstr "La orden «:tags» muestra la lista de etiquetas por las que se desplazó:"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:95
@@ -328,12 +369,27 @@ msgid ""
 "\t  2  1 write_char\t   7  write_line.c ~\n"
 "\t> ~\n"
 ">\n"
-"Now to go back.  The CTRL-T command goes to the preceding tag.  In the example\n"
-"above you get back to the \"write_line\" function, in the call to \"write_char\".\n"
+"Now to go back.  The CTRL-T command goes to the preceding tag.  In the "
+"example\n"
+"above you get back to the \"write_line\" function, in the call to "
+"\"write_char\".\n"
 "   This command takes a count argument that indicates how many tags to jump\n"
 "back.  You have gone forward, and now back.  Let's go forward again.  The\n"
 "following command goes to the tag on top of the list: >\n"
 msgstr ""
+":tags\n"
+"\t  # TO tag\t   FROM line  in file/text ~\n"
+"\t  1  1 write_line\t   8  write_block.c ~\n"
+"\t  2  1 write_char\t   7  write_line.c ~\n"
+"\t> ~\n"
+">\n"
+"Vuelva atrás ahora. La orden «CTRL-T» se desplaza a la etiqueta precedente.\n"
+"En el ejemplo anterior, vuelve a la función «write_line» al invocar\n"
+"«write_char».\n"
+"   Esta orden toma un argumento numérico que indica el número de etiquetas\n"
+"que se desplazará hacia atrás. Ahora que ha ido hacia delante, vuelva atrás.\n"
+"Vayamos otra vez hacia delante. La siguiente orden se desplaza a la etiqueta\n"
+"al principio de la lista: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:97
@@ -346,11 +402,17 @@ msgstr "\t:tag\n"
 #: original/TXT/usr_29.txt:102
 #, no-wrap
 msgid ""
-"You can prefix it with a count and jump forward that many tags.  For example:\n"
+"You can prefix it with a count and jump forward that many tags.  For "
+"example:\n"
 "\":3tag\".  CTRL-T also can be preceded with a count.\n"
 "   These commands thus allow you to go down a call tree with CTRL-] and back\n"
 "up again with CTRL-T.  Use \":tags\" to find out where you are.\n"
 msgstr ""
+"Puede precederlo de un número para saltar hacia delante ese número d\n"
+"etiquetas. Por ejemplo:\n"
+"«:3tag». También puede preceder «CTRL-T» con un número.\n"
+"   Por ello, estas órdenes permiten desplazarse hacia delante con «CTRL-]»,\n"
+"y hacia atrás con «CTRL-T». Use «:tags» conocer dónde se encuentra.\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:105
@@ -364,21 +426,28 @@ msgid ""
 "The \":tag\" command replaces the file in the current window with the one\n"
 "containing the new function.  But suppose you want to see not only the old\n"
 "function but also the new one?  You can split the window using the \":split\"\n"
-"command followed by the \":tag\" command.  Vim has a shorthand command that does\n"
+"command followed by the \":tag\" command.  Vim has a shorthand command that "
+"does\n"
 "both: >\n"
 "\t:stag tagname\n"
 msgstr ""
+"La orden «:tag» reemplaza el fichero en la ventana actual con el que "
+"contiene\n"
+"la nueva función. Pero suponga que desea ver no sólo la función antigua, y\n"
+"no sólo la nueva. Para ello, puede dividir la ventana usando la orden\n"
+"«:split», seguida de la orden «:tag». Vim tiene una orden corta que realiza\n"
+"ambas funciones: >\n"
+"\t:stag tagname\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:115
-#, fuzzy
 #| msgid "To display a man page for the word under the cursor, use this: >"
 msgid ""
 "To split the current window and jump to the tag under the cursor use this "
 "command: >"
 msgstr ""
-"Para mostrar una página de manual para la palabra bajo el cursor use lo "
-"siguiente: >"
+"Use la siguiente orden para dividir la ventana actual, y saltar a la "
+"etiqueta bajo el cursor: >"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:117
@@ -390,22 +459,23 @@ msgstr "\tCTRL-W ]\n"
 #. type: Plain text
 #: original/TXT/usr_29.txt:119
 msgid "If a count is specified, the new window will be that many lines high."
-msgstr ""
+msgstr "Si se define un número, la ventana nueva tendrá tal altura en líneas."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:122
-#, fuzzy
 #| msgid "MORE CHANGES"
 msgid "MORE TAGS FILES"
-msgstr "MÁS CAMBIOS"
+msgstr "MÁS FICHEROS DE ETIQUETAS"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:127
 #, no-wrap
 msgid ""
-"When you have files in many directories, you can create a tags file in each of\n"
+"When you have files in many directories, you can create a tags file in each "
+"of\n"
 "them.  Vim will then only be able to jump to tags within that directory.\n"
-"   To find more tags files, set the 'tags' option to include all the relevant\n"
+"   To find more tags files, set the 'tags' option to include all the "
+"relevant\n"
 "tags files.  Example: >\n"
 msgstr ""
 
@@ -413,7 +483,7 @@ msgstr ""
 #: original/TXT/usr_29.txt:129
 #, no-wrap
 msgid "\t:set tags=./tags,./../tags,./*/tags\n"
-msgstr ""
+msgstr "\t:set tags=./tags,./../tags,./*/tags\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:136
@@ -436,7 +506,7 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/usr_29.txt:141
 msgid "ONE TAGS FILE"
-msgstr ""
+msgstr "UN FICHERO DE ETIQUETAS"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:147
@@ -456,6 +526,8 @@ msgid ""
 "\tcd ~/proj\n"
 "\tctags -R .\n"
 msgstr ""
+"\tcd ~/proj\n"
+"\tctags -R .\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:155
@@ -503,10 +575,10 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:172
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:set ignorecase\n"
 msgid "\t:tselect tagname\n"
-msgstr "\t:set ignorecase\n"
+msgstr "\t:tselect etiqueta\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:174
