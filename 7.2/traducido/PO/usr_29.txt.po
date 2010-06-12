@@ -4,20 +4,21 @@
 # Automatically generated, 2010.
 # Omar Campagne, 2010.
 # Omar Campagne, 2010.
+# Omar Campagne <ocampagne@gmail.com>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-02-03 13:07+0100\n"
-"PO-Revision-Date: 2010-04-30 09:47+0200\n"
-"Last-Translator: Omar Campagne <>\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2010-06-12 15:57+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: Spanish pootle.locamotion.org team\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.6.0\n"
+"X-Generator: Virtaal 0.6.1\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:18 original/TXT/intro.txt:75
@@ -478,6 +479,12 @@ msgid ""
 "relevant\n"
 "tags files.  Example: >\n"
 msgstr ""
+"Cuando tiene varios ficheros en muchos directorios, puede crear un fichero "
+"de\n"
+"etiquetas en cada uno de ellos. Vim sólo podrá saltar a etiquetas dentro de\n"
+"ese directorio.\n"
+"   Para encontrar más ficheros de etiquetas, defina la opción 'tags' para\n"
+"incluir todos los ficheros de etiquetas relevantes. Ejemplo: >"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:129
@@ -496,12 +503,20 @@ msgid ""
 "\"~/proj/sub/tags\".  For this situation Vim offers to search a whole directory\n"
 "tree for tags files.  Example: >\n"
 msgstr ""
+"Esto encuentra un fichero de etiquetas en el mismo directorio que el\n"
+"fichero actual, un nivel de directorios superiores y en todos los\n"
+"subdirectorios.\n"
+"   Este es un alto número de ficheros de etiquetas, pero puede que no lo\n"
+"suficiente. Por ejemplo, al editar un fichero en «~/proj/src», no "
+"encontraría\n"
+"el fichero de etiquetas «~/proj/sub/tags». Por ello, Vim ofrece buscar\n"
+"ficheros de etiquetas en todo el árbol de directorios. Ejemplo: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:138
 #, no-wrap
 msgid "\t:set tags=~/proj/**/tags\n"
-msgstr ""
+msgstr "\t:set tags=~/proj/**/tags\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:141
@@ -518,6 +533,12 @@ msgid ""
 "   This requires the Exuberant ctags program, mentioned above.  It offers an\n"
 "argument to search a whole directory tree: >\n"
 msgstr ""
+"Cuando Vim tiene que buscar ficheros de etiquetas en varias ubicaciones,\n"
+"puede que escuche algunos sonidos del disco, y puede ser un poco lento.\n"
+"En este caso es mejor gastar este tiempo durante la generación de un gran "
+"fichero de etiquetas. Puede hacer esto durante la noche.\n"
+"Esto requiere el programa Exuberant ctags, mencionado anteriormente. Ofrece "
+"un argumento para buscar en todo un árbol de directorios:>"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:150
@@ -538,12 +559,18 @@ msgid ""
 "and even Vim scripts.  See the ctags documentation to tune this.\n"
 "   Now you only need to tell Vim where your big tags file is: >\n"
 msgstr ""
+"Lo mejor de esto es que Exuberant ctags reconoce varios tipos de fichero.\n"
+"Por ello, no sólo funciona con programas de C y C++, sino también para\n"
+"Eiffel e incluso scripts de Vim. Consulte la documentación de ctags para\n"
+"información de configuración.\n"
+"   Ahora sólo tiene que decir a Vim dónde está su fichero grande de\n"
+"etiquetas: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:157
 #, no-wrap
 msgid "\t:set tags=~/proj/tags\n"
-msgstr ""
+msgstr "\t:set tags=~/proj/tags\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:160
@@ -559,6 +586,10 @@ msgid ""
 "current file, that one is used first.\n"
 "   You can now jump to other matches for the same tag with: >\n"
 msgstr ""
+"Cuando una función se define varias veces (o un mismo método en varias\n"
+"clases), la orden «:tag» saltaría a la primera aparición. De haber una\n"
+"coincidencia en el fichero actual, se usará éste en primer lugar.\n"
+"   Ahora puede saltar a otras coincidencias de la misma etiqueta con: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:167
@@ -572,6 +603,8 @@ msgid ""
 "Repeat this to find further matches.  If there are many, you can select "
 "which one to jump to: >"
 msgstr ""
+"Repita para encontrar más coincidencias. De haber varias, puede seleccionar "
+"a cuál saltar: >"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:172
@@ -583,7 +616,7 @@ msgstr "\t:tselect etiqueta\n"
 #. type: Plain text
 #: original/TXT/usr_29.txt:174
 msgid "Vim will present you with a list of choices:"
-msgstr ""
+msgstr "Vim le presentará una lista de opciones:"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:185
@@ -608,11 +641,14 @@ msgid ""
 "would like to jump to.  The information in the other columns give you a good "
 "idea of where the match is defined."
 msgstr ""
+"Ahora puede introducir el número (en la primera columna) de la coincidencia "
+"a la que desea saltar. La información en las otras columnas le dan un buena "
+"idea de dónde se define la coincidencia."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:191
 msgid "To move between the matching tags, these commands can be used:"
-msgstr ""
+msgstr "Use las siguientes órdenes para moverse entre etiquetas coincidentes:"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:196
@@ -623,11 +659,15 @@ msgid ""
 "\t:[count]tnext\t\tgo to [count] next match\n"
 "\t:tlast\t\t\tgo to last match\n"
 msgstr ""
+"\t:tfirst\t\t\tPrimera coincidencia\n"
+"\t:[número]tprevious\tIr a la [número] coincidencia anterior\n"
+"\t:[count]tnext\t\tIr a la [número] coincidencia siguiente\n"
+"\t:tlast\t\t\tIr a la última coincidencia\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:198
 msgid "If [count] is omitted then one is used."
-msgstr ""
+msgstr "Si [número] se omite, se usa uno."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:201
@@ -642,6 +682,9 @@ msgid ""
 "Command line completion is a good way to avoid typing a long tag name.  Just "
 "type the first bit and press <Tab>: >"
 msgstr ""
+"El autocompletado de línea de comandos es una buena manera de evitar "
+"escribir un nombre de etiqueta largo. Simplemente escriba la primera parte y "
+"pulse <Tab>: >"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:206
@@ -661,6 +704,13 @@ msgid ""
 "   Suppose you want to jump to a tag that contains \"block\".  First type\n"
 "this: >\n"
 msgstr ""
+"Con esto obtendrá la primera coincidencia. Si no es la que desee, pulse\n"
+"<Tab> hasta encontrar la correcta.\n"
+"   A veces sólo conoce parte del nombre de una función, o tiene muchas\n"
+"etiquetas que empiezan con la misma cadena, pero con distinto final.\n"
+"En este caso, puede hacer que Vim use un patrón para encontrar la etiqueta.\n"
+"   Suponga que desea saltar a una etiqueta que contiene «block». Introduzca\n"
+"esto primero:\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:216
@@ -678,6 +728,13 @@ msgid ""
 "name, but a pattern.  You can use all the items for search patterns here.  For\n"
 "example, suppose you want to select a tag that starts with \"write_\": >\n"
 msgstr ""
+"Use ahora el autocompletado de línea de órdenes pulsando <Tab>. Vim\n"
+"encontrará todas las etiquetas que contienen «block», y usará la primera\n"
+"coincidencia. La «/» antes del nombre de una etiqueta le dice a Vim que lo\n"
+"hay a continuación no es un nombre de etiqueta, sino un patrón. Puede usar\n"
+"todos los elementos de patrones de búsqueda.\n"
+"Por ejemplo, supongo que desea seleccionar una etiqueta que empieza con\n"
+"«write»: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:224
@@ -692,11 +749,15 @@ msgid ""
 "also be found halfway a tag name.  Similarly \"$\" at the end makes sure the "
 "pattern matches until the end of a tag."
 msgstr ""
+"La «^» especifica que la etiqueta empieza con «write_». De otra forma,\n"
+"se detectaría también de estar en medio de un nombre de etiqueta. De forma\n"
+"similar, el signo «$» al final asegura que el patrón sólo coincida con el\n"
+"final de una etiqueta."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:231
 msgid "A TAGS BROWSER"
-msgstr ""
+msgstr "UN EXPLORADOR DE ETIQUETAS"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:236
@@ -707,12 +768,17 @@ msgid ""
 "example.\n"
 "   First create a list of identifiers (this requires Exuberant ctags): >\n"
 msgstr ""
+"Ya que «CTRL-]» le lleva a la definición del identificador bajo el cursor,\n"
+"puede usar un alista de nombres identificadores como una tabla de "
+"contenidos.\n"
+"Aquí tiene un ejemplo.\n"
+"   Primero cree una lista de identificadores (require Exuberant ctags): >\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:238
 #, no-wrap
 msgid "\tctags --c-types=f -f functions *.c\n"
-msgstr ""
+msgstr "\tctags --c-types=f -f functions *.c\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:241
@@ -720,6 +786,8 @@ msgid ""
 "Now start Vim without a file, and edit this file in Vim, in a vertically "
 "split window: >"
 msgstr ""
+"Ahora, inicie Vim sin un archivo, y edite este archivo en Vim en una ventana "
+"vertical dividida: >"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:244
@@ -728,6 +796,8 @@ msgid ""
 "\tvim\n"
 "\t:vsplit functions\n"
 msgstr ""
+"\tvim\n"
+"\t:vsplit functions\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:248
@@ -737,12 +807,16 @@ msgid ""
 "but you can ignore that.  Do \":setlocal ts=99\" to clean it up a bit.\n"
 "   In this window, define a mapping: >\n"
 msgstr ""
+"Esta ventana contiene todas una lista de todas las funciones. También hay\n"
+"más elementos, pero los puede ignorar. Ejecute «setlocal ts=99» para\n"
+"organizarlo un poco.\n"
+"   Defina un mapeado en esta ventana: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:250
 #, no-wrap
 msgid "\t:nnoremap <buffer> <CR> 0ye<C-W>w:tag <C-R>\"<CR>\n"
-msgstr ""
+msgstr "\t:nnoremap <buffer> <CR> 0ye<C-W>w:tag <C-R>\"<CR>\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:254
@@ -751,16 +825,21 @@ msgid ""
 "Now press <Enter>.  Vim will go to the other window and jump to the selected "
 "function."
 msgstr ""
+"Desplace el cursor a la línea que contiene la función a la que desea ir. "
+"Pulse <Intro>, y Vim irá a la otra ventana y saltará a la función "
+"seleccionada."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:257
 msgid "RELATED ITEMS"
-msgstr ""
+msgstr "ELEMENTOS RELACIONADOS"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:259
 msgid "You can set 'ignorecase' to make case in tag names be ignored."
 msgstr ""
+"Puede definir 'ignorecase' para ignorar la distinción entre mayúsculas y "
+"minúsculas."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:263
@@ -769,6 +848,10 @@ msgid ""
 "default is to assume a sorted tags file, which makes a tags search a lot "
 "faster, but doesn't work if the tags file isn't sorted."
 msgstr ""
+"La opción 'tagbsearch' indica si el archivo de etiquetas está ordenado o no. "
+"El valor predeterminado es suponer un archivo de etiquetas ordenado, que "
+"agiliza la búsqueda de etiquetas, pero no funciona si el archivo de "
+"etiquetas no está ordenado."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:266
@@ -776,6 +859,8 @@ msgid ""
 "The 'taglength' option can be used to tell Vim the number of significant "
 "characters in a tag."
 msgstr ""
+"La opción 'taglength' se puede usar para decir a Vim el número de carácteres "
+"significativos en una etiqueta."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:269
@@ -783,6 +868,8 @@ msgid ""
 "When you use the SNiFF+ program, you can use the Vim interface to it |"
 "sniff|.  SNiFF+ is a commercial program."
 msgstr ""
+"Cuando usa el programa SNiFF+, puede usar la interfaz de Vim |sniff|. SNiFF+ "
+"es un programa comercial."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:272
@@ -790,6 +877,8 @@ msgid ""
 "Cscope is a free program.  It does not only find places where an identifier "
 "is declared, but also where it is used.  See |cscope|."
 msgstr ""
+"Cscope es un programa libre. No sólo encuentra los lugares dónde se declara "
+"un identificador. sino también dónde se usa. Consulte |cscope|."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:275
@@ -808,6 +897,13 @@ msgid ""
 "used.\n"
 "   To open a preview window to display the function \"write_char\": >\n"
 msgstr ""
+"Cuando edita código que contiene una llamada a una función, necesitará los\n"
+"argumentos correctos. Para conocer los valores que puede introducir, puede\n"
+"ver cómo se define la función. El mecanismo de etiquetas es adecuado para\n"
+"esto. Preferentemente, la definición se muestra en otra ventana. Puede usar\n"
+"la ventana de previsualización para esto.\n"
+"   Use lo siguiente para abrir una ventana de previsualización que muestre\n"
+"la función «write_char»: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:284
@@ -825,6 +921,11 @@ msgid ""
 "   If the name of a function appears in the text, you can get its definition\n"
 "in the preview window with: >\n"
 msgstr ""
+"Vim abrirá una ventana, y saltará a la etiqueta «write_char». A\n"
+"continuación, vuelve a la posición original. Así, puede seguir escribiendo\n"
+"sin necesidad de usar la orden «CTRL-W».\n"
+"   Si el nombre de una función aparece en el texto, puede obtener su\n"
+"definición en la ventana de previsualización con lo siguiente: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:292
@@ -838,13 +939,14 @@ msgid ""
 "There is a script that automatically displays the text where the word under "
 "the cursor was defined.  See |CursorHold-example|."
 msgstr ""
+"Hay un script que muestra el texto automáticamente dónde se definió la\n"
+"palabra bajo el cursor. Consulte |CursorHold-example|."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:297
-#, fuzzy
 #| msgid "To close a window, use the command: >"
 msgid "To close the preview window use this command: >"
-msgstr "Para cerrar la ventana usa la orden: >"
+msgstr "Para cerrar la ventana de previsualización use la orden: >"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:299
@@ -858,6 +960,9 @@ msgid ""
 "To edit a specific file in the preview window, use \":pedit\".  This can be "
 "useful to edit a header file, for example: >"
 msgstr ""
+"Para editar un fichero específico en la ventana de previsualización, use "
+"«_pedit». Esto puede ser útil para editar la cabecera de un archivo, por "
+"ejemplo: >"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:304
@@ -873,6 +978,11 @@ msgid ""
 "especially useful when using library functions, for which you do not have a "
 "tags file.  Example: >"
 msgstr ""
+"Por último, «:psearch» se puede utilizar para buscar una palabra en el "
+"archivo actual y cualquier archivo incluido («include») y mostrar la "
+"coincidencia en la ventana de previsualización. Esto es especialmente útil "
+"cuando se utilizan las funciones de la biblioteca para el que no tiene un "
+"archivo de etiquetas.  Ejemplo: >"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:311
@@ -886,12 +996,14 @@ msgid ""
 "This will show the \"stdio.h\" file in the preview window, with the function "
 "prototype for popen():"
 msgstr ""
+"Esto mostrará el archivo «stdio.h» en la ventana de previsualización, con el "
+"prototipode función para «popen()»:"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:316
 #, no-wrap
 msgid "\tFILE\t*popen __P((const char *, const char *)); ~\n"
-msgstr ""
+msgstr "\tFILE\t*popen __P((const char *, const char *)); ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:319
@@ -899,6 +1011,8 @@ msgid ""
 "You can specify the height of the preview window, when it is opened, with "
 "the 'previewheight' option."
 msgstr ""
+"Puede definir la altura de la ventana de previsualización cuando está "
+"abierta con la orden 'previewheight'."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:322
@@ -915,6 +1029,9 @@ msgid ""
 "commands can be used to move around.\n"
 "   C programs often contain constructs like this:\n"
 msgstr ""
+"Debido a que un programa está estructurado, Vim puede reconocer elementos en\n"
+"él. Puede usar órdenes específicas para desplazarse.\n"
+"   Los programas en C habitualmente contienen construcciones como esta:\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:332
@@ -926,6 +1043,11 @@ msgid ""
 "\t    fd = fopen(\"tmp\", \"w\") ~\n"
 "\t#endif ~\n"
 msgstr ""
+"\t#ifdef USE_POPEN ~\n"
+"\t    fd = popen(\"ls\", \"r\") ~\n"
+"\t#else ~\n"
+"\t    fd = fopen(\"tmp\", \"w\") ~\n"
+"\t#endif ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:340
@@ -1120,10 +1242,10 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:443
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "*22.3*\tFinding a file\n"
 msgid "*29.4*\tFinding global identifiers\n"
-msgstr "*22.3*\tEncontrar un archivo\n"
+msgstr "*29.4* Buscar identificadores globales"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:447
@@ -1171,10 +1293,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:467
-#, fuzzy
 #| msgid "REPLACING IN SEVERAL FILES"
 msgid "LOCATING INCLUDED FILES"
-msgstr "REEMPLAZAR EN VARIOS ARCHIVOS"
+msgstr "UBICAR ARCHIVOS INCLUIDOS («INCLUDE»)"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:471
@@ -1324,10 +1445,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:530
-#, fuzzy
 #| msgid "JUMPING TO CHANGES"
 msgid "JUMPING TO A MATCH"
-msgstr "IR A LOS CAMBIOS"
+msgstr "SALTAR A UNA COINCIDENCIA"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:533
@@ -1370,10 +1490,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:548
-#, fuzzy
 #| msgid "THE VIM COMMAND"
 msgid "RELATED COMMANDS"
-msgstr "LA ORDEN VIM"
+msgstr "ÓRDENES RELACIONADAS"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:552
@@ -1386,10 +1505,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:555
-#, fuzzy
 #| msgid "FINDING AN IDENTIFIER"
 msgid "FINDING DEFINED IDENTIFIERS"
-msgstr "ENCONTRAR UN IDENTIFICADOR"
+msgstr "ENCONTRAR UN IDENTIFICADOR DEFINIDO"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:558
@@ -1425,10 +1543,10 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:572
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "*22.3*\tFinding a file\n"
 msgid "*29.5*\tFinding local identifiers\n"
-msgstr "*22.3*\tEncontrar un archivo\n"
+msgstr "*29.5* Buscar identificadores locales\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:575
