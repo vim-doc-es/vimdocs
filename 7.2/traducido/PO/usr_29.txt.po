@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-02-03 13:07+0100\n"
-"PO-Revision-Date: 2010-06-12 15:57+0200\n"
+"PO-Revision-Date: 2010-06-13 13:54+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Spanish pootle.locamotion.org team\n"
 "Language: es\n"
@@ -1061,6 +1061,14 @@ msgid ""
 "   When you are somewhere inside a \"#if\" - \"#endif\", you can jump to the start\n"
 "of it with: >\n"
 msgstr ""
+"Pero también más largo, y posiblemente anidado. Posicione el cursor sobre\n"
+"«#ifdef» y pulse «%». Vim saltará al siguiente «#else». Pulsar «%» otra vez\n"
+"le devuelve a «#endif». Otro «%» le llevaría a «#ifdef» otra vez.\n"
+"    Cuando una construcción está anidada, Vim encontrará los elementos\n"
+"coincidentes. Esta es una buena forma de comprobar si se ha olvidado de\n"
+"insertar un «#endif».\n"
+"   Cuando está en algún punto dentro de un «#if - #endif», puede saltar al\n"
+"principio con lo siguiente: >"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:342
@@ -1074,6 +1082,8 @@ msgid ""
 "If you are not after a \"#if\" or \"#ifdef\" Vim will beep.  To jump forward "
 "to the next \"#else\" or \"#endif\" use: >"
 msgstr ""
+"Si no está después de un «#if» o «#ifdef» Vim emitirá un sonido. Para saltar "
+"hacia adelante al siguiente «#else» o «#endif» use lo siguiente: >"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:347
@@ -1087,6 +1097,8 @@ msgid ""
 "These two commands skip any \"#if\" - \"#endif\" blocks that they "
 "encounter.  Example:"
 msgstr ""
+"Estas dos órdenes omiten cualquier bloque «#if - #endif» que se encuentran. "
+"Ejemplo:"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:357
@@ -1099,6 +1111,12 @@ msgid ""
 "\t# endif ~\n"
 "\t    set_width(a); ~\n"
 msgstr ""
+"\t#if defined(HAS_INC_H) ~\n"
+"\t    a = a + inc(); ~\n"
+"\t# ifdef USE_THEME ~\n"
+"\t    a += 3; ~\n"
+"\t# endif ~\n"
+"\t    set_width(a); ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:360
@@ -1106,11 +1124,13 @@ msgid ""
 "With the cursor in the last line, \"[#\" moves to the first line.  The "
 "\"#ifdef\" - \"#endif\" block in the middle is skipped."
 msgstr ""
+"Con el cursor en la última línea, «[#» le lleva a la primera línea. El "
+"bloque «#ifdef - #endif» en el centro se omite."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:363
 msgid "MOVING IN CODE BLOCKS"
-msgstr ""
+msgstr "MOVERSE EN BLOQUES DE CÓDIGO"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:370
@@ -1123,6 +1143,13 @@ msgid ""
 "pairs of {} at the same level.  \"]}\" jumps to the end.\n"
 "   An overview:\n"
 msgstr ""
+"Los bloques de código C están limitados por {}. Esto puede ser muy largo.\n"
+"Para saltar al principio del bloque exterior use la orden «[[». Use «][»\n"
+"para encontrar el final.\n"
+"Esto supone que «{» y «}» están en la primera columna.\n"
+"   La orden «[{» le lleva al principio del bloque actual. Omite las parejas\n"
+"de «{}» en el mismo nivel. «]}» salta al final.\n"
+"   Una vista general:"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:384
@@ -1142,6 +1169,19 @@ msgid ""
 "\t\t\t    }\t\t\t       <-+\t |\n"
 "\t\t\t}\t\t\t\t       <-+\n"
 msgstr ""
+"\t\t\tfunction(int a)\n"
+"\t   +->\t\t{\n"
+"\t   |\t\t    if (a)\n"
+"\t   |\t   +->\t    {\n"
+"\t[[ |\t   |\t\tfor (;;)\t       --+\n"
+"\t   |\t   |\t  +->\t{\t\t\t |\n"
+"\t   |\t[{ |\t  |\t    foo(32);\t\t |     --+\n"
+"\t   |\t   |   [{ |\t    if (bar(a))  --+\t | ]}\t |\n"
+"\t   +--\t   |\t  +--\t\tbreak;\t   | ]}  |\t |\n"
+"\t\t   |\t\t}\t\t <-+\t |\t | ][\n"
+"\t\t   +--\t\tfoobar(a)\t\t |\t |\n"
+"\t\t\t    }\t\t\t       <-+\t |\n"
+"\t\t\t}\t\t\t\t       <-+\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:388
@@ -1151,6 +1191,10 @@ msgid ""
 "find the previous start of a method.  \"]m\" finds the next start of a "
 "method."
 msgstr ""
+"Al escribir en C++ o Java, el bloque exterior «{}» es para la clase. El "
+"siguiente nivel de «{}» es para un método. Si se encuentra dentro de una "
+"clase, use «[m» para encontrar el inicio previo de un método. «]m» encuentra "
+"el siguiente inicio de un método."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:392
@@ -1159,6 +1203,9 @@ msgid ""
 "moves forward to the start of the next function.  The end of a function is "
 "defined by a \"}\" in the first column."
 msgstr ""
+"Además, «[]» se mueve hacia atrás al final de la función, y «]]» se mueve "
+"hacia adelante, al inicio de la siguiente función. El final de la función "
+"está definido con un «}» al principio de la primera columna."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:409
@@ -1181,6 +1228,22 @@ msgid ""
 "\t\t\t\t\treturn 3;\n"
 "\t\t\t\t}\n"
 msgstr ""
+"\t\t\t\tint func1(void)\n"
+"\t\t\t\t{\n"
+"\t\t\t\t\treturn 1;\n"
+"\t\t  +---------->  }\n"
+"\t\t  |\n"
+"\t      []  |\t\tint func2(void)\n"
+"\t\t  |\t   +->\t{\n"
+"\t\t  |    [[  |\t\tif (flag)\n"
+"\tstart\t  +--\t   +--\t\t\treturn flag;\n"
+"\t\t  |    ][  |\t\treturn 2;\n"
+"\t\t  |\t   +->\t}\n"
+"\t      ]]  |\n"
+"\t\t  |\t\tint func3(void)\n"
+"\t\t  +---------->\t{\n"
+"\t\t\t\t\treturn 3;\n"
+"\t\t\t\t}\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:412
@@ -1188,6 +1251,9 @@ msgid ""
 "Don't forget you can also use \"%\" to move between matching (), {} and [].  "
 "That also works when they are many lines apart."
 msgstr ""
+"No se olvido de que también puede usar «%» para desplazarase entre parejas  "
+"de «()», «{}» y «[]». También funciona cuando están separados por varias "
+"líneas."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:415
@@ -1211,13 +1277,22 @@ msgid ""
 "\t\t\t  --------------------------------> >\n"
 "\t\t\t\t       ])\n"
 msgstr ""
+"Las órdenes  «[(» y «])» funcionan de manera similar a «[{» y «]}», con\n"
+"la excepción de que funcionan con parejas de «()» en lugar de «{}».\n"
+">\n"
+"\t\t\t\t  [(\n"
+"<\t\t    <--------------------------------\n"
+"\t\t\t      <-------\n"
+"\t\tif (a == b && (c == d || (e > f)) && x > y) ~\n"
+"\t\t\t\t  -------------->\n"
+"\t\t\t  --------------------------------> >\n"
+"\t\t\t\t       ])\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:428
-#, fuzzy
 #| msgid "MOVING TO OTHER ARGUMENTS"
 msgid "MOVING IN COMMENTS"
-msgstr "DESPLAZARSE A OTROS ARGUMENTOS"
+msgstr "MOVERSE EN COMENTARIOS\t"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:431
@@ -1225,6 +1300,9 @@ msgid ""
 "To move back to the start of a comment use \"[/\".  Move forward to the end "
 "of a comment with \"]/\".  This only works for /* - */ comments."
 msgstr ""
+"Use «[/» para volver al principio de un comentario. Puede moverse hacia "
+"adelante al final de un comentario con «]/». Sólo funciona con comentarios "
+"/* - */."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:440
@@ -1239,13 +1317,21 @@ msgid ""
 "\t\t\t\t\t\t| ]/\n"
 "\t\t       /* a short comment */  <-+\n"
 msgstr ""
+"\t  +->\t  +-> /*\n"
+"\t  |    [/ |    * Comentario sobre la  --+\n"
+"       [/ |\t  +--  * maravillosa vida.      | ]/\n"
+"\t  |\t       */\t\t      <-+\n"
+"\t  |\n"
+"\t  +--\t       foo = bar * 3;\t      --+\n"
+"\t\t\t\t\t\t| ]/\n"
+"\t\t       /* Comentario corto */ <-+\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:443
 #, no-wrap
 #| msgid "*22.3*\tFinding a file\n"
 msgid "*29.4*\tFinding global identifiers\n"
-msgstr "*29.4* Buscar identificadores globales"
+msgstr "*29.4* Buscar identificadores globales\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:447
