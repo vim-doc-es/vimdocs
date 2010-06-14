@@ -2,21 +2,19 @@
 # Copyright (C) 2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the Vim package.
 # Automatically generated, 2010.
-# Omar Campagne, 2010.
-# Omar Campagne, 2010.
 # Omar Campagne <ocampagne@gmail.com>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-02-03 13:07+0100\n"
-"PO-Revision-Date: 2010-06-13 13:54+0200\n"
+"PO-Revision-Date: 2010-06-14 14:41+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Spanish pootle.locamotion.org team\n"
-"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Virtaal 0.6.1\n"
 
@@ -114,10 +112,8 @@ msgstr ""
 #: original/TXT/usr_29.txt:320 original/TXT/usr_29.txt:441
 #: original/TXT/usr_29.txt:570 original/TXT/usr_29.txt:609
 #, no-wrap
-msgid "============================================================================"
-"==\n"
-msgstr "============================================================================"
-"==\n"
+msgid "==============================================================================\n"
+msgstr "==============================================================================\n"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:4 original/TXT/usr_01.txt:4
@@ -155,16 +151,14 @@ msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 #. type: Plain text
 #: original/TXT/usr_29.txt:2
 #, no-wrap
-#| msgid "*usr_04.txt*\tFor Vim version 7.2.  Last change: 2006 Jun 21\n"
 msgid "*usr_29.txt*\tFor Vim version 7.2.  Last change: 2008 Jun 28\n"
 msgstr "*usr_29.esx*\tPara Vim versión 7.2.  Último cambio: 8/6/2008\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:6
-#, fuzzy, no-wrap
-#| msgid "\t\t\t     Moving around\n"
+#, no-wrap
 msgid "\t\t\t    Moving through programs\n"
-msgstr "\t\t\t   Desplazamiento\n"
+msgstr "\t\t\t  Moverse a través de programas\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:12
@@ -176,9 +170,9 @@ msgid ""
 msgstr ""
 "El creador de Vim es un programador informático. Por ello, no sorprende que "
 "Vim integre tantas características que facilitan la edición de programas. "
-"Salte de un punto a otro para ver dónde se definen y usan los identificadores."
-"Previsualize declaraciones en una ventana distinta. Hay aún más en el "
-"siguiente capítulo."
+"Salte de un punto a otro para ver dónde se definen y usan los "
+"identificadores.Previsualize declaraciones en una ventana distinta. Hay aún "
+"más en el siguiente capítulo."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:18
@@ -236,7 +230,6 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/usr_29.txt:34
 #, no-wrap
-#| msgid "\t:args *.txt\n"
 msgid "\tctags *.c\n"
 msgstr "\tctags *.c\n"
 
@@ -267,7 +260,6 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/usr_29.txt:44
 #, no-wrap
-#| msgid "\t:tab split\n"
 msgid "\t:tag startlist\n"
 msgstr "\t:tag startlist\n"
 
@@ -275,17 +267,14 @@ msgstr "\t:tag startlist\n"
 #: original/TXT/usr_29.txt:55
 #, no-wrap
 msgid ""
-"This command will find the function \"startlist\" even if it is in another "
-"file.\n"
+"This command will find the function \"startlist\" even if it is in another file.\n"
 "   The CTRL-] command jumps to the tag of the word that is under the cursor.\n"
-"This makes it easy to explore a tangle of C code.  Suppose, for example, "
-"that\n"
+"This makes it easy to explore a tangle of C code.  Suppose, for example, that\n"
 "you are in the function \"write_block\".  You can see that it calls\n"
 "\"write_line\".  But what does \"write_line\" do?  By placing the cursor on the\n"
 "call to \"write_line\" and pressing CTRL-], you jump to the definition of this\n"
 "function.\n"
-"   The \"write_line\" function calls \"write_char\".  You need to figure out "
-"what\n"
+"   The \"write_line\" function calls \"write_char\".  You need to figure out what\n"
 "it does.  So you position the cursor over the call to \"write_char\" and press\n"
 "CTRL-].  Now you are at the definition of \"write_char\".\n"
 msgstr ""
@@ -357,7 +346,8 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:83
-msgid "The \":tags\" command shows the list of tags that you traversed through:"
+msgid ""
+"The \":tags\" command shows the list of tags that you traversed through:"
 msgstr "La orden «:tags» muestra la lista de etiquetas por las que se desplazó:"
 
 #. type: Plain text
@@ -370,10 +360,8 @@ msgid ""
 "\t  2  1 write_char\t   7  write_line.c ~\n"
 "\t> ~\n"
 ">\n"
-"Now to go back.  The CTRL-T command goes to the preceding tag.  In the "
-"example\n"
-"above you get back to the \"write_line\" function, in the call to "
-"\"write_char\".\n"
+"Now to go back.  The CTRL-T command goes to the preceding tag.  In the example\n"
+"above you get back to the \"write_line\" function, in the call to \"write_char\".\n"
 "   This command takes a count argument that indicates how many tags to jump\n"
 "back.  You have gone forward, and now back.  Let's go forward again.  The\n"
 "following command goes to the tag on top of the list: >\n"
@@ -395,7 +383,6 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/usr_29.txt:97
 #, no-wrap
-#| msgid "\t:args\n"
 msgid "\t:tag\n"
 msgstr "\t:tag\n"
 
@@ -403,8 +390,7 @@ msgstr "\t:tag\n"
 #: original/TXT/usr_29.txt:102
 #, no-wrap
 msgid ""
-"You can prefix it with a count and jump forward that many tags.  For "
-"example:\n"
+"You can prefix it with a count and jump forward that many tags.  For example:\n"
 "\":3tag\".  CTRL-T also can be preceded with a count.\n"
 "   These commands thus allow you to go down a call tree with CTRL-] and back\n"
 "up again with CTRL-T.  Use \":tags\" to find out where you are.\n"
@@ -427,13 +413,11 @@ msgid ""
 "The \":tag\" command replaces the file in the current window with the one\n"
 "containing the new function.  But suppose you want to see not only the old\n"
 "function but also the new one?  You can split the window using the \":split\"\n"
-"command followed by the \":tag\" command.  Vim has a shorthand command that "
-"does\n"
+"command followed by the \":tag\" command.  Vim has a shorthand command that does\n"
 "both: >\n"
 "\t:stag tagname\n"
 msgstr ""
-"La orden «:tag» reemplaza el fichero en la ventana actual con el que "
-"contiene\n"
+"La orden «:tag» reemplaza el fichero en la ventana actual con el que contiene\n"
 "la nueva función. Pero suponga que desea ver no sólo la función antigua, y\n"
 "no sólo la nueva. Para ello, puede dividir la ventana usando la orden\n"
 "«:split», seguida de la orden «:tag». Vim tiene una orden corta que realiza\n"
@@ -442,7 +426,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:115
-#| msgid "To display a man page for the word under the cursor, use this: >"
 msgid ""
 "To split the current window and jump to the tag under the cursor use this "
 "command: >"
@@ -453,7 +436,6 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/usr_29.txt:117
 #, no-wrap
-#| msgid "\tCTRL-W +\n"
 msgid "\tCTRL-W ]\n"
 msgstr "\tCTRL-W ]\n"
 
@@ -464,7 +446,6 @@ msgstr "Si se define un número, la ventana nueva tendrá tal altura en líneas.
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:122
-#| msgid "MORE CHANGES"
 msgid "MORE TAGS FILES"
 msgstr "MÁS FICHEROS DE ETIQUETAS"
 
@@ -472,19 +453,16 @@ msgstr "MÁS FICHEROS DE ETIQUETAS"
 #: original/TXT/usr_29.txt:127
 #, no-wrap
 msgid ""
-"When you have files in many directories, you can create a tags file in each "
-"of\n"
+"When you have files in many directories, you can create a tags file in each of\n"
 "them.  Vim will then only be able to jump to tags within that directory.\n"
-"   To find more tags files, set the 'tags' option to include all the "
-"relevant\n"
+"   To find more tags files, set the 'tags' option to include all the relevant\n"
 "tags files.  Example: >\n"
 msgstr ""
-"Cuando tiene varios ficheros en muchos directorios, puede crear un fichero "
-"de\n"
+"Cuando tiene varios ficheros en muchos directorios, puede crear un fichero de\n"
 "etiquetas en cada uno de ellos. Vim sólo podrá saltar a etiquetas dentro de\n"
 "ese directorio.\n"
 "   Para encontrar más ficheros de etiquetas, defina la opción 'tags' para\n"
-"incluir todos los ficheros de etiquetas relevantes. Ejemplo: >"
+"incluir todos los ficheros de etiquetas relevantes. Ejemplo: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:129
@@ -507,8 +485,7 @@ msgstr ""
 "fichero actual, un nivel de directorios superiores y en todos los\n"
 "subdirectorios.\n"
 "   Este es un alto número de ficheros de etiquetas, pero puede que no lo\n"
-"suficiente. Por ejemplo, al editar un fichero en «~/proj/src», no "
-"encontraría\n"
+"suficiente. Por ejemplo, al editar un fichero en «~/proj/src», no encontraría\n"
 "el fichero de etiquetas «~/proj/sub/tags». Por ello, Vim ofrece buscar\n"
 "ficheros de etiquetas en todo el árbol de directorios. Ejemplo: >\n"
 
@@ -535,10 +512,10 @@ msgid ""
 msgstr ""
 "Cuando Vim tiene que buscar ficheros de etiquetas en varias ubicaciones,\n"
 "puede que escuche algunos sonidos del disco, y puede ser un poco lento.\n"
-"En este caso es mejor gastar este tiempo durante la generación de un gran "
+"En este caso es mejor gastar este tiempo durante la generación de un gran\n"
 "fichero de etiquetas. Puede hacer esto durante la noche.\n"
-"Esto requiere el programa Exuberant ctags, mencionado anteriormente. Ofrece "
-"un argumento para buscar en todo un árbol de directorios:>"
+"Esto requiere el programa Exuberant ctags, mencionado anteriormente. Ofrece\n"
+"un argumento para buscar en todo un árbol de directorios: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:150
@@ -609,7 +586,6 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/usr_29.txt:172
 #, no-wrap
-#| msgid "\t:set ignorecase\n"
 msgid "\t:tselect tagname\n"
 msgstr "\t:tselect etiqueta\n"
 
@@ -633,6 +609,16 @@ msgid ""
 "\t\t       mch_init() ~\n"
 "\tEnter nr of choice (<CR> to abort):  ~\n"
 msgstr ""
+"\t  # pri kind tag\t       file ~\n"
+"\t  1 F\tf    mch_init\t       os_amiga.c ~\n"
+"\t\t       mch_init() ~\n"
+"\t  2 F\tf    mch_init\t       os_mac.c ~\n"
+"\t\t       mch_init() ~\n"
+"\t  3 F\tf    mch_init\t       os_msdos.c ~\n"
+"\t\t       mch_init(void) ~\n"
+"\t  4 F\tf    mch_init\t       os_riscos.c ~\n"
+"\t\t       mch_init() ~\n"
+"\tEnter nr of choice (<CR> to abort):  ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:189
@@ -671,10 +657,8 @@ msgstr "Si [número] se omite, se usa uno."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:201
-#, fuzzy
-#| msgid "USING THE MOUSE"
 msgid "GUESSING TAG NAMES"
-msgstr "USO DEL RATÓN"
+msgstr "AVERIGUAR NOMBRES DE ETIQUETA"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:204
@@ -769,8 +753,7 @@ msgid ""
 "   First create a list of identifiers (this requires Exuberant ctags): >\n"
 msgstr ""
 "Ya que «CTRL-]» le lleva a la definición del identificador bajo el cursor,\n"
-"puede usar un alista de nombres identificadores como una tabla de "
-"contenidos.\n"
+"puede usar un alista de nombres identificadores como una tabla de contenidos.\n"
 "Aquí tiene un ejemplo.\n"
 "   Primero cree una lista de identificadores (require Exuberant ctags): >\n"
 
@@ -944,7 +927,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:297
-#| msgid "To close a window, use the command: >"
 msgid "To close the preview window use this command: >"
 msgstr "Para cerrar la ventana de previsualización use la orden: >"
 
@@ -1016,10 +998,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:322
-#, fuzzy, no-wrap
-#| msgid "*03.3*\tMoving to a character\n"
+#, no-wrap
 msgid "*29.3*\tMoving through a program\n"
-msgstr "*03.3*\tDesplazarse a un carácter\n"
+msgstr "*29.3*\tMoverse a través de un programa\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:326
@@ -1068,7 +1049,7 @@ msgstr ""
 "coincidentes. Esta es una buena forma de comprobar si se ha olvidado de\n"
 "insertar un «#endif».\n"
 "   Cuando está en algún punto dentro de un «#if - #endif», puede saltar al\n"
-"principio con lo siguiente: >"
+"principio con lo siguiente: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:342
@@ -1124,8 +1105,8 @@ msgid ""
 "With the cursor in the last line, \"[#\" moves to the first line.  The "
 "\"#ifdef\" - \"#endif\" block in the middle is skipped."
 msgstr ""
-"Con el cursor en la última línea, «[#» le lleva a la primera línea. El "
-"bloque «#ifdef - #endif» en el centro se omite."
+"Con el cursor en la última línea, «[#» le lleva a la primera línea. El bloque "
+"«#ifdef - #endif» en el centro se omite."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:363
@@ -1149,7 +1130,7 @@ msgstr ""
 "Esto supone que «{» y «}» están en la primera columna.\n"
 "   La orden «[{» le lleva al principio del bloque actual. Omite las parejas\n"
 "de «{}» en el mismo nivel. «]}» salta al final.\n"
-"   Una vista general:"
+"   Una vista general:\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:384
@@ -1252,15 +1233,12 @@ msgid ""
 "That also works when they are many lines apart."
 msgstr ""
 "No se olvido de que también puede usar «%» para desplazarase entre parejas  "
-"de «()», «{}» y «[]». También funciona cuando están separados por varias "
-"líneas."
+"de «()», «{}» y «[]». También funciona cuando están separados por varias líneas."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:415
-#, fuzzy
-#| msgid "REMOVING CHANGES"
 msgid "MOVING IN BRACES"
-msgstr "ELIMINAR CAMBIOS"
+msgstr "MOVERSE ENTRE LLAVES"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:426
@@ -1290,7 +1268,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:428
-#| msgid "MOVING TO OTHER ARGUMENTS"
 msgid "MOVING IN COMMENTS"
 msgstr "MOVERSE EN COMENTARIOS\t"
 
@@ -1301,8 +1278,8 @@ msgid ""
 "of a comment with \"]/\".  This only works for /* - */ comments."
 msgstr ""
 "Use «[/» para volver al principio de un comentario. Puede moverse hacia "
-"adelante al final de un comentario con «]/». Sólo funciona con comentarios "
-"/* - */."
+"adelante al final de un comentario con «]/». Sólo funciona con comentarios /* "
+"- */."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:440
@@ -1329,7 +1306,6 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/usr_29.txt:443
 #, no-wrap
-#| msgid "*22.3*\tFinding a file\n"
 msgid "*29.4*\tFinding global identifiers\n"
 msgstr "*29.4* Buscar identificadores globales\n"
 
@@ -1341,6 +1317,10 @@ msgid ""
 "\"unsigned\".  A quick way to find this is with the \"[I\" command.\n"
 "   Suppose the cursor is on the word \"column\".  Type: >\n"
 msgstr ""
+"Suponga que está editando un programa escrito en C, y se pregunta se una\n"
+"variable está declarada como «int» o «unsigned». Una forma rápida de hacer\n"
+"esto es con la orden «[I».\n"
+"   Estando el cursor sobre la palabra «column», teclee: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:449
@@ -1355,6 +1335,9 @@ msgid ""
 "but also in all included files (and files included in them, etc.).  The "
 "result looks like this:"
 msgstr ""
+"VIM enumerará las líneas coincidentes que puede encontrar. No sólo en el "
+"archivo actual, sino también en todos los archivos incluidos (y archivos "
+"incluidos en ellos, etc..). El resultado tiene el siguiente aspecto:"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:456
@@ -1363,6 +1346,8 @@ msgid ""
 "\tstructs.h ~\n"
 "\t 1:   29     unsigned     column;    /* column number */ ~\n"
 msgstr ""
+"\tstructs.h ~\n"
+"\t 1:   29     unsigned     column;    /* column number */ ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:464
@@ -1376,10 +1361,17 @@ msgid ""
 "the 'include' option must specify how a file is included.  The default value\n"
 "works for C and C++.  For other languages you will have to change it.\n"
 msgstr ""
+"La ventaja comparado con usar etiquetas o la ventana de previsualización es\n"
+"que se buscan los archivos incluidos. En la mayoría de los casos, se\n"
+"encuentre la declaración correcto, incluso si el archivo de etiquetas no está\n"
+"al día. También cuando no tiene etiquetas para los archivos incluidos.\n"
+"   Aun así, algunas cosas tienen que estar correctas para que «[I» funcione.\n"
+"Primero, la opción «include» debe especificar cómo se incluye el archivo. El\n"
+"valor por omisión funciona con C y C++. Tendrá que modificarlo para otros\n"
+"lenguajes.\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:467
-#| msgid "REPLACING IN SEVERAL FILES"
 msgid "LOCATING INCLUDED FILES"
 msgstr "UBICAR ARCHIVOS INCLUIDOS («INCLUDE»)"
 
@@ -1391,6 +1383,9 @@ msgid ""
 "option.  If a directory is missing, some include files will not be found.  You\n"
 "can discover this with this command: >\n"
 msgstr ""
+"   Vim encontrará ficheros incluidos en los lugares definidos con la opción\n"
+"'path'. Si falta un directorio puede que no se encuentren todos los archivos\n"
+"incluidos. Puede descubrirlo con la siguiente orden: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:473
@@ -1404,6 +1399,9 @@ msgid ""
 "It will list the include files that could not be found.  Also files included "
 "by the files that could be found.  An example of the output:"
 msgstr ""
+"Esto lista todos los archivos incluidos que no pudo encontrar. También "
+"incluye archivos incluidos por los ficheros no encontrados. Un ejemplo de la "
+"salida:"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:482
@@ -1415,6 +1413,11 @@ msgid ""
 "\t  <functions.h> ~\n"
 "\t  <clib/exec_protos.h> ~\n"
 msgstr ""
+"\t--- Included files not found in path --- ~\n"
+"\t<io.h> ~\n"
+"\tvim.h --> ~\n"
+"\t  <functions.h> ~\n"
+"\t  <clib/exec_protos.h> ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:487
@@ -1424,6 +1427,10 @@ msgid ""
 "includes.  The \"functions.h\" and \"clib/exec_protos.h\" files, included by "
 "\"vim.h\" are not found."
 msgstr ""
+"El archivo «io.h» está incluido en el archivo actual y no se puede encontrar. "
+"Se puede encontrar «vim.h», y por ello «:checkpath» acude a ese archivo y "
+"compruebe qué incluye. Los archivos «functions.h» y «clib/exec_protos.h», "
+"incluidos por «vim.h» no se pueden encontrar."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:492
@@ -1434,6 +1441,10 @@ msgid ""
 "\tThis means every \"#include\" statement is used, also when it comes\n"
 "\tafter \"#if NEVER\".\n"
 msgstr ""
+"\tNota:\n"
+"\tVim no es un compilador. No reconoce las declaraciones «#ifdef».\n"
+"\tEsto significa que se usa cada declaración «#include», incluso si\n"
+"\taparece después de «#if NEVER».\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:497
@@ -1443,6 +1454,10 @@ msgid ""
 "lines that contain \"-I\" items, like \"-I/usr/local/X11\".  To add this "
 "directory use: >"
 msgstr ""
+"Para arreglar los archivo no encontrados, añada el directorio a la opción "
+"'path'. Un buen sitio para averiguar esto es el archivo «Makefile». Busque "
+"líneas que contengan elementos «-I», como «-I/usr/local/X11». Use los "
+"siguiente para añadir este directorio: >"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:499
@@ -1452,16 +1467,10 @@ msgstr "\t:set path+=/usr/local/X11\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:501
-#, fuzzy
-#| msgid ""
-#| "When there are tabs in a file, you cannot see where they are.  To make "
-#| "them visible: >"
 msgid ""
 "When there are many subdirectories, you can use the \"*\" wildcard.  "
 "Example: >"
-msgstr ""
-"Cuando hay pestañas en un archivo, no puede ver dónde están. Para hacerlas "
-"visibles: >"
+msgstr "Puede usar el comodín «*» cuando haya varios directorios. Ejemplo: >"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:503
@@ -1475,6 +1484,8 @@ msgid ""
 "This would find files in \"/usr/local/include\" as well as \"/usr/X11/include"
 "\"."
 msgstr ""
+"Esto encontraría archivos tanto en «/usr/local/include» como en «/usr/X11/"
+"include»."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:508
@@ -1483,6 +1494,9 @@ msgid ""
 "\"**\" items is useful.  This will search down in all subdirectories.  "
 "Example: >"
 msgstr ""
+"Los elementos «**» son de utilidad cuando trabaja en un proyecto con un árblo "
+"anidado de archivos incluidos. Esto busca en todos los subdirectorios. "
+"Ejemplo: >"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:510
@@ -1493,7 +1507,7 @@ msgstr "\t:set path+=/projects/invent/**/include\n"
 #. type: Plain text
 #: original/TXT/usr_29.txt:512
 msgid "This will find files in the directories:"
-msgstr ""
+msgstr "Esto encontraría archivos en los directorios:"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:517
@@ -1504,6 +1518,10 @@ msgid ""
 "\t/projects/invent/main/os/include ~\n"
 "\tetc.\n"
 msgstr ""
+"\t/projects/invent/include ~\n"
+"\t/projects/invent/main/include ~\n"
+"\t/projects/invent/main/os/include ~\n"
+"\tetc.\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:521
@@ -1513,6 +1531,10 @@ msgid ""
 "   If you want to see which included files are actually found, use this\n"
 "command: >\n"
 msgstr ""
+"Hay incluso más posibilidades. Para más información consulte la opción\n"
+"'path'.\n"
+"   Use la siguiente orden si desea ver qué archivos incluidos se\n"
+"encontraron: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:523
@@ -1528,10 +1550,13 @@ msgid ""
 "files that were found before and doesn't list the included files in there "
 "again."
 msgstr ""
+"Obtendrá un lista muy larga de los archivos incluidos, los que éstos "
+"incluyen, y así sucesivamente. Para acortar la lista Vim muestra «Ya está "
+"listado» para los archivos encontrados anteriormente, y no muestra los "
+"ficheros incluidos nuevamente."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:530
-#| msgid "JUMPING TO CHANGES"
 msgid "JUMPING TO A MATCH"
 msgstr "SALTAR A UNA COINCIDENCIA"
 
@@ -1541,6 +1566,8 @@ msgid ""
 "\"[I\" produces a list with only one line of text.  When you want to have a "
 "closer look at the first item, you can jump to that line with the command: >"
 msgstr ""
+"«[I» produce una lista con una sola línea de texto. Cuando desee ver el "
+"primer elemento, salte a esa línea con la siguiente orden: >"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:535
@@ -1553,6 +1580,7 @@ msgstr "\t[<Tab>\n"
 msgid ""
 "You can also use \"[ CTRL-I\", since CTRL-I is the same as pressing <Tab>."
 msgstr ""
+"También puede usar «[ CTRL-I», y que «CTRL-I» es lo mismo que pulsar <Tab>."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:540
@@ -1560,6 +1588,9 @@ msgid ""
 "The list that \"[I\" produces has a number at the start of each line.  When "
 "you want to jump to another item than the first one, type the number first: >"
 msgstr ""
+"La lista que «[I» produce tiene un número al principio de la línea. Cuando "
+"desee saltar a otro elemento distinto al primero, primero introduzca el "
+"número:"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:542
@@ -1573,10 +1604,11 @@ msgid ""
 "Will jump to the third item in the list.  Remember that you can use CTRL-O "
 "to jump back to where you started from."
 msgstr ""
+"Esto salta al tercer elemento de la lista. Recuerde que puede usar «CTRL-O» "
+"para volver al punto desde donde empezó."
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:548
-#| msgid "THE VIM COMMAND"
 msgid "RELATED COMMANDS"
 msgstr "ÓRDENES RELACIONADAS"
 
@@ -1588,10 +1620,12 @@ msgid ""
 "\t]I\t\tonly lists items below the cursor\n"
 "\t]i\t\tonly lists the first item below the cursor\n"
 msgstr ""
+"\t[i\t\tLista sólo la primera coincidencia\n"
+"\t]I\t\tLista sólo elementos bajo el cursor\n"
+"\t]i\t\tLista sólo el primer elemento bajo el cursor\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:555
-#| msgid "FINDING AN IDENTIFIER"
 msgid "FINDING DEFINED IDENTIFIERS"
 msgstr "ENCONTRAR UN IDENTIFICADOR DEFINIDO"
 
@@ -1601,6 +1635,8 @@ msgid ""
 "The \"[I\" command finds any identifier.  To find only macros, defined with "
 "\"#define\" use: >"
 msgstr ""
+"La orden «[I» encuentra cualquier identificador. Si sólo desea usar macros "
+"definidos con «#define» use lo siguiente: >"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:560
@@ -1617,6 +1653,9 @@ msgid ""
 "it work with other languages than C or C++.\n"
 "   The commands related to \"[D\" are:\n"
 msgstr ""
+"Una vez más, esto busca en los archivos incluidos. La opción 'define'\n"
+"especifica el aspecto de una línea que muestra elementos para «[D». Puede\n"
+"modificar esto para que funcione con otros lenguajes además de C y C++.\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:569
@@ -1626,11 +1665,13 @@ msgid ""
 "\t]D\t\tonly lists items below the cursor\n"
 "\t]d\t\tonly lists the first item below the cursor\n"
 msgstr ""
+"\t[d\t\tLista sólo la primera coincidencia\n"
+"\t]D\t\tLista sólo elementos bajo el cursor\n"
+"\t]d\t\tLista sólo el primer elemento bajo el cursor\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:572
 #, no-wrap
-#| msgid "*22.3*\tFinding a file\n"
 msgid "*29.5*\tFinding local identifiers\n"
 msgstr "*29.5* Buscar identificadores locales\n"
 
@@ -1640,6 +1681,9 @@ msgid ""
 "The \"[I\" command searches included files.  To search in the current file "
 "only, and jump to the first place where the word under the cursor is used: >"
 msgstr ""
+"La orden «[I» busca archivos incluidos. Use lo siguiente para buscar sólo en "
+"el archivo actual y saltar al primer sitio donde se usa la palabra bajo el "
+"cursor: >"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:577
@@ -1654,6 +1698,9 @@ msgid ""
 "function that was declared locally (\"static\", in C terms).  Example "
 "(cursor on \"counter\"):"
 msgstr ""
+"Consejo. «Goto definición». Esta orden es útil para buscar una variable o "
+"función declarada localmente («static», en términos C). Ejemplo (cursor sobre "
+"«counter»):"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:589
@@ -1667,6 +1714,13 @@ msgid ""
 "\t   +--\t     return counter;\n"
 "\t\t }\n"
 msgstr ""
+"\t   +->   static int counter = 0;\n"
+"\t   |\n"
+"\t   |     int get_counter(void)\n"
+"\tgD |     {\n"
+"\t   |\t     ++counter;\n"
+"\t   +--\t     return counter;\n"
+"\t\t }\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:592
@@ -1674,6 +1728,8 @@ msgid ""
 "To restrict the search even further, and look only in the current function, "
 "use this command: >"
 msgstr ""
+"Para limitar la búsqueda aún más, y buscar sólo la función actual, use la "
+"siguiente orden: >"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:594
@@ -1689,6 +1745,10 @@ msgid ""
 "an empty line above a \"{\" in the first column.  From there it searches "
 "forward for the identifier.  Example (cursor on \"idx\"):"
 msgstr ""
+"Esto volvería al principio de la función actual, y buscará la primera "
+"aparición de la palabra bajo el cursor. En realidad, busca en sentido "
+"inverso una línea vacía sobre un «{» en la primera columna. A partir de ahí, "
+"busca hacia adelante el identificador. Ejemplo (cursor sobre «idx»):"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:608
@@ -1703,6 +1763,14 @@ msgid ""
 "\t   +--\t\t    return idx;\n"
 "\t\t}\n"
 msgstr ""
+"\t\tint find_entry(char *name)\n"
+"\t\t{\n"
+"\t   +->\t    int idx;\n"
+"\t   |\n"
+"\tgd |\t    for (idx = 0; idx < table_len; ++idx)\n"
+"\t   |\t\tif (strcmp(table[idx].name, name) == 0)\n"
+"\t   +--\t\t    return idx;\n"
+"\t\t}\n"
 
 #. type: Plain text
 #: original/TXT/usr_29.txt:612
