@@ -12,9 +12,9 @@ msgstr ""
 "Project-Id-Version: Vim 7.2.284 (rev 1692)\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2009-11-25 02:05+0100\n"
-"PO-Revision-Date: 2010-02-02 19:33+0100\n"
+"PO-Revision-Date: 2010-04-30 09:49+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
-"Language-Team: vim-doc-es http://www.assembla.com/wiki/show/vim-doc-es\n"
+"Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: octect-stream\n"
@@ -930,12 +930,12 @@ msgstr ""
 #: eval.c:21243
 #, c-format
 msgid "calling %s"
-msgstr "Invocando %s"
+msgstr "Invocando «%s»"
 
 #: eval.c:21335
 #, c-format
 msgid "%s aborted"
-msgstr "Abortada la ejecución de %s"
+msgstr "La ejecución de «%s» se ha cancelado"
 
 #: eval.c:21337
 #, c-format
@@ -3006,7 +3006,7 @@ msgstr "Impreso: %s"
 
 #: hardcopy.c:814
 msgid "Printing aborted"
-msgstr "Impresión interrumpida"
+msgstr "Impresión cancelada"
 
 #: hardcopy.c:1469
 msgid "E455: Error writing to PostScript output file"
@@ -4291,7 +4291,7 @@ msgstr "No hay una ventana"
 #. Failed to send, abort.
 #: main.c:3572
 msgid ": Send failed.\n"
-msgstr ": Falló el envío.\n"
+msgstr ": El envío falló.\n"
 
 # Let vim start normally.
 #. Let vim start normally.
@@ -4943,7 +4943,7 @@ msgstr ""
 "&Editar de todas formas\n"
 "&Recuperar\n"
 "&Salir\n"
-"A&bortar"
+"&Cancelar"
 
 #: memline.c:4193
 msgid ""
@@ -4958,7 +4958,7 @@ msgstr ""
 "&Editar de todas formas\n"
 "&Recuperar\n"
 "&Borrar&Salir\n"
-"&Abortar"
+"&Cancelar"
 
 #: memline.c:4264
 msgid "E326: Too many swap files found"
@@ -7848,7 +7848,7 @@ msgstr "--No hay líneas en el búfer--"
 #.
 #: globals.h:1374
 msgid "E470: Command aborted"
-msgstr "E470: La orden se ha interrumpido"
+msgstr "E470: La orden se ha cancelado"
 
 #: globals.h:1375
 msgid "E471: Argument required"

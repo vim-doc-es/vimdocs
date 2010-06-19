@@ -1,0 +1,1372 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the Vim package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Vim 7.2\n"
+"Report-Msgid-Bugs-To: vim@bugs.org\n"
+"POT-Creation-Date: 2010-02-03 13:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: ENCODING"
+
+#. type: Plain text
+#: original/TXT/intro.txt:18 original/TXT/intro.txt:75
+#: original/TXT/intro.txt:176 original/TXT/intro.txt:285
+#: original/TXT/intro.txt:513 original/TXT/intro.txt:591
+#: original/TXT/intro.txt:684 original/TXT/intro.txt:812
+#: original/TXT/intro.txt:875 original/TXT/usr_toc.txt:7
+#: original/TXT/usr_toc.txt:58 original/TXT/usr_toc.txt:172
+#: original/TXT/usr_toc.txt:280 original/TXT/usr_toc.txt:339
+#: original/TXT/usr_toc.txt:351 original/TXT/usr_01.txt:19
+#: original/TXT/usr_01.txt:50 original/TXT/usr_01.txt:100
+#: original/TXT/usr_01.txt:181 original/TXT/usr_02.txt:25
+#: original/TXT/usr_02.txt:69 original/TXT/usr_02.txt:130
+#: original/TXT/usr_02.txt:179 original/TXT/usr_02.txt:239
+#: original/TXT/usr_02.txt:307 original/TXT/usr_02.txt:369
+#: original/TXT/usr_02.txt:406 original/TXT/usr_02.txt:560
+#: original/TXT/usr_03.txt:28 original/TXT/usr_03.txt:74
+#: original/TXT/usr_03.txt:101 original/TXT/usr_03.txt:147
+#: original/TXT/usr_03.txt:172 original/TXT/usr_03.txt:223
+#: original/TXT/usr_03.txt:265 original/TXT/usr_03.txt:320
+#: original/TXT/usr_03.txt:491 original/TXT/usr_03.txt:552
+#: original/TXT/usr_03.txt:650 original/TXT/usr_04.txt:27
+#: original/TXT/usr_04.txt:74 original/TXT/usr_04.txt:160
+#: original/TXT/usr_04.txt:194 original/TXT/usr_04.txt:269
+#: original/TXT/usr_04.txt:324 original/TXT/usr_04.txt:360
+#: original/TXT/usr_04.txt:390 original/TXT/usr_04.txt:446
+#: original/TXT/usr_04.txt:469 original/TXT/usr_04.txt:510
+#: original/TXT/usr_05.txt:24 original/TXT/usr_05.txt:63
+#: original/TXT/usr_05.txt:219 original/TXT/usr_05.txt:266
+#: original/TXT/usr_05.txt:418 original/TXT/usr_05.txt:467
+#: original/TXT/usr_05.txt:506 original/TXT/usr_05.txt:621
+#: original/TXT/usr_06.txt:24 original/TXT/usr_06.txt:50
+#: original/TXT/usr_06.txt:135 original/TXT/usr_06.txt:189
+#: original/TXT/usr_06.txt:266 original/TXT/usr_06.txt:272
+#: original/TXT/usr_07.txt:24 original/TXT/usr_07.txt:63
+#: original/TXT/usr_07.txt:179 original/TXT/usr_07.txt:266
+#: original/TXT/usr_07.txt:316 original/TXT/usr_07.txt:404
+#: original/TXT/usr_07.txt:444 original/TXT/usr_07.txt:475
+#: original/TXT/usr_08.txt:26 original/TXT/usr_08.txt:82
+#: original/TXT/usr_08.txt:109 original/TXT/usr_08.txt:161
+#: original/TXT/usr_08.txt:215 original/TXT/usr_08.txt:278
+#: original/TXT/usr_08.txt:337 original/TXT/usr_08.txt:477
+#: original/TXT/usr_08.txt:509 original/TXT/usr_08.txt:597
+#: original/TXT/usr_09.txt:21 original/TXT/usr_09.txt:124
+#: original/TXT/usr_09.txt:175 original/TXT/usr_09.txt:259
+#: original/TXT/usr_09.txt:285 original/TXT/usr_10.txt:27
+#: original/TXT/usr_10.txt:144 original/TXT/usr_10.txt:221
+#: original/TXT/usr_10.txt:342 original/TXT/usr_10.txt:378
+#: original/TXT/usr_10.txt:547 original/TXT/usr_10.txt:621
+#: original/TXT/usr_10.txt:667 original/TXT/usr_10.txt:692
+#: original/TXT/usr_10.txt:820 original/TXT/usr_11.txt:22
+#: original/TXT/usr_11.txt:66 original/TXT/usr_11.txt:126
+#: original/TXT/usr_11.txt:268 original/TXT/usr_11.txt:283
+#: original/TXT/usr_12.txt:25 original/TXT/usr_12.txt:90
+#: original/TXT/usr_12.txt:131 original/TXT/usr_12.txt:177
+#: original/TXT/usr_12.txt:202 original/TXT/usr_12.txt:231
+#: original/TXT/usr_12.txt:281 original/TXT/usr_12.txt:309
+#: original/TXT/usr_12.txt:354 original/TXT/usr_20.txt:22
+#: original/TXT/usr_20.txt:113 original/TXT/usr_20.txt:158
+#: original/TXT/usr_20.txt:285 original/TXT/usr_20.txt:327
+#: original/TXT/usr_20.txt:380 original/TXT/usr_21.txt:24
+#: original/TXT/usr_21.txt:47 original/TXT/usr_21.txt:87
+#: original/TXT/usr_21.txt:236 original/TXT/usr_21.txt:385
+#: original/TXT/usr_21.txt:438 original/TXT/usr_21.txt:495
+#: original/TXT/usr_22.txt:22 original/TXT/usr_22.txt:148
+#: original/TXT/usr_22.txt:213 original/TXT/usr_22.txt:272
+#: original/TXT/usr_22.txt:396 original/TXT/usr_23.txt:23
+#: original/TXT/usr_23.txt:114 original/TXT/usr_23.txt:156
+#: original/TXT/usr_23.txt:238 original/TXT/usr_23.txt:324
+#: original/TXT/usr_23.txt:339 original/TXT/usr_24.txt:28
+#: original/TXT/usr_24.txt:96 original/TXT/usr_24.txt:119
+#: original/TXT/usr_24.txt:268 original/TXT/usr_24.txt:305
+#: original/TXT/usr_24.txt:336 original/TXT/usr_24.txt:369
+#: original/TXT/usr_24.txt:493 original/TXT/usr_24.txt:537
+#: original/TXT/usr_24.txt:583 original/TXT/usr_24.txt:602
+#: original/TXT/usr_25.txt:22 original/TXT/usr_25.txt:132
+#: original/TXT/usr_25.txt:210 original/TXT/usr_25.txt:287
+#: original/TXT/usr_25.txt:453 original/TXT/usr_25.txt:574
+#: original/TXT/usr_26.txt:21 original/TXT/usr_26.txt:46
+#: original/TXT/usr_26.txt:103 original/TXT/usr_26.txt:136
+#: original/TXT/usr_26.txt:217 original/TXT/usr_27.txt:26
+#: original/TXT/usr_27.txt:88 original/TXT/usr_27.txt:136
+#: original/TXT/usr_27.txt:239 original/TXT/usr_27.txt:320
+#: original/TXT/usr_27.txt:350 original/TXT/usr_27.txt:427
+#: original/TXT/usr_27.txt:469 original/TXT/usr_27.txt:510
+#: original/TXT/usr_27.txt:559 original/TXT/usr_28.txt:27
+#: original/TXT/usr_28.txt:54 original/TXT/usr_28.txt:121
+#: original/TXT/usr_28.txt:185 original/TXT/usr_28.txt:211
+#: original/TXT/usr_28.txt:269 original/TXT/usr_28.txt:315
+#: original/TXT/usr_28.txt:331 original/TXT/usr_28.txt:375
+#: original/TXT/usr_28.txt:389 original/TXT/usr_28.txt:422
+#: original/TXT/usr_29.txt:23 original/TXT/usr_29.txt:273
+#: original/TXT/usr_29.txt:320 original/TXT/usr_29.txt:441
+#: original/TXT/usr_29.txt:570 original/TXT/usr_29.txt:609
+#, no-wrap
+msgid "==============================================================================\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_toc.txt:4 original/TXT/usr_01.txt:4
+#: original/TXT/usr_02.txt:4 original/TXT/usr_03.txt:4
+#: original/TXT/usr_04.txt:4 original/TXT/usr_05.txt:4
+#: original/TXT/usr_06.txt:4 original/TXT/usr_07.txt:4
+#: original/TXT/usr_08.txt:4 original/TXT/usr_09.txt:4
+#: original/TXT/usr_10.txt:4 original/TXT/usr_11.txt:4
+#: original/TXT/usr_12.txt:4 original/TXT/usr_20.txt:4
+#: original/TXT/usr_21.txt:4 original/TXT/usr_22.txt:4
+#: original/TXT/usr_23.txt:4 original/TXT/usr_24.txt:4
+#: original/TXT/usr_25.txt:4 original/TXT/usr_26.txt:4
+#: original/TXT/usr_27.txt:4 original/TXT/usr_28.txt:4
+#: original/TXT/usr_29.txt:4
+#, no-wrap
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_toc.txt:353 original/TXT/usr_01.txt:185
+#: original/TXT/usr_02.txt:564 original/TXT/usr_03.txt:654
+#: original/TXT/usr_04.txt:514 original/TXT/usr_05.txt:625
+#: original/TXT/usr_06.txt:276 original/TXT/usr_07.txt:479
+#: original/TXT/usr_08.txt:601 original/TXT/usr_09.txt:289
+#: original/TXT/usr_10.txt:824 original/TXT/usr_11.txt:287
+#: original/TXT/usr_12.txt:358 original/TXT/usr_20.txt:384
+#: original/TXT/usr_21.txt:499 original/TXT/usr_22.txt:400
+#: original/TXT/usr_23.txt:343 original/TXT/usr_24.txt:607
+#: original/TXT/usr_25.txt:578 original/TXT/usr_26.txt:221
+#: original/TXT/usr_27.txt:563 original/TXT/usr_28.txt:426
+#: original/TXT/usr_29.txt:613
+msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:2
+#, no-wrap
+msgid "*usr_29.txt*\tFor Vim version 7.2.  Last change: 2008 Jun 28\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:6
+#, no-wrap
+msgid "\t\t\t    Moving through programs\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:12
+msgid ""
+"The creator of Vim is a computer programmer.  It's no surprise that Vim "
+"contains many features to aid in writing programs.  Jump around to find "
+"where identifiers are defined and used.  Preview declarations in a separate "
+"window.  There is more in the next chapter."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:18
+#, no-wrap
+msgid ""
+"|29.1|\tUsing tags\n"
+"|29.2|\tThe preview window\n"
+"|29.3|\tMoving through a program\n"
+"|29.4|\tFinding global identifiers\n"
+"|29.5|\tFinding local identifiers\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:22
+#, no-wrap
+msgid ""
+"     Next chapter: |usr_30.txt|  Editing programs\n"
+" Previous chapter: |usr_28.txt|  Folding\n"
+"Table of contents: |usr_toc.txt|\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:25
+#, no-wrap
+msgid "*29.1*\tUsing tags\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:32
+#, no-wrap
+msgid ""
+"What is a tag?  It is a location where an identifier is defined.  An example\n"
+"is a function definition in a C or C++ program.  A list of tags is kept in a\n"
+"tags file.  This can be used by Vim to directly jump from any place to the\n"
+"tag, the place where an identifier is defined.\n"
+"   To generate the tags file for all C files in the current directory, use the\n"
+"following command: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:34
+#, no-wrap
+msgid "\tctags *.c\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:37
+msgid ""
+"\"ctags\" is a separate program.  Most Unix systems already have it "
+"installed.  If you do not have it yet, you can find Exuberant ctags here:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:39
+#, no-wrap
+msgid "\thttp://ctags.sf.net ~\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:42
+msgid ""
+"Now when you are in Vim and you want to go to a function definition, you can "
+"jump to it by using the following command: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:44
+#, no-wrap
+msgid "\t:tag startlist\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:55
+#, no-wrap
+msgid ""
+"This command will find the function \"startlist\" even if it is in another file.\n"
+"   The CTRL-] command jumps to the tag of the word that is under the cursor.\n"
+"This makes it easy to explore a tangle of C code.  Suppose, for example, that\n"
+"you are in the function \"write_block\".  You can see that it calls\n"
+"\"write_line\".  But what does \"write_line\" do?  By placing the cursor on the\n"
+"call to \"write_line\" and pressing CTRL-], you jump to the definition of this\n"
+"function.\n"
+"   The \"write_line\" function calls \"write_char\".  You need to figure out what\n"
+"it does.  So you position the cursor over the call to \"write_char\" and press\n"
+"CTRL-].  Now you are at the definition of \"write_char\".\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:81
+#, no-wrap
+msgid ""
+"\t+-------------------------------------+\n"
+"\t|void write_block(char **s; int cnt)  |\n"
+"\t|{\t\t\t\t      |\n"
+"\t|   int i;\t\t\t      |\n"
+"\t|   for (i = 0; i < cnt; ++i)\t      |\n"
+"\t|      write_line(s[i]);\t      |\n"
+"\t|}\t    |\t\t\t      |\n"
+"\t+-----------|-------------------------+\n"
+"\t\t    |\n"
+"\t     CTRL-] |\n"
+"\t\t    |\t +----------------------------+\n"
+"\t\t    +--> |void write_line(char *s)    |\n"
+"\t\t\t |{\t\t\t      |\n"
+"\t\t\t |   while (*s != 0)\t      |\n"
+"\t\t\t |\twrite_char(*s++);     |\n"
+"\t\t\t |}\t  |\t\t      |\n"
+"\t\t\t +--------|-------------------+\n"
+"\t\t\t\t  |\n"
+"\t\t\t   CTRL-] |\n"
+"\t\t\t\t  |    +------------------------------------+\n"
+"\t\t\t\t  +--> |void write_char(char c)\t\t    |\n"
+"\t\t\t\t       |{\t\t\t\t    |\n"
+"\t\t\t\t       |    putchar((int)(unsigned char)c); |\n"
+"\t\t\t\t       |}\t\t\t\t    |\n"
+"\t\t\t\t       +------------------------------------+\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:83
+msgid ""
+"The \":tags\" command shows the list of tags that you traversed through:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:95
+#, no-wrap
+msgid ""
+"\t:tags\n"
+"\t  # TO tag\t   FROM line  in file/text ~\n"
+"\t  1  1 write_line\t   8  write_block.c ~\n"
+"\t  2  1 write_char\t   7  write_line.c ~\n"
+"\t> ~\n"
+">\n"
+"Now to go back.  The CTRL-T command goes to the preceding tag.  In the example\n"
+"above you get back to the \"write_line\" function, in the call to \"write_char\".\n"
+"   This command takes a count argument that indicates how many tags to jump\n"
+"back.  You have gone forward, and now back.  Let's go forward again.  The\n"
+"following command goes to the tag on top of the list: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:97
+#, no-wrap
+msgid "\t:tag\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:102
+#, no-wrap
+msgid ""
+"You can prefix it with a count and jump forward that many tags.  For example:\n"
+"\":3tag\".  CTRL-T also can be preceded with a count.\n"
+"   These commands thus allow you to go down a call tree with CTRL-] and back\n"
+"up again with CTRL-T.  Use \":tags\" to find out where you are.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:105
+msgid "SPLIT WINDOWS"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:112
+#, no-wrap
+msgid ""
+"The \":tag\" command replaces the file in the current window with the one\n"
+"containing the new function.  But suppose you want to see not only the old\n"
+"function but also the new one?  You can split the window using the \":split\"\n"
+"command followed by the \":tag\" command.  Vim has a shorthand command that does\n"
+"both: >\n"
+"\t:stag tagname\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:115
+msgid ""
+"To split the current window and jump to the tag under the cursor use this "
+"command: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:117
+#, no-wrap
+msgid "\tCTRL-W ]\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:119
+msgid "If a count is specified, the new window will be that many lines high."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:122
+msgid "MORE TAGS FILES"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:127
+#, no-wrap
+msgid ""
+"When you have files in many directories, you can create a tags file in each of\n"
+"them.  Vim will then only be able to jump to tags within that directory.\n"
+"   To find more tags files, set the 'tags' option to include all the relevant\n"
+"tags files.  Example: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:129
+#, no-wrap
+msgid "\t:set tags=./tags,./../tags,./*/tags\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:136
+#, no-wrap
+msgid ""
+"This finds a tags file in the same directory as the current file, one\n"
+"directory level higher and in all subdirectories.\n"
+"   This is quite a number of tags files, but it may still not be enough.  For\n"
+"example, when editing a file in \"~/proj/src\", you will not find the tags file\n"
+"\"~/proj/sub/tags\".  For this situation Vim offers to search a whole directory\n"
+"tree for tags files.  Example: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:138
+#, no-wrap
+msgid "\t:set tags=~/proj/**/tags\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:141
+msgid "ONE TAGS FILE"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:147
+#, no-wrap
+msgid ""
+"When Vim has to search many places for tags files, you can hear the disk\n"
+"rattling.  It may get a bit slow.  In that case it's better to spend this\n"
+"time while generating one big tags file.  You might do this overnight.\n"
+"   This requires the Exuberant ctags program, mentioned above.  It offers an\n"
+"argument to search a whole directory tree: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:150
+#, no-wrap
+msgid ""
+"\tcd ~/proj\n"
+"\tctags -R .\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:155
+#, no-wrap
+msgid ""
+"The nice thing about this is that Exuberant ctags recognizes various file\n"
+"types.  Thus this doesn't work just for C and C++ programs, also for Eiffel\n"
+"and even Vim scripts.  See the ctags documentation to tune this.\n"
+"   Now you only need to tell Vim where your big tags file is: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:157
+#, no-wrap
+msgid "\t:set tags=~/proj/tags\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:160
+msgid "MULTIPLE MATCHES"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:165
+#, no-wrap
+msgid ""
+"When a function is defined multiple times (or a method in several classes),\n"
+"the \":tag\" command will jump to the first one.  If there is a match in the\n"
+"current file, that one is used first.\n"
+"   You can now jump to other matches for the same tag with: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:167
+#, no-wrap
+msgid "\t:tnext\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:170
+msgid ""
+"Repeat this to find further matches.  If there are many, you can select "
+"which one to jump to: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:172
+#, no-wrap
+msgid "\t:tselect tagname\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:174
+msgid "Vim will present you with a list of choices:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:185
+#, no-wrap
+msgid ""
+"\t  # pri kind tag\t       file ~\n"
+"\t  1 F\tf    mch_init\t       os_amiga.c ~\n"
+"\t\t       mch_init() ~\n"
+"\t  2 F\tf    mch_init\t       os_mac.c ~\n"
+"\t\t       mch_init() ~\n"
+"\t  3 F\tf    mch_init\t       os_msdos.c ~\n"
+"\t\t       mch_init(void) ~\n"
+"\t  4 F\tf    mch_init\t       os_riscos.c ~\n"
+"\t\t       mch_init() ~\n"
+"\tEnter nr of choice (<CR> to abort):  ~\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:189
+msgid ""
+"You can now enter the number (in the first column) of the match that you "
+"would like to jump to.  The information in the other columns give you a good "
+"idea of where the match is defined."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:191
+msgid "To move between the matching tags, these commands can be used:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:196
+#, no-wrap
+msgid ""
+"\t:tfirst\t\t\tgo to first match\n"
+"\t:[count]tprevious\tgo to [count] previous match\n"
+"\t:[count]tnext\t\tgo to [count] next match\n"
+"\t:tlast\t\t\tgo to last match\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:198
+msgid "If [count] is omitted then one is used."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:201
+msgid "GUESSING TAG NAMES"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:204
+msgid ""
+"Command line completion is a good way to avoid typing a long tag name.  Just "
+"type the first bit and press <Tab>: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:206
+#, no-wrap
+msgid "\t:tag write_<Tab>\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:214
+#, no-wrap
+msgid ""
+"You will get the first match.  If it's not the one you want, press <Tab> until\n"
+"you find the right one.\n"
+"   Sometimes you only know part of the name of a function.  Or you have many\n"
+"tags that start with the same string, but end differently.  Then you can tell\n"
+"Vim to use a pattern to find the tag.\n"
+"   Suppose you want to jump to a tag that contains \"block\".  First type\n"
+"this: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:216
+#, no-wrap
+msgid "\t:tag /block\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:222
+#, no-wrap
+msgid ""
+"Now use command line completion: press <Tab>.  Vim will find all tags that\n"
+"contain \"block\" and use the first match.\n"
+"   The \"/\" before a tag name tells Vim that what follows is not a literal tag\n"
+"name, but a pattern.  You can use all the items for search patterns here.  For\n"
+"example, suppose you want to select a tag that starts with \"write_\": >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:224
+#, no-wrap
+msgid "\t:tselect /^write_\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:228
+msgid ""
+"The \"^\" specifies that the tag starts with \"write_\".  Otherwise it would "
+"also be found halfway a tag name.  Similarly \"$\" at the end makes sure the "
+"pattern matches until the end of a tag."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:231
+msgid "A TAGS BROWSER"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:236
+#, no-wrap
+msgid ""
+"Since CTRL-] takes you to the definition of the identifier under the cursor,\n"
+"you can use a list of identifier names as a table of contents.  Here is an\n"
+"example.\n"
+"   First create a list of identifiers (this requires Exuberant ctags): >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:238
+#, no-wrap
+msgid "\tctags --c-types=f -f functions *.c\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:241
+msgid ""
+"Now start Vim without a file, and edit this file in Vim, in a vertically "
+"split window: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:244
+#, no-wrap
+msgid ""
+"\tvim\n"
+"\t:vsplit functions\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:248
+#, no-wrap
+msgid ""
+"The window contains a list of all the functions.  There is some more stuff,\n"
+"but you can ignore that.  Do \":setlocal ts=99\" to clean it up a bit.\n"
+"   In this window, define a mapping: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:250
+#, no-wrap
+msgid "\t:nnoremap <buffer> <CR> 0ye<C-W>w:tag <C-R>\"<CR>\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:254
+msgid ""
+"Move the cursor to the line that contains the function you want to go to.  "
+"Now press <Enter>.  Vim will go to the other window and jump to the selected "
+"function."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:257
+msgid "RELATED ITEMS"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:259
+msgid "You can set 'ignorecase' to make case in tag names be ignored."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:263
+msgid ""
+"The 'tagbsearch' option tells if the tags file is sorted or not.  The "
+"default is to assume a sorted tags file, which makes a tags search a lot "
+"faster, but doesn't work if the tags file isn't sorted."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:266
+msgid ""
+"The 'taglength' option can be used to tell Vim the number of significant "
+"characters in a tag."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:269
+msgid ""
+"When you use the SNiFF+ program, you can use the Vim interface to it |"
+"sniff|.  SNiFF+ is a commercial program."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:272
+msgid ""
+"Cscope is a free program.  It does not only find places where an identifier "
+"is declared, but also where it is used.  See |cscope|."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:275
+#, no-wrap
+msgid "*29.2*\tThe preview window\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:282
+#, no-wrap
+msgid ""
+"When you edit code that contains a function call, you need to use the correct\n"
+"arguments.  To know what values to pass you can look at how the function is\n"
+"defined.  The tags mechanism works very well for this.  Preferably the\n"
+"definition is displayed in another window.  For this the preview window can be\n"
+"used.\n"
+"   To open a preview window to display the function \"write_char\": >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:284
+#, no-wrap
+msgid "\t:ptag write_char\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:290
+#, no-wrap
+msgid ""
+"Vim will open a window, and jumps to the tag \"write_char\".  Then it takes you\n"
+"back to the original position.  Thus you can continue typing without the need\n"
+"to use a CTRL-W command.\n"
+"   If the name of a function appears in the text, you can get its definition\n"
+"in the preview window with: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:292
+#, no-wrap
+msgid "\tCTRL-W }\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:295
+msgid ""
+"There is a script that automatically displays the text where the word under "
+"the cursor was defined.  See |CursorHold-example|."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:297
+msgid "To close the preview window use this command: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:299
+#, no-wrap
+msgid "\t:pclose\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:302
+msgid ""
+"To edit a specific file in the preview window, use \":pedit\".  This can be "
+"useful to edit a header file, for example: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:304
+#, no-wrap
+msgid "\t:pedit defs.h\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:309
+msgid ""
+"Finally, \":psearch\" can be used to find a word in the current file and any "
+"included files and display the match in the preview window.  This is "
+"especially useful when using library functions, for which you do not have a "
+"tags file.  Example: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:311
+#, no-wrap
+msgid "\t:psearch popen\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:314
+msgid ""
+"This will show the \"stdio.h\" file in the preview window, with the function "
+"prototype for popen():"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:316
+#, no-wrap
+msgid "\tFILE\t*popen __P((const char *, const char *)); ~\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:319
+msgid ""
+"You can specify the height of the preview window, when it is opened, with "
+"the 'previewheight' option."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:322
+#, no-wrap
+msgid "*29.3*\tMoving through a program\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:326
+#, no-wrap
+msgid ""
+"Since a program is structured, Vim can recognize items in it.  Specific\n"
+"commands can be used to move around.\n"
+"   C programs often contain constructs like this:\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:332
+#, no-wrap
+msgid ""
+"\t#ifdef USE_POPEN ~\n"
+"\t    fd = popen(\"ls\", \"r\") ~\n"
+"\t#else ~\n"
+"\t    fd = fopen(\"tmp\", \"w\") ~\n"
+"\t#endif ~\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:340
+#, no-wrap
+msgid ""
+"But then much longer, and possibly nested.  Position the cursor on the\n"
+"\"#ifdef\" and press %.  Vim will jump to the \"#else\".  Pressing % again takes\n"
+"you to the \"#endif\".  Another % takes you to the \"#ifdef\" again.\n"
+"   When the construct is nested, Vim will find the matching items.  This is a\n"
+"good way to check if you didn't forget an \"#endif\".\n"
+"   When you are somewhere inside a \"#if\" - \"#endif\", you can jump to the start\n"
+"of it with: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:342
+#, no-wrap
+msgid "\t[#\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:345
+msgid ""
+"If you are not after a \"#if\" or \"#ifdef\" Vim will beep.  To jump forward "
+"to the next \"#else\" or \"#endif\" use: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:347
+#, no-wrap
+msgid "\t]#\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:350
+msgid ""
+"These two commands skip any \"#if\" - \"#endif\" blocks that they "
+"encounter.  Example:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:357
+#, no-wrap
+msgid ""
+"\t#if defined(HAS_INC_H) ~\n"
+"\t    a = a + inc(); ~\n"
+"\t# ifdef USE_THEME ~\n"
+"\t    a += 3; ~\n"
+"\t# endif ~\n"
+"\t    set_width(a); ~\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:360
+msgid ""
+"With the cursor in the last line, \"[#\" moves to the first line.  The "
+"\"#ifdef\" - \"#endif\" block in the middle is skipped."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:363
+msgid "MOVING IN CODE BLOCKS"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:370
+#, no-wrap
+msgid ""
+"In C code blocks are enclosed in {}.  These can get pretty long.  To move to\n"
+"the start of the outer block use the \"[[\" command.  Use \"][\" to find the end.\n"
+"This assumes that the \"{\" and \"}\" are in the first column.\n"
+"   The \"[{\" command moves to the start of the current block.  It skips over\n"
+"pairs of {} at the same level.  \"]}\" jumps to the end.\n"
+"   An overview:\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:384
+#, no-wrap
+msgid ""
+"\t\t\tfunction(int a)\n"
+"\t   +->\t\t{\n"
+"\t   |\t\t    if (a)\n"
+"\t   |\t   +->\t    {\n"
+"\t[[ |\t   |\t\tfor (;;)\t       --+\n"
+"\t   |\t   |\t  +->\t{\t\t\t |\n"
+"\t   |\t[{ |\t  |\t    foo(32);\t\t |     --+\n"
+"\t   |\t   |   [{ |\t    if (bar(a))  --+\t | ]}\t |\n"
+"\t   +--\t   |\t  +--\t\tbreak;\t   | ]}  |\t |\n"
+"\t\t   |\t\t}\t\t <-+\t |\t | ][\n"
+"\t\t   +--\t\tfoobar(a)\t\t |\t |\n"
+"\t\t\t    }\t\t\t       <-+\t |\n"
+"\t\t\t}\t\t\t\t       <-+\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:388
+msgid ""
+"When writing C++ or Java, the outer {} block is for the class.  The next "
+"level of {} is for a method.  When somewhere inside a class use \"[m\" to "
+"find the previous start of a method.  \"]m\" finds the next start of a "
+"method."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:392
+msgid ""
+"Additionally, \"[]\" moves backward to the end of a function and \"]]\" "
+"moves forward to the start of the next function.  The end of a function is "
+"defined by a \"}\" in the first column."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:409
+#, no-wrap
+msgid ""
+"\t\t\t\tint func1(void)\n"
+"\t\t\t\t{\n"
+"\t\t\t\t\treturn 1;\n"
+"\t\t  +---------->  }\n"
+"\t\t  |\n"
+"\t      []  |\t\tint func2(void)\n"
+"\t\t  |\t   +->\t{\n"
+"\t\t  |    [[  |\t\tif (flag)\n"
+"\tstart\t  +--\t   +--\t\t\treturn flag;\n"
+"\t\t  |    ][  |\t\treturn 2;\n"
+"\t\t  |\t   +->\t}\n"
+"\t      ]]  |\n"
+"\t\t  |\t\tint func3(void)\n"
+"\t\t  +---------->\t{\n"
+"\t\t\t\t\treturn 3;\n"
+"\t\t\t\t}\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:412
+msgid ""
+"Don't forget you can also use \"%\" to move between matching (), {} and [].  "
+"That also works when they are many lines apart."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:415
+msgid "MOVING IN BRACES"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:426
+#, no-wrap
+msgid ""
+"The \"[(\" and \"])\" commands work similar to \"[{\" and \"]}\", except that they\n"
+"work on () pairs instead of {} pairs.\n"
+">\n"
+"\t\t\t\t  [(\n"
+"<\t\t    <--------------------------------\n"
+"\t\t\t      <-------\n"
+"\t\tif (a == b && (c == d || (e > f)) && x > y) ~\n"
+"\t\t\t\t  -------------->\n"
+"\t\t\t  --------------------------------> >\n"
+"\t\t\t\t       ])\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:428
+msgid "MOVING IN COMMENTS"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:431
+msgid ""
+"To move back to the start of a comment use \"[/\".  Move forward to the end "
+"of a comment with \"]/\".  This only works for /* - */ comments."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:440
+#, no-wrap
+msgid ""
+"\t  +->\t  +-> /*\n"
+"\t  |    [/ |    * A comment about      --+\n"
+"       [/ |\t  +--  * wonderful life.\t| ]/\n"
+"\t  |\t       */\t\t      <-+\n"
+"\t  |\n"
+"\t  +--\t       foo = bar * 3;\t      --+\n"
+"\t\t\t\t\t\t| ]/\n"
+"\t\t       /* a short comment */  <-+\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:443
+#, no-wrap
+msgid "*29.4*\tFinding global identifiers\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:447
+#, no-wrap
+msgid ""
+"You are editing a C program and wonder if a variable is declared as \"int\" or\n"
+"\"unsigned\".  A quick way to find this is with the \"[I\" command.\n"
+"   Suppose the cursor is on the word \"column\".  Type: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:449
+#, no-wrap
+msgid "\t[I\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:453
+msgid ""
+"Vim will list the matching lines it can find.  Not only in the current file, "
+"but also in all included files (and files included in them, etc.).  The "
+"result looks like this:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:456
+#, no-wrap
+msgid ""
+"\tstructs.h ~\n"
+"\t 1:   29     unsigned     column;    /* column number */ ~\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:464
+#, no-wrap
+msgid ""
+"The advantage over using tags or the preview window is that included files are\n"
+"searched.  In most cases this results in the right declaration to be found.\n"
+"Also when the tags file is out of date.  Also when you don't have tags for the\n"
+"included files.\n"
+"   However, a few things must be right for \"[I\" to do its work.  First of all,\n"
+"the 'include' option must specify how a file is included.  The default value\n"
+"works for C and C++.  For other languages you will have to change it.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:467
+msgid "LOCATING INCLUDED FILES"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:471
+#, no-wrap
+msgid ""
+"   Vim will find included files in the places specified with the 'path'\n"
+"option.  If a directory is missing, some include files will not be found.  You\n"
+"can discover this with this command: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:473
+#, no-wrap
+msgid "\t:checkpath\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:476
+msgid ""
+"It will list the include files that could not be found.  Also files included "
+"by the files that could be found.  An example of the output:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:482
+#, no-wrap
+msgid ""
+"\t--- Included files not found in path --- ~\n"
+"\t<io.h> ~\n"
+"\tvim.h --> ~\n"
+"\t  <functions.h> ~\n"
+"\t  <clib/exec_protos.h> ~\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:487
+msgid ""
+"The \"io.h\" file is included by the current file and can't be found.  \"vim."
+"h\" can be found, thus \":checkpath\" goes into this file and checks what it "
+"includes.  The \"functions.h\" and \"clib/exec_protos.h\" files, included by "
+"\"vim.h\" are not found."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:492
+#, no-wrap
+msgid ""
+"\tNote:\n"
+"\tVim is not a compiler.  It does not recognize \"#ifdef\" statements.\n"
+"\tThis means every \"#include\" statement is used, also when it comes\n"
+"\tafter \"#if NEVER\".\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:497
+msgid ""
+"To fix the files that could not be found, add a directory to the 'path' "
+"option.  A good place to find out about this is the Makefile.  Look out for "
+"lines that contain \"-I\" items, like \"-I/usr/local/X11\".  To add this "
+"directory use: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:499
+#, no-wrap
+msgid "\t:set path+=/usr/local/X11\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:501
+msgid ""
+"When there are many subdirectories, you can use the \"*\" wildcard.  "
+"Example: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:503
+#, no-wrap
+msgid "\t:set path+=/usr/*/include\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:505
+msgid ""
+"This would find files in \"/usr/local/include\" as well as \"/usr/X11/include"
+"\"."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:508
+msgid ""
+"When working on a project with a whole nested tree of included files, the "
+"\"**\" items is useful.  This will search down in all subdirectories.  "
+"Example: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:510
+#, no-wrap
+msgid "\t:set path+=/projects/invent/**/include\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:512
+msgid "This will find files in the directories:"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:517
+#, no-wrap
+msgid ""
+"\t/projects/invent/include ~\n"
+"\t/projects/invent/main/include ~\n"
+"\t/projects/invent/main/os/include ~\n"
+"\tetc.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:521
+#, no-wrap
+msgid ""
+"There are even more possibilities.  Check out the 'path' option for info.\n"
+"   If you want to see which included files are actually found, use this\n"
+"command: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:523
+#, no-wrap
+msgid "\t:checkpath!\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:527
+msgid ""
+"You will get a (very long) list of included files, the files they include, "
+"and so on.  To shorten the list a bit, Vim shows \"(Already listed)\" for "
+"files that were found before and doesn't list the included files in there "
+"again."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:530
+msgid "JUMPING TO A MATCH"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:533
+msgid ""
+"\"[I\" produces a list with only one line of text.  When you want to have a "
+"closer look at the first item, you can jump to that line with the command: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:535
+#, no-wrap
+msgid "\t[<Tab>\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:537
+msgid ""
+"You can also use \"[ CTRL-I\", since CTRL-I is the same as pressing <Tab>."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:540
+msgid ""
+"The list that \"[I\" produces has a number at the start of each line.  When "
+"you want to jump to another item than the first one, type the number first: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:542
+#, no-wrap
+msgid "\t3[<Tab>\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:545
+msgid ""
+"Will jump to the third item in the list.  Remember that you can use CTRL-O "
+"to jump back to where you started from."
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:548
+msgid "RELATED COMMANDS"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:552
+#, no-wrap
+msgid ""
+"\t[i\t\tonly lists the first match\n"
+"\t]I\t\tonly lists items below the cursor\n"
+"\t]i\t\tonly lists the first item below the cursor\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:555
+msgid "FINDING DEFINED IDENTIFIERS"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:558
+msgid ""
+"The \"[I\" command finds any identifier.  To find only macros, defined with "
+"\"#define\" use: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:560
+#, no-wrap
+msgid "\t[D\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:565
+#, no-wrap
+msgid ""
+"Again, this searches in included files.  The 'define' option specifies what a\n"
+"line looks like that defines the items for \"[D\".  You could change it to make\n"
+"it work with other languages than C or C++.\n"
+"   The commands related to \"[D\" are:\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:569
+#, no-wrap
+msgid ""
+"\t[d\t\tonly lists the first match\n"
+"\t]D\t\tonly lists items below the cursor\n"
+"\t]d\t\tonly lists the first item below the cursor\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:572
+#, no-wrap
+msgid "*29.5*\tFinding local identifiers\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:575
+msgid ""
+"The \"[I\" command searches included files.  To search in the current file "
+"only, and jump to the first place where the word under the cursor is used: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:577
+#, no-wrap
+msgid "\tgD\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:581
+msgid ""
+"Hint: Goto Definition.  This command is very useful to find a variable or "
+"function that was declared locally (\"static\", in C terms).  Example "
+"(cursor on \"counter\"):"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:589
+#, no-wrap
+msgid ""
+"\t   +->   static int counter = 0;\n"
+"\t   |\n"
+"\t   |     int get_counter(void)\n"
+"\tgD |     {\n"
+"\t   |\t     ++counter;\n"
+"\t   +--\t     return counter;\n"
+"\t\t }\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:592
+msgid ""
+"To restrict the search even further, and look only in the current function, "
+"use this command: >"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:594
+#, no-wrap
+msgid "\tgd\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:599
+msgid ""
+"This will go back to the start of the current function and find the first "
+"occurrence of the word under the cursor.  Actually, it searches backwards to "
+"an empty line above a \"{\" in the first column.  From there it searches "
+"forward for the identifier.  Example (cursor on \"idx\"):"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:608
+#, no-wrap
+msgid ""
+"\t\tint find_entry(char *name)\n"
+"\t\t{\n"
+"\t   +->\t    int idx;\n"
+"\t   |\n"
+"\tgd |\t    for (idx = 0; idx < table_len; ++idx)\n"
+"\t   |\t\tif (strcmp(table[idx].name, name) == 0)\n"
+"\t   +--\t\t    return idx;\n"
+"\t\t}\n"
+msgstr ""
+
+#. type: Plain text
+#: original/TXT/usr_29.txt:612
+msgid "Next chapter: |usr_30.txt| Editing programs"
+msgstr ""

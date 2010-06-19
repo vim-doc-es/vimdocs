@@ -228,7 +228,7 @@ menutrans &New<Tab>^Wn			Ventana\ &nueva<Tab>^Wn
 menutrans S&plit<Tab>^Ws		&Dividir\ la\ ventana<Tab>^Ws
 menutrans Sp&lit\ To\ #<Tab>^W^^	D&ividir\ en\ el\ marcador\ (#)<Tab>^W^^
 menutrans Split\ &Vertically<Tab>^Wv    Dividir\ &verticalmente<Tab>^Wv
-menutrans Split\ File\ E&xplorer	&Abrir\ el\ «Explorador\ de\ archivos»
+menutrans Split\ File\ E&xplorer	&Abrir\ el\ explorador\ de\ archivos
 menutrans &Close<Tab>^Wc		&Cerrar\ esta\ ventana<Tab>^Wc
 menutrans Close\ &Other(s)<Tab>^Wo	Cerrar\ &otra(s)\ ventana(s)<Tab>^Wo
 menutrans Move\ &To			Mov&er\ a

@@ -31,7 +31,7 @@ Editar con efectividad ~
 |usr_26.esx| Repetir
 |usr_27.esx| Órdenes y patrones de búsqueda
 |usr_28.txt| Plegar
-|usr_29.txt| Navegar a través de los programas
+|usr_29.txt| Moverse a través de programas
 |usr_30.txt| Editar programas
 |usr_31.txt| Aprovechar la interfaz gráfica
 |usr_32.txt| El árbol de deshacer
@@ -227,35 +227,35 @@ Temas que se pueden leer independientemente.
 		|26.3|	Realizar un cambio en varios archivos
 		|26.4|	Usar Vim desde un script de intérprete de órdenes
 
-|usr_27.txt|  Search commands and patterns
-		|27.1|	Ignoring case
-		|27.2|	Wrapping around the file end
-		|27.3|	Offsets
-		|27.4|	Matching multiple times
-		|27.5|	Alternatives
-		|27.6|	Character ranges
-		|27.7|	Character classes
-		|27.8|	Matching a line break
-		|27.9|	Examples
+		|usr_27.esx| Órdenes y patrones de búsqueda
+		|27.1|	Ignorar la distinción entre mayúsculas y minúsculas
+		|27.2|	Justificar el fin del archivo
+		|27.3|	Dirección relativa («offsets»)
+		|27.4|	Emparejar varios elementos
+		|27.5|	Alternativas
+		|27.6|	Rangos de caracteres
+		|27.7|	Clases de caracteres
+		|27.8|	Coincidir con un salto de línea
+		|27.9|	Ejemplos
 
-|usr_28.txt|  Folding
-		|28.1|	What is folding?
-		|28.2|	Manual folding
-		|28.3|	Working with folds
-		|28.4|	Saving and restoring folds
-		|28.5|	Folding by indent
-		|28.6|	Folding with markers
-		|28.7|	Folding by syntax
-		|28.8|	Folding by expression
-		|28.9|	Folding unchanged lines
-		|28.10| Which fold method to use?
+|usr_28.txt|  Plegar
+		|28.1|	¿Qué es plegar?
+		|28.2|	Plegar manualmente
+		|28.3|	Trabajar con pliegues
+		|28.4|	Guardar y restaurar pliegues
+		|28.5|	Plegar por sangrado
+		|28.6|	Plegar con marcadores
+		|28.7|	Plegar por sintaxis
+		|28.8|	Plegar por expresión
+		|28.9|	Plegar líneas sin cambios
+		|28.10¿| ¿Qué método de plegar debería usar?
 
-|usr_29.txt|  Moving through programs
-		|29.1|	Using tags
-		|29.2|	The preview window
-		|29.3|	Moving through a program
-		|29.4|	Finding global identifiers
-		|29.5|	Finding local identifiers
+|usr_29.txt|  Moverse a través de programas
+		|29.1|	Usar etiquetas
+		|29.2|	La ventana de previsualización
+		|29.3|	Moverse a través de un programa
+		|29.4|	Buscar identificadores globales
+		|29.5|	Buscar identificadores locales
 
 |usr_30.txt|  Editing programs
 		|30.1|	Compiling
@@ -352,4 +352,9 @@ Before you can use Vim.
 
 Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
 
-Traducción del documento: |vim-doc-es|
+==============================================================================
+
+Traducción del capítulo: Omar Campagne Polaino
+
+Proyecto: |vim-doc-es|
+
