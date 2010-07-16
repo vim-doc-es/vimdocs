@@ -2,19 +2,21 @@
 # Copyright (C) 2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the Vim package.
 # Automatically generated, 2010.
-#
+# Omar Campagne <ocampagne@gmail.com>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-06-19 19:32+0300\n"
-"PO-Revision-Date: 2010-06-19 19:32+0300\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2010-07-16 20:07+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: Spanish pootle.locamotion.org team\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.6.1\n"
 
 #. type: Plain text
 #: original/TXT/intro.txt:18 original/TXT/intro.txt:75
@@ -118,7 +120,8 @@ msgstr ""
 #: original/TXT/usr_31.txt:268
 #, no-wrap
 msgid "==============================================================================\n"
-msgstr "==============================================================================\n"
+msgstr "============================================================================"
+"==\n"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:4 original/TXT/usr_01.txt:4
@@ -163,17 +166,17 @@ msgstr "\t:set softtabstop=4\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:2
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "*usr_27.txt*\tFor Vim version 7.2.  Last change: 2007 Nov 10\n"
 msgid "*usr_30.txt*\tFor Vim version 7.2.  Last change: 2007 Nov 10\n"
-msgstr "*usr_27.esx*\tPara Vim versión 7.2.  Último cambio: 10/11/2007\n"
+msgstr "*usr_30.esx*\tPara Vim versión 7.2.  Último cambio: 10/11/2007\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:6
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t\t\t     Editing other files\n"
 msgid "\t\t\t      Editing programs\n"
-msgstr "\t\t\t    Editar otros archivos\n"
+msgstr "\t\t\t    Editar programas\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:11
@@ -182,10 +185,14 @@ msgid ""
 "program and directly jump to reported errors.  Automatically set the indent "
 "for many languages and format comments."
 msgstr ""
+"Vim tiene varias órdenes que asisten en la edición de programas de "
+"ordenador. Puede compilar un programa y saltar directamente a los errores "
+"que aparecen, y definir la tabulación automáticamente para varios lenguajes "
+"así como el formato de los comentarios."
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:18
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|30.1|\tCompiling\n"
 "|30.2|\tIndenting C files\n"
@@ -194,13 +201,12 @@ msgid ""
 "|30.5|\tTabs and spaces\n"
 "|30.6|\tFormatting comments\n"
 msgstr ""
-"|usr_30.txt|  Editing programs\n"
-"\t\t|30.1|\tCompiling\n"
-"\t\t|30.2|\tIndenting C files\n"
-"\t\t|30.3|\tAutomatic indenting\n"
-"\t\t|30.4|\tOther indenting\n"
-"\t\t|30.5|\tTabs and spaces\n"
-"\t\t|30.6|\tFormatting comments\n"
+"|30.1|\tCompilar\n"
+"|30.2|\tSangrado en archivos C\n"
+"|30.3|\tSangrado automático\n"
+"|30.4|\tOtros sangrados\n"
+"|30.5|\tTabulados y espacios\n"
+"|30.6|\tFormatear comentarios\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:22
@@ -214,16 +220,16 @@ msgid ""
 " Previous chapter: |usr_29.txt|  Moving through programs\n"
 "Table of contents: |usr_toc.txt|\n"
 msgstr ""
-" Siguiente capítulo: |usr_30.txt|  Editar programas\n"
+" Siguiente capítulo: |usr_31.txt|  Editar programas\n"
 "  Capítulo anterior: |usr_28.esx|  Plegado\n"
 "Tabla de contenidos: |usr_toc.esx|\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:25
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "*24.3*\tCompletion\n"
 msgid "*30.1*\tCompiling\n"
-msgstr "*24.3*\tAutocompletado\n"
+msgstr "*30.1*\tCompilar\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:30
@@ -233,6 +239,11 @@ msgid ""
 "and fix them (hopefully).  You can then recompile and fix any new errors "
 "that are found until finally your program compiles without any error."
 msgstr ""
+"Vim tiene un conjunto de órdenes de «arreglos rápidos». Le permiten compilar "
+"un programa desde Vim y después navegar a través de los errores generados y "
+"(posiblemente) arreglarlos. Puede después recompilar y arreglar cualquier "
+"error nuevo detectado hasta que finalmente su programa se compile sin "
+"problemas."
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:33
@@ -240,12 +251,14 @@ msgid ""
 "The following command runs the program \"make\" (supplying it with any "
 "argument you give) and captures the results: >"
 msgstr ""
+"La siguiente orden ejecuta el programa «make» (introduciendo cualquier "
+"argumento) y captura los resultados: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:35
 #, no-wrap
 msgid "\t:make {arguments}\n"
-msgstr ""
+msgstr "\t:make {arguments}\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:41
@@ -257,6 +270,13 @@ msgid ""
 "far more errors and fewer stupid ones.)  After typing \":make\" the screen looks\n"
 "like this:\n"
 msgstr ""
+"Si se genera algún error, se captura y el editor le posicionará sobre el "
+"primer error.\n"
+"   Este es un ejemplo de una sesión típica de «:make». (Las sesiones típicas "
+"de «:make»\n"
+"generan muchos menos errores y menos errores estúpidos.) La pantalla "
+"presentará este\n"
+"aspecto después de teclear «:make»:\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:49
@@ -270,6 +290,13 @@ msgid ""
 "\tmain.c:10: parse error before '}' ~\n"
 "\tmake: *** [prog] Error 1 ~\n"
 msgstr ""
+"\t:!make | &tee /tmp/vim215953.err ~\n"
+"\tgcc -g -Wall -o prog main.c sub.c ~\n"
+"\tmain.c: In function 'main': ~\n"
+"\tmain.c:6: too many arguments to function 'do_sub' ~\n"
+"\tmain.c: At top level: ~\n"
+"\tmain.c:10: parse error before '}' ~\n"
+"\tmake: *** [prog] Error 1 ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:54
@@ -280,6 +307,10 @@ msgid ""
 "\t(3 of 6): too many arguments to function 'do_sub' ~\n"
 "\tPress ENTER or type command to continue ~\n"
 msgstr ""
+"\t2 returned ~\n"
+"\t\"main.c\" 11L, 111C ~\n"
+"\t(3 of 6): too many arguments to function 'do_sub' ~\n"
+"\tPress ENTER or type command to continue ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:59
@@ -290,6 +321,10 @@ msgid ""
 "file or the line number, Vim knew where to go by looking in the error "
 "messages."
 msgstr ""
+"Aquí puede ver que tiene errores en el archivo «main.c». Cuando pulse "
+"<Intro>, Vim mostrará el archivo «main.c», con el cursor posicionado en la "
+"línea 6, la primera con un error. No necesitó definir el archivo o el número "
+"de línea, ya que Vim sabe donde ir analizando los mensajes de error."
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:72
@@ -308,22 +343,33 @@ msgid ""
 "\t\t|(3 of 12): too many arguments to function 'do_sub' |\n"
 "\t\t+---------------------------------------------------+\n"
 msgstr ""
+"\t\t+---------------------------------------------------+\n"
+"\t\t|int main()\t\t\t\t\t    |\n"
+"\t\t|{\t\t\t\t\t\t    |\n"
+"\t\t|\tint i=3;\t\t\t\t    |\n"
+"      cursor -> |\tdo_sub(\"foo\");\t\t\t\t    |\n"
+"\t\t|\t++i;\t\t\t\t\t    |\n"
+"\t\t|\treturn (0);\t\t\t\t    |\n"
+"\t\t|}\t\t\t\t\t\t    |\n"
+"\t\t|}\t\t\t\t\t\t    |\n"
+"\t\t| ~\t\t\t\t\t\t    |\n"
+"\t\t|(3 of 12): too many arguments to function 'do_sub' |\n"
+"\t\t+---------------------------------------------------+\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:74
-#, fuzzy
 #| msgid ""
 #| "The following command makes the mouse work like a Microsoft Windows "
 #| "mouse: >"
 msgid "The following command goes to where the next error occurs: >"
-msgstr "La siguiente orden hace que el ratón se comporte como en Windows: >"
+msgstr "La siguiente orden va a la aparición del siguiente error: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:76
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:next\n"
 msgid "\t:cnext\n"
-msgstr "\t:next\n"
+msgstr "\t:cnext\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:80
@@ -333,13 +379,18 @@ msgid ""
 "   When there is not enough room, Vim will shorten the error message.  To see\n"
 "the whole message use: >\n"
 msgstr ""
+"Vim salta a la línea 10, la última línea en el archivo, donde hay un «}» "
+"adicional.\n"
+"   Cuando no hay suficiente espacio Vim acorta el mensaje de error. Para ver "
+"el mensaje\n"
+"completo, use lo siguiente: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:82
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\tzc\n"
 msgid "\t:cc\n"
-msgstr "\tzc\n"
+msgstr "\t:cc\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:85
@@ -347,6 +398,8 @@ msgid ""
 "You can get an overview of all the error messages with the \":clist\" "
 "command.  The output looks like this: >"
 msgstr ""
+"Puede obtener una visión general de todos los mensajes de error con la orden "
+"« clist».  La salida tiene el siguiente aspecto: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:89
@@ -356,6 +409,9 @@ msgid ""
 "<\t3 main.c: 6:too many arguments to function 'do_sub' ~\n"
 "\t5 main.c: 10:parse error before '}' ~\n"
 msgstr ""
+"\t:clist\n"
+"<\t3 main.c: 6:too many arguments to function 'do_sub' ~\n"
+"\t5 main.c: 10:parse error before '}' ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:95
@@ -366,6 +422,12 @@ msgid ""
 "you want to see.  Output from the linker, for example, about an undefined "
 "function.  To see all the messages add a \"!\" to the command: >"
 msgstr ""
+"Sólo se muestran las líneas donde Vim reconoció un nombre de fichero y un "
+"número de línea. Asume que aquéllas son las líneas de interés, mientras que "
+"toma el resto como mensajes aburridos. Aún así, a veces las líneas no "
+"reconocidas contiene algo que desee ver. Por ejemplo, la salida del "
+"enlazador acerca de una función no definida. Para ver todos los mensajes, "
+"añada «!» a la orden: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:103
@@ -379,6 +441,13 @@ msgid ""
 "\t5 main.c:10: parse error before '}' ~\n"
 "\t6 make: *** [prog] Error 1 ~\n"
 msgstr ""
+"¡\t:clist!\n"
+"<\t1 gcc -g -Wall -o prog main.c sub.c ~\n"
+"\t2 main.c: In function 'main': ~\n"
+"\t3 main.c:6: too many arguments to function 'do_sub' ~\n"
+"\t4 main.c: At top level: ~\n"
+"\t5 main.c:10: parse error before '}' ~\n"
+"\t6 make: *** [prog] Error 1 ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:107
@@ -388,13 +457,15 @@ msgid ""
 ">\n"
 "\t:cprevious\n"
 msgstr ""
+"Vim resaltará el error actual. Use lo siguiente para volver al error "
+"anterior: >\n"
+"\t:cprevious\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:109
-#, fuzzy
 #| msgid "The most often used keys to move around in the command line:"
 msgid "Other commands to move around in the error list:"
-msgstr "Las teclas más usadas para desplazarse en la línea de órdenes:"
+msgstr "Otras órdenes para desplazarse por la lista de errores:"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:113
@@ -404,13 +475,15 @@ msgid ""
 "\t:clast\t\tto last error\n"
 "\t:cc 3\t\tto error nr 3\n"
 msgstr ""
+"\t:cfirst\t\tprimer error\n"
+"\t:clast\t\túltimo error\n"
+"\t:cc 3\t\terror número 3\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:116
-#, fuzzy
 #| msgid "USING THE MOUSE"
 msgid "USING ANOTHER COMPILER"
-msgstr "USO DEL RATÓN"
+msgstr "USAR OTRO COMPILADOR"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:120
@@ -420,13 +493,17 @@ msgid ""
 "Visual C++ users should set this to \"nmake\" by executing the following "
 "command: >"
 msgstr ""
+"El nombre del programa a ejecutar cuando usa la orden «:make» se define con "
+"la opción 'makeprg'. Habitualmente, esto se define como «make», pero "
+"usuarios de Visual C++ deberían definir esto como «nmake» ejecutando la "
+"siguiente orden: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:122
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:set foldmethod=marker\n"
 msgid "\t:set makeprg=nmake\n"
-msgstr "\t:set foldmethod=marker\n"
+msgstr "\t:set makeprg=nmake\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:125
@@ -434,12 +511,14 @@ msgid ""
 "You can also include arguments in this option.  Special characters need to "
 "be escaped with a backslash.  Example: >"
 msgstr ""
+"También puede incluir argumentos en esta opción.  Los caracteres especiales "
+"se deben escapar con una barra invertida.  Ejemplo: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:127
 #, no-wrap
 msgid "\t:set makeprg=nmake\\ -f\\ project.mak\n"
-msgstr ""
+msgstr "\t:set makeprg=nmake\\ -f\\ project.mak\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:132
@@ -450,22 +529,26 @@ msgid ""
 "command: >\n"
 "\t:set makeprg=make\\ %\n"
 msgstr ""
+"Puede incluir palabras clave especiales de Vim al especificar la orden. El "
+"carácter «%»\n"
+"se expande con el nombre del archivo actual. Así que se ejecuta la siguiente "
+"orden: >\n"
+"\t:set makeprg=make\\ %\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:134
-#, fuzzy
 #| msgid ""
 #| "To find out what digraphs are available, use the following command: >"
 msgid ""
 "When you are editing main.c, then \":make\" executes the following command: >"
-msgstr "Use la siguiente orden para ver qué dígrafos están disponibles: >"
+msgstr "Al editar «main.c», «:make» ejecutará la siguiente orden: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:136
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\tImain.<Esc>\n"
 msgid "\tmake main.c\n"
-msgstr "\tImain.<Esc>\n"
+msgstr "\tmake main.c\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:139
@@ -473,38 +556,40 @@ msgid ""
 "This is not too useful, so you will refine the command a little and use the :"
 "r (root) modifier: >"
 msgstr ""
+"Esto no es tan útil, así que refinaría la orden con el modificador «:r» "
+"(root): >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:141
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:set foldmethod=marker\n"
 msgid "\t:set makeprg=make\\ %:r.o\n"
-msgstr "\t:set foldmethod=marker\n"
+msgstr "\t:set makeprg=make\\ %:r.o\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:143
-#, fuzzy
 #| msgid "The result is as follows:"
 msgid "Now the command executed is as follows: >"
-msgstr "El resultado es el siguiente:"
+msgstr "Ahora, la orden se ejecuta de la siguiente manera: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:145
 #, no-wrap
 msgid "\tmake main.o\n"
-msgstr ""
+msgstr "\tmake main.o\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:147
-#, fuzzy
 #| msgid "More about all of this here: |cmdline-completion|"
 msgid "More about these modifiers here: |filename-modifiers|."
-msgstr "Puede leer más acerca de esto aquí: |cmdline-completion|"
+msgstr ""
+"Para más información acerca de los modificadores, consulte: |filename-"
+"modifiers|."
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:150
 msgid "OLD ERROR LISTS"
-msgstr ""
+msgstr "LISTAS DE ERRORES ANTIGUOS"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:156
@@ -515,13 +600,19 @@ msgid ""
 "It doesn't show up in the last error list, since the file with the warning "
 "wasn't compiled again.  You can go back to the previous error list with: >"
 msgstr ""
+"Suponga que compila un programa con «:make». Hay un mensaje de aviso en un "
+"archivo y un mensaje de error en otro. Arregla el mensaje y usa «:make» otra "
+"vez para comprobar que lo ha arreglado. Ahora desea ver el mensaje de "
+"aviso. No aparece en la última lista de errores ya que aún no se ha "
+"compilado el archivo con el aviso. Puede volver a la lista de errores previa "
+"con: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:158
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:abclear\n"
 msgid "\t:colder\n"
-msgstr "\t:abclear\n"
+msgstr "\t:colder\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:161
@@ -530,23 +621,25 @@ msgid ""
 "Then use \":clist\" and \":cc {nr}\" to jump to the place with the warning.\n"
 "   To go forward to the next error list: >\n"
 msgstr ""
+"Use ahora «:clist» y «:cc {nr}» para saltar al lugar con el aviso.\n"
+"   Use lo siguiente para avanzar a la siguiente lista de errores: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:163
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:new\n"
 msgid "\t:cnewer\n"
-msgstr "\t:new\n"
+msgstr "\t:cnewer\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:165
 msgid "Vim remembers ten error lists."
-msgstr ""
+msgstr "Puede puede recordar diez listas de error."
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:168
 msgid "SWITCHING COMPILERS"
-msgstr ""
+msgstr "CAMBIAR DE COMPILADOR"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:173
@@ -556,6 +649,10 @@ msgid ""
 "option is quite complicated and it can be made to fit almost any compiler.  "
 "You can find the explanation here: |errorformat|."
 msgstr ""
+"Tiene que decir el Vim el formato de los mensajes de error que produce su "
+"compilador. Esto se puede hacer con la opción 'errorformat'. La sintaxis de "
+"esta opción es algo complicada, y puede hacer que encaje con prácticamente "
+"cualquier compilador. Puede encontrar la explicación aquí: |errorformat|."
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:178
@@ -565,13 +662,17 @@ msgid ""
 "a simple method for this.  For example, to switch to using the Microsoft "
 "Visual C++ compiler: >"
 msgstr ""
+"Puede que esté usando varios compiladores diferentes. Definir la opción "
+"'makeprg' y especialmente la opción 'errorformat' cada vez no es un tarea "
+"sencilla. Vim ofrece una forma sencilla de hacer esto. Por ejemplo, para "
+"cambiar al compilador Microsoft Visual C++: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:180
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:file move.c\n"
 msgid "\t:compiler msvc\n"
-msgstr "\t:file move.c\n"
+msgstr "\t:compiler msvc\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:184
@@ -581,11 +682,15 @@ msgid ""
 "options.\n"
 "   You can write your own compiler files.  See |write-compiler-plugin|.\n"
 msgstr ""
+"Esto encontrará el script de Vim para el compilador «msvc» y definirá las "
+"opciones adecuadas.\n"
+"   Puede escribir sus propios archivos de compilador. Consulte |write-"
+"compiler-plugin|.\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:187
 msgid "OUTPUT REDIRECTION"
-msgstr ""
+msgstr "REDIRECCIONAMIENTO DE LA SALIDA"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:193
@@ -596,6 +701,11 @@ msgid ""
 "'shellpipe' options.  The 'shellquote' and 'shellxquote' options might also "
 "matter."
 msgstr ""
+"La orden «:make» redirige la salida del programa ejecutado a un archivo "
+"error. El modo en que esto funciona depende de varias cosas, tales como la "
+"consola ('shell'). Si su orden «:make» no captura la salida, compruebe las "
+"opciones 'makeef' y 'shellpipe'. Las opciones 'shellquote' y 'shellxquote' "
+"también son de importancia."
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:197
@@ -604,25 +714,28 @@ msgid ""
 "is to compile the program in another window and redirect the output into a "
 "file.  Then have Vim read this file with: >"
 msgstr ""
+"En el caso de que no puede hacer que «:make» redirija la salida del archivo, "
+"una alternativa es compilar el programa en otra ventana y redirigir la "
+"salida al archivo. Después, haga que Vim lea este archivo con: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:199
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:file move.c\n"
 msgid "\t:cfile {filename}\n"
-msgstr "\t:file move.c\n"
+msgstr "\t:cfile {filename}\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:201
 msgid "Jumping to errors will work like with the \":make\" command."
-msgstr ""
+msgstr "Saltar a errores funcionará como la orden «:make»."
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:204
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "*02.2*\tInserting text\n"
 msgid "*30.2*\tIndenting C style text\n"
-msgstr "*02.2*\tInsertar texto\n"
+msgstr "*30.2*\tSangrado en archivos C\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:211
@@ -634,13 +747,20 @@ msgid ""
 "Set the 'shiftwidth' option to the amount of spaces you want for a deeper "
 "level.  Four spaces will work fine.  One \":set\" command will do it: >"
 msgstr ""
+"Un programa es mucho más fácil de entender cuando las líneas tienen un "
+"sangrado adecuado. Vim ofrece varias formas de disminuir el trabajo de "
+"lograr esto. Para programas C o con estilo C como Java o C++, defina la "
+"opción 'cindent'. Vim sabe mucho acerca de programas C e intentará definir "
+"el sangrado automáticamente. Defina la opción 'shiftwidth'  con el número de "
+"espacios que desea para cada nivel de profundidad. Cuatro espacios "
+"funcionarán bien. Puede hacerlo con una orden 'set': >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:213
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:set shiftwidth=4\n"
 msgid "\t:set cindent shiftwidth=4\n"
-msgstr "\t:set shiftwidth=4\n"
+msgstr "\t:set cindent shiftwidth=4\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:216
@@ -648,6 +768,8 @@ msgid ""
 "With this option enabled, when you type something such as \"if (x)\", the "
 "next line will automatically be indented an additional level."
 msgstr ""
+"Con esta opción activada, cuando escriba algo como «if (x)», la siguiente "
+"línea tendrá un nivel de sangrado adicional de forma automática."
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:223
@@ -668,6 +790,10 @@ msgid ""
 "the start and unindented at the end.  The unindenting will happen after "
 "typing the '}', since Vim can't guess what you are going to type."
 msgstr ""
+"Cuando teclee algo entre corchetes ({}), el texto tendrá un sangrado al "
+"inicio, y pero no al final. La eliminación de sangrado («unindenting») "
+"aparecerá después de teclear '}', ya que Vim no puede adivinar qué va a "
+"escribir."
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:235
@@ -681,6 +807,17 @@ msgid ""
 "   A missing ) and ; also cause extra indent.  Thus if you get more white\n"
 "space than you would expect, check the preceding lines.\n"
 msgstr ""
+"Un efecto secundario del sangrado automático es que le permite encontrar los "
+"errores\n"
+"en su código de manera temprana. Cuando teclea «}» para finalizar una "
+"función, sólo\n"
+"para ver que el sangrado automático la da más sangrado del esperado, puede "
+"que falte\n"
+"un «}». Use la orden «%» para encontrar qué «{» encaja con la «}» que "
+"tecleó.\n"
+"  Un «)» y «;» omitido también causan un sangrado adicional. Por ello, si "
+"obtiene más espacios\n"
+"en blanco del esperado, compruebe la líneas precedentes.\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:239
@@ -689,12 +826,15 @@ msgid ""
 "lines, you need to re-indent the lines.  The \"=\" operator does this.  The "
 "simplest form is: >"
 msgstr ""
+"Cuando tiene código mal formateado, o si ha insertado o eliminado líneas, "
+"tendrá que sangrar las líneas nuevamente. El operador «=» hace esto. La "
+"forma más simple es: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:241
 #, no-wrap
 msgid "\t==\n"
-msgstr ""
+msgstr "\t==\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:246
@@ -704,13 +844,18 @@ msgid ""
 "text object is \"a{\".  This selects the current {} block.  Thus, to re-"
 "indent the code block the cursor is in: >"
 msgstr ""
+"Esto sangra la línea actual. Al igual que el resto de los operadores, hay "
+"tres formas de usarlo. En el modo Visual, «=» sangra las líneas "
+"seleccionadas. Un objeto de texto útil es «a{». Esto selecciona el bloque "
+"«{}» actual. Por lo tanto, para sangrar otra vez el bloque de código en el "
+"que se encuentra el cursor: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:248
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t3@a\n"
 msgid "\t=a{\n"
-msgstr "\t3@a\n"
+msgstr "\t=a{\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:252
@@ -720,6 +865,9 @@ msgid ""
 ">\n"
 "\tgg=G\n"
 msgstr ""
+"Si tiene código con un pésimo sangrado, puede sangrar nuevamente el archivo "
+"completo con: >\n"
+"\tgg=G\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:256
@@ -728,13 +876,15 @@ msgid ""
 "The automatic indenting does a good job, but in some situations you might "
 "want to overrule it."
 msgstr ""
+"Sin embargo, no lo haga en los archivos que han sido cuidadosamente "
+"sangrados manualmente.  El sangrado automático hace un buen trabajo, pero en "
+"algunas situaciones puede que desee anularlo."
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:259
-#, fuzzy
 #| msgid "SELECTING LINES"
 msgid "SETTING INDENT STYLE"
-msgstr "SELECCIONAR LÍNEAS"
+msgstr "DEFINIR EL ESTILO DE SANGRADO"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:267
@@ -748,6 +898,18 @@ msgid ""
 "add various items where you want something different.  For example, to make\n"
 "curly braces be placed like this:\n"
 msgstr ""
+"Diferentes personas tienen diferentes estilos de sangrado. Por omisión, Vim "
+"realiza\n"
+"un buen trabajo de sangrado de la manera en que lo hacen el 90% de los "
+"programadores.\n"
+"Aun así, hay diferentes estilos; así que si lo desea, puede personalizar el "
+"estilo de sangrado\n"
+"con la opción 'cinoptions'.\n"
+"   Por omisión, 'cinoptions' está vacío, usando Vim el estilo predefinido. "
+"Puede añadir\n"
+"varios elementos cuando desee algo diferente. Por ejemplo, para ubicar "
+"corchetes de la\n"
+"siguiente forma:\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:273
@@ -759,32 +921,36 @@ msgid ""
 "\t    j = 0; ~\n"
 "\t  } ~\n"
 msgstr ""
+"\tif (flag) ~\n"
+"\t  { ~\n"
+"\t    i = 8; ~\n"
+"\t    j = 0; ~\n"
+"\t  } ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:275
-#, fuzzy
 #| msgid "To start Vim, enter this command: >"
 msgid "Use this command: >"
-msgstr "Para ejecutar Vim, introduzca esta orden: >"
+msgstr "Use esta orden: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:277
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:set guioptions+=b\n"
 msgid "\t:set cinoptions+={2\n"
-msgstr "\t:set guioptions+=b\n"
+msgstr "\t:set cinoptions+={2\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:279
 msgid "There are many of these items.  See |cinoptions-values|."
-msgstr ""
+msgstr "Hay muchos de estos elementos. Consulte |cinoptions-values|."
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:282
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "*20.1*\tCommand line editing\n"
 msgid "*30.3*\tAutomatic indenting\n"
-msgstr "*20.1*\tEdición en línea de órdenes\n"
+msgstr "*30.3*\tSangrado automático\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:285
@@ -792,13 +958,15 @@ msgid ""
 "You don't want to switch on the 'cindent' option manually every time you "
 "edit a C file.  This is how you make it work automatically: >"
 msgstr ""
+"No desea activar la opción 'cindent' manualmente cada vez que edite un "
+"archivo C. Esta es la forma de hacer que funcione automáticamente: > "
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:287
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:filetype plugin on\n"
 msgid "\t:filetype indent on\n"
-msgstr "\t:filetype plugin on\n"
+msgstr "\t:filetype indent on\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:295
@@ -812,19 +980,31 @@ msgid ""
 "programming languages.  This indent file will then prepare for automatic\n"
 "indenting specifically for this file.\n"
 msgstr ""
+"En realidad, esto hace  mucho más que activar 'cindent'  para archivos C. En "
+"primer\n"
+"lugar, activa la detección de tipo de archivo. Es lo mismo que lo que usar "
+"para el\n"
+"resaltado de sintaxis.\n"
+"   Si el tipo de archivo es conocido, Vim buscará un archivo de sangrado "
+"para este tipo de\n"
+"archivo. La distribución de Vim incluye un número para estos lenguajes de "
+"programación.\n"
+"Este archivo de sangrado preparará automáticamente el sangrado específico "
+"para este\n"
+"archivo.\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:297
 msgid ""
 "If you don't like the automatic indenting, you can switch it off again: >"
-msgstr ""
+msgstr "Si no le gusta el sangrado automático, puede desactivarlo de nuevo: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:299
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:filetype plugin on\n"
 msgid "\t:filetype indent off\n"
-msgstr "\t:filetype plugin on\n"
+msgstr "\t:filetype indent off\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:302
@@ -832,24 +1012,26 @@ msgid ""
 "If you don't like the indenting for one specific type of file, this is how "
 "you avoid it.  Create a file with just this one line: >"
 msgstr ""
+"Si no le gusta el sangrado para un tipo específico de archivo, esta es la "
+"forma de evitarlo. Cree un archivo con sólo esta línea: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:304
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:set autoindent\n"
 msgid "\t:let b:did_indent = 1\n"
-msgstr "\t:set autoindent\n"
+msgstr "\t:let b:did_indent = 1\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:306
 msgid "Now you need to write this in a file with a specific name:"
-msgstr ""
+msgstr "Ahora tiene que guardar este archivo con un nombre específico:"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:308
 #, no-wrap
 msgid "\t{directory}/indent/{filetype}.vim\n"
-msgstr ""
+msgstr "\t{directorio}/indent/{tipo-de-archivo}.vim\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:311
@@ -857,25 +1039,28 @@ msgid ""
 "The {filetype} is the name of the file type, such as \"cpp\" or \"java\".  "
 "You can see the exact name that Vim detected with this command: >"
 msgstr ""
+"El {tipo-de-archivo} es el nombre del tipo de archivo, por ejemplo, «cpp» o "
+"«java». Puede ver el nombre exacto de archivo que Vim ha detectado con la "
+"siguiente orden: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:313
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t\t:set filetype=fortran\n"
 msgid "\t:set filetype\n"
-msgstr "\t\t:set filetype=fortran\n"
+msgstr "\t:set filetype\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:315
 msgid "In this file the output is:"
-msgstr ""
+msgstr "En este archivo, el resultado es:"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:317
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:filetype plugin on\n"
 msgid "\tfiletype=help ~\n"
-msgstr "\t:filetype plugin on\n"
+msgstr "\tfiletype=help ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:321
@@ -885,13 +1070,17 @@ msgid ""
 "   For the {directory} part you need to use your runtime directory.  Look at\n"
 "the output of this command: >\n"
 msgstr ""
+"Entonces, usaría «help» para {tipo-de-archivo}.\n"
+"   Para la parte de {directorio}, necesita usar su directorio de tiempo de "
+"ejecución.\n"
+"Mire la salida de esta orden: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:323
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\tset autoindent\n"
 msgid "\tset runtimepath\n"
-msgstr "\tset autoindent\n"
+msgstr "\tset runtimepath\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:326
@@ -899,24 +1088,28 @@ msgid ""
 "Now use the first item, the name before the first comma.  Thus if the output "
 "looks like this:"
 msgstr ""
+"Ahora use el primer elemento, el nombre que precede a la primera coma. Así, "
+"la salida tiene el siguiente aspecto:"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:328
 #, no-wrap
 msgid "\truntimepath=~/.vim,/usr/local/share/vim/vim60/runtime,~/.vim/after ~\n"
-msgstr ""
+msgstr "\truntimepath=~/.vim,/usr/local/share/vim/vim60/runtime,~/.vim/after ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:330
 msgid "You use \"~/.vim\" for {directory}.  Then the resulting file name is:"
 msgstr ""
+"Puede usar «~/.vim» para el {directorio}. Entonces, el nombre del archivo "
+"resultante es:"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:332
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\tvim -S ~/.vim/mine.vim\n"
 msgid "\t~/.vim/indent/help.vim ~\n"
-msgstr "\tvim -S ~/.vim/mio.vim\n"
+msgstr "\t~/.vim/indent/help.vim ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:335
@@ -924,13 +1117,15 @@ msgid ""
 "Instead of switching the indenting off, you could write your own indent "
 "file.  How to do that is explained here: |indent-expression|."
 msgstr ""
+"En lugar de desactivar el sangrado, podría escribir su propio archivo de "
+"sangrado. La manera de hacerlo se explica aquí: |indent-expression|."
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:338
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "*11.4*\tFurther reading\n"
 msgid "*30.4*\tOther indenting\n"
-msgstr "*11.4*  Más información\n"
+msgstr "*30.4*\tOtros sangrados\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:349
@@ -947,13 +1142,30 @@ msgid ""
 "preprocessor directives will all start in column 1.  The indentation is\n"
 "restored for the next line.\n"
 msgstr ""
+"La forma más simple de sangrado automático es con la opción 'autoindent',\n"
+"ya que usa el sangrado de la línea anterior. La opción 'smartindent' es un "
+"poco más\n"
+"inteligente. Es útil con aquellos lenguajes que no disponen de un archivo de "
+"sangrado.\n"
+"'smartindent' no es tan inteligente como 'cindent', pero es más inteligente "
+"que\n"
+"'autoindent'.\n"
+"  Si 'smartindent' está definido, se añadirá un nivel adicional de sangrado "
+"para cada\n"
+"«{», y se eliminará para cada «}». También se añadirá un nivel adicional de "
+"sangrado para\n"
+"cada palabra en la opción 'cinwords'. Las líneas que empiezan con «#» se "
+"tratan de forma\n"
+"especial: todo el sangrado se elimina. Esto se hace de forma que todas las "
+"directivas de\n"
+"preproceso empiecen en la primera columna. El sangrado se restaura en la "
+"siguiente línea.\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:352
-#, fuzzy
 #| msgid "INCREASING INDENT"
 msgid "CORRECTING INDENTS"
-msgstr "AUMENTAR EL SANGRADO"
+msgstr "CORREGIR EL SANGRADO"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:359
@@ -966,6 +1178,14 @@ msgid ""
 "   For example, you are typing a shell script that is supposed to look like\n"
 "this:\n"
 msgstr ""
+"Cuando use 'autoindent' o 'smartindent' para obtener el sangrado de línea "
+"anterior,\n"
+"habrá ocasiones en que necesite añadir o eliminar un 'shiftwidth' de "
+"sangrado. La\n"
+"forma rápida de hacerlo es usando las órdenes «CTRL-D» y «CTRL-T» en modo "
+"Insertar.\n"
+"   Por ejemplo, está escribiendo un script de consola con el siguiente "
+"aspecto:\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:364
@@ -976,26 +1196,31 @@ msgid ""
 "\t   echo \"-------\" ~\n"
 "\tfi ~\n"
 msgstr ""
+"\tif test -n a; then ~\n"
+"\t   echo a ~\n"
+"\t   echo \"-------\" ~\n"
+"\tfi ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:366
-#, fuzzy
 #| msgid "Try this by setting the 'foldmethod' option: >"
 msgid "Start off by setting these option: >"
-msgstr "Pruebe esto definiendo la opción 'foldmethod': >"
+msgstr "Empiece por definir esta opción: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:368
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:set shiftwidth=4\n"
 msgid "\t:set autoindent shiftwidth=3\n"
-msgstr "\t:set shiftwidth=4\n"
+msgstr "\t:set autoindent shiftwidth=3\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:370
 msgid ""
 "You start by typing the first line, <Enter> and the start of the second line:"
 msgstr ""
+"Puede empezar a escribir la primer línea, <Intro>, y el principio de la "
+"segunda:"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:373
@@ -1004,11 +1229,14 @@ msgid ""
 "\tif test -n a; then ~\n"
 "\techo ~\n"
 msgstr ""
+"\tif test -n a; then ~\n"
+"\techo ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:375
 msgid "Now you see that you need an extra indent.  Type CTRL-T.  The result:"
 msgstr ""
+"Ahora ve que necesita un sangrado adicional. Pulse«CTRL-T». El resultado:"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:378
@@ -1017,6 +1245,8 @@ msgid ""
 "\tif test -n a; then ~\n"
 "\t   echo ~\n"
 msgstr ""
+"\tif test -n a; then ~\n"
+"\t   echo ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:383
@@ -1027,6 +1257,12 @@ msgid ""
 "   You continue typing the second line, <Enter> and the third line.  This time\n"
 "the indent is OK.  Then <Enter> and the last line.  Now you have this:\n"
 msgstr ""
+"La orden «CTRL-T», en modo Insertar, añade un 'shiftwidth' al sangrado, sin\n"
+"importar en que línea está.\n"
+"   Continua escribiendo en la segunda línea, <Intro>, y la tercera línea. "
+"Esta\n"
+"vez el sangrado es correcto. Pulse <Intro> y salte a la última línea. Ahora\n"
+"tiene lo siguiente:\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:388
@@ -1037,6 +1273,10 @@ msgid ""
 "\t   echo \"-------\" ~\n"
 "\t   fi ~\n"
 msgstr ""
+"\tif test -n a; then ~\n"
+"\t   echo a ~\n"
+"\t   echo \"-------\" ~\n"
+"\t   fi ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:394
@@ -1048,12 +1288,21 @@ msgid ""
 "shift lines.  \">\" and \"<\" are operators, thus you have the usual three ways to\n"
 "specify the lines you want to indent.  A useful combination is: >\n"
 msgstr ""
+"Para eliminar el sangrado innecesario en la última línea pulse «CTRL-D». "
+"Esto elimina\n"
+"un 'shiftwidth' de sangrado, sin importar donde está dentro de la línea.\n"
+"   Cuando está en modo Normal, puede usar las órdenes «>>» y «<<» para "
+"cambiar\n"
+"las líneas. «>» y «<» son operadores, y por ello tiene las tres formas "
+"habituales de\n"
+"definir las líneas que desea sangrar. Una combinación útil es la siguiente: "
+">\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:396
 #, no-wrap
 msgid "\t>i{\n"
-msgstr ""
+msgstr "\t>i{\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:400
@@ -1062,12 +1311,15 @@ msgid ""
 "lines themselves are left unmodified.  \">a{\" includes them.  In this "
 "example the cursor is on \"printf\":"
 msgstr ""
+"Esto añade un sangrado al bloque de líneas actual, dento de «{}». Las líneas "
+"«{» y «}» se dejan sin modificar, mientras que «>a}» las incluye. En este "
+"ejemplo, el cursor está sobre «printf»:"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:402
 #, no-wrap
 msgid "\toriginal text\t\tafter \">i{\"\t\tafter \">a{\"\n"
-msgstr ""
+msgstr "\ttexto original\t\tdespués de «>i{»\t\tdespués de «>a{»\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:408
@@ -1079,13 +1331,18 @@ msgid ""
 "\tflag = 0;\t\t    flag = 0;\t\t    flag = 0;  ~\n"
 "\t}\t\t\t}\t\t\t    } ~\n"
 msgstr ""
+"\tif (flag)\t\tif (flag)\t\tif (flag) ~\n"
+"\t{\t\t\t{\t\t\t    { ~\n"
+"\tprintf(\"yes\");\t\t    printf(\"yes\");\t    printf(\"yes\"); ~\n"
+"\tflag = 0;\t\t    flag = 0;\t\t    flag = 0;  ~\n"
+"\t}\t\t\t}\t\t\t    } ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:411
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "*08.9*\tTab pages\n"
 msgid "*30.5*\tTabs and spaces\n"
-msgstr "*08.9*\tPestañas\n"
+msgstr "*30.5*\tTabulados y espacios\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:425
@@ -1105,6 +1362,28 @@ msgid ""
 "you can't use a <Tab> character to make your indent.  There are two ways to\n"
 "handle this:\n"
 msgstr ""
+"Por omisión, 'tabstop' está definido con un valor de 8. Aunque puede "
+"cambiarlo,\n"
+"puede que se encuentre con problemas en el futuro. Otros programas no sabrán\n"
+"qué valor de «tabstop» (tabulación) usó. Probablemente, usan el valor "
+"predefinido\n"
+"de 8, y por ello su texto presentaría un aspecto diferente. Además, la "
+"mayoría de\n"
+"impresoras usan un valor de «tabstop» predefinido de 8. Por ello, es mejor\n"
+"no modificar 'tabstop'. (Cuando edite un archivo que se escribió con otro "
+"valor de\n"
+"tabulación, consulte |25.3| para ver como arreglarlo).\n"
+"   Para insertar un sangrado en un programa, usar un múltiplo de ocho "
+"espacios\n"
+"hace que vaya rápidamente al borde derecho de la ventana. Usar un sólo "
+"espacio\n"
+"no ofrece la suficiente diferencia visual. La mayoría de personas prefieren "
+"usar\n"
+"cuatro espacios, una buena solución.\n"
+"  Ya que <Tab> equivale a 8 espacios y quiere usar un sangrado de cuatro "
+"espacios.\n"
+"no puede usar <Tab> para insertar su sangrado. Hay dos formas de tratar "
+"esto:\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:429
@@ -1114,6 +1393,11 @@ msgid ""
 "    eight spaces, you have fewer characters in your file.  Inserting a <Tab>\n"
 "    is quicker than eight spaces.  Backspacing works faster as well.\n"
 msgstr ""
+"1. Use una mezcla de <Tab> y caracteres de espacio. Ya que <Tab> toma el\n"
+"    el lugar de 8 espacios, tendrá menos caracteres en su archivo. Insertar "
+"un <Tab>\n"
+"    es más rápido que 8 espacios. La tecla de retroceso también es más "
+"rápido.\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:432
@@ -1122,16 +1406,19 @@ msgid ""
 "2.  Use spaces only.  This avoids the trouble with programs that use a\n"
 "    different tabstop value.\n"
 msgstr ""
+"2. Utilice espacios solamente.  Esto evita los problemas con los programas "
+"que utilizan un\n"
+"    valor de «tabstop» diferente.\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:434
 msgid "Fortunately, Vim supports both methods quite well."
-msgstr ""
+msgstr "Afortunadamente, Vim soporta ambos métodos bastante bien."
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:437
 msgid "SPACES AND TABS"
-msgstr ""
+msgstr "ESPACIOS Y TABULADOS"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:446
