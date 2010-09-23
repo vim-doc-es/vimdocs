@@ -1,4 +1,4 @@
-*usr_02.esx*	Para Vim version 7.2.  Último cambio: 8/2/2007
+*usr_02.esx*	Para Vim versión 7.3.  Último cambio: 20/6/2010
 
 		MANUAL DE USUARIO DE VIM - por Bram Moolenaar
 
@@ -304,8 +304,8 @@ precedente.
 	A intelligent ~
 
 La orden «U» es un cambio en sí mismo, que la orden «u» deshace y CTRL-R
-rehace.  Esto puede resultar confuso. No se preocupe, con «u» y CTRL-R puede
-ir a cualquier situación anterior. Más información en la sección |32.1|.
+rehace. Esto puede resultar confuso. No se preocupe, con «u» y CTRL-R puede
+ir a cualquier situación anterior. Más información en la sección |32.2|.
 
 ==============================================================================
 *02.6*	Otras órdenes de edición
@@ -550,7 +550,7 @@ Resumen:					*help-summary*  >
 <		Ver todas las posibles concordancias del patrón para ayuda.>
 	:helpgrep patrón
 <		Buscar entre todos los archivos de ayuda el patrón «patrón».
-		Salta a la primera coincidencia. Sal a las siguientes con: >
+		Salta a la primera coincidencia. Salta a las siguientes con: >
 	    :cn
 <			siguiente coincidencia >
 	    :cprev
@@ -562,7 +562,7 @@ Resumen:					*help-summary*  >
 	    :copen
 	    :cclose
 <			abrir/cerrar la ventana «quickfix» (arreglos rápidos);
-			pulsa <Intro> para ir al elemento bajo el cursor.
+			pulse <Intro> para ir al elemento bajo el cursor.
 
 
 ==============================================================================

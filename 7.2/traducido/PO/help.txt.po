@@ -35,8 +35,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
-"POT-Creation-Date: 2010-09-23 13:16+0300\n"
-"PO-Revision-Date: 2010-06-14 15:06+0200\n"
+"POT-Creation-Date: 2010-09-23 20:27+0300\n"
+"PO-Revision-Date: 2010-09-23 20:22+0200\n"
 "Last-Translator: Omar Campagne <<ocampagne@gmail.com>>\n"
 "Language-Team: vim-doc-es\n"
 "MIME-Version: 1.0\n"
@@ -48,10 +48,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/help.txt:2
-#, fuzzy, no-wrap
-#| msgid "*help.txt*\tFor Vim version 7.2.  Last change: 2008 Jul 21\n"
+#, no-wrap
 msgid "*help.txt*\tFor Vim version 7.3.  Last change: 2010 Jul 20\n"
-msgstr "*help.esx* *ayuda*\tPara Vim versión 7.2. Último cambio: 21/7/2008\n"
+msgstr "*help.esx* *ayuda*\tPara Vim versión 7.3. Último cambio: 20/7/2010\n"
 
 #. type: Plain text
 #: original/TXT/help.txt:9
@@ -93,22 +92,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/help.txt:30
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Get specific help:  It is possible to go directly to whatever you want help\n"
-#| "\t\t    on, by giving an argument to the |:help| command.\n"
-#| "\t\t    It is possible to further specify the context:\n"
-#| "\t\t\t\t\t\t\t*help-context*\n"
-#| "\t\t\t  WHAT\t\t\tPREPEND    EXAMPLE\t~\n"
-#| "\t\t      Normal mode command      (nothing)   :help x\n"
-#| "\t\t      Visual mode command\t  v_\t   :help v_u\n"
-#| "\t\t      Insert mode command\t  i_\t   :help i_<Esc>\n"
-#| "\t\t      Command-line command\t  :\t   :help :quit\n"
-#| "\t\t      Command-line editing\t  c_\t   :help c_<Del>\n"
-#| "\t\t      Vim command argument\t  -\t   :help -r\n"
-#| "\t\t      Option\t\t\t  '\t   :help 'textwidth'\n"
-#| "  Search for help:  Type \":help word\", then hit CTRL-D to see matching\n"
-#| "\t\t    help entries for \"word\".\n"
+#, no-wrap
 msgid ""
 "Get specific help:  It is possible to go directly to whatever you want help\n"
 "\t\t    on, by giving an argument to the |:help| command.\n"
@@ -126,8 +110,8 @@ msgid ""
 "\t\t    help entries for \"word\".\n"
 "\t\t    Or use \":helpgrep word\". |:helpgrep|\n"
 msgstr ""
-"\t     Obtener\n"
-"   ayuda específica: Es posible acudir directamente donde necesite ayuda,\n"
+"Obtener ayuda específica:\n"
+"\t\t     Es posible acudir directamente donde necesite ayuda,\n"
 "\t\t     introduciéndolo como un argumento de la orden |:help|.\n"
 "\t\t     Es posible especificar detalladamente el contexto:\n"
 "\t\t\t\t\t\t\t*help-context*\n"
@@ -141,6 +125,7 @@ msgstr ""
 "\t\t      Opción\t\t\t   '\t  :help 'textwidth'\n"
 "  Buscar ayuda:  Teclee «:help palabra» y pulse CTRL-D para ver las\n"
 "\t\t    entradas de ayuda coincidentes con «palabra».\n"
+"\t\t    O use «:helpgrep palabra». |:helpgrep|\n"
 
 #. type: Plain text
 #: original/TXT/help.txt:33
@@ -269,21 +254,7 @@ msgstr "MANUAL DE REFERENCIA: Estos archivos explican cada detalle de Vim.  \t*r
 
 #. type: Plain text
 #: original/TXT/help.txt:105
-#, fuzzy, no-wrap
-#| msgid ""
-#| "General subjects ~\n"
-#| "|intro.txt|\tgeneral introduction to Vim; notation used in help files\n"
-#| "|help.txt|\toverview and quick reference (this file)\n"
-#| "|index.txt|\talphabetical index of all commands\n"
-#| "|help-tags|\tall the tags you can jump to (index of tags)\n"
-#| "|howto.txt|\thow to do the most common editing tasks\n"
-#| "|tips.txt|\tvarious tips on using Vim\n"
-#| "|message.txt|\t(error) messages and explanations\n"
-#| "|quotes.txt|\tremarks from users of Vim\n"
-#| "|todo.txt|\tknown problems and desired extensions\n"
-#| "|develop.txt|\tdevelopment of Vim\n"
-#| "|debug.txt|\tdebugging Vim itself\n"
-#| "|uganda.txt|\tVim distribution conditions and what to do with your money\n"
+#, no-wrap
 msgid ""
 "General subjects ~\n"
 "|intro.txt|\tgeneral introduction to Vim; notation used in help files\n"
@@ -304,6 +275,7 @@ msgstr ""
 "|intro.esx|\tIntroducción general a Vim; notación usada en los\n"
 "                archivos de ayuda\n"
 "|help.esx|\tInformación general y referencia rápida (este archivo)\n"
+"|helphelp.txt|\tAcerca del uso de los archivos de ayuda\n"
 "|index.txt|\tÍndice alfabético de todas las órdenes\n"
 "|help-tags|\tTodas las etiquetas a las que puede saltar\n"
 "\t\t(índice de etiquetas)\n"
@@ -389,22 +361,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/help.txt:152
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Special issues ~\n"
-#| "|print.txt|\tprinting\n"
-#| "|remote.txt|\tusing Vim as a server or client\n"
-#| "|term.txt|\tusing different terminals and mice\n"
-#| "|digraph.txt|\tlist of available digraphs\n"
-#| "|mbyte.txt|\tmulti-byte text support\n"
-#| "|mlang.txt|\tnon-English language support\n"
-#| "|arabic.txt|\tArabic language support and editing\n"
-#| "|farsi.txt|\tFarsi (Persian) editing\n"
-#| "|hebrew.txt|\tHebrew language support and editing\n"
-#| "|russian.txt|\tRussian language support and editing\n"
-#| "|ft_ada.txt|\tAda (the programming language) support\n"
-#| "|hangulin.txt|\tHangul (Korean) input mode\n"
-#| "|rileft.txt|\tright-to-left editing mode\n"
+#, no-wrap
 msgid ""
 "Special issues ~\n"
 "|print.txt|\tprinting\n"
@@ -434,6 +391,7 @@ msgstr ""
 "|hebrew.txt|\tSoporte y edición en Hebreo\n"
 "|russian.txt|\tSoporte y edición en Ruso\n"
 "|ft_ada.txt|\tSoporte para Ada (el lenguaje de programación)\n"
+"|ft_sql.txt|\tAcerca de la extensión de tipo de archivo SQL\n"
 "|hangulin.txt|\tModo de entrada de Hangul (Koreano)\n"
 "|rileft.txt|\tModo de edición de izquierda a derecha\n"
 
@@ -455,21 +413,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/help.txt:173
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Interfaces ~\n"
-#| "|if_cscop.txt|\tusing Cscope with Vim\n"
-#| "|if_mzsch.txt|\tMzScheme interface\n"
-#| "|if_perl.txt|\tPerl interface\n"
-#| "|if_pyth.txt|\tPython interface\n"
-#| "|if_sniff.txt|\tSNiFF+ interface\n"
-#| "|if_tcl.txt|\tTcl interface\n"
-#| "|if_ole.txt|\tOLE automation interface for Win32\n"
-#| "|if_ruby.txt|\tRuby interface\n"
-#| "|debugger.txt|\tInterface with a debugger\n"
-#| "|workshop.txt|\tSun Visual Workshop interface\n"
-#| "|netbeans.txt|\tNetBeans External Editor interface\n"
-#| "|sign.txt|\tdebugging signs\n"
+#, no-wrap
 msgid ""
 "Interfaces ~\n"
 "|if_cscop.txt|\tusing Cscope with Vim\n"
@@ -488,6 +432,7 @@ msgid ""
 msgstr ""
 "Interfaces ~\n"
 "|if_cscop.txt|\tUsar Cscope con Vim\n"
+"|if_lua.txt|\tInterfaz Lua\n"
 "|if_mzsch.txt|\tInterfaz de MzScheme\n"
 "|if_perl.txt|\tInterfaz de Perl\n"
 "|if_pyth.txt|\tInterfaz de Python\n"
@@ -596,10 +541,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/help.txt:215
-#, fuzzy
-#| msgid ""
-#| "Note that tags are within | characters, but when highlighting is enabled "
-#| "these are hidden.  That makes it easier to read a command."
 msgid ""
 "Note that tags are within | characters, but when highlighting is enabled "
 "these characters are hidden.  That makes it easier to read a command."
@@ -609,17 +550,14 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/help.txt:219
-#, fuzzy
-#| msgid ""
-#| "Anyway, you can use CTRL-] on any word, also when it is not within |, and "
-#| "Vim will try to find help for it."
 msgid ""
 "Anyway, you can use CTRL-] on any word, also when it is not within |, and "
 "Vim will try to find help for it.  Especially for options in single quotes, "
 "e.g.  'compatible'."
 msgstr ""
 "De todas formas, puede usar CTRL-] sobre cualquier palabra, aunque no se "
-"encuentre entre «|», para que Vim intente encontrar ayuda relacionada."
+"encuentre entre «|», para que Vim intente encontrar ayuda relacionada.En "
+"particular para opciones entrecomilladas, por ejemplo, 'compatible'."
 
 #. type: Plain text
 #: original/TXT/help.txt:221

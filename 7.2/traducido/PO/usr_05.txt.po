@@ -45,7 +45,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-09-23 13:16+0300\n"
-"PO-Revision-Date: 2009-11-24 01:59+0100\n"
+"PO-Revision-Date: 2010-09-23 19:41+0200\n"
 "Last-Translator: Álvaro Castro Castillo <alvaro.castro.castilla@gmail.com>\n"
 "Language-Team: vim-doc-es\n"
 "MIME-Version: 1.0\n"
@@ -193,10 +193,9 @@ msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 
 #. type: Plain text
 #: original/TXT/usr_05.txt:2
-#, fuzzy, no-wrap
-#| msgid "*usr_28.txt*\tFor Vim version 7.2.  Last change: 2008 Jun 14\n"
+#, no-wrap
 msgid "*usr_05.txt*\tFor Vim version 7.3.  Last change: 2009 Jun 04\n"
-msgstr "*usr_28.esx*\tPara Vim versión 7.2.  Último cambio: 8/2/2007\n"
+msgstr "*usr_05.esx*\tPara Vim versión 7.3.  Último cambio: 4/6/2009\n"
 
 #. type: Plain text
 #: original/TXT/usr_05.txt:6
@@ -748,13 +747,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_05.txt:211
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\t\t\t\t\t\t\t*restore-cursor*  >\n"
-#| "\tautocmd BufReadPost *\n"
-#| "\t    \\ if line(\"'\\\"\") > 0 && line(\"'\\\"\") <= line(\"$\") |\n"
-#| "\t    \\   exe \"normal g`\\\"\" |\n"
-#| "\t    \\ endif\n"
+#, no-wrap
 msgid ""
 "\t\t\t\t\t\t\t*restore-cursor*  >\n"
 "\tautocmd BufReadPost *\n"
@@ -764,8 +757,8 @@ msgid ""
 msgstr ""
 "\t\t\t\t\t\t\t*restore-cursor*  >\n"
 "\tautocmd BufReadPost *\n"
-"\t    \\ if line(\"'\\\"\") > 0 && line(\"'\\\"\") <= line(\"$\") |\n"
-"\t    \\   exe \"normal g`\\\"\" |\n"
+"\t    \\ if line(\"'\\\"\") > 1 && line(\"'\\\"\") <= line(\"$\") |\n"
+"\t    \\   exe \"normal! g`\\\"\" |\n"
 "\t    \\ endif\n"
 
 #. type: Plain text

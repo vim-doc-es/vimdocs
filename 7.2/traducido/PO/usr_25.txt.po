@@ -33,8 +33,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
-"POT-Creation-Date: 2010-09-23 13:16+0300\n"
-"PO-Revision-Date: 2009-12-03 19:10+0100\n"
+"POT-Creation-Date: 2010-09-23 20:27+0300\n"
+"PO-Revision-Date: 2010-09-23 20:05+0200\n"
 "Last-Translator: Omar Campagne <<ocampagne@gmail.com>>\n"
 "Language-Team: vim-doc-es\n"
 "MIME-Version: 1.0\n"
@@ -203,10 +203,9 @@ msgstr "\tgggqG\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:2
-#, fuzzy, no-wrap
-#| msgid "*usr_25.txt*\tFor Vim version 7.2.  Last change: 2007 May 11\n"
+#, no-wrap
 msgid "*usr_25.txt*\tFor Vim version 7.3.  Last change: 2007 May 11\n"
-msgstr "*usr_25.esx*\tPara Vim versión 7.2.  Último cambio: 11/6/2007\n"
+msgstr "*usr_25.esx*\tPara Vim versión 7.3.  Último cambio: 11/6/2007\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:6
@@ -995,21 +994,15 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:309
-#, fuzzy
-#| msgid ""
-#| "If you don't have a scrollbar or don't want to use it, use these commands "
-#| "to scroll the text.  The cursor will stay in the same place, but it's "
-#| "move back into the visible text if necessary."
 msgid ""
 "If you don't have a scrollbar or don't want to use it, use these commands to "
 "scroll the text.  The cursor will stay in the same place, but it's moved "
 "back into the visible text if necessary."
 msgstr ""
 "Si no tiene una barra de desplazamiento o no quiere usarla, puede usar "
-"estas\n"
-"órdenes para desplazar el texto. El cursor permanecerá en el mismo lugar, "
-"pero\n"
-"permitiendo también desplazarlo al texto visible, de ser necesario."
+"estas  órdenes para desplazar el texto. El cursor permanecerá en el mismo "
+"lugar, pero permitiendo también desplazarlo al texto visible, de ser "
+"necesario."
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:318
@@ -1624,16 +1617,7 @@ msgstr "\tinpx\t0.693   0.534\t0.693 ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:555
-#, fuzzy, no-wrap
-#| msgid ""
-#| "What happens is that the \"gr\" command makes sure the new character takes the\n"
-#| "right amount of screen space.  Extra spaces or tabs are inserted to fill the\n"
-#| "gap.  Thus what actually happens is that a tab is replaced by \"x\" and then\n"
-#| "blanks added to make the text after it keep it's place.  In this case a\n"
-#| "tab is inserted.\n"
-#| "   When you need to replace more than one character, you use the \"R\" command\n"
-#| "to go to Replace mode (see |04.9|).  This messes up the layout and replaces\n"
-#| "the wrong characters:\n"
+#, no-wrap
 msgid ""
 "What happens is that the \"gr\" command makes sure the new character takes the\n"
 "right amount of screen space.  Extra spaces or tabs are inserted to fill the\n"

@@ -44,8 +44,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
-"POT-Creation-Date: 2010-09-23 13:16+0300\n"
-"PO-Revision-Date: 2009-11-25 23:22+0100\n"
+"POT-Creation-Date: 2010-09-23 20:27+0300\n"
+"PO-Revision-Date: 2010-09-23 20:00+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es <>\n"
 "MIME-Version: 1.0\n"
@@ -193,10 +193,9 @@ msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 
 #. type: Plain text
 #: original/TXT/usr_22.txt:2
-#, fuzzy, no-wrap
-#| msgid "*usr_02.txt*\tFor Vim version 7.2.  Last change: 2007 Feb 28\n"
+#, no-wrap
 msgid "*usr_22.txt*\tFor Vim version 7.3.  Last change: 2010 Feb 21\n"
-msgstr "*usr_02.esx*\tPara Vim version 7.2.  Último cambio: 8/2/2007\n"
+msgstr "*usr_22.esx*\tPara Vim version 7.3.  Último cambio: 21/2/2010\n"
 
 #. type: Plain text
 #: original/TXT/usr_22.txt:6
@@ -314,17 +313,7 @@ msgstr "Ahora puede ver estos elementos:"
 
 #. type: Plain text
 #: original/TXT/usr_22.txt:59
-#, fuzzy, no-wrap
-#| msgid ""
-#| "1.  The name of the browsing tool and its version number\n"
-#| "2.  The name of the browsing directory\n"
-#| "3.  The method of sorting (may be by name, time, or size)\n"
-#| "4.  How names are to be sorted (directories first, then *.h files,\n"
-#| "    *.c files, etc)\n"
-#| "5.  How to get help (use the <F1> key), and an abbreviated listing\n"
-#| "    of available commands\n"
-#| "6.  A listing of files, including \"../\", which allows one to to list\n"
-#| "    the parent directory.\n"
+#, no-wrap
 msgid ""
 "1.  The name of the browsing tool and its version number\n"
 "2.  The name of the browsing directory\n"
@@ -339,7 +328,7 @@ msgstr ""
 "1.  El nombre de la herramienta de exploración y su número de versión\n"
 "2.  El nombre del directorio presente\n"
 "3.  La directriz de ordenación (puede ser por nombre, tiempo o tamaño)\n"
-"4.  El orden de aparición de los nombre (primero directorios, después \n"
+"4.  El orden de aparición de los nombres (primero directorios, después \n"
 "    archivos *.h, archivos *.c, etc)\n"
 "5.  Cómo obtener ayuda (use la tecla <F1>), y una lista abreviada\n"
 "    de las órdenes disponibles\n"
@@ -447,19 +436,15 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_22.txt:103
-#, fuzzy
-#| msgid ""
-#| "The <F1> key thus brings you to a netrw directory browsing contents help "
-#| "page.  Its a regular help page; use the usual |CTRL-]| to jump to tagged "
-#| "help items and |CTRL-O| to jump back."
 msgid ""
 "The <F1> key thus brings you to a netrw directory browsing contents help "
 "page.  It's a regular help page; use the usual |CTRL-]| to jump to tagged "
 "help items and |CTRL-O| to jump back."
 msgstr ""
 "La tecla <F1> le lleva un directorio netrw explorando los contenidos de la "
-"página de ayuda.  Ésta es una página de ayuda normal; use |CTRL-]| para "
-"saltar entre los elementos de ayuda, y |CTRL-O| para volver atrás."
+"página de ayuda. Ésta es una página de ayuda normal; use |CTRL-]| para "
+"saltar entre los elementos de ayuda etiquetados, y |CTRL-O| para volver "
+"atrás."
 
 #. type: Plain text
 #: original/TXT/usr_22.txt:105
@@ -1145,11 +1130,7 @@ msgstr "\t:buffer help\n"
 
 #. type: Plain text
 #: original/TXT/usr_22.txt:364
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Vim will find a best match for the name you type.  If there is only one\n"
-#| "buffer that matches the name, it will be used.  In this case \"help.txt\".\n"
-#| "   To open a buffer in a new window: >\n"
+#, no-wrap
 msgid ""
 "Vim will find the best match for the name you type.  If there is only one\n"
 "buffer that matches the name, it will be used.  In this case \"help.txt\".\n"

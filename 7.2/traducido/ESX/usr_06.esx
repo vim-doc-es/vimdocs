@@ -1,4 +1,4 @@
-*usr_06.esx*	Para Vim version 7.2.  Último cambio: 24/5/2006
+*usr_06.esx*	Para Vim version 7.3.  Último cambio: 24/5/2006
 
 		MANUAL DE USUARIO DE VIM - por Bram Moolenaar
 
@@ -248,9 +248,13 @@ usar otras órdenes para moverse en modo Visual, por supuesto.
 
 Esto también funciona en Unix si tiene una impresora PostScript. En caso
 contrario tendrá que hacer un poco más de trabajo. Tendrá que convertir a
-HTML primero y luego imprimirlo desde un navegador web como Netscape.
+HTML primero y luego imprimirlo desde un navegador web.
 
 Convierta el archivo a HTML con esta orden: >
+
+	:TOhtml
+
+En el caso de que no funcione: >
 
 	:source $VIMRUNTIME/syntax/2html.vim
 

@@ -1,4 +1,4 @@
-*usr_05.esx*	Para Vim version 7.2.  Último cambio: 11/6/2007
+*usr_05.esx*	Para Vim versión 7.3.  Último cambio: 4/6/2009
 
 		MANUAL DE USUARIO DE VIM - por Bram Moolenaar
 
@@ -208,8 +208,8 @@ opción 'textwidth' a 78, pero sólo localmente a un archivo.
 
 							*restore-cursor*  >
 	autocmd BufReadPost *
-	    \ if line("'\"") > 0 && line("'\"") <= line("$") |
-	    \   exe "normal g`\"" |
+	    \ if line("'\"") > 1 && line("'\"") <= line("$") |
+	    \   exe "normal! g`\"" |
 	    \ endif
 
 Otra autoorden. Esta vez se ejecuta tras leer cualquier archivo. Las cosas

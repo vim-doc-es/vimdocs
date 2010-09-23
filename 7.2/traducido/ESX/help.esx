@@ -1,4 +1,4 @@
-*help.esx* *ayuda*	Para Vim versión 7.2. Último cambio: 21/7/2008
+*help.esx* *ayuda*	Para Vim versión 7.3. Último cambio: 20/7/2010
 
 			VIM - archivo principal de ayuda
 							  k
@@ -18,8 +18,8 @@ Cerrar esta ventana: Use «:q<Intro>».
        Volver atrás: Teclee CTRL-T o CTRL-O (repetirlo le devuelve a un
 		     punto más lejano.)
 
-	     Obtener
-   ayuda específica: Es posible acudir directamente donde necesite ayuda,
+Obtener ayuda específica:
+		     Es posible acudir directamente donde necesite ayuda,
 		     introduciéndolo como un argumento de la orden |:help|.
 		     Es posible especificar detalladamente el contexto:
 							*help-context*
@@ -33,6 +33,7 @@ Cerrar esta ventana: Use «:q<Intro>».
 		      Opción			   '	  :help 'textwidth'
   Buscar ayuda:  Teclee «:help palabra» y pulse CTRL-D para ver las
 		    entradas de ayuda coincidentes con «palabra».
+		    O use «:helpgrep palabra». |:helpgrep|
 
 VIM significa «Vi IMproved» (Vi mejorado). Bram Moolenaar es el principal
 creador de Vim, pero sólo con la ayuda de muchos otros. Véase |credits|.
@@ -98,6 +99,7 @@ Temas generales ~
 |intro.esx|	Introducción general a Vim; notación usada en los
                 archivos de ayuda
 |help.esx|	Información general y referencia rápida (este archivo)
+|helphelp.txt|	Acerca del uso de los archivos de ayuda
 |index.txt|	Índice alfabético de todas las órdenes
 |help-tags|	Todas las etiquetas a las que puede saltar
 		(índice de etiquetas)
@@ -154,6 +156,7 @@ Temas particulares ~
 |hebrew.txt|	Soporte y edición en Hebreo
 |russian.txt|	Soporte y edición en Ruso
 |ft_ada.txt|	Soporte para Ada (el lenguaje de programación)
+|ft_sql.txt|	Acerca de la extensión de tipo de archivo SQL
 |hangulin.txt|	Modo de entrada de Hangul (Koreano)
 |rileft.txt|	Modo de edición de izquierda a derecha
 
@@ -165,6 +168,7 @@ GUI/IGU ~
 
 Interfaces ~
 |if_cscop.txt|	Usar Cscope con Vim
+|if_lua.txt|	Interfaz Lua
 |if_mzsch.txt|	Interfaz de MzScheme
 |if_perl.txt|	Interfaz de Perl
 |if_pyth.txt|	Interfaz de Python
@@ -220,7 +224,8 @@ Observe que las etiquetas se encuentran entre caracteres «|», que se
 ocultarán si activa el resaltado. Ello hace más sencillo leer una orden.
 
 De todas formas, puede usar CTRL-] sobre cualquier palabra, aunque no se
-encuentre entre «|», para que Vim intente encontrar ayuda relacionada.
+encuentre entre «|», para que Vim intente encontrar ayuda relacionada.En
+particular para opciones entrecomilladas, por ejemplo, 'compatible'.
 
 ------------------------------------------------------------------------------
  vim:tw=78:fo=tcq2:isk=!-~,^*,^\|,^\":ts=8:ft=help:norl:

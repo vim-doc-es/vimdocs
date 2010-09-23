@@ -1,8 +1,8 @@
-*usr_24.esx*	Para Vim versión 7.2.  Último cambio: 23/6/2006
+*usr_24.esx*	Para Vim versión 7.3.  Último cambio: 23/6/2006
 
 		MANUAL DE USUARIO DE VIM - por Bram Moolenaar
 
-			     Insertar con rapidez
+			  Insertar con rapidez
 
 
 Al introducir texto, Vim ofrece varias maneras de reducir el número de
@@ -549,10 +549,10 @@ escribir hasta un número en 16 y 32 bit (p, ej., un carácter Unicode): >
 ==============================================================================
 *24.9*	Dígrafos
 
-Algunos caracteres no se encuentran en el teclado. Por ejemplo, el carácter
-de derechos de autor (©). Emplee dígrafos para escribir estos caracteres en
-Vim, en los que dos caracteres representan a uno. Para introducir ©, por
-ejemplo, pulse tres teclas: >
+Some characters are not on the keyboard.  For example, the copyright
+character (�).  To type these characters in Vim, you use digraphs, where two
+characters represent one.  To enter a �, for example, you press three keys:
+>
 
 	CTRL-K Co
 
@@ -562,18 +562,18 @@ Use la siguiente orden para ver qué dígrafos están disponibles: >
 
 Vim mostrará la tabla de dígrafos. Aquí puede ver tres líneas:
 
-  AC ~_ 159  NS |  160  !I ¡  161  Ct ¢  162  Pd £  163  Cu ¤  164  Ye ¥  165 ~
-  BB ¦  166  SE §  167  ': ¨  168  Co ©  169  -a ª  170  << «  171  NO ¬  172 ~
-  -- ­  173  Rg ®  174  'm ¯  175  DG °  176  +- ±  177  2S ²  178  3S ³  179 ~
+  AC ~_ 159  NS |  160  !I �  161  Ct �  162  Pd �  163  Cu �  164  Ye �  165 ~
+  BB �  166  SE �  167  ': �  168  Co �  169  -a �  170  << �  171  NO �  172 ~
+  -- �  173  Rg �  174  'm �  175  DG �  176  +- �  177  2S �  178  3S �  179 ~
 
-Esto muestra, por ejemplo, que el dígrafo que obtiene pulsando «CTRL-K Pd»
-muestra el carácter (£). Este carácter es el número 163 (decimal).
-   Pd is la abreviatura de «pound» (libra). La mayoría de dígrafos se han
-seleccionado para dar una pista del carácter que producen. Si mira un poco
-la lista entenderá la lógica.
-   Puede intercambiar el primer y segundo carácter, si no hay otro dígrafo
-para tal combinación. Por ello, CTRL-K dP también funciona. Ya que no hay un
-dígrafo para «dP», Vim buscará también un dígrafo «Pd».
+This shows, for example, that the digraph you get by typing CTRL-K Pd is the
+character (�).  This is character number 163 (decimal).
+   Pd is short for Pound.  Most digraphs are selected to give you a hint about
+the character they will produce.  If you look through the list you will
+understand the logic.
+   You can exchange the first and second character, if there is no digraph for
+that combination.  Thus CTRL-K dP also works.  Since there is no digraph for
+"dP" Vim will also search for a "Pd" digraph.
 
 	Nota:
 	Los dígrafos dependen del juego de caracteres que Vim asume que está
@@ -582,10 +582,10 @@ dígrafo para «dP», Vim buscará también un dígrafo «Pd».
 
 Puede configurar sus propios dígrafos. Ejemplo: >
 
-	:digraph a" ä
+	:digraph a" �
 
-Esto hace que «CTRL-K a"» inserte el carácter ä. Puede también especificar
-el carácter con un número decimal. Esto define el mismo dígrafo: >
+This defines that CTRL-K a" inserts an � character.  You can also specify
+the character with a decimal number.  This defines the same digraph: >
 
 	:digraph a" 228
 
@@ -617,7 +617,6 @@ Esto borra hasta la tercera palabra en el registro «g».
 Siguiente capítulo: |usr_25.esx| Editar text con formato
 
 Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
-
 
 ==============================================================================
 

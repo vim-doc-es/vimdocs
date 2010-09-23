@@ -45,7 +45,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-09-23 13:16+0300\n"
-"PO-Revision-Date: 2009-11-20 22:04+0100\n"
+"PO-Revision-Date: 2010-09-23 19:40+0200\n"
 "Last-Translator: Álvaro Castro Castilla <alvaro.castro.castilla@gmail.com>\n"
 "Language-Team: vim-doc-es\n"
 "MIME-Version: 1.0\n"
@@ -193,10 +193,9 @@ msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:2
-#, fuzzy, no-wrap
-#| msgid "*usr_01.txt*\tFor Vim version 7.2.  Last change: 2008 May 07\n"
+#, no-wrap
 msgid "*usr_04.txt*\tFor Vim version 7.3.  Last change: 2008 Sep 06\n"
-msgstr "*usr_01.esx*\tPara Vim versión 7.2.  Último cambio: 7/6/2008\n"
+msgstr "*usr_01.esx*\tPara Vim versión 7.3.  Último cambio: 7/6/2008\n"
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:6
@@ -878,10 +877,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:268
-#, fuzzy
-#| msgid ""
-#| "Note that \"o\" and \"O\" in Visual mode work very different from Normal "
-#| "mode, where they open a new line below or above the cursor."
 msgid ""
 "Note that \"o\" and \"O\" in Visual mode work very differently from Normal "
 "mode, where they open a new line below or above the cursor."
@@ -1512,13 +1507,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:503
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\t~\tchange case of the character under the cursor, and move the\n"
-#| "\t\tcursor to the next character.  This is not an operator (unless\n"
-#| "\t\t'tildeop' is set), thus you can't use it with a motion\n"
-#| "\t\tcommand.  It does works in Visual mode and changes case for\n"
-#| "\t\tall the selected text then.\n"
+#, no-wrap
 msgid ""
 "\t~\tchange case of the character under the cursor, and move the\n"
 "\t\tcursor to the next character.  This is not an operator (unless\n"
@@ -1529,8 +1518,8 @@ msgstr ""
 "\t~\tcambia el carácter bajo el cursor de minúsculas a mayúsculas y\n"
 "\t\tal revés, moviéndose al siguiente carácter. No es un operador\n"
 "\t\t(a menos que 'tildeop' esté activado), por lo que no lo puede\n"
-"\t\tusar con un movimiento. Funciona en modo Visual y cambia todo\n"
-"\t\tlo que está seleccionado.\n"
+"\t\tusar con un movimiento. Sí funciona en modo Visual y cambia\n"
+"\t\ttodo lo que está seleccionado.\n"
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:506
