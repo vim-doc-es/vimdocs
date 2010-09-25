@@ -1,8 +1,47 @@
-# Spanish translations for PACKAGE package
-# Copyright (C) 2010 Free Software Foundation, Inc.
-# This file is distributed under the same license as the Vim package.
-# Automatically generated, 2010.
-# Omar Campagne <ocampagne@gmail.com>, 2010.
+# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es 
+#
+# Copyright (C) AÑOS 
+# This file is distributed under the same license as the Vim (7.3) package.
+#
+# Translators credits:
+#   - Initial translation
+#       Omar Campagne <ocampagne@gmail.com>, 2010
+#
+#   - Updates
+#       TRADUCTOR <CORREO>, AÑO 
+#
+# 
+#
+# Debido al formato (txt) y al máximo de 80 columnas que pueden tener 
+# los textos de ayuda en Vim, así como el formato PO, por favor, leete los
+# apuntes concernientes a la edición de los archivos PO relativos a la
+# aplicación que desees usar.
+# También encontrarás información acerca del uso de herramientas gettext en el 
+# proyecto de localización (l10n) de Vim.
+# 
+# - http://www.assembla.com/wiki/show/vim-doc-es
+#
+# No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
+# este enlace puede ser de interés. A pesar de no formar parte, nuestra 
+# intención es homologarnos con su terminología y uso de la lengua 
+# en la medida de lo útil y posible.
+# 
+#  - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/notas
+# 
+# La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
+# pero también puede servir de referencia para otros términos no técnicos.
+# No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
+# traducción sea comprensible independientemente de la nacionalidad del
+# usuario. Si crees que alguna traducción puede llevar a confusión, consulta
+# la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
+# 
+#  - www.rae.es 
+#  - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages   
+# 
+# Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
+# se puede consultar con un simple grep, pogrep o cargado en Virtaal.
+
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
@@ -10,7 +49,7 @@ msgstr ""
 "POT-Creation-Date: 2010-09-23 13:16+0300\n"
 "PO-Revision-Date: 2010-07-16 20:07+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
-"Language-Team: Spanish pootle.locamotion.org team\n"
+"Language-Team: vim-doc-es@freelists.org\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1126,10 +1165,8 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:366
-#, fuzzy
-#| msgid "Start off by setting these option: >"
 msgid "Start off by setting these options: >"
-msgstr "Empiece por definir esta opción: >"
+msgstr "Empiece por definir estas opciones: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:368
@@ -1377,10 +1414,8 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:473
-#, fuzzy
-#| msgid "LIST MATCHES"
 msgid "JUST SPACES"
-msgstr "LISTA DE COINCIDENCIAS"
+msgstr "SÓLO ESPACIOS"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:476
@@ -1388,13 +1423,14 @@ msgid ""
 "If you want absolutely no tabs in your file, you can set the 'expandtab' "
 "option: >"
 msgstr ""
+"Puede definir la opción 'expandtab' para evitar tabulaciones en su "
+"archivo: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:478
-#, fuzzy, no-wrap
-#| msgid "\t:set textwidth\n"
+#, no-wrap
 msgid "\t:set expandtab\n"
-msgstr "\t:set textwidth\n"
+msgstr "\t:set expandtab\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:485
@@ -1407,11 +1443,18 @@ msgid ""
 "<Tab> you have to press the <BS> key up to eight times to undo it.  If you are\n"
 "in the indent, pressing CTRL-D will be a lot quicker.\n"
 msgstr ""
+"Cuando se define esta opción, la tecla <Tab> inserte una serie de espacios.\n"
+"Por ello, obtiene el mismo espacio en blanco que un carácter <Tab> inserta,\n"
+"aunque en realidad no hay ningún carácter <Tab> en su archivo.\n"
+"  La tecla de retroceso eliminará cada espacio por sí mismo. Por ello,\n"
+"después de teclear un <Tab>, tendrá que pulsar la tecla <BS> (retroceso)\n"
+"hasta ocho veces para deshacerlo. Si está dentro de la sangría, pulsar\n"
+"«CTRL-D» es mucho más rápido.\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:488
 msgid "CHANGING TABS IN SPACES (AND BACK)"
-msgstr ""
+msgstr "CAMBIAR TABULADOS A ESPACIOS (Y VICEVERSA)"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:492
@@ -1420,19 +1463,20 @@ msgid ""
 "tabs in the document remain tabs.  If you want to convert tabs to spaces, "
 "use the \":retab\" command.  Use these commands: >"
 msgstr ""
+"Definir 'expandtab' no afecta a las tabulaciones existentes. En otras "
+"palabras, todas las tabulaciones del documento siguen siéndolo. Si desea "
+"convertir esas tabulaciones en espacios, use la orden «:retab». "
+"Use las siguientes órdenes: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:495
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\t:set tabstop=3\n"
-#| "\t:retab 8\n"
+#, no-wrap
 msgid ""
 "\t:set expandtab\n"
 "\t:%retab\n"
 msgstr ""
-"\t:set tabstop=3\n"
-"\t:retab 8\n"
+"\t:set expandtab\n"
+"\t:%retab\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:499
@@ -1441,13 +1485,15 @@ msgid ""
 "However, all tabs that come after a non-blank character are kept.  If you "
 "want these to be converted as well, add a !: >"
 msgstr ""
+"Ahora, Vim ha cambiado todas las sangrías para que usen espacios en lugar de "
+"tabulados. Sin embargo, se respetan todos los tabulados a continuación de "
+"un carácter no vacío. Añada «!» si desea convertir éstos también: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:501
-#, fuzzy, no-wrap
-#| msgid "\t:next!\n"
+#, no-wrap
 msgid "\t:%retab!\n"
-msgstr "\t:next!\n"
+msgstr "\t:%retab!\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:504
@@ -1455,13 +1501,14 @@ msgid ""
 "This is a little bit dangerous, because it can also change tabs inside a "
 "string.  To check if these exist, you could use this: >"
 msgstr ""
+"Esto es algo peligroso, ya que también puede cambiar los tabulados dentro de "
+"una cadena. Puede usar lo siguiente para comprobar la existencia de éstos: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:506
-#, fuzzy, no-wrap
-#| msgid "\t/\"\\_[^\"]*\"\n"
+#, no-wrap
 msgid "\t/\"[^\"\\t]*\\t[^\"]*\"\n"
-msgstr "\t/\"\\_[^\"]*\"\n"
+msgstr "\t/\"[^\"\\t]*\\t[^\"]*\"\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:509
@@ -1469,31 +1516,29 @@ msgid ""
 "It's recommended not to use hard tabs inside a string.  Replace them with "
 "\"\\t\" to avoid trouble."
 msgstr ""
+"Se recomienda no usar tabulados rígidos dentro de una cadena. Reemplácelos "
+"con «\\t» para evitar problemas."
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:511
 msgid "The other way around works just as well: >"
-msgstr ""
+msgstr "Esta otra forma ofrece el mismo resultado: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:514
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\t:set tabstop=3\n"
-#| "\t:retab 8\n"
+#, no-wrap
 msgid ""
 "\t:set noexpandtab\n"
 "\t:%retab!\n"
 msgstr ""
-"\t:set tabstop=3\n"
-"\t:retab 8\n"
+"\t:set noexpandtab\n"
+"\t:%retab!\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:517
-#, fuzzy, no-wrap
-#| msgid "*10.7*\tFormatting text\n"
+#, no-wrap
 msgid "*30.6*\tFormatting comments\n"
-msgstr "*10.7*\tFormatear texto\n"
+msgstr "*30.6*\tFormatear comentarios\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:521
@@ -1529,10 +1574,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:531
-#, fuzzy, no-wrap
-#| msgid "\tgqap\n"
+#, no-wrap
 msgid "\tgq]/\n"
-msgstr "\tgqap\n"
+msgstr "\tgq]/\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:534
@@ -1611,17 +1655,13 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:568
-#, fuzzy
-#| msgid "See |netrw-browse| for more."
 msgid "See |fo-table| for more flags."
-msgstr "Para más detalles, véase |netrw-browse|."
+msgstr "Para más detalles, consulte |fo-table|."
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:571
-#, fuzzy
-#| msgid "MOVING IN COMMENTS"
 msgid "DEFINING A COMMENT"
-msgstr "MOVERSE EN COMENTARIOS\t"
+msgstr "DEFINIR UN COMENTARIO"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:578
@@ -1637,10 +1677,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:580
-#, fuzzy, no-wrap
-#| msgid "\t:set icon\n"
+#, no-wrap
 msgid "\t:set comments=://\n"
-msgstr "\t:set icon\n"
+msgstr "\t:set comments=://\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:583
@@ -1653,7 +1692,7 @@ msgstr ""
 #: original/TXT/usr_30.txt:585
 #, no-wrap
 msgid "\t{flags}:{text}\n"
-msgstr ""
+msgstr "\t{flags}:{text}\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:591
@@ -1670,7 +1709,7 @@ msgstr ""
 #: original/TXT/usr_30.txt:593
 #, no-wrap
 msgid "\t:set comments=n:>,n:!\n"
-msgstr ""
+msgstr "\t:set comments=n:>,n:!\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:598
@@ -1754,14 +1793,10 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:638
-#, fuzzy
-#| msgid "For more details see |modeline|."
 msgid "For more details see |format-comments|."
-msgstr "Para más detalles, véase |modeline|."
+msgstr "Para más detalles, véase |format-comments|."
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:642
-#, fuzzy
-#| msgid "Next chapter: |usr_09.txt| Using the GUI"
 msgid "Next chapter: |usr_31.txt| Exploiting the GUI"
-msgstr "Capítulo siguiente: |usr_09.esx| Uso de la interfaz gráfica"
+msgstr "Capítulo siguiente: |usr_31.esx| Sacar partido a la interfaz gráfica"

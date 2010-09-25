@@ -1,16 +1,52 @@
-# Spanish translations for PACKAGE package
-# Copyright (C) 2010 Free Software Foundation, Inc.
-# This file is distributed under the same license as the Vim package.
-# Automatically generated, 2010.
+# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es 
 #
+# Copyright (C) AÑOS 
+# This file is distributed under the same license as the Vim (version) package.
+#
+# Translators credits:
+#   - Initial translation
+#       TRADUCTOR INICIAL <CORREO>, AÑO
+#
+#   - Updates
+#       TRADUCTOR <CORREO>, AÑO 
+#
+# 
+#
+# Debido al formato (txt) y al máximo de 80 columnas que pueden tener 
+# los textos de ayuda en Vim, así como el formato PO, por favor, leete los
+# apuntes concernientes a la edición de los archivos PO relativos a la
+# aplicación que desees usar.
+# También encontrarás información acerca del uso de herramientas gettext en el 
+# proyecto de localización (l10n) de Vim.
+# 
+# - http://www.assembla.com/wiki/show/vim-doc-es
+#
+# No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
+# este enlace puede ser de interés. A pesar de no formar parte, nuestra 
+# intención es homologarnos con su terminología y uso de la lengua 
+# en la medida de lo útil y posible.
+# 
+#  - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/notas
+# 
+# La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
+# pero también puede servir de referencia para otros términos no técnicos.
+# No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
+# traducción sea comprensible independientemente de la nacionalidad del
+# usuario. Si crees que alguna traducción puede llevar a confusión, consulta
+# la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
+# 
+#  - www.rae.es 
+#  - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages   
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-09-23 13:16+0300\n"
 "PO-Revision-Date: 2010-06-19 19:32+0300\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: vim-doc-es@freelists.org\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -157,17 +193,15 @@ msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:2
-#, fuzzy, no-wrap
-#| msgid "*usr_12.txt*\tFor Vim version 7.2.  Last change: 2007 May 11\n"
+#, no-wrap
 msgid "*usr_31.txt*\tFor Vim version 7.3.  Last change: 2007 May 08\n"
-msgstr "*usr_12.esx*\tPara Vim versión 7.2.  Último cambio: 11/6/2007\n"
+msgstr "*usr_31.esx*\tPara Vim versión 7.3.  Último cambio: 8/6/2007\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:6
-#, fuzzy, no-wrap
-#| msgid "\t\t\t     Editing other files\n"
+#, no-wrap
 msgid "\t\t\t      Exploiting the GUI\n"
-msgstr "\t\t\t    Editar otros archivos\n"
+msgstr "\t\t\t    Sacar partido a la interfaz gráfica\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:11
@@ -206,16 +240,15 @@ msgid ""
 " Previous chapter: |usr_30.txt|  Editing programs\n"
 "Table of contents: |usr_toc.txt|\n"
 msgstr ""
-" Capítulo siguiente: |usr_25.txt|  Editar texto con formato\n"
+" Capítulo siguiente: |usr_32.txt|  El árbol\n"
 "  Capitulo anterior: |usr_23.esx|  Editar otros archivos\n"
 "Tabla de contenidos: |usr_toc.esx|\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:24
-#, fuzzy, no-wrap
-#| msgid "*22.1*\tThe file browser\n"
+#, no-wrap
 msgid "*31.1*\tThe file browser\n"
-msgstr "*22.1*\tEl explorador de archivos\n"
+msgstr "*31.1*\tEl explorador de archivos\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:32
@@ -232,10 +265,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:34
-#, fuzzy, no-wrap
-#| msgid "\t:tab split\n"
+#, no-wrap
 msgid "\t:browse split\n"
-msgstr "\t:tab split\n"
+msgstr "\t:browse split\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:39
@@ -249,10 +281,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:41
-#, fuzzy, no-wrap
-#| msgid "\t:tab split\n"
+#, no-wrap
 msgid "\t:browse split /etc\n"
-msgstr "\t:tab split\n"
+msgstr "\t:browse split /etc\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:43
@@ -291,16 +322,13 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:62
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\t:set modifiable\n"
-#| "\t:set write\n"
+#, no-wrap
 msgid ""
 "\t:set browsedir=buffer\n"
 "\t:browse edit\n"
 msgstr ""
-"\t:set modifiable\n"
-"\t:set write\n"
+"\t:set browsedir=buffer\n"
+"\t:browse edit\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:64
@@ -314,6 +342,8 @@ msgid ""
 "\t:set browsedir=current\n"
 "\t:browse edit\n"
 msgstr ""
+"\t:set browsedir=current\n"
+"\t:browse edit\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:69
@@ -342,10 +372,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:83
-#, fuzzy, no-wrap
-#| msgid "*23.3*\tEncryption\n"
+#, no-wrap
 msgid "*31.2*\tConfirmation\n"
-msgstr "*23.3*\tCifrado\n"
+msgstr "*31.2*\tConfirmación\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:91
@@ -362,10 +391,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:93
-#, fuzzy, no-wrap
-#| msgid "\t:hide edit foo.txt\n"
+#, no-wrap
 msgid "\t:confirm edit foo.txt\n"
-msgstr "\t:hide edit foo.txt\n"
+msgstr "\t:confirm edit foo.txt\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:95
@@ -421,7 +449,7 @@ msgstr ""
 #: original/TXT/usr_31.txt:112
 #, no-wrap
 msgid "\t:confirm browse edit\n"
-msgstr ""
+msgstr "\t:confirm browse edit\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:115
@@ -528,10 +556,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:166
-#, fuzzy, no-wrap
-#| msgid "\t:wprevious\n"
+#, no-wrap
 msgid "\t:winpos\n"
-msgstr "\t:wprevious\n"
+msgstr "\t:winpos\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:168
@@ -582,10 +609,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:189
-#, fuzzy, no-wrap
-#| msgid "\t:set foldcolumn=4\n"
+#, no-wrap
 msgid "\t:set lines columns\n"
-msgstr "\t:set foldcolumn=4\n"
+msgstr "\t:set lines columns\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:191
@@ -600,6 +626,8 @@ msgid ""
 "\t:set lines=50\n"
 "\t:set columns=80\n"
 msgstr ""
+"\t:set lines=50\n"
+"\t:set columns=80\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:197
@@ -632,14 +660,13 @@ msgstr ""
 #: original/TXT/usr_31.txt:207
 #, no-wrap
 msgid "\tgvim -geometry 80x25+100+300\n"
-msgstr ""
+msgstr "\tgvim -geometry 80x25+100+300\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:210
-#, fuzzy, no-wrap
-#| msgid "*08.8*\tVarious\n"
+#, no-wrap
 msgid "*31.5*\tVarious\n"
-msgstr "*08.8*\tVarios\n"
+msgstr "*31.5*\tVarios\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:219
@@ -657,10 +684,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:221
-#, fuzzy, no-wrap
-#| msgid "\tgvim file.txt\n"
+#, no-wrap
 msgid "\tgvim -f file.txt\n"
-msgstr "\tgvim file.txt\n"
+msgstr "\tgvim -f file.txt\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:224
@@ -684,10 +710,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:233
-#, fuzzy, no-wrap
-#| msgid "\t:tag\n"
+#, no-wrap
 msgid "\t:gui\n"
-msgstr "\t:tag\n"
+msgstr "\t:gui\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:237
@@ -713,10 +738,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:247
-#, fuzzy, no-wrap
-#| msgid "\t:set list\n"
+#, no-wrap
 msgid "\t:set lines=55\n"
-msgstr "\t:set list\n"
+msgstr "\t:set lines=55\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:254
@@ -759,7 +783,7 @@ msgstr ""
 #: original/TXT/usr_31.txt:267
 #, no-wrap
 msgid "\tgvim -U NONE ...\n"
-msgstr ""
+msgstr "\tgvim -U NONE ...\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:271
