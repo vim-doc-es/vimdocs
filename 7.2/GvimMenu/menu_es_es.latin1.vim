@@ -293,7 +293,7 @@ if has("toolbar")
     tmenu ToolBar.LoadSesn	Cargar sesión
     tmenu ToolBar.SaveSesn	Guardar sesión
     tmenu ToolBar.RunScript	Ejecutar un archivo de órdenes
-    tmenu ToolBar.Make		Ejecutar «Make»
+    tmenu ToolBar.Make		Ejecutar Make
     tmenu ToolBar.Shell		Abrir un intérprete de comandos
     tmenu ToolBar.RunCtags	Generar un archivo de etiquetas
     tmenu ToolBar.TagJump	Saltar a una etiqueta
@@ -304,9 +304,9 @@ endif
 
 " Syntax menu
 menutrans &Syntax			&Sintaxis
-menutrans &Show\ filetypes\ in\ menu	&Mostrar\ listas\ de\ «tipo\ de\ archivo»
-menutrans Set\ '&syntax'\ only		Activar\ sólo\ sintaxis
-menutrans Set\ '&filetype'\ too		Activar\ también\ «tipo\ de\ archivo»
+menutrans &Show\ filetypes\ in\ menu	&Mostrar\ lista\ de\ tipos\ de\ archivo
+menutrans Set\ '&syntax'\ only		Activar\ sólo\ 'syntax'
+menutrans Set\ '&filetype'\ too		Activar\ también\ 'filetype'
 menutrans &Off				&Desactivar\ sintaxis
 menutrans &Manual			Sintaxis\ &manual
 menutrans A&utomatic			Sintaxis\ a&utomática
