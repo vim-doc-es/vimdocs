@@ -46,10 +46,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
-"POT-Creation-Date: 2010-09-23 13:16+0300\n"
+"POT-Creation-Date: 2010-09-23 20:27+0300\n"
 "PO-Revision-Date: 2010-09-23 19:58+0200\n"
 "Last-Translator: Álvaro Castro Castillo <alvaro.castro.castilla@gmail.com>\n"
 "Language-Team: vim-doc-es <>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -316,9 +317,9 @@ msgid ""
 "not in the code.  Since this is difficult to specify, add the \"c\" flag to "
 "have the substitute command prompt you for each replacement: >"
 msgstr ""
-"Si está programando, quizá desee reemplazar «cuatro» en los comentarios, pero "
-"no en el código. Ya que es difícil de especificar, añada la marca «c» para "
-"que se le pida una confirmación cada vez que se vaya a reemplazar la "
+"Si está programando, quizá desee reemplazar «cuatro» en los comentarios, "
+"pero no en el código. Ya que es difícil de especificar, añada la marca «c» "
+"para que se le pida una confirmación cada vez que se vaya a reemplazar la "
 "palabra: >"
 
 #. type: Plain text
@@ -384,8 +385,8 @@ msgid ""
 "At the last file you will get an error message, because \":wnext\" cannot "
 "move to the next file.  This stops the execution, and everything is done."
 msgstr ""
-"En el último archivo obtendrá un mensaje de error, porque «wnext» no puede ir "
-"a un archivo siguiente. Esto parará la ejecución y todo terminará."
+"En el último archivo obtendrá un mensaje de error, porque «wnext» no puede "
+"ir a un archivo siguiente. Esto parará la ejecución y todo terminará."
 
 #. type: Plain text
 #: original/TXT/usr_12.txt:81
@@ -572,8 +573,8 @@ msgstr ""
 #: original/TXT/usr_12.txt:147
 msgid "To sort this list, filter the text through the external sort command: >"
 msgstr ""
-"Para ordenar esta lista, filtre el texto a través de la orden externa «sort»: "
-">"
+"Para ordenar esta lista, filtre el texto a través de la orden externa "
+"«sort»: >"
 
 #. type: Plain text
 #: original/TXT/usr_12.txt:151
@@ -660,8 +661,9 @@ msgid ""
 "the lines before the first line, resulting in a reversed file.  The command "
 "is: >"
 msgstr ""
-"La orden «|:global|» se debe combinar con la orden «|:move|» para mover todas "
-"las líneas antes de la primera línea, invirtiendo el archivo.  La orden es: >"
+"La orden «|:global|» se debe combinar con la orden «|:move|» para mover "
+"todas las líneas antes de la primera línea, invirtiendo el archivo.  La "
+"orden es: >"
 
 #. type: Plain text
 #: original/TXT/usr_12.txt:184
@@ -778,10 +780,10 @@ msgid ""
 "result:"
 msgstr ""
 "Cuando el texto sea sólo una parte del archivo, puede ir al comienzo del "
-"texto, pulsar «g CTRL-G», ir al final del texto y volver a escribir «g CTRL-G» "
-"y usar la cabeza para calcular la diferencia. Es un buen ejercicio, pero hay "
-"un modo más sencillo. En el modo Visual, seleccione el texto sobre el que "
-"quiera contar las palabras. Escriba «g CTRL-G». El resultado será:"
+"texto, pulsar «g CTRL-G», ir al final del texto y volver a escribir «g CTRL-"
+"G» y usar la cabeza para calcular la diferencia. Es un buen ejercicio, pero "
+"hay un modo más sencillo. En el modo Visual, seleccione el texto sobre el "
+"que quiera contar las palabras. Escriba «g CTRL-G». El resultado será:"
 
 #. type: Plain text
 #: original/TXT/usr_12.txt:228
@@ -897,8 +899,8 @@ msgid ""
 "same window."
 msgstr ""
 "Para saltar a otra página de manual, la cuál está en el texto con la forma "
-"típica «word(1)», pulse «CTRL-]» sobre ella. Otras llamadas a «:Man» emplearán "
-"la misma ventana."
+"típica «word(1)», pulse «CTRL-]» sobre ella. Otras llamadas a «:Man» "
+"emplearán la misma ventana."
 
 #. type: Plain text
 #: original/TXT/usr_12.txt:269

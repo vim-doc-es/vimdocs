@@ -46,10 +46,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
-"POT-Creation-Date: 2010-09-23 13:16+0300\n"
+"POT-Creation-Date: 2010-09-23 20:27+0300\n"
 "PO-Revision-Date: 2010-09-23 19:43+0200\n"
 "Last-Translator: Álvaro Castro Castilla <alvaro.castro.castilla@gmail.com>\n"
 "Language-Team: vim-doc-es\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -586,9 +587,9 @@ msgid ""
 "specified with [range].  For example, you can change \"Professor\" to "
 "\"Teacher\" in all lines with the following command: >"
 msgstr ""
-"Esta orden cambia la cadena «de» por la cadena «a» en las líneas especificadas "
-"con [rango]. Por ejemplo, puede cambiar «profesor» por «maestro» en todas las "
-"líneas con la siguiente orden: >"
+"Esta orden cambia la cadena «de» por la cadena «a» en las líneas "
+"especificadas con [rango]. Por ejemplo, puede cambiar «profesor» por "
+"«maestro» en todas las líneas con la siguiente orden: >"
 
 #. type: Plain text
 #: original/TXT/usr_10.txt:162
@@ -625,8 +626,8 @@ msgid ""
 "By default, the \":substitute\" command changes only the first occurrence on "
 "each line.  For example, the preceding command changes the line:"
 msgstr ""
-"Por omisión, la orden «:substitute» cambia sólo la primera palabra encontrada "
-"en cada línea. Por ejemplo, la orden anterior cambia esta línea:"
+"Por omisión, la orden «:substitute» cambia sólo la primera palabra "
+"encontrada en cada línea. Por ejemplo, la orden anterior cambia esta línea:"
 
 #. type: Plain text
 #: original/TXT/usr_10.txt:171
@@ -679,10 +680,10 @@ msgid ""
 "\" to ask you for confirmation before it performs each substitution.  Enter "
 "the following: >"
 msgstr ""
-"Otras marcas incluyen p (print = imprimir), que hace la orden «:s» muestre en "
-"pantalla la última línea que cambió. La «c» (confirm = confirmar) le dice a «:"
-"s» que pida confirmación antes que se ejecute cada sustitución. Introduzca "
-"lo siguiente: >"
+"Otras marcas incluyen p (print = imprimir), que hace la orden «:s» muestre "
+"en pantalla la última línea que cambió. La «c» (confirm = confirmar) le dice "
+"a «:s» que pida confirmación antes que se ejecute cada sustitución. "
+"Introduzca lo siguiente: >"
 
 #. type: Plain text
 #: original/TXT/usr_10.txt:191
@@ -739,9 +740,9 @@ msgid ""
 "kind as used for the search command.  For example, this command only "
 "substitutes \"the\" when it appears at the start of a line: >"
 msgstr ""
-"La parte «de» de la orden «:subsitute» es, de hecho, un patrón (del mismo tipo "
-"de los que se usan para la búsqueda). Por ejemplo, esta orden sólo sustituye "
-"«Eso» cuando aparece al comienzo de una línea: >"
+"La parte «de» de la orden «:subsitute» es, de hecho, un patrón (del mismo "
+"tipo de los que se usan para la búsqueda). Por ejemplo, esta orden sólo "
+"sustituye «Eso» cuando aparece al comienzo de una línea: >"
 
 #. type: Plain text
 #: original/TXT/usr_10.txt:214
@@ -756,9 +757,10 @@ msgid ""
 "slash, you need to put a backslash before it.  A simpler way is to use "
 "another character instead of the slash.  A plus, for example: >"
 msgstr ""
-"Si sustituye con una parte «de» o «a» que incluyan una barra inclinada, tendrá "
-"que poner una barra invertida antes de él. Una forma más sencilla es usar "
-"otro carácter como separador en lugar de la barra. Un «+», por ejemplo: >"
+"Si sustituye con una parte «de» o «a» que incluyan una barra inclinada, "
+"tendrá que poner una barra invertida antes de él. Una forma más sencilla es "
+"usar otro carácter como separador en lugar de la barra. Un «+», por ejemplo: "
+">"
 
 #. type: Plain text
 #: original/TXT/usr_10.txt:220
@@ -871,8 +873,8 @@ msgid ""
 msgstr ""
 "Suponga que está editado un capítulo de un libro y que desea reemplazar "
 "todas las palabras «grisx con «blanco». Pero sólo en ese capítulo, no en el "
-"siguiente.  Sabe que los límites entre capítulos tienen la palabra «Capítulo» "
-"en la primera columna. Esta orden funcionaría aquí: >"
+"siguiente.  Sabe que los límites entre capítulos tienen la palabra "
+"«Capítulo» en la primera columna. Esta orden funcionaría aquí: >"
 
 #. type: Plain text
 #: original/TXT/usr_10.txt:262
@@ -1440,8 +1442,8 @@ msgid ""
 "Just like with \"I\" the short line is not changed.  Also, you can't enter a "
 "newline in the new text."
 msgstr ""
-"Tal y como ocurre con «Ix, la línea corta no cambia. Del mismo modo, no podrá "
-"introducir una nueva línea en el texto."
+"Tal y como ocurre con «Ix, la línea corta no cambia. Del mismo modo, no "
+"podrá introducir una nueva línea en el texto."
 
 #. type: Plain text
 #: original/TXT/usr_10.txt:477
@@ -1592,9 +1594,9 @@ msgid ""
 "if there is less than a shift amount of whitespace available, it removes "
 "what it can."
 msgstr ""
-"La orden «<» desplaza por cada empuje la misma cantidad de espacios en blanco "
-"hacia la izquierda. Esta orden se limita al texto que se encuentre, de "
-"manera que eliminará la cantidad de espacio en blanco disponible sin "
+"La orden «<» desplaza por cada empuje la misma cantidad de espacios en "
+"blanco hacia la izquierda. Esta orden se limita al texto que se encuentre, "
+"de manera que eliminará la cantidad de espacio en blanco disponible sin "
 "sobreescribir texto."
 
 #. type: Plain text
@@ -1899,8 +1901,8 @@ msgid ""
 "separated from the next paragraph by an empty line."
 msgstr ""
 "Esto consiste en un orden «gq», que es un operador, seguido de una «ap», el "
-"objeto de texto para «un párrafo». Un párrafo es lo que está separado de otro "
-"párrafo por una línea en blanco."
+"objeto de texto para «un párrafo». Un párrafo es lo que está separado de "
+"otro párrafo por una línea en blanco."
 
 #. type: Plain text
 #: original/TXT/usr_10.txt:650

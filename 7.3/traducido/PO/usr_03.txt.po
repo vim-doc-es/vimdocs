@@ -44,10 +44,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7,2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
-"POT-Creation-Date: 2010-09-23 13:16+0300\n"
+"POT-Creation-Date: 2010-09-23 20:27+0300\n"
 "PO-Revision-Date: 2010-09-23 19:39+0200\n"
 "Last-Translator: Álvaro Castro Castilla <alvaro.castro.castilla@gmail.com>\n"
 "Language-Team: vim-doc-es>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -344,8 +345,8 @@ msgid ""
 msgstr ""
 "Si se encuentra en la última palabra de la línea, la orden «w» le llevará "
 "hasta la primera palabra de la siguiente línea. Por lo tanto, puede usar "
-"esto para moverse por un párrafo, mucho más rápido que usando «l», «b» hace lo "
-"mismo en la otra dirección."
+"esto para moverse por un párrafo, mucho más rápido que usando «l», «b» hace "
+"lo mismo en la otra dirección."
 
 #. type: Plain text
 #: original/TXT/usr_03.txt:64
@@ -412,9 +413,9 @@ msgid ""
 "\"0\" command (zero) moves to the very first character of the line.  The "
 "<Home> key does the same thing.  In a picture:"
 msgstr ""
-"La orden «^» le lleva hacia el primer carácter no vacío de la línea. La orden "
-"«0» (cero) le mueve al primer carácter de la línea. La tecla <Inicio> hace lo "
-"mismo. En una imagen:"
+"La orden «^» le lleva hacia el primer carácter no vacío de la línea. La "
+"orden «0» (cero) le mueve al primer carácter de la línea. La tecla <Inicio> "
+"hace lo mismo. En una imagen:"
 
 #. type: Plain text
 #: original/TXT/usr_03.txt:89
@@ -543,7 +544,8 @@ msgid ""
 "The backward version of this command is \"Tx\"."
 msgstr ""
 "La orden «tx» funciona como la orden «fx», salvo que para un carácter antes "
-"del buscado. Truco: «t» viene de «To». La versión inversa de esta orden es «Tx»."
+"del buscado. Truco: «t» viene de «To». La versión inversa de esta orden es "
+"«Tx»."
 
 #. type: Plain text
 #: original/TXT/usr_03.txt:136
@@ -1084,8 +1086,8 @@ msgid ""
 "To find the next occurrence of the same string use the \"n\" command.  Use "
 "this to find the first #include after the cursor: >"
 msgstr ""
-"Para encontrar la próxima cadena use la orden «n». Use esto para encontrar el "
-"primer #include después del cursor: >"
+"Para encontrar la próxima cadena use la orden «n». Use esto para encontrar "
+"el primer #include después del cursor: >"
 
 #. type: Plain text
 #: original/TXT/usr_03.txt:342
@@ -1122,9 +1124,9 @@ msgid ""
 "using \"N\" after a \"/\" command search backwards, using \"N\" after \"?\" "
 "searches forward."
 msgstr ""
-"La orden «N» repite la última búsqueda en la dirección opuesta. Por lo tanto, "
-"usar «N» después de una orden «/» busca hacia atrás, usar «N» tras «?» busca "
-"hacia delante."
+"La orden «N» repite la última búsqueda en la dirección opuesta. Por lo "
+"tanto, usar «N» después de una orden «/» busca hacia atrás, usar «N» tras "
+"«?» busca hacia delante."
 
 #. type: Plain text
 #: original/TXT/usr_03.txt:357
@@ -1153,8 +1155,8 @@ msgid ""
 "If you now search for \"word\", it will also match \"Word\" and \"WORD\".  "
 "To match case again: >"
 msgstr ""
-"Si ahora busca «palabra», también le identificará «Palabra» y «PALABRA». Para "
-"concordar con mayúsculas y minúsculas de nuevo: >"
+"Si ahora busca «palabra», también le identificará «Palabra» y «PALABRA». "
+"Para concordar con mayúsculas y minúsculas de nuevo: >"
 
 #. type: Plain text
 #: original/TXT/usr_03.txt:367 original/TXT/usr_27.txt:42
@@ -1265,8 +1267,8 @@ msgid ""
 "If you type \"/the\" it will also match \"there\".  To only find words that "
 "end in \"the\" use: >"
 msgstr ""
-"Si teclea «/el» también le identificará «ellos». Para buscar sólo palabras que "
-"terminen en «el», use: >"
+"Si teclea «/el» también le identificará «ellos». Para buscar sólo palabras "
+"que terminen en «el», use: >"
 
 #. type: Plain text
 #: original/TXT/usr_03.txt:411
@@ -1298,9 +1300,10 @@ msgid ""
 "\" commands use these start-of-word and end-of-word markers to only find "
 "whole words (you can use \"g*\" and \"g#\" to match partial words)."
 msgstr ""
-"Esto no encontrará «ellos» o «mantel». Fíjese en que las órdenes «*» y «#» usan "
-"estos marcadores de comienzo y final de palabra para encontrar únicamente "
-"palabras completas (puede usar «g*» y «g#» para concordancias parciales)."
+"Esto no encontrará «ellos» o «mantel». Fíjese en que las órdenes «*» y «#» "
+"usan estos marcadores de comienzo y final de palabra para encontrar "
+"únicamente palabras completas (puede usar «g*» y «g#» para concordancias "
+"parciales)."
 
 #. type: Plain text
 #: original/TXT/usr_03.txt:424
@@ -1601,8 +1604,8 @@ msgid ""
 "character is anything, and whose the third character is m.  Example:"
 msgstr ""
 "El carácter . (punto) concuerda cualquier carácter existente. Por ejemplo, "
-"el patrón «a.i» se identifica con cadenas cuyo primer carácter es una «a», su "
-"segundo es cualquiera, y su tercero es el carácter «i»:"
+"el patrón «a.i» se identifica con cadenas cuyo primer carácter es una «a», "
+"su segundo es cualquiera, y su tercero es el carácter «i»:"
 
 #. type: Plain text
 #: original/TXT/usr_03.txt:539

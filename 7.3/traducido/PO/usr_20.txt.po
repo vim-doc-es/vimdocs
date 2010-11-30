@@ -44,10 +44,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
-"POT-Creation-Date: 2010-09-23 13:16+0300\n"
+"POT-Creation-Date: 2010-09-23 20:27+0300\n"
 "PO-Revision-Date: 2010-09-23 19:58+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -256,9 +257,9 @@ msgid ""
 "search pattern.  This is called the Command line.  Also when it's used for "
 "entering a search command."
 msgstr ""
-"Cuando usa una orden de colon («:») o busca una cadena con «/» o «?», Vim sitúa "
-"el cursor en la parte inferior de la pantalla. Ahí es donde introduce la "
-"orden o el patrón de búsqueda. A esto se le llama la línea de órdenes.  "
+"Cuando usa una orden de colon («:») o busca una cadena con «/» o «?», Vim "
+"sitúa el cursor en la parte inferior de la pantalla. Ahí es donde introduce "
+"la orden o el patrón de búsqueda. A esto se le llama la línea de órdenes.  "
 "También cuando se usa para introducir una orden de búsqueda."
 
 #. type: Plain text
@@ -413,8 +414,8 @@ msgid ""
 "eight times, if <S-Left> doesn't work).  Now press <Insert> to switch to "
 "overstrike and type \"great\":"
 msgstr ""
-"Desplace el cursor al inicio de «sutil» con <S-Izq.> dos veces (o <Izq.> ocho "
-"veces, si <S-Izq.> no funciona. Pulse ahora <Insertar> para pasar a "
+"Desplace el cursor al inicio de «sutil» con <S-Izq.> dos veces (o <Izq.> "
+"ocho veces, si <S-Izq.> no funciona. Pulse ahora <Insertar> para pasar a "
 "superposición y teclee «gran»:"
 
 #. type: Plain text
@@ -548,10 +549,10 @@ msgid ""
 "otherwise \":fun\" would be confusing too.)"
 msgstr ""
 "En el manual de usuario usaremos o bien el nombre completo de la orden, o "
-"una versión corta pero legible. Por ejemplo, se puede acortar «:function» a «:"
-"fu».  Pero debido a que la mayoría de la gente no entiende qué simboliza, "
-"nosotros usaremos «:fun». (Vim no tiene una orden llamada «:funny», de no ser "
-"así, esto también sería confuso.)"
+"una versión corta pero legible. Por ejemplo, se puede acortar «:function» a "
+"«:fu».  Pero debido a que la mayoría de la gente no entiende qué simboliza, "
+"nosotros usaremos «:fun». (Vim no tiene una orden llamada «:funny», de no "
+"ser así, esto también sería confuso.)"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:144
@@ -768,7 +769,8 @@ msgstr "CONTEXTO"
 #: original/TXT/usr_20.txt:218
 msgid ""
 "When you type \":set i\" instead of \":edit i\" and press <Tab> you get: >"
-msgstr "Cuando teclea «:set i» en lugar de «:edit i», y pulsa <Tab>, obtiene: >"
+msgstr ""
+"Cuando teclea «:set i» en lugar de «:edit i», y pulsa <Tab>, obtiene: >"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:220
@@ -967,10 +969,10 @@ msgid ""
 "function.  |cmdline-history|"
 msgstr ""
 "De hecho, hay cuatro históricos. Los que vamos a mencionar aquí son las "
-"órdenes «:» y las órdenes de búsqueda «/» y «?». Las órdenes «/» y «?» comparten "
-"el mismo histórico, ya que ambos son órdenes de búsqueda. Los otros dos "
-"históricos sirven para las expresiones y líneas de entrada de la función "
-"input().  |cmdline-history|"
+"órdenes «:» y las órdenes de búsqueda «/» y «?». Las órdenes «/» y «?» "
+"comparten el mismo histórico, ya que ambos son órdenes de búsqueda. Los "
+"otros dos históricos sirven para las expresiones y líneas de entrada de la "
+"función input().  |cmdline-history|"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:301
@@ -980,8 +982,8 @@ msgid ""
 "then ten times <Up>.  There is a quicker way: >"
 msgstr ""
 "Suponga que ejecutó una orden «:set», introdujo diez órdenes «:» más y que "
-"después quiera repetir la orden «:set» otra vez. Puede pulsar «:» y diez veces "
-"<Arriba>. Existe una manera más rápida."
+"después quiera repetir la orden «:set» otra vez. Puede pulsar «:» y diez "
+"veces <Arriba>. Existe una manera más rápida."
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:303
@@ -1136,9 +1138,9 @@ msgid ""
 "the line to:"
 msgstr ""
 "Ahora se encuentra en el modo Normal. Puede usar las teclas «hjkl» para "
-"desplazarse. Por ejemplo, desplácese con «5k» hasta la línea «:e config.h.in». "
-"Teclee «$h» para ir a la «i» de «in» y teclee «cwout».  Ahora, ha cambiado la "
-"línea a:"
+"desplazarse. Por ejemplo, desplácese con «5k» hasta la línea «:e config.h."
+"in». Teclee «$h» para ir a la «i» de «in» y teclee «cwout».  Ahora, ha "
+"cambiado la línea a:"
 
 #. type: Plain text
 #: original/TXT/usr_20.txt:362

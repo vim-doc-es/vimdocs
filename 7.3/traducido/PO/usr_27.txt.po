@@ -33,14 +33,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
-"POT-Creation-Date: 2010-09-23 13:16+0300\n"
+"POT-Creation-Date: 2010-09-23 20:27+0300\n"
 "PO-Revision-Date: 2010-09-23 20:06+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Virtaal 0.5.2\n"
 
@@ -301,7 +301,8 @@ msgid ""
 "the same text as \"include\" did.  Now set the 'smartcase' option: >"
 msgstr ""
 "Vamos a dejar esta opción activada, y realizar una búsqueda de «INCLUDE». "
-"Encontrará el mismo texto que «include». Active ahora la opción 'smartcase': >"
+"Encontrará el mismo texto que «include». Active ahora la opción 'smartcase': "
+">"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:47
@@ -357,8 +358,8 @@ msgid ""
 msgstr ""
 "Puede anexar la cadena «\\c» si desea ignorar esta distinción para un patrón "
 "en particular. Usar «\\C» activará la distinción. Esto invalida las opciones "
-"'ignorecase' y 'smartcase', ya que usar «\\c» o «\\C» obvia el valor de estas "
-"opciones."
+"'ignorecase' y 'smartcase', ya que usar «\\c» o «\\C» obvia el valor de "
+"estas opciones."
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:73
@@ -908,7 +909,8 @@ msgid ""
 "Matches \"ab\", \"abb\", \"abbb\", etc.  It does not match \"a\" when no \"b"
 "\" follows."
 msgstr ""
-"Encuentra «ab», «abb», «abbb», etc. No coincide con «a» si no va seguido de «b»."
+"Encuentra «ab», «abb», «abbb», etc. No coincide con «a» si no va seguido de "
+"«b»."
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:266
@@ -938,9 +940,9 @@ msgid ""
 "\" are numbers.  The item before it will be matched \"n\" to \"m\" times |"
 "inclusive|.  Example: >"
 msgstr ""
-"Use la forma «\\{n,m}» para emparejar un número específico de elementos. «n» y "
-"«m» son números. El elemento anterior a éstos se emparejará con «n» un número "
-"«m» de veces |inclusive|. Ejemplo: >"
+"Use la forma «\\{n,m}» para emparejar un número específico de elementos. «n» "
+"y «m» son números. El elemento anterior a éstos se emparejará con «n» un "
+"número «m» de veces |inclusive|. Ejemplo: >"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:279
@@ -1051,8 +1053,8 @@ msgid ""
 "It would try to match as many characters as possible with \".*\", thus it "
 "matches \"axbxb\" as a whole."
 msgstr ""
-"...intentaría coincidir con tantos caracteres como es posible con «.*», y por "
-"ello se empareja por completo con «axbxb»."
+"...intentaría coincidir con tantos caracteres como es posible con «.*», y "
+"por ello se empareja por completo con «axbxb»."
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:322
@@ -1158,8 +1160,9 @@ msgid ""
 "to match all letters from \"a\" to \"z\" this gets very long.  There is a "
 "shorter method: >"
 msgstr ""
-"Puede usar «/a|b\\|c» para encontrar «a», «b» o «c». Esto se extiende si desea "
-"encontrar todas las letras de la «a» a la «z». Existe una manera más corta: >"
+"Puede usar «/a|b\\|c» para encontrar «a», «b» o «c». Esto se extiende si "
+"desea encontrar todas las letras de la «a» a la «z». Existe una manera más "
+"corta: >"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:357
@@ -1499,7 +1502,8 @@ msgid ""
 msgstr ""
 "Esto coincidiría en una línea que termina con «la», seguida de una que "
 "comienza con «palabra». Para encontrar también «la palabra», tendrá que "
-"emparejar el espacio o el salto de línea. Para ello, use el elemento «\\_s»: >"
+"emparejar el espacio o el salto de línea. Para ello, use el elemento «\\_s»: "
+">"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:484
@@ -1536,8 +1540,8 @@ msgid ""
 "alphabetic character or a line break.  The other character classes and "
 "ranges can be modified in the same way by inserting a \"_\"."
 msgstr ""
-"«\\s» coincide con espacio en blanco, «\\_s» coincide con espacio en blanco o "
-"un salto de línea. De forma parecida, «\\a» coincide con un carácter "
+"«\\s» coincide con espacio en blanco, «\\_s» coincide con espacio en blanco "
+"o un salto de línea. De forma parecida, «\\a» coincide con un carácter "
 "alfabético o un salto de línea. Las otras clases de caracteres y rangos se "
 "pueden modificar de la misma forma insertando un «_»."
 
@@ -1548,8 +1552,8 @@ msgid ""
 "For example: \"\\_.\" matches any character or a line break."
 msgstr ""
 "Puede hacer coincidir muchos otros elementos con un salto de línea "
-"prefijando «\\_». Por ejemplo, «\\_.» coincide con cualquier carácter o salto "
-"de línea."
+"prefijando «\\_». Por ejemplo, «\\_.» coincide con cualquier carácter o "
+"salto de línea."
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:503
@@ -1568,7 +1572,8 @@ msgstr ""
 msgid ""
 "Another example is \"\\_[]\", a character range that includes a line break: >"
 msgstr ""
-"Otro ejemplo es «\\_[]», un rango de carácter que incluye un salto de línea: >"
+"Otro ejemplo es «\\_[]», un rango de carácter que incluye un salto de línea: "
+">"
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:507
@@ -1686,8 +1691,8 @@ msgid ""
 "\"\\<\" and \"\\>\" are used to find only whole words.  \"\\h\" stands for "
 "\"[A-Za-z_]\" and \"\\w\" for \"[0-9A-Za-z_]\"."
 msgstr ""
-"«\\<» y «\\>» se usan para encontrar palabras completas.«\\h» simboliza «[A-Za-"
-"z_]», y «\\w» simboliza «[0-9A-Za-z_]»."
+"«\\<» y «\\>» se usan para encontrar palabras completas.«\\h» simboliza «[A-"
+"Za-z_]», y «\\w» simboliza «[0-9A-Za-z_]»."
 
 #. type: Plain text
 #: original/TXT/usr_27.txt:553

@@ -44,10 +44,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
-"POT-Creation-Date: 2010-09-23 13:16+0300\n"
+"POT-Creation-Date: 2010-11-30 20:04+0100\n"
 "PO-Revision-Date: 2010-09-23 19:41+0200\n"
 "Last-Translator: Álvaro Castro Castillo <alvaro.castro.castilla@gmail.com>\n"
 "Language-Team: vim-doc-es\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -535,7 +536,8 @@ msgstr ""
 "Muestra una orden incompleta en la esquina inferior derecha de la ventana de "
 "Vim, a la izquierda del «ruler» (regla). Por ejemplo, cuando pulsa «2f», Vim "
 "está esperando que introduzcas el carácter a encontrar y muestra «2f» es "
-"mostrado.  Cuando pulse «w», la orden «2fw» es ejecutará y el «2f» se eliminará."
+"mostrado.  Cuando pulse «w», la orden «2fw» es ejecutará y el «2f» se "
+"eliminará."
 
 #. type: Plain text
 #: original/TXT/usr_05.txt:138
@@ -595,8 +597,8 @@ msgid ""
 msgstr ""
 "Define el mapeo de una tecla (más información en la próxima sección). Esto "
 "define la orden «Q» para que de formato con el operador «gq». Así es como "
-"funcionaba antes de Vim 5.0. En ausencia de esto, la orden «Q» inicia el modo "
-"Ex, pero no lo necesitará."
+"funcionaba antes de Vim 5.0. En ausencia de esto, la orden «Q» inicia el "
+"modo Ex, pero no lo necesitará."
 
 #. type: Plain text
 #: original/TXT/usr_05.txt:154
@@ -894,8 +896,8 @@ msgid ""
 "You need to type the \\ and the p quickly after another, so that Vim knows "
 "they belong together."
 msgstr ""
-"Necesita teclear la «\\» y la «p» rápidamente una detrás de la otra, para que "
-"Vim sepa que van juntas."
+"Necesita teclear la «\\» y la «p» rápidamente una detrás de la otra, para "
+"que Vim sepa que van juntas."
 
 #. type: Plain text
 #: original/TXT/usr_05.txt:265
@@ -903,8 +905,8 @@ msgid ""
 "The \":map\" command (with no arguments) lists your current mappings.  At "
 "least the ones for Normal mode.  More about mappings in section |40.1|."
 msgstr ""
-"La orden «:map» (sin argumentos) le da un listado de sus mapeos actuales.  Al "
-"menos aquellos en el modo Normal. Más sobre mapeos en la sección |40.1|."
+"La orden «:map» (sin argumentos) le da un listado de sus mapeos actuales.  "
+"Al menos aquellos en el modo Normal. Más sobre mapeos en la sección |40.1|."
 
 #. type: Plain text
 #: original/TXT/usr_05.txt:268
@@ -1185,8 +1187,8 @@ msgid ""
 "might want to check if the existing plugin doesn't conflict with the one you "
 "are adding.  If it's OK, you can give the new one another name: >"
 msgstr ""
-"Si ese archivo ya existe, es que ya tiene una extensión para «cosas». Tal vez "
-"desee comprobar si la extensión existente no es conflictivo con el que "
+"Si ese archivo ya existe, es que ya tiene una extensión para «cosas». Tal "
+"vez desee comprobar si la extensión existente no es conflictivo con el que "
 "añade. Si no hay conflicto, puede darle otro nombre:"
 
 #. type: Plain text
@@ -1531,8 +1533,8 @@ msgstr "\tset so=0 ~\n"
 #. type: Plain text
 #: original/TXT/usr_05.txt:505
 msgid ""
-"Position the cursor on the zero with \"$\".  Change it into a five with \"r5"
-"\".  Then press <Enter> to apply the new value.  When you now move the "
+"Position the cursor on the zero with \"$\".  Change it into a five with "
+"\"r5\".  Then press <Enter> to apply the new value.  When you now move the "
 "cursor around you will notice that the text starts scrolling before you "
 "reach the border.  This is what the 'scrolloff' option does, it specifies an "
 "offset from the window border where scrolling starts."

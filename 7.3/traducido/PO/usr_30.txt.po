@@ -10,7 +10,7 @@
 #   - Updates
 #       TRADUCTOR <CORREO>, AÑO 
 #
-# 
+#
 #
 # Debido al formato (txt) y al máximo de 80 columnas que pueden tener 
 # los textos de ayuda en Vim, así como el formato PO, por favor, leete los
@@ -18,42 +18,41 @@
 # aplicación que desees usar.
 # También encontrarás información acerca del uso de herramientas gettext en el 
 # proyecto de localización (l10n) de Vim.
-# 
+#
 # - http://www.assembla.com/wiki/show/vim-doc-es
 #
 # No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
 # este enlace puede ser de interés. A pesar de no formar parte, nuestra 
 # intención es homologarnos con su terminología y uso de la lengua 
 # en la medida de lo útil y posible.
-# 
+#
 #  - El proyecto de traducción de Debian al español
 #     http://www.debian.org/intl/spanish/notas
-# 
+#
 # La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
 # pero también puede servir de referencia para otros términos no técnicos.
 # No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
 # traducción sea comprensible independientemente de la nacionalidad del
 # usuario. Si crees que alguna traducción puede llevar a confusión, consulta
 # la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
-# 
+#
 #  - www.rae.es 
 #  - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages   
-# 
+#
 # Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
 # se puede consultar con un simple grep, pogrep o cargado en Virtaal.
-
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
-"POT-Creation-Date: 2010-09-23 13:16+0300\n"
+"POT-Creation-Date: 2010-09-23 20:27+0300\n"
 "PO-Revision-Date: 2010-07-16 20:07+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es@freelists.org\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Virtaal 0.6.1\n"
 
@@ -517,9 +516,9 @@ msgid ""
 "command: >"
 msgstr ""
 "El nombre del programa a ejecutar cuando usa la orden «:make» se define con "
-"la opción 'makeprg'. Habitualmente, esto se define como «make», pero usuarios "
-"de Visual C++ deberían definir esto como «nmake» ejecutando la siguiente "
-"orden: >"
+"la opción 'makeprg'. Habitualmente, esto se define como «make», pero "
+"usuarios de Visual C++ deberían definir esto como «nmake» ejecutando la "
+"siguiente orden: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:122
@@ -827,8 +826,8 @@ msgid ""
 "simplest form is: >"
 msgstr ""
 "Cuando tiene código mal formateado, o si ha insertado o eliminado líneas, "
-"tendrá que sangrar las líneas nuevamente. El operador «=» hace esto. La forma "
-"más simple es: >"
+"tendrá que sangrar las líneas nuevamente. El operador «=» hace esto. La "
+"forma más simple es: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:241
@@ -846,9 +845,9 @@ msgid ""
 msgstr ""
 "Esto sangra la línea actual. Al igual que el resto de los operadores, hay "
 "tres formas de usarlo. En el modo Visual, «=» sangra las líneas "
-"seleccionadas. Un objeto de texto útil es «a{». Esto selecciona el bloque «{}» "
-"actual. Por lo tanto, para sangrar otra vez el bloque de código en el que se "
-"encuentra el cursor: >"
+"seleccionadas. Un objeto de texto útil es «a{». Esto selecciona el bloque "
+"«{}» actual. Por lo tanto, para sangrar otra vez el bloque de código en el "
+"que se encuentra el cursor: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:248
@@ -1423,8 +1422,7 @@ msgid ""
 "If you want absolutely no tabs in your file, you can set the 'expandtab' "
 "option: >"
 msgstr ""
-"Puede definir la opción 'expandtab' para evitar tabulaciones en su "
-"archivo: >"
+"Puede definir la opción 'expandtab' para evitar tabulaciones en su archivo: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:478
@@ -1465,8 +1463,8 @@ msgid ""
 msgstr ""
 "Definir 'expandtab' no afecta a las tabulaciones existentes. En otras "
 "palabras, todas las tabulaciones del documento siguen siéndolo. Si desea "
-"convertir esas tabulaciones en espacios, use la orden «:retab». "
-"Use las siguientes órdenes: >"
+"convertir esas tabulaciones en espacios, use la orden «:retab». Use las "
+"siguientes órdenes: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:495
@@ -1486,8 +1484,8 @@ msgid ""
 "want these to be converted as well, add a !: >"
 msgstr ""
 "Ahora, Vim ha cambiado todas las sangrías para que usen espacios en lugar de "
-"tabulados. Sin embargo, se respetan todos los tabulados a continuación de "
-"un carácter no vacío. Añada «!» si desea convertir éstos también: >"
+"tabulados. Sin embargo, se respetan todos los tabulados a continuación de un "
+"carácter no vacío. Añada «!» si desea convertir éstos también: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:501
