@@ -1,4 +1,4 @@
-*usr_30.txt*	For Vim version 7.3.  Last change: 2007 Nov 10
+*usr_30.esx*	Para Vim versión 7.3.  Último cambio: 10/11/2007
 
 		MANUAL DE USUARIO DE VIM - por Bram Moolenaar
 
@@ -17,9 +17,9 @@ así como el formato de los comentarios.
 |30.5|	Tabulados y espacios
 |30.6|	Formatear comentarios
 
-     Next chapter: |usr_31.txt|  Exploiting the GUI
- Previous chapter: |usr_29.txt|  Moving through programs
-Table of contents: |usr_toc.txt|
+ Siguiente capítulo: |usr_31.txt|  Sacar partido a la interfaz gráfica
+  Capítulo anterior: |usr_29.esx|  Moverse a través de programas
+Tabla de contenidos: |usr_toc.esx|
 
 ==============================================================================
 *30.1*	Compilar
@@ -36,9 +36,9 @@ argumento) y captura los resultados: >
 	:make {arguments}
 
 Si se genera algún error, se captura y el editor le posicionará sobre el primer error.
-   Este es un ejemplo de una sesión típica de «:make». (Las sesiones típicas de «:make»
-generan muchos menos errores y menos errores estúpidos.) La pantalla presentará este
-aspecto después de teclear «:make»:
+   Este es un ejemplo de una sesión típica de «:make». (Las sesiones típicas de
+«:make» generan muchos menos errores y menos errores estúpidos.) La pantalla
+presentará este aspecto después de teclear «:make»:
 
 	:!make | &tee /tmp/vim215953.err ~
 	gcc -g -Wall -o prog main.c sub.c ~
@@ -75,14 +75,15 @@ La siguiente orden va a la aparición del siguiente error: >
 
 	:cnext
 
-Vim salta a la línea 10, la última línea en el archivo, donde hay un «}» adicional.
-   Cuando no hay suficiente espacio Vim acorta el mensaje de error. Para ver el mensaje
-completo, use lo siguiente: >
+Vim salta a la línea 10, la última línea en el archivo, donde hay un «}»
+adicional.
+   Cuando no hay suficiente espacio Vim acorta el mensaje de error. Para ver
+el mensaje completo, use lo siguiente: >
 
 	:cc
 
 Puede obtener una visión general de todos los mensajes de error con la orden
-« clist».  La salida tiene el siguiente aspecto: >
+«:clist».  La salida tiene el siguiente aspecto: >
 
 	:clist
 <	3 main.c: 6:too many arguments to function 'do_sub' ~
@@ -127,8 +128,9 @@ se deben escapar con una barra invertida.  Ejemplo: >
 
 	:set makeprg=nmake\ -f\ project.mak
 
-Puede incluir palabras clave especiales de Vim al especificar la orden. El carácter «%»
-se expande con el nombre del archivo actual. Así que se ejecuta la siguiente orden: >
+Puede incluir palabras clave especiales de Vim al especificar la orden. El
+carácter «%» se expande con el nombre del archivo actual. Así que se
+ejecuta la siguiente orden: >
 	:set makeprg=make\ %
 
 Al editar «main.c», «:make» ejecutará la siguiente orden: >
@@ -181,8 +183,10 @@ cambiar al compilador Microsoft Visual C++: >
 
 	:compiler msvc
 
-Esto encontrará el script de Vim para el compilador «msvc» y definirá las opciones adecuadas.
-   Puede escribir sus propios archivos de compilador. Consulte |write-compiler-plugin|.
+Esto encontrará el script de Vim para el compilador «msvc» y definirá las
+opciones adecuadas.
+   Puede escribir sus propios archivos de compilador. Consulte
+|write-compiler-plugin|.
 
 
 REDIRECCIONAMIENTO DE LA SALIDA
@@ -218,23 +222,24 @@ Con esta opción activada, cuando escriba algo como «if (x)», la siguiente
 línea tendrá un nivel de sangrado adicional de forma automática.
 
 				    if (flag)
-	Automatic indent   --->		do_the_work();
-	Automatic unindent <--	    if (other_flag) {
-	Automatic indent   --->		do_file();
-	keep indent			do_some_more();
-	Automatic unindent <--	    }
+	Sangrado automático  --->		do_the_work();
+	Eliminar sangrado automático <--	    if (other_flag) {
+	Sangrado automático   --->		do_file();
+	Preservar el sangrado			do_some_more();
+	Eliminar sangrado automático <--	    }
 
 Cuando teclee algo entre corchetes ({}), el texto tendrá un sangrado al
 inicio, y pero no al final. La eliminación de sangrado («unindenting»)
 aparecerá después de teclear '}', ya que Vim no puede adivinar qué va a
 escribir.
 
-Un efecto secundario del sangrado automático es que le permite encontrar los errores
-en su código de manera temprana. Cuando teclea «}» para finalizar una función, sólo
-para ver que el sangrado automático la da más sangrado del esperado, puede que falte
-un «}». Use la orden «%» para encontrar qué «{» encaja con la «}» que tecleó.
-  Un «)» y «;» omitido también causan un sangrado adicional. Por ello, si obtiene más espacios
-en blanco del esperado, compruebe la líneas precedentes.
+Un efecto secundario del sangrado automático es que le permite encontrar
+los errores en su código de manera temprana. Cuando teclea «}» para finalizar
+una función, sólo para ver que el sangrado automático la da más sangrado del
+esperado, puede que falte un «}». Use la orden «%» para encontrar qué «{»
+encaja con la «}» que tecleó.
+  Un «)» y «;» omitido también causan un sangrado adicional. Por ello, si obtiene
+más espacios en blanco del esperado, compruebe la líneas precedentes.
 
 Cuando tiene código mal formateado, o si ha insertado o eliminado líneas,
 tendrá que sangrar las líneas nuevamente. El operador «=» hace esto. La
@@ -250,7 +255,8 @@ que se encuentra el cursor: >
 
 	=a{
 
-Si tiene código con un pésimo sangrado, puede sangrar nuevamente el archivo completo con: >
+Si tiene código con un pésimo sangrado, puede sangrar nuevamente el archivo
+completo con: >
 	gg=G
 
 Sin embargo, no lo haga en los archivos que han sido cuidadosamente
@@ -260,13 +266,14 @@ algunas situaciones puede que desee anularlo.
 
 DEFINIR EL ESTILO DE SANGRADO
 
-Diferentes personas tienen diferentes estilos de sangrado. Por omisión, Vim realiza
-un buen trabajo de sangrado de la manera en que lo hacen el 90% de los programadores.
-Aun así, hay diferentes estilos; así que si lo desea, puede personalizar el estilo de sangrado
-con la opción 'cinoptions'.
-   Por omisión, 'cinoptions' está vacío, usando Vim el estilo predefinido. Puede añadir
-varios elementos cuando desee algo diferente. Por ejemplo, para ubicar corchetes de la
-siguiente forma:
+Diferentes personas tienen diferentes estilos de sangrado. Por omisión,
+Vim realiza un buen trabajo de sangrado de la manera en que lo hacen el
+90% de los programadores.
+Aun así, hay diferentes estilos; así que si lo desea, puede personalizar el
+estilo de sangrado con la opción 'cinoptions'.
+   Por omisión, 'cinoptions' está vacío, usando Vim el estilo predefinido.
+Puede añadir varios elementos cuando desee algo diferente. Por ejemplo,
+para ubicar corchetes de la siguiente forma:
 
 	if (flag) ~
 	  { ~
@@ -288,13 +295,14 @@ archivo C. Esta es la forma de hacer que funcione automáticamente: >
 
 	:filetype indent on
 
-En realidad, esto hace  mucho más que activar 'cindent'  para archivos C. En primer
-lugar, activa la detección de tipo de archivo. Es lo mismo que lo que usar para el
-resaltado de sintaxis.
-   Si el tipo de archivo es conocido, Vim buscará un archivo de sangrado para este tipo de
-archivo. La distribución de Vim incluye un número para estos lenguajes de programación.
-Este archivo de sangrado preparará automáticamente el sangrado específico para este
-archivo.
+En realidad, esto hace  mucho más que activar 'cindent'  para archivos C.
+En primer lugar, activa la detección de tipo de archivo. Es lo mismo que
+lo que usar para el resaltado de sintaxis.
+   Si el tipo de archivo es conocido, Vim buscará un archivo de sangrado para
+este tipo de archivo. La distribución de Vim incluye un número para estos
+lenguajes de programación.
+Este archivo de sangrado preparará automáticamente el sangrado específico
+para este archivo.
 
 Si no le gusta el sangrado automático, puede desactivarlo de nuevo: >
 
@@ -320,8 +328,8 @@ En este archivo, el resultado es:
 	filetype=help ~
 
 Entonces, usaría «help» para {tipo-de-archivo}.
-   Para la parte de {directorio}, necesita usar su directorio de tiempo de ejecución.
-Mire la salida de esta orden: >
+   Para la parte de {directorio}, necesita usar su directorio de tiempo de
+ejecución. Mire la salida de esta orden: >
 
 	set runtimepath
 
@@ -342,23 +350,27 @@ sangrado. La manera de hacerlo se explica aquí: |indent-expression|.
 *30.4*	Otros sangrados
 
 La forma más simple de sangrado automático es con la opción 'autoindent',
-ya que usa el sangrado de la línea anterior. La opción 'smartindent' es un poco más
-inteligente. Es útil con aquellos lenguajes que no disponen de un archivo de sangrado.
+ya que usa el sangrado de la línea anterior. La opción 'smartindent' es un
+poco más inteligente. Es útil con aquellos lenguajes que no disponen de un
+archivo de sangrado.
 'smartindent' no es tan inteligente como 'cindent', pero es más inteligente que
 'autoindent'.
-  Si 'smartindent' está definido, se añadirá un nivel adicional de sangrado para cada
-«{», y se eliminará para cada «}». También se añadirá un nivel adicional de sangrado para
-cada palabra en la opción 'cinwords'. Las líneas que empiezan con «#» se tratan de forma
-especial: todo el sangrado se elimina. Esto se hace de forma que todas las directivas de
-preproceso empiecen en la primera columna. El sangrado se restaura en la siguiente línea.
+  Si 'smartindent' está definido, se añadirá un nivel adicional de sangrado
+para cada «{», y se eliminará para cada «}». También se añadirá un nivel
+adicional de sangrado para cada palabra en la opción 'cinwords'. Las líneas que
+empiezan con «#» se tratan de forma especial: todo el sangrado se elimina.
+Esto se hace de forma que todas las directivas de preproceso empiecen en la
+primera columna. El sangrado se restaura en la siguiente línea.
 
 
 CORREGIR EL SANGRADO
 
-Cuando use 'autoindent' o 'smartindent' para obtener el sangrado de línea anterior,
-habrá ocasiones en que necesite añadir o eliminar un 'shiftwidth' de sangrado. La
-forma rápida de hacerlo es usando las órdenes «CTRL-D» y «CTRL-T» en modo Insertar.
-   Por ejemplo, está escribiendo un script de consola con el siguiente aspecto:
+Cuando use 'autoindent' o 'smartindent' para obtener el sangrado de línea
+anterior, habrá ocasiones en que necesite añadir o eliminar un 'shiftwidth'
+de sangrado. La forma rápida de hacerlo es usando las órdenes «CTRL-D»
+y «CTRL-T» en modo Insertar.
+   Por ejemplo, está escribiendo un script de consola con el siguiente
+aspecto:
 
 	if test -n a; then ~
 	   echo a ~
@@ -391,11 +403,12 @@ tiene lo siguiente:
 	   echo "-------" ~
 	   fi ~
 
-Para eliminar el sangrado innecesario en la última línea pulse «CTRL-D». Esto elimina
+Para eliminar el sangrado innecesario en la última línea pulse «CTRL-D». Elimina
 un 'shiftwidth' de sangrado, sin importar donde está dentro de la línea.
    Cuando está en modo Normal, puede usar las órdenes «>>» y «<<» para cambiar
-las líneas. «>» y «<» son operadores, y por ello tiene las tres formas habituales de
-definir las líneas que desea sangrar. Una combinación útil es la siguiente: >
+las líneas. «>» y «<» son operadores, y por ello tiene las tres formas
+habituales de definir las líneas que desea sangrar. Una combinación útil
+es la siguiente: >
 
 	>i{
 
@@ -403,7 +416,7 @@ Esto añade un sangrado al bloque de líneas actual, dento de «{}». Las línea
 «{» y «}» se dejan sin modificar, mientras que «>a}» las incluye. En este
 ejemplo, el cursor está sobre «printf»:
 
-	texto original		después de «>i{»		después de «>a{»
+	texto original		después de «>i{»	    después de «>a{»
 
 	if (flag)		if (flag)		if (flag) ~
 	{			{			    { ~
@@ -416,62 +429,65 @@ ejemplo, el cursor está sobre «printf»:
 
 Por omisión, 'tabstop' está definido con un valor de 8. Aunque puede cambiarlo,
 puede que se encuentre con problemas en el futuro. Otros programas no sabrán
-qué valor de «tabstop» (tabulación) usó. Probablemente, usan el valor predefinido
-de 8, y por ello su texto presentaría un aspecto diferente. Además, la mayoría de
-impresoras usan un valor de «tabstop» predefinido de 8. Por ello, es mejor
-no modificar 'tabstop'. (Cuando edite un archivo que se escribió con otro valor de
-tabulación, consulte |25.3| para ver como arreglarlo).
+qué valor de «tabstop» (tabulación) usó. Probablemente, usan el valor
+predefinido de 8, y por ello su texto presentaría un aspecto diferente. Además,
+la mayoría de impresoras usan un valor de «tabstop» predefinido de 8. Por ello,
+es mejor no modificar 'tabstop'. (Cuando edite un archivo que se escribió con
+otro valor de tabulación, consulte |25.3| para ver como arreglarlo).
    Para insertar un sangrado en un programa, usar un múltiplo de ocho espacios
-hace que vaya rápidamente al borde derecho de la ventana. Usar un sólo espacio
-no ofrece la suficiente diferencia visual. La mayoría de personas prefieren usar
-cuatro espacios, una buena solución.
-  Ya que <Tab> equivale a 8 espacios y quiere usar un sangrado de cuatro espacios.
-no puede usar <Tab> para insertar su sangrado. Hay dos formas de tratar esto:
+hace que vaya rápidamente al borde derecho de la ventana. Usar un sólo
+espacio no ofrece la suficiente diferencia visual. La mayoría de personas
+prefieren usar cuatro espacios, una buena solución.
+  Ya que <Tab> equivale a 8 espacios y quiere usar un sangrado de cuatro
+espacios. No puede usar <Tab> para insertar su sangrado. Hay dos formas de
+tratar esto:
 
 1. Use una mezcla de <Tab> y caracteres de espacio. Ya que <Tab> toma el
-    el lugar de 8 espacios, tendrá menos caracteres en su archivo. Insertar un <Tab>
-    es más rápido que 8 espacios. La tecla de retroceso también es más rápido.
+    el lugar de 8 espacios, tendrá menos caracteres en su archivo. Insertar un
+    <Tab> es más rápido que 8 espacios. La tecla de retroceso también es
+    más rápido.
 
-2. Utilice espacios solamente.  Esto evita los problemas con los programas que utilizan un
-    valor de «tabstop» diferente.
+2. Utilice espacios solamente.  Esto evita los problemas con los
+    programas que utilizan un valor de «tabstop» diferente.
 
 Afortunadamente, Vim soporta ambos métodos bastante bien.
 
 
 ESPACIOS Y TABULADOS
 
-If you are using a combination of tabs and spaces, you just edit normally.
-The Vim defaults do a fine job of handling things.
-   You can make life a little easier by setting the 'softtabstop' option.
-This option tells Vim to make the <Tab> key look and feel as if tabs were set
-at the value of 'softtabstop', but actually use a combination of tabs and
-spaces.
-   After you execute the following command, every time you press the <Tab> key
-the cursor moves to the next 4-column boundary: >
+Si usa una combinación de tabulados y espacios, puede editar con normalidad.
+El comportamiento predefinido de Vim hace una buena labor al gestionar esto.
+   Puede facilitar su vida definiendo la opción 'softtabstop'.
+Esta opción le dice a Vim que la tecla <Tab> tenga el comportamiento como si
+los tabulados estuviesen definidos como un valor 'softtabstop', aunque use en
+realidad una combinación de tabulados y espacios.
+   Después de ejecutar la siguiente, orden, cada vez que pulse la tecla <Tab> el
+cursor se moverá al siguiente límite de cuatro columnas: >
 
 	:set softtabstop=4
 
-When you start in the first column and press <Tab>, you get 4 spaces inserted
-in your text.  The second time, Vim takes out the 4 spaces and puts in a <Tab>
-(thus taking you to column 8).  Thus Vim uses as many <Tab>s as possible, and
-then fills up with spaces.
-   When backspacing it works the other way around.  A <BS> will always delete
-the amount specified with 'softtabstop'.  Then <Tab>s are used as many as
-possible and spaces to fill the gap.
-   The following shows what happens pressing <Tab> a few times, and then using
-<BS>.  A "." stands for a space and "------->" for a <Tab>.
+Cuando empiece en la primera columna y pulse <Tab> obtendrá la inserción de
+cuatro espacios en su texto. La segunda vez, Vim eliminará los cuatro espacios
+e insertará un <Tab> (llevándole a la columna 8). Entonces, Vim usa tantos
+<Tab> como sea posible, rellenándolos con espacios.
+   Al usar la tecla de retroceso, funcionará al revés. Un <Bs> (tecla de
+retroceso) siempre elimina la cantidad definida con 'softtabstop'. Entonces, se
+usarán tantos <Tab> como sea posible, rellenando el hueco resultante
+con espacios.
+   Lo siguiente muestra lo que ocurre cuando pulsa <Tab> varias veces, y
+después usando <Bs>. Un «.» simboliza un espacio, y «------->» un <Tab>.
 
-	type			  result ~
+	tipo			          resultado ~
 	<Tab>			  ....
 	<Tab><Tab>		  ------->
 	<Tab><Tab><Tab>		  ------->....
 	<Tab><Tab><Tab><BS>	  ------->
 	<Tab><Tab><Tab><BS><BS>   ....
 
-An alternative is to use the 'smarttab' option.  When it's set, Vim uses
-'shiftwidth' for a <Tab> typed in the indent of a line, and a real <Tab>
-when typed after the first non-blank character.  However, <BS> doesn't work
-like with 'softtabstop'.
+Una alternativa es usar la opción 'smartab'. Si se define, Vim usa
+'shiftwidth' para un <Tab> introducida en el sangrado de una línea, y un
+<Tab> real cuando se introduce en el primer carácter no vacío. Sin embargo
+<BS> no funciona de la misma forma que con 'softtabstop'.
 
 
 SÓLO ESPACIOS
@@ -522,124 +538,127 @@ Esta otra forma ofrece el mismo resultado: >
 ==============================================================================
 *30.6*	Formatear comentarios
 
-One of the great things about Vim is that it understands comments.  You can
-ask Vim to format a comment and it will do the right thing.
-   Suppose, for example, that you have the following comment:
+Una de las mayores virtudes de Vim es que entiende comentarios. Puede pedir
+a Vim que dé formato a un comentario, y hará lo correcto.
+   Suponga, por ejemplo, que tiene el siguiente comentario:
 
 	/* ~
-	 * This is a test ~
-	 * of the text formatting. ~
+	 * Esta es una prueba ~
+	 * de formateo de texto. ~
 	 */ ~
 
-You then ask Vim to format it by positioning the cursor at the start of the
-comment and type: >
+Puede indicar a Vim que de formato posicionando el cursor al principio del
+comentario y escribiendo: >
 
 	gq]/
 
-"gq" is the operator to format text.  "]/" is the motion that takes you to
-the end of a comment.  The result is:
+«gq» es el operador para formatear texto. «]/» es el movimiento que le lleva
+al final del comentario. El resultado es:
 
 	/* ~
-	 * This is a test of the text formatting. ~
+	 * Esta es una prueba de formateo de texto. ~
 	 */ ~
 
-Notice that Vim properly handled the beginning of each line.
-  An alternative is to select the text that is to be formatted in Visual mode
-and type "gq".
+Observe que Vim manipuló adecuadamente el principio de cada línea.
+  Una alternativa es seleccionar el texto a formatear en modo Visual,
+y teclear «gq».
 
-To add a new line to the comment, position the cursor on the middle line and
-press "o".  The result looks like this:
+Para añadir una nueva línea al comentario, posicione el cursor en la línea
+central y pulse «o». El resultado sería el siguiente:
 
 	/* ~
-	 * This is a test of the text formatting. ~
+	 * Esta es una prueba de formateo de texto ~
 	 * ~
 	 */ ~
 
-Vim has automatically inserted a star and a space for you.  Now you can type
-the comment text.  When it gets longer than 'textwidth', Vim will break the
-line.  Again, the star is inserted automatically:
+Vim ha insertado un «*» y un espacio automáticamente. Ahora puede escribir
+el texto de comentario. La línea sea más larga que 'textwidth', Vim romperá
+la línea. Una vez más, se inserta «*» automáticamente.
 
 	/* ~
-	 * This is a test of the text formatting. ~
-	 * Typing a lot of text here will make Vim ~
-	 * break ~
+	 * Esto es una prueba de formateo de texto. ~
+	 * Teclear mucho texto hará que Vim divida ~
+	 * la línea ~
 	 */ ~
 
-For this to work some flags must be present in 'formatoptions':
+Para que esto funcione, debe especificar algunas marcas en 'formatoptions':
 
-	r	insert the star when typing <Enter> in Insert mode
-	o	insert the star when using "o" or "O" in Normal mode
-	c	break comment text according to 'textwidth'
+	r	inserta «*» al pulsar <Enter> en modo Insertar
+	o	inserta «*» a usar «o» o «O» en modo Normal
+	c	rompe el texto de comentario de acuerdo a 'textwidth'
 
 Para más detalles, consulte |fo-table|.
 
 
 DEFINIR UN COMENTARIO
 
-The 'comments' option defines what a comment looks like.  Vim distinguishes
-between a single-line comment and a comment that has a different start, end
-and middle part.
-   Many single-line comments start with a specific character.  In C++ // is
-used, in Makefiles #, in Vim scripts ".  For example, to make Vim understand
-C++ comments: >
+La opción 'comments' define el aspecto de un comentario. Vim distingue
+entre un comentario de una sola línea y un comentario cuyo principio, parte
+central y final son distintas.
+   Muchos comentarios de una sola línea empiezan con carácter específico.
+En C++ se usa «//», «#» en archivos «Makefile», y «"» en scripts de Vim.
+Por ejemplo, para que Vim entienda comentarios en C++: >
 
 	:set comments=://
 
-The colon separates the flags of an item from the text by which the comment
-is recognized.  The general form of an item in 'comments' is:
+Los dos puntos separan las marcas de un elemento del texto por el cual se
+reconoce un comentario. La forma habitual de un elemento en 'comments' es:
 
-	{flags}:{text}
+	{marcas}:{texto}
 
-The {flags} part can be empty, as in this case.
-   Several of these items can be concatenated, separated by commas.  This
-allows recognizing different types of comments at the same time.  For example,
-let's edit an e-mail message.  When replying, the text that others wrote is
-preceded with ">" and "!" characters.  This command would work: >
+La parte de {marcas} puede estar vacía, como es el caso.
+   Puede concatenar varios de estos elementos separándolos con comas. Esto
+permite reconocer diferentes tipos de comentarios a la vez. Por ejemplo,
+vamos a editar un mensaje de correo electrónico. Al responder, el texto que
+otros escribieron estará precedido por los caracteres «>» y «!».
+Esta orden debería servir: >
 
 	:set comments=n:>,n:!
 
-There are two items, one for comments starting with ">" and one for comments
-that start with "!".  Both use the flag "n".  This means that these comments
-nest.  Thus a line starting with ">" may have another comment after the
-">".  This allows formatting a message like this:
+Hay dos elementos, uno para los comentarios que empiezan con «>» y uno para
+los comentarios que comienzan con «!».  Ambos usan la marca «n».  Esto
+significa que estos comentarios anidan.  Por lo tanto una línea comenzando
+con «>» puede tener otro comentario después de «>».  Esto permite dar
+formato a un mensaje como este:
 
-	> ! Did you see that site? ~
-	> ! It looks really great. ~
-	> I don't like it.  The ~
-	> colors are terrible. ~
-	What is the URL of that ~
-	site? ~
+	> ! ¿Has visto esa página web? ~
+	> ! Tiene un buen diseño. ~
+	> No me gusta.  Los ~
+	> colores son horribles. ~
+	¿Cual es la URL de esa ~
+	página web? ~
 
-Try setting 'textwidth' to a different value, e.g., 80, and format the text
-by Visually selecting it and typing "gq".  The result is:
+Pruebe configurando 'textwidth' con un valor diferente, por ejemplo, de 80
+años y dar formato al texto visualmente si lo selecciona y escribiendo
+"gq".  El resultado es:
 
-	> ! Did you see that site?  It looks really great. ~
-	> I don't like it.  The colors are terrible. ~
-	What is the URL of that site? ~
+	> ! ¿Has visto esa página web? Tiene un buen diseño. ~
+	> No me gusta.  Los colores son horribles. ~
+	¿Cual es la URL de esa página web? ~
 
-You will notice that Vim did not move text from one type of comment to
-another.  The "I" in the second line would have fit at the end of the first
-line, but since that line starts with "> !" and the second line with ">",
-Vim knows that this is a different kind of comment.
+Notará que Vim no desplazó el texto de un tipo de comentario a otro. El «No»
+en la segunda línea, pero ya que la línea comienza con «> !», y la segunda
+con «>», Vim detectará que es otro tipo de comentario.
 
 
-A THREE PART COMMENT
+COMENTARIO EN TRES PARTES
 
-A C comment starts with "/*", has "*" in the middle and "*/" at the end.
-The entry in 'comments' for this looks like this: >
+Un comentario de C empieza con «/*»,  «*» en el medio, y «/*» al final. La
+entrada en 'comments' tendría este aspecto: >
 
 	:set comments=s1:/*,mb:*,ex:*/
 
-The start is defined with "s1:/*".  The "s" indicates the start of a
-three-piece comment.  The colon separates the flags from the text by which the
-comment is recognized: "/*".  There is one flag: "1".  This tells Vim that the
-middle part has an offset of one space.
-   The middle part "mb:*" starts with "m", which indicates it is a middle
-part.  The "b" flag means that a blank must follow the text.  Otherwise Vim
-would consider text like "*pointer" also to be the middle of a comment.
-   The end part "ex:*/" has the "e" for identification.  The "x" flag has a
-special meaning.  It means that after Vim automatically inserted a star,
-typing / will remove the extra space.
+El principio se define con «s1:/*». La «s» indica el principio de un
+comentario en tres partes. Los dos puntos separan las marcas del texto
+por el cual se detecta que es un comentario: «/*». Hay una marca, «1». Indica
+a Vim que la parte central tiene un «offset» de un espacio.
+   La parte central «mb:*» comienza con «m», que indica que es la parte
+central. La marca «b» indica que el texto debe ir seguido de un espacio
+en blanco. De  no ser así, Vim considerará que el texto como «*pointer»
+también es la parte central de un comentario.
+   La parte final «ex:*/» tiene «e» como identificador. La marca «x» tiene
+un significado especial. Indica que pulsar «/» eliminará el espacio
+adicional después de que Vim haya insertado un «*» automáticamente.
 
 Para más detalles, véase |format-comments|.
 
