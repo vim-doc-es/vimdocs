@@ -1410,6 +1410,10 @@ msgid ""
 "when typed after the first non-blank character.  However, <BS> doesn't work "
 "like with 'softtabstop'."
 msgstr ""
+"Una alternativa es usar la opción 'smartab'. Si se define, Vim usa "
+"'shiftwidth' para un <Tab> introducida en el sangrado de una línea, y un "
+"<Tab> real cuando se introduce en el primer carácter no vacío. Sin embargo "
+"<BS> no funciona de la misma forma que con 'softtabstop'."
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:473
@@ -1546,6 +1550,9 @@ msgid ""
 "ask Vim to format a comment and it will do the right thing.\n"
 "   Suppose, for example, that you have the following comment:\n"
 msgstr ""
+"Una de las mayores virtudes de Vim es que entiende comentarios. Puede pedir\n"
+"a Vim que dé formato a un comentario, y hará lo correcto.\n"
+"   Suponga, por ejemplo, que tiene el siguiente comentario:\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:526
@@ -1582,6 +1589,8 @@ msgid ""
 "\"gq\" is the operator to format text.  \"]/\" is the motion that takes you "
 "to the end of a comment.  The result is:"
 msgstr ""
+"«gq» es el operador para formatear texto. «]/» es el movimiento que le lleva "
+"al final del comentario. El resultado es:"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:538
@@ -1607,6 +1616,8 @@ msgid ""
 "To add a new line to the comment, position the cursor on the middle line and "
 "press \"o\".  The result looks like this:"
 msgstr ""
+"Para añadir una nueva línea al comentario, posicione el cursor en la línea "
+"central y pulse «o». El resultado sería el siguiente:"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:550
@@ -1640,7 +1651,8 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/usr_30.txt:562
 msgid "For this to work some flags must be present in 'formatoptions':"
-msgstr ""
+msgstr "Para que esto funcione, debe especificar algunas marcas en "
+"'formatoptions':"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:566
@@ -1685,12 +1697,14 @@ msgid ""
 "The colon separates the flags of an item from the text by which the comment "
 "is recognized.  The general form of an item in 'comments' is:"
 msgstr ""
+"Los dos puntos separan las marcas de un elemento del texto por el cual se "
+"reconoce un comentario. La forma habitual de un elemento en 'comments' es:"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:585
 #, no-wrap
 msgid "\t{flags}:{text}\n"
-msgstr "\t{flags}:{text}\n"
+msgstr "\t{marcas}:{texto}\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:591
@@ -1758,7 +1772,7 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/usr_30.txt:620
 msgid "A THREE PART COMMENT"
-msgstr ""
+msgstr "COMENTARIO EN TRES PARTES"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:623
@@ -1771,7 +1785,7 @@ msgstr ""
 #: original/TXT/usr_30.txt:625
 #, no-wrap
 msgid "\t:set comments=s1:/*,mb:*,ex:*/\n"
-msgstr ""
+msgstr "\t:set comments=s1:/*,mb:*,ex:*/\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:636
