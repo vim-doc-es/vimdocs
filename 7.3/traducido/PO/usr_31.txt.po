@@ -211,10 +211,14 @@ msgid ""
 "browser can be used for commands that use a file.  A dialog to make a choice "
 "between alternatives.  Use keyboard shortcuts to access menu items quickly."
 msgstr ""
+"Vim funciona bien en una terminal, pero la GUI tiene algunos elementos extra. "
+"Un explorador de archivos para las órdenes que usan un archivo.  Una ventana "
+"de diálogo para hacer una elección entre alternativas.  Usar los accesos "
+"directos de teclado para acceder rápidamente a los elementos en los menús."
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:17
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|31.1|\tThe file browser\n"
 "|31.2|\tConfirmation\n"
@@ -222,16 +226,15 @@ msgid ""
 "|31.4|\tVim window position and size\n"
 "|31.5|\tVarious\n"
 msgstr ""
-"|usr_31.txt|  Exploiting the GUI\n"
-"\t\t|31.1|\tThe file browser\n"
-"\t\t|31.2|\tConfirmation\n"
-"\t\t|31.3|\tMenu shortcuts\n"
-"\t\t|31.4|\tVim window position and size\n"
-"\t\t|31.5|\tVarious\n"
+"|31.1|\tEl explorador de archivos\n"
+"|31.2|\tConfirmación\n"
+"|31.3|\tAccesos directos para menús\n"
+"|31.4|\tPosición y tamaño de la ventana de Vim\n"
+"|31.5|\tVarios\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:21
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid ""
 #| "     Next chapter: |usr_25.txt|  Editing formatted text\n"
 #| " Previous chapter: |usr_23.txt|  Editing other files\n"
@@ -241,8 +244,8 @@ msgid ""
 " Previous chapter: |usr_30.txt|  Editing programs\n"
 "Table of contents: |usr_toc.txt|\n"
 msgstr ""
-" Capítulo siguiente: |usr_32.txt|  El árbol\n"
-"  Capitulo anterior: |usr_23.esx|  Editar otros archivos\n"
+" Capítulo siguiente: |usr_32.esx|  El árbol de modificaciones\n"
+"  Capítulo anterior: |usr_30.esx|  Editar programas\n"
 "Tabla de contenidos: |usr_toc.esx|\n"
 
 #. type: Plain text
@@ -263,6 +266,15 @@ msgid ""
 "typed command is possible as well.  To make the split command use the file\n"
 "browser, prepend \"browse\": >\n"
 msgstr ""
+"Al usar el menú Archivo/Abrir... usted recibe un explorador de archivos.  Esto\n"
+"hace más fácil ubicar el archivo que usted desea editar. ¿Pero y si usted\n"
+"desea dividir una ventana para editar otro archivo?  No hay una entrada en el\n"
+"menú para esto.  Usted puede usar primero Ventana/Dividir y luego\n"
+"Archivo/Abrir..., pero eso es más trabajo.\n"
+"  Ya que usted está escribiendo la mayoría de los comandos en Vim, abrir el\n"
+"explorador de archivos con un comando escrito también es posible.  Para hacer\n"
+"que el comando de división use el explorador de archivos, anteponga\n"
+"\"browse\": >\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:34
