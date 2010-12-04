@@ -322,6 +322,15 @@ msgid ""
 "   This can be changed with the 'browsedir' option.  It can have one of three\n"
 "values:\n"
 msgstr ""
+"La orden \":browse\" puede ser antepuesta prácticamente a cualquier orden que\n"
+"abra un archivo.\n"
+"   Si no se especifica un directorio, Vim será quien determine en qué\n"
+"directorio iniciar el explorador de archivos.  De manera predeterminada se usa\n"
+"el mismo directorio usado la vez anterior.  Así, si se usó «:browse split» y\n"
+"se seleccionó un archivo en «/usr/local/share», la próxima vez que use\n"
+"«:browse» se empezará desde «/usr/local/share» de nuevo.\n"
+"   Esto puede ajustarse mediante la opción 'browsedir'.  Ésta puede tener uno\n"
+"de los 3 siguientes valores:\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:56
@@ -331,6 +340,10 @@ msgid ""
 "\tbuffer\t\tUse the same directory as the current buffer\n"
 "\tcurrent\t\tuse the current directory\n"
 msgstr ""
+"\tlast\t\tUsar el último directorio visitado (predeterminado)\n"
+"\tbuffer\t\tUsar el mismo directorio del buffer actual\n"
+"\tcurrent\t\tUsar el directorio actual\n"
+# TODO qué uso en vez de buffer?
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:59
@@ -338,6 +351,8 @@ msgid ""
 "For example, when you are in the directory \"/usr\", editing the file \"/usr/"
 "local/share/readme\", then the command: >"
 msgstr ""
+"Por ejemplo, cuando usted se encuentra en el directorio \"/usr\", editando el"
+"archivo \"/usr/local/share/readme\", la orden: >"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:62
@@ -352,7 +367,8 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/usr_31.txt:64
 msgid "Will start the browser in \"/usr/local/share\".  Alternatively: >"
-msgstr ""
+msgstr "Lanzará el explorador de archivos desde \"/usr/local/share\".  Por otro"
+" lado: >"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:67
@@ -367,7 +383,7 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/usr_31.txt:69
 msgid "Will start the browser in \"/usr\"."
-msgstr ""
+msgstr "Lanzará el explorador de archivos desde \"/usr\"."
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:76
@@ -380,6 +396,12 @@ msgid ""
 "\tsystem documentation should contain an explanation on the keyboard\n"
 "\tshortcuts somewhere.\n"
 msgstr ""
+"\tNota:\n"
+"\tPara evitar el uso del ratón, muchos de los exploradores de archivos\n"
+"\tofrecen navegación mediante teclas.  Ya que esto difiere de sistema a\n"
+"\tsistema, no se explica aquí.  Vim usa un explorador estándar cuando es\n"
+"\tposible; la documentación del sistema que usted use debería contener\n"
+"\tuna sección acerca de los accesos directos de teclado disponibles.\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:80
