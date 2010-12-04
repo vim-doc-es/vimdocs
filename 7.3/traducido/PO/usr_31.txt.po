@@ -291,6 +291,12 @@ msgid ""
 "   You can also specify a file name argument.  This is used to tell the file\n"
 "browser where to start.  Example: >\n"
 msgstr ""
+"Lo que seleccionará un archivo para que la orden \":split\" se ejecute luego\n"
+"con el nombre del mismo.  Si se descarta la ventana del explorador de\n"
+"archivos, no pasa nada, la ventana no se divide.\n"
+"  También es posible pasar como parámetro un nombre de archivo o directorio,\n"
+"que es usado para indicarle al explorador de archivos desde qué directorio\n"
+"empezar. Por ejemplo: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:41
@@ -301,7 +307,7 @@ msgstr "\t:browse split /etc\n"
 #. type: Plain text
 #: original/TXT/usr_31.txt:43
 msgid "The file browser will pop up, starting in the directory \"/etc\"."
-msgstr ""
+msgstr "Abrirá el explorador de archivos, desde el directorio \"/etc\"."
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:52
