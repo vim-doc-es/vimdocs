@@ -1,0 +1,669 @@
+# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es 
+#
+# Copyright (C) 2010
+# This file is distributed under the same license as the Vim 7.3 package.
+#
+# Translators credits:
+#   - Initial translation
+#       Omar Campagne <ocampagne@gmail.com>, 2010
+#
+#   - Updates
+#       TRADUCTOR <CORREO>, AÑO 
+#
+#
+#
+# Debido al formato (txt) y al máximo de 80 columnas que pueden tener 
+# los textos de ayuda en Vim, así como el formato PO, por favor, leete los
+# apuntes concernientes a la edición de los archivos PO relativos a la
+# aplicación que desees usar.
+# También encontrarás información acerca del uso de herramientas gettext en el 
+# proyecto de localización (l10n) de Vim.
+#
+# - http://www.assembla.com/wiki/show/vim-doc-es
+#
+# No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
+# este enlace puede ser de interés. A pesar de no formar parte, nuestra 
+# intención es homologarnos con su terminología y uso de la lengua 
+# en la medida de lo útil y posible.
+#
+#  - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/notas
+#
+# La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
+# pero también puede servir de referencia para otros términos no técnicos.
+# No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
+# traducción sea comprensible independientemente de la nacionalidad del
+# usuario. Si crees que alguna traducción puede llevar a confusión, consulta
+# la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
+#
+#  - www.rae.es 
+#  - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages   
+#
+# Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
+# se puede consultar con un simple grep, pogrep o cargado en Virtaal.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Vim 7.3\n"
+"Report-Msgid-Bugs-To: vim@bugs.org\n"
+"POT-Creation-Date: 2010-12-04 18:28+0100\n"
+"PO-Revision-Date: 2010-12-04 20:20+0100\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: vim-doc-es\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.6.1\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:18 original/TXT/intro.txt:79
+#: original/TXT/intro.txt:180 original/TXT/intro.txt:290
+#: original/TXT/intro.txt:518 original/TXT/intro.txt:596
+#: original/TXT/intro.txt:689 original/TXT/intro.txt:817
+#: original/TXT/intro.txt:880 original/TXT/usr_toc.txt:7
+#: original/TXT/usr_toc.txt:58 original/TXT/usr_toc.txt:172
+#: original/TXT/usr_toc.txt:281 original/TXT/usr_toc.txt:340
+#: original/TXT/usr_toc.txt:352 original/TXT/usr_01.txt:19
+#: original/TXT/usr_01.txt:50 original/TXT/usr_01.txt:100
+#: original/TXT/usr_01.txt:181 original/TXT/usr_02.txt:25
+#: original/TXT/usr_02.txt:69 original/TXT/usr_02.txt:130
+#: original/TXT/usr_02.txt:179 original/TXT/usr_02.txt:239
+#: original/TXT/usr_02.txt:307 original/TXT/usr_02.txt:369
+#: original/TXT/usr_02.txt:406 original/TXT/usr_02.txt:560
+#: original/TXT/usr_03.txt:28 original/TXT/usr_03.txt:74
+#: original/TXT/usr_03.txt:101 original/TXT/usr_03.txt:147
+#: original/TXT/usr_03.txt:172 original/TXT/usr_03.txt:223
+#: original/TXT/usr_03.txt:265 original/TXT/usr_03.txt:320
+#: original/TXT/usr_03.txt:491 original/TXT/usr_03.txt:552
+#: original/TXT/usr_03.txt:650 original/TXT/usr_04.txt:27
+#: original/TXT/usr_04.txt:74 original/TXT/usr_04.txt:160
+#: original/TXT/usr_04.txt:194 original/TXT/usr_04.txt:269
+#: original/TXT/usr_04.txt:324 original/TXT/usr_04.txt:360
+#: original/TXT/usr_04.txt:390 original/TXT/usr_04.txt:446
+#: original/TXT/usr_04.txt:469 original/TXT/usr_04.txt:510
+#: original/TXT/usr_05.txt:24 original/TXT/usr_05.txt:63
+#: original/TXT/usr_05.txt:219 original/TXT/usr_05.txt:266
+#: original/TXT/usr_05.txt:418 original/TXT/usr_05.txt:467
+#: original/TXT/usr_05.txt:506 original/TXT/usr_05.txt:621
+#: original/TXT/usr_06.txt:24 original/TXT/usr_06.txt:50
+#: original/TXT/usr_06.txt:135 original/TXT/usr_06.txt:189
+#: original/TXT/usr_06.txt:270 original/TXT/usr_06.txt:276
+#: original/TXT/usr_07.txt:24 original/TXT/usr_07.txt:63
+#: original/TXT/usr_07.txt:179 original/TXT/usr_07.txt:266
+#: original/TXT/usr_07.txt:316 original/TXT/usr_07.txt:404
+#: original/TXT/usr_07.txt:444 original/TXT/usr_07.txt:475
+#: original/TXT/usr_08.txt:26 original/TXT/usr_08.txt:82
+#: original/TXT/usr_08.txt:109 original/TXT/usr_08.txt:161
+#: original/TXT/usr_08.txt:215 original/TXT/usr_08.txt:278
+#: original/TXT/usr_08.txt:337 original/TXT/usr_08.txt:477
+#: original/TXT/usr_08.txt:509 original/TXT/usr_08.txt:597
+#: original/TXT/usr_09.txt:21 original/TXT/usr_09.txt:124
+#: original/TXT/usr_09.txt:175 original/TXT/usr_09.txt:259
+#: original/TXT/usr_09.txt:285 original/TXT/usr_10.txt:27
+#: original/TXT/usr_10.txt:144 original/TXT/usr_10.txt:221
+#: original/TXT/usr_10.txt:342 original/TXT/usr_10.txt:378
+#: original/TXT/usr_10.txt:547 original/TXT/usr_10.txt:621
+#: original/TXT/usr_10.txt:667 original/TXT/usr_10.txt:692
+#: original/TXT/usr_10.txt:820 original/TXT/usr_11.txt:22
+#: original/TXT/usr_11.txt:82 original/TXT/usr_11.txt:144
+#: original/TXT/usr_11.txt:288 original/TXT/usr_11.txt:303
+#: original/TXT/usr_12.txt:25 original/TXT/usr_12.txt:90
+#: original/TXT/usr_12.txt:131 original/TXT/usr_12.txt:177
+#: original/TXT/usr_12.txt:202 original/TXT/usr_12.txt:231
+#: original/TXT/usr_12.txt:281 original/TXT/usr_12.txt:309
+#: original/TXT/usr_12.txt:354 original/TXT/usr_20.txt:22
+#: original/TXT/usr_20.txt:113 original/TXT/usr_20.txt:158
+#: original/TXT/usr_20.txt:285 original/TXT/usr_20.txt:327
+#: original/TXT/usr_20.txt:380 original/TXT/usr_21.txt:24
+#: original/TXT/usr_21.txt:47 original/TXT/usr_21.txt:87
+#: original/TXT/usr_21.txt:236 original/TXT/usr_21.txt:385
+#: original/TXT/usr_21.txt:438 original/TXT/usr_21.txt:495
+#: original/TXT/usr_22.txt:22 original/TXT/usr_22.txt:148
+#: original/TXT/usr_22.txt:213 original/TXT/usr_22.txt:272
+#: original/TXT/usr_22.txt:396 original/TXT/usr_23.txt:23
+#: original/TXT/usr_23.txt:114 original/TXT/usr_23.txt:156
+#: original/TXT/usr_23.txt:238 original/TXT/usr_23.txt:324
+#: original/TXT/usr_23.txt:339 original/TXT/usr_24.txt:28
+#: original/TXT/usr_24.txt:96 original/TXT/usr_24.txt:119
+#: original/TXT/usr_24.txt:268 original/TXT/usr_24.txt:305
+#: original/TXT/usr_24.txt:336 original/TXT/usr_24.txt:369
+#: original/TXT/usr_24.txt:493 original/TXT/usr_24.txt:537
+#: original/TXT/usr_24.txt:583 original/TXT/usr_24.txt:602
+#: original/TXT/usr_25.txt:22 original/TXT/usr_25.txt:132
+#: original/TXT/usr_25.txt:210 original/TXT/usr_25.txt:287
+#: original/TXT/usr_25.txt:453 original/TXT/usr_25.txt:574
+#: original/TXT/usr_26.txt:21 original/TXT/usr_26.txt:46
+#: original/TXT/usr_26.txt:103 original/TXT/usr_26.txt:136
+#: original/TXT/usr_26.txt:217 original/TXT/usr_27.txt:26
+#: original/TXT/usr_27.txt:88 original/TXT/usr_27.txt:136
+#: original/TXT/usr_27.txt:239 original/TXT/usr_27.txt:320
+#: original/TXT/usr_27.txt:350 original/TXT/usr_27.txt:427
+#: original/TXT/usr_27.txt:469 original/TXT/usr_27.txt:510
+#: original/TXT/usr_27.txt:559 original/TXT/usr_28.txt:27
+#: original/TXT/usr_28.txt:54 original/TXT/usr_28.txt:121
+#: original/TXT/usr_28.txt:185 original/TXT/usr_28.txt:211
+#: original/TXT/usr_28.txt:269 original/TXT/usr_28.txt:315
+#: original/TXT/usr_28.txt:331 original/TXT/usr_28.txt:375
+#: original/TXT/usr_28.txt:389 original/TXT/usr_28.txt:422
+#: original/TXT/usr_29.txt:23 original/TXT/usr_29.txt:273
+#: original/TXT/usr_29.txt:320 original/TXT/usr_29.txt:441
+#: original/TXT/usr_29.txt:570 original/TXT/usr_29.txt:609
+#: original/TXT/usr_30.txt:23 original/TXT/usr_30.txt:202
+#: original/TXT/usr_30.txt:280 original/TXT/usr_30.txt:336
+#: original/TXT/usr_30.txt:409 original/TXT/usr_30.txt:515
+#: original/TXT/usr_30.txt:639 original/TXT/usr_31.txt:22
+#: original/TXT/usr_31.txt:81 original/TXT/usr_31.txt:133
+#: original/TXT/usr_31.txt:160 original/TXT/usr_31.txt:208
+#: original/TXT/usr_31.txt:268 original/TXT/usr_32.txt:21
+#: original/TXT/usr_32.txt:44 original/TXT/usr_32.txt:92
+#: original/TXT/usr_32.txt:140 original/TXT/usr_32.txt:176
+#, no-wrap
+msgid "==============================================================================\n"
+msgstr "==============================================================================\n"
+
+#. type: Plain text
+#: original/TXT/usr_toc.txt:4 original/TXT/usr_01.txt:4
+#: original/TXT/usr_02.txt:4 original/TXT/usr_03.txt:4
+#: original/TXT/usr_04.txt:4 original/TXT/usr_05.txt:4
+#: original/TXT/usr_06.txt:4 original/TXT/usr_07.txt:4
+#: original/TXT/usr_08.txt:4 original/TXT/usr_09.txt:4
+#: original/TXT/usr_10.txt:4 original/TXT/usr_11.txt:4
+#: original/TXT/usr_12.txt:4 original/TXT/usr_20.txt:4
+#: original/TXT/usr_21.txt:4 original/TXT/usr_22.txt:4
+#: original/TXT/usr_23.txt:4 original/TXT/usr_24.txt:4
+#: original/TXT/usr_25.txt:4 original/TXT/usr_26.txt:4
+#: original/TXT/usr_27.txt:4 original/TXT/usr_28.txt:4
+#: original/TXT/usr_29.txt:4 original/TXT/usr_30.txt:4
+#: original/TXT/usr_31.txt:4 original/TXT/usr_32.txt:4
+#, no-wrap
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
+msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
+
+#. type: Plain text
+#: original/TXT/usr_toc.txt:354 original/TXT/usr_01.txt:185
+#: original/TXT/usr_02.txt:564 original/TXT/usr_03.txt:654
+#: original/TXT/usr_04.txt:514 original/TXT/usr_05.txt:625
+#: original/TXT/usr_06.txt:280 original/TXT/usr_07.txt:479
+#: original/TXT/usr_08.txt:601 original/TXT/usr_09.txt:289
+#: original/TXT/usr_10.txt:824 original/TXT/usr_11.txt:307
+#: original/TXT/usr_12.txt:358 original/TXT/usr_20.txt:384
+#: original/TXT/usr_21.txt:499 original/TXT/usr_22.txt:400
+#: original/TXT/usr_23.txt:343 original/TXT/usr_24.txt:606
+#: original/TXT/usr_25.txt:578 original/TXT/usr_26.txt:221
+#: original/TXT/usr_27.txt:563 original/TXT/usr_28.txt:426
+#: original/TXT/usr_29.txt:613 original/TXT/usr_30.txt:643
+#: original/TXT/usr_31.txt:272 original/TXT/usr_32.txt:180
+msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:2
+#, no-wrap
+msgid "*usr_32.txt*\tFor Vim version 7.3.  Last change: 2010 Jul 20\n"
+msgstr "*usr_32.esx*\tPara Vim versión 7.3.  Último cambio: 20/6/2010\n"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:6
+#, no-wrap
+msgid "\t\t\t      The undo tree\n"
+msgstr " \t\t\t  El árbol deshacer\n"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:11
+msgid ""
+"Vim provides multi-level undo.  If you undo a few changes and then make a "
+"new change you create a branch in the undo tree.  This text is about moving "
+"through the branches."
+msgstr ""
+"Vim ofrece varios niveles de deshacer. Si deshace unos cuantos cambios y "
+"después realiza uno nuevo, creará una rama en el árbol de deshacer. El texto "
+"a continuación trata acerca de desplazarse por las ramas."
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:16
+#, no-wrap
+msgid ""
+"|32.1|\tUndo up to a file write\n"
+"|32.2|\tNumbering changes\n"
+"|32.3|\tJumping around the tree\n"
+"|32.4|\tTime travelling\n"
+msgstr ""
+"|32.1|\tVolver a un punto de edición anterior\n"
+"|32.2|\tNumerar los cambios\n"
+"|32.3|\tDesplazarse en el árbol\n"
+"|32.4|\tViajar en el tiempo\n"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:20
+#, no-wrap
+msgid ""
+"     Next chapter: |usr_40.txt|  Make new commands\n"
+" Previous chapter: |usr_31.txt|  Exploiting the GUI\n"
+"Table of contents: |usr_toc.txt|\n"
+msgstr ""
+"  apítulo siguiente: |usr_40.esx|  Crear órdenes nuevas\n"
+"  Capítulo anterior: |usr_08.esx|  Sacar partido a la interfaz gráfica\n"
+"Tabla de contenidos: |usr_toc.esx|\n"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:23
+#, no-wrap
+msgid "*32.1*\tUndo up to a file write\n"
+msgstr "*32.1*\tVolver a un punto de edición anterior\n"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:26
+msgid ""
+"Sometimes you make several changes, and then discover you want to go back to "
+"when you have last written the file.  You can do that with this command: >"
+msgstr ""
+"A veces realiza una serie de cambios, y se da cuenta que desea volver al "
+"punto en el que editó el archivo por última vez. Puede hacer esto con la "
+"siguiente orden: >"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:28
+#, no-wrap
+msgid "\t:earlier 1f\n"
+msgstr "\t:earlier 1f\n"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:30
+msgid "The \"f\" stands for \"file\" here."
+msgstr "La «f» significa «file» (archivo)."
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:33
+msgid ""
+"You can repeat this command to go further back in the past.  Or use a count "
+"different from 1 to go back faster."
+msgstr ""
+"Puede repetir esta orden para retroceder aun más. O usar un número diferente "
+"de 1 para retroceder más rápido."
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:35
+msgid "If you go back too far, go forward again with: >"
+msgstr "Si retrocede demasiado, puede ir hacia delante con: >"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:37
+#, no-wrap
+msgid "\t:later 1f\n"
+msgstr "\t:later 1f\n"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:40
+msgid ""
+"Note that these commands really work in time sequence.  This matters if you "
+"made changes after undoing some changes.  It's explained in the next section."
+msgstr ""
+"Tenga en cuenta que estas órdenes funcionan secuencialmente. Importa si "
+"realiza cambios después de deshacer otros. Se explica en la siguiente "
+"sección."
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:43
+msgid ""
+"Also note that we are talking about text writes here.  For writing the undo "
+"information in a file see |undo-persistence|."
+msgstr ""
+"Tenga también en cuenta que nos referimos a ediciones de texto. Para "
+"escribir la información de deshacer de en un archivo, consulte |undo-"
+"persistence|."
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:46
+#, no-wrap
+msgid "*32.2*\tNumbering changes\n"
+msgstr "*32.2*\tNumerar los cambios\n"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:50
+msgid ""
+"In section |02.5| we only discussed one line of undo/redo.  But it is also "
+"possible to branch off.  This happens when you undo a few changes and then "
+"make a new change.  The new changes become a branch in the undo tree."
+msgstr ""
+"En la sección |02.5| sólo tratamos una línea temporal de deshacer o rehacer. "
+"Pero también es posible crear una nueva «rama». Ocurre cuando deshace "
+"algunos cambios y después realiza un nuevo cambio. Los cambios nuevos se "
+"convierten en una rama del árbol de deshacer."
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:54
+msgid ""
+"Let's start with the text \"one\".  The first change to make is to append \" "
+"too\".  And then move to the first 'o' and change it into 'w'.  We then have "
+"two changes, numbered 1 and 2, and three states of the text:"
+msgstr ""
+"Empecemos con el texto «one». El primer cambio es añadir «too». Después, ir "
+"a la primera «o» y cambiarla a «w». Tenemos ahora dos cambios, 1 y 2, y tres "
+"estados del texto:"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:64
+#, no-wrap
+msgid ""
+"\t\tone ~\n"
+"\t\t |\n"
+"\t      change 1\n"
+"\t\t |\n"
+"\t      one too ~\n"
+"\t\t |\n"
+"\t      change 2\n"
+"\t\t |\n"
+"\t      one two ~\n"
+msgstr ""
+"\t\tone ~\n"
+"\t\t |\n"
+"\t      change 1\n"
+"\t\t |\n"
+"\t      one too ~\n"
+"\t\t |\n"
+"\t      change 2\n"
+"\t\t |\n"
+"\t      one two ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:67
+msgid ""
+"If we now undo one change, back to \"one too\", and change \"one\" to \"me\" "
+"we create a branch in the undo tree:"
+msgstr ""
+"Si ahora deshacemos un cambio, volvemos a «one too» y cambiamos «one» a "
+"«me», creamos una rama en el árbol de deshacer:"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:77
+#, no-wrap
+msgid ""
+"\t\tone ~\n"
+"\t\t |\n"
+"\t      change 1\n"
+"\t\t |\n"
+"\t      one too ~\n"
+"\t      /     \\\n"
+"\t change 2  change 3\n"
+"\t    |\t      |\n"
+"\t one two    me too ~\n"
+msgstr ""
+"\t\tone ~\n"
+"\t\t |\n"
+"\t      change 1\n"
+"\t\t |\n"
+"\t      one too ~\n"
+"\t      /     \\\n"
+"\t change 2  change 3\n"
+"\t    |\t      |\n"
+"\t one two    me too ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:82
+msgid ""
+"You can now use the |u| command to undo.  If you do this twice you get to "
+"\"one\".  Use |CTRL-R| to redo, and you will go to \"one too\".  One more |"
+"CTRL-R| takes you to \"me too\".  Thus undo and redo go up and down in the "
+"tree, using the branch that was last used."
+msgstr ""
+"Ahora puede usar la orden |u| para deshacer. Si lo hace dos veces, obtendrá "
+"«one». Use |CTRL-R| para rehacer, y obtendrá «one too».  Pulsar |CTRL-R| una "
+"vez más le lleva a  «me too». Esto es, deshacer y rehacer suben y bajan un "
+"árbol usando la rama usada por última vez."
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:86
+msgid ""
+"What matters here is the order in which the changes are made.  Undo and redo "
+"are not considered changes in this context.  After each change you have a "
+"new state of the text."
+msgstr ""
+"Lo que importa es el orden de las cambios. Deshacer y rehacer no se "
+"consideran cambios en este contexto. Tras cada cambio tiene un nuevo estado "
+"del texto."
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:91
+msgid ""
+"Note that only the changes are numbered, the text shown in the tree above "
+"has no identifier.  They are mostly referred to by the number of the change "
+"above it.  But sometimes by the number of one of the changes below it, "
+"especially when moving up in the tree, so that you know which change was "
+"just undone."
+msgstr ""
+"Tenga en cuenta que sólo se enumeran los cambios, y el texto que aparece en "
+"el árbol anterior no tiene identificador. Se hace referencia a ellos según "
+"el número del cambio por encima suyo. Pero, a veces, según el número por "
+"debajo de él, particularmente al subir el árbol, para así saber qué cambio "
+"se ha deshecho recientemente."
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:94
+#, no-wrap
+msgid "*32.3*\tJumping around the tree\n"
+msgstr "*32.3*\tDesplazarse en el árbol\n"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:96
+msgid "So how do you get to \"one two\" now? You can use this command: >"
+msgstr "¿Cómo podemos obtener «one two» ahora? Puede usar esta orden: >"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:98
+#, no-wrap
+msgid "\t:undo 2\n"
+msgstr "\t:undo 2\n"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:101
+msgid ""
+"The text is now \"one two\", you are below change 2.  You can use the |:"
+"undo| command to jump to below any change in the tree."
+msgstr ""
+"Ahora, el texto es «one two», y está bajo el cambio 2. Puede usar la orden |:"
+"undo| para saltar a cualquier cambio dentro del árbol."
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:103
+msgid "Now make another change: change \"one\" to \"not\":"
+msgstr "Ahora haga otro cambio: cambie «one» a «not»:"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:117
+#, no-wrap
+msgid ""
+"\t\tone ~\n"
+"\t\t |\n"
+"\t      change 1\n"
+"\t\t |\n"
+"\t      one too ~\n"
+"\t      /     \\\n"
+"\t change 2  change 3\n"
+"\t    |\t      |\n"
+"\t one two    me too ~\n"
+"\t    |\n"
+"\t change 4\n"
+"\t    |\n"
+"\t not two ~\n"
+msgstr ""
+"\t\tone ~\n"
+"\t\t |\n"
+"\t      change 1\n"
+"\t\t |\n"
+"\t      one too ~\n"
+"\t      /     \\\n"
+"\t change 2  change 3\n"
+"\t    |\t      |\n"
+"\t one two    me too ~\n"
+"\t    |\n"
+"\t change 4\n"
+"\t    |\n"
+"\t not two ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:121
+msgid ""
+"Now you change your mind and want to go back to \"me too\".  Use the |g-| "
+"command.  This moves back in time.  Thus it doesn't walk the tree upwards or "
+"downwards, but goes to the change made before."
+msgstr ""
+"Ahora cambia de idea, y desea volver a «me too». Use la orden |g-|. Esto "
+"vuelve a un momento anterior. No se desplaza por el árbol en una dirección u "
+"otra, sino que vuelve al último cambio realizado. "
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:127
+#, no-wrap
+msgid ""
+"You can repeat |g-| and you will see the text change:\n"
+"\tme too ~\n"
+"\tone two ~\n"
+"\tone too ~\n"
+"\tone ~\n"
+msgstr ""
+"Puede repetir |g-| y ver como cambia el texto:\n"
+"\tme too ~\n"
+"\tone two ~\n"
+"\tone too ~\n"
+"\tone ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:134
+#, no-wrap
+msgid ""
+"Use |g+| to move forward in time:\n"
+"\tone ~\n"
+"\tone too ~\n"
+"\tone two ~\n"
+"\tme too ~\n"
+"\tnot two ~\n"
+msgstr ""
+"Use |g+| para ir hacia delante en el tiempo:\n"
+"\tone ~\n"
+"\tone too ~\n"
+"\tone two ~\n"
+"\tme too ~\n"
+"\tnot two ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:137
+msgid ""
+"Using |:undo| is useful if you know what change you want to jump to.  |g-| "
+"and |g+| are useful if you don't know exactly what the change number is."
+msgstr ""
+"Usar |:undo| es útil si sabe a qué cambio quiere pasar. |g-| y |g+| son "
+"útiles si no sabe exactamente el número del cambio."
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:139
+msgid "You can type a count before |g-| and |g+| to repeat them."
+msgstr "Puede introducir un número antes de |g-| y |g+| para repetirlos."
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:142
+#, no-wrap
+msgid "*32.4*\tTime travelling\n"
+msgstr "*32.4*\tViajar en el tiempo\n"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:145
+msgid ""
+"When you have been working on text for a while the tree grows to become "
+"big.  Then you may want to go to the text of some minutes ago."
+msgstr ""
+"Cuando ha estado trabajando en el texto durante un rato el árbol crece hasta "
+"ser bastante grande. Así, puede que desee volver a como era el texto hace "
+"unos minutos."
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:147
+msgid "To see what branches there are in the undo tree use this command: >"
+msgstr "Use la siguiente orden para ver las ramas en el árbol de deshacer: >"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:152
+#, no-wrap
+msgid ""
+"\t:undolist\n"
+"<\tnumber changes  time ~\n"
+"\t     3       2  16 seconds ago\n"
+"\t     4       3  5 seconds ago\n"
+msgstr ""
+"\t:undolist\n"
+"<\tnúmero cambios  hora ~\n"
+"\t     3       2  hace 16 segundos\n"
+"\t     4       3  hace 5 segundos\n"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:156
+msgid ""
+"Here you can see the number of the leaves in each branch and when the change "
+"was made.  Assuming we are below change 4, at \"not two\", you can go back "
+"ten seconds with this command: >"
+msgstr ""
+"Aquí puede ver el número de hojas en cada rama el momento en que se realizó "
+"el cambio. Suponiendo que estamos bajo el nivel 4, en «not two», puede "
+"retroceder 10 segundos con la siguiente orden:"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:158
+#, no-wrap
+msgid "\t:earlier 10s\n"
+msgstr "\t:earlier 10s\n"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:162
+msgid ""
+"Depending on how much time you took for the changes you end up at a certain "
+"position in the tree.  The |:earlier| command argument can be \"m\" for "
+"minutes, \"h\" for hours and \"d\" for days.  To go all the way back use a "
+"big number: >"
+msgstr ""
+"Dependiendo del tiempo que le tomó realizar los cambios, acabará en una "
+"posición determinada del árbol. El argumento de la orden |:earlier| puede "
+"ser «m», de minutos, «h» de horas y «d» de días. Para volver al principio "
+"use un número grande: >"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:164
+#, no-wrap
+msgid "\t:earlier 100d\n"
+msgstr "\t:earlier 100d\n"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:166
+msgid "To travel forward in time again use the |:later| command: >"
+msgstr "Para viajar hacia adelante en el tiempo use la orden |:later|: >"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:168
+#, no-wrap
+msgid "\t:later 1m\n"
+msgstr "\t:later 1m\n"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:170
+msgid "The arguments are \"s\", \"m\" and \"h\", just like with |:earlier|."
+msgstr "Los argumentos son «s», «m» y «h», al igual que con |:earlier|."
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:173
+msgid ""
+"If you want even more details, or want to manipulate the information, you "
+"can use the |undotree()| function.  To see what it returns: >"
+msgstr ""
+"Si desea más detalles, o manipular la información, puede usar la función |"
+"undotree()|. Para ver qué devuelve: >"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:175
+#, no-wrap
+msgid "\t:echo undotree()\n"
+msgstr "\t:echo undotree()\n"
+
+#. type: Plain text
+#: original/TXT/usr_32.txt:179
+msgid "Next chapter: |usr_40.txt| Make new commands"
+msgstr "Capítulo siguiente: |usr_40.esx| Crear órdenes nuevas"
