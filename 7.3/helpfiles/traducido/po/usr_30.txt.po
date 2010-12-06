@@ -1,44 +1,32 @@
-# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es 
-#
-# Copyright (C) AÑOS 
+# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es
+# Copyright (C) AÑOS
 # This file is distributed under the same license as the Vim (7.3) package.
-#
 # Translators credits:
-#   - Initial translation
-#       Omar Campagne <ocampagne@gmail.com>, 2010
-#
-#   - Updates
-#       TRADUCTOR <CORREO>, AÑO 
-#
-#
-#
-# Debido al formato (txt) y al máximo de 80 columnas que pueden tener 
+# - Initial translation
+# Omar Campagne <ocampagne@gmail.com>, 2010
+# - Updates
+# TRADUCTOR <CORREO>, AÑO
+# Debido al formato (txt) y al máximo de 80 columnas que pueden tener
 # los textos de ayuda en Vim, así como el formato PO, por favor, leete los
 # apuntes concernientes a la edición de los archivos PO relativos a la
 # aplicación que desees usar.
-# También encontrarás información acerca del uso de herramientas gettext en el 
+# También encontrarás información acerca del uso de herramientas gettext en el
 # proyecto de localización (l10n) de Vim.
-#
 # - http://www.assembla.com/wiki/show/vim-doc-es
-#
 # No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
-# este enlace puede ser de interés. A pesar de no formar parte, nuestra 
-# intención es homologarnos con su terminología y uso de la lengua 
+# este enlace puede ser de interés. A pesar de no formar parte, nuestra
+# intención es homologarnos con su terminología y uso de la lengua
 # en la medida de lo útil y posible.
-#
-#  - El proyecto de traducción de Debian al español
-#     http://www.debian.org/intl/spanish/notas
-#
+# - El proyecto de traducción de Debian al español
+# http://www.debian.org/intl/spanish/notas
 # La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
 # pero también puede servir de referencia para otros términos no técnicos.
 # No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
 # traducción sea comprensible independientemente de la nacionalidad del
 # usuario. Si crees que alguna traducción puede llevar a confusión, consulta
 # la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
-#
-#  - www.rae.es 
-#  - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages   
-#
+# - www.rae.es
+# - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages
 # Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
 # se puede consultar con un simple grep, pogrep o cargado en Virtaal.
 msgid ""
@@ -46,9 +34,9 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-09-23 20:27+0300\n"
-"PO-Revision-Date: 2010-07-16 20:07+0200\n"
+"PO-Revision-Date: 2010-12-03 20:13+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
-"Language-Team: vim-doc-es@freelists.org\n"
+"Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -203,10 +191,9 @@ msgstr "\t:set softtabstop=4\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:2
-#, fuzzy, no-wrap
-#| msgid "*usr_30.txt*\tFor Vim version 7.2.  Last change: 2007 Nov 10\n"
+#, no-wrap
 msgid "*usr_30.txt*\tFor Vim version 7.3.  Last change: 2007 Nov 10\n"
-msgstr "*usr_30.esx*\tPara Vim versión 7.2.  Último cambio: 10/11/2007\n"
+msgstr "*usr_30.esx*\tPara Vim versión 7.3.  Último cambio: 10/11/2007\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:6
@@ -246,18 +233,14 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:22
-#, fuzzy, no-wrap
-#| msgid ""
-#| "     Next chapter: |usr_30.txt|  Editing programs\n"
-#| " Previous chapter: |usr_28.txt|  Folding\n"
-#| "Table of contents: |usr_toc.txt|\n"
+#, no-wrap
 msgid ""
 "     Next chapter: |usr_31.txt|  Exploiting the GUI\n"
 " Previous chapter: |usr_29.txt|  Moving through programs\n"
 "Table of contents: |usr_toc.txt|\n"
 msgstr ""
-" Siguiente capítulo: |usr_31.txt|  Editar programas\n"
-"  Capítulo anterior: |usr_28.esx|  Plegado\n"
+" Siguiente capítulo: |usr_31.txt|  Sacar partido a la interfaz gráfica\n"
+"  Capítulo anterior: |usr_29.esx|  Moverse a través de programas\n"
 "Tabla de contenidos: |usr_toc.esx|\n"
 
 #. type: Plain text
@@ -306,9 +289,9 @@ msgid ""
 "like this:\n"
 msgstr ""
 "Si se genera algún error, se captura y el editor le posicionará sobre el primer error.\n"
-"   Este es un ejemplo de una sesión típica de «:make». (Las sesiones típicas de «:make»\n"
-"generan muchos menos errores y menos errores estúpidos.) La pantalla presentará este\n"
-"aspecto después de teclear «:make»:\n"
+"   Este es un ejemplo de una sesión típica de «:make». (Las sesiones típicas de\n"
+"«:make» generan muchos menos errores y menos errores estúpidos.) La pantalla\n"
+"presentará este aspecto después de teclear «:make»:\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:49
@@ -407,9 +390,10 @@ msgid ""
 "   When there is not enough room, Vim will shorten the error message.  To see\n"
 "the whole message use: >\n"
 msgstr ""
-"Vim salta a la línea 10, la última línea en el archivo, donde hay un «}» adicional.\n"
-"   Cuando no hay suficiente espacio Vim acorta el mensaje de error. Para ver el mensaje\n"
-"completo, use lo siguiente: >\n"
+"Vim salta a la línea 10, la última línea en el archivo, donde hay un «}»\n"
+"adicional.\n"
+"   Cuando no hay suficiente espacio Vim acorta el mensaje de error. Para ver\n"
+"el mensaje completo, use lo siguiente: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:82
@@ -424,7 +408,7 @@ msgid ""
 "command.  The output looks like this: >"
 msgstr ""
 "Puede obtener una visión general de todos los mensajes de error con la orden "
-"« clist».  La salida tiene el siguiente aspecto: >"
+"«:clist».  La salida tiene el siguiente aspecto: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:89
@@ -550,8 +534,9 @@ msgid ""
 "command: >\n"
 "\t:set makeprg=make\\ %\n"
 msgstr ""
-"Puede incluir palabras clave especiales de Vim al especificar la orden. El carácter «%»\n"
-"se expande con el nombre del archivo actual. Así que se ejecuta la siguiente orden: >\n"
+"Puede incluir palabras clave especiales de Vim al especificar la orden. El\n"
+"carácter «%» se expande con el nombre del archivo actual. Así que se\n"
+"ejecuta la siguiente orden: >\n"
 "\t:set makeprg=make\\ %\n"
 
 #. type: Plain text
@@ -691,8 +676,10 @@ msgid ""
 "options.\n"
 "   You can write your own compiler files.  See |write-compiler-plugin|.\n"
 msgstr ""
-"Esto encontrará el script de Vim para el compilador «msvc» y definirá las opciones adecuadas.\n"
-"   Puede escribir sus propios archivos de compilador. Consulte |write-compiler-plugin|.\n"
+"Esto encontrará el script de Vim para el compilador «msvc» y definirá las\n"
+"opciones adecuadas.\n"
+"   Puede escribir sus propios archivos de compilador. Consulte\n"
+"|write-compiler-plugin|.\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:187
@@ -786,6 +773,12 @@ msgid ""
 "\tkeep indent\t\t\tdo_some_more();\n"
 "\tAutomatic unindent <--\t    }\n"
 msgstr ""
+"\t\t\t\t    if (flag)\n"
+"\tSangrado automático  --->\t\tdo_the_work();\n"
+"\tEliminar sangrado automático <--\t    if (other_flag) {\n"
+"\tSangrado automático   --->\t\tdo_file();\n"
+"\tPreservar el sangrado\t\t\tdo_some_more();\n"
+"\tEliminar sangrado automático <--\t    }\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:227
@@ -811,12 +804,13 @@ msgid ""
 "   A missing ) and ; also cause extra indent.  Thus if you get more white\n"
 "space than you would expect, check the preceding lines.\n"
 msgstr ""
-"Un efecto secundario del sangrado automático es que le permite encontrar los errores\n"
-"en su código de manera temprana. Cuando teclea «}» para finalizar una función, sólo\n"
-"para ver que el sangrado automático la da más sangrado del esperado, puede que falte\n"
-"un «}». Use la orden «%» para encontrar qué «{» encaja con la «}» que tecleó.\n"
-"  Un «)» y «;» omitido también causan un sangrado adicional. Por ello, si obtiene más espacios\n"
-"en blanco del esperado, compruebe la líneas precedentes.\n"
+"Un efecto secundario del sangrado automático es que le permite encontrar\n"
+"los errores en su código de manera temprana. Cuando teclea «}» para finalizar\n"
+"una función, sólo para ver que el sangrado automático la da más sangrado del\n"
+"esperado, puede que falte un «}». Use la orden «%» para encontrar qué «{»\n"
+"encaja con la «}» que tecleó.\n"
+"  Un «)» y «;» omitido también causan un sangrado adicional. Por ello, si obtiene\n"
+"más espacios en blanco del esperado, compruebe la líneas precedentes.\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:239
@@ -863,7 +857,8 @@ msgid ""
 ">\n"
 "\tgg=G\n"
 msgstr ""
-"Si tiene código con un pésimo sangrado, puede sangrar nuevamente el archivo completo con: >\n"
+"Si tiene código con un pésimo sangrado, puede sangrar nuevamente el archivo\n"
+"completo con: >\n"
 "\tgg=G\n"
 
 #. type: Plain text
@@ -894,13 +889,14 @@ msgid ""
 "add various items where you want something different.  For example, to make\n"
 "curly braces be placed like this:\n"
 msgstr ""
-"Diferentes personas tienen diferentes estilos de sangrado. Por omisión, Vim realiza\n"
-"un buen trabajo de sangrado de la manera en que lo hacen el 90% de los programadores.\n"
-"Aun así, hay diferentes estilos; así que si lo desea, puede personalizar el estilo de sangrado\n"
-"con la opción 'cinoptions'.\n"
-"   Por omisión, 'cinoptions' está vacío, usando Vim el estilo predefinido. Puede añadir\n"
-"varios elementos cuando desee algo diferente. Por ejemplo, para ubicar corchetes de la\n"
-"siguiente forma:\n"
+"Diferentes personas tienen diferentes estilos de sangrado. Por omisión,\n"
+"Vim realiza un buen trabajo de sangrado de la manera en que lo hacen el\n"
+"90% de los programadores.\n"
+"Aun así, hay diferentes estilos; así que si lo desea, puede personalizar el\n"
+"estilo de sangrado con la opción 'cinoptions'.\n"
+"   Por omisión, 'cinoptions' está vacío, usando Vim el estilo predefinido.\n"
+"Puede añadir varios elementos cuando desee algo diferente. Por ejemplo,\n"
+"para ubicar corchetes de la siguiente forma:\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:273
@@ -967,13 +963,14 @@ msgid ""
 "programming languages.  This indent file will then prepare for automatic\n"
 "indenting specifically for this file.\n"
 msgstr ""
-"En realidad, esto hace  mucho más que activar 'cindent'  para archivos C. En primer\n"
-"lugar, activa la detección de tipo de archivo. Es lo mismo que lo que usar para el\n"
-"resaltado de sintaxis.\n"
-"   Si el tipo de archivo es conocido, Vim buscará un archivo de sangrado para este tipo de\n"
-"archivo. La distribución de Vim incluye un número para estos lenguajes de programación.\n"
-"Este archivo de sangrado preparará automáticamente el sangrado específico para este\n"
-"archivo.\n"
+"En realidad, esto hace  mucho más que activar 'cindent'  para archivos C.\n"
+"En primer lugar, activa la detección de tipo de archivo. Es lo mismo que\n"
+"lo que usar para el resaltado de sintaxis.\n"
+"   Si el tipo de archivo es conocido, Vim buscará un archivo de sangrado para\n"
+"este tipo de archivo. La distribución de Vim incluye un número para estos\n"
+"lenguajes de programación.\n"
+"Este archivo de sangrado preparará automáticamente el sangrado específico\n"
+"para este archivo.\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:297
@@ -1049,8 +1046,8 @@ msgid ""
 "the output of this command: >\n"
 msgstr ""
 "Entonces, usaría «help» para {tipo-de-archivo}.\n"
-"   Para la parte de {directorio}, necesita usar su directorio de tiempo de ejecución.\n"
-"Mire la salida de esta orden: >\n"
+"   Para la parte de {directorio}, necesita usar su directorio de tiempo de\n"
+"ejecución. Mire la salida de esta orden: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:323
@@ -1117,15 +1114,17 @@ msgid ""
 "restored for the next line.\n"
 msgstr ""
 "La forma más simple de sangrado automático es con la opción 'autoindent',\n"
-"ya que usa el sangrado de la línea anterior. La opción 'smartindent' es un poco más\n"
-"inteligente. Es útil con aquellos lenguajes que no disponen de un archivo de sangrado.\n"
+"ya que usa el sangrado de la línea anterior. La opción 'smartindent' es un\n"
+"poco más inteligente. Es útil con aquellos lenguajes que no disponen de un\n"
+"archivo de sangrado.\n"
 "'smartindent' no es tan inteligente como 'cindent', pero es más inteligente que\n"
 "'autoindent'.\n"
-"  Si 'smartindent' está definido, se añadirá un nivel adicional de sangrado para cada\n"
-"«{», y se eliminará para cada «}». También se añadirá un nivel adicional de sangrado para\n"
-"cada palabra en la opción 'cinwords'. Las líneas que empiezan con «#» se tratan de forma\n"
-"especial: todo el sangrado se elimina. Esto se hace de forma que todas las directivas de\n"
-"preproceso empiecen en la primera columna. El sangrado se restaura en la siguiente línea.\n"
+"  Si 'smartindent' está definido, se añadirá un nivel adicional de sangrado\n"
+"para cada «{», y se eliminará para cada «}». También se añadirá un nivel\n"
+"adicional de sangrado para cada palabra en la opción 'cinwords'. Las líneas que\n"
+"empiezan con «#» se tratan de forma especial: todo el sangrado se elimina.\n"
+"Esto se hace de forma que todas las directivas de preproceso empiecen en la\n"
+"primera columna. El sangrado se restaura en la siguiente línea.\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:352
@@ -1143,10 +1142,12 @@ msgid ""
 "   For example, you are typing a shell script that is supposed to look like\n"
 "this:\n"
 msgstr ""
-"Cuando use 'autoindent' o 'smartindent' para obtener el sangrado de línea anterior,\n"
-"habrá ocasiones en que necesite añadir o eliminar un 'shiftwidth' de sangrado. La\n"
-"forma rápida de hacerlo es usando las órdenes «CTRL-D» y «CTRL-T» en modo Insertar.\n"
-"   Por ejemplo, está escribiendo un script de consola con el siguiente aspecto:\n"
+"Cuando use 'autoindent' o 'smartindent' para obtener el sangrado de línea\n"
+"anterior, habrá ocasiones en que necesite añadir o eliminar un 'shiftwidth'\n"
+"de sangrado. La forma rápida de hacerlo es usando las órdenes «CTRL-D»\n"
+"y «CTRL-T» en modo Insertar.\n"
+"   Por ejemplo, está escribiendo un script de consola con el siguiente\n"
+"aspecto:\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:364
@@ -1246,11 +1247,12 @@ msgid ""
 "shift lines.  \">\" and \"<\" are operators, thus you have the usual three ways to\n"
 "specify the lines you want to indent.  A useful combination is: >\n"
 msgstr ""
-"Para eliminar el sangrado innecesario en la última línea pulse «CTRL-D». Esto elimina\n"
+"Para eliminar el sangrado innecesario en la última línea pulse «CTRL-D». Elimina\n"
 "un 'shiftwidth' de sangrado, sin importar donde está dentro de la línea.\n"
 "   Cuando está en modo Normal, puede usar las órdenes «>>» y «<<» para cambiar\n"
-"las líneas. «>» y «<» son operadores, y por ello tiene las tres formas habituales de\n"
-"definir las líneas que desea sangrar. Una combinación útil es la siguiente: >\n"
+"las líneas. «>» y «<» son operadores, y por ello tiene las tres formas\n"
+"habituales de definir las líneas que desea sangrar. Una combinación útil\n"
+"es la siguiente: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:396
@@ -1273,7 +1275,7 @@ msgstr ""
 #: original/TXT/usr_30.txt:402
 #, no-wrap
 msgid "\toriginal text\t\tafter \">i{\"\t\tafter \">a{\"\n"
-msgstr "\ttexto original\t\tdespués de «>i{»\t\tdespués de «>a{»\n"
+msgstr "\ttexto original\t\tdespués de «>i{»\t    después de «>a{»\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:408
@@ -1317,17 +1319,18 @@ msgid ""
 msgstr ""
 "Por omisión, 'tabstop' está definido con un valor de 8. Aunque puede cambiarlo,\n"
 "puede que se encuentre con problemas en el futuro. Otros programas no sabrán\n"
-"qué valor de «tabstop» (tabulación) usó. Probablemente, usan el valor predefinido\n"
-"de 8, y por ello su texto presentaría un aspecto diferente. Además, la mayoría de\n"
-"impresoras usan un valor de «tabstop» predefinido de 8. Por ello, es mejor\n"
-"no modificar 'tabstop'. (Cuando edite un archivo que se escribió con otro valor de\n"
-"tabulación, consulte |25.3| para ver como arreglarlo).\n"
+"qué valor de «tabstop» (tabulación) usó. Probablemente, usan el valor\n"
+"predefinido de 8, y por ello su texto presentaría un aspecto diferente. Además,\n"
+"la mayoría de impresoras usan un valor de «tabstop» predefinido de 8. Por ello,\n"
+"es mejor no modificar 'tabstop'. (Cuando edite un archivo que se escribió con\n"
+"otro valor de tabulación, consulte |25.3| para ver como arreglarlo).\n"
 "   Para insertar un sangrado en un programa, usar un múltiplo de ocho espacios\n"
-"hace que vaya rápidamente al borde derecho de la ventana. Usar un sólo espacio\n"
-"no ofrece la suficiente diferencia visual. La mayoría de personas prefieren usar\n"
-"cuatro espacios, una buena solución.\n"
-"  Ya que <Tab> equivale a 8 espacios y quiere usar un sangrado de cuatro espacios.\n"
-"no puede usar <Tab> para insertar su sangrado. Hay dos formas de tratar esto:\n"
+"hace que vaya rápidamente al borde derecho de la ventana. Usar un sólo\n"
+"espacio no ofrece la suficiente diferencia visual. La mayoría de personas\n"
+"prefieren usar cuatro espacios, una buena solución.\n"
+"  Ya que <Tab> equivale a 8 espacios y quiere usar un sangrado de cuatro\n"
+"espacios. No puede usar <Tab> para insertar su sangrado. Hay dos formas de\n"
+"tratar esto:\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:429
@@ -1338,8 +1341,9 @@ msgid ""
 "    is quicker than eight spaces.  Backspacing works faster as well.\n"
 msgstr ""
 "1. Use una mezcla de <Tab> y caracteres de espacio. Ya que <Tab> toma el\n"
-"    el lugar de 8 espacios, tendrá menos caracteres en su archivo. Insertar un <Tab>\n"
-"    es más rápido que 8 espacios. La tecla de retroceso también es más rápido.\n"
+"    el lugar de 8 espacios, tendrá menos caracteres en su archivo. Insertar un\n"
+"    <Tab> es más rápido que 8 espacios. La tecla de retroceso también es\n"
+"    más rápido.\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:432
@@ -1348,8 +1352,8 @@ msgid ""
 "2.  Use spaces only.  This avoids the trouble with programs that use a\n"
 "    different tabstop value.\n"
 msgstr ""
-"2. Utilice espacios solamente.  Esto evita los problemas con los programas que utilizan un\n"
-"    valor de «tabstop» diferente.\n"
+"2. Utilice espacios solamente.  Esto evita los problemas con los\n"
+"    programas que utilizan un valor de «tabstop» diferente.\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:434
@@ -1374,6 +1378,14 @@ msgid ""
 "   After you execute the following command, every time you press the <Tab> key\n"
 "the cursor moves to the next 4-column boundary: >\n"
 msgstr ""
+"Si usa una combinación de tabulados y espacios, puede editar con normalidad.\n"
+"El comportamiento predefinido de Vim hace una buena labor al gestionar esto.\n"
+"   Puede facilitar su vida definiendo la opción 'softtabstop'.\n"
+"Esta opción le dice a Vim que la tecla <Tab> tenga el comportamiento como si\n"
+"los tabulados estuviesen definidos como un valor 'softtabstop', aunque use en\n"
+"realidad una combinación de tabulados y espacios.\n"
+"   Después de ejecutar la siguiente, orden, cada vez que pulse la tecla <Tab> el\n"
+"cursor se moverá al siguiente límite de cuatro columnas: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:458
@@ -1389,6 +1401,16 @@ msgid ""
 "   The following shows what happens pressing <Tab> a few times, and then using\n"
 "<BS>.  A \".\" stands for a space and \"------->\" for a <Tab>.\n"
 msgstr ""
+"Cuando empiece en la primera columna y pulse <Tab> obtendrá la inserción de\n"
+"cuatro espacios en su texto. La segunda vez, Vim eliminará los cuatro espacios\n"
+"e insertará un <Tab> (llevándole a la columna 8). Entonces, Vim usa tantos\n"
+"<Tab> como sea posible, rellenándolos con espacios.\n"
+"   Al usar la tecla de retroceso, funcionará al revés. Un <Bs> (tecla de\n"
+"retroceso) siempre elimina la cantidad definida con 'softtabstop'. Entonces, se\n"
+"usarán tantos <Tab> como sea posible, rellenando el hueco resultante\n"
+"con espacios.\n"
+"   Lo siguiente muestra lo que ocurre cuando pulsa <Tab> varias veces, y\n"
+"después usando <Bs>. Un «.» simboliza un espacio, y «------->» un <Tab>.\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:465
@@ -1401,6 +1423,12 @@ msgid ""
 "\t<Tab><Tab><Tab><BS>\t  ------->\n"
 "\t<Tab><Tab><Tab><BS><BS>   ....\n"
 msgstr ""
+"\ttipo\t\t\t          resultado ~\n"
+"\t<Tab>\t\t\t  ....\n"
+"\t<Tab><Tab>\t\t  ------->\n"
+"\t<Tab><Tab><Tab>\t\t  ------->....\n"
+"\t<Tab><Tab><Tab><BS>\t  ------->\n"
+"\t<Tab><Tab><Tab><BS><BS>   ....\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:470
@@ -1410,6 +1438,10 @@ msgid ""
 "when typed after the first non-blank character.  However, <BS> doesn't work "
 "like with 'softtabstop'."
 msgstr ""
+"Una alternativa es usar la opción 'smartab'. Si se define, Vim usa "
+"'shiftwidth' para un <Tab> introducida en el sangrado de una línea, y un "
+"<Tab> real cuando se introduce en el primer carácter no vacío. Sin embargo "
+"<BS> no funciona de la misma forma que con 'softtabstop'."
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:473
@@ -1546,6 +1578,9 @@ msgid ""
 "ask Vim to format a comment and it will do the right thing.\n"
 "   Suppose, for example, that you have the following comment:\n"
 msgstr ""
+"Una de las mayores virtudes de Vim es que entiende comentarios. Puede pedir\n"
+"a Vim que dé formato a un comentario, y hará lo correcto.\n"
+"   Suponga, por ejemplo, que tiene el siguiente comentario:\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:526
@@ -1556,19 +1591,19 @@ msgid ""
 "\t * of the text formatting. ~\n"
 "\t */ ~\n"
 msgstr ""
+"\t/* ~\n"
+"\t * Esta es una prueba ~\n"
+"\t * de formateo de texto. ~\n"
+"\t */ ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:529
-#, fuzzy
-#| msgid ""
-#| "You want to see what is in that \"inits.h\" file.  Move the cursor on the "
-#| "name of the file and type: >"
 msgid ""
 "You then ask Vim to format it by positioning the cursor at the start of the "
 "comment and type: >"
 msgstr ""
-"Desea ver el contenido del archivo «inits.h». Desplace el cursor al nombre "
-"del archivo y teclee: >"
+"Puede indicar a Vim que de formato posicionando el cursor al principio del "
+"comentario y escribiendo: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:531
@@ -1582,6 +1617,8 @@ msgid ""
 "\"gq\" is the operator to format text.  \"]/\" is the motion that takes you "
 "to the end of a comment.  The result is:"
 msgstr ""
+"«gq» es el operador para formatear texto. «]/» es el movimiento que le lleva "
+"al final del comentario. El resultado es:"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:538
@@ -1591,6 +1628,9 @@ msgid ""
 "\t * This is a test of the text formatting. ~\n"
 "\t */ ~\n"
 msgstr ""
+"\t/* ~\n"
+"\t * Esta es una prueba de formateo de texto. ~\n"
+"\t */ ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:542
@@ -1600,6 +1640,9 @@ msgid ""
 "  An alternative is to select the text that is to be formatted in Visual mode\n"
 "and type \"gq\".\n"
 msgstr ""
+"Observe que Vim manipuló adecuadamente el principio de cada línea.\n"
+"  Una alternativa es seleccionar el texto a formatear en modo Visual,\n"
+"y teclear «gq».\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:545
@@ -1607,6 +1650,8 @@ msgid ""
 "To add a new line to the comment, position the cursor on the middle line and "
 "press \"o\".  The result looks like this:"
 msgstr ""
+"Para añadir una nueva línea al comentario, posicione el cursor en la línea "
+"central y pulse «o». El resultado sería el siguiente:"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:550
@@ -1617,6 +1662,10 @@ msgid ""
 "\t * ~\n"
 "\t */ ~\n"
 msgstr ""
+"\t/* ~\n"
+"\t * Esta es una prueba de formateo de texto ~\n"
+"\t * ~\n"
+"\t */ ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:554
@@ -1625,6 +1674,9 @@ msgid ""
 "the comment text.  When it gets longer than 'textwidth', Vim will break the "
 "line.  Again, the star is inserted automatically:"
 msgstr ""
+"Vim ha insertado un «*» y un espacio automáticamente. Ahora puede escribir "
+"el texto de comentario. La línea sea más larga que 'textwidth', Vim romperá "
+"la línea. Una vez más, se inserta «*» automáticamente."
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:560
@@ -1636,11 +1688,17 @@ msgid ""
 "\t * break ~\n"
 "\t */ ~\n"
 msgstr ""
+"\t/* ~\n"
+"\t * Esto es una prueba de formateo de texto. ~\n"
+"\t * Teclear mucho texto hará que Vim divida ~\n"
+"\t * la línea ~\n"
+"\t */ ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:562
 msgid "For this to work some flags must be present in 'formatoptions':"
 msgstr ""
+"Para que esto funcione, debe especificar algunas marcas en 'formatoptions':"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:566
@@ -1650,6 +1708,9 @@ msgid ""
 "\to\tinsert the star when using \"o\" or \"O\" in Normal mode\n"
 "\tc\tbreak comment text according to 'textwidth'\n"
 msgstr ""
+"\tr\tinserta «*» al pulsar <Enter> en modo Insertar\n"
+"\to\tinserta «*» a usar «o» o «O» en modo Normal\n"
+"\tc\trompe el texto de comentario de acuerdo a 'textwidth'\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:568
@@ -1672,6 +1733,12 @@ msgid ""
 "used, in Makefiles #, in Vim scripts \".  For example, to make Vim understand\n"
 "C++ comments: >\n"
 msgstr ""
+"La opción 'comments' define el aspecto de un comentario. Vim distingue\n"
+"entre un comentario de una sola línea y un comentario cuyo principio, parte\n"
+"central y final son distintas.\n"
+"   Muchos comentarios de una sola línea empiezan con carácter específico.\n"
+"En C++ se usa «//», «#» en archivos «Makefile», y «\"» en scripts de Vim.\n"
+"Por ejemplo, para que Vim entienda comentarios en C++: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:580
@@ -1685,12 +1752,14 @@ msgid ""
 "The colon separates the flags of an item from the text by which the comment "
 "is recognized.  The general form of an item in 'comments' is:"
 msgstr ""
+"Los dos puntos separan las marcas de un elemento del texto por el cual se "
+"reconoce un comentario. La forma habitual de un elemento en 'comments' es:"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:585
 #, no-wrap
 msgid "\t{flags}:{text}\n"
-msgstr "\t{flags}:{text}\n"
+msgstr "\t{marcas}:{texto}\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:591
@@ -1702,6 +1771,12 @@ msgid ""
 "let's edit an e-mail message.  When replying, the text that others wrote is\n"
 "preceded with \">\" and \"!\" characters.  This command would work: >\n"
 msgstr ""
+"La parte de {marcas} puede estar vacía, como es el caso.\n"
+"   Puede concatenar varios de estos elementos separándolos con comas. Esto\n"
+"permite reconocer diferentes tipos de comentarios a la vez. Por ejemplo,\n"
+"vamos a editar un mensaje de correo electrónico. Al responder, el texto que\n"
+"otros escribieron estará precedido por los caracteres «>» y «!».\n"
+"Esta orden debería servir: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:593
@@ -1717,6 +1792,11 @@ msgid ""
 "these comments nest.  Thus a line starting with \">\" may have another "
 "comment after the \">\".  This allows formatting a message like this:"
 msgstr ""
+"Hay dos elementos, uno para los comentarios que empiezan con «>» y uno para "
+"los comentarios que comienzan con «!».  Ambos usan la marca «n».  Esto "
+"significa que estos comentarios anidan.  Por lo tanto una línea comenzando "
+"con «>» puede tener otro comentario después de «>».  Esto permite dar "
+"formato a un mensaje como este:"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:605
@@ -1729,6 +1809,12 @@ msgid ""
 "\tWhat is the URL of that ~\n"
 "\tsite? ~\n"
 msgstr ""
+"\t> ! ¿Has visto esa página web? ~\n"
+"\t> ! Tiene un buen diseño. ~\n"
+"\t> No me gusta.  Los ~\n"
+"\t> colores son horribles. ~\n"
+"\t¿Cual es la URL de esa ~\n"
+"\tpágina web? ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:608
@@ -1736,6 +1822,9 @@ msgid ""
 "Try setting 'textwidth' to a different value, e.g., 80, and format the text "
 "by Visually selecting it and typing \"gq\".  The result is:"
 msgstr ""
+"Pruebe configurando 'textwidth' con un valor diferente, por ejemplo, de 80 "
+"años y dar formato al texto visualmente si lo selecciona y escribiendo \"gq"
+"\".  El resultado es:"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:612
@@ -1745,6 +1834,9 @@ msgid ""
 "\t> I don't like it.  The colors are terrible. ~\n"
 "\tWhat is the URL of that site? ~\n"
 msgstr ""
+"\t> ! ¿Has visto esa página web? Tiene un buen diseño. ~\n"
+"\t> No me gusta.  Los colores son horribles. ~\n"
+"\t¿Cual es la URL de esa página web? ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:617
@@ -1754,11 +1846,14 @@ msgid ""
 "first line, but since that line starts with \"> !\" and the second line with "
 "\">\", Vim knows that this is a different kind of comment."
 msgstr ""
+"Notará que Vim no desplazó el texto de un tipo de comentario a otro. El «No» "
+"en la segunda línea, pero ya que la línea comienza con «> !», y la segunda "
+"con «>», Vim detectará que es otro tipo de comentario."
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:620
 msgid "A THREE PART COMMENT"
-msgstr ""
+msgstr "COMENTARIO EN TRES PARTES"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:623
@@ -1766,12 +1861,14 @@ msgid ""
 "A C comment starts with \"/*\", has \"*\" in the middle and \"*/\" at the "
 "end.  The entry in 'comments' for this looks like this: >"
 msgstr ""
+"Un comentario de C empieza con «/*»,  «*» en el medio, y «/*» al final. La "
+"entrada en 'comments' tendría este aspecto: >"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:625
 #, no-wrap
 msgid "\t:set comments=s1:/*,mb:*,ex:*/\n"
-msgstr ""
+msgstr "\t:set comments=s1:/*,mb:*,ex:*/\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:636
@@ -1788,6 +1885,17 @@ msgid ""
 "special meaning.  It means that after Vim automatically inserted a star,\n"
 "typing / will remove the extra space.\n"
 msgstr ""
+"El principio se define con «s1:/*». La «s» indica el principio de un\n"
+"comentario en tres partes. Los dos puntos separan las marcas del texto\n"
+"por el cual se detecta que es un comentario: «/*». Hay una marca, «1». Indica\n"
+"a Vim que la parte central tiene un «offset» de un espacio.\n"
+"   La parte central «mb:*» comienza con «m», que indica que es la parte\n"
+"central. La marca «b» indica que el texto debe ir seguido de un espacio\n"
+"en blanco. De  no ser así, Vim considerará que el texto como «*pointer»\n"
+"también es la parte central de un comentario.\n"
+"   La parte final «ex:*/» tiene «e» como identificador. La marca «x» tiene\n"
+"un significado especial. Indica que pulsar «/» eliminará el espacio\n"
+"adicional después de que Vim haya insertado un «*» automáticamente.\n"
 
 #. type: Plain text
 #: original/TXT/usr_30.txt:638
