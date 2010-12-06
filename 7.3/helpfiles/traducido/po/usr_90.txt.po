@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-05 15:35+0100\n"
-"PO-Revision-Date: 2010-12-05 15:41+0200\n"
+"PO-Revision-Date: 2010-12-06 11:41+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -168,7 +168,6 @@ msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 #. type: Plain text
 #: original/txt/usr_90.txt:2
 #, no-wrap
-#| msgid "*usr_04.txt*\tFor Vim version 7.3.  Last change: 2008 Sep 06\n"
 msgid "*usr_90.txt*\tFor Vim version 7.3.  Last change: 2008 Sep 10\n"
 msgstr "*usr_90.esx*\tPara Vim versión 7.3.  Último cambio: 10/09/2008\n"
 
@@ -205,25 +204,22 @@ msgstr ""
 "|90.1|\tUnix\n"
 "|90.2|\tMS-Windows\n"
 "|90.3|\tActualizar\n"
-"|90.4|\tProblemas habituales de instalación\n"
+"|90.4|\tProblemas de instalación habituales\n"
 "|90.5|\tDesinstalar Vim\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:20
 #, no-wrap
-#| msgid ""
-#| "     Next chapter: |usr_02.txt|  The first steps in Vim\n"
-#| "Table of contents: |usr_toc.txt|\n"
 msgid ""
 " Previous chapter: |usr_45.txt|  Select your language\n"
 "Table of contents: |usr_toc.txt|\n"
 msgstr ""
-"   Capítulo siguiente: |usr_45.esx|  Seleccione su idioma\n"
+" Capítulo siguiente: |usr_45.esx|  Seleccione su idioma\n"
 "Tabla de contenidos: |usr_toc.esx|\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:23
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "*29.1*\tUsing tags\n"
 msgid "*90.1*\tUnix\n"
 msgstr "*90.1*\tUnix\n"
@@ -241,11 +237,20 @@ msgid ""
 "   When installing for a single user, you can use your home directory as the\n"
 "base.  The files will be placed in subdirectories like \"bin\" and \"shared/vim\".\n"
 msgstr ""
+"Primero debe decidir si va a instalar Vim para uno o todos los usuarios. La\n"
+"instalación es muy similar, pero difiere el directorio de instalación de "
+"Vim.\n"
+"   Para una instalación de sistema (todos los usuarios), a menudo se usa\n"
+"el directorio base «/usr/local». Pero puede ser distinto en su sistema.\n"
+"Intente averiguar dónde se instalan los otros paquetes.\n"
+"   Cuando realiza una instalación para un sólo usuario, puede usar su\n"
+"directorio personal como base. Los ficheros se ubicarań en subdirectorios\n"
+"como «bin» y «shared/vim».\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:35
 msgid "FROM A PACKAGE"
-msgstr ""
+msgstr "DE UN PAQUETE"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:38
@@ -253,12 +258,14 @@ msgid ""
 "You can get precompiled binaries for many different UNIX systems.  There is "
 "a long list with links on this page:"
 msgstr ""
+"Puede obtener binarios precompilados para muchos sistemas UNIX diferentes. "
+"En esta página hay una larga lista con enlaces:"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:40
 #, no-wrap
 msgid "\thttp://www.vim.org/binaries.html ~\n"
-msgstr ""
+msgstr "\thttp://www.vim.org/binaries.html ~\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:45
@@ -268,6 +275,10 @@ msgid ""
 "the editor from the source allows you to control which features are "
 "compiled.  This does require a compiler though."
 msgstr ""
+"Los responsables de los binarios son voluntarios, por lo que a menudo están "
+"obsoletos. Es una buena idea compilar su propia versión UNIX desde las "
+"fuentes. Así mismo, crear el editor desde las fuentes le permite controlar "
+"las características a compilar. Por otra parte, esto requiere un compilador."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:49
@@ -276,19 +287,22 @@ msgid ""
 "version of Vim.  It doesn't do syntax highlighting, for example.  Try "
 "finding another Vim package in your distribution, or search on the web site."
 msgstr ""
+"Si tiene una distribución de Linux, el programa vi es probablemente una "
+"versión mínima de Vim. No ejecuta el resaltado de sintaxis, por ejemplo. "
+"Intente buscar otro paquete de Vim en su distribución, o busque en la página "
+"web."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:52
 msgid "FROM SOURCES"
-msgstr ""
+msgstr "DESDE LAS FUENTES"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:54
-#, fuzzy
 #| msgid ""
 #| "To get a complete index of all Vim commands, use the following command: >"
 msgid "To compile and install Vim, you will need the following:"
-msgstr "Para obtener un índice completo de todas los órdenes de Vim, use: >"
+msgstr "Necesitará lo siguiente para compilar e instalar Vim:"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:58
@@ -305,12 +319,14 @@ msgid ""
 "To get the Vim archives, look in this file for a mirror near you, this "
 "should provide the fastest download:"
 msgstr ""
+"Para obtener los archivos de Vim, busque en este archivo un servidor réplica. "
+"Le debería ofrecer la descarga más rápida posible:"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:63 original/txt/usr_90.txt:230
 #, no-wrap
 msgid "\tftp://ftp.vim.org/pub/vim/MIRRORS ~\n"
-msgstr ""
+msgstr "\tftp://ftp.vim.org/pub/vim/MIRRORS ~\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:70
@@ -328,7 +344,7 @@ msgstr ""
 #: original/txt/usr_90.txt:72
 #, no-wrap
 msgid "\tvim-6.1.tar.bz2 ~\n"
-msgstr ""
+msgstr "\tvim-6.1.tar.bz2 ~\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:76
@@ -337,6 +353,9 @@ msgid ""
 "four smaller files, which can be uncompressed with gzip.  For Vim 6.1 they "
 "are called:"
 msgstr ""
+"Necesita el programa bzip2 para descomprimirlo. Si no lo tiene, descargue "
+"los cuatro archivos más pequeños, que se pueden descomprimir con gzip. "
+"Para Vim 6.1, se llaman:"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:81
@@ -347,25 +366,31 @@ msgid ""
 "\tvim-6.1-rt1.tar.gz ~\n"
 "\tvim-6.1-rt2.tar.gz ~\n"
 msgstr ""
+"\tvim-6.1-src1.tar.gz ~\n"
+"\tvim-6.1-src2.tar.gz ~\n"
+"\tvim-6.1-rt1.tar.gz ~\n"
+"\tvim-6.1-rt2.tar.gz ~\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:84
 msgid "COMPILING"
-msgstr ""
+msgstr "COMPILAR"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:86
 msgid "First create a top directory to work in, for example: >"
-msgstr ""
+msgstr "Primero, cree un directorio de nivel superior donde trabajar, por "
+"ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:89
-#, fuzzy, no-wrap
-#| msgid "\t:!mkdir ~/.vim/doc\n"
+#, no-wrap
 msgid ""
 "\tmkdir ~/vim\n"
 "\tcd ~/vim\n"
-msgstr "\t:!mkdir ~/.vim/doc\n"
+msgstr ""
+"\tmkdir ~/vim\n"
+"\tcd ~/vim\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:92
@@ -373,17 +398,19 @@ msgid ""
 "Then unpack the archives there.  If you have the one big archive, you unpack "
 "it like this: >"
 msgstr ""
+"Descomprima los archivos en esa ubicación. Si tiene el archivo único grande, "
+"lo puede desempaquetar de la siguiente forma: >"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:94
 #, no-wrap
 msgid "\tbzip2 -d -c path/vim-6.1.tar.bz2 | tar xf -\n"
-msgstr ""
+msgstr "\tbzip2 -d -c ruta/vim-6.1.tar.bz2 | tar xf -\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:96
 msgid "Change \"path\" to where you have downloaded the file. >"
-msgstr ""
+msgstr "Cambie «ruta» a la ubicación dónde descargó el archivo: >"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:101
@@ -394,6 +421,10 @@ msgid ""
 "\tgzip -d -c path/vim-6.1-rt1.tar.gz | tar xf -\n"
 "\tgzip -d -c path/vim-6.1-rt2.tar.gz | tar xf -\n"
 msgstr ""
+"\tgzip -d -c ruta/vim-6.1-src1.tar.gz | tar xf -\n"
+"\tgzip -d -c ruta/vim-6.1-src2.tar.gz | tar xf -\n"
+"\tgzip -d -c ruta/vim-6.1-rt1.tar.gz | tar xf -\n"
+"\tgzip -d -c ruta/vim-6.1-rt2.tar.gz | tar xf -\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:104
@@ -401,6 +432,8 @@ msgid ""
 "If you are satisfied with getting the default features, and your environment "
 "is setup properly, you should be able to compile Vim with just this: >"
 msgstr ""
+"Si le satisfacen las funcionalidades predeterminadas, y si su entorno está "
+"correctamente configurado, debería poder compilar Vim con lo siguiente: >"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:107
@@ -409,6 +442,8 @@ msgid ""
 "\tcd vim61/src\n"
 "\tmake\n"
 msgstr ""
+"\tcd vim61/src\n"
+"\tmake\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:114
@@ -424,22 +459,19 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_90.txt:117
-#, fuzzy
-#| msgid "DELETING"
 msgid "TESTING"
-msgstr "BORRAR"
+msgstr "PRUEBA"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:119
 msgid "Now you can check if compiling worked OK: >"
-msgstr ""
+msgstr "Ahora puede comprobar si la compilación se realizó con éxito: >"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:121
-#, fuzzy, no-wrap
-#| msgid "\t:make {arguments}\n"
+#, no-wrap
 msgid "\tmake test\n"
-msgstr "\t:make {arguments}\n"
+msgstr "\tmake test\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:125
@@ -448,6 +480,9 @@ msgid ""
 "expected.  Vim will be started many times and all kinds of text and messages "
 "flash by.  If it is alright you will finally see:"
 msgstr ""
+"Esto ejecutará una secuencia de scripts de prueba para comprobar que Vim "
+"funciona de la manera esperada. Se iniciará Vim varias veces, y aparecerán "
+"rápidamente todo tipo de texto y mensajes. Si todo es correcto, verá:"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:128
@@ -456,6 +491,8 @@ msgid ""
 "\ttest results: ~\n"
 "\tALL DONE ~\n"
 msgstr ""
+"\ttest results: ~\n"
+"\tALL DONE ~\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:135
@@ -483,7 +520,7 @@ msgstr ""
 #: original/txt/usr_90.txt:143
 #, no-wrap
 msgid "\t#prefix = $(HOME) ~\n"
-msgstr ""
+msgstr "\t#prefix = $(HOME) ~\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:148
@@ -498,14 +535,14 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_90.txt:150
 msgid "To install Vim do: >"
-msgstr ""
+msgstr "Para instalar Vim, haga: >"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:152
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\tmake main.c\n"
 msgid "\tmake install\n"
-msgstr "\tmake main.c\n"
+msgstr "\tmake install\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:156
@@ -517,12 +554,14 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_90.txt:159
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:syntax enable\n"
 msgid ""
 "\t:help\n"
 "\t:syntax enable\n"
-msgstr "\t:syntax enable\n"
+msgstr ""
+"\t:help\n"
+"\t:syntax enable\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:162
@@ -530,12 +569,14 @@ msgid ""
 "If this doesn't work, use this command to check where Vim is looking for the "
 "runtime files: >"
 msgstr ""
+"Si no funciona, use esta orden para comprobar dónde está buscando Vim sus "
+"archivos de tiempo de ejecución: >"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:164
 #, no-wrap
 msgid "\t:echo $VIMRUNTIME\n"
-msgstr ""
+msgstr "\t:echo $VIMRUNTIME\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:167
@@ -543,13 +584,15 @@ msgid ""
 "You can also start Vim with the \"-V\" argument to see what happens during "
 "startup: >"
 msgstr ""
+"También puede iniciar Vim con el argumento «-V» para ver qué ocurre durante "
+"el inicio: >"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:169
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\tvim -r\n"
 msgid "\tvim -V\n"
-msgstr "\tvim -r\n"
+msgstr "\tvim -V\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:173
@@ -561,10 +604,8 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_90.txt:176
-#, fuzzy
-#| msgid "SELECTING LINES"
 msgid "SELECTING FEATURES"
-msgstr "SELECCIONAR LÍNEAS"
+msgstr "SELECCIONAR FUNCIONALIDADES"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:185
@@ -584,7 +625,7 @@ msgstr ""
 #: original/txt/usr_90.txt:187
 #, no-wrap
 msgid "\t--prefix={directory}\t\tTop directory where to install Vim.\n"
-msgstr ""
+msgstr "\t--prefix={directorio}\t\tDirectorio superior donde instalar Vim.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:194
@@ -620,16 +661,14 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_90.txt:206
-#, fuzzy
-#| msgid "To go the other way use: >"
 msgid "To see the whole list use: >"
-msgstr "Para ir en la otra dirección use: >"
+msgstr "Para ver la lista completa, use: >"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:208
 #, no-wrap
 msgid "\t./configure --help\n"
-msgstr ""
+msgstr "\t./configure --help\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:213
@@ -643,10 +682,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_90.txt:216
-#, fuzzy, no-wrap
-#| msgid "*08.3*\tWindow size\n"
+#, no-wrap
 msgid "*90.2*\tMS-Windows\n"
-msgstr "*08.3*\tTamaño de ventana\n"
+msgstr "*90.2*\tMS-Windows\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:221
@@ -665,6 +703,9 @@ msgid ""
 "\t- The Vim runtime archive.\n"
 "\t- A program to unpack the zip files.\n"
 msgstr ""
+"\t- Un archivo con binarios para Vim.\n"
+"\t- El archivo de tiempo de ejecución («runtime) de Vim.\n"
+"\t- Un programa para desempaquetar los archivos zip.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:235
@@ -679,7 +720,7 @@ msgstr ""
 #: original/txt/usr_90.txt:237
 #, no-wrap
 msgid "\tgvim61.exe\t\tThe self-installing archive.\n"
-msgstr ""
+msgstr "\tgvim61.exe\t\tEl archivo de instalación automática.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:240
@@ -687,6 +728,8 @@ msgid ""
 "This is all you need for the second method.  Just launch the executable, and "
 "follow the prompts."
 msgstr ""
+"Esto es todo lo que necesita para el segundo método. Simplemente ejecute el "
+"archivo, y siga los diálogos."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:243
@@ -694,6 +737,8 @@ msgid ""
 "For the first method you must chose one of the binary archives.  These are "
 "available:"
 msgstr ""
+"Debe escoger uno de los archivos binarios para realizar el primer método. Los "
+"siguientes están disponibles:"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:255
@@ -718,6 +763,9 @@ msgid ""
 "You only need one of them.  Although you could install both a GUI and a "
 "console version.  You always need to get the archive with runtime files."
 msgstr ""
+"Sólo necesita uno de estos. Aunque puede instalar la versión gráfica y una "
+"versión de intérprete de órdenes. Siempre necesita obtener el archivo con los "
+"archivos de tiempo de ejecución."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:260
@@ -740,6 +788,9 @@ msgid ""
 "\tunzip path\\gvim61.zip\n"
 "\tunzip path\\vim61rt.zip\n"
 msgstr ""
+"\tcd c:\\\n"
+"\tunzip path\\gvim61.zip\n"
+"\tunzip path\\vim61rt.zip\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:272
@@ -753,10 +804,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_90.txt:274
-#, fuzzy, no-wrap
-#| msgid "\t:qall\n"
+#, no-wrap
 msgid "\tinstall\n"
-msgstr "\t:qall\n"
+msgstr "\tinstall\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:280
@@ -782,10 +832,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_90.txt:290
-#, fuzzy, no-wrap
-#| msgid "*06.6*\tFurther reading\n"
+#, no-wrap
 msgid "*90.3*\tUpgrading\n"
-msgstr "*06.6*\tMás información\n"
+msgstr "*90.3*\tActualizar\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:293
@@ -793,11 +842,12 @@ msgid ""
 "If you are running one version of Vim and want to install another, here is "
 "what to do."
 msgstr ""
+"Si está usando una versión de Vim y desea instalar otra, haga lo siguiente."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:296 original/txt/usr_90.txt:425
 msgid "UNIX"
-msgstr ""
+msgstr "UNIX"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:305
@@ -817,7 +867,7 @@ msgstr ""
 #: original/txt/usr_90.txt:307
 #, no-wrap
 msgid "\trm -rf /usr/local/share/vim/vim58\n"
-msgstr ""
+msgstr "\trm -rf /usr/local/share/vim/vim58\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:311
@@ -839,7 +889,7 @@ msgstr ""
 #: original/txt/usr_90.txt:317
 #, no-wrap
 msgid "\t./configure --with-vim-name=vim6\n"
-msgstr ""
+msgstr "\t./configure --with-vim-name=vim6\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:322
@@ -855,14 +905,12 @@ msgstr ""
 #: original/txt/usr_90.txt:324
 #, no-wrap
 msgid "\tmv /usr/local/bin/vim6 /usr/local/bin/vim\n"
-msgstr ""
+msgstr "\tmv /usr/local/bin/vim6 /usr/local/bin/vim\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:327 original/txt/usr_90.txt:472
-#, fuzzy
-#| msgid "SPLIT WINDOWS"
 msgid "MS-WINDOWS"
-msgstr "DIVIDIR VENTANAS"
+msgstr "MS-WINDOWS"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:340
@@ -887,7 +935,7 @@ msgstr ""
 #, fuzzy, no-wrap
 #| msgid "*20.2*\tCommand line abbreviations\n"
 msgid "*90.4*\tCommon installation issues\n"
-msgstr "*20.2*\tAbreviaturas en línea de órdenes\n"
+msgstr "*90.4*\tProblemas de instalación habituales\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:347
@@ -1068,10 +1116,10 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_90.txt:431
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\tmake main.c\n"
 msgid "\tmake uninstall\n"
-msgstr "\tmake main.c\n"
+msgstr "\tmake uninstall\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:435
@@ -1119,6 +1167,39 @@ msgid ""
 "\trm /usr/local/man/man1/vimtutor.1\n"
 "\trm /usr/local/man/man1/xxd.1\n"
 msgstr ""
+"\trm -rf /usr/local/share/vim/vim61\n"
+"\trm /usr/local/bin/eview\n"
+"\trm /usr/local/bin/evim\n"
+"\trm /usr/local/bin/ex\n"
+"\trm /usr/local/bin/gview\n"
+"\trm /usr/local/bin/gvim\n"
+"\trm /usr/local/bin/gvim\n"
+"\trm /usr/local/bin/gvimdiff\n"
+"\trm /usr/local/bin/rgview\n"
+"\trm /usr/local/bin/rgvim\n"
+"\trm /usr/local/bin/rview\n"
+"\trm /usr/local/bin/rvim\n"
+"\trm /usr/local/bin/rvim\n"
+"\trm /usr/local/bin/view\n"
+"\trm /usr/local/bin/vim\n"
+"\trm /usr/local/bin/vimdiff\n"
+"\trm /usr/local/bin/vimtutor\n"
+"\trm /usr/local/bin/xxd\n"
+"\trm /usr/local/man/man1/eview.1\n"
+"\trm /usr/local/man/man1/evim.1\n"
+"\trm /usr/local/man/man1/ex.1\n"
+"\trm /usr/local/man/man1/gview.1\n"
+"\trm /usr/local/man/man1/gvim.1\n"
+"\trm /usr/local/man/man1/gvimdiff.1\n"
+"\trm /usr/local/man/man1/rgview.1\n"
+"\trm /usr/local/man/man1/rgvim.1\n"
+"\trm /usr/local/man/man1/rview.1\n"
+"\trm /usr/local/man/man1/rvim.1\n"
+"\trm /usr/local/man/man1/view.1\n"
+"\trm /usr/local/man/man1/vim.1\n"
+"\trm /usr/local/man/man1/vimdiff.1\n"
+"\trm /usr/local/man/man1/vimtutor.1\n"
+"\trm /usr/local/man/man1/xxd.1\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:482
