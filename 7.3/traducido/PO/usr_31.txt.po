@@ -44,7 +44,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-09-23 20:27+0300\n"
-"PO-Revision-Date: 2010-06-19 19:32+0300\n"
+"PO-Revision-Date: 2010-12-05 08:39-0500\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es@freelists.org\n"
 "Language: \n"
@@ -410,6 +410,9 @@ msgid ""
 "window to select files like in a file browser.  However, this doesn't work "
 "for the \":browse\" command.  See |netrw-browse|."
 msgstr ""
+"Cuando no se está usando la versión GUI de Vim, es posible usar el explorador "
+"de archivos para seleccionar archivos como es normal en una GUI.  Sin embargo, "
+"el explorador no funciona con la orden \":browse\".  Véase |netrw-browse|."
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:83
@@ -429,6 +432,16 @@ msgid ""
 "   For example, you are editing a file and made changes to it.  You start\n"
 "editing another file with: >\n"
 msgstr ""
+"Vim le protege de sobreescribir accidentalmente un archivo, y de otras formas\n"
+"de perder los cambios realizados.  Si usted hace algo que puede ser peligroso,\n"
+"Vim muestra un mensaje de error y sugiere añadir ! si usted está seguro de\n"
+"querer hacerlo.\n"
+"   Para evitar teclear de nuevo la orden con el !, se puede hacer que Vim le\n"
+"ofrezca un diálogo.  Así usted podrá presionar «OK» o «Cancel» para indicarle\n"
+"a Vim qué desea hacer.\n"
+# TODO revisar qué pone el diálogo, si aceptar, ok, cancel, cancelar, o que carajo
+"   Por ejemplo, usted está editando un archivo y ya hizo algunos cambios.\n"
+"Puede editar otro archivo con: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:93
@@ -438,10 +451,9 @@ msgstr "\t:confirm edit foo.txt\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:95
-#, fuzzy
 #| msgid "The result looks something like this:"
 msgid "Vim will pop up a dialog that looks something like this:"
-msgstr "El resultado tiene el siguiente aspecto:"
+msgstr "Vim mostrará un diálogo con el siguiente aspecto:"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:102
