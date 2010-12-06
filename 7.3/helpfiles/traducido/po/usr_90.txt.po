@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-05 15:35+0100\n"
-"PO-Revision-Date: 2010-12-06 11:41+0200\n"
+"PO-Revision-Date: 2010-12-06 13:32+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
-"Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -312,6 +312,9 @@ msgid ""
 "\t-  The GZIP program (you can get it from www.gnu.org)\n"
 "\t-  The Vim source and runtime archives\n"
 msgstr ""
+"\t-  Un compilador C (preferentemente GCC)\n"
+"\t-  El programa GZIP (puede obtenerlo en www.gnu.org)\n"
+"\t-  Los archivos de Vim fuente y de tiempo de ejecución\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:61 original/txt/usr_90.txt:228
@@ -319,8 +322,8 @@ msgid ""
 "To get the Vim archives, look in this file for a mirror near you, this "
 "should provide the fastest download:"
 msgstr ""
-"Para obtener los archivos de Vim, busque en este archivo un servidor réplica. "
-"Le debería ofrecer la descarga más rápida posible:"
+"Para obtener los archivos de Vim, busque en este archivo un servidor "
+"réplica. Le debería ofrecer la descarga más rápida posible:"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:63 original/txt/usr_90.txt:230
@@ -339,6 +342,13 @@ msgid ""
 "everything, or four smaller ones that each fit on a floppy disk.  For version\n"
 "6.1 the single big one is called:\n"
 msgstr ""
+"O use la página oficial ftp.vim.org, si cree que es suficientemente rápida.\n"
+"Vaya al directorio «unix», y encontrará una serie de archivos. El\n"
+"número de versión está integrado en el nombre del archivo. Querrá obtener\n"
+"la versión más reciente.\n"
+"   Puede obtener los archivos para Unix de dos formas: Un único archivo\n"
+"grande que contiene todo, o cuatro más pequeños que caben en un\n"
+"disquete. El archivo de la versión 6.1 se llama:\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:72
@@ -456,6 +466,13 @@ msgid ""
 "correct it.  You might have to disable some features to make Vim compile.\n"
 "Look in the Makefile for specific hints for your system.\n"
 msgstr ""
+"El programa «make» ejecutará «configure» y compilará todo. Más adelante\n"
+"explicaremos como compilar con diferentes funcionalidades.\n"
+"   Si detecta errores durante la compilación, mire con detenimiento los\n"
+"mensajes de error. Debería haber una indicación de qué falló. Con suerte,\n"
+"podrá corregirlos. Puede que tenga que desactivar algunas funcionalidades\n"
+"para poder compilar Vim. Consulte el archivo «Makefile» para ver\n"
+"indicaciones específicas a su sistema.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:117
@@ -551,6 +568,10 @@ msgid ""
 "running vim to verify that it works.  Use two simple tests to check if Vim "
 "can find its runtime files: >"
 msgstr ""
+"Esto debería mover todos los archivos relevantes al sitio adecuado. Ahora "
+"puede intentar ejecutar Vim para comprobar que funciona. Use dos pruebas "
+"sencillas para comprobar que Vim puede encontrar sus archivos de tiempo de "
+"ejecución."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:159
@@ -779,6 +800,8 @@ msgid ""
 "Use your un-zip program to unpack the files.  For example, using the \"unzip"
 "\" program: >"
 msgstr ""
+"Use su programa un-zip para descomprimir lso archivos. Por ejemplo, usando "
+"el programa «unzip»: >"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:267
