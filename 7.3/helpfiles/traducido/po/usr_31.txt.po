@@ -437,7 +437,7 @@ msgstr ""
 "Vim muestra un mensaje de error y sugiere añadir ! si usted está seguro de\n"
 "querer hacerlo.\n"
 "   Para evitar teclear de nuevo la orden con el !, se puede hacer que Vim le\n"
-"ofrezca un diálogo.  Así usted podrá presionar «OK» o «Cancel» para indicarle\n"
+"ofrezca un diálogo.  Así usted podrá presionar «OK» o «Cancelar» para indicarle\n"
 "a Vim qué desea hacer.\n"
 # TODO revisar qué pone el diálogo, si aceptar, ok, cancel, cancelar, o que carajo
 "   Por ejemplo, usted está editando un archivo y ya hizo algunos cambios.\n"
@@ -490,6 +490,12 @@ msgid ""
 "were doing and want to check what really changed use \"CANCEL\".  You will "
 "be back in the same file, with the changes still there."
 msgstr ""
+"Y ahora usted puede decidir qué hacer.  Si desea conservar los cambios, "
+"presione «SÍ».  Si quiere descartar permanentemente los cambios hechos: «NO».  "
+"Si olvidó lo que estaba haciendo y quiere revisar cuáles fueron los cambios "
+"hechos, use «CANCELAR».  Estará de nuevo en el mismo archivo, y los cambios "
+"aún estarán allí."
+# TODO revisar qué pone el diálogo, si aceptar, ok, cancel, cancelar, o que carajo
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:110
@@ -497,6 +503,8 @@ msgid ""
 "Just like \":browse\", the \":confirm\" command can be prepended to most "
 "commands that edit another file.  They can also be combined: >"
 msgstr ""
+"Tal como «:browse», la ordem «:confirm» se puede anteponer a la mayoría de las "
+"órdenes que editan un archivo.  Estas órdenes también pueden combinarse: >"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:112
@@ -510,6 +518,8 @@ msgid ""
 "This will produce a dialog when the current buffer was changed.  Then it "
 "will pop up a file browser to select the file to edit."
 msgstr ""
+"Esto mostrará un diálogo cuando el búfer actual contiene cambios.  Luego se "
+"mostrará un explorador de archivos para seleccionar el archivo a editar."
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:121
@@ -521,6 +531,11 @@ msgid ""
 "\tPressing <Enter> selects the choice.  This depends on the system\n"
 "\tthough.\n"
 msgstr ""
+"Nota:\n"
+"\tEs posible usar el teclado para seleccionar la opción que se desee en\n"
+"\tel diálogo.  Generalmente la tecla <Tab> y las teclas de cursor\n"
+"\tcambian la opción seleccionada.  Presionar <Enter> escoge la opción\n"
+"\tdefinida.  Sin embargo, esto varía de sistema a sistema.\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:125
@@ -529,6 +544,10 @@ msgid ""
 "Instead of popping up a dialog, Vim will print the message at the bottom of "
 "the Vim window and ask you to press a key to make a choice. >"
 msgstr ""
+"Cuando no se usa la GUI, la orden «:confirm» sigue funcionando.  En vez de "
+"crear una ventana de diálogo, el mensaje se mostrará en la parte de abajo de "
+"la ventana de Vim, y se le solicitará presionar una tecla para hacer una "
+"elección. >"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:129
@@ -538,6 +557,10 @@ msgid ""
 "<\tSave changes to \"Untitled\"? ~\n"
 "\t[Y]es, (N)o, (C)ancel:  ~\n"
 msgstr ""
+# TODO confirmar cómo se ve esto con la interfaz en español
+"\t:confirm edit main.c\n"
+"<\tSave changes to \"Untitled\"? ~\n"
+"\t[Y]es, (N)o, (C)ancel:  ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:132
@@ -545,12 +568,15 @@ msgid ""
 "You can now press the single key for the choice.  You don't have to press "
 "<Enter>, unlike other typing on the command line."
 msgstr ""
+"Con esto puede hacer la elección simplemente presionando una tecla.  En"
+"particular, no tiene que presionar <Enter>, a diferencia del tecleo normal en"
+"la línea de órdenes."
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:135
 #, no-wrap
 msgid "*31.3*\tMenu shortcuts\n"
-msgstr ""
+msgstr "*31.3*\tAtajos de teclado para menú\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:145
