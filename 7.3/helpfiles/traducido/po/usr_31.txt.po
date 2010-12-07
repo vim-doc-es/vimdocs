@@ -228,7 +228,7 @@ msgid ""
 msgstr ""
 "|31.1|\tEl explorador de archivos\n"
 "|31.2|\tConfirmación\n"
-"|31.3|\tAccesos directos para menús\n"
+"|31.3|\tAtajos de teclado para menús\n"
 "|31.4|\tPosición y tamaño de la ventana de Vim\n"
 "|31.5|\tVarios\n"
 
@@ -331,7 +331,6 @@ msgstr ""
 "   Esto puede ajustarse mediante la opción 'browsedir'. Ésta puede tener uno\n"
 "de los 3 siguientes valores:\n"
 
-# TODO qué uso en vez de buffer?
 #. type: Plain text
 #: original/TXT/usr_31.txt:56
 #, no-wrap
@@ -420,7 +419,6 @@ msgstr ""
 msgid "*31.2*\tConfirmation\n"
 msgstr "*31.2*\tConfirmación\n"
 
-# TODO revisar qué pone el diálogo, si aceptar, ok, cancel, cancelar, o que carajo
 #. type: Plain text
 #: original/TXT/usr_31.txt:91
 #, no-wrap
@@ -455,18 +453,9 @@ msgstr "\t:confirm edit foo.txt\n"
 msgid "Vim will pop up a dialog that looks something like this:"
 msgstr "Vim mostrará un diálogo con el siguiente aspecto:"
 
-# TODO ver que pone vim en español
 #. type: Plain text
 #: original/TXT/usr_31.txt:102
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\t+---------------------------------------+\n"
-#| "\t|intelligent turtle\t\t\t|\n"
-#| "\t|Found programming UNIX a hurdle\t|\n"
-#| "\t|~\t\t\t\t\t|\n"
-#| "\t|~\t\t\t\t\t|\n"
-#| "\t|\t\t\t\t\t|\n"
-#| "\t+---------------------------------------+\n"
+#, no-wrap
 msgid ""
 "\t+-----------------------------------+\n"
 "\t|\t\t\t\t    |\n"
@@ -477,12 +466,11 @@ msgid ""
 msgstr ""
 "\t+-----------------------------------+\n"
 "\t|\t\t\t\t    |\n"
-"\t|   ?\tSave changes to \"bar.txt\"?  |\n"
+"\t|   ?\tGuardar los cambios en \"bar.txt\"?  |\n"
 "\t|\t\t\t\t    |\n"
-"\t|   YES   NO\t\t CANCEL     |\n"
+"\t|   SÍ   NO\t\t CANCELAR     |\n"
 "\t+-----------------------------------+\n"
 
-# TODO revisar qué pone el diálogo, si aceptar, ok, cancel, cancelar, o que carajo
 #. type: Plain text
 #: original/TXT/usr_31.txt:107
 msgid ""
@@ -549,7 +537,6 @@ msgstr ""
 "la ventana de Vim, y se le solicitará presionar una tecla para hacer una "
 "elección. >"
 
-# TODO confirmar cómo se ve esto con la interfaz en español
 #. type: Plain text
 #: original/TXT/usr_31.txt:129
 #, no-wrap
@@ -559,8 +546,8 @@ msgid ""
 "\t[Y]es, (N)o, (C)ancel:  ~\n"
 msgstr ""
 "\t:confirm edit main.c\n"
-"<\tSave changes to \"Untitled\"? ~\n"
-"\t[Y]es, (N)o, (C)ancel:  ~\n"
+"<\tGuardar los cambios en \"Sin título\"? ~\n"
+"\t[Y]es, (N)o, (C)ancelar:  ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:132
@@ -568,15 +555,15 @@ msgid ""
 "You can now press the single key for the choice.  You don't have to press "
 "<Enter>, unlike other typing on the command line."
 msgstr ""
-"Con esto puede hacer la elección simplemente presionando una tecla. En"
-"particular, no tiene que presionar <Enter>, a diferencia del tecleo normal en"
+"Con esto puede hacer la elección simplemente presionando una tecla. En "
+"particular, no tiene que presionar <Enter>, a diferencia del tecleo normal en "
 "la línea de órdenes."
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:135
 #, no-wrap
 msgid "*31.3*\tMenu shortcuts\n"
-msgstr "*31.3*\tAtajos de teclado para menú\n"
+msgstr "*31.3*\tAtajos de teclado para menús\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:145
@@ -660,16 +647,15 @@ msgid "\t:winpos\n"
 msgstr "\t:winpos\n"
 
 #. type: Plain text
-#: original/TXT/usr_31.txt:168
+#: original/TXT/usr_31.txt:168"
 msgid "This will only work in the GUI.  The output may look like this:"
 msgstr "Esto sólo funcionará en la GUI. La salida será similar a lo siguiente:"
 
-# TODO revisar qué pone vim con mensajes en español
 #. type: Plain text
 #: original/TXT/usr_31.txt:170
 #, no-wrap
 msgid "\tWindow position: X 272, Y 103 ~\n"
-msgstr "\tWindow position: X 272, Y 103 ~\n"
+msgstr "\tPosición de la ventana: X 272, Y 103 ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:173
@@ -801,6 +787,15 @@ msgid ""
 "in that terminal.  But when you really want to wait for gvim to finish, you\n"
 "must prevent it from disconnecting.  The \"-f\" argument does this: >\n"
 msgstr ""
+"Puede usar gvim para editar mensajes de correo. Debe seleccionar gvim como el\n"
+"editor para sus mensajes en su programa de correo.  Al hacerlo, notará que\n"
+"esto falla: el programa de correo cree que la edición del mensaje ha\n"
+"terminado, ¡aún cuando gvim no se ha cerrado!\n"
+"   El motivo de esta falla es que gvim se desconecta de la consola en la que\n"
+"fue iniciado. Esto funciona bien cuando se inicia gvim desde una terminal,\n"
+"para que se pueda hacer otras cosas en ella.  Pero cuando se necesita esperar\n"
+"a que gvim termine, hay que evitar dicha desconexión.  El argumento «-f» hace\n"
+"precisamente eso: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:221
@@ -814,11 +809,13 @@ msgid ""
 "The \"-f\" stands for foreground.  Now Vim will block the shell it was "
 "started in until you finish editing and exit."
 msgstr ""
+"«-f» significa foreground (primer plano). Ahora Vim bloqueará la consola en la "
+"que se lo inició hasta que termine la edición y cierre el editor."
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:227
 msgid "DELAYED START OF THE GUI"
-msgstr ""
+msgstr "ARRANQUE POSTERGADO DE LA GUI"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:231
@@ -827,6 +824,9 @@ msgid ""
 "you do various tasks in the same shell.  If you are editing a file and "
 "decide you want to use the GUI after all, you can start it with: >"
 msgstr ""
+"En Unix es posible iniciar Vim en una terminal. Esto es útil si se están\n"
+"realizando varias tareas en una misma consola. Si está editando un archivo y\n"
+"decide que después de todo quiere usar la GUI, puede lanzarla con la orden:\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:233
@@ -841,11 +841,14 @@ msgid ""
 "continue using the terminal for something else.  The \"-f\" argument is used "
 "here to run the GUI in the foreground.  You can also use \":gui -f\"."
 msgstr ""
+"Vim abrirá la ventana de la GUI y no seguirá usando la terminal. Puede\n"
+"continuar usando la terminal para lo que necesite. El argumento «-f» se usa\n"
+"aquí para ejecutar la GUI en primer plano. También puede usar «:gui -f».\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:240
 msgid "THE GVIM STARTUP FILE"
-msgstr ""
+msgstr "EL ARCHIVO DE INICIO DE GVIM"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:245
@@ -855,6 +858,11 @@ msgid ""
 "commands that are only to be used when the GUI is going to be started.  For "
 "example, you can set the 'lines' option to set a different window size: >"
 msgstr ""
+"Cuando gvim inicia, lee el archivo gvimrc. Es similar al archivo vimrc que se\n"
+"usa al iniciar vim. El archivo gvimrc puede usarse para fijar opciones de\n"
+"configuración y órdenes que sólo deban usarse cuando se inicie la GUI. Por\n"
+"ejemplo, puede definir la opción 'lines' para obtener un tamaño de ventana\n"
+"diferente: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:247
@@ -873,6 +881,13 @@ msgid ""
 "The $MYGVIMRC environment variable is set to it, thus you can use this command\n"
 "to edit the file, if you have one: >\n"
 msgstr ""
+"No es conveniente hacer esto en una terminal, debido a que su tamaño es fijo\n"
+"(excepto por un xterm que soporte redimensionado).\n"
+"   Se busca al archivo gvimrc en las mismas ubicaciones que el archivo vimrc.\n"
+"Su nombre usualmente es «~/.gvimrc» en sistemas Unix/Linux y «$VIM/_gvimrc» en\n"
+"MS-Windows. La ruta de este archivo se almacena en la variable de entorno\n"
+"$MYGVIMRC, por lo que puede usar esta orden para editar ese archivo, si\n"
+"existe: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:259
@@ -883,12 +898,14 @@ msgid ""
 "   If for some reason you don't want to use the normal gvimrc file, you can\n"
 "specify another one with the \"-U\" argument: >\n"
 msgstr ""
+"Si por algún motivo no desea usar el archivo gvimrc normal, puede especificar\n"
+"otro mediante el argumento «-U»: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:261
 #, no-wrap
 msgid "\tgvim -U thisrc ...\n"
-msgstr ""
+msgstr "\tgvim -U otrorc ...\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:265
@@ -898,6 +915,9 @@ msgid ""
 "another font size, for example.\n"
 "   To completely skip reading a gvimrc file: >\n"
 msgstr ""
+"Esto le permite iniciar gvim para distintos tipos de edición. Puede, por\n"
+"ejemplo, definir otro tamaño para el tipo de letra.\n"
+"   Para evitar la ejecución del archivo gvimrc use: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:267
@@ -907,7 +927,5 @@ msgstr "\tgvim -U NONE ...\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:271
-#, fuzzy
-#| msgid "Next chapter: |usr_12.txt| Clever tricks"
 msgid "Next chapter: |usr_32.txt| The undo tree"
-msgstr "Capítulo siguiente: |usr_12.esx| Trucos"
+msgstr "Capítulo siguiente: |usr_12.esx| El árbol de deshacer"
