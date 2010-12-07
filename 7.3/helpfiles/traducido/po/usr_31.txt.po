@@ -44,7 +44,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-09-23 20:27+0300\n"
-"PO-Revision-Date: 2010-12-05 08:39-0500\n"
+"PO-Revision-Date: 2010-12-06 23:01-0500\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es@freelists.org\n"
 "Language: \n"
@@ -474,13 +474,13 @@ msgid ""
 "\t|   YES   NO\t\t CANCEL     |\n"
 "\t+-----------------------------------+\n"
 msgstr ""
-"\t+---------------------------------------+\n"
-"\t|intelligent turtle\t\t\t|\n"
-"\t|Found programming UNIX a hurdle\t|\n"
-"\t|~\t\t\t\t\t|\n"
-"\t|~\t\t\t\t\t|\n"
-"\t|\t\t\t\t\t|\n"
-"\t+---------------------------------------+\n"
+"\t+-----------------------------------+\n"
+"\t|\t\t\t\t    |\n"
+"\t|   ?\tSave changes to \"bar.txt\"?  |\n"
+"\t|\t\t\t\t    |\n"
+"\t|   YES   NO\t\t CANCEL     |\n"
+"\t+-----------------------------------+\n"
+# TODO ver que pone vim en español
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:107
@@ -592,6 +592,16 @@ msgid ""
 "   In the Window menu, the \"split\" item has the p underlined.  To select it,\n"
 "let go of the <Alt> key and press p.\n"
 msgstr ""
+"El teclado se usa para todas las órdenes de Vim.  Los menús proveen una forma\n"
+"sencilla de seleccionar órdenes, sin saber de antemano cómo se llaman éstas.\n"
+"Pero es necesario alejar la mano del teclado y tomar el ratón.\n"
+"   Usualmente los menús también pueden ser seleccionados mediante teclas.\n"
+"Esto varía de sistema a sistema, pero generalmente funciona como sigue:\n"
+"Presione la tecla <Alt> junto con la letra subrayada en el menú. Por ejemplo,\n"
+"<A-w> (<Alt> y v) activa el menú Ventana.\n"
+"   En el menú Ventana, la d en la entrada para «split» (dividir ventana) está\n"
+"subrayada.  Para seleccionar dicha entrada, suelte la tecla <Alt> y presione\n"
+"la tecla d.\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:149
@@ -600,6 +610,10 @@ msgid ""
 "cursor keys to move through the menus.  <Right> selects a submenu and <left> "
 "closes it.  <Esc> also closes a menu.  <Enter> selects a menu item."
 msgstr ""
+"Luego de la elección inicial de menú con la tecla <Alt>, es posible usar las "
+"teclar de cursor para moverse a través de los menús.  <Derecha> abre un "
+"submenú, e <Izquierda> lo cierra.  <Esc> también puede cerrar un menú."
+"<Enter> activa el elemento seleccionado del menú."
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:159
@@ -615,23 +629,29 @@ msgid ""
 "   The value \"yes\" means that Vim will use any <Alt> keys for the menus.  Some\n"
 "<Alt> key combinations may also do other things than selecting a menu.\n"
 msgstr ""
+"Hay un conflicto con el uso de la tecla <Alt> para seleccionar elementos de\n"
+"menús, y el uso de la tecla <Alt> en combinaciones de teclas para mapeos.  La\n"
+"opción 'winaltkeys' le indica a Vim qué hacer con la tecla <Alt>.\n"
+"   El valor predeterminado «menu» es la selección inteligente: si la\n"
+"combinación de teclas es un atajo de teclado para el menú, no se la puede\n"
+"mapear.  Todas las otras teclas están disponibles para crear mapeos.\n"
+"   El valor «no» hace que no se use ninguna tecla <Alt> para los menús.  Por\n"
+"esto, es necesario usar el ratón para acceder a los menús, y todas las teclas\n"
+"<Alt> pueden ser mapeadas.\n"
+"   El valor «yes» implica que Vim usará cualquier tecla <Alt> para los menús.\n"
+"Algunas combinaciones de teclas con <Alt> pueden hacer cosas distintas a\n"
+"seleccionar un menú.\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:162
 #, no-wrap
 msgid "*31.4*\tVim window position and size\n"
-msgstr ""
+msgstr "*31.4*\tPosición y tamaño de la ventana de Vim\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:164
-#, fuzzy
-#| msgid ""
-#| "To split the current window and jump to the tag under the cursor use this "
-#| "command: >"
 msgid "To see the current Vim window position on the screen use: >"
-msgstr ""
-"Use la siguiente orden para dividir la ventana actual, y saltar a la "
-"etiqueta bajo el cursor: >"
+msgstr "Para ver la posición actual de la ventana de Vim en la pantalla use: >"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:166
@@ -641,16 +661,15 @@ msgstr "\t:winpos\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:168
-#, fuzzy
-#| msgid "This is short for \"arguments\".  The output might look like this:"
 msgid "This will only work in the GUI.  The output may look like this:"
-msgstr "Esta es la abreviatura de «argumentos». La salida será algo así:"
+msgstr "Esto sólo funcionará en la GUI.  La salida será similar a lo siguiente:"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:170
 #, no-wrap
 msgid "\tWindow position: X 272, Y 103 ~\n"
-msgstr ""
+# TODO revisar qué pone vim con mensajes en español
+msgstr "\tWindow position: X 272, Y 103 ~\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:173
@@ -658,6 +677,9 @@ msgid ""
 "The position is given in screen pixels.  Now you can use the numbers to move "
 "Vim somewhere else.  For example, to move it to the left a hundred pixels: >"
 msgstr ""
+"La posición está dada en píxeles de la pantalla.  Usted puede usar estos números "
+"para mover la ventana de Vim a algún otro sitio.  Por ejemplo, para moverla a "
+"la izquierda cien píxeles: >"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:180
@@ -670,6 +692,12 @@ msgid ""
 "\tthe window moves.  This is because of the border around the window.\n"
 "\tThis is added by the window manager.\n"
 msgstr ""
+"\t:winpos 172 103\n"
+"<\n"
+"\tNota:\n"
+"\tPuede haber un pequeño desfase entre la posición reportada y el sitio\n"
+"\tal que se mueve la ventana.  Esto es debido al borde de la ventana.\n"
+"\tÉste es añadido por el administrador de ventanas.\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:183
@@ -677,6 +705,8 @@ msgid ""
 "You can use this command in your startup script to position the window at a "
 "specific position."
 msgstr ""
+"Es posible usar esta orden en el archivo de arranque de vim para ubicar la "
+"ventana en una posición específica."
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:187
@@ -685,6 +715,9 @@ msgid ""
 "the size of the font being used.  You can see the current size with this "
 "command: >"
 msgstr ""
+"El tamaño de la ventana de Vim se calcula en caracteres.  Por este motivo el "
+"tamaño depende del tipo de letra usado.  El tamaño actual puede consultarse "
+"con esta orden: >"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:189
@@ -697,6 +730,8 @@ msgstr "\t:set lines columns\n"
 msgid ""
 "To change the size set the 'lines' and/or 'columns' options to a new value: >"
 msgstr ""
+"Para cambiar el tamaño ajuste el valor de las opciones 'lines' y/o 'columns': "
+">"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:194
@@ -714,6 +749,8 @@ msgid ""
 "Obtaining the size works in a terminal just like in the GUI.  Setting the "
 "size is not possible in most terminals."
 msgstr ""
+"Consultar el tamaño funciona en una terminal de la misma manera que en la GUI. "
+"En la mayoría de las terminales no es posible ajustar el tamaño."
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:200
@@ -721,12 +758,14 @@ msgid ""
 "You can start the X-Windows version of gvim with an argument to specify the "
 "size and position of the window: >"
 msgstr ""
+"Es posible iniciar la versión de gvim para X-Windows con argumentos para "
+"especificar el tamaño y la posición de la ventana: >"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:202
 #, no-wrap
 msgid "\tgvim -geometry {width}x{height}+{x_offset}+{y_offset}\n"
-msgstr ""
+msgstr "\tgvim -geometry {ancho}x{alto}+{desplz_x}+{desplz_y}\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:205
@@ -734,6 +773,8 @@ msgid ""
 "{width} and {height} are in characters, {x_offset} and {y_offset} are in "
 "pixels.  Example: >"
 msgstr ""
+"{ancho} y {alto} están dados en caracteres, {desplz_x} y {desplz_y} están "
+"dados en píxeles. Por ejemplo: >"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:207
