@@ -212,8 +212,8 @@ msgid ""
 "between alternatives.  Use keyboard shortcuts to access menu items quickly."
 msgstr ""
 "Vim funciona bien en una terminal, pero la GUI tiene algunos elementos extra. "
-"Un explorador de archivos para las órdenes que usan un archivo.  Una ventana "
-"de diálogo para hacer una elección entre alternativas.  Usar accesos directos "
+"Un explorador de archivos para las órdenes que usan un archivo. Una ventana "
+"de diálogo para hacer una elección entre alternativas. Usar accesos directos "
 "de teclado para acceder rápidamente a los elementos en los menús."
 
 #. type: Plain text
@@ -266,15 +266,14 @@ msgid ""
 "typed command is possible as well.  To make the split command use the file\n"
 "browser, prepend \"browse\": >\n"
 msgstr ""
-"Al usar el menú Archivo/Abrir... usted recibe un explorador de archivos.  Esto\n"
-"hace más fácil ubicar el archivo que desea editar. ¿Pero y si usted desea\n"
-"dividir una ventana para editar otro archivo?  No hay una entrada en el menú\n"
-"para esto.  Puede usar primero «Ventana/Dividir» y luego «Archivo/Abrir»...,\n"
+"Al usar el menú Archivo/Abrir... recibe un explorador de archivos. Esto\n"
+"hace más fácil ubicar el archivo que desea editar. ¿Pero y si desea\n"
+"dividir una ventana para editar otro archivo? No hay una entrada en el menú\n"
+"para esto. Puede usar primero «Ventana/Dividir» y luego «Archivo/Abrir»...,\n"
 "pero eso es más trabajo.\n"
-"  Ya que usted está escribiendo la mayoría de las órdenes en Vim, abrir el\n"
-"explorador de archivos con una orden escrita también es posible.  Para hacer\n"
-"que la orden de división use el explorador de archivos, anteponga \"browse\":\n"
-">\n"
+"  Ya que está escribiendo la mayoría de las órdenes en Vim, abrir el\n"
+"explorador de archivos con una orden escrita también es posible. Para hacer\n"
+"que la orden de división use el explorador de archivos, anteponga «browse»: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:34
@@ -291,8 +290,8 @@ msgid ""
 "   You can also specify a file name argument.  This is used to tell the file\n"
 "browser where to start.  Example: >\n"
 msgstr ""
-"Lo que seleccionará un archivo para que la orden \":split\" se ejecute luego\n"
-"con el nombre del mismo.  Si se descarta la ventana del explorador de\n"
+"Seleccione un archivo para que la orden «:split» se ejecute luego\n"
+"con el nombre del mismo. Si se descarta la ventana del explorador de\n"
 "archivos, no pasa nada, la ventana no se divide.\n"
 "  También es posible pasar como parámetro un nombre de archivo o directorio,\n"
 "que es usado para indicarle al explorador de archivos desde qué directorio\n"
@@ -307,7 +306,7 @@ msgstr "\t:browse split /etc\n"
 #. type: Plain text
 #: original/TXT/usr_31.txt:43
 msgid "The file browser will pop up, starting in the directory \"/etc\"."
-msgstr "Abrirá el explorador de archivos, desde el directorio \"/etc\"."
+msgstr "Abrirá el explorador de archivos, desde el directorio «/etc»."
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:52
@@ -322,16 +321,17 @@ msgid ""
 "   This can be changed with the 'browsedir' option.  It can have one of three\n"
 "values:\n"
 msgstr ""
-"La orden \":browse\" puede ser antepuesta prácticamente a cualquier orden que\n"
+"La orden «:browse» puede ser antepuesta prácticamente a cualquier orden que\n"
 "abra un archivo.\n"
 "   Si no se especifica un directorio, Vim será quien determine en qué\n"
-"directorio iniciar el explorador de archivos.  De manera predeterminada se usa\n"
-"el mismo directorio usado la vez anterior.  Así, si se usó «:browse split» y\n"
+"directorio iniciar el explorador de archivos. De manera predeterminada se usa\n"
+"el mismo directorio usado la vez anterior. Así, si se usó «:browse split» y\n"
 "se seleccionó un archivo en «/usr/local/share», la próxima vez que use\n"
 "«:browse» se empezará desde «/usr/local/share» de nuevo.\n"
-"   Esto puede ajustarse mediante la opción 'browsedir'.  Ésta puede tener uno\n"
+"   Esto puede ajustarse mediante la opción 'browsedir'. Ésta puede tener uno\n"
 "de los 3 siguientes valores:\n"
 
+# TODO qué uso en vez de buffer?
 #. type: Plain text
 #: original/TXT/usr_31.txt:56
 #, no-wrap
@@ -341,9 +341,8 @@ msgid ""
 "\tcurrent\t\tuse the current directory\n"
 msgstr ""
 "\tlast\t\tUsar el último directorio visitado (predeterminado)\n"
-"\tbuffer\t\tUsar el mismo directorio del buffer actual\n"
+"\tbuffer\t\tUsar el mismo directorio del búfer actual\n"
 "\tcurrent\t\tUsar el directorio actual\n"
-# TODO qué uso en vez de buffer?
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:59
@@ -351,8 +350,8 @@ msgid ""
 "For example, when you are in the directory \"/usr\", editing the file \"/usr/"
 "local/share/readme\", then the command: >"
 msgstr ""
-"Por ejemplo, cuando usted se encuentra en el directorio \"/usr\", editando el"
-"archivo \"/usr/local/share/readme\", la orden: >"
+"Por ejemplo, cuando usted se encuentra en el directorio «/usr», editando el"
+"archivo «/usr/local/share/readme», la orden: >"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:62
@@ -367,8 +366,8 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/usr_31.txt:64
 msgid "Will start the browser in \"/usr/local/share\".  Alternatively: >"
-msgstr "Lanzará el explorador de archivos desde \"/usr/local/share\".  Por otro"
-" lado: >"
+msgstr "Ejecutará el explorador de archivos desde «/usr/local/share». Por otro"
+"lado: >"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:67
@@ -383,7 +382,7 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/usr_31.txt:69
 msgid "Will start the browser in \"/usr\"."
-msgstr "Lanzará el explorador de archivos desde \"/usr\"."
+msgstr "Lanzará el explorador de archivos desde «/usr»."
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:76
@@ -398,9 +397,9 @@ msgid ""
 msgstr ""
 "\tNota:\n"
 "\tPara evitar el uso del ratón, muchos de los exploradores de archivos\n"
-"\tofrecen navegación mediante teclas.  Ya que esto difiere de sistema a\n"
-"\tsistema, no se explica aquí.  Vim usa un explorador estándar cuando es\n"
-"\tposible; la documentación del sistema que usted use debería contener\n"
+"\tofrecen navegación mediante teclas. Ya que esto difiere de sistema a\n"
+"\tsistema, no se explica aquí. Vim usa un explorador estándar cuando es\n"
+"\tposible; la documentación del sistema que use debería contener\n"
 "\tuna sección acerca de los accesos directos de teclado disponibles.\n"
 
 #. type: Plain text
@@ -410,9 +409,10 @@ msgid ""
 "window to select files like in a file browser.  However, this doesn't work "
 "for the \":browse\" command.  See |netrw-browse|."
 msgstr ""
-"Cuando no se está usando la versión GUI de Vim, es posible usar el explorador "
-"de archivos para seleccionar archivos como es normal en una GUI.  Sin embargo, "
-"el explorador no funciona con la orden \":browse\".  Véase |netrw-browse|."
+"Cuando no se está usando la versión gráfica de Vim, es posible usar el "
+"explorador de archivos para seleccionar archivos como es normal en una GUI. "
+"Sin embargo, el explorador no funciona con la orden «:browse». Véase "
+"|netrw-browse|."
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:83
@@ -420,6 +420,7 @@ msgstr ""
 msgid "*31.2*\tConfirmation\n"
 msgstr "*31.2*\tConfirmación\n"
 
+# TODO revisar qué pone el diálogo, si aceptar, ok, cancel, cancelar, o que carajo
 #. type: Plain text
 #: original/TXT/usr_31.txt:91
 #, no-wrap
@@ -433,13 +434,12 @@ msgid ""
 "editing another file with: >\n"
 msgstr ""
 "Vim le protege de sobreescribir accidentalmente un archivo, y de otras formas\n"
-"de perder los cambios realizados.  Si usted hace algo que puede ser peligroso,\n"
+"de perder los cambios realizados.  Si hace algo que puede ser peligroso,\n"
 "Vim muestra un mensaje de error y sugiere añadir ! si usted está seguro de\n"
 "querer hacerlo.\n"
 "   Para evitar teclear de nuevo la orden con el !, se puede hacer que Vim le\n"
-"ofrezca un diálogo.  Así usted podrá presionar «OK» o «Cancelar» para\n"
+"ofrezca un diálogo. Así usted podrá presionar «OK» o «Cancelar» para\n"
 "indicarle a Vim qué desea hacer.\n"
-# TODO revisar qué pone el diálogo, si aceptar, ok, cancel, cancelar, o que carajo
 "   Por ejemplo, usted está editando un archivo y ya hizo algunos cambios.\n"
 "Puede editar otro archivo con: >\n"
 
@@ -455,6 +455,7 @@ msgstr "\t:confirm edit foo.txt\n"
 msgid "Vim will pop up a dialog that looks something like this:"
 msgstr "Vim mostrará un diálogo con el siguiente aspecto:"
 
+# TODO ver que pone vim en español
 #. type: Plain text
 #: original/TXT/usr_31.txt:102
 #, fuzzy, no-wrap
@@ -480,8 +481,8 @@ msgstr ""
 "\t|\t\t\t\t    |\n"
 "\t|   YES   NO\t\t CANCEL     |\n"
 "\t+-----------------------------------+\n"
-# TODO ver que pone vim en español
 
+# TODO revisar qué pone el diálogo, si aceptar, ok, cancel, cancelar, o que carajo
 #. type: Plain text
 #: original/TXT/usr_31.txt:107
 msgid ""
@@ -490,12 +491,11 @@ msgid ""
 "were doing and want to check what really changed use \"CANCEL\".  You will "
 "be back in the same file, with the changes still there."
 msgstr ""
-"Y ahora usted puede decidir qué hacer.  Si desea conservar los cambios, "
-"presione «SÍ».  Si quiere descartar permanentemente los cambios hechos: «NO».  "
+"Y ahora puede decidir qué hacer. Si desea conservar los cambios, "
+"presione «SÍ». Si quiere descartar permanentemente los cambios hechos: «NO».  "
 "Si olvidó lo que estaba haciendo y quiere revisar cuáles fueron los cambios "
-"hechos, use «CANCELAR».  Estará de nuevo en el mismo archivo, y los cambios "
+"hechos, use «CANCELAR». Estará de nuevo en el mismo archivo, y los cambios "
 "aún estarán allí."
-# TODO revisar qué pone el diálogo, si aceptar, ok, cancel, cancelar, o que carajo
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:110
@@ -503,8 +503,8 @@ msgid ""
 "Just like \":browse\", the \":confirm\" command can be prepended to most "
 "commands that edit another file.  They can also be combined: >"
 msgstr ""
-"Tal como «:browse», la ordem «:confirm» se puede anteponer a la mayoría de las "
-"órdenes que editan un archivo.  Estas órdenes también pueden combinarse: >"
+"Tal como «:browse», la orden «:confirm» se puede anteponer a la mayoría de las "
+"órdenes que editan un archivo.  Estas órdenes también se pueden combinar: >"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:112
@@ -518,7 +518,7 @@ msgid ""
 "This will produce a dialog when the current buffer was changed.  Then it "
 "will pop up a file browser to select the file to edit."
 msgstr ""
-"Esto mostrará un diálogo cuando el búfer actual contiene cambios.  Luego se "
+"Esto mostrará un diálogo cuando el búfer actual contiene cambios. Luego se "
 "mostrará un explorador de archivos para seleccionar el archivo a editar."
 
 #. type: Plain text
@@ -533,9 +533,9 @@ msgid ""
 msgstr ""
 "Nota:\n"
 "\tEs posible usar el teclado para seleccionar la opción que se desee en\n"
-"\tel diálogo.  Generalmente la tecla <Tab> y las teclas de cursor\n"
-"\tcambian la opción seleccionada.  Presionar <Enter> escoge la opción\n"
-"\tdefinida.  Sin embargo, esto varía de sistema a sistema.\n"
+"\tel diálogo. Generalmente la tecla <Tab> y las teclas de cursor\n"
+"\tcambian la opción seleccionada. Presionar <Enter> escoge la opción\n"
+"\tdefinida. Sin embargo, esto varía de sistema a sistema.\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:125
@@ -544,11 +544,12 @@ msgid ""
 "Instead of popping up a dialog, Vim will print the message at the bottom of "
 "the Vim window and ask you to press a key to make a choice. >"
 msgstr ""
-"Cuando no se usa la GUI, la orden «:confirm» sigue funcionando.  En vez de "
+"Cuando no se usa la GUI, la orden «:confirm» sigue funcionando. En vez de "
 "crear una ventana de diálogo, el mensaje se mostrará en la parte de abajo de "
 "la ventana de Vim, y se le solicitará presionar una tecla para hacer una "
 "elección. >"
 
+# TODO confirmar cómo se ve esto con la interfaz en español
 #. type: Plain text
 #: original/TXT/usr_31.txt:129
 #, no-wrap
@@ -557,7 +558,6 @@ msgid ""
 "<\tSave changes to \"Untitled\"? ~\n"
 "\t[Y]es, (N)o, (C)ancel:  ~\n"
 msgstr ""
-# TODO confirmar cómo se ve esto con la interfaz en español
 "\t:confirm edit main.c\n"
 "<\tSave changes to \"Untitled\"? ~\n"
 "\t[Y]es, (N)o, (C)ancel:  ~\n"
@@ -568,7 +568,7 @@ msgid ""
 "You can now press the single key for the choice.  You don't have to press "
 "<Enter>, unlike other typing on the command line."
 msgstr ""
-"Con esto puede hacer la elección simplemente presionando una tecla.  En"
+"Con esto puede hacer la elección simplemente presionando una tecla. En"
 "particular, no tiene que presionar <Enter>, a diferencia del tecleo normal en"
 "la línea de órdenes."
 
@@ -592,16 +592,16 @@ msgid ""
 "   In the Window menu, the \"split\" item has the p underlined.  To select it,\n"
 "let go of the <Alt> key and press p.\n"
 msgstr ""
-"El teclado se usa para todas las órdenes de Vim.  Los menús proveen una forma\n"
+"El teclado se usa para todas las órdenes de Vim. Los menús proveen una forma\n"
 "sencilla de seleccionar órdenes, sin saber de antemano cómo se llaman éstas.\n"
 "Pero es necesario alejar la mano del teclado y tomar el ratón.\n"
-"   Usualmente los menús también pueden ser seleccionados mediante teclas.\n"
+"   Habitualmente los menús también pueden ser seleccionados mediante teclas.\n"
 "Esto varía de sistema a sistema, pero generalmente funciona como sigue:\n"
 "Presione la tecla <Alt> junto con la letra subrayada en el menú. Por ejemplo,\n"
 "<A-w> (<Alt> y v) activa el menú Ventana.\n"
-"   En el menú Ventana, la d en la entrada para «split» (dividir ventana) está\n"
-"subrayada.  Para seleccionar dicha entrada, suelte la tecla <Alt> y presione\n"
-"la tecla d.\n"
+"   En el menú Ventana, la «d» en la entrada para «split» (dividir ventana)\n"
+"está subrayada. Para seleccionar dicha entrada, suelte la tecla <Alt> y\n"
+"presione la tecla d.\n"
 
 #. type: Plain text
 #: original/TXT/usr_31.txt:149
@@ -610,9 +610,9 @@ msgid ""
 "cursor keys to move through the menus.  <Right> selects a submenu and <left> "
 "closes it.  <Esc> also closes a menu.  <Enter> selects a menu item."
 msgstr ""
-"Luego de la elección inicial de menú con la tecla <Alt>, es posible usar las "
-"teclar de cursor para moverse a través de los menús.  <Derecha> abre un "
-"submenú, e <Izquierda> lo cierra.  <Esc> también puede cerrar un menú."
+"Después de la elección inicial de menú con la tecla <Alt>, es posible usar "
+"las teclas de cursor para explorar los menús. <Derecha> abre un "
+"submenú, e <Izquierda> lo cierra. <Esc> también puede cerrar un menú."
 "<Enter> activa el elemento seleccionado del menú."
 
 #. type: Plain text
@@ -630,14 +630,14 @@ msgid ""
 "<Alt> key combinations may also do other things than selecting a menu.\n"
 msgstr ""
 "Hay un conflicto con el uso de la tecla <Alt> para seleccionar elementos de\n"
-"menús, y el uso de la tecla <Alt> en combinaciones de teclas para mapeos.  La\n"
+"menús, y el uso de la tecla <Alt> en combinaciones de teclas para mapeos. La\n"
 "opción 'winaltkeys' le indica a Vim qué hacer con la tecla <Alt>.\n"
 "   El valor predeterminado «menu» es la selección inteligente: si la\n"
 "combinación de teclas es un atajo de teclado para el menú, no se la puede\n"
-"mapear.  Todas las otras teclas están disponibles para crear mapeos.\n"
-"   El valor «no» hace que no se use ninguna tecla <Alt> para los menús.  Por\n"
+"mapear. Todas las otras teclas están disponibles para crear mapeos.\n"
+"   El valor «no» hace que no se use ninguna tecla <Alt> para los menús. Por\n"
 "esto, es necesario usar el ratón para acceder a los menús, y todas las teclas\n"
-"<Alt> pueden ser mapeadas.\n"
+"<Alt> se pueden mapear.\n"
 "   El valor «yes» implica que Vim usará cualquier tecla <Alt> para los menús.\n"
 "Algunas combinaciones de teclas con <Alt> pueden hacer cosas distintas a\n"
 "seleccionar un menú.\n"
@@ -662,13 +662,13 @@ msgstr "\t:winpos\n"
 #. type: Plain text
 #: original/TXT/usr_31.txt:168
 msgid "This will only work in the GUI.  The output may look like this:"
-msgstr "Esto sólo funcionará en la GUI.  La salida será similar a lo siguiente:"
+msgstr "Esto sólo funcionará en la GUI. La salida será similar a lo siguiente:"
 
+# TODO revisar qué pone vim con mensajes en español
 #. type: Plain text
 #: original/TXT/usr_31.txt:170
 #, no-wrap
 msgid "\tWindow position: X 272, Y 103 ~\n"
-# TODO revisar qué pone vim con mensajes en español
 msgstr "\tWindow position: X 272, Y 103 ~\n"
 
 #. type: Plain text
@@ -677,8 +677,8 @@ msgid ""
 "The position is given in screen pixels.  Now you can use the numbers to move "
 "Vim somewhere else.  For example, to move it to the left a hundred pixels: >"
 msgstr ""
-"La posición está dada en píxeles de la pantalla.  Usted puede usar estos números "
-"para mover la ventana de Vim a algún otro sitio.  Por ejemplo, para moverla a "
+"La posición está dada en píxeles de la pantalla. Puede usar estos números "
+"para mover la ventana de Vim a algún otro sitio. Por ejemplo, para moverla a "
 "la izquierda cien píxeles: >"
 
 #. type: Plain text
@@ -705,7 +705,7 @@ msgid ""
 "You can use this command in your startup script to position the window at a "
 "specific position."
 msgstr ""
-"Es posible usar esta orden en el archivo de arranque de vim para ubicar la "
+"Es posible usar esta orden en el archivo de arranque de Vim para ubicar la "
 "ventana en una posición específica."
 
 #. type: Plain text
@@ -715,8 +715,8 @@ msgid ""
 "the size of the font being used.  You can see the current size with this "
 "command: >"
 msgstr ""
-"El tamaño de la ventana de Vim se calcula en caracteres.  Por este motivo el "
-"tamaño depende del tipo de letra usado.  El tamaño actual puede consultarse "
+"El tamaño de la ventana de Vim se calcula en caracteres. Por este motivo el "
+"tamaño depende del tipo de letra usado. El tamaño actual puede consultarse "
 "con esta orden: >"
 
 #. type: Plain text
@@ -758,7 +758,7 @@ msgid ""
 "You can start the X-Windows version of gvim with an argument to specify the "
 "size and position of the window: >"
 msgstr ""
-"Es posible iniciar la versión de gvim para X-Windows con argumentos para "
+"Puede iniciar la versión de gvim para X-Windows con argumentos para "
 "especificar el tamaño y la posición de la ventana: >"
 
 #. type: Plain text
