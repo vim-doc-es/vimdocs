@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-05 15:35+0100\n"
-"PO-Revision-Date: 2010-12-07 14:03+0200\n"
+"PO-Revision-Date: 2010-12-08 18:45+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -125,7 +125,8 @@ msgstr ""
 #: original/txt/usr_90.txt:417 original/txt/usr_90.txt:494
 #, no-wrap
 msgid "==============================================================================\n"
-msgstr "==============================================================================\n"
+msgstr "============================================================================"
+"==\n"
 
 #. type: Plain text
 #: original/txt/usr_toc.txt:4 original/txt/usr_01.txt:4
@@ -695,6 +696,9 @@ msgid ""
 "\t\t\t\t\tsimilar arguments for ruby, python and\n"
 "\t\t\t\t\ttcl.\n"
 msgstr ""
+"\t--enable-perlinterp\t\tActiva la interfaz de Perl. Existen\n"
+"\t\t\t\t\targumentos similares para Ruby,\n"
+"\t\t\t\t\tPython y tcl.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:204
@@ -706,6 +710,11 @@ msgid ""
 "\t\t\t\t\tnot connect to the X server, which\n"
 "\t\t\t\t\tmakes startup faster.\n"
 msgstr ""
+"\t--disable-gui\t\t\tNo compila la interfaz gráfica.\n"
+"\t--without-x\t\t\tNo compila las funcionalidades del sistema\n"
+"\t\t\t\t\t\tde ventanas X.\n"
+"\t\t\t\t\tSi se usan las dos, Vim no se conectará al\n"
+"\t\t\t\t\tservidor de X, lo cual agiliza el inicio.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:206
@@ -727,6 +736,10 @@ msgid ""
 "   For the adventurous, edit the file \"feature.h\".  You can also change the\n"
 "source code yourself!\n"
 msgstr ""
+"Puede encontrar una explicación de cada funcionalidad y enlaces a\n"
+"más información aquí: |feature-list|.\n"
+"   Para los atrevido, edite el archivo «feature.h». ¡También puede\n"
+"modificar el código fuente directamente!"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:216
@@ -813,6 +826,18 @@ msgid ""
 "\tvim61d16.zip\t\t16 bit MS-DOS version.  Only for old systems.\n"
 "\t\t\t\tDoes not support long filenames.\n"
 msgstr ""
+"\tgvim61.zip\t\tLa versión de interfaz gráfica normal de MS Windows.\n"
+"\tgvim61ole.zip\t\tLa versión gráfica de MS Windows con compatibilidad\n"
+"\t\t\t\t\tcon OLE.\n"
+"\t\t\t\tUsa más memoria, permite interactuar con otras\n"
+"\t\t\t\taplicaciones OLE.\n"
+"\tvim61w32.zip\t\tLa versión de consola de 32 bit para MS Windows.\n"
+"\t\t\t\tPara el uso en una consola Win NT/2000/XP console.\n"
+"\t\t\t\tNo funciona bien en Win 95/98.\n"
+"\tvim61d32.zip\t\tVersión de 32 bit para MS-DOS. Para el uso en una\n"
+"\t\t\t\tventana de consola de Win 95/98.\n"
+"\tvim61d16.zip\t\tVersión de 16 bit para MS-DOS. Sólo para sistemas\n"
+"\t\t\t\tantiguos. No permite el uso de nombres de archivo largos.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:258
@@ -860,6 +885,10 @@ msgid ""
 "above it.\n"
 "   Now change to the \"vim\\vim61\" directory and run the install program: >\n"
 msgstr ""
+"Éstas órdenes desempaquetarán los ficheros en el directorio «c:\\vim\\vim61».\n"
+"Si ya tiene un directorio «vim», puede navegar al directorio superior a él.\n"
+"   Ahora, entre al directorio «vim\\vim61» y ejecute el programa de\n"
+"instalación: >\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:274
@@ -877,6 +906,13 @@ msgid ""
 "   The install program doesn't move the runtime files.  They remain where you\n"
 "unpacked them.\n"
 msgstr ""
+"Revise los mensajes con cuidado y seleccione las opciones que desea usar.\n"
+"Si al final selecciona «do it», el programa de instalación llevará a cabo "
+"las\n"
+"acciones seleccionadas.\n"
+"   El programa de instalación no reubica los archivos de tiempo de "
+"ejecución.\n"
+"Permanecerán en el lugar en el que los desempaquetó."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:287
@@ -888,6 +924,13 @@ msgid ""
 "Borland command-line compiler 5.5 can be used, as well as the free MingW and "
 "Cygwin compilers.  Check the file src/INSTALLpc.txt for hints."
 msgstr ""
+"En el caso de que no esté satisfecho con las características incluidas en "
+"los binarios proporcionados, puede intentar compilar Vim. Obtenga el archivo "
+"de fuentes de la misma ubicación de los binarios. Necesitará un compilador "
+"que permita «makefiles». Microsoft Visual C funciona, pero es caro. Puede "
+"usar el compilador de línea de órdenes libre Borland 5.5, así como los "
+"compiladores libres MingW y Cygwin. Consulte el archivo «src/INSTALLpc.txt» "
+"para más indicaciones."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:290
@@ -921,6 +964,15 @@ msgid ""
 "delete the old runtime files manually.  Just delete the directory with the\n"
 "version number in it and all files below it.  Example: >\n"
 msgstr ""
+"Cuando teclea «make install», los ficheros de tiempo de ejecución se\n"
+"copiarán un directorio específico a la versión. Por ello, no sobreescribirán\n"
+"una versión anterior. Esto permite usar dos o más versiones\n"
+"simultáneamente.\n"
+"   El ejecutable «vim» sobreescribirá una versión anterior. Si no le\n"
+"interesa preservar la versión más antigua, ejecutar «make install»\n"
+"funcionará sin problemas. Puede borrar los archivos de\n"
+"tiempo de ejecución manualmente. Simplemente borre el directorio con\n"
+"el número de versión y todos los archivos contenidos en él. Ejemplo: >\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:307
@@ -935,6 +987,9 @@ msgid ""
 "the \"filetype.vim\" file, for example, you better merge the changes into "
 "the new version before deleting it."
 msgstr ""
+"Generalmente, bajo este directorio no hay archivos modificados. Si ha "
+"modificado el archivo «filetype.vim», por ejemplo, será mejor que introduzca "
+"esos cambios en la versión nueva antes de borrar el archivo."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:315
@@ -943,6 +998,9 @@ msgid ""
 "switching to it, install the new version under another name.  You need to "
 "specify a configure argument.  For example: >"
 msgstr ""
+"Si es cuidadoso y desea probar la nueva versión durante un tiempo antes de "
+"cambiar a ella, instale la nueva versión bajo otro nombre. Necesita "
+"especificar un argumento de configuración. Por ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:317
@@ -959,6 +1017,10 @@ msgid ""
 "   When you finally decide to switch to the new version, all you need to do is\n"
 "to rename the binary to \"vim\".  For example: >\n"
 msgstr ""
+"Debería usar «make -n install» antes de ejecutar «make install» para\n"
+"comprobar que no se sobreescribirá ningún archivo valioso.\n"
+"   Cuando decida pasar a la nueva versión, todo lo que necesita hacer es\n"
+"renombrar el binario a «vim». Por ejemplo: >\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:324
@@ -988,6 +1050,20 @@ msgid ""
 "   If you are satisfied with the upgrade, you can delete the files of the\n"
 "previous version.  See |90.5|.\n"
 msgstr ""
+"Actualizar es casi idéntico a instalar una versión nueva. Sencillamente\n"
+"desempaquete los archivos en la misma ubicación de la versión anterior.\n"
+"Se creará un directorio nuevo, esto es, «vim61», para los archivos de la\n"
+"versión nueva. Sus archivos de tiempo de ejecución, «vimrc» y «viminfo»\n"
+"no se modificarán.\n"
+"   Si desea ejecutar la nueva versión junto a la antigua, tendrá que hacer\n"
+"algún trabajo manual. No ejecute el programa de instalación, ya que\n"
+"sobreescribirá algunos archivos de la versión antigua. Ejecute los binarios\n"
+"nuevos especificando la ruta completa. El programa debería averiguar\n"
+"automáticamente la ubicación de los archivos de tiempo de ejecución para\n"
+"la versión adecuada. Por otra parte, no funcionará si define en algún lugar\n"
+"la variable «$VIMRUNTIME».\n"
+"   Si la actualización le satisface, puede borrar los archivos de la versión\n"
+"anterior. Consulte |90.5|. "
 
 #. type: Plain text
 #: original/txt/usr_90.txt:343
