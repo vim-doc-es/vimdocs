@@ -2,7 +2,7 @@
 
 		MANUAL DE USUARIO DE VIM - por Bram Moolenaar
 
-			    Editar programas
+			    Edición de programas
 
 
 Vim tiene varias órdenes que asisten en la edición de programas de
@@ -17,18 +17,18 @@ así como el formato de los comentarios.
 |30.5|	Tabulados y espacios
 |30.6|	Formatear comentarios
 
- Siguiente capítulo: |usr_31.txt|  Sacar partido a la interfaz gráfica
-  Capítulo anterior: |usr_29.esx|  Moverse a través de programas
+   Siguiente capítulo: |usr_31.txt|  Sacar partido a la interfaz gráfica
+     Capítulo anterior: |usr_29.esx|  Moverse a través de programas
 Tabla de contenidos: |usr_toc.esx|
 
 ==============================================================================
 *30.1*	Compilar
 
-Vim tiene un conjunto de órdenes de «arreglos rápidos». Le permiten compilar
-un programa desde Vim y después navegar a través de los errores generados y
-(posiblemente) arreglarlos. Puede después recompilar y arreglar cualquier
-error nuevo detectado hasta que finalmente su programa se compile sin
-problemas.
+Vim tiene un conjunto de órdenes de arreglos rápidos («quickfix»). Permiten
+compilar un programa desde Vim y después navegar a través de los errores
+generados y (posiblemente) arreglarlos. Puede después recompilar y arreglar
+cualquier error nuevo detectado hasta que finalmente su programa se compile
+sin problemas.
 
 La siguiente orden ejecuta el programa «make» (introduciendo cualquier
 argumento) y captura los resultados: >
@@ -56,7 +56,7 @@ presentará este aspecto después de teclear «:make»:
 Aquí puede ver que tiene errores en el archivo «main.c». Cuando pulse
 <Intro>, Vim mostrará el archivo «main.c», con el cursor posicionado en la
 línea 6, la primera con un error. No necesitó definir el archivo o el número
-de línea, ya que Vim sabe donde ir analizando los mensajes de error.
+de línea, ya que Vim sabe dónde ir analizando los mensajes de error.
 
 		+---------------------------------------------------+
 		|int main()					    |
@@ -83,16 +83,16 @@ el mensaje completo, use lo siguiente: >
 	:cc
 
 Puede obtener una visión general de todos los mensajes de error con la orden
-«:clist».  La salida tiene el siguiente aspecto: >
+«:clist». La salida tiene el siguiente aspecto: >
 
 	:clist
 <	3 main.c: 6:too many arguments to function 'do_sub' ~
 	5 main.c: 10:parse error before '}' ~
 
-Sólo se muestran las líneas donde Vim reconoció un nombre de fichero y un
+Sólo se muestran las líneas donde Vim reconoció un nombre de archivo y un
 número de línea. Asume que aquéllas son las líneas de interés, mientras que
 toma el resto como mensajes aburridos. Aún así, a veces las líneas no
-reconocidas contiene algo que desee ver. Por ejemplo, la salida del
+reconocidas contiene algo que desea ver. Por ejemplo, la salida del
 enlazador acerca de una función no definida. Para ver todos los mensajes,
 añada «!» a la orden: >
 
@@ -123,8 +123,8 @@ siguiente orden: >
 
 	:set makeprg=nmake
 
-También puede incluir argumentos en esta opción.  Los caracteres especiales
-se deben escapar con una barra invertida.  Ejemplo: >
+También puede incluir argumentos en esta opción. Los caracteres especiales
+se deben escapar con una barra invertida. Ejemplo: >
 
 	:set makeprg=nmake\ -f\ project.mak
 
@@ -171,9 +171,9 @@ Puede puede recordar diez listas de error.
 
 CAMBIAR DE COMPILADOR
 
-Tiene que decir el Vim el formato de los mensajes de error que produce su
-compilador. Esto se puede hacer con la opción 'errorformat'. La sintaxis de
-esta opción es algo complicada, y puede hacer que encaje con prácticamente
+Tiene que indicar a Vim el formato de los mensajes de error que produce su
+compilador. Se puede hacer con la opción 'errorformat'. La sintaxis de esta
+opción es algo complicada, y puede hacer que encaje con prácticamente
 cualquier compilador. Puede encontrar la explicación aquí: |errorformat|.
 
 Puede que esté usando varios compiladores diferentes. Definir la opción
@@ -183,8 +183,8 @@ cambiar al compilador Microsoft Visual C++: >
 
 	:compiler msvc
 
-Esto encontrará el script de Vim para el compilador «msvc» y definirá las
-opciones adecuadas.
+Esta orden encontrará el script de Vim para el compilador «msvc» y definirá
+las opciones adecuadas.
    Puede escribir sus propios archivos de compilador. Consulte
 |write-compiler-plugin|.
 
@@ -192,12 +192,12 @@ opciones adecuadas.
 REDIRECCIONAMIENTO DE LA SALIDA
 
 La orden «:make» redirige la salida del programa ejecutado a un archivo
-error. El modo en que esto funciona depende de varias cosas, tales como la
-consola ('shell'). Si su orden «:make» no captura la salida, compruebe las
-opciones 'makeef' y 'shellpipe'. Las opciones 'shellquote' y 'shellxquote'
-también son de importancia.
+error. El modo en que esto último funciona depende de varias cosas, tales
+como la consola ('shell'). Si su orden «:make» no captura la salida,
+compruebe las opciones 'makeef' y 'shellpipe'. Las opciones 'shellquote' y
+'shellxquote' también son de importancia.
 
-En el caso de que no puede hacer que «:make» redirija la salida del archivo,
+En el caso de que no pueda hacer que «:make» redirija la salida del archivo,
 una alternativa es compilar el programa en otra ventana y redirigir la
 salida al archivo. Después, haga que Vim lea este archivo con: >
 
@@ -209,12 +209,12 @@ Saltar a errores funcionará como la orden «:make».
 *30.2*	Sangrado en archivos C
 
 Un programa es mucho más fácil de entender cuando las líneas tienen un
-sangrado adecuado. Vim ofrece varias formas de disminuir el trabajo de
-lograr esto. Para programas C o con estilo C como Java o C++, defina la
-opción 'cindent'. Vim sabe mucho acerca de programas C e intentará definir
-el sangrado automáticamente. Defina la opción 'shiftwidth'  con el número de
-espacios que desea para cada nivel de profundidad. Cuatro espacios
-funcionarán bien. Puede hacerlo con una orden 'set': >
+sangrado adecuado. Vim ofrece varias formas de facilitar esto. Para
+programas C o con estilo C como Java o C++, defina la opción 'cindent'. Vim
+sabe mucho acerca de programas C e intentará definir el sangrado
+automáticamente. Defina la opción 'shiftwidth'  con el número de espacios
+que desea para cada nivel de profundidad. Cuatro espacios funcionarán
+bien. Puede hacerlo con una orden 'set': >
 
 	:set cindent shiftwidth=4
 
@@ -234,10 +234,10 @@ aparecerá después de teclear '}', ya que Vim no puede adivinar qué va a
 escribir.
 
 Un efecto secundario del sangrado automático es que le permite encontrar
-los errores en su código de manera temprana. Cuando teclea «}» para finalizar
-una función, sólo para ver que el sangrado automático la da más sangrado del
-esperado, puede que falte un «}». Use la orden «%» para encontrar qué «{»
-encaja con la «}» que tecleó.
+los errores en su código de manera temprana. Si teclea «}» para finalizar
+una función y ve que el sangrado automático la da más del esperado,
+puede que falte un «}». Use la orden «%» para encontrar qué «{»
+encaja con la «}» que introdujo.
   Un «)» y «;» omitido también causan un sangrado adicional. Por ello, si obtiene
 más espacios en blanco del esperado, compruebe la líneas precedentes.
 
@@ -249,7 +249,7 @@ forma más simple es: >
 
 Esto sangra la línea actual. Al igual que el resto de los operadores, hay
 tres formas de usarlo. En el modo Visual, «=» sangra las líneas
-seleccionadas. Un objeto de texto útil es «a{». Esto selecciona el bloque
+seleccionadas. Un objeto de texto útil es «a{», que selecciona el bloque
 «{}» actual. Por lo tanto, para sangrar otra vez el bloque de código en el
 que se encuentra el cursor: >
 
@@ -267,7 +267,7 @@ algunas situaciones puede que desee anularlo.
 DEFINIR EL ESTILO DE SANGRADO
 
 Diferentes personas tienen diferentes estilos de sangrado. Por omisión,
-Vim realiza un buen trabajo de sangrado de la manera en que lo hacen el
+Vim realiza un buen trabajo de sangrado de la manera en que lo hace el
 90% de los programadores.
 Aun así, hay diferentes estilos; así que si lo desea, puede personalizar el
 estilo de sangrado con la opción 'cinoptions'.
@@ -295,9 +295,9 @@ archivo C. Esta es la forma de hacer que funcione automáticamente: >
 
 	:filetype indent on
 
-En realidad, esto hace  mucho más que activar 'cindent'  para archivos C.
-En primer lugar, activa la detección de tipo de archivo. Es lo mismo que
-lo que usar para el resaltado de sintaxis.
+En realidad, esto hace mucho más que activar 'cindent'  para archivos C.
+En primer lugar, activa la detección de tipo de archivo. Es igual a lo
+usado para el resaltado de sintaxis.
    Si el tipo de archivo es conocido, Vim buscará un archivo de sangrado para
 este tipo de archivo. La distribución de Vim incluye un número para estos
 lenguajes de programación.
@@ -392,7 +392,7 @@ Ahora ve que necesita un sangrado adicional. Pulse«CTRL-T». El resultado:
 	if test -n a; then ~
 	   echo ~
 
-La orden «CTRL-T», en modo Insertar, añade un 'shiftwidth' al sangrado, sin
+La orden «CTRL-T», en modo Insertar, añade un 'shiftwidth' al sangrado sin
 importar en que línea está.
    Continua escribiendo en la segunda línea, <Intro>, y la tercera línea. Esta
 vez el sangrado es correcto. Pulse <Intro> y salte a la última línea. Ahora
@@ -404,7 +404,7 @@ tiene lo siguiente:
 	   fi ~
 
 Para eliminar el sangrado innecesario en la última línea pulse «CTRL-D». Elimina
-un 'shiftwidth' de sangrado, sin importar donde está dentro de la línea.
+un 'shiftwidth' de sangrado, sin importar dónde está dentro de la línea.
    Cuando está en modo Normal, puede usar las órdenes «>>» y «<<» para cambiar
 las líneas. «>» y «<» son operadores, y por ello tiene las tres formas
 habituales de definir las líneas que desea sangrar. Una combinación útil
@@ -412,8 +412,8 @@ es la siguiente: >
 
 	>i{
 
-Esto añade un sangrado al bloque de líneas actual, dento de «{}». Las líneas
-«{» y «}» se dejan sin modificar, mientras que «>a}» las incluye. En este
+Añade un sangrado al bloque de líneas actual, dento de «{}». Las líneas «{»
+y «}» se dejan sin modificar, mientras que «>a}» las incluye. En este
 ejemplo, el cursor está sobre «printf»:
 
 	texto original		después de «>i{»	    después de «>a{»
@@ -427,8 +427,8 @@ ejemplo, el cursor está sobre «printf»:
 ==============================================================================
 *30.5*	Tabulados y espacios
 
-Por omisión, 'tabstop' está definido con un valor de 8. Aunque puede cambiarlo,
-puede que se encuentre con problemas en el futuro. Otros programas no sabrán
+Por omisión, 'tabstop' tiene un valor de 8. Aunque puede cambiarlo,
+cabe que se encuentre con problemas en el futuro. Otros programas no sabrán
 qué valor de «tabstop» (tabulación) usó. Probablemente, usan el valor
 predefinido de 8, y por ello su texto presentaría un aspecto diferente. Además,
 la mayoría de impresoras usan un valor de «tabstop» predefinido de 8. Por ello,
@@ -450,7 +450,7 @@ tratar esto:
 2. Utilice espacios solamente.  Esto evita los problemas con los
     programas que utilizan un valor de «tabstop» diferente.
 
-Afortunadamente, Vim soporta ambos métodos bastante bien.
+Afortunadamente, Vim permite ambos métodos bastante bien.
 
 
 ESPACIOS Y TABULADOS
@@ -540,14 +540,14 @@ Esta otra forma ofrece el mismo resultado: >
 
 Una de las mayores virtudes de Vim es que entiende comentarios. Puede pedir
 a Vim que dé formato a un comentario, y hará lo correcto.
-   Suponga, por ejemplo, que tiene el siguiente comentario:
+   Suponga que tiene el siguiente comentario:
 
 	/* ~
 	 * Esta es una prueba ~
 	 * de formateo de texto. ~
 	 */ ~
 
-Puede indicar a Vim que de formato posicionando el cursor al principio del
+Puede indicar a Vim que dé formato posicionando el cursor al principio del
 comentario y escribiendo: >
 
 	gq]/
@@ -572,8 +572,8 @@ central y pulse «o». El resultado sería el siguiente:
 	 */ ~
 
 Vim ha insertado un «*» y un espacio automáticamente. Ahora puede escribir
-el texto de comentario. La línea sea más larga que 'textwidth', Vim romperá
-la línea. Una vez más, se inserta «*» automáticamente.
+el texto de comentario. Si la línea excede el valor de 'textwidth', Vim
+romperá la línea. Una vez más, se inserta «*» automáticamente.
 
 	/* ~
 	 * Esto es una prueba de formateo de texto. ~
@@ -581,7 +581,7 @@ la línea. Una vez más, se inserta «*» automáticamente.
 	 * la línea ~
 	 */ ~
 
-Para que esto funcione, debe especificar algunas marcas en 'formatoptions':
+Para su funcionamiento, debe especificar algunas marcas en 'formatoptions':
 
 	r	inserta «*» al pulsar <Enter> en modo Insertar
 	o	inserta «*» a usar «o» o «O» en modo Normal
@@ -607,7 +607,7 @@ reconoce un comentario. La forma habitual de un elemento en 'comments' es:
 	{marcas}:{texto}
 
 La parte de {marcas} puede estar vacía, como es el caso.
-   Puede concatenar varios de estos elementos separándolos con comas. Esto
+   Puede concatenar varios de estos elementos separándolos con comas, lo que
 permite reconocer diferentes tipos de comentarios a la vez. Por ejemplo,
 vamos a editar un mensaje de correo electrónico. Al responder, el texto que
 otros escribieron estará precedido por los caracteres «>» y «!».
@@ -615,11 +615,11 @@ Esta orden debería servir: >
 
 	:set comments=n:>,n:!
 
-Hay dos elementos, uno para los comentarios que empiezan con «>» y uno para
+Hay dos elementos, uno para los comentarios que empiezan con «>» y otro para
 los comentarios que comienzan con «!».  Ambos usan la marca «n».  Esto
-significa que estos comentarios anidan.  Por lo tanto una línea comenzando
-con «>» puede tener otro comentario después de «>».  Esto permite dar
-formato a un mensaje como este:
+significa que estos comentarios se anidan.  Por lo tanto, una línea
+comenzando con «>» puede tener otro comentario después de «>».  Esto permite
+dar formato a un mensaje como este:
 
 	> ! ¿Has visto esa página web? ~
 	> ! Tiene un buen diseño. ~
@@ -628,17 +628,17 @@ formato a un mensaje como este:
 	¿Cual es la URL de esa ~
 	página web? ~
 
-Pruebe configurando 'textwidth' con un valor diferente, por ejemplo, de 80
-años y dar formato al texto visualmente si lo selecciona y escribiendo
-"gq".  El resultado es:
+Pruebe configurando 'textwidth' con un valor diferente, de 80, y formatee el
+texto seleccionándolo en modo Visual y escribiendo «gq».  El resultado es:
 
 	> ! ¿Has visto esa página web? Tiene un buen diseño. ~
-	> No me gusta.  Los colores son horribles. ~
+	> No me gusta. Los colores son horribles. ~
 	¿Cual es la URL de esa página web? ~
 
 Notará que Vim no desplazó el texto de un tipo de comentario a otro. El «No»
-en la segunda línea, pero ya que la línea comienza con «> !», y la segunda
-con «>», Vim detectará que es otro tipo de comentario.
+en la segunda línea puede encajar al final de la primera línea, pero ya que
+la línea comienza con «> !», y la segunda con «>», Vim detectará que es otro
+tipo de comentario.
 
 
 COMENTARIO EN TRES PARTES
@@ -654,11 +654,11 @@ por el cual se detecta que es un comentario: «/*». Hay una marca, «1». Indic
 a Vim que la parte central tiene un «offset» de un espacio.
    La parte central «mb:*» comienza con «m», que indica que es la parte
 central. La marca «b» indica que el texto debe ir seguido de un espacio
-en blanco. De  no ser así, Vim considerará que el texto como «*pointer»
+en blanco. En caso contrario, Vim considerará que el texto como «*pointer»
 también es la parte central de un comentario.
    La parte final «ex:*/» tiene «e» como identificador. La marca «x» tiene
 un significado especial. Indica que pulsar «/» eliminará el espacio
-adicional después de que Vim haya insertado un «*» automáticamente.
+adicional después de que Vim haya insertado automáticamente un asterisco, «*».
 
 Para más detalles, véase |format-comments|.
 

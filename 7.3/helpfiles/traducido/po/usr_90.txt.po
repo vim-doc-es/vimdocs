@@ -125,8 +125,7 @@ msgstr ""
 #: original/txt/usr_90.txt:417 original/txt/usr_90.txt:494
 #, no-wrap
 msgid "==============================================================================\n"
-msgstr "============================================================================"
-"==\n"
+msgstr "==============================================================================\n"
 
 #. type: Plain text
 #: original/txt/usr_toc.txt:4 original/txt/usr_01.txt:4
@@ -220,7 +219,6 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_90.txt:23
 #, no-wrap
-#| msgid "*29.1*\tUsing tags\n"
 msgid "*90.1*\tUnix\n"
 msgstr "*90.1*\tUnix\n"
 
@@ -238,8 +236,7 @@ msgid ""
 "base.  The files will be placed in subdirectories like \"bin\" and \"shared/vim\".\n"
 msgstr ""
 "Primero debe decidir si va a instalar Vim para uno o todos los usuarios. La\n"
-"instalación es muy similar, pero difiere el directorio de instalación de "
-"Vim.\n"
+"instalación es muy similar, pero difiere el directorio de instalación de Vim.\n"
 "   Para una instalación de sistema (todos los usuarios), a menudo se usa\n"
 "el directorio base «/usr/local». Pero puede ser distinto en su sistema.\n"
 "Intente averiguar dónde se instalan los otros paquetes.\n"
@@ -299,8 +296,6 @@ msgstr "DESDE LAS FUENTES"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:54
-#| msgid ""
-#| "To get a complete index of all Vim commands, use the following command: >"
 msgid "To compile and install Vim, you will need the following:"
 msgstr "Necesitará lo siguiente para compilar e instalar Vim:"
 
@@ -364,8 +359,8 @@ msgid ""
 "are called:"
 msgstr ""
 "Necesita el programa bzip2 para descomprimirlo. Si no lo tiene, descargue "
-"los cuatro archivos más pequeños, que se pueden descomprimir con gzip. "
-"Para Vim 6.1, se llaman:"
+"los cuatro archivos más pequeños, que se pueden descomprimir con gzip. Para "
+"Vim 6.1, se llaman:"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:81
@@ -389,8 +384,8 @@ msgstr "COMPILAR"
 #. type: Plain text
 #: original/txt/usr_90.txt:86
 msgid "First create a top directory to work in, for example: >"
-msgstr "Primero, cree un directorio de nivel superior donde trabajar, por "
-"ejemplo: >"
+msgstr ""
+"Primero, cree un directorio de nivel superior donde trabajar, por ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:89
@@ -524,12 +519,12 @@ msgid ""
 msgstr ""
 "Si le devuelve «TEST FAILURE», es que ha fallado alguna prueba. Si existen "
 "uno o más mensajes de pruebas fallidas, puede que Vim funcione, pero no a la "
-"perfección. Si ve muchos mensajes de error o Vim no continua hasta el "
-"final, puede que exista algún problema. Puede intentar encontrarlo "
-"manualmente, o encontrar a alguien que lo puede solucionar. También puede "
-"consultar la lista de correo (|maillist-archive|) en busca de una solución. "
-"Si todo falla, puede preguntar en la lista de correo (|maillist|) de Vim si "
-"alguien le puede ayudar."
+"perfección. Si ve muchos mensajes de error o Vim no continua hasta el final, "
+"puede que exista algún problema. Puede intentar encontrarlo manualmente, o "
+"encontrar a alguien que lo puede solucionar. También puede consultar la "
+"lista de correo (|maillist-archive|) en busca de una solución. Si todo "
+"falla, puede preguntar en la lista de correo (|maillist|) de Vim si alguien "
+"le puede ayudar."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:141
@@ -574,7 +569,6 @@ msgstr "Para instalar Vim, haga: >"
 #. type: Plain text
 #: original/txt/usr_90.txt:152
 #, no-wrap
-#| msgid "\tmake main.c\n"
 msgid "\tmake install\n"
 msgstr "\tmake install\n"
 
@@ -593,7 +587,6 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_90.txt:159
 #, no-wrap
-#| msgid "\t:syntax enable\n"
 msgid ""
 "\t:help\n"
 "\t:syntax enable\n"
@@ -628,7 +621,6 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_90.txt:169
 #, no-wrap
-#| msgid "\tvim -r\n"
 msgid "\tvim -V\n"
 msgstr "\tvim -V\n"
 
@@ -689,11 +681,9 @@ msgid ""
 "\t\t\t\t\tis enabled in which case.\n"
 msgstr ""
 "\t--with-features=tiny\t\tCompilación con varias funcionalidades desactivadas.\n"
-"\t--with-features=small\t\tCompilación con algunas funcionalidades "
-"desactivadas.\n"
+"\t--with-features=small\t\tCompilación con algunas funcionalidades desactivadas.\n"
 "\t--with-features=big\t\tCompilación con más funcionalidades activadas.\n"
-"\t--with-features=huge\t\tCompilación con la mayoría de funcionalidades "
-"activadas.\n"
+"\t--with-features=huge\t\tCompilación con la mayoría de funcionalidades activadas.\n"
 "\t\t\t\t\tConsulte |+feature-list| para ver qué\n"
 "\t\t\t\t\tfuncionalidad está activa por omisión.\n"
 
@@ -831,8 +821,8 @@ msgid ""
 "console version.  You always need to get the archive with runtime files."
 msgstr ""
 "Sólo necesita uno de estos. Aunque puede instalar la versión gráfica y una "
-"versión de intérprete de órdenes. Siempre necesita obtener el archivo con los "
-"archivos de tiempo de ejecución."
+"versión de intérprete de órdenes. Siempre necesita obtener el archivo con "
+"los archivos de tiempo de ejecución."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:260
@@ -1002,7 +992,6 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_90.txt:343
 #, no-wrap
-#| msgid "*20.2*\tCommand line abbreviations\n"
 msgid "*90.4*\tCommon installation issues\n"
 msgstr "*90.4*\tProblemas de instalación habituales\n"
 
@@ -1054,7 +1043,6 @@ msgstr "Q: Los colores no son los correctos en mi pantalla. (Unix)"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:363
-#| msgid "To center a range of lines, use the following command: >"
 msgid ""
 "Check your terminal settings by using the following command in a shell: >"
 msgstr ""
@@ -1199,7 +1187,6 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_90.txt:431
 #, no-wrap
-#| msgid "\tmake main.c\n"
 msgid "\tmake uninstall\n"
 msgstr "\tmake uninstall\n"
 
