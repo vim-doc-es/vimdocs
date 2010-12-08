@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-05 15:35+0100\n"
-"PO-Revision-Date: 2010-12-06 13:32+0200\n"
+"PO-Revision-Date: 2010-12-07 14:03+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
-"Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
+"Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -661,6 +661,15 @@ msgid ""
 "   Some of the most interesting configure arguments follow.  These can also be\n"
 "enabled from the Makefile.\n"
 msgstr ""
+"Vim ofrece varias formas de seleccionar funcionalidades. Una de las más\n"
+"sencillas es editar el archivo «Makefile». Hay muchas indicaciones y\n"
+"ejemplos. Generalmente, puede activar o desactivar una funcionalidad\n"
+"simplemente descomentando una línea.\n"
+"   Otra alternativa es ejecutar «configure» de forma separada. Le permite\n"
+"especificar opciones de configuración manualmente. La desventaja es que\n"
+"tiene que averiguar qué teclear exactamente.\n"
+"   A continuación tiene algunas de los argumentos más interesantes. También\n"
+"se pueden activar desde el archivo «Makefile».\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:187
@@ -679,6 +688,14 @@ msgid ""
 "\t\t\t\t\tSee |+feature-list| for which feature\n"
 "\t\t\t\t\tis enabled in which case.\n"
 msgstr ""
+"\t--with-features=tiny\t\tCompilación con varias funcionalidades desactivadas.\n"
+"\t--with-features=small\t\tCompilación con algunas funcionalidades "
+"desactivadas.\n"
+"\t--with-features=big\t\tCompilación con más funcionalidades activadas.\n"
+"\t--with-features=huge\t\tCompilación con la mayoría de funcionalidades "
+"activadas.\n"
+"\t\t\t\t\tConsulte |+feature-list| para ver qué\n"
+"\t\t\t\t\tfuncionalidad está activa por omisión.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:198
@@ -735,6 +752,11 @@ msgid ""
 "users with fairly recent computers will prefer the second method.  For the "
 "first one, you will need:"
 msgstr ""
+"Existen dos formas de instalar el programa Vim para Microsoft Windows. Puede "
+"descomprimir varios archivos, o usar un sólo archivo de instalación "
+"automática. La mayoría de usuarios con ordenadores relativamente recientes "
+"pueden preferir el segundo método. Se requiere lo siguiente para usar el "
+"primero:"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:225
@@ -756,6 +778,10 @@ msgid ""
 "is embedded in the file name.  You will want to get the most recent "
 "version.  We will use \"61\" here, which is version 6.1."
 msgstr ""
+"O use la página oficial ftp.vim.org si cree que es suficientemente rápido. "
+"Vaya al directorio «pc» y verá una lista de archivos. El número de versión "
+"se incluye en el nombre de archivo. Le recomendamos que obtenga la versión "
+"más reciente. En este documento se usará «61», la versión 6.1."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:237
@@ -778,8 +804,8 @@ msgid ""
 "For the first method you must chose one of the binary archives.  These are "
 "available:"
 msgstr ""
-"Debe escoger uno de los archivos binarios para realizar el primer método. Los "
-"siguientes están disponibles:"
+"Debe escoger uno de los archivos binarios para realizar el primer método. "
+"Los siguientes están disponibles:"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:255
@@ -812,7 +838,7 @@ msgstr ""
 #: original/txt/usr_90.txt:260
 #, no-wrap
 msgid "\tvim61rt.zip\t\tThe runtime files.\n"
-msgstr ""
+msgstr "\tvim61rt.zip\t\tLos archivos de tiempo de ejecución.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:263
@@ -987,11 +1013,15 @@ msgid ""
 "installing Vim and suggests some solutions.  It also contains answers to "
 "many installation questions."
 msgstr ""
+"Esta sección describe algunos de los problemas más habituales al instalar "
+"Vim, y sugiere algunas soluciones. También contiene respuestas a muchas "
+"preguntas sobre la instalación."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:350
 msgid "Q: I Do Not Have Root Privileges.  How Do I Install Vim? (Unix)"
 msgstr ""
+"Q: No tengo privilegios de administrador.  ¿Cómo puedo instalar Vim? (Unix)"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:353
@@ -999,12 +1029,14 @@ msgid ""
 "Use the following configuration command to install Vim in a directory called "
 "$HOME/vim: >"
 msgstr ""
+"Use la siguiente opción de configuración para instalar Vim en un directorio "
+"llamado «$HOME/vim»: >"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:355
 #, no-wrap
 msgid "\t./configure --prefix=$HOME\n"
-msgstr ""
+msgstr "\t./configure --prefix=$HOME\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:358
@@ -1012,25 +1044,28 @@ msgid ""
 "This gives you a personal copy of Vim.  You need to put $HOME/bin in your "
 "path to execute the editor.  Also see |install-home|."
 msgstr ""
+"Esto genera una copia personal de Vim. Necesita poner «$HOME/bin» en su ruta "
+"(variable PATH) para ejecutar el editor. Consulte también |install-home|."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:361
 msgid "Q: The Colors Are Not Right on My Screen. (Unix)"
-msgstr ""
+msgstr "Q: Los colores no son los correctos en mi pantalla. (Unix)"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:363
-#, fuzzy
 #| msgid "To center a range of lines, use the following command: >"
 msgid ""
 "Check your terminal settings by using the following command in a shell: >"
-msgstr "Use la siguiente orden para centrar un rango de líneas: >"
+msgstr ""
+"Compruebe su configuración de terminal usando la siguiente orden en un "
+"intérprete de órdenes: >"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:365
 #, no-wrap
 msgid "\techo $TERM\n"
-msgstr ""
+msgstr "\techo $TERM\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:369
@@ -1039,6 +1074,10 @@ msgid ""
 "06.2|.  Another solution is to always use the GUI version of Vim, called "
 "gvim.  This avoids the need for a correct terminal setup."
 msgstr ""
+"Si el tipo de terminal listado no es el correcto, corríjalo. Para más "
+"indicaciones, consulte |06.2|. Otra solución es usar siempre la versión "
+"gráfica de usuario de Vim, llamado gvim. Esto último evita la necesidad de "
+"una correcta configuración de terminal. "
 
 #. type: Plain text
 #: original/txt/usr_90.txt:372
