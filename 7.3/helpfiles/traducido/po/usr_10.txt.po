@@ -1,0 +1,2371 @@
+# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es 
+#
+# Copyright (C) 2009 
+# This file is distributed under the same license as the Vim 7.2 package.
+#
+# Translators credits:
+#   - Initial translation
+#      Álvaro Castro Castilla <alvaro.castro.castilla@gmail.com>
+#
+#   - Updates
+#       TRADUCTOR <CORREO>, AÑO 
+#
+#
+#
+# Debido al formato (txt) y al máximo de 80 columnas que pueden tener 
+# los textos de ayuda en Vim, así como el formato PO, por favor, leete los
+# apuntes concernientes a la edición de los archivos PO relativos a la
+# aplicación que desees usar.
+# También encontrarás información acerca del uso de herramientas gettext en el 
+# proyecto de localización (l10n) de Vim.
+#
+# - http://www.assembla.com/wiki/show/vim-doc-es
+#
+# No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
+# este enlace puede ser de interés. A pesar de no formar parte, nuestra 
+# intención es homologarnos con su terminología y uso de la lengua 
+# en la medida de lo útil y posible.
+#
+#  - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/notas
+#
+# La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
+# pero también puede servir de referencia para otros términos no técnicos.
+# No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
+# traducción sea comprensible independientemente de la nacionalidad del
+# usuario. Si crees que alguna traducción puede llevar a confusión, consulta
+# la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
+#
+#  - www.rae.es 
+#  - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages   
+#
+# Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
+# se puede consultar con un simple grep, pogrep o cargado en Virtaal.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Vim 7.2\n"
+"Report-Msgid-Bugs-To: vim@bugs.org\n"
+"POT-Creation-Date: 2010-09-23 20:27+0300\n"
+"PO-Revision-Date: 2010-12-06 18:02+0100\n"
+"Last-Translator: Álvaro Castro Castilla <alvaro.castro.castilla@gmail.com>\n"
+"Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:18 original/TXT/intro.txt:79
+#: original/TXT/intro.txt:180 original/TXT/intro.txt:290
+#: original/TXT/intro.txt:518 original/TXT/intro.txt:596
+#: original/TXT/intro.txt:689 original/TXT/intro.txt:817
+#: original/TXT/intro.txt:880 original/TXT/usr_toc.txt:7
+#: original/TXT/usr_toc.txt:58 original/TXT/usr_toc.txt:172
+#: original/TXT/usr_toc.txt:281 original/TXT/usr_toc.txt:340
+#: original/TXT/usr_toc.txt:352 original/TXT/usr_01.txt:19
+#: original/TXT/usr_01.txt:50 original/TXT/usr_01.txt:100
+#: original/TXT/usr_01.txt:181 original/TXT/usr_02.txt:25
+#: original/TXT/usr_02.txt:69 original/TXT/usr_02.txt:130
+#: original/TXT/usr_02.txt:179 original/TXT/usr_02.txt:239
+#: original/TXT/usr_02.txt:307 original/TXT/usr_02.txt:369
+#: original/TXT/usr_02.txt:406 original/TXT/usr_02.txt:560
+#: original/TXT/usr_03.txt:28 original/TXT/usr_03.txt:74
+#: original/TXT/usr_03.txt:101 original/TXT/usr_03.txt:147
+#: original/TXT/usr_03.txt:172 original/TXT/usr_03.txt:223
+#: original/TXT/usr_03.txt:265 original/TXT/usr_03.txt:320
+#: original/TXT/usr_03.txt:491 original/TXT/usr_03.txt:552
+#: original/TXT/usr_03.txt:650 original/TXT/usr_04.txt:27
+#: original/TXT/usr_04.txt:74 original/TXT/usr_04.txt:160
+#: original/TXT/usr_04.txt:194 original/TXT/usr_04.txt:269
+#: original/TXT/usr_04.txt:324 original/TXT/usr_04.txt:360
+#: original/TXT/usr_04.txt:390 original/TXT/usr_04.txt:446
+#: original/TXT/usr_04.txt:469 original/TXT/usr_04.txt:510
+#: original/TXT/usr_05.txt:24 original/TXT/usr_05.txt:63
+#: original/TXT/usr_05.txt:219 original/TXT/usr_05.txt:266
+#: original/TXT/usr_05.txt:418 original/TXT/usr_05.txt:467
+#: original/TXT/usr_05.txt:506 original/TXT/usr_05.txt:621
+#: original/TXT/usr_06.txt:24 original/TXT/usr_06.txt:50
+#: original/TXT/usr_06.txt:135 original/TXT/usr_06.txt:189
+#: original/TXT/usr_06.txt:270 original/TXT/usr_06.txt:276
+#: original/TXT/usr_07.txt:24 original/TXT/usr_07.txt:63
+#: original/TXT/usr_07.txt:179 original/TXT/usr_07.txt:266
+#: original/TXT/usr_07.txt:316 original/TXT/usr_07.txt:404
+#: original/TXT/usr_07.txt:444 original/TXT/usr_07.txt:475
+#: original/TXT/usr_08.txt:26 original/TXT/usr_08.txt:82
+#: original/TXT/usr_08.txt:109 original/TXT/usr_08.txt:161
+#: original/TXT/usr_08.txt:215 original/TXT/usr_08.txt:278
+#: original/TXT/usr_08.txt:337 original/TXT/usr_08.txt:477
+#: original/TXT/usr_08.txt:509 original/TXT/usr_08.txt:597
+#: original/TXT/usr_09.txt:21 original/TXT/usr_09.txt:124
+#: original/TXT/usr_09.txt:175 original/TXT/usr_09.txt:259
+#: original/TXT/usr_09.txt:285 original/TXT/usr_10.txt:27
+#: original/TXT/usr_10.txt:144 original/TXT/usr_10.txt:221
+#: original/TXT/usr_10.txt:342 original/TXT/usr_10.txt:378
+#: original/TXT/usr_10.txt:547 original/TXT/usr_10.txt:621
+#: original/TXT/usr_10.txt:667 original/TXT/usr_10.txt:692
+#: original/TXT/usr_10.txt:820 original/TXT/usr_11.txt:22
+#: original/TXT/usr_11.txt:82 original/TXT/usr_11.txt:144
+#: original/TXT/usr_11.txt:288 original/TXT/usr_11.txt:303
+#: original/TXT/usr_12.txt:25 original/TXT/usr_12.txt:90
+#: original/TXT/usr_12.txt:131 original/TXT/usr_12.txt:177
+#: original/TXT/usr_12.txt:202 original/TXT/usr_12.txt:231
+#: original/TXT/usr_12.txt:281 original/TXT/usr_12.txt:309
+#: original/TXT/usr_12.txt:354 original/TXT/usr_20.txt:22
+#: original/TXT/usr_20.txt:113 original/TXT/usr_20.txt:158
+#: original/TXT/usr_20.txt:285 original/TXT/usr_20.txt:327
+#: original/TXT/usr_20.txt:380 original/TXT/usr_21.txt:24
+#: original/TXT/usr_21.txt:47 original/TXT/usr_21.txt:87
+#: original/TXT/usr_21.txt:236 original/TXT/usr_21.txt:385
+#: original/TXT/usr_21.txt:438 original/TXT/usr_21.txt:495
+#: original/TXT/usr_22.txt:22 original/TXT/usr_22.txt:148
+#: original/TXT/usr_22.txt:213 original/TXT/usr_22.txt:272
+#: original/TXT/usr_22.txt:396 original/TXT/usr_23.txt:23
+#: original/TXT/usr_23.txt:114 original/TXT/usr_23.txt:156
+#: original/TXT/usr_23.txt:238 original/TXT/usr_23.txt:324
+#: original/TXT/usr_23.txt:339 original/TXT/usr_24.txt:28
+#: original/TXT/usr_24.txt:96 original/TXT/usr_24.txt:119
+#: original/TXT/usr_24.txt:268 original/TXT/usr_24.txt:305
+#: original/TXT/usr_24.txt:336 original/TXT/usr_24.txt:369
+#: original/TXT/usr_24.txt:493 original/TXT/usr_24.txt:537
+#: original/TXT/usr_24.txt:583 original/TXT/usr_24.txt:602
+#: original/TXT/usr_25.txt:22 original/TXT/usr_25.txt:132
+#: original/TXT/usr_25.txt:210 original/TXT/usr_25.txt:287
+#: original/TXT/usr_25.txt:453 original/TXT/usr_25.txt:574
+#: original/TXT/usr_26.txt:21 original/TXT/usr_26.txt:46
+#: original/TXT/usr_26.txt:103 original/TXT/usr_26.txt:136
+#: original/TXT/usr_26.txt:217 original/TXT/usr_27.txt:26
+#: original/TXT/usr_27.txt:88 original/TXT/usr_27.txt:136
+#: original/TXT/usr_27.txt:239 original/TXT/usr_27.txt:320
+#: original/TXT/usr_27.txt:350 original/TXT/usr_27.txt:427
+#: original/TXT/usr_27.txt:469 original/TXT/usr_27.txt:510
+#: original/TXT/usr_27.txt:559 original/TXT/usr_28.txt:27
+#: original/TXT/usr_28.txt:54 original/TXT/usr_28.txt:121
+#: original/TXT/usr_28.txt:185 original/TXT/usr_28.txt:211
+#: original/TXT/usr_28.txt:269 original/TXT/usr_28.txt:315
+#: original/TXT/usr_28.txt:331 original/TXT/usr_28.txt:375
+#: original/TXT/usr_28.txt:389 original/TXT/usr_28.txt:422
+#: original/TXT/usr_29.txt:23 original/TXT/usr_29.txt:273
+#: original/TXT/usr_29.txt:320 original/TXT/usr_29.txt:441
+#: original/TXT/usr_29.txt:570 original/TXT/usr_29.txt:609
+#: original/TXT/usr_30.txt:23 original/TXT/usr_30.txt:202
+#: original/TXT/usr_30.txt:280 original/TXT/usr_30.txt:336
+#: original/TXT/usr_30.txt:409 original/TXT/usr_30.txt:515
+#: original/TXT/usr_30.txt:639 original/TXT/usr_31.txt:22
+#: original/TXT/usr_31.txt:81 original/TXT/usr_31.txt:133
+#: original/TXT/usr_31.txt:160 original/TXT/usr_31.txt:208
+#: original/TXT/usr_31.txt:268
+#, no-wrap
+msgid "==============================================================================\n"
+msgstr "==============================================================================\n"
+
+#. type: Plain text
+#: original/TXT/usr_toc.txt:4 original/TXT/usr_01.txt:4
+#: original/TXT/usr_02.txt:4 original/TXT/usr_03.txt:4
+#: original/TXT/usr_04.txt:4 original/TXT/usr_05.txt:4
+#: original/TXT/usr_06.txt:4 original/TXT/usr_07.txt:4
+#: original/TXT/usr_08.txt:4 original/TXT/usr_09.txt:4
+#: original/TXT/usr_10.txt:4 original/TXT/usr_11.txt:4
+#: original/TXT/usr_12.txt:4 original/TXT/usr_20.txt:4
+#: original/TXT/usr_21.txt:4 original/TXT/usr_22.txt:4
+#: original/TXT/usr_23.txt:4 original/TXT/usr_24.txt:4
+#: original/TXT/usr_25.txt:4 original/TXT/usr_26.txt:4
+#: original/TXT/usr_27.txt:4 original/TXT/usr_28.txt:4
+#: original/TXT/usr_29.txt:4 original/TXT/usr_30.txt:4
+#: original/TXT/usr_31.txt:4
+#, no-wrap
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
+msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
+
+#. type: Plain text
+#: original/TXT/usr_toc.txt:354 original/TXT/usr_01.txt:185
+#: original/TXT/usr_02.txt:564 original/TXT/usr_03.txt:654
+#: original/TXT/usr_04.txt:514 original/TXT/usr_05.txt:625
+#: original/TXT/usr_06.txt:280 original/TXT/usr_07.txt:479
+#: original/TXT/usr_08.txt:601 original/TXT/usr_09.txt:289
+#: original/TXT/usr_10.txt:824 original/TXT/usr_11.txt:307
+#: original/TXT/usr_12.txt:358 original/TXT/usr_20.txt:384
+#: original/TXT/usr_21.txt:499 original/TXT/usr_22.txt:400
+#: original/TXT/usr_23.txt:343 original/TXT/usr_24.txt:606
+#: original/TXT/usr_25.txt:578 original/TXT/usr_26.txt:221
+#: original/TXT/usr_27.txt:563 original/TXT/usr_28.txt:426
+#: original/TXT/usr_29.txt:613 original/TXT/usr_30.txt:643
+#: original/TXT/usr_31.txt:272
+msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:347 original/TXT/usr_10.txt:93
+msgid "USING REGISTERS"
+msgstr "USO DE REGISTROS"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:392 original/TXT/usr_10.txt:606
+msgid "APPENDING TO A FILE"
+msgstr "AÑADIR A UN ARCHIVO"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:2
+#, no-wrap
+msgid "*usr_10.txt*\tFor Vim version 7.3.  Last change: 2006 Nov 05\n"
+msgstr "*usr_10.esx*\tPara Vim versión 7.3.  Último cambio: 5/11/2006\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:6
+#, no-wrap
+msgid "\t\t\t     Making big changes\n"
+msgstr "\t\t\t   Realizar grandes cambios\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:12
+msgid ""
+"In chapter 4 several ways to make small changes were explained.  This "
+"chapter goes into making changes that are repeated or can affect a large "
+"amount of text.  The Visual mode allows doing various things with blocks of "
+"text.  Use an external program to do really complicated things."
+msgstr ""
+"En el capítulo 4 se explicaron algunas formas de hacer cambios pequeños. "
+"Este capítulo tratará de cambios que se repiten o que afectan a grandes "
+"porciones del texto. El modo Visual permite hacer varias cosas con bloques "
+"de texto. Use un programa externo para hacer las cosas más complicadas."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:22
+#, no-wrap
+msgid ""
+"|10.1|\tRecord and playback commands\n"
+"|10.2|\tSubstitution\n"
+"|10.3|\tCommand ranges\n"
+"|10.4|\tThe global command\n"
+"|10.5|\tVisual block mode\n"
+"|10.6|\tReading and writing part of a file\n"
+"|10.7|\tFormatting text\n"
+"|10.8|\tChanging case\n"
+"|10.9|\tUsing an external program\n"
+msgstr ""
+"|10.1|\tÓrdenes de grabación y reproducción\n"
+"|10.2|\tSustitución\n"
+"|10.3|\tRangos de aplicación\n"
+"|10.4|\tLas órdenes globales\n"
+"|10.5|\tEl modo de bloque Visual\n"
+"|10.6|\tLeer y escribir parte de un archivo\n"
+"|10.7|\tFormatear texto\n"
+"|10.8|\tCambiar mayúsculas y minúsculas\n"
+"|10.9|\tUso de un programa externo\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:26
+#, no-wrap
+msgid ""
+"     Next chapter: |usr_11.txt|  Recovering from a crash\n"
+" Previous chapter: |usr_09.txt|  Using the GUI\n"
+"Table of contents: |usr_toc.txt|\n"
+msgstr ""
+" Capítulo siguiente: |usr_11.esx|  Recuperarse de un fallo\n"
+"  Capítulo anterior: |usr_09.esx|  Uso de la interfaz gráfica\n"
+"Tabla de contenidos: |usr_toc.esx|\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:29
+#, no-wrap
+msgid "*10.1*\tRecord and playback commands\n"
+msgstr "*10.1*\tÓrdenes de grabación y reproducción\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:33
+msgid ""
+"The \".\" command repeats the preceding change.  But what if you want to do "
+"something more complex than a single change? That's where command recording "
+"comes in.  There are three steps:"
+msgstr ""
+"La orden «.» repite el cambio precedente. ¿Pero qué ocurre si quiere hacer "
+"algo más complicado que un simple cambio? Para eso tenemos la orden de "
+"grabación («:recording»). Hay que seguir tres pasos:"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:38
+#, no-wrap
+msgid ""
+"1. The \"q{register}\" command starts recording keystrokes into the register\n"
+"   named {register}.  The register name must be between a and z.\n"
+"2. Type your commands.\n"
+"3. To finish recording, press q (without any extra character).\n"
+msgstr ""
+"1. La orden «q{registro}» inicia la grabación de teclas pulsadas en un registro\n"
+"   llamado{registro}. El nombre del registro debe estar en el rango (a-z).\n"
+"2. Introduzca sus órdenes.\n"
+"3. Pulse q para detener la grabación (sin ningún carácter adicional).\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:40
+msgid "You can now execute the macro by typing the command \"@{register}\"."
+msgstr "Puede ejecutar la macro tecleando la orden «@{registro}»"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:43
+msgid ""
+"Take a look at how to use these commands in practice.  You have a list of "
+"filenames that look like this:"
+msgstr ""
+"Vamos a echarle un vistazo a cómo se usan las órdenes en la práctica. Tiene "
+"una lista de nombres de archivo como esta:"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:48
+#, no-wrap
+msgid ""
+"\tstdio.h ~\n"
+"\tfcntl.h ~\n"
+"\tunistd.h ~\n"
+"\tstdlib.h ~\n"
+msgstr ""
+"\tstdio.h ~\n"
+"\tfcntl.h ~\n"
+"\tunistd.h ~\n"
+"\tstdlib.h ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:50
+msgid "And what you want is the following:"
+msgstr "Y lo que quiere es lo siguiente:"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:55
+#, no-wrap
+msgid ""
+"\t#include \"stdio.h\" ~\n"
+"\t#include \"fcntl.h\" ~\n"
+"\t#include \"unistd.h\" ~\n"
+"\t#include \"stdlib.h\" ~\n"
+msgstr ""
+"\t#include \"stdio.h\" ~\n"
+"\t#include \"fcntl.h\" ~\n"
+"\t#include \"unistd.h\" ~\n"
+"\t#include \"stdlib.h\" ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:58
+msgid ""
+"You start by moving to the first character of the first line.  Next you "
+"execute the following commands:"
+msgstr ""
+"Comienza desplazándose al primer carácter de la primera línea. A "
+"continuación ejecute la siguiente orden:"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:68
+#, no-wrap
+msgid ""
+"\tqa\t\t\tStart recording a macro in register a.\n"
+"\t^\t\t\tMove to the beginning of the line.\n"
+"\ti#include \"<Esc>\tInsert the string #include \" at the beginning\n"
+"\t\t\t\tof the line.\n"
+"\t$\t\t\tMove to the end of the line.\n"
+"\ta\"<Esc>\t\t\tAppend the character double quotation mark (\")\n"
+"\t\t\t\tto the end of the line.\n"
+"\tj\t\t\tGo to the next line.\n"
+"\tq\t\t\tStop recording the macro.\n"
+msgstr ""
+"\tqa\t\t\tComenzar a grabar la macro en el registro «a».\n"
+"\t^\t\t\tIr al comienzo de la línea.\n"
+"\ti#include \"<Esc>\tInsertar el #include \" al comienzo de cada\n"
+"\t\t\t\tlínea.\n"
+"\t$\t\t\tIr al final de la línea.\n"
+"\ta\"<Esc>\t\t\tAñadir el carácter de comillas dobles (\") al\n"
+"\t\t\t\tfinal de la línea.\n"
+"\tj\t\t\tIr a la próxima línea.\n"
+"\tq\t\t\tDetener la grabación de la macro.\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:73
+#, no-wrap
+msgid ""
+"Now that you have done the work once, you can repeat the change by typing the\n"
+"command \"@a\" three times.\n"
+"   The \"@a\" command can be preceded by a count, which will cause the macro to\n"
+"be executed that number of times.  In this case you would type: >\n"
+msgstr ""
+"Ahora que ha realizado el trabajo una vez, puede repetir el cambio tecleando\n"
+"la orden «@a» tres veces.\n"
+"   La orden «@a» puede venir precedido de un multiplicador, el cuál causará\n"
+"que la macro se ejecute ese número determinado de veces. En este caso: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:75
+#, no-wrap
+msgid "\t3@a\n"
+msgstr "\t3@a\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:78
+msgid "MOVE AND EXECUTE"
+msgstr "MOVER Y EJECUTAR"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:90
+#, no-wrap
+msgid ""
+"You might have the lines you want to change in various places.  Just move the\n"
+"cursor to each location and use the \"@a\" command.  If you have done that once,\n"
+"you can do it again with \"@@\".  That's a bit easier to type.  If you now\n"
+"execute register b with \"@b\", the next \"@@\" will use register b.\n"
+"   If you compare the playback method with using \".\", there are several\n"
+"differences.  First of all, \".\" can only repeat one change.  As seen in the\n"
+"example above, \"@a\" can do several changes, and move around as well.\n"
+"Secondly, \".\" can only remember the last change.  Executing a register allows\n"
+"you to make any changes and then still use \"@a\" to replay the recorded\n"
+"commands.  Finally, you can use 26 different registers.  Thus you can remember\n"
+"26 different command sequences to execute.\n"
+msgstr ""
+"Tal vez tenga las líneas que quiere cambiar en varios lugares. Simplemente\n"
+"mueva el cursor a cada ubicación y use la orden «@a». Si ha hecho eso\n"
+"una vez, puede repetirlo con «@@». Es un poco más sencillo de teclear. Si\n"
+"ejecuta el registro b con «@b», el próximo «@@» usará el registro b.\n"
+"   Si compara esto con el método «.», hay varias diferencias. Lo primero,\n"
+"«.x sólo puede repetir un cambio. Como ha podido ver en el ejemplo de\n"
+"arriba, «@a» puede llevar a cabo varios cambios, incluyendo movimientos.  Por\n"
+"otro lado, «.» sólo puede recordar el último cambio. Ejecutar un registro le\n"
+"permite hacer algunos cambios en el texto y poder usar todavía las órdenes\n"
+"grabadas. Por último, puede usar 26 registros distintos. De este modo\n"
+"puede reusar 26 secuencias diferentes.\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:100
+#, no-wrap
+msgid ""
+"The registers used for recording are the same ones you used for yank and\n"
+"delete commands.  This allows you to mix recording with other commands to\n"
+"manipulate the registers.\n"
+"   Suppose you have recorded a few commands in register n.  When you execute\n"
+"this with \"@n\" you notice you did something wrong.  You could try recording\n"
+"again, but perhaps you will make another mistake.  Instead, use this trick:\n"
+msgstr ""
+"Los registros que se usan para grabar son los mismos que se usan para las\n"
+"órdenes de copiar y eliminar. Esto le permite mezclar la grabación con otras\n"
+"órdenes para manipular los registros.\n"
+"   Suponga que ha grabado algunas órdenes en el registro n. Cuando lo\n"
+"ejecuta con «@n», se da cuenta de que algo no va bien. Podría intentar\n"
+"grabarlo de nuevo, pero quizá cometa otro error. Mejor usar este truco:\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:111
+#, no-wrap
+msgid ""
+"\tG\t\t\tGo to the end of the file.\n"
+"\to<Esc>\t\t\tCreate an empty line.\n"
+"\t\"np\t\t\tPut the text from the n register.  You now see\n"
+"\t\t\t\tthe commands you typed as text in the file.\n"
+"\t{edits}\t\t\tChange the commands that were wrong.  This is\n"
+"\t\t\t\tjust like editing text.\n"
+"\t0\t\t\tGo to the start of the line.\n"
+"\t\"ny$\t\t\tYank the corrected commands into the n\n"
+"\t\t\t\tregister.\n"
+"\tdd\t\t\tDelete the scratch line.\n"
+msgstr ""
+"\tG                       ir al final del archivo\n"
+"\to<Esc>                  Crear una nueva línea\n"
+"\t\"np                     Pegar el texto del registro n. Verá que las\n"
+"\t\t\t\tórdenes que grabó se pegan como texto.\n"
+"\t{edits}                 Cambiar las órdenes que están mal. Esto es\n"
+"\t\t\t\tcomo editar texto.\n"
+"\t0                       Ir al principio de la línea.\n"
+"\t\"ny$                    Copiar (yank) las órdenes corregidas al\n"
+"\t\t\t\tregistro n.\n"
+"\tdd                      Eliminar la línea con las órdenes pegadas.\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:115
+msgid ""
+"Now you can execute the corrected commands with \"@n\".  (If your recorded "
+"commands include line breaks, adjust the last two items in the example to "
+"include all the lines.)"
+msgstr ""
+"Ahora puede ejecutar las órdenes corregidas con «@n». (Si las órdenes "
+"grabadas incluyen saltos de línea, ajuste los dos últimos puntos explicados "
+"anteriormente para incluir todas las líneas.)"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:118
+msgid "APPENDING TO A REGISTER"
+msgstr "AÑADIR A UN REGISTRO"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:124
+#, no-wrap
+msgid ""
+"So far we have used a lowercase letter for the register name.  To append to a\n"
+"register, use an uppercase letter.\n"
+"   Suppose you have recorded a command to change a word to register c.  It\n"
+"works properly, but you would like to add a search for the next word to\n"
+"change.  This can be done with: >\n"
+msgstr ""
+"Hasta el momento hemos usado letras en minúscula para el nombre del registro.\n"
+"Para añadir a un registro, use una letra en mayúscula.\n"
+"   Suponga por un momento que ha grabado una orden para cambiar una\n"
+"palabra en el registro c. Funciona correctamente, pero quisiera añadir una\n"
+"búsqueda para la siguiente palabra a cambiar. Esto se puede hacer así: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:126
+#, no-wrap
+msgid "\tqC/word<Enter>q\n"
+msgstr "\tqC/palabra<Entrar>q\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:130
+msgid ""
+"You start with \"qC\", which records to the c register and appends.  Thus "
+"writing to an uppercase register name means to append to the register with "
+"the same letter, but lowercase."
+msgstr ""
+"Comience con «qC», que añadirá al registro c. De este modo siempre podrá "
+"escribir el registro al que quieras añadir nuevos pasos mediante la misma de "
+"letra de identificación, pero en mayúscula."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:134
+msgid ""
+"This works both with recording and with yank and delete commands.  For "
+"example, you want to collect a sequence of lines into the a register.  Yank "
+"the first line with: >"
+msgstr ""
+"Esto funciona tanto grabando como y con las órdenes de copiar y eliminar. "
+"Por ejemplo, quieres reunir una secuencia de líneas en un registro. Copie la "
+"primera línea con: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:136
+#, no-wrap
+msgid "\t\"aY\n"
+msgstr "\t\"aY\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:138
+msgid "Now move to the second line, and type: >"
+msgstr "Desplácese a la siguiente línea y escriba: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:140
+#, no-wrap
+msgid "\t\"AY\n"
+msgstr "\t\"AY\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:143
+msgid ""
+"Repeat this command for all lines.  The a register now contains all those "
+"lines, in the order you yanked them."
+msgstr ""
+"Repita la orden para todas las líneas. El registro «a» contiene ahora todas "
+"estas líneas, en el orden en el que las ha copiado."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:146
+#, no-wrap
+msgid "*10.2*\tSubstitution\t\t\t\t\t\t*find-replace*\n"
+msgstr "*10.2*\tSustitución\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:149
+msgid ""
+"The \":substitute\" command enables you to perform string replacements on a "
+"whole range of lines.  The general form of this command is as follows: >"
+msgstr ""
+"La orden «:substitute» le permite ejecutar sustituciones de cadenas de "
+"caracteres en un rango de líneas. La forma general es la siguiente: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:151
+#, no-wrap
+msgid "\t:[range]substitute/from/to/[flags]\n"
+msgstr "\t:[rango]substitute/de/a/[marcas]\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:155
+msgid ""
+"This command changes the \"from\" string to the \"to\" string in the lines "
+"specified with [range].  For example, you can change \"Professor\" to "
+"\"Teacher\" in all lines with the following command: >"
+msgstr ""
+"Esta orden cambia la cadena «de» por la cadena «a» en las líneas "
+"especificadas con [rango]. Por ejemplo, puede cambiar «profesor» por "
+"«maestro» en todas las líneas con la siguiente orden: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:162
+#, no-wrap
+msgid ""
+"\t:%substitute/Professor/Teacher/\n"
+"<\n"
+"\tNote:\n"
+"\tThe \":substitute\" command is almost never spelled out completely.\n"
+"\tMost of the time, people use the abbreviated version \":s\".  From here\n"
+"\ton the abbreviation will be used.\n"
+msgstr ""
+"\t:%substitute/profesor/maestro/\n"
+"<\n"
+"\tNota:\n"
+"\tLa orden «:substitute» casi nunca se escribe completamente. La mayoría\n"
+"\tde las veces la gente escribe la versión abreviada \":s\". A partir de\n"
+"\tahora, se empleará la abreviatura.\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:166
+msgid ""
+"The \"%\" before the command specifies the command works on all lines.  "
+"Without a range, \":s\" only works on the current line.  More about ranges "
+"in the next section |10.3|."
+msgstr ""
+"El «%» antes de la orden especifica que se ejecuta en todas las líneas. Sin "
+"rango, «:s» sólo funciona en la línea actual. Más sobre los rangos en la "
+"próxima sección |10.3|."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:169
+msgid ""
+"By default, the \":substitute\" command changes only the first occurrence on "
+"each line.  For example, the preceding command changes the line:"
+msgstr ""
+"Por omisión, la orden «:substitute» cambia sólo la primera palabra "
+"encontrada en cada línea. Por ejemplo, la orden anterior cambia esta línea:"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:171
+#, no-wrap
+msgid "\tProfessor Smith criticized Professor Johnson today. ~\n"
+msgstr "\tEl profesor Pinilla ha criticado hoy al profesor Burgos. ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:173
+msgid "to:"
+msgstr "a esta:"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:175
+#, no-wrap
+msgid "\tTeacher Smith criticized Professor Johnson today. ~\n"
+msgstr "\tEl maestro Pinilla ha criticado hoy al profesor Burgos. ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:178
+msgid ""
+"To change every occurrence on the line, you need to add the g (global) "
+"flag.  The command: >"
+msgstr ""
+"Para cambiar todas palabras que aparezcan en la línea deberá usar la marca g "
+"(global). La orden: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:180
+#, no-wrap
+msgid "\t:%s/Professor/Teacher/g\n"
+msgstr "\t:%s/profesor/maestro/g\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:182
+msgid "results in (starting with the original line):"
+msgstr "da como resultado (ejecutándolo sobre la línea original):"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:184
+#, no-wrap
+msgid "\tTeacher Smith criticized Teacher Johnson today. ~\n"
+msgstr "\tEl maestro Pinilla ha criticado hoy al maestro Burgos. ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:189
+msgid ""
+"Other flags include p (print), which causes the \":substitute\" command to "
+"print out the last line it changes.  The c (confirm) flag tells \":substitute"
+"\" to ask you for confirmation before it performs each substitution.  Enter "
+"the following: >"
+msgstr ""
+"Otras marcas incluyen p (print = imprimir), que hace la orden «:s» muestre "
+"en pantalla la última línea que cambió. La «c» (confirm = confirmar) le dice "
+"a «:s» que pida confirmación antes que se ejecute cada sustitución. "
+"Introduzca lo siguiente: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:191
+#, no-wrap
+msgid "\t:%s/Professor/Teacher/c\n"
+msgstr "\t:%s/profesor/maestro/c\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:194
+msgid ""
+"Vim finds the first occurrence of \"Professor\" and displays the text it is "
+"about to change.  You get the following prompt: >"
+msgstr ""
+"Vim encuentra la primera aparición de «profesor» y muestra el texto que está "
+"a punto de cambiar. Le aparecerá la siguiente pregunta: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:196
+#, no-wrap
+msgid "\treplace with Teacher (y/n/a/q/l/^E/^Y)?\n"
+msgstr "\treplace with maestro (y/n/a/q/l/^E/^Y)?\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:198
+msgid "At this point, you must enter one of the following answers:"
+msgstr "Aquí puede darle cualquiera de las siguientes respuestas:"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:207
+#, no-wrap
+msgid ""
+"\ty\t\tYes; make this change.\n"
+"\tn\t\tNo; skip this match.\n"
+"\ta\t\tAll; make this change and all remaining ones without\n"
+"\t\t\tfurther confirmation.\n"
+"\tq\t\tQuit; don't make any more changes.\n"
+"\tl\t\tLast; make this change and then quit.\n"
+"\tCTRL-E\t\tScroll the text one line up.\n"
+"\tCTRL-Y\t\tScroll the text one line down.\n"
+msgstr ""
+"\ty               Si; hacer el cambio.\n"
+"\tn               No; omitir esta coincidenci.\n"
+"\ta               Todo; hacer este cambio y todos los restantes sin\n"
+"\t\t\tpedir más confirmación.\n"
+"\tq               Quit; no hacer más cambios.\n"
+"\tl               Último; hacer este cambio y salir.\n"
+"\tCTRL-E          Desplazar el texto hacia arriba.\n"
+"\tCTRL-Y          Desplazar el texto hacia abajo.\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:212
+msgid ""
+"The \"from\" part of the substitute command is actually a pattern.  The same "
+"kind as used for the search command.  For example, this command only "
+"substitutes \"the\" when it appears at the start of a line: >"
+msgstr ""
+"La parte «de» de la orden «:subsitute» es, de hecho, un patrón (del mismo "
+"tipo de los que se usan para la búsqueda). Por ejemplo, esta orden sólo "
+"sustituye «Eso» cuando aparece al comienzo de una línea: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:214
+#, no-wrap
+msgid "\t:s/^the/these/\n"
+msgstr "\t:s/^Eso/Aquello/\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:218
+msgid ""
+"If you are substituting with a \"from\" or \"to\" part that includes a "
+"slash, you need to put a backslash before it.  A simpler way is to use "
+"another character instead of the slash.  A plus, for example: >"
+msgstr ""
+"Si sustituye con una parte «de» o «a» que incluyan una barra inclinada, "
+"tendrá que poner una barra invertida antes de él. Una forma más sencilla es "
+"usar otro carácter como separador en lugar de la barra. Un «+», por ejemplo: "
+">"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:220
+#, no-wrap
+msgid "\t:s+one/two+one or two+\n"
+msgstr "\t:s+uno/dos+uno o dos+\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:223
+#, no-wrap
+msgid "*10.3*\tCommand ranges\n"
+msgstr "*10.3*\tRangos de aplicación\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:227
+#, no-wrap
+msgid ""
+"The \":substitute\" command, and many other : commands, can be applied to a\n"
+"selection of lines.  This is called a range.\n"
+"   The simple form of a range is {number},{number}.  For example: >\n"
+msgstr ""
+"La orden «:substitute» y muchas otras órdenes «:» se pueden aplicar a\n"
+"una selección de líneas. A esto se le llama rango.\n"
+"   La forma más simple de un rango es {n},{n} (n es un número entero). Por ej:\n"
+">\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:229
+#, no-wrap
+msgid "\t:1,5s/this/that/g\n"
+msgstr "\t:1,5s/esto/aquello/g\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:232
+msgid ""
+"Executes the substitute command on the lines 1 to 5.  Line 5 is included.  "
+"The range is always placed before the command."
+msgstr ""
+"Ejecuta la orden sustituir desde la línea 1 a la 5. La línea 5 queda "
+"incluida. El rango se sitúa justo antes de la orden."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:234
+msgid "A single number can be used to address one specific line: >"
+msgstr "Puede emplear un único número para acceder a una línea específica: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:236
+#, no-wrap
+msgid "\t:54s/President/Fool/\n"
+msgstr "\t:54s/Político/Demagogo/\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:241
+msgid ""
+"Some commands work on the whole file when you do not specify a range.  To "
+"make them work on the current line the \".\" address is used.  The \":write"
+"\" command works like that.  Without a range, it writes the whole file.  To "
+"make it write only the current line into a file: >"
+msgstr ""
+"Algunas órdenes funcionan sobre un archivo completo cuando no le especifica "
+"un rango. Para hacerlos funcionar en la línea actual, use «.». La orden «:"
+"write» funciona de ese modo. Sin un rango, escribe el archivo completo. Para "
+"hacer que sólo escriba una línea a un archivo: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:243
+#, no-wrap
+msgid "\t:.write otherfile\n"
+msgstr "\t:.write otroarchivo\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:247
+msgid ""
+"The first line always has number one.  How about the last line? The \"$\" "
+"character is used for this.  For example, to substitute in the lines from "
+"the cursor to the end: >"
+msgstr ""
+"La primera línea siempre tiene como numeración el 1. ¿Pero qué ocurre con la "
+"última línea? Puede usar el carácter «$» ppara esto.  Por ejemplo, para "
+"sustituir en las líneas desde la del cursor hasta el final: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:249
+#, no-wrap
+msgid "\t:.,$s/yes/no/\n"
+msgstr "\t:.,$s/si/no/\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:252
+msgid ""
+"The \"%\" range that we used before, is actually a short way to say \"1,$\", "
+"from the first to the last line."
+msgstr ""
+"El rango «%» que usamos anteriormente es una forma de decir «1,$» (desde la "
+"primera hasta la última)."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:255
+msgid "USING A PATTERN IN A RANGE"
+msgstr "USO DE UN PATRÓN EN EL RANGO"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:260
+msgid ""
+"Suppose you are editing a chapter in a book, and want to replace all "
+"occurrences of \"grey\" with \"gray\".  But only in this chapter, not in the "
+"next one.  You know that only chapter boundaries have the word \"Chapter\" "
+"in the first column.  This command will work then: >"
+msgstr ""
+"Suponga que está editado un capítulo de un libro y que desea reemplazar "
+"todas las palabras «grisx con «blanco». Pero sólo en ese capítulo, no en el "
+"siguiente.  Sabe que los límites entre capítulos tienen la palabra "
+"«Capítulo» en la primera columna. Esta orden funcionaría aquí: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:262
+#, no-wrap
+msgid "\t:?^Chapter?,/^Chapter/s=grey=gray=g\n"
+msgstr "\t:?^Capítulo?,/^Capítulo/s=gris=azul=g\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:270
+#, no-wrap
+msgid ""
+"You can see a search pattern is used twice.  The first \"?^Chapter?\" finds the\n"
+"line above the current position that matches this pattern.  Thus the ?pattern?\n"
+"range is used to search backwards.  Similarly, \"/^Chapter/\" is used to search\n"
+"forward for the start of the next chapter.\n"
+"   To avoid confusion with the slashes, the \"=\" character was used in the\n"
+"substitute command here.  A slash or another character would have worked as\n"
+"well.\n"
+msgstr ""
+"Puede observar que un patrón se ha usado en dos ocasiones. La primera\n"
+"«?^Chapter?» busca el patrón en sentido inverso. Por lo tanto «?patrón?»\n"
+"buscará encima de la línea actual. De forma similar, «/^Capítulo/» se usa para\n"
+"buscar hacia delante el comienzo del nuevo capítulo.\n"
+"   Para evitar confusión con las barras, el carácter «=» se ha empleado en\n"
+"la orden sustituir. Una barra o cualquier otro carácter habría funcionado\n"
+"igual de bien.\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:273
+msgid "ADD AND SUBTRACT"
+msgstr "AÑADIR Y ELIMINAR"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:278
+#, no-wrap
+msgid ""
+"There is a slight error in the above command: If the title of the next chapter\n"
+"had included \"grey\" it would be replaced as well.  Maybe that's what you\n"
+"wanted, but what if you didn't?  Then you can specify an offset.\n"
+"   To search for a pattern and then use the line above it: >\n"
+msgstr ""
+"Hay un pequeño error en la orden de arriba: Si el título del siguiente\n"
+"capítulo hubiese incluido «grisx habría sido reemplazado igualmente. Quizá\n"
+"quería eso, ¿pero qué ocurre si no? Puede especificar un «offset».\n"
+"   Para buscar un patrón e indicar la línea anterior: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:280
+#, no-wrap
+msgid "\t/Chapter/-1\n"
+msgstr "\t/Capítulo/-1\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:283
+msgid ""
+"You can use any number instead of the 1.  To address the second line below "
+"the match: >"
+msgstr ""
+"Puede usar cualquier número en lugar de 1. Para indicar la segunda línea por "
+"debajo de la cadena encontrada: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:285
+#, no-wrap
+msgid "\t/Chapter/+2\n"
+msgstr "\t/Capítulo/+2\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:288
+msgid ""
+"The offsets can also be used with the other items in a range.  Look at this "
+"one: >"
+msgstr ""
+"El desplazamiento se puede emplear también con otros elementos en un rango.  "
+"Observe esto: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:290
+#, no-wrap
+msgid "\t:.+3,$-5\n"
+msgstr "\t:.+3,$-5\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:293
+msgid ""
+"This specifies the range that starts three lines below the cursor and ends "
+"five lines before the last line in the file."
+msgstr ""
+"Esto especifica que el rango comienza tres líneas por debajo de la actual y "
+"termina cinco líneas antes de la última línea del archivo."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:296
+msgid "USING MARKS"
+msgstr "USO DE MARCAS"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:302
+#, no-wrap
+msgid ""
+"Instead of figuring out the line numbers of certain positions, remembering them\n"
+"and typing them in a range, you can use marks.\n"
+"   Place the marks as mentioned in chapter 3.  For example, use \"mt\" to mark\n"
+"the top of an area and \"mb\" to mark the bottom.  Then you can use this range\n"
+"to specify the lines between the marks (including the lines with the marks): >\n"
+msgstr ""
+"En lugar de adivinar el número de algunas líneas en determinadas posiciones,\n"
+"e introducirlas en un rango, puede usar marcadores.\n"
+"   Ponga marcas como se explica en el capítulo 3. Por ejemplo, usa «ms» para\n"
+"marcar la parte superior de un área y «mi» para marcar la parte inferior\".\n"
+"Puede usar el rango para especificar las líneas entre las marcas\n"
+"(inclusive): >\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:304
+#, no-wrap
+msgid "\t:'t,'b\n"
+msgstr "\t:'t,'b\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:307
+msgid "VISUAL MODE AND RANGES"
+msgstr "MODO VISUAL Y RANGOS"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:310
+msgid ""
+"You can select text with Visual mode.  If you then press \":\" to start a "
+"colon command, you will see this: >"
+msgstr ""
+"Puede seleccionar texto con el modo Visual. Si pulsa «:» para iniciar una "
+"orden, verá lo siguiente: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:312
+#, no-wrap
+msgid "\t:'<,'>\n"
+msgstr "\t:'<,'>\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:315
+msgid ""
+"Now you can type the command and it will be applied to the range of lines "
+"that was visually selected."
+msgstr ""
+"Ahora puede introducir la orden y éste se aplicará al rango de líneas que "
+"tiene seleccionadas."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:320
+#, no-wrap
+msgid ""
+"\tNote:\n"
+"\tWhen using Visual mode to select part of a line, or using CTRL-V to\n"
+"\tselect a block of text, the colon commands will still apply to whole\n"
+"\tlines.  This might change in a future version of Vim.\n"
+msgstr ""
+"\tNota:\n"
+"\tCuando use el modo Visual para seleccionar parte de una línea, o use\n"
+"\tCTRL-V para seleccionar un bloque de texto, las órdenes se aplicarán\n"
+"\ta líneas completas. Puede que esto cambie en una futura versión.\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:325
+msgid ""
+"The '< and '> are actually marks, placed at the start and end of the Visual "
+"selection.  The marks remain at their position until another Visual "
+"selection is made.  Thus you can use the \"'<\" command to jump to position "
+"where the Visual area started.  And you can mix the marks with other items: >"
+msgstr ""
+"Los «'<» y «'>» son marcadores que se sitúan al principio y al final de la "
+"selección. Estos marcadores mantienen estas posiciones hasta que aparece una "
+"nueva selección Visual. Por lo tanto, puede usar la orden «\"'<\"» para "
+"saltar al lugar donde el área Visual comenzaba. También puede mezclarlas: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:327
+#, no-wrap
+msgid "\t:'>,$\n"
+msgstr "\t:'>,$\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:330
+msgid ""
+"This addresses the lines from the end of the Visual area to the end of the "
+"file."
+msgstr ""
+"Esto especifica las líneas desde el final del área visual hasta el final del "
+"archivo."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:333
+msgid "A NUMBER OF LINES"
+msgstr "UN NÚMERO DE LÍNEAS"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:336
+msgid ""
+"When you know how many lines you want to change, you can type the number and "
+"then \":\".  For example, when you type \"5:\", you will get: >"
+msgstr ""
+"Cuando sepa cuántas líneas quieres cambiar, puede teclear el número y luego "
+"«:».  Si, por ejemplo, escribe «5:» obtendrá: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:338
+#, no-wrap
+msgid "\t:.,.+4\n"
+msgstr "\t:.,.+4\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:341
+msgid ""
+"Now you can type the command you want to use.  It will use the range \"."
+"\" (current line) until \".+4\" (four lines down).  Thus it spans five lines."
+msgstr ""
+"Ahora puedes ejecutar la orden que quiera usar. Usará el rango «.» (línea "
+"actual) hasta «.+4» (cuatro líneas más). Esto hará un total de cinco líneas."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:344
+#, no-wrap
+msgid "*10.4*\tThe global command\n"
+msgstr "*10.4*\tLas órdenes globales\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:348
+msgid ""
+"The \":global\" command is one of the more powerful features of Vim.  It "
+"allows you to find a match for a pattern and execute a command there.  The "
+"general form is: >"
+msgstr ""
+"La orden «:global» es una de las características más potentes de Vim.  "
+"Permite que encuentre una cadena con un patrón y ejecute una orden en esa "
+"ubicación. El formato habitual es: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:350
+#, no-wrap
+msgid "\t:[range]global/{pattern}/{command}\n"
+msgstr "\t:[rango]global/{patrón}/{orden}\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:353
+msgid ""
+"This is similar to the \":substitute\" command.  But, instead of replacing "
+"the matched text with other text, the command {command} is executed."
+msgstr ""
+"Esto es similar a la orden «:substitute». Pero en lugar de reemplazar el "
+"texto concordado con otro texto, la orden {orden} se ejecutará."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:358
+#, no-wrap
+msgid ""
+"\tNote:\n"
+"\tThe command executed for \":global\" must be one that starts with a\n"
+"\tcolon.  Normal mode commands can not be used directly.  The |:normal|\n"
+"\tcommand can do this for you.\n"
+msgstr ""
+"\tNota:\n"
+"\tLa orden ejecutada con «:global» debe ser uno que comience con un\n"
+"\tpunto y coma. Las órdenes para el modo Normal no se pueden emplear de\n"
+"\tforma directa. De esto se encargará |:normal|.\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:361
+msgid ""
+"Suppose you want to change \"foobar\" to \"barfoo\", but only in C++ style "
+"comments.  These comments start with \"//\".  Use this command: >"
+msgstr ""
+"Suponga que quiere cambiar «foobar» por «barfoo», pero solamente en los "
+"comentarios de C++. Estos comentarios empiezan por «//». Use lo siguiente: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:363
+#, no-wrap
+msgid "\t:g+//+s/foobar/barfoo/g\n"
+msgstr "\t:g+//+s/foobar/barfoo/g\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:374
+#, no-wrap
+msgid ""
+"This starts with \":g\".  That is short for \":global\", just like \":s\" is short\n"
+"for \":substitute\".  Then the pattern, enclosed in plus characters.  Since the\n"
+"pattern we are looking for contains a slash, this uses the plus character to\n"
+"separate the pattern.  Next comes the substitute command that changes \"foobar\"\n"
+"into \"barfoo\".\n"
+"   The default range for the global command is the whole file.  Thus no range\n"
+"was specified in this example.  This is different from \":substitute\", which\n"
+"works on one line without a range.\n"
+"   The command isn't perfect, since it also matches lines where \"//\" appears\n"
+"halfway a line, and the substitution will also take place before the \"//\".\n"
+msgstr ""
+"Esto comienza con «:g», la abreviatura de «:global», igual que ocurría con «:s» y\n"
+"«substitutex. Luego viene el patrón, entre signos «+». Ya que el patrón\n"
+"que estamos buscando contiene una barra inclinada, esto emplea el signo «+»\n"
+"para separar el patrón. A continuación viene la orden que cambia «foobar» a\n"
+"«barfoo».\n"
+"   El rango predeterminado de la orden global es el archivo completo. Como en\n"
+"este caso, ya que ningún rango se ha especificado. Esto difiere de la orden\n"
+"«:substitute», la cuál afecta a una línea por omisión.\n"
+"   La orden no es perfecta, ya que también encontrará líneas donde «//»\n"
+"aparece a mitad de línea y la sustitución también se hará antes de los «//».\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:377
+msgid ""
+"Just like with \":substitute\", any pattern can be used.  When you learn "
+"more complicated patterns later, you can use them here."
+msgstr ""
+"Tal y como ocurre con «:substitute», puede emplear cualquier patrón.  Cuando "
+"aprenda patrones más complicados, podrá usarlos aquí."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:380
+#, no-wrap
+msgid "*10.5*\tVisual block mode\n"
+msgstr "*10.5*\tEl modo de bloque Visual\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:383
+msgid ""
+"With CTRL-V you can start selection of a rectangular area of text.  There "
+"are a few commands that do something special with the text block."
+msgstr ""
+"Con CTRL-V puede seleccionar un área rectangular de texto. Hay algunas "
+"órdenes que hacen algo especial con los bloques de texto."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:389
+msgid ""
+"There is something special about using the \"$\" command in Visual block "
+"mode.  When the last motion command used was \"$\", all lines in the Visual "
+"selection will extend until the end of the line, also when the line with the "
+"cursor is shorter.  This remains effective until you use a motion command "
+"that moves the cursor horizontally.  Thus using \"j\" keeps it, \"h\" stops "
+"it."
+msgstr ""
+"La orden «$» en el modo bloque Visual tiene algo de especial. Cuando el "
+"último orden de movimiento fue «$», todas las líneas de la selección Visual "
+"se extenderán hasta el final de la línea, incluso cuando la línea con el "
+"cursor sea más corta. Esto se hará efectivo hasta que use otra orden de "
+"movimiento que desplace el cursor horizontalmente."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:392
+msgid "INSERTING TEXT"
+msgstr "INSERTAR TEXTO"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:400
+#, no-wrap
+msgid ""
+"The command  \"I{string}<Esc>\" inserts the text {string} in each line, just\n"
+"left of the visual block.  You start by pressing CTRL-V to enter visual block\n"
+"mode.  Now you move the cursor to define your block.  Next you type I to enter\n"
+"Insert mode, followed by the text to insert.  As you type, the text appears on\n"
+"the first line only.\n"
+"   After you press <Esc> to end the insert, the text will magically be\n"
+"inserted in the rest of the lines contained in the visual selection.  Example:\n"
+msgstr ""
+"La orden «I{cadena}<Esc>» inserta el texto {cadena} en cada línea, justo a\n"
+"la izquierda del bloque. Comience tecleando CTRL-V para entrar en el modo\n"
+"bloque Visual. Mueva el cursor para definir su bloque. A continuación pulse\n"
+"«I» para iniciar el modo Insertar. A medida que teclea, el texto aparece\n"
+"únicamente en la primera línea.\n"
+"   Tras pulsar <Esc> para finalizar la inserción, el texto aparecerá\n"
+"mágicamente insertado en el resto de líneas contenidas en el bloque:\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:405
+#, no-wrap
+msgid ""
+"\tinclude one ~\n"
+"\tinclude two ~\n"
+"\tinclude three ~\n"
+"\tinclude four ~\n"
+msgstr ""
+"\tinclude uno ~\n"
+"\tinclude dos ~\n"
+"\tinclude tres ~\n"
+"\tinclude cuatro ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:408
+msgid ""
+"Move the cursor to the \"o\" of \"one\" and press CTRL-V.  Move it down with "
+"\"3j\" to \"four\".  You now have a block selection that spans four lines.  "
+"Now type: >"
+msgstr ""
+"Mueva el cursor a la «u» de «uno» y presione CTRL-V. Desplácese hacia abajo "
+"con «3j» hasta«\"cuatro». Tiene una selección que abarca cuatro líneas. "
+"Teclee: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:410
+#, no-wrap
+msgid "\tImain.<Esc>\n"
+msgstr "\tImain.<Esc>\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:412
+msgid "The result:"
+msgstr "El resultado:"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:417
+#, no-wrap
+msgid ""
+"\tinclude main.one ~\n"
+"\tinclude main.two ~\n"
+"\tinclude main.three ~\n"
+"\tinclude main.four ~\n"
+msgstr ""
+"\tinclude main.uno ~\n"
+"\tinclude main.dos ~\n"
+"\tinclude main.tres ~\n"
+"\tinclude main.cuatro ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:422
+msgid ""
+"If the block spans short lines that do not extend into the block, the text "
+"is not inserted in that line.  For example, make a Visual block selection "
+"that includes the word \"long\" in the first and last line of this text, and "
+"thus has no text selected in the second line:"
+msgstr ""
+"Si el bloque abarca líneas que no caben dentro del área del bloque, el texto "
+"no se insertará en esa línea. Por ejemplo, haga un bloque Visual que no "
+"incluya la palabra «larga» en la primera y última línea de este texto, de "
+"manera que no se seleccione texto en la segunda línea:"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:426
+#, no-wrap
+msgid ""
+"\tThis is a long line ~\n"
+"\tshort ~\n"
+"\tAny other long line ~\n"
+msgstr ""
+"\tEsto es una línea larga ~\n"
+"\tcorta ~\n"
+"\tCualquier es una línea larga ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:428
+#, no-wrap
+msgid "\t\t  ^^^^ selected block\n"
+msgstr "\t\t    ^^^^^ bloque seleccionado\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:430
+msgid "Now use the command \"Ivery <Esc>\".  The result is:"
+msgstr "Ahora usa la orden «Imuy <Esc>». El resultado es:"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:434
+#, no-wrap
+msgid ""
+"\tThis is a very long line ~\n"
+"\tshort ~\n"
+"\tAny other very long line ~\n"
+msgstr ""
+"\tEsto es una línea muy larga ~\n"
+"\tcorta ~\n"
+"\tEsto es una línea muy larga ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:436
+msgid "In the short line no text was inserted."
+msgstr "En el texto corto no se introdujo nada."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:439
+msgid ""
+"If the string you insert contains a newline, the \"I\" acts just like a "
+"Normal insert command and affects only the first line of the block."
+msgstr ""
+"Si la cadena que insertó contiene una nueva línea, el «I» actúa justo como "
+"una inserción normal y únicamente afecta a la primera línea del bloque."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:448
+#, no-wrap
+msgid ""
+"The \"A\" command works the same way, except that it appends after the right\n"
+"side of the block.  And it does insert text in a short line.  Thus you can\n"
+"make a choice whether you do or don't want to append text to a short line.\n"
+"   There is one special case for \"A\": Select a Visual block and then use \"$\"\n"
+"to make the block extend to the end of each line.  Using \"A\" now will append\n"
+"the text to the end of each line.\n"
+"   Using the same example from above, and then typing \"$A XXX<Esc>, you get\n"
+"this result:\n"
+msgstr ""
+"La orden «A» funciona de la misma manera, excepto que se añade a la derecha\n"
+"del bloque. En este caso sí se añade al final de la línea corta. De este\n"
+"modo puede elegir si quieres añadir o no un texto a la línea corta.\n"
+"   Hay un caso especial para «Ax: seleccione un bloque Visual y pulsw «$» para\n"
+"hacer que el bloque se extienda al final de cada línea. Usar «A» añadirá el\n"
+"texto al final de cada línea.\n"
+"   De usar el mismo ejemplo que arriba y teclear «$A XXX<Esc>» obtendría el\n"
+"siguiente resultado:\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:452
+#, no-wrap
+msgid ""
+"\tThis is a long line XXX ~\n"
+"\tshort XXX ~\n"
+"\tAny other long line XXX ~\n"
+msgstr ""
+"\tEsto es una línea larga XXX~\n"
+"\tcorta XXX~\n"
+"\tEsto es una línea larga XXX~\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:456
+msgid ""
+"This really requires using the \"$\" command.  Vim remembers that it was "
+"used.  Making the same selection by moving the cursor to the end of the "
+"longest line with other movement commands will not have the same result."
+msgstr ""
+"Esto requiere el uso de la orden «$». Vim recordará que los ha usado. Hacer "
+"la misma selección con el cursor hasta el final de la línea más larga con "
+"otras órdenes no te dará el mismo resultado."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:459
+msgid "CHANGING TEXT"
+msgstr "CAMBIAR EL TEXTO"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:465
+#, no-wrap
+msgid ""
+"The Visual block \"c\" command deletes the block and then throws you into Insert\n"
+"mode to enable you to type in a string.  The string will be inserted in each\n"
+"line in the block.\n"
+"   Starting with the same selection of the \"long\" words as above, then typing\n"
+"\"c_LONG_<Esc>\", you get this:\n"
+msgstr ""
+"La orden de bloque Visual «c» elimina el bloque y le devuelve al modo\n"
+"Insertar para que escriba en una cadena de caracteres. La cadena se\n"
+"insertará en cada línea del bloque.\n"
+"   Comenzando con la misma selección que las palabras zlarga» de arriba,\n"
+"y teclear después «c_LARGA_<Esc>», le daría esto:\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:469
+#, no-wrap
+msgid ""
+"\tThis is a _LONG_ line ~\n"
+"\tshort ~\n"
+"\tAny other _LONG_ line ~\n"
+msgstr ""
+"\tEsto es una línea _LARGA_ ~\n"
+"\tcorta ~\n"
+"\tEsto es una línea _LARGA_ ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:472
+msgid ""
+"Just like with \"I\" the short line is not changed.  Also, you can't enter a "
+"newline in the new text."
+msgstr ""
+"Tal y como ocurre con «Ix, la línea corta no cambia. Del mismo modo, no "
+"podrá introducir una nueva línea en el texto."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:477
+#, no-wrap
+msgid ""
+"The \"C\" command deletes text from the left edge of the block to the end of\n"
+"line.  It then puts you in Insert mode so that you can type in a string,\n"
+"which is added to the end of each line.\n"
+"   Starting with the same text again, and typing \"Cnew text<Esc>\" you get:\n"
+msgstr ""
+"La orden «C» elimina texto desde el borde izquierdo del bloque hasta el\n"
+"final de cada línea. Luego le deja en modo Insert para que pueda teclear una\n"
+"cadena, que se añadirá al final de cada línea.\n"
+"   Comenzando con el mismo texto, teclee «Ctexto nuevo<Esc>». Obtendrá:\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:481
+#, no-wrap
+msgid ""
+"\tThis is a new text ~\n"
+"\tshort ~\n"
+"\tAny other new text ~\n"
+msgstr ""
+"\tEsto es un texto nuevo ~\n"
+"\tcorta ~\n"
+"\tEsto es un texto nuevo ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:486
+#, no-wrap
+msgid ""
+"Notice that, even though only the \"long\" word was selected, the text after it\n"
+"is deleted as well.  Thus only the location of the left edge of the visual\n"
+"block really matters.\n"
+"   Again, short lines that do not reach into the block are excluded.\n"
+msgstr ""
+"Observe que aunque sólo se seleccionó la palabra «larga», el texto\n"
+"tras ella fue eliminado igualmente. Por lo tanto sólo la posición del borde\n"
+"izquierdo del eje izquierdo importa realmente.\n"
+"   Una vez más, las palabras que no forman parte del bloque se excluyen.\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:488
+msgid "Other commands that change the characters in the block:"
+msgstr "Otras órdenes que cambian los caracteres en el bloque son:"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:492
+#, no-wrap
+msgid ""
+"\t~\tswap case\t(a -> A and A -> a)\n"
+"\tU\tmake uppercase  (a -> A and A -> A)\n"
+"\tu\tmake lowercase  (a -> a and A -> a)\n"
+msgstr ""
+"\t~       cambiar may./min.   (a -> A and A -> a)\n"
+"\tU       cambiar a may.      (a -> A and A -> A)\n"
+"\tu       cambiar a min.      (a -> a and A -> a)\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:495
+msgid "FILLING WITH A CHARACTER"
+msgstr "RELLENAR CON UN CARÁCTER"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:498
+msgid ""
+"To fill the whole block with one character, use the \"r\" command.  Again, "
+"starting with the same example text from above, and then typing \"rx\":"
+msgstr ""
+"Para rellenar un bloque completo con un sólo carácter, usw la orden «r».  "
+"Pruébelo de nuevo con el texto de antes, pulsando «rx»:"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:502
+#, no-wrap
+msgid ""
+"\tThis is a xxxx line ~\n"
+"\tshort ~\n"
+"\tAny other xxxx line ~\n"
+msgstr ""
+"\tEsto es una línea larga ~\n"
+"\tcorta ~\n"
+"\tCualquier es una línea larga ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:507
+#, no-wrap
+msgid ""
+"\tNote:\n"
+"\tIf you want to include characters beyond the end of the line in the\n"
+"\tblock, check out the 'virtualedit' feature in chapter 25.\n"
+msgstr ""
+"\tNota:\n"
+"\tSi desea incluir los caracteres más allá del final de línea en el\n"
+"\tbloque, véase la opción 'virtualedit' en el capítulo 25.\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:510
+msgid "SHIFTING"
+msgstr "CAMBIAR"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:515
+#, no-wrap
+msgid ""
+"The command \">\" shifts the selected text to the right one shift amount,\n"
+"inserting whitespace.  The starting point for this shift is the left edge of\n"
+"the visual block.\n"
+"   With the same example again, \">\" gives this result:\n"
+msgstr ""
+"La orden «>» empuja el texto hacia la derecha un espacio determinado,\n"
+"insertando espacios en blanco. El punto base empleado para esta operación es\n"
+"el borde izquierdo del bloque visual.\n"
+"   Con el mismo ejemplo de nuevo, «>» le da el resultado:\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:519
+#, no-wrap
+msgid ""
+"\tThis is a\t  long line ~\n"
+"\tshort ~\n"
+"\tAny other\t  long line ~\n"
+msgstr ""
+"\tEsto es una\tlínea larga ~\n"
+"\tcorta ~\n"
+"\tEsto es una\tlínea larga ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:522
+msgid ""
+"The shift amount is specified with the 'shiftwidth' option.  To change it to "
+"use 4 spaces: >"
+msgstr ""
+"El espacio del desplazamiento se especifica con la opción 'shiftwidth\".  "
+"Para cambiarlo a cuatro espacios: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:524 original/TXT/usr_25.txt:238
+#, no-wrap
+msgid "\t:set shiftwidth=4\n"
+msgstr "\t:set shiftwidth=4\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:529
+msgid ""
+"The \"<\" command removes one shift amount of whitespace at the left edge of "
+"the block.  This command is limited by the amount of text that is there; so "
+"if there is less than a shift amount of whitespace available, it removes "
+"what it can."
+msgstr ""
+"La orden «<» desplaza por cada empuje la misma cantidad de espacios en "
+"blanco hacia la izquierda. Esta orden se limita al texto que se encuentre, "
+"de manera que eliminará la cantidad de espacio en blanco disponible sin "
+"sobreescribir texto."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:532
+msgid "JOINING LINES"
+msgstr "UNIR LÍNEAS"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:539
+#, no-wrap
+msgid ""
+"The \"J\" command joins all selected lines together into one line.  Thus it\n"
+"removes the line breaks.  Actually, the line break, leading white space and\n"
+"trailing white space is replaced by one space.  Two spaces are used after a\n"
+"line ending (that can be changed with the 'joinspaces' option).\n"
+"   Let's use the example that we got so familiar with now.  The result of\n"
+"using the \"J\" command:\n"
+msgstr ""
+"La orden «J» funde todas las líneas en una sola, eliminando los saltos de\n"
+"línea. De hecho, el salto de línea, espacios en blanco al comienzo y al\n"
+"final de línea se convierten en un solo espacio. Se usan dos espacios tras\n"
+"un final de línea (pudiéndose cambiar esto con la opción 'joinspaces').\n"
+"   Vamos a usar el ejemplo que nos resulta ya familiar. El resultado de usar\n"
+"la orden «J» será:\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:541
+#, no-wrap
+msgid "\tThis is a long line short Any other long line ~\n"
+msgstr "\tEsto es una línea larga corta Esto es una línea larga ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:544
+msgid ""
+"The \"J\" command doesn't require a blockwise selection.  It works with \"v"
+"\" and \"V\" selection in exactly the same way."
+msgstr ""
+"La orden «J» no requiere selección de bloques. Funciona de igual modo con la "
+"selección «v» y «V»."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:546
+msgid ""
+"If you don't want the white space to be changed, use the \"gJ\" command."
+msgstr "Si no quiere que los espacios en blanco cambien, use la orden «gJ»."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:549
+#, no-wrap
+msgid "*10.6*\tReading and writing part of a file\n"
+msgstr "*10.6*\tLeer y escribir parte de un archivo\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:554
+#, no-wrap
+msgid ""
+"When you are writing an e-mail message, you may want to include another file.\n"
+"This can be done with the \":read {filename}\" command.  The text of the file is\n"
+"put below the cursor line.\n"
+"   Starting with this text:\n"
+msgstr ""
+"Cuando escriba un correo, puede que desee incluir otro archivo.\n"
+"Esto se puede llevar a cabo con la orden «:read {nombredearchivo}». El\n"
+"texto del archivo se pegará debajo de la línea actual:\n"
+"   A partir de este texto:\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:558
+#, no-wrap
+msgid ""
+"\tHi John, ~\n"
+"\tHere is the diff that fixes the bug: ~\n"
+"\tBye, Pierre. ~\n"
+msgstr ""
+"\tHola Juan, ~\n"
+"\tAquí tienes el parche que arregla el problema: ~\n"
+"\tUn saludo, Pedro. ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:560
+msgid "Move the cursor to the second line and type: >"
+msgstr "Mueva el cursor a la segunda línea y escriba: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:562
+#, no-wrap
+msgid "\t:read patch\n"
+msgstr "\t:read parche\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:564
+msgid "The file named \"patch\" will be inserted, with this result:"
+msgstr "El archivo de nombre «parche» se insertará: con este resultado:"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:572
+#, no-wrap
+msgid ""
+"\tHi John, ~\n"
+"\tHere is the diff that fixes the bug: ~\n"
+"\t2c2 ~\n"
+"\t<\tfor (i = 0; i <= length; ++i) ~\n"
+"\t--- ~\n"
+"\t>\tfor (i = 0; i < length; ++i) ~\n"
+"\tBye, Pierre. ~\n"
+msgstr ""
+"\tHola Juan, ~\n"
+"\tAquí tienes el parche que arregla el problema: ~\n"
+"\t2c2 ~\n"
+"\t<\tfor (i = 0; i <= length; ++i) ~\n"
+"\t--- ~\n"
+"\t>\tfor (i = 0; i < length; ++i) ~\n"
+"\tUn saludo, Pedro. ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:581
+#, no-wrap
+msgid ""
+"The \":read\" command accepts a range.  The file will be put below the last line\n"
+"number of this range.  Thus \":$r patch\" appends the file \"patch\" at the end of\n"
+"the file.\n"
+"   What if you want to read the file above the first line?  This can be done\n"
+"with the line number zero.  This line doesn't really exist, you will get an\n"
+"error message when using it with most commands.  But this command is allowed:\n"
+">\n"
+"\t:0read patch\n"
+msgstr ""
+"La orden «:read» acepta un rango. El archivo será colocado justo debajo de\n"
+"la última línea de este rango. Por lo tanto, «:$r parche» añadirá el\n"
+"archivo «parche» al final del actual.\n"
+"   ¿Qué ocurre si quiere pegar el archivo encima de la primera línea? Esto\n"
+"se puede realizar con el número de línea cero. Este número de línea en\n"
+"realidad no existe, lo cuál hará que con muchas órdenes reciba un error. >\n"
+">\n"
+":0read parche\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:583
+msgid "The file \"patch\" will be put above the first line of the file."
+msgstr "El archivo «parche» se insertará sobre la primera línea del archivo."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:586
+msgid "WRITING A RANGE OF LINES"
+msgstr "ESCRIBIR UN RANGO DE LÍNEAS"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:590
+msgid ""
+"To write a range of lines to a file, the \":write\" command can be used.  "
+"Without a range it writes the whole file.  With a range only the specified "
+"lines are written: >"
+msgstr ""
+"Para guardar un rango de líneas en un archivo puede usar la orden «:write».  "
+"Sin el rango esto guardará el archivo completo. Pero con un rango "
+"especificado únicamente las líneas que se especifiquen se escribirán: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:592
+#, no-wrap
+msgid "\t:.,$write tempo\n"
+msgstr "\t:.,$write tempo\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:597
+msgid ""
+"This writes the lines from the cursor until the end of the file into the "
+"file \"tempo\".  If this file already exists you will get an error message.  "
+"Vim protects you from accidentally overwriting an existing file.  If you "
+"know what you are doing and want to overwrite the file, append !: >"
+msgstr ""
+"Esto guardará las líneas desde el cursor hasta el final del texto en el "
+"archivo «tempo». Si este archivo existe actualmente obtendrá un mensaje de "
+"error. Vim le protege de que sobreescriba un archivo preexistente. Si sabe "
+"lo que hace y quiere sobreescribirlo, añada «!»: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:599
+#, no-wrap
+msgid "\t:.,$write! tempo\n"
+msgstr "\t:.,$write! tempo\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:603
+msgid ""
+"CAREFUL: The ! must follow the \":write\" command immediately, without white "
+"space.  Otherwise it becomes a filter command, which is explained later in "
+"this chapter."
+msgstr ""
+"CUIDADO: El «!» debe ponerse justo después de la orden «:write», sin el "
+"espacio en blanco. En caso contrario se convierte en un ordena filtro, el "
+"cuál se explica en el capítulo siguiente."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:610
+msgid ""
+"In the first section of this chapter was explained how to collect a number "
+"of lines into a register.  The same can be done to collect lines in a file.  "
+"Write the first line with this command: >"
+msgstr ""
+"En la primera sección de este capítulo se explicó cómo reunir una serie de "
+"líneas en un registro. Se puede hacer lo mismo para reunir líneas en un "
+"archivo. Escriba una primera línea con esta orden: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:612
+#, no-wrap
+msgid "\t:.write collection\n"
+msgstr "\t:.write archivo\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:614
+msgid ""
+"Now move the cursor to the second line you want to collect, and type this: >"
+msgstr ""
+"Ahora ponga el cursor en la siguiente línea que quiera añadir y escriba "
+"esto: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:616
+#, no-wrap
+msgid "\t:.write >>collection\n"
+msgstr "\t:.write >>archivo\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:620
+#, no-wrap
+msgid ""
+"The \">>\" tells Vim the \"collection\" file is not to be written as a new file,\n"
+"but the line must be appended at the end.   You can repeat this as many times\n"
+"as you like.\n"
+msgstr ""
+"El «>>» le dice a Vim que «archivo» no se debe escribir como un nuevo\n"
+"archivo sino que la línea se deba añadir al final. Puede repetir esto\n"
+"tantas veces como desee.\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:623
+#, no-wrap
+msgid "*10.7*\tFormatting text\n"
+msgstr "*10.7*\tFormatear texto\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:627
+msgid ""
+"When you are typing plain text, it's nice if the length of each line is "
+"automatically trimmed to fit in the window.  To make this happen while "
+"inserting text, set the 'textwidth' option: >"
+msgstr ""
+"Cuando introducza texto, tal vez le resulta útil que, si la longitud de cada "
+"línea supera un número, sea automáticamente partida. Para hacer esto "
+"posible, active la opción 'textwidth': >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:629
+#, no-wrap
+msgid "\t:set textwidth=72\n"
+msgstr "\t:set textwidth=72\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:633
+msgid ""
+"You might remember that in the example vimrc file this command was used for "
+"every text file.  Thus if you are using that vimrc file, you were already "
+"using it.  To check the current value of 'textwidth': >"
+msgstr ""
+"Quizá se acuerde de que en el ejemplo de archivo «vimrc» esta orden era "
+"empleada para cualquier tipo de archivo. Por lo tanto, si está usando ese "
+"archivo «vimrc», ya lo tiene activado. Para comprobar el valor actual: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:635
+#, no-wrap
+msgid "\t:set textwidth\n"
+msgstr "\t:set textwidth\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:640
+#, no-wrap
+msgid ""
+"Now lines will be broken to take only up to 72 characters.  But when you\n"
+"insert text halfway a line, or when you delete a few words, the lines will get\n"
+"too long or too short.  Vim doesn't automatically reformat the text.\n"
+"   To tell Vim to format the current paragraph: >\n"
+msgstr ""
+"A partir de ahora las líneas se partirán cuando lleguen a 72 caracteres. Sin\n"
+"embargo, cuando introduzca texto en mitad de una línea, o cuando elimine\n"
+"unas palabras la línea no será reformateada por Vim.\n"
+"   Para decirle a Vim que formatee el párrafo actual: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:642 original/TXT/usr_25.txt:112
+#, no-wrap
+msgid "\tgqap\n"
+msgstr "\tgqap\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:646
+msgid ""
+"This starts with the \"gq\" command, which is an operator.  Following is \"ap"
+"\", the text object that stands for \"a paragraph\".  A paragraph is "
+"separated from the next paragraph by an empty line."
+msgstr ""
+"Esto consiste en un orden «gq», que es un operador, seguido de una «ap», el "
+"objeto de texto para «un párrafo». Un párrafo es lo que está separado de "
+"otro párrafo por una línea en blanco."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:650
+#, no-wrap
+msgid ""
+"\tNote:\n"
+"\tA blank line, which contains white space, does NOT separate\n"
+"\tparagraphs.  This is hard to notice!\n"
+msgstr ""
+"\tNota:\n"
+"\tUna línea que contiene espacios en blanco NO separa párrafos. Esto\n"
+"\tsuele ser difícil de notar.\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:653
+msgid ""
+"Instead of \"ap\" you could use any motion or text object.  If your "
+"paragraphs are properly separated, you can use this command to format the "
+"whole file: >"
+msgstr ""
+"En lugar de «ap» puede usar cualquier movimiento u objeto de texto. Si sus "
+"párrafos están adecuadamente separados, puede usar esto para formatear todo: "
+">"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:655 original/TXT/usr_25.txt:119
+#, no-wrap
+msgid "\tgggqG\n"
+msgstr "\tgggqG\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:658
+msgid ""
+"\"gg\" takes you to the first line, \"gq\" is the format operator and \"G\" "
+"the motion that jumps to the last line."
+msgstr ""
+"«gg» le lleva a la primera línea, «gq» es el operador de formateo y «G» la "
+"orden de movimiento que le lleva a la última línea."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:666
+msgid ""
+"In case your paragraphs aren't clearly defined, you can format just the "
+"lines you manually select.  Move the cursor to the first line you want to "
+"format.  Start with the command \"gqj\".  This formats the current line and "
+"the one below it.  If the first line was short, words from the next line "
+"will be appended.  If it was too long, words will be moved to the next "
+"line.  The cursor moves to the second line.  Now you can use \".\" to repeat "
+"the command.  Keep doing this until you are at the end of the text you want "
+"to format."
+msgstr ""
+"En caso de que sus párrafos no estén claramente definidos, puede dar formato "
+"sólo a las líneas que seleccione manualmente. Ponga el cursor sobre la "
+"primera línea que quiera formatear. Teclee «gqj». Esto formatea la línea "
+"actual y la siguiente. Si la primera era demasiado corta, las palabras de la "
+"siguiente línea serán añadidas. Si era demasiado larga, las palabras se "
+"moverán a la siguiente línea. A continuación puede usar la orden «.» para "
+"repetir laoperación. Repítalo hasta que llegue al final del texto a "
+"formatear."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:669
+#, no-wrap
+msgid "*10.8*\tChanging case\n"
+msgstr "*10.8*\tCambiar mayúsculas y minúsculas\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:673
+msgid ""
+"You have text with section headers in lowercase.  You want to make the word "
+"\"section\" all uppercase.  Do this with the \"gU\" operator.  Start with "
+"the cursor in the first column: >"
+msgstr ""
+"Suponga que tiene texto con las cabeceras de sección en minúscula. Quiere "
+"que la palabra «sección» esté en mayúsculas.   Puede hacerlo con el operador "
+"«gU». Comience con el cursor en la primera columna: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:676
+#, no-wrap
+msgid ""
+"\t\t\t     gUw\n"
+"<\tsection header\t    ---->      SECTION header\n"
+msgstr ""
+"\t\t\t     gUw\n"
+"<\tcabecera de sección ---->      cabecera de SECCIÓN\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:678
+msgid "The \"gu\" operator does exactly the opposite: >"
+msgstr "El operador «gu» hace exactamente lo contrario:"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:681
+#, no-wrap
+msgid ""
+"\t\t\t     guw\n"
+"<\tSECTION header\t    ---->      section header\n"
+msgstr ""
+"\t\t\t     guw\n"
+"\tcabecera de SECCIÓN ---->      cabecera de sección\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:688
+#, no-wrap
+msgid ""
+"You can also use \"g~\" to swap case.  All these are operators, thus they work\n"
+"with any motion command, with text objects and in Visual mode.\n"
+"   To make an operator work on lines you double it.  The delete operator is\n"
+"\"d\", thus to delete a line you use \"dd\".  Similarly, \"gugu\" makes a whole line\n"
+"lowercase.  This can be shortened to \"guu\".  \"gUgU\" is shortened to \"gUU\" and\n"
+"\"g~g~\" to \"g~~\".  Example: >\n"
+msgstr ""
+"También puede usar «g~» para alternar may./min. Son operadores, así que\n"
+"funcionan con órdenes de movimiento, objetos de texto y el modo Visual.\n"
+"   Para hacer que un operador funcione en líneas, lo duplica. El operador\n"
+"de eliminación es «d», de manera que para eliminar una línea empleas «dd»\n"
+"De forma similar, «gugu» hace que la línea al completo sea en minúsculas. Esto\n"
+"puede abreviarse con «guu». «gUgU» se puede abreviar a «gUU» y «g~g~» a\n"
+"«g~~»:\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:691
+#, no-wrap
+msgid ""
+"\t\t\t\tg~~ \n"
+"<\tSome GIRLS have Fun    ---->   sOME girls HAVE fUN ~\n"
+msgstr ""
+"\t\t\t\t      g~~ \n"
+"\tAlgunas CHICAS se divierten  ---->  aLGUNAS chicas SE DIVIERTEN ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:694
+#, no-wrap
+msgid "*10.9*\tUsing an external program\n"
+msgstr "*10.9*\tUso de un programa externo\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:705
+#, no-wrap
+msgid ""
+"Vim has a very powerful set of commands, it can do anything.  But there may\n"
+"still be something that an external command can do better or faster.\n"
+"   The command \"!{motion}{program}\" takes a block of text and filters it\n"
+"through an external program.  In other words, it runs the system command\n"
+"represented by {program}, giving it the block of text represented by {motion}\n"
+"as input.  The output of this command then replaces the selected block.\n"
+"   Because this summarizes badly if you are unfamiliar with UNIX filters, take\n"
+"a look at an example.  The sort command sorts a file.  If you execute the\n"
+"following command, the unsorted file input.txt will be sorted and written to\n"
+"output.txt.  (This works on both UNIX and Microsoft Windows.) >\n"
+msgstr ""
+"Vim tiene un conjunto de órdenes muy potente para hacer cualquier cosa.\n"
+"Pero siempre hay un programa externo que es mejor para una tarea específica.\n"
+"   La orden «!{movimiento}{programa}» recoge un bloque de un texto y lo\n"
+"filtra a través de un programa externo. En otras palabras, ejecuta la\n"
+"orden de sistema {programa}, dándole el bloque de texto representado por\n"
+"{movimiento} como entrada. La salida de la orden sustituirá la selección.\n"
+"   Ya que esto requiere más explicación si no usa los filtros UNIX\n"
+"habitualmente, veamos un ejemplo. La orden «sort» ordena un archivo. Si\n"
+"ejecuta lo siguiente, el archivo desordenado entrada.txt será ordenado y\n"
+"guardado en output.txt. (Esto funciona en UNIX y en Windows.) >\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:707
+#, no-wrap
+msgid "\tsort <input.txt >output.txt\n"
+msgstr "\tsort <input.txt >output.txt\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:711
+msgid ""
+"Now do the same thing in Vim.  You want to sort lines 1 through 5 of a "
+"file.  You start by putting the cursor on line 1.  Next you execute the "
+"following command: >"
+msgstr ""
+"Ahora haga lo mismo en Vim. Desea ordenar las líneas de la 1 a la 5. Para "
+"comenzar, ponga el cursor en la línea 1. A continuación ejecute la siguiente "
+"orden: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:713
+#, no-wrap
+msgid "\t!5G\n"
+msgstr "\t!5G\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:721
+#, no-wrap
+msgid ""
+"The \"!\" tells Vim that you are performing a filter operation.  The Vim editor\n"
+"expects a motion command to follow, indicating which part of the file to\n"
+"filter.  The \"5G\" command tells Vim to go to line 5, so it now knows that it\n"
+"is to filter lines 1 (the current line) through 5.\n"
+"   In anticipation of the filtering, the cursor drops to the bottom of the\n"
+"screen and a ! prompt displays.  You can now type in the name of the filter\n"
+"program, in this case \"sort\".  Therefore, your full command is as follows: >\n"
+msgstr ""
+"El «!» le dice a Vim que está realizando una operación filtro. El editor\n"
+"Vim espera que introduzca a continuación un orden de movimiento para saber\n"
+"qué filtrar. La orden «5G» le dice a Vim que vaya a la línea 5, de forma\n"
+"que sepa que tiene que filtrar desde la línea 1 (la actual) hasta la 5.\n"
+"   Antes de filtrar nada, la línea de órdenes se activa y muestra un «!».\n"
+"Ahora es el momento de que escriba el filtro, en este caso «sort». Por lo\n"
+"tanto, la orden completo sería: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:723
+#, no-wrap
+msgid "\t!5Gsort<Enter>\n"
+msgstr "\t!5Gsort<Entrar>\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:726
+msgid ""
+"The result is that the sort program is run on the first 5 lines.  The output "
+"of the program replaces these lines."
+msgstr ""
+"El resultado es que se ejecuta el programa «sort» sobre las 5 primeras "
+"líneas. La salida del programa reemplaza estas líneas."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:733
+#, no-wrap
+msgid ""
+"\tline 55\t\t\t      line 11\n"
+"\tline 33\t\t\t      line 22\n"
+"\tline 11\t\t-->\t      line 33\n"
+"\tline 22\t\t\t      line 44\n"
+"\tline 44\t\t\t      line 55\n"
+"\tlast line\t\t      last line\n"
+msgstr ""
+"\tlínea 55\t\t      línea 11\n"
+"\tlínea 33\t\t      línea 22\n"
+"\tlínea 11\t-->\t      línea 33\n"
+"\tlínea 22\t\t      línea 44\n"
+"\tlínea 44\t\t      línea 55\n"
+"\túltima línea\t\t      última línea\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:737
+msgid ""
+"The \"!!\" command filters the current line through a filter.  In Unix the "
+"\"date\" command prints the current time and date.  \"!!date<Enter>\" "
+"replaces the current line with the output of \"date\".  This is useful to "
+"add a timestamp to a file."
+msgstr ""
+"La orden «!!» filtra la línea actual. En Unix, la orden »date» imprime la "
+"hora y fecha actuales. «!!date<Entrar>» reemplaza la línea actual con la "
+"salida de «date». Esto es útil para añadir una marca de tiempo al archivo."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:740
+msgid "WHEN IT DOESN'T WORK"
+msgstr "CUANDO NO FUNCIONA"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:744
+msgid ""
+"Starting a shell, sending it text and capturing the output requires that Vim "
+"knows how the shell works exactly.  When you have problems with filtering, "
+"check the values of these options:"
+msgstr ""
+"Iniciar la consola, enviarle texto y capturar la salida requiere que Vim "
+"sepa exactamente cómo funciona la consola de forma precisa. Cuando tenga "
+"problemas con el filtrado, comprueba los valores de las siguientes opciones:"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:754
+#, no-wrap
+msgid ""
+"\t'shell'\t\tspecifies the program that Vim uses to execute\n"
+"\t\t\texternal programs.\n"
+"\t'shellcmdflag'\targument to pass a command to the shell\n"
+"\t'shellquote'\tquote to be used around the command\n"
+"\t'shellxquote'\tquote to be used around the command and redirection\n"
+"\t'shelltype'\tkind of shell (only for the Amiga)\n"
+"\t'shellslash'\tuse forward slashes in the command (only for\n"
+"\t\t\tMS-Windows and alikes)\n"
+"\t'shellredir'\tstring used to write the command output into a file\n"
+msgstr ""
+"\t'shell'\t\tespecifica el programa que Vim empleará para ejecutar\n"
+"\t\t\tprogramas externos.\n"
+"\t'shellcmdflag'\targumento para pasar un orden a la consola\n"
+"\t'shellquote'\tcomillas a usar alrededor de la orden\n"
+"\t'shellxquote'\tcomillas a usar alrededor de la orden y redirección\n"
+"\t'shelltype'\ttipo de consola (sólo para Amiga)\n"
+"\t'shellslash'\tusar barras inclinadas en la orden (sólo para\n"
+"\t\t\tWindows y similares)\n"
+"\t'shellredir'\tcadena para escribir la salida a un archivo\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:762
+#, no-wrap
+msgid ""
+"On Unix this is hardly ever a problem, because there are two kinds of shells:\n"
+"\"sh\" like and \"csh\" like.  Vim checks the 'shell' option and sets related\n"
+"options automatically, depending on whether it sees \"csh\" somewhere in\n"
+"'shell'.\n"
+"   On MS-Windows, however, there are many different shells and you might have\n"
+"to tune the options to make filtering work.  Check the help for the options\n"
+"for more information.\n"
+msgstr ""
+"En Unix esto es raramente un problema, porque hay dos tipos de consola: «sh» y\n"
+"«csh». Vim comprueba la opción 'shell' y configura todo automáticamente,\n"
+"dependiendo de si ve «cshx en algún lugar de 'shell'.\n"
+"   Sin embargo, en Windows, hay muchos tipos de consolas y quizá tenga que\n"
+"ajustar las opciones para hacer que el filtrado funcione correctamente.\n"
+"Busque en la ayuda más información sobre las opciones de configuración\n"
+"de la consola para poder solucionarlo.\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:765
+msgid "READING COMMAND OUTPUT"
+msgstr "LEER LA SALIDA DE LA ORDEN"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:767
+msgid "To read the contents of the current directory into the file, use this:"
+msgstr "Para escribir los contenidos del directorio actual en el archivo, use:"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:772
+#, no-wrap
+msgid ""
+"on Unix: >\n"
+"\t:read !ls\n"
+"on MS-Windows: >\n"
+"\t:read !dir\n"
+msgstr ""
+"en Unix: >\n"
+"\t:read !ls\n"
+"en MS-Windows: >\n"
+"\t:read !dir\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:778
+#, no-wrap
+msgid ""
+"The output of the \"ls\" or \"dir\" command is captured and inserted in the text,\n"
+"below the cursor.  This is similar to reading a file, except that the \"!\" is\n"
+"used to tell Vim that a command follows.\n"
+"   The command may have arguments.  And a range can be used to tell where Vim\n"
+"should put the lines: >\n"
+msgstr ""
+"La salida de las órdenes «ls» o «dir» se puede capturar e insertar en el\n"
+"texto, debajo del cursor. Esto es similar a leer un archivo, excepto que el\n"
+"«!» se emplea para decirle a Vim que hay una orden a continuación.\n"
+"   Puede que la orden tenga argumentos. Puede emplear un rango para\n"
+"decirle a Vim dónde debería poner las líneas: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:780
+#, no-wrap
+msgid "\t:0read !date -u\n"
+msgstr "\t:0read !date -u\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:785
+msgid ""
+"This inserts the current time and date in UTC format at the top of the "
+"file.  (Well, if you have a date command that accepts the \"-u\" argument.)  "
+"Note the difference with using \"!!date\": that replaced a line, while \":"
+"read !date\" will insert a line."
+msgstr ""
+"Esto inserta la hora y fecha actuales en formato UTC en la primera línea del "
+"archivo. (Bueno, si tienes una orden «date» que acepta el argumento «-u».)  "
+"Observe la diferencia de usar «!!date»: esto reemplazó una línea, mientras "
+"que «:read !date» insertó una línea."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:788
+msgid "WRITING TEXT TO A COMMAND"
+msgstr "PASAR TEXTO A UNA ORDEN"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:790
+msgid ""
+"The Unix command \"wc\" counts words.  To count the words in the current "
+"file: >"
+msgstr ""
+"La orden Unix «wc» cuenta palabras. Para contar las del archivo actual: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:792
+#, no-wrap
+msgid "\t:write !wc\n"
+msgstr "\t:write !wc\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:797
+msgid ""
+"This is the same write command as before, but instead of a file name the \"!"
+"\" character is used and the name of an external command.  The written text "
+"will be passed to the specified command as its standard input.  The output "
+"could look like this:"
+msgstr ""
+"Esta es la misma orden «write» vista que anteriormente, pero en lugar de un "
+"nombre de archivo, se emplean el carácter «!» y una orden externa. El texto "
+"guardado será pasado al orden especificado como entrada estándar. La salida "
+"será algo así:"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:799
+#, no-wrap
+msgid "       4      47     249 ~\n"
+msgstr "       4      47     249 ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:802
+msgid ""
+"The \"wc\" command isn't verbose.  This means you have 4 lines, 47 words and "
+"249 characters."
+msgstr ""
+"La orden «wc» no es muy informativa. Esto significa que tiene 4 líneas, 47 "
+"palabras y 249 caracteres."
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:804
+msgid "Watch out for this mistake: >"
+msgstr "Tenga cuidado de no cometer este error: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:806
+#, no-wrap
+msgid "\t:write! wc\n"
+msgstr "\t:write! wc\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:809
+msgid ""
+"This will write the file \"wc\" in the current directory, with force.  White "
+"space is important here!"
+msgstr ""
+"Esto guardará el archivo «wc» en el directorio actual con la opción "
+"«force» (forzar). ¡El espacio en blanco es muy importante en este caso!"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:812
+msgid "REDRAWING THE SCREEN"
+msgstr "REDIBUJAR LA PANTALLA"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:817
+msgid ""
+"If the external command produced an error message, the display may have been "
+"messed up.  Vim is very efficient and only redraws those parts of the screen "
+"that it knows need redrawing.  But it can't know about what another program "
+"has written.  To tell Vim to redraw the screen: >"
+msgstr ""
+"Si la orden externa produjo un mensaje de error, la pantalla de Vim tal vez "
+"esté sobreescrita con información confusa. Vim es muy eficiente y sólo "
+"reescribe aquellas partes de la pantalla que lo necesiten. Pero no puede "
+"saber sobre lo que otro programa ha tocado. Para decirle a Vim que redibuje "
+"la pantalla: >"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:819
+#, no-wrap
+msgid "\tCTRL-L\n"
+msgstr "\tCTRL-L\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:823
+msgid "Next chapter: |usr_11.txt| Recovering from a crash"
+msgstr "Capítulo siguiente: |usr_11.esx| Recuperarse de un fallo"

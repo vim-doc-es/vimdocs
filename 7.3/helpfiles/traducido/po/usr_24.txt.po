@@ -1,0 +1,1837 @@
+# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es
+# Copyright (C) 2009
+# This file is distributed under the same license as the Vim 7.2 package.
+# Translators credits:
+# - Initial translation
+# Omar Campagne <ocampagne@gmail.com>, 2009
+# - Updates
+# TRADUCTOR <CORREO>, AÑO
+# Debido al formato (txt) y al máximo de 80 columnas que pueden tener
+# los textos de ayuda en Vim, así como el formato PO, por favor, leete los
+# apuntes concernientes a la edición de los archivos PO relativos a la
+# aplicación que desees usar.
+# También encontrarás información acerca del uso de herramientas gettext en el
+# proyecto de localización (l10n) de Vim.
+# - http://www.assembla.com/wiki/show/vim-doc-es
+# No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
+# este enlace puede ser de interés. A pesar de no formar parte, nuestra
+# intención es homologarnos con su terminología y uso de la lengua
+# en la medida de lo útil y posible.
+# - El proyecto de traducción de Debian al español
+# http://www.debian.org/intl/spanish/notas
+# La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
+# pero también puede servir de referencia para otros términos no técnicos.
+# No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
+# traducción sea comprensible independientemente de la nacionalidad del
+# usuario. Si crees que alguna traducción puede llevar a confusión, consulta
+# la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
+# - www.rae.es
+# - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages
+# Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
+# se puede consultar con un simple grep, pogrep o cargado en Virtaal.
+msgid ""
+msgstr ""
+"Project-Id-Version: Vim 7.2\n"
+"Report-Msgid-Bugs-To: vim@bugs.org\n"
+"POT-Creation-Date: 2010-09-23 20:27+0300\n"
+"PO-Revision-Date: 2010-09-23 20:02+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.4.1\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:18 original/TXT/intro.txt:79
+#: original/TXT/intro.txt:180 original/TXT/intro.txt:290
+#: original/TXT/intro.txt:518 original/TXT/intro.txt:596
+#: original/TXT/intro.txt:689 original/TXT/intro.txt:817
+#: original/TXT/intro.txt:880 original/TXT/usr_toc.txt:7
+#: original/TXT/usr_toc.txt:58 original/TXT/usr_toc.txt:172
+#: original/TXT/usr_toc.txt:281 original/TXT/usr_toc.txt:340
+#: original/TXT/usr_toc.txt:352 original/TXT/usr_01.txt:19
+#: original/TXT/usr_01.txt:50 original/TXT/usr_01.txt:100
+#: original/TXT/usr_01.txt:181 original/TXT/usr_02.txt:25
+#: original/TXT/usr_02.txt:69 original/TXT/usr_02.txt:130
+#: original/TXT/usr_02.txt:179 original/TXT/usr_02.txt:239
+#: original/TXT/usr_02.txt:307 original/TXT/usr_02.txt:369
+#: original/TXT/usr_02.txt:406 original/TXT/usr_02.txt:560
+#: original/TXT/usr_03.txt:28 original/TXT/usr_03.txt:74
+#: original/TXT/usr_03.txt:101 original/TXT/usr_03.txt:147
+#: original/TXT/usr_03.txt:172 original/TXT/usr_03.txt:223
+#: original/TXT/usr_03.txt:265 original/TXT/usr_03.txt:320
+#: original/TXT/usr_03.txt:491 original/TXT/usr_03.txt:552
+#: original/TXT/usr_03.txt:650 original/TXT/usr_04.txt:27
+#: original/TXT/usr_04.txt:74 original/TXT/usr_04.txt:160
+#: original/TXT/usr_04.txt:194 original/TXT/usr_04.txt:269
+#: original/TXT/usr_04.txt:324 original/TXT/usr_04.txt:360
+#: original/TXT/usr_04.txt:390 original/TXT/usr_04.txt:446
+#: original/TXT/usr_04.txt:469 original/TXT/usr_04.txt:510
+#: original/TXT/usr_05.txt:24 original/TXT/usr_05.txt:63
+#: original/TXT/usr_05.txt:219 original/TXT/usr_05.txt:266
+#: original/TXT/usr_05.txt:418 original/TXT/usr_05.txt:467
+#: original/TXT/usr_05.txt:506 original/TXT/usr_05.txt:621
+#: original/TXT/usr_06.txt:24 original/TXT/usr_06.txt:50
+#: original/TXT/usr_06.txt:135 original/TXT/usr_06.txt:189
+#: original/TXT/usr_06.txt:270 original/TXT/usr_06.txt:276
+#: original/TXT/usr_07.txt:24 original/TXT/usr_07.txt:63
+#: original/TXT/usr_07.txt:179 original/TXT/usr_07.txt:266
+#: original/TXT/usr_07.txt:316 original/TXT/usr_07.txt:404
+#: original/TXT/usr_07.txt:444 original/TXT/usr_07.txt:475
+#: original/TXT/usr_08.txt:26 original/TXT/usr_08.txt:82
+#: original/TXT/usr_08.txt:109 original/TXT/usr_08.txt:161
+#: original/TXT/usr_08.txt:215 original/TXT/usr_08.txt:278
+#: original/TXT/usr_08.txt:337 original/TXT/usr_08.txt:477
+#: original/TXT/usr_08.txt:509 original/TXT/usr_08.txt:597
+#: original/TXT/usr_09.txt:21 original/TXT/usr_09.txt:124
+#: original/TXT/usr_09.txt:175 original/TXT/usr_09.txt:259
+#: original/TXT/usr_09.txt:285 original/TXT/usr_10.txt:27
+#: original/TXT/usr_10.txt:144 original/TXT/usr_10.txt:221
+#: original/TXT/usr_10.txt:342 original/TXT/usr_10.txt:378
+#: original/TXT/usr_10.txt:547 original/TXT/usr_10.txt:621
+#: original/TXT/usr_10.txt:667 original/TXT/usr_10.txt:692
+#: original/TXT/usr_10.txt:820 original/TXT/usr_11.txt:22
+#: original/TXT/usr_11.txt:82 original/TXT/usr_11.txt:144
+#: original/TXT/usr_11.txt:288 original/TXT/usr_11.txt:303
+#: original/TXT/usr_12.txt:25 original/TXT/usr_12.txt:90
+#: original/TXT/usr_12.txt:131 original/TXT/usr_12.txt:177
+#: original/TXT/usr_12.txt:202 original/TXT/usr_12.txt:231
+#: original/TXT/usr_12.txt:281 original/TXT/usr_12.txt:309
+#: original/TXT/usr_12.txt:354 original/TXT/usr_20.txt:22
+#: original/TXT/usr_20.txt:113 original/TXT/usr_20.txt:158
+#: original/TXT/usr_20.txt:285 original/TXT/usr_20.txt:327
+#: original/TXT/usr_20.txt:380 original/TXT/usr_21.txt:24
+#: original/TXT/usr_21.txt:47 original/TXT/usr_21.txt:87
+#: original/TXT/usr_21.txt:236 original/TXT/usr_21.txt:385
+#: original/TXT/usr_21.txt:438 original/TXT/usr_21.txt:495
+#: original/TXT/usr_22.txt:22 original/TXT/usr_22.txt:148
+#: original/TXT/usr_22.txt:213 original/TXT/usr_22.txt:272
+#: original/TXT/usr_22.txt:396 original/TXT/usr_23.txt:23
+#: original/TXT/usr_23.txt:114 original/TXT/usr_23.txt:156
+#: original/TXT/usr_23.txt:238 original/TXT/usr_23.txt:324
+#: original/TXT/usr_23.txt:339 original/TXT/usr_24.txt:28
+#: original/TXT/usr_24.txt:96 original/TXT/usr_24.txt:119
+#: original/TXT/usr_24.txt:268 original/TXT/usr_24.txt:305
+#: original/TXT/usr_24.txt:336 original/TXT/usr_24.txt:369
+#: original/TXT/usr_24.txt:493 original/TXT/usr_24.txt:537
+#: original/TXT/usr_24.txt:583 original/TXT/usr_24.txt:602
+#: original/TXT/usr_25.txt:22 original/TXT/usr_25.txt:132
+#: original/TXT/usr_25.txt:210 original/TXT/usr_25.txt:287
+#: original/TXT/usr_25.txt:453 original/TXT/usr_25.txt:574
+#: original/TXT/usr_26.txt:21 original/TXT/usr_26.txt:46
+#: original/TXT/usr_26.txt:103 original/TXT/usr_26.txt:136
+#: original/TXT/usr_26.txt:217 original/TXT/usr_27.txt:26
+#: original/TXT/usr_27.txt:88 original/TXT/usr_27.txt:136
+#: original/TXT/usr_27.txt:239 original/TXT/usr_27.txt:320
+#: original/TXT/usr_27.txt:350 original/TXT/usr_27.txt:427
+#: original/TXT/usr_27.txt:469 original/TXT/usr_27.txt:510
+#: original/TXT/usr_27.txt:559 original/TXT/usr_28.txt:27
+#: original/TXT/usr_28.txt:54 original/TXT/usr_28.txt:121
+#: original/TXT/usr_28.txt:185 original/TXT/usr_28.txt:211
+#: original/TXT/usr_28.txt:269 original/TXT/usr_28.txt:315
+#: original/TXT/usr_28.txt:331 original/TXT/usr_28.txt:375
+#: original/TXT/usr_28.txt:389 original/TXT/usr_28.txt:422
+#: original/TXT/usr_29.txt:23 original/TXT/usr_29.txt:273
+#: original/TXT/usr_29.txt:320 original/TXT/usr_29.txt:441
+#: original/TXT/usr_29.txt:570 original/TXT/usr_29.txt:609
+#: original/TXT/usr_30.txt:23 original/TXT/usr_30.txt:202
+#: original/TXT/usr_30.txt:280 original/TXT/usr_30.txt:336
+#: original/TXT/usr_30.txt:409 original/TXT/usr_30.txt:515
+#: original/TXT/usr_30.txt:639 original/TXT/usr_31.txt:22
+#: original/TXT/usr_31.txt:81 original/TXT/usr_31.txt:133
+#: original/TXT/usr_31.txt:160 original/TXT/usr_31.txt:208
+#: original/TXT/usr_31.txt:268
+#, no-wrap
+msgid "==============================================================================\n"
+msgstr "==============================================================================\n"
+
+#. type: Plain text
+#: original/TXT/usr_toc.txt:4 original/TXT/usr_01.txt:4
+#: original/TXT/usr_02.txt:4 original/TXT/usr_03.txt:4
+#: original/TXT/usr_04.txt:4 original/TXT/usr_05.txt:4
+#: original/TXT/usr_06.txt:4 original/TXT/usr_07.txt:4
+#: original/TXT/usr_08.txt:4 original/TXT/usr_09.txt:4
+#: original/TXT/usr_10.txt:4 original/TXT/usr_11.txt:4
+#: original/TXT/usr_12.txt:4 original/TXT/usr_20.txt:4
+#: original/TXT/usr_21.txt:4 original/TXT/usr_22.txt:4
+#: original/TXT/usr_23.txt:4 original/TXT/usr_24.txt:4
+#: original/TXT/usr_25.txt:4 original/TXT/usr_26.txt:4
+#: original/TXT/usr_27.txt:4 original/TXT/usr_28.txt:4
+#: original/TXT/usr_29.txt:4 original/TXT/usr_30.txt:4
+#: original/TXT/usr_31.txt:4
+#, no-wrap
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
+msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
+
+#. type: Plain text
+#: original/TXT/usr_toc.txt:354 original/TXT/usr_01.txt:185
+#: original/TXT/usr_02.txt:564 original/TXT/usr_03.txt:654
+#: original/TXT/usr_04.txt:514 original/TXT/usr_05.txt:625
+#: original/TXT/usr_06.txt:280 original/TXT/usr_07.txt:479
+#: original/TXT/usr_08.txt:601 original/TXT/usr_09.txt:289
+#: original/TXT/usr_10.txt:824 original/TXT/usr_11.txt:307
+#: original/TXT/usr_12.txt:358 original/TXT/usr_20.txt:384
+#: original/TXT/usr_21.txt:499 original/TXT/usr_22.txt:400
+#: original/TXT/usr_23.txt:343 original/TXT/usr_24.txt:606
+#: original/TXT/usr_25.txt:578 original/TXT/usr_26.txt:221
+#: original/TXT/usr_27.txt:563 original/TXT/usr_28.txt:426
+#: original/TXT/usr_29.txt:613 original/TXT/usr_30.txt:643
+#: original/TXT/usr_31.txt:272
+msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+
+#. type: Plain text
+#: original/TXT/usr_08.txt:153 original/TXT/usr_24.txt:168
+msgid "OPTIONS"
+msgstr "OPCIONES"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:2
+#, no-wrap
+msgid "*usr_24.txt*\tFor Vim version 7.3.  Last change: 2006 Jul 23\n"
+msgstr "*usr_24.esx*\tPara Vim versión 7.3.  Último cambio: 23/6/2006\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:6
+#, no-wrap
+msgid "\t\t\t     Inserting quickly\n"
+msgstr "\t\t\t  Insertar con rapidez\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:12
+msgid ""
+"When entering text, Vim offers various ways to reduce the number of "
+"keystrokes and avoid typing mistakes.  Use Insert mode completion to repeat "
+"previously typed words.  Abbreviate long words to short ones.  Type "
+"characters that aren't on your keyboard."
+msgstr ""
+"Al introducir texto, Vim ofrece varias maneras de reducir el número de "
+"teclas que pulsa, evitando teclear errores. Use el modo de autocompletado "
+"del modo Insertar para repetir palabras anteriormente tecleadas. Abrevie las "
+"palabras largas. Teclee caracteres que no están en su teclado."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:23
+#, no-wrap
+msgid ""
+"|24.1|\tMaking corrections\n"
+"|24.2|\tShowing matches\n"
+"|24.3|\tCompletion\n"
+"|24.4|\tRepeating an insert\n"
+"|24.5|\tCopying from another line\n"
+"|24.6|\tInserting a register\n"
+"|24.7|\tAbbreviations\n"
+"|24.8|\tEntering special characters\n"
+"|24.9|\tDigraphs\n"
+"|24.10|\tNormal mode commands\n"
+msgstr ""
+"|24.1|\tCorregir\n"
+"|24.2|\tMostrar coincidencias\n"
+"|24.3|\tAutocompletado\n"
+"|24.4|\tRepetir una inserción\n"
+"|24.5|\tCopiar desde otra línea\n"
+"|24.6|\tInsertar un registro\n"
+"|24.7|\tAbreviaturas\n"
+"|24.8|\tIntroducir caracteres especiales\n"
+"|24.9|\tDígrafos\n"
+"|24.10|\tÓrdenes del modo Normal\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:27
+#, no-wrap
+msgid ""
+"     Next chapter: |usr_25.txt|  Editing formatted text\n"
+" Previous chapter: |usr_23.txt|  Editing other files\n"
+"Table of contents: |usr_toc.txt|\n"
+msgstr ""
+" Capítulo siguiente: |usr_25.txt|  Editar texto con formato\n"
+"  Capitulo anterior: |usr_23.esx|  Editar otros archivos\n"
+"Tabla de contenidos: |usr_toc.esx|\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:30
+#, no-wrap
+msgid "*24.1*\tMaking corrections\n"
+msgstr "*24.1*\tCorregir\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:35
+#, no-wrap
+msgid ""
+"The <BS> key was already mentioned.  It deletes the character just before the\n"
+"cursor.  The <Del> key does the same for the character under (after) the\n"
+"cursor.\n"
+"   When you typed a whole word wrong, use CTRL-W:\n"
+msgstr ""
+"La tecla <BS> ya se ha mencionado. Borra el carácter que precede al cursor.\n"
+"La tecla <Del> hace lo mismo con el carácter debajo (después) del cursor.\n"
+"   Use CTRL-W en caso de haber tecleado una palabra completamente\n"
+"errónea:\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:39
+#, no-wrap
+msgid ""
+"\tThe horse had fallen to the sky ~\n"
+"\t\t\t\t       CTRL-W\n"
+"\tThe horse had fallen to the ~\n"
+msgstr ""
+"\tEl caballo cayó del cielo ~\n"
+"\t\t\t\t\tCTRL-W\n"
+"\tEl caballo cayó del ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:44
+msgid ""
+"If you really messed up a line and want to start over, use CTRL-U to delete "
+"it.  This keeps the text after the cursor and the indent.  Only the text "
+"from the first non-blank to the cursor is deleted.  With the cursor on the "
+"\"f\" of \"fallen\" in the next line pressing CTRL-U does this:"
+msgstr ""
+"En caso de haber realizado errores en una línea, y desea empezar otra vez, "
+"use CTRL-U para borrarlo. Esto mantiene el texto después del cursor, así "
+"como la tabulación. Sólo se borra el texto desde el primer espacio que no "
+"esté vacío hasta el cursor. Pulsar CTRL-U con el cursor sobre la «c» de "
+"«cayó» hace lo siguiente:"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:48
+#, no-wrap
+msgid ""
+"\tThe horse had fallen to the ~\n"
+"\t\t      CTRL-U\n"
+"\tfallen to the ~\n"
+msgstr ""
+"\tEl caballo cayó del cielo ~\n"
+"\t\t\t\t\tCTRL-W\n"
+"\tcayó del ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:51
+msgid ""
+"When you spot a mistake a few words back, you need to move the cursor there "
+"to correct it.  For example, you typed this:"
+msgstr ""
+"Cuando detecta un error en alguna palabra anterior, necesita desplazar el "
+"cursor hasta ese punto para corregirlo. Por ejemplo, escribió lo siguiente:"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:53
+#, no-wrap
+msgid "\tThe horse had follen to the ground ~\n"
+msgstr "\tEl caballo cayu al suelo ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:56
+msgid ""
+"You need to change \"follen\" to \"fallen\".  With the cursor at the end, "
+"you would type this to correct it: >"
+msgstr ""
+"Necesita cambiar «cayo» a «cayó». Con el cursor al final,  teclearía esto "
+"para corregirlo: >"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:58
+#, no-wrap
+msgid "\t\t\t\t\t<Esc>4blraA\n"
+msgstr "\t\t\t\t\t<Esc>3blróA\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:64
+#, no-wrap
+msgid ""
+"<\tget out of Insert mode\t\t<Esc>\n"
+"\tfour words back\t\t\t     4b\n"
+"\tmove on top of the \"o\"\t\t       l\n"
+"\treplace with \"a\"\t\t\tra\n"
+"\trestart Insert mode\t\t\t  A\n"
+msgstr ""
+"<\tAbandonar el modo insertar   <Esc>\n"
+"\tCuatro palabras hacia atrás          3b\n"
+"\tDesplazarse a la «u»         \t\tl\n"
+"\tReemplazar con «ó»\t\t\tró\n"
+"\tReiniciar modo insertar\t\t\t  A\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:66
+msgid "Another way to do this: >"
+msgstr "Existe otra manera de hacer esto: >"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:68
+#, no-wrap
+msgid "\t\t<C-Left><C-Left><C-Left><C-Left><Right><Del>a<End>\n"
+msgstr "\t\t<C-Izq><C-Izq><C-Izq><Derecha><Derecha><Derecha><Supr>ó<Fin>\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:74
+#, no-wrap
+msgid ""
+"<\tfour words back\t\t     <C-Left><C-Left><C-Left><C-Left>\n"
+"\tmove on top of the \"o\"\t\t\t<Right>\n"
+"\tdelete the \"o\"\t\t\t\t       <Del>\n"
+"\tinsert an \"a\"\t\t\t\t\t    a\n"
+"\tgo to end of the line\t\t\t\t     <End>\n"
+msgstr ""
+"<\tTres palabras hacia atrás\t        <C-Izq><C-Izq><C-Izq>\n"
+"\tDesplazarse a la «u»\t\t <Derecha><Derecha><Derecha>\n"
+"\tBorrar la «u»\t\t\t\t\t\t<Supr>\n"
+"\tInsertar una «ó»\t\t\t\t\tó\n"
+"\tIr al final de la línea\t\t\t\t\t<Fin>\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:82
+#, no-wrap
+msgid ""
+"This uses special keys to move around, while remaining in Insert mode.  This\n"
+"resembles what you would do in a modeless editor.  It's easier to remember,\n"
+"but takes more time (you have to move your hand from the letters to the cursor\n"
+"keys, and the <End> key is hard to press without looking at the keyboard).\n"
+"   These special keys are most useful when writing a mapping that doesn't\n"
+"leave Insert mode.  The extra typing doesn't matter then.\n"
+"   An overview of the keys you can use in Insert mode:\n"
+msgstr ""
+"Esto emplea teclas especiales para el desplazamiento, a la vez que permanece\n"
+"en el modo Insertar. Esto se parece a lo que haría con un editor sin modos. Es\n"
+"más fácil de recordar, pero lleva más tiempo (tiene que mover sus manos de\n"
+"las letras a las teclas del cursor, y es difícil pulsar la tecla <Fin> sin\n"
+"mirar el teclado).\n"
+"   Estas teclas especiales son más útiles cuando escribe un mapeado que no\n"
+"abandona el modo Insertar. El tecleo adicional no importa en este caso.\n"
+"   Este es un resumen de las teclas que puede usar en el modo Insertar:\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:93
+#, no-wrap
+msgid ""
+"\t<C-Home>\tto start of the file\n"
+"\t<PageUp>\ta whole screenful up\n"
+"\t<Home>\t\tto start of line\n"
+"\t<S-Left>\tone word left\n"
+"\t<C-Left>\tone word left\n"
+"\t<S-Right>\tone word right\n"
+"\t<C-Right>\tone word right\n"
+"\t<End>\t\tto end of the line\n"
+"\t<PageDown>\ta whole screenful down\n"
+"\t<C-End>\t\tto end of the file\n"
+msgstr ""
+"\t<C-Inicio>\tal principio del archivo\n"
+"\t<Repág>\t\tsubir una pantalla\n"
+"\t<Inicio>\tal inicio de la línea\n"
+"\t<S-Izq>\t\tuna palabra a la izquierda\n"
+"\t<C-Izq>\t\tuna palabra a la izquierda\n"
+"\t<S-Der>\t\tuna palabra a la derecha\n"
+"\t<C-Der>\t\tuna palabra a la derecha\n"
+"\t<Fin>\t\tal final de la línea\n"
+"\t<Avpág>\t\tbajar una pantalla\n"
+"\t<C-Fin>\t\tal final del archivo\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:95
+msgid "There are a few more, see |ins-special-special|."
+msgstr "Aún hay más, consulte |ins-special-special|."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:98
+#, no-wrap
+msgid "*24.2*\tShowing matches\n"
+msgstr "*24.2*\tMostrar coincidencias\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:101
+msgid ""
+"When you type a ) it would be nice to see with which ( it matches.  To make "
+"Vim do that use this command: >"
+msgstr ""
+"Al teclear una «)» estaría bien ver con qué «(» encaja. Para hacer que Vim "
+"use esta orden: >"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:103
+#, no-wrap
+msgid "\t:set showmatch\n"
+msgstr "\t:set showmatch\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:114
+#, no-wrap
+msgid ""
+"When you now type a text like \"(example)\", as soon as you type the ) Vim will\n"
+"briefly move the cursor to the matching (, keep it there for half a second,\n"
+"and move back to where you were typing.\n"
+"   In case there is no matching (, Vim will beep.  Then you know that you\n"
+"might have forgotten the ( somewhere, or typed a ) too many.\n"
+"   The match will also be shown for [] and {} pairs.  You don't have to wait\n"
+"with typing the next character, as soon as Vim sees it the cursor will move\n"
+"back and inserting continues as before.\n"
+"   You can change the time Vim waits with the 'matchtime' option.  For\n"
+"example, to make Vim wait one and a half second: >\n"
+msgstr ""
+"Ahora, cuando teclee un texto como «(ejemplo), tan pronto como teclee el «)»\n"
+"Vim moverá el cursor brevemente al «(» correspondiente, lo mantendrá ahí\n"
+"medio segundo, y volverá a donde estaba tecleando.\n"
+"   En caso de no existir un correspondiente «(», Vim pitará. Sabrá entonces que\n"
+"ha olvidado el «(» en algún lugar, o que escribió una «)» demasiadas veces.\n"
+"   También se mostrará el signo correspondiente en las parejas «[]» «{}». No\n"
+"tiene que esperar a teclear el siguiente carácter, ya que tan pronto como Vim\n"
+"lo detecte, devolverá el cursor a su posición original, continuando la\n"
+"inserción. Puede modificar el tiempo que Vim espera con la opción 'matchtime'.\n"
+"Por ejemplo, para hacer que Vim espere un segundo y medio: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:116
+#, no-wrap
+msgid "\t:set matchtime=15\n"
+msgstr "\t:set matchtime=15\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:118
+msgid "The time is specified in tenths of a second."
+msgstr "Esto especifica el tiempo en décimas de segundo."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:121
+#, no-wrap
+msgid "*24.3*\tCompletion\n"
+msgstr "*24.3*\tAutocompletado\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:126
+#, no-wrap
+msgid ""
+"Vim can automatically complete words on insertion.  You type the first part of\n"
+"a word, press CTRL-P, and Vim guesses the rest.\n"
+"   Suppose, for example, that you are creating a C program and want to type in\n"
+"the following:\n"
+msgstr ""
+"Vim puede auto-completar palabras durante la inserción. Escriba primero la\n"
+"parte inicial de una palabra, pulse CTRL-P y Vim adivinará el resto.\n"
+"   Suponga, por ejemplo, que está creando un programa en C y que desea\n"
+"teclear lo siguiente:\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:128
+#, no-wrap
+msgid "\ttotal = ch_array[0] + ch_array[1] + ch_array[2]; ~\n"
+msgstr "\ttotal = ch_array[0] + ch_array[1] + ch_array[2]; ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:130
+msgid "You start by entering the following:"
+msgstr "Empiece introduciendo lo siguiente:"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:132
+#, no-wrap
+msgid "\ttotal = ch_array[0] + ch_ ~\n"
+msgstr "\ttotal = ch_array[0] + ch_ ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:137
+msgid ""
+"At this point, you tell Vim to complete the word using the command CTRL-P.  "
+"Vim searches for a word that starts with what's in front of the cursor.  In "
+"this case, it is \"ch_\", which matches with the word ch_array.  So typing "
+"CTRL-P gives you the following:"
+msgstr ""
+"En este punto es cuando le dice a Vim que complete la palabra usando la "
+"orden CTRL-P. Vim buscará una palabra que empiece con lo que se aparece "
+"frente al cursor. En este caso, es «ch_», el cual encaja con la palabra "
+"«ch_array». Por ello, teclear CTRL-P le daría lo siguiente:"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:139
+#, no-wrap
+msgid "\ttotal = ch_array[0] + ch_array ~\n"
+msgstr "\ttotal = ch_array[0] + ch_array ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:141
+msgid "After a little more typing, you get this (ending in a space):"
+msgstr ""
+"Después de teclear un poco más, obtiene esto (finalizando con un espacio):"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:143
+#, no-wrap
+msgid "\ttotal = ch_array[0] + ch_array[1] +  ~\n"
+msgstr "\ttotal = ch_array[0] + ch_array[1] +  ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:151
+msgid ""
+"If you now type CTRL-P Vim will search again for a word that completes the "
+"word before the cursor.  Since there is nothing in front of the cursor, it "
+"finds the first word backwards, which is \"ch_array\".  Typing CTRL-P again "
+"gives you the next word that matches, in this case \"total\".  A third CTRL-"
+"P searches further back.  If there is nothing else, it causes the editor to "
+"run out of words, so it returns to the original text, which is nothing.  A "
+"fourth CTRL-P causes the editor to start over again with \"ch_array\"."
+msgstr ""
+"Si pulsa ahora CTRL-P, Vim buscará otra vez una palabra que complete la que "
+"se haya frente al cursor. Ya que no hay nada en frente del cursor, busca la "
+"palabra en sentido inverso, el cual es «ch_array». Pulsar CTRL-P otra vez le "
+"daría la siguiente palabra que encaja, en este caso «total». Si lo pulsa por "
+"tercera vez, Vim buscará aún más atrás. Si no hay nada más, al editor se le "
+"acabarían las palabras, volviendo al texto original, que es nada. Un cuarto "
+"CTRL-P causaría al editor empezar otra vez con «ch_array»."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:155
+msgid ""
+"To search forward, use CTRL-N.  Since the search wraps around the end of the "
+"file, CTRL-N and CTRL-P will find the same matches, but in a different "
+"sequence.  Hint: CTRL-N is Next-match and CTRL-P is Previous-match."
+msgstr ""
+"Use CTRL-N para una búsqueda hacia delante. Ya que la búsqueda vuelve al "
+"inicio cuando llega al final del archivo, CTRL-N y CTRL-P encontrarán las "
+"mismas coincidencias, pero en distinto orden. Pista: CTRL-N es siguiente "
+"coincidencia («Next-match») y CTRL-P es la coincidencia anterior («Previous-"
+"match»)."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:158
+msgid ""
+"The Vim editor goes through a lot of effort to find words to complete.  By "
+"default, it searches the following places:"
+msgstr ""
+"Vim realiza un gran esfuerzo por encontrar palabras que completar. Por "
+"omisión, busca en los siguientes lugares:"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:165
+#, no-wrap
+msgid ""
+"\t1. Current file\n"
+"\t2. Files in other windows\n"
+"\t3. Other loaded files (hidden buffers)\n"
+"\t4. Files which are not loaded (inactive buffers)\n"
+"\t5. Tag files\n"
+"\t6. All files #included by the current file\n"
+msgstr ""
+"\t1. Archivo actual\n"
+"\t2. Archivos en otras ventanas\n"
+"\t3. Otros archivos cargados (búfers ocultos)\n"
+"\t4. Archivos que no están cargados (búfers inactivos)\n"
+"\t5. Archivos de etiquetas\n"
+"\t6. Todos los archivos #incluidos en el archivo actual\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:170
+msgid "You can customize the search order with the 'complete' option."
+msgstr "Puede configurar el orden de búsqueda con la opción 'complete'."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:173
+msgid ""
+"The 'ignorecase' option is used.  When it is set, case differences are "
+"ignored when searching for matches."
+msgstr ""
+"La opción 'ignorecase' es empleada. Las diferencias entre mayúsculas y "
+"minúsculas se ignorarán al buscar coincidencias de activar esta opción."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:178
+msgid ""
+"A special option for completion is 'infercase'.  This is useful to find "
+"matches while ignoring case ('ignorecase' must be set) but still using the "
+"case of the word typed so far.  Thus if you type \"For\" and Vim finds a "
+"match \"fortunately\", it will result in \"Fortunately\"."
+msgstr ""
+"'infercase' es una opción especial para el autocompletado. Es útil para "
+"encontrar parejas cuando ignora la sensibilidad a mayúsculas y minúsculas "
+"(debe activar 'ignorecase') , y seguir usando con esta palabra la mencionada "
+"sensibilidad. Por ello, si teclea «Para» y Vim encuentra «paramilitar», el "
+"resultado final será «Paramilitar»."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:181
+msgid "COMPLETING SPECIFIC ITEMS"
+msgstr "COMPLETAR ELEMENTOS ESPECÍFICOS"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:184
+msgid ""
+"If you know what you are looking for, you can use these commands to complete "
+"with a certain type of item:"
+msgstr ""
+"Si sabe qué está buscando, puede usar estas órdenes para completar un cierto "
+"tipo de elemento."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:193
+#, no-wrap
+msgid ""
+"\tCTRL-X CTRL-F\t\tfile names\n"
+"\tCTRL-X CTRL-L\t\twhole lines\n"
+"\tCTRL-X CTRL-D\t\tmacro definitions (also in included files)\n"
+"\tCTRL-X CTRL-I\t\tcurrent and included files\n"
+"\tCTRL-X CTRL-K\t\twords from a dictionary\n"
+"\tCTRL-X CTRL-T\t\twords from a thesaurus\n"
+"\tCTRL-X CTRL-]\t\ttags\n"
+"\tCTRL-X CTRL-V\t\tVim command line\n"
+msgstr ""
+"\tCTRL-X CTRL-F\t\tNombres de archivo\n"
+"\tCTRL-X CTRL-L\t\tLíneas completas\n"
+"\tCTRL-X CTRL-D\t\tDefiniciones de macros\n"
+"\t\t\t\t(también en archivos incluidos)\n"
+"\tCTRL-X CTRL-I\t\tArchivo actual e incluidos\n"
+"\tCTRL-X CTRL-K\t\tPalabras de un diccionario\n"
+"\tCTRL-X CTRL-T\t\tPalabras de un tesauro\n"
+"\tCTRL-X CTRL-]\t\tEtiquetas\n"
+"\tCTRL-X CTRL-V\t\tLínea de órdenes de Vim\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:197
+#, no-wrap
+msgid ""
+"After each of them CTRL-N can be used to find the next match, CTRL-P to find\n"
+"the previous match.\n"
+"   More information for each of these commands here: |ins-completion|.\n"
+msgstr ""
+"Puede usar CTRL-N después de cada uno de estas órdenes para hallar la siguiente\n"
+"coincidencia, y CTRL-P para hallar la anterior.\n"
+"   Para más información acerca de estas órdenes, consulte |ins-completion|.\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:200
+msgid "COMPLETING FILE NAMES"
+msgstr "COMPLETAR NOMBRES DE ARCHIVO"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:206
+#, no-wrap
+msgid ""
+"Let's take CTRL-X CTRL-F as an example.  This will find file names.  It scans\n"
+"the current directory for files and displays each one that matches the word in\n"
+"front of the cursor.\n"
+"   Suppose, for example, that you have the following files in the current\n"
+"directory:\n"
+msgstr ""
+"Tomemos CTRL-X CTRL-F como ejemplo. Esto busca nombres de archivo.\n"
+"Examina el directorio actual en busca de archivos, y muestra cada uno que\n"
+"encaja con la palabra frenet al cursor.\n"
+"   Suponga, por ejemplo, que tiene las siguientes líneas en el directorio\n"
+"actual:\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:208
+#, no-wrap
+msgid "\tmain.c  sub_count.c  sub_done.c  sub_exit.c\n"
+msgstr "\tmain.c  sub_count.c  sub_done.c  sub_exit.c\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:210
+msgid "Now enter Insert mode and start typing:"
+msgstr "Inicie ahora el modo Insertar y empiece a teclear:"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:212
+#, no-wrap
+msgid "\tThe exit code is in the file sub ~\n"
+msgstr "\tEl código de salida está en el archivo sub ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:218
+msgid ""
+"At this point, you enter the command CTRL-X CTRL-F.  Vim now completes the "
+"current word \"sub\" by looking at the files in the current directory.  The "
+"first match is sub_count.c.  This is not the one you want, so you match the "
+"next file by typing CTRL-N.  This match is sub_done.c.  Typing CTRL-N again "
+"takes you to sub_exit.c.  The results:"
+msgstr ""
+"En este momento, introduzca la orden CTRL-X CTRL-F. Vim completará la "
+"palabra «sub» mirando en los ficheros en el directorio actual. La primera "
+"coincidencia es «sub_count.c». Esto no es lo que buscaba, así que busca la "
+"siguiente pareja pulsando CTRL-N. La coincidencia es «sub_done.c». Teclear "
+"CTRL-N otra vez le devolvería a «sub_exit.c». El resultado:"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:220
+#, no-wrap
+msgid "\tThe exit code is in the file sub_exit.c ~\n"
+msgstr "\tEl código de salida está en el archivo sub_exit.c ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:224
+msgid ""
+"If the file name starts with / (Unix) or C:\\ (MS-Windows) you can find all "
+"files in the file system.  For example, type \"/u\" and CTRL-X CTRL-F.  This "
+"will match \"/usr\" (this is on Unix):"
+msgstr ""
+"Si el nombre de archivo empieza con «/» (Unix) o «C:\\» (MS-Windows), puede "
+"buscar todos los archivos en el sistema de archivos. Por ejemplo, teclee «/"
+"u» y CTRL-X CTRL-F. Esto buscará «/usr» (en Unix):"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:226
+#, no-wrap
+msgid "\tthe file is found in /usr/ ~\n"
+msgstr "\tEl archivo se encuentra en \"/usr/\" ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:229
+msgid ""
+"If you now press CTRL-N you go back to \"/u\".  Instead, to accept the \"/"
+"usr/\" and go one directory level deeper, use CTRL-X CTRL-F again:"
+msgstr ""
+"Si ahora pulsa CTRL-N volvería a «/u». En lugar de ello, para aceptar «/"
+"usr/» y descender un nivel en el árbol de directorios, use otra vez CTRL-X "
+"CTRL-F:"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:231
+#, no-wrap
+msgid "\tthe file is found in /usr/X11R6/ ~\n"
+msgstr "\tEl archivo se encuentra en /usr/X11R6/~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:234
+msgid ""
+"The results depend on what is found in your file system, of course.  The "
+"matches are sorted alphabetically."
+msgstr ""
+"Los resultados varían según lo que se encuentra en su sistema de archivos. "
+"Las coincidencias aparecen alfabéticamente."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:237
+msgid "COMPLETING IN SOURCE CODE"
+msgstr "COMPLETAR EL CÓDIGO FUENTE"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:241
+msgid ""
+"Source code files are well structured.  That makes it possible to do "
+"completion in an intelligent way.  In Vim this is called Omni completion.  "
+"In some other editors it's called intellisense, but that is a trademark."
+msgstr ""
+"Los archivos de código están bien estructurados. Esto posibilita un "
+"autocompletado inteligente. En Vim, esto se llama autocompletado global "
+"(«Omni completion»). Algunos otros editores lo llaman intellisense, pero eso "
+"es una marca."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:245
+msgid ""
+"The key to Omni completion is CTRL-X CTRL-O.  Obviously the O stands for "
+"Omni here, so that you can remember it easier.  Let's use an example for "
+"editing C source:"
+msgstr ""
+"La tecla para el autocompletado global es CTRL-X CTRL-O. Obviamente, la «O» "
+"significa «Omni», para recordarla mejor. Usemos un ejemplo para editar "
+"código C:"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:249
+#, no-wrap
+msgid ""
+"\t{ ~\n"
+"\t    struct foo *p; ~\n"
+"\t    p-> ~\n"
+msgstr ""
+"\t{ ~\n"
+"\t    struct foo *p; ~\n"
+"\t    p-> ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:254
+msgid ""
+"The cursor is after \"p->\".  Now type CTRL-X CTRL-O.  Vim will offer you a "
+"list of alternatives, which are the items that \"struct foo\" contains.  "
+"That is quite different from using CTRL-P, which would complete any word, "
+"while only members of \"struct foo\" are valid here."
+msgstr ""
+"El cursor está después de «p->». Pulse ahora CTRL-X CTRL-O. Vim le ofrecerá "
+"una lista de alternativas, los cuales son los elementos que contiene «struct "
+"foo». Esto es diferente al uso de CTRL-P, el cual completa cualquier "
+"palabra, mientras que aquí sólo son válidos los miembros de «struct foo»."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:261
+#, no-wrap
+msgid ""
+"For Omni completion to work you may need to do some setup.  At least make sure\n"
+"filetype plugins are enabled.  Your vimrc file should contain a line like\n"
+"this: >\n"
+"\tfiletype plugin on\n"
+"Or: >\n"
+"\tfiletype plugin indent on\n"
+msgstr ""
+"Necesita realizar alguna configuración para que funcione el autocompletado\n"
+"global. Asegúrese al menos de que las extensiones de tipo de archivo\n"
+"(filetype) están activadas. El archivo vimrc debería tener esta línea: >\n"
+"\tfiletype plugin on\n"
+"O: >\n"
+"\tfiletype plugin indent on\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:267
+msgid ""
+"For C code you need to create a tags file and set the 'tags' option.  That "
+"is explained |ft-c-omni|.  For other filetypes you may need to do something "
+"similar, look below |compl-omni-filetypes|.  It only works for specific "
+"filetypes.  Check the value of the 'omnifunc' option to find out if it would "
+"work."
+msgstr ""
+"Necesita crear un archivo de etiquetas y definir la opción 'tags' si desea "
+"editar código C. Consulte |ft-c-omni|. Puede que tenga que realizar algo\n"
+"similar para otros tipos de archivo, véase más adelante |compl-omni-"
+"filetypes|. Sólo funciona para ciertos tipos de archivo. Revise el valor de "
+"la opción 'omnifunc' para ver si funcionaría."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:270
+#, no-wrap
+msgid "*24.4*\tRepeating an insert\n"
+msgstr "*24.4*\tRepetir una inserción\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:274
+#, no-wrap
+msgid ""
+"If you press CTRL-A, the editor inserts the text you typed the last time you\n"
+"were in Insert mode.\n"
+"   Assume, for example, that you have a file that begins with the following:\n"
+msgstr ""
+"Si pulsa CTRL-A, el editor insertará el texto que tecleó la última que estaba\n"
+"en el modo Insertar.\n"
+"   Suponga, por ejemplo, que tiene un archivo que empieza con lo siguiente:\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:277
+#, no-wrap
+msgid ""
+"\t\"file.h\" ~\n"
+"\t/* Main program begins */ ~\n"
+msgstr ""
+"\t\"file.h\" ~\n"
+"\t/* El programa principal comienza */ ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:280
+msgid ""
+"You edit this file by inserting \"#include \" at the beginning of the first "
+"line:"
+msgstr ""
+"Edita después el archivo insertando «#include» al principio de la primera "
+"línea:"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:283
+#, no-wrap
+msgid ""
+"\t#include \"file.h\" ~\n"
+"\t/* Main program begins */ ~\n"
+msgstr ""
+"\t#include \"file.h\" ~\n"
+"\t/* El programa principal comienza */ ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:286
+msgid ""
+"You go down to the beginning of the next line using the commands \"j^\".  "
+"You now start to insert a new \"#include\" line.  So you type: >"
+msgstr ""
+"Puede bajar hasta el inicio de la siguiente línea con las órdenes «j^». "
+"Ahora puede empezar a insertar una nueva línea «include». Asi que escribe: >"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:288
+#, no-wrap
+msgid "\ti CTRL-A\n"
+msgstr "\ti CTRL-A\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:290
+msgid "The result is as follows:"
+msgstr "El resultado es el siguiente:"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:293
+#, no-wrap
+msgid ""
+"\t#include \"file.h\" ~\n"
+"\t#include /* Main program begins */ ~\n"
+msgstr ""
+"\t#include \"file.h\" ~\n"
+"\t#include /* El programa principal comienza */ ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:296
+msgid ""
+"The \"#include \" was inserted because CTRL-A inserts the text of the "
+"previous insert.  Now you type \"main.h\"<Enter> to finish the line:"
+msgstr ""
+"«#include» se insertó porque CTRL-A inserta el texto de la inserción "
+"anterior. Teclee ahora «main.h» <Enter> para finalizar la línea:"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:301
+#, no-wrap
+msgid ""
+"\t#include \"file.h\" ~\n"
+"\t#include \"main.h\" ~\n"
+"\t/* Main program begins */ ~\n"
+msgstr ""
+"\t#include \"file.h\" ~\n"
+"\t#include \"main.h\" ~\n"
+"\t/* El programa principal comienza */ ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:304
+msgid ""
+"The CTRL-@ command does a CTRL-A and then exits Insert mode.  That's a quick "
+"way of doing exactly the same insertion again."
+msgstr ""
+"La orden CTRL-@ realiza un CTRL-A y abandona el modo Insertar. Esta es una "
+"manera rápida de hacer la misma inserción otra vez."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:307
+#, no-wrap
+msgid "*24.5*\tCopying from another line\n"
+msgstr "*24.5*\tCopiar desde otra línea\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:311
+msgid ""
+"The CTRL-Y command inserts the character above the cursor.  This is useful "
+"when you are duplicating a previous line.  For example, you have this line "
+"of C code:"
+msgstr ""
+"La orden CTRL-Y inserta el carácter sobre el cursor. Esto es útil si está "
+"duplicando una línea anterior. Por ejemplo, tiene esta línea de código C:"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:313
+#, no-wrap
+msgid "\tb_array[i]->s_next = a_array[i]->s_next; ~\n"
+msgstr "\tb_array[i]->s_next = a_array[i]->s_next; ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:317
+msgid ""
+"Now you need to type the same line, but with \"s_prev\" instead of \"s_next"
+"\".  Start the new line, and press CTRL-Y 14 times, until you are at the \"n"
+"\" of \"next\":"
+msgstr ""
+"Ahora necesita escribir la misma línea, pero con un «s_prev» en lugar de "
+"«s_next». Inicie una nueva línea, y pulse CTRL-Y 14 veces, hasta encontrarse "
+"en la «n» de «next»:"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:320
+#, no-wrap
+msgid ""
+"\tb_array[i]->s_next = a_array[i]->s_next; ~\n"
+"\tb_array[i]->s_ ~\n"
+msgstr ""
+"\tb_array[i]->s_next = a_array[i]->s_next; ~\n"
+"\tb_array[i]->s_ ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:322
+msgid "Now you type \"prev\":"
+msgstr "Ahora escriba «prev»:"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:325
+#, no-wrap
+msgid ""
+"\tb_array[i]->s_next = a_array[i]->s_next; ~\n"
+"\tb_array[i]->s_prev ~\n"
+msgstr ""
+"\tb_array[i]->s_next = a_array[i]->s_next; ~\n"
+"\tb_array[i]->s_prev ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:327
+msgid "Continue pressing CTRL-Y until the following \"next\":"
+msgstr "Continue pulsando CTRL-Y hasta el siguiente «next»:"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:330
+#, no-wrap
+msgid ""
+"\tb_array[i]->s_next = a_array[i]->s_next; ~\n"
+"\tb_array[i]->s_prev = a_array[i]->s_ ~\n"
+msgstr ""
+"\tb_array[i]->s_next = a_array[i]->s_next; ~\n"
+"\tb_array[i]->s_prev = a_array[i]->s_ ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:332
+msgid "Now type \"prev;\" to finish it off."
+msgstr "Escriba ahora «prev» para finalizar el proceso."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:335
+msgid ""
+"The CTRL-E command acts like CTRL-Y except it inserts the character below "
+"the cursor."
+msgstr ""
+"La orden CTRL-E actua como CTRL-Y a excepción de que inserta el carácter "
+"bajo el cursor."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:338
+#, no-wrap
+msgid "*24.6*\tInserting a register\n"
+msgstr "*24.6*\tInsertar un registro\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:342
+msgid ""
+"The command CTRL-R {register} inserts the contents of the register.  This is "
+"useful to avoid having to type a long word.  For example, you need to type "
+"this:"
+msgstr ""
+"La orden CTRL-R {registro} inserta el contenido de un registro. Esto es útil "
+"para evitar escribir una palabra larga. Por ejemplo, necesita teclear esto:"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:344
+#, no-wrap
+msgid "\tr = VeryLongFunction(a) + VeryLongFunction(b) + VeryLongFunction(c) ~\n"
+msgstr "\tr = FunciónMuyLarga(a) + FunciónMuyLarga(b) + FunciónMuyLarga(c) ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:347
+msgid ""
+"The function name is defined in a different file.  Edit that file and move "
+"the cursor on top of the function name there, and yank it into register v: >"
+msgstr ""
+"El nombre de la función se define en otro archivo. Edite ese archivo y "
+"desplace el cursor sobre el nombre de función presente, y copie el mismo al "
+"registro v:"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:349
+#, no-wrap
+msgid "\t\"vyiw\n"
+msgstr "\t\"vyiw\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:352
+msgid ""
+"\"v is the register specification, \"yiw\" is yank-inner-word.  Now edit the "
+"file where the new line is to be inserted, and type the first letters:"
+msgstr ""
+"«\"v» es el especificador del registro, «yiw» signifia copiar la palabra "
+"interior («yank inner word»). Edite ahora el archivo donde se insertará la "
+"línea, y escriba las primeras letras:"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:354
+#, no-wrap
+msgid "\tr = ~\n"
+msgstr "\tr = ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:356
+msgid "Now use CTRL-R v to insert the function name:"
+msgstr "Use ahora CTRL-R para insertar el nombre de la función:"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:358
+#, no-wrap
+msgid "\tr = VeryLongFunction ~\n"
+msgstr "\tr = FunciónMuyLarga ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:363
+#, no-wrap
+msgid ""
+"You continue to type the characters in between the function name, and use\n"
+"CTRL-R v two times more.\n"
+"   You could have done the same with completion.  Using a register is useful\n"
+"when there are many words that start with the same characters.\n"
+msgstr ""
+"Continua insertando caracteres en medio del nombre de la función, y usa\n"
+"«CTRL-R v» dos veces más.\n"
+"   Podría haber realizado lo mismo con el autocompletado. Usar un registro\n"
+"es útil cuando hay varias palabras que empiezan con el mismo carácter.\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:368
+msgid ""
+"If the register contains characters such as <BS> or other special "
+"characters, they are interpreted as if they had been typed from the "
+"keyboard.  If you do not want this to happen (you really want the <BS> to be "
+"inserted in the text), use the command CTRL-R CTRL-R {register}."
+msgstr ""
+"Si el registro contiene caracteres tales como <BS> o otros caracteres "
+"especiales, se interpretarán como introducidos a través del teclado. Si no "
+"desea que esto ocurra (realmente quiere que <BS> acabe insertado en el "
+"texto), use la orden CTRL-R CTRL-R {registro}."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:371
+#, no-wrap
+msgid "*24.7*\tAbbreviations\n"
+msgstr "*24.7*\tAbreviaturas\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:377
+#, no-wrap
+msgid ""
+"An abbreviation is a short word that takes the place of a long one.  For\n"
+"example, \"ad\" stands for \"advertisement\".  Vim enables you to type an\n"
+"abbreviation and then will automatically expand it for you.\n"
+"   To tell Vim to expand \"ad\" into \"advertisement\" every time you insert it,\n"
+"use the following command: >\n"
+msgstr ""
+"Una abreviatura es una palabra corta que sustituye a otra más larga. Por\n"
+"ejemplo, «poli» simboliza «policía». Vim le permite insertar una abreviatura\n"
+"para después expandirla automáticamente.\n"
+"   Para decir a Vim que expanda «poli» a «policía» cada vez que lo inserte,\n"
+"use la siguiente orden: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:379
+#, no-wrap
+msgid "\t:iabbrev ad advertisement\n"
+msgstr "\t:iabbrev poli policía\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:383
+msgid ""
+"Now, when you type \"ad\", the whole word \"advertisement\" will be inserted "
+"into the text.  This is triggered by typing a character that can't be part "
+"of a word, for example a space:"
+msgstr ""
+"Ahora, cuando escribe «po», aparecerá la palabra completa «policía» en el "
+"texto. Esto se activa cuando teclea un carácter que no puede ser parte de "
+"una palabra, como por ejemplo un espacio:"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:388
+#, no-wrap
+msgid ""
+"\tWhat Is Entered\t\tWhat You See\n"
+"\tI saw the a\t\tI saw the a ~\n"
+"\tI saw the ad\t\tI saw the ad ~\n"
+"\tI saw the ad<Space>\tI saw the advertisement<Space> ~\n"
+msgstr ""
+"\tTexto introducido\tLo que ve\n"
+"\tVi al p\t\t\tVi al p ~\n"
+"\tVi al po\t\tVi al po ~\n"
+"\tVi al po<Espacio>\tVi al policía<Espacio> ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:392
+msgid ""
+"The expansion doesn't happen when typing just \"ad\".  That allows you to "
+"type a word like \"add\", which will not get expanded.  Only whole words are "
+"checked for abbreviations."
+msgstr ""
+"La expansión no ocurre si solo escribe «po». Esto permite escribir una "
+"palabra como «polifacético», que no se expandirá. Solo se revisan palabras "
+"completas con abreviaturas."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:395
+msgid "ABBREVIATING SEVERAL WORDS"
+msgstr "ABREVIAR VARIAS PALABRAS"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:398
+msgid ""
+"It is possible to define an abbreviation that results in multiple words.  "
+"For example, to define \"JB\" as \"Jack Benny\", use the following command: >"
+msgstr ""
+"Es posible definir una abreviatura cuyo resultado sean varias palabras. Por "
+"ejemplo, para definir «JB» como «Juan Benítez», use la siguiente orden: >"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:400
+#, no-wrap
+msgid "\t:iabbrev JB Jack Benny\n"
+msgstr "\t:iabbrev JB Juan Benítez\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:402
+msgid "As a programmer, I use two rather unusual abbreviations: >"
+msgstr "Como programador, use dos abreviaturas mas bien inusuales: >"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:405
+#, no-wrap
+msgid ""
+"\t:iabbrev #b /****************************************\n"
+"\t:iabbrev #e <Space>****************************************/\n"
+msgstr ""
+"\t:iabbrev #b /****************************************\n"
+"\t:iabbrev #e <Space>****************************************/\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:413
+#, no-wrap
+msgid ""
+"These are used for creating boxed comments.  The comment starts with #b, which\n"
+"draws the top line.  I then type the comment text and use #e to draw the\n"
+"bottom line.\n"
+"   Notice that the #e abbreviation begins with a space.  In other words, the\n"
+"first two characters are space-star.  Usually Vim ignores spaces between the\n"
+"abbreviation and the expansion.  To avoid that problem, I spell space as seven\n"
+"characters: <, S, p, a, c, e, >.\n"
+msgstr ""
+"Uso esto para crear comentarios en cajas. El comentario empieza con «#b», el\n"
+"cual escribe la línea superior. Después escribo el texto del comentario y uso\n"
+"«#e» para dibujar la línea inferior.\n"
+"   Observe que la abreviatura «#e» empieza con un espacio. En otras palabras,\n"
+"los primeros dos caracteres son espacio-asterisco. Por lo general, Vim\n"
+"ignora los espacios entre la abreviatura y la expansión. Para evitar tal\n"
+"problema, deletreo espacio («space») como siete caracters: <, S, p, a, c, e,>.\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:417
+#, no-wrap
+msgid ""
+"\tNote:\n"
+"\t\":iabbrev\" is a long word to type.  \":iab\" works just as well.\n"
+"\tThat's abbreviating the abbreviate command!\n"
+msgstr ""
+"\tNota:\n"
+"\tLa palabra «:iabbrev» es algo larga. «:iab» también daría resultado.\n"
+"\t¡Esto es abreviar la orden de abreviar!\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:420
+msgid "FIXING TYPING MISTAKES"
+msgstr "ARREGLAR ERRORES TIPOGRÁFICOS"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:423
+msgid ""
+"It's very common to make the same typing mistake every time.  For example, "
+"typing \"teh\" instead of \"the\".  You can fix this with an abbreviation: >"
+msgstr ""
+"Es bastante normal escribir siempre el mismo error. Por ejemplo, escribir "
+"«qeu» en lugar de «que». Puede arreglar esto con una abreviatura: >"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:425
+#, no-wrap
+msgid "\t:abbreviate teh the\n"
+msgstr "\t:abbreviate qeu que\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:428
+msgid ""
+"You can add a whole list of these.  Add one each time you discover a common "
+"mistake."
+msgstr ""
+"Puede crear una lista completa de ejemplos como este. Añada uno cada vez que "
+"descubra un error común."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:431
+msgid "LISTING ABBREVIATIONS"
+msgstr "LISTAR ABREVIATURAS"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:433
+msgid "The \":abbreviate\" command lists the abbreviations:"
+msgstr "La orden «:abbreviate» lista las abreviaturas:"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:440
+#, no-wrap
+msgid ""
+"\t:abbreviate\n"
+"\ti  #e\t\t  ****************************************/\n"
+"\ti  #b\t\t /****************************************\n"
+"\ti  JB\t\t Jack Benny\n"
+"\ti  ad\t\t advertisement\n"
+"\t!  teh\t\t the\n"
+msgstr ""
+"\t:abbreviate\n"
+"\ti  #e\t\t  ****************************************/\n"
+"\ti  #b\t\t /****************************************\n"
+"\ti  JB\t\t Juan Benítez\n"
+"\ti  po\t\t policía\n"
+"\t!  qeu\t\t que\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:443
+msgid ""
+"The \"i\" in the first column indicates Insert mode.  These abbreviations "
+"are only active in Insert mode.  Other possible characters are:"
+msgstr ""
+"La «i» en la primera columna indica modo Insertar. Estas abreviaturas sólo "
+"están activas en el modo Insertar. Otros caracteres posibles son:"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:446
+#, no-wrap
+msgid ""
+"\tc\tCommand-line mode\t\t\t:cabbrev\n"
+"\t!\tboth Insert and Command-line mode\t:abbreviate\n"
+msgstr ""
+"\tc\tModo Línea de órdenes\t\t\t:cabbrev\n"
+"\t!\tModo Insertar y\tLínea de órdenes\t:abbreviate\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:450
+msgid ""
+"Since abbreviations are not often useful in Command-line mode, you will "
+"mostly use the \":iabbrev\" command.  That avoids, for example, that \"ad\" "
+"gets expanded when typing a command like: >"
+msgstr ""
+"Debido a que las abreviaturas no son útiles en el modo Línea de órdenes, "
+"usará más regularmente la orden «:iabbrev». Esto evita, por ejemplo, que se "
+"expanda «po» al escribir una orden como: >"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:452
+#, no-wrap
+msgid "\t:edit ad\n"
+msgstr "\t:edit po\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:455
+msgid "DELETING ABBREVIATIONS"
+msgstr "BORRAR ABREVIATURAS"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:458
+msgid ""
+"To get rid of an abbreviation, use the \":unabbreviate\" command.  Suppose "
+"you have the following abbreviation: >"
+msgstr ""
+"Para eliminar una abreviatura, use la orden «:unabbreviate». Suponga que "
+"tiene la siguiente abreviatura: >"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:460
+#, no-wrap
+msgid "\t:abbreviate @f fresh\n"
+msgstr "\t:abbreviate @f fresco\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:462
+msgid "You can remove it with this command: >"
+msgstr "Puede eliminarla con esta orden: >"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:464
+#, no-wrap
+msgid "\t:unabbreviate @f\n"
+msgstr "\t:unabbreviate @f\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:469
+#, no-wrap
+msgid ""
+"While you type this, you will notice that @f is expanded to \"fresh\".  Don't\n"
+"worry about this, Vim understands it anyway (except when you have an\n"
+"abbreviation for \"fresh\", but that's very unlikely).\n"
+"   To remove all the abbreviations: >\n"
+msgstr ""
+"Notará al escribir esto que @f se expande a «fresco». No se preocupe, Vim lo\n"
+"entiende de todas formas (a menos que tenga una abreviatura «fresco», pero\n"
+"eso es improbable).\n"
+"   Para eliminar todas las abreviaturas: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:471
+#, no-wrap
+msgid "\t:abclear\n"
+msgstr "\t:abclear\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:475
+msgid ""
+"\":unabbreviate\" and \":abclear\" also come in the variants for Insert mode "
+"(\":iunabbreviate and \":iabclear\") and Command-line mode (\":cunabbreviate"
+"\" and \":cabclear\")."
+msgstr ""
+"«:unabbreviate» y «:abclear» tienen también variantes para el modo Insetar "
+"(«:unabbreviate» y «:iabclear») y el modo Línea de órdenes («:cunabbreviate» "
+"y «:cabclear»)."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:478
+msgid "REMAPPING ABBREVIATIONS"
+msgstr "REDEFINIR EL MAPEO DE UNA ABREVIATURA"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:481
+msgid ""
+"There is one thing to watch out for when defining an abbreviation: The "
+"resulting string should not be mapped.  For example: >"
+msgstr ""
+"Existe un aspecto a tener en cuenta a la hora de definir una abreviatura: La "
+"cadena resultante no se debería mapear. Por ejemplo: >"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:484
+#, no-wrap
+msgid ""
+"\t:abbreviate @a adder\n"
+"\t:imap dd disk-door\n"
+msgstr ""
+"\t:abbreviate @a adder\n"
+"\t:imap dd disk-door\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:488
+msgid ""
+"When you now type @a, you will get \"adisk-doorer\".  That's not what you "
+"want.  To avoid this, use the \":noreabbrev\" command.  It does the same as "
+"\":abbreviate\", but avoids that the resulting string is used for mappings: >"
+msgstr ""
+"Si ahora teclea @a, obtendrá «adisk-doorer». Esto no es lo que quiere. Para "
+"evitarlo, use la orden «:noabbrev». Hace lo mismo que «:abbreviate», pero "
+"evita que la cadena resultante se use en mapeados."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:490
+#, no-wrap
+msgid "\t:noreabbrev @a adder\n"
+msgstr "\t:noreabbrev @a adder\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:492
+msgid ""
+"Fortunately, it's unlikely that the result of an abbreviation is mapped."
+msgstr ""
+"Afortunadamente, es difícil que se mapee el resultado de una abreviatura."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:495
+#, no-wrap
+msgid "*24.8*\tEntering special characters\n"
+msgstr "*24.8*\tIntroducir caracteres especiales\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:499
+msgid ""
+"The CTRL-V command is used to insert the next character literally.  In other "
+"words, any special meaning the character has, it will be ignored.  For "
+"example: >"
+msgstr ""
+"La orden CTRL-V se emplea para insertar el siguiente carácter de forma "
+"literal. En otras palabras, se ignorará el significado especial de cualquier "
+"carácter. Por ejemplo: >"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:501
+#, no-wrap
+msgid "\tCTRL-V <Esc>\n"
+msgstr "\tCTRL-V <Esc>\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:504
+msgid ""
+"Inserts an escape character.  Thus you don't leave Insert mode.  (Don't type "
+"the space after CTRL-V, it's only to make this easier to read)."
+msgstr ""
+"Esta orden inserta un carácter de escapado. Por ello, no abandona el modo "
+"Insertar. (No escriba un espacio después de CTRL-V, sólo lo hace más fácil "
+"de leer)."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:509
+#, no-wrap
+msgid ""
+"\tNote:\n"
+"\tOn MS-Windows CTRL-V is used to paste text.  Use CTRL-Q instead of\n"
+"\tCTRL-V.  On Unix, on the other hand, CTRL-Q does not work on some\n"
+"\tterminals, because it has a special meaning.\n"
+msgstr ""
+"\tNota:\n"
+"\tEn MS-Windows, CTRL-V se emplea para pegar texto. Use CTRL-Q en\n"
+"\tlugar de CTRL-V. Por otra parte, Unix no reconoce CTRL-Q en algunas\n"
+"\tterminales, porque tiene un significado especial.\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:513
+msgid ""
+"You can also use the command CTRL-V {digits} to insert a character with the "
+"decimal number {digits}.  For example, the character number 127 is the <Del> "
+"character (but not necessarily the <Del> key!).  To insert <Del> type: >"
+msgstr ""
+"También puede usar la orden CTRL-V {dígitos} para insertar un carácter con "
+"el número decimal {dígitos}. Por ejemplo, el carácter número 127 es el "
+"carácter <Del> (Supr) (¡pero no necesariamente la tecla <Supr>!). Escriba lo "
+"siguiente para insetar <Del>."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:515
+#, no-wrap
+msgid "\tCTRL-V 127\n"
+msgstr "\tCTRL-V 127\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:520
+#, no-wrap
+msgid ""
+"You can enter characters up to 255 this way.  When you type fewer than two\n"
+"digits, a non-digit will terminate the command.  To avoid the need of typing a\n"
+"non-digit, prepend one or two zeros to make three digits.\n"
+"   All the next commands insert a <Tab> and then a dot:\n"
+msgstr ""
+"Puede introducir hasta el carácter 255 de esta manera. Cuando escribe menos\n"
+"de dos dígitos, un no-dígito finalizará la orden. Para evitar la necesidad\n"
+"de escribir un no-dígito, añada uno o dos ceros para sumar tres dígitos.\n"
+"   Todas las ordenes a continuación insertan primero un <Tab> y después un\n"
+"punto:\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:524
+#, no-wrap
+msgid ""
+"\tCTRL-V 9.\n"
+"\tCTRL-V 09.\n"
+"\tCTRL-V 009.\n"
+msgstr ""
+"\tCTRL-V 9.\n"
+"\tCTRL-V 09.\n"
+"\tCTRL-V 009.\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:526
+msgid "To enter a character in hexadecimal, use an \"x\" after the CTRL-V: >"
+msgstr ""
+"Para usar un carácter con valor hexadecimal, use «x» después de CTRL-V: >"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:528
+#, no-wrap
+msgid "\tCTRL-V x7f\n"
+msgstr "\tCTRL-V x7f\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:532
+msgid ""
+"This also goes up to character 255 (CTRL-V xff).  You can use \"o\" to type "
+"a character as an octal number and two more methods allow you to type up to "
+"a 16 bit and a 32 bit number (e.g., for a Unicode character): >"
+msgstr ""
+"Esto también llega al carácter 255 (CTRL-V xff). También puede usar «o» para "
+"escribir un carácter como un número octal, y otros dos métodos le permiten "
+"escribir hasta un número en 16 y 32 bit (p, ej., un carácter Unicode): >"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:536
+#, no-wrap
+msgid ""
+"\tCTRL-V o123\n"
+"\tCTRL-V u1234\n"
+"\tCTRL-V U12345678\n"
+msgstr ""
+"\tCTRL-V o123\n"
+"\tCTRL-V u1234\n"
+"\tCTRL-V U12345678\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:539
+#, no-wrap
+msgid "*24.9*\tDigraphs\n"
+msgstr "*24.9*\tDígrafos\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:543
+#, fuzzy
+#| msgid ""
+#| "Some characters are not on the keyboard.  For example, the copyright "
+#| "character (©).  To type these characters in Vim, you use digraphs, where "
+#| "two characters represent one.  To enter a ©, for example, you press three "
+#| "keys: >"
+msgid ""
+"Some characters are not on the keyboard.  For example, the copyright "
+"character (�).  To type these characters in Vim, you use digraphs, where two "
+"characters represent one.  To enter a �, for example, you press three keys: >"
+msgstr ""
+"Algunos caracteres no se encuentran en el teclado. Por ejemplo, el carácter "
+"de derechos de autor (©). Emplee dígrafos para escribir estos caracteres en "
+"Vim, en los que dos caracteres representan a uno. Para introducir ©, por "
+"ejemplo, pulse tres teclas: >"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:545
+#, no-wrap
+msgid "\tCTRL-K Co\n"
+msgstr "\tCTRL-K Co\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:547
+msgid "To find out what digraphs are available, use the following command: >"
+msgstr "Use la siguiente orden para ver qué dígrafos están disponibles: >"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:549
+#, no-wrap
+msgid "\t:digraphs\n"
+msgstr "\t:digraphs\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:551
+msgid "Vim will display the digraph table.  Here are three lines of it:"
+msgstr "Vim mostrará la tabla de dígrafos. Aquí puede ver tres líneas:"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:555
+#, fuzzy, no-wrap
+#| msgid ""
+#| "  AC ~_ 159  NS |  160  !I ¡  161  Ct ¢  162  Pd £  163  Cu ¤  164  Ye ¥  165 ~\n"
+#| "  BB ¦  166  SE §  167  ': ¨  168  Co ©  169  -a ª  170  << «  171  NO ¬  172 ~\n"
+#| "  -- ­  173  Rg ®  174  'm ¯  175  DG °  176  +- ±  177  2S ²  178  3S ³  179 ~\n"
+msgid ""
+"  AC ~_ 159  NS |  160  !I �  161  Ct �  162  Pd �  163  Cu �  164  Ye �  165 ~\n"
+"  BB �  166  SE �  167  ': �  168  Co �  169  -a �  170  << �  171  NO �  172 ~\n"
+"  -- �  173  Rg �  174  'm �  175  DG �  176  +- �  177  2S �  178  3S �  179 ~\n"
+msgstr ""
+"  AC ~_ 159  NS |  160  !I ¡  161  Ct ¢  162  Pd £  163  Cu ¤  164  Ye ¥  165 ~\n"
+"  BB ¦  166  SE §  167  ': ¨  168  Co ©  169  -a ª  170  << «  171  NO ¬  172 ~\n"
+"  -- ­  173  Rg ®  174  'm ¯  175  DG °  176  +- ±  177  2S ²  178  3S ³  179 ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:564
+#, fuzzy, no-wrap
+#| msgid ""
+#| "This shows, for example, that the digraph you get by typing CTRL-K Pd is the\n"
+#| "character (£).  This is character number 163 (decimal).\n"
+#| "   Pd is short for Pound.  Most digraphs are selected to give you a hint about\n"
+#| "the character they will produce.  If you look through the list you will\n"
+#| "understand the logic.\n"
+#| "   You can exchange the first and second character, if there is no digraph for\n"
+#| "that combination.  Thus CTRL-K dP also works.  Since there is no digraph for\n"
+#| "\"dP\" Vim will also search for a \"Pd\" digraph.\n"
+msgid ""
+"This shows, for example, that the digraph you get by typing CTRL-K Pd is the\n"
+"character (�).  This is character number 163 (decimal).\n"
+"   Pd is short for Pound.  Most digraphs are selected to give you a hint about\n"
+"the character they will produce.  If you look through the list you will\n"
+"understand the logic.\n"
+"   You can exchange the first and second character, if there is no digraph for\n"
+"that combination.  Thus CTRL-K dP also works.  Since there is no digraph for\n"
+"\"dP\" Vim will also search for a \"Pd\" digraph.\n"
+msgstr ""
+"Esto muestra, por ejemplo, que el dígrafo que obtiene pulsando «CTRL-K Pd»\n"
+"muestra el carácter (£). Este carácter es el número 163 (decimal).\n"
+"   Pd is la abreviatura de «pound» (libra). La mayoría de dígrafos se han\n"
+"seleccionado para dar una pista del carácter que producen. Si mira un poco\n"
+"la lista entenderá la lógica.\n"
+"   Puede intercambiar el primer y segundo carácter, si no hay otro dígrafo\n"
+"para tal combinación. Por ello, CTRL-K dP también funciona. Ya que no hay un\n"
+"dígrafo para «dP», Vim buscará también un dígrafo «Pd».\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:569
+#, no-wrap
+msgid ""
+"\tNote:\n"
+"\tThe digraphs depend on the character set that Vim assumes you are\n"
+"\tusing.  On MS-DOS they are different from MS-Windows.  Always use\n"
+"\t\":digraphs\" to find out which digraphs are currently available.\n"
+msgstr ""
+"\tNota:\n"
+"\tLos dígrafos dependen del juego de caracteres que Vim asume que está\n"
+"\tusando. En MS-DOS difieren con los de MS-Windows. Use siempre\n"
+"\t«:digraphs» para ver de qué dígrafos dispone.\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:571
+msgid "You can define your own digraphs.  Example: >"
+msgstr "Puede configurar sus propios dígrafos. Ejemplo: >"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:573
+#, fuzzy, no-wrap
+#| msgid "\t:digraph a\" ä\n"
+msgid "\t:digraph a\" �\n"
+msgstr "\t:digraph a\" ä\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:576
+#, fuzzy
+#| msgid ""
+#| "This defines that CTRL-K a\" inserts an ä character.  You can also "
+#| "specify the character with a decimal number.  This defines the same "
+#| "digraph: >"
+msgid ""
+"This defines that CTRL-K a\" inserts an � character.  You can also specify "
+"the character with a decimal number.  This defines the same digraph: >"
+msgstr ""
+"Esto hace que «CTRL-K a\"» inserte el carácter ä. Puede también especificar "
+"el carácter con un número decimal. Esto define el mismo dígrafo: >"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:578
+#, no-wrap
+msgid "\t:digraph a\" 228\n"
+msgstr "\t:digraph a\" 228\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:582
+#, no-wrap
+msgid ""
+"More information about digraphs here: |digraphs|\n"
+"   Another way to insert special characters is with a keymap.  More about that\n"
+"here: |45.5|\n"
+msgstr ""
+"Para más información acerca de los dígrafos, consulte: |digraphs|\n"
+"   Otra manera de insertar caracteres especiales es un «keymap». Puede leer\n"
+"más acerca de esto aquí: |45.5|\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:585
+#, no-wrap
+msgid "*24.10*\tNormal mode commands\n"
+msgstr "*24.10*\tÓrdenes del modo Normal\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:592
+#, no-wrap
+msgid ""
+"Insert mode offers a limited number of commands.  In Normal mode you have many\n"
+"more.  When you want to use one, you usually leave Insert mode with <Esc>,\n"
+"execute the Normal mode command, and re-enter Insert mode with \"i\" or \"a\".\n"
+"   There is a quicker way.  With CTRL-O {command} you can execute any Normal\n"
+"mode command from Insert mode.  For example, to delete from the cursor to the\n"
+"end of the line: >\n"
+msgstr ""
+"El modo Insertar ofrece un limitado número de órdenes. Dispone de muchas más\n"
+"en el modo normal. Si desea usar uno, abandone el modo Insertar con <Esc>,\n"
+"ejecuto la orden en modo Normal, y vuelva al modo Insertar con «i» o «a».\n"
+"   Hay una manera más rápida. Con CTRL-O {orden} puede ejecutar cualquier\n"
+"orden de modo Normal en el modo Insertar. Por ejemplo, para borrar desde el\n"
+"cursor hasta el final de la línea: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:594
+#, no-wrap
+msgid "\tCTRL-O D\n"
+msgstr "\tCTRL-O D\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:597
+msgid ""
+"You can execute only one Normal mode command this way.  But you can specify "
+"a register or a count.  A more complicated example: >"
+msgstr ""
+"Sólo puede ejecutar una orden de modo Normal de esta manera. Pero puede "
+"especificar un registro o cuenta. Aquí tiene una manera más complicada: >"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:599
+#, no-wrap
+msgid "\tCTRL-O \"g3dw\n"
+msgstr "\tCTRL-O \"g3dw\n"
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:601
+msgid "This deletes up to the third word into register g."
+msgstr "Esto borra hasta la tercera palabra en el registro «g»."
+
+#. type: Plain text
+#: original/TXT/usr_24.txt:605
+msgid "Next chapter: |usr_25.txt| Editing formatted text"
+msgstr "Siguiente capítulo: |usr_25.esx| Editar text con formato"

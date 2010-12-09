@@ -1,0 +1,2413 @@
+# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es
+# Copyright (C) 2009
+# This file is distributed under the same license as the Vim 7.2 package.
+# Translators credits:
+# - Initial translation
+# Omar Campagne <ocampagne@gmail.com>, 2009
+# - Updates
+# TRADUCTOR <CORREO>, AÑO
+# Debido al formato (txt) y al máximo de 80 columnas que pueden tener
+# los textos de ayuda en Vim, así como el formato PO, por favor, leete los
+# apuntes concernientes a la edición de los archivos PO relativos a la
+# aplicación que desees usar.
+# También encontrarás información acerca del uso de herramientas gettext en el
+# proyecto de localización (l10n) de Vim.
+# - http://www.assembla.com/wiki/show/vim-doc-es
+# No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
+# este enlace puede ser de interés. A pesar de no formar parte, nuestra
+# intención es homologarnos con su terminología y uso de la lengua
+# en la medida de lo útil y posible.
+# - El proyecto de traducción de Debian al español
+# http://www.debian.org/intl/spanish/notas
+# La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
+# pero también puede servir de referencia para otros términos no técnicos.
+# No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
+# traducción sea comprensible independientemente de la nacionalidad del
+# usuario. Si crees que alguna traducción puede llevar a confusión, consulta
+# la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
+# - www.rae.es
+# - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages
+# Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
+# se puede consultar con un simple grep, pogrep o cargado en Virtaal.
+msgid ""
+msgstr ""
+"Project-Id-Version: Vim 7.2\n"
+"Report-Msgid-Bugs-To: vim@bugs.org\n"
+"POT-Creation-Date: 2010-09-23 20:27+0300\n"
+"PO-Revision-Date: 2010-12-08 17:17+0100\n"
+"Last-Translator: Omar Campagne <<ocampagne@gmail.com>>\n"
+"Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.5.0\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:2
+#, no-wrap
+msgid "*intro.txt*     For Vim version 7.3.  Last change: 2010 Jul 20\n"
+msgstr "*intro.esx*   Para Vim versión 7.3. Último cambio: 24/6/2008\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:5
+#, no-wrap
+msgid "\t\t  VIM REFERENCE MANUAL    by Bram Moolenaar\n"
+msgstr "\t\tMANUAL DE REFERENCIA DE VIM  por Bram Moolenar\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:8
+#, no-wrap
+msgid "Introduction to Vim\t\t\t\t\t*ref* *reference*\n"
+msgstr "Introducción a Vim\t\t\t\t*ref* *referencia* *reference*\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:17
+#, no-wrap
+msgid ""
+"1. Introduction\t\t\t|intro|\n"
+"2. Vim on the internet\t\t|internet|\n"
+"3. Credits\t\t\t|credits|\n"
+"4. Notation\t\t\t|notation|\n"
+"5. Modes, introduction\t\t|vim-modes-intro|\n"
+"6. Switching from mode to mode\t|mode-switching|\n"
+"7. The window contents\t\t|window-contents|\n"
+"8. Definitions\t\t\t|definitions|\n"
+msgstr ""
+"1. Introducción\t\t\t|intro|\n"
+"2. Vim en internet\t\t|internet|\n"
+"3. Créditos\t\t\t|credits|\n"
+"4. Notación\t\t\t|notación| |notation|\n"
+"5. Modos, introducción\t\t|vim-modes-intro|\n"
+"6. Cambiar de Modos\t\t|cambiar-modo| |mode-switching|\n"
+"7. El contenido de la ventana\t|ventana-contenidos| |window-contents|\n"
+"8. Definiciones\t\t\t|definiciones| |definitions|\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:18 original/TXT/intro.txt:79
+#: original/TXT/intro.txt:180 original/TXT/intro.txt:290
+#: original/TXT/intro.txt:518 original/TXT/intro.txt:596
+#: original/TXT/intro.txt:689 original/TXT/intro.txt:817
+#: original/TXT/intro.txt:880 original/TXT/usr_toc.txt:7
+#: original/TXT/usr_toc.txt:58 original/TXT/usr_toc.txt:172
+#: original/TXT/usr_toc.txt:281 original/TXT/usr_toc.txt:340
+#: original/TXT/usr_toc.txt:352 original/TXT/usr_01.txt:19
+#: original/TXT/usr_01.txt:50 original/TXT/usr_01.txt:100
+#: original/TXT/usr_01.txt:181 original/TXT/usr_02.txt:25
+#: original/TXT/usr_02.txt:69 original/TXT/usr_02.txt:130
+#: original/TXT/usr_02.txt:179 original/TXT/usr_02.txt:239
+#: original/TXT/usr_02.txt:307 original/TXT/usr_02.txt:369
+#: original/TXT/usr_02.txt:406 original/TXT/usr_02.txt:560
+#: original/TXT/usr_03.txt:28 original/TXT/usr_03.txt:74
+#: original/TXT/usr_03.txt:101 original/TXT/usr_03.txt:147
+#: original/TXT/usr_03.txt:172 original/TXT/usr_03.txt:223
+#: original/TXT/usr_03.txt:265 original/TXT/usr_03.txt:320
+#: original/TXT/usr_03.txt:491 original/TXT/usr_03.txt:552
+#: original/TXT/usr_03.txt:650 original/TXT/usr_04.txt:27
+#: original/TXT/usr_04.txt:74 original/TXT/usr_04.txt:160
+#: original/TXT/usr_04.txt:194 original/TXT/usr_04.txt:269
+#: original/TXT/usr_04.txt:324 original/TXT/usr_04.txt:360
+#: original/TXT/usr_04.txt:390 original/TXT/usr_04.txt:446
+#: original/TXT/usr_04.txt:469 original/TXT/usr_04.txt:510
+#: original/TXT/usr_05.txt:24 original/TXT/usr_05.txt:63
+#: original/TXT/usr_05.txt:219 original/TXT/usr_05.txt:266
+#: original/TXT/usr_05.txt:418 original/TXT/usr_05.txt:467
+#: original/TXT/usr_05.txt:506 original/TXT/usr_05.txt:621
+#: original/TXT/usr_06.txt:24 original/TXT/usr_06.txt:50
+#: original/TXT/usr_06.txt:135 original/TXT/usr_06.txt:189
+#: original/TXT/usr_06.txt:270 original/TXT/usr_06.txt:276
+#: original/TXT/usr_07.txt:24 original/TXT/usr_07.txt:63
+#: original/TXT/usr_07.txt:179 original/TXT/usr_07.txt:266
+#: original/TXT/usr_07.txt:316 original/TXT/usr_07.txt:404
+#: original/TXT/usr_07.txt:444 original/TXT/usr_07.txt:475
+#: original/TXT/usr_08.txt:26 original/TXT/usr_08.txt:82
+#: original/TXT/usr_08.txt:109 original/TXT/usr_08.txt:161
+#: original/TXT/usr_08.txt:215 original/TXT/usr_08.txt:278
+#: original/TXT/usr_08.txt:337 original/TXT/usr_08.txt:477
+#: original/TXT/usr_08.txt:509 original/TXT/usr_08.txt:597
+#: original/TXT/usr_09.txt:21 original/TXT/usr_09.txt:124
+#: original/TXT/usr_09.txt:175 original/TXT/usr_09.txt:259
+#: original/TXT/usr_09.txt:285 original/TXT/usr_10.txt:27
+#: original/TXT/usr_10.txt:144 original/TXT/usr_10.txt:221
+#: original/TXT/usr_10.txt:342 original/TXT/usr_10.txt:378
+#: original/TXT/usr_10.txt:547 original/TXT/usr_10.txt:621
+#: original/TXT/usr_10.txt:667 original/TXT/usr_10.txt:692
+#: original/TXT/usr_10.txt:820 original/TXT/usr_11.txt:22
+#: original/TXT/usr_11.txt:82 original/TXT/usr_11.txt:144
+#: original/TXT/usr_11.txt:288 original/TXT/usr_11.txt:303
+#: original/TXT/usr_12.txt:25 original/TXT/usr_12.txt:90
+#: original/TXT/usr_12.txt:131 original/TXT/usr_12.txt:177
+#: original/TXT/usr_12.txt:202 original/TXT/usr_12.txt:231
+#: original/TXT/usr_12.txt:281 original/TXT/usr_12.txt:309
+#: original/TXT/usr_12.txt:354 original/TXT/usr_20.txt:22
+#: original/TXT/usr_20.txt:113 original/TXT/usr_20.txt:158
+#: original/TXT/usr_20.txt:285 original/TXT/usr_20.txt:327
+#: original/TXT/usr_20.txt:380 original/TXT/usr_21.txt:24
+#: original/TXT/usr_21.txt:47 original/TXT/usr_21.txt:87
+#: original/TXT/usr_21.txt:236 original/TXT/usr_21.txt:385
+#: original/TXT/usr_21.txt:438 original/TXT/usr_21.txt:495
+#: original/TXT/usr_22.txt:22 original/TXT/usr_22.txt:148
+#: original/TXT/usr_22.txt:213 original/TXT/usr_22.txt:272
+#: original/TXT/usr_22.txt:396 original/TXT/usr_23.txt:23
+#: original/TXT/usr_23.txt:114 original/TXT/usr_23.txt:156
+#: original/TXT/usr_23.txt:238 original/TXT/usr_23.txt:324
+#: original/TXT/usr_23.txt:339 original/TXT/usr_24.txt:28
+#: original/TXT/usr_24.txt:96 original/TXT/usr_24.txt:119
+#: original/TXT/usr_24.txt:268 original/TXT/usr_24.txt:305
+#: original/TXT/usr_24.txt:336 original/TXT/usr_24.txt:369
+#: original/TXT/usr_24.txt:493 original/TXT/usr_24.txt:537
+#: original/TXT/usr_24.txt:583 original/TXT/usr_24.txt:602
+#: original/TXT/usr_25.txt:22 original/TXT/usr_25.txt:132
+#: original/TXT/usr_25.txt:210 original/TXT/usr_25.txt:287
+#: original/TXT/usr_25.txt:453 original/TXT/usr_25.txt:574
+#: original/TXT/usr_26.txt:21 original/TXT/usr_26.txt:46
+#: original/TXT/usr_26.txt:103 original/TXT/usr_26.txt:136
+#: original/TXT/usr_26.txt:217 original/TXT/usr_27.txt:26
+#: original/TXT/usr_27.txt:88 original/TXT/usr_27.txt:136
+#: original/TXT/usr_27.txt:239 original/TXT/usr_27.txt:320
+#: original/TXT/usr_27.txt:350 original/TXT/usr_27.txt:427
+#: original/TXT/usr_27.txt:469 original/TXT/usr_27.txt:510
+#: original/TXT/usr_27.txt:559 original/TXT/usr_28.txt:27
+#: original/TXT/usr_28.txt:54 original/TXT/usr_28.txt:121
+#: original/TXT/usr_28.txt:185 original/TXT/usr_28.txt:211
+#: original/TXT/usr_28.txt:269 original/TXT/usr_28.txt:315
+#: original/TXT/usr_28.txt:331 original/TXT/usr_28.txt:375
+#: original/TXT/usr_28.txt:389 original/TXT/usr_28.txt:422
+#: original/TXT/usr_29.txt:23 original/TXT/usr_29.txt:273
+#: original/TXT/usr_29.txt:320 original/TXT/usr_29.txt:441
+#: original/TXT/usr_29.txt:570 original/TXT/usr_29.txt:609
+#: original/TXT/usr_30.txt:23 original/TXT/usr_30.txt:202
+#: original/TXT/usr_30.txt:280 original/TXT/usr_30.txt:336
+#: original/TXT/usr_30.txt:409 original/TXT/usr_30.txt:515
+#: original/TXT/usr_30.txt:639 original/TXT/usr_31.txt:22
+#: original/TXT/usr_31.txt:81 original/TXT/usr_31.txt:133
+#: original/TXT/usr_31.txt:160 original/TXT/usr_31.txt:208
+#: original/TXT/usr_31.txt:268
+#, no-wrap
+msgid "==============================================================================\n"
+msgstr "==============================================================================\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:20
+#, no-wrap
+msgid "1. Introduction\t\t\t\t\t\t*intro*\n"
+msgstr "1. Introducción\t\t\t\t\t\t*intro*\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:29
+#, no-wrap
+msgid ""
+"Vim stands for Vi IMproved.  It used to be Vi IMitation, but there are so many\n"
+"improvements that a name change was appropriate.  Vim is a text editor which\n"
+"includes almost all the commands from the Unix program \"Vi\" and a lot of new\n"
+"ones.  It is very useful for editing programs and other plain text.\n"
+"   All commands are given with the keyboard.  This has the advantage that you\n"
+"can keep your fingers on the keyboard and your eyes on the screen.  For those\n"
+"who want it, there is mouse support and a GUI version with scrollbars and\n"
+"menus (see |gui.txt|).\n"
+msgstr ""
+"Vim son las siglas de Vi Improved («Vi mejorado»). Solía significar Vi\n"
+"IMitation, pero hay tantas mejoras que se consideró apropiado cambiar el\n"
+"nombre. Vim es un editor de texto que incluye casi todas las órdenes del\n"
+"programa para Unix, Vi, así como otras más. Es muy útil para la edición de\n"
+"programas y archivos de formato de texto normal.\n"
+"   Todas las órdenes se introducen mediante el teclado. Ésto ofrece la ventaja\n"
+"de poder tener sus dedos en el teclado y sus ojos en la pantalla. Para\n"
+"aquellos que lo deseen, también tiene compatibilidad con ratón y una versión\n"
+"que ofrece una interfaz gráfica con barras de desplazamiento y menús (véase\n"
+"|gui.txt|).\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:36
+#, no-wrap
+msgid ""
+"An overview of this manual can be found in the file \"help.txt\", |help.txt|.\n"
+"It can be accessed from within Vim with the <Help> or <F1> key and with the\n"
+"|:help| command (just type \":help\", without the bars or quotes).\n"
+"   The 'helpfile' option can be set to the name of the help file, in case it\n"
+"is not located in the default place.  You can jump to subjects like with tags:\n"
+"Use CTRL-] to jump to a subject under the cursor, use CTRL-T to jump back.\n"
+msgstr ""
+"Encontrará una visión general de este manual en el archivo «help.txt»,\n"
+"|help.txt|. Puede acceder a él a través de Vim con la tecla <Ayuda> o <F1> y\n"
+"con la orden |:help| (sólo teclee «:help», sin las comillas o barras).\n"
+"   La opción 'helpfile' se puede configurar con el nombre del archivo de ayuda\n"
+"en caso de no encontrarse en la ubicación habitual. Puede saltar de un tema\n"
+"a otro como si fuesen etiquetas:\n"
+"Use CTRL-] para pasar al tema bajo el cursor, y CTRL-T para volver.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:40
+msgid ""
+"Throughout this manual the differences between Vi and Vim are mentioned in "
+"curly braces, like this: {Vi does not have on-line help}.  See |vi_diff.txt| "
+"for a summary of the differences between Vim and Vi."
+msgstr ""
+"Las diferencias entre Vi y Vim se señalarán con corchetes, por ejemplo: {Vi "
+"no tiene ayuda en línea}. Consulte |vi_diff.txt| para un resumen de las "
+"diferencias entre Vim y Vi."
+
+#. type: Plain text
+#: original/TXT/intro.txt:45
+msgid ""
+"This manual refers to Vim on various machines.  There may be small "
+"differences between different computers and terminals.  Besides the remarks "
+"given in this document, there is a separate document for each supported "
+"system, see |sys-file-list|."
+msgstr ""
+"Este manual trata el uso de Vim en varios sistemas. Pueden existir pequeñas "
+"diferencias entre computadoras y terminales. Además de los comentarios que "
+"se ofrecen en este documento, hay un documento aparte para cada sistema "
+"compatible, véase |sys-file-list|."
+
+#. type: Plain text
+#: original/TXT/intro.txt:49
+#, no-wrap
+msgid ""
+"\t\t\t\t\t\t\t*pronounce*\n"
+"Vim is pronounced as one word, like Jim, not vi-ai-em.  It's written with a\n"
+"capital, since it's a name, again like Jim.\n"
+msgstr ""
+"\t\t\t\t\t*pronounce* *pronunciar*\n"
+"Vim se pronuncia como una sola palabra, como Jim, no uve-a-eme. Se escribe\n"
+"mayúscula, ya que es un nombre al igual que Jim.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:54
+msgid ""
+"This manual is a reference for all the Vim commands and options.  This is "
+"not an introduction to the use of Vi or Vim, it gets a bit complicated here "
+"and there.  For beginners, there is a hands-on |tutor|.  To learn using Vim, "
+"read the user manual |usr_toc.txt|."
+msgstr ""
+"Este manual es una referencia para todas las órdenes y opciones de Vim. No "
+"es una introducción al uso de Vi o Vim, y algunas secciones son complejas. "
+"Hay un tutor práctico, |tutor|. Si quiere aprender a usar Vim, lea el manual "
+"de usuario |usr_toc.txt|."
+
+#. type: Plain text
+#: original/TXT/intro.txt:58
+#, no-wrap
+msgid ""
+"\t\t\t\t\t\t\t*book*\n"
+"There are many books on Vi that contain a section for beginners.  There are\n"
+"two books I can recommend:\n"
+msgstr ""
+"\t\t\t\t\t\t\t*book*\n"
+"Existen muchos libros sobre Vi que contienen una sección para principiantes.\n"
+"Personalmente recomiendo dos libros:\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:60
+#, no-wrap
+msgid "\t\"Vim - Vi Improved\" by Steve Oualline\n"
+msgstr "\t«Vim - Vi Improved» por Steve Oualline\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:71
+#, no-wrap
+msgid ""
+"This is the very first book completely dedicated to Vim.  It is very good for\n"
+"beginners.  The most often used commands are explained with pictures and\n"
+"examples.  The less often used commands are also explained, the more advanced\n"
+"features are summarized.  There is a comprehensive index and a quick\n"
+"reference.  Parts of this book have been included in the user manual\n"
+"|frombook|.\n"
+"Published by New Riders Publishing.  ISBN: 0735710015\n"
+"For more information try one of these:\n"
+"\thttp://iccf-holland.org/click5.html\n"
+"\thttp://www.vim.org/iccf/click5.html\n"
+msgstr ""
+"Este es el primer libro completamente dedicado a Vim. Es muy bueno para\n"
+"principiantes. Las órdenes más usadas se explican con imágenes y ejemplos.\n"
+"También se tratan aquellas órdenes menos comunes, y las características más\n"
+"avanzadas son resumidas. Tiene un completo índice y una rápida referencia.\n"
+"Hay partes de este libro incluidas en el manual de usuario |frombook|.\n"
+"Publicado por New Riders Publishing.  ISBN: 0735710015\n"
+"Pruebe estos enlaces para más información:\n"
+"\thttp://iccf-holland.org/click5.html\n"
+"\thttp://www.vim.org/iccf/click5.html\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:73
+#, no-wrap
+msgid "\t\"Learning the Vi editor\" by Linda Lamb and Arnold Robbins\n"
+msgstr "\t«Learning the Vi editor» por Linda Lamb y Arnold Robbins\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:78
+msgid ""
+"This is a book about Vi that includes a chapter on Vim (in the sixth "
+"edition).  The first steps in Vi are explained very well.  The commands that "
+"Vim adds are only briefly mentioned.  There is also a German translation.  "
+"Published by O'Reilly.  ISBN: 1-56592-426-6."
+msgstr ""
+"Este es un libro sobre Vi que incluye un capítulo acercade Vim (en la sexta "
+"edición). Los primeros pasos con Vim se explican con detalle, pero las "
+"órdenes que Vim añade se mencionan de manera superficial. Está también "
+"disponible en alemán. Publicado por O'Reilly.  ISBN: 1-56592-426-6."
+
+#. type: Plain text
+#: original/TXT/intro.txt:81
+#, no-wrap
+msgid "2. Vim on the internet\t\t\t\t\t*internet*\n"
+msgstr "2. Vim en internet\t\t\t\t\t*internet*\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:86
+#, no-wrap
+msgid ""
+"\t\t\t*www* *WWW*  *faq* *FAQ* *distribution* *download*\n"
+"The Vim pages contain the most recent information about Vim.  They also\n"
+"contain links to the most recent version of Vim.  The FAQ is a list of\n"
+"Frequently Asked Questions.  Read this if you have problems.\n"
+msgstr ""
+"       \t*www* *WWW*  *faq* *FAQ* *distribution* *download* *descargar*\n"
+"Las páginas de Vim ofrecen la información más actualizada. También\n"
+"contienen enlaces a la versión más reciente de Vim. El FAQ es una lista de\n"
+"las preguntas más frecuentes. Consulte esa página en caso de tener problemas.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:90
+#, no-wrap
+msgid ""
+"\tVIM home page:\t  http://www.vim.org/\n"
+"\tVIM FAQ:\t  http://vimdoc.sf.net/\n"
+"\tDownloading:\t  ftp://ftp.vim.org/pub/vim/MIRRORS\n"
+msgstr ""
+"\tPágina web de VIM http://www.vim.org/\n"
+"\tVIM FAQ:\t  http://vimdoc.sf.net/\n"
+"\tDescargar:\t  ftp://ftp.vim.org/pub/vim/MIRRORS\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:96
+#, no-wrap
+msgid ""
+"Usenet News group where Vim is discussed:\t\t*news* *usenet*\n"
+"\tcomp.editors\n"
+"This group is also for other editors.  If you write about Vim, don't forget to\n"
+"mention that.\n"
+msgstr ""
+"Grupo de Usenet News en el que se trata Vim: \t\t*news* *usenet*\n"
+"\tcomp.editors\n"
+"Este grupo también trata de otros editores. Si escribe sobre Vim, no olvide\n"
+"de mencionar esto último.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:116
+#, no-wrap
+msgid ""
+"\t\t\t\t\t\t*mail-list* *maillist*\n"
+"There are several mailing lists for Vim:\n"
+"<vim@vim.org>\n"
+"\tFor discussions about using existing versions of Vim: Useful mappings,\n"
+"\tquestions, answers, where to get a specific version, etc.  There are\n"
+"\tquite a few people watching this list and answering questions, also\n"
+"\tfor beginners.  Don't hesitate to ask your question here.\n"
+"<vim-dev@vim.org>\t\t\t\t*vim-dev* *vimdev*\n"
+"\tFor discussions about changing Vim: New features, porting, patches,\n"
+"\tbeta-test versions, etc.\n"
+"<vim-announce@vim.org>\t\t\t\t*vim-announce*\n"
+"\tAnnouncements about new versions of Vim; also for beta-test versions\n"
+"\tand ports to different systems.  This is a read-only list.\n"
+"<vim-multibyte@vim.org>\t\t\t\t*vim-multibyte*\n"
+"\tFor discussions about using and improving the multi-byte aspects of\n"
+"\tVim.\n"
+"<vim-mac@vim.org>\t\t\t\t*vim-mac*\n"
+"\tFor discussions about using and improving the Macintosh version of\n"
+"\tVim.\n"
+msgstr ""
+"\t\t\t\t\t\t*mail-list* *maillist*\n"
+"Existen varias listas de correo acerca de Vim:\n"
+"<vim@vim.org>\n"
+"\tPara discusiones acerca del uso de varias versiones de Vim: Útiles\n"
+"\tmapeados, preguntas, respuestas, dónde obtener una versión especifica.\n"
+"\tHay varias personas mirando esta lista, y que responden a\n"
+"\tpreguntas, también para principiantes. No dude en preguntar.\n"
+"<vim-dev@vim.org>\t\t\t\t*vim-dev* *vimdev*\n"
+"\tPara la discusión de cambios en Vim: Nuevas características,\n"
+"\tportabilidad, parches, versiones beta, etc.\n"
+"<vim-announce@vim.org>\t\t\t\t*vim-announce*\n"
+"\tAnuncios acerca de nuevas versiones de Vim; también para versiones beta\n"
+"\ty la adaptación a otras arquitecturas. Lista de sólo lectura.\n"
+"\n"
+"<vim-multibyte@vim.org>\t\t\t\t*vim-multibyte*\n"
+"\tDiscusión acerca de la mejora de la experiencia multi-byte en Vim.\n"
+"<vim-mac@vim.org>\t\t\t\t*vim-mac*\n"
+"\tDiscusión acerca del uso y la mejora de la versión Macintosh de Vim.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:118
+msgid "See http://www.vim.org/maillist.php for the latest information."
+msgstr ""
+"Visite http://www.vim.org/maillist.php para la información más reciente."
+
+#. type: Plain text
+#: original/TXT/intro.txt:124
+#, no-wrap
+msgid ""
+"NOTE:\n"
+"- You can only send messages to these lists if you have subscribed!\n"
+"- You need to send the messages from the same location as where you subscribed\n"
+"  from (to avoid spam mail).\n"
+"- Maximum message size is 40000 characters.\n"
+msgstr ""
+"NOTA:\n"
+"- Sólo puede mandar mensajes a estas listas si esta suscrito.\n"
+"- Debe mandar los mensajes desde la misma dirección desde la cual se\n"
+"  suscribió (para evitar el spam).\n"
+"- El tamaño máximo de un mensaje es de 40000 caracteres.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:130
+#, no-wrap
+msgid ""
+"\t\t\t\t\t\t*subscribe-maillist*\n"
+"If you want to join, send a message to\n"
+"\t<vim-subscribe@vim.org>\n"
+"Make sure that your \"From:\" address is correct.  Then the list server will\n"
+"give you help on how to subscribe.\n"
+msgstr ""
+"\t\t\t\t\t*lista-correo* *subscribe-maillist*\n"
+"Si desea unirse, envie un mensaje a\n"
+"\t<vim-subscribe@vim.org>\n"
+"Asegúrese de que su dirección «De:» es correcta. El servidor de la lista\n"
+"le asistirá para suscribirse.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:134
+#, no-wrap
+msgid ""
+"\t\t\t\t\t\t*maillist-archive*\n"
+"For more information and archives look on the Vim maillist page:\n"
+"http://www.vim.org/maillist.php\n"
+msgstr ""
+"\t\t\t\t\t\t*maillist-archive*\n"
+"Para más información y visitar los archivos, visite la página de listas de\n"
+"correo de Vim:\n"
+"http://www.vim.org/maillist.php\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:137
+#, no-wrap
+msgid "Bug reports:\t\t\t\t*bugs* *bug-reports* *bugreport.vim*\n"
+msgstr ""
+"Informes de fallo:\t*fallos* *informe-de-fallo* *bugs* *bug-reports*\n"
+"\t\t\t\t\t\t\t *bugreport.vim*\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:145
+msgid ""
+"Send bug reports to: Vim bugs <bugs@vim.org> This is not a maillist but the "
+"message is redirected to the Vim maintainer.  Please be brief; all the time "
+"that is spent on answering mail is subtracted from the time that is spent on "
+"improving Vim! Always give a reproducible example and try to find out which "
+"settings or other things influence the appearance of the bug.  Try different "
+"machines, if possible.  Send me patches if you can!"
+msgstr ""
+"Envíe los informes de fallo a: Vim Bugs <bugs@vim.org>. Esta no es una lista "
+"de correo, pero el mensaje será redirigido al responsable de Vim. Sea breve; "
+"todo el tiempo empleado en responder correo se sustrae del tiempo empleado "
+"en mejorar Vim. Entregue siempre un ejemplo reproducible, e intente "
+"encontrar la configuración u otros elementos que alimentan el fallo. Pruebe "
+"diferentes sistemas, si es posible. ¡Mandame parches si puedes!"
+
+#. type: Plain text
+#: original/TXT/intro.txt:152
+#, no-wrap
+msgid ""
+"It will help to include information about the version of Vim you are using and\n"
+"your setup.  You can get the information with this command: >\n"
+"   :so $VIMRUNTIME/bugreport.vim\n"
+"This will create a file \"bugreport.txt\" in the current directory, with a lot\n"
+"of information of your environment.  Before sending this out, check if it\n"
+"doesn't contain any confidential information!\n"
+msgstr ""
+"Nos ayudaría si incluye información acerca de su configuración y versión de Vim.\n"
+"Puede obtener esta información con la siguiente orden: >\n"
+"   :so $VIMRUNTIME/bugreport.vim\n"
+"Esto creará el archivo «bugreport.txt» en el directorio presente, conteniendo\n"
+"información relativa a su entorno. Antes de enviarlo, revise que no contenga\n"
+"ninguna información confidencial.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:155
+msgid ""
+"If Vim crashes, please try to find out where.  You can find help on this "
+"here: |debug.txt|."
+msgstr ""
+"Si Vim se cuelga, intente encontrar donde. Puede encontrar ayuda aquí: |"
+"debug.txt|."
+
+#. type: Plain text
+#: original/TXT/intro.txt:159
+msgid ""
+"In case of doubt or when you wonder if the problem has already been fixed "
+"but you can't find a fix for it, become a member of the vim-dev maillist and "
+"ask your question there. |maillist|"
+msgstr ""
+"En caso de duda, o si se pregunta si el problema ha recibido ya una solución "
+"pero no encuentra el arreglo, únase a la lista de correo vim-dev y haga su "
+"pregunta ahí.|maillist|"
+
+#. type: Plain text
+#: original/TXT/intro.txt:165
+#, no-wrap
+msgid ""
+"\t\t\t\t\t\t\t*year-2000* *Y2K*\n"
+"Since Vim internally doesn't use dates for editing, there is no year 2000\n"
+"problem to worry about.  Vim does use the time in the form of seconds since\n"
+"January 1st 1970.  It is used for a time-stamp check of the edited file and\n"
+"the swap file, which is not critical and should only cause warning messages.\n"
+msgstr ""
+"\t\t\t\t\t\t\t*year-2000* *Y2K*\n"
+"Debido a que Vim no usa fechas en la edición, no hay ningún problema con el\n"
+"año 2000 del que deba preocuparse. Vim sí usa tiempo en forma de segundos desde\n"
+"el uno de Enero de 1970, y se emplea como una revisión del sello temporal del\n"
+"archivo editado y el archivo de intercambio, lo cual no es crítico ya que sólo\n"
+"crearía mensajes de advertencia.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:171
+msgid ""
+"There might be a year 2038 problem, when the seconds don't fit in a 32 bit "
+"int anymore.  This depends on the compiler, libraries and operating system.  "
+"Specifically, time_t and the ctime() function are used.  And the time_t is "
+"stored in four bytes in the swap file.  But that's only used for printing a "
+"file date/time for recovery, it will never affect normal editing."
+msgstr ""
+"Puede aparecer un problema en el año 2038, cuando los segundos no quepan en "
+"32 bits. Esto depende del compilador, la bibliotecas y el sistema operativo. "
+"Se usan particularmente las funciones «time_t» y «ctime()». «time_t» se "
+"guarda en cuatro bytes en el archivo de intercambio. Esto último sólo se "
+"emplea para imprimir una fecha/tiempo para la recuperación y en ningún caso "
+"afectará a la edición normal."
+
+#. type: Plain text
+#: original/TXT/intro.txt:176
+msgid ""
+"The Vim strftime() function directly uses the strftime() system function.  "
+"localtime() uses the time() system function.  getftime() uses the time "
+"returned by the stat() system function.  If your system libraries are year "
+"2000 compliant, Vim is too."
+msgstr ""
+"La función de Vim «strftime()» usa directamente la función del sistema "
+"«strftime()». «localtime()» usa la función del sistema «time()». «getftime» "
+"usa el tiempo devuelto por la función del sistema «stat()». Si las "
+"bibliotecas de sus sistema son compatibles con el año 2000, Vim también lo "
+"es."
+
+#. type: Plain text
+#: original/TXT/intro.txt:179
+msgid ""
+"The user may create scripts for Vim that use external commands.  These might "
+"introduce Y2K problems, but those are not really part of Vim itself."
+msgstr ""
+"El usuario puede crear scripts para Vim que usan órdenes externas. Esto "
+"puede introducir problemas Y2K, pero no son parte de Vim."
+
+#. type: Plain text
+#: original/TXT/intro.txt:182
+#, no-wrap
+msgid "3. Credits\t\t\t\t*credits* *author* *Bram* *Moolenaar*\n"
+msgstr "3. Creditos\t\t\t*credits* *créditos* *autor* *Bram* *Moolenaar*\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:184
+msgid "Most of Vim was written by Bram Moolenaar <Bram@vim.org>."
+msgstr "La mayor parte de Vim la creó Bram Moolenar <Bram@vim.org>"
+
+#. type: Plain text
+#: original/TXT/intro.txt:189
+#, no-wrap
+msgid ""
+"Parts of the documentation come from several Vi manuals, written by:\n"
+"\tW.N. Joy\n"
+"\tAlan P.W. Hewett\n"
+"\tMark Horton\n"
+msgstr ""
+"El origen de algunas partes de la documentación nacen de varios manuales\n"
+"de Vim, escritos por:\n"
+"\tW.N. Joy\n"
+"\tAlan P.W. Hewett\n"
+"\tMark Horton\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:193
+msgid ""
+"The Vim editor is based on Stevie and includes (ideas from) other software, "
+"worked on by the people mentioned here.  Other people helped by sending me "
+"patches, suggestions and giving feedback about what is good and bad in Vim."
+msgstr ""
+"El editor Vim está basado en Stevie, e incluye ideas procedentes de otro "
+"software, trabajadas por la gente aquí mencionada. Otra gente me ayudó "
+"mediante parches, sugerencias y opiniones acerca de lo bueno y malo de Vim."
+
+#. type: Plain text
+#: original/TXT/intro.txt:195
+msgid ""
+"Vim would never have become what it is now, without the help of these people!"
+msgstr "¡Vim nunca sería lo que es ahora de no ser por estas personas!"
+
+#. type: Plain text
+#: original/TXT/intro.txt:258
+#, fuzzy, no-wrap
+#| msgid ""
+#| "\tRon Aaron\t\tWin32 GUI changes\n"
+#| "\tMohsin Ahmed\t\tcifrado\n"
+#| "\tZoltan Arpadffy\t\twork on VMS port\n"
+#| "\tTony Andrews\t\tStevie\n"
+#| "\tGert van Antwerpen\tchanges for DJGPP on MS-DOS\n"
+#| "\tBerkeley DB(3)\t\tideas for swap file implementation\n"
+#| "\tKeith Bostic\t\tNvi\n"
+#| "\tWalter Briscoe\t\tMakefile updates, various patches\n"
+#| "\tRalf Brown\t\tSPAWNO library for MS-DOS\n"
+#| "\tRobert Colon\t\tmany useful remarks\n"
+#| "\tMarcin Dalecki\t\tGTK+ GUI port, toolbar icons, gettext()\n"
+#| "\tKayhan Demirel\t\tsent me news in Uganda\n"
+#| "\tChris & John Downey\txvi (ideas for multi-windows version)\n"
+#| "\tHenk Elbers\t\tfirst VMS port\n"
+#| "\tDaniel Elstner\t\tGTK+ 2 port\n"
+#| "\tEric Fischer\t\tMac port, 'cindent', and other improvements\n"
+#| "\tBenji Fisher\t\tAnswering lots of user questions\n"
+#| "\tBill Foster\t\tAthena GUI port\n"
+#| "\tGoogle\t\t\tLets me work on Vim one day a week\n"
+#| "\tLoic Grenie\t\txvim (ideas for multi windows version)\n"
+#| "\tSven Guckes\t\tVim promoter and previous WWW page maintainer\n"
+#| "\tDarren Hiebert\t\tExuberant ctags\n"
+#| "\tJason Hildebrand\tGTK+ 2 port\n"
+#| "\tBruce Hunsaker\t\timprovements for VMS port\n"
+#| "\tAndy Kahn\t\tCscope support, GTK+ GUI port\n"
+#| "\tOezguer Kesim\t\tMaintainer of Vim Mailing Lists\n"
+#| "\tAxel Kielhorn\t\twork on the Macintosh port\n"
+#| "\tSteve Kirkendall\tElvis\n"
+#| "\tRoger Knobbe\t\toriginal port to Windows NT\n"
+#| "\tSergey Laskavy\t\tVim's help from Moscow\n"
+#| "\tFelix von Leitner\tPrevious maintainer of Vim Mailing Lists\n"
+#| "\tDavid Leonard\t\tPort of Python extensions to Unix\n"
+#| "\tAvner Lottem\t\tEdit in right-to-left windows\n"
+#| "\tFlemming Madsen\t\tX11 client-server, various features and patches\n"
+#| "\tTony Mechelynck\t\tanswers many user questions\n"
+#| "\tPaul Moore\t\tPython interface extensions, many patches\n"
+#| "\tKatsuhito Nagano\tWork on multi-byte versions\n"
+#| "\tSung-Hyun Nam\t\tWork on multi-byte versions\n"
+#| "\tVince Negri\t\tWin32 GUI and generic console enhancements\n"
+#| "\tSteve Oualline\t\tAuthor of the first Vim book |frombook|\n"
+#| "\tDominique Pelle\t\tvalgrind reports and many fixes\n"
+#| "\tA.Politz\t\tMany bug reports and some fixes\n"
+#| "\tGeorge V. Reilly\tWin32 port, Win32 GUI start-off\n"
+#| "\tStephen Riehm\t\tbug collector\n"
+#| "\tStefan Roemer\t\tvarious patches and help to users\n"
+#| "\tRalf Schandl\t\tIBM OS/390 port\n"
+#| "\tOlaf Seibert\t\tDICE and BeBox version, regexp improvements\n"
+#| "\tMortaza Shiran\t\tFarsi patches\n"
+#| "\tPeter da Silva\t\ttermlib\n"
+#| "\tPaul Slootman\t\tOS/2 port\n"
+#| "\tHenry Spencer\t\tregular expressions\n"
+#| "\tDany St-Amant\t\tMacintosh port\n"
+#| "\tTim Thompson\t\tStevie\n"
+#| "\tG. R. (Fred) Walter\tStevie\n"
+#| "\tSven Verdoolaege\tPerl interface\n"
+#| "\tRobert Webb\t\tCommand-line completion, GUI versions, and\n"
+#| "\t\t\t\tlots of patches\n"
+#| "\tIngo Wilken\t\tTcl interface\n"
+#| "\tMike Williams\t\tPostScript printing\n"
+#| "\tJuergen Weigert\t\tLattice version, AUX improvements, UNIX and\n"
+#| "\t\t\t\tMS-DOS ports, autoconf\n"
+#| "\tStefan 'Sec' Zehl\tMaintainer of vim.org\n"
+msgid ""
+"\tRon Aaron\t\tWin32 GUI changes\n"
+"\tMohsin Ahmed\t\tencryption\n"
+"\tZoltan Arpadffy\t\twork on VMS port\n"
+"\tTony Andrews\t\tStevie\n"
+"\tGert van Antwerpen\tchanges for DJGPP on MS-DOS\n"
+"\tBerkeley DB(3)\t\tideas for swap file implementation\n"
+"\tKeith Bostic\t\tNvi\n"
+"\tWalter Briscoe\t\tMakefile updates, various patches\n"
+"\tRalf Brown\t\tSPAWNO library for MS-DOS\n"
+"\tRobert Colon\t\tmany useful remarks\n"
+"\tMarcin Dalecki\t\tGTK+ GUI port, toolbar icons, gettext()\n"
+"\tKayhan Demirel\t\tsent me news in Uganda\n"
+"\tChris & John Downey\txvi (ideas for multi-windows version)\n"
+"\tHenk Elbers\t\tfirst VMS port\n"
+"\tDaniel Elstner\t\tGTK+ 2 port\n"
+"\tEric Fischer\t\tMac port, 'cindent', and other improvements\n"
+"\tBenji Fisher\t\tAnswering lots of user questions\n"
+"\tBill Foster\t\tAthena GUI port\n"
+"\tGoogle\t\t\tLets me work on Vim one day a week\n"
+"\tLoic Grenie\t\txvim (ideas for multi windows version)\n"
+"\tSven Guckes\t\tVim promoter and previous WWW page maintainer\n"
+"\tDarren Hiebert\t\tExuberant ctags\n"
+"\tJason Hildebrand\tGTK+ 2 port\n"
+"\tBruce Hunsaker\t\timprovements for VMS port\n"
+"\tAndy Kahn\t\tCscope support, GTK+ GUI port\n"
+"\tOezguer Kesim\t\tMaintainer of Vim Mailing Lists\n"
+"\tAxel Kielhorn\t\twork on the Macintosh port\n"
+"\tSteve Kirkendall\tElvis\n"
+"\tRoger Knobbe\t\toriginal port to Windows NT\n"
+"\tSergey Laskavy\t\tVim's help from Moscow\n"
+"\tFelix von Leitner\tPrevious maintainer of Vim Mailing Lists\n"
+"\tDavid Leonard\t\tPort of Python extensions to Unix\n"
+"\tAvner Lottem\t\tEdit in right-to-left windows\n"
+"\tFlemming Madsen\t\tX11 client-server, various features and patches\n"
+"\tTony Mechelynck\t\tanswers many user questions\n"
+"\tPaul Moore\t\tPython interface extensions, many patches\n"
+"\tKatsuhito Nagano\tWork on multi-byte versions\n"
+"\tSung-Hyun Nam\t\tWork on multi-byte versions\n"
+"\tVince Negri\t\tWin32 GUI and generic console enhancements\n"
+"\tSteve Oualline\t\tAuthor of the first Vim book |frombook|\n"
+"\tDominique Pelle\t\tvalgrind reports and many fixes\n"
+"\tA.Politz\t\tMany bug reports and some fixes\n"
+"\tGeorge V. Reilly\tWin32 port, Win32 GUI start-off\n"
+"\tStephen Riehm\t\tbug collector\n"
+"\tStefan Roemer\t\tvarious patches and help to users\n"
+"\tRalf Schandl\t\tIBM OS/390 port\n"
+"\tOlaf Seibert\t\tDICE and BeBox version, regexp improvements\n"
+"\tMortaza Shiran\t\tFarsi patches\n"
+"\tPeter da Silva\t\ttermlib\n"
+"\tPaul Slootman\t\tOS/2 port\n"
+"\tHenry Spencer\t\tregular expressions\n"
+"\tDany St-Amant\t\tMacintosh port\n"
+"\tTim Thompson\t\tStevie\n"
+"\tG. R. (Fred) Walter\tStevie\n"
+"\tSven Verdoolaege\tPerl interface\n"
+"\tRobert Webb\t\tCommand-line completion, GUI versions, and\n"
+"\t\t\t\tlots of patches\n"
+"\tIngo Wilken\t\tTcl interface\n"
+"\tMike Williams\t\tPostScript printing\n"
+"\tJuergen Weigert\t\tLattice version, AUX improvements, UNIX and\n"
+"\t\t\t\tMS-DOS ports, autoconf\n"
+"\tStefan 'Sec' Zehl\tMaintainer of vim.org\n"
+msgstr ""
+"\tRon Aaron\t\tCambios en la interfaz gráfica de Win32\n"
+"\tZoltan Arpadffy\t\tAdaptación a VMS\n"
+"\tTony Andrews\t\tStevie\n"
+"\tGert van Antwerpen\tCambios en DJGPP para MS-DOS\n"
+"\tBerkeley DB(3)\t\tIdeas para la introducción de archivos de\n"
+"\t\t\t\tintercambio.\n"
+"\tKeith Bostic\t\tNvi\n"
+"\tWalter Briscoe\t\tActualizaciones de Makefile updates, varios\n"
+"\t\t\t\tparches.\n"
+"\tRalf Brown\t\tSBiblioteca PAWNO para MS-DOS\n"
+"\tRobert Colon\t\tApuntes valiosos\n"
+"\tMarcin Dalecki\t\tAdaptación de la interfaz gráfica GTK+,\n"
+"\t\t\t\ticonos de la barra de herramientas, gettext()\n"
+"\tKayhan Demirel\t\tMe mandó noticias desde Uganda\n"
+"\tChris & John Downey\txvi (ideas para a la versión multi-ventanas)\n"
+"\tHenk Elbers\t\tPrimera adaptación a VMS\n"
+"\tDaniel Elstner\t\tAdaptación a GTK+ 2\n"
+"\tEric Fischer\t\tAdaptación a Mac, 'cindent', y otras mejoras\n"
+"\tBenji Fisher\t\tDió respuesta a muchas preguntas de usuarios\n"
+"\tBill Foster\t\tAdaptación a la interfaz gráfica de Athena\n"
+"\tGoogle\t\t\tMe deja trabajar un día a la semana en Vim\n"
+"\tLoic Grenie\t\txvim (ideas para la versión multi-ventana)\n"
+"\tSven Guckes\t\tPromocionador de Vim y antiguo responsable de la\n"
+"\t\t\t\tpágina web.\n"
+"\tDarren Hiebert\t\tExuberantes ctags\n"
+"\tJason Hildebrand\tAdapatación a GTK+ 2\n"
+"\tBruce Hunsaker\t\tMejoras en la adaptacion a VMS\n"
+"\tAndy Kahn\t\tCompatibilidad con Cscope, adaptación a GTK+\n"
+"\tOezguer Kesim\t\tResponsable de las listas de correo de Vim\n"
+"\tAxel Kielhorn\t\tTrabajo en la adaptación a Macintosh\n"
+"\tSteve Kirkendall\tElvis\n"
+"\tRoger Knobbe\t\tAdaptación original a Windows NT\n"
+"\tSergey Laskavy\t\tAyuda de Vim desde Moscú\n"
+"\tFelix von Leitner\tResponsable anterior de las listas de correo\n"
+"\t\t\t\tde Vim.\n"
+"\tDavid Leonard\t\tAdaptación de las extensiones Python a Unix\n"
+"\tAvner Lottem\t\tVentanas de edición derecha-izquierda\n"
+"\tFlemming Madsen\t\tCliente-servidor X11, características y parches\n"
+"\tMicrosoft\t\tMe entregó una copia de DevStudio para compilar Vim\n"
+"\tPaul Moore\t\tExtensiones a la interfaz Python, muchos parches\n"
+"\tKatsuhito Nagano\tTrabajo en versiones multi-byte\n"
+"\tSung-Hyun Nam\t\tTrabajo en versiones multi-byte\n"
+"\tVince Negri\t\tMejoras en la interfaz gráfica y consola\n"
+"\t\t\t\tde Win32.\n"
+"\tSteve Oualline\t\tAutor del primer libro sobre Vim |frombook|\n"
+"\tDominique Pelle\t\tGestión de informes y arreglos en valgrind\n"
+"\tA.Politz\t\tMuchos informes de fallo y arreglos\n"
+"\tGeorge V. Reilly\tAdaptación a Win32, inicio de la interfaz\n"
+"\t\t\t\tgráfica en Win32\n"
+"\tStephen Riehm\t\tColector de informes de fallo\n"
+"\tStefan Roemer\t\tVarios parches y ayuda al usuario\n"
+"\tRalf Schandl\t\tAdaptación a IBM OS/390\n"
+"\tOlaf Seibert\t\tVersión DICE y BeBox, mejoras en las expresiones\n"
+"\t\t\t\tregulares.\n"
+"\tMortaza Shiran\t\tParches para Farsi\n"
+"\tPeter da Silva\t\ttermlib\n"
+"\tPaul Slootman\t\tAdaptación a OS/2\n"
+"\tHenry Spencer\t\tExpresiones regulares\n"
+"\tDany St-Amant\t\tAdaptación a Macintosh\n"
+"\tTim Thompson\t\tStevie\n"
+"\tG. R. (Fred) Walter\tStevie\n"
+"\tSven Verdoolaege\tInterfaz de Perl\n"
+"\tRobert Webb\t\tCompletado automático de la línea de órdenes,\n"
+"\t\t\t\tversiones de interfaz gráfica y muchos parches.\n"
+"\tIngo Wilken\t\tInterfaz para Tcl\n"
+"\tMike Williams\t\tImpresión PostScript\n"
+"\tJuergen Weigert\t\tVersión Lattice, mejoras de AUX, UNIX y\n"
+"\t\t\t\tadaptación a MS-DOS y autoconf\n"
+"\tStefan 'Sec' Zehl\tResponsable de vim.org\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:262
+msgid ""
+"I wish to thank all the people that sent me bug reports and suggestions.  "
+"The list is too long to mention them all here.  Vim would not be the same "
+"without the ideas from all these people: They keep Vim alive!"
+msgstr ""
+"Quisiera dar gracias a toda la gente que envió informes de fallo y "
+"sugerencias. La lista es demasiado larga como para mencionarlos a todos "
+"aquí. Vim no sería lo mismo sin las ideas de todas esta gente: ¡Mantienen "
+"Vim vivo!"
+
+#. type: Plain text
+#: original/TXT/intro.txt:289
+#, no-wrap
+msgid ""
+"In this documentation there are several references to other versions of Vi:\n"
+"\t\t\t\t\t\t\t*Vi* *vi*\n"
+"Vi\t\"the original\".  Without further remarks this is the version\n"
+"\tof Vi that appeared in Sun OS 4.x.  \":version\" returns\n"
+"\t\"Version 3.7, 6/7/85\".  Sometimes other versions are referred\n"
+"\tto.  Only runs under Unix.  Source code only available with a\n"
+"\tlicense.  More information on Vi can be found through:\n"
+"\t\thttp://vi-editor.org\t[doesn't currently work...]\n"
+"\t\t\t\t\t\t\t*Posix*\n"
+"Posix\tFrom the IEEE standard 1003.2, Part 2: Shell and utilities.\n"
+"\tGenerally known as \"Posix\".  This is a textual description of\n"
+"\thow Vi is supposed to work.\n"
+"\tSee |posix-compliance|.\n"
+"\t\t\t\t\t\t\t*Nvi*\n"
+"Nvi\tThe \"New\" Vi.  The version of Vi that comes with BSD 4.4 and FreeBSD.\n"
+"\tVery good compatibility with the original Vi, with a few extensions.\n"
+"\tThe version used is 1.79.  \":version\" returns \"Version 1.79\n"
+"\t(10/23/96)\".  There has been no release the last few years, although\n"
+"\tthere is a development version 1.81.\n"
+"\tSource code is freely available.\n"
+"\t\t\t\t\t\t\t*Elvis*\n"
+"Elvis\tAnother Vi clone, made by Steve Kirkendall.  Very compact but isn't\n"
+"\tas flexible as Vim.\n"
+"\tThe version used is 2.1.  It is still being developed.  Source code is\n"
+"\tfreely available.\n"
+msgstr ""
+"A lo largo de la documentación verá varias referencias a otras versiones de Vi:\n"
+"\t\t\t\t\t\t\t*Vi* *vi*\n"
+"Vi\t«El original». Sin mas detalle, esta es la versión de Vim que apareció\n"
+"\ten Sun Os 4.x. «:version» devuelve «Version 3.7, 6/7/85». A veces\n"
+"\tencontrara referencias a otras versiones. Sólo funciona bajo Unix. El\n"
+"\tcódigo sólo está disponible a través de una licencia. Puede encontrar\n"
+"\tmás información a cerca de Vi:\n"
+"\t\thttp://vi-editor.org (no funciona a día de hoy...)\n"
+"\t\t\t\t\t\t\t*Posix*\n"
+"Posix\tPertenece al estándar IEEE 1003.2. Parte 2:Consola y utilidades.\n"
+"\tGeneralmente conocido como «Posix»,  una descripción textual de cómo\n"
+"\tdebe funcionar Vi.\n"
+"\tVéase |posix-compliance|.\n"
+"\t\t\t\t\t\t\t*Nvi*\n"
+"Nvi\tEl «Nuevo» Vi. La versión de Vi que ofrece BSD 4.4 y FreeBSD.\n"
+"\tEs muy compatible con el editor original Vi, con unas cuantas\n"
+"\textensiones. La versión referida es 1.79. «:version» devuelve\n"
+"\t«Version 1.79 (10/23/96). No se ha publicado una nueva versión en\n"
+"\tlos últimos años, aunque existe una versión en desarrollo 1.81.\n"
+"\tEl código se distribuye libremente.\n"
+"\t\t\t\t\t\t\t*Elvis*\n"
+"Elvis\tOtro clon de Vi, hecho por Steve Kirkendall. Muy compacto pero\n"
+"\tmenos flexible que Vim.\n"
+"\tLa versión referida es 2.1. Aún está en desarrollo. El código se\n"
+"\tdistribuye libremente.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:292
+#, no-wrap
+msgid "4. Notation\t\t\t\t\t\t*notation*\n"
+msgstr "4. Notación\t\t\t\t\t*notación* *leyenda*\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:296
+msgid ""
+"When syntax highlighting is used to read this, text that is not typed "
+"literally is often highlighted with the Special group.  These are items in "
+"[], {} and <>, and CTRL-X."
+msgstr ""
+"Si usa el resaltado de sintaxis para leer esto, el texto que no se ha "
+"introducido literalmente será resaltado como perteneciente al grupo Special. "
+"Estos son los elementos [], {}, <> y CTRL-X."
+
+#. type: Plain text
+#: original/TXT/intro.txt:299
+msgid ""
+"Note that Vim uses all possible characters in commands.  Sometimes the [], "
+"{} and <> are part of what you type, the context should make this clear."
+msgstr ""
+"Tenga en cuenta que Vim utiliza todos los caracteres posibles en las "
+"órdenes. El contexto aclarará cuando los signos [], () y <> son parte de "
+"texto literal."
+
+#. type: Plain text
+#: original/TXT/intro.txt:302
+#, no-wrap
+msgid "[]\t\tCharacters in square brackets are optional.\n"
+msgstr "[]\t\tLos caracteres entre corchetes son opcionales.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:312
+#, no-wrap
+msgid ""
+"\t\t\t\t\t\t    *count* *[count]* *E489*\n"
+"[count]\t\tAn optional number that may precede the command to multiply\n"
+"\t\tor iterate the command.  If no number is given, a count of one\n"
+"\t\tis used, unless otherwise noted.  Note that in this manual the\n"
+"\t\t[count] is not mentioned in the description of the command,\n"
+"\t\tbut only in the explanation.  This was done to make the\n"
+"\t\tcommands easier to look up.  If the 'showcmd' option is on,\n"
+"\t\tthe (partially) entered count is shown at the bottom of the\n"
+"\t\twindow.  You can use <Del> to erase the last digit (|N<Del>|).\n"
+msgstr ""
+"\t\t\t\t\t\t   *[número]* *[count]* *E489*\n"
+"\t\tUn número opcional que puede preceder a la orden para\n"
+"\t\tmultiplicar o cambiar la orden. Si no introduce un número, se\n"
+"\t\tusará uno. Tenga en cuenta que en este manual, el [número]\n"
+"\t\tno se menciona en las descripciones de las órdenes. La razón\n"
+"\t\tpara esto es facilitar la lectura de las órdenes. Si la opción\n"
+"\t\testa activada, el número (parcialmente) introducido se\n"
+"\t\tmostrará en la parte inferior de la ventana. Puede usar <Supr>\n"
+"\t\tpara borrar el último dígito (|N<Supr>|).\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:323
+#, no-wrap
+msgid ""
+"\t\t\t\t\t\t\t*[quotex]*\n"
+"[\"x]\t\tAn optional register designation where text can be stored.\n"
+"\t\tSee |registers|.  The x is a single character between 'a' and\n"
+"\t\t'z' or 'A' and 'Z' or '\"', and in some cases (with the put\n"
+"\t\tcommand) between '0' and '9', '%', '#', or others.  The\n"
+"\t\tuppercase and lowercase letter designate the same register,\n"
+"\t\tbut the lowercase letter is used to overwrite the previous\n"
+"\t\tregister contents, while the uppercase letter is used to\n"
+"\t\tappend to the previous register contents.  Without the \"\"x\" or\n"
+"\t\twith \"\"\"\" the stored text is put into the unnamed register.\n"
+msgstr ""
+"\t\t\t\t\t\t\t *quotex*\n"
+"[\"x]\t\tUn destino opcional para un registro dónde guardar el texto.\n"
+"\t\tConsulte |registers|. La x es un único carácter entre 'a'\n"
+"\t\ty 'z', o 'A' y 'Z' o '\"', y en algunos casos (con la orden\n"
+"\t\t«put») entre '0' y '9', '%', '#', u otros. Las mayúsculas y\n"
+"\t\ty minúsculas designan el mismo registro, pero la minúscula se\n"
+"\t\tusa para borrar los contenidos anteriores del registro, y\n"
+"\t\tla mayúscula para añadir contenido. El texto se almacenará\n"
+"\t\ten un registro sin nombre en caso de no usar «\"x» o «\"\"».\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:329
+#, no-wrap
+msgid ""
+"\t\t\t\t\t\t\t*{}*\n"
+"{}\t\tCurly braces denote parts of the command which must appear,\n"
+"\t\tbut which can take a number of different values.  The\n"
+"\t\tdifferences between Vim and Vi are also given in curly braces\n"
+"\t\t(this will be clear from the context).\n"
+msgstr ""
+"\t\t\t\t\t\t\t*{}*\n"
+"{}\t\tLos corchetes indican qué partes de una orden son\n"
+"\t\tobligatorios, pero que pueden tomar distintos valores. Las\n"
+"\t\tdiferencias entre Vim y Vi también se resaltan con corchetes\n"
+"\t\t(el contexto aclarará esto).\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:335
+#, no-wrap
+msgid ""
+"\t\t\t\t\t\t\t*{char1-char2}*\n"
+"{char1-char2}\tA single character from the range char1 to char2.  For\n"
+"\t\texample: {a-z} is a lowercase letter.  Multiple ranges may be\n"
+"\t\tconcatenated.  For example, {a-zA-Z0-9} is any alphanumeric\n"
+"\t\tcharacter.\n"
+msgstr ""
+"\t\t\t\t\t\t\t*{car1-car2}*\n"
+"{car1-car2}\tUn único carácter entre el rango car1 y car2. Por ejemplo:\n"
+"\t\t{a-z} simboliza un carácter en minúscula. Puede encadenar\n"
+"\t\tvarios rangos. Por ejemplo, {a,zA-Z0-9} es cualquier carácter\n"
+"\t\talfanumérico.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:365
+#, no-wrap
+msgid ""
+"\t\t\t\t\t\t*{motion}* *movement*\n"
+"{motion}\tA command that moves the cursor.  These are explained in\n"
+"\t\t|motion.txt|.  Examples:\n"
+"\t\t\tw\t\tto start of next word\n"
+"\t\t\tb\t\tto begin of current word\n"
+"\t\t\t4j\t\tfour lines down\n"
+"\t\t\t/The<CR>\tto next occurrence of \"The\"\n"
+"\t\tThis is used after an |operator| command to move over the text\n"
+"\t\tthat is to be operated upon.\n"
+"\t\t- If the motion includes a count and the operator also has a\n"
+"\t\t  count, the two counts are multiplied.  For example: \"2d3w\"\n"
+"\t\t  deletes six words.\n"
+"\t\t- The motion can be backwards, e.g. \"db\" to delete to the\n"
+"\t\t  start of the word.\n"
+"\t\t- The motion can also be a mouse click.  The mouse is not\n"
+"\t\t  supported in every terminal though.\n"
+"\t\t- The \":omap\" command can be used to map characters while an\n"
+"\t\t  operator is pending.\n"
+"\t\t- Ex commands can be used to move the cursor.  This can be\n"
+"\t\t  used to call a function that does some complicated motion.\n"
+"\t\t  The motion is always characterwise exclusive, no matter\n"
+"\t\t  what \":\" command is used.  This means it's impossible to\n"
+"\t\t  include the last character of a line without the line break\n"
+"\t\t  (unless 'virtualedit' is set).\n"
+"\t\t  If the Ex command changes the text before where the operator\n"
+"\t\t  starts or jumps to another buffer the result is\n"
+"\t\t  unpredictable.  It is possible to change the text further\n"
+"\t\t  down.  Jumping to another buffer is possible if the current\n"
+"\t\t  buffer is not unloaded.\n"
+msgstr ""
+"\t\t\t\t\t\t*{moción}* *desplazamiento*\n"
+"{moción}\tUna orden que desplaza el cursor. Se explican\n"
+"\t\ten |motion.txt|. Ejemplos:\n"
+"\t\t\tw\t\tDesplazarse al inicio del siguiente\n"
+"\t\t\t\t\tpalabra.\n"
+"\t\t\tb\t\tAl inicio de la palabra actual.\n"
+"\t\t\t4j\t\tCuatro líneas hacia abajo.\n"
+"\t\t\t/El<CR>\t\tLa primera aparición de «El».\n"
+"\t\tEsto se usa después de una orden |operator| (operador) para\n"
+"\t\tdesplazarse sobre el texto en edición.\n"
+"\t\t- Si un elemento de moción incluye un número, y el operador\n"
+"\t\t  también incluye un número, ambos se multiplicarán. Por\n"
+"\t\t  ejemplo, «2d3w» borra 6 palabras.\n"
+"\t\t- Puede desplazarse en sentido inverso. Por ejemplo, «db» para\n"
+"\t\t  borrar hasta el inicio de la palabra.\n"
+"\t\t- El movimiento puede también ser una pulsación del ratón.\n"
+"\t\t  Por otra parte, no todas las terminales son compatibles con\n"
+"\t\t  el ratón.\n"
+"\t\t- Las órdenes Ex se pueden usar para desplazar el cursor,\n"
+"\t\t  lo cual permite invocar una función que realice alguna\n"
+"\t\t  moción compleja. La moción afecta al carácter, sin\n"
+"\t\t  importar que orden «:» use. Esto significa es\n"
+"\t\t  imposible incluir el último carácter de una línea sin\n"
+"\t\t  el retorno de línea (a menos que defina 'virtualedit').\n"
+"\t\t  Si la orden Ex cambia el texto antes de que se inicie el\n"
+"\t\t  operador, o salta a otro búfer, obtendrá resultados\n"
+"\t\t  impredecibles. Es posible cambiar el texto a\n"
+"\t\t  continuación. Puede saltar a otro búfer si el búfer\n"
+"\t\t  actual no está cargado.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:373
+#, no-wrap
+msgid ""
+"\t\t\t\t\t\t\t*{Visual}*\n"
+"{Visual}\tA selected text area.  It is started with the \"v\", \"V\", or\n"
+"\t\tCTRL-V command, then any cursor movement command can be used\n"
+"\t\tto change the end of the selected text.\n"
+"\t\tThis is used before an |operator| command to highlight the\n"
+"\t\ttext that is to be operated upon.\n"
+"\t\tSee |Visual-mode|.\n"
+msgstr ""
+"\t\t\t\t\t\t\t*{Visual}*\n"
+"{Visual}\tUn área de texto seleccionado. Se inicia con «v», «V», o\n"
+"\t\tla órden CTRL-V. Podrá usar cualquier tecla de moción para\n"
+"\t\tcambiar la ubicación del final del texto seleccionado.\n"
+"\t\tEsto se usa antes de una orden |operator| (operador) para\n"
+"\t\tresaltar el texto afectado.\n"
+"\t\tConsulte |Visual-mode|.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:377
+#, no-wrap
+msgid ""
+"\t\t\t\t\t\t\t*<character>*\n"
+"<character>\tA special character from the table below, optionally with\n"
+"\t\tmodifiers, or a single ASCII character with modifiers.\n"
+msgstr ""
+"\t\t\t\t\t\t*<carácter>* *<character>*\n"
+"<carácter>\tUn carácter especial de la tabla a continuación, que acepta\n"
+"\t\tmodificadores opciones, o un único carácter ASCII sin\n"
+"\t\tmodificadores.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:380
+#, no-wrap
+msgid ""
+"\t\t\t\t\t\t\t*'character'*\n"
+"'c'\t\tA single ASCII character.\n"
+msgstr ""
+"\t\t\t\t\t\t\t*'character'*\n"
+"'c'\t\tUn único carácter ASCII.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:387
+#, no-wrap
+msgid ""
+"\t\t\t\t\t\t\t*CTRL-{char}*\n"
+"CTRL-{char}\t{char} typed as a control character; that is, typing {char}\n"
+"\t\twhile holding the CTRL key down.  The case of {char} does not\n"
+"\t\tmatter; thus CTRL-A and CTRL-a are equivalent.  But on some\n"
+"\t\tterminals, using the SHIFT key will produce another code,\n"
+"\t\tdon't use it then.\n"
+msgstr ""
+"\t\t\t\t\t\t\t*CTRL-{car}*\n"
+"CTRL-{car}\tUn {carácter} introducido como un carácter de control; esto es\n"
+"\t\tpulsar {car} mientras presiona la tecla CTRL. El caso del\n"
+"\t\t{car} no importa; por ello, CTRL-A y CTRL-a son lo mismo.\n"
+"\t\tSin embargo, puede que pulsar la tecla SHIFT produzca otro\n"
+"\t\tcódigo. No lo use en este caso.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:391
+#, no-wrap
+msgid ""
+"\t\t\t\t\t\t\t*'option'*\n"
+"'option'\tAn option, or parameter, that can be set to a value, is\n"
+"\t\tenclosed in single quotes.  See |options|.\n"
+msgstr ""
+"\t\t\t\t\t\t\t*'option'*\n"
+"'opción'\tUna opción o parámetro que puede definir con un valor\n"
+"\t\taparecerá entre comillas simples. Consulte |options|.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:395
+#, no-wrap
+msgid ""
+"\t\t\t\t\t\t\t*quotecommandquote*\n"
+"\"command\"\tA reference to a command that you can type is enclosed in\n"
+"\t\tdouble quotes.\n"
+msgstr ""
+"\t\t\t\t\t\t\t*quotecommandquote*\n"
+"\"orden\"\t\tLas referencias a una orden aparecerán entre comillas dobles.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:400
+#, no-wrap
+msgid ""
+"\t\t\t\t\t*key-notation* *key-codes* *keycodes*\n"
+"These names for keys are used in the documentation.  They can also be used\n"
+"with the \":map\" command (insert the key name by pressing CTRL-K and then the\n"
+"key you want the name for).\n"
+msgstr ""
+"\t\t\t\t*notación-teclas* *teclas-tabla*\n"
+"*leyendatabla*\n"
+"Éstos son los nombres de las teclas en la documentación. También puede\n"
+"usarlos con la orden «:map» (inserte el nombre de la tecla pulsando CTRL-K y\n"
+"la tecla cuyo nombre desea).\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:402
+#, no-wrap
+msgid ""
+"notation\tmeaning\t\t    equivalent\tdecimal value(s)\t~\n"
+"-----------------------------------------------------------------------\n"
+msgstr ""
+"notación\tsignificado\t    equivalente\t    valor(es) decimal  ~\n"
+"-----------------------------------------------------------------------\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:420
+#, no-wrap
+msgid ""
+"<Nul>\t\tzero\t\t\tCTRL-@\t  0 (stored as 10) *<Nul>*\n"
+"<BS>\t\tbackspace\t\tCTRL-H\t  8\t*backspace*\n"
+"<Tab>\t\ttab\t\t\tCTRL-I\t  9\t*tab* *Tab*\n"
+"\t\t\t\t\t\t\t*linefeed*\n"
+"<NL>\t\tlinefeed\t\tCTRL-J\t 10 (used for <Nul>)\n"
+"<FF>\t\tformfeed\t\tCTRL-L\t 12\t*formfeed*\n"
+"<CR>\t\tcarriage return\t\tCTRL-M\t 13\t*carriage-return*\n"
+"<Return>\tsame as <CR>\t\t\t\t*<Return>*\n"
+"<Enter>\t\tsame as <CR>\t\t\t\t*<Enter>*\n"
+"<Esc>\t\tescape\t\t\tCTRL-[\t 27\t*escape* *<Esc>*\n"
+"<Space>\t\tspace\t\t\t\t 32\t*space*\n"
+"<lt>\t\tless-than\t\t<\t 60\t*<lt>*\n"
+"<Bslash>\tbackslash\t\t\\\t 92\t*backslash* *<Bslash>*\n"
+"<Bar>\t\tvertical bar\t\t|\t124\t*<Bar>*\n"
+"<Del>\t\tdelete\t\t\t\t127\n"
+"<CSI>\t\tcommand sequence intro  ALT-Esc 155\t*<CSI>*\n"
+"<xCSI>\t\tCSI when typed in the GUI\t\t*<xCSI>*\n"
+msgstr ""
+"<Nul>\t\tcero\t\t\tCTRL-@\t  0 (stored as 10) *<Nul>*\n"
+"<BS>\t\ttecla de retroceso\tCTRL-H\t  8\t*backspace*\n"
+"<Tab>\t\ttabulado\t\tCTRL-I\t  9\t*tab* *Tab*\n"
+"\t\t\t\t\t\t\t*linefeed*\n"
+"<NL>\t\tavanzar una línea\tCTRL-J\t 10 (usado por <Nul>)\n"
+"<FF>\t\tformfeed\t\tCTRL-L\t 12\t*formfeed*\n"
+"<CR>\t\tretorno de línea\tCTRL-M\t 13\t*carriage-return*\n"
+"<Return>\tidéntico a <CR>\t\t\t\t*<Return>*\n"
+"<Enter>\t\tidéntico a <CR>\t\t\t\t*<Enter>*\n"
+"<Esc>\t\tescape\t\t\tCTRL-[\t 27\t*escape* *<Esc>*\n"
+"<Space>\t\tespacio\t\t\t\t 32\t*space*\n"
+"<lt>\t\tmenos que\t\t<\t 60\t*<lt>*\n"
+"<Bslash>\tbarra inversa\t\t\\\t 92\t*backslash* *<Bslash>*\n"
+"<Bar>\t\tbarra vertical\t\t|\t124\t*<Bar>*\n"
+"<Del>\t\tborrar\t\t\t\t127\n"
+"<CSI>\t\tcommand sequence intro \tALT-Esc 155\t*<CSI>*\n"
+"<xCSI>\t\tCSI tecleado en la interfaz gráfica\t*<xCSI>*\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:423
+#, no-wrap
+msgid ""
+"<EOL>\t\tend-of-line (can be <CR>, <LF> or <CR><LF>,\n"
+"\t\tdepends on system and 'fileformat')\t*<EOL>*\n"
+msgstr ""
+"<EOL>\t\t«end-of-line» (fin de línea, puede ser <CR>, <LF>\n"
+"\t\to <CR><LF>, dependiendo del sistema y de 'fileformat')\n"
+"\t\t<EOL>\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:460
+#, no-wrap
+msgid ""
+"<Up>\t\tcursor-up\t\t\t*cursor-up* *cursor_up*\n"
+"<Down>\t\tcursor-down\t\t\t*cursor-down* *cursor_down*\n"
+"<Left>\t\tcursor-left\t\t\t*cursor-left* *cursor_left*\n"
+"<Right>\t\tcursor-right\t\t\t*cursor-right* *cursor_right*\n"
+"<S-Up>\t\tshift-cursor-up\n"
+"<S-Down>\tshift-cursor-down\n"
+"<S-Left>\tshift-cursor-left\n"
+"<S-Right>\tshift-cursor-right\n"
+"<C-Left>\tcontrol-cursor-left\n"
+"<C-Right>\tcontrol-cursor-right\n"
+"<F1> - <F12>\tfunction keys 1 to 12\t\t*function_key* *function-key*\n"
+"<S-F1> - <S-F12> shift-function keys 1 to 12\t*<S-F1>*\n"
+"<Help>\t\thelp key\n"
+"<Undo>\t\tundo key\n"
+"<Insert>\tinsert key\n"
+"<Home>\t\thome\t\t\t\t*home*\n"
+"<End>\t\tend\t\t\t\t*end*\n"
+"<PageUp>\tpage-up\t\t\t\t*page_up* *page-up*\n"
+"<PageDown>\tpage-down\t\t\t*page_down* *page-down*\n"
+"<kHome>\t\tkeypad home (upper left)\t*keypad-home*\n"
+"<kEnd>\t\tkeypad end (lower left)\t\t*keypad-end*\n"
+"<kPageUp>\tkeypad page-up (upper right)\t*keypad-page-up*\n"
+"<kPageDown>\tkeypad page-down (lower right)\t*keypad-page-down*\n"
+"<kPlus>\t\tkeypad +\t\t\t*keypad-plus*\n"
+"<kMinus>\tkeypad -\t\t\t*keypad-minus*\n"
+"<kMultiply>\tkeypad *\t\t\t*keypad-multiply*\n"
+"<kDivide>\tkeypad /\t\t\t*keypad-divide*\n"
+"<kEnter>\tkeypad Enter\t\t\t*keypad-enter*\n"
+"<kPoint>\tkeypad Decimal point\t\t*keypad-point*\n"
+"<k0> - <k9>\tkeypad 0 to 9\t\t\t*keypad-0* *keypad-9*\n"
+"<S-...>\t\tshift-key\t\t\t*shift* *<S-*\n"
+"<C-...>\t\tcontrol-key\t\t\t*control* *ctrl* *<C-*\n"
+"<M-...>\t\talt-key or meta-key\t\t*meta* *alt* *<M-*\n"
+"<A-...>\t\tsame as <M-...>\t\t\t*<A-*\n"
+"<D-...>\t\tcommand-key (Macintosh only)\t*<D-*\n"
+"<t_xx>\t\tkey with \"xx\" entry in termcap\n"
+"-----------------------------------------------------------------------\n"
+msgstr ""
+"<Up>\t\tCursor arriba\t\t*cursor-arriba* *cursor-up* *cursor_up*\n"
+"<Down>\t\tCursor abajo\t\t*cursor-abajo* *cursor-down* *cursor_down*\n"
+"<Left>\t\tCursor izq.\t*cursor-izq* *cursor-left* *cursor_left*\n"
+"<Right>\t\tCursor der.\t*cursor-der* *cursor-right* *cursor_right*\n"
+"<S-Up>\t\tShift + cursor arriba\n"
+"<S-Down>\tShift + cursor abajo\n"
+"<S-Left>\tShift + cursor izq.\n"
+"<S-Right>\tShift + cursor der.\n"
+"<C-Left>\tControl + cursor izq.\n"
+"<C-Right>\tControl + cursor der.\n"
+"<F1> - <F12>\tTeclas F 1-12 *tecla-de-función* *function_key* *function-key*\n"
+"<S-F1> - <S-F12> Shift + teclas de función 1 a 12\t*<S-F1>*\n"
+"<Help>\t\tTecla de ayuda («help»)\n"
+"<Undo>\t\tTecla deshacer\n"
+"<Insert>\tTecla insertar\n"
+"<Home>\t\tInicio («Home»)\t\t\t\t*inicio* *home*\n"
+"<End>\t\tFin\t\t\t\t\t*fin* *end*\n"
+"<PageUp>\tRetroceder página\t\t\t*repág* *page_up* *page-up*\n"
+"<PageDown>\tAvanzar página\t\t*avpág* *page_down* *page-down*\n"
+"<kHome>\t\tInicio bloque num (superior izq.)\t*keypad-home*\n"
+"<kEnd>\t\tFin bloque num. (inferior izq.)\t\t*keypad-end*\n"
+"<kPageUp>\tRepág. bloque num. (superior der.)\t*keypad-page-up*\n"
+"<kPageDown>\tAvpág bloque num. (inferior der.)\t*keypad-page-down*\n"
+"<kPlus>\t\t«+» bloque num.\t\t\t\t*keypad-plus*\n"
+"<kMinus>\t«-» bloque num.\t\t\t\t*keypad-minus*\n"
+"<kMultiply>\t«*» bloque num.\t\t\t\t*keypad-multiply*\n"
+"<kDivide>\t«/» bloque num.\t\t\t\t*keypad-divide*\n"
+"<kEnter>\tIntro bloque num.\t\t\t*keypad-enter*\n"
+"<kPoint>\tPunto «.» bloque num.\t\t\t*keypad-point*\n"
+"<k0> - <k9>\t0 a 9 bloque num.\t\t\t*keypad-0* *keypad-9*\n"
+"<S-...>\t\tShift-tecla\t\t\t\t*shift* *<S-*\n"
+"<C-...>\t\tControl-tecla\t\t\t\t*control* *ctrl* *<C-*\n"
+"<M-...>\t\tTecla Alt-key o meta tecla\t\t*meta* *alt* *<M-*\n"
+"<A-...>\t\tIgual a <M-...>\t\t\t\t*<A-*\n"
+"<D-...>\t\tTecla de orden (sólo Macintosh)\t\t*<D-*\n"
+"<t_xx>\t\tTecla con entrada termcap de «xx»\n"
+"-----------------------------------------------------------------------\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:466
+msgid ""
+"Note: The shifted cursor keys, the help key, and the undo key are only "
+"available on a few terminals.  On the Amiga, shifted function key 10 "
+"produces a code (CSI) that is also used by key sequences.  It will be "
+"recognized only after typing another key."
+msgstr ""
+"Nota: Las teclas de movimiento, la tecla de ayuda y la tecla deshacer "
+"combinados con la tecla shift sólo están disponibles en algunas terminales. "
+"En Amiga, la tecla función 10 con shift produce un código (CSI) también "
+"empleado en secuencias de teclas. Sólo se reconocerá tras pulsar otra tecla."
+
+#. type: Plain text
+#: original/TXT/intro.txt:471
+msgid ""
+"Note: There are two codes for the delete key.  127 is the decimal ASCII "
+"value for the delete key, which is always recognized.  Some delete keys send "
+"another value, in which case this value is obtained from the termcap entry "
+"\"kD\".  Both values have the same effect.  Also see |:fixdel|."
+msgstr ""
+"Nota: Hay dos códigos para la tecla suprimir. El valor decimal ASCII de la "
+"tecla suprime es 127, éste siempre se reconocerá. Algunas teclas suprimir "
+"envían otro valor, en cuyo caso el valor se obtiene de la entrada de termcap "
+"«kD». Ambos valores tienen el mismo efecto. Véase también |:fixdel|."
+
+#. type: Plain text
+#: original/TXT/intro.txt:478
+msgid ""
+"Note: The keypad keys are used in the same way as the corresponding \"normal"
+"\" keys.  For example, <kHome> has the same effect as <Home>.  If a keypad "
+"key sends the same raw key code as its non-keypad equivalent, it will be "
+"recognized as the non-keypad code.  For example, when <kHome> sends the same "
+"code as <Home>, when pressing <kHome> Vim will think <Home> was pressed.  "
+"Mapping <kHome> will not work then."
+msgstr ""
+"Nota: El uso de las teclas del teclado numérico es idéntico a sus teclas "
+"«normales» correspondientes. Por ejemplo, <kHome> tiene el mismo efecto que "
+"<Home>. Si una tecla del bloque envía el mismo código que su equivalente "
+"externo al bloque numérico, será reconocido como un código que no pertenece "
+"al bloque. Por ejemplo, cuando <kHome> envía el mismo código que <Home>, Vim "
+"creerá que pulsa <Home> cuando en realidad pulsa <kHome>. De ser así, los "
+"mapeos con <kHome> no funcionarán."
+
+#. type: Plain text
+#: original/TXT/intro.txt:497
+#, no-wrap
+msgid ""
+"\t\t\t\t\t\t\t\t*<>*\n"
+"Examples are often given in the <> notation.  Sometimes this is just to make\n"
+"clear what you need to type, but often it can be typed literally, e.g., with\n"
+"the \":map\" command.  The rules are:\n"
+" 1.  Any printable characters are typed directly, except backslash and '<'\n"
+" 2.  A backslash is represented with \"\\\\\", double backslash, or \"<Bslash>\".\n"
+" 3.  A real '<' is represented with \"\\<\" or \"<lt>\".  When there is no\n"
+"     confusion possible, a '<' can be used directly.\n"
+" 4.  \"<key>\" means the special key typed.  This is the notation explained in\n"
+"     the table above.  A few examples:\n"
+"\t   <Esc>\t\tEscape key\n"
+"\t   <C-G>\t\tCTRL-G\n"
+"\t   <Up>\t\t\tcursor up key\n"
+"\t   <C-LeftMouse>\tControl- left mouse click\n"
+"\t   <S-F11>\t\tShifted function key 11\n"
+"\t   <M-a>\t\tMeta- a  ('a' with bit 8 set)\n"
+"\t   <M-A>\t\tMeta- A  ('A' with bit 8 set)\n"
+"\t   <t_kd>\t\t\"kd\" termcap entry (cursor down key)\n"
+msgstr ""
+"\t\t\t\t\t\t\t\t*<>*\n"
+"A menudo, los ejemplos aparecen con la notación <>. Generalmente sirve para\n"
+"aclarar lo que tiene que pulsar, pero a menudo puede introducirlos\n"
+"literalmente, por ejemplo con la orden «:map». Las reglas son:\n"
+" 1. Puede introducir todo carácter imprimible directamente, a excepción de\n"
+"    de la barra inversa y «<».\n"
+" 2. Un barra inversa se representa con «\\\\», doble barra inversa o <Bslash>.\n"
+" 3. Una «<» real se representa con «\\<» o <lt>. Puede usar un «<» de no\n"
+"    existir confusión posible.\n"
+" 4. <key> simboliza la tecla especial pulsada. Esta es la notación presente\n"
+"    en la tabla inferior. Ejemplos:\n"
+"\t<Esc>\t\t\tTecla escape\n"
+"\t<C-G>\t\t\tCTRL-G\n"
+"\t<Up>\t\t\tTecla de dirección arriba\n"
+"\t<C-LeftMouse>\t\tControl + botón izq. del ratón\n"
+"\t<S-F11>\t\t\tTecla de función 11 + shift\n"
+"\t<M-a>\t\t\tMeta- a («a» 8 bits)\n"
+"\t<M-A>\t\t\tMeta- A («A» 8bits)\n"
+"\t<t_kd>\t\t\tLa entrada termacap de «kd» (tecla de\n"
+"\t\t\t\tdirección abajo)\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:504
+#, no-wrap
+msgid ""
+"If you want to use the full <> notation in Vim, you have to make sure the '<'\n"
+"flag is excluded from 'cpoptions' (when 'compatible' is not set, it already is\n"
+"by default). >\n"
+"\t:set cpo-=<\n"
+"The <> notation uses <lt> to escape the special meaning of key names.  Using a\n"
+"backslash also works, but only when 'cpoptions' does not include the 'B' flag.\n"
+msgstr ""
+"Si desea usar la notación <> completa con Vim, asegúrese que la marca «<»\n"
+"está excluida de 'cpoptions' (predeterminado si 'compatible' no está\n"
+"activado): >\n"
+"\t:set cpo-=<\n"
+"La notación <> usa <lt> para escapar el significado especial de nombres de\n"
+"tecla. También puede usar una barra inversa pero sólo si 'cpoptions' no\n"
+"incluye la marca 'B'.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:512
+#, no-wrap
+msgid ""
+"Examples for mapping CTRL-H to the six characters \"<Home>\": >\n"
+"\t:imap <C-H> \\<Home>\n"
+"\t:imap <C-H> <lt>Home>\n"
+"The first one only works when the 'B' flag is not in 'cpoptions'.  The second\n"
+"one always works.\n"
+"To get a literal \"<lt>\" in a mapping: >\n"
+"\t:map <C-L> <lt>lt>\n"
+msgstr ""
+"Ejemplos para mapear CTRL-H a los seis caracteres «<Home>»: >\n"
+"\t:imap <C-H> \\<Home>\n"
+"\t:imap <C-H> <lt>Home>\n"
+"El primero sólo funciona si la marca 'B' no está en 'cpoptions'. El segundo\n"
+"siempre funciona.\n"
+"Para obtener un <lt> en un mapeo: >\n"
+"\t:map <C-L> <lt>lt>\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:517
+msgid ""
+"For mapping, abbreviation and menu commands you can then copy-paste the "
+"examples and use them directly.  Or type them literally, including the '<' "
+"and '>' characters.  This does NOT work for other commands, like \":set\" "
+"and \":autocmd\"!"
+msgstr ""
+"Puede copiar y pegar los ejemplos directamente para los mapeos, abreviaturas "
+"y órdenes de menú. O también introducirlos literalmente, incluyendo los "
+"caracteres «<» y «>». ¡Esto NO funciona con otras órdenes, como «:set» y «:"
+"autocmd».!"
+
+#. type: Plain text
+#: original/TXT/intro.txt:520
+#, no-wrap
+msgid "5. Modes, introduction\t\t\t\t*vim-modes-intro* *vim-modes*\n"
+msgstr "5. Introducción a los modos\t*modos-vim* *vim-modes-intro* *vim-modes*\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:522
+msgid "Vim has six BASIC modes:"
+msgstr "Vim posee seis modos BÁSICOS:"
+
+#. type: Plain text
+#: original/TXT/intro.txt:528
+#, no-wrap
+msgid ""
+"\t\t\t\t\t*Normal* *Normal-mode* *command-mode*\n"
+"Normal mode\t\tIn Normal mode you can enter all the normal editor\n"
+"\t\t\tcommands.  If you start the editor you are in this\n"
+"\t\t\tmode (unless you have set the 'insertmode' option,\n"
+"\t\t\tsee below).  This is also known as command mode.\n"
+msgstr ""
+"\t\t\t\t\t*Normal* *modo-Normal* *Normal-mode* *command-mode*\n"
+"Modo Normal\t\tEn modo normal puede introducir todas las órdenes\n"
+"\t\t\tnormales de un editor. Es el modo de arranque\n"
+"\t\t\tpredeterminado (a menos que defina la opción\n"
+"\t\t\t'insertmode', véase más abajo) También se conoce\n"
+"\t\t\tcomo el modo de órdenes.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:535
+#, no-wrap
+msgid ""
+"Visual mode\t\tThis is like Normal mode, but the movement commands\n"
+"\t\t\textend a highlighted area.  When a non-movement\n"
+"\t\t\tcommand is used, it is executed for the highlighted\n"
+"\t\t\tarea.  See |Visual-mode|.\n"
+"\t\t\tIf the 'showmode' option is on \"-- VISUAL --\" is shown\n"
+"\t\t\tat the bottom of the window.\n"
+msgstr ""
+"Modo Visual\t\tEs similar al modo Normal, pero las órdenes de\n"
+"\t\t\tmovimiento extienden un área resaltada. Cuando use\n"
+"\t\t\tuna orden que no sea de moción, éste afectará a toda\n"
+"\t\t\tel área resaltada. Consulte |Visual-mode|.\n"
+"\t\t\tSi la opción 'showmode' está activada, verá \n"
+"\t\t\t«-- VISUAL --» en la parte inferior de la ventana.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:541
+#, no-wrap
+msgid ""
+"Select mode\t\tThis looks most like the MS-Windows selection mode.\n"
+"\t\t\tTyping a printable character deletes the selection\n"
+"\t\t\tand starts Insert mode.  See |Select-mode|.\n"
+"\t\t\tIf the 'showmode' option is on \"-- SELECT --\" is shown\n"
+"\t\t\tat the bottom of the window.\n"
+msgstr ""
+"Modo seleccionar\t\tSimilar al modo de selección de MS-Windows.\n"
+"\t\t\tTeclear un carácter imprimible borra la selección\n"
+"\t\t\te inicia el modo Insertar. Consulte |Select-mode|.\n"
+"\t\t\tSi la opción 'showmode' esta activada, verá\n"
+"\t\t\t«-- SELECT --» en la parte inferior de la ventana.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:546
+#, no-wrap
+msgid ""
+"Insert mode\t\tIn Insert mode the text you type is inserted into the\n"
+"\t\t\tbuffer.  See |Insert-mode|.\n"
+"\t\t\tIf the 'showmode' option is on \"-- INSERT --\" is shown\n"
+"\t\t\tat the bottom of the window.\n"
+msgstr ""
+"Modo Insertar\t\tEn el modo Insertar, el texto que teclee\n"
+"\t\t\taparecerá en el búfer. Consulte |Insert-mode|.\n"
+"\t\t\tSi la opción 'showmode' esta activada, verá\n"
+"\t\t\t«-- INSERT --» en la parte inferior de la ventana.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:552
+#, no-wrap
+msgid ""
+"Command-line mode\tIn Command-line mode (also called Cmdline mode) you\n"
+"Cmdline mode\t\tcan enter one line of text at the bottom of the\n"
+"\t\t\twindow.  This is for the Ex commands, \":\", the pattern\n"
+"\t\t\tsearch commands, \"?\" and \"/\", and the filter command,\n"
+"\t\t\t\"!\".  |Cmdline-mode|\n"
+msgstr ""
+"Modo Línea de órdenes\tEn este modo (también llamado «Cmdline mode»)\n"
+"Cmdline mode\t\tpuede introducir una línea de texto en la parte\n"
+"\t\t\tinferior de la ventana. Ésto es para las órdenes\n"
+"\t\t\tEx, «:», las órdenes de búsqueda de patrón, «?» y\n"
+"\t\t\t«/», y la orden de filtrado, «!». |Cmdline-mode|\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:556
+#, no-wrap
+msgid ""
+"Ex mode\t\t\tLike Command-line mode, but after entering a command\n"
+"\t\t\tyou remain in Ex mode.  Very limited editing of the\n"
+"\t\t\tcommand line.  |Ex-mode|\n"
+msgstr ""
+"Modo Ex\t\t\tEs similar al modo Línea de órdenes, pero\n"
+"\t\t\tpermanecerá en modo Ex después de ejecutar la orden.\n"
+"\t\t\tOfrece una edición limitada de la línea de órdenes.\n"
+"\t\t\t|Ex-mode|\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:558
+msgid "There are six ADDITIONAL modes.  These are variants of the BASIC modes:"
+msgstr "Existen otros seis modos adicionales, variantes de los modos básicos:"
+
+#. type: Plain text
+#: original/TXT/intro.txt:563
+#, no-wrap
+msgid ""
+"\t\t\t\t*Operator-pending* *Operator-pending-mode*\n"
+"Operator-pending mode\tThis is like Normal mode, but after an operator\n"
+"\t\t\tcommand has started, and Vim is waiting for a {motion}\n"
+"\t\t\tto specify the text that the operator will work on.\n"
+msgstr ""
+"\t\t\t\t*Operator-pending* *Operator-pending-mode*\n"
+"Modo Operator-pending\tEs similar al modo Normal, pero se inicia tras una\n"
+"\t\t\torden de operador, tras el cual Vim esperará a un\n"
+"\t\t\tmovimiento {motion} para especificar el texto\n"
+"\t\t\tafectado por el operador.\n"
+"\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:570
+#, no-wrap
+msgid ""
+"Replace mode\t\tReplace mode is a special case of Insert mode.  You\n"
+"\t\t\tcan do the same things as in Insert mode, but for\n"
+"\t\t\teach character you enter, one character of the existing\n"
+"\t\t\ttext is deleted.  See |Replace-mode|.\n"
+"\t\t\tIf the 'showmode' option is on \"-- REPLACE --\" is\n"
+"\t\t\tshown at the bottom of the window.\n"
+msgstr ""
+"Modo Reemplazar\t\tEl modo Reemplazar es un tipo especial del modo\n"
+"\t\t\tInsertar. Puede hacer las mismas cosas que en el modo\n"
+"\t\t\tInsertar, pero sustituirá un carácter existente por\n"
+"\t\t\tcada carácter que inserte. Consulte |Replace-mode|.\n"
+"\t\t\tSi la opción 'showmode' está activada, verá\n"
+"\t\t\t«-- REPLACE --» en la base de la ventana.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:576
+#, no-wrap
+msgid ""
+"Virtual Replace mode\tVirtual Replace mode is similar to Replace mode, but\n"
+"\t\t\tinstead of file characters you are replacing screen\n"
+"\t\t\treal estate.  See |Virtual-Replace-mode|.\n"
+"\t\t\tIf the 'showmode' option is on \"-- VREPLACE --\" is\n"
+"\t\t\tshown at the bottom of the window.\n"
+msgstr ""
+"Modo Reemplazar Virtual El modo Reemplazar Virtual es similar al modo\n"
+"\t\t\tReemplazar, pero en lugar de reemplazar caracteres,\n"
+"\t\t\treemplaza el estado real de la pantalla.\n"
+"\t\t\tConsulte |Virtual-Replace-mode|.\n"
+"\t\t\tSi la opción 'showmode' está activada, verá\n"
+"\t\t\t«-- VREPLACE --» en la base de la ventana.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:582
+#, no-wrap
+msgid ""
+"Insert Normal mode\tEntered when CTRL-O given in Insert mode.  This is\n"
+"\t\t\tlike Normal mode, but after executing one command Vim\n"
+"\t\t\treturns to Insert mode.\n"
+"\t\t\tIf the 'showmode' option is on \"-- (insert) --\" is\n"
+"\t\t\tshown at the bottom of the window.\n"
+msgstr ""
+"Modo Normal\t\tSe inicia cuando se usa CTRL-O en el modo Insertar.\n"
+"de inserción\t\tEs similar al modo Normal, pero devuelve al modo\n"
+"\t\t\tInsertar después de ejecutar una orden de Vim.\n"
+"\t\t\tSi la opción 'showmode' está activada, verá\n"
+"\t\t\t«-- (insert) --» en la base de la ventana.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:589
+#, no-wrap
+msgid ""
+"Insert Visual mode\tEntered when starting a Visual selection from Insert\n"
+"\t\t\tmode, e.g., by using CTRL-O and then \"v\", \"V\" or\n"
+"\t\t\tCTRL-V.  When the Visual selection ends, Vim returns\n"
+"\t\t\tto Insert mode.\n"
+"\t\t\tIf the 'showmode' option is on \"-- (insert) VISUAL --\"\n"
+"\t\t\tis shown at the bottom of the window.\n"
+msgstr ""
+"Modo Visual\t\tSe inicia cuando realiza una selección Visual desde\n"
+"de inserción\t\tel modo Insertar. Por ejemplo, usando CTRL-O y\n"
+"\t\t\t«v», «V» o CTRL-V después. Vim le devolverá al modo\n"
+"\t\t\tInsertar al finalizar la selección Visual.\n"
+"\t\t\tSi la opción 'showmode' está activada, verá\n"
+"\t\t\t«-- (insert) VISUAL --» en la base de la ventana.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:595
+#, no-wrap
+msgid ""
+"Insert Select mode\tEntered when starting Select mode from Insert mode.\n"
+"\t\t\tE.g., by dragging the mouse or <S-Right>.\n"
+"\t\t\tWhen the Select mode ends, Vim returns to Insert mode.\n"
+"\t\t\tIf the 'showmode' option is on \"-- (insert) SELECT --\"\n"
+"\t\t\tis shown at the bottom of the window.\n"
+msgstr ""
+"Modo Seleccionar\tSe inicia al ejecutar el modo Seleccionar a partir\n"
+"de inserción\t\tdel modo Insertar. Por ejemplo, arrastrando el ratón\n"
+"\t\t\to <S-Derecha>. Vim le devolverá al modo Insertar al\n"
+"\t\t\tfinalizar el modo Seleccionar. Si la opción\n"
+"\t\t\t'showmode' está activada, verá «-- (insert) SELECT --»\n"
+"\t\t\ten la base de la ventana.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:598
+#, no-wrap
+msgid "6. Switching from mode to mode\t\t\t\t*mode-switching*\n"
+msgstr "6. Cambiar de modo\t\t\t*cambiar-modo*  *mode-switching*\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:606
+msgid ""
+"If for any reason you do not know which mode you are in, you can always get "
+"back to Normal mode by typing <Esc> twice.  This doesn't work for Ex mode "
+"though, use \":visual\".  You will know you are back in Normal mode when you "
+"see the screen flash or hear the bell after you type <Esc>.  However, when "
+"pressing <Esc> after using CTRL-O in Insert mode you get a beep but you are "
+"still in Insert mode, type <Esc> again."
+msgstr ""
+"Si por cualquier razón no sabe en qué modo está, siempre puede volver al "
+"modo Normal pulsando <Esc> dos veces. Esto no funciona en el modo Ex, por "
+"otra parte. En ese caso use «:visual». Sabrá que ha vuelto al modo Normal "
+"cuando vea la pantalla parpadear u oiga la campana después de pulsar <Esc>. "
+"Aun así, si pulsa <Esc> al usar CTRL-O en modo Insertar, obtendrá un pitido "
+"pero no abandonará el modo Insertar. Para salir, pulse <Esc> una vez más."
+
+#. type: Plain text
+#: original/TXT/intro.txt:618
+#, no-wrap
+msgid ""
+"\t\t\t\t\t\t\t*i_esc*\n"
+"\t\tTO mode\t\t\t\t\t\t    ~\n"
+"\t\tNormal\tVisual\tSelect\tInsert\t  Replace   Cmd-line  Ex ~\n"
+"FROM mode\t\t\t\t\t\t\t\t ~\n"
+"Normal\t\t\tv V ^V\t  *4\t *1\t   R gR     : / ? !   Q\n"
+"Visual\t\t *2\t\t  ^G\t c C\t    --\t      :       --\n"
+"Select\t\t *5\t^O ^G\t\t *6\t    --\t      --      --\n"
+"Insert\t\t <Esc>\t  --\t  --\t\t  <Insert>    --      --\n"
+"Replace\t\t <Esc>\t  --\t  --\t<Insert>\t      --      --\n"
+"Command-line\t *3\t  --\t  --\t :start\t    --\t\t      --\n"
+"Ex\t\t :vi\t  --\t  --\t --\t    --\t      --\n"
+msgstr ""
+"\t\t\t\t\t\t\t*i_esc*\n"
+"\t\tDESDE el modo\t\t\t\t\t    ~\n"
+"\t\tNormal\tVisual\tSelección Insertar Reemplazar Línea  Ex ~\n"
+"\t\t\t\t\t\t\t   de órdenes\n"
+"A el modo\t\t\t\t\t\t\t\t ~\n"
+"Normal\t\t\tv V ^V\t  *4\t *1¿\t   R gR     : / ? !   Q\n"
+"Visual\t\t *2\t\t  ^G\t c C\t    --\t      :       --\n"
+"Seleccionar\t *5\t^O ^G\t\t *6\t    --\t      --      --\n"
+"Insertar\t <Esc>\t  --\t  --\t\t  <Insertar>  --      --\n"
+"Reemplazar\t <Esc>\t  --\t  --\t<Insertar>\t      --      --\n"
+"Línea de órdenes *3\t  --\t  --\t :start\t    --\t\t      --\n"
+"Ex\t\t :vi\t  --\t  --\t --\t    --\t      --\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:621
+msgid "- NA -- not possible"
+msgstr "- NP -- no es posible"
+
+#. type: Plain text
+#: original/TXT/intro.txt:649
+#, no-wrap
+msgid ""
+"*1 Go from Normal mode to Insert mode by giving the command \"i\", \"I\", \"a\",\n"
+"   \"A\", \"o\", \"O\", \"c\", \"C\", \"s\" or S\".\n"
+"*2 Go from Visual mode to Normal mode by giving a non-movement command, which\n"
+"   causes the command to be executed, or by hitting <Esc> \"v\", \"V\" or \"CTRL-V\"\n"
+"   (see |v_v|), which just stops Visual mode without side effects.\n"
+"*3 Go from Command-line mode to Normal mode by:\n"
+"   - Hitting <CR> or <NL>, which causes the entered command to be executed.\n"
+"   - Deleting the complete line (e.g., with CTRL-U) and giving a final <BS>.\n"
+"   - Hitting CTRL-C or <Esc>, which quits the command-line without executing\n"
+"     the command.\n"
+"   In the last case <Esc> may be the character defined with the 'wildchar'\n"
+"   option, in which case it will start command-line completion.  You can\n"
+"   ignore that and type <Esc> again.  {Vi: when hitting <Esc> the command-line\n"
+"   is executed.  This is unexpected for most people; therefore it was changed\n"
+"   in Vim.  But when the <Esc> is part of a mapping, the command-line is\n"
+"   executed.  If you want the Vi behaviour also when typing <Esc>, use \":cmap\n"
+"   ^V<Esc> ^V^M\"}\n"
+"*4 Go from Normal to Select mode by:\n"
+"   - use the mouse to select text while 'selectmode' contains \"mouse\"\n"
+"   - use a non-printable command to move the cursor while keeping the Shift\n"
+"     key pressed, and the 'selectmode' option contains \"key\"\n"
+"   - use \"v\", \"V\" or \"CTRL-V\" while 'selectmode' contains \"cmd\"\n"
+"   - use \"gh\", \"gH\" or \"g CTRL-H\"  |g_CTRL-H|\n"
+"*5 Go from Select mode to Normal mode by using a non-printable command to move\n"
+"   the cursor, without keeping the Shift key pressed.\n"
+"*6 Go from Select mode to Insert mode by typing a printable character.  The\n"
+"   selection is deleted and the character is inserted.\n"
+msgstr ""
+"*1 Pase del modo Normal a Insertar con las órdenes «i», «I», «a», «A», «o»,\n"
+"   «O», «c», «C», «s», «S».\n"
+"*2 Pase del modo Visual a Normal con una orden de no-moción, causando la\n"
+"   ejecución de una orden. También puede pulsar <Esc> «v», «V» o CTRL-V,\n"
+"   (consulte |v_v|), finalizando el modo Visual sin más efecto.\n"
+"*3 Puede pasar del modo Línea de órdenes a Normal realizando lo siguiente:\n"
+"   - Pulsar <CR> o <NL>, que ejecuta la orden introducida.\n"
+"   - Borrar una línea completa (p. ej., con CTRL-U) seguido de <BS>.\n"
+"   - Pulsar CTRL-C o <Esc>, cerrando la línea de órdenes sin ejecutar la orden.\n"
+"   En el último caso, puede que <Esc> sea el carácter definido con la opción\n"
+"   'wildchar', lo que iniciaría el auto-completado en línea de órdenes. Puede\n"
+"   ignorar esto y pulsar <Esc> otra vez. {Vi: pulsar <Esc> ejecuta la orden\n"
+"   en la línea, lo cual sorprendía a la mayoría de la gente; debido a ello,\n"
+"   sufrió un cambio en Vim. Pero si <Esc> es parte de un mapeado, la línea de\n"
+"   órdenes se ejecutará. Si desea el comportamiento de Vi también al pulsar\n"
+"   <Esc>, use «:cmap^V<Esc> ^V^M»}\n"
+"*4 Pase del modo Normal a Seleccionar con:\n"
+"   - Use el ratón para seleccionar texto cuando 'selectmode' contenga 'mouse'.\n"
+"   - Use una orden no imprimible para desplazar el cursor a la vez que\n"
+"   pulsa la tecla shift. La opción 'selectmode' debe contener «key».\n"
+"   - Use «v», «V» o «CTRL-V» si 'selectmode' contiene «cmd».\n"
+"   - Use «gh», «gH» o «g CTRL-H» |g_CTRL-H|\n"
+"*5 Pase del modo Seleccionar a Normal usando una orden no imprimible para\n"
+"   mover el cursor sin pulsar la tecla shift.\n"
+"*6 Pase del modo Seleccionar a Insertar tecleando un carácter imprimible.\n"
+"   La selección se eliminará y el carácter quedará insertado.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:651
+msgid ""
+"If the 'insertmode' option is on, editing a file will start in Insert mode."
+msgstr ""
+"Si la opción 'insertmode' está activada, la edición de un archivo se "
+"iniciará en modo Insertar."
+
+#. type: Plain text
+#: original/TXT/intro.txt:658
+#, no-wrap
+msgid ""
+"\t*CTRL-\\_CTRL-N* *i_CTRL-\\_CTRL-N* *c_CTRL-\\_CTRL-N* *v_CTRL-\\_CTRL-N*\n"
+"Additionally the command CTRL-\\ CTRL-N or <C-\\><C-N> can be used to go to\n"
+"Normal mode from any other mode.  This can be used to make sure Vim is in\n"
+"Normal mode, without causing a beep like <Esc> would.  However, this does not\n"
+"work in Ex mode.  When used after a command that takes an argument, such as\n"
+"|f| or |m|, the timeout set with 'ttimeoutlen' applies.\n"
+msgstr ""
+"\t*CTRL-\\_CTRL-N* *i_CTRL-\\_CTRL-N* *c_CTRL-\\_CTRL-N* *v_CTRL-\\_CTRL-N*\n"
+"De forma adicional, puede usar CTRL-\\ CTRL-N o <C-\\><C-N> para pasar al modo\n"
+"Normal a partir de cualquier otro. Puede usar esto para asegurarse de que Vim\n"
+"está en modo Normal, sin causar el pitido que <Esc> realiza. Por otra parte,\n"
+"esto no funciona en modo Ex. Si usa esto después de una orden que toma un\n"
+"argumento, como |f| o |m|, se aplicará la cuenta atrás definida con\n"
+"'ttimeoutlen'.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:664
+#, no-wrap
+msgid ""
+"\t*CTRL-\\_CTRL-G* *i_CTRL-\\_CTRL-G* *c_CTRL-\\_CTRL-G* *v_CTRL-\\_CTRL-G*\n"
+"The command CTRL-\\ CTRL-G or <C-\\><C-G> can be used to go to Insert mode when\n"
+"'insertmode' is set.  Otherwise it goes to Normal mode.  This can be used to\n"
+"make sure Vim is in the mode indicated by 'insertmode', without knowing in\n"
+"what mode Vim currently is.\n"
+msgstr ""
+"\t*CTRL-\\_CTRL-G* *i_CTRL-\\_CTRL-G* *c_CTRL-\\_CTRL-G* *v_CTRL-\\_CTRL-G*\n"
+"La orden CTRL-\\ CTRL-G o <C-\\><C-G> se puede usar para pasar al modo Insertar\n"
+"cuando 'insertmode' está definido. De no ser así, vuelve al modo Normal.\n"
+"Puede usar esto para asegurarse de que Vim está en el modo indicado por\n"
+"'insertmode', sin conocer el modo actual en el que está Vim.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:681
+#, no-wrap
+msgid ""
+"\t\t\t\t    *Q* *mode-Ex* *Ex-mode* *Ex* *EX* *E501*\n"
+"Q\t\t\tSwitch to \"Ex\" mode.  This is a bit like typing \":\"\n"
+"\t\t\tcommands one after another, except:\n"
+"\t\t\t- You don't have to keep pressing \":\".\n"
+"\t\t\t- The screen doesn't get updated after each command.\n"
+"\t\t\t- There is no normal command-line editing.\n"
+"\t\t\t- Mappings and abbreviations are not used.\n"
+"\t\t\tIn fact, you are editing the lines with the \"standard\"\n"
+"\t\t\tline-input editing commands (<Del> or <BS> to erase,\n"
+"\t\t\tCTRL-U to kill the whole line).\n"
+"\t\t\tVim will enter this mode by default if it's invoked as\n"
+"\t\t\t\"ex\" on the command-line.\n"
+"\t\t\tUse the \":vi\" command |:visual| to exit \"Ex\" mode.\n"
+"\t\t\tNote: In older versions of Vim \"Q\" formatted text,\n"
+"\t\t\tthat is now done with |gq|.  But if you use the\n"
+"\t\t\t|vimrc_example.vim| script \"Q\" works like \"gq\".\n"
+msgstr ""
+"\t\t\t\t    *Q* *mode-Ex* *Ex-mode* *Ex* *EX*\n"
+"*E501*\n"
+"Q\t\t\tPasar a modo «Ex». Es similar a pulsar órdenes «:»\n"
+"\t\t\tuno detrás de otro, con alguna diferencia:\n"
+"\t\t\t- No tiene que pulsar «:».\n"
+"\t\t\t- La pantalla no se refresca tras cada orden.\n"
+"\t\t\t- No se usan mapeos y abreviaturas.\n"
+"\t\t\tDe hecho, editará las líneas con las órdenes de\n"
+"\t\t\tedición estándar (<Del> o <BS> para borrar, CTRL-U\n"
+"\t\t\tpara eliminar toda la línea).\n"
+"\t\t\tVim pasará a este modo por omisión si es invocado con\n"
+"\t\t\t«ex» en la línea de órdenes.\n"
+"\t\t\tUse la orden «:vi» |:visual| para salir del modo «Ex».\n"
+"\t\t\tNota: En anteriores versiones se usaba «Q» para dar\n"
+"\t\t\tformato con Vim, ahora puede conseguir lo mismo con\n"
+"\t\t\t|gq|. Pero si usa el script |vimrc_example.vim|, «Q»\n"
+"\t\t\tfuncionará como «gq».\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:688
+#, no-wrap
+msgid ""
+"\t\t\t\t\t*gQ*\n"
+"gQ\t\t\tSwitch to \"Ex\" mode like with \"Q\", but really behave\n"
+"\t\t\tlike typing \":\" commands after another.  All command\n"
+"\t\t\tline editing, completion etc. is available.\n"
+"\t\t\tUse the \":vi\" command |:visual| to exit \"Ex\" mode.\n"
+"\t\t\t{not in Vi}\n"
+msgstr ""
+"\t\t\t\t\t*gQ*\n"
+"gQ\t\t\tPasar al modo «Ex» al igual que con «Q», pero\n"
+"\t\t\tcomportarse como si introdujese órdenes «:» uno\n"
+"\t\t\tdetrás de otro. Dispone así de toda la edición de\n"
+"\t\t\tlínea de órdenes, completado automático, etc.\n"
+"\t\t\tUse la orden «:vi» |:visual| para salir del modo «Ex»\n"
+"\t\t\t{no disponible con Vi}.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:691
+#, no-wrap
+msgid "7. The window contents\t\t\t\t\t*window-contents*\n"
+msgstr "7. El contenido de las ventanas\t\t*ventanas-contenido* *window-contents*\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:701
+#, no-wrap
+msgid ""
+"In Normal mode and Insert/Replace mode the screen window will show the current\n"
+"contents of the buffer: What You See Is What You Get.  There are two\n"
+"exceptions:\n"
+"- When the 'cpoptions' option contains '$', and the change is within one line,\n"
+"  the text is not directly deleted, but a '$' is put at the last deleted\n"
+"  character.\n"
+"- When inserting text in one window, other windows on the same text are not\n"
+"  updated until the insert is finished.\n"
+"{Vi: The screen is not always updated on slow terminals}\n"
+msgstr ""
+"La ventana muestra los contenidos actuales del búfer en modo Normal y modo\n"
+"Insertar/Reemplazar: lo que ve es lo que hay. Hay dos excepciones:\n"
+"- Si la opción 'cppoptions' contiene «$», y el cambio se realizará dentro\n"
+"  de una línea, el texto no se borrará directamente, sino que se insertará\n"
+"  «$» en el último carácter eliminado.\n"
+"- Si inserta texto en una ventana, otras ventanas mostrando el mismo\n"
+"  contenido no se actualizarán hasta finalizar la inserción.\n"
+"{Vi: La pantalla no se refrescará siempre en terminales lentas}\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:704
+msgid ""
+"Lines longer than the window width will wrap, unless the 'wrap' option is "
+"off (see below).  The 'linebreak' option can be set to wrap at a blank "
+"character."
+msgstr ""
+"Las líneas más largas que el ancho de la ventana se justificarán a menos que "
+"la opción 'wrap' esté desactivada (véase a continuación). La opción "
+"'linebreak' se puede configurar para justificar a partir de un carácter "
+"vacío."
+
+#. type: Plain text
+#: original/TXT/intro.txt:707
+msgid ""
+"If the window has room after the last line of the buffer, Vim will show '~' "
+"in the first column of the last lines in the window, like this: >"
+msgstr ""
+"Vim mostrará «~» en la primera columna de las últimas líneas de la ventana, "
+"de haber espacio más allá de la última línea del búfer: Presenta este "
+"aspecto: >"
+
+#. type: Plain text
+#: original/TXT/intro.txt:714
+#, no-wrap
+msgid ""
+"\t+-----------------------+\n"
+"\t|some line\t\t|\n"
+"\t|last line\t\t|\n"
+"\t|~\t\t\t|\n"
+"\t|~\t\t\t|\n"
+"\t+-----------------------+\n"
+msgstr ""
+"\t+-----------------------+\n"
+"\t|alguna línea\t\t|\n"
+"\t|última línea\t\t|\n"
+"\t|~\t\t\t|\n"
+"\t|~\t\t\t|\n"
+"\t+-----------------------+\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:716
+msgid "Thus the '~' lines indicate that the end of the buffer was reached."
+msgstr "Las líneas «~» indican que se alcanzó la última línea del búfer."
+
+#. type: Plain text
+#: original/TXT/intro.txt:719
+msgid ""
+"If the last line in a window doesn't fit, Vim will indicate this with a '@' "
+"in the first column of the last lines in the window, like this: >"
+msgstr ""
+"Si la última línea en una ventana no cabe en ella, Vim lo indicará con una «@"
+"\" en la primera columna de las últimas líneas en la ventana. Presenta este "
+"aspecto:>"
+
+#. type: Plain text
+#: original/TXT/intro.txt:726
+#, no-wrap
+msgid ""
+"\t+-----------------------+\n"
+"\t|first line\t\t|\n"
+"\t|second line\t\t|\n"
+"\t|@\t\t\t|\n"
+"\t|@\t\t\t|\n"
+"\t+-----------------------+\n"
+msgstr ""
+"\t+-----------------------+\n"
+"\t|primera línea\t\t|\n"
+"\t|segunda línea\t\t|\n"
+"\t|@\t\t\t|\n"
+"\t|@\t\t\t|\n"
+"\t+-----------------------+\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:729
+msgid ""
+"Thus the '@' lines indicate that there is a line that doesn't fit in the "
+"window."
+msgstr "Las líneas «@» indican que hay una línea que no cabe en la ventana."
+
+#. type: Plain text
+#: original/TXT/intro.txt:734
+msgid ""
+"When the \"lastline\" flag is present in the 'display' option, you will not "
+"see '@' characters at the left side of window.  If the last line doesn't fit "
+"completely, only the part that fits is shown, and the last three characters "
+"of the last line are replaced with \"@@@\", like this: >"
+msgstr ""
+"No verá caracteres «@» en la parte izquierda de la ventana de estar presente "
+"la marca «lastline» en la opción 'display'. Si la última línea no encaja, "
+"sólo verá la parte que sí lo hace. Los tres últimos caracteres de está línea "
+"aparecerá como «@@@», como en el siguiente ejemplo: >"
+
+#. type: Plain text
+#: original/TXT/intro.txt:741
+#, no-wrap
+msgid ""
+"\t+-----------------------+\n"
+"\t|first line\t\t|\n"
+"\t|second line\t\t|\n"
+"\t|a very long line that d|\n"
+"\t|oesn't fit in the wi@@@|\n"
+"\t+-----------------------+\n"
+msgstr ""
+"\t+-----------------------+\n"
+"\t|primera línea\t\t|\n"
+"\t|segunda línea\t\t|\n"
+"\t|una línea muy larga que|\n"
+"\t|no encaja en la vent@@@|\n"
+"\t+-----------------------+\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:747
+msgid ""
+"If there is a single line that is too long to fit in the window, this is a "
+"special situation.  Vim will show only part of the line, around where the "
+"cursor is.  There are no special characters shown, so that you can edit all "
+"parts of this line.  {Vi: gives an \"internal error\" on lines that do not "
+"fit in the window}"
+msgstr ""
+"Una situación particular es cuando existe una sola línea que no encaja en la "
+"ventana. Vim mostrará solo la parte de la línea en torno al cursor. No verá "
+"caracteres especiales, para que así pueda editar esa parte de la línea. {Vi: "
+"devuelve un «error interno» en las líneas que no encajan en la ventana.}"
+
+#. type: Plain text
+#: original/TXT/intro.txt:751
+msgid ""
+"The '@' occasion in the 'highlight' option can be used to set special "
+"highlighting for the '@' and '~' characters.  This makes it possible to "
+"distinguish them from real characters in the buffer."
+msgstr ""
+"La aparición de «@» en la opción 'highlight' (resaltar) se puede usar para "
+"dar un resaltado especial a los caracteres «@» y «~». Esto posibilita "
+"distinguirlos de aquellos caracteres reales en el búfer."
+
+#. type: Plain text
+#: original/TXT/intro.txt:753
+msgid ""
+"The 'showbreak' option contains the string to put in front of wrapped lines."
+msgstr ""
+"La opción 'showbreak' contiene la cadena a colocar en frente de las líneas "
+"justificadas."
+
+#. type: Plain text
+#: original/TXT/intro.txt:762
+#, no-wrap
+msgid ""
+"\t\t\t\t\t\t\t*wrap-off*\n"
+"If the 'wrap' option is off, long lines will not wrap.  Only the part that\n"
+"fits on the screen is shown.  If the cursor is moved to a part of the line\n"
+"that is not shown, the screen is scrolled horizontally.  The advantage of\n"
+"this method is that columns are shown as they are and lines that cannot fit\n"
+"on the screen can be edited.  The disadvantage is that you cannot see all the\n"
+"characters of a line at once.  The 'sidescroll' option can be set to the\n"
+"minimal number of columns to scroll.  {Vi: has no 'wrap' option}\n"
+msgstr ""
+"\t\t\t\t\t\t\t*wrap-off*\n"
+"Las líneas no se justificarán si la opción 'wrap' está desactivada, y sólo se\n"
+"mostrará la parte que encaje en la pantalla. Si desplaza el cursor a una\n"
+"parte de la línea que no se muestra, la ventana se desplazara\n"
+"horizontalmente. La ventaja de este método es que las columnas aparecen como\n"
+"son y que además puede editar las líneas que no encajan en la pantalla. La\n"
+"desventaja es que no puede ver todos los caracteres de una línea a la vez.\n"
+"Puede configurar la opción 'sidescroll' para desplazarse un número mínimo de\n"
+"columnas. {Vi: no hay opción 'wrap'}\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:770
+msgid ""
+"All normal ASCII characters are displayed directly on the screen.  The <Tab> "
+"is replaced with the number of spaces that it represents.  Other non-"
+"printing characters are replaced with \"^{char}\", where {char} is the non-"
+"printing character with 64 added.  Thus character 7 (bell) will be shown as "
+"\"^G\".  Characters between 127 and 160 are replaced with \"~{char}\", where "
+"{char} is the character with 64 subtracted.  These characters occupy more "
+"than one position on the screen.  The cursor can only be positioned on the "
+"first one."
+msgstr ""
+"Todos los caracteres normales ASCII aparecerán directamente en la pantalla.\n"
+"La tecla <Tab> será reemplazada por el número de espacios que representa.\n"
+"Otros caracteres no imprimibles se reemplazarán por «^{char}», donde\n"
+"{char} es el carácter no imprimible más la suma de 64. Por ello, el "
+"carácter\n"
+"7 (campana) aparecerá como «^G». Los caracteres entre el 127 y el 160 serán\n"
+"reemplazados por «~{char}», donde {char} es el carácter menos la resta de "
+"64.\n"
+"Estos caracteres tomarán más de un espacio en la pantalla. El cursor sólo\n"
+"aparecerá sobre el primero."
+
+#. type: Plain text
+#: original/TXT/intro.txt:775
+#, no-wrap
+msgid ""
+"If you set the 'number' option, all lines will be preceded with their\n"
+"number.  Tip: If you don't like wrapping lines to mix with the line numbers,\n"
+"set the 'showbreak' option to eight spaces:\n"
+"\t\":set showbreak=\\ \\ \\ \\ \\ \\ \\ \\ \"\n"
+msgstr ""
+"Si activa la opción 'number', todas las líneas estarán precedidas por su\n"
+"número. Consejo: Si no le gusta que el justificado de línea se mezcle con\n"
+"los números de línea, configure la opción 'showbreak' con 8 espacios:\n"
+"\t«:set showbreak=\\ \\ \\ \\ \\ \\ \\ \\ »\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:779
+msgid ""
+"If you set the 'list' option, <Tab> characters will not be shown as several "
+"spaces, but as \"^I\".  A '$' will be placed at the end of the line, so you "
+"can find trailing blanks."
+msgstr ""
+"Los caracteres <Tab> aparecerán como ^I, en lugar de como varios espacios, "
+"en caso de activar la opción 'list'. Se insertará un «$» al final de la\n"
+"línea para así poder encontrar caracteres en exceso al final de la línea."
+
+#. type: Plain text
+#: original/TXT/intro.txt:783
+msgid ""
+"In Command-line mode only the command-line itself is shown correctly.  The "
+"display of the buffer contents is updated as soon as you go back to Command "
+"mode."
+msgstr ""
+"En el modo Línea de órdenes, sólo la misma línea de órdenes se mostrará "
+"correctamente. La vista de los contenidos del búfer se actualizarán tan "
+"pronto como vuelva al modo de órdenes."
+
+#. type: Plain text
+#: original/TXT/intro.txt:786
+msgid ""
+"The last line of the window is used for status and other messages.  The "
+"status messages will only be used if an option is on:"
+msgstr ""
+"La última línea de la ventana se usa para mostrar el estado y otros "
+"mensajes. Sólo se mostrarán los mensajes de estado si activa una opción:"
+
+#. type: Plain text
+#: original/TXT/intro.txt:791
+#, no-wrap
+msgid ""
+"status message\t\t\toption\t     default\tUnix default\t~\n"
+"current mode\t\t\t'showmode'\ton\t    on\n"
+"command characters\t\t'showcmd'\ton\t    off\n"
+"cursor position\t\t\t'ruler'\t\toff\t    off\n"
+msgstr ""
+"mensaje de estado\t\t option\t   por omisión\tEn Unix por om.\t~\n"
+"modo actual\t\t\t'showmode'\ton\t    on\n"
+"caracteres de la orden\t\t'showcmd'\ton\t    off\n"
+"posición del cursor\t\t'ruler'\t\toff\t    off\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:795
+msgid ""
+"The current mode is \"-- INSERT --\" or \"-- REPLACE --\", see "
+"|'showmode'|.  The command characters are those that you typed but were not "
+"used yet.  {Vi: does not show the characters you typed or the cursor "
+"position}"
+msgstr ""
+"El modo actual es «-- INSERT --» o «-- REPLACE --», consulte |'showmode|. "
+"Los caracteres de la orden son aquellos que tecleó pero que aún no ha "
+"ejectuado. {Vi: no muestra los caracteres que ha introducido, o la posición "
+"del cursor.}"
+
+#. type: Plain text
+#: original/TXT/intro.txt:799
+#, no-wrap
+msgid ""
+"If you have a slow terminal you can switch off the status messages to speed\n"
+"up editing:\n"
+"\t:set nosc noru nosm\n"
+msgstr ""
+"Puede desactivar los mensajes de estado para agilizar la edición si tiene una\n"
+"terminal lenta:\n"
+"\t:set nosc noru nosm\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:803
+msgid ""
+"If there is an error, an error message will be shown for at least one second "
+"(in reverse video).  {Vi: error messages may be overwritten with other "
+"messages before you have a chance to read them}"
+msgstr ""
+"En caso de error, verá un mensaje de error durante al menos un segundo (en "
+"vídeo inverso). {Vi: puede que los mensajes de error sean sobreescritos "
+"antes de poder leerlos.}"
+
+#. type: Plain text
+#: original/TXT/intro.txt:806
+msgid ""
+"Some commands show how many lines were affected.  Above which threshold this "
+"happens can be controlled with the 'report' option (default 2)."
+msgstr ""
+"Algunas órdenes muestran cuantas líneas fueron afectadas. Puede controlar el "
+"umbral a partir del cual esto ocurre con la opción 'report' (2 por omisión)."
+
+#. type: Plain text
+#: original/TXT/intro.txt:813
+msgid ""
+"On the Amiga Vim will run in a CLI window.  The name Vim and the full name "
+"of the current file name will be shown in the title bar.  When the window is "
+"resized, Vim will automatically redraw the window.  You may make the window "
+"as small as you like, but if it gets too small not a single line will fit in "
+"it.  Make it at least 40 characters wide to be able to read most messages on "
+"the last line."
+msgstr ""
+"Vim se ejecutará en una ventana CLI bajo Amiga. El nombre «Vim» y el nombre "
+"completo del archivo aparecerán en la barra de título. Vim redibujará la "
+"ventana en caso de redimensionarla. Puede reducir la ventana tanto como "
+"quiera, pero no cabrá ni una línea en caso de reducirla demasiado. Haga que "
+"tenga, por lo menos, un ancho de 40 columnas para poder leer la mayoría de "
+"mensajes en la última línea."
+
+#. type: Plain text
+#: original/TXT/intro.txt:816
+msgid ""
+"On most Unix systems, resizing the window is recognized and handled "
+"correctly by Vim.  {Vi: not ok}"
+msgstr ""
+"En la mayoría de sistemas Unix Vim trata adecuadamente redimensionar las "
+"ventanas. {Vi: no tan bien.}"
+
+#. type: Plain text
+#: original/TXT/intro.txt:819
+#, no-wrap
+msgid "8. Definitions\t\t\t\t\t\t*definitions*\n"
+msgstr "8. Definiciones\t\t\t\t *definiciones* *definitions*\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:824
+#, no-wrap
+msgid ""
+"  screen\t\tThe whole area that Vim uses to work in.  This can be\n"
+"\t\t\ta terminal emulator window.  Also called \"the Vim\n"
+"\t\t\twindow\".\n"
+"  window\t\tA view on a buffer.\n"
+msgstr ""
+"  pantalla\t\tEl área completa que usa Vim. Puede ser la ventana de\n"
+"\t\t\tun emulador de terminal. También llamada la «ventana\n"
+"\t\t\tde Vim».\n"
+"  ventana\t\tEl área de visión de un búfer.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:827
+msgid ""
+"A screen contains one or more windows, separated by status lines and with "
+"the command line at the bottom."
+msgstr ""
+"Una pantalla contiene una o más ventanas, separadas por líneas de estado y "
+"con la línea de órdenes en la base."
+
+#. type: Plain text
+#: original/TXT/intro.txt:839
+#, no-wrap
+msgid ""
+"\t+-------------------------------+\n"
+"screen\t| window 1\t| window 2\t|\n"
+"\t|\t\t|\t\t|\n"
+"\t|\t\t|\t\t|\n"
+"\t|= status line =|= status line =|\n"
+"\t| window 3\t\t\t|\n"
+"\t|\t\t\t\t|\n"
+"\t|\t\t\t\t|\n"
+"\t|==== status line ==============|\n"
+"\t|command line\t\t\t|\n"
+"\t+-------------------------------+\n"
+msgstr ""
+"\t+-------------------------------+\n"
+"pantalla| ventana 1\t| ventana 2\t|\n"
+"\t|\t\t|\t\t|\n"
+"\t|\t\t|\t\t|\n"
+"\t|línea de estado|línea de estado|\n"
+"\t| ventana 3\t\t\t|\n"
+"\t|\t\t\t\t|\n"
+"\t|\t\t\t\t|\n"
+"\t|==== línea de estado ==========|\n"
+"\t|línea de órdenes\t\t|\n"
+"\t+-------------------------------+\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:842
+msgid ""
+"The command line is also used for messages.  It scrolls up the screen when "
+"there is not enough room in the command line."
+msgstr ""
+"La línea de órdenes se usa también para mensajes. Desplaza la pantalla hacia "
+"arriba cuando no hay suficiente espacio para la línea de órdenes."
+
+#. type: Plain text
+#: original/TXT/intro.txt:844
+msgid "A difference is made between four types of lines:"
+msgstr "Existe una diferencia entre cuatro tipos de línea."
+
+#. type: Plain text
+#: original/TXT/intro.txt:862
+#, no-wrap
+msgid ""
+"  buffer lines\t\tThe lines in the buffer.  This is the same as the\n"
+"\t\t\tlines as they are read from/written to a file.  They\n"
+"\t\t\tcan be thousands of characters long.\n"
+"  logical lines\t\tThe buffer lines with folding applied.  Buffer lines\n"
+"\t\t\tin a closed fold are changed to a single logical line:\n"
+"\t\t\t\"+-- 99 lines folded\".  They can be thousands of\n"
+"\t\t\tcharacters long.\n"
+"  window lines\t\tThe lines displayed in a window: A range of logical\n"
+"\t\t\tlines with wrapping, line breaks, etc.  applied.  They\n"
+"\t\t\tcan only be as long as the width of the window allows,\n"
+"\t\t\tlonger lines are wrapped or truncated.\n"
+"  screen lines\t\tThe lines of the screen that Vim uses.  Consists of\n"
+"\t\t\tthe window lines of all windows, with status lines\n"
+"\t\t\tand the command line added.  They can only be as long\n"
+"\t\t\tas the width of the screen allows.  When the command\n"
+"\t\t\tline gets longer it wraps and lines are scrolled to\n"
+"\t\t\tmake room.\n"
+msgstr ""
+"  líneas de búfer\tLas líneas en el búfer. Equivalen a las líneas que\n"
+"\t\t\tlee/escribe en un archivo. Pueden tener una\n"
+"\t\t\tlongitud de miles de caracteres.\n"
+"  líneas lógicas\tLas líneas de búfer al usar el plegado. Las líneas de\n"
+"\t\t\tbúfer en un pliegue cerrado pasan a una sola línea\n"
+"\t\t\tlógica: «+-- 99 lineas plegadas». Pueden tener una\n"
+"\t\t\tlongitud de miles de caracteres.\n"
+"  líneas de ventana\tLas líneas visibles en una ventana: Un rango de\n"
+"\t\t\tlíneas lógicas con justificado, retornos de línea,\n"
+"\t\t\tetc. Su longitud no puede ser superior al ancho que\n"
+"\t\t\tla ventana permite, y las líneas más largas se\n"
+"\t\t\trompen o justifican.\n"
+"  líneas de pantalla\tLas líneas de la ventana que Vim usa. Consisten de\n"
+"\t\t\tlas líneas de ventana de todas las ventanas, además\n"
+"\t\t\tde la línea de estado y la línea de órdenes. Su\n"
+"\t\t\tlongitud no puede ser superior al ancho que la\n"
+"\t\t\tpantalla permite. La línea de órdenes se justificará\n"
+"\t\t\ty desplazará de ser más larga.\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:864
+#, no-wrap
+msgid "buffer lines\tlogical lines\twindow lines\tscreen lines ~\n"
+msgstr "líneas de búfer\tlíneas lógicas\tlíneas de ventana\tlíneas de pantalla ~\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:879
+#, no-wrap
+msgid ""
+"1. one\t\t1. one\t\t1. +-- folded   1.  +-- folded\n"
+"2. two\t\t2. +-- folded\t2. five\t\t2.  five\n"
+"3. three\t3. five\t\t3. six\t\t3.  six\n"
+"4. four\t\t4. six\t\t4. seven\t4.  seven\n"
+"5. five\t\t5. seven\t\t\t5.  === status line ===\n"
+"6. six\t\t\t\t\t\t6.  aaa\n"
+"7. seven\t\t\t\t\t7.  bbb\n"
+"\t\t\t\t\t\t8.  ccc ccc c\n"
+"1. aaa\t\t1. aaa\t\t1. aaa\t\t9.  cc\n"
+"2. bbb\t\t2. bbb\t\t2. bbb\t\t10. ddd\n"
+"3. ccc ccc ccc\t3. ccc ccc ccc\t3. ccc ccc c\t11. ~ \n"
+"4. ddd\t\t4. ddd\t\t4. cc\t\t12. === status line ===\n"
+"\t\t\t\t5. ddd\t\t13. (command line)\n"
+"\t\t\t\t6. ~ \n"
+msgstr ""
+"1. uno\t\t1. uno\t\t1. +-- plegado  1.  +-- plegado\n"
+"2. dos\t\t2. +-- plegado\t2. cinco\t2.  cinco\n"
+"3. tres\t\t3. cinco\t3. seis\t\t3.  seis\n"
+"4. cuatro\t4. seis\t\t4. siete\t4.  siete\n"
+"5. cinco\t5. siete\t\t\t5.  === línea de estado ===\n"
+"6. seis\t\t\t\t\t\t6.  aaa\n"
+"7. siete\t\t\t\t\t7.  bbb\n"
+"\t\t\t\t\t\t8.  ccc ccc c\n"
+"1. aaa\t\t1. aaa\t\t1. aaa\t\t9.  cc\n"
+"2. bbb\t\t2. bbb\t\t2. bbb\t\t10. ddd\n"
+"3. ccc ccc ccc\t3. ccc ccc ccc\t3. ccc ccc c\t11. ~ \n"
+"4. ddd\t\t4. ddd\t\t4. cc\t\t12. === línea de estado ===\n"
+"\t\t\t\t5. ddd\t\t13. (línea de órdenes)\n"
+"\t\t\t\t6. ~ \n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:881
+#, no-wrap
+msgid " vim:tw=78:ts=8:ft=help:norl:\n"
+msgstr " vim:tw=78:ts=8:ft=help:norl:\n"

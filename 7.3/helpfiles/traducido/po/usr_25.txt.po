@@ -1,0 +1,1693 @@
+# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es
+# Copyright (C) 2009
+# This file is distributed under the same license as the Vim 7.2 package.
+# Translators credits:
+# - Initial translation
+# Omar Campagne <ocampagne@gmail.com>, 2009
+# - Updates
+# TRADUCTOR <CORREO>, AÑO
+# Debido al formato (txt) y al máximo de 80 columnas que pueden tener
+# los textos de ayuda en Vim, así como el formato PO, por favor, leete los
+# apuntes concernientes a la edición de los archivos PO relativos a la
+# aplicación que desees usar.
+# También encontrarás información acerca del uso de herramientas gettext en el
+# proyecto de localización (l10n) de Vim.
+# - http://www.assembla.com/wiki/show/vim-doc-es
+# No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
+# este enlace puede ser de interés. A pesar de no formar parte, nuestra
+# intención es homologarnos con su terminología y uso de la lengua
+# en la medida de lo útil y posible.
+# - El proyecto de traducción de Debian al español
+# http://www.debian.org/intl/spanish/notas
+# La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
+# pero también puede servir de referencia para otros términos no técnicos.
+# No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
+# traducción sea comprensible independientemente de la nacionalidad del
+# usuario. Si crees que alguna traducción puede llevar a confusión, consulta
+# la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
+# - www.rae.es
+# - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages
+# Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
+# se puede consultar con un simple grep, pogrep o cargado en Virtaal.
+msgid ""
+msgstr ""
+"Project-Id-Version: Vim 7.2\n"
+"Report-Msgid-Bugs-To: vim@bugs.org\n"
+"POT-Creation-Date: 2010-09-23 20:27+0300\n"
+"PO-Revision-Date: 2010-12-06 18:03+0100\n"
+"Last-Translator: Omar Campagne <<ocampagne@gmail.com>>\n"
+"Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.5.0-rc1\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:18 original/TXT/intro.txt:79
+#: original/TXT/intro.txt:180 original/TXT/intro.txt:290
+#: original/TXT/intro.txt:518 original/TXT/intro.txt:596
+#: original/TXT/intro.txt:689 original/TXT/intro.txt:817
+#: original/TXT/intro.txt:880 original/TXT/usr_toc.txt:7
+#: original/TXT/usr_toc.txt:58 original/TXT/usr_toc.txt:172
+#: original/TXT/usr_toc.txt:281 original/TXT/usr_toc.txt:340
+#: original/TXT/usr_toc.txt:352 original/TXT/usr_01.txt:19
+#: original/TXT/usr_01.txt:50 original/TXT/usr_01.txt:100
+#: original/TXT/usr_01.txt:181 original/TXT/usr_02.txt:25
+#: original/TXT/usr_02.txt:69 original/TXT/usr_02.txt:130
+#: original/TXT/usr_02.txt:179 original/TXT/usr_02.txt:239
+#: original/TXT/usr_02.txt:307 original/TXT/usr_02.txt:369
+#: original/TXT/usr_02.txt:406 original/TXT/usr_02.txt:560
+#: original/TXT/usr_03.txt:28 original/TXT/usr_03.txt:74
+#: original/TXT/usr_03.txt:101 original/TXT/usr_03.txt:147
+#: original/TXT/usr_03.txt:172 original/TXT/usr_03.txt:223
+#: original/TXT/usr_03.txt:265 original/TXT/usr_03.txt:320
+#: original/TXT/usr_03.txt:491 original/TXT/usr_03.txt:552
+#: original/TXT/usr_03.txt:650 original/TXT/usr_04.txt:27
+#: original/TXT/usr_04.txt:74 original/TXT/usr_04.txt:160
+#: original/TXT/usr_04.txt:194 original/TXT/usr_04.txt:269
+#: original/TXT/usr_04.txt:324 original/TXT/usr_04.txt:360
+#: original/TXT/usr_04.txt:390 original/TXT/usr_04.txt:446
+#: original/TXT/usr_04.txt:469 original/TXT/usr_04.txt:510
+#: original/TXT/usr_05.txt:24 original/TXT/usr_05.txt:63
+#: original/TXT/usr_05.txt:219 original/TXT/usr_05.txt:266
+#: original/TXT/usr_05.txt:418 original/TXT/usr_05.txt:467
+#: original/TXT/usr_05.txt:506 original/TXT/usr_05.txt:621
+#: original/TXT/usr_06.txt:24 original/TXT/usr_06.txt:50
+#: original/TXT/usr_06.txt:135 original/TXT/usr_06.txt:189
+#: original/TXT/usr_06.txt:270 original/TXT/usr_06.txt:276
+#: original/TXT/usr_07.txt:24 original/TXT/usr_07.txt:63
+#: original/TXT/usr_07.txt:179 original/TXT/usr_07.txt:266
+#: original/TXT/usr_07.txt:316 original/TXT/usr_07.txt:404
+#: original/TXT/usr_07.txt:444 original/TXT/usr_07.txt:475
+#: original/TXT/usr_08.txt:26 original/TXT/usr_08.txt:82
+#: original/TXT/usr_08.txt:109 original/TXT/usr_08.txt:161
+#: original/TXT/usr_08.txt:215 original/TXT/usr_08.txt:278
+#: original/TXT/usr_08.txt:337 original/TXT/usr_08.txt:477
+#: original/TXT/usr_08.txt:509 original/TXT/usr_08.txt:597
+#: original/TXT/usr_09.txt:21 original/TXT/usr_09.txt:124
+#: original/TXT/usr_09.txt:175 original/TXT/usr_09.txt:259
+#: original/TXT/usr_09.txt:285 original/TXT/usr_10.txt:27
+#: original/TXT/usr_10.txt:144 original/TXT/usr_10.txt:221
+#: original/TXT/usr_10.txt:342 original/TXT/usr_10.txt:378
+#: original/TXT/usr_10.txt:547 original/TXT/usr_10.txt:621
+#: original/TXT/usr_10.txt:667 original/TXT/usr_10.txt:692
+#: original/TXT/usr_10.txt:820 original/TXT/usr_11.txt:22
+#: original/TXT/usr_11.txt:82 original/TXT/usr_11.txt:144
+#: original/TXT/usr_11.txt:288 original/TXT/usr_11.txt:303
+#: original/TXT/usr_12.txt:25 original/TXT/usr_12.txt:90
+#: original/TXT/usr_12.txt:131 original/TXT/usr_12.txt:177
+#: original/TXT/usr_12.txt:202 original/TXT/usr_12.txt:231
+#: original/TXT/usr_12.txt:281 original/TXT/usr_12.txt:309
+#: original/TXT/usr_12.txt:354 original/TXT/usr_20.txt:22
+#: original/TXT/usr_20.txt:113 original/TXT/usr_20.txt:158
+#: original/TXT/usr_20.txt:285 original/TXT/usr_20.txt:327
+#: original/TXT/usr_20.txt:380 original/TXT/usr_21.txt:24
+#: original/TXT/usr_21.txt:47 original/TXT/usr_21.txt:87
+#: original/TXT/usr_21.txt:236 original/TXT/usr_21.txt:385
+#: original/TXT/usr_21.txt:438 original/TXT/usr_21.txt:495
+#: original/TXT/usr_22.txt:22 original/TXT/usr_22.txt:148
+#: original/TXT/usr_22.txt:213 original/TXT/usr_22.txt:272
+#: original/TXT/usr_22.txt:396 original/TXT/usr_23.txt:23
+#: original/TXT/usr_23.txt:114 original/TXT/usr_23.txt:156
+#: original/TXT/usr_23.txt:238 original/TXT/usr_23.txt:324
+#: original/TXT/usr_23.txt:339 original/TXT/usr_24.txt:28
+#: original/TXT/usr_24.txt:96 original/TXT/usr_24.txt:119
+#: original/TXT/usr_24.txt:268 original/TXT/usr_24.txt:305
+#: original/TXT/usr_24.txt:336 original/TXT/usr_24.txt:369
+#: original/TXT/usr_24.txt:493 original/TXT/usr_24.txt:537
+#: original/TXT/usr_24.txt:583 original/TXT/usr_24.txt:602
+#: original/TXT/usr_25.txt:22 original/TXT/usr_25.txt:132
+#: original/TXT/usr_25.txt:210 original/TXT/usr_25.txt:287
+#: original/TXT/usr_25.txt:453 original/TXT/usr_25.txt:574
+#: original/TXT/usr_26.txt:21 original/TXT/usr_26.txt:46
+#: original/TXT/usr_26.txt:103 original/TXT/usr_26.txt:136
+#: original/TXT/usr_26.txt:217 original/TXT/usr_27.txt:26
+#: original/TXT/usr_27.txt:88 original/TXT/usr_27.txt:136
+#: original/TXT/usr_27.txt:239 original/TXT/usr_27.txt:320
+#: original/TXT/usr_27.txt:350 original/TXT/usr_27.txt:427
+#: original/TXT/usr_27.txt:469 original/TXT/usr_27.txt:510
+#: original/TXT/usr_27.txt:559 original/TXT/usr_28.txt:27
+#: original/TXT/usr_28.txt:54 original/TXT/usr_28.txt:121
+#: original/TXT/usr_28.txt:185 original/TXT/usr_28.txt:211
+#: original/TXT/usr_28.txt:269 original/TXT/usr_28.txt:315
+#: original/TXT/usr_28.txt:331 original/TXT/usr_28.txt:375
+#: original/TXT/usr_28.txt:389 original/TXT/usr_28.txt:422
+#: original/TXT/usr_29.txt:23 original/TXT/usr_29.txt:273
+#: original/TXT/usr_29.txt:320 original/TXT/usr_29.txt:441
+#: original/TXT/usr_29.txt:570 original/TXT/usr_29.txt:609
+#: original/TXT/usr_30.txt:23 original/TXT/usr_30.txt:202
+#: original/TXT/usr_30.txt:280 original/TXT/usr_30.txt:336
+#: original/TXT/usr_30.txt:409 original/TXT/usr_30.txt:515
+#: original/TXT/usr_30.txt:639 original/TXT/usr_31.txt:22
+#: original/TXT/usr_31.txt:81 original/TXT/usr_31.txt:133
+#: original/TXT/usr_31.txt:160 original/TXT/usr_31.txt:208
+#: original/TXT/usr_31.txt:268
+#, no-wrap
+msgid "==============================================================================\n"
+msgstr "==============================================================================\n"
+
+#. type: Plain text
+#: original/TXT/usr_toc.txt:4 original/TXT/usr_01.txt:4
+#: original/TXT/usr_02.txt:4 original/TXT/usr_03.txt:4
+#: original/TXT/usr_04.txt:4 original/TXT/usr_05.txt:4
+#: original/TXT/usr_06.txt:4 original/TXT/usr_07.txt:4
+#: original/TXT/usr_08.txt:4 original/TXT/usr_09.txt:4
+#: original/TXT/usr_10.txt:4 original/TXT/usr_11.txt:4
+#: original/TXT/usr_12.txt:4 original/TXT/usr_20.txt:4
+#: original/TXT/usr_21.txt:4 original/TXT/usr_22.txt:4
+#: original/TXT/usr_23.txt:4 original/TXT/usr_24.txt:4
+#: original/TXT/usr_25.txt:4 original/TXT/usr_26.txt:4
+#: original/TXT/usr_27.txt:4 original/TXT/usr_28.txt:4
+#: original/TXT/usr_29.txt:4 original/TXT/usr_30.txt:4
+#: original/TXT/usr_31.txt:4
+#, no-wrap
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
+msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
+
+#. type: Plain text
+#: original/TXT/usr_toc.txt:354 original/TXT/usr_01.txt:185
+#: original/TXT/usr_02.txt:564 original/TXT/usr_03.txt:654
+#: original/TXT/usr_04.txt:514 original/TXT/usr_05.txt:625
+#: original/TXT/usr_06.txt:280 original/TXT/usr_07.txt:479
+#: original/TXT/usr_08.txt:601 original/TXT/usr_09.txt:289
+#: original/TXT/usr_10.txt:824 original/TXT/usr_11.txt:307
+#: original/TXT/usr_12.txt:358 original/TXT/usr_20.txt:384
+#: original/TXT/usr_21.txt:499 original/TXT/usr_22.txt:400
+#: original/TXT/usr_23.txt:343 original/TXT/usr_24.txt:606
+#: original/TXT/usr_25.txt:578 original/TXT/usr_26.txt:221
+#: original/TXT/usr_27.txt:563 original/TXT/usr_28.txt:426
+#: original/TXT/usr_29.txt:613 original/TXT/usr_30.txt:643
+#: original/TXT/usr_31.txt:272
+msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:524 original/TXT/usr_25.txt:238
+#, no-wrap
+msgid "\t:set shiftwidth=4\n"
+msgstr "\t:set shiftwidth=4\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:642 original/TXT/usr_25.txt:112
+#, no-wrap
+msgid "\tgqap\n"
+msgstr "\tgqap\n"
+
+#. type: Plain text
+#: original/TXT/usr_10.txt:655 original/TXT/usr_25.txt:119
+#, no-wrap
+msgid "\tgggqG\n"
+msgstr "\tgggqG\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:2
+#, no-wrap
+msgid "*usr_25.txt*\tFor Vim version 7.3.  Last change: 2007 May 11\n"
+msgstr "*usr_25.esx*\tPara Vim versión 7.3.  Último cambio: 11/6/2007\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:6
+#, no-wrap
+msgid "\t\t\t     Editing formatted text\n"
+msgstr "\t\t\t  Editar texto con formato\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:11
+msgid ""
+"Text hardly ever comes in one sentence per line.  This chapter is about "
+"breaking sentences to make them fit on a page and other formatting.  Vim "
+"also has useful features for editing single-line paragraphs and tables."
+msgstr ""
+"El texto rara vez aparece como una oración por línea. Este capítulo trata "
+"acerca de formatear oraciones para su correcta apariencia en un papel, así "
+"como otros formatos. Vim también ofrece útiles características para editar "
+"párrafos de una sola línea y tablas-"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:17
+#, no-wrap
+msgid ""
+"|25.1|\tBreaking lines\n"
+"|25.2|\tAligning text\n"
+"|25.3|\tIndents and tabs\n"
+"|25.4|\tDealing with long lines\n"
+"|25.5|\tEditing tables\n"
+msgstr ""
+"|25.1|\tDividir líneas\n"
+"|25.2|\tAlinear texto\n"
+"|25.3|\tSangrado y tabulación\n"
+"|25.4|\tTratar líneas largas\n"
+"|25.5|\tEditar tablas\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:21
+#, no-wrap
+msgid ""
+"     Next chapter: |usr_26.txt|  Repeating\n"
+" Previous chapter: |usr_24.txt|  Inserting quickly\n"
+"Table of contents: |usr_toc.txt|\n"
+msgstr ""
+" Siguiente capítulo: |usr_26.txt|  Repetición\n"
+"  Capítulo anterior: |usr_24.esx|  Insertar con rapidez\n"
+"Tabla de contenidos: |usr_toc.esx|\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:24
+#, no-wrap
+msgid "*25.1*\tBreaking lines\n"
+msgstr "*25.1*\tDividir líneas\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:33
+#, no-wrap
+msgid ""
+"Vim has a number of functions that make dealing with text easier.  By default,\n"
+"the editor does not perform automatic line breaks.  In other words, you have\n"
+"to press <Enter> yourself.  This is useful when you are writing programs where\n"
+"you want to decide where the line ends.  It is not so good when you are\n"
+"creating documentation and want the text to be at most 70 character wide.\n"
+"   If you set the 'textwidth' option, Vim automatically inserts line breaks.\n"
+"Suppose, for example, that you want a very narrow column of only 30\n"
+"characters.  You need to execute the following command: >\n"
+msgstr ""
+"Vim dispone de un número de funciones que facilitan tratar texto. Por\n"
+"omisión, el editor no introduce saltos de línea automáticamente. En\n"
+"otras palabras, tiene que pulsar <Intro>. Esto es útil para decidir\n"
+"donde termina la línea, dependiendo del programa que esté escribiendo.\n"
+"   Si define la opción 'textwidth', Vim insertará automáticamente\n"
+"los saltos de línea.\n"
+"Suponga que desea crear una estrecha columna de sólo 30 caracteres.\n"
+"Para ello, tendría que ejecutar la siguiente orden: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:35
+#, no-wrap
+msgid "\t:set textwidth=30\n"
+msgstr "\t:set textwidth=30\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:37
+msgid "Now you start typing (ruler added):"
+msgstr "Empiece a escribir ahora (la regla solo aparece en el ejemplo):"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:41
+#, no-wrap
+msgid ""
+"\t\t 1\t   2\t     3\n"
+"\t12345678901234567890123456789012345\n"
+"\tI taught programming for a whi ~\n"
+msgstr ""
+"\t\t1\t   2\t     3\n"
+"\t12345678901234567890123456789012345\n"
+"\tEnseñé programación durante un ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:44
+msgid ""
+"If you type \"l\" next, this makes the line longer than the 30-character "
+"limit.  When Vim sees this, it inserts a line break and you get the "
+"following:"
+msgstr ""
+"Si teclea ahora «os», la línea sobrepasaría el límite de 30 caracteres. En "
+"cuanto Vim detecta esto, inserta un salto línea, obteniendo lo siguiente:"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:49
+#, no-wrap
+msgid ""
+"\t\t 1\t   2\t     3\n"
+"\t12345678901234567890123456789012345\n"
+"\tI taught programming for a ~\n"
+"\twhil ~\n"
+msgstr ""
+"\t\t1\t   2\t     3\n"
+"\t12345678901234567890123456789012345\n"
+"\tEnseñé programación durante ~\n"
+"\tunos ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:51
+msgid "Continuing on, you can type in the rest of the paragraph:"
+msgstr "Así mismo, puede escribir el resto del párrafo:"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:59
+#, no-wrap
+msgid ""
+"\t\t 1\t   2\t     3\n"
+"\t12345678901234567890123456789012345\n"
+"\tI taught programming for a ~\n"
+"\twhile. One time, I was stopped ~\n"
+"\tby the Fort Worth police, ~\n"
+"\tbecause my homework was too ~\n"
+"\thard. True story. ~\n"
+msgstr ""
+"\t\t 1\t   2\t     3\n"
+"\t12345678901234567890123456789012345\n"
+"\tEnseñé programación durante ~\n"
+"\tunos meses. Una vez, me paró ~\n"
+"\tla policía de Granada porque ~\n"
+"\tmis deberes eran demasiado ~\n"
+"\tdifíciles. Historia verídica.~\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:61
+msgid "You do not have to type newlines; Vim puts them in automatically."
+msgstr ""
+"No necesita introducir líneas nuevas; Vim las insertará automáticamente."
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:65
+#, no-wrap
+msgid ""
+"\tNote:\n"
+"\tThe 'wrap' option makes Vim display lines with a line break, but this\n"
+"\tdoesn't insert a line break in the file.\n"
+msgstr ""
+"\tNota:\n"
+"\tLa opción 'wrap' hace que Vim muestre las líneas con un salto de\n"
+"\tlínea, pero no inserta realmente un salto de línea.\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:68
+msgid "REFORMATTING"
+msgstr "REFORMATEAR"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:73
+msgid ""
+"The Vim editor is not a word processor.  In a word processor, if you delete "
+"something at the beginning of the paragraph, the line breaks are reworked.  "
+"In Vim they are not; so if you delete the word \"programming\" from the "
+"first line, all you get is a short line:"
+msgstr ""
+"El editor Vim no es un editor de documentos. En un editor de documentos, si "
+"borra algo al inicio del párrafo, se reorganizan los saltos de línea. No es "
+"así en Vim; así que se borra la palabra «programación» en la primera línea, "
+"obtendría los siguiente:"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:81
+#, no-wrap
+msgid ""
+"\t\t 1\t   2\t     3\n"
+"\t12345678901234567890123456789012345\n"
+"\tI taught for a ~\n"
+"\twhile. One time, I was stopped ~\n"
+"\tby the Fort Worth police, ~\n"
+"\tbecause my homework was too ~\n"
+"\thard. True story. ~\n"
+msgstr ""
+"\t\t 1\t   2\t     3\n"
+"\t12345678901234567890123456789012345\n"
+"\tEnseñé durante ~\n"
+"\tunos meses. Una vez, me paró ~\n"
+"\tla policía de Granada porque ~\n"
+"\tmis deberes eran demasiado ~\n"
+"\tdifíciles. Historia verídica.~\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:86
+#, no-wrap
+msgid ""
+"This does not look good.  To get the paragraph into shape you use the \"gq\"\n"
+"operator.\n"
+"   Let's first use this with a Visual selection.  Starting from the first\n"
+"line, type: >\n"
+msgstr ""
+"Esto no es elegante. Para dar formato a un párrafo puede usar el operador\n"
+"«gq».\n"
+"   Usemos esto primero con una selección en modo Visual. Empezando por la\n"
+"primera línea, escriba: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:88
+#, no-wrap
+msgid "\tv4jgq\n"
+msgstr "\tv4jgq\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:91
+msgid ""
+"\"v\" to start Visual mode, \"4j' to move to the end of the paragraph and "
+"then the \"gq\" operator.  The result is:"
+msgstr ""
+"«v» inicial el modo Visual, «4j» para desplazarse al final del párrafo, y "
+"después el operador «gq». El resultado es:"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:99
+#, no-wrap
+msgid ""
+"\t\t 1\t   2\t     3\n"
+"\t12345678901234567890123456789012345\n"
+"\tI taught for a while. One ~\n"
+"\ttime, I was stopped by the ~\n"
+"\tFort Worth police, because my ~\n"
+"\thomework was too hard. True ~\n"
+"\tstory. ~\n"
+msgstr ""
+"\t\t 1\t   2\t     3\n"
+"\t12345678901234567890123456789012345\n"
+"\tEnseñé durante unos meses. ~\n"
+"\tUna vez, me paró la policía de~\n"
+"\tGranada porque mis deberes ~\n"
+"\teran demasiado difíciles. ~\n"
+"\tHistoria verídica.~\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:102
+msgid ""
+"Note: there is a way to do automatic formatting for specific types of text "
+"layouts, see |auto-format|."
+msgstr ""
+"Nota: existe una manera de dar formato automáticamente para tipos "
+"específicos de plantillas de texto, véase |auto-format|."
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:110
+#, no-wrap
+msgid ""
+"Since \"gq\" is an operator, you can use one of the three ways to select the\n"
+"text it works on: With Visual mode, with a movement and with a text object.\n"
+"   The example above could also be done with \"gq4j\".  That's less typing, but\n"
+"you have to know the line count.  A more useful motion command is \"}\".  This\n"
+"moves to the end of a paragraph.  Thus \"gq}\" formats from the cursor to the\n"
+"end of the current paragraph.\n"
+"   A very useful text object to use with \"gq\" is the paragraph.  Try this: >\n"
+msgstr ""
+"Ya que «gq» es un operador, puede usar una de las tres maneras en las que\n"
+"funciona la selección de texto: el modo Visual, con un movimiento y con un\n"
+"objeto textual.\n"
+"   El ejemplo anterior se puede hacer con «gq4j», lo cual implica teclear\n"
+"menos, pero tiene que conocer el número de líneas. Una orden de movimiento\n"
+"más útil es «}».\n"
+"Esto le desplaza al final del párrafo. Por ello, «gq}» da formato desde el\n"
+"cursor hasta el final del párrafo actual.\n"
+"   El párrafo es un objeto textual que responde bien al uso de «gq». Pruebe\n"
+"esto: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:117
+#, no-wrap
+msgid ""
+"\"ap\" stands for \"a-paragraph\".  This formats the text of one paragraph\n"
+"(separated by empty lines).  Also the part before the cursor.\n"
+"   If you have your paragraphs separated by empty lines, you can format the\n"
+"whole file by typing this: >\n"
+msgstr ""
+"«ap» significa un párrafo («a-paragraph»). Esto da formato al texto de un\n"
+"párrafo (separado por líneas vacías). También el área anterior al cursor.\n"
+"   Si los párrafos están separados por líneas vacías, puede dar formato a\n"
+"todo el archivo con lo siguiente: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:124
+#, no-wrap
+msgid ""
+"\"gg\" to move to the first line, \"gqG\" to format until the last line.\n"
+"   Warning: If your paragraphs are not properly separated, they will be joined\n"
+"together.  A common mistake is to have a line with a space or tab.  That's a\n"
+"blank line, but not an empty line.\n"
+msgstr ""
+"«gg» para ir a la primera línea, «gqG» para dar formato hasta la última\n"
+"línea.\n"
+"   Aviso: si sus párrafos no están apropiadamente separados, no se unirán.\n"
+"Un error común es tener una línea con un espacio o tabulación. Esa es una\n"
+"línea en blanco, pero no una línea vacía.\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:131
+#, no-wrap
+msgid ""
+"Vim is able to format more than just plain text.  See |fo-table| for how to\n"
+"change this.  See the 'joinspaces' option to change the number of spaces used\n"
+"after a full stop.\n"
+"   It is possible to use an external program for formatting.  This is useful\n"
+"if your text can't be properly formatted with Vim's builtin command.  See the\n"
+"'formatprg' option.\n"
+msgstr ""
+"Vim es capaz de dar formato a más que texto. Consulte |fo-table| para ver\n"
+"cómo cambiar esto. Consulte la opción 'joinspaces' para modificar el número\n"
+"de espacios antes de un punto final.\n"
+"   Es posible dar formato con un programa externo. Esto es útil si el texto\n"
+"no puede recibir un formato adecuado con la orden integrada en Vim. Consulte\n"
+"la opción 'formatprg'.\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:134
+#, no-wrap
+msgid "*25.2*\tAligning text\n"
+msgstr "*25.2*\tAlinear texto\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:136
+msgid "To center a range of lines, use the following command: >"
+msgstr "Use la siguiente orden para centrar un rango de líneas: >"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:138
+#, no-wrap
+msgid "\t:{range}center [width]\n"
+msgstr "\t:{range}center [width]\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:143
+#, no-wrap
+msgid ""
+"{range} is the usual command-line range.  [width] is an optional line width to\n"
+"use for centering.  If [width] is not specified, it defaults to the value of\n"
+"'textwidth'.  (If 'textwidth' is 0, the default is 80.)\n"
+"   For example: >\n"
+msgstr ""
+"{range} (rango) is el valor de rango normal en la línea de órdenes. [width]\n"
+"(ancho) es el valor opcional del ancho usado al centrar. De no especificar\n"
+"[width], su valor por omisión será el de 'textwidth'. (Si 'textwith' es\n"
+"cero, el valor será 80.)\n"
+"   Por ejemplo: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:145
+#, no-wrap
+msgid "\t:1,5center 40\n"
+msgstr "\t:1,5center 40\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:147
+msgid "results in the following:"
+msgstr "El resultado es el siguiente:"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:153
+#, no-wrap
+msgid ""
+"       I taught for a while. One ~\n"
+"       time, I was stopped by the ~\n"
+"     Fort Worth police, because my ~\n"
+"      homework was too hard. True ~\n"
+"\t\t story. ~\n"
+msgstr ""
+"\tEnseñé durante unos meses. ~\n"
+"     Una vez, me paró la policía de~\n"
+"        Granada porque mis deberes ~\n"
+"\teran demasiado difíciles. ~\n"
+"\t    Historia verídica.~\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:156
+msgid "RIGHT ALIGNMENT"
+msgstr "ALINEAR\tA LA DERECHA"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:158
+msgid "Similarly, the \":right\" command right-justifies the text: >"
+msgstr ""
+"De manera parecida, la orden «:right» justifica el texto a la derecha: >"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:160
+#, no-wrap
+msgid "\t:1,5right 37\n"
+msgstr "\t:1,5right 37\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:162
+msgid "gives this result:"
+msgstr "y da como resultado: >"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:168
+#, no-wrap
+msgid ""
+"\t    I taught for a while. One ~\n"
+"\t   time, I was stopped by the ~\n"
+"\tFort Worth police, because my ~\n"
+"\t  homework was too hard. True ~\n"
+"\t\t\t       story. ~\n"
+msgstr ""
+"\t    Enseñé durante unos meses. ~\n"
+"\tUna vez, me paró la policía de ~\n"
+"            Granada porque mis deberes ~\n"
+"\t     eran demasiado difíciles. ~\n"
+"\t             Historia verídica.~\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:170
+msgid "LEFT ALIGNMENT"
+msgstr "ALINEAR A LA IZQUIERDA"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:172
+msgid "Finally there is this command: >"
+msgstr "Por último, existe esta orden: >"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:174
+#, no-wrap
+msgid "\t:{range}left [margin]\n"
+msgstr "\t:{range}left [margin]\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:180
+msgid ""
+"Unlike \":center\" and \":right\", however, the argument to \":left\" is not "
+"the length of the line.  Instead it is the left margin.  If it is omitted, "
+"the text will be put against the left side of the screen (using a zero "
+"margin would do the same).  If it is 5, the text will be indented 5 spaces.  "
+"For example, use these commands: >"
+msgstr ""
+"A diferencia de «:center» y «:right», el argumento de «:left» no es la "
+"longitud de la línea, sino que es el margen derecho. Si se omite, el texto "
+"aparecerá a la izquierda de la pantalla (al igual que si usa un margen de de "
+"cero)."
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:183
+#, no-wrap
+msgid ""
+"\t:1left 5\n"
+"\t:2,5left\n"
+msgstr ""
+"\t:1left 5\n"
+"\t:2,5left\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:185
+msgid "This results in the following:"
+msgstr "El resultado es el siguiente:"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:191
+#, no-wrap
+msgid ""
+"\t     I taught for a while. One ~\n"
+"\ttime, I was stopped by the ~\n"
+"\tFort Worth police, because my ~\n"
+"\thomework was too hard. True ~\n"
+"\tstory. ~\n"
+msgstr ""
+"\t    Enseñé durante unos meses. ~\n"
+"\tUna vez, me paró la policía de ~\n"
+"        Granada porque mis deberes ~\n"
+"\teran demasiado difíciles. ~\n"
+"\tHistoria verídica.~\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:194
+msgid "JUSTIFYING TEXT"
+msgstr "JUSTIFICAR TEXTO"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:198
+msgid ""
+"Vim has no built-in way of justifying text.  However, there is a neat macro "
+"package that does the job.  To use this package, execute the following "
+"command: >"
+msgstr ""
+"Vim no posee una herramienta integrada para justificar texto. Por otro lado, "
+"ofrece un excelente macro que realiza esta labor. Ejecute la siguiente orden "
+"para usar este conjunto: >"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:200
+#, no-wrap
+msgid "\t:runtime macros/justify.vim\n"
+msgstr "\t:runtime macros/justify.vim\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:205
+#, no-wrap
+msgid ""
+"This Vim script file defines a new visual command \"_j\".  To justify a block of\n"
+"text, highlight the text in Visual mode and then execute \"_j\".\n"
+"   Look in the file for more explanations.  To go there, do \"gf\" on this name:\n"
+"$VIMRUNTIME/macros/justify.vim.\n"
+msgstr ""
+"Este archivo script de Vim define una nueva orden visual, «_j». Para\n"
+"justificar un bloque de texto, resalte el texto en modo Visual y ejecute «_j».\n"
+"   Consulte el archivo para una explicación más completa. Para ir a ese punto,\n"
+"pulse «gf» en este nombre:\n"
+"$VIMRUNTIME/macros/justify.vim.\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:207
+msgid ""
+"An alternative is to filter the text through an external program.  Example: >"
+msgstr ""
+"Una alternativa es filtrar el texto a través de un programa externo. "
+"Ejemplo: >"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:209
+#, no-wrap
+msgid "\t:%!fmt\n"
+msgstr "\t:%!fmt\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:212
+#, no-wrap
+msgid "*25.3*\tIndents and tabs\n"
+msgstr "*25.3*\tSangrado y tabulación\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:219
+#, no-wrap
+msgid ""
+"Indents can be used to make text stand out from the rest.  The example texts\n"
+"in this manual, for example, are indented by eight spaces or a tab.  You would\n"
+"normally enter this by typing a tab at the start of each line.  Take this\n"
+"text:\n"
+"\tthe first line ~\n"
+"\tthe second line ~\n"
+msgstr ""
+"Puede usar el sangrado para destacar texto con respecto al resto. Los textos\n"
+"de ejemplo en este manual, por ejemplo, están sangrados con ocho espacios, o\n"
+"una tabulación. Generalmente, introduce el sangrado con una tabulación al\n"
+"inicio de cada línea. Suponga este texto:\n"
+"\tla primera línea ~\n"
+"\tla segunda línea ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:222
+#, no-wrap
+msgid ""
+"This is entered by typing a tab, some text, <Enter>, tab and more text.\n"
+"   The 'autoindent' option inserts indents automatically: >\n"
+msgstr ""
+"Puede introducir esto pulsando el botón de tabulado, algo de texto, <Intro>,\n"
+"tabulado, y más texto.\n"
+"   La opción 'autoindent' inserta sangrado automáticamente: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:224
+#, no-wrap
+msgid "\t:set autoindent\n"
+msgstr "\t:set autoindent\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:227
+msgid ""
+"When a new line is started it gets the same indent as the previous line.  In "
+"the above example, the tab after the <Enter> is not needed anymore."
+msgstr ""
+"Al iniciar una nueva línea, este recibirá el mismo sangrado que la línea "
+"anterior. En el ejemplo anterior, el tabulado tras <Intro> ya no es "
+"necesario."
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:230
+msgid "INCREASING INDENT"
+msgstr "AUMENTAR EL SANGRADO"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:236
+#, no-wrap
+msgid ""
+"To increase the amount of indent in a line, use the \">\" operator.  Often this\n"
+"is used as \">>\", which adds indent to the current line.\n"
+"   The amount of indent added is specified with the 'shiftwidth' option.  The\n"
+"default value is 8.  To make \">>\" insert four spaces worth of indent, for\n"
+"example, type this: >\n"
+msgstr ""
+"Para aumentar la cantidad de sangrado en una línea, use el operador «>». A\n"
+"menudo usará esto como «>>», que añade sangrado a la línea actual.\n"
+"   La cantidad de sangrado añadida se especifica con la opción 'shiftwidth'.\n"
+"El valor por omisión es 8. Para lograr que «>>» inserte cuatro espacios de\n"
+"sangrado, por ejemplo, use lo siguiente: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:240
+msgid "When used on the second line of the example text, this is what you get:"
+msgstr ""
+"De usar esto sobre la segunda línea del texto de ejemplo obtendría lo "
+"siguiente: "
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:243
+#, no-wrap
+msgid ""
+"\tthe first line ~\n"
+"\t    the second line ~\n"
+msgstr ""
+"\tla primera línea ~\n"
+"\t    la segunda línea ~\n"
+"\t\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:245
+msgid "\"4>>\" will increase the indent of four lines."
+msgstr "«4>>» incrementa el sangrado de 4 líneas."
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:248
+msgid "TABSTOP"
+msgstr "FIN DE TABULACIÓN"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:252
+msgid ""
+"If you want to make indents a multiple of 4, you set 'shiftwidth' to 4.  But "
+"when pressing a <Tab> you still get 8 spaces worth of indent.  To change "
+"this, set the 'softtabstop' option: >"
+msgstr ""
+"Si desea que el sangrado sea un múltiplo de 4, defina 'shiftwidth' a 4. Aún "
+"obtendría ocho espacios de sangrado al pulsar <Tab>. Defina la opción "
+"'softtabstop' para modificar esto: >"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:254 original/TXT/usr_30.txt:448
+#, no-wrap
+msgid "\t:set softtabstop=4\n"
+msgstr "\t:set softtabstop=4\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:259
+msgid ""
+"This will make the <Tab> key insert 4 spaces worth of indent.  If there are "
+"already four spaces, a <Tab> character is used (saving seven characters in "
+"the file).  (If you always want spaces and no tab characters, set the "
+"'expandtab' option.)"
+msgstr ""
+"Esto hará que la tecla <Tab> inserte 4 espacios de sangrado. EL carácter "
+"<Tab> se usará en caso ya existir cuatro espacios (ahorrando 7 espacios en "
+"el archivo). (Si desea siempre espacios y no caracteres de tabulado, defina "
+"la opción 'expandtab')."
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:266
+#, no-wrap
+msgid ""
+"\tNote:\n"
+"\tYou could set the 'tabstop' option to 4.  However, if you edit the\n"
+"\tfile another time, with 'tabstop' set to the default value of 8, it\n"
+"\twill look wrong.  In other programs and when printing the indent will\n"
+"\talso be wrong.  Therefore it is recommended to keep 'tabstop' at eight\n"
+"\tall the time.  That's the standard value everywhere.\n"
+msgstr ""
+"\tNota:\n"
+"\tPuede definir la opción 'tabstop' con valor de 4. De todas formas, si\n"
+"\tedita el archivo en otro momento teniendo 'tabstop' su valor\n"
+"\tpredeterminado de 8, el aspecto no será el deseado. Otros programas,\n"
+"\tasí como imprimir el sangrado presentarán un aspecto equivocado. Por\n"
+"\tello, recomendamos mantener 'tabstop' con valor de 8 en todo momento.\n"
+"\tEste es el valor estándar en otras aplicaciones.\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:269
+msgid "CHANGING TABS"
+msgstr "CAMBIAR LA TABULACIÓN"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:275
+#, no-wrap
+msgid ""
+"You edit a file which was written with a tabstop of 3.  In Vim it looks ugly,\n"
+"because it uses the normal tabstop value of 8.  You can fix this by setting\n"
+"'tabstop' to 3.  But you have to do this every time you edit this file.\n"
+"   Vim can change the use of tabstops in your file.  First, set 'tabstop' to\n"
+"make the indents look good, then use the \":retab\" command: >\n"
+msgstr ""
+"Suponga que está editando una archivo escrito con una detención de tabulador\n"
+"(«tabstop») de 3. No tiene buen aspecto en Vim, ya que usa el valor de\n"
+"«tabstop» predeterminado de 8. Puede arreglar esto definiendo 'tabstop' con\n"
+"valor de 3, pero tendría que hacer esto cada vez que editase este archivo.\n"
+"   Vim puede cambiar el uso de las detenciones de tabulador en el archivo.\n"
+"Primero, defina 'tabstop' para que el sangrado encaje, y por último use la\n"
+"orden «:retab»: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:278
+#, no-wrap
+msgid ""
+"\t:set tabstop=3\n"
+"\t:retab 8\n"
+msgstr ""
+"\t:set tabstop=3\n"
+"\t:retab 8\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:286
+#, no-wrap
+msgid ""
+"The \":retab\" command will change 'tabstop' to 8, while changing the text such\n"
+"that it looks the same.  It changes spans of white space into tabs and spaces\n"
+"for this.  You can now write the file.  Next time you edit it the indents will\n"
+"be right without setting an option.\n"
+"   Warning: When using \":retab\" on a program, it may change white space inside\n"
+"a string constant.  Therefore it's a good habit to use \"\\t\" instead of a\n"
+"real tab.\n"
+msgstr ""
+"La orden «:retab» cambia 'tabstop' a 8, a la vez que modifica el texto para\n"
+"que encaje. Para ello, modifica los tramos de espacio blanco a tabulados y\n"
+"espacios. Ahora puede escribir en el archivo. La siguiente vez que lo edite,\n"
+"la tabulación será la correcta sin necesidad de definir la opción.\n"
+"   Aviso: Si usa «:retab» sobre un programa, cabe que modifique el espacio\n"
+"en blanco dentro de una cadena entrecomillas. Por ello, es una buena\n"
+"costumbre usar «\\t» en lugar de un tabulado real.\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:289
+#, no-wrap
+msgid "*25.4*\tDealing with long lines\n"
+msgstr "*25.4*\tTratar líneas largas\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:301
+#, no-wrap
+msgid ""
+"Sometimes you will be editing a file that is wider than the number of columns\n"
+"in the window.  When that occurs, Vim wraps the lines so that everything fits\n"
+"on the screen.\n"
+"   If you switch the 'wrap' option off, each line in the file shows up as one\n"
+"line on the screen.  Then the ends of the long lines disappear off the screen\n"
+"to the right.\n"
+"   When you move the cursor to a character that can't be seen, Vim will scroll\n"
+"the text to show it.  This is like moving a viewport over the text in the\n"
+"horizontal direction.\n"
+"   By default, Vim does not display a horizontal scrollbar in the GUI.  If you\n"
+"want to enable one, use the following command: >\n"
+msgstr ""
+"A veces editará un archivo más ancho que el número de columnas en la ventana.\n"
+"Cuando esto ocurre, Vim justifica las líneas para encajar todo en la pantalla.\n"
+"   Si desactiva la opción 'wrap' cada línea en el archivo aparecerá como una\n"
+"sola línea en la pantalla, desapareciendo así la continuación de la línea en\n"
+"el margen derecho de la pantalla.\n"
+"   Cuando desplaza el cursor sobre en carácter que no se puede ver, Vim\n"
+"desplazará el texto para mostrarlo. Esto es como desplazar un punto de vista\n"
+"sobre el texto, en dirección horizontal.\n"
+"   Por omisión, Vim no muestra una barra de desplazamiento horizontal en la\n"
+"interfaz gráfica. Si desea activarla, use la siguiente orden: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:303
+#, no-wrap
+msgid "\t:set guioptions+=b\n"
+msgstr "\t:set guioptions+=b\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:305
+msgid "One horizontal scrollbar will appear at the bottom of the Vim window."
+msgstr ""
+"Una barra horizontal aparecerá en la parte inferior de la ventana de Vim."
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:309
+msgid ""
+"If you don't have a scrollbar or don't want to use it, use these commands to "
+"scroll the text.  The cursor will stay in the same place, but it's moved "
+"back into the visible text if necessary."
+msgstr ""
+"Si no tiene una barra de desplazamiento o no quiere usarla, puede usar "
+"estas  órdenes para desplazar el texto. El cursor permanecerá en el mismo "
+"lugar, pero permitiendo también desplazarlo al texto visible, de ser "
+"necesario."
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:318
+#, no-wrap
+msgid ""
+"\tzh\t\tscroll right\n"
+"\t4zh\t\tscroll four characters right\n"
+"\tzH\t\tscroll half a window width right\n"
+"\tze\t\tscroll right to put the cursor at the end\n"
+"\tzl\t\tscroll left\n"
+"\t4zl\t\tscroll four characters left\n"
+"\tzL\t\tscroll half a window width left\n"
+"\tzs\t\tscroll left to put the cursor at the start\n"
+msgstr ""
+"\tzh\t\tDesplazarse a la derecha.\n"
+"\t4zh\t\tCuatro caracteres a la derecha.\n"
+"\tzH\t\tDesplazarse a la derecha, la mitad del ancho de la\n"
+"\t\t\tventana.\n"
+"\tze\t\tA la derecha, llevando el cursor al final.\n"
+"\tzl\t\tA la izquierda.\n"
+"\t4zl\t\tCuatro caracteres a la izquierda.\n"
+"\tzL\t\tLa mitad del ancho de la ventana a la izquierda.\n"
+"\tzs\t\tA la izquierda, llevando el cursor al principio.\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:323
+msgid ""
+"Let's attempt to show this with one line of text.  The cursor is on the \"w"
+"\" of \"which\".  The \"current window\" above the line indicates the text "
+"that is currently visible.  The \"window\"s below the text indicate the text "
+"that is visible after the command left of it."
+msgstr ""
+"Vamos a intentar mostrar esto con una línea de texto. El cursor está sobre "
+"la «w» de «which». La «ventana actual» sobre la línea indica el texto "
+"actualmente visible. Las «ventana» bajo el texto indican el texto visible "
+"después de ejecutar la orden."
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:334
+#, no-wrap
+msgid ""
+"\t\t\t      |<-- current window -->|\n"
+"\t\tsome long text, part of which is visible in the window ~\n"
+"\tze\t  |<--\t   window     -->|\n"
+"\tzH\t   |<--     window     -->|\n"
+"\t4zh\t\t  |<--\t   window     -->|\n"
+"\tzh\t\t     |<--     window\t -->|\n"
+"\tzl\t\t       |<--\twindow\t   -->|\n"
+"\t4zl\t\t\t  |<--\t   window     -->|\n"
+"\tzL\t\t\t\t|<--\t window     -->|\n"
+"\tzs\t\t\t       |<--\twindow\t   -->|\n"
+msgstr ""
+"\t\t\t      |<-- ventana actual -->|\n"
+"\t\tsome long text, part of which is visible in the window ~\n"
+"\tze\t  |<--\t   ventana    -->|\n"
+"\tzH\t   |<--     ventana    -->|\n"
+"\t4zh\t\t  |<--\t   ventana    -->|\n"
+"\tzh\t\t     |<--     ventana\t -->|\n"
+"\tzl\t\t       |<--\tventana\t   -->|\n"
+"\t4zl\t\t\t  |<--\t   ventana    -->|\n"
+"\tzL\t\t\t\t|<--\t ventana    -->|\n"
+"\tzs\t\t\t       |<--\tventana\t   -->|\n"
+"\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:337
+msgid "MOVING WITH WRAP OFF"
+msgstr "DESPLAZARSE CON «WRAP» DESACTIVADO"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:342
+msgid ""
+"When 'wrap' is off and the text has scrolled horizontally, you can use the "
+"following commands to move the cursor to a character you can see.  Thus text "
+"left and right of the window is ignored.  These never cause the text to "
+"scroll:"
+msgstr ""
+"Cuando ha desplazado el texto horizontalmente y 'wrap' está desactivado, "
+"puede usar las siguientes órdenes para mover el cursor a un carácter que "
+"puede ver. Por ello, se ignorará el texto a la izquierda y derecha de la "
+"ventana. Esto nunca causa un desplazamiento del texto:"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:347
+#, no-wrap
+msgid ""
+"\tg0\t\tto first visible character in this line\n"
+"\tg^\t\tto first non-blank visible character in this line\n"
+"\tgm\t\tto middle of this line\n"
+"\tg$\t\tto last visible character in this line\n"
+msgstr ""
+"\tg0\t\tDesplazarse al primer carácter en esta línea\n"
+"\tg^\t\tAl primer carácter que no está en blanco de la línea\n"
+"\tgm\t\tAl centro de esta línea\n"
+"\tg$\t\tAl ultimo carácter visible en esta línea\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:351
+#, no-wrap
+msgid ""
+"\t\t|<--\t window    -->|\n"
+"\tsome long    text, part of which is visible ~\n"
+"\t\t g0  g^    gm\t     g$\n"
+msgstr ""
+"\t\t  |<--\t ventan    -->|\n"
+"\talgún texto    largo, parte del cual visible ~\n"
+"\t\t   g0  g^     gm     g$\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:354
+#, no-wrap
+msgid "BREAKING AT WORDS\t\t\t\t*edit-no-break*\n"
+msgstr "DIVIDIR LÍNEAS EN PALABRAS\t\t*edición-sin-partir* *edit-no-break*\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:363
+#, no-wrap
+msgid ""
+"When preparing text for use by another program, you might have to make\n"
+"paragraphs without a line break.  A disadvantage of using 'nowrap' is that you\n"
+"can't see the whole sentence you are working on.  When 'wrap' is on, words are\n"
+"broken halfway, which makes them hard to read.\n"
+"   A good solution for editing this kind of paragraph is setting the\n"
+"'linebreak' option.  Vim then breaks lines at an appropriate place when\n"
+"displaying the line.  The text in the file remains unchanged.\n"
+"   Without 'linebreak' text might look like this:\n"
+msgstr ""
+"Cuando prepara el texto para su uso con otro programa, puede que tenga que\n"
+"crear los párrafos sin salto de línea. Una desventaja de usar 'nowrap' es\n"
+"que no puede ver la oración completa sobre la que trabaja. Si 'wrap' está,\n"
+"activada, las palabras se dividen por la mitad, dificultando la lectura.\n"
+"   Una buena solución para editar este tipo de párrafos es definir la opción\n"
+"'linebreak'. Vim dividirá las líneas en los puntos apropiados al mostrar\n"
+"la línea. El texto en el archivo no se modifica.\n"
+"   Sin 'linebreak', el texto presentará este aspecto:\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:372
+#, no-wrap
+msgid ""
+"\t+---------------------------------+\n"
+"\t|letter generation program for a b|\n"
+"\t|ank.  They wanted to send out a s|\n"
+"\t|pecial, personalized letter to th|\n"
+"\t|eir richest 1000 customers.  Unfo|\n"
+"\t|rtunately for the programmer, he |\n"
+"\t+---------------------------------+\n"
+"After: >\n"
+msgstr ""
+"\t+---------------------------------+\n"
+"\t|letter generation program for a b|\n"
+"\t|ank.  They wanted to send out a s|\n"
+"\t|pecial, personalized letter to th|\n"
+"\t|eir richest 1000 customers.  Unfo|\n"
+"\t|rtunately for the programmer, he |\n"
+"\t+---------------------------------+\n"
+"Después: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:374
+#, no-wrap
+msgid "\t:set linebreak\n"
+msgstr "\t:set linebreak\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:376
+msgid "it looks like this:"
+msgstr "El texto presentará este aspecto:"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:384
+#, no-wrap
+msgid ""
+"\t+---------------------------------+\n"
+"\t|letter generation program for a  |\n"
+"\t|bank.  They wanted to send out a |\n"
+"\t|special, personalized letter to  |\n"
+"\t|their richest 1000 customers.    |\n"
+"\t|Unfortunately for the programmer,|\n"
+"\t+---------------------------------+\n"
+msgstr ""
+"\t+---------------------------------+\n"
+"\t|letter generation program for a  |\n"
+"\t|bank.  They wanted to send out a |\n"
+"\t|special, personalized letter to  |\n"
+"\t|their richest 1000 customers.    |\n"
+"\t|Unfortunately for the programmer,|\n"
+"\t+---------------------------------+\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:389
+msgid ""
+"Related options: 'breakat' specifies the characters where a break can be "
+"inserted.  'showbreak' specifies a string to show at the start of broken "
+"line.  Set 'textwidth' to zero to avoid a paragraph to be split."
+msgstr ""
+"Opciones relacionadas: 'breakat' especifica los caracteres donde insertar el "
+"salto de línea. 'showbreak' especifica una cadena a mostrar al principio de "
+"una línea dividida. Defina 'textwitdh' como cero para evitar dividir un "
+"párrafo."
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:392
+msgid "MOVING BY VISIBLE LINES"
+msgstr "DESPLAZARSE EN LÍNEAS VISIBLES"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:400
+#, no-wrap
+msgid ""
+"The \"j\" and \"k\" commands move to the next and previous lines.  When used on\n"
+"a long line, this means moving a lot of screen lines at once.\n"
+"   To move only one screen line, use the \"gj\" and \"gk\" commands.  When a line\n"
+"doesn't wrap they do the same as \"j\" and \"k\".  When the line does wrap, they\n"
+"move to a character displayed one line below or above.\n"
+"   You might like to use these mappings, which bind these movement commands to\n"
+"the cursor keys: >\n"
+msgstr ""
+"Las órdenes «j» y «k» desplazan el cursor. Esto desplaza varias líneas en la\n"
+"pantalla en caso de usarlo sobre una larga línea.\n"
+"   Para desplazarse sólo una línea en la pantalla, use las órdenes «gj» y «gk».\n"
+"Estas órdenes hacen lo mismo que «j» y «k» si la línea no está justificada.\n"
+"De activar 'wrap', se desplazan a un carácter visible en una línea inferior\n"
+"o superior.\n"
+"   Puede que desee usar estos mapeado, que relacionan estas órdenes de\n"
+"desplazamiento a las teclas de cursor: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:403
+#, no-wrap
+msgid ""
+"\t:map <Up> gk\n"
+"\t:map <Down> gj\n"
+msgstr ""
+"\t:map <Up> gk\n"
+"\t:map <Down> gj\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:406
+msgid "TURNING A PARAGRAPH INTO ONE LINE"
+msgstr "CONVERTIR UN PÁRRAFO EN UNA LÍNEA"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:410
+msgid ""
+"If you want to import text into a program like MS-Word, each paragraph "
+"should be a single line.  If your paragraphs are currently separated with "
+"empty lines, this is how you turn each paragraph into a single line: >"
+msgstr ""
+"Si desea importar texto desde un programa como MS-Word, cada párrafo debería "
+"ser una sola línea. De existir una separación entre los párrafos en forma de "
+"de líneas vacías, debe realizar lo siguiente para convertir cada párrafo en "
+"una sola línea: >"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:412
+#, no-wrap
+msgid "\t:g/./,/^$/join\n"
+msgstr "\t:g/./,/^$/join\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:414
+msgid "That looks complicated.  Let's break it up in pieces:"
+msgstr "Parece complicado. Vamos a dividirlo:"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:421
+#, no-wrap
+msgid ""
+"\t:g/./\t\tA \":global\" command that finds all lines that contain\n"
+"\t\t\tat least one character.\n"
+"\t     ,/^$/\tA range, starting from the current line (the non-empty\n"
+"\t\t\tline) until an empty line.\n"
+"\t\t  join\tThe \":join\" command joins the range of lines together\n"
+"\t\t\tinto one line.\n"
+msgstr ""
+"\t:g/./\t\tUna orden «:global» que encuentra todas las cadenas\n"
+"\t\t\tque contienen al menos un carácter.\n"
+"\t    ,/^$/\tUn rango, que empieza en la línea actual (no vacía),\n"
+"\t\t\ty acaba en una línea vacía.\n"
+"\t\t join\tLa orden «:join» (unir) une el rango de líneas en una\n"
+"\t\t\tsola línea.\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:423
+msgid "Starting with this text, containing eight lines broken at column 30:"
+msgstr ""
+"Empecemos con este texto, que contiene ocho líneas partidas en la columna 30:"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:434
+#, no-wrap
+msgid ""
+"\t+----------------------------------+\n"
+"\t|A letter generation program\t   |\n"
+"\t|for a bank.  They wanted to\t   |\n"
+"\t|send out a special,\t\t   |\n"
+"\t|personalized letter.\t\t   |\n"
+"\t|\t\t\t\t   |\n"
+"\t|To their richest 1000\t\t   |\n"
+"\t|customers.  Unfortunately for\t   |\n"
+"\t|the programmer,\t\t   |\n"
+"\t+----------------------------------+\n"
+msgstr ""
+"\t+----------------------------------+\n"
+"\t|A letter generation program\t   |\n"
+"\t|for a bank.  They wanted to\t   |\n"
+"\t|send out a special,\t\t   |\n"
+"\t|personalized letter.\t\t   |\n"
+"\t|\t\t\t\t   |\n"
+"\t|To their richest 1000\t\t   |\n"
+"\t|customers.  Unfortunately for\t   |\n"
+"\t|the programmer,\t\t   |\n"
+"\t+----------------------------------+\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:436
+msgid "You end up with two lines:"
+msgstr "Acaba con dos líneas:"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:444
+#, no-wrap
+msgid ""
+"\t+----------------------------------+\n"
+"\t|A letter generation program for a |\n"
+"\t|bank.\tThey wanted to send out a s|\n"
+"\t|pecial, personalized letter.\t   |\n"
+"\t|To their richest 1000 customers.  |\n"
+"\t|Unfortunately for the programmer, |\n"
+"\t+----------------------------------+\n"
+msgstr ""
+"\t+----------------------------------+\n"
+"\t|A letter generation program for a |\n"
+"\t|bank.\tThey wanted to send out a s|\n"
+"\t|pecial, personalized letter.\t   |\n"
+"\t|To their richest 1000 customers.  |\n"
+"\t|Unfortunately for the programmer, |\n"
+"\t+----------------------------------+\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:449
+#, no-wrap
+msgid ""
+"Note that this doesn't work when the separating line is blank but not empty;\n"
+"when it contains spaces and/or tabs.  This command does work with blank lines:\n"
+">\n"
+"\t:g/\\S/,/^\\s*$/join\n"
+msgstr ""
+"Observe que esto no funciona si la línea de separación está en blanco pero\n"
+"no vacía; cuando contiene espacios y/o tabulados. Esta orden funciona con\n"
+"líneas en blanco:\n"
+">\n"
+"\t:g/\\S/,/^\\s*$/join\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:452
+msgid ""
+"This still requires a blank or empty line at the end of the file for the "
+"last paragraph to be joined."
+msgstr ""
+"Esto requiere una línea vacía o en blanco al final del archivo para poder "
+"unir el último párrafo."
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:455
+#, no-wrap
+msgid "*25.5*\tEditing tables\n"
+msgstr "*25.5*\tEditar tablas\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:457
+msgid "Suppose you are editing a table with four columns:"
+msgstr "Suponga que está editando una tabla con cuatro columnas:"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:461
+#, no-wrap
+msgid ""
+"\tnice table\t  test 1\ttest 2\t    test 3 ~\n"
+"\tinput A\t\t  0.534 ~\n"
+"\tinput B\t\t  0.913 ~\n"
+msgstr ""
+"\tTabla ordenada\t  test 1\ttest 2\t    test 3 ~\n"
+"\tentrada A\t  0.534 ~\n"
+"\tentrada B\t  0.913 ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:465
+#, no-wrap
+msgid ""
+"You need to enter numbers in the third column.  You could move to the second\n"
+"line, use \"A\", enter a lot of spaces and type the text.\n"
+"   For this kind of editing there is a special option: >\n"
+msgstr ""
+"Necesita introducir números en la tercera columna. Podría desplazarse a la\n"
+"segunda línea, usar «A», introducir espacios y escribir el texto.\n"
+"   Existe una orden especial para este tipo de edición: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:467
+#, no-wrap
+msgid "\tset virtualedit=all\n"
+msgstr "\tset virtualedit=all\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:471
+#, no-wrap
+msgid ""
+"Now you can move the cursor to positions where there isn't any text.  This is\n"
+"called \"virtual space\".  Editing a table is a lot easier this way.\n"
+"   Move the cursor by searching for the header of the last column: >\n"
+msgstr ""
+"Ahora puede mover el cursor a posiciones donde no hay texto. A esto se le llama\n"
+"espacio virtual («virtual space»), y facilita la edición de tablas.\n"
+"   Mueva el cursor, buscando la cabecera de la última columna: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:473
+#, no-wrap
+msgid "\t/test 3\n"
+msgstr "\t/test 3\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:476
+msgid ""
+"Now press \"j\" and you are right where you can enter the value for \"input A"
+"\".  Typing \"0.693\" results in:"
+msgstr ""
+"Pulse ahora «j» y estará dónde puede introducir el valor para «input A». "
+"Teclear «0.693» da como resultado:"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:480
+#, no-wrap
+msgid ""
+"\tnice table\t  test 1     test 2\t test 3 ~\n"
+"\tinput A\t\t  0.534\t\t\t 0.693 ~\n"
+"\tinput B\t\t  0.913 ~\n"
+msgstr ""
+"\tTabla ordenada\t  test 1     test 2\t test 3 ~\n"
+"\tentrada A\t  0.534\t\t\t 0.693 ~\n"
+"\tentrada B\t  0.913 ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:485
+msgid ""
+"Vim has automatically filled the gap in front of the new text for you.  Now, "
+"to enter the next field in this column use \"Bj\".  \"B\" moves back to the "
+"start of a white space separated word.  Then \"j\" moves to the place where "
+"the next field can be entered."
+msgstr ""
+"Vim a rellenado automáticamente el espacio en frente del texto. Ahora, para "
+"introducir el siguiente campo de esta columna use «Bj». «B» le devuelve al "
+"inicio de una palabra separada por un espacio en blanco. «j» le desplaza al "
+"lugar dónde puede introducir el siguiente campo."
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:490
+#, no-wrap
+msgid ""
+"\tNote:\n"
+"\tYou can move the cursor anywhere in the display, also beyond the end\n"
+"\tof a line.  But Vim will not insert spaces there, until you insert a\n"
+"\tcharacter in that position.\n"
+msgstr ""
+"\tNota:\n"
+"\tPuede mover el cursor a cualquier lugar de la pantalla, también más\n"
+"\tallá del final de línea. Pero Vim no insertará aquí espacios hasta\n"
+"\tque inserte un carácter en esa posición.\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:493
+msgid "COPYING A COLUMN"
+msgstr "COPIAR UNA COLUMNA"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:506
+#, no-wrap
+msgid ""
+"You want to add a column, which should be a copy of the third column and\n"
+"placed before the \"test 1\" column.  Do this in seven steps:\n"
+"1.  Move the cursor to the left upper corner of this column, e.g., with\n"
+"    \"/test 3\".\n"
+"2.  Press CTRL-V to start blockwise Visual mode.\n"
+"3.  Move the cursor down two lines with \"2j\".  You are now in \"virtual space\":\n"
+"    the \"input B\" line of the \"test 3\" column.\n"
+"4.  Move the cursor right, to include the whole column in the selection, plus\n"
+"    the space that you want between the columns.  \"9l\" should do it.\n"
+"5.  Yank the selected rectangle with \"y\".\n"
+"6.  Move the cursor to \"test 1\", where the new column must be placed.\n"
+"7.  Press \"P\".\n"
+msgstr ""
+"Si desea añadir una columna, que debe ser la copia de la tercera columna\n"
+"y deberá situarse antes de la columna «test 1». Haga estos 7 pasos:\n"
+"1.  Mueva el cursor a la esquina superior izquierda de esta columna, p. ej.,\n"
+"    con «/test 3».\n"
+"2.  Pulse CTRL-V para empezar el modo de bloque visual.\n"
+"3.  Mueva el cursor dos líneas hacia abajo con «2j». Ahora se encuentra en\n"
+"    espacio virtual («virtual space»): la línea «entrada B» de la columna\n"
+"    «test 3».\n"
+"4.  Mueva el cursor a la derecha para incluir toda la columna en la selección\n"
+"    además del espacio que desea entre las columnas. «9l» hará esto.\n"
+"5.  Copie el rectángulo seleccionado con «y» (yank).\n"
+"6.  Mueva el cursor a «test 1», donde se debería situar la nueva columna.\n"
+"7.  Pulse «P».\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:508
+msgid "The result should be:"
+msgstr "El resultado debería ser:"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:512
+#, no-wrap
+msgid ""
+"\tnice table\t  test 3    test 1     test 2\t   test 3 ~\n"
+"\tinput A\t\t  0.693     0.534\t\t   0.693 ~\n"
+"\tinput B\t\t\t    0.913 ~\n"
+msgstr ""
+"\tTabla ordenada\t  test 3    test 1     test 2\t   test 3 ~\n"
+"\tentrada A\t  0.693     0.534\t\t   0.693 ~\n"
+"\tentrada B\t\t    0.913 ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:515
+msgid ""
+"Notice that the whole \"test 1\" column was shifted right, also the line "
+"where the \"test 3\" column didn't have text."
+msgstr ""
+"Observe que la columna entera «test 1» se ha desplazado a la derecha, así "
+"como la línea de la columna «test 3» que no tenía texto."
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:517
+msgid "Go back to non-virtual cursor movements with: >"
+msgstr "Puede volver a los movimientos de cursor no virtuales con: >"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:519
+#, no-wrap
+msgid "\t:set virtualedit=\n"
+msgstr "\t:set virtualedit=\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:522
+msgid "VIRTUAL REPLACE MODE"
+msgstr "MODO VIRTUAL DE REEMPLAZAR"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:528
+#, no-wrap
+msgid ""
+"The disadvantage of using 'virtualedit' is that it \"feels\" different.  You\n"
+"can't recognize tabs or spaces beyond the end of line when moving the cursor\n"
+"around.  Another method can be used: Virtual Replace mode.\n"
+"   Suppose you have a line in a table that contains both tabs and other\n"
+"characters.  Use \"rx\" on the first tab:\n"
+msgstr ""
+"La desventaja de usar 'virtualedit' es que parece distinto. No puede\n"
+"reconocer tabulados o espacios más allá del final de línea si desplaza el\n"
+"cursor. Puede usar otro método: Modo Virtual de Reemplazar.\n"
+"   Suponga que tiene una línea en una tabla que contienen tabulados y otros\n"
+"caracteres. Use «rx» en el primer tabulado:\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:530 original/TXT/usr_25.txt:540
+#, no-wrap
+msgid "\tinp\t0.693   0.534\t0.693 ~\n"
+msgstr "\tinp\t0.693   0.534\t0.693 ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:534
+#, no-wrap
+msgid ""
+"\t       |\n"
+"\t   rx  |\n"
+"\t       V\n"
+msgstr ""
+"\t       |\n"
+"\t   rx  |\n"
+"\t       V\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:536
+#, no-wrap
+msgid "\tinpx0.693   0.534\t0.693 ~\n"
+msgstr "\tinpx0.693   0.534\t0.693 ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:538
+msgid "The layout is messed up.  To avoid that, use the \"gr\" command:"
+msgstr "EL diseño está desordenado. Use la orden «gr» para evitarlo:"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:544
+#, no-wrap
+msgid ""
+"\t       |\n"
+"\t  grx  |\n"
+"\t       V\n"
+msgstr ""
+"\t       |\n"
+"\t  grx  |\n"
+"\t       V\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:546
+#, no-wrap
+msgid "\tinpx\t0.693   0.534\t0.693 ~\n"
+msgstr "\tinpx\t0.693   0.534\t0.693 ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:555
+#, no-wrap
+msgid ""
+"What happens is that the \"gr\" command makes sure the new character takes the\n"
+"right amount of screen space.  Extra spaces or tabs are inserted to fill the\n"
+"gap.  Thus what actually happens is that a tab is replaced by \"x\" and then\n"
+"blanks added to make the text after it keep its place.  In this case a\n"
+"tab is inserted.\n"
+"   When you need to replace more than one character, you use the \"R\" command\n"
+"to go to Replace mode (see |04.9|).  This messes up the layout and replaces\n"
+"the wrong characters:\n"
+msgstr ""
+"Lo que ocurre es que la orden «gr» se asegura que el nuevo carácter tomará\n"
+"la cantidad de espacio de pantalla correcta. Los espacios y tabulados\n"
+"adicionales se insertarán en el hueco. Por ello, lo que realmente ocurre es\n"
+"que el tabulado se reemplaza por «x», y después se añaden espacios en blanco\n"
+"para que el texto a continuación siga en el mismo sitio. En este caso se\n"
+"inserta un tabulado.\n"
+"   Cuando necesita reemplazar más de un carácter, use la orden «R» para pasar\n"
+"al modo Reemplazar (consulte |04.9|). Esto desordena la presentación y\n"
+"reemplaza los caracteres erróneos:\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:557 original/TXT/usr_25.txt:567
+#, no-wrap
+msgid "\tinp\t0\t0.534\t0.693 ~\n"
+msgstr "\tinp\t0\t0.534\t0.693 ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:561
+#, no-wrap
+msgid ""
+"\t\t|\n"
+"\t R0.786 |\n"
+"\t\tV\n"
+msgstr ""
+"\t\t|\n"
+"\t R0.786 |\n"
+"\t\tV\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:563
+#, no-wrap
+msgid "\tinp\t0.78634\t0.693 ~\n"
+msgstr "\tinp\t0.78634\t0.693 ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:565
+msgid ""
+"The \"gR\" command uses Virtual Replace mode.  This preserves the layout:"
+msgstr "La orden «gR» usa el modo Virtual Reemplazar. Esto respeta el diseño:"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:571
+#, no-wrap
+msgid ""
+"\t\t|\n"
+"\tgR0.786 |\n"
+"\t\tV\n"
+msgstr ""
+"\t\t|\n"
+"\tgR0.786 |\n"
+"\t\tV\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:573
+#, no-wrap
+msgid "\tinp\t0.786\t0.534\t0.693 ~\n"
+msgstr "\tinp\t0.786\t0.534\t0.693 ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_25.txt:577
+msgid "Next chapter: |usr_26.txt| Repeating"
+msgstr "Siguiente capítulo: |usr_26.txt| Repetición"

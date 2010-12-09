@@ -1,0 +1,1469 @@
+# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es
+# extracted from usr_07.txt 
+# Copyright (C) 2009 
+# This file is distributed under the same license as the Vim 7.2 package.
+#
+# Translators credits:
+#   - Initial translation
+#       Álvaro Castro Castillo <alvaro.castro.castilla@gmail.com>
+#
+#   - Updates
+#       TRADUCTOR <CORREO>, AÑO 
+#
+# Debido al formato (txt) y al máximo de 80 columnas que pueden tener 
+# los textos de ayuda en Vim, así como el formato PO, por favor, leete los
+# apuntes concernientes a la edición de los archivos PO relativos a la
+# aplicación que desees usar.
+# También encontrarás información acerca del uso de herramientas gettext en el 
+# proyecto de localización (l10n) de Vim.
+#
+# - http://www.assembla.com/wiki/show/vim-doc-es
+#
+# No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
+# este enlace puede ser de interés. A pesar de no formar parte, nuestra 
+# intención es homologarnos con su terminología y uso de la lengua 
+# en la medida de lo útil y posible.
+#
+#  - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/notas
+#
+# La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
+# pero también puede servir de referencia para otros términos no técnicos.
+# No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
+# traducción sea comprensible independientemente de la nacionalidad del
+# usuario. Si crees que alguna traducción puede llevar a confusión, consulta
+# la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
+#
+#  - www.rae.es 
+#  - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages   
+#
+# Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
+# se puede consultar con un simple grep, pogrep o cargado en Virtaal.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Vim 7.2\n"
+"Report-Msgid-Bugs-To: vim@bugs.org\n"
+"POT-Creation-Date: 2010-09-23 20:27+0300\n"
+"PO-Revision-Date: 2010-12-06 18:02+0100\n"
+"Last-Translator: Álvaro Castro Castillo <alvaro.castro.castilla@gmail."
+"com>Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:18 original/TXT/intro.txt:79
+#: original/TXT/intro.txt:180 original/TXT/intro.txt:290
+#: original/TXT/intro.txt:518 original/TXT/intro.txt:596
+#: original/TXT/intro.txt:689 original/TXT/intro.txt:817
+#: original/TXT/intro.txt:880 original/TXT/usr_toc.txt:7
+#: original/TXT/usr_toc.txt:58 original/TXT/usr_toc.txt:172
+#: original/TXT/usr_toc.txt:281 original/TXT/usr_toc.txt:340
+#: original/TXT/usr_toc.txt:352 original/TXT/usr_01.txt:19
+#: original/TXT/usr_01.txt:50 original/TXT/usr_01.txt:100
+#: original/TXT/usr_01.txt:181 original/TXT/usr_02.txt:25
+#: original/TXT/usr_02.txt:69 original/TXT/usr_02.txt:130
+#: original/TXT/usr_02.txt:179 original/TXT/usr_02.txt:239
+#: original/TXT/usr_02.txt:307 original/TXT/usr_02.txt:369
+#: original/TXT/usr_02.txt:406 original/TXT/usr_02.txt:560
+#: original/TXT/usr_03.txt:28 original/TXT/usr_03.txt:74
+#: original/TXT/usr_03.txt:101 original/TXT/usr_03.txt:147
+#: original/TXT/usr_03.txt:172 original/TXT/usr_03.txt:223
+#: original/TXT/usr_03.txt:265 original/TXT/usr_03.txt:320
+#: original/TXT/usr_03.txt:491 original/TXT/usr_03.txt:552
+#: original/TXT/usr_03.txt:650 original/TXT/usr_04.txt:27
+#: original/TXT/usr_04.txt:74 original/TXT/usr_04.txt:160
+#: original/TXT/usr_04.txt:194 original/TXT/usr_04.txt:269
+#: original/TXT/usr_04.txt:324 original/TXT/usr_04.txt:360
+#: original/TXT/usr_04.txt:390 original/TXT/usr_04.txt:446
+#: original/TXT/usr_04.txt:469 original/TXT/usr_04.txt:510
+#: original/TXT/usr_05.txt:24 original/TXT/usr_05.txt:63
+#: original/TXT/usr_05.txt:219 original/TXT/usr_05.txt:266
+#: original/TXT/usr_05.txt:418 original/TXT/usr_05.txt:467
+#: original/TXT/usr_05.txt:506 original/TXT/usr_05.txt:621
+#: original/TXT/usr_06.txt:24 original/TXT/usr_06.txt:50
+#: original/TXT/usr_06.txt:135 original/TXT/usr_06.txt:189
+#: original/TXT/usr_06.txt:270 original/TXT/usr_06.txt:276
+#: original/TXT/usr_07.txt:24 original/TXT/usr_07.txt:63
+#: original/TXT/usr_07.txt:179 original/TXT/usr_07.txt:266
+#: original/TXT/usr_07.txt:316 original/TXT/usr_07.txt:404
+#: original/TXT/usr_07.txt:444 original/TXT/usr_07.txt:475
+#: original/TXT/usr_08.txt:26 original/TXT/usr_08.txt:82
+#: original/TXT/usr_08.txt:109 original/TXT/usr_08.txt:161
+#: original/TXT/usr_08.txt:215 original/TXT/usr_08.txt:278
+#: original/TXT/usr_08.txt:337 original/TXT/usr_08.txt:477
+#: original/TXT/usr_08.txt:509 original/TXT/usr_08.txt:597
+#: original/TXT/usr_09.txt:21 original/TXT/usr_09.txt:124
+#: original/TXT/usr_09.txt:175 original/TXT/usr_09.txt:259
+#: original/TXT/usr_09.txt:285 original/TXT/usr_10.txt:27
+#: original/TXT/usr_10.txt:144 original/TXT/usr_10.txt:221
+#: original/TXT/usr_10.txt:342 original/TXT/usr_10.txt:378
+#: original/TXT/usr_10.txt:547 original/TXT/usr_10.txt:621
+#: original/TXT/usr_10.txt:667 original/TXT/usr_10.txt:692
+#: original/TXT/usr_10.txt:820 original/TXT/usr_11.txt:22
+#: original/TXT/usr_11.txt:82 original/TXT/usr_11.txt:144
+#: original/TXT/usr_11.txt:288 original/TXT/usr_11.txt:303
+#: original/TXT/usr_12.txt:25 original/TXT/usr_12.txt:90
+#: original/TXT/usr_12.txt:131 original/TXT/usr_12.txt:177
+#: original/TXT/usr_12.txt:202 original/TXT/usr_12.txt:231
+#: original/TXT/usr_12.txt:281 original/TXT/usr_12.txt:309
+#: original/TXT/usr_12.txt:354 original/TXT/usr_20.txt:22
+#: original/TXT/usr_20.txt:113 original/TXT/usr_20.txt:158
+#: original/TXT/usr_20.txt:285 original/TXT/usr_20.txt:327
+#: original/TXT/usr_20.txt:380 original/TXT/usr_21.txt:24
+#: original/TXT/usr_21.txt:47 original/TXT/usr_21.txt:87
+#: original/TXT/usr_21.txt:236 original/TXT/usr_21.txt:385
+#: original/TXT/usr_21.txt:438 original/TXT/usr_21.txt:495
+#: original/TXT/usr_22.txt:22 original/TXT/usr_22.txt:148
+#: original/TXT/usr_22.txt:213 original/TXT/usr_22.txt:272
+#: original/TXT/usr_22.txt:396 original/TXT/usr_23.txt:23
+#: original/TXT/usr_23.txt:114 original/TXT/usr_23.txt:156
+#: original/TXT/usr_23.txt:238 original/TXT/usr_23.txt:324
+#: original/TXT/usr_23.txt:339 original/TXT/usr_24.txt:28
+#: original/TXT/usr_24.txt:96 original/TXT/usr_24.txt:119
+#: original/TXT/usr_24.txt:268 original/TXT/usr_24.txt:305
+#: original/TXT/usr_24.txt:336 original/TXT/usr_24.txt:369
+#: original/TXT/usr_24.txt:493 original/TXT/usr_24.txt:537
+#: original/TXT/usr_24.txt:583 original/TXT/usr_24.txt:602
+#: original/TXT/usr_25.txt:22 original/TXT/usr_25.txt:132
+#: original/TXT/usr_25.txt:210 original/TXT/usr_25.txt:287
+#: original/TXT/usr_25.txt:453 original/TXT/usr_25.txt:574
+#: original/TXT/usr_26.txt:21 original/TXT/usr_26.txt:46
+#: original/TXT/usr_26.txt:103 original/TXT/usr_26.txt:136
+#: original/TXT/usr_26.txt:217 original/TXT/usr_27.txt:26
+#: original/TXT/usr_27.txt:88 original/TXT/usr_27.txt:136
+#: original/TXT/usr_27.txt:239 original/TXT/usr_27.txt:320
+#: original/TXT/usr_27.txt:350 original/TXT/usr_27.txt:427
+#: original/TXT/usr_27.txt:469 original/TXT/usr_27.txt:510
+#: original/TXT/usr_27.txt:559 original/TXT/usr_28.txt:27
+#: original/TXT/usr_28.txt:54 original/TXT/usr_28.txt:121
+#: original/TXT/usr_28.txt:185 original/TXT/usr_28.txt:211
+#: original/TXT/usr_28.txt:269 original/TXT/usr_28.txt:315
+#: original/TXT/usr_28.txt:331 original/TXT/usr_28.txt:375
+#: original/TXT/usr_28.txt:389 original/TXT/usr_28.txt:422
+#: original/TXT/usr_29.txt:23 original/TXT/usr_29.txt:273
+#: original/TXT/usr_29.txt:320 original/TXT/usr_29.txt:441
+#: original/TXT/usr_29.txt:570 original/TXT/usr_29.txt:609
+#: original/TXT/usr_30.txt:23 original/TXT/usr_30.txt:202
+#: original/TXT/usr_30.txt:280 original/TXT/usr_30.txt:336
+#: original/TXT/usr_30.txt:409 original/TXT/usr_30.txt:515
+#: original/TXT/usr_30.txt:639 original/TXT/usr_31.txt:22
+#: original/TXT/usr_31.txt:81 original/TXT/usr_31.txt:133
+#: original/TXT/usr_31.txt:160 original/TXT/usr_31.txt:208
+#: original/TXT/usr_31.txt:268
+#, no-wrap
+msgid "==============================================================================\n"
+msgstr "==============================================================================\n"
+
+#. type: Plain text
+#: original/TXT/usr_toc.txt:4 original/TXT/usr_01.txt:4
+#: original/TXT/usr_02.txt:4 original/TXT/usr_03.txt:4
+#: original/TXT/usr_04.txt:4 original/TXT/usr_05.txt:4
+#: original/TXT/usr_06.txt:4 original/TXT/usr_07.txt:4
+#: original/TXT/usr_08.txt:4 original/TXT/usr_09.txt:4
+#: original/TXT/usr_10.txt:4 original/TXT/usr_11.txt:4
+#: original/TXT/usr_12.txt:4 original/TXT/usr_20.txt:4
+#: original/TXT/usr_21.txt:4 original/TXT/usr_22.txt:4
+#: original/TXT/usr_23.txt:4 original/TXT/usr_24.txt:4
+#: original/TXT/usr_25.txt:4 original/TXT/usr_26.txt:4
+#: original/TXT/usr_27.txt:4 original/TXT/usr_28.txt:4
+#: original/TXT/usr_29.txt:4 original/TXT/usr_30.txt:4
+#: original/TXT/usr_31.txt:4
+#, no-wrap
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
+msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
+
+#. type: Plain text
+#: original/TXT/usr_toc.txt:354 original/TXT/usr_01.txt:185
+#: original/TXT/usr_02.txt:564 original/TXT/usr_03.txt:654
+#: original/TXT/usr_04.txt:514 original/TXT/usr_05.txt:625
+#: original/TXT/usr_06.txt:280 original/TXT/usr_07.txt:479
+#: original/TXT/usr_08.txt:601 original/TXT/usr_09.txt:289
+#: original/TXT/usr_10.txt:824 original/TXT/usr_11.txt:307
+#: original/TXT/usr_12.txt:358 original/TXT/usr_20.txt:384
+#: original/TXT/usr_21.txt:499 original/TXT/usr_22.txt:400
+#: original/TXT/usr_23.txt:343 original/TXT/usr_24.txt:606
+#: original/TXT/usr_25.txt:578 original/TXT/usr_26.txt:221
+#: original/TXT/usr_27.txt:563 original/TXT/usr_28.txt:426
+#: original/TXT/usr_29.txt:613 original/TXT/usr_30.txt:643
+#: original/TXT/usr_31.txt:272
+msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+
+#. type: Plain text
+#: original/TXT/usr_02.txt:399 original/TXT/usr_02.txt:495
+#: original/TXT/usr_07.txt:37
+#, no-wrap
+msgid "\tE37: No write since last change (use ! to override) ~\n"
+msgstr ""
+"\tE37: No se ha guardado el fichero desde el último cambio\n"
+"\t(añada ! para forzar) ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:2
+#, no-wrap
+msgid "*usr_07.txt*\tFor Vim version 7.3.  Last change: 2006 Apr 24\n"
+msgstr "*usr_07.esx*\tPara Vim version 7.3.  Último cambio: 24/5/2006\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:6
+#, no-wrap
+msgid "\t\t\t  Editing more than one file\n"
+msgstr "\t\t\t Editar más de un archivo\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:11
+msgid ""
+"No matter how many files you have, you can edit them without leaving Vim.  "
+"Define a list of files to work on and jump from one to the other.  Copy text "
+"from one file and put it in another one."
+msgstr ""
+"No importa cuántos archivos tenga, puede editarlos todos sin salir de Vim.  "
+"Defina una lista de archivos de trabajo y pase de uno a otro. Copie texto de "
+"un archivo a otro."
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:19
+#, no-wrap
+msgid ""
+"|07.1|\tEdit another file\n"
+"|07.2|\tA list of files\n"
+"|07.3|\tJumping from file to file\n"
+"|07.4|\tBackup files\n"
+"|07.5|\tCopy text between files\n"
+"|07.6|\tViewing a file\n"
+"|07.7|\tChanging the file name\n"
+msgstr ""
+"|07.1|\tEditar otro archivo\n"
+"|07.2|\tUna lista de archivos\n"
+"|07.3|\tPasar de archivo a archivo\n"
+"|07.4|\tCopias de seguridad\n"
+"|07.5|\tCopiar texto entre archivos\n"
+"|07.6|\tVer un archivo\n"
+"|07.7|\tCambiar el nombre de archivo\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:23
+#, no-wrap
+msgid ""
+"     Next chapter: |usr_08.txt|  Splitting windows\n"
+" Previous chapter: |usr_06.txt|  Using syntax highlighting\n"
+"Table of contents: |usr_toc.txt|\n"
+msgstr ""
+" Capítulo siguiente: |usr_08.esx|  Dividir en ventanas\n"
+"  Capítulo anterior: |usr_06.esx|  Uso del coloreado de sintaxis\n"
+"Tabla de contenidos: |usr_toc.esx|\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:26
+#, no-wrap
+msgid "*07.1*\tEdit another file\n"
+msgstr "*07.1*\tEditar otro archivo\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:29
+msgid ""
+"So far you had to start Vim for every file you wanted to edit.  There is a "
+"simpler way.  To start editing another file, use this command: >"
+msgstr ""
+"Hasta ahora ha tenido que iniciar Vim para cada archivo que quería editar.  "
+"Hay una manera más sencilla: Para editar otro archivo, use esta orden: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:31
+#, no-wrap
+msgid "\t:edit foo.txt\n"
+msgstr "\t:edit foo.txt\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:35
+msgid ""
+"You can use any file name instead of \"foo.txt\".  Vim will close the "
+"current file and open the new one.  If the current file has unsaved changes, "
+"however, Vim displays an error message and does not open the new file:"
+msgstr ""
+"Puede usar cualquier nombre de archivo en lugar de «foo.txt». Vim cerrará el "
+"archivo actual y abrirá uno nuevo. Sin embargo, si el archivo actual tiene "
+"cambios no guardados, Vim mostrará un error y no abrirá el archivo nuevo:"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:42
+#, no-wrap
+msgid ""
+"\tNote:\n"
+"\tVim puts an error ID at the start of each error message.  If you do\n"
+"\tnot understand the message or what caused it, look in the help system\n"
+"\tfor this ID.  In this case: >\n"
+msgstr ""
+"\tNota:\n"
+"\tVim coloca una ID de error al comienzo de cada mensaje de error.  Si\n"
+"\tno entiende el mensaje o su causa, puedes buscar ayuda para esta ID.\n"
+"\tEn este caso: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:44
+#, no-wrap
+msgid "\t\t:help E37\n"
+msgstr "\t\t:help E37\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:47
+msgid ""
+"At this point, you have a number of alternatives.  You can write the file "
+"using this command: >"
+msgstr ""
+"En este punto, dispone de una serie de alternativas. Puede escribir el "
+"archivo usando esta orden: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:49
+#, no-wrap
+msgid "\t:write\n"
+msgstr "\t:write\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:52
+msgid ""
+"Or you can force Vim to discard your changes and edit the new file, using "
+"the force (!) character: >"
+msgstr ""
+"O puede forzar que Vim descarte los cambios y edite un archivo nuevo usando "
+"el carácter «!»: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:54
+#, no-wrap
+msgid "\t:edit! foo.txt\n"
+msgstr "\t:edit! foo.txt\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:57
+msgid ""
+"If you want to edit another file, but not write the changes in the current "
+"file yet, you can make it hidden: >"
+msgstr ""
+"Si quiere editar otro archivo, pero no escribir los cambios en el archivo "
+"actual todavía, puede hacer que se oculte: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:59
+#, no-wrap
+msgid "\t:hide edit foo.txt\n"
+msgstr "\t:hide edit foo.txt\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:62
+msgid ""
+"The text with changes is still there, but you can't see it.  This is further "
+"explained in section |22.4|: The buffer list."
+msgstr ""
+"El texto con los cambios está todavía aquí, pero no lo puede ver. Esto se "
+"explica con más detalle en la sección |22.4|: La lista de búfers."
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:65
+#, no-wrap
+msgid "*07.2*\tA list of files\n"
+msgstr "*07.2*\tUna lista de archivos\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:67
+msgid "You can start Vim to edit a sequence of files.  For example: >"
+msgstr ""
+"Puede iniciar Vim para editar una secuencia de archivos. Por ejemplo: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:69
+#, no-wrap
+msgid "\tvim one.c two.c three.c\n"
+msgstr "\tvim uno.c dos.c tres.c\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:73
+msgid ""
+"This command starts Vim and tells it that you will be editing three files.  "
+"Vim displays just the first file.  After you have done your thing in this "
+"file, to edit the next file you use this command: >"
+msgstr ""
+"Esta orden inicia Vim y le dice que va a editar tres archivos. Vim muestra "
+"solamente el primero. Tras haber terminado con el primero, puede editar el "
+"siguiente con esta orden: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:75 original/TXT/usr_07.txt:190
+#: original/TXT/usr_07.txt:196
+#, no-wrap
+msgid "\t:next\n"
+msgstr "\t:next\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:79
+msgid ""
+"If you have unsaved changes in the current file, you will get an error "
+"message and the \":next\" will not work.  This is the same problem as with "
+"\":edit\" mentioned in the previous section.  To abandon the changes: >"
+msgstr ""
+"Si tiene cambios sin guardar en el archivo actual, obtendrá un mensaje de "
+"error y «:next» no funcionará. Este es el mismo problema mencionado con «:"
+"edit» en la sección anterior. Para abandonar los cambios: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:81
+#, no-wrap
+msgid "\t:next!\n"
+msgstr "\t:next!\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:84
+msgid ""
+"But mostly you want to save the changes and move on to the next file.  There "
+"is a special command for this: >"
+msgstr ""
+"Pero habitualmente querrá guardar los cambios e ir al siguiente archivo.  "
+"Hay una orden especial para esto: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:86
+#, no-wrap
+msgid "\t:wnext\n"
+msgstr "\t:wnext\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:88
+msgid "This does the same as using two separate commands: >"
+msgstr "Esto hace lo mismo que usar las siguientes órdenes: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:91
+#, no-wrap
+msgid ""
+"\t:write\n"
+"\t:next\n"
+msgstr ""
+"\t:write\n"
+"\t:next\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:94
+msgid "WHERE AM I?"
+msgstr "¿DÓNDE ESTOY?"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:99
+#, no-wrap
+msgid ""
+"To see which file in the argument list you are editing, look in the window\n"
+"title.  It should show something like \"(2 of 3)\".  This means you are editing\n"
+"the second file out of three files.\n"
+"   If you want to see the list of files, use this command: >\n"
+msgstr ""
+"Para ver qué archivo de la lista de argumentos está editando, mire en el\n"
+"título de la ventana. Debería mostrar algo como «(2 de 3)». Esto significa\n"
+"que está editando un segundo archivo de una lista de tres.\n"
+"   Si quieres ver la lista de archivos, use esta orden: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:101
+#, no-wrap
+msgid "\t:args\n"
+msgstr "\t:args\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:103
+msgid "This is short for \"arguments\".  The output might look like this:"
+msgstr "Esta es la abreviatura de «argumentos». La salida será algo así:"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:105
+#, no-wrap
+msgid "\tone.c [two.c] three.c ~\n"
+msgstr "\tuno.c [dos.c] tres.c ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:108
+msgid ""
+"These are the files you started Vim with.  The one you are currently "
+"editing, \"two.c\", is in square brackets."
+msgstr ""
+"Estos son los archivos con los que ha iniciado Vim. El que está editando "
+"actualmente «dos.c», se encuentra entre corchetes."
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:111
+msgid "MOVING TO OTHER ARGUMENTS"
+msgstr "DESPLAZARSE A OTROS ARGUMENTOS"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:113
+msgid "To go back one file: >"
+msgstr "Para ir hacia atrás un archivo: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:115
+#, no-wrap
+msgid "\t:previous\n"
+msgstr "\t:previous\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:119
+msgid ""
+"This is just like the \":next\" command, except that it moves in the other "
+"direction.  Again, there is a shortcut command for when you want to write "
+"the file first: >"
+msgstr ""
+"Esto es justo como la orden «:next», excepto que va en la otra dirección.  "
+"Una vez más, existe una orden para cuando quiera escribir el archivo "
+"primero: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:121
+#, no-wrap
+msgid "\t:wprevious\n"
+msgstr "\t:wprevious\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:123
+msgid "To move to the very last file in the list: >"
+msgstr "Para saltar al último archivo de la lista: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:125
+#, no-wrap
+msgid "\t:last\n"
+msgstr "\t:last\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:127
+msgid "And to move back to the first one again: >"
+msgstr "Para volver al primero de nuevo: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:129
+#, no-wrap
+msgid "\t:first\n"
+msgstr "\t:first\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:131
+msgid "There is no \":wlast\" or \":wfirst\" command though!"
+msgstr "No hay una orden «:wlast» ni «:wfirst»."
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:133
+msgid ""
+"You can use a count for \":next\" and \":previous\".  To skip two files "
+"forward: >"
+msgstr ""
+"Puede usar un multiplicador para «:next» y «:previous». Para saltar dos "
+"archivos: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:135
+#, no-wrap
+msgid "\t:2next\n"
+msgstr "\t:2next\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:138
+msgid "AUTOMATIC WRITING"
+msgstr "GUARDAR AUTOMÁTICAMENTE"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:143
+msgid ""
+"When moving around the files and making changes, you have to remember to use "
+"\":write\".  Otherwise you will get an error message.  If you are sure you "
+"always want to write modified files, you can tell Vim to automatically write "
+"them: >"
+msgstr ""
+"Cuando se mueva por los archivos y haga cambios, tiene que recordar usar «:"
+"write». En caso contrario, obtendrá mensajes de error. Si está seguro de que "
+"siempre va a escribir los archivos modificados, puede decirle a Vim que los "
+"escriba automáticamente: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:145
+#, no-wrap
+msgid "\t:set autowrite\n"
+msgstr "\t:set autowrite\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:148
+msgid ""
+"When you are editing a file which you may not want to write, switch it off "
+"again: >"
+msgstr ""
+"Cuando edite un archivo que no quiera escribir automáticamente, desactívelo "
+"de nuevo: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:150
+#, no-wrap
+msgid "\t:set noautowrite\n"
+msgstr "\t:set noautowrite\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:153
+msgid "EDITING ANOTHER LIST OF FILES"
+msgstr "EDITAR OTRA LISTA DE ARCHIVOS"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:156
+msgid ""
+"You can redefine the list of files without the need to exit Vim and start it "
+"again.  Use this command to edit three other files: >"
+msgstr ""
+"Puede redefinir la lista de archivos sin la necesidad de salir de Vim y "
+"arrancarlo de nuevo. Emplee esta orden para editar otros tres archivos: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:158
+#, no-wrap
+msgid "\t:args five.c six.c seven.h\n"
+msgstr "\t:args cinco.c seis.c siete.h\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:160
+msgid "Or use a wildcard, like it's used in the shell: >"
+msgstr "O use comodines, del mismo modo que se hace en la shell: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:162
+#, no-wrap
+msgid "\t:args *.txt\n"
+msgstr "\t:args *.txt\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:166
+msgid ""
+"Vim will take you to the first file in the list.  Again, if the current file "
+"has changes, you can either write the file first, or use \":args!\" (with ! "
+"added) to abandon the changes."
+msgstr ""
+"Vim le llevará al primer archivo en la lista. De nuevo, si el archivo actual "
+"cambia, puede tanto guardar el archivo antes como usar «:args!» (con el ! "
+"añadido) para abandonar los cambios."
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:173
+#, no-wrap
+msgid ""
+"DID YOU EDIT THE LAST FILE?\n"
+"\t\t\t\t\t\t\t*arglist-quit*\n"
+"When you use a list of files, Vim assumes you want to edit them all.  To\n"
+"protect you from exiting too early, you will get this error when you didn't\n"
+"edit the last file in the list yet:\n"
+msgstr ""
+"¿HA EDITADO EL HASTA EL ÚLTIMO ARCHIVO?\n"
+"\t\t\t\t\t\t\t*arglist-quit*\n"
+"Cuando usa una lista de archivos, Vim asume que quiere editarlos todos.\n"
+"Para evitar cerrar antes de tiempo, obtendrá un error cuando no haya\n"
+"editado el último archivo en la lista e intentes salir.\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:175
+#, no-wrap
+msgid "\tE173: 46 more files to edit ~\n"
+msgstr "\tE173: 46 more files to edit ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:178
+msgid ""
+"If you really want to exit, just do it again.  Then it will work (but not "
+"when you did other commands in between)."
+msgstr ""
+"Si realmente desea salir, simplemente inténtelo de nuevo. Entonces "
+"funcionará (pero no si ejecuta otras órdenes durante)."
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:181
+#, no-wrap
+msgid "*07.3*\tJumping from file to file\n"
+msgstr "*07.3*\tPasar de un archivo a otro\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:184
+msgid ""
+"To quickly jump between two files, press CTRL-^ (on English-US keyboards the "
+"^ is above the 6 key).  Example: >"
+msgstr ""
+"Para saltar rápidamente entre dos archivos, pulse CTRL-^ (en teclados Inglés-"
+"EEUU el ^ se encuentra encima de la tecla 6). Por ejemplo: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:186
+#, no-wrap
+msgid "\t:args one.c two.c three.c\n"
+msgstr "\t:args uno.c dos.c tres.c\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:188
+msgid "You are now in one.c. >"
+msgstr "Ahora está en uno.c >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:194
+msgid ""
+"Now you are in two.c.  Now use CTRL-^ to go back to one.c.  Another CTRL-^ "
+"and you are back in two.c.  Another CTRL-^ and you are in one.c again.  If "
+"you now do: >"
+msgstr ""
+"Ahora está en two.c. Use CTRL-^ para volver a uno.c. Use CTRL-^ otra vez y "
+"estará de vuelta en dos.c. Otro CTRL-^ y estará en uno.c de nuevo. Si ahora "
+"hace: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:200
+msgid ""
+"You are in three.c.  Notice that the CTRL-^ command does not change the idea "
+"of where you are in the list of files.  Only commands like \":next\" and \":"
+"previous\" do that."
+msgstr ""
+"Está en tres.c. Observe que la orden CTRL-^ no cambia la idea de dónde está "
+"en la lista de archivos. Sólo órdenes como «:next» y «:previous» lo hacen."
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:203
+msgid ""
+"The file you were previously editing is called the \"alternate\" file.  When "
+"you just started Vim CTRL-^ will not work, since there isn't a previous file."
+msgstr ""
+"El archivo que haya estado editando anteriormente se llama el archivo "
+"«alterno». Hasta que no haya un archivo anterior, CTRL-^ no funcionará."
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:206
+msgid "PREDEFINED MARKS"
+msgstr "MARCAS PREDEFINIDAS"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:209
+msgid ""
+"After jumping to another file, you can use two predefined marks which are "
+"very useful: >"
+msgstr ""
+"Tras saltar a otro archivo, puede usar dos marcas predefinidas que son de "
+"gran utilidad: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:211
+#, no-wrap
+msgid "\t`\"\n"
+msgstr "\t`\"\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:215
+msgid ""
+"This takes you to the position where the cursor was when you left the file.  "
+"Another mark that is remembered is the position where you made the last "
+"change: >"
+msgstr ""
+"Esto le lleva a la posición en la que estaba el cursor cuando salió del "
+"archivo. Otra marca que se recuerda es la posición donde hizo el último "
+"cambio: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:217
+#, no-wrap
+msgid "\t`.\n"
+msgstr "\t`.\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:226
+msgid ""
+"Suppose you are editing the file \"one.txt\".  Somewhere halfway the file "
+"you use \"x\" to delete a character.  Then you go to the last line with \"G"
+"\" and write the file with \":w\".  You edit several other files, and then "
+"use \":edit one.txt\" to come back to \"one.txt\".  If you now use `\" Vim "
+"jumps to the last line of the file.  Using `. takes you to the position "
+"where you deleted the character.  Even when you move around in the file `\" "
+"and `. will take you to the remembered position.  At least until you make "
+"another change or leave the file."
+msgstr ""
+"Suponga que está editando el archivo «uno». En algún lugar a mitad de camino "
+"en el archivo, use «x» para eliminar un carácter. Vaya ahora a la última "
+"línea con «G» y escriba el archivo con «:w». Edite otros archivos y use «:"
+"edit uno.txt» para volver a «uno.txt». Si ahora usa `\", Vim saltará a la "
+"última línea del archivo. Usar `. le llevará a la posición donde eliminó el "
+"carácter. Incluso cuando se mueva por el archivo, `\" y `. le llevará a la "
+"posición recordada. Al menos hasta que realice otro cambio o salga del "
+"archivo."
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:229
+msgid "FILE MARKS"
+msgstr "MARCAS DE ARCHIVO"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:238
+#, no-wrap
+msgid ""
+"In chapter 4 was explained how you can place a mark in a file with \"mx\" and\n"
+"jump to that position with \"`x\".  That works within one file.  If you edit\n"
+"another file and place marks there, these are specific for that file.  Thus\n"
+"each file has its own set of marks, they are local to the file.\n"
+"   So far we were using marks with a lowercase letter.  There are also marks\n"
+"with an uppercase letter.  These are global, they can be used from any file.\n"
+"For example suppose that we are editing the file \"foo.txt\".  Go to halfway the\n"
+"file (\"50%\") and place the F mark there (F for foo): >\n"
+msgstr ""
+"En el capítulo 4 explicamos cómo puede poner un marcador en el archivo con\n"
+"«mx» y saltar a esa posición con «`x». Esto funciona en un archivo. Si\n"
+"edita otro archivo y coloca un marcador ahí, este será específico para ese\n"
+"archivo. Así cada archivo tiene su propio conjunto de marcadores locales.\n"
+"   Hasta ahora estábamos empleando marcadores con una letra en minúscula.\n"
+"También hay marcadores con letras mayúsculas. Éstos son globales, pudiendo\n"
+"ser empleados desde cualquier archivo. Por ejemplo, suponga que editamos\n"
+"«foo.txt», ve a cualquier punto y coloca el marcador F ahí: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:240
+#, no-wrap
+msgid "\t50%mF\n"
+msgstr "\t50%mF\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:244
+#, no-wrap
+msgid ""
+"Now edit the file \"bar.txt\" and place the B mark (B for bar) at its last line:\n"
+">\n"
+"\tGmB\n"
+msgstr ""
+"Edite ahora el archivo «bar.txt» y coloque el marcador B en su última línea:\n"
+">\n"
+"\tGmB\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:247
+msgid ""
+"Now you can use the \"'F\" command to jump back to halfway foo.txt.  Or edit "
+"yet another file, type \"'B\" and you are at the end of bar.txt again."
+msgstr ""
+"Ahora puede usar la orden «'F» para saltar al punto marcado de foo.txt. O "
+"edite otro archivo, escriba «'B» y estará en el final de bar.txt de nuevo."
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:254
+#, no-wrap
+msgid ""
+"The file marks are remembered until they are placed somewhere else.  Thus you\n"
+"can place the mark, do hours of editing and still be able to jump back to that\n"
+"mark.\n"
+"   It's often useful to think of a simple connection between the mark letter\n"
+"and where it is placed.  For example, use the H mark in a header file, M in\n"
+"a Makefile and C in a C code file.\n"
+msgstr ""
+"Estas marcas de archivo se recordarán hasta que se coloquen en algún\n"
+"otro lugar. Así podrás colocar los marcadores, trabajar durante horas y aún\n"
+"tendrá la posibilidad de volver al punto marcado.\n"
+"   Es útil pensar en una conexión sencilla entre la letra del marcador y el\n"
+"lugar donde se coloca. Por ejemplo, use la letra H para un archivo de\n"
+"cabecera (*.h), M para un Makefile y C para código C.\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:256
+msgid ""
+"To see where a specific mark is, give an argument to the \":marks\" command: "
+">"
+msgstr ""
+"Para ver dónde está un marcador específico, escriba la orden «:marks» con un "
+"argumento: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:258
+#, no-wrap
+msgid "\t:marks M\n"
+msgstr "\t:marks M\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:260
+msgid "You can also give several arguments: >"
+msgstr "También puede darle varios argumentos: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:262
+#, no-wrap
+msgid "\t:marks MCP\n"
+msgstr "\t:marks MCP\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:265
+msgid ""
+"Don't forget that you can use CTRL-O and CTRL-I to jump to older and newer "
+"positions without placing marks there."
+msgstr ""
+"No olvide que puede usar CTRL-O y CTRL-I para saltar a posiciones anteriores "
+"y posteriores sin necesidad de poner marcadores en esos puntos."
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:268
+#, no-wrap
+msgid "*07.4*\tBackup files\n"
+msgstr "*07.4*\tCopias de seguridad\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:271
+msgid ""
+"Usually Vim does not produce a backup file.  If you want to have one, all "
+"you need to do is execute the following command: >"
+msgstr ""
+"Habitualmente, Vim no produce copias de seguridad. Si desea que lo haga,lo "
+"único que tiene que hacer es ejecutar la siguiente orden: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:273
+#, no-wrap
+msgid "\t:set backup\n"
+msgstr "\t:set backup\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:279
+#, no-wrap
+msgid ""
+"The name of the backup file is the original file with a  ~  added to the end.\n"
+"If your file is named data.txt, for example, the backup file name is\n"
+"data.txt~.\n"
+"   If you do not like the fact that the backup files end with ~, you can\n"
+"change the extension: >\n"
+msgstr ""
+"El nombre del archivo de seguridad es el original con un ~ añadido al\n"
+"final.\n"
+"Si su archivo se llama datos.txt, por ejemplo, el archivo de seguridad será\n"
+"datos.txt~.\n"
+"   Si no le gusta el hecho de que las copias de seguridad terminen con ~,\n"
+"puedes cambiar la extensión: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:281
+#, no-wrap
+msgid "\t:set backupext=.bak\n"
+msgstr "\t:set backupext=.bak\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:286
+#, no-wrap
+msgid ""
+"This will use data.txt.bak instead of data.txt~.\n"
+"   Another option that matters here is 'backupdir'.  It specifies where the\n"
+"backup file is written.  The default, to write the backup in the same\n"
+"directory as the original file, will mostly be the right thing.\n"
+msgstr ""
+"Esto hará que Vim use datos.txt.bak en lugar de datos.txt~.\n"
+"   Otra opción que resulta importante aquí es 'backupdir'. Especifica dónde\n"
+"se guardará el archivo de seguridad. La opción por omisión, escribir la\n"
+"copia de seguridad en el mismo directorio, es habitualmente la mejor.\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:294
+#, no-wrap
+msgid ""
+"\tNote:\n"
+"\tWhen the 'backup' option isn't set but the 'writebackup' is, Vim will\n"
+"\tstill create a backup file.  However, it is deleted as soon as writing\n"
+"\tthe file was completed successfully.  This functions as a safety\n"
+"\tagainst losing your original file when writing fails in some way (disk\n"
+"\tfull is the most common cause; being hit by lightning might be\n"
+"\tanother, although less common).\n"
+msgstr ""
+"\tNota:\n"
+"\tCuando la opción 'backup' no está activada pero 'writebackup' lo está,\n"
+"\tVim creará igualmente la copia de seguridad. Sin embargo, se\n"
+"\teliminará tan pronto como se escriba el archivo con éxito. Esto\n"
+"\tfunciona como seguridad ante la pérdida de su archivo original cuando\n"
+"\tla escritura falla por algún motivo (un disco lleno es el más habitual,\n"
+"\tun rayo puede ser otra causa aunque menos común).\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:297
+msgid "KEEPING THE ORIGINAL FILE"
+msgstr "MANTENER EL ARCHIVO ORIGINAL"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:304
+#, no-wrap
+msgid ""
+"If you are editing source files, you might want to keep the file before you\n"
+"make any changes.  But the backup file will be overwritten each time you write\n"
+"the file.  Thus it only contains the previous version, not the first one.\n"
+"   To make Vim keep the original file, set the 'patchmode' option.  This\n"
+"specifies the extension used for the first backup of a changed file.  Usually\n"
+"you would do this: >\n"
+msgstr ""
+"Si está editando archivos fuente, quizá desee mantener el archivo antes de\n"
+"hacer ningún cambio. Pero la copia de seguridad se sobreescribirá cada vez que\n"
+"escriba el archivo. Así sólo contendrá la versión previa y no la original.\n"
+"   Para hacer que Vim mantenga el archivo original, activa la opción\n"
+"'patchmode'. Esto especifica la extensión usada para la primera copia de\n"
+"seguridad de un archivo modificado. Habitualmente harás esto: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:306
+#, no-wrap
+msgid "\t:set patchmode=.orig\n"
+msgstr "\t:set patchmode=.orig\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:315
+#, no-wrap
+msgid ""
+"When you now edit the file data.txt for the first time, make changes and write\n"
+"the file, Vim will keep a copy of the unchanged file under the name\n"
+"\"data.txt.orig\".\n"
+"   If you make further changes to the file, Vim will notice that\n"
+"\"data.txt.orig\" already exists and leave it alone.  Further backup files will\n"
+"then be called \"data.txt~\" (or whatever you specified with 'backupext').\n"
+"   If you leave 'patchmode' empty (that is the default), the original file\n"
+"will not be kept.\n"
+msgstr ""
+"Cuando edite el archivo datos.txt por primera vez, haga cambios y guarde el\n"
+"archivo, Vim mantendrá una copia del archivo sin cambios bajo el nombre\n"
+"«datos.txt.orig».\n"
+"   Si hace más cambios, Vim notará que «datos.txt.orig» ya existe y lo dejará\n"
+"en paz. El resto de copias de seguridad se llamarán «datos.txt~» (o lo que\n"
+"haya especificado con 'backupext').\n"
+"   Si deja 'patchmode' vacío (la opción por defecto), el archivo original no\n"
+"se guardará.\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:318
+#, no-wrap
+msgid "*07.5*\tCopy text between files\n"
+msgstr "*07.5*\tCopiar texto entre archivos\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:325
+#, no-wrap
+msgid ""
+"This explains how to copy text from one file to another.  Let's start with a\n"
+"simple example.  Edit the file that contains the text you want to copy.  Move\n"
+"the cursor to the start of the text and press \"v\".  This starts Visual mode.\n"
+"Now move the cursor to the end of the text and press \"y\".  This yanks (copies)\n"
+"the selected text.\n"
+"   To copy the above paragraph, you would do: >\n"
+msgstr ""
+"A continuación explicamos cómo copiar texto desde un archivo a otro. Vamos\n"
+"a comenzar con un simple ejemplo. Edite el archivo que contiene el texto que\n"
+"desea copiar. Mueva el cursor al comienzo de lo que quiera editar y pulse\n"
+"«v». Mueva ahora el cursor al final del texto y pulse «y». Esto copia\n"
+"yank) el texto seleccionado.\n"
+"   Para copiar el texto del párrafo anterior, haría lo siguiente: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:329
+#, no-wrap
+msgid ""
+"\t:edit thisfile\n"
+"\t/This\n"
+"\tvjjjj$y\n"
+msgstr ""
+"\t:edit estearchivo\n"
+"\t/Este\n"
+"\tvjjjj$y\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:336
+#, no-wrap
+msgid ""
+"Now edit the file you want to put the text in.  Move the cursor to the\n"
+"character where you want the text to appear after.  Use \"p\" to put the text\n"
+"there. >\n"
+"\t:edit otherfile\n"
+"\t/There\n"
+"\tp\n"
+msgstr ""
+"Edite ahora el archivo donde desea poner el texto. Mueva el cursor al\n"
+"caracter donde quiera que el texto se coloque a continuación. Use «p» para\n"
+"poner el texto allí. >\n"
+"\t:edit otroarchivo\n"
+"\t/Allí\n"
+"\tp\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:344
+#, no-wrap
+msgid ""
+"Of course you can use many other commands to yank the text.  For example, to\n"
+"select whole lines start Visual mode with \"V\".  Or use CTRL-V to select a\n"
+"rectangular block.  Or use \"Y\" to yank a single line, \"yaw\" to yank-a-word,\n"
+"etc.\n"
+"   The \"p\" command puts the text after the cursor.  Use \"P\" to put the text\n"
+"before the cursor.  Notice that Vim remembers if you yanked a whole line or a\n"
+"block, and puts it back that way.\n"
+msgstr ""
+"Naturalmente, podrás usar cualquiera otra orden de copia. Por ejemplo, para\n"
+"seleccionar líneas completas, inicie el modo Visual con «V». O pulse CTRL-V\n"
+"para seleccionar bloques rectangulares. Puede usar «Y» para simplemente\n"
+"copiar una línea, «yaw» para pegar una palabra (yank-a-word).\n"
+"   La orden «p» pone el texto después del cursor. Use «P» para pegarlo\n"
+"antes del cursor. Repare en el hecho de que Vim recuerda si ha copiado una\n"
+"línea completa o un bloque y lo pondrá del mismo modo.\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:347 original/TXT/usr_10.txt:93
+msgid "USING REGISTERS"
+msgstr "USO DE REGISTROS"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:354
+#, no-wrap
+msgid ""
+"When you want to copy several pieces of text from one file to another, having\n"
+"to switch between the files and writing the target file takes a lot of time.\n"
+"To avoid this, copy each piece of text to its own register.\n"
+"   A register is a place where Vim stores text.  Here we will use the\n"
+"registers named a to z (later you will find out there are others).  Let's copy\n"
+"a sentence to the f register (f for First): >\n"
+msgstr ""
+"Cuando quiera copiar diversas porciones de un texto de un archivo a otro,\n"
+"tener que cambiar entre los archivos y guardarlos lleva mucho tiempo. Para\n"
+"evitar esto, copie cada porción en un registro independiente.\n"
+"   Un registro es un lugar donde Vim guarda texto. Aquí usaremos los\n"
+"registros nombrados desde la «a» a la «z» (más tarde se percatará de que hay\n"
+"otros). Vamos a copiar una frase en el registro f: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:356
+#, no-wrap
+msgid "\t\"fyas\n"
+msgstr "\t\"fyas\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:361
+#, no-wrap
+msgid ""
+"The \"yas\" command yanks a sentence like before.  It's the \"f that tells Vim\n"
+"the text should be place in the f register.  This must come just before the\n"
+"yank command.\n"
+"   Now yank three whole lines to the l register (l for line): >\n"
+msgstr ""
+"La orden «yas» copia una frase. Es el «\"f» el que le dice a Vim que el texto\n"
+"se debe situar en el registro f. Esto debe aparecer justo antes de la orden\n"
+"copiar.\n"
+"   Ahora copie tres líneas completas en el registro l: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:363
+#, no-wrap
+msgid "\t\"l3Y\n"
+msgstr "\t\"l3Y\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:366
+msgid ""
+"The count could be before the \"l just as well.  To yank a block of text to "
+"the b (for block) register: >"
+msgstr ""
+"El multiplicador puede situarse también antes del «\"l».  Para copiar un "
+"bloque de texto al registro b: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:368
+#, no-wrap
+msgid "\tCTRL-Vjjww\"by\n"
+msgstr "\tCTRL-Vjjww\"by\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:374
+#, no-wrap
+msgid ""
+"Notice that the register specification \"b is just before the \"y\" command.\n"
+"This is required.  If you would have put it before the \"w\" command, it would\n"
+"not have worked.\n"
+"   Now you have three pieces of text in the f, l and b registers.  Edit\n"
+"another file, move around and place the text where you want it: >\n"
+msgstr ""
+"Observe que la especificación del registro «\"b» se encuentra justo antes\n"
+"de la orden «y». Esto es imprescindible. Si lo hubierse puesto antes de la\n"
+"orden «w», no habría funcionado.\n"
+"   Ahora tiene tres porciones de texto en los registros f, l, y b. Edite\n"
+"otro archivo, desplácese por el texto y allá donde desee: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:376
+#, no-wrap
+msgid "\t\"fp\n"
+msgstr "\t\"fp\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:381
+#, no-wrap
+msgid ""
+"Again, the register specification \"f comes before the \"p\" command.\n"
+"   You can put the registers in any order.  And the text stays in the register\n"
+"until you yank something else into it.  Thus you can put it as many times as\n"
+"you like.\n"
+msgstr ""
+"Una vez más, la especificación del registro «\"f» viene antes de la orden «p».\n"
+"   Puede poner los registros en cualquier orden, y el texto se mantendrá en\n"
+"cualquier orden hasta que copie algo dentro de él. Así podrá ponerlo tantas\n"
+"veces desee.\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:385
+msgid ""
+"When you delete text, you can also specify a register.  Use this to move "
+"several pieces of text around.  For example, to delete-a-word and write it "
+"in the w register: >"
+msgstr ""
+"Cuando elimine texto, también puedes especificar un registro. Use esto para "
+"mover varias porciones de texto de un lado para otro. Por ejemplo, para "
+"eliminar una palabra y ponerla en el registro w (delete-a-word): >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:387
+#, no-wrap
+msgid "\t\"wdaw\n"
+msgstr "\t\"wdaw\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:389
+msgid ""
+"Again, the register specification comes before the delete command \"d\"."
+msgstr ""
+"Una vez más, la especificación del registro viene antes de la orden "
+"eliminar, «d»."
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:392 original/TXT/usr_10.txt:606
+msgid "APPENDING TO A FILE"
+msgstr "AÑADIR A UN ARCHIVO"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:394
+msgid ""
+"When collecting lines of text into one file, you can use this command: >"
+msgstr ""
+"Cuando quiera reunir una serie de líneas en un archivo, puede usar esta "
+"orden: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:396
+#, no-wrap
+msgid "\t:write >> logfile\n"
+msgstr "\t:write >> archivo_registro\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:403
+#, no-wrap
+msgid ""
+"This will write the text of the current file to the end of \"logfile\".  Thus it\n"
+"is appended.  This avoids that you have to copy the lines, edit the log file\n"
+"and put them there.  Thus you save two steps.  But you can only append to the\n"
+"end of a file.\n"
+"   To append only a few lines, select them in Visual mode before typing\n"
+"\":write\".  In chapter 10 you will learn other ways to select a range of lines.\n"
+msgstr ""
+"Esto escribirá el texto del archivo actual al final de \"archivo_log\",\n"
+"añadiéndose a éste. Evita que tenga que copiar las líneas, editar el\n"
+"archivo de registro (log) y ponerla allí, ahorrándole dos pasos. Sin\n"
+"embargo, sólo podrá añadirlo al final del archivo.\n"
+"   Para añadir sólo unas líneas, selecciónelas en el modo Visual antes de\n"
+"escribir «:write». El cap. 10 explicará otras maneras de seleccionar\n"
+"rangos.\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:406
+#, no-wrap
+msgid "*07.6*\tViewing a file\n"
+msgstr "*07.6*\tVer un archivo\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:411
+#, no-wrap
+msgid ""
+"Sometimes you only want to see what a file contains, without the intention to\n"
+"ever write it back.  There is the risk that you type \":w\" without thinking and\n"
+"overwrite the original file anyway.  To avoid this, edit the file read-only.\n"
+"   To start Vim in readonly mode, use this command: >\n"
+msgstr ""
+"A veces sólo quiere ver qué contiene un archivo, sin la intención de\n"
+"guardar ningún cambio. Existe el riesgo de que escribas «:w» sin pensar y\n"
+"sobreescriba el archivo original. Para evitar esto, edite el archivo como\n"
+"sólo lectura.\n"
+"   Para ejecutar Vim en modo sólo lectura, haga lo siguiente: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:413
+#, no-wrap
+msgid "\tvim -R file\n"
+msgstr "\tvim -R archivo\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:415
+msgid "On Unix this command should do the same thing: >"
+msgstr "En Unix esta orden debería funcionar igualmente: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:417
+#, no-wrap
+msgid "\tview file\n"
+msgstr "\tview archivo\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:421
+#, no-wrap
+msgid ""
+"You are now editing \"file\" in read-only mode.  When you try using \":w\" you\n"
+"will get an error message and the file won't be written.\n"
+"   When you try to make a change to the file Vim will give you a warning:\n"
+msgstr ""
+"Ahora está editando «archivo» en modo sólo lectura. Cuando pruebe a usar\n"
+"«:w» se dará cuenta de que aparecerá un mensaje de error y no se guardará.\n"
+"   Cuando intente hacer un cambio al archivo, Vim le dará un aviso:\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:423
+#, no-wrap
+msgid "\tW10: Warning: Changing a readonly file ~\n"
+msgstr "\tW10: Advertencia: cambiando un fichero de solo lectura ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:428
+#, no-wrap
+msgid ""
+"The change will be done though.  This allows for formatting the file, for\n"
+"example, to be able to read it easily.\n"
+"   If you make changes to a file and forgot that it was read-only, you can\n"
+"still write it.  Add the ! to the write command to force writing.\n"
+msgstr ""
+"El cambio se realizará igualmente. Esto permite formatear el archivo, por\n"
+"ejemplo, para facilitar su lectura.\n"
+"   Si intenta hacer cambios a un archivo y olvidas que era de sólo lectura,\n"
+"aún podrá guardarlo. Añada «!» a la orden guardar para forzar la escritura.\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:430
+msgid "If you really want to forbid making changes in a file, do this: >"
+msgstr ""
+"Si realmente quiere prohibir los cambios en un archivo, haga lo siguiente: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:432
+#, no-wrap
+msgid "\tvim -M file\n"
+msgstr "\tvim -M file\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:435
+msgid ""
+"Now every attempt to change the text will fail.  The help files are like "
+"this, for example.  If you try to make a change you get this error message:"
+msgstr ""
+"Ahora, cualquier intento de cambiar el texto fallará. Los archivos de ayuda "
+"son así, por ejemplo. Si intenta cambiar algo, obtendrá el siguiente error:"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:437
+#, no-wrap
+msgid "\tE21: Cannot make changes, 'modifiable' is off ~\n"
+msgstr "\tE21: No se pueden hacer cambios, «modifiable» está desactivado ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:440
+msgid ""
+"You could use the -M argument to setup Vim to work in a viewer mode.  This "
+"is only voluntary though, since these commands will remove the protection: >"
+msgstr ""
+"Puede usar el argumento «-M» para configurar Vim para que trabaje en modo "
+"visor. Esto es opcional, ya que estas órdenes eliminan la protección. >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:443
+#, no-wrap
+msgid ""
+"\t:set modifiable\n"
+"\t:set write\n"
+msgstr ""
+"\t:set modifiable\n"
+"\t:set write\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:446
+#, no-wrap
+msgid "*07.7*\tChanging the file name\n"
+msgstr "*07.7*\tCambiar el nombre de un archivo\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:451
+msgid ""
+"A clever way to start editing a new file is by using an existing file that "
+"contains most of what you need.  For example, you start writing a new "
+"program to move a file.  You know that you already have a program that "
+"copies a file, thus you start with: >"
+msgstr ""
+"Una forma inteligente de comenzar la edición de un archivo nuevo es usar un "
+"archivo similar de partida que contenga algo parecido. Por ejemplo, empiece "
+"a escribir un programa para filtrar archivos. Sabe que ya tiene un código "
+"que copia archivos, así que podría comenzar con él: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:453
+#, no-wrap
+msgid "\t:edit copy.c\n"
+msgstr "\t:edit copiar.c\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:456
+msgid ""
+"You can delete the stuff you don't need.  Now you need to save the file "
+"under a new name.  The \":saveas\" command can be used for this: >"
+msgstr ""
+"Puede eliminar lo que no necesita. A continuación tendrá que guardar el "
+"archivo bajo un nombre distinto. La orden «:saveas» es adecuado para esto: >"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:458
+#, no-wrap
+msgid "\t:saveas move.c\n"
+msgstr "\t:saveas filtrar.c\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:464
+#, no-wrap
+msgid ""
+"Vim will write the file under the given name, and edit that file.  Thus the\n"
+"next time you do \":write\", it will write \"move.c\".  \"copy.c\" remains\n"
+"unmodified.\n"
+"   When you want to change the name of the file you are editing, but don't\n"
+"want to write the file, you can use this command: >\n"
+msgstr ""
+"Vim escribirá el archivo con el nuevo nombre y editará el nuevo archivo.\n"
+"Así la próxima vez que haga «:write», escribirá «filtrar.c». «copiar.c» se\n"
+"mantiene sin modificaciones.\n"
+"   Cuando desee cambiar el nombre del archivo que está editando pero no\n"
+"quiere escribirlo, puede usar el siguiente orden: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:466
+#, no-wrap
+msgid "\t:file move.c\n"
+msgstr "\t:file move.c\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:470
+msgid ""
+"Vim will mark the file as \"not edited\".  This means that Vim knows this is "
+"not the file you started editing.  When you try to write the file, you might "
+"get this message:"
+msgstr ""
+"Vim marcará el archivo como «no editado». Esto significa que Vim sabe que "
+"este no es el archivo que comenzó a editar. Cuando intente guardar el "
+"archivo, puede que vea el siguiente mensaje:"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:472
+#, no-wrap
+msgid "\tE13: File exists (use ! to override) ~\n"
+msgstr "\tE13: El fichero ya existe (use ! para sobreescribir) ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:474
+msgid "This protects you from accidentally overwriting another file."
+msgstr "Esto evita que sobreescriba otro archivo con el mismo nombre."
+
+#. type: Plain text
+#: original/TXT/usr_07.txt:478
+msgid "Next chapter: |usr_08.txt| Splitting windows"
+msgstr "Capítulo siguiente: |usr_08.esx| Dividir en ventanas"

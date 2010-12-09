@@ -1,0 +1,672 @@
+# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es
+# Copyright (C) 2009 
+# This file is distributed under the same license as the Vim 7.2 package.
+#
+# Translators credits:
+#   - Initial translation
+#       Omar Campagne <ocampagne@gmail.com>
+#
+#   - Updates
+#       TRADUCTOR <CORREO>, AÑO 
+#
+# Debido al formato (txt) y al máximo de 80 columnas que pueden tener 
+# los textos de ayuda en Vim, así como el formato PO, por favor, leete los
+# apuntes concernientes a la edición de los archivos PO relativos a la
+# aplicación que desees usar.
+# También encontrarás información acerca del uso de herramientas gettext en el 
+# proyecto de localización (l10n) de Vim.
+#
+# - http://www.assembla.com/wiki/show/vim-doc-es
+#
+# No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
+# este enlace puede ser de interés. A pesar de no formar parte, nuestra 
+# intención es homologarnos con su terminología y uso de la lengua 
+# en la medida de lo útil y posible.
+#
+#  - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/notas
+#
+# La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
+# pero también puede servir de referencia para otros términos no técnicos.
+# No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
+# traducción sea comprensible independientemente de la nacionalidad del
+# usuario. Si crees que alguna traducción puede llevar a confusión, consulta
+# la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
+#
+#  - www.rae.es 
+#  - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages   
+#
+# Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
+# se puede consultar con un simple grep, pogrep o cargado en Virtaal.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Vim 7.2\n"
+"Report-Msgid-Bugs-To: vim@bugs.org\n"
+"POT-Creation-Date: 2010-09-23 20:27+0300\n"
+"PO-Revision-Date: 2010-12-06 18:00+0100\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:18 original/TXT/intro.txt:79
+#: original/TXT/intro.txt:180 original/TXT/intro.txt:290
+#: original/TXT/intro.txt:518 original/TXT/intro.txt:596
+#: original/TXT/intro.txt:689 original/TXT/intro.txt:817
+#: original/TXT/intro.txt:880 original/TXT/usr_toc.txt:7
+#: original/TXT/usr_toc.txt:58 original/TXT/usr_toc.txt:172
+#: original/TXT/usr_toc.txt:281 original/TXT/usr_toc.txt:340
+#: original/TXT/usr_toc.txt:352 original/TXT/usr_01.txt:19
+#: original/TXT/usr_01.txt:50 original/TXT/usr_01.txt:100
+#: original/TXT/usr_01.txt:181 original/TXT/usr_02.txt:25
+#: original/TXT/usr_02.txt:69 original/TXT/usr_02.txt:130
+#: original/TXT/usr_02.txt:179 original/TXT/usr_02.txt:239
+#: original/TXT/usr_02.txt:307 original/TXT/usr_02.txt:369
+#: original/TXT/usr_02.txt:406 original/TXT/usr_02.txt:560
+#: original/TXT/usr_03.txt:28 original/TXT/usr_03.txt:74
+#: original/TXT/usr_03.txt:101 original/TXT/usr_03.txt:147
+#: original/TXT/usr_03.txt:172 original/TXT/usr_03.txt:223
+#: original/TXT/usr_03.txt:265 original/TXT/usr_03.txt:320
+#: original/TXT/usr_03.txt:491 original/TXT/usr_03.txt:552
+#: original/TXT/usr_03.txt:650 original/TXT/usr_04.txt:27
+#: original/TXT/usr_04.txt:74 original/TXT/usr_04.txt:160
+#: original/TXT/usr_04.txt:194 original/TXT/usr_04.txt:269
+#: original/TXT/usr_04.txt:324 original/TXT/usr_04.txt:360
+#: original/TXT/usr_04.txt:390 original/TXT/usr_04.txt:446
+#: original/TXT/usr_04.txt:469 original/TXT/usr_04.txt:510
+#: original/TXT/usr_05.txt:24 original/TXT/usr_05.txt:63
+#: original/TXT/usr_05.txt:219 original/TXT/usr_05.txt:266
+#: original/TXT/usr_05.txt:418 original/TXT/usr_05.txt:467
+#: original/TXT/usr_05.txt:506 original/TXT/usr_05.txt:621
+#: original/TXT/usr_06.txt:24 original/TXT/usr_06.txt:50
+#: original/TXT/usr_06.txt:135 original/TXT/usr_06.txt:189
+#: original/TXT/usr_06.txt:270 original/TXT/usr_06.txt:276
+#: original/TXT/usr_07.txt:24 original/TXT/usr_07.txt:63
+#: original/TXT/usr_07.txt:179 original/TXT/usr_07.txt:266
+#: original/TXT/usr_07.txt:316 original/TXT/usr_07.txt:404
+#: original/TXT/usr_07.txt:444 original/TXT/usr_07.txt:475
+#: original/TXT/usr_08.txt:26 original/TXT/usr_08.txt:82
+#: original/TXT/usr_08.txt:109 original/TXT/usr_08.txt:161
+#: original/TXT/usr_08.txt:215 original/TXT/usr_08.txt:278
+#: original/TXT/usr_08.txt:337 original/TXT/usr_08.txt:477
+#: original/TXT/usr_08.txt:509 original/TXT/usr_08.txt:597
+#: original/TXT/usr_09.txt:21 original/TXT/usr_09.txt:124
+#: original/TXT/usr_09.txt:175 original/TXT/usr_09.txt:259
+#: original/TXT/usr_09.txt:285 original/TXT/usr_10.txt:27
+#: original/TXT/usr_10.txt:144 original/TXT/usr_10.txt:221
+#: original/TXT/usr_10.txt:342 original/TXT/usr_10.txt:378
+#: original/TXT/usr_10.txt:547 original/TXT/usr_10.txt:621
+#: original/TXT/usr_10.txt:667 original/TXT/usr_10.txt:692
+#: original/TXT/usr_10.txt:820 original/TXT/usr_11.txt:22
+#: original/TXT/usr_11.txt:82 original/TXT/usr_11.txt:144
+#: original/TXT/usr_11.txt:288 original/TXT/usr_11.txt:303
+#: original/TXT/usr_12.txt:25 original/TXT/usr_12.txt:90
+#: original/TXT/usr_12.txt:131 original/TXT/usr_12.txt:177
+#: original/TXT/usr_12.txt:202 original/TXT/usr_12.txt:231
+#: original/TXT/usr_12.txt:281 original/TXT/usr_12.txt:309
+#: original/TXT/usr_12.txt:354 original/TXT/usr_20.txt:22
+#: original/TXT/usr_20.txt:113 original/TXT/usr_20.txt:158
+#: original/TXT/usr_20.txt:285 original/TXT/usr_20.txt:327
+#: original/TXT/usr_20.txt:380 original/TXT/usr_21.txt:24
+#: original/TXT/usr_21.txt:47 original/TXT/usr_21.txt:87
+#: original/TXT/usr_21.txt:236 original/TXT/usr_21.txt:385
+#: original/TXT/usr_21.txt:438 original/TXT/usr_21.txt:495
+#: original/TXT/usr_22.txt:22 original/TXT/usr_22.txt:148
+#: original/TXT/usr_22.txt:213 original/TXT/usr_22.txt:272
+#: original/TXT/usr_22.txt:396 original/TXT/usr_23.txt:23
+#: original/TXT/usr_23.txt:114 original/TXT/usr_23.txt:156
+#: original/TXT/usr_23.txt:238 original/TXT/usr_23.txt:324
+#: original/TXT/usr_23.txt:339 original/TXT/usr_24.txt:28
+#: original/TXT/usr_24.txt:96 original/TXT/usr_24.txt:119
+#: original/TXT/usr_24.txt:268 original/TXT/usr_24.txt:305
+#: original/TXT/usr_24.txt:336 original/TXT/usr_24.txt:369
+#: original/TXT/usr_24.txt:493 original/TXT/usr_24.txt:537
+#: original/TXT/usr_24.txt:583 original/TXT/usr_24.txt:602
+#: original/TXT/usr_25.txt:22 original/TXT/usr_25.txt:132
+#: original/TXT/usr_25.txt:210 original/TXT/usr_25.txt:287
+#: original/TXT/usr_25.txt:453 original/TXT/usr_25.txt:574
+#: original/TXT/usr_26.txt:21 original/TXT/usr_26.txt:46
+#: original/TXT/usr_26.txt:103 original/TXT/usr_26.txt:136
+#: original/TXT/usr_26.txt:217 original/TXT/usr_27.txt:26
+#: original/TXT/usr_27.txt:88 original/TXT/usr_27.txt:136
+#: original/TXT/usr_27.txt:239 original/TXT/usr_27.txt:320
+#: original/TXT/usr_27.txt:350 original/TXT/usr_27.txt:427
+#: original/TXT/usr_27.txt:469 original/TXT/usr_27.txt:510
+#: original/TXT/usr_27.txt:559 original/TXT/usr_28.txt:27
+#: original/TXT/usr_28.txt:54 original/TXT/usr_28.txt:121
+#: original/TXT/usr_28.txt:185 original/TXT/usr_28.txt:211
+#: original/TXT/usr_28.txt:269 original/TXT/usr_28.txt:315
+#: original/TXT/usr_28.txt:331 original/TXT/usr_28.txt:375
+#: original/TXT/usr_28.txt:389 original/TXT/usr_28.txt:422
+#: original/TXT/usr_29.txt:23 original/TXT/usr_29.txt:273
+#: original/TXT/usr_29.txt:320 original/TXT/usr_29.txt:441
+#: original/TXT/usr_29.txt:570 original/TXT/usr_29.txt:609
+#: original/TXT/usr_30.txt:23 original/TXT/usr_30.txt:202
+#: original/TXT/usr_30.txt:280 original/TXT/usr_30.txt:336
+#: original/TXT/usr_30.txt:409 original/TXT/usr_30.txt:515
+#: original/TXT/usr_30.txt:639 original/TXT/usr_31.txt:22
+#: original/TXT/usr_31.txt:81 original/TXT/usr_31.txt:133
+#: original/TXT/usr_31.txt:160 original/TXT/usr_31.txt:208
+#: original/TXT/usr_31.txt:268
+#, no-wrap
+msgid "==============================================================================\n"
+msgstr "==============================================================================\n"
+
+#. type: Plain text
+#: original/TXT/usr_toc.txt:4 original/TXT/usr_01.txt:4
+#: original/TXT/usr_02.txt:4 original/TXT/usr_03.txt:4
+#: original/TXT/usr_04.txt:4 original/TXT/usr_05.txt:4
+#: original/TXT/usr_06.txt:4 original/TXT/usr_07.txt:4
+#: original/TXT/usr_08.txt:4 original/TXT/usr_09.txt:4
+#: original/TXT/usr_10.txt:4 original/TXT/usr_11.txt:4
+#: original/TXT/usr_12.txt:4 original/TXT/usr_20.txt:4
+#: original/TXT/usr_21.txt:4 original/TXT/usr_22.txt:4
+#: original/TXT/usr_23.txt:4 original/TXT/usr_24.txt:4
+#: original/TXT/usr_25.txt:4 original/TXT/usr_26.txt:4
+#: original/TXT/usr_27.txt:4 original/TXT/usr_28.txt:4
+#: original/TXT/usr_29.txt:4 original/TXT/usr_30.txt:4
+#: original/TXT/usr_31.txt:4
+#, no-wrap
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
+msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
+
+#. type: Plain text
+#: original/TXT/usr_toc.txt:354 original/TXT/usr_01.txt:185
+#: original/TXT/usr_02.txt:564 original/TXT/usr_03.txt:654
+#: original/TXT/usr_04.txt:514 original/TXT/usr_05.txt:625
+#: original/TXT/usr_06.txt:280 original/TXT/usr_07.txt:479
+#: original/TXT/usr_08.txt:601 original/TXT/usr_09.txt:289
+#: original/TXT/usr_10.txt:824 original/TXT/usr_11.txt:307
+#: original/TXT/usr_12.txt:358 original/TXT/usr_20.txt:384
+#: original/TXT/usr_21.txt:499 original/TXT/usr_22.txt:400
+#: original/TXT/usr_23.txt:343 original/TXT/usr_24.txt:606
+#: original/TXT/usr_25.txt:578 original/TXT/usr_26.txt:221
+#: original/TXT/usr_27.txt:563 original/TXT/usr_28.txt:426
+#: original/TXT/usr_29.txt:613 original/TXT/usr_30.txt:643
+#: original/TXT/usr_31.txt:272
+msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:2
+#, no-wrap
+msgid "*usr_01.txt*\tFor Vim version 7.3.  Last change: 2008 May 07\n"
+msgstr "*usr_01.esx*\tPara Vim versión 7.3.  Último cambio: 7/6/2008\n"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:6
+#, no-wrap
+msgid "\t\t\t      About the manuals\n"
+msgstr "\t\t\t    Acerca de los manuales\n"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:10
+msgid ""
+"This chapter introduces the manuals available with Vim.  Read this to know "
+"the conditions under which the commands are explained."
+msgstr ""
+"Este capítulo le introduce a los manuales disponibles con Vim. Lea esto para "
+"conocer las condiciones bajo las cuales se explican las órdenes."
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:15
+#, no-wrap
+msgid ""
+"|01.1|\tTwo manuals\n"
+"|01.2|\tVim installed\n"
+"|01.3|\tUsing the Vim tutor\n"
+"|01.4|\tCopyright\n"
+msgstr ""
+"|01.1|\tDos manuales\n"
+"|01.2|\tVim instalado\n"
+"|01.3|\tUsar el tutor de Vim\n"
+"|01.4|\tCopyright\n"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:18
+#, no-wrap
+msgid ""
+"     Next chapter: |usr_02.txt|  The first steps in Vim\n"
+"Table of contents: |usr_toc.txt|\n"
+msgstr ""
+" Capítulo siguiente: |usr_02.esx|  Primeros pasos en Vim\n"
+"Tabla de contenidos: |usr_toc.esx|\n"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:21
+#, no-wrap
+msgid "*01.1*\tTwo manuals\n"
+msgstr "*01.1*\tDos manuales\n"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:23
+msgid "The Vim documentation consists of two parts:"
+msgstr "La documentación de Vim consiste de dos partes:"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:27
+#, no-wrap
+msgid ""
+"1. The User manual\n"
+"   Task oriented explanations, from simple to complex.  Reads from start to\n"
+"   end like a book.\n"
+msgstr ""
+"1. El manual de usuario\n"
+"   Explicaciones orientadas a tareas, de las simples a las más complejas.\n"
+"   Se puede leer de principio a fin, como un libro.\n"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:30
+#, no-wrap
+msgid ""
+"2. The Reference manual\n"
+"   Precise description of how everything in Vim works.\n"
+msgstr ""
+"2. El manual de referencia\n"
+"   Una precisa descripción del funcionamiento de cada elemento dentro\n"
+"   de Vim.\n"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:32
+msgid "The notation used in these manuals is explained here: |notation|"
+msgstr "La notación usada en estos manuales se explica aqui: |notation|"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:35
+msgid "JUMPING AROUND"
+msgstr "SALTAR DE UN PUNTO A OTRO"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:39
+msgid ""
+"The text contains hyperlinks between the two parts, allowing you to quickly "
+"jump between the description of an editing task and a precise explanation of "
+"the commands and options used for it.  Use these two commands:"
+msgstr ""
+"El texto contiene hiperenlaces entre las dos partes, lo cual le permite "
+"saltar rápidamente de la descripción de una tarea de edición a una precisa "
+"explicación de las órdenes y opciones que se emplean. Use estas dos órdenes:"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:42
+#, no-wrap
+msgid ""
+"\tPress  CTRL-]  to jump to a subject under the cursor.\n"
+"\tPress  CTRL-O  to jump back (repeat to go further back).\n"
+msgstr ""
+"\tPulse «CTRL-]» para saltar al tema bajo el cursor.\n"
+"\tPulse «CTRL-O» para saltar atrás (repita para volver más allá de ese\n"
+"\tpunto).\n"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:47
+msgid ""
+"Many links are in vertical bars, like this: |bars|.  An option name, like "
+"'number', a command in double quotes like \":write\" and any other word can "
+"also be used as a link.  Try it out: Move the cursor to CTRL-] and press "
+"CTRL-] on it."
+msgstr ""
+"Hay varios enlaces entre barras verticales, como este: |bars|. También puede "
+"usar como enlace un nombre de opción, como 'number', una orden "
+"entrecomillada, como «:write», o cualquier otra palabra. Pruebelo: mueva el "
+"cursor a «CTRL-]» y pulse «CTRL-]» sobre él."
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:49
+msgid "Other subjects can be found with the \":help\" command, see |help.txt|."
+msgstr "Puede encontrar otros temas con la orden «:help», véase |help.esx|."
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:52
+#, no-wrap
+msgid "*01.2*\tVim installed\n"
+msgstr "*01.2*\tVim instalado\n"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:64
+#, no-wrap
+msgid ""
+"Most of the manuals assume that Vim has been properly installed.  If you\n"
+"didn't do that yet, or if Vim doesn't run properly (e.g., files can't be found\n"
+"or in the GUI the menus do not show up) first read the chapter on\n"
+"installation: |usr_90.txt|.\n"
+"\t\t\t\t\t\t\t*not-compatible*\n"
+"The manuals often assume you are using Vim with Vi-compatibility switched\n"
+"off.  For most commands this doesn't matter, but sometimes it is important,\n"
+"e.g., for multi-level undo.  An easy way to make sure you are using a nice\n"
+"setup is to copy the example vimrc file.  By doing this inside Vim you don't\n"
+"have to check out where it is located.  How to do this depends on the system\n"
+"you are using:\n"
+msgstr ""
+"La mayoría de los manuales suponen que Vim está apropiadamente instalado. Si\n"
+"aún no lo hizo, o si Vim no se ejecuta adecuadamente (p. ej., no puede\n"
+"encontrar ciertos archivos, o los menús de la interfaz gráfica de usuario\n"
+"no aparecen), lea primero el capítulo relativo a la instalación\n"
+"|usr_90.txt|.\n"
+"\t\t\t\t\t\t\t*not-compatible*\n"
+"A menudo, los manuales suponen que ejecuta Vim sin compatibilidad con Vi.\n"
+"Esto carece de importancia para la mayoría de las órdenes, pero a veces sí\n"
+"importa. Por ejemplo, para deshacer a varios niveles («multi-level undo»).\n"
+"Una sencilla manera de estar seguro de que está usando una buena\n"
+"configuración es copiar el archivo de ejemplo de «vimrc». Al hacer esto\n"
+"desde Vim, no tiene que revisar su ubicación. Como hacer esto depende del\n"
+"sistema que usa:\n"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:71
+#, no-wrap
+msgid ""
+"Unix: >\n"
+"\t:!cp -i $VIMRUNTIME/vimrc_example.vim ~/.vimrc\n"
+"MS-DOS, MS-Windows, OS/2: >\n"
+"\t:!copy $VIMRUNTIME/vimrc_example.vim $VIM/_vimrc\n"
+"Amiga: >\n"
+"\t:!copy $VIMRUNTIME/vimrc_example.vim $VIM/.vimrc\n"
+msgstr ""
+"Unix: >\n"
+"\t:!cp -i $VIMRUNTIME/vimrc_example.vim ~/.vimrc\n"
+"MS-DOS, MS-Windows, OS/2: >\n"
+"\t:!copy $VIMRUNTIME/vimrc_example.vim $VIM/_vimrc\n"
+"Amiga: >\n"
+"\t:!copy $VIMRUNTIME/vimrc_example.vim $VIM/.vimrc\n"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:73
+msgid "If the file already exists you probably want to keep it."
+msgstr "Si el archivo ya existe, probablemente desee guardarlo."
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:76
+msgid ""
+"If you start Vim now, the 'compatible' option should be off.  You can check "
+"it with this command: >"
+msgstr ""
+"Si inicia ahora Vim, la opción 'compatible' debería estar desactivada. Puede "
+"asegurarse con esta orden: >"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:78
+#, no-wrap
+msgid "\t:set compatible?\n"
+msgstr "\t:set compatible?\n"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:83
+msgid ""
+"If it responds with \"nocompatible\" you are doing well.  If the response is "
+"\"compatible\" you are in trouble.  You will have to find out why the option "
+"is still set.  Perhaps the file you wrote above is not found.  Use this "
+"command to find out: >"
+msgstr ""
+"Si devuelve \"nocompatible\", es que todo va bien. Si la respuesta es "
+"«compatible», tiene un problema. Tendrá que encontrar porqué esta opción "
+"está aún definida. Puede que no se encontrase el archivo que copió antes.  "
+"Use esta orden para ver el problema: >"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:85 original/TXT/usr_03.txt:474
+#, no-wrap
+msgid "\t:scriptnames\n"
+msgstr "\t:scriptnames\n"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:89
+msgid ""
+"If your file is not in the list, check its location and name.  If it is in "
+"the list, there must be some other place where the 'compatible' option is "
+"switched back on."
+msgstr ""
+"Si su archivo no se encuentra en la lista, revise su nombre y ubicación. Si "
+"está en la lista, debe haber algún otro sitio en el que se reactiva la "
+"opción 'compatible'."
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:91
+msgid "For more info see |vimrc| and |compatible-default|."
+msgstr "Para más información, véase |vimrc| y |compatible-default|."
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:99
+#, no-wrap
+msgid ""
+"\tNote:\n"
+"\tThis manual is about using Vim in the normal way.  There is an\n"
+"\talternative called \"evim\" (easy Vim).  This is still Vim, but used in\n"
+"\ta way that resembles a click-and-type editor like Notepad.  It always\n"
+"\tstays in Insert mode, thus it feels very different.  It is not\n"
+"\texplained in the user manual, since it should be mostly self\n"
+"\texplanatory.  See |evim-keys| for details.\n"
+msgstr ""
+"\tNota:\n"
+"\tEste manual trata acerca del uso de Vim de la manera normal. Existe una\n"
+"\talternativa llamada «evim» (easy Vim). Sigue siendo Vim, pero se usa de\n"
+"\tuna manera parecida a un editor como Notepad. Permanece siempre\n"
+"\ten el modo Insertar, y por ello parece muy distinto. No se explica\n"
+"\ten el manual de usuario, ya que es bastante sencillo.\n"
+"\tVéase |evim-keys| para más detalles.\n"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:102
+#, no-wrap
+msgid "*01.3*\tUsing the Vim tutor\t\t\t\t*tutor* *vimtutor*\n"
+msgstr "*01.3*\tUsar el tutor de Vim\t\t\t\t*tutor* *vimtutor*\n"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:106
+msgid ""
+"Instead of reading the text (boring!) you can use the vimtutor to learn your "
+"first Vim commands.  This is a 30 minute tutorial that teaches the most "
+"basic Vim functionality hands-on."
+msgstr ""
+"En lugar de leer el texto (¡aburre!), puede usar vimtutor para aprender sus "
+"primeras órdenes con Vim. Éste es un tutorial de treinta minutos que enseña "
+"las funcionalidades básicas de Vim a través de la práctica."
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:110
+#, no-wrap
+msgid ""
+"On Unix, if Vim has been properly installed, you can start it from the shell:\n"
+">\n"
+"\tvimtutor\n"
+msgstr ""
+"En Unix, si Vim se instaló adecuadamente, puede iniciar Vim desde la\n"
+"consola:\n"
+">\n"
+"\tvimtutor\n"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:113
+msgid ""
+"On MS-Windows you can find it in the Program/Vim menu.  Or execute vimtutor."
+"bat in the $VIMRUNTIME directory."
+msgstr ""
+"En MS-Windows, lo encontrará en el menú Programas/Vim. O puede ejecutar "
+"«vimtutor.bat» en el directorio $VIMRUNTIME."
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:118
+#, no-wrap
+msgid ""
+"This will make a copy of the tutor file, so that you can edit it without\n"
+"the risk of damaging the original.\n"
+"   There are a few translated versions of the tutor.  To find out if yours is\n"
+"available, use the two-letter language code.  For French: >\n"
+msgstr ""
+"Esto crea una copia del archivo del tutor, para que así pueda editarlo sin\n"
+"peligro de dañar el original.\n"
+"   Existen unas cuantas versiones traducidas del tutor. Para ver si el suyo\n"
+"está disponible, use el código de idioma de dos letras. Para el francés: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:120
+#, no-wrap
+msgid "\tvimtutor fr\n"
+msgstr "\tvimtutor fr\n"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:123
+msgid ""
+"On Unix, if you prefer using the GUI version of Vim, use \"gvimtutor\" or "
+"\"vimtutor -g\" instead of \"vimtutor\"."
+msgstr ""
+"Si prefiere usar la versión de interfaz gráfica de usuario de Vim, use "
+"«gvimtutor» o «vimtutor -g» en lugar de «vimtutor»."
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:126
+msgid ""
+"For OpenVMS, if Vim has been properly installed, you can start vimtutor from "
+"a VMS prompt with: >"
+msgstr ""
+"En sistemas OpenVMS, si Vim está adecuadamente instalado, puede iniciar "
+"vimtutor desde una consola con: >"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:128
+#, no-wrap
+msgid "\t@VIM:vimtutor\n"
+msgstr "\t@VIM:vimtutor\n"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:130
+msgid "Optionally add the two-letter language code as above."
+msgstr ""
+"Tiene la opción de añadir el código de idioma de dos letras tal y se vio "
+"anteriormente."
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:133
+msgid "On other systems, you have to do a little work:"
+msgstr "En otros sistema, tendrá que realizar un poco de trabajo:"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:149
+#, no-wrap
+msgid ""
+"1. Copy the tutor file.  You can do this with Vim (it knows where to find it):\n"
+">\n"
+"\tvim -u NONE -c 'e $VIMRUNTIME/tutor/tutor' -c 'w! TUTORCOPY' -c 'q'\n"
+"<\n"
+"   This will write the file \"TUTORCOPY\" in the current directory.  To use a\n"
+"translated version of the tutor, append the two-letter language code to the\n"
+"filename.  For French:\n"
+">\n"
+"\tvim -u NONE -c 'e $VIMRUNTIME/tutor/tutor.fr' -c 'w! TUTORCOPY' -c 'q'\n"
+"<\n"
+"2. Edit the copied file with Vim:\n"
+">\n"
+"\tvim -u NONE -c \"set nocp\" TUTORCOPY\n"
+"<\n"
+"   The extra arguments make sure Vim is started in a good mood.\n"
+msgstr ""
+"1. Copie el archivo del tutor. Puede hacer esto con Vim (sabe donde\n"
+"encontrarlo):\n"
+">\n"
+"\tvim -u NONE -c 'e $VIMRUNTIME/tutor/tutor' -c 'w! TUTORCOPY' -c 'q'\n"
+"<\n"
+"   Esto copia el archivo «TUTORCOPY» al directorio actual.  Para usar una\n"
+"versión traducida del tutor, afije el código de idioma al nombre del\n"
+"archivo. Para francés:\n"
+">\n"
+"\tvim -u NONE -c 'e $VIMRUNTIME/tutor/tutor.fr' -c 'w! TUTORCOPY' -c 'q'\n"
+"<\n"
+"2. Edite la copia del archivo con Vim:\n"
+">\n"
+"\tvim -u NONE -c \"set nocp\" TUTORCOPY\n"
+"<\n"
+"   Los argumentos extra se aseguran de que Vim se inicie adecuadamente:\n"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:154
+#, no-wrap
+msgid ""
+"3. Delete the copied file when you are finished with it:\n"
+">\n"
+"\tdel TUTORCOPY\n"
+"<\n"
+"==============================================================================\n"
+msgstr ""
+"3. Borrar el archivo copiado cuando haya acabado con él:\n"
+">\n"
+"\tdel TUTORCOPY\n"
+"==============================================================================\n"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:156
+#, no-wrap
+msgid "*01.4*\tCopyright\t\t\t\t\t*manual-copyright*\n"
+msgstr "*01.4*\tCopyright\t\t\t\t\t*manual-copyright*\n"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:162
+#, no-wrap
+msgid ""
+"The Vim user manual and reference manual are Copyright (c) 1988-2003 by Bram\n"
+"Moolenaar.  This material may be distributed only subject to the terms and\n"
+"conditions set forth in the Open Publication License, v1.0 or later.  The\n"
+"latest version is presently available at:\n"
+"\t     http://www.opencontent.org/openpub/\n"
+msgstr ""
+"El manual de usuario y el manual de referencia están bajo el Copyright (c)\n"
+"1988-2003 por Bram Moolenaar. Este material se distribuirá sólo bajo estos\n"
+"términos de licencia y condiciones expuestas en la Open Publication License,\n"
+"versión 1.0 o posterior. La versión más actual está ahora disponible en:\n"
+"\t     http://www.opencontent.org/openpub/\n"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:172
+#, no-wrap
+msgid ""
+"People who contribute to the manuals must agree with the above copyright\n"
+"notice.\n"
+"\t\t\t\t\t\t\t*frombook*\n"
+"Parts of the user manual come from the book \"Vi IMproved - Vim\" by Steve\n"
+"Oualline (published by New Riders Publishing, ISBN: 0735710015).  The Open\n"
+"Publication License applies to this book.  Only selected parts are included\n"
+"and these have been modified (e.g., by removing the pictures, updating the\n"
+"text for Vim 6.0 and later, fixing mistakes).  The omission of the |frombook|\n"
+"tag does not mean that the text does not come from the book.\n"
+msgstr ""
+"Las personas que contribuyan al manual también tienen que aceptar el\n"
+"copyright expuesto anteriormente.\n"
+"\t\t\t\t\t\t\t*frombook*\n"
+"Hay partes del manual de usuario que proceden del libro «Vi IMproved - Vim»,\n"
+"por Steve Oualline (publicado por New Riders Publishing, ISBN: 0735710015).\n"
+"La Open Publication License también cubre a este libro.\n"
+"Sólo se incluyen partes seleccionadas, y estas se han modificado (p. ej. se\n"
+"eliminaron las fotos, se actualizó el texto para Vim 6.0 y posteriores,\n"
+"corrección de errata). La omisión de la etiqueta |frombook| no significa\n"
+"que el texto no proceda del libro.\n"
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:177
+msgid ""
+"Many thanks to Steve Oualline and New Riders for creating this book and "
+"publishing it under the OPL! It has been a great help while writing the user "
+"manual.  Not only by providing literal text, but also by setting the tone "
+"and style."
+msgstr ""
+"¡Muchas gracias a Steve Oualline y a New Riders por crear este libro, y "
+"publicarlo bajo la licencia OPL! Ha servido de gran ayuda a la hora de "
+"escribir este manual. No sólo por el texto literal, sino también al definir "
+"el tono y estilo."
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:180
+msgid ""
+"If you make money through selling the manuals, you are strongly encouraged "
+"to donate part of the profit to help AIDS victims in Uganda.  See |iccf|."
+msgstr ""
+"Si obtiene beneficios mediante la venta de los manuales, le animamos a que "
+"done parte de los beneficios para ayudar a las victimas del SIDA en Uganda.  "
+"Véase |iccf|."
+
+#. type: Plain text
+#: original/TXT/usr_01.txt:184
+msgid "Next chapter: |usr_02.txt| The first steps in Vim"
+msgstr "Capítulo siguiente: |usr_02.esx| Primeros pasos en Vim"

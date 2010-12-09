@@ -1,0 +1,995 @@
+# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es 
+#
+# Copyright (C) 2009 
+# This file is distributed under the same license as the Vim (version) package.
+#
+# Translators credits:
+#   - Initial translation
+#       Álvaro Castro Castillo <alvaro.castro.castilla@gmail.com>
+#
+#   - Updates
+#       TRADUCTOR <CORREO>, AÑO 
+#
+#
+#
+# Debido al formato (txt) y al máximo de 80 columnas que pueden tener 
+# los textos de ayuda en Vim, así como el formato PO, por favor, leete los
+# apuntes concernientes a la edición de los archivos PO relativos a la
+# aplicación que desees usar.
+# También encontrarás información acerca del uso de herramientas gettext en el 
+# proyecto de localización (l10n) de Vim.
+#
+# - http://www.assembla.com/wiki/show/vim-doc-es
+#
+# No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
+# este enlace puede ser de interés. A pesar de no formar parte, nuestra 
+# intención es homologarnos con su terminología y uso de la lengua 
+# en la medida de lo útil y posible.
+#
+#  - El proyecto de traducción de Debian al español
+#     http://www.debian.org/intl/spanish/notas
+#
+# La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
+# pero también puede servir de referencia para otros términos no técnicos.
+# No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
+# traducción sea comprensible independientemente de la nacionalidad del
+# usuario. Si crees que alguna traducción puede llevar a confusión, consulta
+# la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
+#
+#  - www.rae.es 
+#  - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages   
+#
+# Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
+# se puede consultar con un simple grep, pogrep o cargado en Virtaal.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Vim 7.2\n"
+"Report-Msgid-Bugs-To: vim@bugs.org\n"
+"POT-Creation-Date: 2010-09-23 20:27+0300\n"
+"PO-Revision-Date: 2010-12-06 18:02+0100\n"
+"Last-Translator: Álvaro Castro Castillo <alvaro.castro.castilla@gmail.com>\n"
+"Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:18 original/TXT/intro.txt:79
+#: original/TXT/intro.txt:180 original/TXT/intro.txt:290
+#: original/TXT/intro.txt:518 original/TXT/intro.txt:596
+#: original/TXT/intro.txt:689 original/TXT/intro.txt:817
+#: original/TXT/intro.txt:880 original/TXT/usr_toc.txt:7
+#: original/TXT/usr_toc.txt:58 original/TXT/usr_toc.txt:172
+#: original/TXT/usr_toc.txt:281 original/TXT/usr_toc.txt:340
+#: original/TXT/usr_toc.txt:352 original/TXT/usr_01.txt:19
+#: original/TXT/usr_01.txt:50 original/TXT/usr_01.txt:100
+#: original/TXT/usr_01.txt:181 original/TXT/usr_02.txt:25
+#: original/TXT/usr_02.txt:69 original/TXT/usr_02.txt:130
+#: original/TXT/usr_02.txt:179 original/TXT/usr_02.txt:239
+#: original/TXT/usr_02.txt:307 original/TXT/usr_02.txt:369
+#: original/TXT/usr_02.txt:406 original/TXT/usr_02.txt:560
+#: original/TXT/usr_03.txt:28 original/TXT/usr_03.txt:74
+#: original/TXT/usr_03.txt:101 original/TXT/usr_03.txt:147
+#: original/TXT/usr_03.txt:172 original/TXT/usr_03.txt:223
+#: original/TXT/usr_03.txt:265 original/TXT/usr_03.txt:320
+#: original/TXT/usr_03.txt:491 original/TXT/usr_03.txt:552
+#: original/TXT/usr_03.txt:650 original/TXT/usr_04.txt:27
+#: original/TXT/usr_04.txt:74 original/TXT/usr_04.txt:160
+#: original/TXT/usr_04.txt:194 original/TXT/usr_04.txt:269
+#: original/TXT/usr_04.txt:324 original/TXT/usr_04.txt:360
+#: original/TXT/usr_04.txt:390 original/TXT/usr_04.txt:446
+#: original/TXT/usr_04.txt:469 original/TXT/usr_04.txt:510
+#: original/TXT/usr_05.txt:24 original/TXT/usr_05.txt:63
+#: original/TXT/usr_05.txt:219 original/TXT/usr_05.txt:266
+#: original/TXT/usr_05.txt:418 original/TXT/usr_05.txt:467
+#: original/TXT/usr_05.txt:506 original/TXT/usr_05.txt:621
+#: original/TXT/usr_06.txt:24 original/TXT/usr_06.txt:50
+#: original/TXT/usr_06.txt:135 original/TXT/usr_06.txt:189
+#: original/TXT/usr_06.txt:270 original/TXT/usr_06.txt:276
+#: original/TXT/usr_07.txt:24 original/TXT/usr_07.txt:63
+#: original/TXT/usr_07.txt:179 original/TXT/usr_07.txt:266
+#: original/TXT/usr_07.txt:316 original/TXT/usr_07.txt:404
+#: original/TXT/usr_07.txt:444 original/TXT/usr_07.txt:475
+#: original/TXT/usr_08.txt:26 original/TXT/usr_08.txt:82
+#: original/TXT/usr_08.txt:109 original/TXT/usr_08.txt:161
+#: original/TXT/usr_08.txt:215 original/TXT/usr_08.txt:278
+#: original/TXT/usr_08.txt:337 original/TXT/usr_08.txt:477
+#: original/TXT/usr_08.txt:509 original/TXT/usr_08.txt:597
+#: original/TXT/usr_09.txt:21 original/TXT/usr_09.txt:124
+#: original/TXT/usr_09.txt:175 original/TXT/usr_09.txt:259
+#: original/TXT/usr_09.txt:285 original/TXT/usr_10.txt:27
+#: original/TXT/usr_10.txt:144 original/TXT/usr_10.txt:221
+#: original/TXT/usr_10.txt:342 original/TXT/usr_10.txt:378
+#: original/TXT/usr_10.txt:547 original/TXT/usr_10.txt:621
+#: original/TXT/usr_10.txt:667 original/TXT/usr_10.txt:692
+#: original/TXT/usr_10.txt:820 original/TXT/usr_11.txt:22
+#: original/TXT/usr_11.txt:82 original/TXT/usr_11.txt:144
+#: original/TXT/usr_11.txt:288 original/TXT/usr_11.txt:303
+#: original/TXT/usr_12.txt:25 original/TXT/usr_12.txt:90
+#: original/TXT/usr_12.txt:131 original/TXT/usr_12.txt:177
+#: original/TXT/usr_12.txt:202 original/TXT/usr_12.txt:231
+#: original/TXT/usr_12.txt:281 original/TXT/usr_12.txt:309
+#: original/TXT/usr_12.txt:354 original/TXT/usr_20.txt:22
+#: original/TXT/usr_20.txt:113 original/TXT/usr_20.txt:158
+#: original/TXT/usr_20.txt:285 original/TXT/usr_20.txt:327
+#: original/TXT/usr_20.txt:380 original/TXT/usr_21.txt:24
+#: original/TXT/usr_21.txt:47 original/TXT/usr_21.txt:87
+#: original/TXT/usr_21.txt:236 original/TXT/usr_21.txt:385
+#: original/TXT/usr_21.txt:438 original/TXT/usr_21.txt:495
+#: original/TXT/usr_22.txt:22 original/TXT/usr_22.txt:148
+#: original/TXT/usr_22.txt:213 original/TXT/usr_22.txt:272
+#: original/TXT/usr_22.txt:396 original/TXT/usr_23.txt:23
+#: original/TXT/usr_23.txt:114 original/TXT/usr_23.txt:156
+#: original/TXT/usr_23.txt:238 original/TXT/usr_23.txt:324
+#: original/TXT/usr_23.txt:339 original/TXT/usr_24.txt:28
+#: original/TXT/usr_24.txt:96 original/TXT/usr_24.txt:119
+#: original/TXT/usr_24.txt:268 original/TXT/usr_24.txt:305
+#: original/TXT/usr_24.txt:336 original/TXT/usr_24.txt:369
+#: original/TXT/usr_24.txt:493 original/TXT/usr_24.txt:537
+#: original/TXT/usr_24.txt:583 original/TXT/usr_24.txt:602
+#: original/TXT/usr_25.txt:22 original/TXT/usr_25.txt:132
+#: original/TXT/usr_25.txt:210 original/TXT/usr_25.txt:287
+#: original/TXT/usr_25.txt:453 original/TXT/usr_25.txt:574
+#: original/TXT/usr_26.txt:21 original/TXT/usr_26.txt:46
+#: original/TXT/usr_26.txt:103 original/TXT/usr_26.txt:136
+#: original/TXT/usr_26.txt:217 original/TXT/usr_27.txt:26
+#: original/TXT/usr_27.txt:88 original/TXT/usr_27.txt:136
+#: original/TXT/usr_27.txt:239 original/TXT/usr_27.txt:320
+#: original/TXT/usr_27.txt:350 original/TXT/usr_27.txt:427
+#: original/TXT/usr_27.txt:469 original/TXT/usr_27.txt:510
+#: original/TXT/usr_27.txt:559 original/TXT/usr_28.txt:27
+#: original/TXT/usr_28.txt:54 original/TXT/usr_28.txt:121
+#: original/TXT/usr_28.txt:185 original/TXT/usr_28.txt:211
+#: original/TXT/usr_28.txt:269 original/TXT/usr_28.txt:315
+#: original/TXT/usr_28.txt:331 original/TXT/usr_28.txt:375
+#: original/TXT/usr_28.txt:389 original/TXT/usr_28.txt:422
+#: original/TXT/usr_29.txt:23 original/TXT/usr_29.txt:273
+#: original/TXT/usr_29.txt:320 original/TXT/usr_29.txt:441
+#: original/TXT/usr_29.txt:570 original/TXT/usr_29.txt:609
+#: original/TXT/usr_30.txt:23 original/TXT/usr_30.txt:202
+#: original/TXT/usr_30.txt:280 original/TXT/usr_30.txt:336
+#: original/TXT/usr_30.txt:409 original/TXT/usr_30.txt:515
+#: original/TXT/usr_30.txt:639 original/TXT/usr_31.txt:22
+#: original/TXT/usr_31.txt:81 original/TXT/usr_31.txt:133
+#: original/TXT/usr_31.txt:160 original/TXT/usr_31.txt:208
+#: original/TXT/usr_31.txt:268
+#, no-wrap
+msgid "==============================================================================\n"
+msgstr "==============================================================================\n"
+
+#. type: Plain text
+#: original/TXT/usr_toc.txt:4 original/TXT/usr_01.txt:4
+#: original/TXT/usr_02.txt:4 original/TXT/usr_03.txt:4
+#: original/TXT/usr_04.txt:4 original/TXT/usr_05.txt:4
+#: original/TXT/usr_06.txt:4 original/TXT/usr_07.txt:4
+#: original/TXT/usr_08.txt:4 original/TXT/usr_09.txt:4
+#: original/TXT/usr_10.txt:4 original/TXT/usr_11.txt:4
+#: original/TXT/usr_12.txt:4 original/TXT/usr_20.txt:4
+#: original/TXT/usr_21.txt:4 original/TXT/usr_22.txt:4
+#: original/TXT/usr_23.txt:4 original/TXT/usr_24.txt:4
+#: original/TXT/usr_25.txt:4 original/TXT/usr_26.txt:4
+#: original/TXT/usr_27.txt:4 original/TXT/usr_28.txt:4
+#: original/TXT/usr_29.txt:4 original/TXT/usr_30.txt:4
+#: original/TXT/usr_31.txt:4
+#, no-wrap
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
+msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
+
+#. type: Plain text
+#: original/TXT/usr_toc.txt:354 original/TXT/usr_01.txt:185
+#: original/TXT/usr_02.txt:564 original/TXT/usr_03.txt:654
+#: original/TXT/usr_04.txt:514 original/TXT/usr_05.txt:625
+#: original/TXT/usr_06.txt:280 original/TXT/usr_07.txt:479
+#: original/TXT/usr_08.txt:601 original/TXT/usr_09.txt:289
+#: original/TXT/usr_10.txt:824 original/TXT/usr_11.txt:307
+#: original/TXT/usr_12.txt:358 original/TXT/usr_20.txt:384
+#: original/TXT/usr_21.txt:499 original/TXT/usr_22.txt:400
+#: original/TXT/usr_23.txt:343 original/TXT/usr_24.txt:606
+#: original/TXT/usr_25.txt:578 original/TXT/usr_26.txt:221
+#: original/TXT/usr_27.txt:563 original/TXT/usr_28.txt:426
+#: original/TXT/usr_29.txt:613 original/TXT/usr_30.txt:643
+#: original/TXT/usr_31.txt:272
+msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:2
+#, no-wrap
+msgid "*usr_11.txt*\tFor Vim version 7.3.  Last change: 2010 Jul 20\n"
+msgstr "*usr_11.esx*\tPara Vim versión 7.3.  Último cambio: 20/6/2010\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:6
+#, no-wrap
+msgid "\t\t\t   Recovering from a crash\n"
+msgstr "\t\t\t  Recuperarse de un fallo\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:12
+msgid ""
+"Did your computer crash? And you just spent hours editing? Don't panic! Vim "
+"stores enough information to be able to restore most of your work.  This "
+"chapter shows you how to get your work back and explains how the swap file "
+"is used."
+msgstr ""
+"¿Se colgó su ordenador después de horas editando? ¡No entre en pánico! Vim "
+"mantiene suficiente información para poder recuperar la mayor parte del "
+"trabajo. Este capítulo le mostrará cómo recuperar su trabajo y cómo funciona "
+"el archivo de intercambio («swap»)."
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:17
+#, no-wrap
+msgid ""
+"|11.1|\tBasic recovery\n"
+"|11.2|\tWhere is the swap file?\n"
+"|11.3|\tCrashed or not?\n"
+"|11.4|\tFurther reading\n"
+msgstr ""
+"|11.1|\tRecuperación básica\n"
+"|11.2|\t¿Dónde está el archivo de intercambio?\n"
+"|11.3|\t¿Se ha colgado o no?\n"
+"|11.4|\tMás información\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:21
+#, no-wrap
+msgid ""
+"     Next chapter: |usr_12.txt|  Clever tricks\n"
+" Previous chapter: |usr_10.txt|  Making big changes\n"
+"Table of contents: |usr_toc.txt|\n"
+msgstr ""
+" Capítulo siguiente: |usr_12.esx|  Trucos\n"
+"  Capítulo anterior: |usr_10.esx|  Realizar grandes cambios\n"
+"Tabla de contenidos: |usr_toc.esx|\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:24
+#, no-wrap
+msgid "*11.1*\tBasic recovery\n"
+msgstr "*11.1*\tRecuperación básica\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:28
+msgid ""
+"In most cases recovering a file is quite simple, assuming you know which "
+"file you were editing (and the harddisk is still working).  Start Vim on the "
+"file, with the \"-r\" argument added: >"
+msgstr ""
+"En la mayoría de los casos, recuperar un archivo es bastante sencillo, si "
+"suponemos que sabe qué archivo estaba editando (y el disco duro aún "
+"funciona). Inicie Vim con el archivo y el argumento «-r»: >"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:30
+#, no-wrap
+msgid "\tvim -r help.txt\n"
+msgstr "\tvim -r ayuda.txt\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:34
+msgid ""
+"Vim will read the swap file (used to store text you were editing) and may "
+"read bits and pieces of the original file.  If Vim recovered your changes "
+"you will see these messages (with different file names, of course):"
+msgstr ""
+"Vim leerá el archivo de intercambio (empleado para almacenar el texto "
+"editado) y puede que lea bits y porciones del texto original. Verá los "
+"siguientes mensajes si todo ha ido bien (con nombres de fichero diferentes, "
+"por supuesto)."
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:41
+#, no-wrap
+msgid ""
+"\tUsing swap file \".help.txt.swp\" ~\n"
+"\tOriginal file \"~/vim/runtime/doc/help.txt\" ~\n"
+"\tRecovery completed. You should check if everything is OK. ~\n"
+"\t(You might want to write out this file under another name ~\n"
+"\tand run diff with the original file to check for changes) ~\n"
+"\tYou may want to delete the .swp file now. ~\n"
+msgstr ""
+"\tUsing swap file \".help.txt.swp\" ~\n"
+"\tOriginal file \"~/vim/runtime/doc/help.txt\" ~\n"
+"\tRecovery completed. You should check if everything is OK. ~\n"
+"\t(You might want to write out this file under another name ~\n"
+"\tand run diff with the original file to check for changes) ~\n"
+"\tYou may want to delete the .swp file now. ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:43
+msgid "To be on the safe side, write this file under another name: >"
+msgstr ""
+"Para ponerse del lado de la seguridad, escriba este archivo con otro nombre: "
+">"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:45
+#, no-wrap
+msgid "\t:write help.txt.recovered\n"
+msgstr "\t:write ayuda.txt.recuperado\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:48
+msgid ""
+"Compare the file with the original file to check if you ended up with what "
+"you expected.  Vimdiff is very useful for this |08.7|.  For example: >"
+msgstr ""
+"Compare el archivo con el original para ver si obtuvo lo que esperaba. "
+"Vimdiff es muy útil para esta tarea |08.7|. Por ejemplo: >"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:52
+#, no-wrap
+msgid ""
+"\t:write help.txt.recovered\n"
+"\t:edit #\n"
+"\t:diffsp help.txt\n"
+msgstr ""
+"\t:write help.txt.recovered\n"
+"\t:edit #\n"
+"\t:diffsp help.txt\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:58
+#, no-wrap
+msgid ""
+"Watch out for the original file to contain a more recent version (you saved\n"
+"the file just before the computer crashed).  And check that no lines are\n"
+"missing (something went wrong that Vim could not recover).\n"
+"   If Vim produces warning messages when recovering, read them carefully.\n"
+"This is rare though.\n"
+msgstr ""
+"Compruebe que el archivo original no contenga una versión más reciente\n"
+"(guardó el archivo justo antes de que el sistema diese un fallo).\n"
+"Compruebe también que no se ha omitido ninguna línea (algo ha ido mal\n"
+"y Vim no pudo recuperar).\n"
+"   Si Vim genera mensajes de advertencia al recuperar un archivo, lea\n"
+"éstos cuidadosamente. Aún así, es poco habitual.\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:61
+msgid ""
+"If the recovery resulted in text that is exactly the same as the file "
+"contents, you will get this message:"
+msgstr ""
+"Si la recuperación ha resultado en un texto idéntico a los contenidos del "
+"archivo obtendrá este mensaje:"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:66
+#, no-wrap
+msgid ""
+"\tUsing swap file \".help.txt.swp\" ~\n"
+"\tOriginal file \"~/vim/runtime/doc/help.txt\" ~\n"
+"\tRecovery completed. Buffer contents equals file contents. ~\n"
+"\tYou may want to delete the .swp file now. ~\n"
+msgstr ""
+"\tUsing swap file \".help.txt.swp\" ~\n"
+"\tOriginal file \"~/vim/runtime/doc/help.txt\" ~\n"
+"\tRecovery completed. Buffer contents equals file contents. ~\n"
+"\tYou may want to delete the .swp file now. ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:69
+msgid ""
+"This usually happens if you already recovered your changes, or you wrote the "
+"file after making changes.  It is safe to delete the swap file now."
+msgstr ""
+"Habitualmente, esto ocurre si ya ha recuperado los cambios, o si editó el "
+"archivo después de realizar cambios. En este momento ya puede eliminar el "
+"archivo de intercambio."
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:75
+msgid ""
+"It is normal that the last few changes can not be recovered.  Vim flushes "
+"the changes to disk when you don't type for about four seconds, or after "
+"typing about two hundred characters.  This is set with the 'updatetime' and "
+"'updatecount' options.  Thus when Vim didn't get a chance to save itself "
+"when the system went down, the changes after the last flush will be lost."
+msgstr ""
+"Es normal que los últimos cambios no se puedan recuperar. Vim vuelca los "
+"cambios al disco duro cuando no teclea durante cuatro segundos, o tras "
+"escribir unos doscientos caracteres. Esto se puede modificar con las "
+"opciones 'updatetime' y 'updatecount'. De esta forma, cuando Vim no tiene "
+"posibilidad de guardar cuando el sistema cae, tendrá los cambios del último "
+"volcado."
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:77
+msgid ""
+"If you were editing without a file name, give an empty string as argument: >"
+msgstr ""
+"Si estaba editando sin un nombre de archivo designado, dele este argumento: >"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:79
+#, no-wrap
+msgid "\tvim -r \"\"\n"
+msgstr "\tvim -r \"\"\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:81
+msgid ""
+"You must be in the right directory, otherwise Vim can't find the swap file."
+msgstr ""
+"Deberá estar en el mismo directorio para poder recuperar la información."
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:84
+#, no-wrap
+msgid "*11.2*\tWhere is the swap file?\n"
+msgstr "*11.2* \t¿Dónde está el archivo de intercambio?\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:88
+msgid ""
+"Vim can store the swap file in several places.  Normally it is in the same "
+"directory as the original file.  To find it, change to the directory of the "
+"file, and use: >"
+msgstr ""
+"Vim puede guardar el archivo de intercambio en distintos lugares.  "
+"Normalmente se encuentra en el mismo directorio que el archivo original.  "
+"Para encontrarlo, cambie al directorio del archivo y escriba: >"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:90
+#, no-wrap
+msgid "\tvim -r\n"
+msgstr "\tvim -r\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:96
+#, no-wrap
+msgid ""
+"Vim will list the swap files that it can find.  It will also look in other\n"
+"directories where the swap file for files in the current directory may be\n"
+"located.  It will not find swap files in any other directories though, it\n"
+"doesn't search the directory tree.\n"
+"   The output could look like this:\n"
+msgstr ""
+"Vim usará una lista de archivos de intercambio que ha encontrado. También\n"
+"buscará en otros directorios donde los archivos de intercambio para archivos\n"
+"en el actual puedan encontrarse. No buscará archivos de intercambio en\n"
+"otros directorios, ni siquiera en los subdirectorios.\n"
+"   La salida se parecerá a esto:\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:111
+#, no-wrap
+msgid ""
+"\tSwap files found: ~\n"
+"\t   In current directory: ~\n"
+"\t1.    .main.c.swp ~\n"
+"\t\t  owned by: mool   dated: Tue May 29 21:00:25 2001 ~\n"
+"\t\t file name: ~mool/vim/vim6/src/main.c ~\n"
+"\t\t  modified: YES ~\n"
+"\t\t user name: mool   host name: masaka.moolenaar.net ~\n"
+"\t\tprocess ID: 12525 ~\n"
+"\t   In directory ~/tmp: ~\n"
+"\t      -- none -- ~\n"
+"\t   In directory /var/tmp: ~\n"
+"\t      -- none -- ~\n"
+"\t   In directory /tmp: ~\n"
+"\t      -- none -- ~\n"
+msgstr ""
+"\tSwap files found: ~\n"
+"\t   In current directory: ~\n"
+"\t1.    .main.c.swp ~\n"
+"\t\t  owned by: mool   dated: Tue May 29 21:00:25 2001 ~\n"
+"\t\t file name: ~mool/vim/vim6/src/main.c ~\n"
+"\t\t  modified: YES ~\n"
+"\t\t user name: mool   host name: masaka.moolenaar.net ~\n"
+"\t\tprocess ID: 12525 ~\n"
+"\t   In directory ~/tmp: ~\n"
+"\t      -- none -- ~\n"
+"\t   In directory /var/tmp: ~\n"
+"\t      -- none -- ~\n"
+"\t   In directory /tmp: ~\n"
+"\t      -- none -- ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:118
+#, no-wrap
+msgid ""
+"If there are several swap files that look like they may be the one you want to\n"
+"use, a list is given of these swap files and you are requested to enter the\n"
+"number of the one you want to use.  Carefully look at the dates to decide\n"
+"which one you want to use.\n"
+"   In case you don't know which one to use, just try them one by one and check\n"
+"the resulting files if they are what you expected.\n"
+msgstr ""
+"Si hay varios archivos de intercambio que parecen ser el que quiere\n"
+"usar, se mostrará una lista y se requerirá que introduzcas el número del que\n"
+"quiere seleccionar. Observe con cuidado las fechas para decidir cuál\n"
+"quieres usar.\n"
+"   En caso de que no sepa cuál seleccionar, pruébelos uno a uno y compruebe\n"
+"que los archivos resultantes son el que deseas.\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:121
+msgid "USING A SPECIFIC SWAP FILE"
+msgstr "USAR UN ARCHIVO DE INTERCAMBIO ESPECÍFICO"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:125
+msgid ""
+"If you know which swap file needs to be used, you can recover by giving the "
+"swap file name.  Vim will then finds out the name of the original file from "
+"the swap file."
+msgstr ""
+"Si sabe qué archivo de intercambio quiere usar, puede realizar la "
+"intercambio dando como argumento el nombre de este archivo. Vim encontrará "
+"el nombre del archivo original del cuál éste es el archivo de intercambio."
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:128
+#, no-wrap
+msgid ""
+"Example: >\n"
+"\tvim -r .help.txt.swo\n"
+msgstr ""
+"Ejemplo: >\n"
+"\tvim -r .help.txt.swo\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:131
+msgid ""
+"This is also handy when the swap file is in another directory than "
+"expected.  Vim recognizes files with the pattern *.s[uvw][a-z] as swap files."
+msgstr ""
+"Esto resulta útil cuando el archivo de intercambio está en otro directorio "
+"diferente al esperado. Vim reconoce los archivos con el patrón *.s[uvw][a-z] "
+"como archivos de intercambio."
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:135
+msgid ""
+"If this still does not work, see what file names Vim reports and rename the "
+"files accordingly.  Check the 'directory' option to see where Vim may have "
+"put the swap file."
+msgstr ""
+"Si esto tampoco funciona, compruebe los nombres de archivo que Vim reporta y "
+"renombre los archivos acordemente. Compruebe la opción 'directory' para ver "
+"dónde ha podido poner Vim el archivo de intercambio."
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:143
+#, no-wrap
+msgid ""
+"\tNote:\n"
+"\tVim tries to find the swap file by searching the directories in the\n"
+"\t'dir' option, looking for files that match \"filename.sw?\".  If\n"
+"\twildcard expansion doesn't work (e.g., when the 'shell' option is\n"
+"\tinvalid), Vim does a desperate try to find the file \"filename.swp\".\n"
+"\tIf that fails too, you will have to give the name of the swapfile\n"
+"\titself to be able to recover the file.\n"
+msgstr ""
+"\tNota:\n"
+"\tVim intenta encontrar los archivos de intercambio buscando los\n"
+"\tdirectorios de la opción 'dir' por nombres que coincidan con\n"
+"\t«nombredearchivo.sw?». Si la expansión del nombre no funciona (p.ej.\n"
+"\tla opción 'shell' es inválida), Vim intenta buscar el archivo\n"
+"\t«nombredearchivo.swp». Si esto también falla, tendrá que darle el\n"
+"\tnombre del archivo a mano para que pueda recuperarlo.\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:146
+#, no-wrap
+msgid "*11.3*\tCrashed or not?\t\t\t\t\t*ATTENTION* *E325*\n"
+msgstr "*11.3*\t¿Se ha colgado o no?\t\t\t\t\t*ATTENTION* *E325*\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:150
+msgid ""
+"Vim tries to protect you from doing stupid things.  Suppose you innocently "
+"start editing a file, expecting the contents of the file to show up.  "
+"Instead, Vim produces a very long message:"
+msgstr ""
+"Vim intenta protegerle de cometer estupideces. Suponga que inocentemente "
+"comienza la edición de un archivo, a la espera de que los contenidos se "
+"muestren. En su lugar, Vim produce un mensaje muy largo:"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:171
+#, no-wrap
+msgid ""
+"\t\tE325: ATTENTION ~\n"
+"\tFound a swap file by the name \".main.c.swp\" ~\n"
+"\t\t  owned by: mool   dated: Tue May 29 21:09:28 2001 ~\n"
+"\t\t file name: ~mool/vim/vim6/src/main.c ~\n"
+"\t\t  modified: no ~\n"
+"\t\t user name: mool   host name: masaka.moolenaar.net ~\n"
+"\t\tprocess ID: 12559 (still running) ~\n"
+"\tWhile opening file \"main.c\" ~\n"
+"\t\t     dated: Tue May 29 19:46:12 2001 ~\n"
+" ~\n"
+"\t(1) Another program may be editing the same file. ~\n"
+"\t    If this is the case, be careful not to end up with two ~\n"
+"\t    different instances of the same file when making changes. ~\n"
+"\t    Quit, or continue with caution. ~\n"
+" ~\n"
+"\t(2) An edit session for this file crashed. ~\n"
+"\t    If this is the case, use \":recover\" or \"vim -r main.c\" ~\n"
+"\t    to recover the changes (see \":help recovery\"). ~\n"
+"\t    If you did this already, delete the swap file \".main.c.swp\" ~\n"
+"\t    to avoid this message. ~\n"
+msgstr ""
+"\t\tE325: ATENCIÓN ~\n"
+"Se ha encontrado un archivo de intercambio con el nombre \".main.c.swp\" ~\n"
+"\t\tpropiedad de: mool   de fecha: Tue May 29 21:09:28 2001 ~\n"
+"\t\tnombre del archivo: ~mool/vim/vim6/src/main.c ~\n"
+"\t\tmodificado: no ~\n"
+"\t\tnombre del usuario: mool   host name: masaka.moolenaar.net ~\n"
+"\t\tID del proceso: 12559 (aún en ejecución) ~\n"
+"\t\tal abrir el archivo \"main.c\" ~\n"
+"\t\tde fecha: Tue May 29 19:46:12 2001 ~\n"
+" ~\n"
+"\t(1)  Puede que otro programa esté editando el mismo archivo. ~\n"
+"\t    De ser así, tenga cuidado de no acabar con dos ~\n"
+"\t    ejemplares diferentes del mismo archivo al hacer cambios. ~\n"
+"\t    Salga del programa o continúe con precaución. ~\n"
+" ~\n"
+"\t(2) Falló una sesión de edición de este archivo. ~\n"
+"\t    Si es así, use \\\":recover\\\" o \\\"vim -r  main.c\" ~\n"
+"\t    para recuperar los cambios (véa \\\":help recovery\\\"). ~\n"
+"\t    Si Ud. ya ha hecho esto, borre el archivo de intercambio \".main.c.swp\" ~\n"
+"\t    para evitar este mensaje. ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:175
+msgid ""
+"You get this message, because, when starting to edit a file, Vim checks if a "
+"swap file already exists for that file.  If there is one, there must be "
+"something wrong.  It may be one of these two situations."
+msgstr ""
+"Ha recibido este mensaje porque cuando comienza a editar un archivo, Vim "
+"comprueba que exista un archivo de intercambio para este archivo. Si hay "
+"uno, algo debe estar pasando. Puede ocurrir cualquiera de estas situaciones:"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:178
+#, no-wrap
+msgid ""
+"1. Another edit session is active on this file.  Look in the message for the\n"
+"   line with \"process ID\".  It might look like this:\n"
+msgstr ""
+"1. Hay otra sesión de edición activa en este archivo. Busque en el\n"
+"   mensaje la línea con «ID del proceso». Puede parecerse a esto:\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:180
+#, no-wrap
+msgid "\t\tprocess ID: 12559 (still running) ~\n"
+msgstr "\t\tprocess ID: 12559 ((aún en ejecución) ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:190
+#, no-wrap
+msgid ""
+"   The text \"(still running)\" indicates that the process editing this file\n"
+"   runs on the same computer.  When working on a non-Unix system you will not\n"
+"   get this extra hint.  When editing a file over a network, you may not see\n"
+"   the hint, because the process might be running on another computer.  In\n"
+"   those two cases you must find out what the situation is yourself.\n"
+"      If there is another Vim editing the same file, continuing to edit will\n"
+"   result in two versions of the same file.  The one that is written last will\n"
+"   overwrite the other one, resulting in loss of changes.  You better quit\n"
+"   this Vim.\n"
+msgstr ""
+"   El texto «(still running)» indica que el proceso que edita este archivo\n"
+"está corriendo en el mismo ordenador. Cuando estés bajo un sistema no\n"
+"Unix, no obtendrá esta información extra. Cuando edite un archivo a través\n"
+"de red, seguramente no verá esta información, porque el proceso estará en otro\n"
+"   ordenador. Tendrá que averiguarlo por su cuenta.\n"
+"      Si hay otro Vim editando el mismo archivo, continuar editándolo\n"
+"   conllevará a que tenga dos versiones del mismo archivo. La última que\n"
+"   guarde sobreescribirá a la otra, con la consecuente pérdida de los\n"
+"   cambios. Mejor salir de este Vim.\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:194
+#, no-wrap
+msgid ""
+"2. The swap file might be the result from a previous crash of Vim or the\n"
+"   computer.  Check the dates mentioned in the message.  If the date of the\n"
+"   swap file is newer than the file you were editing, and this line appears:\n"
+msgstr ""
+"2. El archivo de intercambio puede ser el resultado de un cuelgue anterior\n"
+"   de Vim o del ordenador. Revise las fechas mencionadas en el mensaje. Si la\n"
+"   fecha del archivo de intercambio es más reciente que la del archivo que\n"
+"   está editando, y aparece esta línea:\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:196
+#, no-wrap
+msgid "\t\tmodified: YES ~\n"
+msgstr "\t\tmodificado: YES ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:204
+#, no-wrap
+msgid ""
+"   Then you very likely have a crashed edit session that is worth recovering.\n"
+"      If the date of the file is newer than the date of the swap file, then\n"
+"   either it was changed after the crash (perhaps you recovered it earlier,\n"
+"   but didn't delete the swap file?), or else the file was saved before the\n"
+"   crash but after the last write of the swap file (then you're lucky: you\n"
+"   don't even need that old swap file).  Vim will warn you for this with this\n"
+"   extra line:\n"
+msgstr ""
+"   Entonces es muy probable que haya ocurrido algo con la sesión.\n"
+"      Si la fecha del archivo es posterior a la fecha del archivo de\n"
+"   intercambio, es que o cambiado tras el cuelgue (quizá la recuperó antes\n"
+"   y no eliminó el archivo de intercambio), o es que el archivo fue\n"
+"   guardado después de la última grabación del archivo de intercambio\n"
+"   (entonces tienes suerte: no necesita ni ese viejo archivo de\n"
+"   intercambio). Vim le advertirá de esto:\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:206
+#, no-wrap
+msgid "      NEWER than swap file! ~\n"
+msgstr "      MÁS NUEVO que el archivo de intercambio! ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:209
+msgid "UNREADABLE SWAP FILE"
+msgstr "ARCHIVO DE INTERCAMBIO ILEGIBLE"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:211
+msgid "Sometimes the line"
+msgstr "A veces la línea"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:213
+#, no-wrap
+msgid "\t[cannot be read] ~\n"
+msgstr "\t[no se puede leer] ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:216
+msgid ""
+"will appear under the name of the swap file.  This can be good or bad, "
+"depending on circumstances."
+msgstr ""
+"aparecerá bajo el nombre del archivo de intercambio. Esto puede ser bueno o "
+"malo dependiendo de las circunstancias."
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:220
+msgid ""
+"It is good if a previous editing session crashed without having made any "
+"changes to the file.  Then a directory listing of the swap file will show "
+"that it has zero bytes.  You may delete it and proceed."
+msgstr ""
+"Son buenas noticias si la sesión anterior se colgó sin haber hecho ningún "
+"cambio al archivo. En tal caso un listado de archivos del directorio "
+"mostrará que tiene cero bytes. Tal vez quiera eliminarla y continuar."
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:227
+msgid ""
+"It is slightly bad if you don't have read permission for the swap file.  You "
+"may want to view the file read-only, or quit.  On multi-user systems, if you "
+"yourself did the last changes under a different login name, a logout "
+"followed by a login under that other name might cure the \"read error\".  Or "
+"else you might want to find out who last edited (or is editing) the file and "
+"have a talk with them."
+msgstr ""
+"No son muy buenas noticias si lo que ocurre es que no tiene permisos de "
+"lectura del archivo de intercambio. Tal vez desee ver el archivo en modo "
+"sólo lectura o salir. En sistemas multiusuario, si empleó otro usuario, "
+"salir y volver a identificarte tal vez resuelva el «error de lectura». O en "
+"su defecto quizá quiera encontrar quien lo editó por última vez (o está "
+"editándolo ahora mismo) y hablar con él."
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:233
+msgid ""
+"It is very bad if it means there is a physical read error on the disk "
+"containing the swap file.  Fortunately, this almost never happens.  You may "
+"want to view the file read-only at first (if you can), to see the extent of "
+"the changes that were \"forgotten\".  If you are the one in charge of that "
+"file, be prepared to redo your last changes."
+msgstr ""
+"Son muy malas noticias si significa que hay un error de lectura a nivel "
+"físico del disco duro. Afortunadamente, esto no ocurre casi nunca. Quizá "
+"quiera ver el archivo en modo sólo lectura inicialmente (si puede), para ver "
+"el alcance de los cambios que fueron «olvidados». Si eres el que está a "
+"cargo del archivo, prepárate para rehacer los últimos cambios."
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:236
+#, no-wrap
+msgid "WHAT TO DO?\t\t\t\t\t*swap-exists-choices*\n"
+msgstr "¿QUÉ HACER?\t\t\t\t\t*swap-exists-choices*\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:238
+msgid ""
+"If dialogs are supported you will be asked to select one of five choices:"
+msgstr ""
+"Si tiene soporte para diálogos, se le pedirá que elija una de las siguientes "
+"opciones:"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:241
+#, no-wrap
+msgid ""
+"  Swap file \".main.c.swp\" already exists! ~\n"
+"  [O]pen Read-Only, (E)dit anyway, (R)ecover, (Q)uit, (A)bort, (D)elete it: ~\n"
+msgstr ""
+"  Swap file \".main.c.swp\" already exists! ~\n"
+"  [O]pen Read-Only, (E)dit anyway, (R)ecover, (Q)uit, (A)bort, (D)elete it: ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:246
+#, no-wrap
+msgid ""
+"O  Open the file readonly.  Use this when you just want to view the file and\n"
+"   don't need to recover it.  You might want to use this when you know someone\n"
+"   else is editing the file, but you just want to look in it and not make\n"
+"   changes.\n"
+msgstr ""
+"O  Abrir el archivo en modo sólo lectura. Use esto cuando sólo desee ver el\n"
+"   archivo y no necesite recuperarlo. Tal vez quiera usar esto cuando sepa\n"
+"   que alguien está usando el archivo y usted sólo quiera echar un vistazo sin\n"
+"   hacer cambios.\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:250
+#, no-wrap
+msgid ""
+"E  Edit the file anyway.  Use this with caution!  If the file is being edited\n"
+"   in another Vim, you might end up with two versions of the file.  Vim will\n"
+"   try to warn you when this happens, but better be safe then sorry.\n"
+msgstr ""
+"E  Editar el archivo igualmente. ¡Use esto con cuidado! Si el archivo está\n"
+"   siendo utilizado por otro Vim, terminará con dos versiones del archivo.\n"
+"   Vim intentará advertirte si esto va a ocurrir, pero más vale prevenir.\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:253
+#, no-wrap
+msgid ""
+"R  Recover the file from the swap file.  Use this if you know that the swap\n"
+"   file contains changes that you want to recover.\n"
+msgstr ""
+"R  Recuperar el archivo del archivo de intercambio. Emplee esto si sabe que\n"
+"   el archivo de intercambio contiene los cambios que desea.\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:260
+#, no-wrap
+msgid ""
+"Q  Quit.  This avoids starting to edit the file.  Use this if there is another\n"
+"   Vim editing the same file.\n"
+"      When you just started Vim, this will exit Vim.  When starting Vim with\n"
+"   files in several windows, Vim quits only if there is a swap file for the\n"
+"   first one.  When using an edit command, the file will not be loaded and you\n"
+"   are taken back to the previously edited file.\n"
+msgstr ""
+"Q  Salir. Esto evita la edición. use esto si hay otro Vim editando el mismo\n"
+"   archivo.\n"
+"      Tras iniciar Vim, este saldrá de él. Cuando comiences Vim con archivos\n"
+"   en varias ventanas, Vim sale sólo si hay un archivo de intercambio para el\n"
+"   primero.  Cuando use una orden de edición, el archivo no se cargará y\n"
+"   será devuelto al archivo previamente editado.\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:264
+#, no-wrap
+msgid ""
+"A  Abort.  Like Quit, but also abort further commands.  This is useful when\n"
+"   loading a script that edits several files, such as a session with multiple\n"
+"   windows.\n"
+msgstr ""
+"A  Abortar. Como salir (Q), pero también aborta las órdenes posteriores.\n"
+"   Esto es útil cuando cargue un script que edita varios archivos, como una\n"
+"   sesión con múltiples ventanas.\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:270
+#, no-wrap
+msgid ""
+"D  Delete the swap file.  Use this when you are sure you no longer need it.\n"
+"   For example, when it doesn't contain changes, or when the file itself is\n"
+"   newer than the swap file.\n"
+"      On Unix this choice is only offered when the process that created the\n"
+"   swap file does not appear to be running.\n"
+msgstr ""
+"D  Eliminar el archivo de intercambio. Use esto cuando esté seguro de que\n"
+"   no lo necesita. Por ejemplo, cuando no contenga cambios o cuando el\n"
+"   archivo en sí sea más nuevo que el archivo de intercambio.\n"
+"      En Unix esta opción sólo se ofrece cuando el proceso que creó el archivo\n"
+"   de intercambio no parece que estar en ejecución.\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:274
+msgid ""
+"If you do not get the dialog (you are running a version of Vim that does not "
+"support it), you will have to do it manually.  To recover the file, use this "
+"command: >"
+msgstr ""
+"Si no ve el diálogo (está ejecutando una versión de Vim que no lo soporta, "
+"tendrá que hacerlo a mano. Para recuperar el archivo, use la siguiente "
+"orden: >"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:276
+#, no-wrap
+msgid "\t:recover\n"
+msgstr "\t:recover\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:282
+msgid ""
+"Vim cannot always detect that a swap file already exists for a file.  This "
+"is the case when the other edit session puts the swap files in another "
+"directory or when the path name for the file is different when editing it on "
+"different machines.  Therefore, don't rely on Vim always warning you."
+msgstr ""
+"Vim no puede siempre detectar cuando ya existe un archivo de intercambio "
+"para un archivo. Este es el caso cuando otras sesiones de edición ponen los "
+"archivos en otro directorio o cuando una ruta de archivo difiere en máquinas "
+"distintas.  Por lo tanto, no confíe en que Vim siempre le vaya a alertar."
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:285
+msgid ""
+"If you really don't want to see this message, you can add the 'A' flag to "
+"the 'shortmess' option.  But it's very unusual that you need this."
+msgstr ""
+"Si realmente no quiere ver este mensaje, puede añadir la marca 'A' a la "
+"opción 'shortmess'. Pero es poco habitual que lo necesite."
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:287
+msgid "For remarks about encryption and the swap file, see |:recover-crypt|."
+msgstr ""
+"Para apuntes relativos al cifrado y al archivo de intercambio, consulte |:"
+"recover-crypt|."
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:290
+#, no-wrap
+msgid "*11.4*\tFurther reading\n"
+msgstr "*11.4*\tMás información\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:302
+#, no-wrap
+msgid ""
+"|swap-file|\tAn explanation about where the swap file will be created and\n"
+"\t\twhat its name is.\n"
+"|:preserve|\tManually flushing the swap file to disk.\n"
+"|:swapname|\tSee the name of the swap file for the current file.\n"
+"'updatecount'\tNumber of key strokes after which the swap file is flushed to\n"
+"\t\tdisk.\n"
+"'updatetime'\tTimeout after which the swap file is flushed to disk.\n"
+"'swapsync'\tWhether the disk is synced when the swap file is flushed.\n"
+"'directory'\tList of directory names where to store the swap file.\n"
+"'maxmem'\tLimit for memory usage before writing text to the swap file.\n"
+"'maxmemtot'\tSame, but for all files in total.\n"
+msgstr ""
+"|swap-file|\tUna explicación sobre dónde se creará el archivo de\n"
+"\t\tintercambio y cuál es su nombre.\n"
+"|:preserve|\tVolcado manual de un archivo de intercambio al disco.\n"
+"|:swapname|\tVer el nombre del archivo de intercambio para el actual.\n"
+"'updatecount'\tNúmero de pulsación tras las cuales el archivo de intercambio\n"
+"\t\tes volcado al disco.\n"
+"'updatetime'\tTemporizador tras el cuál se producirá el volcado a disco.\n"
+"'swapsync'\tSi se debe sincornizar el disco duro tras el volcado.\n"
+"'directory'\tListado de directorios para el archivo de intercambio.\n"
+"'maxmem'\tLimitar el uso de memoria antes de hacer el volcado.\n"
+"'maxmemtot'\tLo mismo pero incluyendo todos los archivos en total.\n"
+
+#. type: Plain text
+#: original/TXT/usr_11.txt:306
+msgid "Next chapter: |usr_12.txt| Clever tricks"
+msgstr "Capítulo siguiente: |usr_12.esx| Trucos"

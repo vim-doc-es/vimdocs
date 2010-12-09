@@ -1,0 +1,923 @@
+# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es
+# Copyright (C) AÑOS
+# This file is distributed under the same license as the Vim (version) package.
+# Translators credits:
+# - Initial translation
+# TRADUCTOR INICIAL <CORREO>, AÑO
+# - Updates
+# TRADUCTOR <CORREO>, AÑO
+# Debido al formato (txt) y al máximo de 80 columnas que pueden tener
+# los textos de ayuda en Vim, así como el formato PO, por favor, leete los
+# apuntes concernientes a la edición de los archivos PO relativos a la
+# aplicación que desees usar.
+# También encontrarás información acerca del uso de herramientas gettext en el
+# proyecto de localización (l10n) de Vim.
+# - http://www.assembla.com/wiki/show/vim-doc-es
+# No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
+# este enlace puede ser de interés. A pesar de no formar parte, nuestra
+# intención es homologarnos con su terminología y uso de la lengua
+# en la medida de lo útil y posible.
+# - El proyecto de traducción de Debian al español
+# http://www.debian.org/intl/spanish/notas
+# La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
+# pero también puede servir de referencia para otros términos no técnicos.
+# No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
+# traducción sea comprensible independientemente de la nacionalidad del
+# usuario. Si crees que alguna traducción puede llevar a confusión, consulta
+# la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
+# - www.rae.es
+# - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages
+msgid ""
+msgstr ""
+"Project-Id-Version: Vim 7.2\n"
+"Report-Msgid-Bugs-To: vim@bugs.org\n"
+"POT-Creation-Date: 2010-09-23 20:27+0300\n"
+"PO-Revision-Date: 2010-12-08 14:16-0500\n"
+"Last-Translator:  Javier Rojas <jerojasro@devnull.li>\n"
+"Language-Team: <vim-doc-es@freelists.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.6.1\n"
+
+#. type: Plain text
+#: original/TXT/intro.txt:18 original/TXT/intro.txt:79
+#: original/TXT/intro.txt:180 original/TXT/intro.txt:290
+#: original/TXT/intro.txt:518 original/TXT/intro.txt:596
+#: original/TXT/intro.txt:689 original/TXT/intro.txt:817
+#: original/TXT/intro.txt:880 original/TXT/usr_toc.txt:7
+#: original/TXT/usr_toc.txt:58 original/TXT/usr_toc.txt:172
+#: original/TXT/usr_toc.txt:281 original/TXT/usr_toc.txt:340
+#: original/TXT/usr_toc.txt:352 original/TXT/usr_01.txt:19
+#: original/TXT/usr_01.txt:50 original/TXT/usr_01.txt:100
+#: original/TXT/usr_01.txt:181 original/TXT/usr_02.txt:25
+#: original/TXT/usr_02.txt:69 original/TXT/usr_02.txt:130
+#: original/TXT/usr_02.txt:179 original/TXT/usr_02.txt:239
+#: original/TXT/usr_02.txt:307 original/TXT/usr_02.txt:369
+#: original/TXT/usr_02.txt:406 original/TXT/usr_02.txt:560
+#: original/TXT/usr_03.txt:28 original/TXT/usr_03.txt:74
+#: original/TXT/usr_03.txt:101 original/TXT/usr_03.txt:147
+#: original/TXT/usr_03.txt:172 original/TXT/usr_03.txt:223
+#: original/TXT/usr_03.txt:265 original/TXT/usr_03.txt:320
+#: original/TXT/usr_03.txt:491 original/TXT/usr_03.txt:552
+#: original/TXT/usr_03.txt:650 original/TXT/usr_04.txt:27
+#: original/TXT/usr_04.txt:74 original/TXT/usr_04.txt:160
+#: original/TXT/usr_04.txt:194 original/TXT/usr_04.txt:269
+#: original/TXT/usr_04.txt:324 original/TXT/usr_04.txt:360
+#: original/TXT/usr_04.txt:390 original/TXT/usr_04.txt:446
+#: original/TXT/usr_04.txt:469 original/TXT/usr_04.txt:510
+#: original/TXT/usr_05.txt:24 original/TXT/usr_05.txt:63
+#: original/TXT/usr_05.txt:219 original/TXT/usr_05.txt:266
+#: original/TXT/usr_05.txt:418 original/TXT/usr_05.txt:467
+#: original/TXT/usr_05.txt:506 original/TXT/usr_05.txt:621
+#: original/TXT/usr_06.txt:24 original/TXT/usr_06.txt:50
+#: original/TXT/usr_06.txt:135 original/TXT/usr_06.txt:189
+#: original/TXT/usr_06.txt:270 original/TXT/usr_06.txt:276
+#: original/TXT/usr_07.txt:24 original/TXT/usr_07.txt:63
+#: original/TXT/usr_07.txt:179 original/TXT/usr_07.txt:266
+#: original/TXT/usr_07.txt:316 original/TXT/usr_07.txt:404
+#: original/TXT/usr_07.txt:444 original/TXT/usr_07.txt:475
+#: original/TXT/usr_08.txt:26 original/TXT/usr_08.txt:82
+#: original/TXT/usr_08.txt:109 original/TXT/usr_08.txt:161
+#: original/TXT/usr_08.txt:215 original/TXT/usr_08.txt:278
+#: original/TXT/usr_08.txt:337 original/TXT/usr_08.txt:477
+#: original/TXT/usr_08.txt:509 original/TXT/usr_08.txt:597
+#: original/TXT/usr_09.txt:21 original/TXT/usr_09.txt:124
+#: original/TXT/usr_09.txt:175 original/TXT/usr_09.txt:259
+#: original/TXT/usr_09.txt:285 original/TXT/usr_10.txt:27
+#: original/TXT/usr_10.txt:144 original/TXT/usr_10.txt:221
+#: original/TXT/usr_10.txt:342 original/TXT/usr_10.txt:378
+#: original/TXT/usr_10.txt:547 original/TXT/usr_10.txt:621
+#: original/TXT/usr_10.txt:667 original/TXT/usr_10.txt:692
+#: original/TXT/usr_10.txt:820 original/TXT/usr_11.txt:22
+#: original/TXT/usr_11.txt:82 original/TXT/usr_11.txt:144
+#: original/TXT/usr_11.txt:288 original/TXT/usr_11.txt:303
+#: original/TXT/usr_12.txt:25 original/TXT/usr_12.txt:90
+#: original/TXT/usr_12.txt:131 original/TXT/usr_12.txt:177
+#: original/TXT/usr_12.txt:202 original/TXT/usr_12.txt:231
+#: original/TXT/usr_12.txt:281 original/TXT/usr_12.txt:309
+#: original/TXT/usr_12.txt:354 original/TXT/usr_20.txt:22
+#: original/TXT/usr_20.txt:113 original/TXT/usr_20.txt:158
+#: original/TXT/usr_20.txt:285 original/TXT/usr_20.txt:327
+#: original/TXT/usr_20.txt:380 original/TXT/usr_21.txt:24
+#: original/TXT/usr_21.txt:47 original/TXT/usr_21.txt:87
+#: original/TXT/usr_21.txt:236 original/TXT/usr_21.txt:385
+#: original/TXT/usr_21.txt:438 original/TXT/usr_21.txt:495
+#: original/TXT/usr_22.txt:22 original/TXT/usr_22.txt:148
+#: original/TXT/usr_22.txt:213 original/TXT/usr_22.txt:272
+#: original/TXT/usr_22.txt:396 original/TXT/usr_23.txt:23
+#: original/TXT/usr_23.txt:114 original/TXT/usr_23.txt:156
+#: original/TXT/usr_23.txt:238 original/TXT/usr_23.txt:324
+#: original/TXT/usr_23.txt:339 original/TXT/usr_24.txt:28
+#: original/TXT/usr_24.txt:96 original/TXT/usr_24.txt:119
+#: original/TXT/usr_24.txt:268 original/TXT/usr_24.txt:305
+#: original/TXT/usr_24.txt:336 original/TXT/usr_24.txt:369
+#: original/TXT/usr_24.txt:493 original/TXT/usr_24.txt:537
+#: original/TXT/usr_24.txt:583 original/TXT/usr_24.txt:602
+#: original/TXT/usr_25.txt:22 original/TXT/usr_25.txt:132
+#: original/TXT/usr_25.txt:210 original/TXT/usr_25.txt:287
+#: original/TXT/usr_25.txt:453 original/TXT/usr_25.txt:574
+#: original/TXT/usr_26.txt:21 original/TXT/usr_26.txt:46
+#: original/TXT/usr_26.txt:103 original/TXT/usr_26.txt:136
+#: original/TXT/usr_26.txt:217 original/TXT/usr_27.txt:26
+#: original/TXT/usr_27.txt:88 original/TXT/usr_27.txt:136
+#: original/TXT/usr_27.txt:239 original/TXT/usr_27.txt:320
+#: original/TXT/usr_27.txt:350 original/TXT/usr_27.txt:427
+#: original/TXT/usr_27.txt:469 original/TXT/usr_27.txt:510
+#: original/TXT/usr_27.txt:559 original/TXT/usr_28.txt:27
+#: original/TXT/usr_28.txt:54 original/TXT/usr_28.txt:121
+#: original/TXT/usr_28.txt:185 original/TXT/usr_28.txt:211
+#: original/TXT/usr_28.txt:269 original/TXT/usr_28.txt:315
+#: original/TXT/usr_28.txt:331 original/TXT/usr_28.txt:375
+#: original/TXT/usr_28.txt:389 original/TXT/usr_28.txt:422
+#: original/TXT/usr_29.txt:23 original/TXT/usr_29.txt:273
+#: original/TXT/usr_29.txt:320 original/TXT/usr_29.txt:441
+#: original/TXT/usr_29.txt:570 original/TXT/usr_29.txt:609
+#: original/TXT/usr_30.txt:23 original/TXT/usr_30.txt:202
+#: original/TXT/usr_30.txt:280 original/TXT/usr_30.txt:336
+#: original/TXT/usr_30.txt:409 original/TXT/usr_30.txt:515
+#: original/TXT/usr_30.txt:639 original/TXT/usr_31.txt:22
+#: original/TXT/usr_31.txt:81 original/TXT/usr_31.txt:133
+#: original/TXT/usr_31.txt:160 original/TXT/usr_31.txt:208
+#: original/TXT/usr_31.txt:268
+#, no-wrap
+msgid "==============================================================================\n"
+msgstr "==============================================================================\n"
+
+#. type: Plain text
+#: original/TXT/usr_toc.txt:4 original/TXT/usr_01.txt:4
+#: original/TXT/usr_02.txt:4 original/TXT/usr_03.txt:4
+#: original/TXT/usr_04.txt:4 original/TXT/usr_05.txt:4
+#: original/TXT/usr_06.txt:4 original/TXT/usr_07.txt:4
+#: original/TXT/usr_08.txt:4 original/TXT/usr_09.txt:4
+#: original/TXT/usr_10.txt:4 original/TXT/usr_11.txt:4
+#: original/TXT/usr_12.txt:4 original/TXT/usr_20.txt:4
+#: original/TXT/usr_21.txt:4 original/TXT/usr_22.txt:4
+#: original/TXT/usr_23.txt:4 original/TXT/usr_24.txt:4
+#: original/TXT/usr_25.txt:4 original/TXT/usr_26.txt:4
+#: original/TXT/usr_27.txt:4 original/TXT/usr_28.txt:4
+#: original/TXT/usr_29.txt:4 original/TXT/usr_30.txt:4
+#: original/TXT/usr_31.txt:4
+#, no-wrap
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
+msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
+
+#. type: Plain text
+#: original/TXT/usr_toc.txt:354 original/TXT/usr_01.txt:185
+#: original/TXT/usr_02.txt:564 original/TXT/usr_03.txt:654
+#: original/TXT/usr_04.txt:514 original/TXT/usr_05.txt:625
+#: original/TXT/usr_06.txt:280 original/TXT/usr_07.txt:479
+#: original/TXT/usr_08.txt:601 original/TXT/usr_09.txt:289
+#: original/TXT/usr_10.txt:824 original/TXT/usr_11.txt:307
+#: original/TXT/usr_12.txt:358 original/TXT/usr_20.txt:384
+#: original/TXT/usr_21.txt:499 original/TXT/usr_22.txt:400
+#: original/TXT/usr_23.txt:343 original/TXT/usr_24.txt:606
+#: original/TXT/usr_25.txt:578 original/TXT/usr_26.txt:221
+#: original/TXT/usr_27.txt:563 original/TXT/usr_28.txt:426
+#: original/TXT/usr_29.txt:613 original/TXT/usr_30.txt:643
+#: original/TXT/usr_31.txt:272
+msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:2
+#, no-wrap
+msgid "*usr_31.txt*\tFor Vim version 7.3.  Last change: 2007 May 08\n"
+msgstr "*usr_31.esx*\tPara Vim versión 7.3.  Último cambio: 8/6/2007\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:6
+#, no-wrap
+msgid "\t\t\t      Exploiting the GUI\n"
+msgstr "\t\t     Sacar partido a la interfaz gráfica\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:11
+msgid ""
+"Vim works well in a terminal, but the GUI has a few extra items.  A file "
+"browser can be used for commands that use a file.  A dialog to make a choice "
+"between alternatives.  Use keyboard shortcuts to access menu items quickly."
+msgstr ""
+"Vim funciona bien en una terminal, pero la interfaz gráfica de usuario tiene "
+"algunos elementos adicionales. Un explorador de archivos para las órdenes "
+"que usan un archivo. Una ventana de diálogo para hacer una elección entre "
+"alternativas. Usar accesos directos de teclado para acceder rápidamente a "
+"los elementos en los menús."
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:17
+#, no-wrap
+msgid ""
+"|31.1|\tThe file browser\n"
+"|31.2|\tConfirmation\n"
+"|31.3|\tMenu shortcuts\n"
+"|31.4|\tVim window position and size\n"
+"|31.5|\tVarious\n"
+msgstr ""
+"|31.1|\tEl explorador de archivos\n"
+"|31.2|\tConfirmación\n"
+"|31.3|\tAtajos de teclado para menús\n"
+"|31.4|\tPosición y tamaño de la ventana de Vim\n"
+"|31.5|\tVarios\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:21
+#, no-wrap
+msgid ""
+"     Next chapter: |usr_32.txt|  The undo tree\n"
+" Previous chapter: |usr_30.txt|  Editing programs\n"
+"Table of contents: |usr_toc.txt|\n"
+msgstr ""
+"   Capítulo siguiente: |usr_32.esx|  El árbol de deshacer\n"
+"     Capítulo anterior: |usr_30.esx|  Editar programas\n"
+"Tabla de contenidos: |usr_toc.esx|\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:24
+#, no-wrap
+msgid "*31.1*\tThe file browser\n"
+msgstr "*31.1*\tEl explorador de archivos\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:32
+#, no-wrap
+msgid ""
+"When using the File/Open... menu you get a file browser.  This makes it easier\n"
+"to find the file you want to edit.  But what if you want to split a window to\n"
+"edit another file?  There is no menu entry for this.  You could first use\n"
+"Window/Split and then File/Open..., but that's more work.\n"
+"   Since you are typing most commands in Vim, opening the file browser with a\n"
+"typed command is possible as well.  To make the split command use the file\n"
+"browser, prepend \"browse\": >\n"
+msgstr ""
+"Al usar el menú «Archivo/Abrir»... obtiene un explorador de archivos. \n"
+"Esto facilita ubicar el archivo que desea editar. ¿Pero y si desea\n"
+"dividir una ventana para editar otro archivo? No hay una entrada en el menú\n"
+"para esto. Puede usar primero «Ventana/Dividir» y luego «Archivo/Abrir»...,\n"
+"pero eso es más trabajo.\n"
+"  Ya que está escribiendo la mayoría de las órdenes en Vim, abrir el\n"
+"explorador de archivos con una orden escrita también es posible. Para hacer\n"
+"que la orden de división use el explorador de archivos, anteponga «browse»: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:34
+#, no-wrap
+msgid "\t:browse split\n"
+msgstr "\t:browse split\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:39
+#, no-wrap
+msgid ""
+"Select a file and then the \":split\" command will be executed with it.  If you\n"
+"cancel the file dialog nothing happens, the window isn't split.\n"
+"   You can also specify a file name argument.  This is used to tell the file\n"
+"browser where to start.  Example: >\n"
+msgstr ""
+"Seleccione un archivo para que la orden «:split» se ejecute luego\n"
+"con el nombre del mismo. Si se descarta la ventana del explorador de\n"
+"archivos, no pasa nada, la ventana no se divide.\n"
+"  También es posible pasar como parámetro un nombre de archivo o directorio,\n"
+"que es usado para indicarle al explorador de archivos desde qué directorio\n"
+"empezar. Por ejemplo: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:41
+#, no-wrap
+msgid "\t:browse split /etc\n"
+msgstr "\t:browse split /etc\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:43
+msgid "The file browser will pop up, starting in the directory \"/etc\"."
+msgstr "Abrirá el explorador de archivos, desde el directorio «/etc»."
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:52
+#, no-wrap
+msgid ""
+"The \":browse\" command can be prepended to just about any command that opens a\n"
+"file.\n"
+"   If no directory is specified, Vim will decide where to start the file\n"
+"browser.  By default it uses the same directory as the last time.  Thus when\n"
+"you used \":browse split\" and selected a file in \"/usr/local/share\", the next\n"
+"time you use a \":browse\" it will start in \"/usr/local/share\" again.\n"
+"   This can be changed with the 'browsedir' option.  It can have one of three\n"
+"values:\n"
+msgstr ""
+"La orden «:browse» puede ser antepuesta prácticamente a cualquier orden que\n"
+"abra un archivo.\n"
+"   Si no se especifica un directorio, Vim será quien determine en qué\n"
+"directorio iniciar el explorador de archivos. De manera predeterminada se usa\n"
+"el mismo directorio usado la vez anterior. Así, si se usó «:browse split» y\n"
+"se seleccionó un archivo en «/usr/local/share», la próxima vez que use\n"
+"«:browse» se empezará desde «/usr/local/share» de nuevo.\n"
+"   Esto se puede ajustar mediante la opción 'browsedir'. Dicha opción acepta\n"
+"uno de los tres siguientes valores:\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:56
+#, no-wrap
+msgid ""
+"\tlast\t\tUse the last directory browsed (default)\n"
+"\tbuffer\t\tUse the same directory as the current buffer\n"
+"\tcurrent\t\tuse the current directory\n"
+msgstr ""
+"\tlast\t\tUsar el último directorio visitado (predeterminado)\n"
+"\tbuffer\t\tUsar el mismo directorio del búfer actual\n"
+"\tcurrent\t\tUsar el directorio actual\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:59
+msgid ""
+"For example, when you are in the directory \"/usr\", editing the file \"/usr/"
+"local/share/readme\", then the command: >"
+msgstr ""
+"Por ejemplo, cuando se encuentra en el directorio «/usr», editando el "
+"archivo «/usr/local/share/readme», la orden: >"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:62
+#, no-wrap
+msgid ""
+"\t:set browsedir=buffer\n"
+"\t:browse edit\n"
+msgstr ""
+"\t:set browsedir=buffer\n"
+"\t:browse edit\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:64
+msgid "Will start the browser in \"/usr/local/share\".  Alternatively: >"
+msgstr ""
+"Ejecutará el explorador de archivos desde «/usr/local/share». Por otro lado: "
+">"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:67
+#, no-wrap
+msgid ""
+"\t:set browsedir=current\n"
+"\t:browse edit\n"
+msgstr ""
+"\t:set browsedir=current\n"
+"\t:browse edit\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:69
+msgid "Will start the browser in \"/usr\"."
+msgstr "Ejecutará el explorador de archivos desde «/usr»."
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:76
+#, no-wrap
+msgid ""
+"\tNote:\n"
+"\tTo avoid using the mouse, most file browsers offer using key presses\n"
+"\tto navigate.  Since this is different for every system, it is not\n"
+"\texplained here.  Vim uses a standard browser when possible, your\n"
+"\tsystem documentation should contain an explanation on the keyboard\n"
+"\tshortcuts somewhere.\n"
+msgstr ""
+"\tNota:\n"
+"\tPara evitar el uso del ratón, muchos de los exploradores de archivos\n"
+"\tofrecen navegación mediante teclas. Ya que esto difiere de sistema a\n"
+"\tsistema, no se explica aquí. Vim usa un explorador estándar cuando es\n"
+"\tposible; la documentación del sistema que use debería contener\n"
+"\tuna sección acerca de los accesos directos de teclado disponibles.\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:80
+msgid ""
+"When you are not using the GUI version, you could use the file explorer "
+"window to select files like in a file browser.  However, this doesn't work "
+"for the \":browse\" command.  See |netrw-browse|."
+msgstr ""
+"Cuando no se está usando la versión gráfica de Vim, es posible usar el "
+"explorador de archivos para seleccionar archivos de la forma habitual con un "
+"explorador de archivos. Sin embargo, el explorador no funciona con la orden "
+"«:browse». Véase |netrw-browse|."
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:83
+#, no-wrap
+msgid "*31.2*\tConfirmation\n"
+msgstr "*31.2*\tConfirmación\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:91
+#, no-wrap
+msgid ""
+"Vim protects you from accidentally overwriting a file and other ways to lose\n"
+"changes.  If you do something that might be a bad thing to do, Vim produces an\n"
+"error message and suggests appending ! if you really want to do it.\n"
+"   To avoid retyping the command with the !, you can make Vim give you a\n"
+"dialog.  You can then press \"OK\" or \"Cancel\" to tell Vim what you want.\n"
+"   For example, you are editing a file and made changes to it.  You start\n"
+"editing another file with: >\n"
+msgstr ""
+"Vim le protege de sobreescribir accidentalmente un archivo, y de otras formas\n"
+"de perder los cambios realizados.  Si hace algo que puede ser peligroso,\n"
+"Vim muestra un mensaje de error y sugiere añadir ! si el usuario está\n"
+"seguro de querer hacerlo.\n"
+"   Para evitar teclear de nuevo la orden con el !, puede hacer que Vim le\n"
+"ofrezca un diálogo. Así, podrá pulsar «OK» o «Cancelar» para\n"
+"indicarle a Vim qué desea hacer.\n"
+"   Por ejemplo, está editando un archivo y ya hizo algunos cambios.\n"
+"Puede editar otro archivo con: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:93
+#, no-wrap
+msgid "\t:confirm edit foo.txt\n"
+msgstr "\t:confirm edit foo.txt\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:95
+msgid "Vim will pop up a dialog that looks something like this:"
+msgstr "Vim mostrará un diálogo con el siguiente aspecto:"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:102
+#, no-wrap
+msgid ""
+"\t+-----------------------------------+\n"
+"\t|\t\t\t\t    |\n"
+"\t|   ?\tSave changes to \"bar.txt\"?  |\n"
+"\t|\t\t\t\t    |\n"
+"\t|   YES   NO\t\t CANCEL     |\n"
+"\t+-----------------------------------+\n"
+msgstr ""
+"\t+-----------------------------------+\n"
+"\t|\t\t\t\t    |\n"
+"\t|?Guardar los cambios en \"bar.txt\"? |\n"
+"\t|\t\t\t\t    |\n"
+"\t|   SÍ   NO\t       CANCELAR     |\n"
+"\t+-----------------------------------+\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:107
+msgid ""
+"Now make your choice.  If you do want to save the changes, select \"YES\".  "
+"If you want to lose the changes for ever: \"NO\".  If you forgot what you "
+"were doing and want to check what really changed use \"CANCEL\".  You will "
+"be back in the same file, with the changes still there."
+msgstr ""
+"Y ahora puede decidir qué hacer. Si desea conservar los cambios, escoja "
+"«SÍ». Si quiere descartar permanentemente los cambios hechos: «NO».  Si "
+"olvidó lo que estaba haciendo y quiere revisar cuáles fueron los cambios "
+"hechos, use «CANCELAR». Estará de nuevo en el mismo archivo, y los cambios "
+"aún estarán allí."
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:110
+msgid ""
+"Just like \":browse\", the \":confirm\" command can be prepended to most "
+"commands that edit another file.  They can also be combined: >"
+msgstr ""
+"Tal como «:browse», la orden «:confirm» se puede anteponer a la mayoría de "
+"las órdenes que editan un archivo.  Estas órdenes también se pueden "
+"combinar: >"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:112
+#, no-wrap
+msgid "\t:confirm browse edit\n"
+msgstr "\t:confirm browse edit\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:115
+msgid ""
+"This will produce a dialog when the current buffer was changed.  Then it "
+"will pop up a file browser to select the file to edit."
+msgstr ""
+"Esto mostrará un diálogo cuando el búfer actual contiene cambios. Luego se "
+"mostrará un explorador de archivos para seleccionar el archivo a editar."
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:121
+#, no-wrap
+msgid ""
+"\tNote:\n"
+"\tIn the dialog you can use the keyboard to select the choice.\n"
+"\tTypically the <Tab> key and the cursor keys change the choice.\n"
+"\tPressing <Enter> selects the choice.  This depends on the system\n"
+"\tthough.\n"
+msgstr ""
+"\tNota:\n"
+"\tEs posible usar el teclado para seleccionar la opción deseada en\n"
+"\tel diálogo. Generalmente, la tecla <Tab> y las teclas de cursor\n"
+"\tcambian la opción seleccionada. Pulsar <Enter> escoge la opción\n"
+"\tdefinida. Sin embargo, esto varía de sistema a sistema.\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:125
+msgid ""
+"When you are not using the GUI, the \":confirm\" command works as well.  "
+"Instead of popping up a dialog, Vim will print the message at the bottom of "
+"the Vim window and ask you to press a key to make a choice. >"
+msgstr ""
+"Cuando no se usa la GUI, la orden «:confirm» sigue funcionando. En vez de "
+"crear una ventana de diálogo, el mensaje se mostrará en la parte de abajo de "
+"la ventana de Vim, y se le solicitará pulsar una tecla para hacer una "
+"elección. >"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:129
+#, no-wrap
+msgid ""
+"\t:confirm edit main.c\n"
+"<\tSave changes to \"Untitled\"? ~\n"
+"\t[Y]es, (N)o, (C)ancel:  ~\n"
+msgstr ""
+"\t:confirm edit main.c\n"
+"<\tGuardar los cambios en \"Sin título\"? ~\n"
+"\t[Y]es, (N)o, (C)ancelar:  ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:132
+msgid ""
+"You can now press the single key for the choice.  You don't have to press "
+"<Enter>, unlike other typing on the command line."
+msgstr ""
+"Ahora puede realizar su selección simplemente pulsando una tecla. En "
+"particular, no tiene que pulsar <Enter>, a diferencia del tecleo normal en "
+"la línea de órdenes."
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:135
+#, no-wrap
+msgid "*31.3*\tMenu shortcuts\n"
+msgstr "*31.3*\tAtajos de teclado para menús\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:145
+#, no-wrap
+msgid ""
+"The keyboard is used for all Vim commands.  The menus provide a simple way to\n"
+"select commands, without knowing what they are called.  But you have to move\n"
+"your hand from the keyboard and grab the mouse.\n"
+"   Menus can often be selected with keys as well.  This depends on your\n"
+"system, but most often it works this way.  Use the <Alt> key in combination\n"
+"with the underlined letter of a menu.  For example, <A-w> (<Alt> and w) pops\n"
+"up the Window menu.\n"
+"   In the Window menu, the \"split\" item has the p underlined.  To select it,\n"
+"let go of the <Alt> key and press p.\n"
+msgstr ""
+"El teclado se usa para todas las órdenes de Vim. Los menús proveen una forma\n"
+"sencilla de seleccionar órdenes sin saber de antemano cómo se llaman.\n"
+"Pero es necesario alejar la mano del teclado y tomar el ratón.\n"
+"   Habitualmente los menús también se pueden seleccionar mediante teclas.\n"
+"Esto varía de sistema a sistema, pero generalmente funciona como sigue:\n"
+"Pulse la tecla <Alt> junto con la letra subrayada en el menú. Por ejemplo,\n"
+"<A-v> (<Alt> y v) activa el menú Ventana.\n"
+"   En el menú Ventana, la «d» en la entrada para «split» (dividir ventana)\n"
+"está subrayada. Para seleccionar dicha entrada, suelte la tecla <Alt> y\n"
+"pulse la tecla d.\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:149
+msgid ""
+"After the first selection of a menu with the <Alt> key, you can use the "
+"cursor keys to move through the menus.  <Right> selects a submenu and <left> "
+"closes it.  <Esc> also closes a menu.  <Enter> selects a menu item."
+msgstr ""
+"Después de la selección inicial de un menú con la tecla <Alt>, es posible "
+"usar las teclas de cursor para explorar los menús. <Derecha> abre un "
+"submenú, e <Izquierda> lo cierra. <Esc> también puede cerrar un menú.<Enter> "
+"activa el elemento seleccionado del menú."
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:159
+#, no-wrap
+msgid ""
+"There is a conflict between using the <Alt> key to select menu items, and\n"
+"using <Alt> key combinations for mappings.  The 'winaltkeys' option tells Vim\n"
+"what it should do with the <Alt> key.\n"
+"   The default value \"menu\" is the smart choice: If the key combination is a\n"
+"menu shortcut it can't be mapped.  All other keys are available for mapping.\n"
+"   The value \"no\" doesn't use any <Alt> keys for the menus.  Thus you must use\n"
+"the mouse for the menus, and all <Alt> keys can be mapped.\n"
+"   The value \"yes\" means that Vim will use any <Alt> keys for the menus.  Some\n"
+"<Alt> key combinations may also do other things than selecting a menu.\n"
+msgstr ""
+"Hay un conflicto con el uso de la tecla <Alt> para seleccionar elementos de\n"
+"menús, y el uso de la tecla <Alt> en combinaciones de teclas para mapeos. La\n"
+"opción 'winaltkeys' le indica a Vim qué hacer con la tecla <Alt>.\n"
+"   El valor predeterminado «menu» es la selección inteligente: si la\n"
+"combinación de teclas es un atajo de teclado para el menú, no se la puede\n"
+"mapear. Todas las otras teclas están disponibles para crear mapeos.\n"
+"   El valor «no» hace que no se use ninguna tecla <Alt> para los menús. Por\n"
+"esto, es necesario usar el ratón para acceder a los menús, y todas las teclas\n"
+"<Alt> se pueden mapear.\n"
+"   El valor «yes» implica que Vim usará cualquier tecla <Alt> para los menús.\n"
+"Algunas combinaciones de teclas con <Alt> pueden hacer cosas distintas a\n"
+"seleccionar un menú.\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:162
+#, no-wrap
+msgid "*31.4*\tVim window position and size\n"
+msgstr "*31.4*\tPosición y tamaño de la ventana de Vim\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:164
+msgid "To see the current Vim window position on the screen use: >"
+msgstr "Para ver la posición actual de la ventana de Vim en la pantalla use: >"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:166
+#, no-wrap
+msgid "\t:winpos\n"
+msgstr "\t:winpos\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:168
+msgid "This will only work in the GUI.  The output may look like this:"
+msgstr ""
+"Esto sólo funcionará en la interfaz gráfica. La salida será similar a lo "
+"siguiente:"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:170
+#, no-wrap
+msgid "\tWindow position: X 272, Y 103 ~\n"
+msgstr "\tPosición de la ventana: X 272, Y 103 ~\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:173
+msgid ""
+"The position is given in screen pixels.  Now you can use the numbers to move "
+"Vim somewhere else.  For example, to move it to the left a hundred pixels: >"
+msgstr ""
+"La posición está dada en píxeles de la pantalla. Puede usar estos números "
+"para mover la ventana de Vim a algún otro sitio. Por ejemplo, para moverla a "
+"la izquierda cien píxeles: >"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:180
+#, no-wrap
+msgid ""
+"\t:winpos 172 103\n"
+"<\n"
+"\tNote:\n"
+"\tThere may be a small offset between the reported position and where\n"
+"\tthe window moves.  This is because of the border around the window.\n"
+"\tThis is added by the window manager.\n"
+msgstr ""
+"\t:winpos 172 103\n"
+"<\n"
+"\tNota:\n"
+"\tPuede haber un pequeño desfase entre la posición señalada y el sitio\n"
+"\tal que se mueve la ventana.  Esto es debido al borde de la ventana.\n"
+"\tÉste es añadido por el administrador de ventanas.\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:183
+msgid ""
+"You can use this command in your startup script to position the window at a "
+"specific position."
+msgstr ""
+"Es posible usar esta orden en el archivo de arranque de Vim para ubicar la "
+"ventana en una posición específica."
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:187
+msgid ""
+"The size of the Vim window is computed in characters.  Thus this depends on "
+"the size of the font being used.  You can see the current size with this "
+"command: >"
+msgstr ""
+"El tamaño de la ventana de Vim se calcula en caracteres. Por este motivo el "
+"tamaño depende del tipo de letra usado. El tamaño actual puede consultarse "
+"con esta orden: >"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:189
+#, no-wrap
+msgid "\t:set lines columns\n"
+msgstr "\t:set lines columns\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:191
+msgid ""
+"To change the size set the 'lines' and/or 'columns' options to a new value: >"
+msgstr ""
+"Para cambiar el tamaño ajuste el valor de las opciones 'lines' y/o "
+"'columns': >"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:194
+#, no-wrap
+msgid ""
+"\t:set lines=50\n"
+"\t:set columns=80\n"
+msgstr ""
+"\t:set lines=50\n"
+"\t:set columns=80\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:197
+msgid ""
+"Obtaining the size works in a terminal just like in the GUI.  Setting the "
+"size is not possible in most terminals."
+msgstr ""
+"Consultar el tamaño funciona en una terminal de la misma manera que en la "
+"GUI. En la mayoría de las terminales no es posible ajustar el tamaño."
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:200
+msgid ""
+"You can start the X-Windows version of gvim with an argument to specify the "
+"size and position of the window: >"
+msgstr ""
+"Puede iniciar la versión de gvim para el sistema de ventanas X con "
+"argumentos para especificar el tamaño y la posición de la ventana: >"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:202
+#, no-wrap
+msgid "\tgvim -geometry {width}x{height}+{x_offset}+{y_offset}\n"
+msgstr "\tgvim -geometry {ancho}x{alto}+{desplz_x}+{desplz_y}\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:205
+msgid ""
+"{width} and {height} are in characters, {x_offset} and {y_offset} are in "
+"pixels.  Example: >"
+msgstr ""
+"{ancho} y {alto} están dados en caracteres, {desplz_x} y {desplz_y} están "
+"dados en píxeles. Por ejemplo: >"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:207
+#, no-wrap
+msgid "\tgvim -geometry 80x25+100+300\n"
+msgstr "\tgvim -geometry 80x25+100+300\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:210
+#, no-wrap
+msgid "*31.5*\tVarious\n"
+msgstr "*31.5*\tVarios\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:219
+#, no-wrap
+msgid ""
+"You can use gvim to edit an e-mail message.  In your e-mail program you must\n"
+"select gvim to be the editor for messages.  When you try that, you will\n"
+"see that it doesn't work: The mail program thinks that editing is finished,\n"
+"while gvim is still running!\n"
+"   What happens is that gvim disconnects from the shell it was started in.\n"
+"That is fine when you start gvim in a terminal, so that you can do other work\n"
+"in that terminal.  But when you really want to wait for gvim to finish, you\n"
+"must prevent it from disconnecting.  The \"-f\" argument does this: >\n"
+msgstr ""
+"Puede usar gvim para editar mensajes de correo. Debe seleccionar gvim como el\n"
+"editor para sus mensajes en su programa de correo. Al hacerlo, notará que\n"
+"esto falla: el programa de correo cree que la edición del mensaje ha\n"
+"terminado, ¡aún cuando gvim no se ha cerrado!\n"
+"   El motivo de este error es que gvim se desconecta de la consola en la que\n"
+"se inició. Esto funciona bien cuando se inicia gvim desde una terminal,\n"
+"para que se pueda hacer otras cosas en ella. Pero cuando se necesita esperar\n"
+"a que gvim termine, hay que evitar dicha desconexión. El argumento «-f» hace\n"
+"precisamente eso: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:221
+#, no-wrap
+msgid "\tgvim -f file.txt\n"
+msgstr "\tgvim -f file.txt\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:224
+msgid ""
+"The \"-f\" stands for foreground.  Now Vim will block the shell it was "
+"started in until you finish editing and exit."
+msgstr ""
+"«-f» significa foreground (primer plano). Ahora, Vim bloqueará la consola en "
+"la que se inició hasta que termine la edición y cierre el editor."
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:227
+msgid "DELAYED START OF THE GUI"
+msgstr "ARRANQUE POSTERGADO DE LA GUI"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:231
+msgid ""
+"On Unix it's possible to first start Vim in a terminal.  That's useful if "
+"you do various tasks in the same shell.  If you are editing a file and "
+"decide you want to use the GUI after all, you can start it with: >"
+msgstr ""
+"En Unix es posible iniciar Vim en una terminal. Esto es útil si se están "
+"realizando varias tareas en una misma consola. Si está editando un archivo y "
+"decide que después de todo quiere usar la GUI, puede lanzarla con la orden: >"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:233
+#, no-wrap
+msgid "\t:gui\n"
+msgstr "\t:gui\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:237
+msgid ""
+"Vim will open the GUI window and no longer use the terminal.  You can "
+"continue using the terminal for something else.  The \"-f\" argument is used "
+"here to run the GUI in the foreground.  You can also use \":gui -f\"."
+msgstr ""
+"Vim abrirá la ventana de la GUI y no seguirá usando la terminal. Puede "
+"continuar usando la terminal para lo que necesite. El argumento «-f» se usa "
+"aquí para ejecutar la GUI en primer plano. También puede usar «:gui -f»."
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:240
+msgid "THE GVIM STARTUP FILE"
+msgstr "EL ARCHIVO DE INICIO DE GVIM"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:245
+msgid ""
+"When gvim starts, it reads the gvimrc file.  That's similar to the vimrc "
+"file used when starting Vim.  The gvimrc file can be used for settings and "
+"commands that are only to be used when the GUI is going to be started.  For "
+"example, you can set the 'lines' option to set a different window size: >"
+msgstr ""
+"Cuando gvim inicia, lee el archivo gvimrc. Es similar al archivo vimrc que "
+"se\n"
+"usa al iniciar Vim. El archivo gvimrc puede usarse para fijar opciones de\n"
+"configuración y órdenes que sólo deban usarse cuando se inicie la GUI. Por\n"
+"ejemplo, puede definir la opción 'lines' para obtener un tamaño de ventana\n"
+"diferente: >"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:247
+#, no-wrap
+msgid "\t:set lines=55\n"
+msgstr "\t:set lines=55\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:254
+#, no-wrap
+msgid ""
+"You don't want to do this in a terminal, since its size is fixed (except for\n"
+"an xterm that supports resizing).\n"
+"   The gvimrc file is searched for in the same locations as the vimrc file.\n"
+"Normally its name is \"~/.gvimrc\" for Unix and \"$VIM/_gvimrc\" for MS-Windows.\n"
+"The $MYGVIMRC environment variable is set to it, thus you can use this command\n"
+"to edit the file, if you have one: >\n"
+msgstr ""
+"No es conveniente hacer esto en una terminal, debido a que su tamaño es fijo\n"
+"(excepto por un xterm que soporte redimensionado).\n"
+"   El archivo gvimrc se busca en las mismas ubicaciones que el archivo vimrc.\n"
+"Habitualmente, su nombre es «~/.gvimrc» en sistemas Unix/Linux y\n"
+"«$VIM/_gvimrc» en MS-Windows. La ruta de este archivo se almacena en la \n"
+"variable de entorno $MYGVIMRC, por lo que puede usar la siguiente orden para\n"
+"editar ese archivo, si existe: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:259
+#, no-wrap
+msgid ""
+"\t:edit $MYGVIMRC\n"
+"<\n"
+"   If for some reason you don't want to use the normal gvimrc file, you can\n"
+"specify another one with the \"-U\" argument: >\n"
+msgstr ""
+"\t:edit $MYGVIMRC\n"
+"<\n"
+"Si por algún motivo no desea usar el archivo gvimrc normal, puede especificar\n"
+"otro mediante el argumento «-U»: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:261
+#, no-wrap
+msgid "\tgvim -U thisrc ...\n"
+msgstr "\tgvim -U otrorc ...\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:265
+#, no-wrap
+msgid ""
+"That allows starting gvim for different kinds of editing.  You could set\n"
+"another font size, for example.\n"
+"   To completely skip reading a gvimrc file: >\n"
+msgstr ""
+"Esto le permite iniciar gvim para distintas formas de edición. Puede,\n"
+"por ejemplo, definir otro tamaño para el tipo de letra.\n"
+"   Para evitar la ejecución del archivo gvimrc use: >\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:267
+#, no-wrap
+msgid "\tgvim -U NONE ...\n"
+msgstr "\tgvim -U NONE ...\n"
+
+#. type: Plain text
+#: original/TXT/usr_31.txt:271
+msgid "Next chapter: |usr_32.txt| The undo tree"
+msgstr "Capítulo siguiente: |usr_32.esx| El árbol de deshacer"
