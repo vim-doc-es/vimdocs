@@ -357,7 +357,7 @@ Vim, y sugiere algunas soluciones. También contiene respuestas a muchas
 preguntas sobre la instalación.
 
 
-Q: No tengo privilegios de administrador.  ¿Cómo puedo instalar Vim? (Unix)
+P: No tengo privilegios de administrador.  ¿Cómo puedo instalar Vim? (Unix)
 
 Use la siguiente opción de configuración para instalar Vim en un directorio
 llamado «$HOME/vim»: >
@@ -368,7 +368,7 @@ Esto genera una copia personal de Vim. Necesita poner «$HOME/bin» en su ruta
 (variable PATH) para ejecutar el editor. Consulte también |install-home|.
 
 
-Q: Los colores no son los correctos en mi pantalla. (Unix)
+P: Los colores no son los correctos en mi pantalla. (Unix)
 
 Compruebe su configuración de terminal usando la siguiente orden en un
 intérprete de órdenes: >
@@ -381,70 +381,74 @@ gráfica de usuario de Vim, llamado gvim. Esto último evita la necesidad de
 una correcta configuración de terminal. 
 
 
-Q: My Backspace And Delete Keys Don't Work Right
+P: Mis teclas de retroceso y eliminar no funcionan bien.
 
-The definition of what key sends what code is very unclear for backspace
-<BS> and Delete <Del> keys.  First of all, check your $TERM setting.  If
-there is nothing wrong with it, try this: >
+La definición del código que cada tecla envía no está muy clara con las
+teclas de retroceso <BS> y eliminar <Del>. Primero, compruebe su opción de
+configuración «$TERM». Si no detecta nada incorrecto: pruebe esto: >
 
 	:set t_kb=^V<BS>
 	:set t_kD=^V<Del>
 
-In the first line you need to press CTRL-V and then hit the backspace key.
-In the second line you need to press CTRL-V and then hit the Delete key.
-You can put these lines in your vimrc file, see |05.1|.  A disadvantage is
-that it won't work when you use another terminal some day.  Look here for
-alternate solutions: |:fixdel|.
+En la primera línea tiene que pulsar «CTRL-V» y después pulsar la tecla de
+retroceso. En la segunda, debe pulsar «CTRL-V» y pulsar la tecla de
+eliminar. Puede poner estas líneas en su archivo «vimrc», consulte
+|05.1|. Una desventaja es que no funcionará cuando use otra terminal.
+Consulte aquí las posibles soluciones: |:fixdel|.
 
 
-Q: I Am Using RedHat Linux.  Can I Use the Vim That Comes with the System?
+P: Uso RedHat Linux. ¿Puedo usar la versión de Vim que viene con el sistema?
 
-By default RedHat installs a minimal version of Vim.  Check your RPM
-packages for something named "Vim-enhanced-version.rpm" and install that.
-
-
-Q: How Do I Turn Syntax Coloring On? How do I make plugins work?
-
-Use the example vimrc script.  You can find an explanation on how to use it
-here: |not-compatible|.
-
-See chapter 6 for information about syntax highlighting: |usr_06.txt|.
+Por omisión, RedHat instala una versión mínima de Vim. Busque entre los
+paquetes RPM algo llamado «Vim-enhanced-version.rpm» e instale ese paquete.
 
 
-Q: What Is a Good vimrc File to Use?
+P: ¿Como se activa el resaltado de sintaxis? ¿Como hago funcionar las
+extensiones?
 
-See the www.vim.org Web site for several good examples.
+Use el script de ejemplo «vimrc». Encontrará una explicación de su uso en el
+siguiente apartado: |not-compatible|.
+
+Para más información sobre el resaltado de sintaxis consulte el sexto
+capítulo: |usr_06.txt|.
 
 
-Q: Where Do I Find a Good Vim Plugin?
+P: ¿Qué es un buen archivo «vimrc» para usar?
 
-See the Vim-online site: http://vim.sf.net.  Many users have uploaded useful
-Vim scripts and plugins there.
+Consulte la página web www.vim.org para varios ejemplos buenos.
 
 
-Q: Where Do I Find More Tips?
+P: ¿Dónde encuentro una buena extensión de Vim?
 
-See the Vim-online site: http://vim.sf.net.  There is an archive with hints
-from Vim users.  You might also want to search in the |maillist-archive|.
+Visite el sitio web de Vim: http://vim.sf.net. Muchos usuarios han enviado
+útiles scripts de Vim y extensiones a esta ubicación de Internet.
+
+
+P: ¿Dónde puedo encontrar más consejos?
+
+Consulte el sitio web de Vim: http://vim.sf.net. Hay un archivo con
+indicaciones de usuarios de Vim. Puede que también desee buscar en el
+archivo de la lista de correo, |maillist-archive|.
 
 ==============================================================================
 *90.5*	Desinstalar Vim
 
-In the unlikely event you want to uninstall Vim completely, this is how you
-do it.
+En el caso improbable de que desea desinstalar Vim completamente, aquí se
+trata cómo hacerlo.
 
 
 UNIX
 
-When you installed Vim as a package, check your package manager to find out
-how to remove the package again.
-   If you installed Vim from sources you can use this command: >
+Si ha instalado Vim como un paquete, compruebe su gestor de paquetes para
+averiguar cómo eliminar el paquete.
+   Si ha instalado Vim a partir de las fuentes, puede usar la siguiente orden: >
 
 	make uninstall
 
-However, if you have deleted the original files or you used an archive that
-someone supplied, you can't do this.  Do delete the files manually, here is
-an example for when "/usr/local" was used as the root: >
+Sin embargo, si ha eliminado los archivos originales, o ha usado un archivo
+que alguien le ha proporcionado, no podrá hacer esto. Este es un ejemplo de
+desinstalación manual de Vim cuando «/usr/local» se ha usado como el
+directorio raíz.
 
 	rm -rf /usr/local/share/vim/vim61
 	rm /usr/local/bin/eview
@@ -483,30 +487,35 @@ an example for when "/usr/local" was used as the root: >
 
 MS-WINDOWS
 
-If you installed Vim with the self-installing archive you can run
-the "uninstall-gui" program located in the same directory as the other Vim
-programs, e.g. "c:\vim\vim61".  You can also launch it from the Start menu if
-installed the Vim entries there.  This will remove most of the files, menu
-entries and desktop shortcuts.  Some files may remain however, as they need a
-Windows restart before being deleted.
-   You will be given the option to remove the whole "vim" directory.  It
-probably contains your vimrc file and other runtime files that you created, so
-be careful.
+Si ha instalado Vim el archivo de instalación automática, puede
+ejecutar el programa «uninstall-gui», ubicado en el mismo directorio
+de otros programas de Vim. Esto es, «c:\vim\vim61». También puede
+iniciarlo desde el menú de aplicaciones si ha instalado las entradas
+de Vim. Esto elimina la mayoría de los archivos, entradas de menú
+y enlaces directos. Sin embargo, algunos archivos permanecerán en
+el sistema, ya que necesitan un reinicio de Windows antes de su
+eliminación.
+   Se le dará la opción de eliminar todo el directorio «vim».
+Probablemente, contiene su archivo «vimrc» y otros archivos de
+tiempo de ejecución que ha creado, tenga cuidado.
 
-Else, if you installed Vim with the zip archives, the preferred way is to use
-the "uninstal" program (note the missing l at the end).  You can find it in
-the same directory as the "install" program, e.g., "c:\vim\vim61".  This
-should also work from the usual "install/remove software" page.
-   However, this only removes the registry entries for Vim.  You have to
-delete the files yourself.  Simply select the directory "vim\vim61" and delete
-it recursively.  There should be no files there that you changed, but you
-might want to check that first.
-   The "vim" directory probably contains your vimrc file and other runtime
-files that you created.  You might want to keep that.
-
+Por otra parte, si ha instalado Vim con los archivos zip, la manera
+recomendada es usar el programa «uninstal» (note la omisión de la
+última «l»). Lo encontrará en el mismo directorio que el programa
+«install». Esto es, «c:\vim\vim61». También debería funcionar desde
+la aplicación habitual «Instalar/eliminar software».
+   Sin embargo, no elimina la entradas de Vim en el registro. Tendrá
+que eliminar estos archivos manualmente. Sencillamente seleccione
+el directorio «vim\vim61» y elimínelo recursivamente. No debería
+contener archivos modificados por el usuario, pero quizá quiera
+comprobarlo.
+   Probablemente, el directorio «vim» contiene su archivo «vimrc» y
+otros archivos de tiempo de ejecución que ha creado. Puede que
+desee preservarlos.
+ 
 ==============================================================================
 
-Table of contents: |usr_toc.txt|
+Tabla de contenidos: |usr_toc.txt|
 
 Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
 
