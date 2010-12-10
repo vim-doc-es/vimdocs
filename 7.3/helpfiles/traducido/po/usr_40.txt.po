@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2010-12-10 17:34+0200\n"
+"PO-Revision-Date: 2010-12-10 20:27+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
-"Language-Team: \n"
+"Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -353,11 +353,18 @@ msgid ""
 "mode.  If you want it to continue in Insert mode, append an \"a\" to the\n"
 "mapping.\n"
 msgstr ""
+"Se parece mucho a la asignación para <F2> en modo Normal, sólo el\n"
+"principio es diferente. La asignación <F2> para el modo Normal aún existe.\n"
+"Puede asignar la misma tecla de forma diferente según el modo.\n"
+"   Tenga en cuenta que, aunque esta asignación empieza en el modo Insertar,\n"
+"termina en modo Normal. Si desea continuar en modo Insertar, añada una\n"
+"«a» a la asignación.\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:67
 msgid "Here is an overview of map commands and in which mode they work:"
 msgstr ""
+"Esta es una vista general de las órdenes «:map» y el modo en que funcionan:"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:75
@@ -394,7 +401,7 @@ msgstr ""
 #: original/txt/usr_40.txt:87
 #, no-wrap
 msgid "\t:omap <F7> a{\n"
-msgstr ""
+msgstr "\t:omap <F7> a{\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:91
@@ -418,6 +425,9 @@ msgid ""
 "one of the variants that include the mode in which they work.  The output "
 "could look like this:"
 msgstr ""
+"Para ver las asignaciones definidas en el momento presente, use «:map» sin "
+"argumentos, o una de las variantes que incluyen el modo en que funcionan. La "
+"salida podría ser similar a esta:"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:104
@@ -429,6 +439,11 @@ msgid ""
 "\t   <xHome>\t <Home>\n"
 "\t   <xEnd>\t <End>\n"
 msgstr ""
+"\t   _g\t\t :call MyGrep(1)<CR> ~\n"
+"\tv  <F2>\t\t :s/^/> /<CR>:noh<CR>`` ~\n"
+"\tn  <F2>\t\t :.,$s/^/> /<CR>:noh<CR>`` ~\n"
+"\t   <xHome>\t <Home>\n"
+"\t   <xEnd>\t <End>\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:113
@@ -445,10 +460,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:116
-#, fuzzy
 #| msgid "NOT WRAPPING"
 msgid "REMAPPING"
-msgstr "BÚSQUEDA «NOWRAP»"
+msgstr "REASIGNACIÓN"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:119
@@ -480,6 +494,9 @@ msgid ""
 "Suppose you hardly ever use Ex mode, and want to use the \"Q\" command to "
 "format text (this was so in old versions of Vim).  This mapping will do it: >"
 msgstr ""
+"Suponga que apenas usa el modo Ex, y desea usar la orden «Q» para formatear "
+"texto (este era el comportamiento en versiones anteriores de Vim). Esta "
+"asignación realizará esta función: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:132
@@ -496,6 +513,8 @@ msgid ""
 "But, in rare cases you need to use Ex mode anyway.  Let's map \"gQ\" to Q, "
 "so that you can still go to Ex mode: >"
 msgstr ""
+"Pero, en algunos casos necesita usar el modo Ex. Vamos a asignar «gQ» a «Q», "
+"para que así pueda ir la modo Ex: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:137
@@ -515,6 +534,12 @@ msgid ""
 "you don't get to Ex mode at all.\n"
 "   To avoid keys to be mapped again, use the \":noremap\" command: >\n"
 msgstr ""
+"Lo que ocurre ahora es que cuando escribe «gQ», se asigna a la «Q». Por\n"
+"ahora, todo bien. Pero, a continuación, asigna «Q» a «gq», y por ello "
+"escribir\n"
+"«gQ» resulta en «gq», y no entra en modo Ex.\n"
+"   Para evitar que las claves se asignen otra vez, utilice la orden «: "
+"noremap»: >\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:144
@@ -528,6 +553,8 @@ msgid ""
 "Now Vim knows that the \"Q\" is not to be inspected for mappings that apply "
 "to it.  There is a similar command for every mode:"
 msgstr ""
+"Ahora Vim sabe que no se puede analizar «Q» en busca de asignaciones que le "
+"afecten. Existe una orden similar para cada modo:"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:155
@@ -541,11 +568,18 @@ msgid ""
 "\t:inoremap\tInsert\n"
 "\t:cnoremap\tCommand-line\n"
 msgstr ""
+"\t:noremap\tNormal, Visual y Operator-pending\n"
+"\t:vnoremap\tVisual\n"
+"\t:nnoremap\tNormal\n"
+"\t:onoremap\tOperator-pending\n"
+"¡\t:noremap!\tInsertar y Línea de órdenes\n"
+"\t:inoremap\tInsertar\n"
+"\t:cnoremap\tLínea de órdenes\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:158
 msgid "RECURSIVE MAPPING"
-msgstr ""
+msgstr "ASIGNACIÓN RECURSIVA"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:164
@@ -557,12 +591,17 @@ msgid ""
 "first line.  You edit these files with \"vim *.txt\".  You are now editing the\n"
 "first file.  Define this mapping: >\n"
 msgstr ""
+"Cuando una asignación se activa, se ejecutará indefinidamente. Puede\n"
+"usar esto para repetir una acción un número ilimitado de veces.\n"
+"   Por ejemplo, tiene una lista de archivos que contienen un número de\n"
+"versión en la primera línea. Después, edita estos archivos con «vim.txt».\n"
+"Ahora está editando el primer archivo. Defina esta asignación: >\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:166
 #, no-wrap
 msgid "\t:map ,, :s/5.1/5.2/<CR>:wnext<CR>,,\n"
-msgstr ""
+msgstr "\t:map ,, :s/5.1/5.2/<CR>:wnext<CR>,,\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:177
@@ -579,6 +618,18 @@ msgid ""
 "   When a mapping runs into an error halfway, the rest of the mapping is\n"
 "discarded.  CTRL-C interrupts the mapping (CTRL-Break on MS-Windows).\n"
 msgstr ""
+"Ahora introduce «,,», iniciando la asignación. Reemplaza «5.1» con «5.2»\n"
+"en la primera línea. A continuación, ejecuta «:wnext» para guardar el\n"
+"archivo y editar el siguiente. La asignación termina con «,,», iniciando la\n"
+"asignación una vez más, llevando a cabo la sustitución.\n"
+"   Continua hasta encontrar un error. En tal caso, podría ser un archivo\n"
+"que no contiene ninguna coincidencia con el patrón de sustitución, «5.1».\n"
+"Puede hacer un cambio para insertar «5.1» para continuar tecleando «,,»\n"
+"otra vez. La orden «:wnext» puede devolver error si está en el último\n"
+"archivo de la lista.\n"
+"   Cuando una asignación detecta un error durante el proceso, se descarta\n"
+"el resto de la asignación. «CTRL-C» interrumpe la asignación («CTRL-ins»\n"
+"en Windows).\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:180
@@ -628,6 +679,8 @@ msgid ""
 "\t:map <C-A> /---><CR>\n"
 "\t:vunmap <C-A>\n"
 msgstr ""
+"\t:map <C-A> /---><CR>\n"
+"\t:vunmap <C-A>\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:200
@@ -645,9 +698,8 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:207 original/txt/usr_42.txt:111
-#, fuzzy
 msgid "SPECIAL CHARACTERS"
-msgstr "CONCORDAR CARACTERES ESPECIALES"
+msgstr "CARACTERES ESPECIALES"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:213
@@ -685,7 +737,7 @@ msgstr ""
 #: original/txt/usr_40.txt:225
 #, no-wrap
 msgid "\t:map <Space> W\n"
-msgstr ""
+msgstr "\t:map <Space> W\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:227
@@ -708,10 +760,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:236
-#, fuzzy
 #| msgid "REMAPPING ABBREVIATIONS"
 msgid "MAPPINGS AND ABBREVIATIONS"
-msgstr "REDEFINIR EL MAPEO DE UNA ABREVIATURA"
+msgstr "ASIGNACIONES Y ABREVIATURAS"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:249
@@ -738,6 +789,8 @@ msgid ""
 "\t:imap aa foo\n"
 "\t:imap aaa bar\n"
 msgstr ""
+"\t:imap aa foo\n"
+"\t:imap aaa bar\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:258
@@ -898,10 +951,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:325
-#, fuzzy
 #| msgid "MOVING TO OTHER ARGUMENTS"
 msgid "USING THE ARGUMENTS"
-msgstr "DESPLAZARSE A OTROS ARGUMENTOS"
+msgstr "USAR ARGUMENTOS"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:328
