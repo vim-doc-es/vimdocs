@@ -25,7 +25,7 @@ Tabla de contenidos: |usr_toc.esx|
 *31.1*	El explorador de archivos
 
 Al usar el menú «Archivo/Abrir»... obtiene un explorador de archivos. 
-Facilita ubicar el archivo que desea editar. ¿Pero y si desea
+Esto facilita ubicar el archivo que desea editar. ¿Pero y si desea
 dividir una ventana para editar otro archivo? No hay una entrada en el menú
 para esto. Puede usar primero «Ventana/Dividir» y luego «Archivo/Abrir»...,
 pero eso es más trabajo.
@@ -53,8 +53,8 @@ directorio iniciar el explorador de archivos. De manera predeterminada se usa
 el mismo directorio usado la vez anterior. Así, si se usó «:browse split» y
 se seleccionó un archivo en «/usr/local/share», la próxima vez que use
 «:browse» se empezará desde «/usr/local/share» de nuevo.
-   Esto se puede ajustar mediante la opción 'browsedir'. Acepta uno
-de los tres siguientes valores:
+   Esto se puede ajustar mediante la opción 'browsedir'. Dicha opción acepta
+uno de los tres siguientes valores:
 
 	last		Usar el último directorio visitado (predeterminado)
 	buffer		Usar el mismo directorio del búfer actual
@@ -94,7 +94,7 @@ de perder los cambios realizados.  Si hace algo que puede ser peligroso,
 Vim muestra un mensaje de error y sugiere añadir ! si el usuario está
 seguro de querer hacerlo.
    Para evitar teclear de nuevo la orden con el !, puede hacer que Vim le
-ofrezca un diálogo. Así, podrá presionar «OK» o «Cancelar» para
+ofrezca un diálogo. Así, podrá pulsar «OK» o «Cancelar» para
 indicarle a Vim qué desea hacer.
    Por ejemplo, está editando un archivo y ya hizo algunos cambios.
 Puede editar otro archivo con: >
@@ -110,7 +110,7 @@ Vim mostrará un diálogo con el siguiente aspecto:
 	|   SÍ   NO	       CANCELAR     |
 	+-----------------------------------+
 
-Y ahora puede decidir qué hacer. Si desea conservar los cambios, presione
+Y ahora puede decidir qué hacer. Si desea conservar los cambios, escoja
 «SÍ». Si quiere descartar permanentemente los cambios hechos: «NO».  Si
 olvidó lo que estaba haciendo y quiere revisar cuáles fueron los cambios
 hechos, use «CANCELAR». Estará de nuevo en el mismo archivo, y los cambios
@@ -141,8 +141,8 @@ elección. >
 	[Y]es, (N)o, (C)ancelar:  ~
 
 Ahora puede realizar su selección simplemente pulsando una tecla. En
-particular, no tiene que presionar <Enter>, a diferencia del tecleo normal
-en la línea de órdenes.
+particular, no tiene que pulsar <Enter>, a diferencia del tecleo normal en
+la línea de órdenes.
 
 ==============================================================================
 *31.3*	Atajos de teclado para menús
@@ -152,11 +152,11 @@ sencilla de seleccionar órdenes sin saber de antemano cómo se llaman.
 Pero es necesario alejar la mano del teclado y tomar el ratón.
    Habitualmente los menús también se pueden seleccionar mediante teclas.
 Esto varía de sistema a sistema, pero generalmente funciona como sigue:
-Presione la tecla <Alt> junto con la letra subrayada en el menú. Por ejemplo,
+Pulse la tecla <Alt> junto con la letra subrayada en el menú. Por ejemplo,
 <A-v> (<Alt> y v) activa el menú Ventana.
    En el menú Ventana, la «d» en la entrada para «split» (dividir ventana)
 está subrayada. Para seleccionar dicha entrada, suelte la tecla <Alt> y
-presione la tecla d.
+pulse la tecla d.
 
 Después de la selección inicial de un menú con la tecla <Alt>, es posible
 usar las teclas de cursor para explorar los menús. <Derecha> abre un
@@ -189,8 +189,8 @@ siguiente:
 	Posición de la ventana: X 272, Y 103 ~
 
 La posición está dada en píxeles de la pantalla. Puede usar estos números
-para desplazar la ventana de Vim a algún otro sitio. Por ejemplo, para
-moverla a la izquierda cien píxeles: >
+para mover la ventana de Vim a algún otro sitio. Por ejemplo, para moverla a
+la izquierda cien píxeles: >
 
 	:winpos 172 103
 <
@@ -248,7 +248,7 @@ la que se inició hasta que termine la edición y cierre el editor.
 
 ARRANQUE POSTERGADO DE LA GUI
 
-En Unix es posible iniciar Vim en una terminal. Es útil si se están
+En Unix es posible iniciar Vim en una terminal. Esto es útil si se están
 realizando varias tareas en una misma consola. Si está editando un archivo y
 decide que después de todo quiere usar la GUI, puede lanzarla con la orden:
 >
@@ -276,8 +276,8 @@ No es conveniente hacer esto en una terminal, debido a que su tamaño es fijo
    El archivo gvimrc se busca en las mismas ubicaciones que el archivo vimrc.
 Habitualmente, su nombre es «~/.gvimrc» en sistemas Unix/Linux y
 «$VIM/_gvimrc» en MS-Windows. La ruta de este archivo se almacena en la 
-variable de entorno $MYGVIMRC, por lo que puede usar esta orden para editar
-ese archivo, si existe: >
+variable de entorno $MYGVIMRC, por lo que puede usar la siguiente orden para
+editar ese archivo, si existe: >
 
 	:edit $MYGVIMRC
 <

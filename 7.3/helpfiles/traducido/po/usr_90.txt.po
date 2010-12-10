@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-05 15:35+0100\n"
-"PO-Revision-Date: 2010-12-08 18:45+0200\n"
+"PO-Revision-Date: 2010-12-09 16:53+0100\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -125,8 +125,7 @@ msgstr ""
 #: original/txt/usr_90.txt:417 original/txt/usr_90.txt:494
 #, no-wrap
 msgid "==============================================================================\n"
-msgstr "============================================================================"
-"==\n"
+msgstr "==============================================================================\n"
 
 #. type: Plain text
 #: original/txt/usr_toc.txt:4 original/txt/usr_01.txt:4
@@ -739,7 +738,7 @@ msgstr ""
 "Puede encontrar una explicación de cada funcionalidad y enlaces a\n"
 "más información aquí: |feature-list|.\n"
 "   Para los atrevido, edite el archivo «feature.h». ¡También puede\n"
-"modificar el código fuente directamente!"
+"modificar el código fuente directamente!\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:216
@@ -907,12 +906,10 @@ msgid ""
 "unpacked them.\n"
 msgstr ""
 "Revise los mensajes con cuidado y seleccione las opciones que desea usar.\n"
-"Si al final selecciona «do it», el programa de instalación llevará a cabo "
-"las\n"
+"Si al final selecciona «do it», el programa de instalación llevará a cabo las\n"
 "acciones seleccionadas.\n"
-"   El programa de instalación no reubica los archivos de tiempo de "
-"ejecución.\n"
-"Permanecerán en el lugar en el que los desempaquetó."
+"   El programa de instalación no reubica los archivos de tiempo de ejecución.\n"
+"Permanecerán en el lugar en el que los desempaquetó.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:287
@@ -1063,7 +1060,7 @@ msgstr ""
 "la versión adecuada. Por otra parte, no funcionará si define en algún lugar\n"
 "la variable «$VIMRUNTIME».\n"
 "   Si la actualización le satisface, puede borrar los archivos de la versión\n"
-"anterior. Consulte |90.5|. "
+"anterior. Consulte |90.5|.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:343
@@ -1086,7 +1083,7 @@ msgstr ""
 #: original/txt/usr_90.txt:350
 msgid "Q: I Do Not Have Root Privileges.  How Do I Install Vim? (Unix)"
 msgstr ""
-"Q: No tengo privilegios de administrador.  ¿Cómo puedo instalar Vim? (Unix)"
+"P: No tengo privilegios de administrador.  ¿Cómo puedo instalar Vim? (Unix)"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:353
@@ -1115,7 +1112,7 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_90.txt:361
 msgid "Q: The Colors Are Not Right on My Screen. (Unix)"
-msgstr "Q: Los colores no son los correctos en mi pantalla. (Unix)"
+msgstr "P: Los colores no son los correctos en mi pantalla. (Unix)"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:363
@@ -1146,7 +1143,7 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_90.txt:372
 msgid "Q: My Backspace And Delete Keys Don't Work Right"
-msgstr ""
+msgstr "P: Mis teclas de retroceso y eliminar no funcionan bien."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:376
@@ -1155,6 +1152,9 @@ msgid ""
 "<BS> and Delete <Del> keys.  First of all, check your $TERM setting.  If "
 "there is nothing wrong with it, try this: >"
 msgstr ""
+"La definición del código que cada tecla envía no está muy clara con las "
+"teclas de retroceso <BS> y eliminar <Del>. Primero, compruebe su opción de "
+"configuración «$TERM». Si no detecta nada incorrecto: pruebe esto: >"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:379
@@ -1163,6 +1163,8 @@ msgid ""
 "\t:set t_kb=^V<BS>\n"
 "\t:set t_kD=^V<Del>\n"
 msgstr ""
+"\t:set t_kb=^V<BS>\n"
+"\t:set t_kD=^V<Del>\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:385
@@ -1173,12 +1175,18 @@ msgid ""
 "that it won't work when you use another terminal some day.  Look here for "
 "alternate solutions: |:fixdel|."
 msgstr ""
+"En la primera línea tiene que pulsar «CTRL-V» y después pulsar la tecla de "
+"retroceso. En la segunda, debe pulsar «CTRL-V» y pulsar la tecla de "
+"eliminar. Puede poner estas líneas en su archivo «vimrc», consulte |05.1|. "
+"Una desventaja es que no funcionará cuando use otra terminal.  Consulte aquí "
+"las posibles soluciones: |:fixdel|."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:388
 msgid ""
 "Q: I Am Using RedHat Linux.  Can I Use the Vim That Comes with the System?"
 msgstr ""
+"P: Uso RedHat Linux. ¿Puedo usar la versión de Vim que viene con el sistema?"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:391
@@ -1186,11 +1194,15 @@ msgid ""
 "By default RedHat installs a minimal version of Vim.  Check your RPM "
 "packages for something named \"Vim-enhanced-version.rpm\" and install that."
 msgstr ""
+"Por omisión, RedHat instala una versión mínima de Vim. Busque entre los "
+"paquetes RPM algo llamado «Vim-enhanced-version.rpm» e instale ese paquete."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:394
 msgid "Q: How Do I Turn Syntax Coloring On? How do I make plugins work?"
 msgstr ""
+"P: ¿Como se activa el resaltado de sintaxis? ¿Como hago funcionar las "
+"extensiones?"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:397
@@ -1198,26 +1210,30 @@ msgid ""
 "Use the example vimrc script.  You can find an explanation on how to use it "
 "here: |not-compatible|."
 msgstr ""
+"Use el script de ejemplo «vimrc». Encontrará una explicación de su uso en el "
+"siguiente apartado: |not-compatible|."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:399
 msgid "See chapter 6 for information about syntax highlighting: |usr_06.txt|."
 msgstr ""
+"Para más información sobre el resaltado de sintaxis consulte el sexto "
+"capítulo: |usr_06.txt|."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:402
 msgid "Q: What Is a Good vimrc File to Use?"
-msgstr ""
+msgstr "P: ¿Qué es un buen archivo «vimrc» para usar?"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:404
 msgid "See the www.vim.org Web site for several good examples."
-msgstr ""
+msgstr "Consulte la página web www.vim.org para varios ejemplos buenos."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:407
 msgid "Q: Where Do I Find a Good Vim Plugin?"
-msgstr ""
+msgstr "P: ¿Dónde encuentro una buena extensión de Vim?"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:410
@@ -1225,11 +1241,13 @@ msgid ""
 "See the Vim-online site: http://vim.sf.net.  Many users have uploaded useful "
 "Vim scripts and plugins there."
 msgstr ""
+"Visite el sitio web de Vim: http://vim.sf.net. Muchos usuarios han enviado "
+"útiles scripts de Vim y extensiones a esta ubicación de Internet."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:413
 msgid "Q: Where Do I Find More Tips?"
-msgstr ""
+msgstr "P: ¿Dónde puedo encontrar más consejos?"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:416
@@ -1237,6 +1255,9 @@ msgid ""
 "See the Vim-online site: http://vim.sf.net.  There is an archive with hints "
 "from Vim users.  You might also want to search in the |maillist-archive|."
 msgstr ""
+"Consulte el sitio web de Vim: http://vim.sf.net. Hay un archivo con "
+"indicaciones de usuarios de Vim. Puede que también desee buscar en el "
+"archivo de la lista de correo, |maillist-archive|."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:419
@@ -1250,6 +1271,8 @@ msgid ""
 "In the unlikely event you want to uninstall Vim completely, this is how you "
 "do it."
 msgstr ""
+"En el caso improbable de que desea desinstalar Vim completamente, aquí se "
+"trata cómo hacerlo."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:429
@@ -1259,6 +1282,9 @@ msgid ""
 "how to remove the package again.\n"
 "   If you installed Vim from sources you can use this command: >\n"
 msgstr ""
+"Si ha instalado Vim como un paquete, compruebe su gestor de paquetes para\n"
+"averiguar cómo eliminar el paquete.\n"
+"   Si ha instalado Vim a partir de las fuentes, puede usar la siguiente orden: >\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:431
@@ -1273,6 +1299,10 @@ msgid ""
 "someone supplied, you can't do this.  Do delete the files manually, here is "
 "an example for when \"/usr/local\" was used as the root: >"
 msgstr ""
+"Sin embargo, si ha eliminado los archivos originales, o ha usado un archivo "
+"que alguien le ha proporcionado, no podrá hacer esto. Este es un ejemplo de "
+"desinstalación manual de Vim cuando «/usr/local» se ha usado como el "
+"directorio raíz."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:469
@@ -1360,6 +1390,17 @@ msgid ""
 "probably contains your vimrc file and other runtime files that you created, so\n"
 "be careful.\n"
 msgstr ""
+"Si ha instalado Vim el archivo de instalación automática, puede\n"
+"ejecutar el programa «uninstall-gui», ubicado en el mismo directorio\n"
+"de otros programas de Vim. Esto es, «c:\\vim\\vim61». También puede\n"
+"iniciarlo desde el menú de aplicaciones si ha instalado las entradas\n"
+"de Vim. Esto elimina la mayoría de los archivos, entradas de menú\n"
+"y enlaces directos. Sin embargo, algunos archivos permanecerán en\n"
+"el sistema, ya que necesitan un reinicio de Windows antes de su\n"
+"eliminación.\n"
+"   Se le dará la opción de eliminar todo el directorio «vim».\n"
+"Probablemente, contiene su archivo «vimrc» y otros archivos de\n"
+"tiempo de ejecución que ha creado, tenga cuidado.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:493
@@ -1376,8 +1417,21 @@ msgid ""
 "   The \"vim\" directory probably contains your vimrc file and other runtime\n"
 "files that you created.  You might want to keep that.\n"
 msgstr ""
+"Por otra parte, si ha instalado Vim con los archivos zip, la manera\n"
+"recomendada es usar el programa «uninstal» (note la omisión de la\n"
+"última «l»). Lo encontrará en el mismo directorio que el programa\n"
+"«install». Esto es, «c:\\vim\\vim61». También debería funcionar desde\n"
+"la aplicación habitual «Instalar/eliminar software».\n"
+"   Sin embargo, no elimina la entradas de Vim en el registro. Tendrá\n"
+"que eliminar estos archivos manualmente. Sencillamente seleccione\n"
+"el directorio «vim\\vim61» y elimínelo recursivamente. No debería\n"
+"contener archivos modificados por el usuario, pero quizá quiera\n"
+"comprobarlo.\n"
+"   Probablemente, el directorio «vim» contiene su archivo «vimrc» y\n"
+"otros archivos de tiempo de ejecución que ha creado. Puede que\n"
+"desee preservarlos.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:497
 msgid "Table of contents: |usr_toc.txt|"
-msgstr ""
+msgstr "Tabla de contenidos: |usr_toc.txt|"
