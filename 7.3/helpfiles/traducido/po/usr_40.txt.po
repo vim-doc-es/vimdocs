@@ -2,20 +2,21 @@
 # Copyright (C) 2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the Vim package.
 # Automatically generated, 2010.
-#
+# Omar Campagne <ocampagne@gmail.com>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2010-12-09 16:51+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2010-12-10 17:34+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.6.1\n"
 
 #. type: Plain text
 #: original/txt/intro.txt:18 original/txt/intro.txt:79
@@ -137,7 +138,8 @@ msgstr ""
 #: original/txt/usr_90.txt:417 original/txt/usr_90.txt:494
 #, no-wrap
 msgid "==============================================================================\n"
-msgstr "==============================================================================\n"
+msgstr "============================================================================"
+"==\n"
 
 #. type: Plain text
 #: original/txt/usr_toc.txt:4 original/txt/usr_01.txt:4
@@ -185,17 +187,17 @@ msgstr "BORRAR"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:2
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "*usr_03.txt*\tFor Vim version 7.3.  Last change: 2006 Jun 21\n"
 msgid "*usr_40.txt*\tFor Vim version 7.3.  Last change: 2006 Jun 21\n"
-msgstr "*usr_03.esx*\tPara Vim version 7.3.  Último cambio: 21/6/2006\n"
+msgstr "*usr_40.esx*\tPara Vim version 7.3.  Último cambio: 21/6/2006\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:6
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t\t\t     Making big changes\n"
 msgid "\t\t\t      Make new commands\n"
-msgstr "\t\t\t   Realizar grandes cambios\n"
+msgstr "\t\t\t      Crear órdenes nuevas\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:11
@@ -204,23 +206,25 @@ msgid ""
 "often and turn it into a new command.  Or redefine an existing command.  "
 "Autocommands make it possible to execute commands automatically."
 msgstr ""
+"Vim es un editor extensible. Puede tomar una secuencia de órdenes que usa "
+"regularmente, y transformarlos en una nueva orden, o redefinir una orden "
+"existente. Las órdenes automáticas («Autocommands») lo permiten."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:15
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|40.1|\tKey mapping\n"
 "|40.2|\tDefining command-line commands\n"
 "|40.3|\tAutocommands\n"
 msgstr ""
-"|usr_40.txt|  Make new commands\n"
-"\t\t|40.1|\tKey mapping\n"
-"\t\t|40.2|\tDefining command-line commands\n"
-"\t\t|40.3|\tAutocommands\n"
+"|40.1|\tMapeos de teclado\n"
+"|40.2|\tDefinir órdenes de línea de órdenes\n"
+"|40.3|\tAutocommands\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:19
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid ""
 #| "     Next chapter: |usr_30.txt|  Editing programs\n"
 #| " Previous chapter: |usr_28.txt|  Folding\n"
@@ -230,16 +234,16 @@ msgid ""
 " Previous chapter: |usr_32.txt|  The undo tree\n"
 "Table of contents: |usr_toc.txt|\n"
 msgstr ""
-" Siguiente capítulo: |usr_30.txt|  Editar programas\n"
-"  Capítulo anterior: |usr_28.esx|  Plegado\n"
+"   Siguiente capítulo: |usr_41.txt|  Crear un script de Vim\n"
+"     Capítulo anterior: |usr_32.esx|  El árbol de deshacer\n"
 "Tabla de contenidos: |usr_toc.esx|\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:22
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "*05.3*\tSimple mappings\n"
 msgid "*40.1*\tKey mapping\n"
-msgstr "*05.3*\tMapeos sencillos\n"
+msgstr "*40.1*\tMapa del teclado\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:29
@@ -252,12 +256,20 @@ msgid ""
 "the function keys, except <F1>, have no predefined meaning in Vim, these are\n"
 "good choices to map.  Example: >\n"
 msgstr ""
+"En la sección |05.3| se explicaba un sencillo mapeo. El principio es que una\n"
+"secuencia de pulsaciones de tecla se traduce a otra secuencia de\n"
+"pulsaciones de tecla. Es un mecanismo sencillo pero poderoso.\n"
+"   La forma más simple es asignar una tecla a una secuencia de teclas. "
+"Debido\n"
+"a que las teclas de función, a excepción de <F1>, no tienen un significado\n"
+"predefinido para Vim, son buenos candidatos a los que asignar teclas.\n"
+"Ejemplo: >\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:31
 #, no-wrap
 msgid "\t:map <F2> GoDate: <Esc>:read !date<CR>kJ\n"
-msgstr ""
+msgstr "\t:map <F2> GoDate: <Esc>:read !date<CR>kJ\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:43
@@ -275,6 +287,18 @@ msgid ""
 "line.  The <CR> is required to execute the \":read\" command.\n"
 "   At this point of execution the text looks like this:\n"
 msgstr ""
+"Este ejemplo muestra como usar tres modos. Después de ir a la última línea\n"
+"con «G», la orden «o» crea una nueva línea e inicia el modo Insertar. El\n"
+"texto «Date:» se inserta, y <Esc> abandona el modo de inserción.\n"
+"   Tenga en cuenta el uso de teclas especiales dentro de <>. Se llaman\n"
+"corchetes agudos. Los teclea como caracteres distintos, y no pulsando\n"
+"el misma tecla. Esto hace que las asignaciones de teclas sean más leíbles,\n"
+"permitiendo copiar y pegar el texto sin problema.\n"
+"   El carácter «:» inicia la línea de órdenes de Vim. La orden «:read !date»\n"
+"lee la salida de la orden «date» y la añade bajo la línea actual. La orden "
+"<CR>\n"
+"se requiere para ejecutar la orden «:read».\n"
+"   En este punto, el texto tiene el siguiente aspecto:\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:46
@@ -283,6 +307,8 @@ msgid ""
 "\tDate:  ~\n"
 "\tFri Jun 15 12:54:34 CEST 2001 ~\n"
 msgstr ""
+"\tDate:  ~\n"
+"\tFri Jun 15 12:54:34 CEST 2001 ~\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:49
@@ -291,11 +317,13 @@ msgid ""
 "Now \"kJ\" moves the cursor up and joins the lines together.\n"
 "   To decide which key or keys you use for mapping, see |map-which-keys|.\n"
 msgstr ""
+"Ahora, «kJ» desplaza el cursor hacia arriba y une las líneas.\n"
+"   Para decidir qué teclas usar para los mapeos, consulte |map-which-keys|.\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:52
 msgid "MAPPING AND MODES"
-msgstr ""
+msgstr "ASIGNACIÓN DE TECLAS Y MODOS"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:56
@@ -304,12 +332,15 @@ msgid ""
 "also define mappings for other modes.  For example, \":imap\" applies to "
 "Insert mode.  You can use it to insert a date below the cursor: >"
 msgstr ""
+"La orden «:map» define la asignación de teclas en modo Normal. También puede "
+"definir asignaciones para otros modos. Por ejemplo, «imap» afecta al modo "
+"Insertar. Puede usarlo para insertar una fecha bajo el cursor: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:58
 #, no-wrap
 msgid "\t:imap <F2> <CR>Date: <Esc>:read !date<CR>kJ\n"
-msgstr ""
+msgstr "\t:imap <F2> <CR>Date: <Esc>:read !date<CR>kJ\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:65
@@ -452,14 +483,12 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:132
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid ""
 #| ">\n"
 #| "\tmap Q gq\n"
 msgid "\t:map Q gq\n"
-msgstr ""
-">\n"
-"\tmap Q gq\n"
+msgstr "\t:map Q gq\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:135
@@ -470,14 +499,12 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:137
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid ""
 #| ">\n"
 #| "\tmap Q gq\n"
 msgid "\t:map gQ Q\n"
-msgstr ""
-">\n"
-"\tmap Q gq\n"
+msgstr "\t:map gQ Q\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:142
@@ -493,7 +520,7 @@ msgstr ""
 #: original/txt/usr_40.txt:144
 #, no-wrap
 msgid "\t:noremap gQ Q\n"
-msgstr ""
+msgstr "\t:noremap gQ Q\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:147
