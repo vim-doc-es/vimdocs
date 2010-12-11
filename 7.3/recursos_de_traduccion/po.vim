@@ -414,3 +414,83 @@ fu! <SID>fmt_whole_file()
 	" the buffer. So it may not be so safe as the farmer method.
 	"exe "!msgmerge % % -o %"
 endf
+
+" return the initial and final line numbers of the text corresponding to the
+" msgid.
+"
+" returns a dictionary, with two keys: s, and e, which contain, respectively,
+" the initial and final line numbers (inclusive, [s, e]) of the contents
+" belonging to the msgid
+"
+" the contents of msgid are defined to start with a line starting with the
+" text 'msgid', and to end in the line previous to the closest one downwards
+" starting with the 'msgstr' text
+function! s:MsgIdLocation()
+  " standard search options:
+  " accept match at cursor, don't move cursor, don't wrap around the buffer
+  let srchopts = "cnW"
+  let s = search('^msgid ', 'b' . srchopts)
+  if s == 0
+    " throw something, no messageid
+  endif
+  let e_prev = search('^msgstr ', 'b' . srchopts)
+  if e_prev > s
+    return {'s': s, 'e': e_prev - 1}
+  endif
+
+  let e_next = search('^msgstr ', srchopts)
+  if e_next == 0
+    " throw something, no messagestr
+  endif
+
+  let s_next = search('^msgid ', srchopts)
+  if s_next == 0
+    return {'s': s, 'e': e_next - 1}
+  endif
+
+  if s_next < e_next
+    " throw something, msgid folloed by msgid
+  endif
+  return {'s': s, 'e': e_next - 1}
+endfunction
+
+" contents of msgstr are defined as
+" text from the line that starts with the 'msgstr' text
+" until the closest line downwards that is empty
+" TODO finish docstring
+function! s:MsgStrLocation(s)
+  " TODO assert that text at line a:s starts with msgstr
+  call cursor(a:s, 1)
+  let srchopts = "cnW"
+  let e = search('^$', srchopts) 
+  if e == 0
+    " throw something, didn't find what we wanted
+  endif
+  let s_nextmsgid = search('^[^#"]', srchopts)
+  if s_nextmsgid != 0 && s_nextmsgid < e
+    " throw something, msgid before msgend
+  endif
+  return {'s': a:s, 'e': e - 1}
+endfunction
+
+" TODO finish docstring
+function! CopyMsgidMsgStr()
+  let r_a = @a
+
+  let id_l = s:MsgIdLocation()
+  let ms_l = s:MsgStrLocation(id_l.e + 1)
+  exe 'silent ' . ms_l.s . ',' . ms_l.e . 'delete _'
+  exe 'silent ' . id_l.s . ',' . id_l.e . 'yank a'
+  call cursor(id_l.e, 1)
+  put a
+  call cursor(id_l.e + 1, 1)
+  normal "_de
+  let @a = 'msgstr'
+  normal "aP
+  " TODO decide where do we want the cursor after deleting and pasting
+  " TODO exception raising and handling
+  " TODO mapping
+  " TODO docs
+
+  let @a = r_a
+endfunction
