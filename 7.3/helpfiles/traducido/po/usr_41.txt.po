@@ -186,16 +186,16 @@ msgstr "OPCIONES"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "*usr_11.txt*\tFor Vim version 7.3.  Last change: 2010 Jul 20\n"
 msgid "*usr_41.txt*\tFor Vim version 7.3.  Last change: 2010 Jul 20\n"
-msgstr "*usr_11.esx*\tPara Vim versión 7.3.  Último cambio: 20/6/2010\n"
+msgstr "*usr_41.esx*\tPara Vim versión 7.3.  Último cambio: 20/7/2010\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:6
 #, no-wrap
 msgid "\t\t\t      Write a Vim script\n"
-msgstr ""
+msgstr "\t\t\t     Escribir un script para Vim\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:11
@@ -204,6 +204,10 @@ msgid ""
 "and many other things.  This chapter explains the items that can be used in "
 "a Vim script.  There are a lot of them, thus this is a long chapter."
 msgstr ""
+"El lenguaje de programación de Vim se usa en el archivo de arranque vimrc, los "
+"archivos de sintaxis, y muchas otras cosas. Este capítulo presenta y explica "
+"en detalle los elementos que componen un script de Vim. Hay muchos de ellos, "
+"por lo que éste es un capítulo largo."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:28
@@ -226,23 +230,22 @@ msgid ""
 "|41.15|\tWriting library scripts\n"
 "|41.16|\tDistributing Vim scripts\n"
 msgstr ""
-"|usr_41.txt|  Write a Vim script\n"
-"\t\t|41.1|\tIntroduction\n"
-"\t\t|41.2|\tVariables\n"
-"\t\t|41.3|\tExpressions\n"
-"\t\t|41.4|\tConditionals\n"
-"\t\t|41.5|\tExecuting an expression\n"
-"\t\t|41.6|\tUsing functions\n"
-"\t\t|41.7|\tDefining a function\n"
-"\t\t|41.8|\tLists and Dictionaries\n"
-"\t\t|41.9|\tExceptions\n"
-"\t\t|41.10|\tVarious remarks\n"
-"\t\t|41.11|\tWriting a plugin\n"
-"\t\t|41.12|\tWriting a filetype plugin\n"
-"\t\t|41.13|\tWriting a compiler plugin\n"
-"\t\t|41.14|\tWriting a plugin that loads quickly\n"
-"\t\t|41.15|\tWriting library scripts\n"
-"\t\t|41.16|\tDistributing Vim scripts\n"
+"|41.1|\tIntroducción\n"
+"|41.2|\tVariables\n"
+"|41.3|\tExpresiones\n"
+"|41.4|\tEstructuras de decisión\n"
+"|41.5|\tEjecución de expresiones\n"
+"|41.6|\tFunciones\n"
+"|41.7|\tDefinición de funciones\n"
+"|41.8|\tListas y Diccionarios\n"
+"|41.9|\tExcepciones\n"
+"|41.10|\tVarious remarks\n"
+"|41.11|\tWriting a plugin\n"
+"|41.12|\tWriting a filetype plugin\n"
+"|41.13|\tWriting a compiler plugin\n"
+"|41.14|\tWriting a plugin that loads quickly\n"
+"|41.15|\tWriting library scripts\n"
+"|41.16|\tDistributing Vim scripts\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:32
@@ -262,10 +265,10 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:35
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "1. Introduction\t\t\t\t\t\t*intro*\n"
 msgid "*41.1*\tIntroduction\t\t\t\t*vim-script-intro* *script*\n"
-msgstr "1. Introducción\t\t\t\t\t\t*intro*\n"
+msgstr "*41.1*\tIntroducción\t\t\t\t*vim-script-intro* *script*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:43
@@ -734,10 +737,10 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:269
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "*21.4*\tSessions\n"
 msgid "*41.3*\tExpressions\n"
-msgstr "*21.4*\tSesiones\n"
+msgstr "*41.3*\tExpresiones\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:276
@@ -923,10 +926,10 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:347
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "*31.2*\tConfirmation\n"
 msgid "*41.4*\tConditionals\n"
-msgstr "*31.2*\tConfirmación\n"
+msgstr "*41.4*\tEstructuras de decisión\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:350
@@ -1201,10 +1204,9 @@ msgstr "Puede encontrar otros temas con la orden «:help», véase |help.esx|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:484
-#, fuzzy, no-wrap
-#| msgid "*28.8*\tFolding by expression\n"
+#, no-wrap
 msgid "*41.5*\tExecuting an expression\n"
-msgstr "*28.8*\tPlegar por expresión\n"
+msgstr "*28.8*\tEjecución de expresiones\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:489
@@ -1318,10 +1320,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:534
-#, fuzzy, no-wrap
-#| msgid "*24.1*\tMaking corrections\n"
+#, no-wrap
 msgid "*41.6*\tUsing functions\n"
-msgstr "*24.1*\tCorregir\n"
+msgstr "*24.1*\tFunciones\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:538
@@ -2304,10 +2305,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1106
-#, fuzzy, no-wrap
-#| msgid "*04.1*\tOperators and motions\n"
+#, no-wrap
 msgid "*41.8*\tLists and Dictionaries\n"
-msgstr "*04.1*\tOperadores y movimiento\n"
+msgstr "*41.8*\tListas y Diccionarios\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1109
@@ -2921,10 +2921,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1392
-#, fuzzy, no-wrap
-#| msgid "*23.3*\tEncryption\n"
+#, no-wrap
 msgid "*41.9*\tExceptions\n"
-msgstr "*23.3*\tCifrado\n"
+msgstr "*41.9*\tExcepciones\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1394
