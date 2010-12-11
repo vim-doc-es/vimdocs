@@ -78,7 +78,7 @@ en el modo Insertar. Esto se parece a lo que haría con un editor sin modos. Es
 más fácil de recordar, pero lleva más tiempo (tiene que mover sus manos de
 las letras a las teclas del cursor, y es difícil pulsar la tecla <Fin> sin
 mirar el teclado).
-   Estas teclas especiales son más útiles cuando escribe un mapeado que no
+   Estas teclas especiales son más útiles cuando escribe una macro que no
 abandona el modo Insertar. El tecleo adicional no importa en este caso.
    Este es un resumen de las teclas que puede usar en el modo Insertar:
 
@@ -483,7 +483,7 @@ eso es improbable).
 y «:cabclear»).
 
 
-REDEFINIR EL MAPEO DE UNA ABREVIATURA
+REDEFINIR LA MACRO DE UNA ABREVIATURA
 
 Existe un aspecto a tener en cuenta a la hora de definir una abreviatura: La
 cadena resultante no se debería mapear. Por ejemplo: >
@@ -493,7 +493,7 @@ cadena resultante no se debería mapear. Por ejemplo: >
 
 Si ahora teclea @a, obtendrá «adisk-doorer». Esto no es lo que quiere. Para
 evitarlo, use la orden «:noabbrev». Hace lo mismo que «:abbreviate», pero
-evita que la cadena resultante se use en mapeados.
+evita que la cadena resultante se use en macros.
 
 	:noreabbrev @a adder
 

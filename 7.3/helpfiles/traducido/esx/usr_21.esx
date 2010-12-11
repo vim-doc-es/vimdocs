@@ -272,16 +272,16 @@ significa sesión (en realidad, puede introducir cualquier script a Vim con
 «-S», por ello también puede significar «source», fuente).
 
 Las ventanas que estaban abiertas se restauran, con la misma posición y
-tamaño que antes. Los mapeados y valores de opciones son también las mismas.
+tamaño que antes. Las macros y valores de opciones son también las mismas.
    Lo que se restaura exactamente depende de la opción 'sessionoptions'. El
 valor predeterminado es «blank,buffers,curdir,folds,help,options,winsize».
 
 	blank		mantener ventanas vacías
 	buffers		todos los «buffers», no sólo los de una ventana
 	curdir		el directorio actual
-	folds		plegados, también los manualmente creados
-	help		la ventana de ayuda
-	options		todas las opciones y mapeados
+	folds		pliegues, también los manualmente creados
+	help			la ventana de ayuda
+	options		todas las opciones y macros
 	winsize		tamaño de ventanas
 
 Modifique esto según su convenienvia. Para también restaurar el tamaño de la

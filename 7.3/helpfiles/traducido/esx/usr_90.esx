@@ -218,6 +218,7 @@ Puede encontrar una explicación de cada funcionalidad y enlaces a
 más información aquí: |feature-list|.
    Para los atrevido, edite el archivo «feature.h». ¡También puede
 modificar el código fuente directamente!
+
 ==============================================================================
 *90.2*	MS-Windows
 
@@ -287,6 +288,7 @@ Si al final selecciona «do it», el programa de instalación llevará a cabo la
 acciones seleccionadas.
    El programa de instalación no reubica los archivos de tiempo de ejecución.
 Permanecerán en el lugar en el que los desempaquetó.
+
 En el caso de que no esté satisfecho con las características incluidas en
 los binarios proporcionados, puede intentar compilar Vim. Obtenga el archivo
 de fuentes de la misma ubicación de los binarios. Necesitará un compilador
@@ -348,7 +350,8 @@ automáticamente la ubicación de los archivos de tiempo de ejecución para
 la versión adecuada. Por otra parte, no funcionará si define en algún lugar
 la variable «$VIMRUNTIME».
    Si la actualización le satisface, puede borrar los archivos de la versión
-anterior. Consulte |90.5|. 
+anterior. Consulte |90.5|.
+
 ==============================================================================
 *90.4*	Problemas de instalación habituales
 
@@ -512,7 +515,7 @@ comprobarlo.
    Probablemente, el directorio «vim» contiene su archivo «vimrc» y
 otros archivos de tiempo de ejecución que ha creado. Puede que
 desee preservarlos.
- 
+
 ==============================================================================
 
 Tabla de contenidos: |usr_toc.txt|

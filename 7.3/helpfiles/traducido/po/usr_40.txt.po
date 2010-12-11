@@ -138,8 +138,7 @@ msgstr ""
 #: original/txt/usr_90.txt:417 original/txt/usr_90.txt:494
 #, no-wrap
 msgid "==============================================================================\n"
-msgstr "============================================================================"
-"==\n"
+msgstr "==============================================================================\n"
 
 #. type: Plain text
 #: original/txt/usr_toc.txt:4 original/txt/usr_01.txt:4
@@ -188,14 +187,12 @@ msgstr "BORRAR"
 #. type: Plain text
 #: original/txt/usr_40.txt:2
 #, no-wrap
-#| msgid "*usr_03.txt*\tFor Vim version 7.3.  Last change: 2006 Jun 21\n"
 msgid "*usr_40.txt*\tFor Vim version 7.3.  Last change: 2006 Jun 21\n"
 msgstr "*usr_40.esx*\tPara Vim version 7.3.  Último cambio: 21/6/2006\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:6
 #, no-wrap
-#| msgid "\t\t\t     Making big changes\n"
 msgid "\t\t\t      Make new commands\n"
 msgstr "\t\t\t      Crear órdenes nuevas\n"
 
@@ -225,10 +222,6 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_40.txt:19
 #, no-wrap
-#| msgid ""
-#| "     Next chapter: |usr_30.txt|  Editing programs\n"
-#| " Previous chapter: |usr_28.txt|  Folding\n"
-#| "Table of contents: |usr_toc.txt|\n"
 msgid ""
 "     Next chapter: |usr_41.txt|  Write a Vim script\n"
 " Previous chapter: |usr_32.txt|  The undo tree\n"
@@ -241,7 +234,6 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_40.txt:22
 #, no-wrap
-#| msgid "*05.3*\tSimple mappings\n"
 msgid "*40.1*\tKey mapping\n"
 msgstr "*40.1*\tCrear macros\n"
 
@@ -256,12 +248,10 @@ msgid ""
 "the function keys, except <F1>, have no predefined meaning in Vim, these are\n"
 "good choices to map.  Example: >\n"
 msgstr ""
-"En la sección |05.3| se explicaba una macro («mapping») sencilla. El "
-"principio\n"
+"En la sección |05.3| se explicaba una macro («mapping») sencilla. El principio\n"
 "es que una secuencia de pulsaciones de tecla se traduce a otra secuencia de\n"
 "pulsaciones de tecla. Es un mecanismo sencillo pero poderoso.\n"
-"   La forma más simple es asignar una tecla a una secuencia de teclas. "
-"Debido\n"
+"   La forma más simple es asignar una tecla a una secuencia de teclas. Debido\n"
 "a que las teclas de función, a excepción de <F1>, no tienen un significado\n"
 "predefinido para Vim, son buenos candidatos a los que asignar teclas.\n"
 "Ejemplo: >\n"
@@ -296,8 +286,7 @@ msgstr ""
 "la misma tecla. Esto hace que las macros sean más legíbles,\n"
 "permitiendo copiar y pegar el texto sin problema.\n"
 "   El carácter «:» inicia la línea de órdenes de Vim. La orden «:read !date»\n"
-"lee la salida de la orden «date» y la añade bajo la línea actual. La orden "
-"<CR>\n"
+"lee la salida de la orden «date» y la añade bajo la línea actual. La orden <CR>\n"
 "se requiere para ejecutar la orden «:read».\n"
 "   En este punto, el texto tiene el siguiente aspecto:\n"
 
@@ -414,7 +403,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:94
-#| msgid "LISTING ABBREVIATIONS"
 msgid "LISTING MAPPINGS"
 msgstr "LISTAR MACROS"
 
@@ -460,7 +448,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:116
-#| msgid "NOT WRAPPING"
 msgid "REMAPPING"
 msgstr "REASIGNACIÓN DE MACROS"
 
@@ -501,9 +488,6 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_40.txt:132
 #, no-wrap
-#| msgid ""
-#| ">\n"
-#| "\tmap Q gq\n"
 msgid "\t:map Q gq\n"
 msgstr "\t:map Q gq\n"
 
@@ -519,9 +503,6 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_40.txt:137
 #, no-wrap
-#| msgid ""
-#| ">\n"
-#| "\tmap Q gq\n"
 msgid "\t:map gQ Q\n"
 msgstr "\t:map gQ Q\n"
 
@@ -535,11 +516,9 @@ msgid ""
 "   To avoid keys to be mapped again, use the \":noremap\" command: >\n"
 msgstr ""
 "Lo que ocurre ahora es que cuando escribe «gQ», se asigna a la «Q». Por\n"
-"ahora, todo bien. Pero, a continuación, asigna «Q» a «gq», y por ello "
-"escribir\n"
+"ahora, todo bien. Pero, a continuación, asigna «Q» a «gq», y por ello escribir\n"
 "«gQ» resulta en «gq», y no entra en modo Ex.\n"
-"   Para evitar que las claves se asignen otra vez, utilice la orden «: "
-"noremap»: >\n"
+"   Para evitar que las claves se asignen otra vez, utilice la orden «: noremap»: >\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:144
@@ -633,7 +612,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:180
-#| msgid "DELETING"
 msgid "DELETE A MAPPING"
 msgstr "BORRAR UNA MACRO"
 
@@ -759,7 +737,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:236
-#| msgid "REMAPPING ABBREVIATIONS"
 msgid "MAPPINGS AND ABBREVIATIONS"
 msgstr "MACROS Y ABREVIATURAS"
 
@@ -950,7 +927,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:325
-#| msgid "MOVING TO OTHER ARGUMENTS"
 msgid "USING THE ARGUMENTS"
 msgstr "USAR ARGUMENTOS"
 

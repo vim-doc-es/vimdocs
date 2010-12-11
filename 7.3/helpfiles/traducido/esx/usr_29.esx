@@ -258,7 +258,7 @@ vertical dividida: >
 Esta ventana contiene todas una lista de todas las funciones. También hay
 más elementos, pero los puede ignorar. Ejecute «setlocal ts=99» para
 organizarlo un poco.
-   Defina un mapeado en esta ventana: >
+   Defina una macro en esta ventana: >
 
 	:nnoremap <buffer> <CR> 0ye<C-W>w:tag <C-R>"<CR>
 
