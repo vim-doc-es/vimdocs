@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2010-12-11 18:25+0200\n"
+"PO-Revision-Date: 2010-12-12 13:24+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -138,7 +138,8 @@ msgstr ""
 #: original/txt/usr_90.txt:417 original/txt/usr_90.txt:494
 #, no-wrap
 msgid "==============================================================================\n"
-msgstr "==============================================================================\n"
+msgstr "============================================================================"
+"==\n"
 
 #. type: Plain text
 #: original/txt/usr_toc.txt:4 original/txt/usr_01.txt:4
@@ -227,8 +228,8 @@ msgid ""
 " Previous chapter: |usr_32.txt|  The undo tree\n"
 "Table of contents: |usr_toc.txt|\n"
 msgstr ""
-" Siguiente capítulo: |usr_41.esx|  Escribir scripts para Vim\n"
-"  Capítulo anterior: |usr_32.esx|  El árbol de deshacer\n"
+"   Siguiente capítulo: |usr_41.esx|  Escribir scripts para Vim\n"
+"     Capítulo anterior: |usr_32.esx|  El árbol de deshacer\n"
 "Tabla de contenidos: |usr_toc.esx|\n"
 
 #. type: Plain text
@@ -457,6 +458,8 @@ msgid ""
 "The result of a mapping is inspected for other mappings in it.  For example, "
 "the mappings for <F2> above could be shortened to: >"
 msgstr ""
+"El resultado de una macro se inspecciona en busca de otras macros en ella. "
+"Por ejemplo, las macros para <F2> vistas anteriormente se pueden acortar: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:123
@@ -466,6 +469,9 @@ msgid ""
 "\t:imap <F2> <Esc><F3>\n"
 "\t:map <F3>  oDate: <Esc>:read !date<CR>kJ\n"
 msgstr ""
+"\t:map <F2> G<F3>\n"
+"\t:imap <F2> <Esc><F3>\n"
+"\t:map <F3>  oDate: <Esc>:read !date<CR>kJ\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:127
@@ -474,6 +480,10 @@ msgid ""
 "<F3> was pressed.  In Insert mode <F2> stops Insert mode with <Esc> and then "
 "also uses <F3>.  Then <F3> is mapped to do the actual work."
 msgstr ""
+"En modo Normal, <F2> tiene un macro para ir a la última línea, y después "
+"comportarse como si se hubiese pulsado <F3>. En modo Insertar, <F2> detiene "
+"el modo Insertar con <Esc>, y después usa también <F3>. Por ello, se usa la "
+"macro de <F3> para el trabajo real."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:130
@@ -617,7 +627,6 @@ msgstr "BORRAR UNA MACRO"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:183
-#, fuzzy
 #| msgid ""
 #| "To search for a string, use the \"/string\" command.  To find the word "
 #| "include, for example, use the command: >"
@@ -625,8 +634,8 @@ msgid ""
 "To remove a mapping use the \":unmap\" command.  Again, the mode the "
 "unmapping applies to depends on the command used:"
 msgstr ""
-"Para buscar una cadena, use la orden «/cadena». Para encontrar la palabra "
-"«include», por ejemplo, use la orden: >"
+"Use la orden «:unmap» para eliminar una macro. Una vez más, el modo sobre el "
+"que actúa la eliminación de la macro depende de la orden usada:"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:191
@@ -664,6 +673,8 @@ msgstr ""
 msgid ""
 "Notice that the five characters \"<C-A>\" stand for the single key CTRL-A."
 msgstr ""
+"Tenga en cuenta que los cinco caracters «<C-A>» representan una única tecla, "
+"«CTRL-A»."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:204
@@ -672,6 +683,9 @@ msgid ""
 "variations for different modes by now.  Be careful with this command, it "
 "can't be undone."
 msgstr ""
+"Use la orden |:mapclear| para eliminar todas las macros. Ahora puede "
+"averiguar las variantes según el modo. Tenga cuidado con esta orden, ya que "
+"su acción no se puede deshacer."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:207 original/txt/usr_42.txt:111
@@ -688,6 +702,11 @@ msgid ""
 ">\n"
 "\t:map <F8> :write <Bar> !checkin %<CR>\n"
 msgstr ""
+"La orden «:map» puede ir seguida de otra orden. Un carácter «|» separa ambas\n"
+"órdenes. Esto también significa que no puede usar un carácter «|» dentro de "
+"una\n"
+"orden «map». Para incluir uno, use <Bar> (cinco caracteres). Ejemplo: >\n"
+"\t:map <F8> :write <Bar> !checkin %<CR>\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:219
@@ -704,11 +723,12 @@ msgstr ""
 #: original/txt/usr_40.txt:221
 msgid "The first command tries to unmap \"a \", with a trailing space."
 msgstr ""
+"La primera orden intenta eliminar la macro de «a», con un espacio adicional."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:223
 msgid "When using a space inside a mapping, use <Space> (seven characters): >"
-msgstr ""
+msgstr "Al usar un espacio en una macro, use <Space> (siete caracteres): >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:225
@@ -720,6 +740,7 @@ msgstr "\t:map <Space> W\n"
 #: original/txt/usr_40.txt:227
 msgid "This makes the spacebar move a blank-separated word forward."
 msgstr ""
+"Esto hace que la barra espaciador avance una palabra separada por espacios."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:231
@@ -728,12 +749,15 @@ msgid ""
 "character is considered to be part of the mapping.  You can use |\", this "
 "starts a new, empty command with a comment.  Example: >"
 msgstr ""
+"No es posible insertar un comentario justo antes de una macro, ya que el "
+"carácter «\"» se considera parte de la macro. Puede usar «|\"», iniciando una "
+"nueva y vacía orden con un comentario. Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:233
 #, no-wrap
 msgid "\t:map <Space> W|     \" Use spacebar to move forward a word\n"
-msgstr ""
+msgstr "\t:map <Space> W|     \" Usa la barra espaciadora para avanzar un palabra\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:236
@@ -781,7 +805,7 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_40.txt:261
 msgid "ADDITIONALLY..."
-msgstr ""
+msgstr "ADEMÁS..."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:264
@@ -789,6 +813,8 @@ msgid ""
 "The <script> keyword can be used to make a mapping local to a script.  See |:"
 "map-<script>|."
 msgstr ""
+"Puede usar la palabra clave <script> para hacer que una macro sea local al "
+"script. Consulte |:map-<script>|."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:267
@@ -796,6 +822,8 @@ msgid ""
 "The <buffer> keyword can be used to make a mapping local to a specific "
 "buffer.  See |:map-<buffer>|"
 msgstr ""
+"La palabra clave <buffer> se puede usar para que una macro sea local a un "
+"búfer específico. Consulte |:map-<buffer>|."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:271
@@ -804,6 +832,9 @@ msgid ""
 "already exists.  Otherwise a new mapping simply overwrites the old one.  See "
 "|:map-<unique>|."
 msgstr ""
+"La palabra clave <unique> se puede usar para que definir una macro nueva "
+"falle cuando ya existe. De lo contrario, una nueva macro sencillamente "
+"sobreescribe el antiguo. Consulte |:map-<unique>|."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:274
@@ -811,24 +842,26 @@ msgid ""
 "To make a key do nothing, map it to <Nop> (five characters).  This will make "
 "the <F7> key do nothing at all: >"
 msgstr ""
+"Para que una tecla no haga nada, asígnelo a <Nop> (cinco caracteres). Lo "
+"siguiente hace que la tecla <F7> no tenga efecto alguno: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:276
 #, no-wrap
 msgid "\t:map <F7> <Nop>| map! <F7> <Nop>\n"
-msgstr ""
+msgstr "\t:map <F7¡> <Nop>| map! <F7> <Nop>\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:278
 msgid "There must be no space after <Nop>."
-msgstr ""
+msgstr "No debe haber ningún espacio después de <Nop>."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:281
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t\t     Typing command-line commands quickly\n"
 msgid "*40.2*\tDefining command-line commands\n"
-msgstr "\t\t    Ser eficaz con la línea de órdenes\n"
+msgstr "*40.2*\tDefinir órdenes de línea de órdenes\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:285
@@ -838,12 +871,16 @@ msgid ""
 "commands just like any other Command-line mode command.\n"
 "   To define a command, use the \":command\" command, as follows: >\n"
 msgstr ""
+"El editor Vim le permite crear sus propias órdenes. Puede ejecutar estas\n"
+"órdenes como cualquier otra orden del modo Línea de órdenes.\n"
+"   Para definir una orden, use la orden «:command» de la siguiente\n"
+"forma: >\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:287
 #, no-wrap
 msgid "\t:command DeleteFirst 1delete\n"
-msgstr ""
+msgstr "\t:command DeleteFirst 1delete\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:290
@@ -851,6 +888,8 @@ msgid ""
 "Now when you execute the command \":DeleteFirst\" Vim executes \":1delete\", "
 "which deletes the first line."
 msgstr ""
+"Ahora, cuando ejecuta la orden «DeleteFirst», Vim ejecuta «:1delete», que "
+"elimina la primera línea."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:295
@@ -864,18 +903,17 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:297
-#, fuzzy
 #| msgid ""
 #| "To get a complete index of all Vim commands, use the following command: >"
 msgid "To list the user-defined commands, execute the following command: >"
-msgstr "Para obtener un índice completo de todas los órdenes de Vim, use: >"
+msgstr "Use la siguiente orden para listar las órdenes de usuario: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:299
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:colder\n"
 msgid "\t:command\n"
-msgstr "\t:colder\n"
+msgstr "\t:command\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:303
@@ -884,13 +922,16 @@ msgid ""
 "abbreviated.  You need to type just enough to distinguish the command from "
 "another.  Command line completion can be used to get the full name."
 msgstr ""
+"Al igual que las órdenes integradas, las órdenes definidas por el usuario se "
+"pueden abreviar. Necesita teclear lo justo para distinguir una orden de "
+"otra. La finalización automática de línea de órdenes se puede usar para "
+"obtener el nombre completo."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:306
-#, fuzzy
 #| msgid "A NUMBER OF LINES"
 msgid "NUMBER OF ARGUMENTS"
-msgstr "UN NÚMERO DE LÍNEAS"
+msgstr "NÚMERO DE ARGUMENTOS"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:311
@@ -905,7 +946,7 @@ msgstr ""
 #: original/txt/usr_40.txt:313
 #, no-wrap
 msgid "\t:command -nargs=0 DeleteFirst 1delete\n"
-msgstr ""
+msgstr "\t:command -nargs=0 DeleteFirst 1delete\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:316
