@@ -113,7 +113,7 @@ endif
 let b:did_po_mode_ftplugin = 1
 
 setlocal comments=
-setlocal errorformat=%f:%l:\ %m
+setlocal errorformat=%-Gmsgfmt:%.%#,%f:%l:%c:\ %m,%f:%l:\ %m
 setlocal makeprg=msgfmt
 
 let b:po_path = '.,..,../src,../src/*'
