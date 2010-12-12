@@ -230,16 +230,32 @@ if !hasmapto('<Plug>RemoveFuzzy')
 	imap <buffer> <unique> <LocalLeader>Z <Plug>RemoveFuzzy
 	nmap <buffer> <unique> <LocalLeader>Z <Plug>RemoveFuzzy
 endif
-inoremap <buffer> <unique> <Plug>RemoveFuzzy <ESC>{vap:call <SID>RemoveFuzzy()<CR>i
-nnoremap <buffer> <unique> <Plug>RemoveFuzzy {vap:call <SID>RemoveFuzzy()<CR>
+inoremap <buffer> <unique> <Plug>RemoveFuzzy <ESC>:call <SID>RemoveFuzzy()<CR>i
+nnoremap <buffer> <unique> <Plug>RemoveFuzzy :call <SID>RemoveFuzzy()<CR>
+
+" {{{1 looks for the initial and final lines of a translation unit
+"
+" returns a 2 item list, with the initial and final numbers of the translation
+" unit
+function! s:UnitBoundary() " {{{1
+  " standard search options:
+  " accept match at cursor, don't move cursor, don't wrap around the buffer
+  let srchopts = "cnW"
+  let s = search('^$', 'b' . srchopts) + 1
+  let e = search('^$', srchopts) - 1
+  return {'s': s, 'e': e}
+endfunction "}}}1
 
 fu! <SID>RemoveFuzzy()
-	let line = getline(".")
-	if line =~ '^#,\s*fuzzy$'
-		exe "normal! dd"
-	elseif line =~ '^#,\(.*,\)\=\s*fuzzy'
-		exe 's/,\s*fuzzy//'
-	endif
+  let pos = getpos('.')
+  let r = s:UnitBoundary()
+  let b:last_del_line = 0
+  silent exec r.s . ',' . r.e 'g/^#,\s*fuzzy$/d|let b:last_del_line=line(".")'
+  silen exec r.s . ',' . r.e 'g/^#,.*fuzzy.*/s/fuzzy, //'
+  if b:last_del_line != 0 && b:last_del_line < pos[1]
+    let pos[1] = pos[1] - 1
+  endif
+  call setpos('.', pos)
 endf
 
 " Show PO translation statistics. (Only available on UNIX computers for now.)
