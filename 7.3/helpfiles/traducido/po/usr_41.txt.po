@@ -278,13 +278,21 @@ msgid ""
 "specific file type.  A complicated macro can be defined by a separate Vim\n"
 "script file.  You can think of other uses yourself.\n"
 msgstr ""
+"Su primer acercamiento a los scripts de Vim es el archivo vimrc. Vim lo lee al\n"
+"momento de arrancar y ejecuta las órdenes que se encuentren ahí. Allí puede\n"
+"dar el valor que prefiera a las opciones existentes. Y también puede usar\n"
+"cualquier orden (algunas veces se hace referencia a las órdenes que empiezan\n"
+"con «:» como órdenes Ex, o simplemente órdenes).\n"
+"   Los archivos de sintaxis también son scripts de Vim, porque son archivos en\n"
+"los que se configuran opciones para un tipo de archivo particular. Es posible\n"
+"definir una macro complicada en un archivo Vim separado. Usted puede también\n"
+"idear otros usos.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:45
-#, fuzzy
 #| msgid "It all starts with one simple command: >"
 msgid "Let's start with a simple example: >"
-msgstr "Comencemos con una simple orden: >"
+msgstr "Empecemos con un ejemplo sencillo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:60
@@ -305,6 +313,21 @@ msgid ""
 "\tYou can try out the examples by yanking the lines from the text here\n"
 "\tand executing them with :@\"\n"
 msgstr ""
+"\t:let i = 1\n"
+"\t:while i < 5\n"
+"\t:  echo \"count is\" i\n"
+"\t:  let i += 1\n"
+"\t:endwhile\n"
+"<\n"
+"\tNota:\n"
+"\tEn realidad en el ejemplo de arriba los caracteres «:» no son\n"
+"\tnecesarios. Sólo es necesario digitarlos al escribir una orden. En los\n"
+"\tarchivos de scripts de Vim es posible omitirlos. Aquí se muestran para\n"
+"\tevidenciar que son órdenes de la línea de órdenes, y no órdenes del\n"
+"\tmodo Normal.\n"
+"\tNota:\n"
+"\tPuede probar los ejemplos que se muestran aquí copiando el texto\n"
+"\tcorrespondiente, y ejecutándolo con la orden «:@\"»\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:62
