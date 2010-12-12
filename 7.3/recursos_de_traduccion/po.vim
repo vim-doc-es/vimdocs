@@ -431,7 +431,7 @@ fu! <SID>fmt_whole_file()
 	"exe "!msgmerge % % -o %"
 endf
 
-" return the initial and final line numbers of the text corresponding to the
+"{{{1 return the initial and final line numbers of the text corresponding to the
 " msgid.
 "
 " returns a dictionary, with two keys: s, and e, which contain, respectively,
@@ -441,7 +441,7 @@ endf
 " the contents of msgid are defined to start with a line starting with the
 " text 'msgid', and to end in the line previous to the closest one downwards
 " starting with the 'msgstr' text
-function! s:MsgIdLocation()
+function! s:MsgIdLocation() "{{{1
   " standard search options:
   " accept match at cursor, don't move cursor, don't wrap around the buffer
   let srchopts = "cnW"
@@ -468,7 +468,7 @@ function! s:MsgIdLocation()
     " throw something, msgid folloed by msgid
   endif
   return {'s': s, 'e': e_next - 1}
-endfunction
+endfunction "}}}1
 
 " contents of msgstr are defined as
 " text from the line that starts with the 'msgstr' text
