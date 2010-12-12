@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2010-12-09 16:51+0100\n"
+"PO-Revision-Date: 2010-12-11 17:20-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: es\n"
@@ -195,7 +195,7 @@ msgstr "*usr_41.esx*\tPara Vim versión 7.3.  Último cambio: 20/7/2010\n"
 #: original/txt/usr_41.txt:6
 #, no-wrap
 msgid "\t\t\t      Write a Vim script\n"
-msgstr "\t\t\t     Escribir un script para Vim\n"
+msgstr "\t\t\t     Escribir scripts para Vim\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:11
@@ -239,13 +239,13 @@ msgstr ""
 "|41.7|\tDefinición de funciones\n"
 "|41.8|\tListas y Diccionarios\n"
 "|41.9|\tExcepciones\n"
-"|41.10|\tVarious remarks\n"
-"|41.11|\tWriting a plugin\n"
-"|41.12|\tWriting a filetype plugin\n"
-"|41.13|\tWriting a compiler plugin\n"
-"|41.14|\tWriting a plugin that loads quickly\n"
-"|41.15|\tWriting library scripts\n"
-"|41.16|\tDistributing Vim scripts\n"
+"|41.10|\tObservaciones\n"
+"|41.11|\tEscribir extensiones\n"
+"|41.12|\tEscribir extensiones para tipo de archivo\n"
+"|41.13|\tEscribir extensiones para compiladores\n"
+"|41.14|\tEscribir extensiones que carguen rápidamente\n"
+"|41.15|\tEscribir bibliotecas\n"
+"|41.16|\tDistribuir scripts de Vim\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:32
@@ -3038,10 +3038,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1449
-#, fuzzy, no-wrap
-#| msgid "*31.5*\tVarious\n"
+#, no-wrap
 msgid "*41.10*\tVarious remarks\n"
-msgstr "*31.5*\tVarios\n"
+msgstr "*41.10*\tObservaciones\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1452
@@ -3406,10 +3405,9 @@ msgstr "\t:let b:did_indent = 1\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1619
-#, fuzzy, no-wrap
-#| msgid "*05.4*\tAdding a plugin\t\t\t\t\t*add-plugin* *plugin*\n"
+#, no-wrap
 msgid "*41.11*\tWriting a plugin\t\t\t\t*write-plugin*\n"
-msgstr "*05.4*\tAñadir una extensión\t\t\t\t*add-plugin* *plugin*\n"
+msgstr "*41.11*\tEscribir extensiones\t\t\t\t*write-plugin*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1623
@@ -4228,10 +4226,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2040
-#, fuzzy, no-wrap
-#| msgid "*05.4*\tAdding a plugin\t\t\t\t\t*add-plugin* *plugin*\n"
+#, no-wrap
 msgid "*41.12*\tWriting a filetype plugin\t*write-filetype-plugin* *ftplugin*\n"
-msgstr "*05.4*\tAñadir una extensión\t\t\t\t*add-plugin* *plugin*\n"
+msgstr "*41.12*\tEscribir extensiones para tipo de archivo\t*write-filetype-plugin* *ftplugin*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2044
@@ -4637,7 +4634,7 @@ msgstr ""
 #: original/txt/usr_41.txt:2226
 #, no-wrap
 msgid "*41.13*\tWriting a compiler plugin\t\t*write-compiler-plugin*\n"
-msgstr ""
+msgstr "*41.13*\tEscribir extensiones para compiladores\t\t*write-compiler-plugin*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2230
@@ -4730,7 +4727,7 @@ msgstr ""
 #: original/txt/usr_41.txt:2272
 #, no-wrap
 msgid "*41.14*\tWriting a plugin that loads quickly\t*write-plugin-quickload*\n"
-msgstr ""
+msgstr "*41.14*\tEscribir extensiones que carguen rápidamente\t*write-plugin-quickload*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2276
@@ -4889,7 +4886,7 @@ msgstr ""
 #: original/txt/usr_41.txt:2348
 #, no-wrap
 msgid "*41.15*\tWriting library scripts\t\t\t*write-library-script*\n"
-msgstr ""
+msgstr "*41.15*\tEscribir bibliotecas\t\t\t*write-library-script*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2352
@@ -5038,7 +5035,7 @@ msgstr ""
 #: original/txt/usr_41.txt:2412
 #, no-wrap
 msgid "*41.16*\tDistributing Vim scripts\t\t\t*distribute-script*\n"
-msgstr ""
+msgstr "*41.16*\tDistribuir scripts de Vim\t\t\t*distribute-script*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2415
