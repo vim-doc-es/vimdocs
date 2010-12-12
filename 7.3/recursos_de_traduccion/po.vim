@@ -475,22 +475,22 @@ endfunction
 
 " TODO finish docstring
 function! CopyMsgidMsgStr()
-  let r_a = @a
+  let r_a = @"
 
   let id_l = s:MsgIdLocation()
   let ms_l = s:MsgStrLocation(id_l.e + 1)
   exe 'silent ' . ms_l.s . ',' . ms_l.e . 'delete _'
-  exe 'silent ' . id_l.s . ',' . id_l.e . 'yank a'
+  exe 'silent ' . id_l.s . ',' . id_l.e . 'yank'
   call cursor(id_l.e, 1)
-  put a
+  put
   call cursor(id_l.e + 1, 1)
   normal "_de
-  let @a = 'msgstr'
-  normal "aP
+  let @" = 'msgstr'
+  normal P
   " TODO decide where do we want the cursor after deleting and pasting
   " TODO exception raising and handling
   " TODO mapping
   " TODO docs
 
-  let @a = r_a
+  let @" = r_a
 endfunction
