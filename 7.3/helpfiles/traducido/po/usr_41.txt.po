@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
 "PO-Revision-Date: 2010-12-11 17:20-0500\n"
-"Last-Translator: Automatically generated\n"
+"Last-Translator: Javier Rojas <jerojasro@devnull.li>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -315,7 +315,7 @@ msgid ""
 msgstr ""
 "\t:let i = 1\n"
 "\t:while i < 5\n"
-"\t:  echo \"count is\" i\n"
+"\t:  echo \"cuenta es\" i\n"
 "\t:  let i += 1\n"
 "\t:endwhile\n"
 "<\n"
@@ -331,10 +331,8 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:62
-#, fuzzy
-#| msgid "The output could look like this:"
 msgid "The output of the example code is:"
-msgstr "La salida puede presentar este aspecto:"
+msgstr "La salida generada por el ejemplo tiene el siguiente aspecto:"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:67
@@ -345,6 +343,10 @@ msgid ""
 "\tcount is 3 ~\n"
 "\tcount is 4 ~\n"
 msgstr ""
+"\tcuenta es 1 ~\n"
+"\tcuenta es 2 ~\n"
+"\tcuenta es 3 ~\n"
+"\tcuenta es 4 ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:70
@@ -352,12 +354,14 @@ msgid ""
 "In the first line the \":let\" command assigns a value to a variable.  The "
 "generic form is: >"
 msgstr ""
+"En la primera línea la orden «:let» le asigna un valor a una variable. La "
+"forma genérica de hacerlo es: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:72
 #, no-wrap
 msgid "\t:let {variable} = {expression}\n"
-msgstr ""
+msgstr "\t:let {variable} = {expresión}\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:76
@@ -367,6 +371,9 @@ msgid ""
 "the number one.\n"
 "   The \":while\" command starts a loop.  The generic form is: >\n"
 msgstr ""
+"En este caso el nombre de la variable es «i» y la expresión es simplemente un\n"
+"valor, el número uno.\n"
+"   La orden «:while» inicia un ciclo. La forma genérica de esta orden es: >\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:80
@@ -376,6 +383,9 @@ msgid ""
 "\t:  {statements}\n"
 "\t:endwhile\n"
 msgstr ""
+"\t:while {condición}\n"
+"\t:  {sentencias}\n"
+"\t:endwhile\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:87
@@ -388,6 +398,12 @@ msgid ""
 "\tIf you happen to write a while loop that keeps on running, you can\n"
 "\tinterrupt it by pressing CTRL-C (CTRL-Break on MS-Windows).\n"
 msgstr ""
+"Las sentencias hasta el «:endwhile» correspondiente se ejecutan mientras que\n"
+"la {condición} siga cumpliéndose. La condición aquí es la expresión «i < 5».\n"
+"Ésta es verdadera cuando la variable «i» es menor a cinco.\n"
+"\tNota:\n"
+"\tSi llega a escribir un ciclo «while» que nunca termina de ejecutarse,\n"
+"\tpuede interrumpirlo presionando CTRL-C (o CTRL-Break en MS-Windows).\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:90
