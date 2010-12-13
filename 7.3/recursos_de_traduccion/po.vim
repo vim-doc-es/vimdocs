@@ -255,6 +255,12 @@ fu! <SID>RemoveFuzzy()
   if b:last_del_line != 0 && b:last_del_line < pos[1]
     let pos[1] = pos[1] - 1
   endif
+  let b:last_del_line = 0
+  let b:cnt_del_lines = 0
+  silen exec r.s . ',' . r.e 'g/^#|/d|let b:cnt_del_lines+=1|let b:last_del_line=line(".")'
+  if b:last_del_line != 0 && b:last_del_line < pos[1]
+    let pos[1] = pos[1] - b:cnt_del_lines
+  endif
   call setpos('.', pos)
 endf
 
