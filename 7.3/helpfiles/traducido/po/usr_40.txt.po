@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2010-12-12 13:24+0200\n"
+"PO-Revision-Date: 2010-12-14 11:30+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -446,6 +446,16 @@ msgid ""
 "example, when <Esc> is displayed in color, it stands for the escape character.\n"
 "When it has the same color as the other text, it is five characters.\n"
 msgstr ""
+"La primera columna de la lista muestra el modo en el que la macro tiene\n"
+"efecto. Esto es, «n» para el modo Normal, «i» para el modo Insertar, etc... "
+"Se\n"
+"usa un espacio en blanco con las macros definidas mediante «:map», y por\n"
+"ello, con efecto en el modo Visual y Normal.\n"
+"   Un propósito útil de listar las macros es comprobar si se han reconocido\n"
+"las teclas especiales con la forma <> (sólo funciona con compatibilidad con\n"
+"color). Por ejemplo, cuando <Esc> se muestra en color, simboliza el carácter\n"
+"de escape. Cuando tiene el mismo color que el resto del texto, simboliza\n"
+"cinco caracteres.\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:116
@@ -718,6 +728,11 @@ msgid ""
 "\t:unmap a | unmap b\n"
 "\t:unmap a| unmap b\n"
 msgstr ""
+"El mismo problema afecta a la orden «:unmap», con la adición de que debe\n"
+"tener cuidado con espacio vacío adicional al final de la línea. Estas dos\n"
+"órdenes son diferentes: >\n"
+"\t:unmap a | unmap b\n"
+"\t:unmap a| unmap b\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:221
@@ -781,6 +796,20 @@ msgid ""
 "   An exception is when a mapping is ambiguous.  Suppose you have done two\n"
 "mappings: >\n"
 msgstr ""
+"Las abreviaturas se parecen mucho a las macros del modo Insetar. Los\n"
+"argumentos se tratan de la misma forma. La diferencia principal es la\n"
+"forma en que se ejecutan. Una abreviatura se inicia tecleando un\n"
+"carácter que no sea una palabra, a continuación de una palabra. Una\n"
+"macro se inicia al teclear el último carácter.\n"
+"   Otra diferencia es que los caracteres que usa para una abreviatura\n"
+"se insertan en el texto mientras los teclea. Al ejecutar la abreviatura,\n"
+"estos caracteres se eliminan y reemplazan por el resultado de la\n"
+"abreviatura. Al teclear los caracteres de una macro, no se inserta nada\n"
+"hasta que introduce el último carácter que lo inicia. Si se define la\n"
+"opción 'showcmd', los caracteres tecleados se muestran en la última\n"
+"línea de la ventana de Vim.\n"
+"   Una excepción es cuando la macro es ambigua. Suponga que tiene\n"
+"dos macros: >\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:252
@@ -801,6 +830,11 @@ msgid ""
 "space, for example, the first mapping is applied, resulting in \"foo\", and "
 "then the space is inserted."
 msgstr ""
+"Ahora, cuando escribe «aa», Vim no sabe si afecta a la primera o segunda "
+"macro. Espera a que se introduzca otro carácter. Si es una «a», se ejecuta "
+"la segunda macro, y cuyo resultado es «bar». Si es un espacio, por ejemplo, "
+"se ejecuta la primera macro, resultando en «foo», para después insertar el "
+"espacio."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:261
@@ -941,6 +975,10 @@ msgid ""
 "example :DeleteFirst command takes no arguments, so you could have defined "
 "it as follows: >"
 msgstr ""
+"Las órdenes definidas por el usuario aceptan una serie de argumentos. El "
+"número de argumentos se debe especificar con la opción «-nargs». Por "
+"ejemplo, la orden de ejemplo «DeleteFirst» no permite argumentos, así que lo "
+"debe definir del siguiente modo: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:313
@@ -954,6 +992,9 @@ msgid ""
 "However, because zero arguments is the default, you do not need to add \"-"
 "nargs=0\".  The other values of -nargs are as follows:"
 msgstr ""
+"Sin embargo, ya que cero argumentos es el comportamiento predefinido, no "
+"necesita añadir «-nargs=0». A continuación puede ver los otros valores de "
+"«-nargs»:"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:322
@@ -965,6 +1006,11 @@ msgid ""
 "\t-nargs=?\tZero or one argument\n"
 "\t-nargs=+\tOne or more arguments\n"
 msgstr ""
+"\t-nargs=0\tSin argumentos\n"
+"\t-nargs=1\tUn argumento\n"
+"\t-nargs=*\tCualquier número de argumentos\n"
+"¿\t-nargs=?\tCero o más argumentos\n"
+"\t-nargs=+\tUno o más argumentos\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:325
@@ -977,25 +1023,26 @@ msgid ""
 "Inside the command definition, the arguments are represented by the <args> "
 "keyword.  For example: >"
 msgstr ""
+"Dentro de la definición de la orden, los argumentos se representan con la "
+"palabra clave <args>. Por ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:330
 #, no-wrap
 msgid "\t:command -nargs=+ Say :echo \"<args>\"\n"
-msgstr ""
+msgstr "\t:command -nargs=+ Say :echo \"<args>\"\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:332
-#, fuzzy
 #| msgid "Now you type \"prev\":"
 msgid "Now when you type >"
-msgstr "Ahora escriba «prev»:"
+msgstr "Ahora, cuando escribe >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:334
 #, no-wrap
 msgid "\t:Say Hello World\n"
-msgstr ""
+msgstr "\t:Say Hello World\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:337
@@ -1003,12 +1050,14 @@ msgid ""
 "Vim echoes \"Hello World\".  However, if you add a double quote, it won't "
 "work.  For example: >"
 msgstr ""
+"Vim muestra «Hello World». Sin embargo, no funcionará si añade una comilla "
+"doble. Por ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:339
 #, no-wrap
 msgid "\t:Say he said \"hello\"\n"
-msgstr ""
+msgstr "\t:Say he said \"hello\"\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:342
@@ -1016,23 +1065,26 @@ msgid ""
 "To get special characters turned into a string, properly escaped to use as "
 "an expression, use \"<q-args>\": >"
 msgstr ""
+"Para que los caracteres especiales se conviertan en una cadena, "
+"correctamente escapada para usarla como expresión, use «<q-args>»: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:344
 #, no-wrap
 msgid "\t:command -nargs=+ Say :echo <q-args>\n"
-msgstr ""
+msgstr "\t:command -nargs=+ Say :echo <q-args>\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:346
 msgid "Now the above \":Say\" command will result in this to be executed: >"
 msgstr ""
+"Ahora, la anterior orden «:Say» resultará en lo siguiente al ejecutarse: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:348
 #, no-wrap
 msgid "\t:echo \"he said \\\"hello\\\"\"\n"
-msgstr ""
+msgstr "\t:echo \"he said \\\"hello\\\"\"\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:354
@@ -1044,26 +1096,29 @@ msgid ""
 "\t:command -nargs=* DoIt :call AFunction(<f-args>)\n"
 "\t:DoIt a b c\n"
 msgstr ""
+"La palabra clave <f-args> contiene la misma información que la palabra\n"
+"clave <args>, pero en un formato adecuado para usar argumentos que\n"
+"invocan funciones. Por ejemplo: >\n"
+"\t:command -nargs=* DoIt :call AFunction(<f-args>)\n"
+"\t:DoIt a b c\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:356
-#, fuzzy
 #| msgid "results in the following:"
 msgid "Executes the following command: >"
-msgstr "El resultado es el siguiente:"
+msgstr "Ejecuta la siguiente orden: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:358
 #, no-wrap
 msgid "\t:call AFunction(\"a\", \"b\", \"c\")\n"
-msgstr ""
+msgstr "\t:call AFunction(\"a\", \"b\", \"c\")\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:361
-#, fuzzy
 #| msgid "PREDEFINED RANGES"
 msgid "LINE RANGE"
-msgstr "RANGOS PREDEFINIDOS"
+msgstr "RANGO DE LÍNEA"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:365
@@ -1072,6 +1127,9 @@ msgid ""
 "defining such a command, you need to specify a -range option.  The values "
 "for this option are as follows:"
 msgstr ""
+"Algunas órdenes toman un rango como argumento. Para indicar a Vim que está "
+"definiendo una orden así, debe especificar una opción «-range». A "
+"continuación puede ver los valores de esta opción:"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:370
@@ -1100,15 +1158,15 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:380
-#, fuzzy
 #| msgid "OPTIONS"
 msgid "OTHER OPTIONS"
-msgstr "OPCIONES"
+msgstr "OTRAS OPCIONES"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:382
 msgid "Some of the other options and keywords are as follows:"
 msgstr ""
+"A continuación puede ver algunas de las otras opciones y palabras clave:"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:399
@@ -1138,20 +1196,20 @@ msgid ""
 "Finally, you have the <lt> keyword.  It stands for the character <.  Use "
 "this to escape the special meaning of the <> items mentioned."
 msgstr ""
+"Por último, tiene la palabra clave <lt>. Simboliza el carácter «<». Úselo "
+"para escapar el significado especial de los elementos <> mencionados."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:405
-#, fuzzy
 #| msgid "FINDING AN IDENTIFIER"
 msgid "REDEFINING AND DELETING"
-msgstr "ENCONTRAR UN IDENTIFICADOR"
+msgstr "REDEFINIR Y ELIMINAR"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:407
-#, fuzzy
 #| msgid "To edit the last one, you use the command: >"
 msgid "To redefine the same command use the ! argument: >"
-msgstr "Use la siguiente orden para editar el último: >"
+msgstr "Use el argumento «!» para redefinir la misma orden: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:410
@@ -1160,6 +1218,8 @@ msgid ""
 "\t:command -nargs=+ Say :echo \"<args>\"\n"
 "\t:command! -nargs=+ Say :echo <q-args>\n"
 msgstr ""
+"\t:command -nargs=+ Say :echo \"<args>\"\n"
+"¡\t:command! -nargs=+ Say :echo <q-args>\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:413
@@ -1172,42 +1232,39 @@ msgstr ""
 #: original/txt/usr_40.txt:415
 #, no-wrap
 msgid "\t:delcommand SaveIt\n"
-msgstr ""
+msgstr "\t:delcommand SaveIt\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:417
-#, fuzzy
 #| msgid "To close a window, use the command: >"
 msgid "To delete all the user commands: >"
-msgstr "Para cerrar la ventana usa la orden: >"
+msgstr "Para eliminar todas las órdenes de usuario: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:419
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:colder\n"
 msgid "\t:comclear\n"
-msgstr "\t:colder\n"
+msgstr "\t:comclear\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:421
 msgid "Careful, this can't be undone!"
-msgstr ""
+msgstr "¡Cuidado, no se puede deshacer!"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:423
-#, fuzzy
 #| msgid "More about manual folding in the reference manual: |fold-manual|"
 msgid "More details about all this in the reference manual: |user-commands|."
 msgstr ""
-"Para más información acerca del plegado manual, consulte la siguiente "
-"sección en el manual de referencia: |fold-manual|."
+"Puede encontrar más detalles en el manual de referencia: |user-commands|."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:426
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "*10.3*\tCommand ranges\n"
 msgid "*40.3*\tAutocommands\n"
-msgstr "*10.3*\tRangos de aplicación\n"
+msgstr "*40.3*\tAutocommands\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:434
