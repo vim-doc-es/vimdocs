@@ -500,6 +500,9 @@ msgid ""
 "and octal numbers.   A minus sign is also used for subtraction.  Compare this\n"
 "with the previous example: >\n"
 msgstr ""
+"Se puede obtener números negativos añadiéndoles un signo menos. Esto funciona\n"
+"también para números octales y hexadecimales. El signo menos también se usa\n"
+"para la substracción. Compare lo siguiente con el ejemplo anterior: >\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:125
@@ -508,6 +511,8 @@ msgid ""
 "\t:echo 0x7f -036\n"
 "<\t97 ~\n"
 msgstr ""
+"\t:echo 0x7f -036\n"
+"<\t97 ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:130
@@ -517,19 +522,23 @@ msgid ""
 "example, to avoid the confusion with a negative number above, put a space "
 "between the minus sign and the following number: >"
 msgstr ""
+"En las expresiones se ignoran los espacios en blanco. Sin embargo, es\n"
+"recomendable usarlo para separar elementos, para hacer que las expresiones\n"
+"sean más legibles. Por ejemplo, para evitar confundir el ejemplo anterior con\n"
+"un número negativo, ponga un espacio entre el signo menos y el número que lo\n"
+"sigue: >\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:132
 #, no-wrap
 msgid "\t:echo 0x7f - 036\n"
-msgstr ""
+msgstr "\t:echo 0x7f - 036\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:135
-#, fuzzy, no-wrap
-#| msgid "*31.5*\tVarious\n"
+#, no-wrap
 msgid "*41.2*\tVariables\n"
-msgstr "*31.5*\tVarios\n"
+msgstr "*41.2*\tVariables\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:138
@@ -537,6 +546,9 @@ msgid ""
 "A variable name consists of ASCII letters, digits and the underscore.  It "
 "cannot start with a digit.  Valid variable names are:"
 msgstr ""
+"Los nombres de variables pueden consistir de las letras del código ASCII, "
+"dígitos, y el guión bajo. No pueden empezar con dígitos. Los siguientes son "
+"nombres válidos de variables:"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:144
@@ -548,6 +560,11 @@ msgid ""
 "\tFuncLength\n"
 "\tLENGTH\n"
 msgstr ""
+"\tcontador\n"
+"\t_aap3\n"
+"\tnombre_de_variable_largo_con_guion_bajo\n"
+"\tFuncLongitud\n"
+"\tLONGITUD\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:148
