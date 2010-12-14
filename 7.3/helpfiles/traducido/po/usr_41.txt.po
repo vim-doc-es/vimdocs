@@ -384,7 +384,7 @@ msgid ""
 "\t:endwhile\n"
 msgstr ""
 "\t:while {condición}\n"
-"\t:  {sentencias}\n"
+"\t:  {instrucciones}\n"
 "\t:endwhile\n"
 
 #. type: Plain text
@@ -398,9 +398,9 @@ msgid ""
 "\tIf you happen to write a while loop that keeps on running, you can\n"
 "\tinterrupt it by pressing CTRL-C (CTRL-Break on MS-Windows).\n"
 msgstr ""
-"Las sentencias hasta el «:endwhile» correspondiente se ejecutan mientras que\n"
-"la {condición} siga cumpliéndose. La condición aquí es la expresión «i < 5».\n"
-"Ésta es verdadera cuando la variable «i» es menor a cinco.\n"
+"Las instrucciones hasta el «:endwhile» correspondiente se ejecutan mientras\n"
+"que la {condición} siga cumpliéndose. La condición aquí es la expresión\n"
+"«i < 5».  Ésta es verdadera cuando la variable i es menor a cinco.\n"
 "\tNota:\n"
 "\tSi llega a escribir un ciclo «while» que nunca termina de ejecutarse,\n"
 "\tpuede interrumpirlo presionando CTRL-C (o CTRL-Break en MS-Windows).\n"
@@ -411,12 +411,15 @@ msgid ""
 "The \":echo\" command prints its arguments.  In this case the string \"count "
 "is\" and the value of the variable i.  Since i is one, this will print:"
 msgstr ""
+"La orden «:echo» imprime en pantalla los argumentos que se le pasen. En este "
+"caso son la cadena «cuenta es» y el valor de la variable i. Como i vale uno, "
+"se imprimirá:"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:92
 #, no-wrap
 msgid "\tcount is 1 ~\n"
-msgstr ""
+msgstr "\tcuenta es 1 ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:96
@@ -425,6 +428,8 @@ msgid ""
 "let i = i + 1\".  This adds one to the variable i and assigns the new value "
 "to the same variable."
 msgstr ""
+"Luego está la orden «:let i += 1». Ésta tiene el mismo efecto que «:let i = i "
+"+ 1».  Le añade uno a la variable i y asigna el resultado a la misma variable."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:99
