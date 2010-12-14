@@ -437,6 +437,8 @@ msgid ""
 "The example was given to explain the commands, but would you really want to "
 "make such a loop it can be written much more compact: >"
 msgstr ""
+"El ejemplo se dio para ilustrar las órdenes usadas; si se quisiera un ciclo "
+"con la funcionalidad mostrada, se puede escribir algo mucho más compacto: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:103
@@ -446,6 +448,9 @@ msgid ""
 "\t:  echo \"count is\" i\n"
 "\t:endfor\n"
 msgstr ""
+"\t:for i in range(1, 4)\n"
+"\t:  echo \"cuenta es\" i\n"
+"\t:endfor\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:106
@@ -453,11 +458,13 @@ msgid ""
 "We won't explain how |:for| and |range()| work until later.  Follow the "
 "links if you are impatient."
 msgstr ""
+"El funcionamiento de |:for| y |range()| se explicará después. Siga los enlaces "
+"si no desea esperar."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:109
 msgid "THREE KINDS OF NUMBERS"
-msgstr ""
+msgstr "TRES CLASES DE NÚMEROS"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:115
@@ -469,6 +476,11 @@ msgid ""
 "number, it will be interpreted as an octal number!\n"
 "   The \":echo\" command always prints decimal numbers.  Example: >\n"
 msgstr ""
+"Los números pueden ser decimales, hexadecimales, u octales. Un número\n"
+"hexadecimal empieza con «0x» o «0X». Por ejemplo, «0x1f» es 31 en decimal. Un\n"
+"número octal empieza con cero. «017» es 15 en decimal. Tenga cuidado: no ponga\n"
+"ceros al comienzo de un número decimal, ¡será interpretado como un octal!\n"
+"   La orden «:echo» siempre muestra los números como decimales. Ejemplo: >\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:118
@@ -477,6 +489,8 @@ msgid ""
 "\t:echo 0x7f 036\n"
 "<\t127 30 ~\n"
 msgstr ""
+"\t:echo 0x7f 036\n"
+"<\t127 30 ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:122
