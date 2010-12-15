@@ -624,6 +624,11 @@ msgid ""
 "uses an \"s:count\" variable, it will be a different copy, local to that "
 "script.  More about script-local variables here: |script-variable|."
 msgstr ""
+"Ya que el ámbito de «s:cuenta» es local al script, puede estar seguro de que "
+"cargar el archivo «otro.vim» no hará cambios a dicha variable. Si «otro.vim» "
+"también usa una variable «s:cuenta», será una copia distinta, local al ámbito "
+"de ese script. Puede encontrar más información acerca de las variables "
+"locales a un script en |script-variable|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:170
@@ -631,6 +636,8 @@ msgid ""
 "There are more kinds of variables, see |internal-variables|.  The most often "
 "used ones are:"
 msgstr ""
+"Existen más clases de variables, ver |internal-variables|.  Las que se usan "
+"más frecuentemente son:"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:175
@@ -641,13 +648,15 @@ msgid ""
 "\tg:name\t\tglobal variable (also in a function)\n"
 "\tv:name\t\tvariable predefined by Vim\n"
 msgstr ""
+"\tb:nombre\t\tvariable local a un búfer\n"
+"\tw:nombre\t\tvariable local a una ventana\n"
+"\tg:nombre\t\tvariable global (incluso dentro de funciones)\n"
+"\tv:nombre\t\tvariable predefinida por Vim\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:178
-#, fuzzy
-#| msgid "DELETING A LINE"
 msgid "DELETING VARIABLES"
-msgstr "ELIMINAR UNA LÍNEA"
+msgstr "ELIMINAR VARIABLES"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:181
@@ -655,12 +664,15 @@ msgid ""
 "Variables take up memory and show up in the output of the \":let\" command.  "
 "To delete a variable use the \":unlet\" command.  Example: >"
 msgstr ""
+"Las variables que aparecen en el listado que genera la orden «:let» consumen "
+"recursos de memoria. Para eliminar una variable use la orden «:unlet». "
+"Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:183
 #, no-wrap
 msgid "\t:unlet s:count\n"
-msgstr ""
+msgstr "\t:unlet s:cuenta\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:187
@@ -669,12 +681,16 @@ msgid ""
 "uses.  If you are not sure if the variable exists, and don't want an error "
 "message when it doesn't, append !: >"
 msgstr ""
+"Esta orden elimina la variable «s:count», local al script actual, para "
+"liberar la memoria que ésta usa. Si no está seguro de que una variable "
+"exista, y no quiere obtener mensajes de error si no existe, añada ! a la "
+"orden: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:189
 #, no-wrap
 msgid "\t:unlet! s:count\n"
-msgstr ""
+msgstr "\t:unlet! s:cuenta\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:193
@@ -683,6 +699,9 @@ msgid ""
 "automatically freed.  The next time the script executes, it can still use "
 "the old value.  Example: >"
 msgstr ""
+"Cuando termina la ejecución de un script, no se liberan automáticamente los "
+"recursos usados por sus variables locales. La próxima vez que se ejecute el "
+"script, los valores viejos estarán disponibles. Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:199
@@ -694,6 +713,11 @@ msgid ""
 "\t:let s:call_count = s:call_count + 1\n"
 "\t:echo \"called\" s:call_count \"times\"\n"
 msgstr ""
+"\t:if !exists(\"s:cuenta_llamadas\")\n"
+"\t:  let s:cuenta_llamadas = 0\n"
+"\t:endif\n"
+"\t:let s:cuenta_llamadas = s:cuenta_llamadas + 1\n"
+"\t:echo \"llamado\" s:cuenta_llamadas \"veces\"\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:203
