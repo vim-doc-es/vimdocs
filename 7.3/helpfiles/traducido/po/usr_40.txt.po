@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2010-12-14 11:30+0200\n"
+"PO-Revision-Date: 2010-12-14 16:05+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -228,8 +228,8 @@ msgid ""
 " Previous chapter: |usr_32.txt|  The undo tree\n"
 "Table of contents: |usr_toc.txt|\n"
 msgstr ""
-"   Siguiente capítulo: |usr_41.esx|  Escribir scripts para Vim\n"
-"     Capítulo anterior: |usr_32.esx|  El árbol de deshacer\n"
+"    Siguiente capítulo: |usr_41.esx|  Escribir scripts para Vim\n"
+"      Capítulo anterior: |usr_32.esx|  El árbol de deshacer\n"
 "Tabla de contenidos: |usr_toc.esx|\n"
 
 #. type: Plain text
@@ -571,7 +571,7 @@ msgstr ""
 "\t:vnoremap\tVisual\n"
 "\t:nnoremap\tNormal\n"
 "\t:onoremap\tOperator-pending\n"
-"¡\t:noremap!\tInsertar y Línea de órdenes\n"
+"\t:noremap!\tInsertar y Línea de órdenes\n"
 "\t:inoremap\tInsertar\n"
 "\t:cnoremap\tLínea de órdenes\n"
 
@@ -934,6 +934,10 @@ msgid ""
 "\tuse \":X\", \":Next\" and \":Print\".  The underscore cannot be used!  You\n"
 "\tcan use digits, but this is discouraged.\n"
 msgstr ""
+"\tNota:\n"
+"\tLas órdenes definidas por el usuario deben comenzar con una letra\n"
+"\tmayúscula. No puede usar «:X», «:Next» y «:Print». ¡No puede usar el\n"
+"\tguión bajo. Puede usar dígitos, pero no se recomienda.\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:297
@@ -1009,7 +1013,7 @@ msgstr ""
 "\t-nargs=0\tSin argumentos\n"
 "\t-nargs=1\tUn argumento\n"
 "\t-nargs=*\tCualquier número de argumentos\n"
-"¿\t-nargs=?\tCero o más argumentos\n"
+"\t-nargs=?\tCero o más argumentos\n"
 "\t-nargs=+\tUno o más argumentos\n"
 
 #. type: Plain text
@@ -1149,12 +1153,16 @@ msgid ""
 "defines the SaveIt command, which writes out the specified range to the file "
 "\"save_file\": >"
 msgstr ""
+"Cuando un rango se especifica, las palabras clave <line1> y <line2> obtienen "
+"el valor de la primera y última línea del rango. Por ejemplo, la siguiente "
+"orden define la orden SaveIt, que escribe el rango especificado al archivo "
+"«save_file»: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:377
 #, no-wrap
 msgid "\t:command -range=% SaveIt :<line1>,<line2>write! save_file\n"
-msgstr ""
+msgstr "\t:command -range=% SaveIt :<line1>,<line2>write! save_file\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:380
@@ -1219,7 +1227,7 @@ msgid ""
 "\t:command! -nargs=+ Say :echo <q-args>\n"
 msgstr ""
 "\t:command -nargs=+ Say :echo \"<args>\"\n"
-"¡\t:command! -nargs=+ Say :echo <q-args>\n"
+"\t:command! -nargs=+ Say :echo <q-args>\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:413
@@ -1227,6 +1235,8 @@ msgid ""
 "To delete a user command use \":delcommand\".  It takes a single argument, "
 "which is the name of the command.  Example: >"
 msgstr ""
+"Use «:delcommand» para eliminar una orden de usuario. Toma un único "
+"argumento, el nombre de la orden. Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:415
@@ -1278,6 +1288,17 @@ msgid ""
 "avoid typing many commands.  Use them carelessly and they will cause a lot of\n"
 "trouble.\n"
 msgstr ""
+"Una orden automática (Autocommand) es una orden a ejecutar en respuesta otro\n"
+"evento, un archivo siendo leído y editado o un cambio en un búfer, por "
+"ejemplo.\n"
+"Por ejemplo, Vim puede editar archivos comprimidos a través de las órdenes\n"
+"automáticas.\n"
+"El complemento |gzip| hace uso de esto.\n"
+"   Las órdenes automáticas son muy potentes. Úselos con cuidado, y le "
+"ayudarán\n"
+"a disminuir el número de órdenes que introduce. Úselos sin cuidado, y "
+"generarán\n"
+"un gran número de problemas.\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:437
@@ -1285,6 +1306,8 @@ msgid ""
 "Suppose you want to replace a datestamp on the end of a file every time it "
 "is written.  First you define a function: >"
 msgstr ""
+"Suponga que desea reemplazar una marca de tiempo al final del archivo cada "
+"vez que se escriba. Primero, define una función: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:442
@@ -1295,6 +1318,10 @@ msgid ""
 "\t:  read !date\n"
 "\t:endfunction\n"
 msgstr ""
+"\t:function DateInsert()\n"
+"\t:  $delete\n"
+"\t:  read !date\n"
+"\t:endfunction\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:445
@@ -1302,12 +1329,14 @@ msgid ""
 "You want this function to be called each time, just before a file is "
 "written.  This will make that happen: >"
 msgstr ""
+"Desea que esta función se invoque justo antes de guardar un archivo.  Lo "
+"siguiente lo logra este objetivo: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:447
 #, no-wrap
 msgid "\t:autocmd FileWritePre *  call DateInsert()\n"
-msgstr ""
+msgstr "\t:autocmd FileWritePre *  call DateInsert()\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:455
@@ -1326,7 +1355,7 @@ msgstr ""
 #: original/txt/usr_40.txt:457
 #, no-wrap
 msgid "\t:autocmd [group] {events} {file_pattern} [nested] {command}\n"
-msgstr ""
+msgstr "\t:autocmd [group] {events} {file_pattern} [nested] {command}\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:465
@@ -1344,7 +1373,7 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_40.txt:468
 msgid "EVENTS"
-msgstr ""
+msgstr "EVENTOS"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:473
@@ -1359,7 +1388,7 @@ msgstr ""
 #: original/txt/usr_40.txt:475
 #, no-wrap
 msgid "\t:autocmd BufReadPost *.gsm  set filetype=asm\n"
-msgstr ""
+msgstr "\t:autocmd BufReadPost *.gsm  set filetype=asm\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:480
@@ -1374,7 +1403,7 @@ msgstr ""
 #: original/txt/usr_40.txt:482
 #, no-wrap
 msgid "\t:autocmd Filetype text  source ~/.vim/abbrevs.vim\n"
-msgstr ""
+msgstr "\t:autocmd Filetype text  source ~/.vim/abbrevs.vim\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:484
@@ -1386,19 +1415,18 @@ msgstr ""
 #: original/txt/usr_40.txt:486
 #, no-wrap
 msgid "\t:autocmd BufNewFile *.[ch]  0read ~/skeletons/skel.c\n"
-msgstr ""
+msgstr "\t:autocmd BufNewFile *.[ch]  0read ~/skeletons/skel.c\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:488
-#, fuzzy
 #| msgid "See |/\\s| for the whole list of these ranges."
 msgid "See |autocmd-events| for a complete list of events."
-msgstr "Consulte |/\\s| para la lista completa de rangos."
+msgstr "Consulte |autocmd-events| para una lista completa de eventos."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:491
 msgid "PATTERNS"
-msgstr ""
+msgstr "PATRONES"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:496
@@ -1456,7 +1484,7 @@ msgstr ""
 #: original/txt/usr_40.txt:524
 #, no-wrap
 msgid "\t:autocmd! FileWritePre *\n"
-msgstr ""
+msgstr "\t:autocmd! FileWritePre *\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:527
@@ -1467,10 +1495,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:530
-#, fuzzy
 #| msgid "TESTING"
 msgid "LISTING"
-msgstr "PRUEBA"
+msgstr "LISTAR"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:532
@@ -1487,7 +1514,7 @@ msgstr ""
 #: original/txt/usr_40.txt:534
 #, no-wrap
 msgid "\t:autocmd\n"
-msgstr ""
+msgstr "\t:autocmd\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:538
@@ -1501,7 +1528,7 @@ msgstr ""
 #: original/txt/usr_40.txt:540
 #, no-wrap
 msgid "\t:autocmd BufNewFile\n"
-msgstr ""
+msgstr "\t:autocmd BufNewFile\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:542
@@ -1512,7 +1539,7 @@ msgstr ""
 #: original/txt/usr_40.txt:544
 #, no-wrap
 msgid "\t:autocmd * *.c\n"
-msgstr ""
+msgstr "\t:autocmd * *.c\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:547
@@ -1525,12 +1552,12 @@ msgstr ""
 #: original/txt/usr_40.txt:549
 #, no-wrap
 msgid "\t:autocmd cprograms\n"
-msgstr ""
+msgstr "\t:autocmd cprograms\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:552
 msgid "GROUPS"
-msgstr ""
+msgstr "GRUPOS"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:558
@@ -1555,10 +1582,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:565
-#, fuzzy
 #| msgid "This works with a name as well."
 msgid "This will do the same as: >"
-msgstr "Esto también funciona con un nombre."
+msgstr "El resultado sería idéntico con: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:568
@@ -1567,6 +1593,8 @@ msgid ""
 "\t:autocmd cprograms BufReadPost *.c,*.h :set sw=4 sts=4\n"
 "\t:autocmd cprograms BufReadPost *.cpp   :set sw=3 sts=3\n"
 msgstr ""
+"\t:autocmd cprograms BufReadPost *.c,*.h :set sw=4 sts=4\n"
+"\t:autocmd cprograms BufReadPost *.cpp   :set sw=3 sts=3\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:570
@@ -1577,14 +1605,13 @@ msgstr ""
 #: original/txt/usr_40.txt:572
 #, no-wrap
 msgid "\t:autocmd! cprograms\n"
-msgstr ""
+msgstr "\t:autocmd! cprograms\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:575
-#, fuzzy
 #| msgid "TESTING"
 msgid "NESTING"
-msgstr "PRUEBA"
+msgstr "ANIDADO"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:580
@@ -1605,7 +1632,7 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_40.txt:585
 msgid "EXECUTING AUTOCOMMANDS"
-msgstr ""
+msgstr "EJECUTAR AUTOCOMMANDS"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:588
@@ -1619,7 +1646,8 @@ msgstr ""
 #: original/txt/usr_40.txt:590
 #, no-wrap
 msgid "\t:autocmd BufReadPost *.new  execute \"doautocmd BufReadPost \" . expand(\"<afile>:r\")\n"
-msgstr ""
+msgstr "\t:autocmd BufReadPost *.new  execute \"doautocmd BufReadPost \" . "
+"expand(\"<afile>:r\")\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:595
@@ -1634,7 +1662,7 @@ msgstr ""
 #: original/txt/usr_40.txt:597
 #, no-wrap
 msgid "\t:doautocmd BufReadPost tryout.c\n"
-msgstr ""
+msgstr "\t:doautocmd BufReadPost tryout.c\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:601
@@ -1653,10 +1681,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:607
-#, fuzzy
 #| msgid "NORMAL MODE SCRIPTS"
 msgid "USING NORMAL MODE COMMANDS"
-msgstr "MODO NORMAL EN SCRIPTS"
+msgstr "USAR ÓRDENES DEL MODO NORMAL"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:611
@@ -1670,7 +1697,7 @@ msgstr ""
 #: original/txt/usr_40.txt:613
 #, no-wrap
 msgid "\t:autocmd BufReadPost *.log normal G\n"
-msgstr ""
+msgstr "\t:autocmd BufReadPost *.log normal G\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:625
@@ -1696,6 +1723,8 @@ msgid ""
 "\t:autocmd BufReadPost *.chg execute \"normal ONew entry:\\<Esc>\" |\n"
 "\t\t\\ 1read !date\n"
 msgstr ""
+"\t:autocmd BufReadPost *.chg execute \"normal ONew entry:\\<Esc>\" |\n"
+"\t\t\\ 1read !date\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:631
@@ -1715,10 +1744,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:638
-#, fuzzy
 #| msgid "IGNORING CASE"
 msgid "IGNORING EVENTS"
-msgstr "IGNORAR MAYÚSCULAS/MINÚSCULAS"
+msgstr "IGNORAR EVENTOS"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:642
@@ -1733,7 +1761,7 @@ msgstr ""
 #: original/txt/usr_40.txt:644
 #, no-wrap
 msgid "\t:set eventignore=WinEnter,WinLeave\n"
-msgstr ""
+msgstr "\t:set eventignore=WinEnter,WinLeave\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:646
@@ -1744,10 +1772,10 @@ msgstr "Use la siguiente orden para centrar un rango de líneas: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:648
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:set noignorecase\n"
 msgid "\t:set eventignore=all\n"
-msgstr "\t:set noignorecase\n"
+msgstr "\t:set eventignore=all\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:650
@@ -1756,10 +1784,10 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:652
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:set noignorecase\n"
 msgid "\t:set eventignore=\n"
-msgstr "\t:set noignorecase\n"
+msgstr "\t:set eventignore=\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:656
