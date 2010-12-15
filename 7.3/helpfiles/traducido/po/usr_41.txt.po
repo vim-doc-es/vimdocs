@@ -574,12 +574,15 @@ msgid ""
 "   These variables are global.  To see a list of currently defined variables\n"
 "use this command: >\n"
 msgstr ""
+"«foo+bar» y «6var» son nombres inválidos.\n"
+"   Estas variables son globales. Para ver un listado de las variables\n"
+"definidas actualmente, use la siguiente orden: >\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:150
 #, no-wrap
 msgid "\t:let\n"
-msgstr ""
+msgstr "\t:let\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:156
@@ -590,6 +593,12 @@ msgid ""
 "worst.  To avoid this, you can use a variable local to a script file by "
 "prepending \"s:\".  For example, one script contains this code: >"
 msgstr ""
+"Puede usar variables globales en cualquier parte. Esto implica que cuando "
+"usa la variable «cuenta» en un archivo, ésta también puede ser usada en otro "
+"archivo, lo que al menos crea confusión, y en el peor de los casos genera "
+"problemas reales. Para evitar este problema, se puede declarar variables como "
+"locales respecto al archivo del script, anteponiendo «s:» a su nombre. Por "
+"ejemplo, considere un script con las siguientes instrucciones: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:162
@@ -601,6 +610,11 @@ msgid ""
 "\t:  let s:count += 1\n"
 "\t:endwhile\n"
 msgstr ""
+"\t:let s:cuenta = 1\n"
+"\t:while s:cuenta < 5\n"
+"\t:  source otro.vim\n"
+"\t:  let s:cuenta += 1\n"
+"\t:endwhile\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:167
