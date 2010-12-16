@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2010-12-14 16:05+0200\n"
+"PO-Revision-Date: 2010-12-16 18:24+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -369,6 +369,13 @@ msgid ""
 "\t:imap\t\tInsert\n"
 "\t:cmap\t\tCommand-line\n"
 msgstr ""
+"\t:map\t\tNormal, Visual y Operator-pending\n"
+"\t:vmap\t\tVisual\n"
+"\t:nmap\t\tNormal\n"
+"\t:omap\t\tOperator-pending\n"
+"\t:map!\t\tInsertar y Command-line\n"
+"\t:imap\t\tInsertar\n"
+"\t:cmap\t\tLínea de órdenes\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:79
@@ -377,6 +384,10 @@ msgid ""
 "or \"y\", and you are expected to type the motion command or a text object.  "
 "Thus when you type \"dw\", the \"w\" is entered in operator-pending mode."
 msgstr ""
+"El modo Operator-pending es cuando introduce un carácter como operador, por "
+"ejemplo «y» o «d», y se espera a que introduzca la orden de desplazamiento o "
+"un objeto de texto. Por ello, cuando teclea «dw», la «w» es introducida en "
+"el modo Operator-pending"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:85
@@ -387,6 +398,11 @@ msgid ""
 "to do is to define <F7> to select the current program block.  You can do "
 "this with the following command: >"
 msgstr ""
+"Suponga que desea definir <F7> para que la orden «d<F7>» elimine el bloque "
+"de un programa escrito en C (el texto se cierra con corchetes, {}). De forma "
+"similar «y<F7>» copiaría el bloque del programa al registro sin nombre. Por "
+"ello, lo que debe hacer es definir <F7> para seleccionar el bloque actual "
+"del programa. La siguiente orden le permite hacer esto: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:87
@@ -401,6 +417,9 @@ msgid ""
 "just like you typed it.  This mapping is useful if typing a { on your "
 "keyboard is a bit difficult."
 msgstr ""
+"Esto provoca que <F7> realice una selección  de bloque «a{» en el modo "
+"Operator-pending, justo como lo escribió. Esta macro es útil si teclear «a{» "
+"en su teclado es difícil."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:94
@@ -567,12 +586,12 @@ msgid ""
 "\t:inoremap\tInsert\n"
 "\t:cnoremap\tCommand-line\n"
 msgstr ""
-"\t:noremap\tNormal, Visual y Operator-pending\n"
+"\t:noremap\t\tNormal, Visual y Operator-pending\n"
 "\t:vnoremap\tVisual\n"
 "\t:nnoremap\tNormal\n"
 "\t:onoremap\tOperator-pending\n"
-"\t:noremap!\tInsertar y Línea de órdenes\n"
-"\t:inoremap\tInsertar\n"
+"\t:noremap!\t\tInsertar y Línea de órdenes\n"
+"\t:inoremap\t\tInsertar\n"
 "\t:cnoremap\tLínea de órdenes\n"
 
 #. type: Plain text
@@ -659,6 +678,13 @@ msgid ""
 "\t:iunmap\t\tInsert\n"
 "\t:cunmap\t\tCommand-line\n"
 msgstr ""
+"\t:unmap\t\tNormal, Visual y Operator-pending\n"
+"\t:vunmap\t\tVisual\n"
+"\t:nunmap\t\tNormal\n"
+"\t:ounmap\t\tOperator-pending\n"
+"\t:unmap!\t\tInsertar y Línea de órdenes\n"
+"\t:iunmap\t\tInsertar\n"
+"\t:cunmap\t\tLínea de órdenes\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:195
@@ -667,6 +693,9 @@ msgid ""
 "pending mode, but not in Visual mode.  First define it for all three modes, "
 "then delete it for Visual mode: >"
 msgstr ""
+"Dispone de un truco para definir una macro que funciona tanto modo Operator-"
+"pending como normal, pero no en modo visual. Primero, defina la macro para "
+"los tres modos, y después borre la macro del modo Visual: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:198
@@ -1350,12 +1379,20 @@ msgid ""
 "performs the \":write\".\n"
 "   The general form of the :autocmd command is as follows: >\n"
 msgstr ""
+"«FileWritePre» es el evento que activa esta orden automática. Justo\n"
+"antes de (pre) guardar un archivo. El carácter «*» es el patrón con el que\n"
+"comparar el nombre del archivo. En este caso, coincide con todos los\n"
+"archivos.\n"
+"   Si activa esta orden, al ejecutar «:write» Vim comprobará cualquier\n"
+"orden automática que coincida con «FileWritePre», ejecutándolo,\n"
+"para finalizar realizando la acción «:write».\n"
+"  A continuación tiene la forma habitual de la orden «:autocmd»: >\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:457
 #, no-wrap
 msgid "\t:autocmd [group] {events} {file_pattern} [nested] {command}\n"
-msgstr "\t:autocmd [group] {events} {file_pattern} [nested] {command}\n"
+msgstr "\t:autocmd [grupo] {eventos} {patrón_archivo} [anidado] {orden}\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:465
@@ -1369,6 +1406,15 @@ msgid ""
 "The optional [nested] flag allows for nesting of autocommands (see below), and\n"
 "finally, {command} is the command to be executed.\n"
 msgstr ""
+"El elemento [grupo] es opcional. Se usa al gestionar e invocar las órdenes "
+"(más\n"
+"información más adelante). El parámetro {eventos} es una lista separada por\n"
+"comas de eventos que inician la orden.\n"
+"  {patrón_archivo} es un nombre de archivo, a menudo con comodines. Por\n"
+"ejemplo, usar «*.txt» provoca que la orden automática afecte a todos los\n"
+"archivos cuyo nombre termina en «.txt».\n"
+"La elemento opcional [anidado] permite anidar órdenes automáticas (a\n"
+"continuación), y, por último, {orden} es la orden a ejecutar.\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:468
@@ -1383,6 +1429,11 @@ msgid ""
 "example, you know that \"*.gsm\" files are GNU assembly language.  To get "
 "the syntax file right, define this autocommand: >"
 msgstr ""
+"Uno de los eventos más útiles es «BufReadPost». Se inicia después de editar "
+"un nuevo archivo. Se usa habitualmente para definir valores para opciones. "
+"Por ejemplo, sabe que los archivos «.gsm» están escritos en lenguaje "
+"ensamblador de GNU. Especifique esta orden para obtener la adecuada sintaxis "
+"de archivo: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:475
@@ -1398,6 +1449,10 @@ msgid ""
 "certain type of file is edited.  For example, to load a list of "
 "abbreviations for text files: >"
 msgstr ""
+"Si Vim es capaz de detectar el tipo de archivo, definirá la opción "
+"'filetype' automáticamente. Los siguiente incia el evento «Filetype». Puede "
+"usarlo para iniciar una acción al editar un tipo de archivo en particular. "
+"Por ejemplo, para cargar una lista de abreviaturas de archivos de texto: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:482
@@ -1410,6 +1465,8 @@ msgstr "\t:autocmd Filetype text  source ~/.vim/abbrevs.vim\n"
 msgid ""
 "When starting to edit a new file, you could make Vim insert a skeleton: >"
 msgstr ""
+"Puede hacer que Vim inserte una plantilla básica al editar un nuevo archivo: "
+">"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:486
@@ -1437,6 +1494,11 @@ msgid ""
 "   The usual file wildcards can be used.  Here is a summary of the most often\n"
 "used ones:\n"
 msgstr ""
+"El argumento {patrón_archivo] puede ser una lista separada por comas de\n"
+"patrones de archivo. Por ejemplo, \"*.c,*.h\" coincide con los archivos\n"
+"terminados en «.c» y «.h».\n"
+"   Puede usar los comodines de archivo habituales. Aquí tiene un resumen\n"
+"de los más usados:\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:502
@@ -1461,6 +1523,15 @@ msgid ""
 "of the file (\"/home/biep/readme.txt\") and the relative path (e.g.,\n"
 "\"biep/readme.txt\").\n"
 msgstr ""
+"Cuando el patrón incluye una barra inversa «/», Vim comparará los\n"
+"nombres de directorio. Sin la barra, sólo se usará la última parte\n"
+"del nombre de archivo. Por ejemplo, «*.txt» coincide con\n"
+"«/home/biep/readme.txt». El patrón «/home/biep/*» también\n"
+"coincidiría, pero no «home/foo/*.txt».\n"
+"   Al incluir la barra, Vim compara el patrón con la ruta absoluta del\n"
+"archivo, «/home/biep/readme.txt» y con la ruta relativa, esto es,\n"
+"«biep/readme.txt»).\n"
+"  "
 
 #. type: Plain text
 #: original/txt/usr_40.txt:516
@@ -1479,6 +1550,8 @@ msgid ""
 "To delete an autocommand, use the same command as what it was defined with, "
 "but leave out the {command} at the end and use a !.  Example: >"
 msgstr ""
+"Para eliminar una orden automática, use la misma orden con la que se "
+"definió, pero omitiendo la {orden} al final y usando «!». Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:524
@@ -1492,6 +1565,8 @@ msgid ""
 "This will delete all autocommands for the \"FileWritePre\" event that use "
 "the \"*\" pattern."
 msgstr ""
+"Esto eliminaría todas las órdenes automáticas para el evento «FileWritePre» "
+"que usan el patrón «*»."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:530
@@ -1501,14 +1576,13 @@ msgstr "LISTAR"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:532
-#, fuzzy
 #| msgid ""
 #| "To split the current window and jump to the tag under the cursor use this "
 #| "command: >"
 msgid "To list all the currently defined autocommands, use this: >"
 msgstr ""
-"Use la siguiente orden para dividir la ventana actual, y saltar a la "
-"etiqueta bajo el cursor: >"
+"Use la siguiente orden para listar todas las órdenes automáticas definidas "
+"en ese  momento: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:534
@@ -1523,6 +1597,10 @@ msgid ""
 "list only part of the commands, specify the group, event and/or pattern.  "
 "For example, to list all BufNewFile autocommands: >"
 msgstr ""
+"Esta lista puede ser muy largo, en particular si se utiliza la detección de "
+"tipo de archivo. Para listar sólo parte de las órdenes, especifique el "
+"grupo, evento y/o patrón. Por ejemplo, para listar todas las órdenes "
+"automáticas para «BufNewFile»: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:540
@@ -1533,7 +1611,7 @@ msgstr "\t:autocmd BufNewFile\n"
 #. type: Plain text
 #: original/txt/usr_40.txt:542
 msgid "To list all autocommands for the pattern \"*.c\": >"
-msgstr ""
+msgstr "Para listar todas las órdenes automáticas para el patrón «*.c»: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:544
@@ -1547,6 +1625,8 @@ msgid ""
 "Using \"*\" for the event will list all the events.  To list all "
 "autocommands for the cprograms group: >"
 msgstr ""
+"Usar «*» como el evento lista todos los eventos. Para listar todas las "
+"órdenes automáticas del grupo cprograms: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:549
@@ -1569,6 +1649,12 @@ msgid ""
 "   When defining several autocommands for a certain group, use the \":augroup\"\n"
 "command.  For example, let's define autocommands for C programs: >\n"
 msgstr ""
+"El elemento {grupo}, usado al definir una orden automática, agrupa\n"
+"órdenes automáticas relacionadas. Se puede usar para eliminar todas las\n"
+"órdenes automáticas en un grupo particular, por ejemplo.\n"
+"   Al definir varias órdenes automáticas para un grupo particular, use la\n"
+"orden «:augroup». Por ejemplo, vamos a definir unas órdenes automáticas\n"
+"para programas C: >\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:563
@@ -1579,6 +1665,10 @@ msgid ""
 "\t:  autocmd BufReadPost *.cpp   :set sw=3 sts=3\n"
 "\t:augroup END\n"
 msgstr ""
+"\t:augroup cprograms\n"
+"\t:  autocmd BufReadPost *.c,*.h :set sw=4 sts=4\n"
+"\t:  autocmd BufReadPost *.cpp   :set sw=3 sts=3\n"
+"\t:augroup END\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:565
@@ -1599,7 +1689,7 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_40.txt:570
 msgid "To delete all autocommands in the \"cprograms\" group: >"
-msgstr ""
+msgstr "Para eliminar todas las órdenes automáticas en el grupo «cprograms»: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:572
@@ -1756,6 +1846,10 @@ msgid ""
 "the following causes events for entering and leaving a window to be ignored: "
 ">"
 msgstr ""
+"A veces, no querrá iniciar una orden automática. La opción 'eventignore' "
+"contiene una lista de eventos a ignorar. Por ejemplo, lo siguiente provoca "
+"que se ignoren los siguientes eventos iniciados al entrar y salir de un "
+"programa: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:644
@@ -1765,10 +1859,9 @@ msgstr "\t:set eventignore=WinEnter,WinLeave\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:646
-#, fuzzy
 #| msgid "To center a range of lines, use the following command: >"
 msgid "To ignore all events, use the following command: >"
-msgstr "Use la siguiente orden para centrar un rango de líneas: >"
+msgstr "Use la siguiente orden para ignorar todos los eventos: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:648
@@ -1780,7 +1873,7 @@ msgstr "\t:set eventignore=all\n"
 #. type: Plain text
 #: original/txt/usr_40.txt:650
 msgid "To set it back to the normal behavior, make 'eventignore' empty: >"
-msgstr ""
+msgstr "Para volver al comportamiento anterior, vacíe 'eventignore': >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:652
