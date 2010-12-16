@@ -522,11 +522,11 @@ msgid ""
 "example, to avoid the confusion with a negative number above, put a space "
 "between the minus sign and the following number: >"
 msgstr ""
-"En las expresiones se ignoran los espacios en blanco. Sin embargo, es\n"
-"recomendable usarlo para separar elementos, para hacer que las expresiones\n"
-"sean más legibles. Por ejemplo, para evitar confundir el ejemplo anterior con\n"
-"un número negativo, ponga un espacio entre el signo menos y el número que lo\n"
-"sigue: >\n"
+"En las expresiones se ignoran los espacios en blanco. Sin embargo, es "
+"recomendable usarlo para separar elementos, para hacer que las expresiones "
+"sean más legibles. Por ejemplo, para evitar confundir el ejemplo anterior con "
+"un número negativo, ponga un espacio entre el signo menos y el número que lo "
+"sigue: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:132
@@ -596,7 +596,7 @@ msgstr ""
 "Puede usar variables globales en cualquier parte. Esto implica que cuando "
 "usa la variable «cuenta» en un archivo, ésta también puede ser usada en otro "
 "archivo, lo que al menos crea confusión, y en el peor de los casos genera "
-"problemas reales. Para evitar este problema, se puede declarar variables como "
+"problemas reales. Para evitar este problema, puede declarar variables como "
 "locales respecto al archivo del script, anteponiendo «s:» a su nombre. Por "
 "ejemplo, considere un script con las siguientes instrucciones: >"
 
@@ -699,7 +699,7 @@ msgid ""
 "automatically freed.  The next time the script executes, it can still use "
 "the old value.  Example: >"
 msgstr ""
-"Cuando termina la ejecución de un script, no se liberan automáticamente los "
+"Cuando la ejecución de un script termina, no se liberan automáticamente los "
 "recursos usados por sus variables locales. La próxima vez que se ejecute el "
 "script, los valores viejos estarán disponibles. Ejemplo: >"
 
@@ -726,12 +726,15 @@ msgid ""
 "Its argument is the name of the variable you want to check.  Not the "
 "variable itself! If you would do this: >"
 msgstr ""
+"La función «exists()» comprueba la existencia de una variable. Recibe como "
+"argumento el nombre de la variable a comprobar. ¡No la variable como tal! Si "
+"intenta esto: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:205
 #, no-wrap
 msgid "\t:if !exists(s:call_count)\n"
-msgstr ""
+msgstr "\t:if !exists(s:cuenta_llamadas)\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:218
@@ -750,11 +753,27 @@ msgid ""
 "\t\t:if \"true\"\n"
 "<\tThe \"true\" will be interpreted as a zero, thus as false!\n"
 msgstr ""
+"el valor de «s:cuenta_llamadas» será usado como el nombre de variable que\n"
+"exists() revisará. Ése no es el efecto esperado.\n"
+"   El símbolo de exclamación ! niega un valor. Cuando un valor es verdadero,\n"
+"se vuelve falso. Cuando es falso, se vuelve verdadero. Puede leer este símbolo\n"
+"como «not» (negación lógica). Así, «if !exists()» se lee como «if not\n"
+"exists()».\n"
+"   Vim considera como verdadero cualquier valor distinto de cero. Cero\n"
+"equivale a falso.\n"
+"\tNota:\n"
+"\tVim convierte las cadenas de texto a números de manera automática\n"
+"\tcuando se espera un número. Cuando se hace esta conversión con una\n"
+"\tcadena que no empieza con un dígito el número resultante es cero.\n"
+"\tDebido a esto, tenga cuidado con instrucciones como: >\n"
+"\t\t:if \"verdadero\"\n"
+"\ten este caso, la cadena «verdadero» será interpretada como un cero, ¡y\n"
+"\tpor tanto como falso!\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:221
 msgid "STRING VARIABLES AND CONSTANTS"
-msgstr ""
+msgstr "VARIABLES CADENAS DE TEXTO Y CONSTANTES CADENAS DE TEXTO"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:228
@@ -767,6 +786,14 @@ msgid ""
 "   To assign a string value to a variable, you need to use a string constant.\n"
 "There are two types of these.  First the string in double quotes: >\n"
 msgstr ""
+"Hasta ahora sólo se han usado números como valores de variables. También es\n"
+"posible usar cadenas de texto. Los tipos básicos de variables que Vim soporta\n"
+"son números y cadenas. El tipo de cada variable es dinámico, y se fija cada\n"
+"vez que se asigna un valor a una variable mediante «:let». Refiérase a |41.8|\n"
+"para más información acerca de tipos.\n"
+"   Para asignar un valor de tipo cadena a una variable, debe usar una\n"
+"constante de cadena. Hay dos tipos de estas constantes. El primero es la\n"
+"cadena con comillas dobles: >\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:232
@@ -776,6 +803,9 @@ msgid ""
 "\t:echo name\n"
 "<\tpeter ~\n"
 msgstr ""
+"\t:let nombre = \"pedro\"\n"
+"\t:echo nombre\n"
+"<\tpedro ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:235
@@ -783,6 +813,8 @@ msgid ""
 "If you want to include a double quote inside the string, put a backslash in "
 "front of it: >"
 msgstr ""
+"Si quiere incluir una comilla doble en el contenido de la cadena, ponga una "
+"barra inversa antes de la misma: > "
 
 #. type: Plain text
 #: original/txt/usr_41.txt:239
@@ -792,12 +824,17 @@ msgid ""
 "\t:echo name\n"
 "<\t\"peter\" ~\n"
 msgstr ""
+"\t:let nombre = \"\\\"pedro\\\"\"\n"
+"\t:echo nombre\n"
+"<\t\"pedro\" ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:241
 msgid ""
 "To avoid the need for a backslash, you can use a string in single quotes: >"
 msgstr ""
+"Para evitar el uso de la barra inversa, puede usar una cadena con comillas "
+"sencillas: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:245
@@ -807,6 +844,9 @@ msgid ""
 "\t:echo name\n"
 "<\t\"peter\" ~\n"
 msgstr ""
+"\t:let nombre = '\"pedro\"'\n"
+"\t:echo nombre\n"
+"<\t\"pedro\" ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:252
@@ -819,6 +859,13 @@ msgid ""
 "   In double-quote strings it is possible to use special characters.  Here are\n"
 "a few useful ones:\n"
 msgstr ""
+"En una cadena de comillas sencillas todos los caracteres tienen solamente su\n"
+"significado literal. Sólo la comilla sencilla es especial: debe usar dos\n"
+"seguidas para obtener una dentro de una cadena. La barra inversa se considera\n"
+"literalmente, por lo que no es posible usarla para cambiar el significado del\n"
+"caracter después de ella.\n"
+"   En las cadenas de comillas dobles es posible usar caracteres especiales. A\n"
+"continuación algunos de los más usados:\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:262
@@ -834,6 +881,15 @@ msgid ""
 "\t\\<Esc>\t\t<Esc>\n"
 "\t\\<C-W>\t\tCTRL-W\n"
 msgstr ""
+"\t\\t\t\t<Tab>\n"
+"\t\\n\t\t<NL>, salto de línea\n"
+"\t\\r\t\t<CR>, <Enter>\n"
+"\t\\e\t\t<Esc>\n"
+"\t\\b\t\t<BS>, retroceso\n"
+"\t\\\"\t\t\"\n"
+"\t\\\\\t\t\\, barra inversa\n"
+"\t\\<Esc>\t\t<Esc>\n"
+"\t\\<C-W>\t\tCTRL-W\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:266
@@ -843,6 +899,10 @@ msgid ""
 "the special key \"name\".\n"
 "   See |expr-quote| for the full list of special items in a string.\n"
 msgstr ""
+"Los últimos dos sólo son ejemplos. Se puede usar la forma «\\<nombre>» para\n"
+"incluir la tecla «nombre».\n"
+"   Refiérase a |expr-quote| para ver la lista completa de elementos especiales\n"
+"en una cadena de texto.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:269
@@ -862,6 +922,13 @@ msgid ""
 "themselves.  Thus everywhere an expression is expected, you can use a number,\n"
 "string or variable.  Other basic items in an expression are:\n"
 msgstr ""
+"Vim tiene una forma expresiva, pero sencilla, de manejar expresiones. Puede\n"
+"leer la definición aquí: |expression-syntax|. A continuación mostraremos\n"
+"algunos de los elementos más comunes.\n"
+"   Los números, cadenas, y las variables mencionadas anteriormente son\n"
+"expresiones por sí mismas. Así que, en donde sea que se espere una expresión,\n"
+"puede usar un número, una cadena, o una variable. Otros de los elementos\n"
+"comunes en una expresión son:\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:280
@@ -871,11 +938,14 @@ msgid ""
 "\t&name\t\toption\n"
 "\t@r\t\tregister\n"
 msgstr ""
+"\t$NAME\t\tvariable de entorno\n"
+"\t&name\t\topción\n"
+"\t@r\t\tregistro\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:282
 msgid "Examples: >"
-msgstr ""
+msgstr "Ejemplos: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:286
@@ -885,20 +955,18 @@ msgid ""
 "\t:echo \"Your home directory is\" $HOME\n"
 "\t:if @a > 5\n"
 msgstr ""
+"\t:echo \"El valor de 'tabstop' es\" &ts\n"
+"\t:echo \"Su directorio personal es\" $HOME\n"
+"\t:if @a > 5\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:289
-#, fuzzy
-#| msgid ""
-#| "In case you have messed up an option value, you can set it back to the "
-#| "default by putting an ampersand (&) after the option name.  Example: >"
 msgid ""
 "The &name form can be used to save an option value, set it to a new value, "
 "do something and restore the old value.  Example: >"
 msgstr ""
-"En caso de que haya descolocado el valor de una opción, puede devolverlo a "
-"la opción por defecto con un et (&) tras el nombre de la opción.  Por "
-"ejemplo: >"
+"Se puede usar la forma &name para guardar el valor de una opción, fijarla a "
+"un nuevo valor, hacer algo, y restaurar el valor original. Por ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:294
@@ -909,6 +977,10 @@ msgid ""
 "\t:/The Start/,$delete\n"
 "\t:let &ic = save_ic\n"
 msgstr ""
+"\t:let ic_orig = &ic\n"
+"\t:set noic\n"
+"\t:/El Principio/,$delete\n"
+"\t:let &ic = ic_orig\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:298
@@ -917,6 +989,10 @@ msgid ""
 "option off.  Still, it keeps the value that the user had set.  (Another way "
 "to do this would be to add \"\\C\" to the pattern, see |/\\C|.)"
 msgstr ""
+"Con esto se asegura que el patrón «El Principio» se buscará con la opción "
+"'ignorecase' desactivada. Sin embargo, se conserva y restaura el valor que el "
+"usuario definió para la opción. (Otra forma de hacer esta búsqueda es añadir "
+"«\\C» al patrón, véase |/\\C|.)"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:301
