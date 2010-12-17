@@ -1018,11 +1018,16 @@ msgid ""
 "\ta / b\t\tdivide\n"
 "\ta % b\t\tmodulo\n"
 msgstr ""
+"\ta + b\t\tadición\n"
+"\ta - b\t\tsustracción\n"
+"\ta * b\t\tmultiplicación\n"
+"\ta / b\t\tdivisión\n"
+"\ta % b\t\tmódulo (residuo)\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:312
 msgid "The usual precedence is used.  Example: >"
-msgstr ""
+msgstr "Se maneja la precendencia de operadores usual. Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:315
@@ -1031,11 +1036,16 @@ msgid ""
 "\t:echo 10 + 5 * 2\n"
 "<\t20 ~\n"
 msgstr ""
+"\t:echo 10 + 5 * 2\n"
+"<\t20 ~\n"
 
+# TODO file bug on vim's documentation. Parentheses, not braces
 #. type: Plain text
 #: original/txt/usr_41.txt:317
 msgid "Grouping is done with braces.  No surprises here.  Example: >"
 msgstr ""
+"Puede cambiar la precendencia de las operaciones usando paréntesis. Esto no "
+"es nada nuevo.  Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:320
@@ -1044,24 +1054,23 @@ msgid ""
 "\t:echo (10 + 5) * 2\n"
 "<\t30 ~\n"
 msgstr ""
+"\t:echo (10 + 5) * 2\n"
+"<\t30 ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:322
 msgid "Strings can be concatenated with \".\".  Example: >"
-msgstr ""
+msgstr "Concatene cadenas usando «.». Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:325
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\t006\tfoo bar ~\n"
-#| "\t007\tfoo bar ~\n"
+#, no-wrap
 msgid ""
 "\t:echo \"foo\" . \"bar\"\n"
 "<\tfoobar ~\n"
 msgstr ""
-"\t006\tfoo bar ~\n"
-"\t007\tfoo bar ~\n"
+"\t:echo \"foo\" . \"bar\"\n"
+"<\tfoobar ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:329
@@ -1070,17 +1079,20 @@ msgid ""
 "space.  In the example the argument is a single expression, thus no space is "
 "inserted."
 msgstr ""
+"Cuando recibe varios argumentos, la orden «:echo» los muestra en pantalla "
+"separados con espacios. En el ejemplo anterior el argumento es una única "
+"expresión, por lo que no se insertan espacios."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:331
 msgid "Borrowed from the C language is the conditional expression:"
-msgstr ""
+msgstr "Del lenguaje C se tomó la expresión condicional:"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:333
 #, no-wrap
 msgid "\ta ? b : c\n"
-msgstr ""
+msgstr "\ta ? b : c\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:335
@@ -1088,6 +1100,8 @@ msgid ""
 "If \"a\" evaluates to true \"b\" is used, otherwise \"c\" is used.  Example: "
 ">"
 msgstr ""
+"Si «a» se evalúa verdadero, la expresión corresponderá a «b», y en otro caso "
+"a «c». Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:339
@@ -1097,6 +1111,9 @@ msgid ""
 "\t:echo i > 5 ? \"i is big\" : \"i is small\"\n"
 "<\ti is small ~\n"
 msgstr ""
+"\t:let i = 4\n"
+"\t:echo i > 5 ? \"i es grande\" : \"i es pequeño\"\n"
+"<\ti es pequeño ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:342
@@ -1104,12 +1121,14 @@ msgid ""
 "The three parts of the constructs are always evaluated first, thus you could "
 "see it work as:"
 msgstr ""
+"Los tres elementos de la expresión condicional siempre son evaluados; es "
+"conveniente verlos de la siguiente forma:"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:344
 #, no-wrap
 msgid "\t(a) ? (b) : (c)\n"
-msgstr ""
+msgstr "\t(a) ? (b) : (c)\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:347
