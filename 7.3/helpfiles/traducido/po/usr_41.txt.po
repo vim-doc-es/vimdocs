@@ -1143,6 +1143,9 @@ msgid ""
 "The \":if\" commands executes the following statements, until the matching "
 "\":endif\", only when a condition is met.  The generic form is:"
 msgstr ""
+"La orden «:if» ejecuta los comandos a continuación de ella, hasta el «:endif» "
+"correspondiente, cuando se cumple la condición especificada. La forma "
+"genérica es:"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:354
@@ -1152,6 +1155,9 @@ msgid ""
 "\t   {statements}\n"
 "\t:endif\n"
 msgstr ""
+"\t:if {condición}\n"
+"\t   {instrucciones}\n"
+"\t:endif\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:359
@@ -1162,6 +1168,11 @@ msgid ""
 "contain garbage, Vim won't be able to find the \":endif\".\n"
 "   You can also use \":else\".  The generic form for this is:\n"
 msgstr ""
+"Las {instrucciones} se ejecutan únicamente cuando la expresión {condición} es\n"
+"verdadera (diferente de cero). Dichas instrucciones deben ser órdenes válidas.\n"
+"Si las órdenes tienen errores de sintaxis, Vim no podrá encontrar el «:endif»\n"
+"correspondiente.\n"
+"   También puede usar «:else». La forma genérica es:\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:365
@@ -1173,6 +1184,11 @@ msgid ""
 "\t   {statements}\n"
 "\t:endif\n"
 msgstr ""
+"\t:if {condición}\n"
+"\t   {instrucciones}\n"
+"\t:else\n"
+"\t   {instrucciones}\n"
+"\t:endif\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:368
@@ -1181,6 +1197,8 @@ msgid ""
 "The second {statements} is only executed if the first one isn't.\n"
 "   Finally, there is \":elseif\":\n"
 msgstr ""
+"El segundo grupo de {instrucciones} sólo se ejecuta si el primero no lo hace.\n"
+"   Finalmente, está «:elseif»\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:374
@@ -1192,6 +1210,11 @@ msgid ""
 "\t   {statements}\n"
 "\t:endif\n"
 msgstr ""
+"\t:if {condición}\n"
+"\t   {instrucciones}\n"
+"\t:elseif {condición}\n"
+"\t   {instrucciones}\n"
+"\t:endif\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:379
@@ -1202,6 +1225,10 @@ msgid ""
 "   A useful example for your vimrc file is checking the 'term' option and\n"
 "doing something depending upon its value: >\n"
 msgstr ""
+"Esta orden funciona como «:else» seguido de «:if», pero tiene la ventaja de no\n"
+"requerir un «:endif» extra.\n"
+"   Un ejemplo útil para ser usado en el archivo vimrc es revisar la opción\n"
+"'term' y ejecutar órdenes diferentes de acuerdo a su valor: >\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:387
@@ -1215,6 +1242,13 @@ msgid ""
 "\t:  \" Do something for other terminals\n"
 "\t:endif\n"
 msgstr ""
+"\t:if &term == \"xterm\"\n"
+"\t:  \" Configuración para xterm\n"
+"\t:elseif &term == \"vt100\"\n"
+"\t:  \" Configuración para la terminal vt100\n"
+"\t:else\n"
+"\t:  \" Configuración para otras terminales\n"
+"\t:endif\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:390
