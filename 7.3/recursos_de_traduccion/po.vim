@@ -516,3 +516,7 @@ function! CopyMsgidMsgStr()
 
   let @" = r_a
 endfunction
+
+function! FormatDamnMsgstr()
+
+endfunction
