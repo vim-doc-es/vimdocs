@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2010-12-16 18:24+0200\n"
+"PO-Revision-Date: 2010-12-18 19:00+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -183,7 +183,7 @@ msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 #. type: Plain text
 #: original/txt/usr_20.txt:64 original/txt/usr_40.txt:519
 msgid "DELETING"
-msgstr "BORRAR"
+msgstr "ELIMINAR"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:2
@@ -284,10 +284,11 @@ msgstr ""
 "texto «Date:» se inserta, y <Esc> abandona el modo de inserción.\n"
 "   Tenga en cuenta el uso de teclas especiales dentro de <>. Se llaman\n"
 "corchetes agudos. Los teclea como caracteres distintos, y no pulsando\n"
-"la misma tecla. Esto hace que las macros sean más legíbles,\n"
+"la misma tecla. Esto hace que las macros sean más leíbles,\n"
 "permitiendo copiar y pegar el texto sin problema.\n"
 "   El carácter «:» inicia la línea de órdenes de Vim. La orden «:read !date»\n"
-"lee la salida de la orden «date» y la añade bajo la línea actual. La orden <CR>\n"
+"lee la salida de la orden «date» y la añade bajo la línea actual. La orden "
+"<CR>\n"
 "se requiere para ejecutar la orden «:read».\n"
 "   En este punto, el texto tiene el siguiente aspecto:\n"
 
@@ -1173,6 +1174,11 @@ msgid ""
 "\t-range={count}\tRange is allowed; the last number in it is used as a\n"
 "\t\t\tsingle number whose default is {count}.\n"
 msgstr ""
+"\t-range\t\tEl rango está permitido, el valor predefinido es la línea actual.\n"
+"\t-range=%\tEl rango está permitido, el valor predefinido es el archivo "
+"completo.\n"
+"\t-range={número}\tEl rango está permitido, el último número presente se usa\n"
+"\t\t\tcomo un sólo número cuyo valor predefinido es {número}.\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:375
@@ -1226,6 +1232,21 @@ msgid ""
 "\t-buffer\t\t\tThe command is only available for the current\n"
 "\t\t\t\tbuffer.\n"
 msgstr ""
+"\t-count={número}\t\tLa orden acepta un cómputo cuyo valor\n"
+"\t\t\t\tpredefinido es {número}. El cómputo resultante se\n"
+"\t\t\t\tpuede usar con la palabra clave <count>.\n"
+"\t-bang\t\t\tPuede usar «!».  Si está presente, usar <bang>\n"
+"\t\t\t\tresultará en «!».\n"
+"\t-register\t\tPuede definir un registro.  (El registro\n"
+"\t\t\t\tpredefinido es el que no tiene nombre.)\n"
+"\t\t\t\tLa especificación del registro está disponible como\n"
+"\t\t\t\t<reg> (esto es, <register>).\n"
+"\t-complete={tipo}\tEl tipo de finalización automática usada.\n"
+"\t\t\t\tConsulte |:command-completion|  para una lista de\n"
+"\t\t\t\tlos valores aceptados.\n"
+"\t-bar\t\t\tLa orden puede ir seguida de «|» y otra orden,\n"
+"\t\t\t\to «\"» y un comentario.\n"
+"\t-buffer\t\tLa orden sólo está disponible en el búfer actual.\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:402
@@ -1510,6 +1531,11 @@ msgid ""
 "\t.\t\tMatches a dot\n"
 "\ta{b,c}\t\tMatches \"ab\" and \"ac\"\n"
 msgstr ""
+"\t*\t\tBusca cualquier caracteres cualquier número de veces\n"
+"\t?\t\tBusca cualquier carácter una vez\n"
+"\t[abc]\t\tBusca el carácter a, b o c\n"
+"\t.\t\tBusca un punto\n"
+"\ta{b,c}\t\tBusca «ab» y «ac»\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:510
@@ -1543,6 +1569,12 @@ msgid ""
 "\tmakes it easier to write the pattern, since a backslash has a special\n"
 "\tmeaning.  It also makes the autocommands portable.\n"
 msgstr ""
+"\tNota:\n"
+"\tAl trabajar con un sistema que usa la barra inversa como separador de\n"
+"\tarchivos, como MS-Windows, necesita una barra inclinada en las\n"
+"\tórdenes automáticas. Esto facilita escribir un patrón, ya que la barra\n"
+"\tinversa tiene un significado especial. También hace portables las\n"
+"\tórdenes automáticas.\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:522
@@ -1712,12 +1744,17 @@ msgid ""
 "the syntax, for example.  To make the events triggered, add the \"nested\" "
 "argument: >"
 msgstr ""
+"Habitualmente, las órdenes ejecutadas como resultado de un evento de orden "
+"automática no iniciarán ningún evento nuevo. Si lee un archivo como "
+"respuesta a un evento «FileChangedShell», no iniciará las órdenes "
+"automáticas que definirían la sintaxis, por ejemplo. Para que se los eventos "
+"se inicien, añada el argumento «nested»: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:582
 #, no-wrap
 msgid "\t:autocmd FileChangedShell * nested  edit\n"
-msgstr ""
+msgstr "\t:autocmd FileChangedShell * nested  edit\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:585
@@ -1731,6 +1768,8 @@ msgid ""
 "occurred.  This is useful to have one autocommand trigger another one.  "
 "Example: >"
 msgstr ""
+"Es posible iniciar una orden automática simulando un evento. Es útil para "
+"que una orden automática inicie otra. Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:590
@@ -1747,6 +1786,10 @@ msgid ""
 "expression evaluation to form a new command and execute it.  When editing "
 "the file \"tryout.c.new\" the executed command will be: >"
 msgstr ""
+"Esto define una orden automática que se inicia al editar un nuevo archivo. "
+"El nombre de archivo debe terminar con «.new». La orden «:execute» usa "
+"expresiones de evaluación para formar una nueva orden y ejecutarla. La orden "
+"ejecutada al editar el archivo «prueba.c.new» sería: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:597
@@ -1761,6 +1804,9 @@ msgid ""
 "file name the autocommand was executed for, and takes the root of the file "
 "name with \":r\"."
 msgstr ""
+"La función expand() toma un arguemnto «<afile>», que simboliza el nombre de "
+"archivo para el que se inició la orden automática, y toma la raíz del nombre "
+"archivo con «:r»."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:604
@@ -1768,6 +1814,8 @@ msgid ""
 "\":doautocmd\" executes on the current buffer.  The \":doautoall\" command "
 "works like \"doautocmd\" except it executes on all the buffers."
 msgstr ""
+"«:doautocmd» se ejecuta en el búfer actual. La orden «:doautoall» funciona "
+"como «doautocmd», con la diferencia de que afecta a todos los búfers."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:607
@@ -1782,6 +1830,9 @@ msgid ""
 "want to use a Normal mode command, the \":normal\" command can be used.  "
 "Example: >"
 msgstr ""
+"Las órdenes ejecutadas por una orden automática son órdenes del modo Línea "
+"de órdenes. Si desea usar una orden del modo normal, puede usar la orden "
+"«:normal». Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:613
@@ -1805,6 +1856,18 @@ msgid ""
 "\":normal\" command inside an \":execute\" command.  This also makes it possible\n"
 "to pass unprintable characters in a convenient way.  Example: >\n"
 msgstr ""
+"Esto hará que el cursor salte a la última línea de archivos «*.log» cuando\n"
+"empieza a editarlo.\n"
+"   Usar la orden «:normal» es un poco difícil. Primero, compruebe que su\n"
+"argumento es una orden completa, incluyendo todos los argumentos.\n"
+"Cuando usa una «i» para entrar el modo Insertar, también debe tener un\n"
+"<Esc> para abandonar el modo Insertar. Si usa «/» para iniciar una búsqueda\n"
+"de un patrón, debe usar <CR> para ejecutarlo.\n"
+"   La orden «:normal» usa todo el texto a continuación como órdenes. Por\n"
+"ello, no debe estar presente «|» y una orden a continuación. Para solucionar\n"
+"este problema, ubique la orden «:normal» dentro de una orden «:execute».\n"
+"También posibilita pasar caracteres no imprimibles de una forma\n"
+"cómoda. Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:628
@@ -1822,6 +1885,8 @@ msgid ""
 "This also shows the use of a backslash to break a long command into more "
 "lines.  This can be used in Vim scripts (not at the command line)."
 msgstr ""
+"Esto también muestra el usa de la barra invertida para dividir una orden en "
+"varias líneas. Se puede usar en scripts de Vim (no en la línea de órdenes)."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:635
@@ -1831,6 +1896,10 @@ msgid ""
 "may want to restore the view on the file.  See |restore-position| for an "
 "example."
 msgstr ""
+"Si desea que la orden automática haga algo más complicado, que incluya "
+"saltar de un punto a otro en el archivo para volver finalmente a la posición "
+"inicial, puede que desee restaurar la vista del archivo. Para un ejemplo, "
+"consulte |restore-position|."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:638
@@ -1884,7 +1953,6 @@ msgstr "\t:set eventignore=\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:656
-#, fuzzy
 #| msgid "Next chapter: |usr_12.txt| Clever tricks"
 msgid "Next chapter: |usr_41.txt| Write a Vim script"
-msgstr "Capítulo siguiente: |usr_12.esx| Trucos"
+msgstr "Capítulo siguiente: |usr_41.esx| Escribir scripts para Vim"
