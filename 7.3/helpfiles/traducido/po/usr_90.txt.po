@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-05 15:35+0100\n"
-"PO-Revision-Date: 2010-12-09 16:53+0100\n"
+"PO-Revision-Date: 2010-12-19 15:20+0100\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -967,8 +967,8 @@ msgstr ""
 "simultáneamente.\n"
 "   El ejecutable «vim» sobreescribirá una versión anterior. Si no le\n"
 "interesa preservar la versión más antigua, ejecutar «make install»\n"
-"funcionará sin problemas. Puede borrar los archivos de\n"
-"tiempo de ejecución manualmente. Simplemente borre el directorio con\n"
+"funcionará sin problemas. Puede eliminar los archivos de\n"
+"tiempo de ejecución manualmente. Simplemente elimine el directorio con\n"
 "el número de versión y todos los archivos contenidos en él. Ejemplo: >\n"
 
 #. type: Plain text
@@ -986,7 +986,7 @@ msgid ""
 msgstr ""
 "Generalmente, bajo este directorio no hay archivos modificados. Si ha "
 "modificado el archivo «filetype.vim», por ejemplo, será mejor que introduzca "
-"esos cambios en la versión nueva antes de borrar el archivo."
+"esos cambios en la versión nueva antes de eliminar el archivo."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:315
@@ -1059,7 +1059,8 @@ msgstr ""
 "automáticamente la ubicación de los archivos de tiempo de ejecución para\n"
 "la versión adecuada. Por otra parte, no funcionará si define en algún lugar\n"
 "la variable «$VIMRUNTIME».\n"
-"   Si la actualización le satisface, puede borrar los archivos de la versión\n"
+"   Si la actualización le satisface, puede eliminar los archivos de la "
+"versión\n"
 "anterior. Consulte |90.5|.\n"
 
 #. type: Plain text
