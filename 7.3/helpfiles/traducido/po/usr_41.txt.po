@@ -187,7 +187,6 @@ msgstr "OPCIONES"
 #. type: Plain text
 #: original/txt/usr_41.txt:2
 #, no-wrap
-#| msgid "*usr_11.txt*\tFor Vim version 7.3.  Last change: 2010 Jul 20\n"
 msgid "*usr_41.txt*\tFor Vim version 7.3.  Last change: 2010 Jul 20\n"
 msgstr "*usr_41.esx*\tPara Vim versión 7.3.  Último cambio: 20/7/2010\n"
 
@@ -204,10 +203,10 @@ msgid ""
 "and many other things.  This chapter explains the items that can be used in "
 "a Vim script.  There are a lot of them, thus this is a long chapter."
 msgstr ""
-"El lenguaje de programación de Vim se usa en el archivo de arranque vimrc, los "
-"archivos de sintaxis, y muchas otras cosas. Este capítulo presenta y explica "
-"en detalle los elementos que componen un script de Vim. Hay muchos de ellos, "
-"por lo que éste es un capítulo largo."
+"El lenguaje de programación de Vim se usa en el archivo de arranque vimrc, "
+"los archivos de sintaxis, y muchas otras cosas. Este capítulo presenta y "
+"explica en detalle los elementos que componen un script de Vim. Hay muchos "
+"de ellos, por lo que éste es un capítulo largo."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:28
@@ -262,7 +261,6 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_41.txt:35
 #, no-wrap
-#| msgid "1. Introduction\t\t\t\t\t\t*intro*\n"
 msgid "*41.1*\tIntroduction\t\t\t\t*vim-script-intro* *script*\n"
 msgstr "*41.1*\tIntroducción\t\t\t\t*vim-script-intro* *script*\n"
 
@@ -290,7 +288,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:45
-#| msgid "It all starts with one simple command: >"
 msgid "Let's start with a simple example: >"
 msgstr "Empecemos con un ejemplo sencillo: >"
 
@@ -428,8 +425,9 @@ msgid ""
 "let i = i + 1\".  This adds one to the variable i and assigns the new value "
 "to the same variable."
 msgstr ""
-"Luego está la orden «:let i += 1». Ésta tiene el mismo efecto que «:let i = i "
-"+ 1».  Le añade uno a la variable i y asigna el resultado a la misma variable."
+"Luego está la orden «:let i += 1». Ésta tiene el mismo efecto que «:let i = "
+"i + 1».  Le añade uno a la variable i y asigna el resultado a la misma "
+"variable."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:99
@@ -458,8 +456,8 @@ msgid ""
 "We won't explain how |:for| and |range()| work until later.  Follow the "
 "links if you are impatient."
 msgstr ""
-"El funcionamiento de |:for| y |range()| se explicará después. Siga los enlaces "
-"si no desea esperar."
+"El funcionamiento de |:for| y |range()| se explicará después. Siga los "
+"enlaces si no desea esperar."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:109
@@ -524,9 +522,9 @@ msgid ""
 msgstr ""
 "En las expresiones se ignoran los espacios en blanco. Sin embargo, es "
 "recomendable usarlo para separar elementos, para hacer que las expresiones "
-"sean más legibles. Por ejemplo, para evitar confundir el ejemplo anterior con "
-"un número negativo, ponga un espacio entre el signo menos y el número que lo "
-"sigue: >"
+"sean más legibles. Por ejemplo, para evitar confundir el ejemplo anterior "
+"con un número negativo, ponga un espacio entre el signo menos y el número "
+"que lo sigue: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:132
@@ -626,9 +624,9 @@ msgid ""
 msgstr ""
 "Ya que el ámbito de «s:cuenta» es local al script, puede estar seguro de que "
 "cargar el archivo «otro.vim» no hará cambios a dicha variable. Si «otro.vim» "
-"también usa una variable «s:cuenta», será una copia distinta, local al ámbito "
-"de ese script. Puede encontrar más información acerca de las variables "
-"locales a un script en |script-variable|."
+"también usa una variable «s:cuenta», será una copia distinta, local al "
+"ámbito de ese script. Puede encontrar más información acerca de las "
+"variables locales a un script en |script-variable|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:170
@@ -907,7 +905,6 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_41.txt:269
 #, no-wrap
-#| msgid "*21.4*\tSessions\n"
 msgid "*41.3*\tExpressions\n"
 msgstr "*41.3*\tExpresiones\n"
 
@@ -990,9 +987,9 @@ msgid ""
 "to do this would be to add \"\\C\" to the pattern, see |/\\C|.)"
 msgstr ""
 "Con esto se asegura que el patrón «El Principio» se buscará con la opción "
-"'ignorecase' desactivada. Sin embargo, se conserva y restaura el valor que el "
-"usuario definió para la opción. (Otra forma de hacer esta búsqueda es añadir "
-"«\\C» al patrón, véase |/\\C|.)"
+"'ignorecase' desactivada. Sin embargo, se conserva y restaura el valor que "
+"el usuario definió para la opción. (Otra forma de hacer esta búsqueda es "
+"añadir «\\C» al patrón, véase |/\\C|.)"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:301
@@ -1133,7 +1130,6 @@ msgstr "\t(a) ? (b) : (c)\n"
 #. type: Plain text
 #: original/txt/usr_41.txt:347
 #, no-wrap
-#| msgid "*31.2*\tConfirmation\n"
 msgid "*41.4*\tConditionals\n"
 msgstr "*41.4*\tEstructuras de decisión\n"
 
@@ -1143,8 +1139,8 @@ msgid ""
 "The \":if\" commands executes the following statements, until the matching "
 "\":endif\", only when a condition is met.  The generic form is:"
 msgstr ""
-"La orden «:if» ejecuta los comandos a continuación de ella, hasta el «:endif» "
-"correspondiente, cuando se cumple la condición especificada. La forma "
+"La orden «:if» ejecuta los comandos a continuación de ella, hasta el «:"
+"endif» correspondiente, cuando se cumple la condición especificada. La forma "
 "genérica es:"
 
 #. type: Plain text
