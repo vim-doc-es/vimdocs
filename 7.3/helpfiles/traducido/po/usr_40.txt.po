@@ -1,16 +1,42 @@
-# Spanish translations for Vim package
-# Copyright (C) 2010 Free Software Foundation, Inc.
-# This file is distributed under the same license as the Vim package.
-# Automatically generated, 2010.
-# Omar Campagne <ocampagne@gmail.com>, 2010.
+# vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es
+# Copyright (C) 2010
+# This file is distributed under the same license as the Vim 7.3 package.
+# Translators credits:
+# - Initial translation
+# # Omar Campagne <ocampagne@gmail.com>, 2010.
+# - Updates
+# TRADUCTOR <CORREO>, AÑO
+# Debido al formato (txt) y al máximo de 80 columnas que pueden tener
+# los textos de ayuda en Vim, así como el formato PO, por favor, leete los
+# apuntes concernientes a la edición de los archivos PO relativos a la
+# aplicación que desees usar.
+# También encontrarás información acerca del uso de herramientas gettext en el
+# proyecto de localización (l10n) de Vim.
+# - http://www.assembla.com/wiki/show/vim-doc-es
+# No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
+# este enlace puede ser de interés. A pesar de no formar parte, nuestra
+# intención es homologarnos con su terminología y uso de la lengua
+# en la medida de lo útil y posible.
+# - El proyecto de traducción de Debian al español
+# http://www.debian.org/intl/spanish/notas
+# La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
+# pero también puede servir de referencia para otros términos no técnicos.
+# No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
+# traducción sea comprensible independientemente de la nacionalidad del
+# usuario. Si crees que alguna traducción puede llevar a confusión, consulta
+# la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
+# - www.rae.es
+# - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&page=showpages
+# Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
+# se puede consultar con un simple grep, pogrep o cargado en Virtaal.
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2010-12-18 19:00+0200\n"
+"PO-Revision-Date: 2010-12-19 14:23+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
-"Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -287,9 +313,8 @@ msgstr ""
 "la misma tecla. Esto hace que las macros sean más leíbles,\n"
 "permitiendo copiar y pegar el texto sin problema.\n"
 "   El carácter «:» inicia la línea de órdenes de Vim. La orden «:read !date»\n"
-"lee la salida de la orden «date» y la añade bajo la línea actual. La orden "
-"<CR>\n"
-"se requiere para ejecutar la orden «:read».\n"
+"lee la salida de la orden «date» y la añade bajo la línea actual. La orden\n"
+"<CR> se requiere para ejecutar la orden «:read».\n"
 "   En este punto, el texto tiene el siguiente aspecto:\n"
 
 #. type: Plain text
@@ -467,8 +492,7 @@ msgid ""
 "When it has the same color as the other text, it is five characters.\n"
 msgstr ""
 "La primera columna de la lista muestra el modo en el que la macro tiene\n"
-"efecto. Esto es, «n» para el modo Normal, «i» para el modo Insertar, etc... "
-"Se\n"
+"efecto. Esto es, «n» para el modo Normal, «i» para el modo Insertar, etc... Se\n"
 "usa un espacio en blanco con las macros definidas mediante «:map», y por\n"
 "ello, con efecto en el modo Visual y Normal.\n"
 "   Un propósito útil de listar las macros es comprobar si se han reconocido\n"
@@ -556,9 +580,11 @@ msgid ""
 "   To avoid keys to be mapped again, use the \":noremap\" command: >\n"
 msgstr ""
 "Lo que ocurre ahora es que cuando escribe «gQ», se asigna a la «Q». Por\n"
-"ahora, todo bien. Pero, a continuación, asigna «Q» a «gq», y por ello escribir\n"
+"ahora, todo bien. Pero, a continuación, asigna «Q» a «gq», y por ello "
+"escribir\n"
 "«gQ» resulta en «gq», y no entra en modo Ex.\n"
-"   Para evitar que las claves se asignen otra vez, utilice la orden «: noremap»: >\n"
+"   Para evitar que las claves se asignen otra vez, utilice la orden\n"
+"«:noremap»: \n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:144
@@ -657,9 +683,6 @@ msgstr "BORRAR UNA MACRO"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:183
-#| msgid ""
-#| "To search for a string, use the \"/string\" command.  To find the word "
-#| "include, for example, use the command: >"
 msgid ""
 "To remove a mapping use the \":unmap\" command.  Again, the mode the "
 "unmapping applies to depends on the command used:"
@@ -743,10 +766,10 @@ msgid ""
 "\t:map <F8> :write <Bar> !checkin %<CR>\n"
 msgstr ""
 "La orden «:map» puede ir seguida de otra orden. Un carácter «|» separa ambas\n"
-"órdenes. Esto también significa que no puede usar un carácter «|» dentro de "
-"una\n"
-"orden «map». Para incluir uno, use <Bar> (cinco caracteres). Ejemplo: >\n"
-"\t:map <F8> :write <Bar> !checkin %<CR>\n"
+"órdenes. Esto también significa que no puede usar un carácter «|» dentro\n"
+"de una orden «map». Para incluir uno, use <Bar> (cinco caracteres). Ejemplo: "
+">\n"
+":map <F8> :write <Bar> !checkin %<CR>\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:219
@@ -795,8 +818,8 @@ msgid ""
 "starts a new, empty command with a comment.  Example: >"
 msgstr ""
 "No es posible insertar un comentario justo antes de una macro, ya que el "
-"carácter «\"» se considera parte de la macro. Puede usar «|\"», iniciando una "
-"nueva y vacía orden con un comentario. Ejemplo: >"
+"carácter «\"» se considera parte de la macro. Puede usar «|\"», iniciando "
+"una nueva y vacía orden con un comentario. Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:233
@@ -923,7 +946,6 @@ msgstr "No debe haber ningún espacio después de <Nop>."
 #. type: Plain text
 #: original/txt/usr_40.txt:281
 #, no-wrap
-#| msgid "\t\t     Typing command-line commands quickly\n"
 msgid "*40.2*\tDefining command-line commands\n"
 msgstr "*40.2*\tDefinir órdenes de línea de órdenes\n"
 
@@ -971,15 +993,12 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:297
-#| msgid ""
-#| "To get a complete index of all Vim commands, use the following command: >"
 msgid "To list the user-defined commands, execute the following command: >"
 msgstr "Use la siguiente orden para listar las órdenes de usuario: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:299
 #, no-wrap
-#| msgid "\t:colder\n"
 msgid "\t:command\n"
 msgstr "\t:command\n"
 
@@ -997,7 +1016,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:306
-#| msgid "A NUMBER OF LINES"
 msgid "NUMBER OF ARGUMENTS"
 msgstr "NÚMERO DE ARGUMENTOS"
 
@@ -1027,8 +1045,8 @@ msgid ""
 "nargs=0\".  The other values of -nargs are as follows:"
 msgstr ""
 "Sin embargo, ya que cero argumentos es el comportamiento predefinido, no "
-"necesita añadir «-nargs=0». A continuación puede ver los otros valores de "
-"«-nargs»:"
+"necesita añadir «-nargs=0». A continuación puede ver los otros valores de «-"
+"nargs»:"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:322
@@ -1068,7 +1086,6 @@ msgstr "\t:command -nargs=+ Say :echo \"<args>\"\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:332
-#| msgid "Now you type \"prev\":"
 msgid "Now when you type >"
 msgstr "Ahora, cuando escribe >"
 
@@ -1138,7 +1155,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:356
-#| msgid "results in the following:"
 msgid "Executes the following command: >"
 msgstr "Ejecuta la siguiente orden: >"
 
@@ -1150,7 +1166,6 @@ msgstr "\t:call AFunction(\"a\", \"b\", \"c\")\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:361
-#| msgid "PREDEFINED RANGES"
 msgid "LINE RANGE"
 msgstr "RANGO DE LÍNEA"
 
@@ -1174,11 +1189,13 @@ msgid ""
 "\t-range={count}\tRange is allowed; the last number in it is used as a\n"
 "\t\t\tsingle number whose default is {count}.\n"
 msgstr ""
-"\t-range\t\tEl rango está permitido, el valor predefinido es la línea actual.\n"
-"\t-range=%\tEl rango está permitido, el valor predefinido es el archivo "
-"completo.\n"
-"\t-range={número}\tEl rango está permitido, el último número presente se usa\n"
-"\t\t\tcomo un sólo número cuyo valor predefinido es {número}.\n"
+"\t-range\t\tEl rango está permitido, el valor predefinido\n"
+"\t\t\t\tes la línea actual.\n"
+"\t-range=%\tEl rango está permitido, el valor predefinido\n"
+"\t\t\t\tes el archivo completo.\n"
+"\t-range={número}\tEl rango está permitido, el último número\n"
+"\t\t\t\tpresente se usa como un sólo número cuyo valor\n"
+"\t\t\t\tpredefinido es {número}.\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:375
@@ -1190,7 +1207,7 @@ msgid ""
 msgstr ""
 "Cuando un rango se especifica, las palabras clave <line1> y <line2> obtienen "
 "el valor de la primera y última línea del rango. Por ejemplo, la siguiente "
-"orden define la orden SaveIt, que escribe el rango especificado al archivo "
+"orden define la orden «SaveIt», que escribe el rango especificado al archivo "
 "«save_file»: >"
 
 #. type: Plain text
@@ -1201,7 +1218,6 @@ msgstr "\t:command -range=% SaveIt :<line1>,<line2>write! save_file\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:380
-#| msgid "OPTIONS"
 msgid "OTHER OPTIONS"
 msgstr "OTRAS OPCIONES"
 
@@ -1233,17 +1249,17 @@ msgid ""
 "\t\t\t\tbuffer.\n"
 msgstr ""
 "\t-count={número}\t\tLa orden acepta un cómputo cuyo valor\n"
-"\t\t\t\tpredefinido es {número}. El cómputo resultante se\n"
-"\t\t\t\tpuede usar con la palabra clave <count>.\n"
+"\t\t\t\tpredefinido es {número}. El cómputo resultante\n"
+"\t\t\t\tse puede usar con la palabra clave <count>.\n"
 "\t-bang\t\t\tPuede usar «!».  Si está presente, usar <bang>\n"
 "\t\t\t\tresultará en «!».\n"
-"\t-register\t\tPuede definir un registro.  (El registro\n"
+"\t-register\t\tPuede definir un registro. (El registro\n"
 "\t\t\t\tpredefinido es el que no tiene nombre.)\n"
-"\t\t\t\tLa especificación del registro está disponible como\n"
-"\t\t\t\t<reg> (esto es, <register>).\n"
+"\t\t\t\tLa especificación del registro está disponible\n"
+"\t\t\t\tcomo <reg> (esto es, <register>).\n"
 "\t-complete={tipo}\tEl tipo de finalización automática usada.\n"
-"\t\t\t\tConsulte |:command-completion|  para una lista de\n"
-"\t\t\t\tlos valores aceptados.\n"
+"\t\t\t\tConsulte |:command-completion|  para una\n"
+"\t\t\t\tlista de los valores aceptados.\n"
 "\t-bar\t\t\tLa orden puede ir seguida de «|» y otra orden,\n"
 "\t\t\t\to «\"» y un comentario.\n"
 "\t-buffer\t\tLa orden sólo está disponible en el búfer actual.\n"
@@ -1259,13 +1275,11 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:405
-#| msgid "FINDING AN IDENTIFIER"
 msgid "REDEFINING AND DELETING"
 msgstr "REDEFINIR Y ELIMINAR"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:407
-#| msgid "To edit the last one, you use the command: >"
 msgid "To redefine the same command use the ! argument: >"
 msgstr "Use el argumento «!» para redefinir la misma orden: >"
 
@@ -1296,14 +1310,12 @@ msgstr "\t:delcommand SaveIt\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:417
-#| msgid "To close a window, use the command: >"
 msgid "To delete all the user commands: >"
 msgstr "Para eliminar todas las órdenes de usuario: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:419
 #, no-wrap
-#| msgid "\t:colder\n"
 msgid "\t:comclear\n"
 msgstr "\t:comclear\n"
 
@@ -1314,7 +1326,6 @@ msgstr "¡Cuidado, no se puede deshacer!"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:423
-#| msgid "More about manual folding in the reference manual: |fold-manual|"
 msgid "More details about all this in the reference manual: |user-commands|."
 msgstr ""
 "Puede encontrar más detalles en el manual de referencia: |user-commands|."
@@ -1322,7 +1333,6 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_40.txt:426
 #, no-wrap
-#| msgid "*10.3*\tCommand ranges\n"
 msgid "*40.3*\tAutocommands\n"
 msgstr "*40.3*\tAutocommands\n"
 
@@ -1339,16 +1349,14 @@ msgid ""
 "trouble.\n"
 msgstr ""
 "Una orden automática (Autocommand) es una orden a ejecutar en respuesta otro\n"
-"evento, un archivo siendo leído y editado o un cambio en un búfer, por "
-"ejemplo.\n"
-"Por ejemplo, Vim puede editar archivos comprimidos a través de las órdenes\n"
-"automáticas.\n"
+"evento, un archivo siendo leído y editado o un cambio en un búfer, por\n"
+"ejemplo. Por ejemplo, Vim puede editar archivos comprimidos a través de las\n"
+"órdenes automáticas.\n"
 "El complemento |gzip| hace uso de esto.\n"
 "   Las órdenes automáticas son muy potentes. Úselos con cuidado, y le "
 "ayudarán\n"
-"a disminuir el número de órdenes que introduce. Úselos sin cuidado, y "
-"generarán\n"
-"un gran número de problemas.\n"
+"a disminuir el número de órdenes que introduce. Úselos sin cuidado, y\n"
+"generarán un gran número de problemas.\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:437
@@ -1427,10 +1435,9 @@ msgid ""
 "The optional [nested] flag allows for nesting of autocommands (see below), and\n"
 "finally, {command} is the command to be executed.\n"
 msgstr ""
-"El elemento [grupo] es opcional. Se usa al gestionar e invocar las órdenes "
-"(más\n"
-"información más adelante). El parámetro {eventos} es una lista separada por\n"
-"comas de eventos que inician la orden.\n"
+"El elemento [grupo] es opcional. Se usa al gestionar e invocar las órdenes\n"
+"(más información más adelante). El parámetro {eventos} es una lista separada\n"
+" por comas de eventos que inician la orden.\n"
 "  {patrón_archivo} es un nombre de archivo, a menudo con comodines. Por\n"
 "ejemplo, usar «*.txt» provoca que la orden automática afecte a todos los\n"
 "archivos cuyo nombre termina en «.txt».\n"
@@ -1497,7 +1504,6 @@ msgstr "\t:autocmd BufNewFile *.[ch]  0read ~/skeletons/skel.c\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:488
-#| msgid "See |/\\s| for the whole list of these ranges."
 msgid "See |autocmd-events| for a complete list of events."
 msgstr "Consulte |autocmd-events| para una lista completa de eventos."
 
@@ -1557,7 +1563,6 @@ msgstr ""
 "   Al incluir la barra, Vim compara el patrón con la ruta absoluta del\n"
 "archivo, «/home/biep/readme.txt» y con la ruta relativa, esto es,\n"
 "«biep/readme.txt»).\n"
-"  "
 
 #. type: Plain text
 #: original/txt/usr_40.txt:516
@@ -1602,15 +1607,11 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:530
-#| msgid "TESTING"
 msgid "LISTING"
 msgstr "LISTAR"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:532
-#| msgid ""
-#| "To split the current window and jump to the tag under the cursor use this "
-#| "command: >"
 msgid "To list all the currently defined autocommands, use this: >"
 msgstr ""
 "Use la siguiente orden para listar todas las órdenes automáticas definidas "
@@ -1704,7 +1705,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:565
-#| msgid "This works with a name as well."
 msgid "This will do the same as: >"
 msgstr "El resultado sería idéntico con: >"
 
@@ -1731,7 +1731,6 @@ msgstr "\t:autocmd! cprograms\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:575
-#| msgid "TESTING"
 msgid "NESTING"
 msgstr "ANIDADO"
 
@@ -1775,8 +1774,7 @@ msgstr ""
 #: original/txt/usr_40.txt:590
 #, no-wrap
 msgid "\t:autocmd BufReadPost *.new  execute \"doautocmd BufReadPost \" . expand(\"<afile>:r\")\n"
-msgstr "\t:autocmd BufReadPost *.new  execute \"doautocmd BufReadPost \" . "
-"expand(\"<afile>:r\")\n"
+msgstr "\t:autocmd BufReadPost *.new  execute \"doautocmd BufReadPost \" . expand(\"<afile>:r\")\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:595
@@ -1819,7 +1817,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:607
-#| msgid "NORMAL MODE SCRIPTS"
 msgid "USING NORMAL MODE COMMANDS"
 msgstr "USAR ÓRDENES DEL MODO NORMAL"
 
@@ -1831,8 +1828,8 @@ msgid ""
 "Example: >"
 msgstr ""
 "Las órdenes ejecutadas por una orden automática son órdenes del modo Línea "
-"de órdenes. Si desea usar una orden del modo normal, puede usar la orden "
-"«:normal». Ejemplo: >"
+"de órdenes. Si desea usar una orden del modo normal, puede usar la orden «:"
+"normal». Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:613
@@ -1867,7 +1864,7 @@ msgstr ""
 "ello, no debe estar presente «|» y una orden a continuación. Para solucionar\n"
 "este problema, ubique la orden «:normal» dentro de una orden «:execute».\n"
 "También posibilita pasar caracteres no imprimibles de una forma\n"
-"cómoda. Ejemplo: >"
+"cómoda. Ejemplo: >\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:628
@@ -1903,7 +1900,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_40.txt:638
-#| msgid "IGNORING CASE"
 msgid "IGNORING EVENTS"
 msgstr "IGNORAR EVENTOS"
 
@@ -1928,14 +1924,12 @@ msgstr "\t:set eventignore=WinEnter,WinLeave\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:646
-#| msgid "To center a range of lines, use the following command: >"
 msgid "To ignore all events, use the following command: >"
 msgstr "Use la siguiente orden para ignorar todos los eventos: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:648
 #, no-wrap
-#| msgid "\t:set noignorecase\n"
 msgid "\t:set eventignore=all\n"
 msgstr "\t:set eventignore=all\n"
 
@@ -1947,12 +1941,10 @@ msgstr "Para volver al comportamiento anterior, vacíe 'eventignore': >"
 #. type: Plain text
 #: original/txt/usr_40.txt:652
 #, no-wrap
-#| msgid "\t:set noignorecase\n"
 msgid "\t:set eventignore=\n"
 msgstr "\t:set eventignore=\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:656
-#| msgid "Next chapter: |usr_12.txt| Clever tricks"
 msgid "Next chapter: |usr_41.txt| Write a Vim script"
 msgstr "Capítulo siguiente: |usr_41.esx| Escribir scripts para Vim"
