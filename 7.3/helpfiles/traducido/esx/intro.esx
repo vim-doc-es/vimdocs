@@ -316,7 +316,7 @@ texto literal.
 		para esto es facilitar la lectura de las órdenes. Si la opción
 		esta activada, el número (parcialmente) introducido se
 		mostrará en la parte inferior de la ventana. Puede usar <Supr>
-		para borrar el último dígito (|N<Supr>|).
+		para eliminar el último dígito (|N<Supr>|).
 
 							 *quotex*
 ["x]		Un destino opcional para un registro dónde guardar el texto.
@@ -324,7 +324,7 @@ texto literal.
 		y 'z', o 'A' y 'Z' o '"', y en algunos casos (con la orden
 		«put») entre '0' y '9', '%', '#', u otros. Las mayúsculas y
 		y minúsculas designan el mismo registro, pero la minúscula se
-		usa para borrar los contenidos anteriores del registro, y
+		usa para eliminar los contenidos anteriores del registro, y
 		la mayúscula para añadir contenido. El texto se almacenará
 		en un registro sin nombre en caso de no usar «"x» o «""».
 
@@ -352,9 +352,9 @@ texto literal.
 		desplazarse sobre el texto en edición.
 		- Si un elemento de moción incluye un número, y el operador
 		  también incluye un número, ambos se multiplicarán. Por
-		  ejemplo, «2d3w» borra 6 palabras.
+		  ejemplo, «2d3w» elimina 6 palabras.
 		- Puede desplazarse en sentido inverso. Por ejemplo, «db» para
-		  borrar hasta el inicio de la palabra.
+		  eliminar hasta el inicio de la palabra.
 		- El movimiento puede también ser una pulsación del ratón.
 		  Por otra parte, no todas las terminales son compatibles con
 		  el ratón.
@@ -422,7 +422,7 @@ notación	significado	    equivalente	    valor(es) decimal  ~
 <lt>		menos que		<	 60	*<lt>*
 <Bslash>	barra inversa		\	 92	*backslash* *<Bslash>*
 <Bar>		barra vertical		|	124	*<Bar>*
-<Del>		borrar				127
+<Del>		eliminar				127
 <CSI>		command sequence intro 	ALT-Esc 155	*<CSI>*
 <xCSI>		CSI tecleado en la interfaz gráfica	*<xCSI>*
 
@@ -549,7 +549,7 @@ Modo Visual		Es similar al modo Normal, pero las órdenes de
 			«-- VISUAL --» en la parte inferior de la ventana.
 
 Modo seleccionar		Similar al modo de selección de MS-Windows.
-			Teclear un carácter imprimible borra la selección
+			Teclear un carácter imprimible elimina la selección
 			e inicia el modo Insertar. Consulte |Select-mode|.
 			Si la opción 'showmode' esta activada, verá
 			«-- SELECT --» en la parte inferior de la ventana.
@@ -691,7 +691,7 @@ Q			Pasar a modo «Ex». Es similar a pulsar órdenes «:»
 			- La pantalla no se refresca tras cada orden.
 			- No se usan mapeos y abreviaturas.
 			De hecho, editará las líneas con las órdenes de
-			edición estándar (<Del> o <BS> para borrar, CTRL-U
+			edición estándar (<Del> o <BS> para eliminar, CTRL-U
 			para eliminar toda la línea).
 			Vim pasará a este modo por omisión si es invocado con
 			«ex» en la línea de órdenes.
@@ -715,7 +715,7 @@ gQ			Pasar al modo «Ex» al igual que con «Q», pero
 La ventana muestra los contenidos actuales del búfer en modo Normal y modo
 Insertar/Reemplazar: lo que ve es lo que hay. Hay dos excepciones:
 - Si la opción 'cppoptions' contiene «$», y el cambio se realizará dentro
-  de una línea, el texto no se borrará directamente, sino que se insertará
+  de una línea, el texto no se eliminará directamente, sino que se insertará
   «$» en el último carácter eliminado.
 - Si inserta texto en una ventana, otras ventanas mostrando el mismo
   contenido no se actualizarán hasta finalizar la inserción.

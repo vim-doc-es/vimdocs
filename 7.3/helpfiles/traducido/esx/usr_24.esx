@@ -38,8 +38,8 @@ errónea:
 	El caballo cayó del ~
 
 En caso de haber realizado errores en una línea, y desea empezar otra vez,
-use CTRL-U para borrarlo. Esto mantiene el texto después del cursor, así
-como la tabulación. Sólo se borra el texto desde el primer espacio que no
+use CTRL-U para eliminarlo. Esto mantiene el texto después del cursor, así
+como la tabulación. Sólo se elimina el texto desde el primer espacio que no
 esté vacío hasta el cursor. Pulsar CTRL-U con el cursor sobre la «c» de
 «cayó» hace lo siguiente:
 
@@ -600,8 +600,8 @@ El modo Insertar ofrece un limitado número de órdenes. Dispone de muchas más
 en el modo normal. Si desea usar uno, abandone el modo Insertar con <Esc>,
 ejecuto la orden en modo Normal, y vuelva al modo Insertar con «i» o «a».
    Hay una manera más rápida. Con CTRL-O {orden} puede ejecutar cualquier
-orden de modo Normal en el modo Insertar. Por ejemplo, para borrar desde el
-cursor hasta el final de la línea: >
+orden de modo Normal en el modo Insertar. Por ejemplo, para eliminar desde
+el cursor hasta el final de la línea: >
 
 	CTRL-O D
 
@@ -610,7 +610,7 @@ especificar un registro o cuenta. Aquí tiene una manera más complicada: >
 
 	CTRL-O "g3dw
 
-Esto borra hasta la tercera palabra en el registro «g».
+Esto elimina hasta la tercera palabra en el registro «g».
 
 ==============================================================================
 

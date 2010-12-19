@@ -311,15 +311,15 @@ una versión anterior. Esto permite usar dos o más versiones
 simultáneamente.
    El ejecutable «vim» sobreescribirá una versión anterior. Si no le
 interesa preservar la versión más antigua, ejecutar «make install»
-funcionará sin problemas. Puede borrar los archivos de
-tiempo de ejecución manualmente. Simplemente borre el directorio con
+funcionará sin problemas. Puede eliminar los archivos de
+tiempo de ejecución manualmente. Simplemente elimine el directorio con
 el número de versión y todos los archivos contenidos en él. Ejemplo: >
 
 	rm -rf /usr/local/share/vim/vim58
 
 Generalmente, bajo este directorio no hay archivos modificados. Si ha
 modificado el archivo «filetype.vim», por ejemplo, será mejor que introduzca
-esos cambios en la versión nueva antes de borrar el archivo.
+esos cambios en la versión nueva antes de eliminar el archivo.
 
 Si es cuidadoso y desea probar la nueva versión durante un tiempo antes de
 cambiar a ella, instale la nueva versión bajo otro nombre. Necesita
@@ -349,7 +349,7 @@ nuevos especificando la ruta completa. El programa debería averiguar
 automáticamente la ubicación de los archivos de tiempo de ejecución para
 la versión adecuada. Por otra parte, no funcionará si define en algún lugar
 la variable «$VIMRUNTIME».
-   Si la actualización le satisface, puede borrar los archivos de la versión
+   Si la actualización le satisface, puede eliminar los archivos de la versión
 anterior. Consulte |90.5|.
 
 ==============================================================================
