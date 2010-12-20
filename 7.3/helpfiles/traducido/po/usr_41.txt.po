@@ -1248,10 +1248,8 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:390
-#, fuzzy
-#| msgid "OPTIONS"
 msgid "LOGIC OPERATIONS"
-msgstr "OPCIONES"
+msgstr "OPERACIONES LÓGICAS"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:393
@@ -1259,6 +1257,8 @@ msgid ""
 "We already used some of them in the examples.  These are the most often used "
 "ones:"
 msgstr ""
+"Ya hemos usado algunas de ellas en los ejemplos anteriores. A continuación "
+"listamos las más utilizadas:"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:400
@@ -1271,12 +1271,20 @@ msgid ""
 "\ta <  b\t\tless than\n"
 "\ta <= b\t\tless than or equal to\n"
 msgstr ""
+"\ta == b\t\tigual a\n"
+"\ta != b\t\tdiferente de\n"
+"\ta >  b\t\tmayor que\n"
+"\ta >= b\t\tmayor o igual a\n"
+"\ta <  b\t\tmenor que\n"
+"\ta <= b\t\tmenor o igual a\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:402
 msgid ""
 "The result is one if the condition is met and zero otherwise.  An example: >"
 msgstr ""
+"El resultado es uno si la condición se cumple, y cero en otro caso. Ejemplo: "
+">"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:408
@@ -1288,6 +1296,11 @@ msgid ""
 "\t:  echo \"you are using an old version, upgrade!\"\n"
 "\t:endif\n"
 msgstr ""
+"\t:if v:version >= 700\n"
+"\t:  echo \"felicitaciones\"\n"
+"\t:else\n"
+"\t:  echo \"¡está usando una versión vieja, actualícese!\"\n"
+"\t:endif\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:413
@@ -1297,7 +1310,13 @@ msgid ""
 "is very useful to write a script that works with multiple versions of Vim.  |"
 "v:version|"
 msgstr ""
+"La variable «v:version» es definida por Vim, y contiene el número de versión "
+"de Vim. 600 corresponde a la versión 6.0. La versión 6.1 tiene el valor 601. "
+"Esta variable es útil para escribir scripts que funcionen con distintas "
+"versiones de Vim. |v:version|"
 
+# TODO revisar qué se quiere decir con languages? idiomas? paradigmas de
+# lenguajes de programación?
 #. type: Plain text
 #: original/txt/usr_41.txt:420
 #, no-wrap
@@ -1309,6 +1328,13 @@ msgid ""
 "number.  This is a bit tricky, because when a string doesn't look like a\n"
 "number, the number zero is used.  Example: >\n"
 msgstr ""
+"Los operadores lógicos funcionan con números y con cadenas de texto. Al\n"
+"comparar dos cadenas, se trabaja con la diferencia matemática de las mismas.\n"
+"Esto compara valores de bytes, lo que para algunos idiomas puede no entregar\n"
+"resultados correctos.\n"
+"   Al comparar cadenas con números, la cadena es convertida a un número antes\n"
+"de hacer la comparación. Debe tener en cuenta que, cuando el contenido de una\n"
+"cadena no se asemeja a un número, se usa el número cero. Ejemplo: >\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:424
@@ -1318,6 +1344,9 @@ msgid ""
 "\t:  echo \"yes\"\n"
 "\t:endif\n"
 msgstr ""
+"\t:if 0 == \"uno\"\n"
+"\t:  echo \"sí\"\n"
+"\t:endif\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:427
@@ -1325,11 +1354,13 @@ msgid ""
 "This will echo \"yes\", because \"one\" doesn't look like a number, thus it "
 "is converted to the number zero."
 msgstr ""
+"El ejemplo mostrará «sí», porque «uno» no puede ser convertido a un número, "
+"por lo que se lo convierte al número cero."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:429
 msgid "For strings there are two more items:"
-msgstr ""
+msgstr "Hay dos operadores más para cadenas de texto:"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:432
