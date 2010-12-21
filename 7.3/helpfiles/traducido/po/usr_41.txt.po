@@ -1369,6 +1369,8 @@ msgid ""
 "\ta =~ b\t\tmatches with\n"
 "\ta !~ b\t\tdoes not match with\n"
 msgstr ""
+"\ta =~ b\t\tcoincide con\n"
+"\ta !~ b\t\tno coincide con\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:435
@@ -1376,6 +1378,8 @@ msgid ""
 "The left item \"a\" is used as a string.  The right item \"b\" is used as a "
 "pattern, like what's used for searching.  Example: >"
 msgstr ""
+"El operando de la izquierda, «a», se trata como una cadena. El operador de la "
+"derecha, «b», se trata como un patrón para una búsqueda de texto. Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:442
@@ -1388,6 +1392,12 @@ msgid ""
 "\t:  echo \"str does not end in a full stop\"\n"
 "\t:endif\n"
 msgstr ""
+"\t:if str =~ \" \"\n"
+"\t:  echo \"str contiene un espacio\"\n"
+"\t:endif\n"
+"\t:if str !~ '\\.$'\n"
+"\t:  echo \"str no termina con punto final\"\n"
+"\t:endif\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:446
@@ -1396,7 +1406,12 @@ msgid ""
 "because backslashes would need to be doubled in a double-quote string and "
 "patterns tend to contain many backslashes."
 msgstr ""
+"Es de resaltar el uso de una cadena de comillas sencillas como patrón de "
+"búsqueda. En este caso es útil porque las barras inversas tendrían que "
+"digitarse dos veces en una cadena de comillas dobles, y los patrones de "
+"búsqueda suelen contener muchas barras inversas."
 
+# TODO incompleto
 #. type: Plain text
 #: original/txt/usr_41.txt:452
 msgid ""
@@ -1406,6 +1421,8 @@ msgid ""
 "a pattern doesn't match, also checking the case of letters.  For the full "
 "table see |expr-==|."
 msgstr ""
+"Al comparar cadenas se tiene en cuenta la opción 'ignorecase'. Si no desea "
+"este comportamiento, añada un «#» para  "
 
 #. type: Plain text
 #: original/txt/usr_41.txt:455
