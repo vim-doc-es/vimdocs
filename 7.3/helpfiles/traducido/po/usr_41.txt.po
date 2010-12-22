@@ -1422,14 +1422,16 @@ msgid ""
 "table see |expr-==|."
 msgstr ""
 "Al comparar cadenas se tiene en cuenta la opción 'ignorecase'. Si no desea "
-"este comportamiento, añada un «#» para  "
+"este comportamiento, añada un «#» para diferenciar mayúsculas de minúsculas, "
+"o «?» para ignorar dicha diferencia. Así, «==?» compara dos cadenas sin "
+"diferenciar mayúsculas de minúsculas. «!~#» revisa la no coincidencia de un "
+"patrón, teniendo en cuenta diferencias de mayúsculas y minúsculas. Puede "
+"consultar la tabla completa de operadores de comparación en |expr-==|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:455
-#, fuzzy
-#| msgid "MORE ON PUTTING"
 msgid "MORE LOOPING"
-msgstr "MÁS SOBRE LA ORDEN PONER"
+msgstr "MÁS SOBRE CICLOS"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:458
@@ -1437,7 +1439,10 @@ msgid ""
 "The \":while\" command was already mentioned.  Two more statements can be "
 "used in between the \":while\" and the \":endwhile\":"
 msgstr ""
+"Ya hemos mencionado la orden «:while». Hay dos instrucciones adicionales que "
+"pueden usarse entre «:while» y el «:endwhile» correspondiente:"
 
+# TODO revisar como queda formateada la cosa
 #. type: Plain text
 #: original/txt/usr_41.txt:463
 #, no-wrap
@@ -1447,11 +1452,15 @@ msgid ""
 "\t:break\t\t\tJump forward to the \":endwhile\"; the loop is\n"
 "\t\t\t\tdiscontinued.\n"
 msgstr ""
+"\t:continue\t\tsaltar hasta el inicio del ciclo «while»; el ciclo\n"
+"\t\t\t\tcontinúa.\n"
+"\t:break\t\t\tSaltar hasta después del «:endwhile»; provoca la\n"
+"\t\t\t\tterminación del ciclo.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:465
 msgid "Example: >"
-msgstr ""
+msgstr "Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:476
@@ -1468,6 +1477,16 @@ msgid ""
 "\t:  sleep 50m\n"
 "\t:endwhile\n"
 msgstr ""
+"\t:while contador < 40\n"
+"\t:  call hacer_algo()\n"
+"\t:  if bandera_saltar\n"
+"\t:    continue\n"
+"\t:  endif\n"
+"\t:  if bandera_terminado\n"
+"\t:    break\n"
+"\t:  endif\n"
+"\t:  sleep 50m\n"
+"\t:endwhile\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:479
