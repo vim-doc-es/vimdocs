@@ -1523,10 +1523,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:491
-#, fuzzy, no-wrap
-#| msgid "\t:tselect tagname\n"
+#, no-wrap
 msgid "\t:execute \"tag \" . tag_name\n"
-msgstr "\t:tselect etiqueta\n"
+msgstr "\t:execute \"tag \" . nombre_etiqueta\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:495
@@ -1535,13 +1534,15 @@ msgid ""
 "variable \"tag_name\".  Suppose \"tag_name\" has the value \"get_cmd\", then "
 "the command that will be executed is: >"
 msgstr ""
+"El «.» se usa para concatenar la cadena «tag » con el valor de la variable "
+"«nombre_etiqueta». Si suponemos que «nombre_etiqueta» tiene el contenido "
+"«obtener_orden», entonces la orden que se ejecutará es: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:497
-#, fuzzy, no-wrap
-#| msgid "\t:ptag write_char\n"
+#, no-wrap
 msgid "\t:tag get_cmd\n"
-msgstr "\t:ptag write_char\n"
+msgstr "\t:tag obtener_orden\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:501
