@@ -10,61 +10,73 @@
 ./"   - Updates
 ./"       TRADUCTOR <CORREO>, AÑO 
 ./"
-.TH VIMTUTOR 1 "2001 April 2"
-.SH NAME
-vimtutor \- the Vim tutor
-.SH SYNOPSIS
+.TH VIMTUTOR 1 "Abril 2 2001"
+.SH NOMBRE
+vimtutor \- El tutor de Vim
+.SH SINOPSIS
 .br
-.B vimtutor [\-g] [language]
+.B vimtutor 
+.BI [ \-g ] 
+.BI [ idioma ]
 .SH DESCRIPTION
 .B Vimtutor
-starts the
+inicia el tutor de
 .B Vim
-tutor.
-It copies the tutor file first, so that it can be modified without changing
-the original file.
+copiando primero el archivo del tutorial, de manera que pueda ser modificado
+sin cambiar el archivo original.
 .PP
-The
 .B Vimtutor
-is useful for people that want to learn their first
+es útil para las personas que desean aprender sus primeras órdenes de
+.B Vim,
+el editor.
+.PP
+El argumento opcional \-g inicia
+.B Vimtutor
+con
+.B gVim
+en vez de
 .B Vim
-commands.
+si la version gráfica de 
+.B Vim 
+está disponible en el sistema; o utiliza a
+.B Vim 
+si
+.B gVim
+no está disponible en el sistema.
 .PP
-The optional argument \-g starts vimtutor with gvim rather than vim, if the
-GUI version of vim is available, or falls back to Vim if gvim is not found.
-.PP
-The optional [language] argument is the two-letter name of a language, like
-"it" or "es".
-If the [language] argument is missing, the language of the current locale will
-be used.
-If a tutor in this language is available, it will be used.
-Otherwise the English version will be used.
+El argumento opcional
+.BI [ idioma ]
+es el código de dos letras de un idioma, como «it» por italiano o «es»
+por español.
+Si el argumento
+.BI [ idioma ]
+no está presente, se usará el idioma de la configuración regional en uso 
+si existe un tutorial para ese idioma; en otro caso se usará la versión 
+inglesa.
 .PP
 .B Vim
-is always started in Vi compatible mode.
-.SH FILES
+se inicia siempre en modo compatible.
+.SH ARCHIVOS
 .TP 15
-/usr/local/lib/vim/tutor/tutor[.language]
-The
+/usr/local/lib/vim/tutor/tutor[.idioma]
+El archivo de texto de
 .B Vimtutor
-text file(s).
 .TP 15
 /usr/local/lib/vim/tutor/tutor.vim
-The Vim script used to copy the
-.B Vimtutor
-text file.
+El «script» de
+.B Vim
+usado para copiar el archivo de texto de
+.B Vimtutor.
 .SH AUTHOR
-The
 .B Vimtutor
-was originally written for Vi by Michael C. Pierce and Robert K. Ware,
-Colorado School of Mines using ideas supplied by Charles Smith,
-Colorado State University.
+fué escrito originalmente por Michael C.\ Pierce y Robert K\. Ware
+de la Escuela de Minas de Colorado usando ideas sugeridas por
+Charles Smitch de la Universidad Estatal de Colorado.
 E-mail: bware@mines.colorado.edu.
 .br
-It was modified for
-.B Vim
-by Bram Moolenaar.
-For the names of the translators see the tutor files.
-.SH SEE ALSO
+Fué modificado por Bram Moolenar para
+.B Vim.
+Vea los archivos de tutorial para los nombres de los traductores.
+.SH VËASE TAMBIÉN
 vim(1)
-." vim:fenc=latin1:ft=nroff
+.\" vim:fenc=latin1:ft=nroff

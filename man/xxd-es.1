@@ -57,7 +57,7 @@ o se suministra un caracter
 .RB \` \- '
 en su lugar, los resultados se enviarán a la salida estándar.
 .PP
-Nótese que se usa un analizador ``perezoso'' que no revisa mas que la
+Nótese que se usa un analizador «perezoso» que no revisa mas que la
 primera letra de la opción, a menos que la opción sea seguida por un
 parametro.
 Los espacios entre una opción de letra única y su parámetro son
@@ -78,7 +78,7 @@ Activa/desactiva autoskip.
 Un `*' replace lineas nulas. Desactivado por defecto.
 .TP
 .IR \-b " | " \-bits
-Hace un dump en bits (digitos binarios) en vez de hexadecimal.
+Hace un «dump» en bits (digitos binarios) en vez de hexadecimal.
 Esta opción escribe octetos como ocho dígitos de unos y ceros
 en vez de un dump hexadecimal normal.
 Cada línea se precede de un número de línea en hexadecimal
@@ -114,16 +114,19 @@ en modo binario.
 El agrupamiento no se aplica a PostScript o incluye estilos.
 .TP
 .IR \-h " | " \-help
-print a summary of available commands and exit.  No hex dumping is performed.
+imprime un resumen de los comandos disponibles y termina.
+No se hace ningún «hex dumping».
 .TP
 .IR \-i " | " \-include
-output in C include file style. A complete static array definition is written
-(named after the input file), unless xxd reads from stdin.
+el resultado sale en el estilo de un archivo de inclusión de C.
+Se escribe una definición completa de un arreglo estático nombrado
+siguiendo el nombre del archivo original, a menos que
+.I xxd lea la entrada estándar.
 .TP
-.IR "\-l len " | " \-len len"
-stop after writing
-.RI  < len >
-octets.
+.IR "\-l longitud " | " \-len longitud"
+detenerse despues de escribir
+.RI  < longitud >
+de octetos.
 .TP
 .IR \-p " | " \-ps " | " \-postscript " | " \-plain
 output in postscript continuous hexdump style. Also known as plain hexdump
@@ -387,11 +390,11 @@ make money and share with me,
 .br
 lose money and don't ask me.
 .PP
-Manual page started by Tony Nugent
+Página de manual escrita por Tony Nugent
 .br
-<tony@sctnugen.ppp.gu.edu.au> <T.Nugent@sct.gu.edu.au>
-.br
-Small changes by Bram Moolenaar.
-Edited by Juergen Weigert.
-.PP
-." vim:fenc=latin1:ft=nroff
+<tony@sctnugen.ppp.gu.edu.au>, <T.Nugent@sct.gu.edu.au>.
+Pequeños cambios por Bram Moolenar.
+Editada por Juergen Weigert.
+Traducción al español por Pedro Alejandro López-Valencia
+<vorbote@users.sourceforge.net>.
+./" vim:fenc=latin1:ft=nroff
