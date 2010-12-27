@@ -17,7 +17,7 @@ muestre las diferencias.
 .SH SINOPSIS
 .br
 .B vimdiff
-[opciones] archivo1 archivo2 [archivo3 [archivo4]]
+.BI [ opciones ] " archivo1 archivo2 " [ "archivo3 " [ archivo4 ]]
 .PP
 .B gvimdiff
 .SH DESCRIPCIÓN
@@ -36,15 +36,14 @@ Cuando se inicia como
 .B gvimdiff
 se activará la GUI (interfáce gráfica), si está disponible.
 .PP
-En cada ventana se activará la opción `diff' lo que causa que las
+En cada ventana se activará la opción «diff» lo que causa que las
 diferencias se resalten.
-.br
-Las opciones `wrap' y `scrollbind' se activan para que el texto se
+Las opciones «wrap» y «scrollbind» se activan para que el texto se
 vea bién.
-.br
-La opción `foldmethod' se activa como «diff», lo que coloca rangos
-de líneas sin cambios en un pliege. `foldcolumn' se activa con la opción
-dos para que sea fácil detectar los plieges y abrirlos o cerrarlos.
+La opción «foldmethod» se activa como «diff», lo que coloca rangos
+de líneas sin cambios en un pliege.
+«foldcolumn» se activa con la opción dos para que sea fácil 
+detectar los plieges y abrirlos o cerrarlos.
 .SH OPCIONES
 Se usan quiebres verticales para alinear las líneas, como si el
 argumento «\-O» se hubiese usado. Para usar plieges horizontales,
