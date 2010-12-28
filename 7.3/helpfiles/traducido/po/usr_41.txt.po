@@ -1412,7 +1412,6 @@ msgstr ""
 "digitarse dos veces en una cadena de comillas dobles, y los patrones de "
 "búsqueda suelen contener muchas barras inversas."
 
-# TODO incompleto
 #. type: Plain text
 #: original/txt/usr_41.txt:452
 msgid ""
@@ -1489,7 +1488,6 @@ msgstr ""
 "\t:  sleep 50m\n"
 "\t:endwhile\n"
 
-# TODO incompleto
 #. type: Plain text
 #: original/txt/usr_41.txt:479
 msgid ""
@@ -1498,16 +1496,16 @@ msgid ""
 "seconds."
 msgstr ""
 "La orden «:sleep» hace que Vim tome una pausa. El argumento «50m» especifica "
-"una duración de 50 milisegundos. "
+"una duración de 50 milisegundos. Otro ejemplo es «:sleep 4», que especifica "
+"una pausa de cuatro segundos."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:481
-#, fuzzy
-#| msgid ""
-#| "Other subjects can be found with the \":help\" command, see |help.txt|."
 msgid ""
 "Even more looping can be done with the \":for\" command, see below in |41.8|."
-msgstr "Puede encontrar otros temas con la orden «:help», véase |help.esx|."
+msgstr ""
+"La orden «:for» es otra estructura de control para iteración, ver sección "
+"|41.8|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:484
@@ -1524,6 +1522,11 @@ msgid ""
 "very powerful way to build commands and execute them.\n"
 "   An example is to jump to a tag, which is contained in a variable: >\n"
 msgstr ""
+"Hasta ahora, todas las órdenes mostradas han sido ejecutadas directamente por\n"
+"Vim. La orden «:execute» permite ejecutar el resultado de una expresión. Ésta\n"
+"es una forma poderosa de construir y ejecutar órdenes.\n"
+"   Un ejemplo es saltar a una etiqueta, cuyo nombre está almacenado en una\n"
+"variable: >\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:491
@@ -1555,12 +1558,16 @@ msgid ""
 "command executes Normal mode commands.  However, its argument is not an "
 "expression but the literal command characters.  Example: >"
 msgstr ""
+"La orden «:execute» sólo puede ejecutar órdenes de la línea de órdenes "
+"(órdenes Ex, que empiezan con «:»). La orden «:normal» ejecuta órdenes del "
+"modo normal. Sin embargo, su argumento no es una expresión, sino los "
+"caracteres literales de la orden. Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:503
 #, no-wrap
 msgid "\t:normal gg=G\n"
-msgstr ""
+msgstr "\t:normal gg=G\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:507
@@ -1570,12 +1577,16 @@ msgid ""
 "   To make \":normal\" work with an expression, combine \":execute\" with it.\n"
 "Example: >\n"
 msgstr ""
+"Se mueve hasta la primera línea y formatea todas las líneas usando el operador\n"
+"«=».\n"
+"   Para usar «:normal» con el resultado de una expresión, debe combinar\n"
+"«:execute» con dicha orden. Ejemplo: >\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:509
 #, no-wrap
 msgid "\t:execute \"normal \" . normal_commands\n"
-msgstr ""
+msgstr "\t:execute \"normal \" . ordenes_modo_normal\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:514
@@ -1586,12 +1597,17 @@ msgid ""
 "Vim will run into the end of the argument and abort the command.  For example,\n"
 "if you start Insert mode, you must leave Insert mode as well.  This works: >\n"
 msgstr ""
+"La variables «ordenes_modo_normal» debe contener órdenes para el modo Normal.\n"
+"   Asegúrese de que el argumento para «:normal» es una orden completa. En otro\n"
+"caso, Vim llegará al final del argumento e interrumpirá la orden. Por ejemplo,\n"
+"si ingresa al modo Insertar, debe salir del mismo. Lo siguiente funciona\n"
+"adecuadamente: >\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:516
 #, no-wrap
 msgid "\t:execute \"normal Inew text \\<Esc>\"\n"
-msgstr ""
+msgstr "\t:execute \"normal Itexto nuevo \\<Esc>\"\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:520
@@ -1600,6 +1616,9 @@ msgid ""
 "special key \"\\<Esc>\".  This avoids having to enter a real <Esc> character "
 "in your script."
 msgstr ""
+"Esta orden inserta «texto nuevo» en la línea actual. Observe el uso de la "
+"tecla especial «\\<Esc>». Así se evita la necesidad de escribir un <Esc> real "
+"en el script."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:523
@@ -1607,6 +1626,8 @@ msgid ""
 "If you don't want to execute a string but evaluate it to get its expression "
 "value, you can use the eval() function: >"
 msgstr ""
+"Si lo que quiere no es ejecutar una cadena de texto, sino evaluarla para "
+"obtener el valor de la expresión que contiene, use la función eval(): >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:526
@@ -1615,6 +1636,8 @@ msgid ""
 "\t:let optname = \"path\"\n"
 "\t:let optval = eval('&' . optname)\n"
 msgstr ""
+"\t:let nomopcion = \"path\"\n"
+"\t:let valopcion = eval('&' . nomopcion)\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:531
@@ -1625,6 +1648,10 @@ msgid ""
 "   The same thing can be done with: >\n"
 "\t:exe 'let optval = &' . optname\n"
 msgstr ""
+"Se antepone un «&» a «path», y así el argumento para eval() es «&path». El\n"
+"resultado será el valor de la opción 'path'.\n"
+"   Se puede obtener el mismo resultado con: >\n"
+"\t:exe 'let optval = &' . optname\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:534
