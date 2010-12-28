@@ -1666,6 +1666,9 @@ msgid ""
 "way.  A few examples will be given in this section.  You can find the whole "
 "list here: |functions|."
 msgstr ""
+"Vim define muchas funciones y provee bastante funcionalidad a través de este "
+"mecanismo. Aquí daremos algunos ejemplos. La referencia para la lista "
+"completa se encuentra en |functions|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:541
@@ -1673,12 +1676,14 @@ msgid ""
 "A function is called with the \":call\" command.  The parameters are passed "
 "in between braces, separated by commas.  Example: >"
 msgstr ""
+"Las funciones se llaman con la orden «:call». Los parámetros se pasan entre "
+"paréntesis, separados por comas. Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:543
 #, no-wrap
 msgid "\t:call search(\"Date: \", \"W\")\n"
-msgstr ""
+msgstr "\t:call search(\"Fecha: \", \"W\")\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:548
@@ -1688,11 +1693,15 @@ msgid ""
 "one as flags.  The \"W\" flag means the search doesn't wrap around the end "
 "of the file."
 msgstr ""
+"Se llama a la función search(), con los argumentos «Fecha: » y «W». La "
+"función search() usa su primer argumento como patrón de búsqueda y el segundo "
+"como una serie de banderas. La bandera «W» hace que la búsqueda termine al "
+"alcanzar el final del archivo."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:550
 msgid "A function can be called in an expression.  Example: >"
-msgstr ""
+msgstr "También es posible llamar funciones en expresiones.  Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:554
@@ -1702,6 +1711,9 @@ msgid ""
 "\t:let repl = substitute(line, '\\a', \"*\", \"g\")\n"
 "\t:call setline(\".\", repl)\n"
 msgstr ""
+"\t:let linea = getline(\".\")\n"
+"\t:let reempl = substitute(linea, '\\a', \"*\", \"g\")\n"
+"\t:call setline(\".\", reempl)\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:566
@@ -1719,13 +1731,23 @@ msgid ""
 "replaced with the result of the substitute().  Thus the effect of the three\n"
 "statements is equal to: >\n"
 msgstr ""
+"La función getline() extrae una línea del búfer actual. Su argumento\n"
+"especifica un número de línea. En este caso se usa «.», que se interpreta como\n"
+"la línea en la que se encuentra el cursor.\n"
+"   La función substitute() tiene un comportamiento similar al de la orden\n"
+"«:substitute». El primer argumento es la cadena de texto sobre la cual operar,\n"
+"el segundo es el patrón de búsqueda, el tercero la cadena de reemplazo. El\n"
+"último argumento corresponde a las banderas para la búsqueda.\n"
+"   La función setline() reemplaza la línea que se especifique en el primer\n"
+"argumento, con la cadena que se pase en el segundo argumento. En este ejemplo\n"
+"se reemplaza a la línea bajo el cursor con el resultado de substitute(). El\n"
+"efecto de las tres instrucciones es equivalente a: >\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:568
-#, fuzzy, no-wrap
-#| msgid "\t:s[ubstitute]\n"
+#, no-wrap
 msgid "\t:substitute/\\a/*/g\n"
-msgstr "\t:s[ubstitute]\n"
+msgstr "\t:substitute/\\a/*/g\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:571
@@ -1733,12 +1755,15 @@ msgid ""
 "Using the functions becomes more interesting when you do more work before "
 "and after the substitute() call."
 msgstr ""
+"Usar estas funciones tiene efectos más interesantes cuando se hace "
+"procesamiento antes y después de la llamada a substitute()."
 
+# TODO revisar que formateo esté correcto
 #. type: Plain text
 #: original/txt/usr_41.txt:574
 #, no-wrap
 msgid "FUNCTIONS\t\t\t\t\t\t*function-list*\n"
-msgstr ""
+msgstr "FUNCIONES\t\t\t\t\t\t*function-list*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:578
