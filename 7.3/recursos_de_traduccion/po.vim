@@ -280,21 +280,28 @@ if has("unix")
 	inoremap <buffer> <unique> <Plug>MsgfmtTest <ESC>:call <SID>Msgfmt('test')<CR>
 	nnoremap <buffer> <unique> <Plug>MsgfmtTest :call <SID>Msgfmt('test')<CR>
 
-	fu! <SID>Msgfmt(action)
-		" Check if the file needs to be saved first.
-		exe "if &modified | w | endif"
-		if a:action == 'stats'
-			exe "!msgfmt --statistics -o /dev/null %"
-		elseif a:action == 'test'
-			if exists("g:po_msgfmt_args")
-				let args = g:po_msgfmt_args
-			else
-				let args = '-vv -c'
-			endif
-			exe "make! " . args . " -o /dev/null %"
-			copen
-		endif
-	endf
+    fu! <SID>Msgfmt(action)
+      " Check if the file needs to be saved first.
+      exe "if &modified | w | endif"
+      if a:action == 'stats'
+        let stats_r = system("msgfmt --statistics -o /dev/null " . shellescape(expand("%")))
+        let stats_t = split(stats_r, "\n")[0]
+        let stats = matchlist(stats_t, '\(\d\+\) translated messages, \(\d\+\) fuzzy translations, \(\d\+\) untranslated messages\.')
+        let untr = eval(stats[1] . ".0")
+        echo printf("%d translated messages, %d fuzzy translations, %d "
+                    \ ."unstranslated messages. %.2g completed", stats[1],
+                    \ stats[2], stats[3], (100.0 * untr)/(stats[1] + stats[2]
+                    \ + stats[3]))
+      elseif a:action == 'test'
+        if exists("g:po_msgfmt_args")
+          let args = g:po_msgfmt_args
+        else
+          let args = '-vv -c'
+        endif
+        exe "make! " . args . " -o /dev/null %"
+        copen
+      endif
+    endf
 endif
 
 " Add translator info in the file header.
