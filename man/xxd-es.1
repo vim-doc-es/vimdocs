@@ -26,23 +26,25 @@
 \-h[elp]
 .PP
 .B xxd
-[opciones] [entrada [salida]]
+.BI [ opciones "] [" entrada [ salida ]]
 .PP
 .B xxd
-\-r[evertir] [opciones] [entrada [salida]]
+.BI \-r "" [ evertir "] [" opciones "] [" entrada [ salida ]]
 .SH DESCRIPCIÓN
 .I xxd
-crea un «dump» hexadecimal de un archivo dado o de la entrada standard.
-Puede convertir un «dump» hexadecimal a su forma binaria original.
+crea un «dump» hexadecimal de un archivo dado o de la entrada estándar.
+También puede convertir un «dump» hexadecimal a su forma binaria original.
 Tal y como
 .BR uuencode (1)
 y
-.BR uudecode (1)
+.BR uudecode (1),
+.I xxd
 permite la transmisión de datos binarios en una representación ASCII que la
 hace segura para el correo electrónico pero tiene la ventaja de decodificar
 a la salida estándar.
 Mas aún, puede usarse para parchear archivos binarios.
 .SH OPCIONES
+,PP
 Si no se suministra un 
 .I archivo de entrada
 se leerá la entrada estándar.
@@ -61,10 +63,9 @@ Nótese que se usa un analizador «perezoso» que no revisa mas que la
 primera letra de la opción, a menos que la opción sea seguida por un
 parametro.
 Los espacios entre una opción de letra única y su parámetro son
-opcionales.
-Los parámetros pueden especificarse en notación decimal,
+opcionales y los parámetros pueden especificarse en notación decimal,
 hexadecimal u octal.
-Así
+Así pues,
 .BR \-c8 ,
 .BR "\-c 8" ,
 .B \-c 010
@@ -75,7 +76,7 @@ son equivalentes.
 .TP
 .IR \-a " | " \-autoskip
 Activa/desactiva autoskip.
-Un `*' replace lineas nulas. Desactivado por defecto.
+Un `*' reemplaza lineas nulas. Desactivado por defecto.
 .TP
 .IR \-b " | " \-bits
 Hace un «dump» en bits (digitos binarios) en vez de hexadecimal.
@@ -83,8 +84,9 @@ Esta opción escribe octetos como ocho dígitos de unos y ceros
 en vez de un dump hexadecimal normal.
 Cada línea se precede de un número de línea en hexadecimal
 y es seguida de una representación en ASCII (o EBCDIC).
-Las opciones de línea de comando \-r, \-p e \-i no funcionan en
-este modo de operación.
+Las opciones de línea de comando 
+.BR \-r , \-p e \-i 
+no funcionan en este modo de operación.
 .TP
 .IR "\-c columnas " | " \-cols columnas"
 especifica un formato de
@@ -96,11 +98,11 @@ El valor máximo es de 256.
 .IR \-E " | " \-EBCDIC
 Cambia el vector de codificación en la columna de la derecha de
 ASCII a EBCDIC.
-Esto no cambia la representación hexadecimal. Esta opción no funciona
+Esto no altera la representación hexadecimal. Esta opción no funciona
 en combinación con las opciones \-r, \-p o \-i.
 .TP
 .IR "\-g bytes " | " \-groupsize bytes"
-separa la salida de cada número de
+Separa la salida de cada número de
 .RI < bytes >
 (dos caracteres hexadecimales u ocho dígitos binarios) con un espacio.
 Use
@@ -114,66 +116,86 @@ en modo binario.
 El agrupamiento no se aplica a PostScript o incluye estilos.
 .TP
 .IR \-h " | " \-help
-imprime un resumen de los comandos disponibles y termina.
+Imprime un resumen de los comandos disponibles y termina.
 No se hace ningún «hex dumping».
 .TP
 .IR \-i " | " \-include
-el resultado sale en el estilo de un archivo de inclusión de C.
+El resultado sale en el estilo de un archivo de inclusión de C.
 Se escribe una definición completa de un arreglo estático nombrado
 siguiendo el nombre del archivo original, a menos que
-.I xxd lea la entrada estándar.
+.I xxd
+lea la entrada estándar.
 .TP
 .IR "\-l longitud " | " \-len longitud"
-detenerse despues de escribir
+Detenerse despues de escribir
 .RI  < longitud >
 de octetos.
 .TP
 .IR \-p " | " \-ps " | " \-postscript " | " \-plain
-output in postscript continuous hexdump style. Also known as plain hexdump
-style.
+salida en postscript, en estilo de «dump» hexadecimal continuo, 
+también conocido como estilo de «dump» hexadecimal simple («plain»).
 .TP
 .IR \-r " | " \-revert
-reverse operation: convert (or patch) hexdump into binary.
-If not writing to stdout, xxd writes into its output file without truncating
-it. Use the combination
+Operación inversa: convierte (o parchea) un «hexdump» a binario.
+Si no esta escribiendo a la salida estándar,
+.I xxd
+escribe al archivo de salida sin truncarlo.
+Use la combinación
 .I \-r \-p
-to read plain hexadecimal dumps without line number information and without a
-particular column layout. Additional Whitespace and line-breaks are allowed
-anywhere.
+Para leer «dumps» hexadecimales sin información de números de línea y sin
+un formato de columna particular. Se permite espacio adicional y quiebres
+de línea en cualquier parte.
 .TP
-.I \-seek offset
-When used after
+.I \-seek desplazamiento
+Cuando se usa después de
 .IR \-r :
-revert with
-.RI < offset >
-added to file positions found in hexdump.
+revierte con un
+.RI < desplazamiento >
+añadido a las posiciones de archivo en el «dump» hexadecimal.
 .TP
-.I \-s [+][\-]seek
-start at
-.RI < seek >
-bytes abs. (or rel.) infile offset.
-\fI+ \fRindicates that the seek is relative to the current stdin file position
-(meaningless when not reading from stdin).  \fI\- \fRindicates that the seek
-should be that many characters from the end of the input (or if combined with
-\fI+\fR: before the current stdin file position).
-Without \-s option, xxd starts at the current file position.
+.I \-s [+][\-]búsqueda
+Comenzar en
+.RI < búsqueda >
+de bytes  absolutos, o relativos de desplazamiento dentro del archivo.
+.I +
+indica que la búsqueda es relativa a la posición actual en el archvo de entrada
+estándar (lo que carece de sentido si no se está leyendo la entrada estándar).
+.B \-
+indica que la búsqueda debe comenzar tantos caracteres del final del archivo
+como se indique o si se combina con
+.I +
+antes de la posición actual en el archivo de entrada estándar.
+Sin la opción
+.BR \-s ,
+.I xxd
+se inicia el la posición actual del archivo.
 .TP
 .I \-u
-use upper case hex letters. Default is lower case.
+Use letras mayúsculas para describir el «dump» hexadecimal.
+Se usan minúsculas por defecto.
 .TP
 .IR \-v " | " \-version
-show version string.
-.SH CAVEATS
+Mostrar la cadena de versión del programa.
+.SH ADVERTENCIAS
 .PP
 .I xxd \-r
-has some builtin magic while evaluating line number information.
-If the output file is seekable, then the linenumbers at the start of each
-hexdump line may be out of order, lines may be missing, or overlapping. In
-these cases xxd will lseek(2) to the next position. If the output file is not
-seekable, only gaps are allowed, which will be filled by null-bytes.
+Tiene algo de magia integrada cuando evalua información de números de
+línea.
+Si el archivo de salida puede buscarse, los números de línea al comienzo
+de cada «dump» hexadecimal puede estar en desorden, puede haber líneas
+faltantes o sobrepuestas.
+En estos casos,
+.I xxd
+hara un
+.BR
+lseek (1)
+hasta la siguiete posición.
+Si el archivo de salida no es buscable, solo se permiten vacios,
+los que pueden ser llenados con bytes nulos.
 .PP
 .I xxd \-r
-never generates parse errors. Garbage is silently skipped.
+Nunca crea errors de análisis.
+La basura se salta silenciosamente.
 .PP
 When editing hexdumps, please note that
 .I xxd \-r
@@ -369,18 +391,18 @@ problems with output file.
 .TP
 4,5
 desired seek position is unreachable.
-.SH "SEE ALSO"
+.SH VÉASE TAMBIÉN
 uuencode(1), uudecode(1), patch(1)
 .br
-.SH WARNINGS
+.SH AVISO
 The tools weirdness matches its creators brain.
 Use entirely at your own risk. Copy files. Trace it. Become a wizard.
 .br
-.SH VERSION
+.SH VERSIÓN
 This manual page documents xxd version 1.7
-.SH AUTHOR
+.SH AUTOR
 .br
-(c) 1990-1997 by Juergen Weigert
+(c) 1990-1997, Juergen Weigert
 .br
 <jnweiger@informatik.uni\-erlangen.de>
 .LP
