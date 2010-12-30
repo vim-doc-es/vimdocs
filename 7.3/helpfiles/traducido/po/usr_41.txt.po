@@ -1869,7 +1869,7 @@ msgid ""
 "\tcount()\t\t\tcount number of times a value appears in a List\n"
 "\trepeat()\t\trepeat a List multiple times\n"
 msgstr ""
-"Manipulación de listas:\t\t\t\t\t*list-functions*\n"
+"Manipulación de Listas:\t\t\t\t\t*list-functions*\n"
 "\tget()\t\t\tobtener un elemento sin generar error al usar índices errados\n"
 "\tlen()\t\t\tcantidad de elementos en una Lista\n"
 "\tempty()\t\t\tcomprueba si una Lista está vacía\n"
@@ -1894,6 +1894,7 @@ msgstr ""
 "\tcount()\t\t\tcuenta la cantidad de veces que un valor aparece en una Lista\n"
 "\trepeat()\t\treplica una Lista múltiples veces\n"
 
+# TODO comprobar formateo, long. de línea
 #. type: Plain text
 #: original/txt/usr_41.txt:651
 #, no-wrap
@@ -1917,6 +1918,24 @@ msgid ""
 "\tmin()\t\t\tminimum value in a Dictionary\n"
 "\tcount()\t\t\tcount number of times a value appears\n"
 msgstr ""
+"Manipulación de Diccionarios:\t\t\t\t*dict-functions*\n"
+"\tget()\t\t\tobtener una entrada sin generar error al usar llaves erradas\n"
+"\tlen()\t\t\tcantidad de entradas en un Diccionario\n"
+"\thas_key()\t\tcomprueba si una llave aparece en un Diccionario\n"
+"\tempty()\t\t\tcomprueba si un Diccionario está vacío\n"
+"\tremove()\t\telimina una entrada de un Diccionario\n"
+"\textend()\t\tañade las entradas de un Diccionario a otro\n"
+"\tfilter()\t\telimina entradas particulares de un Diccionario\n"
+"\tmap()\t\t\tcambia cada entrada de un Diccionario\n"
+"\tkeys()\t\t\tretorna una Lista con las llaves de un Diccionario\n"
+"\tvalues()\t\tretorna una Lista con los valores de un Diccionario\n"
+"\titems()\t\t\tretorna una Lista de pares llave, valor de un Diccionario\n"
+"\tcopy()\t\t\thace una copia superficial de un Diccionario\n"
+"\tdeepcopy()\t\thace una copia completa de un Diccionario\n"
+"\tstring()\t\trepresentación de cadena de un Diccionario\n"
+"\tmax()\t\t\tvalor máximo en un Diccionario\n"
+"\tmin()\t\t\tvalor mínimo en un Diccionario\n"
+"\tcount()\t\t\tcuenta la cantidad de veces que un valor aparece en un Diccionario\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:665
