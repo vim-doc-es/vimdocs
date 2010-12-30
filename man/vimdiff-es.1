@@ -10,50 +10,51 @@
 ./"   - Updates
 ./"       TRADUCTOR <CORREO>, AÑO 
 ./"
-.TH VIMDIFF 1 "2001 March 30"
+.TH VIMDIFF 1 "Marzo 30 del 2001"
 .SH NAME
-vimdiff \- edit two, three or four versions of a file with Vim and show differences
-.SH SYNOPSIS
-.br
+vimdiff \- edite dos, tres o cuatro versiones de un archivo con Vim y
+muestre las diferencias.
+.SH SINOPSIS
 .B vimdiff
-[options] file1 file2 [file3 [file4]]
+.BI [ opciones ] " archivo1 archivo2 " [ "archivo3 " [ archivo4 ]]
 .PP
 .B gvimdiff
-.SH DESCRIPTION
+.SH DESCRIPCIÓN
 .B Vimdiff
-starts
+inicia
 .B Vim
-on two (or three or four) files.
-Each file gets its own window.
-The differences between the files are highlighted.
-This is a nice way to inspect changes and to move changes from one version
-to another version of the same file.
+con dos (o tres o cuatro) archivos.
+Cada archivo es abierto en su propia ventana y
+las diferencias entre los archivos son resaltadas.
+Esta es una buena manera de examinar cambios y de mover estos
+cambios de una versión a otra del mismo archivo.
 .PP
-See vim(1) for details about Vim itself.
+Véase vim(1) para detalles de Vim mismo.
 .PP
-When started as
+Cuando se inicia como
 .B gvimdiff
-the GUI will be started, if available.
+se activará la GUI (interfáce gráfica), si está disponible.
 .PP
-In each window the 'diff' option will be set, which causes the differences
-to be highlighted.
-.br
-The 'wrap' and 'scrollbind' options are set to make the text look good.
-.br
-The 'foldmethod' option is set to "diff", which puts ranges of lines without
-changes in a fold.  'foldcolumn' is set to two to make it easy to spot the
-folds and open or close them.
-.SH OPTIONS
-Vertical splits are used to align the lines, as if the "\-O" argument was used.
-To use horizontal splits instead, use the "\-o" argument.
+En cada ventana se activará la opción «diff» lo que causa que las
+diferencias se resalten.
+Las opciones «wrap» y «scrollbind» se activan para que el texto se
+vea bién.
+La opción «foldmethod» se activa como «diff», lo que coloca rangos
+de líneas sin cambios en un pliege.
+«foldcolumn» se activa con la opción dos para que sea fácil 
+detectar los plieges y abrirlos o cerrarlos.
+.SH OPCIONES
+Se usan quiebres verticales para alinear las líneas, como si el
+argumento «\-O» se hubiese usado. Para usar plieges horizontales,
+use la opción «\-o».
 .PP
-For all other arguments see vim(1).
-.SH SEE ALSO
+Para todos los otros argumentos posibles, véase vim(1).
+.SH VËASE TAMBIËN
 vim(1)
-.SH AUTHOR
-Most of
+.SH AUTOR
+La mayor parte de
 .B Vim
-was made by Bram Moolenaar, with a lot of help from others.
-See ":help credits" in
+fué hecha por Bram Moolenaar, con mucha ayuda de parte de otros.
+Véase «:help credits» en
 .B Vim.
-." vim:fenc=latin1:ft=nroff
+./" vim:fenc=latin1:ft=nroff
