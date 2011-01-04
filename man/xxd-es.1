@@ -5,10 +5,10 @@
 ./"
 ./" Translators credits:
 ./"   - Initial translation
-./"       Pedro Alejandro López-Valencia <vorbote@users.sourceforge.net>, 2009
+./"       Pedro Alejandro López-Valencia <vorbote@users.sf.net>, 2009
 ./"
 ./"   - Updates
-./"       TRADUCTOR <CORREO>, AÑO 
+./"       Pedro Alejandro López-Valencia <vorbote@users.sf.net>, 2010-2011 
 ./"
 .\"
 .\" 21st May 1996
@@ -18,44 +18,44 @@
 .TH XXD 1 "Agosto 1996" "Página de manual para xxd"
 .SH NOMBRE
 .PP
-.I xxd
-\- Crear un «dump» hexadecimal o lo contrario.
+.B xxd
+\- Crear un volcado hexadecimal o lo contrario.
 .SH SINOPSIS
 .PP
-.BR xxd \-h[elp]
+.BI xxd \-h [ elp ]
 .PP
 .B xxd
-.BI [ opciones "] [" entrada [ salida ]]
+.BI [ opciones "] [" entrada " [" salida ]]
 .PP
 .B xxd
-.BI \-r "" [ evertir "] [" opciones "] [" entrada [ salida ]]
+.BI \-r "" [ evertir "] [" opciones "] [" entrada " [" salida ]]
 .SH DESCRIPCIÓN
-.I xxd
-crea un «dump» hexadecimal de un archivo dado o de la entrada estándar.
-También puede convertir un «dump» hexadecimal a su forma binaria original.
+.B xxd
+crea un volcado hexadecimal de un archivo dado o de la entrada estándar.
+También puede convertir un volcado hexadecimal a su forma binaria original.
 Tal y como
 .BR uuencode (1)
 y
 .BR uudecode (1),
-.I xxd
+.B xxd
 permite la transmisión de datos binarios en una representación ASCII que la
 hace segura para el correo electrónico pero tiene la ventaja de decodificar
 a la salida estándar.
 Mas aún, puede usarse para parchear archivos binarios.
 .SH OPCIONES
-,PP
+.PP
 Si no se suministra un 
 .I archivo de entrada
 se leerá la entrada estándar.
 Si se especifica un
 .I archivo de entrada
 como el caracter
-.RB \` \- '
-se tomarán los datos de la entrada estándad.
+.B «\-»
+se tomarán los datos de la entrada estándar.
 Si no se suministra un
 .I archivo de salida
 o se suministra un caracter
-.RB \` \- '
+.B «\-»
 en su lugar, los resultados se enviarán a la salida estándar.
 .PP
 Nótese que se usa un analizador «perezoso» que no revisa mas que la
@@ -65,96 +65,95 @@ Los espacios entre una opción de letra única y su parámetro son
 opcionales y los parámetros pueden especificarse en notación decimal,
 hexadecimal u octal.
 Así pues,
-.BR \-c8 ,
-.BR "\-c 8" ,
-.BR \-c 010
+.IR \-c 8,
+.IR \-c " 8,"
+.IR \-c " 010"
 y
-.BR \-cols 8
+.IR \-cols " 8"
 son equivalentes.
 .PP
 .TP
-.IR \-a " | " \-autoskip
+.IB \-a " | " \-autoskip
 Activa/desactiva autoskip.
 Un `*' reemplaza lineas nulas. Desactivado por defecto.
 .TP
-.IR \-b " | " \-bits
-Hace un «dump» en bits (digitos binarios) en vez de hexadecimal.
+.IB \-b " | " \-bits
+Hace un volcado en bits (digitos binarios) en vez de hexadecimal.
 Esta opción escribe octetos como ocho dígitos de unos y ceros
 en vez de un dump hexadecimal normal.
 Cada línea se precede de un número de línea en hexadecimal
 y es seguida de una representación en ASCII (o EBCDIC).
 Las opciones de línea de comando 
-.BR \-r , \-p e \-i 
+.IR \-r ", " \-p " e " \-i 
 no funcionan en este modo de operación.
 .TP
-.IR "\-c columnas " | " \-cols columnas"
+.IR \-c " columnas  \fB|\fR " \-cols " columnas"
 especifica un formato de
-.RI < columnas >
+.BI < columnas >
 de octetos por línea.
-El valod por defecto es 16 (\-i: 12, \-ps: 30, \-b: 6). 
+El valor por defecto es 16 (
+.IR \-i ": 12, " \-ps ": 30, " \-b ": 6)."
 El valor máximo es de 256.
 .TP
-.IR \-E " | " \-EBCDIC
+.IB \-E " | " \-EBCDIC
 Cambia el vector de codificación en la columna de la derecha de
 ASCII a EBCDIC.
 Esto no altera la representación hexadecimal. Esta opción no funciona
-en combinación con las opciones \-r, \-p o \-i.
+en combinación con las opciones 
+.IR \-r , \-p o \-i.
 .TP
-.IR "\-g bytes " | " \-groupsize bytes"
+.IB "\-g bytes " | " \-groupsize bytes"
 Separa la salida de cada número de
-.RI < bytes >
+.BI < bytes >
 (dos caracteres hexadecimales u ocho dígitos binarios) con un espacio.
 Use
-.I \-g 0
+.IR \-g " 0"
 para suprimir el espaciamiento.
-< Bytes > 
-.I tiene un valor por defecto de 
-2 en modo normal y de
-.I 1
-en modo binario.
+.BI < Bytes > 
+tiene un valor por defecto de 2 en modo normal y de 1 en modo binario.
 El agrupamiento no se aplica a PostScript o incluye estilos.
 .TP
-.IR \-h " | " \-help
+.IB \-h " | " \-help
 Imprime un resumen de los comandos disponibles y termina.
-No se hace ningún «hex dumping».
+No se hace ningún volcado hexadecimal.
 .TP
-.IR \-i " | " \-include
+.IB \-i " | " \-include
 El resultado sale en el estilo de un archivo de inclusión de C.
 Se escribe una definición completa de un arreglo estático nombrado
 siguiendo el nombre del archivo original, a menos que
 .I xxd
 lea la entrada estándar.
 .TP
-.IR "\-l longitud " | " \-len longitud"
-Detenerse despues de escribir
-.RI  < longitud >
+.IB "\-l longitud " | " \-len longitud"
+Detenerse despues de escribir determinada
+.BI  < longitud >
 de octetos.
 .TP
-.IR \-p " | " \-ps " | " \-postscript " | " \-plain
-salida en postscript, en estilo de «dump» hexadecimal continuo, 
-también conocido como estilo de «dump» hexadecimal simple («plain»).
+.IB \-p " | " \-ps " | " \-postscript " | " \-plain
+salida en postscript, en estilo de volcado hexadecimal continuo, 
+también conocido como estilo de volcado hexadecimal simple («plain»).
 .TP
-.IR \-r " | " \-revert
+.IB \-r " | " \-revert
 Operación inversa: convierte (o parchea) un «hexdump» a binario.
 Si no esta escribiendo a la salida estándar,
 .I xxd
 escribe al archivo de salida sin truncarlo.
 Use la combinación
 .I \-r \-p
-Para leer «dumps» hexadecimales sin información de números de línea y sin
+Para leer volcados hexadecimales sin información de números de línea y sin
 un formato de columna particular. Se permite espacio adicional y quiebres
 de línea en cualquier parte.
 .TP
-.I \-seek desplazamiento
+.IR \-seek " desplazamiento"
 Cuando se usa después de
-.IR \-r :
+.IR \-r ,
 revierte con un
-.RI < desplazamiento >
-añadido a las posiciones de archivo en el «dump» hexadecimal.
+.BI < desplazamiento >
+añadido a las posiciones de archivo en el volcado hexadecimal.
 .TP
-.I \-s [+][\-]búsqueda
+.IR \-s " [+][\-]búsqueda"
 Comenzar en
-.RI < búsqueda >
+.BI < búsqueda >
 de bytes  absolutos, o relativos de desplazamiento dentro del archivo.
 .I +
 indica que la búsqueda es relativa a la posición actual en el archvo de entrada
@@ -162,7 +161,7 @@ estándar (lo que carece de sentido si no se está leyendo la entrada estándar).
 .B \-
 indica que la búsqueda debe comenzar tantos caracteres del final del archivo
 como se indique o si se combina con
-.I +
+.B +
 antes de la posición actual en el archivo de entrada estándar.
 Sin la opción
 .BR \-s ,
@@ -170,79 +169,98 @@ Sin la opción
 se inicia el la posición actual del archivo.
 .TP
 .I \-u
-Use letras mayúsculas para describir el «dump» hexadecimal.
+Use letras mayúsculas para describir el volcado hexadecimal.
 Se usan minúsculas por defecto.
 .TP
-.IR \-v " | " \-version
+.IB \-v " | " \-version
 Mostrar la cadena de versión del programa.
 .SH ADVERTENCIAS
 .PP
-.I xxd \-r
-Tiene algo de magia integrada cuando evalua información de números de
+.BI xxd \-r
+tiene algo de magia integrada cuando evalua información de números de
 línea.
 Si el archivo de salida puede buscarse, los números de línea al comienzo
-de cada «dump» hexadecimal puede estar en desorden, puede haber líneas
+de cada volcado hexadecimal puede estar en desorden, puede haber líneas
 faltantes o sobrepuestas.
 En estos casos,
 .I xxd
 hara un
-.BR
-lseek (1)
+.BR lseek (1)
 hasta la siguiete posición.
 Si el archivo de salida no es buscable, solo se permiten vacios,
 los que pueden ser llenados con bytes nulos.
 .PP
-.I xxd \-r
-Nunca crea errors de análisis.
+.BI xxd \-r
+nunca genera errores de análisis.
 La basura se salta silenciosamente.
 .PP
-When editing hexdumps, please note that
-.I xxd \-r
-skips everything on the input line after reading enough columns of hexadecimal
-data (see option \-c). This also means, that changes to the printable ascii (or
-ebcdic) columns are always ignored. Reverting a plain (or postscript) style
-hexdump with xxd \-r \-p does not depend on the correct number of columns. Here anything that looks like a pair of hex-digits is interpreted.
+Cuando edite volcados hexadecimales, note por favor que
+.BI xxd \-r
+salta todo en la línea de entrada despues de leer suficientes
+columnas de datos hexadecimales (véase la opción
+.IR \-c ")."
+Esto siginifica también que los cambios a las columnas de
+ASCII imprimible (o EBCDIC) se ignoran siempre. Al revertir a un estilo
+de salida simple (o PostScript) del volcado hexadecimal con
+.IB xxd "\-r \-p"
+no depende de tener el número «correcto» de columnas.
+En este caso se interpretará cualquier cosa que parezca un par de
+dígitos hexadecimales.
 .PP
-Note the difference between
+Nótese que la diferencia entre
 .br
-\fI% xxd \-i file\fR
+.IR "% xxd \-i archivo" ,
 .br
-and
+.IR "% xxd \-i < archivo" y
 .br
-\fI% xxd \-i < file\fR
+.I xxd \-s +búsqueda
 .PP
-.I xxd \-s +seek
-may be different from
-.IR "xxd \-s seek" ,
-as lseek(2) is used to "rewind" input.  A '+'
-makes a difference if the input source is stdin, and if stdin's file position
-is not at the start of the file by the time xxd is started and given its input.
-The following examples may help to clarify (or further confuse!)...
+pueden ser diferentes de
+.IR "xxd \-s búsqueda" ,
+pues
+.BR lseek (2)
+se usa para «retroceder» sobre la entrada.
+Un «+» hace la diferencia de si la fuente de entrada es la entrada
+estándar y si la posición de archivo de la entrada estándar no es al
+comienzo del archivo en el momento en que se inicia
+.I xxd
+y se le alimenta con datos.
+Los siguientes ejemplos pueden ayudar a aclarar o (a confundir más)
+la mente del lector.
 .PP
-Rewind stdin before reading; needed because the `cat' has already read to the
-end of stdin.
+Retroceder sobre la entrada estándar antes de leer; se necesita pues el
+«encadenado» («cat») ya ha leido hasta el final de la entrada estándar.
 .br
-\fI% sh \-c "cat > plain_copy; xxd \-s 0 > hex_copy" < file\fR
+.I % sh \-c "cat > copia_simple; xxd \-s 0 > copia_hex" < archivo
 .PP
-Hexdump from file position 0x480 (=1024+128) onwards.
-The `+' sign means "relative to the current position", thus the `128' adds to
-the 1k where dd left off.
+Volcado hexadecimal desde la posición de archivo 0x480 (=1024+128)
+hacia adelante.
+El símbolo «+» signigica «relativo a la posición actual», así que el
+«128» añade al primer Kb donde se quedó
+.BR dd .
 .br
-\fI% sh \-c "dd of=plain_snippet bs=1k count=1; xxd \-s +128 > hex_snippet" < file\fR
+.I % sh \-c "dd of=fragmento_simple bs=1k count=1; xxd \-s +128 > fragmento_hex" < archivo
 .PP
-Hexdump from file position 0x100 ( = 1024\-768) on.
+Volcado hexadecimal desde la posición de archivo 0x100 (=1024\-768).
 .br
-\fI% sh \-c "dd of=plain_snippet bs=1k count=1; xxd \-s +\-768 > hex_snippet" < file\fR
+.I % sh \-c "dd of=fragmento_simple bs=1k count=1; xxd \-s +\-768 > fragmento_hex" < archivo
 .PP
-However, this is a rare situation and the use of `+' is rarely needed.
-The author prefers to monitor the effect of xxd with strace(1) or truss(1), whenever \-s is used.
-.SH EXAMPLES
+Sin embargo, esta es una situación poco común y raramente se necesita
+usar «+».
+El autor prefiere observar el efecto de
+.IR xdd con
+.BR strace (1)
+o con
+.BR truss (1),
+siempre que usa
+.IR \-s .
+.SH EJEMPLOS
 .PP
 .br
-Print everything but the first three lines (hex 0x30 bytes) of
-.BR file .
+Imprimir todo excepto las primeras tres líneas (0x30 bytes en hex) del
+.BR archivo .
 .br
-\fI% xxd \-s 0x30 file\fR
+.I % xxd \-s 0x30 file
 .PP
 .br
 Print 3 lines (hex 0x30 bytes) from the end of
