@@ -2479,10 +2479,9 @@ msgstr "\tmzeval()\t\tevalúa una expresión |MzScheme|\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:879
-#, fuzzy, no-wrap
-#| msgid "*22.3*\tFinding a file\n"
+#, no-wrap
 msgid "*41.7*\tDefining a function\n"
-msgstr "*22.3*\tEncontrar un archivo\n"
+msgstr "*41.7*\tDefinición de funciones\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:882
@@ -2490,7 +2489,10 @@ msgid ""
 "Vim enables you to define your own functions.  The basic function "
 "declaration begins as follows: >"
 msgstr ""
+"Vim permite definir nuevas funciones. La definición básica de una función "
+"corresponde a lo siguiente: >"
 
+# TODO mayúscula o EN mayúscula
 #. type: Plain text
 #: original/txt/usr_41.txt:889
 #, no-wrap
@@ -2502,6 +2504,12 @@ msgid ""
 "\tNote:\n"
 "\tFunction names must begin with a capital letter.\n"
 msgstr ""
+"\t:function {nombre}({var1}, {var2}, ...)\n"
+"\t:  {instrucciones}\n"
+"\t:endfunction\n"
+"<\n"
+"\tNota:\n"
+"\tLos nombres de funciones deben empezar con una letra en mayúscula.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:892
