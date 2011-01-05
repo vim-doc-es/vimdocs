@@ -2209,6 +2209,11 @@ msgid ""
 "\tgetloclist()\t\tlist of location list items\n"
 "\tsetloclist()\t\tmodify a location list\n"
 msgstr ""
+"Listas de corrección rápida y de ubicación:\t\t\t*quickfix-functions*\n"
+"\tgetqflist()\t\tobtiene una lista de errores de corrección rápida\n"
+"\tsetqflist()\t\tmodifica una lista de corrección rápida\n"
+"\tgetloclist()\t\tobtiene la lista de elementos de una lista de ubicación\n"
+"\tsetloclist()\t\tmodifica una lista de ubicación\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:778
@@ -2237,6 +2242,12 @@ msgid ""
 "\tfoldtext()\t\tgenerate the line displayed for a closed fold\n"
 "\tfoldtextresult()\tget the text displayed for a closed fold\n"
 msgstr ""
+"Plegado:\t\t\t\t\t*folding-functions*\n"
+"\tfoldclosed()\t\tcomprueba si hay un pliegue cerrado en una línea específica\n"
+"\tfoldclosedend()\t\tsimilar a foldclosed() pero retorna la última línea\n"
+"\tfoldlevel()\t\tobtiene el nivel de plegado de la línea especificada\n"
+"\tfoldtext()\t\tgenera el texto mostrado en un pliegue cerrado\n"
+"\tfoldtextresult()\tobtiene el texto mostrado en un pliegue cerrado\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:803
@@ -2260,6 +2271,23 @@ msgid ""
 "\tsetmatches()\t\trestore a list of matches saved by\n"
 "\t\t\t\t|getmatches()|\n"
 msgstr ""
+"Syntaxis y resaltado:\t  *syntax-functions* *highlighting-functions*\n"
+"\tclearmatches()\t\telimina las coincidencias definidas por |matchadd()| y\n"
+"\t\t\t\tlas órdenes |:match|\n"
+"\tgetmatches()\t\tobtiene todas las coincidencias definidas por |matchadd()| y\n"
+"\t\t\t\tlas órdenes |:match|\n"
+"\thlexists()\t\tcomprueba la existencia de un grupo de resaltado\n"
+"\thlID()\t\t\tobtiene el ID de un grupo de resaltado\n"
+"\tsynID()\t\t\tobtiene el ID de sintaxis en una posición específica\n"
+"\tsynIDattr()\t\tobtiene un atributo específico correspondiente a un ID de sintaxis\n"
+"\tsynIDtrans()\t\tobtiene un ID de sintaxis traducido\n"
+"\tdiff_hlID()\t\tobtiene el ID de resaltado para el modo diff en una posición dada\n"
+"\tmatchadd()\t\tdefine un patrón a resaltar(una «coincidencia»)\n"
+"\tmatcharg()\t\tobtiene información acerca de los argumentos para |:match|\n"
+"\tmatchdelete()\t\tborra una coincidencia definida por |matchadd()| o una\n"
+"\t\t\t\torden |:match|\n"
+"\tsetmatches()\t\trestaura una lista de coincidencias guardada por\n"
+"\t\t\t\t|getmatches()|\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:808
@@ -2270,6 +2298,10 @@ msgid ""
 "\tspellsuggest()\t\treturn suggested spelling corrections\n"
 "\tsoundfold()\t\treturn the sound-a-like equivalent of a word\n"
 msgstr ""
+"Corrección ortográfica:\t\t\t\t\t*spell-functions*\n"
+"\tspellbadword()\t\tubica palabras mal escritas a partir de la posición actual del cursor\n"
+"\tspellsuggest()\t\tretorna las correcciones ortográficas sugeridas\n"
+"\tsoundfold()\t\tretorna el homófono de una palabra\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:814
@@ -2281,6 +2313,11 @@ msgid ""
 "\thistget()\t\tget an item from a history\n"
 "\thistnr()\t\tget highest index of a history list\n"
 msgstr ""
+"Histórico:\t\t\t\t\t*history-functions*\n"
+"\thistadd()\t\tañade un elemento a un histórico\n"
+"\thistdel()\t\telimina un elemento de un histórico\n"
+"\thistget()\t\tobtiene un elemento de un histórico\n"
+"\thistnr()\t\tobtiene el índice más grande de la lista de un histórico\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:828
@@ -2300,6 +2337,19 @@ msgid ""
 "\tinputsave()\t\tsave and clear typeahead\n"
 "\tinputrestore()\t\trestore typeahead\n"
 msgstr ""
+"Interacción:\t\t\t\t\t*interactive-functions*\n"
+"\tbrowse()\t\tdespliega un diálogo de selección de archivos\n"
+"\tbrowsedir()\t\tdespliega un diálogo de selección de directorios\n"
+"\tconfirm()\t\tsolicita al usuario hacer una elección\n"
+"\tgetchar()\t\tsolicita un carácter al usuario\n"
+"\tgetcharmod()\t\tobtiene los modificadores usados en el último carácter digitado\n"
+"\tfeedkeys()\t\tpone caracteres en la fila de digitado\n"
+"\tinput()\t\t\tsolicita una línea de texto al usuario\n"
+"\tinputlist()\t\tpermite al usuario elegir un elemento de una lista\n"
+"\tinputsecret()\t\tsolicita una línea de texto al usuario, sin mostrarla\n"
+"\tinputdialog()\t\tsolicita una línea de texto al usuario usando un diálogo\n"
+"\tinputsave()\t\tguarda y limpia el búfer de digitado\n"
+"\tinputrestore()\t\trestaura el búfer de digitado\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:833
@@ -2310,6 +2360,10 @@ msgid ""
 "\tgetwinposx()\t\tX position of the GUI Vim window\n"
 "\tgetwinposy()\t\tY position of the GUI Vim window\n"
 msgstr ""
+"Interfaz gráfica:\t\t\t\t\t\t*gui-functions*\n"
+"\tgetfontname()\t\tobtiene el nombre del tipo de letra actual\n"
+"\tgetwinposx()\t\tposición X de la ventana gráfica de Vim\n"
+"\tgetwinposy()\t\tposición Y de la ventana gráfica de Vim\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:843
@@ -2325,6 +2379,15 @@ msgid ""
 "\tforeground()\t\tmove the Vim window to the foreground\n"
 "\tremote_foreground()\tmove the Vim server window to the foreground\n"
 msgstr ""
+"Servidor Vim:\t\t\t\t\t*server-functions*\n"
+"\tserverlist()\t\tretorna una lista con nombres de servidores\n"
+"\tremote_send()\t\tenvía órdenes (caracteres) a un servidor Vim\n"
+"\tremote_expr()\t\tevalúa una expresión en un servidor Vim\n"
+"\tserver2client()\t\tenvía una respuesta a un cliente de un servidor Vim\n"
+"\tremote_peek()\t\tcomprueba si hay respuestas de un servidor Vim\n"
+"\tremote_read()\t\tlee una respuesta de un servidor Vim\n"
+"\tforeground()\t\tmueve la ventana de Vim a primer plano\n"
+"\tremote_foreground()\tmueve la ventana de un servidor Vim a primer plano\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:850
@@ -2337,6 +2400,12 @@ msgid ""
 "\twinsaveview()\t\tget view of current window\n"
 "\twinrestview()\t\trestore saved view of current window\n"
 msgstr ""
+"Tamaño y posición de ventanas:\t\t\t*window-size-functions*\n"
+"\twinheight()\t\tobtiene la altura de una ventana específica\n"
+"\twinwidth()\t\tobtiene el ancho de una ventana específica\n"
+"\twinrestcmd()\t\tretorna una orden para restaurar los tamaños de ventana\n"
+"\twinsaveview()\t\tobtiene una vista de la ventana actual\n"
+"\twinrestview()\t\trestaura una vista almacenada en la ventana actual\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:864
@@ -2356,6 +2425,19 @@ msgid ""
 "\teventhandler()\t\tcheck if invoked by an event handler\n"
 "\tgetpid()\t\tget process ID of Vim\n"
 msgstr ""
+"Varios:\t\t\t\t\t*various-functions*\n"
+"\tmode()\t\t\tobtiene el modo de edición actual\n"
+"\tvisualmode()\t\túltimo modo visual usado\n"
+"\thasmapto()\t\tcomprueba la existencia de una macro\n"
+"\tmapcheck()\t\tcomprueba la existencia de una macro que coincida con el argumento dado\n"
+"\tmaparg()\t\tobtiene el rhs de una macro\n"
+"\texists()\t\tcomprueba si la variable, función, etc., existe\n"
+"\thas()\t\t\tcomprueba si Vim cuenta con la característica dada\n"
+"\tchangenr()\t\tretorna el número correspondiente al cambio más reciente\n"
+"\tcscope_connection()\tcomprueba si hay una conexión a cscope\n"
+"\tdid_filetype()\t\tcomprueba si se ha usado una orden automática FileType\n"
+"\teventhandler()\t\tcomprueba si se ha sido invocado desde un manejador de eventos\n"
+"\tgetpid()\t\tobtiene el ID de proceso de Vim\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:867
@@ -2364,6 +2446,8 @@ msgid ""
 "\tlibcall()\t\tcall a function in an external library\n"
 "\tlibcallnr()\t\tidem, returning a number\n"
 msgstr ""
+"\tlibcall()\t\tllama a una función en una biblioteca externa\n"
+"\tlibcallnr()\t\tidéntica, pero retorna un número en vez de una cadena\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:871
@@ -2373,6 +2457,9 @@ msgid ""
 "\tgetregtype()\t\tget type of a register\n"
 "\tsetreg()\t\tset contents and type of a register\n"
 msgstr ""
+"\tgetreg()\t\tobtiene el contenido de un registro\n"
+"\tgetregtype()\t\tobtiene el tipo de un registro\n"
+"\tsetreg()\t\tasigna el tipo y contenido de un registro\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:874
@@ -2381,12 +2468,14 @@ msgid ""
 "\ttaglist()\t\tget list of matching tags\n"
 "\ttagfiles()\t\tget a list of tags files\n"
 msgstr ""
+"\ttaglist()\t\tobtiene una lista de etiquetas coincidentes\n"
+"\ttagfiles()\t\tobtiene una lista de archivos de etiquetas\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:876
 #, no-wrap
 msgid "\tmzeval()\t\tevaluate |MzScheme| expression\n"
-msgstr ""
+msgstr "\tmzeval()\t\tevalúa una expresión |MzScheme|\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:879
