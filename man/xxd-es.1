@@ -323,9 +323,9 @@ excepto por el último, el cual es «A» (hex 0x41).
 .PP
 .I % echo "010000: 41" | xxd \-r > file
 .PP
-Hexdump this file with autoskip.
+Volcado hexadecimal de este archivo con «autoskip».
 .br
-\fI% xxd \-a \-c 12 file\fR
+\fI% xxd \-a \-c 12 archivo\fR
 .br
 0000000: 0000 0000 0000 0000 0000 0000  ............
 .br
@@ -333,31 +333,41 @@ Hexdump this file with autoskip.
 .br
 000fffc: 0000 0000 40                   ....A
 .PP
-Create a 1 byte file containing a single 'A' character.
-The number after '\-r \-s' adds to the linenumbers found in the file;
-in effect, the leading bytes are suppressed.
+Crear un archivo de 1 (un) byte conteniendo un solo caracter «A».
+El número despues de
+.RI « "\-r\-s" »
+añade a las líneas numéricas que se encuentran en el archivo;
+los bytes precedentes se suprimen para todo efecto.
 .br
-\fI% echo "010000: 41" | xxd \-r \-s \-0x10000 > file\fR
+\fI% echo "010000: 41" | xxd \-r \-s \-0x10000 > archivo\fR
 .PP
-Use xxd as a filter within an editor such as
-.B vim(1)
-to hexdump a region marked between `a' and `z'.
+Usar
+.B xxd
+como un filtro dentro de un editor tal y como
+.BR vim (1)
+para volcar hexadecimalmente una región marcada entre «a» y «z».
 .br
 \fI:'a,'z!xxd\fR
 .PP
-Use xxd as a filter within an editor such as
-.B vim(1)
-to recover a binary hexdump marked between `a' and `z'.
+Usar
+.B xxd
+como un filtro dentro de un editor tal y como
+.BR vim (1)
+para recuperar un volcado hexadecimal binario marcado entre
+«a» y «z».
 .br
 \fI:'a,'z!xxd \-r\fR
 .PP
-Use xxd as a filter within an editor such as
-.B vim(1)
-to recover one line of a hexdump.  Move the cursor over the line and type:
+Usar
+.B xxd
+como un filtro dentro de un editor tal y como
+.BR vim (1)
+para recuperar una línea de un volcado hexadecimal.
+Mueva el cursor sobre la línea y pulse:
 .br
 \fI!!xxd \-r\fR
 .PP
-Read single characters from a serial line
+Leer caracteres únicos desde una línea serial:
 .br
 \fI% xxd \-c1 < /dev/term/b &\fR
 .br
@@ -365,54 +375,61 @@ Read single characters from a serial line
 .br
 \fI% echo \-n foo > /dev/term/b\fR
 .PP
-.SH "RETURN VALUES"
-The following error values are returned:
+.SH "VALORES DE RETORNO"
+La aplicación puede dar los siguientes valores de retorno:
 .TP
 0
-no errors encountered.
+no se encontró ningún error.
 .TP
 \-1
+operación no soportada
 operation not supported (
-.I xxd \-r \-i
-still impossible).
+.BI xxd "\-r \-i"
+es imposible todavía).
 .TP
 1
-error while parsing options.
+error al analizar las opciones.
 .TP
 2
-problems with input file.
+problemas con el archivo de entrada.
 .TP
 3
-problems with output file.
+problemas con el archivo de salida.
 .TP
 4,5
-desired seek position is unreachable.
+la posición de búsqueda deseada es inalcanzable.
 .SH VÉASE TAMBIÉN
-uuencode(1), uudecode(1), patch(1)
-.br
+.BR uuencode (1),
+.BR uudecode (1),
+.BR  patch (1)
 .SH AVISO
-The tools weirdness matches its creators brain.
-Use entirely at your own risk. Copy files. Trace it. Become a wizard.
+La rareza de las herramientas describe el cerebro del creador.
+Use completamente a su propio riesgo.
+Copie archivos.
+Ratree su ejecución.
+Vuelvase un mago.
 .br
 .SH VERSIÓN
-This manual page documents xxd version 1.7
+Esta página de manual documenta a
+.B xxd
+version 1.7.
 .SH AUTOR
 .br
 (c) 1990-1997, Juergen Weigert
 .br
 <jnweiger@informatik.uni\-erlangen.de>
 .LP
-Distribute freely and credit me,
-.br
-make money and share with me,
-.br
-lose money and don't ask me.
+.nf
+Distribuye libremente y acredítame,
+haz dinero y comparte conmigo,
+pierde dinero y no me preguntes.
+.fi
 .PP
 Página de manual escrita por Tony Nugent
-.br
 <tony@sctnugen.ppp.gu.edu.au>, <T.Nugent@sct.gu.edu.au>.
 Pequeños cambios por Bram Moolenar.
 Editada por Juergen Weigert.
 Traducción al español por Pedro Alejandro López-Valencia
+.br
 <vorbote@users.sourceforge.net>.
 ./" vim:fenc=latin1:ft=nroff
