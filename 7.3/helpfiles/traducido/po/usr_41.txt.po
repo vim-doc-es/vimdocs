@@ -2,20 +2,22 @@
 # Copyright (C) 2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the Vim package.
 # Automatically generated, 2010.
-#
+# Omar Campagne <ocampagne@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2010-12-11 17:20-0500\n"
-"Last-Translator: Javier Rojas <jerojasro@devnull.li>\n"
+"PO-Revision-Date: 2011-01-06 15:32+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.0-beta2\n"
+"X-Project-Style: default\n"
 
 #. type: Plain text
 #: original/txt/intro.txt:18 original/txt/intro.txt:79
@@ -137,7 +139,8 @@ msgstr ""
 #: original/txt/usr_90.txt:417 original/txt/usr_90.txt:494
 #, no-wrap
 msgid "==============================================================================\n"
-msgstr "==============================================================================\n"
+msgstr "============================================================================"
+"==\n"
 
 #. type: Plain text
 #: original/txt/usr_toc.txt:4 original/txt/usr_01.txt:4
@@ -4061,17 +4064,20 @@ msgid ""
 "is called a plugin.  Vim users can drop your script in their plugin "
 "directory and use its features right away |add-plugin|."
 msgstr ""
+"Puede crear un script de Vim de tal forma que lo puedan usar varias "
+"personas. Este se llama una extensión. Los usuarios de Vim pueden copiar su "
+"script en su directorio «plugin/», y utilizarlo en el momento con |add-"
+"plugin|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1625
-#, fuzzy
 #| msgid "There are two types of plugins:"
 msgid "There are actually two types of plugins:"
 msgstr "Hay dos tipos de extensiones:"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1628
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid ""
 #| "    global plugin: Used for all kinds of files\n"
 #| "  filetype plugin: Only used for a specific type of file\n"
@@ -4079,8 +4085,8 @@ msgid ""
 "  global plugins: For all types of files.\n"
 "filetype plugins: Only for files of a specific type.\n"
 msgstr ""
-"               Extensión global: Empleado para todos los tipos de archivo\n"
-"   Extensión de tipo de archivo: Empleado para un tipo de archivo específico\n"
+"Extensión global: Empleado con todos los tipos de archivo.\n"
+"Extensión de tipo de archivo: Empleado con un tipo de archivo específico\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1632
@@ -4089,11 +4095,15 @@ msgid ""
 "for writing filetype plugins.  The specifics for filetype plugins are in the "
 "next section |write-filetype-plugin|."
 msgstr ""
+"En esta sección se describirá la extensión global («global plugin»). La "
+"mayoría de elementos también son necesarios para escribir extensiones de "
+"tipo de archivo («filetype plugins»). La sección a continuación, |write-"
+"filetype-plugin, detalla las extensiones de tipo de archivo."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1635
 msgid "NAME"
-msgstr ""
+msgstr "NOMBRE"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1641
@@ -4104,6 +4114,11 @@ msgid ""
 "different.  And please limit the name to 8 characters, to avoid problems on "
 "old Windows systems."
 msgstr ""
+"Primero, debe elegir un nombre para su extensión. El nombre debería mostrar "
+"las funcionalidades ofrecidas por la extensión. Así mismo, debería ser poco "
+"probable que alguien escriba una extensión con el mismo nombre pero otras "
+"funcionalidades. Por último, limite el nombre a ocho caracteres para evitar "
+"problemas en antiguos sistemas de Windows."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1644
@@ -4111,6 +4126,8 @@ msgid ""
 "A script that corrects typing mistakes could be called \"typecorr.vim\".  We "
 "will use it here as an example."
 msgstr ""
+"Un script que corrige errores tipográficos se podría llamar «typecorr.vim». "
+"Lo usaremos como ejemplo."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1647
@@ -4119,17 +4136,22 @@ msgid ""
 "This will be explained step-by-step.  The complete example plugin is at the "
 "end."
 msgstr ""
+"Para que funcione en cualquier sistema la extensión debería seguir algunas "
+"normas , las cuales se detallaran paso a paso. Al final tiene una completa "
+"extensión de ejemplo."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1650
 msgid "BODY"
-msgstr ""
+msgstr "CUERPO"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1652
 msgid ""
 "Let's start with the body of the plugin, the lines that do the actual work: >"
 msgstr ""
+"Vamos a comenzar con el cuerpo de la extensión, las líneas que realmente "
+"hacen el trabajo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1659
@@ -4142,11 +4164,17 @@ msgid ""
 " 18\t\t\\ synchronization\n"
 " 19\tlet s:count = 4\n"
 msgstr ""
+" 14\tiabbrev teh the\n"
+" 15\tiabbrev otehr other\n"
+" 16\tiabbrev wnat want\n"
+" 17\tiabbrev synchronisation\n"
+" 18\t\t\\ synchronization\n"
+" 19\tlet s:count = 4\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1661
 msgid "The actual list should be much longer, of course."
-msgstr ""
+msgstr "Por supuesto, la lista actual debería ser mucho más larga."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1664
@@ -4154,11 +4182,13 @@ msgid ""
 "The line numbers have only been added to explain a few things, don't put "
 "them in your plugin file!"
 msgstr ""
+"Los números de línea se han añadido en pro de la claridad. ¡No los inserte "
+"su archivo de extensión!"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1667
 msgid "HEADER"
-msgstr ""
+msgstr "ENCABEZADO"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1672
@@ -4168,6 +4198,10 @@ msgid ""
 "to know who wrote this wonderful plugin and where they can send remarks.  "
 "Therefore, put a header at the top of your plugin: >"
 msgstr ""
+"Lo más probable es corrija la extensión, y tenga en poco tiempo varias "
+"versiones de éste. Y cuando distribuya el archivo, la gente querrá saber "
+"quién escribió esta maravillosa extensión, y dónde pueden enviar "
+"comentarios. Por ello, incluya un encabezado al principio de su extensión: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1676
@@ -4177,6 +4211,9 @@ msgid ""
 "  2\t\" Last Change:\t2000 Oct 15\n"
 "  3\t\" Maintainer:\tBram Moolenaar <Bram@vim.org>\n"
 msgstr ""
+"  1\t\" Vim global plugin for correcting typing mistakes\n"
+"  2\t\" Last Change:\t2000 Oct 15\n"
+"  3\t\" Maintainer:\tBram Moolenaar <Bram@vim.org>\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1681
@@ -4186,18 +4223,22 @@ msgid ""
 "either public domain or use the Vim |license|.  A short note about this near "
 "the top of the plugin should be sufficient.  Example: >"
 msgstr ""
+"Derechos de autor y licencias: Debido a que las extensiones son útiles, y "
+"que no merece la pena restringir su distribución, considere que su extensión "
+"sea de dominio público, o use la licencia (|license|) de Vim. Una breve "
+"cerca del inicio de la extensión debería servir. Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1683
 #, no-wrap
 msgid "  4\t\" License:\tThis file is placed in the public domain.\n"
-msgstr ""
+msgstr "  4\t\" License:\tThis file is placed in the public domain.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1686
 #, no-wrap
 msgid "LINE CONTINUATION, AVOIDING SIDE EFFECTS\t\t*use-cpo-save*\n"
-msgstr ""
+msgstr "CONTINUACIÓN DE LÍNEA, EVITANDO EFECTOS SECUNDARIOS\t*use-cpo-save*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1693
@@ -4210,6 +4251,14 @@ msgid ""
 "use of line-continuation and make the script work for most people.  It is "
 "done like this: >"
 msgstr ""
+"En la línea 18 del ejemplo anterior, se usa el mecanismo |line-"
+"continuation|. Los usuarios que definen 'compatible' pueden encontrar "
+"problemas con esto, y se les mostraría un mensaje de error. No podemos "
+"simplemente  reiniciar 'compatible' porque tiene muchos efectos secundarios. "
+"Para evitarlo, definimos la opción 'cpoptions' con el valor predefinido de "
+"Vim, para restaurarlo más tarde. Esto permite el uso de line-continuation y "
+"que el script funcione en la mayoría de sistemas. Se hace de la siguiente "
+"forma: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1698
@@ -4220,6 +4269,10 @@ msgid ""
 " ..\n"
 " 42\tlet &cpo = s:save_cpo\n"
 msgstr ""
+" 11\tlet s:save_cpo = &cpo\n"
+" 12\tset cpo&vim\n"
+" ..\n"
+" 42\tlet &cpo = s:save_cpo\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1701
@@ -4227,6 +4280,8 @@ msgid ""
 "We first store the old value of 'cpoptions' in the s:save_cpo variable.  At "
 "the end of the plugin this value is restored."
 msgstr ""
+"Primero almacenamos el valor antiguo de 'cpoptions'  en la variable "
+"«s:save_cpo». El valor se restaurará al final de la extensión."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1705
@@ -4235,13 +4290,15 @@ msgid ""
 "could already be in use for something else.  Always use script-local "
 "variables for things that are only used in the script."
 msgstr ""
+"Tenga en cuanta que se usa una variable local de script, |s:var|. Puede que "
+"se esté utilizando una variable global para otra cosa. Use siempre variables "
+"locales  en el script para aquello que se usa sólo en el script."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1708
-#, fuzzy
 #| msgid "NOT WRAPPING"
 msgid "NOT LOADING"
-msgstr "BÚSQUEDA «NOWRAP»"
+msgstr "NO CARGAR"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1713
@@ -4251,6 +4308,11 @@ msgid ""
 "a user has his own plugin he wants to use.  Then the user must have a chance "
 "to disable loading this specific plugin.  This will make it possible: >"
 msgstr ""
+"Es posible que el usuario no quiere cargar esta extensión en cada momento. O "
+"que el administrador del sistema lo ha copiado al directorio de extensiones "
+"del sistema, pero el usuario quiere usar el suyo. En ese caso, el usuario "
+"debe tener la posibilidad de desactivar cargar esta extensión específica. Lo "
+"siguiente lo hace posible:"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1718
@@ -4261,6 +4323,10 @@ msgid ""
 "  8\tendif\n"
 "  9\tlet g:loaded_typecorr = 1\n"
 msgstr ""
+"  6\tif exists(\"g:loaded_typecorr\")\n"
+"  7\t  finish\n"
+"  8\tendif\n"
+"  9\tlet g:loaded_typecorr = 1\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1722
@@ -4269,6 +4335,9 @@ msgid ""
 "messages for redefining functions and cause trouble for autocommands that "
 "are added twice."
 msgstr ""
+"También evita que cargar el script dos veces, lo que provocaría mensajes de "
+"error al redifinir las funciones, y provocar problemas con las órdenes "
+"automáticas que se cargan por duplicado."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1727
@@ -4278,6 +4347,10 @@ msgid ""
 "using the variable in a function (without \"g:\" it would be a variable "
 "local to the function)."
 msgstr ""
+"Se recomienda que el nombre empiece con «loaded_» y, a continuación, el "
+"nombre literal de la extensión. La «g:» se añade para evitar errores al usar "
+"la variable en una función (sin la «g:», sería una variable local a la "
+"función)."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1730
@@ -4285,13 +4358,14 @@ msgid ""
 "Using \"finish\" stops Vim from reading the rest of the file, it's much "
 "quicker than using if-endif around the whole file."
 msgstr ""
+"Usar «finish» impide que Vim lea el resto del archivo, lo cual es mucho más "
+"rápido que usar «if-endif» a lo largo del archivo."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1733
-#, fuzzy
 #| msgid "NOT WRAPPING"
 msgid "MAPPING"
-msgstr "BÚSQUEDA «NOWRAP»"
+msgstr "MACROS"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1739
@@ -4302,18 +4376,26 @@ msgid ""
 "else.  To allow the user to define which keys a mapping in a plugin uses, "
 "the <Leader> item can be used: >"
 msgstr ""
+"Ahora, vamos a hacer que la extensión sea más interesante: Vamos a añadir "
+"una macro que añade una corrección para la palabra bajo el cursor. Podrías "
+"escoger una secuencia de teclas para esta macro, pero puede que el usuario "
+"la esté usando para otra cosa. Puede usar el elemento <Leader> para permitir "
+"que el usuario pueda definir las teclas que utiliza la macro de una "
+"extensión: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1741
 #, no-wrap
 msgid " 22\t  map <unique> <Leader>a  <Plug>TypecorrAdd\n"
-msgstr ""
+msgstr " 22\t  map <unique> <Leader>a  <Plug>TypecorrAdd\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1743
 msgid ""
 "The \"<Plug>TypecorrAdd\" thing will do the work, more about that further on."
 msgstr ""
+"El elemento «<Plug>TypecorrAdd» daría un buen resultado, más información a "
+"continuación."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1746
@@ -4321,12 +4403,15 @@ msgid ""
 "The user can set the \"mapleader\" variable to the key sequence that he "
 "wants this mapping to start with.  Thus if the user has done: >"
 msgstr ""
+"El usuario puede definir la variable «mapleader» como la secuencia de teclas "
+"con la que desea iniciar esta macro. Por lo tanto, si el usuario ha hecho: "
+">"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1748
 #, no-wrap
 msgid "\tlet mapleader = \"_\"\n"
-msgstr ""
+msgstr "\tlet mapleader = \"_\"\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1751
@@ -4335,6 +4420,9 @@ msgid ""
 "value will be used, which is a backslash.  Then a map for \"\\a\" will be "
 "defined."
 msgstr ""
+"la macro se definirá como «_a». En caso contrario se usará el valor "
+"predefinido, que es una barra inversa. Por ello, se definiría una macro como "
+"«\\a»."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1754
@@ -4342,6 +4430,8 @@ msgid ""
 "Note that <unique> is used, this will cause an error message if the mapping "
 "already happened to exist. |:map-<unique>|"
 msgstr ""
+"Tenga en cuenta se usa <unique>, lo que provocaría un mensaje de error si la "
+"macro ya existe.  |:map-<unique>|"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1757
@@ -4349,6 +4439,8 @@ msgid ""
 "But what if the user wants to define his own key sequence? We can allow that "
 "with this mechanism: >"
 msgstr ""
+"Puede usar el siguiente mecanismo para permitir que el usuario defina su "
+"propia secuencia de teclas si así lo desea: > "
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1761
@@ -4358,6 +4450,9 @@ msgid ""
 " 22\t  map <unique> <Leader>a  <Plug>TypecorrAdd\n"
 " 23\tendif\n"
 msgstr ""
+" 21\tif !hasmapto('<Plug>TypecorrAdd')\n"
+" 22\t  map <unique> <Leader>a  <Plug>TypecorrAdd\n"
+" 23\tendif\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1765
@@ -4366,23 +4461,28 @@ msgid ""
 "defines the mapping from \"<Leader>a\" if it doesn't.  The user then has a "
 "chance of putting this in his vimrc file: >"
 msgstr ""
+"Esto comprueba si ya existe una macro para «<Plug>TypecorrAdd», y sólo "
+"define la macro de «<Leader>a» si no existe. Así, el usuario tiene la "
+"posibilidad de insertar esto en su archivo «vimrc»: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1767
 #, no-wrap
 msgid "\tmap ,c  <Plug>TypecorrAdd\n"
-msgstr ""
+msgstr "\tmap ,c  <Plug>TypecorrAdd\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1769
 msgid ""
 "Then the mapped key sequence will be \",c\" instead of \"_a\" or \"\\a\"."
 msgstr ""
+"A continuación, la secuencia de teclas asignada sería «,c» en lugar de «_a» "
+"o «\\a»."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1772
 msgid "PIECES"
-msgstr ""
+msgstr "SEGMENTOS"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1779
