@@ -2578,6 +2578,8 @@ msgid ""
 "function are local unless prefixed by something like \"g:\", \"a:\", or \"s:"
 "\"."
 msgstr ""
+"La variable «menor» es una variable local. Las variables usadas dentro de una "
+"función son locales a menos que tengan un prefijo como «g:», «a:», o «s:»."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:918
@@ -2589,6 +2591,11 @@ msgid ""
 "\tvariable \"today\", and \"today\" is another variable, local to the\n"
 "\tfunction.\n"
 msgstr ""
+"\tNota:\n"
+"\tPara usar una variable global dentro de una función debe anteponer\n"
+"\t«g:» a su nombre. Dentro de una función, «g:hoy» corresponde a la\n"
+"\tvariable global «hoy», y «hoy» es otra variable, local respecto a la\n"
+"\tfunción.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:921
@@ -2596,6 +2603,8 @@ msgid ""
 "You now use the \":return\" statement to return the smallest number to the "
 "user.  Finally, you end the function: >"
 msgstr ""
+"Ahora usamos la instrucción «:return» para retornar el menor de los dos "
+"números al usuario. Finalmente, terminamos la función: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:924
@@ -2604,13 +2613,13 @@ msgid ""
 "\t:  return smaller\n"
 "\t:endfunction\n"
 msgstr ""
+"\t:  return menor\n"
+"\t:endfunction\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:926
-#, fuzzy
-#| msgid "Now the command executed is as follows: >"
 msgid "The complete function definition is as follows: >"
-msgstr "Ahora, la orden se ejecuta de la siguiente manera: >"
+msgstr "La función completa es la siguiente: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:935
@@ -2625,11 +2634,20 @@ msgid ""
 "\t:  return smaller\n"
 "\t:endfunction\n"
 msgstr ""
+"\t:function Min(num1, num2)\n"
+"\t:  if a:num1 < a:num2\n"
+"\t:    let menor = a:num1\n"
+"\t:  else\n"
+"\t:    let menor = a:num2\n"
+"\t:  endif\n"
+"\t:  return menor\n"
+"\t:endfunction\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:937
 msgid "For people who like short functions, this does the same thing: >"
 msgstr ""
+"Para los aficionados a las funciones cortas, la siguiente es equivalente: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:944
@@ -2642,6 +2660,12 @@ msgid ""
 "\t:  return a:num2\n"
 "\t:endfunction\n"
 msgstr ""
+"\t:function Min(num1, num2)\n"
+"\t:  if a:num1 < a:num2\n"
+"\t:    return a:num1\n"
+"\t:  endif\n"
+"\t:  return a:num2\n"
+"\t:endfunction\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:948
@@ -2650,13 +2674,15 @@ msgid ""
 "function.  Only the name is different.  The Min function can be used like "
 "this: >"
 msgstr ""
+"Las funciones definidas por el usuario se invocan exactamente de la misma "
+"forma que las funciones internas. La única diferencia es el nombre. Puede "
+"usar la función Min como sigue: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:950
-#, fuzzy, no-wrap
-#| msgid "\t:echo undotree()\n"
+#, no-wrap
 msgid "\t:echo Min(5, 8)\n"
-msgstr "\t:echo undotree()\n"
+msgstr "\t:echo Min(5, 8)\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:955
@@ -2666,6 +2692,10 @@ msgid ""
 "will now get an error message.  When defining the function these errors are "
 "not detected."
 msgstr ""
+"Sólo en este momento se ejecutará la función y Vim interpretará las "
+"instrucciones que la componen. Si hay errores, como usar una variable o "
+"función no definida, se mostrará un mensaje de error. Al definir una función "
+"estos errores no son detectados."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:958
@@ -2673,6 +2703,8 @@ msgid ""
 "When a function reaches \":endfunction\" or \":return\" is used without an "
 "argument, the function returns zero."
 msgstr ""
+"Cuando una función llega a «:endfunction» o cuando se usa «:return» sin un "
+"argumento, se retorna cero."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:961
@@ -2680,19 +2712,18 @@ msgid ""
 "To redefine a function that already exists, use the ! for the \":function\" "
 "command: >"
 msgstr ""
+"Para redefinir una función existente, use ! en la orden «:function»: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:963
 #, no-wrap
 msgid "\t:function!  Min(num1, num2, num3)\n"
-msgstr ""
+msgstr "\t:function!  Min(num1, num2, num3)\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:966
-#, fuzzy
-#| msgid "USING A COUNT"
 msgid "USING A RANGE"
-msgstr "USAR UN MULTIPLICADOR"
+msgstr "USO DE RANGOS"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:973
