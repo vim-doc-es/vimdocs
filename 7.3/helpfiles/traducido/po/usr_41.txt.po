@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2011-01-06 15:32+0200\n"
+"PO-Revision-Date: 2011-01-07 17:09+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
@@ -4494,11 +4494,19 @@ msgid ""
 "the same function.  To avoid this, we define the function local to the "
 "script by prepending it with \"s:\"."
 msgstr ""
+"Habitualmente querrá dividir un script en segmentos cuando es demasiado "
+"largo. Para ello, puede usar funciones o macros, pero no quiere que estas "
+"funciones y macros interfieran con los presentes en otros scripts. Por "
+"ejemplo, podría definir la función «Add()», pero otro script podría intentar "
+"definir la misma función. Para evitar esto, definimos la función como local "
+"al script anteponiendo a este «s:»."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1781
 msgid "We will define a function that adds a new typing correction: >"
 msgstr ""
+"A continuación definimos una función que añade una nueva corrección "
+"ortográfica: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1787
@@ -4510,6 +4518,11 @@ msgid ""
 " ..\n"
 " 36\tendfunction\n"
 msgstr ""
+" 30\tfunction s:Add(from, correct)\n"
+" 31\t  let to = input(\"type the correction for \" . a:from . \": \")\n"
+" 32\t  exe \":iabbrev \" . a:from . \" \" . to\n"
+" ..\n"
+" 36\tendfunction\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1792
@@ -4519,6 +4532,10 @@ msgid ""
 "called from the script it was defined in.  There can also be a global Add()  "
 "function (without the \"s:\"), which is again another function."
 msgstr ""
+"Ahora invocamos la función s:Add() desde el mismo script. Si otro script "
+"también define s:Add(), será local a ese script y solo se invocará desde el "
+"script en el que se define. También puede existir una función global Add() "
+"(sin la «s:»), que es otra función distinta."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1795
@@ -4526,6 +4543,9 @@ msgid ""
 "<SID> can be used with mappings.  It generates a script ID, which identifies "
 "the current script.  In our typing correction plugin we use it like this: >"
 msgstr ""
+"Puede usar <SID> en una macro. Genera un identificador de script, que "
+"identifica al script actual. En nuestro complemento de corrección usaremos "
+"algo similar a esto: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1799
@@ -4535,17 +4555,20 @@ msgid ""
 " ..\n"
 " 28\tnoremap <SID>Add  :call <SID>Add(expand(\"<cword>\"), 1)<CR>\n"
 msgstr ""
+" 24\tnoremap <unique> <script> <Plug>TypecorrAdd  <SID>Add\n"
+" ..\n"
+" 28\tnoremap <SID>Add  :call <SID>Add(expand(\"<cword>\"), 1)<CR>\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1801
 msgid "Thus when a user types \"\\a\", this sequence is invoked: >"
-msgstr ""
+msgstr "Así, cuando el usuario teclea «\\a», se invoca esta secuencia: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1803
 #, no-wrap
 msgid "\t\\a  ->  <Plug>TypecorrAdd  ->  <SID>Add  ->  :call <SID>Add()\n"
-msgstr ""
+msgstr "\t\\a  ->  <Plug>TypecorrAdd  ->  <SID>Add  ->  :call <SID>Add()\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1806
@@ -4553,6 +4576,8 @@ msgid ""
 "If another script would also map <SID>Add, it would get another script ID "
 "and thus define another mapping."
 msgstr ""
+"So otro script asigna <SID>Add a una macro, tendría otro identificador de "
+"script y por ello definiría otra macro."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1811
@@ -4562,6 +4587,10 @@ msgid ""
 "translated to the script ID, so that Vim knows in which script to look for "
 "the Add() function."
 msgstr ""
+"Tenga en cuenta que se usa <SID>Add() en lugar de s:Add(). Eso es porque el "
+"usuario teclea la macro, por ello, desde fuera del script. <SID> se expande "
+"al identificador del script, de forma que Vim en qué script buscar la "
+"función Add(). "
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1815
@@ -4570,17 +4599,23 @@ msgid ""
 "with other plugins.  The basic rule is that you use <SID>Add() in mappings "
 "and s:Add() in other places (the script itself, autocommands, user commands)."
 msgstr ""
+"Es un poco complicado, pero es necesario para que el complemento también "
+"funcione con otros. La norma básica es que debe usar <SID>Add() en las "
+"macros y s:Add() en otros sitios (el mismo script, órdenes automáticas, "
+"órdenes de usuario)."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1817
 msgid "We can also add a menu entry to do the same as the mapping: >"
 msgstr ""
+"También podemos añadir una entrada de menú para que haga lo mismo que la "
+"macro: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1819
 #, no-wrap
 msgid " 26\tnoremenu <script> Plugin.Add\\ Correction      <SID>Add\n"
-msgstr ""
+msgstr " 26\tnoremenu <script> Plugin.Add\\ Correction      <SID>Add\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1824
@@ -4590,6 +4625,11 @@ msgid ""
 "is recommended.  For example, \"Plugin.CVS\" could be used for a plugin that "
 "offers CVS operations \"Plugin.CVS.checkin\", \"Plugin.CVS.checkout\", etc."
 msgstr ""
+"Se recomienda el menu «Plugin» para añadir elementos de menú de "
+"complementos. En este caso, sólo se usa un elemento. Si añade más elementos, "
+"recomendamos crear un menú secundario. Por ejemplo, podría usar "
+"«Plugin.CVS» para un complemento que ofrezca operaciones CVS como "
+"«Plugin.CVS.checkin», «Plugin.CVS.checkout», etc."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1831
@@ -4601,6 +4641,13 @@ msgid ""
 "local to the script. |:map-<script>| The same is done in line 26 for \":"
 "noremenu\".  |:menu-<script>|"
 msgstr ""
+"Tenga en cuenta que «:noremap» se usa en la línea 28 para evitar problemas "
+"con otras macros. Puede que alguien haya asignado otra macro a «:call», por "
+"ejemplo. En la línea 24 también usamos «:noremap», pero queremos reasignar "
+"«<SID>Add». Por ello usamos «<script>» aquí. Esto solo permite el uso de "
+"macros locales al script, para más información consulte |:map-<script>|. Se "
+"realiza la misma acción en la línea 26 con «:noremenu», para más información "
+"consulte  |:menu-<script>|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1834
@@ -4649,7 +4696,7 @@ msgstr ""
 #, fuzzy
 #| msgid "THE VIM COMMAND"
 msgid "USER COMMAND"
-msgstr "LA ORDEN VIM"
+msgstr "ORDEN DE USUARIO"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1861
@@ -4677,7 +4724,7 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_41.txt:1873
 msgid "SCRIPT VARIABLES"
-msgstr ""
+msgstr "VARIABLES EN SCRIPTS"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1879
@@ -4709,6 +4756,13 @@ msgid ""
 " 35\t  echo s:count . \" corrections now\"\n"
 " 36\tendfunction\n"
 msgstr ""
+" 19\tlet s:count = 4\n"
+" ..\n"
+" 30\tfunction s:Add(from, correct)\n"
+" ..\n"
+" 34\t  let s:count = s:count + 1\n"
+" 35\t  echo s:count . \" corrections now\"\n"
+" 36\tendfunction\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1896
@@ -4722,7 +4776,7 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_41.txt:1899
 msgid "THE RESULT"
-msgstr ""
+msgstr "EL RESULTADO"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1901
@@ -4776,6 +4830,48 @@ msgid ""
 " 41\n"
 " 42\tlet &cpo = s:save_cpo\n"
 msgstr ""
+"  1\t\" Vim global plugin for correcting typing mistakes\n"
+"  2\t\" Last Change:\t2000 Oct 15\n"
+"  3\t\" Maintainer:\tBram Moolenaar <Bram@vim.org>\n"
+"  4\t\" License:\tThis file is placed in the public domain.\n"
+"  5\n"
+"  6\tif exists(\"g:loaded_typecorr\")\n"
+"  7\t  finish\n"
+"  8\tendif\n"
+"  9\tlet g:loaded_typecorr = 1\n"
+" 10\n"
+" 11\tlet s:save_cpo = &cpo\n"
+" 12\tset cpo&vim\n"
+" 13\n"
+" 14\tiabbrev teh the\n"
+" 15\tiabbrev otehr other\n"
+" 16\tiabbrev wnat want\n"
+" 17\tiabbrev synchronisation\n"
+" 18\t\t\\ synchronization\n"
+" 19\tlet s:count = 4\n"
+" 20\n"
+" 21\tif !hasmapto('<Plug>TypecorrAdd')\n"
+" 22\t  map <unique> <Leader>a  <Plug>TypecorrAdd\n"
+" 23\tendif\n"
+" 24\tnoremap <unique> <script> <Plug>TypecorrAdd  <SID>Add\n"
+" 25\n"
+" 26\tnoremenu <script> Plugin.Add\\ Correction      <SID>Add\n"
+" 27\n"
+" 28\tnoremap <SID>Add  :call <SID>Add(expand(\"<cword>\"), 1)<CR>\n"
+" 29\n"
+" 30\tfunction s:Add(from, correct)\n"
+" 31\t  let to = input(\"type the correction for \" . a:from . \": \")\n"
+" 32\t  exe \":iabbrev \" . a:from . \" \" . to\n"
+" 33\t  if a:correct | exe \"normal viws\\<C-R>\\\" \\b\\e\" | endif\n"
+" 34\t  let s:count = s:count + 1\n"
+" 35\t  echo s:count . \" corrections now\"\n"
+" 36\tendfunction\n"
+" 37\n"
+" 38\tif !exists(\":Correct\")\n"
+" 39\t  command -nargs=1  Correct  :call s:Add(<q-args>, 0)\n"
+" 40\tendif\n"
+" 41\n"
+" 42\tlet &cpo = s:save_cpo\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1949
@@ -4797,10 +4893,10 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1956
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:set fileformats=unix,dos\n"
 msgid "\t:set fileformat=unix\n"
-msgstr "\t:set fileformats=unix,dos\n"
+msgstr "\t:set fileformat=unix\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1959
