@@ -2520,12 +2520,14 @@ msgid ""
 "Let's define a short function to return the smaller of two numbers.  It "
 "starts with this line: >"
 msgstr ""
+"Vamos a definir una función pequeña que retorne el más pequeño de dos "
+"números. Su definición empieza con esta línea: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:894
 #, no-wrap
 msgid "\t:function Min(num1, num2)\n"
-msgstr ""
+msgstr "\t:function Min(num1, num2)\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:900
@@ -2537,6 +2539,10 @@ msgid ""
 "   >\n"
 "\t:  if a:num1 < a:num2\n"
 msgstr ""
+"Ésta le indica a Vim que la función se llama «Min» y que recibe dos\n"
+"argumentos: «num1» y «num2».\n"
+"   El primer paso es comprobar cuál número es el más pequeño: >\n"
+"\t:   if a:num1 < a:num2\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:903
@@ -2545,6 +2551,9 @@ msgid ""
 "argument.  Let's assign the variable \"smaller\" the value of the smallest "
 "number: >"
 msgstr ""
+"El prefijo especial «a:» le indica a Vim que la variable es un argumento de "
+"la función. Asignemos ahora a la variable «menor» el valor del menor número: "
+">"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:909
@@ -2556,6 +2565,11 @@ msgid ""
 "\t:    let smaller = a:num2\n"
 "\t:  endif\n"
 msgstr ""
+"\t:  if a:num1 < a:num2\n"
+"\t:    let menor = a:num1\n"
+"\t:  else\n"
+"\t:    let menor = a:num2\n"
+"\t:  endif\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:912
