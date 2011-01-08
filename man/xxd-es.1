@@ -50,12 +50,12 @@ se leerá la entrada estándar.
 Si se especifica un
 .I archivo de entrada
 como el caracter
-.B «\-»
+.RB « \- »
 se tomarán los datos de la entrada estándar.
 Si no se suministra un
 .I archivo de salida
 o se suministra un caracter
-.B «\-»
+.RB « \- »
 en su lugar, los resultados se enviarán a la salida estándar.
 .PP
 Nótese que se usa un analizador «perezoso» que no revisa mas que la
@@ -155,7 +155,7 @@ añadido a las posiciones de archivo en el volcado hexadecimal.
 Comenzar en
 .BI < búsqueda >
 de bytes  absolutos, o relativos de desplazamiento dentro del archivo.
-.I +
+.B +
 indica que la búsqueda es relativa a la posición actual en el archvo de entrada
 estándar (lo que carece de sentido si no se está leyendo la entrada estándar).
 .B \-
@@ -169,8 +169,8 @@ Sin la opción
 se inicia el la posición actual del archivo.
 .TP
 .I \-u
-Use letras mayúsculas para describir el volcado hexadecimal.
-Se usan minúsculas por defecto.
+Use letras mayúsculas para describir el volcado hexadecimal;
+se usan minúsculas por defecto.
 .TP
 .IB \-v " | " \-version
 Mostrar la cadena de versión del programa.
@@ -179,8 +179,8 @@ Mostrar la cadena de versión del programa.
 .BI xxd \-r
 tiene algo de magia integrada cuando evalua información de números de
 línea.
-Si el archivo de salida puede buscarse, los números de línea al comienzo
-de cada volcado hexadecimal puede estar en desorden, puede haber líneas
+Si el archivo de salida es buscable, los números de línea al comienzo
+de cada volcado hexadecimal puede estar en desorden y puede haber líneas
 faltantes o sobrepuestas.
 En estos casos,
 .I xxd
@@ -188,7 +188,7 @@ hara un
 .BR lseek (1)
 hasta la siguiete posición.
 Si el archivo de salida no es buscable, solo se permiten vacios,
-los que pueden ser llenados con bytes nulos.
+los que serán llenados con bytes nulos.
 .PP
 .BI xxd \-r
 nunca genera errores de análisis.
@@ -203,57 +203,63 @@ Esto siginifica también que los cambios a las columnas de
 ASCII imprimible (o EBCDIC) se ignoran siempre. Al revertir a un estilo
 de salida simple (o PostScript) del volcado hexadecimal con
 .IB xxd "\-r \-p"
-no depende de tener el número «correcto» de columnas.
+no importa si se tiene el número «correcto» de columnas.
 En este caso se interpretará cualquier cosa que parezca un par de
 dígitos hexadecimales.
 .PP
-Nótese que la diferencia entre
+Nótese que la diferencia de la salida de los comandos
+.nf
+\fC% xxd \-i archivo\fR,
+\fC% xxd \-i < archivo\fR y
+\fC% xxd \-s +búsqueda\fR
+.fi
+puede ser diferente de
 .br
-.IR "% xxd \-i archivo" ,
+\.fC% xxd \-s búsqueda\fR,
 .br
-.IR "% xxd \-i < archivo" y
-.br
-.I xxd \-s +búsqueda
-.PP
-pueden ser diferentes de
-.IR "xxd \-s búsqueda" ,
 pues
 .BR lseek (2)
 se usa para «retroceder» sobre la entrada.
-Un «+» hace la diferencia de si la fuente de entrada es la entrada
+Un 
+.RB « + »
+hace la diferencia de si la fuente de entrada es la entrada
 estándar y si la posición de archivo de la entrada estándar no es al
 comienzo del archivo en el momento en que se inicia
-.I xxd
+.B xxd
 y se le alimenta con datos.
 Los siguientes ejemplos pueden ayudar a aclarar o (a confundir más)
 la mente del lector.
 .PP
 Retroceder sobre la entrada estándar antes de leer; se necesita pues el
 «encadenado» («cat») ya ha leido hasta el final de la entrada estándar.
-.br
-.I % sh \-c "cat > copia_simple; xxd \-s 0 > copia_hex" < archivo
+.PP
+\fC% sh \-c "cat > copia_simple; xxd \-s 0 > copia_hex" < archivo\fR
 .PP
 Volcado hexadecimal desde la posición de archivo 0x480 (=1024+128)
 hacia adelante.
-El símbolo «+» signigica «relativo a la posición actual», así que el
-«128» añade al primer Kb donde se quedó
+El símbolo 
+.RB « + » 
+significa «relativo a la posición actual», así que el «128» añade al 
+primer Kb donde se quedó
 .BR dd .
-.br
-.I % sh \-c "dd of=fragmento_simple bs=1k count=1; xxd \-s +128 > fragmento_hex" < archivo
+.PP
+\fC% sh \-c "dd of=fragmento_simple bs=1k count=1; xxd \-s +128 > fragmento_hex" < archivo\fR
 .PP
 Volcado hexadecimal desde la posición de archivo 0x100 (=1024\-768).
-.br
-.I % sh \-c "dd of=fragmento_simple bs=1k count=1; xxd \-s +\-768 > fragmento_hex" < archivo
+.PP
+\fC% sh \-c "dd of=fragmento_simple bs=1k count=1; xxd \-s +\-768 > fragmento_hex" < archivo\fR
 .PP
 Sin embargo, esta es una situación poco común y raramente se necesita
-usar «+».
+usar 
+.RB « + ».
 El autor prefiere observar el efecto de
-.IR xdd con
+.B xdd
+con
 .BR strace (1)
 o con
 .BR truss (1),
 siempre que usa
-.IR \-s .
+.BR \-s .
 .SH EJEMPLOS
 .PP
 Imprimir todo excepto las primeras tres líneas (0x30 bytes en hex) del
@@ -263,25 +269,28 @@ Imprimir todo excepto las primeras tres líneas (0x30 bytes en hex) del
 .PP
 Print 3 lines (hex 0x30 bytes) from the end of
 .BR file .
-.br
-\fI% xxd \-s \-0x30 file\fR
+.PP
+\fC% xxd \-s \-0x30 file\fR
 .PP
 Print 120 bytes as continuous hexdump with 20 octets per line.
 .PP
-\fI% xxd \-l 120 \-ps \-c 20 xxd.1\fR
+\fC% xxd \-l 120 \-ps \-c 20 xxd.1\fR
 .nf
+\fC
 2e54482058584420312022417567757374203139
 39362220224d616e75616c207061676520666f72
 20787864220a2e5c220a2e5c222032317374204d
 617920313939360a2e5c22204d616e2070616765
 20617574686f723a0a2e5c2220202020546f6e79
 204e7567656e74203c746f6e79407363746e7567
+\fR
 .fi
 .PP
 Hexdump the first 120 bytes of this man page with 12 octets per line.
 .PP
-\fI% xxd \-l 120 \-c 12 xxd.1\fR
+\fC% xxd \-l 120 \-c 12 xxd.1\fR
 .nf
+\fC
 0000000: 2e54 4820 5858 4420 3120 2241  .TH XXD 1 "A
 000000c: 7567 7573 7420 3139 3936 2220  ugust 1996" 
 0000018: 224d 616e 7561 6c20 7061 6765  "Manual page
@@ -292,62 +301,66 @@ Hexdump the first 120 bytes of this man page with 12 octets per line.
 0000054: 686f 723a 0a2e 5c22 2020 2020  hor:..\\"    
 0000060: 546f 6e79 204e 7567 656e 7420  Tony Nugent 
 000006c: 3c74 6f6e 7940 7363 746e 7567  <tony@sctnug
+\fR
 .fi
 .PP
-Display just the date from the file xxd.1
+Display just the date from the file 
+.B xxd.1
 .PP
-\fI% xxd \-s 0x36 \-l 13 \-c 13 xxd.1\fR
+\fC% xxd \-s 0x36 \-l 13 \-c 13 xxd.1\fR
 .PP
-0000036: 3231 7374 204d 6179 2031 3939 36  21st May 1996
+\fC0000036: 3231 7374 204d 6179 2031 3939 36  21st May 1996\fR
 .PP
 Copiar
-.B archivo_de_entrada
+.I archivo_de_entrada
 a
-.B archivo_de_salida
+.I archivo_de_salida
 y anteponer 100 bytes con el valor 0x00.
 .PP
-.I % xxd archivo_de_entrada | xxd \-r \-s 100 > archivo_de_salida
+.\fC% xxd archivo_de_entrada | xxd \-r \-s 100 > archivo_de_salida\fR
 .PP
-Parchar la fecha en el archivo
+Parchear la fecha en el archivo
 .BI xdd.1 .
 (Esto solo aplica a la versión original en inglés).
 .PP
-.I % echo "0000037: 3574 68" | xxd \-r \- xxd.1
+\fC% echo "0000037: 3574 68" | xxd \-r \- xxd.1\R
 .PP
-.I % xxd \-s 0x36 \-l 13 \-c 13 xxd.1
+\fC% xxd \-s 0x36 \-l 13 \-c 13 xxd.1\fR
 .PP
-0000036: 3235 7468 204d 6179 2031 3939 36  25th May 1996
+\fC0000036: 3235 7468 204d 6179 2031 3939 36  25th May 1996\fR
 .PP
 Crear un archivo de 65537 bytes, todos con un valor de 0x00,
 excepto por el último, el cual es «A» (hex 0x41).
 .PP
-.I % echo "010000: 41" | xxd \-r > file
+\fC% echo "010000: 41" | xxd \-r > file\fR
 .PP
 Volcado hexadecimal de este archivo con «autoskip».
-.br
-\fI% xxd \-a \-c 12 archivo\fR
-.br
+.PP
+.nf
+\fC
+% xxd \-a \-c 12 archivo
+
 0000000: 0000 0000 0000 0000 0000 0000  ............
-.br
 *
-.br
 000fffc: 0000 0000 40                   ....A
+\fR
+.fi
 .PP
 Crear un archivo de 1 (un) byte conteniendo un solo caracter «A».
 El número despues de
 .RI « "\-r\-s" »
 añade a las líneas numéricas que se encuentran en el archivo;
 los bytes precedentes se suprimen para todo efecto.
-.br
-\fI% echo "010000: 41" | xxd \-r \-s \-0x10000 > archivo\fR
+.PP
+\fC% echo "010000: 41" | xxd \-r \-s \-0x10000 > archivo\fR
 .PP
 Usar
 .B xxd
 como un filtro dentro de un editor tal y como
 .BR vim (1)
 para volcar hexadecimalmente una región marcada entre «a» y «z».
-.br
-\fI:'a,'z!xxd\fR
+.PP
+\fC:'a,'z!xxd\fR
 .PP
 Usar
 .B xxd
@@ -355,8 +368,8 @@ como un filtro dentro de un editor tal y como
 .BR vim (1)
 para recuperar un volcado hexadecimal binario marcado entre
 «a» y «z».
-.br
-\fI:'a,'z!xxd \-r\fR
+.PP
+\fC:'a,'z!xxd \-r\fR
 .PP
 Usar
 .B xxd
@@ -364,18 +377,19 @@ como un filtro dentro de un editor tal y como
 .BR vim (1)
 para recuperar una línea de un volcado hexadecimal.
 Mueva el cursor sobre la línea y pulse:
-.br
-\fI!!xxd \-r\fR
+.PP
+\fC!!xxd \-r\fR
 .PP
 Leer caracteres únicos desde una línea serial:
-.br
-\fI% xxd \-c1 < /dev/term/b &\fR
-.br
-\fI% stty < /dev/term/b \-echo \-opost \-isig \-icanon min 1\fR
-.br
-\fI% echo \-n foo > /dev/term/b\fR
 .PP
-.SH "VALORES DE RETORNO"
+.nf
+\fC
+% xxd \-c1 < /dev/term/b &
+% stty < /dev/term/b \-echo \-opost \-isig \-icanon min 1
+% echo \-n foo > /dev/term/b
+\fR
+.fi
+.SH VALORES DE RETORNO
 La aplicación puede dar los siguientes valores de retorno:
 .TP
 0
