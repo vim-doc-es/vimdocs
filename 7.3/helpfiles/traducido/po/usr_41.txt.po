@@ -2736,6 +2736,12 @@ msgid ""
 "These will have the line numbers from the range the function was called with.\n"
 "Example: >\n"
 msgstr ""
+"La orden «:call» puede recibir un rango de líneas. Este rango puede tener dos\n"
+"significados. Cuando la definición de una función tiene la palabra clave\n"
+"«range», ella se hará cargo del rango de líneas.\n"
+"   La función recibirá las variables «a:firstline» y «a:lastline». Éstas\n"
+"contendrán los números de línea del rango con el cual fue llamada la función.\n"
+"Ejemplo: >\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:983
@@ -2751,19 +2757,26 @@ msgid ""
 "\t:  echo \"found \" . n . \" words\"\n"
 "\t:endfunction\n"
 msgstr ""
+"\t:function Contar_palabras() range\n"
+"\t:  let lnum = a:firstline\n"
+"\t:  let n = 0\n"
+"\t:  while lnum <= a:lastline\n"
+"\t:    let n = n + len(split(getline(lnum)))\n"
+"\t:    let lnum = lnum + 1\n"
+"\t:  endwhile\n"
+"\t:  echo \"encontradas \" . n . \" palabras\"\n"
+"\t:endfunction\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:985
-#, fuzzy
-#| msgid "And you can close the fold again with: >"
 msgid "You can call this function with: >"
-msgstr "Y puede cerrar el pliegue otra vez con: >"
+msgstr "Puede llamar la función con: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:987
 #, no-wrap
 msgid "\t:10,30call Count_words()\n"
-msgstr ""
+msgstr "\t:10,30call Contar_palabras()\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:992
@@ -2774,6 +2787,12 @@ msgid ""
 "\"range\" keyword.  The function will be called once for every line in the\n"
 "range, with the cursor in that line.  Example: >\n"
 msgstr ""
+"La función se ejecutará una vez, y mostrará en pantalla la cantidad de\n"
+"palabras.\n"
+"   La otra forma de usar un rango de líneas es definiendo una función sin la\n"
+"palabra clave «range». Se llamará a la función una vez por cada línea en el\n"
+"rango, y al hacer cada llamada el cursor estará en la línea correspondiente.\n"
+"Ejemplo: >\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:996
@@ -2783,31 +2802,30 @@ msgid ""
 "\t:  echo \"line \" . line(\".\") . \" contains: \" . getline(\".\")\n"
 "\t:endfunction\n"
 msgstr ""
+"\t:function  Numero()\n"
+"\t:  echo \"la línea \" . line(\".\") . \" contiene: \" . getline(\".\")\n"
+"\t:endfunction\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:998
-#, fuzzy
-#| msgid "And you can close the fold again with: >"
 msgid "If you call this function with: >"
-msgstr "Y puede cerrar el pliegue otra vez con: >"
+msgstr "Si llama a esta función con: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1000
 #, no-wrap
 msgid "\t:10,15call Number()\n"
-msgstr ""
+msgstr "\t:10,15call Numero()\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1002
 msgid "The function will be called six times."
-msgstr ""
+msgstr "Se llamará a la función seis veces."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1005
-#, fuzzy
-#| msgid "A NUMBER OF LINES"
 msgid "VARIABLE NUMBER OF ARGUMENTS"
-msgstr "UN NÚMERO DE LÍNEAS"
+msgstr "CANTIDAD VARIABLE DE ARGUMENTOS"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1009
@@ -2816,12 +2834,15 @@ msgid ""
 "arguments.  The following command, for instance, defines a function that "
 "must have 1 argument (start) and can have up to 20 additional arguments: >"
 msgstr ""
+"Vim permite la definición de funciones que reciben una cantidad de argumentos "
+"variable. Por ejemplo, la siguiente orden define una función que debe recibir "
+"1 argumento (inicio) y puede recibir hasta 20 argumentos adicionales: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1011
 #, no-wrap
 msgid "\t:function Show(start, ...)\n"
-msgstr ""
+msgstr "\t:function Mostrar(inicio, ...)\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1015
@@ -2831,7 +2852,13 @@ msgid ""
 "so on.  The variable \"a:0\" contains the number of extra arguments.\n"
 "   For example: >\n"
 msgstr ""
+"La variable «a:1» contiene el primer argumento opcional, «a:2» contiene el\n"
+"segundo, y así sucesivamente. La variable «a:0» contiene la cantidad de\n"
+"argumentos adicionales.\n"
+"   Por ejemplo: >\n"
 
+# TODO check for bugs in the doc: it isn't "Show is ... a:start", but "start
+# is" a:start
 #. type: Plain text
 #: original/txt/usr_41.txt:1027
 #, no-wrap
@@ -2848,6 +2875,17 @@ msgid ""
 "\t:  echo \"\"\n"
 "\t:endfunction\n"
 msgstr ""
+"\t:function Mostrar(inicio, ...)\n"
+"\t:  echohl Title\n"
+"\t:  echo \"inicio es \" . a:inicio\n"
+"\t:  echohl None\n"
+"\t:  let indice = 1\n"
+"\t:  while indice <= a:0\n"
+"\t:    echo \"  Arg \" . indice . \" is \" . a:{indice}\n"
+"\t:    let indice = indice + 1\n"
+"\t:  endwhile\n"
+"\t:  echo \"\"\n"
+"\t:endfunction\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1031
@@ -2856,6 +2894,10 @@ msgid ""
 "following \":echo\" command.  \":echohl None\" stops it again.  The \":echon"
 "\" command works like \":echo\", but doesn't output a line break."
 msgstr ""
+"Aquí se usa la orden «:echohl», que especifica el resaltado a usar en la "
+"siguiente orden «:echo». «:echohl None» hace que no se use resaltado alguno. "
+"La orden  «:echon» es similar a «:echo» pero no imprime el cambio de línea "
+"final."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1034
@@ -2863,6 +2905,8 @@ msgid ""
 "You can also use the a:000 variable, it is a List of all the \"...\" "
 "arguments.  See |a:000|."
 msgstr ""
+"También puede usar la variable a:000. Es una Lista de todos los argumentos "
+"opcionales («...»). Véase |a:000|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1037
