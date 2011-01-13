@@ -3089,6 +3089,8 @@ msgid ""
 "So far we have used the basic types String and Number.  Vim also supports "
 "two composite types: List and Dictionary."
 msgstr ""
+"Hasta ahora hemos usado los tipos básicos cadena de texto y Número. Vim "
+"soporta además dos tipos compuestos: Lista y Diccionario."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1113
@@ -3097,12 +3099,16 @@ msgid ""
 "value, thus you can make a List of numbers, a List of Lists and even a List "
 "of mixed items.  To create a List with three strings: >"
 msgstr ""
+"Una Lista es una secuencia ordenada de elementos. Los elementos pueden ser de "
+"cualquier tipo, así que puede crear una Lista de números, una Lista de Listas "
+"e incluso una lista de elementos de tipos diferentes. Para crear una Lista "
+"con tres cadenas de texto: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1115
 #, no-wrap
 msgid "\t:let alist = ['aap', 'mies', 'noot']\n"
-msgstr ""
+msgstr "\t:let lista = ['aap', 'mies', 'noot']\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1118
@@ -3110,6 +3116,8 @@ msgid ""
 "The List items are enclosed in square brackets and separated by commas.  To "
 "create an empty List: >"
 msgstr ""
+"Los elementos de la Lista se rodean con paréntesis rectangulares y se separan "
+"con comas. Para crear una Lista vacía: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1120
