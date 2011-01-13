@@ -2910,10 +2910,8 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1037
-#, fuzzy
-#| msgid "LISTING ABBREVIATIONS"
 msgid "LISTING FUNCTIONS"
-msgstr "LISTAR ABREVIATURAS"
+msgstr "LISTADO DE FUNCIONES EXISTENTES"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1040
@@ -2921,6 +2919,9 @@ msgid ""
 "The \":function\" command lists the names and arguments of all user-defined "
 "functions: >"
 msgstr ""
+"La orden «:function» muestra un listado con los nombres y argumentos de todas "
+"las funciones definidas por el usuario (esto incluye funciones de scripts y "
+"extensiones instalados)."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1045
@@ -2931,20 +2932,26 @@ msgid ""
 "\tfunction GetVimIndent() ~\n"
 "\tfunction SetSyn(name) ~\n"
 msgstr ""
+"\t:function\n"
+"<\tfunction Mostrar(inicio, ...) ~\n"
+"\tfunction ObtenerSangradoVim() ~\n"
+"\tfunction DefinirSintaxis(nombre) ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1047
 msgid ""
 "To see what a function does, use its name as an argument for \":function\": >"
 msgstr ""
+"Para ver la definición de una función, pase su nombre como argumento a la "
+"orden «:function»: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1053
 #, no-wrap
 msgid ""
-"\t:function SetSyn\n"
+"\t:function DefinirSintaxis\n"
 "<\t1     if &syntax == '' ~\n"
-"\t2       let &syntax = a:name ~\n"
+"\t2       let &syntax = a:nombre ~\n"
 "\t3     endif ~\n"
 "\t   endfunction ~\n"
 msgstr ""
@@ -2952,7 +2959,7 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_41.txt:1056
 msgid "DEBUGGING"
-msgstr ""
+msgstr "DEPURACIÓN"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1061
@@ -2963,34 +2970,37 @@ msgid ""
 "   You can also set the 'verbose' option to 12 or higher to see all function\n"
 "calls.  Set it to 15 or higher to see every executed line.\n"
 msgstr ""
+"El número de línea de una instrucción es información útil cuando aparece un\n"
+"mensaje de error o cuando se está depurando scripts. Acerca del modo de\n"
+"depurado, véase |debug-scripts|.\n"
+"   Puede darle un valor de 12 o más a la opción 'verbose' para ver todos los\n"
+"llamados a funciones. Con un valor de 15 o más verá cada línea ejecutada.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1064
-#, fuzzy
-#| msgid "DELETING A LINE"
 msgid "DELETING A FUNCTION"
-msgstr "ELIMINAR UNA LÍNEA"
+msgstr "ELIMINAR FUNCIONES"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1066
 msgid "To delete the Show() function: >"
-msgstr ""
+msgstr "Para borrar la función Mostrar(): >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1068
 #, no-wrap
 msgid "\t:delfunction Show\n"
-msgstr ""
+msgstr "\t:delfunction Mostrar\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1070
 msgid "You get an error when the function doesn't exist."
-msgstr ""
+msgstr "Si la función no existe obtendrá un error al usar esta orden."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1073
 msgid "FUNCTION REFERENCES"
-msgstr ""
+msgstr "REFERENCIAS A FUNCIONES"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1077
@@ -2999,6 +3009,9 @@ msgid ""
 "another.  You can do it with the function() function.  It turns the name of "
 "a function into a reference: >"
 msgstr ""
+"En ocasiones es útil poder almacenar en variables referencias a funciones. "
+"Puede hacerlo usando la función function(). Ésta función convierte el nombre "
+"de una función en una referencia a la misma."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1093
@@ -3020,6 +3033,21 @@ msgid ""
 "\t:echo call(Afunc, [])\n"
 "<\tWrong! ~\n"
 msgstr ""
+"\t:let resultado = 0\t\t\" or 1\n"
+"\t:function! Bien()\n"
+"\t:  return '¡Bien!'\n"
+"\t:endfunc\n"
+"\t:function! Mal()\n"
+"\t:  return '¡Mal!'\n"
+"\t:endfunc\n"
+"\t:\n"
+"\t:if resultado == 1\n"
+"\t:  let Unafunc = function('Bien')\n"
+"\t:else\n"
+"\t:  let Unafunc = function('Mal')\n"
+"\t:endif\n"
+"\t:echo call(Unafunc, [])\n"
+"<\t¡Mal! ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1100
@@ -3032,6 +3060,13 @@ msgid ""
 "function.  Its first argument is the function reference, the second argument\n"
 "is a List with arguments.\n"
 msgstr ""
+"Nótese que el nombre de la variable que contiene la referencia a la función\n"
+"debe empezar con una letra mayúscula. En otro caso es posible que se confunda\n"
+"con el nombre de una de las funciones integradas de Vim.\n"
+"   Para invocar a una función usando una variable con una referencia a función\n"
+"se usa la función call(). Como primer argumento recibe la referencia a la\n"
+"función, y como segundo argumento una Lista con los argumentos para la función\n"
+"a invocar.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1103
@@ -3039,6 +3074,8 @@ msgid ""
 "Function references are most useful in combination with a Dictionary, as is "
 "explained in the next section."
 msgstr ""
+"Las referencias a funciones son particularmente útiles cuando se las usa con "
+"Diccionarios, como se muestra en la siguiente sección."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1106
