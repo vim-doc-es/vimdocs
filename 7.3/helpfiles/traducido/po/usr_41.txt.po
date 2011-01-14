@@ -3121,17 +3121,14 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1120
-#, fuzzy, no-wrap
-#| msgid "\t:set list\n"
+#, no-wrap
 msgid "\t:let alist = []\n"
-msgstr "\t:set list\n"
+msgstr "\t:let lista = []\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1122
-#, fuzzy
-#| msgid "You can remove it with this command: >"
 msgid "You can add items to a List with the add() function: >"
-msgstr "Puede eliminarla con esta orden: >"
+msgstr "Puede añadir elementos a una lista mediante la función add(): >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1128
@@ -3143,11 +3140,16 @@ msgid ""
 "\t:echo alist\n"
 "<\t['foo', 'bar'] ~\n"
 msgstr ""
+"\t:let lista = []\n"
+"\t:call add(lista, 'foo')\n"
+"\t:call add(lista, 'bar')\n"
+"\t:echo lista\n"
+"<\t['foo', 'bar'] ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1130
 msgid "List concatenation is done with +: >"
-msgstr ""
+msgstr "El operador de concatenación de Listas es el +: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1133
@@ -3156,11 +3158,13 @@ msgid ""
 "\t:echo alist + ['foo', 'bar']\n"
 "<\t['foo', 'bar', 'foo', 'bar'] ~\n"
 msgstr ""
+"\t:echo lista + ['foo', 'bar']\n"
+"<\t['foo', 'bar', 'foo', 'bar'] ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1135
 msgid "Or, if you want to extend a List directly: >"
-msgstr ""
+msgstr "O, si lo que desea es extender una Lista directamente: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1140
@@ -3171,11 +3175,15 @@ msgid ""
 "\t:echo alist\n"
 "<\t['one', 'two', 'three'] ~\n"
 msgstr ""
+"\t:let lista = ['uno']\n"
+"\t:call extend(lista, ['dos', 'tres'])\n"
+"\t:echo lista\n"
+"<\t['uno', 'dos', 'tres'] ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1142
 msgid "Notice that using add() will have a different effect: >"
-msgstr ""
+msgstr "Observe que usar add() tendrá un resultado diferente: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1147
@@ -3186,16 +3194,21 @@ msgid ""
 "\t:echo alist\n"
 "<\t['one', ['two', 'three']] ~\n"
 msgstr ""
+"\t:let lista = ['uno']\n"
+"\t:call add(lista, ['dos', 'tres'])\n"
+"\t:echo lista\n"
+"<\t['uno', ['dos', 'tres']] ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1149
 msgid "The second argument of add() is added as a single item."
 msgstr ""
+"El segundo argumento de add() se añade a la lista como un único elemento."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1152
 msgid "FOR LOOP"
-msgstr ""
+msgstr "CICLO PARA"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1154
