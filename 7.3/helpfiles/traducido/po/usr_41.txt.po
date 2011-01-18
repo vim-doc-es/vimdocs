@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2011-01-07 17:09+0200\n"
+"PO-Revision-Date: 2011-01-18 17:01+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.0-beta2\n"
+"X-Generator: Virtaal 0.7.0-beta3\n"
 "X-Project-Style: default\n"
 
 #. type: Plain text
@@ -4800,7 +4800,7 @@ msgstr ""
 #: original/txt/usr_41.txt:1834
 #, no-wrap
 msgid "<SID> AND <Plug>\t\t\t\t\t*using-<Plug>*\n"
-msgstr ""
+msgstr "<SID> Y <Plug>\t\t\t\t\t\t*using-<Plug>*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1838
@@ -4809,6 +4809,9 @@ msgid ""
 "interfere with mappings that are only to be used from other mappings.  Note "
 "the difference between using <SID> and <Plug>:"
 msgstr ""
+"<SID> y <Plug> se usan para evitar que las macros de las teclas pulsadas "
+"interfieran con macros sólo usadas con otras macros. Note la diferencia "
+"entre <SID> y <Plug>:"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1848
@@ -4824,6 +4827,16 @@ msgid ""
 "\tscriptname and mapname is uppercase, so that we can see where mapname\n"
 "\tstarts.\n"
 msgstr ""
+"<Plug>\tes visible fuera del script. Se usa para macros que el usuario\n"
+"\tpueda querer ligar a un secuencia de teclas. <Plug> es un código\n"
+"\tespecial que un tecla nunca podrá producir.\n"
+"\tPara evitar que otras extensiones usen la misma secuencia de\n"
+"\tcaracteres, use la estructura: <Plug> nombre-script nombre-macro\n"
+"\tEn nuestro ejemplo, el nombre del script es «Typecorr», y la macro es\n"
+"\t«Add».\n"
+"\tEl resultado es «<Plug>TypecorrAdd». Solo el primer carácter de los\n"
+"\tnombres es mayúscula, facilitando ver el principio del nombre de la\n"
+"\tmacro.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1856
@@ -4840,7 +4853,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1859
-#, fuzzy
 #| msgid "THE VIM COMMAND"
 msgid "USER COMMAND"
 msgstr "ORDEN DE USUARIO"
@@ -4848,7 +4860,7 @@ msgstr "ORDEN DE USUARIO"
 #. type: Plain text
 #: original/txt/usr_41.txt:1861
 msgid "Now let's add a user command to add a correction: >"
-msgstr ""
+msgstr "Vamos a añadir una orden de usuario para añadir una corrección: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1865
@@ -4858,6 +4870,9 @@ msgid ""
 " 39\t  command -nargs=1  Correct  :call s:Add(<q-args>, 0)\n"
 " 40\tendif\n"
 msgstr ""
+" 38\tif !exists(\":Correct\")\n"
+" 39\t  command -nargs=1  Correct  :call s:Add(<q-args>, 0)\n"
+" 40\tendif\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1870
@@ -4867,6 +4882,11 @@ msgid ""
 "command with \":command!\" is not a good idea, this would probably make the "
 "user wonder why the command he defined himself doesn't work.  |:command|"
 msgstr ""
+"La orden de usuario se define solo si no existe una orden con el mismo "
+"nombre. De no ser así, provocaría un error. Sobrescribir  la orden de "
+"usuario existente con «:orden!» no es una buena idea, ya que haría que el "
+"usuario se preguntase porqué no funciona la orden que ha definido.  "
+"|:command|"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1873
@@ -4882,6 +4902,11 @@ msgid ""
 "variables will be kept as long as Vim is running.  And the same variables "
 "are used when sourcing the same script again. |s:var|"
 msgstr ""
+"Cuando una variable comienza con «s:», es una variable de script. Sólo se "
+"puede usar dentro de un script, y no es visible desde fuera. Esto evita "
+"problemas al usar el mismo nombre de variable en diferentes scripts. Las "
+"variables se preservarán durante la ejecución de Vim, y se usan al cargar el "
+"mismo script otra vez.  |s:var|"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1883
@@ -4890,6 +4915,9 @@ msgid ""
 "and user commands that are defined in the script.  In our example we can add "
 "a few lines to count the number of corrections: >"
 msgstr ""
+"Lo interesante es que estas variables se pueden usar en funciones, órdenes "
+"automáticas y órdenes de usuario definidos en el script. En nuestro ejemplo, "
+"añadimos unas pocas líneas para contar el número de correcciones: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1891
@@ -4919,6 +4947,10 @@ msgid ""
 "the function was called, since it has been defined in the script, it will "
 "use the local variables from this script."
 msgstr ""
+"Al principio, «s:count» se inicializa en el mismo script con un valor de 4. "
+"Al invocar la función Add() posteriormente, incrementa la variable "
+"«s:count». No importa desde dónde se ha invocado la función, ya que está "
+"definida en el script, y usará las variables locales al script."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1899
@@ -5028,6 +5060,10 @@ msgid ""
 "abbreviation.  Note that mappings and abbreviations are expanded here, even "
 "though the function was called from a mapping defined with \":noremap\"."
 msgstr ""
+"Aún no hemos explicado la línea 33. Aplica la nueva corrección al error bajo "
+"el cursor. La orden |:normal| se emplea para usar la nueva abreviatura. "
+"Tenga en cuenta que aquí se expanden las macros y abreviaturas, a pesar de "
+"que la función se ha invocado desde una macro definida con «:noremap»."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1954
@@ -5037,6 +5073,11 @@ msgid ""
 "work on Unix.  Also see |:source_crnl|.  To be sure it is set right, do this "
 "before writing the file: >"
 msgstr ""
+"Se recomienda usar «unix» como valor para la opción 'fileformat'. Así, los "
+"scripts de Vim funcionarán en cualquier sistema. Los scripts con "
+"'fileformat' definido como «dos» no funcionarán en Unix. También puede "
+"consultar |:source_crnl|. Para asegurar que hace lo correcto, haga lo "
+"siguiente antes de escribir el archivo."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1956
@@ -5049,7 +5090,7 @@ msgstr "\t:set fileformat=unix\n"
 #: original/txt/usr_41.txt:1959
 #, no-wrap
 msgid "DOCUMENTATION\t\t\t\t\t\t*write-local-help*\n"
-msgstr ""
+msgstr "DOCUMENTACIÓN   \t\t\t\t\t\t*write-local-help*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1963
@@ -5058,12 +5099,17 @@ msgid ""
 "Especially when its behavior can be changed by the user.  See |add-local-"
 "help| for how they are installed."
 msgstr ""
+"Es una buena idea crear algo de documentación para su extensión. En "
+"particular si el usuario puede modificar el comportamiento. Para lo referido "
+"a la instalación de documentación, consulte |add-local-help|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1965
 msgid ""
 "Here is a simple example for a plugin help file, called \"typecorr.txt\": >"
 msgstr ""
+"Aquí tiene un simple ejemplo para un archivo de ayuda de una extensión, "
+"llamado «typecorr.txt»: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1983
