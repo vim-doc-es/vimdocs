@@ -2945,6 +2945,7 @@ msgstr ""
 "Para ver la definición de una función, pase su nombre como argumento a la "
 "orden «:function»: >"
 
+# TODO OMG FIX THIS!!!!
 #. type: Plain text
 #: original/txt/usr_41.txt:1053
 #, no-wrap
@@ -2955,6 +2956,11 @@ msgid ""
 "\t3     endif ~\n"
 "\t   endfunction ~\n"
 msgstr ""
+"\t:function DefinirSintaxis\n"
+"<\t1     if &syntax == '' ~\n"
+"\t2       let &syntax = a:nombre ~\n"
+"\t3     endif ~\n"
+"\t   endfunction ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1056
