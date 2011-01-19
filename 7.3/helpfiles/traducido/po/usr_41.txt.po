@@ -3110,6 +3110,7 @@ msgstr ""
 msgid "\t:let alist = ['aap', 'mies', 'noot']\n"
 msgstr "\t:let lista = ['aap', 'mies', 'noot']\n"
 
+# TODO revisar nombre de square brackets
 #. type: Plain text
 #: original/txt/usr_41.txt:1118
 msgid ""
@@ -3208,14 +3209,13 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_41.txt:1152
 msgid "FOR LOOP"
-msgstr "CICLO PARA"
+msgstr "CICLO FOR"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1154
-#, fuzzy
-#| msgid "A few more things you can do with tab pages:"
 msgid "One of the nice things you can do with a List is iterate over it: >"
-msgstr "Un par de cosas más que puede hacer con las pestañas:"
+msgstr ""
+"Una de las cosas interesantes de las Listas es iterar sobre sus elementos: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1162
@@ -3229,6 +3229,13 @@ msgid ""
 "\ttwo ~\n"
 "\tthree ~\n"
 msgstr ""
+"\t:let lista = ['uno', 'dos', 'tres']\n"
+"\t:for n in lista\n"
+"\t:  echo n\n"
+"\t:endfor\n"
+"<\tuno ~\n"
+"\tdos ~\n"
+"\ttres ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1165
@@ -3236,6 +3243,9 @@ msgid ""
 "This will loop over each element in List \"alist\", assigning the value to "
 "variable \"n\".  The generic form of a for loop is: >"
 msgstr ""
+"El código mostrado iterará sobre cada elemento en la Lista «lista», asignando "
+"el valor del elemento a la variable «n». La forma genérica de un ciclo «for» "
+"es: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1169
@@ -3245,6 +3255,9 @@ msgid ""
 "\t:  {commands}\n"
 "\t:endfor\n"
 msgstr ""
+"\t:for {nombrevar} in {expresiónlista}\n"
+"\t:  {instrucciones}\n"
+"\t:endfor\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1172
@@ -3252,6 +3265,8 @@ msgid ""
 "To loop a certain number of times you need a List of a specific length.  The "
 "range() function creates one for you: >"
 msgstr ""
+"Para iterar una cantidad fija de veces necesita una Lista con una longitud "
+"específica. La función range() puede crearla por usted: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1179
@@ -3264,6 +3279,12 @@ msgid ""
 "\t1 ~\n"
 "\t2 ~\n"
 msgstr ""
+"\t:for a in range(3)\n"
+"\t:  echo a\n"
+"\t:endfor\n"
+"<\t0 ~\n"
+"\t1 ~\n"
+"\t2 ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1183
@@ -3273,6 +3294,11 @@ msgid ""
 "last item is one less than the length of the list.\n"
 "   You can also specify the maximum value, the stride and even go backwards: >\n"
 msgstr ""
+"Observe que el primer elemento de la Lista creada por range() es cero, y por\n"
+"tanto el último elemento tiene un valor de uno menos que la longitud de la\n"
+"lista.\n"
+"   También puede especificar el valor máximo, el incremento o decremento\n"
+"deseado: >\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1190
@@ -3289,7 +3315,7 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_41.txt:1192
 msgid "A more useful example, looping over lines in the buffer: >"
-msgstr ""
+msgstr "Ahora un ejemplo más útil, iterar sobre las líneas de un búfer: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1198
@@ -3301,17 +3327,24 @@ msgid ""
 "\t:  endif\n"
 "\t:endfor\n"
 msgstr ""
+"\t:for line in getline(1, 20)\n"
+"\t:  if line =~ \"Fecha: \"\n"
+"\t:    echo matchstr(line, 'Fecha: \\zs.*')\n"
+"\t:  endif\n"
+"\t:endfor\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1200
 msgid ""
 "This looks into lines 1 to 20 (inclusive) and echoes any date found in there."
 msgstr ""
+"Este ejemplo examina las líneas 1 a 20 (inclusive) y muestra en pantalla las "
+"fechas encontradas en ellas."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1203
 msgid "DICTIONARIES"
-msgstr ""
+msgstr "DICCIONARIOS"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1206
@@ -3319,6 +3352,9 @@ msgid ""
 "A Dictionary stores key-value pairs.  You can quickly lookup a value if you "
 "know the key.  A Dictionary is created with curly braces: >"
 msgstr ""
+"Un Diccionario almacena pares clave-valor. Esto le permite obtener un valor "
+"almacenado de manera rápida, si conoce la clave del mismo. Los Diccionarios "
+"se crean usando llaves: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1208
