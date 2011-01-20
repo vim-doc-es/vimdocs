@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2011-01-18 17:01+0200\n"
+"PO-Revision-Date: 2011-01-20 19:07+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.0-beta3\n"
+"X-Generator: Virtaal 0.7.0-beta4\n"
 "X-Project-Style: default\n"
 
 #. type: Plain text
@@ -4892,6 +4892,13 @@ msgid ""
 "\ttranslation of <SID> in mappings is exactly the same, that's how you\n"
 "\tcan call a script-local function from a mapping.\n"
 msgstr ""
+"<SID> es el identificador (ID) del script, un número único.\n"
+"\tInternamente, Vim traduce <SID> a «<SNR>123_», donde «123» puede\n"
+"\tser cualquier número. Por ello, la función «<SID>Add()» tendría el\n"
+"\tnombre «<SNR>11_Add()» en un script, y «<SNR>22_Add()» en otro.\n"
+"\tPuede verlo si usa la orden «:función» para obtener la lista de funciones.\n"
+"\tLa traducción de <SID> en las macros es idéntica, y así puede invocar\n"
+"\tuna función local de un script mediante una macro.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1859
@@ -5002,7 +5009,7 @@ msgstr "EL RESULTADO"
 #. type: Plain text
 #: original/txt/usr_41.txt:1901
 msgid "Here is the resulting complete example: >"
-msgstr ""
+msgstr "Aquí tiene el ejemplo completo finalizado: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1944
@@ -5185,6 +5192,12 @@ msgid ""
 "column of the first line.  After adding your help file do \":help\" and "
 "check that the entries line up nicely."
 msgstr ""
+"En realidad, la primera línea es la única en la que el formato importa. Se "
+"extraerá del archivo de ayuda para su ubicación en la sección «LOCAL "
+"ADDITIONS:» de help.txt |local-additions|. El primer asterisco debe estar en "
+"la primera columna de la primera línea. Ejecute «:help» después de añadir "
+"su archivo de ayuda y compruebe que las entradas están adecuadamente "
+"alineadas."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1993
@@ -5193,6 +5206,10 @@ msgid ""
 "use existing help tags.  You would probably use the name of your plugin in "
 "most of them, like \"typecorr-settings\" in the example."
 msgstr ""
+"Puede añadir más etiquetas entre asteriscos (*ejemplo*) en su archivo de "
+"ayuda, pero tenga la precaución de no usar etiquetas de ayuda existente. "
+"Probablemente usará el nombre de su extensión en la mayoría de etiquetas, "
+"como «typecorr-settings» en el ejemplo."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1996
@@ -5200,13 +5217,16 @@ msgid ""
 "Using references to other parts of the help in || is recommended.  This "
 "makes it easy for the user to find associated help."
 msgstr ""
+"Se recomienda utilizar referencias a otras partes de archivos de ayuda "
+"mediante barras (|sección|). Esto facilita que el usuario encuentre ayuda "
+"relacionada."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1999
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "USING A FILETYPE PLUGIN\t\t\t\t\t*ftplugin-name*\n"
 msgid "FILETYPE DETECTION\t\t\t\t\t*plugin-filetype*\n"
-msgstr "USAR UNA EXTENSIÓN DE TIPO DE ARCHIVO\t\t\t*ftplugin-name*\n"
+msgstr "DETECCIÓN DE TIPO DE ARCHIVO \t\t*plugin-filetype*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2004
@@ -5216,12 +5236,16 @@ msgid ""
 "an autocommand that sets the filetype when the file name matches a pattern.  "
 "Example: >"
 msgstr ""
+"Si Vim no detecta su tipo de archivo, debería crear un fragmente de código "
+"de detección de tipo de archivo en un archivo separado. Habitualmente, tiene "
+"la forma de una orden automática que define el tipo de archivo cuando su "
+"nombre concuerda con un patrón. Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2006
 #, no-wrap
 msgid "\tau BufNewFile,BufRead *.foo\t\t\tset filetype=foofoo\n"
-msgstr ""
+msgstr "\tau BufNewFile,BufRead *.foo\t\t\tset filetype=foofoo\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2011
@@ -5243,18 +5267,18 @@ msgstr ""
 #: original/txt/usr_41.txt:2017
 #, no-wrap
 msgid "SUMMARY\t\t\t\t\t\t\t*plugin-special*\n"
-msgstr ""
+msgstr "RESUMEN\t\t\t\t\t\t\t\t*plugin-special*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2019
 msgid "Summary of special things to use in a plugin:"
-msgstr ""
+msgstr "Resumen de los elementos especiales a utilizar en una extensión:"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2021
 #, no-wrap
 msgid "s:name\t\t\tVariables local to the script.\n"
-msgstr ""
+msgstr "s:name\t\t\tVariables locales al script.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2024
@@ -5298,13 +5322,14 @@ msgstr ""
 #: original/txt/usr_41.txt:2037
 #, no-wrap
 msgid "exists(\":Cmd\")\t\tCheck if a user command already exists.\n"
-msgstr ""
+msgstr "exists(\":Cmd\")\t\tComprueba la existencia de una orden usuario.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2040
 #, no-wrap
 msgid "*41.12*\tWriting a filetype plugin\t*write-filetype-plugin* *ftplugin*\n"
-msgstr "*41.12*\tEscribir extensiones para tipo de archivo\t*write-filetype-plugin* *ftplugin*\n"
+msgstr "*41.12*\tEscribir extensiones para tipo de archivo\t*write-filetype-plugin* "
+"*ftplugin*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2044
@@ -5326,7 +5351,7 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_41.txt:2052
 msgid "DISABLING"
-msgstr ""
+msgstr "DESACTIVAR"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2055
@@ -5363,10 +5388,10 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2069
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:let b:did_indent = 1\n"
 msgid "\tlet b:did_ftplugin = 1\n"
-msgstr "\t:let b:did_indent = 1\n"
+msgstr "\tlet b:did_ftplugin = 1\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2072
@@ -5384,10 +5409,10 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2077
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:set textwidth=72\n"
 msgid "\tsetlocal textwidth=70\n"
-msgstr "\t:set textwidth=72\n"
+msgstr "\tsetlocal textwidth=70\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2082
@@ -5406,10 +5431,10 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2089
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:setlocal noswapfile\n"
 msgid "\t:setlocal\n"
-msgstr "\t:setlocal noswapfile\n"
+msgstr "\t:setlocal\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2094
@@ -5449,10 +5474,10 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2108
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t:buffers\n"
 msgid "\t:map <buffer>\n"
-msgstr "\t:buffers\n"
+msgstr "\t:map <buffer>\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2111
@@ -5470,6 +5495,10 @@ msgid ""
 "\tendif\n"
 "\tnoremap <buffer> <unique> <Plug>JavaImport oimport \"\"<Left><Esc>\n"
 msgstr ""
+"\tif !hasmapto('<Plug>JavaImport')\n"
+"\t  map <buffer> <unique> <LocalLeader>i <Plug>JavaImport\n"
+"\tendif\n"
+"\tnoremap <buffer> <unique> <Plug>JavaImport oimport \"\"<Left><Esc>\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2127
@@ -5520,10 +5549,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2149
-#, fuzzy
 #| msgid "RELATED COMMANDS"
 msgid "USER COMMANDS"
-msgstr "ÓRDENES RELACIONADAS"
+msgstr "ÓRDENES DE USUARIO"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2152
@@ -5536,12 +5564,12 @@ msgstr ""
 #: original/txt/usr_41.txt:2154
 #, no-wrap
 msgid "\t:command -buffer  Make  make %:r.s\n"
-msgstr ""
+msgstr "\t:command -buffer  Make  make %:r.s\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2157
 msgid "VARIABLES"
-msgstr ""
+msgstr "VARIABLES"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2161
@@ -5554,10 +5582,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2164
-#, fuzzy
 #| msgid "OPTIONS"
 msgid "FUNCTIONS"
-msgstr "OPCIONES"
+msgstr "FUNCIONES"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2168
@@ -5578,12 +5605,18 @@ msgid ""
 "\t:endif\n"
 "<\n"
 msgstr ""
+"\t:if !exists(\"*s:Func\")\n"
+"\t:  function s:Func(arg)\n"
+"\t:    ...\n"
+"\t:  endfunction\n"
+"\t:endif\n"
+"<\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2177
 #, no-wrap
 msgid "UNDO\t\t\t\t\t\t\t*undo_ftplugin*\n"
-msgstr ""
+msgstr "DESHACER \t\t\t\t\t*undo_ftplugin*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2181
@@ -5600,6 +5633,8 @@ msgid ""
 "\tlet b:undo_ftplugin = \"setlocal fo< com< tw< commentstring<\"\n"
 "\t\t\\ . \"| unlet b:match_ignorecase b:match_words b:match_skip\"\n"
 msgstr ""
+"\tlet b:undo_ftplugin = \"setlocal fo< com< tw< commentstring<\"\n"
+"\t\t\\ . \"| unlet b:match_ignorecase b:match_words b:match_skip\"\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2187
@@ -5617,10 +5652,9 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2193
-#, fuzzy
 #| msgid "FILE MARKS"
 msgid "FILE NAME"
-msgstr "MARCAS DE ARCHIVO"
+msgstr "NOMBRE DE ARCHIVO"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2196
@@ -5631,7 +5665,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2200
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid ""
 #| "\t~/.vim/ftplugin/stuff.vim\n"
 #| "\t~/.vim/ftplugin/stuff_def.vim\n"
@@ -5641,9 +5675,9 @@ msgid ""
 "\t.../ftplugin/stuff_foo.vim\n"
 "\t.../ftplugin/stuff/bar.vim\n"
 msgstr ""
-"\t~/.vim/ftplugin/cosas.vim\n"
-"\t~/.vim/ftplugin/cosas_def.vim\n"
-"\t~/.vim/ftplugin/cosas/header.vim\n"
+"\t.../ftplugin/stuff.vim\n"
+"\t.../ftplugin/stuff_foo.vim\n"
+"\t.../ftplugin/stuff/bar.vim\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2202
@@ -5654,7 +5688,7 @@ msgstr ""
 #: original/txt/usr_41.txt:2205
 #, no-wrap
 msgid "SUMMARY\t\t\t\t\t\t\t*ftplugin-special*\n"
-msgstr ""
+msgstr "RESUMEN\t\t\t\t\t\t\t*ftplugin-special*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2207
@@ -5729,10 +5763,10 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2235
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t$VIMRUNTIME/vimrc_example.vim ~\n"
 msgid "\t:next $VIMRUNTIME/compiler/*.vim\n"
-msgstr "\t$VIMRUNTIME/vimrc_example.vim ~\n"
+msgstr "\t:next $VIMRUNTIME/compiler/*.vim\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2237
@@ -5756,6 +5790,10 @@ msgid ""
 "\t:endif\n"
 "\t:let current_compiler = \"mine\"\n"
 msgstr ""
+"\t:if exists(\"current_compiler\")\n"
+"\t:  finish\n"
+"\t:endif\n"
+"\t:let current_compiler = \"mine\"\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2254
@@ -5781,6 +5819,11 @@ msgid ""
 "  CompilerSet errorformat&\t\t\" use the default 'errorformat'\n"
 "  CompilerSet makeprg=nmake\n"
 msgstr ""
+"  if exists(\":CompilerSet\") != 2\n"
+"    command -nargs=* CompilerSet setlocal <args>\n"
+"  endif\n"
+"  CompilerSet errorformat&\t\t\" usa 'errorformat' predefinido\n"
+"  CompilerSet makeprg=nmake\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2264
@@ -5803,7 +5846,8 @@ msgstr ""
 #: original/txt/usr_41.txt:2272
 #, no-wrap
 msgid "*41.14*\tWriting a plugin that loads quickly\t*write-plugin-quickload*\n"
-msgstr "*41.14*\tEscribir extensiones que carguen rápidamente\t*write-plugin-quickload*\n"
+msgstr "*41.14*\tEscribir extensiones que carguen rápidamente\t*write-plugin-"
+"quickload*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2276
@@ -5860,6 +5904,9 @@ msgid ""
 "\t\tcommand -nargs=* BNRead  call BufNetRead(<f-args>)\n"
 "\t\tmap <F19> :call BufNetWrite('something')<CR>\n"
 msgstr ""
+"\tif !exists(\"s:did_load\")\n"
+"\t\tcommand -nargs=* BNRead  call BufNetRead(<f-args>)\n"
+"\t\tmap <F19> :call BufNetWrite('something')<CR>\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2304
@@ -5870,6 +5917,10 @@ msgid ""
 "\t\tfinish\n"
 "\tendif\n"
 msgstr ""
+"\t\tlet s:did_load = 1\n"
+"\t\texe 'au FuncUndefined BufNet* source ' . expand('<sfile>')\n"
+"\t\tfinish\n"
+"\tendif\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2309
@@ -5880,6 +5931,10 @@ msgid ""
 "\t\t\" read functionality here\n"
 "\tendfunction\n"
 msgstr ""
+"\tfunction BufNetRead(...)\n"
+"\t\techo 'BufNetRead(' . string(a:000) . ')'\n"
+"\t\t\" Escriba aquí la funcionalidad\n"
+"\tendfunction\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2314
@@ -5890,6 +5945,10 @@ msgid ""
 "\t\t\" write functionality here\n"
 "\tendfunction\n"
 msgstr ""
+"\tfunction BufNetWrite(...)\n"
+"\t\techo 'BufNetWrite(' . string(a:000) . ')'\n"
+"\t\t\" Escriba aquí la funcionalidad\n"
+"\tendfunction\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2318
@@ -5962,7 +6021,7 @@ msgstr ""
 #: original/txt/usr_41.txt:2348
 #, no-wrap
 msgid "*41.15*\tWriting library scripts\t\t\t*write-library-script*\n"
-msgstr "*41.15*\tEscribir bibliotecas\t\t\t*write-library-script*\n"
+msgstr "*41.15*\tCrear bibliotecas con scripts\t*write-library-script*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2352
@@ -5989,6 +6048,10 @@ msgid ""
 "\tendif\n"
 "\tcall MyLibFunction(arg)\n"
 msgstr ""
+"\tif !exists('*MyLibFunction')\n"
+"\t   runtime library/mylibscript.vim\n"
+"\tendif\n"
+"\tcall MyLibFunction(arg)\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2364
@@ -6008,7 +6071,7 @@ msgstr ""
 #: original/txt/usr_41.txt:2369
 #, no-wrap
 msgid "\tcall mylib#myfunction(arg)\n"
-msgstr ""
+msgstr "\tcall mylib#myfunction(arg)\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2373
@@ -6038,7 +6101,7 @@ msgstr ""
 #: original/txt/usr_41.txt:2383
 #, no-wrap
 msgid "\tcall netlib#ftp#read('somefile')\n"
-msgstr ""
+msgstr "\tcall netlib#ftp#read('somefile')\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2385
@@ -6047,10 +6110,10 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2387
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "\t~/.vim/indent/help.vim ~\n"
 msgid "\t~/.vim/autoload/netlib/ftp.vim\n"
-msgstr "\t~/.vim/indent/help.vim ~\n"
+msgstr "\t~/.vim/autoload/netlib/ftp.vim\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2389
@@ -6079,13 +6142,13 @@ msgstr ""
 #, fuzzy
 #| msgid "You can use this command to get a list of marks: >"
 msgid "You can use the same mechanism for variables: >"
-msgstr "Puedes usar esta orden para obtener una lista de marcadores: >"
+msgstr "Puede utilizar el mismo mecanismo con variables: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2401
 #, no-wrap
 msgid "\tlet weekdays = dutch#weekdays\n"
-msgstr ""
+msgstr "\tlet weekdays = dutch#weekdays\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2404
@@ -6101,11 +6164,13 @@ msgid ""
 "\tlet dutch#weekdays = ['zondag', 'maandag', 'dinsdag', 'woensdag',\n"
 "\t\t\\ 'donderdag', 'vrijdag', 'zaterdag']\n"
 msgstr ""
+"\tlet dutch#weekdays = ['zondag', 'maandag', 'dinsdag', 'woensdag',\n"
+"\t\t\\ 'donderdag', 'vrijdag', 'zaterdag']\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2409
 msgid "Further reading: |autoload|."
-msgstr ""
+msgstr "Lecturas adicionales: |autoload|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2412
@@ -6119,6 +6184,8 @@ msgid ""
 "Vim users will look for scripts on the Vim website: http://www.vim.org.  If "
 "you made something that is useful for others, share it!"
 msgstr ""
+"Los usuarios de Vim buscarán scripts en el sitio web de Vim: "
+"http://www.vim.org. Se ha creado algo útil para otros, ¡compártalo!"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2419
@@ -6127,6 +6194,9 @@ msgid ""
 "command.  If you want to pack files together and/or compress them the \"zip"
 "\" utility is recommended."
 msgstr ""
+"Los scripts de Vim se pueden usar en cualquier sistema. No pueden estar "
+"empaquetados mediante las órdenes tar o gzip. Si desea empaquetar o "
+"comprimir los archivos, se recomienda usar la herramienta «zip»."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2422
@@ -6146,4 +6216,4 @@ msgstr ""
 #, fuzzy
 #| msgid "Next chapter: |usr_40.txt| Make new commands"
 msgid "Next chapter: |usr_42.txt| Add new menus"
-msgstr "Capítulo siguiente: |usr_40.esx| Crear órdenes nuevas"
+msgstr "Capítulo siguiente: |usr_42.esx| Añadir menús nuevos"
