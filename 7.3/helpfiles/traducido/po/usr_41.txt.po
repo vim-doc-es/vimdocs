@@ -3365,12 +3365,13 @@ msgstr ""
 #: original/txt/usr_41.txt:1208
 #, no-wrap
 msgid "\t:let uk2nl = {'one': 'een', 'two': 'twee', 'three': 'drie'}\n"
-msgstr ""
+msgstr "\t:let es2nl = {'uno': 'een', 'dos': 'twee', 'tres': 'drie'}\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1210
 msgid "Now you can lookup words by putting the key in square brackets: >"
 msgstr ""
+"Ahora puede buscar palabras usando la clave, poniéndola entre corchetes: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1213
@@ -3379,28 +3380,30 @@ msgid ""
 "\t:echo uk2nl['two']\n"
 "<\ttwee ~\n"
 msgstr ""
+"\t:echo es2nl['dos']\n"
+"<\ttwee ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1215
 msgid "The generic form for defining a Dictionary is: >"
-msgstr ""
+msgstr "La manera genérica de definir un Diccionario es: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1217
 #, no-wrap
 msgid "\t{<key> : <value>, ...}\n"
-msgstr ""
+msgstr "\t{<clave> : <valor>, ...}\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1219
 msgid "An empty Dictionary is one without any keys: >"
-msgstr ""
+msgstr "Un Diccionario vacío se define como carente de claves: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1221
 #, no-wrap
 msgid "\t{}\n"
-msgstr ""
+msgstr "\t{}\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1225
@@ -3409,6 +3412,9 @@ msgid ""
 "functions for them as well.  For example, you can obtain a list of the keys "
 "and loop over them: >"
 msgstr ""
+"Los Diccionarios ofrecen numerosas posibilidades. También hay disponibles "
+"varias funciones para operar sobre ellos. Por ejemplo, puede obtener una "
+"lista de las claves e iterar sobre ellas: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1232
@@ -3421,6 +3427,12 @@ msgid ""
 "\tone ~\n"
 "\ttwo ~\n"
 msgstr ""
+"\t:for clave in keys(es2nl)\n"
+"\t:  echo clave\n"
+"\t:endfor\n"
+"<\ttres ~\n"
+"\tuno ~\n"
+"\tdos ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1235
@@ -3428,6 +3440,8 @@ msgid ""
 "You will notice the keys are not ordered.  You can sort the list to get a "
 "specific order: >"
 msgstr ""
+"Habrá notado que las claves no están ordenadas. Puede ordenar la lista para "
+"obtener un orden específico: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1242
@@ -3440,6 +3454,12 @@ msgid ""
 "\tthree ~\n"
 "\ttwo ~\n"
 msgstr ""
+"\t:for clave in sort(keys(es2nl))\n"
+"\t:  echo clave\n"
+"\t:endfor\n"
+"<\tdos ~\n"
+"\ttres ~\n"
+"\tuno ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1245
