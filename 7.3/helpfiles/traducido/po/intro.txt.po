@@ -34,7 +34,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-09-23 20:27+0300\n"
-"PO-Revision-Date: 2011-01-04 17:05-0500\n"
+"PO-Revision-Date: 2011-01-20 13:04-0500\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
 "Language: es\n"
@@ -244,7 +244,7 @@ msgid ""
 "curly braces, like this: {Vi does not have on-line help}.  See |vi_diff.txt| "
 "for a summary of the differences between Vim and Vi."
 msgstr ""
-"Las diferencias entre Vi y Vim se señalarán con corchetes, por ejemplo: {Vi "
+"Las diferencias entre Vi y Vim se señalarán con llaves, por ejemplo: {Vi "
 "no tiene ayuda en línea}. Consulte |vi_diff.txt| para un resumen de las "
 "diferencias entre Vim y Vi."
 
@@ -1000,6 +1000,7 @@ msgstr ""
 "\t\tla mayúscula para añadir contenido. El texto se almacenará\n"
 "\t\ten un registro sin nombre en caso de no usar «\"x» o «\"\"».\n"
 
+# TODO reformatear, ancho de texto
 #. type: Plain text
 #: original/TXT/intro.txt:329
 #, no-wrap
@@ -1011,9 +1012,9 @@ msgid ""
 "\t\t(this will be clear from the context).\n"
 msgstr ""
 "\t\t\t\t\t\t\t*{}*\n"
-"{}\t\tLos corchetes indican qué partes de una orden son\n"
+"{}\t\tLas llaves indican qué partes de una orden son\n"
 "\t\tobligatorios, pero que pueden tomar distintos valores. Las\n"
-"\t\tdiferencias entre Vim y Vi también se resaltan con corchetes\n"
+"\t\tdiferencias entre Vim y Vi también se resaltan con llaves\n"
 "\t\t(el contexto aclarará esto).\n"
 
 #. type: Plain text
