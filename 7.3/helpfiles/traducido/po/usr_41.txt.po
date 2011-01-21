@@ -5201,6 +5201,23 @@ msgid ""
 " 16\t\t\t\t\t\t\t*typecorr-settings*\n"
 " 17\tThis plugin doesn't have any settings.\n"
 msgstr ""
+"  1\t*typecorr.txt*\tUna extensión para corregir errores ortográficos\n"
+"  2\n"
+"  3\tEsa extensión corrige automáticamente cualquier error ortográfico\n"
+"  4\tque pueda escribir.\n"
+"  5\n"
+"  6\tSolo hay unas pocas correcciones. Puede añadir los suyos.\n"
+"  7\n"
+"  8\tMacros:\n"
+"  9\t<Leader>a   o   <Plug>TypecorrAdd\n"
+" 10\t\tAñade una corrección para la palabra bajo el cursor.\n"
+" 11\n"
+" 12\tÓrdenes:\n"
+" 13\t:Correct {palabra}\n"
+" 14\t\tAñade una corrección a {palabra}.\n"
+" 15\n"
+" 16\t\t\t\t\t\t\t*typecorr-settings*\n"
+" 17\tEsta extensión no tiene opciones de configuración.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1989
@@ -5274,6 +5291,10 @@ msgid ""
 "ftdetect/foofoo.vim\".  The convention is to use the name of the filetype "
 "for the script name."
 msgstr ""
+"Escribe este archivo de una sola línea como «ftdetect/foofoo.vim» en el "
+"primer directorio en su 'runtimepath'. En Unix, sería "
+"«~/.vim/ftdetect/foofoo.vim». La convención es nombrar el script como el "
+"nombre del tipo de archivo -"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2014
@@ -5281,6 +5302,9 @@ msgid ""
 "You can make more complicated checks if you like, for example to inspect the "
 "contents of the file to recognize the language.  Also see |new-filetype|."
 msgstr ""
+"Si lo desea, puede hacer comprobaciones más complejas como inspeccionar los "
+"contenidos de un archivo para reconocer el idioma. Consulte también |new-"
+"filetype|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2017
@@ -5306,6 +5330,8 @@ msgid ""
 "<SID>\t\t\tScript-ID, used for mappings and functions local to\n"
 "\t\t\tthe script.\n"
 msgstr ""
+"<SID>\t\t\tEl identificador del script (Script-ID), utilizado en\n"
+"\t\t\t\tmacros y funciones locales al script.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2027
@@ -5314,6 +5340,8 @@ msgid ""
 "hasmapto()\t\tFunction to test if the user already defined a mapping\n"
 "\t\t\tfor functionality the script offers.\n"
 msgstr ""
+"hasmapto()\t\tUna función que comprueba si el usuario ya ha definido\n"
+"\t\t\t\t\tuna macro con la funcionalidad que el script ofrece."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2030
@@ -5322,12 +5350,15 @@ msgid ""
 "<Leader>\t\tValue of \"mapleader\", which the user defines as the\n"
 "\t\t\tkeys that plugin mappings start with.\n"
 msgstr ""
+"<Leader>\t\tEl valor de «mapleader», que el usuario define como\n"
+"\t\t\t\tlas teclas con las que iniciar las macros de la\n"
+"\t\t\t\textensión.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2032
 #, no-wrap
 msgid ":map <unique>\t\tGive a warning if a mapping already exists.\n"
-msgstr ""
+msgstr "::map <unique>\t\tEmite un aviso si la macro ya existe.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2035
@@ -5336,6 +5367,8 @@ msgid ""
 ":noremap <script>\tUse only mappings local to the script, not global\n"
 "\t\t\tmappings.\n"
 msgstr ""
+":noremap <script>\tSólo usa macros locales al script, no macros\n"
+"\t\t\t\t\t\tglobales.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2037
@@ -5357,6 +5390,10 @@ msgid ""
 "defines mappings for the current buffer only.  See |add-filetype-plugin| for "
 "how this type of plugin is used."
 msgstr ""
+"Una extensión de tipo de archivo («filetype plugin») es como una extensión "
+"global, a diferencia de que define opciones y macros que solo afectan al "
+"búfer local. Para saber más acerca del uso de este tipo de extensión, "
+"consulte  |add-filetype-plugin|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2049
@@ -5366,6 +5403,11 @@ msgid ""
 "explained here.  The essential thing is that a filetype plugin should only "
 "have an effect on the current buffer."
 msgstr ""
+"En primer lugar, lea la sección anterior sobre plugins globales, |41.11|. "
+"Todo lo mencionado ahí también afecta a las extensiones de tipo de archivo. "
+" Hay algunos elementos adicionales, que se explican aquí. o esencial es que "
+"una extensión de tipo de archivo sólo debe tener un efecto en el búfer "
+"actual."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2052
@@ -5378,6 +5420,9 @@ msgid ""
 "If you are writing a filetype plugin to be used by many people, they need a "
 "chance to disable loading it.  Put this at the top of the plugin: >"
 msgstr ""
+"Si esta escribiendo una extensión de tipo de archivo que mucha gente usará, "
+"necesitarán la capacidad de desactivar su carga. Inserte lo siguiente al "
+"principio del script."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2061
@@ -5389,6 +5434,11 @@ msgid ""
 "\tendif\n"
 "\tlet b:did_ftplugin = 1\n"
 msgstr ""
+"\t\" Solo hace esto cuando aún no ha finalizado con este búfer\n"
+"\tif exists(\"b:did_ftplugin\")\n"
+"\t  finish\n"
+"\tendif\n"
+"\tlet b:did_ftplugin = 1\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2064
@@ -5397,6 +5447,9 @@ msgid ""
 "for the same buffer (happens when using an \":edit\" command without "
 "arguments)."
 msgstr ""
+"Esto también sirve para evitar la ejecución de la misma extensión por "
+"duplicado para el mismo búfer (ocurre al usar la orden «:edit» sin "
+"argumentos)."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2067
@@ -5404,6 +5457,8 @@ msgid ""
 "Now users can disable loading the default plugin completely by making a "
 "filetype plugin with only this line: >"
 msgstr ""
+"Ahora, los usuarios pueden evitar cargar la extensión predefinida creando "
+"una extensión de tipo de archivo con sólo esta línea: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2069
@@ -5418,6 +5473,8 @@ msgid ""
 "This does require that the filetype plugin directory comes before "
 "$VIMRUNTIME in 'runtimepath'!"
 msgstr ""
+"Esto requiere que el directorio de extensiones de tipo de archivo aparezca "
+"antes de $VIMRUNTIME en 'runtimepath'."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2075
@@ -5425,6 +5482,8 @@ msgid ""
 "If you do want to use the default plugin, but overrule one of the settings, "
 "you can write the different setting in a script: >"
 msgstr ""
+"Si desea usar la extensión predefinida, pero anular uno de los valores, "
+"puede escribir un valor diferente en el script: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2077
@@ -5441,12 +5500,18 @@ msgid ""
 "\"~/.vim/after/ftplugin/vim.vim\".  Note that the default plugin will have "
 "set \"b:did_ftplugin\", but it is ignored here."
 msgstr ""
+"Escriba esto en el directorio «after», para que se lea antes de la extensión "
+"de tipo de archivo predefinido distribuido, «vim.vim» |after-directory|. En "
+"sistemas Unix, sería «~/.vim/after/ftplugin/vim.vim». Tenga en cuenta que "
+"la extensión predefinida cargará «b:did_ftplugin», pero aquí se ignora."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2087
 msgid ""
 "To make sure the filetype plugin only affects the current buffer use the >"
 msgstr ""
+"Para asegurar que la extensión de tipo de archivo solo afecta al búfer "
+"actual, use la orden >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2089
@@ -5463,6 +5528,10 @@ msgid ""
 "global options or options local to a window, the value will change for many "
 "buffers, and that is not what a filetype plugin should do."
 msgstr ""
+"para definir opciones. Y sólo defina opciones locales al búfer (consulte la "
+"ayuda para la opción que comprueba esto). Al usar |:setlocal| con opciones "
+"globales u opciones locales a una ventana, el valor cambiará para muchos "
+"búfers, y una extensión de tipo de archivo no debería hacer esto."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2099
@@ -5472,24 +5541,30 @@ msgid ""
 "have changed an option value already.  First resetting to the default value "
 "and then changing it often a good idea.  Example: >"
 msgstr ""
+"Cuando una opciones tiene un valor que es una lista de opciones o elementos, "
+"considere usar «+=» y «-=» para conservar el valor existente. Sea "
+"consciente de que puede que el usuario ya haya cambiado el valor de una "
+"opción. Es una buena idea restablecer el valor original y después cambiarlo. "
+"Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2101
 #, no-wrap
 msgid "\t:setlocal formatoptions& formatoptions+=ro\n"
-msgstr ""
+msgstr "\t:setlocal formatoptions& formatoptions+=ro\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2104
-#, fuzzy
 #| msgid "NOT WRAPPING"
 msgid "MAPPINGS"
-msgstr "BÚSQUEDA «NOWRAP»"
+msgstr "MACROS"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2106
 msgid "To make sure mappings will only work in the current buffer use the >"
 msgstr ""
+"Para asegurar que las macros sólo funcionan en el búfer local, use la orden "
+">"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2108
@@ -5504,6 +5579,9 @@ msgid ""
 "command.  This needs to be combined with the two-step mapping explained "
 "above.  An example of how to define functionality in a filetype plugin: >"
 msgstr ""
+"Se debe usar en combinación con la macro en dos pasos explicada "
+"anteriormente. Un ejemplo de definición de una funcionalidad en una "
+"extensión de tipo de archivo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2116
