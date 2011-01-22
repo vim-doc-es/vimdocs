@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2011-01-18 17:01+0200\n"
-"Last-Translator: Javier Rojas <jerojasro@devnull.li>\n"
+"PO-Revision-Date: 2011-01-22 21:28+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -5640,6 +5640,9 @@ msgid ""
 "without disabling everything.  Here is an example of how this is done for a "
 "plugin for the mail filetype: >"
 msgstr ""
+"Tiene que ofrecer al usuario la opción de desactivar macros en una extensión "
+"de tipo de archivo, sin desactivar el resto. Aquí tiene un ejemplo de como "
+"hacerlo con una extensión para el tipo de archivo mail: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2142
@@ -5656,6 +5659,16 @@ msgid ""
 "\t  nnoremap <buffer> <Plug>MailQuote :.,$s/^/> /<CR>\n"
 "\tendif\n"
 msgstr ""
+"\t\" Añade macros, a menos que el usuario defina lo contrario.\n"
+"\tif !exists(\"no_plugin_maps\") && !exists(\"no_mail_maps\")\n"
+"\t  \" Cita el texto insertando «> »\n"
+"\t  if !hasmapto('<Plug>MailQuote')\n"
+"\t    vmap <buffer> <LocalLeader>q <Plug>MailQuote\n"
+"\t    nmap <buffer> <LocalLeader>q <Plug>MailQuote\n"
+"\t  endif\n"
+"\t  vnoremap <buffer> <Plug>MailQuote :s/^/> /<CR>\n"
+"\t  nnoremap <buffer> <Plug>MailQuote :.,$s/^/> /<CR>\n"
+"\tendif\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2146
@@ -5665,6 +5678,10 @@ msgid ""
 "no_plugin_maps\t\tdisables mappings for all filetype plugins\n"
 "no_mail_maps\t\tdisables mappings for a specific filetype\n"
 msgstr ""
+"Se utilizan dos variables globales:\n"
+"no_plugin_maps\t\tdesactiva las macros de todas las extensiones de tipo de "
+"archivo\n"
+"no_mail_maps\t\tdesactiva las macros para un tipo de archivo particular\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2149
@@ -5678,6 +5695,9 @@ msgid ""
 "To add a user command for a specific file type, so that it can only be used "
 "in one buffer, use the \"-buffer\" argument to |:command|.  Example: >"
 msgstr ""
+"El argumento «- buffer» de |:command| permite añadir una orden de usuario "
+"para un tipo de archivo específico y que solo afecta al búfer local. "
+"Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2154
@@ -5698,6 +5718,10 @@ msgid ""
 "local buffer variables |b:var| if you want a variable specifically for one "
 "buffer."
 msgstr ""
+"Puede cargar una extensión de tipo de archivo en cada búfer dependiendo del "
+"tipo de archivo abierto en él. Las variables de script locales |s:var| se "
+"compartirán entre las diferentes llamadas al script. Use las variables "
+"locales al búfer | b:var| si desea usar una variable local a un búfer."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2164
@@ -5712,6 +5736,9 @@ msgid ""
 "plugin will be sourced every time a file with this filetype will be opened.  "
 "This construct makes sure the function is only defined once: >"
 msgstr ""
+"Necesita hacer lo siguiente una sola vez al definir una función, pero se "
+"cargará la extensión de tipo de archivo cada vez que se abra este tipo de "
+"archivo. Esta estructura asegura que la función se define una sola vez: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2175
@@ -5761,6 +5788,9 @@ msgid ""
 "Using \":setlocal\" with \"<\" after the option name resets the option to "
 "its global value.  That is mostly the best way to reset the option value."
 msgstr ""
+"Usar «:setlocal» con «<» después del nombre de la opción restablece la "
+"opción a su valor global. Habitualmente, es la mejor forma de restablecer el "
+"valor de una opción."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2190
@@ -5768,6 +5798,8 @@ msgid ""
 "This does require removing the \"C\" flag from 'cpoptions' to allow line "
 "continuation, as mentioned above |use-cpo-save|."
 msgstr ""
+"Esto requiere eliminar la opción «C» de 'cpoption' para permitir la "
+"continuación de la línea, como se mencionó anteriormente |use-cpo-save|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2193
@@ -5781,6 +5813,8 @@ msgid ""
 "The filetype must be included in the file name |ftplugin-name|.  Use one of "
 "these three forms:"
 msgstr ""
+"El nombre del archivo debe incluir el tipo de archivo |ftplugin-name|. Puede "
+"usar una de las tres formas a continuación:"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2200
@@ -5794,14 +5828,14 @@ msgid ""
 "\t.../ftplugin/stuff_foo.vim\n"
 "\t.../ftplugin/stuff/bar.vim\n"
 msgstr ""
-"\t.../ftplugin/stuff.vim\n"
-"\t.../ftplugin/stuff_foo.vim\n"
-"\t.../ftplugin/stuff/bar.vim\n"
+"\t.../ftplugin/algo.vim\n"
+"\t.../ftplugin/algo_foo.vim\n"
+"\t.../ftplugin/algo/bar.vim\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2202
 msgid "\"stuff\" is the filetype, \"foo\" and \"bar\" are arbitrary names."
-msgstr ""
+msgstr "«algo» es el tipo de archivo, «foo» y «bar» son nombres aleatorios."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2205
@@ -5813,6 +5847,8 @@ msgstr "RESUMEN\t\t\t\t\t\t\t*ftplugin-special*\n"
 #: original/txt/usr_41.txt:2207
 msgid "Summary of special things to use in a filetype plugin:"
 msgstr ""
+"Un resumen de las cosas especiales a usar en una extensión de tipo de "
+"archivo:"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2210
@@ -5821,12 +5857,14 @@ msgid ""
 "<LocalLeader>\t\tValue of \"maplocalleader\", which the user defines as\n"
 "\t\t\tthe keys that filetype plugin mappings start with.\n"
 msgstr ""
+"<LocalLeader>\t\tEl valor de «maplocalleader», que el usuario define con\n"
+"\t\t\tla tecla que incia las macros de extensión de tipo de archivo.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2212
 #, no-wrap
 msgid ":map <buffer>\t\tDefine a mapping local to the buffer.\n"
-msgstr ""
+msgstr ":map <búfer>\t\t        Define una macro local al búfer.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2215
@@ -5835,29 +5873,33 @@ msgid ""
 ":noremap <script>\tOnly remap mappings defined in this script that start\n"
 "\t\t\twith <SID>.\n"
 msgstr ""
+":noremap <script>\tSólo modifica macros definidas en el script que\n"
+"\t\t\tcomienzan con <SID>.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2217
 #, no-wrap
 msgid ":setlocal\t\tSet an option for the current buffer only.\n"
-msgstr ""
+msgstr ":setlocal\t\tDefine una opción para el búfer actual.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2219
 #, no-wrap
 msgid ":command -buffer\tDefine a user command local to the buffer.\n"
-msgstr ""
+msgstr ":command -buffer\tDefine una orden de usuario local al búfer.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2221
 #, no-wrap
 msgid "exists(\"*s:Func\")\tCheck if a function was already defined.\n"
-msgstr ""
+msgstr "exists(\"*s:Func\")\tComprueba si una función ya se ha definido anteriormente.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2223
 msgid "Also see |plugin-special|, the special things used for all plugins."
 msgstr ""
+"Consulte también |plugin-special|, las cosas especiales utilizados con todas "
+"las extensiones."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2226
@@ -5872,6 +5914,9 @@ msgid ""
 "can load it with the |:compiler| command.  The main use is to set the "
 "'errorformat' and 'makeprg' options."
 msgstr ""
+"Una extensión de compilador define opciones a usar con un compilador "
+"específico. El usuario puede cargarlo con la orden |:compiler|. El uso "
+"principal es definir las opciones 'errorformat' y 'makeprg'."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2233
@@ -5879,6 +5924,8 @@ msgid ""
 "Easiest is to have a look at examples.  This command will edit all the "
 "default compiler plugins: >"
 msgstr ""
+"Lo más sencillo es ver unos ejemplos. Esta orden editará todas las "
+"extensiones de compilador predefinidas: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2235
@@ -5890,7 +5937,7 @@ msgstr "\t:next $VIMRUNTIME/compiler/*.vim\n"
 #. type: Plain text
 #: original/txt/usr_41.txt:2237
 msgid "Use |:next| to go to the next plugin file."
-msgstr ""
+msgstr "Use |:next| para ir al siguiente archivo de extensión."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2240
@@ -5899,6 +5946,9 @@ msgid ""
 "allow a user to overrule or add to the default file.  The default files "
 "start with: >"
 msgstr ""
+"Hay dos elementos especiales relacionados con estos archivos. En primer "
+"lugar, es un mecanismo que permite al usuario anular o añadir valores al "
+"archivo principal. Los archivos predefinidos comienzan con: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2245
@@ -5951,6 +6001,10 @@ msgid ""
 "wide runtime directory, use the mechanism mentioned above.  When "
 "\"current_compiler\" was already set by a user plugin nothing will be done."
 msgstr ""
+"Use el mecanismo mencionado anteriormente cuando escriba una extensión de "
+"compilador para la distribución Vim o para un directorio de tiempo de "
+"ejecución del sistema. No se hará nada si «current_compiler» ya está "
+"definido por una extensión de usuario."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2269
@@ -5960,6 +6014,10 @@ msgid ""
 "last, thus it should be in a directory at the end of 'runtimepath'.  For "
 "Unix that could be ~/.vim/after/compiler."
 msgstr ""
+"Cuando escribe una extensión de compilador para anular las opciones de una "
+"extensión predefinida, no compruebe «current_compiler». Esta extensión se "
+"debería cargar al final, y por ello debería estar en un directorio al final "
+"de 'runtimepath'. En sistemas Unix, podría ser ~/.vim/after/compiler.."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2272
@@ -5975,6 +6033,9 @@ msgid ""
 "noticeable, while you hardly ever use the plugin.  Then it's time for a "
 "quickload plugin."
 msgstr ""
+"Puede que una extensión crezca, y que sea demasiado larga. Puede que crezca "
+"el tiempo de carga, y además, que apenas usa la extensión. En este caso, hay "
+"que usar una extensión de carga rápida («quickload»)."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2280
@@ -5983,6 +6044,9 @@ msgid ""
 "commands and mappings are defined that offer the functionality.  The second "
 "time the functions that implement the functionality are defined."
 msgstr ""
+"La idea principal es que la extensión se carga dos veces. La primera vez, se "
+"definen las órdenes de usuario y macros que ofrecen alguna funcionalidad. "
+"La segunda, se definen las funciones que introducen tales funcionalidades."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2285
@@ -5992,6 +6056,10 @@ msgid ""
 "script to the second time, which only happens when you actually use it.  "
 "When you always use the functionality it actually gets slower!"
 msgstr ""
+"Puede que «carga rápida» signifique cargar un script dos veces. Lo que "
+"queremos decir es que se carga rápidamente la primera, demorando la carga de "
+"la mayoría del script la segunda vez, que sólo ocurre cuando realmente lo "
+"usa. Si usa siempre esta funcionalidad, ¡se volverá lento!"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2288
@@ -5999,11 +6067,13 @@ msgid ""
 "Note that since Vim 7 there is an alternative: use the |autoload| "
 "functionality |41.15|."
 msgstr ""
+"Tenga en cuenta que hay una alternativa a partir de la versión 7 de Vim: use "
+"la funcionalidad ||41.15."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2290
 msgid "The following example shows how it's done: >"
-msgstr ""
+msgstr "Los siguientes ejemplos muestran como se hace: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2295
@@ -6014,6 +6084,10 @@ msgid ""
 "\t\" Maintainer:\tBram Moolenaar <Bram@vim.org>\n"
 "\t\" License:\tThis file is placed in the public domain.\n"
 msgstr ""
+"\t\" Vim global plugin for demonstrating quick loading\n"
+"\t\" Last Change:\t2005 Feb 25\n"
+"\t\" Maintainer:\tBram Moolenaar <Bram@vim.org>\n"
+"\t\" License:\tThis file is placed in the public domain.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2299
@@ -6247,6 +6321,9 @@ msgid ""
 "\t\t\"  Read the file fname through ftp\n"
 "\tendfunction\n"
 msgstr ""
+"\tfunction netlib#ftp#read(fname)\n"
+"\t\t\"  Read the file fname through ftp\n"
+"\tendfunction\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2397
@@ -6258,7 +6335,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2399
-#, fuzzy
 #| msgid "You can use this command to get a list of marks: >"
 msgid "You can use the same mechanism for variables: >"
 msgstr "Puede utilizar el mismo mecanismo con variables: >"
@@ -6275,6 +6351,8 @@ msgid ""
 "This will load the script \"autoload/dutch.vim\", which should contain "
 "something like: >"
 msgstr ""
+"Esto cargará el script «autoload/dutch.vim», que contendría algo similar a "
+"lo sigu: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2407
@@ -6323,12 +6401,16 @@ msgid ""
 "For utmost portability use Vim itself to pack scripts together.  This can be "
 "done with the Vimball utility.  See |vimball|."
 msgstr ""
+"Para obtener la máxima portabilidad use Vim para empaquetar los scripts. "
+"Puede hacer esto con la herramienta Vimball. Consulte |vimball|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2424
 msgid ""
 "It's good if you add a line to allow automatic updating.  See |glvs-plugins|."
 msgstr ""
+"Es una buena idea añadir una línea para pemitir la actualización automática. "
+"Consulte |glvs-plugins|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2428
