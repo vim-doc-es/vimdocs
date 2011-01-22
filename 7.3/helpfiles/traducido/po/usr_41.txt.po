@@ -3302,7 +3302,7 @@ msgstr ""
 "Observe que el primer elemento de la Lista creada por range() es cero, y por\n"
 "tanto el último elemento tiene un valor de uno menos que la longitud de la\n"
 "lista.\n"
-"   También puede especificar el valor máximo, el incremento o decremento\n"
+"   También puede especificar el valor máximo, y el incremento o decremento\n"
 "deseado: >\n"
 
 #. type: Plain text
@@ -3316,6 +3316,12 @@ msgid ""
 "\t6 ~\n"
 "\t4 ~\n"
 msgstr ""
+"\t:for a in range(8, 4, -2)\n"
+"\t:  echo a\n"
+"\t:endfor\n"
+"<\t8 ~\n"
+"\t6 ~\n"
+"\t4 ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1192
@@ -3467,11 +3473,14 @@ msgid ""
 "But you can never get back the order in which items are defined.  For that "
 "you need to use a List, it stores items in an ordered sequence."
 msgstr ""
+"No es posible recuperar el orden en el cual se definieron los elementos del "
+"Diccionario. Para eso necesita una Lista, que almacena los elementos en una "
+"secuencia ordenada."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1248
 msgid "DICTIONARY FUNCTIONS"
-msgstr ""
+msgstr "FUNCIONES PARA DICCIONARIOS"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1251
@@ -3479,6 +3488,8 @@ msgid ""
 "The items in a Dictionary can normally be obtained with an index in square "
 "brackets: >"
 msgstr ""
+"Normalmente, puede acceder a los elementos de un Diccionario usando el índice "
+"correspondiente entre corchetes: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1254
@@ -3487,21 +3498,25 @@ msgid ""
 "\t:echo uk2nl['one']\n"
 "<\teen ~\n"
 msgstr ""
+"\t:echo es2nl['uno']\n"
+"<\teen ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1256
 msgid ""
 "A method that does the same, but without so many punctuation characters: >"
 msgstr ""
+"Una forma de hacer lo mismo, sin tantos caracteres: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1259
-#, fuzzy, no-wrap
-#| msgid "\t:echo undotree()\n"
+#, no-wrap
 msgid ""
 "\t:echo uk2nl.one\n"
 "<\teen ~\n"
-msgstr "\t:echo undotree()\n"
+msgstr ""
+"\t:echo es2nl.uno\n"
+"<\teen ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1262
@@ -3509,7 +3524,11 @@ msgid ""
 "This only works for a key that is made of ASCII letters, digits and the "
 "underscore.  You can also assign a new value this way: >"
 msgstr ""
+"Esto sólo funciona con claves compuestas de caracteres ASCII, dígitos, y el "
+"guión bajo. También puede usar esta notación para asignar valores: >"
 
+# TODO revisar lo de diccionarios para ver si se sigue ajustando a lo 
+# mostrado en ejecución real
 #. type: Plain text
 #: original/txt/usr_41.txt:1266
 #, no-wrap
@@ -3518,6 +3537,9 @@ msgid ""
 "\t:echo uk2nl\n"
 "<\t{'three': 'drie', 'four': 'vier', 'one': 'een', 'two': 'twee'} ~\n"
 msgstr ""
+"\t:let es2nl.four = 'vier'\n"
+"\t:echo es2nl\n"
+"<\t{'tres': 'drie', 'cuatro': 'vier', 'uno': 'een', 'dos': 'twee'} ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1269
