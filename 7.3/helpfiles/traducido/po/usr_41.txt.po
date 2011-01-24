@@ -3547,6 +3547,8 @@ msgid ""
 "And now for something special: you can directly define a function and store "
 "a reference to it in the dictionary: >"
 msgstr ""
+"Y ahora, algo especial: puede definir directamente una función y almacenar "
+"una referencia a la misma en un diccionario: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1273
@@ -3556,11 +3558,14 @@ msgid ""
 "\t:  return join(map(split(a:line), 'get(self, v:val, \"???\")'))\n"
 "\t:endfunction\n"
 msgstr ""
+"\t:function es2nl.traducir(linea) dict\n"
+"\t:  return join(map(split(a:linea), 'get(self, v:val, \"???\")'))\n"
+"\t:endfunction\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1275
 msgid "Let's first try it out: >"
-msgstr ""
+msgstr "Primero probémosla: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1278
@@ -3569,6 +3574,8 @@ msgid ""
 "\t:echo uk2nl.translate('three two five one')\n"
 "<\tdrie twee ??? een ~\n"
 msgstr ""
+"\t:echo es2nl.traducir('tres dos cinco uno')\n"
+"<\tdrie twee ??? een ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1283
