@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2011-01-24 19:48+0200\n"
+"PO-Revision-Date: 2011-01-25 11:08+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
-"Language-Team: none\n"
+"Language-Team: vim-doc-es\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -4301,7 +4301,7 @@ msgid ""
 "directory and use its features right away |add-plugin|."
 msgstr ""
 "Puede crear un script de Vim de tal forma que lo puedan usar varias "
-"personas. Este se llama una extensión. Los usuarios de Vim pueden copiar su "
+"personas. Esto se llama una extensión. Los usuarios de Vim pueden copiar su "
 "script en su directorio «plugin/», y utilizarlo en el momento con |add-"
 "plugin|."
 
@@ -4571,8 +4571,8 @@ msgid ""
 "messages for redefining functions and cause trouble for autocommands that "
 "are added twice."
 msgstr ""
-"También evita que cargar el script dos veces, lo que provocaría mensajes de "
-"error al redifinir las funciones, y provocar problemas con las órdenes "
+"También evita cargar el script dos veces, lo que provocaría mensajes de "
+"error al redefinir las funciones, y provocar problemas con las órdenes "
 "automáticas que se cargan por duplicado."
 
 #. type: Plain text
@@ -4755,7 +4755,7 @@ msgid ""
 " 36\tendfunction\n"
 msgstr ""
 " 30\tfunction s:Añadir(from, correct)\n"
-" 31\t  let to = input(\"type the correction for \" . a:from . \": \")\n"
+" 31\t  let to = input(\"Introduzca la corrección para \" . a:from . \": \")\n"
 " 32\t  exe \":iabbrev \" . a:from . \" \" . to\n"
 " ..\n"
 " 36\tendfunction\n"
@@ -5910,7 +5910,8 @@ msgstr ":command -buffer\tDefine una orden de usuario local al búfer.\n"
 #: original/txt/usr_41.txt:2221
 #, no-wrap
 msgid "exists(\"*s:Func\")\tCheck if a function was already defined.\n"
-msgstr "exists(\"*s:Func\")\tComprueba si una función ya se ha definido anteriormente.\n"
+msgstr "exists(\"*s:Función\")\tComprueba si una función ya se ha definido "
+"anteriormente.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2223
@@ -6045,7 +6046,7 @@ msgstr ""
 "Cuando escribe una extensión de compilador para anular las opciones de una "
 "extensión predefinida, no compruebe «current_compiler». Esta extensión se "
 "debería cargar al final, y por ello debería estar en un directorio al final "
-"de 'runtimepath'. En sistemas Unix, podría ser ~/.vim/after/compiler.."
+"de 'runtimepath'. En sistemas Unix, podría ser «~/.vim/after/compiler»."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2272
@@ -6096,7 +6097,7 @@ msgid ""
 "functionality |41.15|."
 msgstr ""
 "Tenga en cuenta que hay una alternativa a partir de la versión 7 de Vim: use "
-"la funcionalidad ||41.15."
+"la funcionalidad |autoload|, |41.15|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2290
@@ -6112,10 +6113,10 @@ msgid ""
 "\t\" Maintainer:\tBram Moolenaar <Bram@vim.org>\n"
 "\t\" License:\tThis file is placed in the public domain.\n"
 msgstr ""
-"\t\" Vim global plugin for demonstrating quick loading\n"
-"\t\" Last Change:\t2005 Feb 25\n"
-"\t\" Maintainer:\tBram Moolenaar <Bram@vim.org>\n"
-"\t\" License:\tThis file is placed in the public domain.\n"
+"\t\" Extensión global de Vim para mostrar la carga rápida\n"
+"\t\" Último cambio:\t2005 Feb 25\n"
+"\t\" Desarrollador:\tBram Moolenaar <Bram@vim.org>\n"
+"\t\" Licencia:\tThis file is placed in the public domain.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2299
@@ -6126,8 +6127,8 @@ msgid ""
 "\t\tmap <F19> :call BufNetWrite('something')<CR>\n"
 msgstr ""
 "\tif !exists(\"s:did_load\")\n"
-"\t\tcommand -nargs=* BNRead  call BufNetRead(<f-args>)\n"
-"\t\tmap <F19> :call BufNetWrite('something')<CR>\n"
+"\t\tcommand -nargs=* BNRead  call BufNetRead(<argumentos-función>)\n"
+"\t\tmap <F19> :call BufNetWrite('algo')<CR>\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2304
@@ -6154,7 +6155,7 @@ msgid ""
 msgstr ""
 "\tfunction BufNetRead(...)\n"
 "\t\techo 'BufNetRead(' . string(a:000) . ')'\n"
-"\t\t\" Escriba aquí la funcionalidad\n"
+"\t\t\" Lee aquí la funcionalidad\n"
 "\tendfunction\n"
 
 #. type: Plain text
@@ -6210,6 +6211,10 @@ msgid ""
 "   is sourced at startup.  A |FuncUndefined| autocommand is defined.  The\n"
 "   \":finish\" command causes the script to terminate early.\n"
 msgstr ""
+"1. La orden «BNRead» se define y la tecla <F19> se asigna a una macro al "
+"cargar el\n"
+"  script al inicio. Se define una orden automática |FuncUndefined|. La orden\n"
+"  «:finish» hace que el script finalice antes.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2332
@@ -6218,6 +6223,8 @@ msgid ""
 "2. The user types the BNRead command or presses the <F19> key.  The\n"
 "   BufNetRead() or BufNetWrite() function will be called.\n"
 msgstr ""
+"2. El usuario introduce la orden «BNRead» o pulsa la tecla <F19>. Se\n"
+"  invoca la función «BufNetRead()» o «BufNetWrite()».\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2338
@@ -6229,6 +6236,12 @@ msgid ""
 "   of the script, no matter where it is located, because it comes from\n"
 "   expanding \"<sfile>\" (see |expand()|).\n"
 msgstr ""
+"3. Vim no puede encontrar la función y ejecuta la orden automática\n"
+"  |FuncUndefined|. Ya que el patrón «BufNet*» coincide con la función "
+"invocada,\n"
+"  se ejecutará la orden «source nombre-archivo». «nombre-archivo» debe ser\n"
+"  igual al nombre del script, sin importar su ubicación, ya que procede de\n"
+"  expandir «<sfile>» (consulte |expand()|).\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2341
@@ -6237,6 +6250,8 @@ msgid ""
 "4. The script is sourced again, the \"s:did_load\" variable exists and the\n"
 "   functions are defined.\n"
 msgstr ""
+"4. El script se carga otra vez, la variable «s:did_load» existe, y se\n"
+"  definen las funciones."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2345
@@ -6245,12 +6260,15 @@ msgid ""
 "the |FuncUndefined| autocommand.  You must make sure that no other plugin "
 "defines functions that match this pattern."
 msgstr ""
+"Tenga en cuenta que las funciones se cargan después de comparar el patrón en "
+"la orden automática |FuncUndefined|. Debe comprobar que ninguna otra "
+"extensión define funciones que coincidan con este patrón."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2348
 #, no-wrap
 msgid "*41.15*\tWriting library scripts\t\t\t*write-library-script*\n"
-msgstr "*41.15*\tCrear bibliotecas\t*write-library-script*\n"
+msgstr "*41.15*\tCrear bibliotecas\t\t\t\t\t*write-library-script*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2352
@@ -6259,7 +6277,7 @@ msgid ""
 "more than a few lines you will want to put it in one script and use it from "
 "many scripts.  We will call that one script a library script."
 msgstr ""
-"Algunas de los funciones son necesarios en varios lugares. Cuando esto se "
+"Algunas de los funciones son necesarias en varios lugares. Cuando esto se "
 "convierte en algo más que unos pocas líneas, querrá ubicarlo en un script, y "
 "usarlo desde varios otros. Vamos a denominar ese script como biblioteca."
 
@@ -6282,10 +6300,10 @@ msgid ""
 "\tendif\n"
 "\tcall MyLibFunction(arg)\n"
 msgstr ""
-"\tif !exists('*MyLibFunction')\n"
-"\t   runtime library/mylibscript.vim\n"
+"\tif !exists('*MiFunciónBiblioteca')\n"
+"\t   runtime library/biblioteca.vim\n"
 "\tendif\n"
-"\tcall MyLibFunction(arg)\n"
+"\tcall MiFunciónBiblioteca(arg)\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2364
@@ -6293,8 +6311,8 @@ msgid ""
 "Here you need to know that MyLibFunction() is defined in a script \"library/"
 "mylibscript.vim\" in one of the directories in 'runtimepath'."
 msgstr ""
-"Aquí tiene que saber que MyLibFunction() se define en el script "
-"«library/mylibscript.vim» en uno de los directorios de 'runtimepath'."
+"Aquí tiene que saber que MiFunciónBiblioteca() se define en el script "
+"«library/biblioteca.vim» en uno de los directorios de 'runtimepath'."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2367
@@ -6309,7 +6327,7 @@ msgstr ""
 #: original/txt/usr_41.txt:2369
 #, no-wrap
 msgid "\tcall mylib#myfunction(arg)\n"
-msgstr "\tcall mylib#myfunction(arg)\n"
+msgstr "\tcall mibiblioteca#mifunción(arg)\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2373
@@ -6319,8 +6337,8 @@ msgid ""
 "'runtimepath'.  That script must define the \"mylib#myfunction()\" function."
 msgstr ""
 "Mucho más sencillo, ¿verdad? Vim reconoce el nombre de la función, y cuando "
-"no esté definida, la buscará en el script «autoload/mylib.vim» en "
-"'runtimepath'. El script debe definir la función «mylib#myfunction()»."
+"no esté definida, la buscará en el script «autoload/mibibioteca.vim» en "
+"'runtimepath'. El script debe definir la función «mibiblioteca#mifun()»."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2378
@@ -6330,10 +6348,10 @@ msgid ""
 "where the part before the '#' matches the script name.  Otherwise Vim would "
 "not know what script to load."
 msgstr ""
-"Puede almacenar varias funciones en el script mylib.vim, y puede organizar "
-"como desee las funciones en sus bibliotecas. Puede debe usar nombres de "
-"funciones en las que la parte que precede a «#» coincide con el nombre del "
-"script. De no ser así, Vim no sabrá qué script cargar."
+"Puede almacenar varias funciones en el script mibiblioteca.vim, y puede "
+"organizar como desee las funciones en sus bibliotecas. Puede debe usar "
+"nombres de funciones en las que la parte que precede a «#» coincide con el "
+"nombre del script. De no ser así, Vim no sabrá qué script cargar."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2381
@@ -6375,8 +6393,8 @@ msgid ""
 "\t\t\"  Read the file fname through ftp\n"
 "\tendfunction\n"
 msgstr ""
-"\tfunction netlib#ftp#read(fname)\n"
-"\t\t\"  Read the file fname through ftp\n"
+"\tfunction netlib#ftp#read(nombre-archivo)\n"
+"\t\t\"  Lee al archivo mediante FTP\n"
 "\tendfunction\n"
 
 #. type: Plain text
@@ -6400,7 +6418,7 @@ msgstr "Puede utilizar el mismo mecanismo con variables: >"
 #: original/txt/usr_41.txt:2401
 #, no-wrap
 msgid "\tlet weekdays = dutch#weekdays\n"
-msgstr "\tlet weekdays = dutch#weekdays\n"
+msgstr "\tlet dias_semana = españa#dias_semana\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2404
@@ -6408,7 +6426,7 @@ msgid ""
 "This will load the script \"autoload/dutch.vim\", which should contain "
 "something like: >"
 msgstr ""
-"Esto cargará el script «autoload/dutch.vim», que contendría algo similar a "
+"Esto cargará el script «autoload/españa.vim», que contendría algo similar a "
 "lo sigu: >"
 
 #. type: Plain text
@@ -6418,8 +6436,8 @@ msgid ""
 "\tlet dutch#weekdays = ['zondag', 'maandag', 'dinsdag', 'woensdag',\n"
 "\t\t\\ 'donderdag', 'vrijdag', 'zaterdag']\n"
 msgstr ""
-"\tlet dutch#weekdays = ['zondag', 'maandag', 'dinsdag', 'woensdag',\n"
-"\t\t\\ 'donderdag', 'vrijdag', 'zaterdag']\n"
+"\tlet españa#dias_semana = ['lunes', 'martes', 'miercoles', 'jueves',\n"
+"\t\t\\ 'viernes', 'sábado', 'domingo']\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2409
@@ -6439,7 +6457,7 @@ msgid ""
 "you made something that is useful for others, share it!"
 msgstr ""
 "Los usuarios de Vim buscarán scripts en el sitio web de Vim: "
-"http://www.vim.org. Se ha creado algo útil para otros, ¡compártalo!"
+"http://www.vim.org. Si ha creado algo útil para otros, ¡compártalo!"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2419
