@@ -3586,20 +3586,28 @@ msgid ""
 "local variable will then refer to that Dictionary.\n"
 "   Now let's break up the complicated return command: >\n"
 msgstr ""
+"Lo que habrá notado primero es el «dict» al final de la línea «:function».\n"
+"Así se indica que la función será usada desde un Diccionario. La variable\n"
+"local «self» se referirá a dicho diccionario.\n"
+"   Ahora despiecemos esa compleja instrucción de retorno: >\n"
+
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1285
-#, fuzzy, no-wrap
-#| msgid "\t:split\n"
+#, no-wrap
 msgid "\tsplit(a:line)\n"
-msgstr "\t:split\n"
+msgstr "\tsplit(a:linea)\n"
 
+# TODO white: whitespace?
 #. type: Plain text
 #: original/txt/usr_41.txt:1288
 msgid ""
 "The split() function takes a string, chops it into white separated words and "
 "returns a list with these words.  Thus in the example it returns: >"
 msgstr ""
+"La función split() toma una cadena, la divide en palabras separadas por "
+"espacios en blanco, y entrega una lista con estas palabras. En el ejemplo "
+"previo, entrega: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1291
@@ -3608,6 +3616,8 @@ msgid ""
 "\t:echo split('three two five one')\n"
 "<\t['three', 'two', 'five', 'one'] ~\n"
 msgstr ""
+"\t:echo split('tres dos cinco uno')\n"
+"<\t['tres', 'dos', 'cinco', 'uno'] ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1295
@@ -3616,16 +3626,19 @@ msgid ""
 "the list, evaluating its second argument with \"v:val\" set to the value of "
 "each item.  This is a shortcut to using a for loop.  This command: >"
 msgstr ""
+"Esta lista es el primer argumento para la función map(). Dicha función irá a "
+"través de la lista, evaluando su segundo argumento con la variable «v:val» "
+"conteniendo el valor de cada elemento en la lista. Es una abreviación de un "
+"ciclo for. Esta instrucción: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1297
 #, no-wrap
 msgid "\t:let alist = map(split(a:line), 'get(self, v:val, \"???\")')\n"
-msgstr ""
+msgstr "\t:let lista = map(split(a:linea), 'get(self, v:val, \"???\")')\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1299
-#| msgid "Is equal to: >"
 msgid "Is equivalent to: >"
 msgstr "Equivale a: >"
 
@@ -3638,6 +3651,10 @@ msgid ""
 "\t:  let alist[idx] = get(self, alist[idx], \"???\")\n"
 "\t:endfor\n"
 msgstr ""
+"\t:let lista = split(a:linea)\n"
+"\t:for ind in range(len(lista))\n"
+"\t:  let lista[ind] = get(self, lista[ind], \"???\")\n"
+"\t:endfor\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1309
@@ -3648,6 +3665,11 @@ msgid ""
 "situations where a key may not be present and you don't want an error "
 "message."
 msgstr ""
+"La función get() comprueba si una clave existe en un Diccionario. Si existe, "
+"retorna el valor asociado a la clave. Si no existe, retorna el valor definido "
+"como predeterminado, que en el ejemplo es '???'. Esto permite manejar de "
+"manera conveniente las situaciones en que una clave no existe y no se desea "
+"manejar el error que se provocaría."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1314
@@ -3658,11 +3680,15 @@ msgid ""
 "  This combination of split(), map() and join() is a nice way to filter a line\n"
 "of words in a very compact way.\n"
 msgstr ""
+"La función join() es el complemento de split(): une una lista de palabras,\n"
+"separándolas con un espacio.\n"
+"   La combinación de split(), map(), y join() es una forma elegante de filtrar\n"
+"una cadena de palabras de manera sucinta.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1317
 msgid "OBJECT ORIENTED PROGRAMMING"
-msgstr ""
+msgstr "PROGRAMACIÓN ORIENTADA A OBJETOS"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1323
@@ -3674,6 +3700,12 @@ msgid ""
 "to do the same for other languages.  Let's first make an object (aka\n"
 "Dictionary) that has the translate function, but no words to translate: >\n"
 msgstr ""
+"Ahora que podemos guardar valores y funciones en un Diccionario, podemos usar\n"
+"un Diccionario como un objeto.\n"
+"   Anteriomente hicimos uso de un Diccionario para traducir texto de Holandés\n"
+"a Español. Querríamos hacer lo mismo para otros idiomas. Primero crearemos un\n"
+"objeto (alias un Diccionario) que tenga la función traducir, pero no tenga\n"
+"palabras para traducir: >\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1328
@@ -3684,6 +3716,10 @@ msgid ""
 "\t:  return join(map(split(a:line), 'get(self.words, v:val, \"???\")'))\n"
 "\t:endfunction\n"
 msgstr ""
+"\t:let dicctraductor = {}\n"
+"\t:function dicctraductor.traducir(linea) dict\n"
+"\t:  return join(map(split(a:linea), 'get(self.palabras, v:val, \"???\")'))\n"
+"\t:endfunction\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1332
@@ -3692,11 +3728,14 @@ msgid ""
 "lookup word translations.  But we don't have a self.words.  Thus you could "
 "call this an abstract class."
 msgstr ""
+"La definición es ligeramente diferente de la función anterior, ya que usa "
+"'self.words' para buscar las traducciones de palabras. Pero no hay un "
+"self.words. Por esto decir que el Diccionario es una clase abstracta."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1334
 msgid "Now we can instantiate a Dutch translation object: >"
-msgstr ""
+msgstr "Ahora podemos instanciar un objeto para traducción al Holandés: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1339
@@ -3707,11 +3746,15 @@ msgid ""
 "\t:echo uk2nl.translate('three one')\n"
 "<\tdrie een ~\n"
 msgstr ""
+"\t:let es2nl = copy(dicctraductor)\n"
+"\t:let es2nl.words = {'uno': 'een', 'dos': 'twee', 'tres': 'drie'}\n"
+"\t:echo es2nl.translate('tres uno')\n"
+"<\tdrie een ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1341
 msgid "And a German translator: >"
-msgstr ""
+msgstr "Y un traductor al alemán: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1346
@@ -3722,6 +3765,10 @@ msgid ""
 "\t:echo uk2de.translate('three one')\n"
 "<\tdrei ein ~\n"
 msgstr ""
+"\t:let es2de = copy(dicctraductor)\n"
+"\t:let es2de.words = {'uno': 'ein', 'dos': 'zwei', 'tres': 'drei'}\n"
+"\t:echo es2de.translate('tres uno')\n"
+"<\tdrei ein ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1350
@@ -3730,11 +3777,14 @@ msgid ""
 "Dictionary and then the copy is changed to add the words.  The original "
 "remains the same, of course."
 msgstr ""
+"Puede ver que la función copy() se usa para crear una copia del Diccionario "
+"«dicctraductor» y luego se cambia la copia, añadiendo las palabras. El "
+"original, por supuesto, permanece intacto."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1352
 msgid "Now you can go one step further, and use your preferred translator: >"
-msgstr ""
+msgstr "Ahora puede ir un paso más allá, y usar su traductor preferido: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1360
@@ -3748,6 +3798,13 @@ msgid ""
 "\t:echo trans.translate('one two three')\n"
 "<\teen twee drie ~\n"
 msgstr ""
+"\t:if $LANG =~ \"de\"\n"
+"\t:  let trad = es2de\n"
+"\t:else\n"
+"\t:  let trad = es2nl\n"
+"\t:endif\n"
+"\t:echo trad.traducir('uno dos tres')\n"
+"<\teen twee drie ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1364
