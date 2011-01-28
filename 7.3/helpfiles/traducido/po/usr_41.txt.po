@@ -3813,6 +3813,9 @@ msgid ""
 "made.  More about List and Dictionary identity can be found at |list-"
 "identity| and |dict-identity|."
 msgstr ""
+"Aquí «trad» se refiere a uno de dos posibles objetos (Diccionarios). No se "
+"hace ninguna copia. Puede encontrar más información acerca de la identidad de "
+"Listas y Diccionarios en |list-identity| y |dict-identity|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1367
@@ -3820,6 +3823,8 @@ msgid ""
 "Now you might use a language that isn't supported.  You can overrule the "
 "translate() function to do nothing: >"
 msgstr ""
+"Puede que use un idioma que aún no está soportado. Para este caso, puede "
+"redefinir la función traducir() para que no haga nada: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1374
@@ -3832,6 +3837,12 @@ msgid ""
 "\t:echo uk2uk.translate('three one wladiwostok')\n"
 "<\tthree one wladiwostok ~\n"
 msgstr ""
+"\t:let es2es = copy(dicctraductor)\n"
+"\t:function! es2es.traducir(linea)\n"
+"\t:  return a:linea\n"
+"\t:endfunction\n"
+"\t:echo es2es.traducir('tres one wladiwostok')\n"
+"<\ttres uno wladiwostok ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1377
@@ -3839,6 +3850,8 @@ msgid ""
 "Notice that a ! was used to overwrite the existing function reference.  Now "
 "use \"uk2uk\" when no recognized language is found: >"
 msgstr ""
+"Note el ! que se usó para redefinir la referencia a función existente. Ahora "
+"puede usar «es2es» cuando no se encuentra ningún idioma reconocido: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1387
@@ -3854,11 +3867,20 @@ msgid ""
 "\t:echo trans.translate('one two three')\n"
 "<\tone two three ~\n"
 msgstr ""
+"\t:if $LANG =~ \"de\"\n"
+"\t:  let trad = es2de\n"
+"\t:elseif $LANG =~ \"nl\"\n"
+"\t:  let trad = es2nl\n"
+"\t:else\n"
+"\t:  let trad = es2es\n"
+"\t:endif\n"
+"\t:echo trad.traducir('uno dos tres')\n"
+"<\tuno dos tres ~\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1389
 msgid "For further reading see |Lists| and |Dictionaries|."
-msgstr ""
+msgstr "Para más detalles véase |Lists| y |Dictionaries|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1392
@@ -3868,10 +3890,8 @@ msgstr "*41.9*\tExcepciones\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1394
-#, fuzzy
-#| msgid "It all starts with one simple command: >"
 msgid "Let's start with an example: >"
-msgstr "Comencemos con una simple orden: >"
+msgstr "Empecemos con un ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1400
@@ -3883,7 +3903,13 @@ msgid ""
 "\t:   echo \"Sorry, the Pascal template file cannot be found.\"\n"
 "\t:endtry\n"
 msgstr ""
+"\t:try\n"
+"\t:   read ~/plantillas/pascal.tmpl\n"
+"\t:catch /E484:/\n"
+"\t:   echo \"Lo siento, no encuentro el archivo plantilla para Pascal.\"\n"
+"\t:endtry\n"
 
+# TODO instead no está como repetido?
 #. type: Plain text
 #: original/txt/usr_41.txt:1404
 msgid ""
@@ -3891,6 +3917,9 @@ msgid ""
 "generating an error message, this code catches the error and gives the user "
 "a nice message instead."
 msgstr ""
+"La orden «:read» (leer) fallará si el archivo no existe. En vez de mostrar un "
+"mensaje de error, este código atrapa el error y le muestra al usuario un "
+"mensaje más agradable."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1410
@@ -3901,6 +3930,12 @@ msgid ""
 "case, the error we catch contains \"E484:\".  This number is guaranteed to "
 "stay the same (the text may change, e.g., it may be translated)."
 msgstr ""
+"Para las instrucciones entre «:try» y «:endtry» los errores se convierten en "
+"excepciones. Una excepción es una cadena de texto. Cuando aparece un error "
+"esta cadena contiene el mensaje de error. Y cada mensaje de error tiene un "
+"número. En este caso, el error que atrapamos contiene «E484:». Vim garantiza "
+"que este número permanece inalterado (el texto del mensaje de error puede "
+"cambiar, por ejemplo, puede haber sido traducido.)"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1414
