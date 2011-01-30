@@ -286,12 +286,24 @@ if has("unix")
       if a:action == 'stats'
         let stats_r = system("msgfmt --statistics -o /dev/null " . shellescape(expand("%")))
         let stats_t = split(stats_r, "\n")[0]
-        let stats = matchlist(stats_t, '\(\d\+\) translated messages, \(\d\+\) fuzzy translations, \(\d\+\) untranslated messages\.')
-        let untr = eval(stats[1] . ".0")
-        echo printf("%d translated messages, %d fuzzy translations, %d "
-                    \ ."unstranslated messages. %.2g completed", stats[1],
-                    \ stats[2], stats[3], (100.0 * untr)/(stats[1] + stats[2]
-                    \ + stats[3]))
+        let _trans = matchlist(stats_t, '\(\d\+\) translated messages\{0,1}')
+        let tr_m = 0.0
+        if len(_trans) >= 2
+          let tr_m = eval(_trans[1] . ".0")
+        endif
+        let _trans = matchlist(stats_t, '\(\d\+\) fuzzy translations\{0,1}')
+        let fu_m = 0.0
+        if len(_trans) >= 2
+          let fu_m = eval(_trans[1] . ".0")
+        endif
+        let _trans = matchlist(stats_t, '\(\d\+\) untranslated messages\{0,1}')
+        let ut_m = 0.0
+        if len(_trans) >= 2
+          let ut_m = eval(_trans[1] . ".0")
+        endif
+        echo printf("%.0g translated messages, %.0g fuzzy translations, %.0g "
+                    \ ."untranslated messages. %.2g completed", tr_m,
+                    \ fu_m, ut_m, (100.0 * tr_m)/(tr_m + fu_m + ut_m))
       elseif a:action == 'test'
         if exists("g:po_msgfmt_args")
           let args = g:po_msgfmt_args
