@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2011-01-25 11:08+0200\n"
-"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"PO-Revision-Date: 2011-01-30 18:35-0500\n"
+"Last-Translator: Javier Rojas <jerojasro@devnull.li>\n"
 "Language-Team: vim-doc-es\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -3906,7 +3906,7 @@ msgstr ""
 "\t:try\n"
 "\t:   read ~/plantillas/pascal.tmpl\n"
 "\t:catch /E484:/\n"
-"\t:   echo \"Lo siento, no encuentro el archivo plantilla para Pascal.\"\n"
+"\t:   echo «Lo siento, no encuentro el archivo plantilla para Pascal.»\n"
 "\t:endtry\n"
 
 # TODO instead no está como repetido?
@@ -3944,13 +3944,14 @@ msgid ""
 "not match in it.  Thus this exception will not be caught and result in the "
 "usual error message."
 msgstr ""
+"Cuando la orden «:read» genera un error distinto, el patrón «E484:» no "
+"coincidirá con él. La excepción no será atrapada y aparecerá el mensaje de "
+"error habitual en esos casos."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1416
-#, fuzzy
-#| msgid "Another way to do this: >"
 msgid "You might be tempted to do this: >"
-msgstr "Existe otra manera de hacer esto: >"
+msgstr "Puede sentirse tentado a hacer lo siguiente:: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1422
@@ -3962,6 +3963,11 @@ msgid ""
 "\t:   echo \"Sorry, the Pascal template file cannot be found.\"\n"
 "\t:endtry\n"
 msgstr ""
+"\t:try\n"
+"\t:   read ~/plantillas/pascal.tmpl\n"
+"\t:catch\n"
+"\t:   echo «Lo siento, no encuentro el archivo plantilla para Pascal.»\n"
+"\t:endtry\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1425
@@ -3969,11 +3975,14 @@ msgid ""
 "This means all errors are caught.  But then you will not see errors that are "
 "useful, such as \"E21: Cannot make changes, 'modifiable' is off\"."
 msgstr ""
+"De esta forma se atrapan todos los errores. Pero al hacerlo no verá errores "
+"que son útiles, como por ejemplo «E21: No se pudo modificar, 'modifiable' "
+"está desactivado»"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1427
 msgid "Another useful mechanism is the \":finally\" command: >"
-msgstr ""
+msgstr "La orden «:finally» es otro mecanismo útil: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1437
@@ -3989,6 +3998,15 @@ msgid ""
 "\t:   call delete(tmp)\n"
 "\t:endtry\n"
 msgstr ""
+"\t:let tmp = tempname()\n"
+"\t:try\n"
+"\t:   exe \".,$write \" . tmp\n"
+"\t:   exe \"!filter \" . tmp\n"
+"\t:   .,$delete\n"
+"\t:   exe \"$read \" . tmp\n"
+"\t:finally\n"
+"\t:   call delete(tmp)\n"
+"\t:endtry\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1443
@@ -4000,17 +4018,21 @@ msgid ""
 "(tmp)\" is always executed.  This makes sure you don't leave the temporary "
 "file behind."
 msgstr ""
+"Aquí se filtran las líneas desde el cursor hasta el final del archivo usando "
+"la orden «filter», que toma como argumento un nombre de archivo. No importa "
+"si el filtrado funciona, si algo sale mal entre «:try» y «:finally», o si el "
+"usuario cancela el filtrado presionando CTRL-C, la instrucción «call "
+"delete(tmp)» siempre se ejecuta. Así se asegura de que no queden archivos "
+"temporales luego del procesamiento."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1446
-#, fuzzy
-#| msgid "More about folding by indent in the reference manual: |fold-indent|"
 msgid ""
 "More information about exception handling can be found in the reference "
 "manual: |exception-handling|."
 msgstr ""
-"Puede ver más acerca de plegar por sangrado en el manual de referencia: |"
-"fold-indent|"
+"Puede encontrar más información acerca del manejo de excepciones en el manual "
+"de referencia: |exception-handling|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1449
@@ -4024,6 +4046,9 @@ msgid ""
 "Here is a summary of items that apply to Vim scripts.  They are also "
 "mentioned elsewhere, but form a nice checklist."
 msgstr ""
+"A continuación un resumen de los elementos relevantes para escribir scripts "
+"en Vim. También se los menciona en otros lugares de la documentación, pero "
+"aquí se presentan como una conveniente lista de chequeo."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1456
@@ -4033,18 +4058,20 @@ msgid ""
 "used.  This is important when using mappings that end in a <CR>.  See |:"
 "source_crnl|."
 msgstr ""
+"El carácter de fin de línea usado depende del sistema. Para Unix se usa "
+"<NL>. Para MS-DOS, Windows, OS/2 y similares, se usa <CR><LF>. Éste es un "
+"detalle importante a considerar cuando se usen macros que terminan en "
+"<CR>. Véase |:source_crnl|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1459
-#, fuzzy
-#| msgid "JUST SPACES"
 msgid "WHITE SPACE"
-msgstr "SÓLO ESPACIOS"
+msgstr "ESPACIO EN BLANCO"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1461
 msgid "Blank lines are allowed and ignored."
-msgstr ""
+msgstr "Las líneas en blanco están permitidas, y son ignoradas."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1467
@@ -4055,18 +4082,23 @@ msgid ""
 "of a separator, the whitespaces after the last (visible) character may or "
 "may not be ignored depending on the situation, see below."
 msgstr ""
+"Los espacios en blanco al principio de cada línea (espacios y TABs) siempre "
+"se ignoran. Los espacios en blanco entre parámetros (p.ej. entre el "
+"'set' y el 'cpoptions' en el ejemplo a continuación) se comprimen a un solo "
+"espacio y juegan el rol de separador, los espacios en blanco después del "
+"último carácter (visible) pueden o no ser ignorados dependiendo del caso, ver "
+"más abajo."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1469
 msgid "For a \":set\" command involving the \"=\" (equal) sign, such as in: >"
-msgstr ""
+msgstr "Para una orden «:set» que incluye el símbolo «=» (igual), como en: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1471
-#, fuzzy, no-wrap
-#| msgid "\t:set cinoptions+={2\n"
+#, no-wrap
 msgid "\t:set cpoptions    =aABceFst\n"
-msgstr "\t:set cinoptions+={2\n"
+msgstr "\t:set cpoptions    =aABceFst\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1474
@@ -4074,56 +4106,58 @@ msgid ""
 "the whitespace immediately before the \"=\" sign is ignored.  But there can "
 "be no whitespace after the \"=\" sign!"
 msgstr ""
+"se ignora el espacio en blanco inmediatamente antes del símbolo «=». ¡Pero "
+"no puede haber espacios luego del símbolo «=»!"
 
+# TODO revisar nombre de backslash
 #. type: Plain text
 #: original/txt/usr_41.txt:1477
 msgid ""
 "To include a whitespace character in the value of an option, it must be "
 "escaped by a \"\\\" (backslash)  as in the following example: >"
 msgstr ""
+"Para incluir un espacio en blanco como valor de una opción, hay que escaparlo "
+"usando una «\\» (barra inversa) como en el siguiente ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1479
 #, no-wrap
 msgid "\t:set tags=my\\ nice\\ file\n"
-msgstr ""
+msgstr "\t:set tags=mi\\ lindo\\ archivo\n"
 
+# TODO bug in vim doc?
 #. type: Plain text
 #: original/txt/usr_41.txt:1481
 msgid "The same example written as >"
-msgstr ""
+msgstr "Al escribir el ejemplo como: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1483
 #, no-wrap
 msgid "\t:set tags=my nice file\n"
-msgstr ""
+msgstr "\t:set tags=mi lindo archivo\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1485
 msgid "will issue an error, because it is interpreted as: >"
-msgstr ""
+msgstr "Se obtendrá un error, porque se interpreta como: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1489
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\t:set autoindent\n"
-#| "\t:set ai\n"
+#, no-wrap
 msgid ""
 "\t:set tags=my\n"
 "\t:set nice\n"
 "\t:set file\n"
 msgstr ""
-"\t:set autoindent\n"
-"\t:set ai\n"
+"\t:set tags=mi\n"
+"\t:set lindo\n"
+"\t:set archivo\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1492
-#, fuzzy
-#| msgid "MOVING IN COMMENTS"
 msgid "COMMENTS"
-msgstr "MOVERSE EN COMENTARIOS\t"
+msgstr "COMENTARIOS"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1497
@@ -4134,12 +4168,18 @@ msgid ""
 "in examples below.  A comment can start on any character position on the "
 "line."
 msgstr ""
+"El carácter \" (comilla doble) marca el inicio de un comentario. Todo lo que "
+"aparece luego de éste carácter hasta el fin de línea, e incluyéndola, se "
+"considera un comentario y es ignorado, excepto por las órdenes que no tienen "
+"en cuenta comentarios, como se muestra en ejemplos más adelante. Un "
+"comentario puede empezar en cualquier punto de una línea de texto."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1499
 msgid ""
 "There is a little \"catch\" with comments for some commands.  Examples: >"
 msgstr ""
+"Hay un pequeño «pero» con los comentarios y ciertas órdenes. Ejemplos: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1504
@@ -4150,6 +4190,10 @@ msgid ""
 "\t:execute cmd\t\t\t\" do it\n"
 "\t:!ls *.c\t\t\t\" list C files\n"
 msgstr ""
+"\t:abbrev des desarrollo\t\t\" abreviación\n"
+"\t:map <F3> o#include\t\t\" insertar directiva include\n"
+"\t:execute orden\t\t\t\" ejecutar\n"
+"\t:!ls *.c\t\t\t\" listar archivos C\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1513
@@ -4164,7 +4208,17 @@ msgid ""
 "commands (there are a few more commands with this restriction).  For the\n"
 "\":map\", \":abbreviate\" and \":execute\" commands there is a trick: >\n"
 msgstr ""
+"La abreviación 'dev' será expandida a 'desarrollo		\" abreviación'. La\n"
+"macro <F3> constará en realidad de toda la línea desde el 'o# ....' incluyendo\n"
+"el '\" insertar directiva include'. La orden «execute» provocará un error. La\n"
+"orden «!» enviará todos los caracteres luego de ella a la consola, provocando\n"
+"un error debido al carácter '\"' sin la comilla de cierre correspondiente.\n"
+"   No puede haber comentarios en las órdenes «:map», «:abbreviate»,\n"
+"«:execute», ni «!» (hay algunas órdenes más con esta restricción). Para el\n"
+"caso de las órdenes «:map», «:abbreviate», y «:execute» hay un truco\n"
+"disponible: >\n"
 
+# TODO revisar formateo en .esx
 #. type: Plain text
 #: original/txt/usr_41.txt:1517
 #, no-wrap
@@ -4173,6 +4227,9 @@ msgid ""
 "\t:map <F3> o#include|\" insert include\n"
 "\t:execute cmd\t\t\t|\" do it\n"
 msgstr ""
+"\t:abbrev des desarrollo|\" abreviación\n"
+"\t:map <F3> o#include|\" insertar directiva include\n"
+"\t:execute orden\t\t\t|\" ejecutar\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1522
@@ -4183,6 +4240,10 @@ msgid ""
 "things: |:execute| and use '|': >\n"
 "\t:exe '!ls *.c'\t\t\t|\" list C files\n"
 msgstr ""
+"El carácter '|' permite separar órdenes. En este caso, la siguiente orden es\n"
+"simplemente un comentario. Para la última orden hay que hacer dos cosas:\n"
+"|:execute| y usar '|': >\n"
+"\t:exe '!ls *.c'\t\t\t|\" listar archivos C\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1527
@@ -4192,12 +4253,16 @@ msgid ""
 "included.  As a consequence of this behavior, you don't always see that "
 "trailing whitespace is included: >"
 msgstr ""
+"Observe que no hay espacios en blanco antes del '|' en la abreviación ni en "
+"la macro. En estas órdenes, se incluye cualquier carácter hasta el fin de "
+"línea o hasta el '|'. Como consecuencia de este comportamiento, no siempre es "
+"visible cuándo quedan incluidos espacios en blanco: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1529
 #, no-wrap
 msgid "\t:map <F4> o#include  \n"
-msgstr ""
+msgstr "\t:map <F4> o#include  \n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1532
@@ -4205,6 +4270,8 @@ msgid ""
 "To spot these problems, you can set the 'list' option when editing vimrc "
 "files."
 msgstr ""
+"Para ver estos problemas de forma más fácil, puede activar la opción "
+"'list' al editar archivos vimrc (de configuración de Vim.)"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1538
@@ -4216,6 +4283,11 @@ msgid ""
 "\techo \"this is a Vim script\"\n"
 "\tquit\n"
 msgstr ""
+"En Unix hay una forma especial de hacer un comentario, que permite hacer que\n"
+"un script de Vim sea ejecutable: >\n"
+"\t#!/usr/bin/env vim -S\n"
+"\techo \"este es un script de Vim\"\n"
+"\tquit\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1542
@@ -4224,16 +4296,19 @@ msgid ""
 "exclamation mark changes it into doing nothing, so that you can add the "
 "shell command to execute the rest of the file. |:#!| |-S|"
 msgstr ""
+"Por sí misma, la orden «#» muestra una línea junto con su número de línea. Al "
+"añadirle un símblolo de admiración cambia y no hace nada, así que puede "
+"añadir la orden de consola para ejecutar el resto del archivo. |:#!| |-S|"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1545
 msgid "PITFALLS"
-msgstr ""
+msgstr "TRAMPAS"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1547
 msgid "Even bigger problem arises in the following example: >"
-msgstr ""
+msgstr "En el siguiente ejemplo aparecen problemas aún más grandes: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1550
@@ -4242,6 +4317,8 @@ msgid ""
 "\t:map ,ab o#include\n"
 "\t:unmap ,ab \n"
 msgstr ""
+"\t:map ,ab o#include\n"
+"\t:unmap ,ab \n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1555
@@ -4251,6 +4328,10 @@ msgid ""
 "very hard to identify, because the ending whitespace character in \":unmap ,"
 "ab \" is not visible."
 msgstr ""
+"Aquí la orden unmap no funcionará, porque trata de eliminar la macro «,ab ». "
+"Ésta no existe como secuencia de ninguna macro. Se mostrará un error, que es "
+"muy difícil de identificar, porque el carácter de espacio final en «:unmap "
+",ab» no es visible."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1558
@@ -4258,12 +4339,13 @@ msgid ""
 "And this is the same as what happens when one uses a comment after an "
 "'unmap' command: >"
 msgstr ""
+"Lo mismo sucede cuando se pone un comentario luego de una orden 'unmap': >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1560
 #, no-wrap
 msgid "\t:unmap ,ab     \" comment\n"
-msgstr ""
+msgstr "\t:unmap ,ab     \" comentario\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1563
@@ -4272,19 +4354,20 @@ msgid ""
 "Here the comment part will be ignored.  However, Vim will try to unmap\n"
 "',ab     ', which does not exist.  Rewrite it as: >\n"
 msgstr ""
+"La parte correspondiente al comentario será ignorada. Sin embargo, Vim tratará\n"
+"de eliminar la macro ',ab     ', que no existe. Debe reescribir la orden como:\n"
+">\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1565
 #, no-wrap
 msgid "\t:unmap ,ab|    \" comment\n"
-msgstr ""
+msgstr "\t:unmap ,ab|    \" comentario\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1568
-#, fuzzy
-#| msgid "REDRAWING THE SCREEN"
 msgid "RESTORING THE VIEW"
-msgstr "REDIBUJAR LA PANTALLA"
+msgstr "RESTAURAR LA VISTA"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1574
@@ -4296,13 +4379,20 @@ msgid ""
 "   This example yanks the current line, puts it above the first line in the\n"
 "file and then restores the view: >\n"
 msgstr ""
+"En ocasiones es deseable hacer un cambio y volver al sitio en que el cursor se\n"
+"encontraba inicialmente. Recuperar la posición relativa también sería\n"
+"agradable, de tal forma que la misma línea inicial aparezca al inicio de la\n"
+"ventana.\n"
+"   Este ejemplo copia la línea actual, la pega arriba de la primera línea en\n"
+"el archivo y luego restaura la vista original: >\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1576
 #, no-wrap
 msgid "\tmap ,p ma\"aYHmbgg\"aP`bzt`a\n"
-msgstr ""
+msgstr "\tmap ,p ma\"aYHmbgg\"aP`bzt`a\n"
 
+# TODO formatear
 #. type: Plain text
 #: original/txt/usr_41.txt:1587
 #, no-wrap
@@ -4318,11 +4408,21 @@ msgid ""
 "\t\t       zt\tposition the text in the window as before\n"
 "\t\t\t `a\tgo back to saved cursor position\n"
 msgstr ""
+"Esto hace lo siguiente: >\n"
+"\tma\"aYHmbgg\"aP`bzt`a\n"
+"<\tma\t\t\tpone una marca en la posición actual del cursor\n"
+"\t  \"aY\t\t\tcopia la línea actual al registro a\n"
+"\t     Hmb\t\tva hasta la primera línea que se ve en la ventana y pone la marca b allí\n"
+"\t\tgg\t\tva a la primera línea del archivo\n"
+"\t\t  \"aP\t\tpega la línea copiada allí\n"
+"\t\t     `b\t\tvuelve a la línea tope de la vista inicial\n"
+"\t\t       zt\tubica dicha línea como la primera de la ventana\n"
+"\t\t\t `a\tvuelve a la posición del cursor almanenada originalmente\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1590
 msgid "PACKAGING"
-msgstr ""
+msgstr "EMPAQUETADO"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1599
@@ -4337,12 +4437,21 @@ msgid ""
 "  file again, first unload the functions.\n"
 "Example: >\n"
 msgstr ""
+"Para evitar que los nombres de funciones que usted defina interfieran con\n"
+"otras funciones, use el siguiente esquema:\n"
+"- Anteponga una cadena única a cada nombre de función. A menudo uso una\n"
+"  abreviatura. Por ejemplo, uso «OV» para las funciones relacionadas con\n"
+"  opciones de ventana.\n"
+"- Ponga todas las definiciones de sus funciones en un mismo archivo. Cree una\n"
+"  variable global para indicar que las funciones ya fueron cargadas. Cuando\n"
+"  cargue el archivo de nuevo, elimine antes las definiciones de las funciones.\n"
+"Ejemplo: >\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1601
 #, no-wrap
 msgid "\t\" This is the XXX package\n"
-msgstr ""
+msgstr "\t\" Este es el paquete XXX\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1606
@@ -4353,6 +4462,10 @@ msgid ""
 "\t  delfun XXX_two\n"
 "\tendif\n"
 msgstr ""
+"\tif exists(\"XXX_cargado\")\n"
+"\t  delfun XXX_uno\n"
+"\t  delfun XXX_dos\n"
+"\tendif\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1610
@@ -4362,6 +4475,9 @@ msgid ""
 "\t\t... body of function ...\n"
 "\tendfun\n"
 msgstr ""
+"\tfunction XXX_uno(a)\n"
+"\t\t... cuerpo de la función ...\n"
+"\tendfun\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1614
@@ -4371,6 +4487,9 @@ msgid ""
 "\t\t... body of function ...\n"
 "\tendfun\n"
 msgstr ""
+"\tfunction XXX_dos(b)\n"
+"\t\t... cuerpo de la función ...\n"
+"\tendfun\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1616
