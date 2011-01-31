@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2011-01-30 22:06-0500\n"
+"PO-Revision-Date: 2011-01-30 23:01-0500\n"
 "Last-Translator: Javier Rojas <jerojasro@devnull.li>\n"
 "Language-Team: vim-doc-es\n"
 "Language: es\n"
@@ -3801,7 +3801,8 @@ msgid ""
 msgstr ""
 "\t:let dicctraductor = {}\n"
 "\t:function dicctraductor.traducir(linea) dict\n"
-"\t:  return join(map(split(a:linea), 'get(self.palabras, v:val, \"???\")'))\n"
+"\t:  return join(map(split(a:linea),\n"
+"\t\t\t\\ 'get(self.palabras, v:val, \"???\")'))\n"
 "\t:endfunction\n"
 
 #. type: Plain text
@@ -4291,7 +4292,7 @@ msgid ""
 "commands (there are a few more commands with this restriction).  For the\n"
 "\":map\", \":abbreviate\" and \":execute\" commands there is a trick: >\n"
 msgstr ""
-"La abreviación 'dev' será expandida a 'desarrollo		\" abreviación'. La\n"
+"La abreviación 'dev' será expandida a 'desarrollo     \" abreviación'. La\n"
 "macro <F3> constará en realidad de toda la línea desde el 'o# ....' incluyendo\n"
 "el '\" insertar directiva include'. La orden «execute» provocará un error. La\n"
 "orden «!» enviará todos los caracteres luego de ella a la consola, provocando\n"
@@ -4493,14 +4494,18 @@ msgid ""
 msgstr ""
 "Esto hace lo siguiente: >\n"
 "\tma\"aYHmbgg\"aP`bzt`a\n"
-"<\tma\t\t\tpone una marca en la posición actual del cursor\n"
+"<\tma\t\t\tpone una marca en la posición actual del\n"
+"\t\t\t\tcursor\n"
 "\t  \"aY\t\t\tcopia la línea actual al registro a\n"
-"\t     Hmb\t\tva hasta la primera línea que se ve en la ventana y pone la marca b allí\n"
+"\t     Hmb\t\tva hasta la primera línea que se ve en la\n"
+"\t\t\t\tventana y pone la marca b allí\n"
 "\t\tgg\t\tva a la primera línea del archivo\n"
 "\t\t  \"aP\t\tpega la línea copiada allí\n"
 "\t\t     `b\t\tvuelve a la línea tope de la vista inicial\n"
-"\t\t       zt\tubica dicha línea como la primera de la ventana\n"
-"\t\t\t `a\tvuelve a la posición del cursor almanenada originalmente\n"
+"\t\t       zt\tubica dicha línea como la primera de la\n"
+"\t\t\t\tventana\n"
+"\t\t\t `a\tvuelve a la posición del cursor almacenada\n"
+"\t\t\t\toriginalmente\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1590
@@ -5092,7 +5097,7 @@ msgstr "Así, cuando el usuario teclea «\\a», se invoca esta secuencia: >"
 #: original/txt/usr_41.txt:1803
 #, no-wrap
 msgid "\t\\a  ->  <Plug>TypecorrAdd  ->  <SID>Add  ->  :call <SID>Add()\n"
-msgstr "\t\\a  ->  <Plug>CorreccortAñadir  ->  <SID>Añadir  ->  :call <SID>Añadir()\n"
+msgstr "\t\\a -> <Plug>CorreccortAñadir -> <SID>Añadir -> :call <SID>Añadir()\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1806
@@ -5209,8 +5214,8 @@ msgstr ""
 "\tespecial que un tecla nunca podrá producir.\n"
 "\tPara evitar que otras extensiones usen la misma secuencia de\n"
 "\tcaracteres, use la estructura: <Plug> nombre-script nombre-macro\n"
-"\tEn nuestro ejemplo, el nombre del script es «Correccort», y la macro es\n"
-"\t«Añadir».\n"
+"\tEn nuestro ejemplo, el nombre del script es «Correccort», y la macro\n"
+"\tes «Añadir».\n"
 "\tEl resultado es «<Plug>Correcc». Solo el primer carácter de los\n"
 "\tnombres es mayúscula, facilitando ver el principio del nombre de la\n"
 "\tmacro.\n"
@@ -5231,7 +5236,8 @@ msgstr ""
 "\tInternamente, Vim traduce <SID> a «<SNR>123_», donde «123» puede\n"
 "\tser cualquier número. Por ello, la función «<SID>Añadir()» tendría el\n"
 "\tnombre «<SNR>11_Añadir()» en un script, y «<SNR>22_Añadir()» en otro.\n"
-"\tPuede verlo si usa la orden «:función» para obtener la lista de funciones.\n"
+"\tPuede verlo si usa la orden «:function» para obtener la lista de\n"
+"\tfunciones.\n"
 "\tLa traducción de <SID> en las macros es idéntica, y así puede invocar\n"
 "\tuna función local de un script mediante una macro.\n"
 
@@ -5472,7 +5478,7 @@ msgstr "\t:set fileformat=unix\n"
 #: original/txt/usr_41.txt:1959
 #, no-wrap
 msgid "DOCUMENTATION\t\t\t\t\t\t*write-local-help*\n"
-msgstr "DOCUMENTACIÓN   \t\t\t\t\t\t*write-local-help*\n"
+msgstr "DOCUMENTACIÓN   \t\t\t\t\t*write-local-help*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1963
@@ -5624,7 +5630,7 @@ msgstr ""
 #: original/txt/usr_41.txt:2017
 #, no-wrap
 msgid "SUMMARY\t\t\t\t\t\t\t*plugin-special*\n"
-msgstr "RESUMEN\t\t\t\t\t\t\t\t*plugin-special*\n"
+msgstr "RESUMEN\t\t\t\t\t\t\t*plugin-special*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2019
@@ -5693,8 +5699,9 @@ msgstr "exists(\":Orden\")\tComprueba la existencia de una orden de usuario.\n"
 #: original/txt/usr_41.txt:2040
 #, no-wrap
 msgid "*41.12*\tWriting a filetype plugin\t*write-filetype-plugin* *ftplugin*\n"
-msgstr "*41.12*\tEscribir extensiones para tipo de archivo\t*write-filetype-plugin* "
-"*ftplugin*\n"
+msgstr ""
+"\t\t\t\t\t*write-filetype-plugin* *ftplugin*\n"
+"*41.12*\tEscribir extensiones para tipo de archivo\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2044
@@ -5974,9 +5981,10 @@ msgid ""
 "no_mail_maps\t\tdisables mappings for a specific filetype\n"
 msgstr ""
 "Se utilizan dos variables globales:\n"
-"no_plugin_maps\t\tdesactiva las macros de todas las extensiones de tipo de "
-"archivo\n"
-"no_mail_maps\t\tdesactiva las macros para un tipo de archivo particular\n"
+"no_plugin_maps\t\tdesactiva las macros de todas las extensiones de tipo\n"
+"\t\t\tde archivo\n"
+"no_mail_maps\t\tdesactiva las macros para un tipo de archivo\n"
+"\t\t\tparticular\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2149
@@ -6149,8 +6157,9 @@ msgid ""
 "<LocalLeader>\t\tValue of \"maplocalleader\", which the user defines as\n"
 "\t\t\tthe keys that filetype plugin mappings start with.\n"
 msgstr ""
-"<LocalLeader>\t\tEl valor de «maplocalleader», que el usuario define con\n"
-"\t\t\tla tecla que incia las macros de extensión de tipo de archivo.\n"
+"<LocalLeader>\t\tEl valor de «maplocalleader», que el usuario define\n"
+"\t\t\tcon la tecla que inicia las macros de extensión de\n"
+"\t\t\ttipo de archivo.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2212
@@ -6180,12 +6189,13 @@ msgstr ":setlocal\t\tDefine una opción para el búfer actual.\n"
 msgid ":command -buffer\tDefine a user command local to the buffer.\n"
 msgstr ":command -buffer\tDefine una orden de usuario local al búfer.\n"
 
+# TODO comprobar que se pueda usar no-ascii en definición de func.
 #. type: Plain text
 #: original/txt/usr_41.txt:2221
 #, no-wrap
 msgid "exists(\"*s:Func\")\tCheck if a function was already defined.\n"
-msgstr "exists(\"*s:Función\")\tComprueba si una función ya se ha definido "
-"anteriormente.\n"
+msgstr "exists(\"*s:Función\")\tComprueba si una función ya se ha definido\n"
+"\t\t\tanteriormente.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2223
@@ -6198,7 +6208,7 @@ msgstr ""
 #: original/txt/usr_41.txt:2226
 #, no-wrap
 msgid "*41.13*\tWriting a compiler plugin\t\t*write-compiler-plugin*\n"
-msgstr "*41.13*\tEscribir extensiones para compiladores\t\t*write-compiler-plugin*\n"
+msgstr "*41.13*\tEscribir extensiones para compiladores\t*write-compiler-plugin*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2230
@@ -6325,7 +6335,7 @@ msgstr ""
 #: original/txt/usr_41.txt:2272
 #, no-wrap
 msgid "*41.14*\tWriting a plugin that loads quickly\t*write-plugin-quickload*\n"
-msgstr "*41.14*\tEscribir extensiones que carguen rápidamente\t*write-plugin-"
+msgstr "*41.14*\tEscribir extensiones que carguen rápidamente  *write-plugin-"
 "quickload*\n"
 
 #. type: Plain text
@@ -6542,7 +6552,7 @@ msgstr ""
 #: original/txt/usr_41.txt:2348
 #, no-wrap
 msgid "*41.15*\tWriting library scripts\t\t\t*write-library-script*\n"
-msgstr "*41.15*\tCrear bibliotecas\t\t\t\t\t*write-library-script*\n"
+msgstr "*41.15*\tCrear bibliotecas\t\t\t\t*write-library-script*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2352
