@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2011-01-30 18:55-0500\n"
+"PO-Revision-Date: 2011-01-30 19:26-0500\n"
 "Last-Translator: Javier Rojas <jerojasro@devnull.li>\n"
 "Language-Team: vim-doc-es\n"
 "Language: es\n"
@@ -4493,7 +4493,6 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_41.txt:1616
 #, no-wrap
-#| msgid "\t:let b:did_indent = 1\n"
 msgid "\tlet XXX_loaded = 1\n"
 msgstr "\tlet XXX_loaded = 1\n"
 
@@ -4517,16 +4516,12 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1625
-#| msgid "There are two types of plugins:"
 msgid "There are actually two types of plugins:"
 msgstr "Hay dos tipos de extensiones:"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1628
 #, no-wrap
-#| msgid ""
-#| "    global plugin: Used for all kinds of files\n"
-#| "  filetype plugin: Only used for a specific type of file\n"
 msgid ""
 "  global plugins: For all types of files.\n"
 "filetype plugins: Only for files of a specific type.\n"
@@ -4742,7 +4737,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1708
-#| msgid "NOT WRAPPING"
 msgid "NOT LOADING"
 msgstr "NO CARGAR"
 
@@ -4809,7 +4803,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1733
-#| msgid "NOT WRAPPING"
 msgid "MAPPING"
 msgstr "MACROS"
 
@@ -5159,7 +5152,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1859
-#| msgid "THE VIM COMMAND"
 msgid "USER COMMAND"
 msgstr "ORDEN DE USUARIO"
 
@@ -5387,7 +5379,6 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_41.txt:1956
 #, no-wrap
-#| msgid "\t:set fileformats=unix,dos\n"
 msgid "\t:set fileformat=unix\n"
 msgstr "\t:set fileformat=unix\n"
 
@@ -5497,7 +5488,6 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_41.txt:1999
 #, no-wrap
-#| msgid "USING A FILETYPE PLUGIN\t\t\t\t\t*ftplugin-name*\n"
 msgid "FILETYPE DETECTION\t\t\t\t\t*plugin-filetype*\n"
 msgstr "DETECCIÓN DE TIPO DE ARCHIVO \t\t*plugin-filetype*\n"
 
@@ -5700,7 +5690,6 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_41.txt:2069
 #, no-wrap
-#| msgid "\t:let b:did_indent = 1\n"
 msgid "\tlet b:did_ftplugin = 1\n"
 msgstr "\tlet b:did_ftplugin = 1\n"
 
@@ -5725,7 +5714,6 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_41.txt:2077
 #, no-wrap
-#| msgid "\t:set textwidth=72\n"
 msgid "\tsetlocal textwidth=70\n"
 msgstr "\tsetlocal textwidth=70\n"
 
@@ -5753,7 +5741,6 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_41.txt:2089
 #, no-wrap
-#| msgid "\t:setlocal noswapfile\n"
 msgid "\t:setlocal\n"
 msgstr "\t:setlocal\n"
 
@@ -5792,7 +5779,6 @@ msgstr "\t:setlocal formatoptions& formatoptions+=ro\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2104
-#| msgid "NOT WRAPPING"
 msgid "MAPPINGS"
 msgstr "MACROS"
 
@@ -5806,7 +5792,6 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_41.txt:2108
 #, no-wrap
-#| msgid "\t:buffers\n"
 msgid "\t:map <buffer>\n"
 msgstr "\t:map <buffer>\n"
 
@@ -5909,7 +5894,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2149
-#| msgid "RELATED COMMANDS"
 msgid "USER COMMANDS"
 msgstr "ÓRDENES DE USUARIO"
 
@@ -5949,7 +5933,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2164
-#| msgid "OPTIONS"
 msgid "FUNCTIONS"
 msgstr "FUNCIONES"
 
@@ -6031,7 +6014,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2193
-#| msgid "FILE MARKS"
 msgid "FILE NAME"
 msgstr "NOMBRE DE ARCHIVO"
 
@@ -6047,10 +6029,6 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_41.txt:2200
 #, no-wrap
-#| msgid ""
-#| "\t~/.vim/ftplugin/stuff.vim\n"
-#| "\t~/.vim/ftplugin/stuff_def.vim\n"
-#| "\t~/.vim/ftplugin/stuff/header.vim\n"
 msgid ""
 "\t.../ftplugin/stuff.vim\n"
 "\t.../ftplugin/stuff_foo.vim\n"
@@ -6159,7 +6137,6 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_41.txt:2235
 #, no-wrap
-#| msgid "\t$VIMRUNTIME/vimrc_example.vim ~\n"
 msgid "\t:next $VIMRUNTIME/compiler/*.vim\n"
 msgstr "\t:next $VIMRUNTIME/compiler/*.vim\n"
 
@@ -6586,7 +6563,6 @@ msgstr "En sistemas Unix, la biblioteca a usar podría ser:"
 #. type: Plain text
 #: original/txt/usr_41.txt:2387
 #, no-wrap
-#| msgid "\t~/.vim/indent/help.vim ~\n"
 msgid "\t~/.vim/autoload/netlib/ftp.vim\n"
 msgstr "\t~/.vim/autoload/netlib/ftp.vim\n"
 
@@ -6620,7 +6596,6 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2399
-#| msgid "You can use this command to get a list of marks: >"
 msgid "You can use the same mechanism for variables: >"
 msgstr "Puede utilizar el mismo mecanismo con variables: >"
 
@@ -6699,6 +6674,5 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2428
-#| msgid "Next chapter: |usr_40.txt| Make new commands"
 msgid "Next chapter: |usr_42.txt| Add new menus"
 msgstr "Capítulo siguiente: |usr_42.esx| Añadir menús nuevos"
