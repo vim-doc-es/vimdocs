@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2011-01-30 19:26-0500\n"
+"PO-Revision-Date: 2011-01-30 21:21-0500\n"
 "Last-Translator: Javier Rojas <jerojasro@devnull.li>\n"
 "Language-Team: vim-doc-es\n"
 "Language: es\n"
@@ -769,7 +769,7 @@ msgstr ""
 "\tcadena que no empieza con un dígito el número resultante es cero.\n"
 "\tDebido a esto, tenga cuidado con instrucciones como: >\n"
 "\t\t:if \"verdadero\"\n"
-"\ten este caso, la cadena «verdadero» será interpretada como un cero, ¡y\n"
+"<\ten este caso, la cadena «verdadero» será interpretada como un cero, ¡y\n"
 "\tpor tanto como falso!\n"
 
 #. type: Plain text
@@ -939,8 +939,8 @@ msgid ""
 "\t&name\t\toption\n"
 "\t@r\t\tregister\n"
 msgstr ""
-"\t$NAME\t\tvariable de entorno\n"
-"\t&name\t\topción\n"
+"\t$NOMBRE\t\tvariable de entorno\n"
+"\t&nombre\t\topción\n"
 "\t@r\t\tregistro\n"
 
 #. type: Plain text
@@ -1147,6 +1147,8 @@ msgstr ""
 "endif» correspondiente, cuando se cumple la condición especificada. La forma "
 "genérica es:"
 
+# TODO bug en sintaxis de help.vim? no admite caracteres no-ascii entre las
+# llaves
 #. type: Plain text
 #: original/txt/usr_41.txt:354
 #, no-wrap
@@ -1155,7 +1157,7 @@ msgid ""
 "\t   {statements}\n"
 "\t:endif\n"
 msgstr ""
-"\t:if {condición}\n"
+"\t:if {condicion}\n"
 "\t   {instrucciones}\n"
 "\t:endif\n"
 
@@ -1174,6 +1176,8 @@ msgstr ""
 "correspondiente.\n"
 "   También puede usar «:else». La forma genérica es:\n"
 
+# TODO bug en sintaxis de help.vim? no admite caracteres no-ascii entre las
+# llaves
 #. type: Plain text
 #: original/txt/usr_41.txt:365
 #, no-wrap
@@ -1184,7 +1188,7 @@ msgid ""
 "\t   {statements}\n"
 "\t:endif\n"
 msgstr ""
-"\t:if {condición}\n"
+"\t:if {condicion}\n"
 "\t   {instrucciones}\n"
 "\t:else\n"
 "\t   {instrucciones}\n"
@@ -1287,8 +1291,8 @@ msgstr ""
 msgid ""
 "The result is one if the condition is met and zero otherwise.  An example: >"
 msgstr ""
-"El resultado es uno si la condición se cumple, y cero en otro caso. Ejemplo: "
-">"
+"El resultado es uno si la condición se cumple, y cero en otro caso. Por "
+"ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:408
@@ -1818,10 +1822,10 @@ msgstr ""
 "\tnr2char()\t\tobtiene un caracter dado su valor ASCII\n"
 "\tchar2nr()\t\tobtiene el número ASCII del caracter dado\n"
 "\tstr2nr()\t\tconvierte una cadena a Número\n"
-"\tstr2float()\t\tconvierte una cadena a Float\n"
-"\tprintf()\t\tformatea una cadena de acuerdo a ítems %\n"
+"\tstr2float()\t\tconvierte una cadena a Flotante\n"
+"\tprintf()\t\tformatea una cadena de acuerdo a elementos %\n"
 "\tescape()\t\tescapa caracteres en una cadena con '\\'\n"
-"\tshellescape()\t\tescapa una cadena para usarse una orden de shell\n"
+"\tshellescape()\t\tescapa una cadena para usarse una orden de consola\n"
 "\tfnameescape()\t\tescapa un nombre de archivo para usar en una orden Vim\n"
 "\ttr()\t\t\ttraduce caracteres de un conjunto a otro\n"
 "\tstrtrans()\t\ttraduce una cadena para que pueda imprimirse\n"
@@ -1873,7 +1877,8 @@ msgid ""
 "\trepeat()\t\trepeat a List multiple times\n"
 msgstr ""
 "Manipulación de Listas:\t\t\t\t\t*list-functions*\n"
-"\tget()\t\t\tobtener un elemento sin generar error al usar índices errados\n"
+"\tget()\t\t\tobtener un elemento sin generar error al usar\n"
+"\t\t\t\tíndices errados\n"
 "\tlen()\t\t\tcantidad de elementos en una Lista\n"
 "\tempty()\t\t\tcomprueba si una Lista está vacía\n"
 "\tinsert()\t\tinserta un elemento en una Lista\n"
@@ -1894,10 +1899,11 @@ msgstr ""
 "\tindex()\t\t\tíndice de un valor en una Lista\n"
 "\tmax()\t\t\tvalor máximo en una Lista\n"
 "\tmin()\t\t\tvalor mínimo en una Lista\n"
-"\tcount()\t\t\tcuenta la cantidad de veces que un valor aparece en una Lista\n"
+"\tcount()\t\t\tcuenta la cantidad de veces que un valor\n"
+"\t\t\t\taparece en una Lista\n"
 "\trepeat()\t\treplica una Lista múltiples veces\n"
 
-# TODO comprobar formateo, long. de línea
+# TODO cambiar llave por clave
 #. type: Plain text
 #: original/txt/usr_41.txt:651
 #, no-wrap
@@ -1922,7 +1928,8 @@ msgid ""
 "\tcount()\t\t\tcount number of times a value appears\n"
 msgstr ""
 "Manipulación de Diccionarios:\t\t\t\t*dict-functions*\n"
-"\tget()\t\t\tobtener una entrada sin generar error al usar llaves erradas\n"
+"\tget()\t\t\tobtener una entrada sin generar error al usar\n"
+"\t\t\t\tllaves erradas\n"
 "\tlen()\t\t\tcantidad de entradas en un Diccionario\n"
 "\thas_key()\t\tcomprueba si una clave aparece en un Diccionario\n"
 "\tempty()\t\t\tcomprueba si un Diccionario está vacío\n"
@@ -1932,13 +1939,15 @@ msgstr ""
 "\tmap()\t\t\tcambia cada entrada de un Diccionario\n"
 "\tkeys()\t\t\tretorna una Lista con las claves de un Diccionario\n"
 "\tvalues()\t\tretorna una Lista con los valores de un Diccionario\n"
-"\titems()\t\t\tretorna una Lista de pares llave, valor de un Diccionario\n"
+"\titems()\t\t\tretorna una Lista de pares llave, valor de un\n"
+"\t\t\t\tDiccionario\n"
 "\tcopy()\t\t\thace una copia superficial de un Diccionario\n"
 "\tdeepcopy()\t\thace una copia completa de un Diccionario\n"
 "\tstring()\t\trepresentación de cadena de un Diccionario\n"
 "\tmax()\t\t\tvalor máximo en un Diccionario\n"
 "\tmin()\t\t\tvalor mínimo en un Diccionario\n"
-"\tcount()\t\t\tcuenta la cantidad de veces que un valor aparece en un Diccionario\n"
+"\tcount()\t\t\tcuenta la cantidad de veces que un valor\n"
+"\t\t\t\taparece en un Diccionario\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:665
@@ -1993,7 +2002,8 @@ msgstr ""
 "Variables:\t\t\t\t\t\t*var-functions*\n"
 "\ttype()\t\t\ttipo de una variable\n"
 "\tislocked()\t\tcomprueba si una variable ha sido bloqueada\n"
-"\tfunction()\t\tobtiene un Funcref para el nombre de función dado\n"
+"\tfunction()\t\tobtiene una referencia a función para el\n"
+"\t\t\t\tnombre de función dado\n"
 "\tgetbufvar()\t\tobtiene una variable de un búfer específico\n"
 "\tsetbufvar()\t\tasigna a una variable en un búfer específico\n"
 "\tgetwinvar()\t\tobtiene una variable de una ventana específica\n"
@@ -2541,7 +2551,8 @@ msgid ""
 msgstr ""
 "Ésta le indica a Vim que la función se llama «Min» y que recibe dos\n"
 "argumentos: «num1» y «num2».\n"
-"   El primer paso es comprobar cuál número es el más pequeño: >\n"
+"   El primer paso es comprobar cuál número es el más pequeño:\n"
+"   >\n"
 "\t:   if a:num1 < a:num2\n"
 
 #. type: Plain text
@@ -3017,7 +3028,7 @@ msgid ""
 msgstr ""
 "En ocasiones es útil poder almacenar en variables referencias a funciones. "
 "Puede hacerlo usando la función function(). Ésta función convierte el nombre "
-"de una función en una referencia a la misma."
+"de una función en una referencia a la misma: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1093
@@ -3039,7 +3050,7 @@ msgid ""
 "\t:echo call(Afunc, [])\n"
 "<\tWrong! ~\n"
 msgstr ""
-"\t:let resultado = 0\t\t\" or 1\n"
+"\t:let resultado = 0\t\t\" o 1\n"
 "\t:function! Bien()\n"
 "\t:  return '¡Bien!'\n"
 "\t:endfunc\n"
@@ -4526,8 +4537,8 @@ msgid ""
 "  global plugins: For all types of files.\n"
 "filetype plugins: Only for files of a specific type.\n"
 msgstr ""
-"Extensión global: Empleado con todos los tipos de archivo.\n"
-"Extensión de tipo de archivo: Empleado con un tipo de archivo específico\n"
+"            Extensión global: Empleado con todos los tipos de archivo.\n"
+"Extensión de tipo de archivo: Empleado con un tipo de archivo específico.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1632
@@ -4822,6 +4833,7 @@ msgstr ""
 "que el usuario pueda definir las teclas que utiliza la macro de una "
 "extensión: >"
 
+# TODO revisar que el map acepte caracteres no-ascii
 #. type: Plain text
 #: original/txt/usr_41.txt:1741
 #, no-wrap
@@ -4879,7 +4891,7 @@ msgid ""
 "with this mechanism: >"
 msgstr ""
 "Puede usar el siguiente mecanismo para permitir que el usuario defina su "
-"propia secuencia de teclas si así lo desea: > "
+"propia secuencia de teclas si así lo desea: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1761
@@ -5186,6 +5198,7 @@ msgstr ""
 "usuario se preguntase porqué no funciona la orden que ha definido.  "
 "|:command|"
 
+# TODO revisar - variables *de* scripts?
 #. type: Plain text
 #: original/txt/usr_41.txt:1873
 msgid "SCRIPT VARIABLES"
@@ -5485,6 +5498,7 @@ msgstr ""
 "mediante barras (|sección|). Esto facilita que el usuario encuentre ayuda "
 "relacionada."
 
+# TODO bug en la sintaxis de vim/help ?
 #. type: Plain text
 #: original/txt/usr_41.txt:1999
 #, no-wrap
@@ -5548,7 +5562,7 @@ msgstr "Resumen de los elementos especiales a utilizar en una extensión:"
 #: original/txt/usr_41.txt:2021
 #, no-wrap
 msgid "s:name\t\t\tVariables local to the script.\n"
-msgstr "s:nombre\t\t\tVariables locales al script.\n"
+msgstr "s:nombre\t\tVariables locales al script.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2024
@@ -5558,7 +5572,7 @@ msgid ""
 "\t\t\tthe script.\n"
 msgstr ""
 "<SID>\t\t\tEl identificador del script (Script-ID), utilizado en\n"
-"\t\t\t\tmacros y funciones locales al script.\n"
+"\t\t\tmacros y funciones locales al script.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2027
@@ -5568,7 +5582,7 @@ msgid ""
 "\t\t\tfor functionality the script offers.\n"
 msgstr ""
 "hasmapto()\t\tUna función que comprueba si el usuario ya ha definido\n"
-"\t\t\t\t\tuna macro con la funcionalidad que el script ofrece.\n"
+"\t\t\tuna macro con la funcionalidad que el script ofrece.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2030
@@ -5578,8 +5592,8 @@ msgid ""
 "\t\t\tkeys that plugin mappings start with.\n"
 msgstr ""
 "<Leader>\t\tEl valor de «mapleader», que el usuario define como\n"
-"\t\t\t\tlas teclas con las que iniciar las macros de la\n"
-"\t\t\t\textensión.\n"
+"\t\t\tlas teclas con las que iniciar las macros de la\n"
+"\t\t\textensión.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2032
@@ -5594,14 +5608,13 @@ msgid ""
 ":noremap <script>\tUse only mappings local to the script, not global\n"
 "\t\t\tmappings.\n"
 msgstr ""
-":noremap <script>\tSólo usa macros locales al script, no macros\n"
-"\t\t\t\t\t\tglobales.\n"
+":noremap <script>\tSólo usa macros locales al script, no macros globales.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2037
 #, no-wrap
 msgid "exists(\":Cmd\")\t\tCheck if a user command already exists.\n"
-msgstr "exists(\":Orden\")\t\tComprueba la existencia de una orden de usuario.\n"
+msgstr "exists(\":Orden\")\tComprueba la existencia de una orden de usuario.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2040
@@ -5649,7 +5662,7 @@ msgid ""
 msgstr ""
 "Si esta escribiendo una extensión de tipo de archivo que mucha gente usará, "
 "necesitarán la capacidad de desactivar su carga. Inserte lo siguiente al "
-"principio del script."
+"principio de la extensión: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2061
@@ -5786,8 +5799,7 @@ msgstr "MACROS"
 #: original/txt/usr_41.txt:2106
 msgid "To make sure mappings will only work in the current buffer use the >"
 msgstr ""
-"Para asegurar que las macros sólo funcionan en el búfer local, use la orden "
-">"
+"Para asegurar que las macros sólo funcionan en el búfer local, use la orden >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2108
@@ -5819,6 +5831,7 @@ msgstr ""
 "\tendif\n"
 "\tnoremap <buffer> <unique> <Plug>JavaImport oimport \"\"<Left><Esc>\n"
 
+# TODO mal ubicados los cambios de línea
 #. type: Plain text
 #: original/txt/usr_41.txt:2127
 msgid ""
@@ -5903,7 +5916,7 @@ msgid ""
 "To add a user command for a specific file type, so that it can only be used "
 "in one buffer, use the \"-buffer\" argument to |:command|.  Example: >"
 msgstr ""
-"El argumento «- buffer» de |:command| permite añadir una orden de usuario "
+"El argumento «-buffer» de |:command| permite añadir una orden de usuario "
 "para un tipo de archivo específico y que solo afecta al búfer local. "
 "Ejemplo: >"
 
@@ -6070,7 +6083,7 @@ msgstr ""
 #: original/txt/usr_41.txt:2212
 #, no-wrap
 msgid ":map <buffer>\t\tDefine a mapping local to the buffer.\n"
-msgstr ":map <búfer>\t\t        Define una macro local al búfer.\n"
+msgstr ":map <búfer>\t\tDefine una macro local al búfer.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2215
@@ -6390,6 +6403,7 @@ msgstr ""
 "Si ubica este script en su directorio «plugin», Vim lo ejecutará al incio. A "
 "continuación tiene el orden de los eventos:"
 
+# TODO no aparece la traducción en el .esx
 #. type: Plain text
 #: original/txt/usr_41.txt:2329
 #, no-wrap
@@ -6605,6 +6619,7 @@ msgstr "Puede utilizar el mismo mecanismo con variables: >"
 msgid "\tlet weekdays = dutch#weekdays\n"
 msgstr "\tlet dias_semana = españa#dias_semana\n"
 
+# revisar que caracteres no-ascii sirvan
 #. type: Plain text
 #: original/txt/usr_41.txt:2404
 msgid ""
@@ -6612,8 +6627,9 @@ msgid ""
 "something like: >"
 msgstr ""
 "Esto cargará el script «autoload/españa.vim», que contendría algo similar a "
-"lo sigu: >"
+"lo siguiente: >"
 
+# revisar que caracteres no-ascii sirvan
 #. type: Plain text
 #: original/txt/usr_41.txt:2407
 #, no-wrap
