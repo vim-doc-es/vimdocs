@@ -44,7 +44,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-09-23 20:27+0300\n"
-"PO-Revision-Date: 2010-12-06 18:01+0100\n"
+"PO-Revision-Date: 2011-02-01 20:56+0100\n"
 "Last-Translator: Álvaro Castro Castillo <alvaro.castro.castilla@gmail.com>\n"
 "Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
 "Language: \n"
@@ -189,7 +189,7 @@ msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
 #: original/TXT/usr_29.txt:613 original/TXT/usr_30.txt:643
 #: original/TXT/usr_31.txt:272
 msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
-msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 
 #. type: Plain text
 #: original/TXT/usr_06.txt:2
@@ -384,7 +384,7 @@ msgid ""
 "\tways to make Vim display colors (not only for an xterm).\n"
 msgstr ""
 "<\tEl nombre de la terminal debe coincidir con la terminal que esté\n"
-"\tusando. Si aún así no funciona, véase |xterm-color|,\n"
+"\tusando. Si aún así no funciona, consulte |xterm-color|,\n"
 "\tdonde puede ver unas cuantas maneras de hacer que se vean colores.\n"
 
 #. type: Plain text
@@ -469,7 +469,7 @@ msgstr ""
 "- No hay resaltado para su tipo de archivo.\n"
 "\tPuede intentar usar un archivo similar activándolo manualmente como se\n"
 "\texplica más arriba. Si no tiene suficiente, puede escribir su propio\n"
-"\tarchivo de sintaxis, véase |mysyntaxfile|.\n"
+"\tarchivo de sintaxis, consulte |mysyntaxfile|.\n"
 
 #. type: Plain text
 #: original/TXT/usr_06.txt:107
@@ -543,10 +543,10 @@ msgstr ""
 "\tVim no lee el archivo completo. Comienza justo en el punto donde está\n"
 "\tviendo el archivo. Eso ahorra mucho tiempo, pero a veces los colores\n"
 "\testán mal. Un arreglo rápido consiste en teclear CTRL-L, o ir hacia\n"
-"\tatrás y de nuevo hacia delante en el texto. Para un arreglo real, véase\n"
-"\t|:syn-sync|. Algunos archivos de sintaxis tienen un modo de mirar hacia\n"
-"\tel texto hacia atrás, mire la ayuda específica para la sintaxis. Por\n"
-"\tejemplo, |tex.vim| para la sintaxis de TeX.\n"
+"\tatrás y de nuevo hacia delante en el texto. Para un arreglo real,\n"
+"\tconsulte |:syn-sync|. Algunos archivos de sintaxis tienen un modo de\n"
+"\tmirar hacia el texto hacia atrás, mire la ayuda específica para la\n"
+"\tsintaxis. Por ejemplo, |tex.vim| para la sintaxis de TeX.\n"
 
 #. type: Plain text
 #: original/TXT/usr_06.txt:137
@@ -663,8 +663,10 @@ msgid ""
 msgstr ""
 "\t:highlight Comment ctermfg=green guifg=green\n"
 "<\n"
-"   Los atributos que puede usar para «cterm» y «gui» son «bold» y «underline».\n"
-"   Si quiere los dos, escriba «bold,underline». Para más detalles, véase la\n"
+"   Los atributos que puede usar para «cterm» y «gui» son «bold» y "
+"«underline».\n"
+"   Si quiere los dos, escriba «bold,underline». Para más detalles, consulte "
+"la\n"
 "   orden |:highlight|.\n"
 
 #. type: Plain text
