@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2011-01-30 23:20-0500\n"
-"Last-Translator: Javier Rojas <jerojasro@devnull.li>\n"
+"PO-Revision-Date: 2011-02-01 15:23+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -653,7 +653,7 @@ msgstr ""
 "\tb:nombre\t\tvariable local a un búfer\n"
 "\tw:nombre\t\tvariable local a una ventana\n"
 "\tg:nombre\t\tvariable global (incluso dentro de funciones)\n"
-"\tv:nombre\t\tvariable predefinida por Vim\n"
+"\tv:nombre\t\tvariable predeterminada por Vim\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:178
@@ -4780,9 +4780,9 @@ msgstr ""
 "continuation|. Los usuarios que definen 'compatible' pueden encontrar "
 "problemas con esto, y se les mostraría un mensaje de error. No podemos "
 "simplemente  reiniciar 'compatible' porque tiene muchos efectos secundarios. "
-"Para evitarlo, definimos la opción 'cpoptions' con el valor predefinido de "
-"Vim, para restaurarlo más tarde. Esto permite el uso de line-continuation y "
-"que el script funcione en la mayoría de sistemas. Se hace de la siguiente "
+"Para evitarlo, definimos la opción 'cpoptions' con el valor predeterminado "
+"de Vim, para restaurarlo más tarde. Esto permite el uso de line-continuation "
+"y que el script funcione en la mayoría de sistemas. Se hace de la siguiente "
 "forma: >"
 
 #. type: Plain text
@@ -4945,8 +4945,8 @@ msgid ""
 "defined."
 msgstr ""
 "la macro se definirá como «_a». En caso contrario se usará el valor "
-"predefinido, que es una barra inversa. Por ello, se definiría una macro como "
-"«\\a»."
+"predeterminado, que es una barra inversa. Por ello, se definiría una macro "
+"como «\\a»."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1754
@@ -5772,7 +5772,7 @@ msgid ""
 "Now users can disable loading the default plugin completely by making a "
 "filetype plugin with only this line: >"
 msgstr ""
-"Ahora, los usuarios pueden evitar cargar la extensión predefinida creando "
+"Ahora, los usuarios pueden evitar cargar la extensión predeterminada creando "
 "una extensión de tipo de archivo con sólo esta línea: >"
 
 #. type: Plain text
@@ -5796,7 +5796,7 @@ msgid ""
 "If you do want to use the default plugin, but overrule one of the settings, "
 "you can write the different setting in a script: >"
 msgstr ""
-"Si desea usar la extensión predefinida, pero anular uno de los valores, "
+"Si desea usar la extensión predeterminada, pero anular uno de los valores, "
 "puede escribir un valor diferente en el script: >"
 
 #. type: Plain text
@@ -5814,9 +5814,10 @@ msgid ""
 "set \"b:did_ftplugin\", but it is ignored here."
 msgstr ""
 "Escriba esto en el directorio «after», para que se lea antes de la extensión "
-"de tipo de archivo predefinido distribuido, «vim.vim» |after-directory|. En "
-"sistemas Unix, sería «~/.vim/after/ftplugin/vim.vim». Tenga en cuenta que "
-"la extensión predefinida cargará «b:did_ftplugin», pero aquí se ignora."
+"de tipo de archivo predeterminada distribuido, «vim.vim» |after-directory|. "
+"En sistemas Unix, sería «~/.vim/after/ftplugin/vim.vim». Tenga en cuenta "
+"que la extensión predeterminada cargará «b:did_ftplugin», pero aquí se "
+"ignora."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2087
@@ -5924,11 +5925,12 @@ msgstr ""
 "para <Plug>JavaImport. En caso contrario, la extensión de tipo de archivo "
 "define la macro actual. Esta empieza con |<LocalLeader>|, que permite al "
 "usuario seleccionar una o mas teclas con las que iniciar las macros de la "
-"extensión de tipo de archivo. El valor predefinido es una barra inversa, "
+"extensión de tipo de archivo. El valor predeterminado es una barra inversa, "
 "«\\». «<unique>» sirve para emitir un mensaje de error si la macro ya existe "
 "o entra en conflicto con otra. |:noremap| sirve para evitar que las macros "
 "definidas por el usuario interfieran. Puede que desee usar «:noremap "
-"<script>» para permitir redifinir macros en el scrip que comienza con <SID>."
+"<script>» para permitir redifinir macros en el script que comienza con "
+"<SID>."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2131
@@ -6223,7 +6225,7 @@ msgid ""
 "default compiler plugins: >"
 msgstr ""
 "Lo más sencillo es ver unos ejemplos. Esta orden editará todas las "
-"extensiones de compilador predefinidas: >"
+"extensiones de compilador predeterminadas: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2235
@@ -6245,7 +6247,7 @@ msgid ""
 msgstr ""
 "Hay dos elementos especiales relacionados con estos archivos. En primer "
 "lugar, es un mecanismo que permite al usuario anular o añadir valores al "
-"archivo principal. Los archivos predefinidos comienzan con: >"
+"archivo principal. Los archivos predeterminados comienzan con: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2245
@@ -6276,7 +6278,7 @@ msgid ""
 msgstr ""
 "Cuando escribe un archivo de compilador, y lo ubica en su directorio de\n"
 "ejecución personal (esto es, «~/.vim/compiler» en sistemas Unix), debe\n"
-"definir la variable «current_compiler» para que el fichero predefinido\n"
+"definir la variable «current_compiler» para que el fichero predeterminado\n"
 "omita las opciones de configuración.\n"
 "\t\t\t\t\t\t\t*:CompilerSet*\n"
 "El segundo mecanismo es usar «:set» con «:compiler!», y «:setlocal»\n"
@@ -6298,7 +6300,7 @@ msgstr ""
 "  if exists(\":CompilerSet\") != 2\n"
 "    command -nargs=* CompilerSet setlocal <args>\n"
 "  endif\n"
-"  CompilerSet errorformat&\t\t\" usa 'errorformat' predefinido\n"
+"  CompilerSet errorformat&\t\t\" usa 'errorformat' predeterminado\n"
 "  CompilerSet makeprg=nmake\n"
 
 #. type: Plain text
@@ -6322,7 +6324,7 @@ msgid ""
 "Unix that could be ~/.vim/after/compiler."
 msgstr ""
 "Cuando escribe una extensión de compilador para anular las opciones de una "
-"extensión predefinida, no compruebe «current_compiler». Esta extensión se "
+"extensión predeterminada, no compruebe «current_compiler». Esta extensión se "
 "debería cargar al final, y por ello debería estar en un directorio al final "
 "de 'runtimepath'. En sistemas Unix, podría ser «~/.vim/after/compiler»."
 
