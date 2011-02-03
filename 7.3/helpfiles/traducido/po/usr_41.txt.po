@@ -3024,14 +3024,13 @@ msgstr ""
 "Para ver la definición de una función, pase su nombre como argumento a la "
 "orden «:function»: >"
 
-# TODO OMG FIX THIS!!!!
 #. type: Plain text
 #: original/txt/usr_41.txt:1053
 #, no-wrap
 msgid ""
-"\t:function DefinirSintaxis\n"
+"\t:function SetSyn\n"
 "<\t1     if &syntax == '' ~\n"
-"\t2       let &syntax = a:nombre ~\n"
+"\t2       let &syntax = a:name ~\n"
 "\t3     endif ~\n"
 "\t   endfunction ~\n"
 msgstr ""
