@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2011-02-04 20:14+0200\n"
+"PO-Revision-Date: 2011-02-04 22:54+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es\n"
 "Language: es\n"
@@ -6360,9 +6360,10 @@ msgid ""
 "Unix that could be ~/.vim/after/compiler."
 msgstr ""
 "Cuando escribe una extensión de compilador para anular las opciones de una "
-"extensión predeterminada, no compruebe «current_compiler». Esta extensión se "
-"debería cargar al final, y por ello debería estar en un directorio al final "
-"de 'runtimepath'. En sistemas Unix, podría ser «~/.vim/after/compiler»."
+"extensión predeterminada, evite comprobar «current_compiler». Esta extensión "
+"se debería cargar al final, y por ello debería estar en un directorio al "
+"final de 'runtimepath'. En sistemas Unix, podría ser "
+"«~/.vim/after/compiler»."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2272
@@ -6401,10 +6402,10 @@ msgid ""
 "script to the second time, which only happens when you actually use it.  "
 "When you always use the functionality it actually gets slower!"
 msgstr ""
-"Puede que «carga rápida» signifique cargar un script dos veces. Lo que "
-"queremos decir es que se carga rápidamente la primera, demorando la carga de "
-"la mayoría del script la segunda vez, que sólo ocurre cuando realmente lo "
-"usa. Si usa siempre esta funcionalidad, ¡se volverá lento!"
+"Puede que sorpenda que «carga rápida» signifique cargar un script dos veces. "
+"Lo que queremos decir es que se carga rápidamente la primera, demorando la "
+"carga de la mayoría del script a la segunda vez, que sólo ocurre cuando "
+"realmente lo usa. Si usa siempre esta funcionalidad, ¡se volverá lento!"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2288
@@ -6516,8 +6517,8 @@ msgid ""
 "If you drop this script in your plugin directory Vim will execute it on "
 "startup.  This is the sequence of events that happens:"
 msgstr ""
-"Si ubica este script en su directorio «plugin», Vim lo ejecutará al incio. A "
-"continuación tiene el orden de los eventos:"
+"Si ubica este script en su directorio «plugin», Vim lo ejecutará al inicio. "
+"A continuación tiene el orden de los eventos:"
 
 # TODO no aparece la traducción en el .esx
 #. type: Plain text
@@ -6585,7 +6586,7 @@ msgstr ""
 #: original/txt/usr_41.txt:2348
 #, no-wrap
 msgid "*41.15*\tWriting library scripts\t\t\t*write-library-script*\n"
-msgstr "*41.15*\tCrear bibliotecas\t\t\t\t*write-library-script*\n"
+msgstr "*41.15*\tCrear bibliotecas\t\t\t\t\t*write-library-script*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2352
@@ -6629,7 +6630,7 @@ msgid ""
 "mylibscript.vim\" in one of the directories in 'runtimepath'."
 msgstr ""
 "Aquí tiene que saber que MiFunciónBiblioteca() se define en el script "
-"«library/biblioteca.vim» en uno de los directorios de 'runtimepath'."
+"«library/biblioteca.vim», en uno de los directorios de 'runtimepath'."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2367
@@ -6653,7 +6654,7 @@ msgid ""
 "when it's not defined search for the script \"autoload/mylib.vim\" in "
 "'runtimepath'.  That script must define the \"mylib#myfunction()\" function."
 msgstr ""
-"Mucho más sencillo, ¿verdad? Vim reconoce el nombre de la función, y cuando "
+"Mucho más sencillo, ¿verdad? Vim reconoce el nombre de la función y, cuando "
 "no esté definida, la buscará en el script «autoload/mibibioteca.vim» en "
 "'runtimepath'. El script debe definir la función «mibiblioteca#mifun()»."
 
@@ -6666,7 +6667,7 @@ msgid ""
 "not know what script to load."
 msgstr ""
 "Puede almacenar varias funciones en el script mibiblioteca.vim, y puede "
-"organizar como desee las funciones en sus bibliotecas. Puede debe usar "
+"organizar como desee las funciones en sus bibliotecas. Pero debe usar "
 "nombres de funciones en las que la parte que precede a «#» coincide con el "
 "nombre del script. De no ser así, Vim no sabrá qué script cargar."
 
@@ -6733,7 +6734,7 @@ msgstr "Puede utilizar el mismo mecanismo con variables: >"
 #: original/txt/usr_41.txt:2401
 #, no-wrap
 msgid "\tlet weekdays = dutch#weekdays\n"
-msgstr "\tlet dias_semana = españa#dias_semana\n"
+msgstr "\tlet dias_semana = colombia#dias_semana\n"
 
 # revisar que caracteres no-ascii sirvan
 #. type: Plain text
@@ -6742,8 +6743,8 @@ msgid ""
 "This will load the script \"autoload/dutch.vim\", which should contain "
 "something like: >"
 msgstr ""
-"Esto cargará el script «autoload/españa.vim», que contendría algo similar a "
-"lo siguiente: >"
+"Esto cargará el script «autoload/colombia.vim», que contendría algo similar "
+"a lo siguiente: >"
 
 # revisar que caracteres no-ascii sirvan
 #. type: Plain text
@@ -6753,8 +6754,8 @@ msgid ""
 "\tlet dutch#weekdays = ['zondag', 'maandag', 'dinsdag', 'woensdag',\n"
 "\t\t\\ 'donderdag', 'vrijdag', 'zaterdag']\n"
 msgstr ""
-"\tlet españa#dias_semana = ['lunes', 'martes', 'miercoles', 'jueves',\n"
-"\t\t\\ 'viernes', 'sábado', 'domingo']\n"
+"\tlet colombia#dias_semana = ['lunes', 'martes', 'miercoles', 'jueves',\n"
+"\t\t\\ 'viernes', 'sabado', 'domingo']\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2409
