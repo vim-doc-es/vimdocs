@@ -70,7 +70,7 @@ terminan en «.cpp». Quiere renombrar la función «GetResp» a «GetAnswer».
 	:wnext			Grabe este archivo y vaya al siguiente.
 	q			Detiene la grabación.
 	@q			Ejecute el registro «q». Esto ejecutará la
-				sustitución y el comando «:wnext». Puede
+				sustitución y la orden «:wnext». Puede
 				comprobar que esto no produzca ningún error.
 	999@q			Ejecute el registro «q» en el resto de archivos.
 
@@ -130,7 +130,7 @@ refiere al primer «\( \)», que es el nombre «Último».
    Puede usar hasta nueve referencias «inversas» en la parte «a» de una
 orden de sustitución. «\0x se refiere a la cadena coincidente completa. Hay
 otros elementos especiales en una orden sustituir,
-véase |sub-replace-special|.
+consulte |sub-replace-special|.
 
 ==============================================================================
 *12.3*	Ordenar una lista
@@ -171,10 +171,10 @@ vacía. También podría seleccionar las líneas en modo Visual y escribir
 		version.o \ ~
 
 
-Observe que una barra invertida al final de cada línea se usa para indicar
+Observe que una barra inversa al final de cada línea se usa para indicar
 que la línea continúa. Tras ordenar, está mal puesto. La línea de «backup.o»
-que estaba al final no tenía una barra invertida. Ahora que se sitúa en otro
-lugar debe tener una barra invertida.
+que estaba al final no tenía una barra inversa. Ahora que se sitúa en otro
+lugar debe tener una barra inversa.
    La solución más sencilla es añadirla con «A \<Esc>». Puede mantener la
 barra en la última línea si se asegura de que una línea en blanco viene justo
 después. De este modo no tendrá este problema de nuevo.
@@ -232,7 +232,7 @@ el que quiera contar las palabras. Escriba «g CTRL-G». El resultado será:
 
 	Selección 5 of 293 Líneas; 70 of 1884 Palabras; 359 of 10928 Bytes ~
 
-Para otras formas de contar las palabras, líneas y otros, véase
+Para otras formas de contar las palabras, líneas y otros, consulte
 |count-items|.
 
 ==============================================================================
@@ -264,7 +264,7 @@ menudo. Ahora puede usar «:Man» para ver una página man en una ventana: >
 Puede desplazarse alrededor y el texto se resaltará. Esto le permite
 encontrar la ayuda que estaba buscando. Use «CTRL-W w» para saltar a la
 ventana con el texto en el que trabajaba.
-   Para encontrar la página de manua en una sección específica, ponga el
+   Para encontrar la página de manual en una sección específica, ponga el
 número de sección primero. Por ejemplo, para ver «echo» en la sección 3: >
 
 	:Man 3 echo
@@ -278,7 +278,7 @@ siguiente: >
 
 	\K
 
-(Si ha redefinido <Leader>, úselo en lugar de la barra invertida). Por
+(Si ha redefinido <Leader>, úselo en lugar de la barra inversa). Por
 ejemplo, puede que quiera saber el valor que le devuelve «strstr()» mientras
 edita esta línea:
 
@@ -369,7 +369,7 @@ Puedes cambiar esto modificando la opción 'grepprg'.
 
 Capítulo siguiente: |usr_20.esx| Ser eficaz con la línea de órdenes
 
-Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
+Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
 
 ==============================================================================
 

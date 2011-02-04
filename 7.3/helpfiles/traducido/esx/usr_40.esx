@@ -11,7 +11,7 @@ existente. Las órdenes automáticas («Autocommands») lo permiten.
 
 |40.1|	Macros de teclado
 |40.2|	Definir órdenes de línea de órdenes
-|40.3|	Autocommands
+|40.3|	Órdenes automáticas
 
  Siguiente capítulo: |usr_41.esx|  Escribir scripts para Vim
   Capítulo anterior: |usr_32.esx|  El árbol de deshacer
@@ -25,7 +25,7 @@ es que una secuencia de pulsaciones de tecla se traduce a otra secuencia de
 pulsaciones de tecla. Es un mecanismo sencillo pero poderoso.
    La forma más simple es asignar una tecla a una secuencia de teclas. Debido
 a que las teclas de función, a excepción de <F1>, no tienen un significado
-predefinido para Vim, son buenos candidatos a los que asignar teclas.
+predete para Vim, son buenos candidatos a los que asignar teclas.
 Ejemplo: >
 
 	:map <F2> GoDate: <Esc>:read !date<CR>kJ
@@ -80,7 +80,7 @@ un objeto de texto. Por ello, cuando teclea «dw», la «w» es introducida en
 el modo Operator-pending
 
 Suponga que desea definir <F7> para que la orden «d<F7>» elimine el bloque
-de un programa escrito en C (el texto se cierra con corchetes, {}). De forma
+de un programa escrito en C (el texto se cierra con llaves, {}). De forma
 similar «y<F7>» copiaría el bloque del programa al registro sin nombre. Por
 ello, lo que debe hacer es definir <F7> para seleccionar el bloque actual
 del programa. La siguiente orden le permite hacer esto: >
@@ -312,8 +312,8 @@ Use la siguiente orden para listar las órdenes de usuario: >
 
 Al igual que las órdenes integradas, las órdenes definidas por el usuario se
 pueden abreviar. Necesita teclear lo justo para distinguir una orden de
-otra. La finalización automática de línea de órdenes se puede usar para
-obtener el nombre completo.
+otra. El autocompletado de línea de órdenes se puede usar para obtener el
+nombre completo.
 
 
 NÚMERO DE ARGUMENTOS
@@ -325,7 +325,7 @@ debe definir del siguiente modo: >
 
 	:command -nargs=0 DeleteFirst 1delete
 
-Sin embargo, ya que cero argumentos es el comportamiento predefinido, no
+Sin embargo, ya que cero argumentos es el comportamiento predeterminado, no
 necesita añadir «-nargs=0». A continuación puede ver los otros valores de
 «-nargs»:
 
@@ -378,13 +378,13 @@ Algunas órdenes toman un rango como argumento. Para indicar a Vim que está
 definiendo una orden así, debe especificar una opción «-range». A
 continuación puede ver los valores de esta opción:
 
-	-range		El rango está permitido, el valor predefinido
-				es la línea actual.
-	-range=%	El rango está permitido, el valor predefinido
-				es el archivo completo.
+	-range		El rango está permitido, el valor
+				predeterminado es la línea actual.
+	-range=%	El rango está permitido, el valor
+				predeterminado es el archivo completo.
 	-range={número}	El rango está permitido, el último número
 				presente se usa como un sólo número cuyo valor
-				predefinido es {número}.
+				predeterminado es {número}.
 
 Cuando un rango se especifica, las palabras clave <line1> y <line2> obtienen
 el valor de la primera y última línea del rango. Por ejemplo, la siguiente
@@ -399,15 +399,15 @@ OTRAS OPCIONES
 A continuación puede ver algunas de las otras opciones y palabras clave:
 
 	-count={número}		La orden acepta un cómputo cuyo valor
-				predefinido es {número}. El cómputo resultante
+				predeterminado es {número}. El cómputo resultante
 				se puede usar con la palabra clave <count>.
 	-bang			Puede usar «!».  Si está presente, usar <bang>
 				resultará en «!».
 	-register		Puede definir un registro. (El registro
-				predefinido es el que no tiene nombre.)
+				predeterminado es el que no tiene nombre.)
 				La especificación del registro está disponible
 				como <reg> (esto es, <register>).
-	-complete={tipo}	El tipo de finalización automática usada.
+	-complete={tipo}	El tipo de completado automático usado.
 				Consulte |:command-completion|  para una
 				lista de los valores aceptados.
 	-bar			La orden puede ir seguida de «|» y otra orden,
@@ -445,7 +445,7 @@ Una orden automática (Autocommand) es una orden a ejecutar en respuesta otro
 evento, un archivo siendo leído y editado o un cambio en un búfer, por
 ejemplo. Por ejemplo, Vim puede editar archivos comprimidos a través de las
 órdenes automáticas.
-El complemento |gzip| hace uso de esto.
+La extensión |gzip| hace uso de esto.
    Las órdenes automáticas son muy potentes. Úselos con cuidado, y le ayudarán
 a disminuir el número de órdenes que introduce. Úselos sin cuidado, y
 generarán un gran número de problemas.
@@ -657,7 +657,7 @@ cómoda. Ejemplo: >
 	:autocmd BufReadPost *.chg execute "normal ONew entry:\<Esc>" |
 		\ 1read !date
 
-Esto también muestra el usa de la barra invertida para dividir una orden en
+Esto también muestra el usa de la barra inversa para dividir una orden en
 varias líneas. Se puede usar en scripts de Vim (no en la línea de órdenes).
 
 Si desea que la orden automática haga algo más complicado, que incluya
@@ -687,7 +687,7 @@ Para volver al comportamiento anterior, vacíe 'eventignore': >
 
 Capítulo siguiente: |usr_41.esx| Escribir scripts para Vim
 
-Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
+Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
 
 ==============================================================================
 

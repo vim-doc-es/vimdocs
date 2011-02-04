@@ -34,9 +34,9 @@ por ti), puede editarlo de este modo: >
 
 	:edit $MYVIMRC
 
-Si todavía no tiene un archivo vimrc, lea |vimrc| para saber dónde puede
-crear un archivo vimrc. La orden «:version» también menciona el nombre del
-«archivo vimrc de usuario» que Vim busca.
+Si todavía no tiene un archivo vimrc, consulte |vimrc| para saber dónde
+puede crear un archivo vimrc. La orden «:version» también menciona el nombre
+del «archivo vimrc de usuario» que Vim busca.
 
 En Unix y Macintosh este archivo siempre se usa y recomienda:
 
@@ -110,7 +110,7 @@ delante.  Véase |07.4| >
 
 	set history=50
 
-Mantiene 50 órdenes y 50 patrones de búsqueda en el histórico. Use otro
+Mantiene 50 órdenes y 50 patrones de búsqueda en el historial. Use otro
 número si quiere almacenar más o menos líneas.  >
 
 	set ruler
@@ -187,7 +187,7 @@ Esto activa tres mecanismos muy interesantes:
    cuando edita un archivo «c», es muy útil activar la opción «cindent»
    para sangrar las líneas automáticamente. Estas opciones empleadas
    comúnmente están incluidas con Vim en las extensiones de tipos de
-   archivo. También puede incluir las tuyas propias, véase
+   archivo. También puede incluir las tuyas propias, consulte
    |write-filetype-plugin|.
 
 3. Usar archivos de tabulación
@@ -214,10 +214,10 @@ opción 'textwidth' a 78, pero sólo localmente a un archivo.
 
 Otra autoorden. Esta vez se ejecuta tras leer cualquier archivo. Las cosas
 tan complicadas que hay después de él comprueban si la marca '" está
-definida, y salta hacia ella si lo está. La barra invertida al comienzo de
-la línea se emplea para continuarla desde la anterior. Esto ayuda a acortar
-las líneas.  Véase |line-continuation|. Esto funciona sólo dentro de un
-script de Vim, no cuando se teclean órdenes en la línea de órdenes.
+definida, y salta hacia ella si lo está. La barra inversa al comienzo de la
+línea se emplea para continuarla desde la anterior. Esto ayuda a acortar las
+líneas.  Véase |line-continuation|. Esto funciona sólo dentro de un script
+de Vim, no cuando se teclean órdenes en la línea de órdenes.
 
 ==============================================================================
 *05.3*	Macros sencillas
@@ -252,7 +252,7 @@ palabra con {} es poner el cursor en el primer carácter y pulsar F5.
 En este ejemplo, el lanzador es una simple tecla; pero puede ser una
 cadena. Pero cuando use una orden de Vim preexistente, esa orden ya no
 volverá a estar disponible.
-   Una tecla que puede usar con las macros es la barra invertida o
+   Una tecla que puede usar con las macros es la barra inversa o
 <Leader>. Ya que querrá definir más de una macro, añada otro carácter.
 Puede ligar a una macro «\p» para que añada paréntesis alrededor de
 una palabra, y «\c» para que añada llaves, por ejemplo: >
@@ -307,10 +307,10 @@ CONSEGUIR UNA EXTENSIÓN GLOBAL
   $VIMRUNTIME/macro y sus subdirectorios.
 - Descargarlos de la red. Hay una buena colección en http://www.vim.org.
 - Algunas veces se envían a la |maillist| de Vim.
-- Puede escribir uno usted mismo, véase |write-plugin|.
+- Puede escribir uno usted mismo, consulte |write-plugin|.
 
-Algunas extensiones vienen como un archivo comprimido, véase |vimball|.
-Algunas extensiones pueden ser actualizados automáticamente, véase
+Algunas extensiones vienen como un archivo comprimido, consulte |vimball|.
+Algunas extensiones pueden ser actualizados automáticamente, consulte
 |getscript|.
 
 
@@ -472,7 +472,7 @@ Las líneas con los títulos de los archivos de ayuda locales son añadidos
 automágicamente a la sección. Allí puede ver que archivos locales se han
 añadido e ir a ellos a través del tag creado.
 
-Para escribir un archivo local de ayuda, véase |write-local-help|.
+Para escribir un archivo local de ayuda, consulte |write-local-help|.
 
 ==============================================================================
 *05.6*	La ventana de opciones
@@ -571,7 +571,7 @@ haga esto en también modo Insertar, escriba: >
 
 	:set whichwrap=b,s,<,>,[,]
 
-Hay unas cuantas banderas que se pueden ser añadir, véase 'whichwrap'.
+Hay unas cuantas banderas que se pueden ser añadir, consulte 'whichwrap'.
 
 
 VISTA DE PESTAÑAS
@@ -639,7 +639,7 @@ Esto significa que hay menos espacio para editar texto, tú decides.
 
 Capítulo siguiente: |usr_06.esx| Uso del resaltado de sintaxis
 
-Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
+Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
 
 ==============================================================================
 
