@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2011-02-04 17:05+0100\n"
+"PO-Revision-Date: 2011-02-04 20:14+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es\n"
 "Language: es\n"
@@ -4634,14 +4634,14 @@ msgid ""
 "directory and use its features right away |add-plugin|."
 msgstr ""
 "Puede crear un script de Vim de tal forma que lo puedan usar varias "
-"personas. Esto se llama una extensión. Los usuarios de Vim pueden copiar su "
+"personas. Esto se llama una extensión. Los usuarios de Vim pueden copiar el "
 "script en su directorio «plugin/», y utilizarlo en el momento con |add-"
 "plugin|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1625
 msgid "There are actually two types of plugins:"
-msgstr "Hay dos tipos de extensiones:"
+msgstr "Existen dos tipos de extensiones:"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1628
@@ -4663,7 +4663,7 @@ msgstr ""
 "En esta sección se describirá la extensión global («global plugin»). La "
 "mayoría de elementos también son necesarios para escribir extensiones de "
 "tipo de archivo («filetype plugins»). La sección a continuación, |write-"
-"filetype-plugin, detalla las extensiones de tipo de archivo."
+"filetype-plugin|, detalla las extensiones de tipo de archivo."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1635
@@ -4702,7 +4702,7 @@ msgid ""
 "end."
 msgstr ""
 "Para que funcione en cualquier sistema la extensión debería seguir algunas "
-"normas , las cuales se detallaran paso a paso. Al final tiene una completa "
+"normas , las cuales se detallarán paso a paso. Al final tiene una completa "
 "extensión de ejemplo."
 
 #. type: Plain text
@@ -4739,7 +4739,7 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_41.txt:1661
 msgid "The actual list should be much longer, of course."
-msgstr "Por supuesto, la lista actual debería ser mucho más larga."
+msgstr "Por supuesto, la lista debería ser mucho más larga."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1664
@@ -4747,8 +4747,8 @@ msgid ""
 "The line numbers have only been added to explain a few things, don't put "
 "them in your plugin file!"
 msgstr ""
-"Los números de línea se han añadido en pro de la claridad. ¡No los inserte "
-"su archivo de extensión!"
+"Los números de línea se han añadido en pro de la claridad. ¡No los incluya "
+"en su archivo de extensión!"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1667
@@ -4763,10 +4763,10 @@ msgid ""
 "to know who wrote this wonderful plugin and where they can send remarks.  "
 "Therefore, put a header at the top of your plugin: >"
 msgstr ""
-"Lo más probable es corrija la extensión, y tenga en poco tiempo varias "
-"versiones de éste. Y cuando distribuya el archivo, la gente querrá saber "
-"quién escribió esta maravillosa extensión, y dónde pueden enviar "
-"comentarios. Por ello, incluya un encabezado al principio de su extensión: >"
+"Lo más probable es que corrija la extensión, y tenga en poco tiempo varias "
+"versiones de éste. Cuando distribuya el archivo, la gente querrá saber quién "
+"escribió esta maravillosa extensión, y dónde pueden enviar comentarios. Por "
+"ello, incluya un encabezado al principio de su extensión: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1676
@@ -4790,20 +4790,20 @@ msgid ""
 msgstr ""
 "Derechos de autor y licencias: Debido a que las extensiones son útiles, y "
 "que no merece la pena restringir su distribución, considere que su extensión "
-"sea de dominio público, o use la licencia (|license|) de Vim. Una breve "
-"cerca del inicio de la extensión debería servir. Ejemplo: >"
+"sea de dominio público, o use la licencia de Vim (|license|). Una breve "
+"nota cerca del inicio de la extensión debería servir. Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1683
 #, no-wrap
 msgid "  4\t\" License:\tThis file is placed in the public domain.\n"
-msgstr "  4\t\" Licencia:\tEste fichero es pertenece al dominio público.\n"
+msgstr "  4\t\" Licencia:\tEste fichero pertenece al dominio público.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1686
 #, no-wrap
 msgid "LINE CONTINUATION, AVOIDING SIDE EFFECTS\t\t*use-cpo-save*\n"
-msgstr "CONTINUACIÓN DE LÍNEA, EVITANDO EFECTOS SECUNDARIOS\t*use-cpo-save*\n"
+msgstr "CONTINUACIÓN DE LÍNEA, EVITAR EFECTOS SECUNDARIOS\t*use-cpo-save*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1693
@@ -4816,14 +4816,14 @@ msgid ""
 "use of line-continuation and make the script work for most people.  It is "
 "done like this: >"
 msgstr ""
-"En la línea 18 del ejemplo anterior, se usa el mecanismo |line-"
-"continuation|. Los usuarios que definen 'compatible' pueden encontrar "
-"problemas con esto, y se les mostraría un mensaje de error. No podemos "
-"simplemente  reiniciar 'compatible' porque tiene muchos efectos secundarios. "
-"Para evitarlo, definimos la opción 'cpoptions' con el valor predeterminado "
-"de Vim, para restaurarlo más tarde. Esto permite el uso de line-continuation "
-"y que el script funcione en la mayoría de sistemas. Se hace de la siguiente "
-"forma: >"
+"En la línea 18 del ejemplo anterior se usa el mecanismo |line-continuation|, "
+"continuación de línea. Los usuarios que definan 'compatible' pueden "
+"encontrar problemas con esto, y se les mostraría un mensaje de error. No "
+"podemos simplemente  reiniciar 'compatible' porque tiene muchos efectos "
+"secundarios. Para evitarlo, definimos la opción 'cpoptions' con el valor "
+"predeterminado de Vim para restaurarlo más tarde. Esto permite el uso de "
+"«line-continuation» y que el script funcione en la mayoría de sistemas. Se "
+"hace de la siguiente forma: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1698
@@ -4862,7 +4862,7 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_41.txt:1708
 msgid "NOT LOADING"
-msgstr "NO CARGAR"
+msgstr "EVITAR LA CARGA DE LA EXTENSIÓN"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1713
@@ -4872,11 +4872,11 @@ msgid ""
 "a user has his own plugin he wants to use.  Then the user must have a chance "
 "to disable loading this specific plugin.  This will make it possible: >"
 msgstr ""
-"Es posible que el usuario no quiere cargar esta extensión en cada momento. O "
-"que el administrador del sistema lo ha copiado al directorio de extensiones "
-"del sistema, pero el usuario quiere usar el suyo. En ese caso, el usuario "
-"debe tener la posibilidad de desactivar cargar esta extensión específica. Lo "
-"siguiente lo hace posible:"
+"Es posible que el usuario no desee cargar la extensión en cada momento. O "
+"que el administrador del sistema lo haya copiado al directorio de "
+"extensiones del sistema, pero el usuario quiere usar el suyo. En ese caso, "
+"el usuario debe tener la posibilidad de desactivar cargar esta extensión en "
+"particular. Lo siguiente lo hace posible:"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1718
@@ -4939,8 +4939,8 @@ msgid ""
 "else.  To allow the user to define which keys a mapping in a plugin uses, "
 "the <Leader> item can be used: >"
 msgstr ""
-"Ahora, vamos a hacer que la extensión sea más interesante: Vamos a añadir "
-"una macro que añade una corrección para la palabra bajo el cursor. Podrías "
+"Ahora, vamos a hacer que la extensión sea más interesante: vamos a añadir "
+"una macro que añade una corrección para la palabra bajo el cursor. Podría "
 "escoger una secuencia de teclas para esta macro, pero puede que el usuario "
 "la esté usando para otra cosa. Puede usar el elemento <Leader> para permitir "
 "que el usuario pueda definir las teclas que utiliza la macro de una "
@@ -4958,8 +4958,8 @@ msgstr " 22\t  map <unique> <Leader>a  <Plug>CorreccortAñadir\n"
 msgid ""
 "The \"<Plug>TypecorrAdd\" thing will do the work, more about that further on."
 msgstr ""
-"El elemento «<Plug>CorreccortAñadir» daría un buen resultado, más "
-"información a continuación."
+"El elemento «<Plug>CorreccortAñadir» daría un buen resultado, a continuación "
+"dispone de más información."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1746
@@ -4967,9 +4967,8 @@ msgid ""
 "The user can set the \"mapleader\" variable to the key sequence that he "
 "wants this mapping to start with.  Thus if the user has done: >"
 msgstr ""
-"El usuario puede definir la variable «mapleader» como la secuencia de teclas "
-"con la que desea iniciar esta macro. Por lo tanto, si el usuario ha hecho: "
-">"
+"El usuario puede definir la variable «mapleader» con la secuencia de teclas "
+"con la que desea iniciar esta macro. Por lo tanto, si el usuario define: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1748
@@ -5040,8 +5039,7 @@ msgstr "\tmap ,c  <Plug>CorreccortAñadir\n"
 msgid ""
 "Then the mapped key sequence will be \",c\" instead of \"_a\" or \"\\a\"."
 msgstr ""
-"A continuación, la secuencia de teclas asignada sería «,c» en lugar de «_a» "
-"o «\\a»."
+"Así, la secuencia de teclas asignada sería «,c» en lugar de «_a» o «\\a»."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1772
@@ -5059,11 +5057,11 @@ msgid ""
 "script by prepending it with \"s:\"."
 msgstr ""
 "Habitualmente querrá dividir un script en segmentos cuando es demasiado "
-"largo. Para ello, puede usar funciones o macros, pero no quiere que estas "
+"largo. Para ello, puede usar funciones o macros, pero no desea que estas "
 "funciones y macros interfieran con los presentes en otros scripts. Por "
-"ejemplo, podría definir la función «Add()», pero otro script podría intentar "
-"definir la misma función. Para evitar esto, definimos la función como local "
-"al script anteponiendo a este «s:»."
+"ejemplo, podría definir la función «Añadir()» pero otro script podría "
+"intentar definir la misma función. Para evitar esto, definimos la función "
+"como local al script anteponiendo a este «s:»."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1781
@@ -5096,10 +5094,10 @@ msgid ""
 "called from the script it was defined in.  There can also be a global Add()  "
 "function (without the \"s:\"), which is again another function."
 msgstr ""
-"Ahora invocamos la función s:Añadir() desde el mismo script. Si otro script "
-"también define s:Añadir(), será local a ese script y solo se invocará desde "
-"el script en el que se define. También puede existir una función global "
-"Añadir() (sin la «s:»), que es otra función distinta."
+"Ahora invocamos la función «s:Añadir()» desde el mismo script. Si otro "
+"script también define «Añadir()», será local a ese script y solo se invocará "
+"desde el script en el que se define. También puede existir una función "
+"global «Añadir()» (sin la «s:»), que es otra función distinta."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1795
@@ -5151,10 +5149,10 @@ msgid ""
 "translated to the script ID, so that Vim knows in which script to look for "
 "the Add() function."
 msgstr ""
-"Tenga en cuenta que se usa <SID>Añadir() en lugar de s:Añadir(). Eso es "
-"porque el usuario teclea la macro, por ello, desde fuera del script. <SID> "
+"Tenga en cuenta que se usa «<SID>Añadir()» en lugar de «s:Añadir()». Eso es "
+"porque el usuario teclea la macro, y por ello, desde fuera del script. <SID> "
 "se expande al identificador del script, de forma que Vim en qué script "
-"buscar la función Añadir(). "
+"buscar la función «Añadir()». "
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1815
@@ -5164,7 +5162,7 @@ msgid ""
 "and s:Add() in other places (the script itself, autocommands, user commands)."
 msgstr ""
 "Es un poco complicado, pero es necesario para que la extensión también "
-"funcione con otros. La norma básica es que debe usar <SID>Añadir() en las "
+"funcione con otras. La norma básica es que debe usar <SID>Añadir() en las "
 "macros y s:Añadir() en otros sitios (el mismo script, órdenes automáticas, "
 "órdenes de usuario)."
 
@@ -5190,9 +5188,9 @@ msgid ""
 "offers CVS operations \"Plugin.CVS.checkin\", \"Plugin.CVS.checkout\", etc."
 msgstr ""
 "Se recomienda el menú «Plugin» para añadir elementos de menú de extensiones. "
-"En este caso, sólo se usa un elemento. Si añade más elementos, recomendamos "
-"crear un menú secundario. Por ejemplo, podría usar «Plugin.CVS» para una "
-"extensión que ofrezca operaciones CVS como «Plugin.CVS.checkin», "
+"En este caso, sólo se usa un elemento. Recomendamos crear un menú "
+"secundario si añade más elementos. Por ejemplo, podría usar «Plugin.CVS» "
+"para una extensión que ofrezca operaciones CVS como «Plugin.CVS.checkin», "
 "«Plugin.CVS.checkout», etc."
 
 #. type: Plain text
@@ -5208,7 +5206,7 @@ msgstr ""
 "Tenga en cuenta que «:noremap» se usa en la línea 28 para evitar problemas "
 "con otras macros. Puede que alguien haya asignado otra macro a «:call», por "
 "ejemplo. En la línea 24 también usamos «:noremap», pero queremos reasignar "
-"«<SID>Añadir». Por ello usamos «<script>» aquí. Esto solo permite el uso de "
+"«<SID>Añadir». Por ello usamos aquí «<script>». Esto solo permite el uso de "
 "macros locales al script, para más información consulte |:map-<script>|. Se "
 "realiza la misma acción en la línea 26 con «:noremenu», para más información "
 "consulte  |:menu-<script>|."
@@ -5227,7 +5225,7 @@ msgid ""
 "the difference between using <SID> and <Plug>:"
 msgstr ""
 "<SID> y <Plug> se usan para evitar que las macros de las teclas pulsadas "
-"interfieran con macros sólo usadas con otras macros. Note la diferencia "
+"interfieran con macros sólo usadas desde otras macros. Note la diferencia "
 "entre <SID> y <Plug>:"
 
 #. type: Plain text
@@ -5246,11 +5244,11 @@ msgid ""
 msgstr ""
 "<Plug>\tes visible fuera del script. Se usa para macros que el usuario\n"
 "\tpueda querer ligar a un secuencia de teclas. <Plug> es un código\n"
-"\tespecial que un tecla nunca podrá producir.\n"
+"\tespecial que una tecla nunca podrá producir.\n"
 "\tPara evitar que otras extensiones usen la misma secuencia de\n"
 "\tcaracteres, use la estructura: <Plug> nombre-script nombre-macro\n"
-"\tEn nuestro ejemplo, el nombre del script es «Correccort», y la macro\n"
-"\tes «Añadir».\n"
+"\tEn nuestro ejemplo, el nombre del script es «Correccort», y el nombre\n"
+"\tde la macro es «Añadir».\n"
 "\tEl resultado es «<Plug>Correcc». Solo el primer carácter de los\n"
 "\tnombres es mayúscula, facilitando ver el principio del nombre de la\n"
 "\tmacro.\n"
@@ -5268,8 +5266,8 @@ msgid ""
 "\tcan call a script-local function from a mapping.\n"
 msgstr ""
 "<SID> es el identificador (ID) del script, un número único.\n"
-"\tInternamente, Vim traduce <SID> a «<SNR>123_», donde «123» puede\n"
-"\tser cualquier número. Por ello, la función «<SID>Añadir()» tendría el\n"
+"\tInternamente, Vim traduce <SID> como «<SNR>123_», donde «123»\n"
+"\tpuede ser cualquier número. Por ello, la función «<SID>Añadir()» tendría el\n"
 "\tnombre «<SNR>11_Añadir()» en un script, y «<SNR>22_Añadir()» en otro.\n"
 "\tPuede verlo si usa la orden «:function» para obtener la lista de\n"
 "\tfunciones.\n"
@@ -5306,17 +5304,16 @@ msgid ""
 "command with \":command!\" is not a good idea, this would probably make the "
 "user wonder why the command he defined himself doesn't work.  |:command|"
 msgstr ""
-"La orden de usuario se define solo si no existe una orden con el mismo "
-"nombre. De no ser así, provocaría un error. Sobrescribir  la orden de "
+"La orden de usuario se define únicamente si no existe una orden con el mismo "
+"nombre. En caso contrario, provocaría un error. Sobrescribir  la orden de "
 "usuario existente con «:orden!» no es una buena idea, ya que haría que el "
-"usuario se preguntase porqué no funciona la orden que ha definido.  "
-"|:command|"
+"usuario se pregunte porqué no funciona la orden que ha definido.  |:command|"
 
 # TODO revisar - variables *de* scripts?
 #. type: Plain text
 #: original/txt/usr_41.txt:1873
 msgid "SCRIPT VARIABLES"
-msgstr "VARIABLES EN SCRIPTS"
+msgstr "VARIABLES DE SCRIPT"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1879
@@ -5331,7 +5328,7 @@ msgstr ""
 "puede usar dentro de un script, y no es visible desde fuera. Esto evita "
 "problemas al usar el mismo nombre de variable en diferentes scripts. Las "
 "variables se preservarán durante la ejecución de Vim, y se usan al cargar el "
-"mismo script otra vez.  |s:var|"
+"mismo script otra vez. |s:var|"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1883
@@ -5341,7 +5338,7 @@ msgid ""
 "a few lines to count the number of corrections: >"
 msgstr ""
 "Lo interesante es que estas variables se pueden usar en funciones, órdenes "
-"automáticas y órdenes de usuario definidos en el script. En nuestro ejemplo, "
+"automáticas y órdenes de usuario definidas en el script. En nuestro ejemplo, "
 "añadimos unas pocas líneas para contar el número de correcciones: >"
 
 #. type: Plain text
@@ -5373,7 +5370,7 @@ msgid ""
 "use the local variables from this script."
 msgstr ""
 "Al principio, «s:cuenta» se inicializa en el mismo script con un valor de 4. "
-"Al invocar la función Añadir() posteriormente, incrementa la variable "
+"Al invocar la función «Añadir()» posteriormente, incrementa la variable "
 "«s:cuenta». No importa desde dónde se ha invocado la función, ya que está "
 "definida en el script, y usará las variables locales al script."
 
@@ -5497,8 +5494,8 @@ msgid ""
 "work on Unix.  Also see |:source_crnl|.  To be sure it is set right, do this "
 "before writing the file: >"
 msgstr ""
-"Se recomienda usar «unix» como valor para la opción 'fileformat'. Así, los "
-"scripts de Vim funcionarán en cualquier sistema. Los scripts con "
+"Se recomienda usar «unix» como valor para la opción 'fileformat'. De esta "
+"forma, los scripts de Vim funcionarán en cualquier sistema. Los scripts con "
 "'fileformat' definido como «dos» no funcionarán en Unix. También puede "
 "consultar |:source_crnl|. Para asegurar que hace lo correcto, haga lo "
 "siguiente antes de escribir el archivo."
@@ -5522,8 +5519,8 @@ msgid ""
 "Especially when its behavior can be changed by the user.  See |add-local-"
 "help| for how they are installed."
 msgstr ""
-"Es una buena idea crear algo de documentación para su extensión. En "
-"particular si el usuario puede modificar el comportamiento. Para lo referido "
+"Es una buena idea crear algo de documentación para su extensión, en "
+"particular si el usuario puede modificar su comportamiento. Para lo referido "
 "a la instalación de documentación, consulte |add-local-help|."
 
 #. type: Plain text
@@ -5558,10 +5555,10 @@ msgid ""
 msgstr ""
 "  1\t*correcort.txt*\tUna extensión para corregir errores ortográficos\n"
 "  2\n"
-"  3\tEsa extensión corrige automáticamente cualquier error ortográfico\n"
+"  3\tEsta extensión corrige automáticamente cualquier error ortográfico\n"
 "  4\tque pueda escribir.\n"
 "  5\n"
-"  6\tSolo hay unas pocas correcciones. Puede añadir los suyos.\n"
+"  6\tSolo hay unas pocas correcciones. Puede añadir las suyas.\n"
 "  7\n"
 "  8\tMacros:\n"
 "  9\t<Leader>a   o   <Plug>CorreccortAñadir\n"
@@ -5587,8 +5584,8 @@ msgstr ""
 "extraerá del archivo de ayuda para su ubicación en la sección «LOCAL "
 "ADDITIONS:» de help.txt |local-additions|. El primer asterisco debe estar en "
 "la primera columna de la primera línea. Ejecute «:help» después de añadir "
-"su archivo de ayuda y compruebe que las entradas están adecuadamente "
-"alineadas."
+"su archivo de ayuda y compruebe que las entradas están alineadas "
+"adecuadamente."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1993
@@ -5597,10 +5594,10 @@ msgid ""
 "use existing help tags.  You would probably use the name of your plugin in "
 "most of them, like \"typecorr-settings\" in the example."
 msgstr ""
-"Puede añadir más etiquetas entre asteriscos (*ejemplo*) en su archivo de "
-"ayuda, pero tenga la precaución de no usar etiquetas de ayuda existente. "
-"Probablemente usará el nombre de su extensión en la mayoría de etiquetas, "
-"como «correcco-settings» en el ejemplo."
+"Puede añadir más etiquetas entre asteriscos ** en su archivo de ayuda, pero "
+"tenga la precaución de no usar etiquetas de ayuda existentes. Probablemente "
+"usará el nombre de su extensión en la mayoría de etiquetas, como «correcco-"
+"opciones» en el ejemplo."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1996
@@ -5609,7 +5606,7 @@ msgid ""
 "makes it easy for the user to find associated help."
 msgstr ""
 "Se recomienda utilizar referencias a otras partes de archivos de ayuda "
-"mediante barras (|sección|). Esto facilita que el usuario encuentre ayuda "
+"mediante barras, ||. Esto facilita que el usuario encuentre ayuda "
 "relacionada."
 
 # TODO bug en la sintaxis de vim/help ?
@@ -5617,7 +5614,7 @@ msgstr ""
 #: original/txt/usr_41.txt:1999
 #, no-wrap
 msgid "FILETYPE DETECTION\t\t\t\t\t*plugin-filetype*\n"
-msgstr "DETECCIÓN DE TIPO DE ARCHIVO \t\t*plugin-filetype*\n"
+msgstr "EXTENSIÓN DE TIPO DE ARCHIVO \t\t*plugin-filetype*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2004
@@ -5627,7 +5624,7 @@ msgid ""
 "an autocommand that sets the filetype when the file name matches a pattern.  "
 "Example: >"
 msgstr ""
-"Si Vim no detecta su tipo de archivo, debería crear un fragmente de código "
+"Si Vim no detecta su tipo de archivo, debería crear un fragmento de código "
 "de detección de tipo de archivo en un archivo separado. Habitualmente, tiene "
 "la forma de una orden automática que define el tipo de archivo cuando su "
 "nombre concuerda con un patrón. Ejemplo: >"
@@ -5646,10 +5643,10 @@ msgid ""
 "ftdetect/foofoo.vim\".  The convention is to use the name of the filetype "
 "for the script name."
 msgstr ""
-"Escribe este archivo de una sola línea como «ftdetect/foofoo.vim» en el "
+"Escriba este archivo de una sola línea como «ftdetect/foofoo.vim» en el "
 "primer directorio en su 'runtimepath'. En Unix, sería "
 "«~/.vim/ftdetect/foofoo.vim». La convención es nombrar el script como el "
-"nombre del tipo de archivo -"
+"nombre del tipo de archivo."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2014
@@ -5665,7 +5662,7 @@ msgstr ""
 #: original/txt/usr_41.txt:2017
 #, no-wrap
 msgid "SUMMARY\t\t\t\t\t\t\t*plugin-special*\n"
-msgstr "RESUMEN\t\t\t\t\t\t\t*plugin-special*\n"
+msgstr "RESUMEN\t\t\t\t\t\t\t\t*plugin-special*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2019
@@ -5676,7 +5673,7 @@ msgstr "Resumen de los elementos especiales a utilizar en una extensión:"
 #: original/txt/usr_41.txt:2021
 #, no-wrap
 msgid "s:name\t\t\tVariables local to the script.\n"
-msgstr "s:nombre\t\tVariables locales al script.\n"
+msgstr "s:nombre\t\t\tVariables locales al script.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2024
@@ -5705,7 +5702,7 @@ msgid ""
 "<Leader>\t\tValue of \"mapleader\", which the user defines as the\n"
 "\t\t\tkeys that plugin mappings start with.\n"
 msgstr ""
-"<Leader>\t\tEl valor de «mapleader», que el usuario define como\n"
+"<Leader>\t\tEl valor de «mapleader», que el usuario define con\n"
 "\t\t\tlas teclas con las que iniciar las macros de la\n"
 "\t\t\textensión.\n"
 
@@ -5721,14 +5718,13 @@ msgstr "::map <unique>\t\tEmite un aviso si la macro ya existe.\n"
 msgid ""
 ":noremap <script>\tUse only mappings local to the script, not global\n"
 "\t\t\tmappings.\n"
-msgstr ""
-":noremap <script>\tSólo usa macros locales al script, no macros globales.\n"
+msgstr ":noremap <script>\tSólo usa macros locales al script, no macros globales.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2037
 #, no-wrap
 msgid "exists(\":Cmd\")\t\tCheck if a user command already exists.\n"
-msgstr "exists(\":Orden\")\tComprueba la existencia de una orden de usuario.\n"
+msgstr "exists(\":Orden\")\t\tComprueba la existencia de una orden de usuario.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2040
@@ -5736,7 +5732,7 @@ msgstr "exists(\":Orden\")\tComprueba la existencia de una orden de usuario.\n"
 msgid "*41.12*\tWriting a filetype plugin\t*write-filetype-plugin* *ftplugin*\n"
 msgstr ""
 "\t\t\t\t\t*write-filetype-plugin* *ftplugin*\n"
-"*41.12*\tEscribir extensiones para tipo de archivo\n"
+"*41.12*\tEscribir extensiones de tipo de archivo\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2044
@@ -5759,10 +5755,10 @@ msgid ""
 "have an effect on the current buffer."
 msgstr ""
 "En primer lugar, consulte la sección anterior sobre extensiones globales, "
-"|41.11|. Todo lo mencionado ahí también afecta a las extensiones de tipo de "
+"|41.11|. Todo lo detallado ahí también afecta a las extensiones de tipo de "
 "archivo. Hay algunos elementos adicionales, que se explican aquí. Lo "
-"esencial es que una extensión de tipo de archivo sólo debe tener un efecto "
-"en el búfer actual."
+"esencial es que una extensión de tipo de archivo sólo debe tener efecto en "
+"el búfer actual."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2052
@@ -5803,7 +5799,7 @@ msgid ""
 "arguments)."
 msgstr ""
 "Esto también sirve para evitar la ejecución de la misma extensión por "
-"duplicado para el mismo búfer (ocurre al usar la orden «:edit» sin "
+"duplicado en el mismo búfer (ocurre al usar la orden «:edit» sin "
 "argumentos)."
 
 #. type: Plain text
@@ -5854,7 +5850,7 @@ msgid ""
 "set \"b:did_ftplugin\", but it is ignored here."
 msgstr ""
 "Escriba esto en el directorio «after», para que se lea antes de la extensión "
-"de tipo de archivo predeterminada distribuido, «vim.vim» |after-directory|. "
+"de tipo de archivo predeterminado distribuido, «vim.vim» |after-directory|. "
 "En sistemas Unix, sería «~/.vim/after/ftplugin/vim.vim». Tenga en cuenta "
 "que la extensión predeterminada cargará «b:did_ftplugin», pero aquí se "
 "ignora."
@@ -5881,9 +5877,9 @@ msgid ""
 "global options or options local to a window, the value will change for many "
 "buffers, and that is not what a filetype plugin should do."
 msgstr ""
-"para definir opciones. Y sólo defina opciones locales al búfer (consulte la "
+"para definir opciones, y sólo defina opciones locales al búfer (consulte la "
 "ayuda para la opción que comprueba esto). Al usar |:setlocal| con opciones "
-"globales u opciones locales a una ventana, el valor cambiará para muchos "
+"globales u opciones locales para una ventana, el valor cambiará para muchos "
 "búfers, y una extensión de tipo de archivo no debería hacer esto."
 
 #. type: Plain text
@@ -5895,10 +5891,9 @@ msgid ""
 "and then changing it often a good idea.  Example: >"
 msgstr ""
 "Cuando una opción tiene un valor que es una lista de opciones o elementos, "
-"considere usar «+=» y «-=» para conservar el valor existente. Sea "
-"consciente de que puede que el usuario ya haya cambiado el valor de una "
-"opción. Es una buena idea restablecer el valor original y después cambiarlo. "
-"Ejemplo: >"
+"considere usar «+=» y «-=» para conservar el valor existente. Sea consciente "
+"de que puede que el usuario ya haya cambiado el valor de una opción. Es una "
+"buena idea restablecer el valor original y después cambiarlo. Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2101
@@ -5915,7 +5910,7 @@ msgstr "MACROS"
 #: original/txt/usr_41.txt:2106
 msgid "To make sure mappings will only work in the current buffer use the >"
 msgstr ""
-"Para asegurar que las macros sólo funcionan en el búfer local, use la orden >"
+"Para asegurar que las macros sólo funcionan en el búfer local use la orden >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2108
@@ -5929,9 +5924,9 @@ msgid ""
 "command.  This needs to be combined with the two-step mapping explained "
 "above.  An example of how to define functionality in a filetype plugin: >"
 msgstr ""
-"Se debe usar en combinación con la macro en dos pasos explicada "
-"anteriormente. Un ejemplo de definición de una funcionalidad en una "
-"extensión de tipo de archivo: >"
+"Se debe usar en combinación con la macro compuesta de dos pasos explicada "
+"anteriormente. Un ejemplo de definir una funcionalidad en una extensión de "
+"tipo de archivo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2116
@@ -5962,14 +5957,14 @@ msgid ""
 "in this script that start with <SID>."
 msgstr ""
 "|hasmapto()| sirve para comprobar si el usuario ya ha definido una macro "
-"para <Plug>JavaImport. En caso contrario, la extensión de tipo de archivo "
+"para «<Plug>JavaImport». En caso contrario, la extensión de tipo de archivo "
 "define la macro actual. Esta empieza con |<LocalLeader>|, que permite al "
 "usuario seleccionar una o mas teclas con las que iniciar las macros de la "
 "extensión de tipo de archivo. El valor predeterminado es una barra inversa, "
 "«\\». «<unique>» sirve para emitir un mensaje de error si la macro ya existe "
 "o entra en conflicto con otra. |:noremap| sirve para evitar que las macros "
 "definidas por el usuario interfieran. Puede que desee usar «:noremap "
-"<script>» para permitir redifinir macros en el script que comienza con "
+"<script>» para permitir redefinir macros en el script que comienza con "
 "<SID>."
 
 #. type: Plain text
@@ -6076,7 +6071,7 @@ msgid ""
 msgstr ""
 "Necesita hacer lo siguiente una sola vez al definir una función, pero se "
 "cargará la extensión de tipo de archivo cada vez que se abra este tipo de "
-"archivo. Esta estructura asegura que la función se define una sola vez: >"
+"archivo. Esta estructura asegura que la función se defina una sola vez: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2175
@@ -6178,7 +6173,7 @@ msgstr "«algo» es el tipo de archivo, «foo» y «bar» son nombres aleatorios
 #: original/txt/usr_41.txt:2205
 #, no-wrap
 msgid "SUMMARY\t\t\t\t\t\t\t*ftplugin-special*\n"
-msgstr "RESUMEN\t\t\t\t\t\t\t*ftplugin-special*\n"
+msgstr "RESUMEN\t\t\t\t\t\t\t\t*ftplugin-special*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2207
@@ -6202,7 +6197,7 @@ msgstr ""
 #: original/txt/usr_41.txt:2212
 #, no-wrap
 msgid ":map <buffer>\t\tDefine a mapping local to the buffer.\n"
-msgstr ":map <búfer>\t\tDefine una macro local al búfer.\n"
+msgstr ":map <búfer>\t\t\tDefine una macro local al búfer.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2215
@@ -6218,7 +6213,7 @@ msgstr ""
 #: original/txt/usr_41.txt:2217
 #, no-wrap
 msgid ":setlocal\t\tSet an option for the current buffer only.\n"
-msgstr ":setlocal\t\tDefine una opción para el búfer actual.\n"
+msgstr ":setlocal\t\t\t\tDefine una opción para el búfer actual.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2219
@@ -6231,14 +6226,15 @@ msgstr ":command -buffer\tDefine una orden de usuario local al búfer.\n"
 #: original/txt/usr_41.txt:2221
 #, no-wrap
 msgid "exists(\"*s:Func\")\tCheck if a function was already defined.\n"
-msgstr "exists(\"*s:Función\")\tComprueba si una función ya se ha definido\n"
+msgstr ""
+"exists(\"*s:Función\")\tComprueba si una función ya se ha definido\n"
 "\t\t\tanteriormente.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2223
 msgid "Also see |plugin-special|, the special things used for all plugins."
 msgstr ""
-"Consulte también |plugin-special|, las cosas especiales utilizados con todas "
+"Consulte también |plugin-special|, las cosas especiales utilizadas por todas "
 "las extensiones."
 
 #. type: Plain text
