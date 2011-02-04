@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2011-02-03 23:23-0500\n"
+"PO-Revision-Date: 2011-02-04 17:05+0100\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es\n"
 "Language: es\n"
@@ -934,7 +934,8 @@ msgstr ""
 "leer la definición aquí: |expression-syntax|. A continuación mostraremos\n"
 "algunos de los elementos más comunes.\n"
 "   Los números, cadenas, y las variables mencionadas anteriormente son\n"
-"expresiones por sí mismas. Así que, en donde sea que se espere una expresión,\n"
+"expresiones por sí mismas. Así que, en donde sea que se espere una "
+"expresión,\n"
 "puede usar un número, una cadena, o una variable. Otros de los elementos\n"
 "comunes en una expresión son:\n"
 
@@ -4132,10 +4133,10 @@ msgid ""
 msgstr ""
 "Aquí se filtran las líneas desde el cursor hasta el final del archivo usando "
 "la orden «filter», que toma como argumento un nombre de archivo. No importa "
-"si el filtrado funciona, si algo sale mal entre «:try» y «:finally», o si el "
-"usuario cancela el filtrado presionando CTRL-C, la instrucción «call "
+"si el filtrado funciona, si algo sale mal entre «:try» y «:finally», o si "
+"el usuario cancela el filtrado presionando CTRL-C, la instrucción «call "
 "delete(tmp)» siempre se ejecuta. Así se asegura de que no queden archivos "
-"temporales luego del procesamiento."
+"temporales al acabar el proceso."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1446
@@ -4143,8 +4144,8 @@ msgid ""
 "More information about exception handling can be found in the reference "
 "manual: |exception-handling|."
 msgstr ""
-"Puede encontrar más información acerca del manejo de excepciones en el manual "
-"de referencia: |exception-handling|."
+"Puede encontrar más información acerca del manejo de excepciones en el "
+"manual de referencia: |exception-handling|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1449
@@ -4158,9 +4159,9 @@ msgid ""
 "Here is a summary of items that apply to Vim scripts.  They are also "
 "mentioned elsewhere, but form a nice checklist."
 msgstr ""
-"A continuación un resumen de los elementos relevantes para escribir scripts "
-"en Vim. También se los menciona en otros lugares de la documentación, pero "
-"aquí se presentan como una conveniente lista de chequeo."
+"A continuación tiene un resumen de los elementos relevantes para escribir "
+"scripts de Vim. También se los menciona en otros lugares de la "
+"documentación, pero aquí se presentan como una conveniente lista."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1456
@@ -4170,10 +4171,10 @@ msgid ""
 "used.  This is important when using mappings that end in a <CR>.  See |:"
 "source_crnl|."
 msgstr ""
-"El carácter de fin de línea usado depende del sistema. Para Unix se usa "
-"<NL>. Para MS-DOS, Windows, OS/2 y similares, se usa <CR><LF>. Éste es un "
-"detalle importante a considerar cuando se usen macros que terminan en "
-"<CR>. Véase |:source_crnl|."
+"El carácter de fin de línea usado depende del sistema. En sistemas Unix se "
+"usa <NL>. En MS-DOS, Windows, OS/2 y similares, se usa <CR><LF>. Éste es un "
+"detalle importante a considerar al usar macros que terminan en <CR>. "
+"Consulte |:source_crnl|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1459
@@ -4194,12 +4195,12 @@ msgid ""
 "of a separator, the whitespaces after the last (visible) character may or "
 "may not be ignored depending on the situation, see below."
 msgstr ""
-"Los espacios en blanco al principio de cada línea (espacios y TABs) siempre "
-"se ignoran. Los espacios en blanco entre parámetros (p.ej. entre el "
-"'set' y el 'cpoptions' en el ejemplo a continuación) se comprimen a un solo "
-"espacio y juegan el rol de separador, los espacios en blanco después del "
-"último carácter (visible) pueden o no ser ignorados dependiendo del caso, ver "
-"más abajo."
+"Los espacios en blanco al principio de cada línea (espacios y tabulados) "
+"siempre se ignoran. Los espacios en blanco entre parámetros (por ejemplo, "
+"entre 'set' y 'cpoptions' en el ejemplo a continuación) se reducen a un solo "
+"espacio blanco que actúa como separador, los espacios en blanco después del "
+"último carácter (visible) se pueden o no ignorar dependiendo del caso, "
+"véase a continuación."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1469
@@ -4219,7 +4220,7 @@ msgid ""
 "be no whitespace after the \"=\" sign!"
 msgstr ""
 "se ignora el espacio en blanco inmediatamente antes del símbolo «=». ¡Pero "
-"no puede haber espacios luego del símbolo «=»!"
+"no puede haber espacios a continuación del símbolo «=»!"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1477
@@ -4227,8 +4228,8 @@ msgid ""
 "To include a whitespace character in the value of an option, it must be "
 "escaped by a \"\\\" (backslash)  as in the following example: >"
 msgstr ""
-"Para incluir un espacio en blanco como valor de una opción, hay que escaparlo "
-"usando una «\\» (barra inversa) como en el siguiente ejemplo: >"
+"Para incluir un espacio en blanco como valor de una opción, hay que "
+"escaparlo usando una «\\» (barra inversa) como en el siguiente ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1479
@@ -4251,7 +4252,7 @@ msgstr "\t:set tags=mi lindo archivo\n"
 #. type: Plain text
 #: original/txt/usr_41.txt:1485
 msgid "will issue an error, because it is interpreted as: >"
-msgstr "Se obtendrá un error, porque se interpreta como: >"
+msgstr "se obtendría un error, porque se interpreta como: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1489
@@ -4280,10 +4281,11 @@ msgid ""
 "line."
 msgstr ""
 "El carácter \" (comilla doble) marca el inicio de un comentario. Todo lo que "
-"aparece luego de éste carácter hasta el fin de línea, e incluyéndola, se "
-"considera un comentario y es ignorado, excepto por las órdenes que no tienen "
-"en cuenta comentarios, como se muestra en ejemplos más adelante. Un "
-"comentario puede empezar en cualquier punto de una línea de texto."
+"aparece a continuación de éste carácter hasta el fin de línea, e "
+"incluyéndola, se considera un comentario y es ignorado, a excepción de las "
+"órdenes que no tienen en cuenta los comentarios, como se puede ver en "
+"ejemplos de esta sección. Un comentario puede empezar en cualquier punto de "
+"una línea de texto."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1499
@@ -4319,15 +4321,17 @@ msgid ""
 "commands (there are a few more commands with this restriction).  For the\n"
 "\":map\", \":abbreviate\" and \":execute\" commands there is a trick: >\n"
 msgstr ""
-"La abreviación 'dev' será expandida a 'desarrollo     \" abreviación'. La\n"
-"macro <F3> constará en realidad de toda la línea desde el 'o# ....' incluyendo\n"
-"el '\" insertar directiva include'. La orden «execute» provocará un error. La\n"
-"orden «!» enviará todos los caracteres luego de ella a la consola, provocando\n"
-"un error debido al carácter '\"' sin la comilla de cierre correspondiente.\n"
-"   No puede haber comentarios en las órdenes «:map», «:abbreviate»,\n"
-"«:execute», ni «!» (hay algunas órdenes más con esta restricción). Para el\n"
-"caso de las órdenes «:map», «:abbreviate», y «:execute» hay un truco\n"
-"disponible: >\n"
+"La abreviación 'dev' se expandirá a 'desarrollo     \" abreviación'. La\n"
+"macro <F3> constará en realidad de toda la línea desde 'o# ....' incluyendo\n"
+"'\" insertar directiva include'. La orden «execute» provocará un error. La\n"
+"orden «!» enviará todos los caracteres a continuación al intérprete de\n"
+"órdenes, provocando un error debido al carácter '\"' sin la comilla de cierre\n"
+"correspondiente.\n"
+"   No pueden existir comentarios a continuación de las órdenes «:map»,\n"
+"«:abbreviate», «:execute», ni «!» (hay algunas órdenes más con esta\n"
+"restricción). Para el caso de las órdenes «:map», «:abbreviate», y "
+"«:execute»\n"
+"hay un truco disponible: >\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1517
@@ -4350,9 +4354,9 @@ msgid ""
 "things: |:execute| and use '|': >\n"
 "\t:exe '!ls *.c'\t\t\t|\" list C files\n"
 msgstr ""
-"El carácter '|' permite separar órdenes. En este caso, la siguiente orden es\n"
+"El carácter «|» permite separar órdenes. En este caso, la siguiente orden es\n"
 "simplemente un comentario. Para la última orden hay que hacer dos cosas:\n"
-"|:execute| y usar '|': >\n"
+"|:execute| y usar «|»: >\n"
 "\t:exe '!ls *.c'\t\t\t|\" listar archivos C\n"
 
 #. type: Plain text
@@ -4363,10 +4367,10 @@ msgid ""
 "included.  As a consequence of this behavior, you don't always see that "
 "trailing whitespace is included: >"
 msgstr ""
-"Observe que no hay espacios en blanco antes del '|' en la abreviación ni en "
+"Observe que no hay espacios en blanco antes de «|» en la abreviación ni en "
 "la macro. En estas órdenes, se incluye cualquier carácter hasta el fin de "
-"línea o hasta el '|'. Como consecuencia de este comportamiento, no siempre es "
-"visible cuándo quedan incluidos espacios en blanco: >"
+"línea o hasta «|». Como consecuencia de este comportamiento, no siempre es "
+"visible cuándo se incluyen espacios en blanco al final del a línea: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1529
@@ -4380,8 +4384,8 @@ msgid ""
 "To spot these problems, you can set the 'list' option when editing vimrc "
 "files."
 msgstr ""
-"Para ver estos problemas de forma más fácil, puede activar la opción "
-"'list' al editar archivos vimrc (de configuración de Vim.)"
+"Para ver estos problemas de forma más fácil, puede activar la opción 'list' "
+"al editar archivos vimrc."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1538
@@ -4406,14 +4410,15 @@ msgid ""
 "exclamation mark changes it into doing nothing, so that you can add the "
 "shell command to execute the rest of the file. |:#!| |-S|"
 msgstr ""
-"Por sí misma, la orden «#» muestra una línea junto con su número de línea. Al "
-"añadirle un símblolo de admiración cambia y no hace nada, así que puede "
-"añadir la orden de consola para ejecutar el resto del archivo. |:#!| |-S|"
+"Por sí misma, la orden «#» muestra una línea junto con su número de línea. "
+"Al añadirle un símbolo de exclamación su comportamiento cambia y no tiene "
+"efecto, así que puede añadir la orden de intérprete de órdenes para ejecutar "
+"el resto del archivo. |:#!| |-S|"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1545
 msgid "PITFALLS"
-msgstr "TRAMPAS"
+msgstr "PROBLEMAS"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1547
@@ -4439,9 +4444,9 @@ msgid ""
 "ab \" is not visible."
 msgstr ""
 "Aquí la orden unmap no funcionará, porque trata de eliminar la macro «,ab ». "
-"Ésta no existe como secuencia de ninguna macro. Se mostrará un error, que es "
-"muy difícil de identificar, porque el carácter de espacio final en «:unmap "
-",ab» no es visible."
+"Ésta no existe como secuencia de ninguna macro. Se mostrará un error, que "
+"es muy difícil de identificar, porque el carácter de espacio final en "
+"«:unmap ,ab» no es visible."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1558
@@ -4449,7 +4454,7 @@ msgid ""
 "And this is the same as what happens when one uses a comment after an "
 "'unmap' command: >"
 msgstr ""
-"Lo mismo sucede cuando se pone un comentario luego de una orden 'unmap': >"
+"Lo mismo sucede cuando se pone un comentario a conti de una orden 'unmap': >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1560
@@ -4464,9 +4469,10 @@ msgid ""
 "Here the comment part will be ignored.  However, Vim will try to unmap\n"
 "',ab     ', which does not exist.  Rewrite it as: >\n"
 msgstr ""
-"La parte correspondiente al comentario será ignorada. Sin embargo, Vim tratará\n"
-"de eliminar la macro ',ab     ', que no existe. Debe reescribir la orden como:\n"
-">\n"
+"La parte correspondiente al comentario será ignorada. Sin embargo, Vim "
+"tratará\n"
+"de eliminar la macro ',ab     ', que no existe. Debe reescribir la orden "
+"como:  >\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1565
@@ -4489,12 +4495,14 @@ msgid ""
 "   This example yanks the current line, puts it above the first line in the\n"
 "file and then restores the view: >\n"
 msgstr ""
-"En ocasiones es deseable hacer un cambio y volver al sitio en que el cursor se\n"
+"En ocasiones es deseable hacer un cambio y volver al sitio en que el cursor "
+"se\n"
 "encontraba inicialmente. Recuperar la posición relativa también sería\n"
 "agradable, de tal forma que la misma línea inicial aparezca al inicio de la\n"
 "ventana.\n"
-"   Este ejemplo copia la línea actual, la pega arriba de la primera línea en\n"
-"el archivo y luego restaura la vista original: >\n"
+"   Este ejemplo copia la línea actual, la inserta antes de la primera línea "
+"en\n"
+"el archivo y después restaura la vista original: >\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1576
@@ -4517,7 +4525,7 @@ msgid ""
 "\t\t       zt\tposition the text in the window as before\n"
 "\t\t\t `a\tgo back to saved cursor position\n"
 msgstr ""
-"Esto hace lo siguiente: >\n"
+"Esto es lo que hace: >\n"
 "\tma\"aYHmbgg\"aP`bzt`a\n"
 "<\tma\t\t\tpone una marca en la posición actual del\n"
 "\t\t\t\tcursor\n"
@@ -4525,8 +4533,8 @@ msgstr ""
 "\t     Hmb\t\tva hasta la primera línea que se ve en la\n"
 "\t\t\t\tventana y pone la marca b allí\n"
 "\t\tgg\t\tva a la primera línea del archivo\n"
-"\t\t  \"aP\t\tpega la línea copiada allí\n"
-"\t\t     `b\t\tvuelve a la línea tope de la vista inicial\n"
+"\t\t  \"aP\t\tpega la línea copiada por encima de la línea\n"
+"\t\t     `b\t\tvuelve a la línea superior de la vista inicial\n"
 "\t\t       zt\tubica dicha línea como la primera de la\n"
 "\t\t\t\tventana\n"
 "\t\t\t `a\tvuelve a la posición del cursor almacenada\n"
@@ -4535,7 +4543,7 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_41.txt:1590
 msgid "PACKAGING"
-msgstr "EMPAQUETADO"
+msgstr "EMPAQUETAR"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1599
@@ -4550,14 +4558,16 @@ msgid ""
 "  file again, first unload the functions.\n"
 "Example: >\n"
 msgstr ""
-"Para evitar que los nombres de funciones que usted defina interfieran con\n"
+"Para evitar que los nombres de funciones que defina interfieran con\n"
 "otras funciones, use el siguiente esquema:\n"
 "- Anteponga una cadena única a cada nombre de función. A menudo uso una\n"
 "  abreviatura. Por ejemplo, uso «OV» para las funciones relacionadas con\n"
 "  opciones de ventana.\n"
-"- Ponga todas las definiciones de sus funciones en un mismo archivo. Cree una\n"
+"- Ponga todas las definiciones de sus funciones en un mismo archivo. Cree "
+"una\n"
 "  variable global para indicar que las funciones ya fueron cargadas. Cuando\n"
-"  cargue el archivo de nuevo, elimine antes las definiciones de las funciones.\n"
+"  cargue el archivo de nuevo, elimine antes las definiciones de las "
+"funciones.\n"
 "Ejemplo: >\n"
 
 #. type: Plain text
