@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2011-02-06 22:08-0500\n"
+"PO-Revision-Date: 2011-02-06 23:17-0500\n"
 "Last-Translator: Javier Rojas <jerojasro@devnull.li>\n"
 "Language-Team: vim-doc-es\n"
 "Language: es\n"
@@ -5052,10 +5052,10 @@ msgid ""
 "called from the script it was defined in.  There can also be a global Add()  "
 "function (without the \"s:\"), which is again another function."
 msgstr ""
-"Ahora invocamos la función «s:Anadir()» desde el mismo script. Si otro "
-"script también define «Anadir()», será local a ese script y solo se invocará "
-"desde el script en el que se define. También puede existir una función "
-"global «Anadir()» (sin la «s:»), que es otra función distinta."
+"Ahora invocamos la función «s:Anadir()» desde el mismo script. Si otro script "
+"también define «s:Anadir()», será local a ese script y solo se invocará desde "
+"el script en el que se define. También puede existir una función global "
+"«Anadir()» (sin la «s:»), que es otra función distinta."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1795
@@ -5107,10 +5107,10 @@ msgid ""
 "translated to the script ID, so that Vim knows in which script to look for "
 "the Add() function."
 msgstr ""
-"Tenga en cuenta que se usa «<SID>Anadir()» en lugar de «s:Anadir()». Eso es "
-"porque el usuario teclea la macro, y por ello, desde fuera del script. <SID> "
-"se expande al identificador del script, de forma que Vim en qué script "
-"buscar la función «Anadir()». "
+"Tenga en cuenta que se usó «<SID>Anadir()» en lugar de «s:Anadir()» aquí. Eso "
+"es porque la macro es tecleada por el usuario, y por ello, se hace desde "
+"fuera del script. <SID> se expande al identificador del script, de forma que "
+"Vim sabe en qué script buscar la función «Anadir()»."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1815
@@ -5119,10 +5119,10 @@ msgid ""
 "with other plugins.  The basic rule is that you use <SID>Add() in mappings "
 "and s:Add() in other places (the script itself, autocommands, user commands)."
 msgstr ""
-"Es un poco complicado, pero es necesario para que la extensión también "
-"funcione con otras. La norma básica es que debe usar <SID>Anadir() en las "
-"macros y s:Anadir() en otros sitios (el mismo script, órdenes automáticas, "
-"órdenes de usuario)."
+"Es un poco complicado, pero es necesario para que la extensión funcione "
+"adecuadamente con otras. La norma básica es que debe usar <SID>Anadir() en "
+"las macros y s:Anadir() en otros sitios (el mismo script, órdenes "
+"automáticas, órdenes de usuario)."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1817
@@ -5165,8 +5165,8 @@ msgstr ""
 "con otras macros. Puede que alguien haya asignado otra macro a «:call», por "
 "ejemplo. En la línea 24 también usamos «:noremap», pero queremos reasignar "
 "«<SID>Añadir». Por ello usamos aquí «<script>». Esto solo permite el uso de "
-"macros locales al script, para más información consulte |:map-<script>|. Se "
-"realiza la misma acción en la línea 26 con «:noremenu», para más información "
+"macros locales al script; para más información consulte |:map-<script>|. Se "
+"realiza la misma acción en la línea 26 con «:noremenu»; para más información "
 "consulte  |:menu-<script>|."
 
 #. type: Plain text
@@ -5207,7 +5207,7 @@ msgstr ""
 "\tcaracteres, use la estructura: <Plug> nombre-script nombre-macro\n"
 "\tEn nuestro ejemplo, el nombre del script es «Correccort», y el nombre\n"
 "\tde la macro es «Añadir».\n"
-"\tEl resultado es «<Plug>Correcc». Solo el primer carácter de los\n"
+"\tEl resultado es «<Plug>CorreccortAñadir». Solo el primer carácter de los\n"
 "\tnombres es mayúscula, facilitando ver el principio del nombre de la\n"
 "\tmacro.\n"
 
@@ -5250,8 +5250,8 @@ msgid ""
 " 39\t  command -nargs=1  Correct  :call s:Add(<q-args>, 0)\n"
 " 40\tendif\n"
 msgstr ""
-" 38\tif !exists(\":Correct\")\n"
-" 39\t  command -nargs=1  Correct  :call s:Anadir(<q-args>, 0)\n"
+" 38\tif !exists(\":Corregir\")\n"
+" 39\t  command -nargs=1  Corregir  :call s:Anadir(<q-args>, 0)\n"
 " 40\tendif\n"
 
 #. type: Plain text
@@ -5263,8 +5263,8 @@ msgid ""
 "user wonder why the command he defined himself doesn't work.  |:command|"
 msgstr ""
 "La orden de usuario se define únicamente si no existe una orden con el mismo "
-"nombre. En caso contrario, provocaría un error. Sobrescribir  la orden de "
-"usuario existente con «:orden!» no es una buena idea, ya que haría que el "
+"nombre. En caso contrario, provocaría un error. Sobrescribir la orden de "
+"usuario existente con «:command!» no es una buena idea, ya que haría que el "
 "usuario se pregunte porqué no funciona la orden que ha definido.  |:command|"
 
 # TODO revisar - variables *de* scripts?
@@ -5299,6 +5299,7 @@ msgstr ""
 "automáticas y órdenes de usuario definidas en el script. En nuestro ejemplo, "
 "añadimos unas pocas líneas para contar el número de correcciones: >"
 
+# TODO traducir los parametros de s:Anadir
 #. type: Plain text
 #: original/txt/usr_41.txt:1891
 #, no-wrap
@@ -5316,7 +5317,7 @@ msgstr ""
 " 30\tfunction s:Anadir(from, correct)\n"
 " ..\n"
 " 34\t  let s:cuenta = s:cuenta + 1\n"
-" 35\t  echo s:cuenta . \" Corrección en este punto\"\n"
+" 35\t  echo s:cuenta . \" correcciones en este punto\"\n"
 " 36\tendfunction\n"
 
 #. type: Plain text
@@ -5441,8 +5442,8 @@ msgid ""
 "abbreviation.  Note that mappings and abbreviations are expanded here, even "
 "though the function was called from a mapping defined with \":noremap\"."
 msgstr ""
-"Aún no hemos explicado la línea 33. Aplica la nueva corrección al error bajo "
-"el cursor. La orden |:normal| se emplea para usar la nueva abreviatura. "
+"Aún no hemos explicado la línea 33. Aplica la nueva corrección a la palabra "
+"bajo el cursor. La orden |:normal| se emplea para usar la nueva abreviatura. "
 "Tenga en cuenta que aquí se expanden las macros y abreviaturas, a pesar de "
 "que la función se ha invocado desde una macro definida con «:noremap»."
 
@@ -5458,7 +5459,7 @@ msgstr ""
 "forma, los scripts de Vim funcionarán en cualquier sistema. Los scripts con "
 "'fileformat' definido como «dos» no funcionarán en Unix. También puede "
 "consultar |:source_crnl|. Para asegurar que hace lo correcto, haga lo "
-"siguiente antes de escribir el archivo."
+"siguiente antes de escribir el archivo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1956
@@ -5480,7 +5481,7 @@ msgid ""
 "help| for how they are installed."
 msgstr ""
 "Es una buena idea crear algo de documentación para su extensión, en "
-"particular si el usuario puede modificar su comportamiento. Para lo referido "
+"particular si el usuario puede modificar su comportamiento. Para lo referente "
 "a la instalación de documentación, consulte |add-local-help|."
 
 #. type: Plain text
@@ -5526,7 +5527,7 @@ msgstr ""
 " 11\n"
 " 12\tÓrdenes:\n"
 " 13\t:Corregir {palabra}\n"
-" 14\t\tAñade una corrección a {palabra}.\n"
+" 14\t\tAñade una corrección para {palabra}.\n"
 " 15\n"
 " 16\t\t\t\t\t\t\t*correcort-opciones*\n"
 " 17\tEsta extensión no tiene opciones de configuración.\n"
@@ -5555,8 +5556,8 @@ msgid ""
 msgstr ""
 "Puede añadir más etiquetas entre asteriscos ** en su archivo de ayuda, pero "
 "tenga la precaución de no usar etiquetas de ayuda existentes. Probablemente "
-"usará el nombre de su extensión en la mayoría de etiquetas, como «correcco-"
-"opciones» en el ejemplo."
+"use el nombre de su extensión en la mayoría de etiquetas, como "
+"«correccort-opciones» en el ejemplo."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1996
@@ -5573,7 +5574,7 @@ msgstr ""
 #: original/txt/usr_41.txt:1999
 #, no-wrap
 msgid "FILETYPE DETECTION\t\t\t\t\t*plugin-filetype*\n"
-msgstr "EXTENSIÓN DE TIPO DE ARCHIVO \t\t*plugin-filetype*\n"
+msgstr "EXTENSIÓN DE TIPO DE ARCHIVO\t\t\t*plugin-filetype*\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2004
@@ -5603,10 +5604,12 @@ msgid ""
 "for the script name."
 msgstr ""
 "Escriba este archivo de una sola línea como «ftdetect/foofoo.vim» en el "
-"primer directorio en su 'runtimepath'. En Unix, sería «~/.vim/ftdetect/"
-"foofoo.vim». La convención es nombrar el script como el nombre del tipo de "
-"archivo."
+"primer directorio que aparece en su 'runtimepath'. En Unix, sería "
+"«~/.vim/ftdetect/foofoo.vim». La convención es nombrar el script como el "
+"nombre del tipo de archivo."
 
+# TODO what does bram mean? programming language in the file? natural
+# language used in the file?!
 #. type: Plain text
 #: original/txt/usr_41.txt:2014
 msgid ""
@@ -5614,8 +5617,8 @@ msgid ""
 "contents of the file to recognize the language.  Also see |new-filetype|."
 msgstr ""
 "Si lo desea, puede hacer comprobaciones más complejas como inspeccionar los "
-"contenidos de un archivo para reconocer el idioma. Consulte también |new-"
-"filetype|."
+"contenidos de un archivo para reconocer el tipo del mismo. Consulte también "
+"|new-filetype|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2017
@@ -5632,7 +5635,7 @@ msgstr "Resumen de los elementos especiales a utilizar en una extensión:"
 #: original/txt/usr_41.txt:2021
 #, no-wrap
 msgid "s:name\t\t\tVariables local to the script.\n"
-msgstr "s:nombre\t\t\tVariables locales al script.\n"
+msgstr "s:nombre\t\tVariables locales al script.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2024
@@ -5652,7 +5655,7 @@ msgid ""
 "\t\t\tfor functionality the script offers.\n"
 msgstr ""
 "hasmapto()\t\tUna función que comprueba si el usuario ya ha definido\n"
-"\t\t\tuna macro con la funcionalidad que el script ofrece.\n"
+"\t\t\tuna macro para la funcionalidad que el script ofrece.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2030
@@ -5661,9 +5664,8 @@ msgid ""
 "<Leader>\t\tValue of \"mapleader\", which the user defines as the\n"
 "\t\t\tkeys that plugin mappings start with.\n"
 msgstr ""
-"<Leader>\t\tEl valor de «mapleader», que el usuario define con\n"
-"\t\t\tlas teclas con las que iniciar las macros de la\n"
-"\t\t\textensión.\n"
+"<Leader>\t\tEl valor de «mapleader», que el usuario define como\n"
+"\t\t\tlas teclas con las que iniciar las macros de extensiones.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2032
