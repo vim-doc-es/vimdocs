@@ -537,5 +537,16 @@ function! CopyMsgidMsgStr()
 endfunction
 
 function! FormatDamnMsgstr()
-
+  let old_tw = &tw
+  " TODO account for manually-wrapped strings
+  let &tw=77
+  " TODO account for msgstr "yaddayadda..."
+  silent ?^msgstr?,/^$/s/^"\(.*\)"$/\1/|?^msgstr?,/^$/s/^\(.*\) $/\1/
+  call search("^msgstr", "bc")
+  normal j
+  " format paragraph, leave cursor where it is
+  normal gw}
+  silent .,/^$/-1s/.*/"\0 "/
+  normal $hx
+  let &tw = old_tw
 endfunction
