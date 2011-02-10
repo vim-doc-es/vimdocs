@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2011-02-06 23:17-0500\n"
+"PO-Revision-Date: 2011-02-10 15:13-0500\n"
 "Last-Translator: Javier Rojas <jerojasro@devnull.li>\n"
 "Language-Team: vim-doc-es\n"
 "Language: es\n"
@@ -5768,8 +5768,9 @@ msgid ""
 "Now users can disable loading the default plugin completely by making a "
 "filetype plugin with only this line: >"
 msgstr ""
-"Ahora, los usuarios pueden evitar cargar la extensión predeterminada creando "
-"una extensión de tipo de archivo con sólo esta línea: >"
+"Usando este mecanismo, los usuarios pueden evitar cargar la extensión "
+"predeterminada si así lo desean, creando una extensión de tipo de archivo con "
+"sólo esta línea: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2069
@@ -5792,8 +5793,9 @@ msgid ""
 "If you do want to use the default plugin, but overrule one of the settings, "
 "you can write the different setting in a script: >"
 msgstr ""
-"Si desea usar la extensión predeterminada, pero anular uno de los valores, "
-"puede escribir un valor diferente en el script: >"
+"Si desea usar la extensión predeterminada, pero cambiar la configuración de "
+"alguna de sus opciones, puede escribir un valor diferente para ellas en un "
+"script: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2077
@@ -5809,10 +5811,11 @@ msgid ""
 "\"~/.vim/after/ftplugin/vim.vim\".  Note that the default plugin will have "
 "set \"b:did_ftplugin\", but it is ignored here."
 msgstr ""
-"Escriba esto en el directorio «after», para que se lea antes de la extensión "
-"de tipo de archivo predeterminado distribuido, «vim.vim» |after-directory|. "
-"En sistemas Unix, sería «~/.vim/after/ftplugin/vim.vim». Tenga en cuenta que "
-"la extensión predeterminada cargará «b:did_ftplugin», pero aquí se ignora."
+"Escriba esto en el directorio «after», para que se lea después de la "
+"extensión de tipo de archivo predeterminado distribuido, «vim.vim» "
+"|after-directory|.  En sistemas Unix, sería «~/.vim/after/ftplugin/vim.vim». "
+"Tenga en cuenta que la extensión predeterminada habrá definido "
+"«b:did_ftplugin», pero aquí se ignora."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2087
@@ -5869,7 +5872,7 @@ msgstr "MACROS"
 #: original/txt/usr_41.txt:2106
 msgid "To make sure mappings will only work in the current buffer use the >"
 msgstr ""
-"Para asegurar que las macros sólo funcionan en el búfer local use la orden >"
+"Para asegurar que las macros sólo funcionen en el búfer local use la orden >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2108
@@ -5884,8 +5887,8 @@ msgid ""
 "above.  An example of how to define functionality in a filetype plugin: >"
 msgstr ""
 "Se debe usar en combinación con la macro compuesta de dos pasos explicada "
-"anteriormente. Un ejemplo de definir una funcionalidad en una extensión de "
-"tipo de archivo: >"
+"anteriormente. A continuación una definición de ejemplo para una "
+"funcionalidad en una extensión de tipo de archivo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2116
@@ -5915,8 +5918,8 @@ msgid ""
 "might want to use \":noremap <script>\" to allow remapping mappings defined "
 "in this script that start with <SID>."
 msgstr ""
-"|hasmapto()| sirve para comprobar si el usuario ya ha definido una macro "
-"para «<Plug>JavaImport». En caso contrario, la extensión de tipo de archivo "
+"|hasmapto()| sirve para comprobar si el usuario ya ha definido una macro para "
+"«<Plug>JavaImport». Si no ha sido definida, la extensión de tipo de archivo "
 "define la macro actual. Esta empieza con |<LocalLeader>|, que permite al "
 "usuario seleccionar una o mas teclas con las que iniciar las macros de la "
 "extensión de tipo de archivo. El valor predeterminado es una barra inversa, "
@@ -6010,10 +6013,11 @@ msgid ""
 "local buffer variables |b:var| if you want a variable specifically for one "
 "buffer."
 msgstr ""
-"Puede cargar una extensión de tipo de archivo en cada búfer dependiendo del "
-"tipo de archivo abierto en él. Las variables de script locales |s:var| se "
-"compartirán entre las diferentes llamadas al script. Use las variables "
-"locales al búfer | b:var| si desea usar una variable local a un búfer."
+"Las extensiones de tipo de archivo serán cargadas en cada búfer del tipo "
+"correspondiente. Las variables de script locales |s:var| se compartirán entre "
+"las diferentes llamadas a una misma extensión (o script en general.) Use las "
+"variables locales al búfer |b:var| si desea usar una variable local a un "
+"búfer."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2164
@@ -6027,9 +6031,9 @@ msgid ""
 "plugin will be sourced every time a file with this filetype will be opened.  "
 "This construct makes sure the function is only defined once: >"
 msgstr ""
-"Necesita hacer lo siguiente una sola vez al definir una función, pero se "
-"cargará la extensión de tipo de archivo cada vez que se abra este tipo de "
-"archivo. Esta estructura asegura que la función se defina una sola vez: >"
+"Cada función necesita ser definida una sola vez. Pero la extensión de tipo de "
+"archivo se cargará cada vez que se abra un archivo del tipo correspondiente. "
+"Esta estructura asegura que la función se defina una sola vez: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2175
@@ -6062,10 +6066,10 @@ msgid ""
 "should be undone.  Set the b:undo_ftplugin variable to the commands that "
 "will undo the settings in your filetype plugin.  Example: >"
 msgstr ""
-"Cuando el usuario hace «setfiletype xyz», el efecto del tipo de archivo "
+"Cuando el usuario hace «:setfiletype xyz», el efecto del tipo de archivo "
 "anterior debería desaparecer. Defina la variable «b:undo_ftplugin» con las "
-"órdenes que deshacen las opciones de su extensión de tipo de archivo. "
-"Ejemplo: >"
+"órdenes que deshacen los cambios de configuración de su extensión de tipo de "
+"archivo.  Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2184
@@ -6093,7 +6097,7 @@ msgid ""
 "This does require removing the \"C\" flag from 'cpoptions' to allow line "
 "continuation, as mentioned above |use-cpo-save|."
 msgstr ""
-"Esto requiere eliminar la opción «C» de 'cpoption' para permitir la "
+"Esto requiere eliminar la opción «C» de 'cpoptions' para permitir la "
 "continuación de la línea, como se mencionó anteriormente |use-cpo-save|."
 
 #. type: Plain text
@@ -6137,8 +6141,8 @@ msgstr "RESUMEN\t\t\t\t\t\t\t*ftplugin-special*\n"
 #: original/txt/usr_41.txt:2207
 msgid "Summary of special things to use in a filetype plugin:"
 msgstr ""
-"Un resumen de las cosas especiales a usar en una extensión de tipo de "
-"archivo:"
+"Un resumen de los aspectos a considerar cuando escriba una extensión de tipo "
+"de archivo:"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2210
@@ -6148,14 +6152,14 @@ msgid ""
 "\t\t\tthe keys that filetype plugin mappings start with.\n"
 msgstr ""
 "<LocalLeader>\t\tEl valor de «maplocalleader», que el usuario define\n"
-"\t\t\tcon la tecla que inicia las macros de extensión de\n"
+"\t\t\tcomo la tecla que inicia las macros de extensión de\n"
 "\t\t\ttipo de archivo.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2212
 #, no-wrap
 msgid ":map <buffer>\t\tDefine a mapping local to the buffer.\n"
-msgstr ":map <búfer>\t\tDefine una macro local al búfer.\n"
+msgstr ":map <buffer>\t\tDefine una macro local al búfer.\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2215
@@ -6185,7 +6189,7 @@ msgstr ":command -buffer\tDefine una orden de usuario local al búfer.\n"
 #, no-wrap
 msgid "exists(\"*s:Func\")\tCheck if a function was already defined.\n"
 msgstr ""
-"exists(\"*s:Función\")\tComprueba si una función ya se ha definido\n"
+"exists(\"*s:Funcion\")\tComprueba si una función ya se ha definido\n"
 "\t\t\tanteriormente.\n"
 
 #. type: Plain text
