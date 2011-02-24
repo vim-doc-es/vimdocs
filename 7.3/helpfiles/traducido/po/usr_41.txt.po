@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2011-02-24 13:02-0500\n"
+"PO-Revision-Date: 2011-02-24 13:45-0500\n"
 "Last-Translator: Javier Rojas <jerojasro@devnull.li>\n"
 "Language-Team: vim-doc-es\n"
 "Language: es\n"
@@ -6339,9 +6339,10 @@ msgid ""
 "noticeable, while you hardly ever use the plugin.  Then it's time for a "
 "quickload plugin."
 msgstr ""
-"Puede que una extensión crezca, y que sea demasiado larga. Puede que crezca "
-"el tiempo de carga, y además, que apenas usa la extensión. En este caso, hay "
-"que usar una extensión de carga rápida («quickload»)."
+"Puede que una extensión crezca, y que sea demasiado larga. Puede que el "
+"tiempo de carga empiece a hacerse notorio, y además, que usted apenas use la "
+"extensión. En este caso, hay que usar una extensión de carga rápida "
+"(«quickload»)."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2280
@@ -6351,8 +6352,9 @@ msgid ""
 "time the functions that implement the functionality are defined."
 msgstr ""
 "La idea principal es que la extensión se carga dos veces. La primera vez, se "
-"definen las órdenes de usuario y macros que ofrecen alguna funcionalidad. La "
-"segunda, se definen las funciones que introducen tales funcionalidades."
+"definen las órdenes de usuario y macros que ofrecen la funcionalidad de la "
+"extensión. La segunda vez, se definen las funciones que implementan tales "
+"funcionalidades."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2285
@@ -6362,10 +6364,11 @@ msgid ""
 "script to the second time, which only happens when you actually use it.  "
 "When you always use the functionality it actually gets slower!"
 msgstr ""
-"Puede que sorpenda que «carga rápida» signifique cargar un script dos veces. "
-"Lo que queremos decir es que se carga rápidamente la primera, demorando la "
-"carga de la mayoría del script a la segunda vez, que sólo ocurre cuando "
-"realmente lo usa. Si usa siempre esta funcionalidad, ¡se volverá lento!"
+"Puede que sorprenda que «carga rápida» signifique cargar una extensión dos "
+"veces.  Lo que queremos decir es que se carga rápidamente la primera, "
+"demorando la carga de la mayoría de la extensión a la segunda vez, lo que "
+"sólo ocurre cuando realmente la usa. ¡Si usa siempre la funcionalidad que "
+"provee la extensión, no obtendrá ninguna ventaja!"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2288
@@ -6393,7 +6396,7 @@ msgstr ""
 "\t\" Extensión global de Vim para mostrar la carga rápida\n"
 "\t\" Último cambio:\t2005 Feb 25\n"
 "\t\" Desarrollador:\tBram Moolenaar <Bram@vim.org>\n"
-"\t\" Licencia:\tThis file is placed in the public domain.\n"
+"\t\" Licencia:\tEste archivo se encuentra en el dominio público\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2299
@@ -6404,7 +6407,7 @@ msgid ""
 "\t\tmap <F19> :call BufNetWrite('something')<CR>\n"
 msgstr ""
 "\tif !exists(\"s:did_load\")\n"
-"\t\tcommand -nargs=* BNRead  call BufNetRead(<argumentos-función>)\n"
+"\t\tcommand -nargs=* BNRead  call BufNetRead(<f-args>)\n"
 "\t\tmap <F19> :call BufNetWrite('algo')<CR>\n"
 
 #. type: Plain text
@@ -6432,7 +6435,7 @@ msgid ""
 msgstr ""
 "\tfunction BufNetRead(...)\n"
 "\t\techo 'BufNetRead(' . string(a:000) . ')'\n"
-"\t\t\" Lee aquí la funcionalidad\n"
+"\t\t\" Funcionalidad de lectura aquí\n"
 "\tendfunction\n"
 
 #. type: Plain text
@@ -6446,7 +6449,7 @@ msgid ""
 msgstr ""
 "\tfunction BufNetWrite(...)\n"
 "\t\techo 'BufNetWrite(' . string(a:000) . ')'\n"
-"\t\t\" Escriba aquí la funcionalidad\n"
+"\t\t\" Funcionalidad de escritura aquí\n"
 "\tendfunction\n"
 
 #. type: Plain text
@@ -6456,9 +6459,9 @@ msgid ""
 "between the \"if\" and \"endif\" will be executed.  This ends in a |:finish| "
 "command, thus the rest of the script is not executed."
 msgstr ""
-"Cuando el script se carga por primera vez, no se define «s:did_local», y se "
-"ejecutan las órdenes entre «if» y «endif». Termina con una orden |:finish|, "
-"impidiendo ejecutar el resto del script."
+"Cuando el script se carga por primera vez, «s:did_load» no está definida, y "
+"se ejecutan las órdenes entre «if» y «endif». Se termina con una orden "
+"|:finish|, impidiendo ejecutar el resto del script."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2322
@@ -6478,7 +6481,7 @@ msgid ""
 "startup.  This is the sequence of events that happens:"
 msgstr ""
 "Si ubica este script en su directorio «plugin», Vim lo ejecutará al inicio. "
-"A continuación tiene el orden de los eventos:"
+"A continuación la secuencia de los eventos:"
 
 # TODO no aparece la traducción en el .esx
 #. type: Plain text
@@ -6489,7 +6492,7 @@ msgid ""
 "   is sourced at startup.  A |FuncUndefined| autocommand is defined.  The\n"
 "   \":finish\" command causes the script to terminate early.\n"
 msgstr ""
-"1. La orden «BNRead» se define y la tecla <F19> se asigna a una macro al cargar\n"
+"1. Se define la orden «BNRead» y la tecla <F19> se asigna a una macro al cargar\n"
 "el script al inicio. Se define una orden automática |FuncUndefined|. La orden\n"
 "  «:finish» hace que el script finalice antes.\n"
 
