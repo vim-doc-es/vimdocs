@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2011-02-24 13:45-0500\n"
+"PO-Revision-Date: 2011-02-24 13:55-0500\n"
 "Last-Translator: Javier Rojas <jerojasro@devnull.li>\n"
 "Language-Team: vim-doc-es\n"
 "Language: es\n"
@@ -4904,7 +4904,6 @@ msgstr ""
 "que el usuario pueda definir las teclas que utiliza la macro de una "
 "extensión: >"
 
-# TODO revisar que el map acepte caracteres no-ascii
 #. type: Plain text
 #: original/txt/usr_41.txt:1741
 #, no-wrap
@@ -5267,7 +5266,6 @@ msgstr ""
 "usuario existente con «:command!» no es una buena idea, ya que haría que el "
 "usuario se pregunte porqué no funciona la orden que ha definido.  |:command|"
 
-# TODO revisar - variables *de* scripts?
 #. type: Plain text
 #: original/txt/usr_41.txt:1873
 msgid "SCRIPT VARIABLES"
@@ -6183,7 +6181,6 @@ msgstr ":setlocal\t\tDefine una opción para el búfer actual.\n"
 msgid ":command -buffer\tDefine a user command local to the buffer.\n"
 msgstr ":command -buffer\tDefine una orden de usuario local al búfer.\n"
 
-# TODO comprobar que se pueda usar no-ascii en definición de func.
 #. type: Plain text
 #: original/txt/usr_41.txt:2221
 #, no-wrap
@@ -6483,7 +6480,6 @@ msgstr ""
 "Si ubica este script en su directorio «plugin», Vim lo ejecutará al inicio. "
 "A continuación la secuencia de los eventos:"
 
-# TODO no aparece la traducción en el .esx
 #. type: Plain text
 #: original/txt/usr_41.txt:2329
 #, no-wrap
