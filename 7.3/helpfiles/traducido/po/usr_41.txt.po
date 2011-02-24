@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2011-02-24 13:55-0500\n"
+"PO-Revision-Date: 2011-02-24 14:20-0500\n"
 "Last-Translator: Javier Rojas <jerojasro@devnull.li>\n"
 "Language-Team: vim-doc-es\n"
 "Language: es\n"
@@ -248,7 +248,6 @@ msgstr ""
 "|41.15|\tEscribir bibliotecas\n"
 "|41.16|\tDistribuir scripts de Vim\n"
 
-# TODO traducir nombre del capítulo destino
 #. type: Plain text
 #: original/txt/usr_41.txt:32
 #, no-wrap
@@ -257,7 +256,7 @@ msgid ""
 " Previous chapter: |usr_40.txt|  Make new commands\n"
 "Table of contents: |usr_toc.txt|\n"
 msgstr ""
-" Capítulo siguiente: |usr_42.esx|  Add new menus\n"
+" Capítulo siguiente: |usr_42.esx|  Añadir menús nuevos\n"
 "  Capítulo anterior: |usr_40.esx|  Crear órdenes nuevas\n"
 "Tabla de contenidos: |usr_toc.txt|\n"
 
@@ -1322,8 +1321,6 @@ msgstr ""
 "Esta variable es útil para escribir scripts que funcionen con distintas "
 "versiones de Vim. |v:version|"
 
-# TODO revisar qué se quiere decir con languages? idiomas? paradigmas de
-# lenguajes de programación?
 #. type: Plain text
 #: original/txt/usr_41.txt:420
 #, no-wrap
@@ -3605,8 +3602,6 @@ msgstr ""
 "Esto sólo funciona con claves compuestas de caracteres ASCII, dígitos, y el "
 "guión bajo. También puede usar esta notación para asignar valores: >"
 
-# TODO revisar lo de diccionarios para ver si se sigue ajustando a lo 
-# mostrado en ejecución real
 #. type: Plain text
 #: original/txt/usr_41.txt:1266
 #, no-wrap
@@ -3615,7 +3610,7 @@ msgid ""
 "\t:echo uk2nl\n"
 "<\t{'three': 'drie', 'four': 'vier', 'one': 'een', 'two': 'twee'} ~\n"
 msgstr ""
-"\t:let es2nl.four = 'vier'\n"
+"\t:let es2nl.cuatro = 'vier'\n"
 "\t:echo es2nl\n"
 "<\t{'tres': 'drie', 'cuatro': 'vier', 'uno': 'een', 'dos': 'twee'} ~\n"
 
@@ -3675,7 +3670,6 @@ msgstr ""
 msgid "\tsplit(a:line)\n"
 msgstr "\tsplit(a:linea)\n"
 
-# TODO white: whitespace?
 #. type: Plain text
 #: original/txt/usr_41.txt:1288
 msgid ""
@@ -5037,9 +5031,9 @@ msgid ""
 " ..\n"
 " 36\tendfunction\n"
 msgstr ""
-" 30\tfunction s:Anadir(from, correct)\n"
-" 31\t  let to = input(\"Introduzca la corrección para \" . a:from . \": \")\n"
-" 32\t  exe \":iabbrev \" . a:from . \" \" . to\n"
+" 30\tfunction s:Anadir(desde, correccion)\n"
+" 31\t  let a = input(\"Introduzca la corrección para \" . a:desde . \": \")\n"
+" 32\t  exe \":iabbrev \" . a:desde . \" \" . a\n"
 " ..\n"
 " 36\tendfunction\n"
 
@@ -5297,7 +5291,6 @@ msgstr ""
 "automáticas y órdenes de usuario definidas en el script. En nuestro ejemplo, "
 "añadimos unas pocas líneas para contar el número de correcciones: >"
 
-# TODO traducir los parametros de s:Anadir
 #. type: Plain text
 #: original/txt/usr_41.txt:1891
 #, no-wrap
@@ -5312,7 +5305,7 @@ msgid ""
 msgstr ""
 " 19\tlet s:cuenta = 4\n"
 " ..\n"
-" 30\tfunction s:Anadir(from, correct)\n"
+" 30\tfunction s:Anadir(desde, correccion)\n"
 " ..\n"
 " 34\t  let s:cuenta = s:cuenta + 1\n"
 " 35\t  echo s:cuenta . \" correcciones en este punto\"\n"
@@ -5418,10 +5411,10 @@ msgstr ""
 " 27\n"
 " 28\tnoremap <SID>Añadir  :call <SID>Anadir(expand(\"<cword>\"), 1)<CR>\n"
 " 29\n"
-" 30\tfunction s:Anadir(from, correct)\n"
-" 31\t  let to = input(\"introduce la corrección de \" . a:from . \": \")\n"
-" 32\t  exe \":iabbrev \" . a:from . \" \" . to\n"
-" 33\t  if a:correct | exe \"normal viws\\<C-R>\\\" \\b\\e\" | endif\n"
+" 30\tfunction s:Anadir(desde, correccion)\n"
+" 31\t  let a = input(\"introduce la corrección de \" . a:desde . \": \")\n"
+" 32\t  exe \":iabbrev \" . a:desde . \" \" . a\n"
+" 33\t  if a:correccion | exe \"normal viws\\<C-R>\\\" \\b\\e\" | endif\n"
 " 34\t  let s:cuenta = s:cuenta + 1\n"
 " 35\t  echo s:cuenta . \" correcciones en este punto\"\n"
 " 36\tendfunction\n"
@@ -5606,8 +5599,6 @@ msgstr ""
 "«~/.vim/ftdetect/foofoo.vim». La convención es nombrar el script como el "
 "nombre del tipo de archivo."
 
-# TODO what does bram mean? programming language in the file? natural
-# language used in the file?!
 #. type: Plain text
 #: original/txt/usr_41.txt:2014
 msgid ""
@@ -6552,9 +6543,9 @@ msgid ""
 "more than a few lines you will want to put it in one script and use it from "
 "many scripts.  We will call that one script a library script."
 msgstr ""
-"Algunas de los funciones son necesarias en varios lugares. Cuando esto se "
-"convierte en algo más que unos pocas líneas, querrá ubicarlo en un script, y "
-"usarlo desde varios otros. Vamos a denominar ese script como biblioteca."
+"Algunas funcionalidades son necesarias en varios lugares. Cuando se trata de "
+"algo más que unos pocas líneas, querrá ubicarlo en un script, y usarlo desde "
+"varios otros. Vamos a denominar ese script como biblioteca."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2356
@@ -6563,7 +6554,7 @@ msgid ""
 "it when it's already done.  You can do this with the |exists()| function.  "
 "Example: >"
 msgstr ""
-"Cargar una biblioteca manualmente es posible, siempre que evite cargarlo "
+"Cargar una biblioteca manualmente es posible, siempre que evite cargarla "
 "cuando ya lo está. Puede evitarlo con la función |exists()|. Ejemplo: >"
 
 #. type: Plain text
@@ -6575,10 +6566,10 @@ msgid ""
 "\tendif\n"
 "\tcall MyLibFunction(arg)\n"
 msgstr ""
-"\tif !exists('*MiFunciónBiblioteca')\n"
+"\tif !exists('*MiFuncionBiblioteca')\n"
 "\t   runtime library/biblioteca.vim\n"
 "\tendif\n"
-"\tcall MiFunciónBiblioteca(arg)\n"
+"\tcall MiFuncionBiblioteca(arg)\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2364
@@ -6602,7 +6593,7 @@ msgstr ""
 #: original/txt/usr_41.txt:2369
 #, no-wrap
 msgid "\tcall mylib#myfunction(arg)\n"
-msgstr "\tcall mibiblioteca#mifunción(arg)\n"
+msgstr "\tcall mibiblioteca#mifuncion(arg)\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2373
@@ -6612,8 +6603,8 @@ msgid ""
 "'runtimepath'.  That script must define the \"mylib#myfunction()\" function."
 msgstr ""
 "Mucho más sencillo, ¿verdad? Vim reconoce el nombre de la función y, cuando "
-"no esté definida, la buscará en el script «autoload/mibibioteca.vim» en "
-"'runtimepath'. El script debe definir la función «mibiblioteca#mifun()»."
+"no esté definida, la buscará el script «autoload/mibiblioteca.vim» en "
+"'runtimepath'. El script debe definir la función «mibiblioteca#mifuncion()»."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2378
@@ -6667,7 +6658,7 @@ msgid ""
 "\t\t\"  Read the file fname through ftp\n"
 "\tendfunction\n"
 msgstr ""
-"\tfunction netlib#ftp#read(nombre-archivo)\n"
+"\tfunction netlib#ftp#read(nombre_archivo)\n"
 "\t\t\"  Lee al archivo mediante FTP\n"
 "\tendfunction\n"
 
@@ -6711,8 +6702,8 @@ msgid ""
 "\tlet dutch#weekdays = ['zondag', 'maandag', 'dinsdag', 'woensdag',\n"
 "\t\t\\ 'donderdag', 'vrijdag', 'zaterdag']\n"
 msgstr ""
-"\tlet colombia#dias_semana = ['lunes', 'martes', 'miercoles', 'jueves',\n"
-"\t\t\\ 'viernes', 'sabado', 'domingo']\n"
+"\tlet colombia#dias_semana = ['lunes', 'martes', 'miércoles', 'jueves',\n"
+"\t\t\\ 'viernes', 'sábado', 'domingo']\n"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2409
@@ -6741,8 +6732,8 @@ msgid ""
 "command.  If you want to pack files together and/or compress them the \"zip"
 "\" utility is recommended."
 msgstr ""
-"Los scripts de Vim se pueden usar en cualquier sistema. No pueden estar "
-"empaquetados mediante las órdenes tar o gzip. Si desea empaquetar o "
+"Los scripts de Vim se pueden usar en cualquier sistema. Las órdenes tar o "
+"gzip pueden no estar disponibles en dichos sistemas. Si desea empaquetar o "
 "comprimir los archivos, se recomienda usar la herramienta «zip»."
 
 #. type: Plain text
