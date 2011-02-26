@@ -6,7 +6,7 @@
         <source>Project-Id-Version: Vim 7.2
 Report-Msgid-Bugs-To: vim@bugs.org
 POT-Creation-Date: 2010-09-23 20:27+0300
-PO-Revision-Date: 2011-02-01 21:18+0100
+PO-Revision-Date: 2011-02-26 19:14+0200
 Last-Translator: Omar Campagne &lt;ocampagne@gmail.com&gt;
 Language-Team: vim-doc-es &lt;vim-doc-es@freelists.org&gt;
 Language: es
@@ -19,7 +19,7 @@ X-Generator: Virtaal 0.5.0-rc1
         <target state="translated">Project-Id-Version: Vim 7.2
 Report-Msgid-Bugs-To: vim@bugs.org
 POT-Creation-Date: 2010-09-23 20:27+0300
-PO-Revision-Date: 2011-02-01 21:18+0100
+PO-Revision-Date: 2011-02-26 19:14+0200
 Last-Translator: Omar Campagne &lt;ocampagne@gmail.com&gt;
 Language-Team: vim-doc-es &lt;vim-doc-es@freelists.org&gt;
 Language: es
@@ -2909,9 +2909,9 @@ when it contains spaces and/or tabs.  This command does work with blank lines:
 &gt;
 	:g/\S/,/^\s*$/join
 </source>
-        <target state="translated">Observe que esto no funciona si la línea de separación está en blanco pero
-no vacía; cuando contiene espacios y/o tabulados. Esta orden funciona con
-líneas en blanco:
+        <target state="translated">Tenga en cuenta que esto no funciona si la línea de separación está en blanco,
+pero no vacía; cuando contiene espacios y/o tabulados. Esta orden funciona
+con líneas en blanco:
 &gt;
 	:g/\S/,/^\s*$/join
 </target>
