@@ -26,12 +26,25 @@ msgstr "por omisión"
 msgid "default"
 msgstr "predeterminado"
 
+# ver rae y vim wiki para una explicación de la
+# plurisemántica «macro», y/o el hilo de la lista
+# sobre «mapping»
+msgid "macro"
+msgstr "macro"
+
 msgid "mapping"
 msgstr "macro"
 
 # En el sentido de «map keys to»
+# también «asignación»
 msgid "map"
 msgstr "asignar"
+
+msgid "mapped"
+msgstr "asignado"
+
+msgid "remapping"
+msgstr "reasignación de macros"
 
 ## Soporta es la ultima opción
 msgid "support"
@@ -41,7 +54,25 @@ msgid "support"
 msgstr "acepta"
 
 msgid "support"
-msgstr "es compatible con"
+msgstr "compatible con"
+
+#### brackets, braces, variantes
+#DRAE
+#corchete = ({[]})
+#llave = ({})
+#paréntesis = ()
+
+### []
+msgid "square brackets"
+msgstr "corchete"
+
+## {}
+msgid "curly braces"
+msgstr "llaves"
+
+## ()
+msgid "brackets"
+msgstr "paréntesis"
 
 msgid "conditional"
 msgstr "estructura de decisión"
@@ -49,9 +80,18 @@ msgstr "estructura de decisión"
 msgid "otherwise"
 msgstr "en caso contrario"
 
+msgid "backslash"
+msgstr "barra inversa"
+
 # En el caso de «call a function»
 msgid "call"
 msgstr "invocar"
+
+msgid "history"
+msgstr "historial"
+
+msgid "statement"
+msgstr "instrucción"
 
 msgid "completion"
 msgstr "completado"
@@ -67,6 +107,12 @@ msgstr "archivo de diferencias"
 
 msgid "diff file"
 msgstr "archivo «diff»"
+
+msgid "header"
+msgstr "cabecera"
+
+msgid "buffer"
+msgstr "búfer"
 
 msgid "bug"
 msgstr "fallo"
@@ -127,15 +173,19 @@ msgstr "pulsar"
 msgid "string"
 msgstr "cadena"
 
-msgid "buffer"
-msgstr "búfer"
+## Verbo
+msgid "set"
+msgstr "definir"
 
-#, fuzzy
-msgid "backslash"
-msgstr "barra inversa"
+## Sustantivo
+msgid "set"
+msgstr "conjunto"
 
 msgid "setting"
 msgstr "opción de configuración"
+
+msgid "setup"
+msgstr "configuración"
 
 msgid "display"
 msgstr "pantalla"
@@ -147,6 +197,9 @@ msgid "match"
 msgstr "coincidencia"
 
 msgid "plugin"
+msgstr "extensión"
+
+msgid "extension"
 msgstr "extensión"
 
 msgid "command line"
@@ -225,8 +278,8 @@ msgstr "entrecomillar"
 msgid "fold"
 msgstr "plegar"
 
-msgid "enabled"
-msgstr "activado"
+msgid "folding"
+msgstr "plegar"
 
 msgid "scroll"
 msgstr "desplazar"
@@ -234,15 +287,9 @@ msgstr "desplazar"
 msgid "autocommand"
 msgstr "orden automática"
 
-msgid "folding"
-msgstr "plegar"
-
 #, fuzzy
 msgid "computer"
 msgstr "máquina"
-
-msgid "setup"
-msgstr "configuración"
 
 msgid "wrap"
 msgstr "justificar"
@@ -257,9 +304,6 @@ msgstr "palabra clave"
 msgid "shortcut"
 msgstr "atajo de teclado"
 
-msgid "history"
-msgstr "historial"
-
 msgid "notation"
 msgstr "leyenda"
 
@@ -272,14 +316,6 @@ msgstr "sda"
 
 msgid "redo"
 msgstr "rehacer"
-
-#, fuzzy
-msgid "header"
-msgstr "encabezado"
-
-#, fuzzy
-msgid "header"
-msgstr "cabecera"
 
 msgid "toolbar"
 msgstr "barra de herramientas"
@@ -313,20 +349,11 @@ msgstr "omitir"
 msgid "foreground"
 msgstr "primer plano"
 
-msgid "mapped"
-msgstr "asignado"
-
 msgid "occurrence"
 msgstr "aparición"
 
 msgid "link"
 msgstr "enlace"
-
-msgid "extension"
-msgstr "extensión"
-
-msgid "macro"
-msgstr "macro"
 
 msgid "trailing"
 msgstr "en exceso al final"
@@ -355,9 +382,6 @@ msgstr "integrado"
 msgid "wildcard"
 msgstr "comodín"
 
-msgid "e-mail"
-msgstr "correo electrónico"
-
 msgid "guess"
 msgstr "averiguar"
 
@@ -382,20 +406,21 @@ msgstr "justificar"
 msgid "compiling"
 msgstr "compilar"
 
-msgid "remapping"
-msgstr "reasignación de macros"
-
 msgid "customize"
 msgstr "personalizar"
 
 msgid "trigger"
 msgstr "iniciar"
 
-msgid "tabstop"
-msgstr "fin de tabulación"
-
 msgid "debugging"
-msgstr "depuración"
+msgstr "depuración de fallos"
 
 msgid "nesting"
 msgstr "anidado"
+
+msgid "e-mail"
+msgstr "correo electrónico"
+
+msgid "email"
+msgstr "correo electrónico"
+
