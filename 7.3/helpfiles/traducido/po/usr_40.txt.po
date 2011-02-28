@@ -34,7 +34,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2011-02-26 17:37+0200\n"
+"PO-Revision-Date: 2011-02-28 13:01-0500\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es\n"
 "Language: es\n"
@@ -286,7 +286,7 @@ msgstr ""
 #: original/txt/usr_40.txt:31
 #, no-wrap
 msgid "\t:map <F2> GoDate: <Esc>:read !date<CR>kJ\n"
-msgstr "\t:map <F2> GoDate: <Esc>:read !date<CR>kJ\n"
+msgstr "\t:map <F2> GoFecha: <Esc>:read !date<CR>kJ\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:43
@@ -304,15 +304,16 @@ msgid ""
 "line.  The <CR> is required to execute the \":read\" command.\n"
 "   At this point of execution the text looks like this:\n"
 msgstr ""
-"Este ejemplo muestra como usar tres modos. Después de ir a la última línea\n"
-"con «G», la orden «o» crea una nueva línea e inicia el modo Insertar. Se\n"
-"inserta el texto «Date:», y <Esc> abandona el modo de inserción.\n"
-"   Tenga en cuenta el uso de teclas especiales dentro de <>. Se llama\n"
-"notación de corchetes agudos. Los teclea como caracteres distintos, y no pulsando\n"
-"la tecla referida. Esto hace que las macros sean más legibles,\n"
-"permitiendo copiar y pegar el texto de la misma sin problema.\n"
+"Este ejemplo muestra como usar tres modos. Después de ir a la última línea con\n"
+"«G», la orden «o» crea una nueva línea e inicia el modo Insertar. Se inserta\n"
+"el texto «Date:», y <Esc> abandona el modo de inserción.\n"
+"   Tenga en cuenta la definición de teclas especiales dentro de <>. Se la\n"
+"denomina notación de corchetes agudos. Escribe el nombre de la tecla usando\n"
+"varios caracteres, en vez de pulsar la tecla referida. Esto hace que las\n"
+"macros sean más legibles, permitiendo copiar y pegar el texto de las mismas\n"
+"sin problema.\n"
 "   El carácter «:» inicia la línea de órdenes de Vim. La orden «:read !date»\n"
-"lee la salida de la orden «date» y la añade bajo la línea actual. El\n"
+"lee la salida de la orden «date» (fecha) y la añade bajo la línea actual. El\n"
 "<CR> se requiere para ejecutar la orden «:read».\n"
 "   En este punto, el texto tiene el siguiente aspecto:\n"
 
@@ -323,7 +324,7 @@ msgid ""
 "\tDate:  ~\n"
 "\tFri Jun 15 12:54:34 CEST 2001 ~\n"
 msgstr ""
-"\tDate:  ~\n"
+"\tFecha:  ~\n"
 "\tFri Jun 15 12:54:34 CEST 2001 ~\n"
 
 #. type: Plain text
@@ -356,7 +357,7 @@ msgstr ""
 #: original/txt/usr_40.txt:58
 #, no-wrap
 msgid "\t:imap <F2> <CR>Date: <Esc>:read !date<CR>kJ\n"
-msgstr "\t:imap <F2> <CR>Date: <Esc>:read !date<CR>kJ\n"
+msgstr "\t:imap <F2> <CR>Fecha: <Esc>:read !date<CR>kJ\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:65
