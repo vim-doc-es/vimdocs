@@ -536,6 +536,16 @@ function! CopyMsgidMsgStr()
   let @" = r_a
 endfunction
 
+" {{{1 Checks if the message has manual line wrapping (#, no-wrap flag)
+"
+" Returns: 1 if the message is manually wrapped, zero otherwise
+"
+" NOTE: This function assumes the cursor is on or below of the line with the
+"       no-wrap marker
+function! s:HasManualWrap() " {{{1
+  
+endfunction "}}}1
+
 function! FormatDamnMsgstr()
   let old_tw = &tw
   " TODO account for manually-wrapped strings
