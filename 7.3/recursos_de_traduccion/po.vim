@@ -543,20 +543,78 @@ endfunction
 " NOTE: This function assumes the cursor is on or below of the line with the
 "       no-wrap marker
 function! s:HasManualWrap() " {{{1
-  
+  let nwpos = search('^#,.*no-wrap', 'bcn')
+  let blankpos = search('^$', 'bcn')
+  return (blankpos < nwpos)
 endfunction "}}}1
 
-function! FormatDamnMsgstr()
-  let old_tw = &tw
-  " TODO account for manually-wrapped strings
-  let &tw=77
+command! -range=0 FormatMsgstr :call TestRange(<line1>, <line2>)
+
+function! TestRange(...)
+  echo a:1 a:2
+endfunction
+
+function! s:FormatDamnMsgstr(...)
   " TODO account for msgstr "yaddayadda..."
-  silent ?^msgstr?,/^$/s/^"\(.*\)"$/\1/|?^msgstr?,/^$/s/^\(.*\) $/\1/
-  call search("^msgstr", "bc")
-  normal j
+  " by default figure out line range and text width
+  let line_range_s = '?^msgstr?+1'
+  let line_range_e = '/^$/-1'
+  let user_tw = 0
+  let user_range = 0
+  if a:0 == 1 " target textwidth, figure range on our own
+    let b:po_target_tw = eval(a:1)
+    let user_tw = 1
+  elseif a:0 == 2 " line range, figure tw on our own
+    let line_range_s = a:1
+    let line_range_e = a:2
+    let user_range = 1
+  elseif a:0 == 3 " do as the user wants
+    let line_range_s = a:1
+    let line_range_e = a:2
+    let b:po_target_tw = eval(a:3)
+    let user_tw = 1
+    let user_range = 1
+  endif
+  let has_mw = s:HasManualWrap()
+  let old_tw = &tw
+  if user_tw
+    let &tw = b:po_target_tw
+  else
+    if has_mw
+      if !exists("b:po_target_tw")
+        " TODO check that the user input is an integer expression
+        " regexp + eval() should cut it
+        let b:po_target_tw = input("Desired textwidth: ")
+      endif
+      let &tw = b:po_target_tw
+    else
+      let &tw = 77 " plus the 2 quotes, plus the space before quotes: 80
+                   " which is the proper tw for po files
+    endif
+  endif
+
+  let range_exp = line_range_s . "," . line_range_e
+  " remove all ' "'.
+  exec 'silent! ' . range_exp . 's/[^\\]\zs "$//'
+  " remove all '\n"'
+  exec 'silent! ' . range_exp . 's/[^\\]\zs\\n"$//'
+  " remove all other "  doesn't work for 2 double quotes next to each other...
+  exec 'silent! ' . range_exp . 's/^"\|[^\\]\zs"//g'
+
+  " place cursor at top of selection
+  if user_range
+    call cursor(line_range_s, 1)
+  else
+    call search("^msgstr", "bc")
+    normal j
+  endif
   " format paragraph, leave cursor where it is
   normal gw}
-  silent .,/^$/-1s/.*/"\0 "/
-  normal $hx
+  if has_mw
+    exec 'silent ' . range_exp . 's/.*/"\0\\n"/'
+  else
+    exec 'silent ' . range_exp . 's/.*/"\0 "/'
+    normal $hx
+  endif
   let &tw = old_tw
 endfunction
