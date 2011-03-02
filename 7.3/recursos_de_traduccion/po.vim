@@ -548,32 +548,20 @@ function! s:HasManualWrap() " {{{1
   return (blankpos < nwpos)
 endfunction "}}}1
 
-command! -range=0 FormatMsgstr :call TestRange(<line1>, <line2>)
-
-function! TestRange(...)
-  echo a:1 a:2
-endfunction
-
-function! s:FormatDamnMsgstr(...)
+function! s:FormatMsgstr(...)
   " TODO account for msgstr "yaddayadda..."
+  " TODO raise exception when receiving anything different from 2 or 3 numbers
   " by default figure out line range and text width
   let line_range_s = '?^msgstr?+1'
   let line_range_e = '/^$/-1'
-  let user_tw = 0
-  let user_range = 0
-  if a:0 == 1 " target textwidth, figure range on our own
-    let b:po_target_tw = eval(a:1)
-    let user_tw = 1
-  elseif a:0 == 2 " line range, figure tw on our own
+  let user_tw = a:0 == 3
+  let user_range = !(a:1 == line(".") && a:2 == 1)
+  if user_range
     let line_range_s = a:1
     let line_range_e = a:2
-    let user_range = 1
-  elseif a:0 == 3 " do as the user wants
-    let line_range_s = a:1
-    let line_range_e = a:2
+  endif
+  if user_tw
     let b:po_target_tw = eval(a:3)
-    let user_tw = 1
-    let user_range = 1
   endif
   let has_mw = s:HasManualWrap()
   let old_tw = &tw
@@ -610,6 +598,8 @@ function! s:FormatDamnMsgstr(...)
   endif
   " format paragraph, leave cursor where it is
   normal gw}
+  " TODO the paragraph formatting might change the total amount of lines, take that into 
+  " account for manual wrap
   if has_mw
     exec 'silent ' . range_exp . 's/.*/"\0\\n"/'
   else
@@ -618,3 +608,6 @@ function! s:FormatDamnMsgstr(...)
   endif
   let &tw = old_tw
 endfunction
+
+command! -range=0 -nargs=? FormatMsgstr :call s:FormatMsgstr(<line1>, <line2>, <f-args>)
+
