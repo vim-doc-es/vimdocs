@@ -589,26 +589,24 @@ function! s:FormatMsgstr(...)
   " remove all other "  doesn't work for 2 double quotes next to each other...
   exec 'silent! ' . range_exp . 's/^"\|[^\\]\zs"//g'
 
-  " place cursor at top of selection
+  " place cursor at top of selection, then format paragraph
   if user_range
+    let me = s:MsgStrLocation(line(".")).e
     call cursor(line_range_s, 1)
+    " XXX the else part should work for any case, but alas, it doesn't. vim bug?
+    if line_range_e == line_range_s
+      normal gwl
+    else
+      let s = "normal " . string(line_range_e - line_range_s) . "gwj"
+      exec s
+    endif
+    let nme = s:MsgStrLocation(line(".")).e
+    let line_range_e = eval(line_range_e) + (nme - me)
+    let range_exp = line_range_s . "," . line_range_e
   else
     call search("^msgstr", "bc")
     normal j
-  endif
-  " record where is the end of msgstr, to know up to where to re-format with quoting
-  let me = s:MsgStrLocation(line(".")).e
-  " format paragraph, leave cursor where it is
-  if user_range
-    let s = "normal " . string(line_range_e - line_range_s) . "gwj"
-    exec s
-  else
     normal gw}
-  endif
-  let nme = s:MsgStrLocation(line(".")).e
-  if user_range
-    let line_range_e = eval(line_range_e) + (nme - me)
-    let range_exp = line_range_s . "," . line_range_e
   endif
   if has_mw
     exec 'silent ' . range_exp . 's/.*/"\0\\n"/'
