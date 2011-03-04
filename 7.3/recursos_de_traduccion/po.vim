@@ -617,5 +617,5 @@ function! s:FormatMsgstr(...)
   let &tw = old_tw
 endfunction
 
-command! -range=0 -nargs=? FormatMsgstr :call s:FormatMsgstr(<line1>, <line2>, <f-args>)
+command! -range=0 -nargs=? PoFormatMsgstr :call s:FormatMsgstr(<line1>, <line2>, <f-args>)
 
