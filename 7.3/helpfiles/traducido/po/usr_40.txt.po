@@ -34,7 +34,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2011-03-08 10:54-0500\n"
+"PO-Revision-Date: 2011-03-08 10:57-0500\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es\n"
 "Language: es\n"
@@ -802,12 +802,11 @@ msgstr "Al usar un espacio en una macro, use <Space> (siete caracteres): >"
 msgid "\t:map <Space> W\n"
 msgstr "\t:map <Space> W\n"
 
-# TODO espaciador
 #. type: Plain text
 #: original/txt/usr_40.txt:227
 msgid "This makes the spacebar move a blank-separated word forward."
 msgstr ""
-"Esto hace que la barra espaciador avance una palabra separada por espacios."
+"Esto hace que la barra de espacio avance una palabra separada por espacios."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:231
@@ -820,12 +819,11 @@ msgstr ""
 "carácter «\"» se considera parte de la macro. Puede usar «|\"», iniciando "
 "una nueva orden, vacía, con un comentario. Ejemplo: >"
 
-# TODO espaciadora
 #. type: Plain text
 #: original/txt/usr_40.txt:233
 #, no-wrap
 msgid "\t:map <Space> W|     \" Use spacebar to move forward a word\n"
-msgstr "\t:map <Space> W|     \" Usa la barra espaciadora para avanzar un palabra\n"
+msgstr "\t:map <Space> W|     \" Usa la barra de espacio para avanzar un palabra\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:236
@@ -1179,7 +1177,6 @@ msgstr ""
 "definiendo una orden así, debe especificar una opción «-range». A "
 "continuación puede ver los valores de esta opción:"
 
-# TODO revisar formateo en .esx
 #. type: Plain text
 #: original/txt/usr_40.txt:370
 #, no-wrap
@@ -1227,7 +1224,6 @@ msgid "Some of the other options and keywords are as follows:"
 msgstr ""
 "A continuación puede ver algunas de las otras opciones y palabras clave:"
 
-# TODO revisar formateo
 #. type: Plain text
 #: original/txt/usr_40.txt:399
 #, no-wrap
@@ -1332,7 +1328,6 @@ msgid "More details about all this in the reference manual: |user-commands|."
 msgstr ""
 "Puede encontrar más detalles en el manual de referencia: |user-commands|."
 
-# TODO revisar qué decidimos hacer con autocommands
 #. type: Plain text
 #: original/txt/usr_40.txt:426
 #, no-wrap
@@ -1564,7 +1559,6 @@ msgstr ""
 "archivo, «/home/biep/leame.txt» y con la ruta relativa, esto es,\n"
 "«biep/leame.txt»).\n"
 
-# TODO revisar ancho de línea
 #. type: Plain text
 #: original/txt/usr_40.txt:516
 #, no-wrap
