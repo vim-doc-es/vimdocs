@@ -34,7 +34,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2011-03-04 15:21-0500\n"
+"PO-Revision-Date: 2011-03-07 19:17-0500\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es\n"
 "Language: es\n"
@@ -494,13 +494,13 @@ msgid ""
 msgstr ""
 "La primera columna de la lista muestra el modo en el que la macro tiene\n"
 "efecto. Esto es, «n» para el modo Normal, «i» para el modo Insertar, etc... Se\n"
-"usa un espacio en blanco con las macros definidas mediante «:map», y por\n"
-"ello, con efecto en el modo Visual y Normal.\n"
+"usa un espacio en blanco con las macros definidas mediante «:map», y por ello,\n"
+"con efecto en el modo Visual y Normal.\n"
 "   Un propósito útil de listar las macros es comprobar si se han reconocido\n"
-"las teclas especiales con la forma <> (sólo funciona con compatibilidad con\n"
+"las teclas especiales de la forma <> (sólo funciona con compatibilidad con\n"
 "color). Por ejemplo, cuando <Esc> se muestra en color, simboliza el carácter\n"
-"de escape. Cuando tiene el mismo color que el resto del texto, simboliza\n"
-"cinco caracteres.\n"
+"de escape. Cuando tiene el mismo color que el resto del texto, simboliza cinco\n"
+"caracteres.\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:116
@@ -526,7 +526,7 @@ msgid ""
 msgstr ""
 "\t:map <F2> G<F3>\n"
 "\t:imap <F2> <Esc><F3>\n"
-"\t:map <F3>  oDate: <Esc>:read !date<CR>kJ\n"
+"\t:map <F3>  oFecha: <Esc>:read !date<CR>kJ\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:127
@@ -535,10 +535,10 @@ msgid ""
 "<F3> was pressed.  In Insert mode <F2> stops Insert mode with <Esc> and then "
 "also uses <F3>.  Then <F3> is mapped to do the actual work."
 msgstr ""
-"En modo Normal, <F2> tiene un macro para ir a la última línea, y después "
+"En modo Normal, <F2> tiene una macro para ir a la última línea, y después "
 "comportarse como si se hubiese pulsado <F3>. En modo Insertar, <F2> detiene "
-"el modo Insertar con <Esc>, y después usa también <F3>. Por ello, se usa la "
-"macro de <F3> para el trabajo real."
+"el modo Insertar con <Esc>, y después usa también <F3>. <F3> tiene una macro "
+"que se encarga de hacer el trabajo real."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:130
@@ -580,11 +580,11 @@ msgid ""
 "you don't get to Ex mode at all.\n"
 "   To avoid keys to be mapped again, use the \":noremap\" command: >\n"
 msgstr ""
-"Lo que ocurre ahora es que cuando escribe «gQ», se asigna a la «Q». Por\n"
-"ahora, todo bien. Pero, a continuación, asigna «Q» a «gq», y por ello escribir\n"
-"«gQ» resulta en «gq», y no entra en modo Ex.\n"
-"   Para evitar que las claves se asignen otra vez, utilice la orden\n"
-"«:noremap»: \n"
+"Lo que ocurre ahora es que cuando escribe «gQ», se asigna a la «Q». Por ahora,\n"
+"todo bien. Pero, a continuación, asigna «Q» a «gq», y por ello escribir «gQ»\n"
+"resulta en «gq», y no entra en modo Ex.\n"
+"   Para evitar que las teclas se asignen de nuevo, utilice la orden\n"
+"«:noremap»: >\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:144
@@ -598,8 +598,8 @@ msgid ""
 "Now Vim knows that the \"Q\" is not to be inspected for mappings that apply "
 "to it.  There is a similar command for every mode:"
 msgstr ""
-"Ahora Vim sabe que no se puede analizar «Q» en busca de macros que le "
-"afecten. Existe una orden similar para cada modo:"
+"Ahora Vim sabe que no debe analizar «Q» en busca de macros que le afecten. "
+"Existe una orden similar para cada modo:"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:155
@@ -636,11 +636,11 @@ msgid ""
 "first line.  You edit these files with \"vim *.txt\".  You are now editing the\n"
 "first file.  Define this mapping: >\n"
 msgstr ""
-"Cuando una macro se activa, se ejecutará indefinidamente. Puede\n"
+"Cuando una macro se activa a sí misma, se ejecutará indefinidamente. Puede\n"
 "usar esto para repetir una acción un número ilimitado de veces.\n"
-"   Por ejemplo, tiene una lista de archivos que contienen un número de\n"
-"versión en la primera línea. Después, edita estos archivos con «vim.txt».\n"
-"Ahora está editando el primer archivo. Defina esta macro: >\n"
+"   Por ejemplo, tiene una lista de archivos que contienen un número de versión\n"
+"en la primera línea. Después, edita estos archivos con «vim *.txt».  Ahora\n"
+"está editando el primer archivo. Defina esta macro: >\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:166
@@ -663,18 +663,17 @@ msgid ""
 "   When a mapping runs into an error halfway, the rest of the mapping is\n"
 "discarded.  CTRL-C interrupts the mapping (CTRL-Break on MS-Windows).\n"
 msgstr ""
-"Ahora introduce «,,», iniciando la macro. Reemplaza «5.1» con «5.2»\n"
-"en la primera línea. A continuación, ejecuta «:wnext» para guardar el\n"
-"archivo y editar el siguiente. La macro termina con «,,», iniciando la\n"
-"macro una vez más, llevando a cabo la sustitución.\n"
-"   Continua hasta encontrar un error. En tal caso, podría ser un archivo\n"
-"que no contiene ninguna coincidencia con el patrón de sustitución, «5.1».\n"
-"Puede hacer un cambio para insertar «5.1» para continuar tecleando «,,»\n"
-"otra vez. La orden «:wnext» puede devolver error si está en el último\n"
+"Ahora introduce «,,», iniciando la macro. Reemplaza «5.1» con «5.2» en la\n"
+"primera línea. A continuación, ejecuta «:wnext» para guardar el archivo y\n"
+"editar el siguiente. La macro termina con «,,», iniciando la macro una vez\n"
+"más, llevando a cabo la sustitución, etc.\n"
+"   Este proceso continúa hasta encontrar un error. En este caso, podría ser un\n"
+"archivo que no contiene ninguna coincidencia con el patrón de sustitución,\n"
+"«5.1». Puede hacer un cambio para insertar «5.1» y continuar tecleando «,,»\n"
+"otra vez. O, la orden «:wnext» puede devolver error si está en el último\n"
 "archivo de la lista.\n"
-"   Cuando una macro detecta un error durante el proceso, se descarta\n"
-"el resto de la asignación. «CTRL-C» interrumpe la macro («CTRL-ins»\n"
-"en Windows).\n"
+"   Cuando una macro detecta un error durante el proceso, se descarta el resto\n"
+"de la misma. «CTRL-C» interrumpe la macro («CTRL-Ins» en Windows).\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:180
@@ -717,9 +716,9 @@ msgid ""
 "pending mode, but not in Visual mode.  First define it for all three modes, "
 "then delete it for Visual mode: >"
 msgstr ""
-"Dispone de un truco para definir una macro que funciona tanto modo Operator-"
-"pending como normal, pero no en modo visual. Primero, defina la macro para "
-"los tres modos, y después borre la macro del modo Visual: >"
+"Dispone de un truco para definir una macro que funcione tanto en modo "
+"Operator- pending como Normal, pero no en modo Visual. Primero, defina la "
+"macro para los tres modos, y después borre la macro del modo Visual: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:198
@@ -746,9 +745,9 @@ msgid ""
 "variations for different modes by now.  Be careful with this command, it "
 "can't be undone."
 msgstr ""
-"Use la orden |:mapclear| para eliminar todas las macros. Ahora puede "
-"averiguar las variantes según el modo. Tenga cuidado con esta orden, ya que "
-"su acción no se puede deshacer."
+"Use la orden |:mapclear| para eliminar todas las macros. A estas alturas "
+"puede adivinar las variantes disponibles para los distintos modos. Tenga "
+"cuidado con esta orden, ya que su acción no se puede deshacer."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:207 original/txt/usr_42.txt:111
@@ -766,8 +765,8 @@ msgid ""
 "\t:map <F8> :write <Bar> !checkin %<CR>\n"
 msgstr ""
 "La orden «:map» puede ir seguida de otra orden. Un carácter «|» separa ambas\n"
-"órdenes. Esto también significa que no puede usar un carácter «|» dentro\n"
-"de una orden «map». Para incluir uno, use <Bar> (cinco caracteres). Ejemplo: >\n"
+"órdenes. Esto también significa que no puede usar un carácter «|» dentro de\n"
+"una orden «map». Para incluir uno, use <Bar> (cinco caracteres). Ejemplo: >\n"
 ":map <F8> :write <Bar> !checkin %<CR>\n"
 
 #. type: Plain text
@@ -780,8 +779,8 @@ msgid ""
 "\t:unmap a | unmap b\n"
 "\t:unmap a| unmap b\n"
 msgstr ""
-"El mismo problema afecta a la orden «:unmap», con la adición de que debe\n"
-"tener cuidado con espacio vacío adicional al final de la línea. Estas dos\n"
+"El mismo problema afecta a la orden «:unmap», con la adición de que debe tener\n"
+"cuidado con espacios vacíos adicionales al final de la línea. Estas dos\n"
 "órdenes son diferentes: >\n"
 "\t:unmap a | unmap b\n"
 "\t:unmap a| unmap b\n"
@@ -790,7 +789,7 @@ msgstr ""
 #: original/txt/usr_40.txt:221
 msgid "The first command tries to unmap \"a \", with a trailing space."
 msgstr ""
-"La primera orden intenta eliminar la macro de «a», con un espacio adicional."
+"La primera orden intenta eliminar la macro de «a », con un espacio adicional."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:223
@@ -803,6 +802,7 @@ msgstr "Al usar un espacio en una macro, use <Space> (siete caracteres): >"
 msgid "\t:map <Space> W\n"
 msgstr "\t:map <Space> W\n"
 
+# TODO espaciador
 #. type: Plain text
 #: original/txt/usr_40.txt:227
 msgid "This makes the spacebar move a blank-separated word forward."
@@ -818,8 +818,9 @@ msgid ""
 msgstr ""
 "No es posible insertar un comentario justo antes de una macro, ya que el "
 "carácter «\"» se considera parte de la macro. Puede usar «|\"», iniciando "
-"una nueva y vacía orden con un comentario. Ejemplo: >"
+"una nueva orden, vacía, con un comentario. Ejemplo: >"
 
+# TODO espaciadora
 #. type: Plain text
 #: original/txt/usr_40.txt:233
 #, no-wrap
@@ -848,18 +849,17 @@ msgid ""
 "   An exception is when a mapping is ambiguous.  Suppose you have done two\n"
 "mappings: >\n"
 msgstr ""
-"Las abreviaturas se parecen mucho a las macros del modo Insetar. Los\n"
-"argumentos se tratan de la misma forma. La diferencia principal es la\n"
-"forma en que se ejecutan. Una abreviatura se inicia tecleando un\n"
-"carácter que no sea una palabra, a continuación de una palabra. Una\n"
-"macro se inicia al teclear el último carácter.\n"
-"   Otra diferencia es que los caracteres que usa para una abreviatura\n"
-"se insertan en el texto mientras los teclea. Al ejecutar la abreviatura,\n"
-"estos caracteres se eliminan y reemplazan por el resultado de la\n"
-"abreviatura. Al teclear los caracteres de una macro, no se inserta nada\n"
-"hasta que introduce el último carácter que lo inicia. Si se define la\n"
-"opción 'showcmd', los caracteres tecleados se muestran en la última\n"
-"línea de la ventana de Vim.\n"
+"Las abreviaturas se parecen mucho a las macros del modo Insertar. Los\n"
+"argumentos se tratan de la misma forma. La diferencia principal es la forma en\n"
+"que se ejecutan. Una abreviatura se inicia tecleando un carácter que no sea\n"
+"una palabra, a continuación de una palabra. Una macro se inicia al teclear el\n"
+"último carácter.\n"
+"   Otra diferencia es que los caracteres que usa para una abreviatura se\n"
+"insertan en el texto mientras los teclea. Al ejecutar la abreviatura, estos\n"
+"caracteres se eliminan y reemplazan por el resultado de la abreviatura. Al\n"
+"teclear los caracteres de una macro, no se inserta nada hasta que introduce el\n"
+"último carácter que la inicia. Si la opción 'showcmd' está definida, los\n"
+"caracteres tecleados se muestran en la última línea de la ventana de Vim.\n"
 "   Una excepción es cuando la macro es ambigua. Suponga que tiene\n"
 "dos macros: >\n"
 
@@ -882,11 +882,11 @@ msgid ""
 "space, for example, the first mapping is applied, resulting in \"foo\", and "
 "then the space is inserted."
 msgstr ""
-"Ahora, cuando escribe «aa», Vim no sabe si afecta a la primera o segunda "
-"macro. Espera a que se introduzca otro carácter. Si es una «a», se ejecuta "
-"la segunda macro, y cuyo resultado es «bar». Si es un espacio, por ejemplo, "
-"se ejecuta la primera macro, resultando en «foo», para después insertar el "
-"espacio."
+"Ahora, cuando escribe «aa», Vim no sabe si corresponde a la primera o a la "
+"segunda macro. Espera a que se introduzca otro carácter. Si es una «a», se "
+"ejecuta la segunda macro, cuyo resultado es «bar». Si es un espacio, por "
+"ejemplo, se ejecuta la primera macro, resultando en «foo», para después "
+"insertar el espacio."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:261
@@ -919,8 +919,8 @@ msgid ""
 "|:map-<unique>|."
 msgstr ""
 "La palabra clave <unique> se puede usar para que definir una macro nueva "
-"falle cuando ya existe. En caso contrario, una nueva macro sencillamente "
-"sobreescribe el antiguo. Consulte |:map-<unique>|."
+"falle cuando ésta ya existe. En caso contrario, una nueva macro sencillamente "
+"sobreescribe la preexistente. Consulte |:map-<unique>|."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:274
@@ -928,7 +928,7 @@ msgid ""
 "To make a key do nothing, map it to <Nop> (five characters).  This will make "
 "the <F7> key do nothing at all: >"
 msgstr ""
-"Para que una tecla no haga nada, asígnelo a <Nop> (cinco caracteres). Lo "
+"Para que una tecla no haga nada, asígnela a <Nop> (cinco caracteres). Lo "
 "siguiente hace que la tecla <F7> no tenga efecto alguno: >"
 
 #. type: Plain text
@@ -958,14 +958,13 @@ msgid ""
 msgstr ""
 "El editor Vim le permite crear sus propias órdenes. Puede ejecutar estas\n"
 "órdenes como cualquier otra orden del modo Línea de órdenes.\n"
-"   Para definir una orden, use la orden «:command» de la siguiente\n"
-"forma: >\n"
+"   Para definir una orden, use la orden «:command» de la siguiente forma: >\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:287
 #, no-wrap
 msgid "\t:command DeleteFirst 1delete\n"
-msgstr "\t:command DeleteFirst 1delete\n"
+msgstr "\t:command BorrarPrimera 1delete\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:290
@@ -973,7 +972,7 @@ msgid ""
 "Now when you execute the command \":DeleteFirst\" Vim executes \":1delete\", "
 "which deletes the first line."
 msgstr ""
-"Ahora, cuando ejecuta la orden «DeleteFirst», Vim ejecuta «:1delete», que "
+"Ahora, cuando ejecuta la orden «BorrarPrimera», Vim ejecuta «:1delete», que "
 "elimina la primera línea."
 
 #. type: Plain text
@@ -987,8 +986,8 @@ msgid ""
 msgstr ""
 "\tNota:\n"
 "\tLas órdenes definidas por el usuario deben comenzar con una letra\n"
-"\tmayúscula. No puede usar «:X», «:Next» y «:Print». ¡No puede usar el\n"
-"\tguión bajo. Puede usar dígitos, pero no se recomienda.\n"
+"\tmayúscula. No puede usar «:X», «:Next» ni «:Print». ¡No puede usar el\n"
+"\tguión bajo! Puede usar dígitos, pero no se recomienda.\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:297
@@ -1009,9 +1008,9 @@ msgid ""
 "another.  Command line completion can be used to get the full name."
 msgstr ""
 "Al igual que las órdenes integradas, las órdenes definidas por el usuario se "
-"pueden abreviar. Necesita teclear lo justo para distinguir una orden de "
-"otra. El autocompletado de línea de órdenes se puede usar para obtener el "
-"nombre completo."
+"pueden abreviar. Necesita teclear lo justo para distinguir una orden de otra. "
+"Puede usar el autocompletado de línea de órdenes para obtener el nombre "
+"completo."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:306
@@ -1026,16 +1025,16 @@ msgid ""
 "example :DeleteFirst command takes no arguments, so you could have defined "
 "it as follows: >"
 msgstr ""
-"Las órdenes definidas por el usuario aceptan una serie de argumentos. El "
-"número de argumentos se debe especificar con la opción «-nargs». Por "
-"ejemplo, la orden de ejemplo «DeleteFirst» no permite argumentos, así que lo "
-"debe definir del siguiente modo: >"
+"Las órdenes definidas por el usuario pueden tomar una serie de argumentos. El "
+"número de argumentos se debe especificar con la opción «-nargs». Por ejemplo, "
+"la orden de ejemplo «BorrarPrimera» no permite argumentos, así que la debe "
+"definir del siguiente modo: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:313
 #, no-wrap
 msgid "\t:command -nargs=0 DeleteFirst 1delete\n"
-msgstr "\t:command -nargs=0 DeleteFirst 1delete\n"
+msgstr "\t:command -nargs=0 BorrarPrimera 1delete\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:316
@@ -1081,7 +1080,7 @@ msgstr ""
 #: original/txt/usr_40.txt:330
 #, no-wrap
 msgid "\t:command -nargs=+ Say :echo \"<args>\"\n"
-msgstr "\t:command -nargs=+ Say :echo \"<args>\"\n"
+msgstr "\t:command -nargs=+ Decir :echo \"<args>\"\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:332
@@ -1092,7 +1091,7 @@ msgstr "Ahora, cuando escribe >"
 #: original/txt/usr_40.txt:334
 #, no-wrap
 msgid "\t:Say Hello World\n"
-msgstr "\t:Say Hello World\n"
+msgstr "\t:Decir Hola Mundo\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:337
@@ -1100,14 +1099,14 @@ msgid ""
 "Vim echoes \"Hello World\".  However, if you add a double quote, it won't "
 "work.  For example: >"
 msgstr ""
-"Vim muestra «Hello World». Sin embargo, no funcionará si añade una comilla "
+"Vim muestra «Hola Mundo». Sin embargo, no funcionará si añade una comilla "
 "doble. Por ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:339
 #, no-wrap
 msgid "\t:Say he said \"hello\"\n"
-msgstr "\t:Say he said \"hello\"\n"
+msgstr "\t:Decir él dijo \"hola\"\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:342
@@ -1115,26 +1114,26 @@ msgid ""
 "To get special characters turned into a string, properly escaped to use as "
 "an expression, use \"<q-args>\": >"
 msgstr ""
-"Para que los caracteres especiales se conviertan en una cadena, "
-"correctamente escapada para usarla como expresión, use «<q-args>»: >"
+"Para que los caracteres especiales se conviertan en una cadena, correctamente "
+"escapada para usarla como expresión, use «<q-args>»: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:344
 #, no-wrap
 msgid "\t:command -nargs=+ Say :echo <q-args>\n"
-msgstr "\t:command -nargs=+ Say :echo <q-args>\n"
+msgstr "\t:command -nargs=+ Decir :echo <q-args>\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:346
 msgid "Now the above \":Say\" command will result in this to be executed: >"
 msgstr ""
-"Ahora, la anterior orden «:Say» resultará en lo siguiente al ejecutarse: >"
+"Ahora, la anterior orden «:Decir» resultará en lo siguiente al ejecutarse: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:348
 #, no-wrap
 msgid "\t:echo \"he said \\\"hello\\\"\"\n"
-msgstr "\t:echo \"he said \\\"hello\\\"\"\n"
+msgstr "\t:echo \"él dijo \\\"hola\\\"\"\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:354
@@ -1146,11 +1145,11 @@ msgid ""
 "\t:command -nargs=* DoIt :call AFunction(<f-args>)\n"
 "\t:DoIt a b c\n"
 msgstr ""
-"La palabra clave <f-args> contiene la misma información que la palabra\n"
-"clave <args>, pero en un formato adecuado para usar argumentos que\n"
-"invocan funciones. Por ejemplo: >\n"
-"\t:command -nargs=* DoIt :call AFunction(<f-args>)\n"
-"\t:DoIt a b c\n"
+"La palabra clave <f-args> contiene la misma información que la palabra clave\n"
+"<args>, pero en un formato adecuado para usar como argumentos para invocación\n"
+"de funciones. Por ejemplo: >\n"
+"\t:command -nargs=* Ejecutar :call UnaFuncion(<f-args>)\n"
+"\t:Ejecutar a b c\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:356
@@ -1161,12 +1160,12 @@ msgstr "Ejecuta la siguiente orden: >"
 #: original/txt/usr_40.txt:358
 #, no-wrap
 msgid "\t:call AFunction(\"a\", \"b\", \"c\")\n"
-msgstr "\t:call AFunction(\"a\", \"b\", \"c\")\n"
+msgstr "\t:call UnaFuncion(\"a\", \"b\", \"c\")\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:361
 msgid "LINE RANGE"
-msgstr "RANGO DE LÍNEA"
+msgstr "RANGOS DE LÍNEA"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:365
@@ -1179,6 +1178,7 @@ msgstr ""
 "definiendo una orden así, debe especificar una opción «-range». A "
 "continuación puede ver los valores de esta opción:"
 
+# TODO revisar formateo en .esx
 #. type: Plain text
 #: original/txt/usr_40.txt:370
 #, no-wrap
@@ -1204,16 +1204,16 @@ msgid ""
 "defines the SaveIt command, which writes out the specified range to the file "
 "\"save_file\": >"
 msgstr ""
-"Cuando un rango se especifica, las palabras clave <line1> y <line2> obtienen "
-"el valor de la primera y última línea del rango. Por ejemplo, la siguiente "
-"orden define la orden «SaveIt», que escribe el rango especificado al archivo "
-"«save_file»: >"
+"Cuando se especifica un rango, las palabras clave <line1> y <line2> obtienen "
+"el valor de la primera y la última línea del rango. Por ejemplo, la siguiente "
+"orden define la orden «Guardalo», que escribe el rango especificado al "
+"archivo «archivo_guardado»: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:377
 #, no-wrap
 msgid "\t:command -range=% SaveIt :<line1>,<line2>write! save_file\n"
-msgstr "\t:command -range=% SaveIt :<line1>,<line2>write! save_file\n"
+msgstr "\t:command -range=% Guardalo :<line1>,<line2>write! archivo_guardado\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:380
@@ -1226,6 +1226,7 @@ msgid "Some of the other options and keywords are as follows:"
 msgstr ""
 "A continuación puede ver algunas de las otras opciones y palabras clave:"
 
+# TODO revisar formateo
 #. type: Plain text
 #: original/txt/usr_40.txt:399
 #, no-wrap
@@ -1247,8 +1248,8 @@ msgid ""
 "\t-buffer\t\t\tThe command is only available for the current\n"
 "\t\t\t\tbuffer.\n"
 msgstr ""
-"\t-count={número}\t\tLa orden acepta un cómputo cuyo valor\n"
-"\t\t\t\tpredeterminado es {número}. El cómputo resultante\n"
+"\t-count={número}\t\tLa orden acepta un número cuyo valor\n"
+"\t\t\t\tpredeterminado es {número}. El número resultante\n"
 "\t\t\t\tse puede usar con la palabra clave <count>.\n"
 "\t-bang\t\t\tPuede usar «!».  Si está presente, usar <bang>\n"
 "\t\t\t\tresultará en «!».\n"
@@ -1289,8 +1290,8 @@ msgid ""
 "\t:command -nargs=+ Say :echo \"<args>\"\n"
 "\t:command! -nargs=+ Say :echo <q-args>\n"
 msgstr ""
-"\t:command -nargs=+ Say :echo \"<args>\"\n"
-"\t:command! -nargs=+ Say :echo <q-args>\n"
+"\t:command -nargs=+ Decir :echo \"<args>\"\n"
+"\t:command! -nargs=+ Decir :echo <q-args>\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:413
@@ -1305,7 +1306,7 @@ msgstr ""
 #: original/txt/usr_40.txt:415
 #, no-wrap
 msgid "\t:delcommand SaveIt\n"
-msgstr "\t:delcommand SaveIt\n"
+msgstr "\t:delcommand Guardalo\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:417
@@ -1329,11 +1330,12 @@ msgid "More details about all this in the reference manual: |user-commands|."
 msgstr ""
 "Puede encontrar más detalles en el manual de referencia: |user-commands|."
 
+# TODO revisar qué decidimos hacer con autocommands
 #. type: Plain text
 #: original/txt/usr_40.txt:426
 #, no-wrap
 msgid "*40.3*\tAutocommands\n"
-msgstr "*40.3*\tAutocommands\n"
+msgstr "*40.3*\tÓrdenes automáticas\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:434
@@ -1348,12 +1350,11 @@ msgid ""
 "trouble.\n"
 msgstr ""
 "Una orden automática (Autocommand) es una orden a ejecutar en respuesta otro\n"
-"evento, un archivo siendo leído y editado o un cambio en un búfer, por\n"
-"ejemplo. Por ejemplo, Vim puede editar archivos comprimidos a través de las\n"
-"órdenes automáticas.\n"
-"La extensión |gzip| hace uso de esto.\n"
-"   Las órdenes automáticas son muy potentes. Úselos con cuidado, y le ayudarán\n"
-"a disminuir el número de órdenes que introduce. Úselos sin cuidado, y\n"
+"evento, como por ejemplo la lectura o edición de un archivo, o un cambio en un\n"
+"búfer.  Por ejemplo, Vim puede editar archivos comprimidos a través de las\n"
+"órdenes automáticas.  La extensión |gzip| hace uso de esto.\n"
+"   Las órdenes automáticas son muy potentes. Úselas con cuidado, y le ayudarán\n"
+"a disminuir el número de órdenes que introduce. Úselas sin cuidado, y\n"
 "generarán un gran número de problemas.\n"
 
 #. type: Plain text
@@ -1363,7 +1364,7 @@ msgid ""
 "is written.  First you define a function: >"
 msgstr ""
 "Suponga que desea reemplazar una marca de tiempo al final del archivo cada "
-"vez que se escriba. Primero, define una función: >"
+"vez que lo guarde. Primero, defina una función: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:442
@@ -1374,7 +1375,7 @@ msgid ""
 "\t:  read !date\n"
 "\t:endfunction\n"
 msgstr ""
-"\t:function DateInsert()\n"
+"\t:function InsertarFecha()\n"
 "\t:  $delete\n"
 "\t:  read !date\n"
 "\t:endfunction\n"
@@ -1386,13 +1387,13 @@ msgid ""
 "written.  This will make that happen: >"
 msgstr ""
 "Desea que esta función se invoque justo antes de guardar un archivo.  Lo "
-"siguiente lo logra este objetivo: >"
+"siguiente logra este objetivo: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:447
 #, no-wrap
 msgid "\t:autocmd FileWritePre *  call DateInsert()\n"
-msgstr "\t:autocmd FileWritePre *  call DateInsert()\n"
+msgstr "\t:autocmd FileWritePre *  call InsertarFecha()\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:455
@@ -1407,19 +1408,19 @@ msgid ""
 "   The general form of the :autocmd command is as follows: >\n"
 msgstr ""
 "«FileWritePre» es el evento que activa esta orden automática. Justo\n"
-"antes de (pre) guardar un archivo. El carácter «*» es el patrón con el que\n"
+"antes (pre) de guardar un archivo. El carácter «*» es el patrón con el que\n"
 "comparar el nombre del archivo. En este caso, coincide con todos los\n"
 "archivos.\n"
-"   Si activa esta orden, al ejecutar «:write» Vim comprobará cualquier\n"
-"orden automática que coincida con «FileWritePre», ejecutándolo,\n"
-"para finalizar realizando la acción «:write».\n"
+"   Si activa esta orden, al ejecutar «:write» Vim comprobará todas las órdenes\n"
+"automáticas «FileWritePre» para las que haya coincidencia, ejecutándolas, para\n"
+"finalizar realizando la acción «:write».\n"
 "  A continuación tiene la forma habitual de la orden «:autocmd»: >\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:457
 #, no-wrap
 msgid "\t:autocmd [group] {events} {file_pattern} [nested] {command}\n"
-msgstr "\t:autocmd [grupo] {eventos} {patrón_archivo} [anidado] {orden}\n"
+msgstr "\t:autocmd [group] {eventos} {patrón_archivo} [nested] {orden}\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:465
@@ -1433,14 +1434,14 @@ msgid ""
 "The optional [nested] flag allows for nesting of autocommands (see below), and\n"
 "finally, {command} is the command to be executed.\n"
 msgstr ""
-"El elemento [grupo] es opcional. Se usa al gestionar e invocar las órdenes\n"
-"(más información más adelante). El parámetro {eventos} es una lista separada\n"
-" por comas de eventos que inician la orden.\n"
+"El elemento [group] (grupo) es opcional. Se usa al gestionar e invocar las\n"
+"órdenes (más información más adelante). El parámetro {eventos} es una lista\n"
+"separada por comas de eventos que inician la orden.\n"
 "  {patrón_archivo} es un nombre de archivo, a menudo con comodines. Por\n"
 "ejemplo, usar «*.txt» provoca que la orden automática afecte a todos los\n"
-"archivos cuyo nombre termina en «.txt».\n"
-"La elemento opcional [anidado] permite anidar órdenes automáticas (a\n"
-"continuación), y, por último, {orden} es la orden a ejecutar.\n"
+"archivos cuyo nombre termina en «.txt».  El elemento opcional [nested]\n"
+"(anidado) permite anidar órdenes automáticas (ver a continuación), y, por\n"
+"último, {orden} es la orden a ejecutar.\n"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:468
@@ -1455,11 +1456,11 @@ msgid ""
 "example, you know that \"*.gsm\" files are GNU assembly language.  To get "
 "the syntax file right, define this autocommand: >"
 msgstr ""
-"Uno de los eventos más útiles es «BufReadPost». Se inicia después de editar "
-"un nuevo archivo. Se usa habitualmente para definir valores para opciones. "
-"Por ejemplo, sabe que los archivos «.gsm» están escritos en lenguaje "
-"ensamblador de GNU. Especifique esta orden para obtener la adecuada sintaxis "
-"de archivo: >"
+"Uno de los eventos más útiles es «BufReadPost». Se inicia después de iniciar "
+"la edición de un nuevo archivo. Se usa habitualmente para definir valores "
+"para opciones.  Por ejemplo, sabe que los archivos «.gsm» están escritos en "
+"lenguaje ensamblador de GNU. Especifique esta orden para obtener la sintaxis "
+"de archivo adecuada: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:475
@@ -1475,10 +1476,10 @@ msgid ""
 "certain type of file is edited.  For example, to load a list of "
 "abbreviations for text files: >"
 msgstr ""
-"Si Vim es capaz de detectar el tipo de archivo, definirá la opción "
-"'filetype' automáticamente. Los siguiente incia el evento «Filetype». Puede "
-"usarlo para iniciar una acción al editar un tipo de archivo en particular. "
-"Por ejemplo, para cargar una lista de abreviaturas de archivos de texto: >"
+"Si Vim es capaz de detectar el tipo de archivo, definirá la opción 'filetype' "
+"automáticamente. Esto provoca el evento «Filetype». Puede usarlo para iniciar "
+"una acción al editar un tipo de archivo en particular.  Por ejemplo, para "
+"cargar una lista de abreviaturas para archivos de texto: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:482
