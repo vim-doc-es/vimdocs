@@ -185,17 +185,15 @@ msgstr "CARACTERES ESPECIALES"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:2
-#, fuzzy, no-wrap
-#| msgid "*usr_01.txt*\tFor Vim version 7.3.  Last change: 2008 May 07\n"
+#, no-wrap
 msgid "*usr_42.txt*\tFor Vim version 7.3.  Last change: 2008 May 05\n"
-msgstr "*usr_01.esx*\tPara Vim versión 7.3.  Último cambio: 7/6/2008\n"
+msgstr "*usr_01.esx*\tPara Vim versión 7.3.  Último cambio: 5/5/2008\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:6
-#, fuzzy, no-wrap
-#| msgid "\t\t\t      About the manuals\n"
+#, no-wrap
 msgid "\t\t\t      Add new menus\n"
-msgstr "\t\t\t    Acerca de los manuales\n"
+msgstr "\t\t\t    Añadir nuevos menús\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:11
@@ -204,44 +202,43 @@ msgid ""
 "the GUI.  You can define your own menu entries to make certain commands "
 "easily accessible.  This is for mouse-happy users only."
 msgstr ""
+"A estas alturas ya debe saber que Vim es muy flexible. Esta flexibilidad se "
+"extiende a los menús disponibles en la interfaz gráfica. Puede definir sus "
+"propias entradas de menú para que ciertas órdenes sean más fáciles de "
+"acceder.  Esto es principalmente para usuarios asiduos del ratón."
 
 #. type: Plain text
 #: original/txt/usr_42.txt:16
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|42.1|\tIntroduction\n"
 "|42.2|\tMenu commands\n"
 "|42.3|\tVarious\n"
 "|42.4|\tToolbar and popup menus\n"
 msgstr ""
-"|usr_42.txt|  Add new menus\n"
-"\t\t|42.1|\tIntroduction\n"
-"\t\t|42.2|\tMenu commands\n"
-"\t\t|42.3|\tVarious\n"
-"\t\t|42.4|\tToolbar and popup menus\n"
+"|42.1|\tIntroducción\n"
+"|42.2|\tÓrdenes para menús\n"
+"|42.3|\tVarios\n"
+"|42.4|\tBarra de herramientas y menús contextuales\n"
 
+# TODO poner nombre de siguiente cap.
 #. type: Plain text
 #: original/txt/usr_42.txt:20
-#, fuzzy, no-wrap
-#| msgid ""
-#| "     Next chapter: |usr_23.txt|  Editing other files\n"
-#| " Previous chapter: |usr_21.txt|  Go away and come back\n"
-#| "Table of contents: |usr_toc.txt|\n"
+#, no-wrap
 msgid ""
 "     Next chapter: |usr_43.txt|  Using filetypes\n"
 " Previous chapter: |usr_41.txt|  Write a Vim script\n"
 "Table of contents: |usr_toc.txt|\n"
 msgstr ""
-" Capítulo siguiente: |usr_23.esx|  Editar otros archivos\n"
-"  Capítulo anterior: |usr_21.est|  Abandonar el editor y volver\n"
-"Tabla de contenidos: |usr_toc.est|\n"
+" Capítulo siguiente: |usr_43.esx|  Using filetypes\n"
+"  Capítulo anterior: |usr_41.esx|  Escribir scripts para Vim\n"
+"Tabla de contenidos: |usr_toc.esx|\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:23
-#, fuzzy, no-wrap
-#| msgid "*23.3*\tEncryption\n"
+#, no-wrap
 msgid "*42.1*\tIntroduction\n"
-msgstr "*23.3*\tCifrado\n"
+msgstr "*42.1*\tIntroducción\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:29
@@ -253,13 +250,19 @@ msgid ""
 "   To define a menu item, use the \":menu\" command.  The basic form of this\n"
 "command is as follows: >\n"
 msgstr ""
+"Los menús que Vim usa están definidos en el archivo «$VIMRUNTIME/menu.vim». Si\n"
+"desea escribir sus propios menús, es conveniente que revise en primer lugar\n"
+"dicho archivo.\n"
+"   Para definir un elemento de un menú, use la orden «:menu». La forma básica\n"
+"de esta orden es la siguiente: >\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:31
 #, no-wrap
 msgid "\t:menu {menu-item} {keys}\n"
-msgstr ""
+msgstr "\t:menu {elemento-menú} {teclas}\n"
 
+# TODO comprobar que el menú esté efectivamente traducido de esta forma
 #. type: Plain text
 #: original/txt/usr_42.txt:35
 msgid ""
@@ -267,13 +270,18 @@ msgid ""
 "{menu-item} is \"File.Save\", which represents the item \"Save\" under the "
 "\"File\" menu.  A dot is used to separate the names.  Example: >"
 msgstr ""
+"La parte {elemento-menú} describe en qué posición del menú se ha de ubicar el "
+"elemento. Un {elemento-menú} típico es «Archivo.Guardar», que representa al "
+"elemento «Guardar» en el menú «Archivo». Se usa un punto para separar los "
+"nombres. Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:37
 #, no-wrap
 msgid "\t:menu File.Save  :update<CR>\n"
-msgstr ""
+msgstr "menu Archivo.Guardar  :update<CR>\n"
 
+# TODO texto llano/plano/simple
 #. type: Plain text
 #: original/txt/usr_42.txt:48
 #, no-wrap
@@ -289,11 +297,22 @@ msgid ""
 "you would have typed them.  Thus in Insert mode, when {keys} is plain text,\n"
 "that text is inserted.\n"
 msgstr ""
+"La orden «:update» escribe el archivo a disco si éste ha sido modificado.\n"
+"   Puede añadir otro nivel: «Editar.Opciones.Shiftwidth» define un menú\n"
+"secundario «Opciones» dentro del menú «Editar», con un elemento «Shiftwidth».\n"
+"Puede usar niveles aún más profundos. No use en exceso esta funcionalidad,\n"
+"porque al hacerlo tendrá que mover bastante el ratón para usar el elemento del\n"
+"menú.\n"
+"   La orden «:menu» es muy similar a la orden «:map»: el lado izquierdo indica\n"
+"cómo se activa el elemento y el lado derecho define los caracteres que se\n"
+"ejecutan. {teclas} corresponde a caracteres; éstos se usan tal como si los\n"
+"hubiera introducido manualmente. Así que en modo Insertar, cuando {teclas}\n"
+"corresponde a texto plano, se inserta dicho texto.\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:51
 msgid "ACCELERATORS"
-msgstr ""
+msgstr "ACELERADORES"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:59
@@ -307,22 +326,32 @@ msgid ""
 "you will not know which of the two will actually be used.  Vim doesn't warn\n"
 "you for this.\n"
 msgstr ""
+"Para definir un acelerador se usa el carácter et (&). Por ejemplo, es posible\n"
+"usar Alt-A para seleccionar «Archivo» y G para seleccionar «Guardar». (Sin\n"
+"embargo, ¡la opción 'winaltkeys' puede deshabilitar este comportamiento!) Por\n"
+"lo tanto, el {elemento-menú} queda como \"&Archivo.&Guardar\". Los caracteres\n"
+"aceleradores aparecerán subrayados en el menú.\n"
+"   Debe asegurarse de que cada tecla sea usada una sola vez en cada menú. De\n"
+"no hacerlo no sabrá cuál de los dos menús se usará. Vim no muestra ninguna\n"
+"advertencia cuando esto pasa.\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:62
 msgid "PRIORITIES"
-msgstr ""
+msgstr "PRIORIDADES"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:64
 msgid "The actual definition of the File.Save menu item is as follows: >"
 msgstr ""
+"La definición real del elemento de menú «Archivo.Guardar» es similar a la "
+"siguiente: >"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:66
 #, no-wrap
 msgid "\t:menu 10.340 &File.&Save<Tab>:w  :confirm w<CR>\n"
-msgstr ""
+msgstr "\t:menu 10.340 &Archivo.&Guardar<Tab>:w  :confirm w<CR>\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:72
@@ -334,22 +363,30 @@ msgid ""
 "higher numbers to the right.\n"
 "   These are the priorities used for the standard menus:\n"
 msgstr ""
+"El número 10.340 es el número de prioridad. El editor lo usa para decidir\n"
+"dónde ubicar el elemento de menú. El primer número (10) indica la posición en\n"
+"la barra de menú. Los menús con números más pequeños se ubican a la izquierda,\n"
+"los más grandes a la derecha.\n"
+"   Éstas son las prioridades de los menús estándar:\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:74
 #, no-wrap
 msgid "\t  10\t20     40     50      60       70\t\t9999\n"
-msgstr ""
+msgstr "\t  10\t20     40     50      60       70\t\t9999\n"
 
+# TODO revisar formateo
 #. type: Plain text
 #: original/txt/usr_42.txt:78
-#, fuzzy, no-wrap
-#| msgid "------------------------------------------------------------------------------\n"
+#, no-wrap
 msgid ""
 "\t+------------------------------------------------------------+\n"
 "\t| File\tEdit  Tools  Syntax  Buffers  Window\t\tHelp |\n"
 "\t+------------------------------------------------------------+\n"
-msgstr "------------------------------------------------------------------------------\n"
+msgstr ""
+"\t+------------------------------------------------------------+\n"
+"\t| Archivo\tEditar  Herramientas  Sintaxis  Búfers  Ventana\t\tAyuda |\n"
+"\t+------------------------------------------------------------+\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:84
@@ -361,7 +398,13 @@ msgid ""
 "pull-down menu.  Lower numbers go on top, higher number on the bottom.  These\n"
 "are the priorities in the File menu:\n"
 msgstr ""
+"Tenga en cuenta que el menú «Ayuda» tiene un número muy grande, para hacer que\n"
+"aparezca a la extrema derecha.\n"
+"   El segundo número determina la ubicación del elemento dentro del menú\n"
+"desplegable. Los números pequeños aparecen arriba, los números más grandes\n"
+"abajo. Éstas son la prioridades del menú «Archivo»:\n"
 
+# TODO comprobar formateo
 #. type: Plain text
 #: original/txt/usr_42.txt:102
 #, no-wrap
@@ -384,6 +427,23 @@ msgid ""
 "\t    10.620\t|Exit\t\t  |\n"
 "\t\t\t+-----------------+\n"
 msgstr ""
+"\t\t\t+-----------------+\n"
+"\t    10.310\t|Abrir...\t  |\n"
+"\t    10.320\t|Abrir en otra ventana...\t  |\n"
+"\t    10.325\t|Nuevo\t\t  |\n"
+"\t    10.330\t|Cerrar\t\t  |\n"
+"\t    10.335\t|---------------- |\n"
+"\t    10.340\t|Guardar\t\t  |\n"
+"\t    10.350\t|Guardar como...\t  |\n"
+"\t    10.400\t|---------------- |\n"
+"\t    10.410\t|Mostrar diferencias como  |\n"
+"\t    10.420\t|Mostrar parcheado por |\n"
+"\t    10.500\t|---------------- |\n"
+"\t    10.510\t|Imprimir\t\t  |\n"
+"\t    10.600\t|---------------- |\n"
+"\t    10.610\t|Guardar y salir\t  |\n"
+"\t    10.620\t|Salir\t\t  |\n"
+"\t\t\t+-----------------+\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:108
