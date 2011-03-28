@@ -455,6 +455,11 @@ msgid ""
 "   When you create a submenu, you can add another \".number\" to the priority.\n"
 "Thus each name in {menu-item} has its priority number.\n"
 msgstr ""
+"Tenga en cuenta que hay saltos en la numeración. Es allí donde puede ubicar\n"
+"sus propios elementos de menú, si así lo desea (usualmente es mejor no alterar\n"
+"los menús estándar y crear un nuevo menú para sus elementos.)\n"
+"  Cuando crea un menú secundario, puede añadir otro «.número» a la prioridad.\n"
+"De esta forma cada nombre en {elemento-menú} obtiene un número de prioridad.\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:116
@@ -464,12 +469,17 @@ msgid ""
 "space or tabs in the name, you either use the <> notation (<Space> and "
 "<Tab>, for instance) or use the backslash (\\) escape. >"
 msgstr ""
+"El {elemento-menú} de este ejemplo es \"&Archivo.&Guardar<Tab>:w\". Esto "
+"llama la atención sobre un punto importante: {elemento-menú} debe ser una "
+"sola palabra. Si desea usar puntos, espacios o tabuladores en el nombre, debe "
+"usar la notación <> (por ejemplo, <Space> y <Tab>) o escapar estos caracteres "
+"usando una barra inversa (\\). >"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:118
 #, no-wrap
 msgid "\t:menu 10.305 &File.&Do\\ It\\.\\.\\. :exit<CR>\n"
-msgstr ""
+msgstr "\t:menu 10.305 &Archivo.&Ejecutar\\ Tarea\\.\\.\\. :exit<CR>\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:121
@@ -477,6 +487,8 @@ msgid ""
 "In this example, the name of the menu item \"Do It...\" contains a space and "
 "the command is \":exit<CR>\"."
 msgstr ""
+"En este ejemplo, el nombre del elemento del menú \"Ejecutar Tarea\" contiene "
+"un espacio, y la orden es \":exit<CR>\"."
 
 #. type: Plain text
 #: original/txt/usr_42.txt:127
@@ -487,11 +499,17 @@ msgid ""
 "name used is \"&File.&Save<Tab>:w\".  Thus the menu name is \"File.Save\" "
 "and the hint is \":w\"."
 msgstr ""
+"El carácter <Tab> se usa en el nombre de un menú para separar la definición "
+"del nombre del mismo de la parte que se usa como indicación al usuario. La "
+"parte luego del <Tab> se muestra justificada a la derecha en el menú. El "
+"nombre usado en el menú «Archivo.Guardar» es \"&Archivo.&Guardar<Tab>:w\". De "
+"acuerdo a lo anterior, el nombre del menú es «Archivo.Guardar» y la "
+"indicación es «:w»."
 
 #. type: Plain text
 #: original/txt/usr_42.txt:130
 msgid "SEPARATORS"
-msgstr ""
+msgstr "SEPARADORES"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:137
@@ -504,19 +522,24 @@ msgid ""
 "   The command from a separator will never be executed, but you have to define\n"
 "one anyway.  A single colon will do.  Example: >\n"
 msgstr ""
+"Las líneas o separadores, usadas para agrupar elementos de menú relacionados,\n"
+"se definen usando un nombre que empieza y termina con '-'. Por ejemplo\n"
+"\"-sep-\". Al usar varios separadores debe dárseles nombres diferentes.\n"
+"Aparte de esto los nombres particulares no tienen importancia.\n"
+"   La orden de un separador nunca será ejecutada, pero hay que definirla de\n"
+"todos modos. Un «:» es suficiente. Por ejemplo: >\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:139
 #, no-wrap
 msgid "\t:amenu 20.510 Edit.-sep3- :\n"
-msgstr ""
+msgstr "\t:amenu 20.510 Editar.-sep3- :\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:142
-#, fuzzy, no-wrap
-#| msgid "*21.2*\tExecuting shell commands\n"
+#, no-wrap
 msgid "*42.2*\tMenu commands\n"
-msgstr "*21.2*\tEjecutar órdenes de consola\n"
+msgstr "*42.2*\tÓrdenes de menú\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:145
@@ -524,6 +547,9 @@ msgid ""
 "You can define menu items that exist for only certain modes.  This works "
 "just like the variations on the \":map\" command:"
 msgstr ""
+"Puede definir elementos de menús que sólo existen para ciertos modos. El "
+"funcionamiento de esta característica es idéntico al proporcionado por las "
+"variaciones de la orden «:map»:"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:154
@@ -538,6 +564,14 @@ msgid ""
 "\t:cmenu\t\tCommand-line mode\n"
 "\t:amenu\t\tAll modes\n"
 msgstr ""
+"\t:menu\t\tModos Normal, Visual y Operator-pending\n"
+"\t:nmenu\t\tModo Normal\n"
+"\t:vmenu\t\tModo Visual\n"
+"\t:omenu\t\tModo Operator-pending\n"
+"\t:menu!\t\tModo Insertar y Línea de órdenes\n"
+"\t:imenu\t\tModo Insertar\n"
+"\t:cmenu\t\tModo Línea de órdenes\n"
+"\t:amenu\t\tTodos los modos existentes\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:157
@@ -545,13 +579,13 @@ msgid ""
 "To avoid that the commands of a menu item are being mapped, use the command "
 "\":noremenu\", \":nnoremenu\", \":anoremenu\", etc."
 msgstr ""
+"Para evitar que las órdenes de un elemento en un menú se usen en una macro, "
+"use las órdenes «:noremenu», «:nnoremenu», «:anoremenu», etc."
 
 #. type: Plain text
 #: original/txt/usr_42.txt:160
-#, fuzzy
-#| msgid "USING A COUNT"
 msgid "USING :AMENU"
-msgstr "USAR UN MULTIPLICADOR"
+msgstr "USO DE :AMENU"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:167
@@ -564,11 +598,17 @@ msgid ""
 ">\n"
 "\t:amenu  90.100 Mine.Find\\ Word  *\n"
 msgstr ""
+"La orden «:amenu» es ligeramente diferente. Asume que las {teclas} que se le\n"
+"indican van a ser ejecutadas en modo Normal. Cuando Vim se encuentra en modo\n"
+"Insertar o Visual, Vim debe primero volver al modo Normal. «:amenu» inserta un\n"
+"CTRL-C o un CTRL-O por usted. Por ejemplo, si usa esta orden: >\n"
+"\n"
+"\t:amenu  90.100 Mío.Buscar\\ Palabra  *\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:169
 msgid "Then the resulting menu commands will be:"
-msgstr ""
+msgstr "Las órdenes de menú resultantes serán:"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:175
@@ -580,6 +620,11 @@ msgid ""
 "\tInsert mode:\t\tCTRL-O *\n"
 "\tCommand-line mode:\tCTRL-C *\n"
 msgstr ""
+"\tModo Normal:\t\t*\n"
+"\tModo Visual:\t\tCTRL-C *\n"
+"\tModo Operator-pending:\tCTRL-C *\n"
+"\tModo Insertar:\t\tCTRL-O *\n"
+"\tModo Línea de órdenes:\tCTRL-C *\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:181
@@ -591,7 +636,13 @@ msgid ""
 "   CTRL-O only works for one command.  If you need to use two or more\n"
 "commands, put them in a function and call that function.  Example: >\n"
 msgstr ""
+"En el modo Línea de órdenes CTRL-C descarta la orden que se haya escrito. En\n"
+"los modos Visual y Operator-pending CTRL-C saldrá del modo. En el modo\n"
+"Insertar CTRL-O ejecutará la orden y volverá a modo Insertar.\n"
+"   CTRL-O sólo funciona para una orden. Si necesita usar dos o más órdenes,\n"
+"póngalas en una función, e invóquela. Ejemplo: >\n"
 
+# TODO comprobar que los menús permitan unicode
 #. type: Plain text
 #: original/txt/usr_42.txt:187
 #, no-wrap
@@ -602,6 +653,11 @@ msgid ""
 "\t:  1/^Code\n"
 "\t:endfunction\n"
 msgstr ""
+"\t:amenu  Mío.Siguiente\\ Archivo  :call <SID>SiguienteArchivo()<CR>\n"
+"\t:function <SID>SiguienteArchivo()\n"
+"\t:  next\n"
+"\t:  1/^Código\n"
+"\t:endfunction\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:193
@@ -613,11 +669,17 @@ msgid ""
 "function local to the current Vim script file.  This avoids problems when a\n"
 "function with the same name is defined in another script file.  See |<SID>|.\n"
 msgstr ""
+"Esta entrada de menú pasa al siguiente archivo en la lista de argumentos\n"
+"usando «:next». Luego busca la línea que empieza con «Código».\n"
+"   El <SID> antepuesto al nombre de la función es el ID del script. Este hace\n"
+"que la función sea local al script en el cual es definida. Esto evita\n"
+"problemas si se define una función con el mismo nombre en otro archivo de\n"
+"script. Véase |<SID>|.\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:196
 msgid "SILENT MENUS"
-msgstr ""
+msgstr "MENÚS SILENCIOSOS"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:203
