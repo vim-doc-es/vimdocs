@@ -148,7 +148,7 @@ estas líneas, en el orden en el que las ha copiado.
 La orden «:substitute» le permite ejecutar sustituciones de cadenas de
 caracteres en un rango de líneas. La forma general es la siguiente: >
 
-	:[rango]substitute/de/a/[marcas]
+	:[rango]substitute/de/a/[opciones]
 
 Esta orden cambia la cadena «de» por la cadena «a» en las líneas
 especificadas con [rango]. Por ejemplo, puede cambiar «profesor» por
@@ -174,8 +174,8 @@ a esta:
 
 	El maestro Pinilla ha criticado hoy al profesor Burgos. ~
 
-Para cambiar todas palabras que aparezcan en la línea deberá usar la marca g
-(global). La orden: >
+Para cambiar todas palabras que aparezcan en la línea deberá usar la opción
+g (global). La orden: >
 
 	:%s/profesor/maestro/g
 
@@ -183,7 +183,7 @@ da como resultado (ejecutándolo sobre la línea original):
 
 	El maestro Pinilla ha criticado hoy al maestro Burgos. ~
 
-Otras marcas incluyen p (print = imprimir), que hace la orden «:s» muestre
+Otras opciones incluyen p (print = imprimir), que hace la orden «:s» muestre
 en pantalla la última línea que cambió. La «c» (confirm = confirmar) le dice
 a «:s» que pida confirmación antes que se ejecute cada
 sustitución. Introduzca lo siguiente: >
@@ -603,8 +603,8 @@ lo que hace y quiere sobreescribirlo, añada «!»: >
 	:.,$write! tempo
 
 CUIDADO: El «!» debe ponerse justo después de la orden «:write», sin el
-espacio en blanco. En caso contrario se convierte en un ordena filtro, el
-cuál se explica en el capítulo siguiente.
+espacio en blanco. En caso contrario, se convierte en una orden de filtro,
+el cuál se explica en el capítulo siguiente.
 
 
 AÑADIR A UN ARCHIVO
@@ -789,8 +789,8 @@ decirle a Vim dónde debería poner las líneas: >
 
 Esto inserta la hora y fecha actuales en formato UTC en la primera línea del
 archivo. (Bueno, si tienes una orden «date» que acepta el argumento «-u».)
-Observe la diferencia de usar «!!date»: esto reemplazó una línea, mientras
-que «:read !date» insertó una línea.
+Tenga en cuenta la diferencia de usar «!!date»; esto reemplazó una línea,
+mientras que «:read !date» insertó una línea.
 
 
 PASAR TEXTO A UNA ORDEN

@@ -27,7 +27,7 @@ de ellos, por lo que éste es un capítulo largo.
 |41.15|	Escribir bibliotecas
 |41.16|	Distribuir scripts de Vim
 
- Capítulo siguiente: |usr_42.esx|  Add new menus
+ Capítulo siguiente: |usr_42.esx|  Añadir menús nuevos
   Capítulo anterior: |usr_40.esx|  Crear órdenes nuevas
 Tabla de contenidos: |usr_toc.txt|
 
@@ -121,9 +121,9 @@ ceros al comienzo de un número decimal, ¡será interpretado como un octal!
 	:echo 0x7f 036
 <	127 30 ~
 
-Se pueden obtener números negativos añadiéndoles un signo de resta. Esto funciona
-también para números octales y hexadecimales. El signo menos también se usa
-para la substracción. Compare lo siguiente con el ejemplo anterior: >
+Se pueden obtener números negativos añadiéndoles un signo de resta. Esto
+funciona también para números octales y hexadecimales. El signo menos también
+se usa para la substracción. Compare lo siguiente con el ejemplo anterior: >
 
 	:echo 0x7f -036
 <	97 ~
@@ -214,7 +214,7 @@ intenta esto: >
 
 	:if !exists(s:cuenta_llamadas)
 
-el valor de «s:cuenta_llamadas» se usará como el nombre de variable que
+El valor de «s:cuenta_llamadas» se usará como el nombre de variable que
 exists() revisará. Ése no es el efecto esperado.
    El símbolo de exclamación ! niega un valor. Cuando un valor es verdadero,
 se vuelve falso. Cuando es falso, se vuelve verdadero. Puede leer este símbolo
@@ -496,10 +496,10 @@ Ejemplo: >
 
 	:while contador < 40
 	:  call hacer_algo()
-	:  if bandera_saltar
+	:  if opción_omitir
 	:    continue
 	:  endif
-	:  if bandera_terminado
+	:  if opción_terminado
 	:    break
 	:  endif
 	:  sleep 50m
@@ -544,8 +544,8 @@ Se mueve hasta la primera línea y formatea todas las líneas usando el operador
 	:execute "normal " . ordenes_modo_normal
 
 La variables «ordenes_modo_normal» debe contener órdenes para el modo Normal.
-   Asegúrese de que el argumento para «:normal» es una orden completa. De no
-ser así, Vim llegará al final del argumento e interrumpirá la orden. Por
+   Asegúrese de que el argumento para «:normal» es una orden completa. En caso
+contrario, Vim llegará al final del argumento e interrumpirá la orden. Por
 ejemplo, si inicia el modo Insertar, debe salir del mismo. Lo siguiente
 funciona adecuadamente: >
 
@@ -580,7 +580,7 @@ entre paréntesis, separados por comas. Ejemplo: >
 
 Se invoca a la función search(), con los argumentos «Fecha: » y «W». La
 función search() usa su primer argumento como patrón de búsqueda y el
-segundo como una serie de banderas. La bandera «W» hace que la búsqueda
+segundo como una serie de opciones. La opción «W» hace que la búsqueda
 termine al alcanzar el final del archivo.
 
 También es posible invocar funciones en expresiones.  Ejemplo: >
@@ -595,7 +595,7 @@ la línea en la que se encuentra el cursor.
    La función substitute() tiene un comportamiento similar al de la orden
 «:substitute». El primer argumento es la cadena de texto sobre la cual operar,
 el segundo es el patrón de búsqueda, el tercero la cadena de reemplazo. El
-último argumento se corresponde con las banderas para la búsqueda.
+último argumento se corresponde con las opciones de búsqueda.
    La función setline() reemplaza la línea que se especifique en el primer
 argumento, con la cadena que se pase en el segundo argumento. En este ejemplo
 se reemplaza a la línea bajo el cursor con el resultado de substitute(). El
@@ -671,7 +671,8 @@ Manipulación de Listas:					*list-functions*
 	join()			une los elementos de una Lista en una cadena
 	range()			retorna una Lista con una secuencia de números
 	string()		representación de una Lista en una cadena
-	call()			llama una función con una Lista como argumentos
+	call()			invoca una función con una Lista como
+				argumentos
 	index()			índice de un valor en una Lista
 	max()			valor máximo en una Lista
 	min()			valor mínimo en una Lista
@@ -906,12 +907,12 @@ Corrección ortográfica:					*spell-functions*
 				sugeridas
 	soundfold()		retorna el homófono de una palabra
 
-Historia:					*history-functions*
-	histadd()		añade un elemento a la historia
-	histdel()		elimina un elemento a la historia
-	histget()		obtiene un elemento a la historia
-	histnr()		obtiene el índice más grande de la lista de una
-				historia
+Historial:					*history-functions*
+	histadd()		añade un elemento a la historial
+	histdel()		elimina un elemento al historial
+	histget()		obtiene un elemento al historial
+	histnr()		obtiene el índice más grande de la lista de un
+				historial
 
 Interacción:					*interactive-functions*
 	browse()		despliega un diálogo de selección de archivos
@@ -946,8 +947,8 @@ Servidor Vim:					*server-functions*
 	remote_peek()		comprueba si hay respuestas de un servidor Vim
 	remote_read()		lee una respuesta de un servidor Vim
 	foreground()		desplaza la ventana de Vim a primer plano
-	remote_foreground()	desplaza la ventana de un servidor Vim a primer
-				plano
+	remote_foreground()	desplaza la ventana de un servidor Vim a
+				primer plano
 
 Tamaño y posición de ventanas:			*window-size-functions*
 	winheight()		obtiene la altura de una ventana específica
@@ -979,8 +980,8 @@ Varios:					*various-functions*
 	getpid()		obtiene el ID de proceso de Vim
 
 	libcall()		llama a una función en una biblioteca externa
-	libcallnr()		idéntica, pero devuelve un número en vez de una
-				cadena
+	libcallnr()		idéntica, pero devuelve un número en vez de
+				una cadena
 
 	getreg()		obtiene el contenido de un registro
 	getregtype()		obtiene el tipo de un registro
@@ -1218,8 +1219,8 @@ el nombre de una función en una referencia a la misma: >
 <	¡Mal! ~
 
 Tenga en cuenta que el nombre de la variable que contiene la referencia a la
-función debe empezar con una letra mayúscula. En caso contrario es posible que
-se confunda con el nombre de una de las funciones integradas de Vim.
+función debe empezar con una letra mayúscula. En caso contrario, es posible
+que se confunda con el nombre de una de las funciones integradas de Vim.
    Para invocar una función usando una variable con una referencia a función
 se usa la función call(). Como primer argumento recibe la referencia a la
 función, y como segundo argumento una Lista con los argumentos para la función
@@ -1394,7 +1395,7 @@ Una forma de hacer lo mismo, sin tantos caracteres: >
 Esto sólo funciona con claves compuestas de caracteres ASCII, dígitos, y el
 guión bajo. También puede usar esta notación para asignar valores: >
 
-	:let es2nl.four = 'vier'
+	:let es2nl.cuatro = 'vier'
 	:echo es2nl
 <	{'tres': 'drie', 'cuatro': 'vier', 'uno': 'een', 'dos': 'twee'} ~
 
@@ -1511,7 +1512,7 @@ redefinir la función traducir() para que no haga nada: >
 	:echo es2es.traducir('tres one wladiwostok')
 <	tres uno wladiwostok ~
 
-Note el «!» que se usó para redefinir la referencia a función
+Note el «!» utilizado para redefinir la referencia a función
 existente. Ahora puede usar «es2es» cuando no se encuentra ningún idioma
 reconocido: >
 
@@ -1709,7 +1710,8 @@ Lo mismo sucede cuando se pone un comentario a conti de una orden 'unmap': >
 	:unmap ,ab     " comentario
 
 La parte correspondiente al comentario será ignorada. Sin embargo, Vim tratará
-de eliminar la macro ',ab     ', que no existe. Debe reescribir la orden como:  >
+de eliminar la macro ',ab     ', que no existe. Debe reescribir la orden como:
+>
 
 	:unmap ,ab|    " comentario
 
@@ -1780,13 +1782,14 @@ script en su directorio «plugin/», y utilizarlo en el momento con
 
 Existen dos tipos de extensiones:
 
-            Extensión global: Empleado con todos los tipos de archivo.
-Extensión de tipo de archivo: Empleado con un tipo de archivo específico.
+          Extensiones globales: Empleadas con todos los tipos de archivo.
+Extensiones de tipo de archivo: Empleadas con tipos de archivo específicos.
 
-En esta sección se describirá la extensión global («global plugin»). La
-mayoría de elementos también son necesarios para escribir extensiones de
-tipo de archivo («filetype plugins»). La sección a continuación,
-|write-filetype-plugin|, detalla las extensiones de tipo de archivo.
+En esta sección se describirán las extensiones globales («global
+plugins»). La mayoría de elementos también son necesarios para escribir
+extensiones de tipo de archivo («filetype plugins»). La sección a
+continuación, |write-filetype-plugin|, detalla las extensiones de tipo de
+archivo.
 
 
 NOMBRE
@@ -1800,9 +1803,9 @@ problemas en antiguos sistemas de Windows.
 Un script que corrige errores tipográficos se podría llamar
 «correccort.vim». Lo usaremos como ejemplo.
 
-Para que funcione en cualquier sistema la extensión debería seguir algunas
-normas , las cuales se detallarán paso a paso. Al final tiene una completa
-extensión de ejemplo.
+Para que funcione en cualquier sistema, la extensión debería seguir algunas
+normas, las cuales se detallarán paso a paso. La extensión de ejemplo
+completa se encuentra al final de la sección.
 
 
 CUERPO
@@ -1823,15 +1826,16 @@ Los números de línea se han añadido en pro de la claridad. ¡No los incluya
 en su archivo de extensión!
 
 
-ENCABEZADO
+CABECERA
 
-Lo más probable es que corrija la extensión, y tenga en poco tiempo varias
-versiones de éste. Cuando distribuya el archivo, la gente querrá saber quién
-escribió esta maravillosa extensión, y dónde pueden enviar comentarios. Por
-ello, incluya un encabezado al principio de su extensión: >
+Lo más probable es que añada nuevas correcciones a la extensión, y tenga en
+poco tiempo varias versiones de ésta. Cuando distribuya el archivo, la gente
+querrá saber quién escribió esta maravillosa extensión, y dónde pueden
+enviar comentarios. Por ello, incluya un encabezado al principio de su
+extensión: >
 
   1	" Extensión global de Vim para la corrección de errores
-  2	" Último cambio:	15 de Octubre de 2000
+  2	" Último cambio:	15 de octubre de 2000
   3	" Desarrollador:	Bram Moolenaar <Bram@vim.org>
 
 Derechos de autor y licencias: Debido a que las extensiones son útiles, y
@@ -1847,32 +1851,32 @@ CONTINUACIÓN DE LÍNEA, EVITAR EFECTOS SECUNDARIOS	*use-cpo-save*
 En la línea 18 del ejemplo anterior se usa el mecanismo |line-continuation|,
 continuación de línea. Los usuarios que definan 'compatible' pueden
 encontrar problemas con esto, y se les mostraría un mensaje de error. No
-podemos simplemente  reiniciar 'compatible' porque tiene muchos efectos
+podemos simplemente reiniciar 'compatible' porque tiene muchos efectos
 secundarios. Para evitarlo, definimos la opción 'cpoptions' con el valor
 predeterminado de Vim para restaurarlo más tarde. Esto permite el uso de
 «line-continuation» y que el script funcione en la mayoría de sistemas. Se
 hace de la siguiente forma: >
 
- 11	let s:guarda_cpo = &cpo
+ 11	let s:save_cpo = &cpo
  12	set cpo&vim
  ..
- 42	let &cpo = s:guarda_cpo
+ 42	let &cpo = s:save_cpo
 
 Primero almacenamos el valor antiguo de 'cpoptions'  en la variable
 «s:save_cpo». El valor se restaurará al final de la extensión.
 
-Tenga en cuanta que se usa una variable local de script, |s:var|. Puede que
+Tenga en cuenta que se usa una variable local de script, |s:var|. Puede que
 se esté utilizando una variable global para otra cosa. Use siempre variables
-locales  en el script para aquello que se usa sólo en el script.
+locales en el script para aquello que se usa sólo en el script.
 
 
 EVITAR LA CARGA DE LA EXTENSIÓN
 
 Es posible que el usuario no desee cargar la extensión en cada momento. O
 que el administrador del sistema lo haya copiado al directorio de
-extensiones del sistema, pero el usuario quiere usar el suyo. En ese caso,
-el usuario debe tener la posibilidad de desactivar cargar esta extensión en
-particular. Lo siguiente lo hace posible:
+extensiones del sistema, pero el usuario quiere usar el suyo propio. En ese
+caso, el usuario debe tener la posibilidad de desactivar cargar esta
+extensión en particular. Lo siguiente lo hace posible: >
 
   6	if exists("g:loaded_correccort")
   7	  finish
@@ -1895,7 +1899,7 @@ rápido que usar «if-endif» a lo largo del archivo.
 MACROS
 
 Ahora, vamos a hacer que la extensión sea más interesante: vamos a añadir
-una macro que añade una corrección para la palabra bajo el cursor. Podría
+una macro que añade una corrección para la palabra bajo el cursor. Podríamos
 escoger una secuencia de teclas para esta macro, pero puede que el usuario
 la esté usando para otra cosa. Puede usar el elemento <Leader> para permitir
 que el usuario pueda definir las teclas que utiliza la macro de una
@@ -1939,23 +1943,23 @@ SEGMENTOS
 Habitualmente querrá dividir un script en segmentos cuando es demasiado
 largo. Para ello, puede usar funciones o macros, pero no desea que estas
 funciones y macros interfieran con los presentes en otros scripts. Por
-ejemplo, podría definir la función «Añadir()» pero otro script podría
+ejemplo, podría definir la función «Anadir()» pero otro script podría
 intentar definir la misma función. Para evitar esto, definimos la función
 como local al script anteponiendo a este «s:».
 
 A continuación definimos una función que añade una nueva corrección
 ortográfica: >
 
- 30	function s:Añadir(from, correct)
- 31	  let to = input("Introduzca la corrección para " . a:from . ": ")
- 32	  exe ":iabbrev " . a:from . " " . to
+ 30	function s:Anadir(desde, correccion)
+ 31	  let a = input("Introduzca la corrección para " . a:desde . ": ")
+ 32	  exe ":iabbrev " . a:desde . " " . a
  ..
  36	endfunction
 
-Ahora invocamos la función «s:Añadir()» desde el mismo script. Si otro
-script también define «Añadir()», será local a ese script y solo se invocará
-desde el script en el que se define. También puede existir una función
-global «Añadir()» (sin la «s:»), que es otra función distinta.
+Ahora invocamos la función «s:Anadir()» desde el mismo script. Si otro
+script también define «s:Anadir()», será local a ese script y solo se
+invocará desde el script en el que se define. También puede existir una
+función global «Anadir()» (sin la «s:»), que es otra función distinta.
 
 Puede usar <SID> en una macro. Genera un identificador de script, que
 identifica al script actual. En nuestra extensión de corrección usaremos
@@ -1963,24 +1967,24 @@ algo similar a esto: >
 
  24	noremap <unique> <script> <Plug>CorreccortAñadir  <SID>Añadir
  ..
- 28	noremap <SID>Add  :call <SID>Añadir(expand("<cword>"), 1)<CR>
+ 28	noremap <SID>Añadir  :call <SID>Anadir(expand("<cword>"), 1)<CR>
 
 Así, cuando el usuario teclea «\a», se invoca esta secuencia: >
 
-	\a -> <Plug>CorreccortAñadir -> <SID>Añadir -> :call <SID>Añadir()
+	\a -> <Plug>CorreccortAñadir -> <SID>Añadir -> :call <SID>Anadir()
 
 Si otro script asigna <SID>Añadir a una macro, tendría otro identificador de
 script y por ello definiría otra macro.
 
-Tenga en cuenta que se usa «<SID>Añadir()» en lugar de «s:Añadir()». Eso es
-porque el usuario teclea la macro, y por ello, desde fuera del script. <SID>
-se expande al identificador del script, de forma que Vim en qué script
-buscar la función «Añadir()». 
+Tenga en cuenta que se usó «<SID>Anadir()» en lugar de «s:Anadir()»
+aquí. Eso es porque la macro es tecleada por el usuario, y por ello, se hace
+desde fuera del script. <SID> se expande al identificador del script, de
+forma que Vim sabe en qué script buscar la función «Anadir()».
 
-Es un poco complicado, pero es necesario para que la extensión también
-funcione con otras. La norma básica es que debe usar <SID>Añadir() en las
-macros y s:Añadir() en otros sitios (el mismo script, órdenes automáticas,
-órdenes de usuario).
+Es un poco complicado, pero es necesario para que la extensión funcione
+adecuadamente con otras. La norma básica es que debe usar <SID>Anadir() en
+las macros y s:Anadir() en otros sitios (el mismo script, órdenes
+automáticas, órdenes de usuario).
 
 También podemos añadir una entrada de menú para que haga lo mismo que la
 macro: >
@@ -1997,8 +2001,8 @@ Tenga en cuenta que «:noremap» se usa en la línea 28 para evitar problemas
 con otras macros. Puede que alguien haya asignado otra macro a «:call», por
 ejemplo. En la línea 24 también usamos «:noremap», pero queremos reasignar
 «<SID>Añadir». Por ello usamos aquí «<script>». Esto solo permite el uso de
-macros locales al script, para más información consulte |:map-<script>|. Se
-realiza la misma acción en la línea 26 con «:noremenu», para más información
+macros locales al script; para más información consulte |:map-<script>|. Se
+realiza la misma acción en la línea 26 con «:noremenu»; para más información
 consulte  |:menu-<script>|.
 
 
@@ -2015,14 +2019,14 @@ entre <SID> y <Plug>:
 	caracteres, use la estructura: <Plug> nombre-script nombre-macro
 	En nuestro ejemplo, el nombre del script es «Correccort», y el nombre
 	de la macro es «Añadir».
-	El resultado es «<Plug>Correcc». Solo el primer carácter de los
-	nombres es mayúscula, facilitando ver el principio del nombre de la
-	macro.
+	El resultado es «<Plug>CorreccortAñadir». Solo el primer carácter de
+	los nombres es mayúscula, facilitando ver el principio del nombre de
+	la macro.
 
-<SID> es el identificador (ID) del script, un número único.
-	Internamente, Vim traduce <SID> como «<SNR>123_», donde «123»
-	puede ser cualquier número. Por ello, la función «<SID>Añadir()» tendría
-	el nombre «<SNR>11_Añadir()» en un script, y «<SNR>22_Añadir()» en otro.
+<SID>	es el identificador (ID) del script, un número único.
+	Internamente, Vim traduce <SID> como «<SNR>123_», donde «123» puede
+	ser cualquier número. Por ello, la función «<SID>Anadir()» tendría el
+	nombre «<SNR>11_Anadir()» en un script, y «<SNR>22_Anadir()» en otro.
 	Puede verlo si usa la orden «:function» para obtener la lista de
 	funciones.
 	La traducción de <SID> en las macros es idéntica, y así puede invocar
@@ -2033,14 +2037,14 @@ ORDEN DE USUARIO
 
 Vamos a añadir una orden de usuario para añadir una corrección: >
 
- 38	if !exists(":Correct")
- 39	  command -nargs=1  Correct  :call s:Añadir(<q-args>, 0)
+ 38	if !exists(":Corregir")
+ 39	  command -nargs=1  Corregir  :call s:Anadir(<q-args>, 0)
  40	endif
 
 La orden de usuario se define únicamente si no existe una orden con el mismo
-nombre. En caso contrario, provocaría un error. Sobrescribir  la orden de
-usuario existente con «:orden!» no es una buena idea, ya que haría que el
-usuario se pregunte porqué no funciona la orden que ha definido.  |:command|
+nombre. En caso contrario, provocaría un error. Sobrescribir la orden de
+usuario existente con «:command!» no es una buena idea, ya que haría que el
+usuario se pregunte porqué no funciona la orden que ha definido. |:command|
 
 
 VARIABLES DE SCRIPT
@@ -2057,14 +2061,14 @@ añadimos unas pocas líneas para contar el número de correcciones: >
 
  19	let s:cuenta = 4
  ..
- 30	function s:Añadir(from, correct)
+ 30	function s:Anadir(desde, correccion)
  ..
  34	  let s:cuenta = s:cuenta + 1
- 35	  echo s:cuenta . " Corrección en este punto"
+ 35	  echo s:cuenta . " correcciones en este punto"
  36	endfunction
 
 Al principio, «s:cuenta» se inicializa en el mismo script con un valor de
-4. Al invocar la función «Añadir()» posteriormente, incrementa la variable
+4. Al invocar la función «Anadir()» posteriormente, incrementa la variable
 «s:cuenta». No importa desde dónde se ha invocado la función, ya que está
 definida en el script, y usará las variables locales al script.
 
@@ -2082,7 +2086,7 @@ Aquí tiene el ejemplo completo finalizado: >
   8	endif
   9	let g:loaded_correccort = 1
  10
- 11	let s:guarda_cpo = &cpo
+ 11	let s:save_cpo = &cpo
  12	set cpo&vim
  13
  14	iabbrev csaa casa
@@ -2095,28 +2099,28 @@ Aquí tiene el ejemplo completo finalizado: >
  21	if !hasmapto('<Plug>CorreccortAñadir')
  22	  map <unique> <Leader>a  <Plug>CorreccortAñadir
  23	endif
- 24	noremap <unique> <script> <Plug>  <SID>Añadir
+ 24	noremap <unique> <script> <Plug>CorreccortAñadir  <SID>Añadir
  25
  26	noremenu <script> Plugin.Añadir\ Corrección      <SID>Añadir
  27
- 28	noremap <SID>Añadir  :call <SID>Añadir(expand("<cword>"), 1)<CR>
+ 28	noremap <SID>Añadir  :call <SID>Anadir(expand("<cword>"), 1)<CR>
  29
- 30	function s:Añadir(from, correct)
- 31	  let to = input("introduce la  corrección de " . a:from . ": ")
- 32	  exe ":iabbrev " . a:from . " " . to
- 33	  if a:correct | exe "normal viws\<C-R>\" \b\e" | endif
+ 30	function s:Anadir(desde, correccion)
+ 31	  let a = input("introduce la corrección de " . a:desde . ": ")
+ 32	  exe ":iabbrev " . a:desde . " " . a
+ 33	  if a:correccion | exe "normal viws\<C-R>\" \b\e" | endif
  34	  let s:cuenta = s:cuenta + 1
- 35	  echo s:cuenta . " Corrección en este punto"
+ 35	  echo s:cuenta . " correcciones en este punto"
  36	endfunction
  37
- 38	if !exists(":Correct")
- 39	  command -nargs=1  Correct  :call s:Añadir(<q-args>, 0)
+ 38	if !exists(":Corregir")
+ 39	  command -nargs=1  Corregir  :call s:Anadir(<q-args>, 0)
  40	endif
  41
  42	let &cpo = s:save_cpo
 
-Aún no hemos explicado la línea 33. Aplica la nueva corrección al error bajo
-el cursor. La orden |:normal| se emplea para usar la nueva
+Aún no hemos explicado la línea 33. Aplica la nueva corrección a la palabra
+bajo el cursor. La orden |:normal| se emplea para usar la nueva
 abreviatura. Tenga en cuenta que aquí se expanden las macros y abreviaturas,
 a pesar de que la función se ha invocado desde una macro definida con
 «:noremap».
@@ -2125,7 +2129,7 @@ Se recomienda usar «unix» como valor para la opción 'fileformat'. De esta
 forma, los scripts de Vim funcionarán en cualquier sistema. Los scripts con
 'fileformat' definido como «dos» no funcionarán en Unix. También puede
 consultar |:source_crnl|. Para asegurar que hace lo correcto, haga lo
-siguiente antes de escribir el archivo.
+siguiente antes de escribir el archivo: >
 
 	:set fileformat=unix
 
@@ -2133,8 +2137,8 @@ siguiente antes de escribir el archivo.
 DOCUMENTACIÓN   					*write-local-help*
 
 Es una buena idea crear algo de documentación para su extensión, en
-particular si el usuario puede modificar su comportamiento. Para lo referido
-a la instalación de documentación, consulte |add-local-help|.
+particular si el usuario puede modificar su comportamiento. Para lo
+referente a la instalación de documentación, consulte |add-local-help|.
 
 Aquí tiene un simple ejemplo para un archivo de ayuda de una extensión,
 llamado «typecorr.txt»: >
@@ -2152,7 +2156,7 @@ llamado «typecorr.txt»: >
  11
  12	Órdenes:
  13	:Corregir {palabra}
- 14		Añade una corrección a {palabra}.
+ 14		Añade una corrección para {palabra}.
  15
  16							*correcort-opciones*
  17	Esta extensión no tiene opciones de configuración.
@@ -2165,15 +2169,15 @@ archivo de ayuda y compruebe que las entradas están alineadas adecuadamente.
 
 Puede añadir más etiquetas entre asteriscos ** en su archivo de ayuda, pero
 tenga la precaución de no usar etiquetas de ayuda existentes. Probablemente
-usará el nombre de su extensión en la mayoría de etiquetas, como
-«correcco-opciones» en el ejemplo.
+use el nombre de su extensión en la mayoría de etiquetas, como
+«correccort-opciones» en el ejemplo.
 
 Se recomienda utilizar referencias a otras partes de archivos de ayuda
 mediante barras, ||. Esto facilita que el usuario encuentre ayuda
 relacionada.
 
 
-EXTENSIÓN DE TIPO DE ARCHIVO 		*plugin-filetype*
+EXTENSIÓN DE TIPO DE ARCHIVO			*plugin-filetype*
 
 Si Vim no detecta su tipo de archivo, debería crear un fragmento de código
 de detección de tipo de archivo en un archivo separado. Habitualmente, tiene
@@ -2183,12 +2187,12 @@ nombre concuerda con un patrón. Ejemplo: >
 	au BufNewFile,BufRead *.foo			set filetype=foofoo
 
 Escriba este archivo de una sola línea como «ftdetect/foofoo.vim» en el
-primer directorio en su 'runtimepath'. En Unix, sería
+primer directorio que aparece en su 'runtimepath'. En Unix, sería
 «~/.vim/ftdetect/foofoo.vim». La convención es nombrar el script como el
 nombre del tipo de archivo.
 
 Si lo desea, puede hacer comprobaciones más complejas como inspeccionar los
-contenidos de un archivo para reconocer el idioma. Consulte también
+contenidos de un archivo para reconocer el tipo del mismo. Consulte también
 |new-filetype|.
 
 
@@ -2196,23 +2200,23 @@ RESUMEN							*plugin-special*
 
 Resumen de los elementos especiales a utilizar en una extensión:
 
-s:nombre			Variables locales al script.
+s:nombre		Variables locales al script.
 
 <SID>			El identificador del script (Script-ID), utilizado en
 			macros y funciones locales al script.
 
 hasmapto()		Una función que comprueba si el usuario ya ha definido
-			una macro con la funcionalidad que el script ofrece.
+			una macro para la funcionalidad que el script ofrece.
 
-<Leader>		El valor de «mapleader», que el usuario define con
-			las teclas con las que iniciar las macros de la
-			extensión.
+<Leader>		El valor de «mapleader», que el usuario define como
+			las teclas con las que iniciar las macros de
+			extensiones.
 
 ::map <unique>		Emite un aviso si la macro ya existe.
 
 :noremap <script>	Sólo usa macros locales al script, no macros globales.
 
-exists(":Orden")		Comprueba la existencia de una orden de usuario.
+exists(":Orden")	Comprueba la existencia de una orden de usuario.
 
 ==============================================================================
 					*write-filetype-plugin* *ftplugin*
@@ -2246,24 +2250,26 @@ Esto también sirve para evitar la ejecución de la misma extensión por
 duplicado en el mismo búfer (ocurre al usar la orden «:edit» sin
 argumentos).
 
-Ahora, los usuarios pueden evitar cargar la extensión predeterminada creando
-una extensión de tipo de archivo con sólo esta línea: >
+Usando este mecanismo, los usuarios pueden evitar cargar la extensión
+predeterminada si así lo desean, creando una extensión de tipo de archivo
+con sólo esta línea: >
 
 	let b:did_ftplugin = 1
 
 Esto requiere que el directorio de extensiones de tipo de archivo aparezca
 antes de $VIMRUNTIME en 'runtimepath'.
 
-Si desea usar la extensión predeterminada, pero anular uno de los valores,
-puede escribir un valor diferente en el script: >
+Si desea usar la extensión predeterminada, pero cambiar la configuración de
+alguna de sus opciones, puede escribir un valor diferente para ellas en un
+script: >
 
 	setlocal textwidth=70
 
-Escriba esto en el directorio «after», para que se lea antes de la extensión
-de tipo de archivo predeterminado distribuido, «vim.vim»
-|after-directory|. En sistemas Unix, sería
+Escriba esto en el directorio «after», para que se lea después de la
+extensión de tipo de archivo predeterminado distribuido, «vim.vim»
+|after-directory|.  En sistemas Unix, sería
 «~/.vim/after/ftplugin/vim.vim». Tenga en cuenta que la extensión
-predeterminada cargará «b:did_ftplugin», pero aquí se ignora.
+predeterminada habrá definido «b:did_ftplugin», pero aquí se ignora.
 
 
 OPCIONES
@@ -2288,13 +2294,13 @@ buena idea restablecer el valor original y después cambiarlo. Ejemplo: >
 
 MACROS
 
-Para asegurar que las macros sólo funcionan en el búfer local use la orden >
+Para asegurar que las macros sólo funcionen en el búfer local use la orden >
 
 	:map <buffer>
 
 Se debe usar en combinación con la macro compuesta de dos pasos explicada
-anteriormente. Un ejemplo de definir una funcionalidad en una extensión de
-tipo de archivo: >
+anteriormente. A continuación una definición de ejemplo para una
+funcionalidad en una extensión de tipo de archivo: >
 
 	if !hasmapto('<Plug>JavaImport')
 	  map <buffer> <unique> <LocalLeader>i <Plug>JavaImport
@@ -2302,15 +2308,15 @@ tipo de archivo: >
 	noremap <buffer> <unique> <Plug>JavaImport oimport ""<Left><Esc>
 
 |hasmapto()| sirve para comprobar si el usuario ya ha definido una macro
-para «<Plug>JavaImport». En caso contrario, la extensión de tipo de archivo
-define la macro actual. Esta empieza con |<LocalLeader>|, que permite al
-usuario seleccionar una o mas teclas con las que iniciar las macros de la
-extensión de tipo de archivo. El valor predeterminado es una barra inversa,
-«\». «<unique>» sirve para emitir un mensaje de error si la macro ya existe
-o entra en conflicto con otra. |:noremap| sirve para evitar que las macros
-definidas por el usuario interfieran. Puede que desee usar «:noremap
-<script>» para permitir redefinir macros en el script que comienza con
-<SID>.
+para «<Plug>JavaImport». Si no ha sido definida, la extensión de tipo de
+archivo define la macro actual. Esta empieza con |<LocalLeader>|, que
+permite al usuario seleccionar una o mas teclas con las que iniciar las
+macros de la extensión de tipo de archivo. El valor predeterminado es una
+barra inversa, «\». «<unique>» sirve para emitir un mensaje de error si la
+macro ya existe o entra en conflicto con otra. |:noremap| sirve para evitar
+que las macros definidas por el usuario interfieran. Puede que desee usar
+«:noremap <script>» para permitir redefinir macros en el script que comienza
+con <SID>.
 
 Tiene que ofrecer al usuario la opción de desactivar macros en una extensión
 de tipo de archivo, sin desactivar el resto. Aquí tiene un ejemplo de como
@@ -2345,17 +2351,19 @@ local. Ejemplo: >
 
 VARIABLES
 
-Puede cargar una extensión de tipo de archivo en cada búfer dependiendo del
-tipo de archivo abierto en él. Las variables de script locales |s:var| se
-compartirán entre las diferentes llamadas al script. Use las variables
-locales al búfer | b:var| si desea usar una variable local a un búfer.
+Las extensiones de tipo de archivo serán cargadas en cada búfer del tipo
+correspondiente. Las variables de script locales |s:var| se compartirán
+entre las diferentes llamadas a una misma extensión (o script en general.)
+Use las variables locales al búfer |b:var| si desea usar una variable local
+a un búfer.
 
 
 FUNCIONES
 
-Necesita hacer lo siguiente una sola vez al definir una función, pero se
-cargará la extensión de tipo de archivo cada vez que se abra este tipo de
-archivo. Esta estructura asegura que la función se defina una sola vez: >
+Cada función necesita ser definida una sola vez. Pero la extensión de tipo
+de archivo se cargará cada vez que se abra un archivo del tipo
+correspondiente. Esta estructura asegura que la función se defina una sola
+vez: >
 
 	:if !exists("*s:Func")
 	:  function s:Func(arg)
@@ -2366,10 +2374,10 @@ archivo. Esta estructura asegura que la función se defina una sola vez: >
 
 DESHACER 					*undo_ftplugin*
 
-Cuando el usuario hace «setfiletype xyz», el efecto del tipo de archivo
+Cuando el usuario hace «:setfiletype xyz», el efecto del tipo de archivo
 anterior debería desaparecer. Defina la variable «b:undo_ftplugin» con las
-órdenes que deshacen las opciones de su extensión de tipo de
-archivo. Ejemplo: >
+órdenes que deshacen los cambios de configuración de su extensión de tipo de
+archivo.  Ejemplo: >
 
 	let b:undo_ftplugin = "setlocal fo< com< tw< commentstring<"
 		\ . "| unlet b:match_ignorecase b:match_words b:match_skip"
@@ -2378,7 +2386,7 @@ Usar «:setlocal» con «<» después del nombre de la opción restablece la
 opción a su valor global. Habitualmente, es la mejor forma de restablecer el
 valor de una opción.
 
-Esto requiere eliminar la opción «C» de 'cpoption' para permitir la
+Esto requiere eliminar la opción «C» de 'cpoptions' para permitir la
 continuación de la línea, como se mencionó anteriormente |use-cpo-save|.
 
 
@@ -2394,25 +2402,25 @@ usar una de las tres formas a continuación:
 «algo» es el tipo de archivo, «foo» y «bar» son nombres aleatorios.
 
 
-RESUMEN								*ftplugin-special*
+RESUMEN							*ftplugin-special*
 
-Un resumen de las cosas especiales a usar en una extensión de tipo de
-archivo:
+Un resumen de los aspectos a considerar cuando escriba una extensión de tipo
+de archivo:
 
 <LocalLeader>		El valor de «maplocalleader», que el usuario define
-			con la tecla que inicia las macros de extensión de
+			como la tecla que inicia las macros de extensión de
 			tipo de archivo.
 
-:map <búfer>			Define una macro local al búfer.
+:map <buffer>		Define una macro local al búfer.
 
 :noremap <script>	Sólo modifica macros definidas en el script que
 			comienzan con <SID>.
 
-:setlocal				Define una opción para el búfer actual.
+:setlocal		Define una opción para el búfer actual.
 
 :command -buffer	Define una orden de usuario local al búfer.
 
-exists("*s:Función")	Comprueba si una función ya se ha definido
+exists("*s:Funcion")	Comprueba si una función ya se ha definido
 			anteriormente.
 
 Consulte también |plugin-special|, las cosas especiales utilizadas por todas
@@ -2432,9 +2440,9 @@ extensiones de compilador predeterminadas: >
 
 Use |:next| para ir al siguiente archivo de extensión.
 
-Hay dos elementos especiales relacionados con estos archivos. En primer
-lugar, es un mecanismo que permite al usuario anular o añadir valores al
-archivo principal. Los archivos predeterminados comienzan con: >
+Hay dos aspectos a tener en cuenta con estas extensiones. En primer lugar,
+deben contar con un mecanismo que permita al usuario anular o añadir cambios
+a la extensión. Las extensiones predeterminadas comienzan con: >
 
 	:if exists("current_compiler")
 	:  finish
@@ -2442,15 +2450,14 @@ archivo principal. Los archivos predeterminados comienzan con: >
 	:let current_compiler = "mine"
 
 Cuando escribe un archivo de compilador, y lo ubica en su directorio de
-ejecución personal (esto es, «~/.vim/compiler» en sistemas Unix), debe
-definir la variable «current_compiler» para que el fichero predeterminado
-omita las opciones de configuración.
+ejecución personal (esto es, «~/.vim/compiler» en sistemas Unix), debe definir
+la variable «current_compiler» para que la extensión de compilador
+predeterminada evite hacer cambios en la configuración.
 							*:CompilerSet*
-El segundo mecanismo es usar «:set» con «:compiler!», y «:setlocal»
-con «:compiler». Para ello, Vim define la orden de usuario
-«:CompilerSet». Por otra parte, las versiones anteriores de Vim no
-disponen de esto, y por ello su extensión debe definirlo. Aquí tiene un
-ejemplo: >
+El segundo mecanismo es usar «:set» con «:compiler!», y «:setlocal» con
+«:compiler». Para ello, Vim define la orden de usuario «:CompilerSet». Por
+otra parte, las versiones anteriores de Vim no cuentan de ella, y por ello su
+extensión debe definirlo. Aquí tiene un ejemplo: >
 
   if exists(":CompilerSet") != 2
     command -nargs=* CompilerSet setlocal <args>
@@ -2458,33 +2465,35 @@ ejemplo: >
   CompilerSet errorformat&		" usa 'errorformat' predeterminado
   CompilerSet makeprg=nmake
 
-Use el mecanismo mencionado anteriormente cuando escriba una extensión de
-compilador para la distribución Vim o para un directorio de tiempo de
-ejecución del sistema. No se hará nada si «current_compiler» ya está
-definido por una extensión de usuario.
+Use el mecanismo mostrado aquí cuando escriba una extensión de compilador
+para la distribución Vim o para un directorio de tiempo de ejecución del
+sistema. No se hará nada si «current_compiler» ya está definido por una
+extensión de usuario.
 
-Cuando escribe una extensión de compilador para anular las opciones de una
-extensión predeterminada, evite comprobar «current_compiler». Esta extensión
-se debería cargar al final, y por ello debería estar en un directorio al
-final de 'runtimepath'. En sistemas Unix, podría ser
-«~/.vim/after/compiler».
+Cuando escribe una extensión de compilador para cambiar las opciones
+definidas por una extensión predeterminada, evite comprobar
+«current_compiler». Esta extensión se debería cargar al final, y por ello
+debería estar en un directorio al final de 'runtimepath'. En sistemas Unix,
+podría ser «~/.vim/after/compiler».
 
 ==============================================================================
 *41.14*	Escribir extensiones que carguen rápidamente  *write-plugin-quickload*
 
-Puede que una extensión crezca, y que sea demasiado larga. Puede que crezca
-el tiempo de carga, y además, que apenas usa la extensión. En este caso, hay
-que usar una extensión de carga rápida («quickload»).
+Puede que una extensión crezca, y que sea demasiado larga. Puede que el
+tiempo de carga empiece a hacerse notorio, y además, que usted apenas use la
+extensión. En este caso, hay que usar una extensión de carga rápida
+(«quickload»).
 
 La idea principal es que la extensión se carga dos veces. La primera vez, se
-definen las órdenes de usuario y macros que ofrecen alguna funcionalidad. La
-segunda, se definen las funciones que introducen tales funcionalidades.
+definen las órdenes de usuario y macros que ofrecen la funcionalidad de la
+extensión. La segunda vez, se definen las funciones que implementan tales
+funcionalidades.
 
-Puede que sorpenda que «carga rápida» signifique cargar un script dos
-veces. Lo que queremos decir es que se carga rápidamente la primera,
-demorando la carga de la mayoría del script a la segunda vez, que sólo
-ocurre cuando realmente lo usa. Si usa siempre esta funcionalidad, ¡se
-volverá lento!
+Puede que sorprenda que «carga rápida» signifique cargar una extensión dos
+veces.  Lo que queremos decir es que se carga rápidamente la primera,
+demorando la carga de la mayoría de la extensión a la segunda vez, lo que
+sólo ocurre cuando realmente la usa. ¡Si usa siempre la funcionalidad que
+provee la extensión, no obtendrá ninguna ventaja!
 
 Tenga en cuenta que hay una alternativa a partir de la versión 7 de Vim: use
 la funcionalidad |autoload|, |41.15|.
@@ -2494,10 +2503,10 @@ Los siguientes ejemplos muestran como se hace: >
 	" Extensión global de Vim para mostrar la carga rápida
 	" Último cambio:	2005 Feb 25
 	" Desarrollador:	Bram Moolenaar <Bram@vim.org>
-	" Licencia:	This file is placed in the public domain.
+	" Licencia:	Este archivo se encuentra en el dominio público
 
 	if !exists("s:did_load")
-		command -nargs=* BNRead  call BufNetRead(<argumentos-función>)
+		command -nargs=* BNRead  call BufNetRead(<f-args>)
 		map <F19> :call BufNetWrite('algo')<CR>
 
 		let s:did_load = 1
@@ -2507,26 +2516,26 @@ Los siguientes ejemplos muestran como se hace: >
 
 	function BufNetRead(...)
 		echo 'BufNetRead(' . string(a:000) . ')'
-		" Lee aquí la funcionalidad
+		" Funcionalidad de lectura aquí
 	endfunction
 
 	function BufNetWrite(...)
 		echo 'BufNetWrite(' . string(a:000) . ')'
-		" Escriba aquí la funcionalidad
+		" Funcionalidad de escritura aquí
 	endfunction
 
-Cuando el script se carga por primera vez, no se define «s:did_local», y se
-ejecutan las órdenes entre «if» y «endif». Termina con una orden |:finish|,
-impidiendo ejecutar el resto del script.
+Cuando el script se carga por primera vez, «s:did_load» no está definida, y
+se ejecutan las órdenes entre «if» y «endif». Se termina con una orden
+|:finish|, impidiendo ejecutar el resto del script.
 
 La segunda vez que se carga, «s:did_load» existe y se ejecutan las órdenes
 después de «endif». Esto define las (posiblemente largas) funciones
 BufNetRead() y BufNetWrite().
 
 Si ubica este script en su directorio «plugin», Vim lo ejecutará al
-inicio. A continuación tiene el orden de los eventos:
+inicio. A continuación la secuencia de los eventos:
 
-1. La orden «BNRead» se define y la tecla <F19> se asigna a una macro al cargar
+1. Se define la orden «BNRead» y la tecla <F19> se asigna a una macro al cargar
 el script al inicio. Se define una orden automática |FuncUndefined|. La orden
   «:finish» hace que el script finalice antes.
 
@@ -2549,17 +2558,17 @@ extensión define funciones que coincidan con este patrón.
 ==============================================================================
 *41.15*	Crear bibliotecas				*write-library-script*
 
-Algunas de los funciones son necesarias en varios lugares. Cuando esto se
-convierte en algo más que unos pocas líneas, querrá ubicarlo en un script, y
-usarlo desde varios otros. Vamos a denominar ese script como biblioteca.
+Algunas funcionalidades son necesarias en varios lugares. Cuando se trata de
+algo más que unos pocas líneas, querrá ubicarlo en un script, y usarlo desde
+varios otros. Vamos a denominar ese script como biblioteca.
 
-Cargar una biblioteca manualmente es posible, siempre que evite cargarlo
+Cargar una biblioteca manualmente es posible, siempre que evite cargarla
 cuando ya lo está. Puede evitarlo con la función |exists()|. Ejemplo: >
 
-	if !exists('*MiFunciónBiblioteca')
+	if !exists('*MiFuncionBiblioteca')
 	   runtime library/biblioteca.vim
 	endif
-	call MiFunciónBiblioteca(arg)
+	call MiFuncionBiblioteca(arg)
 
 Aquí tiene que saber que MiFunciónBiblioteca() se define en el script
 «library/biblioteca.vim», en uno de los directorios de 'runtimepath'.
@@ -2567,16 +2576,16 @@ Aquí tiene que saber que MiFunciónBiblioteca() se define en el script
 Para hacer esto más sencillo, Vim ofrece el mecanismo «autoload» (carga
 automática). Así, el ejemplo tendría este aspecto: >
 
-	call mibiblioteca#mifunción(arg)
+	call mibiblioteca#mifuncion(arg)
 
 Mucho más sencillo, ¿verdad? Vim reconoce el nombre de la función y, cuando
-no esté definida, la buscará en el script «autoload/mibibioteca.vim» en
-'runtimepath'. El script debe definir la función «mibiblioteca#mifun()».
+no esté definida, la buscará el script «autoload/mibiblioteca.vim» en
+'runtimepath'. El script debe definir la función «mibiblioteca#mifuncion()».
 
 Puede almacenar varias funciones en el script mibiblioteca.vim, y puede
 organizar como desee las funciones en sus bibliotecas. Pero debe usar
 nombres de funciones en las que la parte que precede a «#» coincide con el
-nombre del script. De no ser así, Vim no sabrá qué script cargar.
+nombre del script. En caso contrario, Vim no sabrá qué script cargar.
 
 Si esto le entusiasma, y escribe muchas bibliotecas, puede que quiera usar
 subdirectorios. Ejemplo: >
@@ -2589,7 +2598,7 @@ En sistemas Unix, la biblioteca a usar podría ser:
 
 Donde se define la función así: >
 
-	function netlib#ftp#read(nombre-archivo)
+	function netlib#ftp#read(nombre_archivo)
 		"  Lee al archivo mediante FTP
 	endfunction
 
@@ -2604,8 +2613,8 @@ Puede utilizar el mismo mecanismo con variables: >
 Esto cargará el script «autoload/colombia.vim», que contendría algo similar
 a lo siguiente: >
 
-	let colombia#dias_semana = ['lunes', 'martes', 'miercoles', 'jueves',
-		\ 'viernes', 'sabado', 'domingo']
+	let colombia#dias_semana = ['lunes', 'martes', 'miércoles', 'jueves',
+		\ 'viernes', 'sábado', 'domingo']
 
 Lecturas adicionales: |autoload|.
 
@@ -2615,8 +2624,8 @@ Lecturas adicionales: |autoload|.
 Los usuarios de Vim buscarán scripts en el sitio web de Vim:
 http://www.vim.org. Si ha creado algo útil para otros, ¡compártalo!
 
-Los scripts de Vim se pueden usar en cualquier sistema. No pueden estar
-empaquetados mediante las órdenes tar o gzip. Si desea empaquetar o
+Los scripts de Vim se pueden usar en cualquier sistema. Las órdenes tar o
+gzip pueden no estar disponibles en dichos sistemas. Si desea empaquetar o
 comprimir los archivos, se recomienda usar la herramienta «zip».
 
 Para obtener la máxima portabilidad use Vim para empaquetar los

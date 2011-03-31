@@ -83,7 +83,8 @@ Si estaba editando sin un nombre de archivo designado, dele este argumento:
 
 	vim -r ""
 
-Deberá estar en el mismo directorio para poder recuperar la información.
+Debe estar en el directorio adecuado. En caso contrario, Vim no podrá
+encontrar el archivo de intercambio.
 
 ==============================================================================
 *11.2* 	¿Dónde está el archivo de intercambio?
@@ -289,7 +290,7 @@ para un archivo. Este es el caso cuando otras sesiones de edición ponen los
 archivos en otro directorio o cuando una ruta de archivo difiere en máquinas
 distintas.  Por lo tanto, no confíe en que Vim siempre le vaya a alertar.
 
-Si realmente no quiere ver este mensaje, puede añadir la marca 'A' a la
+Si realmente no quiere ver este mensaje, puede añadir la opción 'A' a la
 opción 'shortmess'. Pero es poco habitual que lo necesite.
 
 Para apuntes relativos al cifrado y al archivo de intercambio, consulte

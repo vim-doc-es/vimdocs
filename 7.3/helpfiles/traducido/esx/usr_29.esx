@@ -234,7 +234,7 @@ Por ejemplo, supongo que desea seleccionar una etiqueta que empieza con
 
 	:tselect /^write_
 
-La «^» especifica que la etiqueta empieza con «write_». De otra forma,
+La «^» especifica que la etiqueta empieza con «write_». En caso contrario,
 se detectaría también de estar en medio de un nombre de etiqueta. De forma
 similar, el signo «$» al final asegura que el patrón sólo coincida con el
 final de una etiqueta.
