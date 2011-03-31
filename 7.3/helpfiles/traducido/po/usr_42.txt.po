@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2011-02-01 21:20+0100\n"
+"PO-Revision-Date: 2011-03-31 13:49-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: es\n"
@@ -1011,7 +1011,7 @@ msgid ""
 "\t:tmenu ToolBar.Compile  Compile the current file\n"
 "\t:amenu ToolBar.Compile  :!cc % -o %:r<CR>\n"
 msgstr ""
-"\t:tmenu ToolBar.Compile  \n"
+"\t:tmenu ToolBar.Compile  Compilar el archivo actual\n"
 "\t:amenu ToolBar.Compile  :!cc % -o %:r<CR>\n"
 
 #. type: Plain text
@@ -1025,6 +1025,14 @@ msgid ""
 "   Put the bitmap in the directory \"bitmaps\" in one of the directories from\n"
 "'runtimepath'.  E.g., for Unix \"~/.vim/bitmaps/Compile.xpm\".\n"
 msgstr ""
+"Ahora debe crear el ícono. En MS-Windows debe usar el formato bitmap (mapa de\n"
+"bits), con el nombre «Compile.bmp». En Unix se usa el formato XPM, por lo que\n"
+"el nombre de archivo es «Compile.xpm». El tamaño del ícono debe ser de 18 por\n"
+"18 pixeles. En MS-Windows se pueden usar otros tamaños, pero la apariencia no\n"
+"será agradable.\n"
+"   Ubique el mapa de bits en el directorio «bitmaps» en uno cualquiera de los\n"
+"directorios en 'runtimepath'. Por ejemplo, en Unix, puede usar\n"
+"«~/.vim/bitmaps/Compile.xpm».\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:328
@@ -1035,7 +1043,13 @@ msgid ""
 "moment.  This is very useful if the meaning of the picture isn't that "
 "obvious.  Example: >"
 msgstr ""
+"Puede definir indicaciones para los elementos de la barra de herramientas. "
+"Una indicación es un texto corto que explica la funcionalidad de un elemento "
+"de la barra de herramientas.  Por ejemplo, «Abrir Archivo». La indicación se "
+"hace visible cuando el puntero del ratón está sobre el elemento, inmóvil. Es "
+"muy útil si la intención que expresa la imagen no es tan obvia. Ejemplo: >"
 
+# TODO revisar formateo
 #. type: Plain text
 #: original/txt/usr_42.txt:334
 #, no-wrap
@@ -1046,13 +1060,16 @@ msgid ""
 "\tPay attention to the case used.  \"Toolbar\" and \"toolbar\" are different\n"
 "\tfrom \"ToolBar\"!\n"
 msgstr ""
+"\t:tmenu ToolBar.Make  Ejecutar make en el directorio actual\n"
+"<\n"
+"\tNota:\n"
+"\tTenga en cuenta la capitalización de letras usada.  «Toolbar» y «toolbar» no son iguales a\n"
+"\t«ToolBar»!\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:336
-#, fuzzy
-#| msgid "To travel forward in time again use the |:later| command: >"
 msgid "To remove a tooltip, use the |:tunmenu| command."
-msgstr "Para viajar hacia adelante en el tiempo use la orden |:later|: >"
+msgstr "Para eliminar una indicación, use la orden |:tunmenu|."
 
 #. type: Plain text
 #: original/txt/usr_42.txt:340
@@ -1061,11 +1078,14 @@ msgid ""
 "both text and a bitmap.  Most people use just the bitmap, since the text "
 "takes quite a bit of space."
 msgstr ""
+"Puede usar la opción 'toolbar' para mostrar texto en lugar de un ícono, o "
+"mostrar texto y un ícono. Muchas personas simplemente usan el ícono, ya que "
+"el texto consume bastante espacio."
 
 #. type: Plain text
 #: original/txt/usr_42.txt:343
 msgid "POPUP MENU"
-msgstr ""
+msgstr "MENÚS CONTEXTUALES"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:355
@@ -1083,6 +1103,10 @@ msgid ""
 "   There is a separate popup menu for each mode.  Thus there are never grey\n"
 "items like in the normal menus.\n"
 msgstr ""
+"Un menú contextual aparece en donde se encuentre el puntero del ratón. Puede\n"
+"activarlo en MS-Windows usando el botón derecho del ratón. Luego podrá\n"
+"seleccionar un elemento particular usando el botón izquierdo. En Unix el menú\n"
+"se usa manteniendo presionado el botón derecho del ratón.\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:360
@@ -1091,10 +1115,13 @@ msgid ""
 "Adams, the only person who knew what this question really was about is now "
 "dead, unfortunately.  So now you might wonder what the meaning of death is..."
 msgstr ""
+"¿Cuál es el significado de la vida, el universo y todo lo demás? *42* Douglas "
+"Adams, la única persona que supo en realidad de qué se trataba esta pregunta "
+"está muerto ahora, desafortunadamente. Ahora usted puede preguntarse tal vez "
+"cuál es el significado de la muerte..."
 
+# TODO copiar el título una vez traducido
 #. type: Plain text
 #: original/txt/usr_42.txt:364
-#, fuzzy
-#| msgid "Next chapter: |usr_09.txt| Using the GUI"
 msgid "Next chapter: |usr_43.txt| Using filetypes"
-msgstr "Capítulo siguiente: |usr_09.esx| Uso de la interfaz gráfica"
+msgstr "Capítulo siguiente: |usr_43.esx| Using filetypes"
