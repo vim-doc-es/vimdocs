@@ -692,12 +692,20 @@ msgid ""
 "argument.  For example, take the call to NextFile() in the previous example.\n"
 "When you use this menu, you will see this on the command line:\n"
 msgstr ""
+"El menú ejecuta las {teclas} como si hubieran sido introducidas manualmente.\n"
+"Con las órdenes «:» esto implica que la orden será visible en la línea de\n"
+"órdenes. Si es una orden larga, aparecerá el mensaje «Pulse INTRO...». ¡Esto\n"
+"puede ser muy molesto!\n"
+"   Para evitar que suceda, haga que el menú sea silencioso. Puede hacerlo\n"
+"usando el argumento <silent>. Por ejemplo, considere la llamada a\n"
+"SiguienteArchivo() en el ejemplo anterior. Al usar este menú, lo siguiente\n"
+"aparecerá en la línea de órdenes:\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:205
 #, no-wrap
 msgid "\t:call <SNR>34_NextFile() ~\n"
-msgstr ""
+msgstr "\t:call <SNR>34_SiguienteArchivo() ~\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:208
@@ -705,12 +713,14 @@ msgid ""
 "To avoid this text on the command line, insert \"<silent>\" as the first "
 "argument: >"
 msgstr ""
+"Para evitar esto, inserte «<silent>» como primer argumento: >"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:210
 #, no-wrap
 msgid "\t:amenu <silent> Mine.Next\\ File :call <SID>NextFile()<CR>\n"
 msgstr ""
+"\t:amenu <silent> Mío.Siguiente\\ Archivo :call <SID>SiguienteArchivo()<CR>\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:214
@@ -720,13 +730,15 @@ msgid ""
 "will give him a hint about what he could have typed, instead of using the "
 "mouse."
 msgstr ""
+"No use «<silent>» demasiado. No es necesario para órdenes cortas. Si está "
+"haciendo un menú que alguien más usará, la posibilidad de ver la orden "
+"ejecutada le dará una indicación acerca de lo que pudo haber introducido "
+"manualmente, en lugar de usar el ratón."
 
 #. type: Plain text
 #: original/txt/usr_42.txt:217
-#, fuzzy
-#| msgid "LISTING BUFFERS"
 msgid "LISTING MENUS"
-msgstr "LISTAR BÚFERS"
+msgstr "LISTAR MENÚS"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:221
@@ -735,12 +747,15 @@ msgid ""
 "defined menus.  You can specify a {menu-item}, or part of it, to list "
 "specific menus.  Example: >"
 msgstr ""
+"Cuando se usa una orden de menú sin indicar las {teclas}, se listan los menús "
+"definidos. Puede especificar un {elemento-menú}, o una parte de él, para "
+"listar menús específicos. Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:223
 #, no-wrap
 msgid "\t:amenu\n"
-msgstr ""
+msgstr "\t:amenu\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:226
@@ -748,12 +763,15 @@ msgid ""
 "This lists all menus.  That's a long list! Better specify the name of a menu "
 "to get a shorter list: >"
 msgstr ""
+"Esto lista todos los menús. ¡Ésa es una lista muy larga! Es mejor indicar el "
+"nombre del menú para recibir una lista más corta: >"
 
+# TODO comprobar si se pasa el nombre original, o la traducción del menú
 #. type: Plain text
 #: original/txt/usr_42.txt:228
 #, no-wrap
 msgid "\t:amenu Edit\n"
-msgstr ""
+msgstr "\t:amenu Editar\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:231
@@ -761,12 +779,14 @@ msgid ""
 "This lists only the \"Edit\" menu items for all modes.  To list only one "
 "specific menu item for Insert mode: >"
 msgstr ""
+"Esta orden lista únicamente los elementos del menú «Editar» para todos los "
+"modos. Para listar un elemento específico de un menú para modo Insertar: >"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:233
 #, no-wrap
 msgid "\t:imenu Edit.Undo\n"
-msgstr ""
+msgstr "\t:imenu Editar.Deshacer\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:237
@@ -775,13 +795,14 @@ msgid ""
 "'&' for accelerators can be omitted.  The <Tab> and what comes after it can "
 "be left out as well."
 msgstr ""
+"Asegúrese de introducir exactamente el nombre apropiado. Las diferencias "
+"entre mayúsculas y minúsculas son importantes aquí. El <Tab> y lo que sigue "
+"después de él puede omitirse."
 
 #. type: Plain text
 #: original/txt/usr_42.txt:240
-#, fuzzy
-#| msgid "DELETING"
 msgid "DELETING MENUS"
-msgstr "BORRAR"
+msgstr "BORRAR MENÚS"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:244
@@ -791,12 +812,18 @@ msgid ""
 "becomes \":nunmenu\", etc.  To delete the \"Tools.Make\" item for Insert "
 "mode: >"
 msgstr ""
+"Para borrar un menú se usa la misma orden que para listarlo, pero cambiando "
+"«menu» por «unmenu». Así, «:menu» se convierte en «:unmenu», «:nmenu» en "
+"«:nunmenu», etc. Para borrar el elemento «Herramientas.Ejecutar Make» para el "
+"modo Insertar: >"
 
+# TODO comprobar que se pueda borrar con la traducción del menú, en vez del nombre
+# original
 #. type: Plain text
 #: original/txt/usr_42.txt:246
 #, no-wrap
 msgid "\t:iunmenu Tools.Make\n"
-msgstr ""
+msgstr "\t:iunmenu Herramientas.Ejecutar\\ Make\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:249
@@ -804,24 +831,27 @@ msgid ""
 "You can delete a whole menu, with all its items, by using the menu name.  "
 "Example: >"
 msgstr ""
+"Puede borrar un menú completo, con todos sus elementos, usando el nombre del "
+"menú. Ejemplo: >"
 
+# TODO comprobar que se pueda borrar con la traducción del menú, en vez del nombre
+# original
 #. type: Plain text
 #: original/txt/usr_42.txt:251
 #, no-wrap
 msgid "\t:aunmenu Syntax\n"
-msgstr ""
+msgstr "\t:aunmenu Sintaxis\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:253
 msgid "This deletes the Syntax menu and all the items in it."
-msgstr ""
+msgstr "Esto borra el menú «Sintaxis» y todos los elementos que contenga."
 
 #. type: Plain text
 #: original/txt/usr_42.txt:256
-#, fuzzy, no-wrap
-#| msgid "*31.5*\tVarious\n"
+#, no-wrap
 msgid "*42.3*\tVarious\n"
-msgstr "*31.5*\tVarios\n"
+msgstr "*42.3*\tVarios\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:260
@@ -830,6 +860,9 @@ msgid ""
 "the default value they are all included, except \"M\".  You can remove a "
 "flag with a command like: >"
 msgstr ""
+"Es posible cambiar la apariencia de los menús definiendo opciones en "
+"'guioptions'. De manera predeterminada están incluidas todas, excepto «M». "
+"Puede eliminar una opción particular con una orden como: >"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:264
@@ -839,13 +872,17 @@ msgid ""
 "<\n"
 "\tm\t\tWhen removed the menubar is not displayed.\n"
 msgstr ""
+"\t:set guioptions-=m\n"
+"<\n"
+"\tm\t\tAl eliminar la opción la barra de menú no se muestra.\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:266
 #, no-wrap
 msgid "\tM\t\tWhen added the default menus are not loaded.\n"
-msgstr ""
+msgstr "\tM\t\tAl añadirla no se cargan los menús predeterminados.\n"
 
+# Comprobar formateo
 #. type: Plain text
 #: original/txt/usr_42.txt:270
 #, no-wrap
@@ -854,12 +891,17 @@ msgid ""
 "\t\t\tbut are completely removed.  (Does not work on all\n"
 "\t\t\tsystems.)\n"
 msgstr ""
+"\tg\t\tAl eliminarla, los elementos de menú deshabilitados no\n"
+"\t\t\taparecen grises sino que son eliminados. (No funciona en\n"
+"\t\t\ttodos los sistemas.)\n"
 
+# TODO tearoff
 #. type: Plain text
 #: original/txt/usr_42.txt:272
 #, no-wrap
 msgid "\tt\t\tWhen removed the tearoff feature is not enabled.\n"
 msgstr ""
+"\tt\t\tAl eliminarla se deshabilita la característica de desacoplar los menús.\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:277
@@ -869,11 +911,15 @@ msgid ""
 "window.  This is called a tearoff menu.  This is useful when you use the "
 "same menu often."
 msgstr ""
+"La línea punteada en la parte superior de un menú no es un separador. Al "
+"seleccionar este elemento, el menú es «desacoplado»: se lo muestra en una "
+"ventana separada. Se lo denomina menú desacoplable. Es una característica "
+"útil si usa un mismo menú con frecuencia."
 
 #. type: Plain text
 #: original/txt/usr_42.txt:279
 msgid "For translating menu items, see |:menutrans|."
-msgstr ""
+msgstr "Para traducir elementos de menú, véase |:menutrans|."
 
 #. type: Plain text
 #: original/txt/usr_42.txt:284
@@ -883,12 +929,17 @@ msgid ""
 "dialog instead of an error message, e.g., when the current buffer contains "
 "changes.  These two can be combined: >"
 msgstr ""
+"Ya que debe usar el ratón para seleccionar un elemento en un menú, usar la "
+"orden «:browse» para seleccionar un archivo es una buena idea . Añada "
+"«:confirm» para obtener un diálogo en lugar de un mensaje de error, por "
+"ejemplo, cuando el búfer actual tiene cambios no guardados. Las dos órdenes "
+"pueden combinarse: >"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:286
 #, no-wrap
 msgid "\t:amenu File.Open  :browse confirm edit<CR>\n"
-msgstr ""
+msgstr "\t:amenu Archivo.Abrir  :browse confirm edit<CR>\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:292
@@ -900,12 +951,18 @@ msgid ""
 "   For more complicated items, the confirm() and inputdialog() functions can\n"
 "be used.  The default menus contain a few examples.\n"
 msgstr ""
+"«:browse» despliega un explorador de archivos para seleccionar el archivo a\n"
+"editar. «:confirm» mostrará un diálogo cuando el búfer actual tiene cambios\n"
+"que no han sido guardados. Puede escoger entre guardarlos, descartarlos, o\n"
+"cancelar la orden.\n"
+"   Puede usar las funciones confirm() e inputdialog() para elementos más\n"
+"complicados. Los menús predeterminados contienen algunos ejemplos.\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:295
 #, no-wrap
 msgid "*42.4*\tToolbar and popup menus\n"
-msgstr ""
+msgstr "*42.4*\tMenús de barra de herramientas y menús contextuales\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:298
@@ -913,13 +970,14 @@ msgid ""
 "There are two special menus: ToolBar and PopUp.  Items that start with these "
 "names do not appear in the normal menu bar."
 msgstr ""
+"Hay dos menús especiales: ToolBar (Barra de Herramientas) y PopUp (Menú "
+"Contextual). Los elementos cuyos nombres empiezan con estas palabras clave no "
+"aparecen en la barra de menú normal."
 
 #. type: Plain text
 #: original/txt/usr_42.txt:301
-#, fuzzy
-#| msgid "THE TOOLBAR"
 msgid "TOOLBAR"
-msgstr "LA BARRA DE HERRAMIENTAS"
+msgstr "BARRA DE HERRAMIENTAS (TOOLBAR)"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:312
@@ -936,6 +994,15 @@ msgid ""
 "   You can add another bitmap for a toolbar item.  Or define a new toolbar\n"
 "item with a bitmap.  For example, define a new toolbar item with: >\n"
 msgstr ""
+"La barra de herramientas aparece únicamente cuando se incluye la opción «T» en\n"
+"'guioptions'.\n"
+"   La barra de herramientas usa íconos en lugar de texto para representar la\n"
+"orden asociada. Por ejemplo, el {elemento-menú} llamado «ToolBar.Nueva» hace\n"
+"que el ícono «Nueva» aparezca en la barra de herramientas.\n"
+"   El editor Vim cuenta con 28 íconos incorporados. En |builtin-tools|\n"
+"encuentra una tabla con todos ellos. La mayoría de ellos se usa en la barra de\n"
+"herramientas predeterminada. Es posible redefinir qué hacen estos elementos\n"
+"(luego de la configuración de los menús predeterminados.)\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:315
@@ -944,6 +1011,8 @@ msgid ""
 "\t:tmenu ToolBar.Compile  Compile the current file\n"
 "\t:amenu ToolBar.Compile  :!cc % -o %:r<CR>\n"
 msgstr ""
+"\t:tmenu ToolBar.Compile  \n"
+"\t:amenu ToolBar.Compile  :!cc % -o %:r<CR>\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:322
