@@ -5,10 +5,10 @@
 ./"
 ./" Translators credits:
 ./"   - Initial translation
-./"       Pedro Alejandro L�pez-Valencia <vorbote@users.sf.net>, 2009-2011
+./"       Pedro Alejandro López-Valencia <vorbote@users.sf.net>, 2009-2011
 ./"
 ./"   - Updates
-./"       TRADUCTOR <CORREO>, A�O 
+./"       TRADUCTOR <CORREO>, AÑO 
 ./"
 .TH VIM 1 "Abril 11 del 2006"
 .SH NOMBRE
@@ -41,17 +41,17 @@ vim \- Vi IMproved (mejorado), un editor de texto para programadores.
 .B rview
 .B rgvim
 .B rgview
-.SH DESCRIPCI�N
+.SH DESCRIPCIÓN
 .B Vim
 Es un editor compatible con Vi.
 Puede usarse para editar toda clase de texto simple y
-es especialmente �til para editar programas.
+es especialmente útil para editar programas.
 .PP
 Hay muchas mejoras sobre Vi: deshacer de multinivel,
-ventanas y b�feres m�ltiples, resaltado de sint�xis,
-edici�n de la l�nea de comandos, completado de nombres
-de archivo, ayuda en l�nea, selecci�n visual, etc.
-V�a �:help vi_diff.txt� para un resumen de las diferencias
+ventanas y búferes múltiples, resaltado de sintáxis,
+edición de la línea de comandos, completado de nombres
+de archivo, ayuda en línea, selección visual, etc.
+Véa «:help vi_diff.txt» para un resumen de las diferencias
 entre
 .B Vim
 y
@@ -60,64 +60,69 @@ y
 Al ejecutar
 .B Vim
 hay gran cantidad de ayuda disponible del sistema de ayuda
-en l�nea, con el comando �:help�.
-V�a la secci�n AYUDA EN L�NEA m�s abajo.
+en línea, con el comando «:help».
+Véa la sección AYUDA EN LÍNEA más abajo.
 .PP
-Lo m�s com�n es iniciar
+Lo más común es iniciar
 .B Vim
 para editar un solo archivo con el comando
+.br
 .EX
-vim �archivo�
+vim «archivo»
 .EE
 .PP
 Generalizando,
 .B Vim
 se inicia con el comando:
+.br
 .EX
 vim [opciones] [lista de archivos]
 .EE
 .PP
+Si falta la lista de archivos, el editor se iniciará con un búfer vacio.
 If the filelist is missing, the editor will start with an empty buffer.
 Otherwise exactly one out of the following four may be used to choose one or
 more files to be edited.
 .TP 12
-file ..
-A list of filenames.
-The first one will be the current file and read into the buffer.
-The cursor will be positioned on the first line of the buffer.
-You can get to the other files with the ":next" command.
-To edit a file that starts with a dash, precede the filelist with "\-\-".
+archivo ...
+Una lista de archivos.
+El primero será el archivo activo y será leido dentro del búfer.
+La posición del cursor será la primera línea del búfer.
+Para acceder a los otros archivos se usa el comando «:next»,
+y para editar un archivo cuyo nombre empieza con un guión, se
+precede la lista de archivos con «\-\-»
 .TP
 \-
-The file to edit is read from stdin.  Commands are read from stderr, which
-should be a tty.
+El archivo a editar se leerá de la entrada estándar (stdin). Los comandos
+se leen del error estándar (stderr) el cual deberá ser una tty.
 .TP
-\-t {tag}
-The file to edit and the initial cursor position depends on a "tag", a sort
-of goto label.
-{tag} is looked up in the tags file, the associated file becomes the current
-file and the associated command is executed.
-Mostly this is used for C programs, in which case {tag} could be a function
-name.
-The effect is that the file containing that function becomes the current file
-and the cursor is positioned on the start of the function.
-See ":help tag\-commands".
+\-t {etiqueta}
+El archivo a editar y la posición inicial del cursor depende de una
+«etiqueta», una forma de marca de «goto».
+La {etiqueta} se busca en el archvo de etiquetas, el archivo asociado
+se convierte en el archivo activo y se ejecuta el comando correspondiente.
+En general, esto se usa para programas en C, en cuyo caso {etiqueta}
+puede ser un nombre de función.
+El efecto es que el archivo conteniendo esa funcipon se convierte en
+el archivo activo y el cursor se posiciona en el comienzo de la
+función.
+Véase «:help tag\-commands».
 .TP
-\-q [errorfile]
-Start in quickFix mode.
-The file [errorfile] is read and the first error is displayed.
-If [errorfile] is omitted, the filename is obtained from the 'errorfile'
-option (defaults to "AztecC.Err" for the Amiga, "errors.err" on other
-systems).
-Further errors can be jumped to with the ":cn" command.
-See ":help quickfix".
+\-q [archivo de errores]
+Iniciar en modo «quickFix».
+Se lee el archivo [archivo de errores] y se muestra el primer error.
+Si se omite el [archivo de errores], el nombre del archivo se obtiene
+de la opción «errorfile» cuyo valor por defecto es «AztecC.Err» en el
+Amiga y «errors.err» en otros sistemas.
+Se puede saltar a otros errores con el comando «:cn».
+Véase «:help quickfix».
 .PP
 .B Vim
-behaves differently, depending on the name of the command (the executable may
-still be the same file).
+se comporta diferentemente dependiendo del nombre de comando con el cual
+se invoca, la imágen ejecutable puede ser el mismo archivo.
 .TP 10
-vim
-The "normal" way, everything is default.
+.C vim
+La forma «normal» en la que todo es por defecto.
 .TP
 ex
 Start in Ex mode.
@@ -480,7 +485,7 @@ GTK GUI only: Use the GtkPlug mechanism to run gvim in another window.
 .TP
 \-\-version
 Print version information and exit.
-.SH AYUDA EN L�NEA
+.SH AYUDA EN LÍNEA
 Type ":help" in
 .B Vim
 to get started.
@@ -545,7 +550,7 @@ Files used for PostScript printing.
 For recent info read the VIM home page:
 .br
 <URL:http://www.vim.org/>
-.SH V�ASE TAMBI�N
+.SH VÉASE TAMBIÉN
 vimtutor(1)
 .SH AUTOR
 Most of
@@ -568,4 +573,8 @@ And if you think other things are bugs "because Vi does it differently",
 you should take a closer look at the vi_diff.txt file (or type :help
 vi_diff.txt when in Vim).
 Also have a look at the 'compatible' and 'cpoptions' options.
-./" vim:fenc=latin1:ft=nroff
+./"
+./"
+./" vim:enc=latin1:fenc=latin1:ft=nroff
+./"
+./"
