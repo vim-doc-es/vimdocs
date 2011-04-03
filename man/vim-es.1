@@ -5,10 +5,10 @@
 ./"
 ./" Translators credits:
 ./"   - Initial translation
-./"       Pedro Alejandro L�pez-Valencia <vorbote@users.sf.net>, 2009-2011
+./"       Pedro Alejandro López-Valencia <vorbote@users.sf.net>, 2009-2011
 ./"
 ./"   - Updates
-./"       TRADUCTOR <CORREO>, A�O 
+./"       TRADUCTOR <CORREO>, AÑO 
 ./"
 .TH VIM 1 "Abril 11 del 2006"
 .SH NOMBRE
@@ -41,36 +41,41 @@ vim \- Vi IMproved (mejorado), un editor de texto para programadores.
 .B rview
 .B rgvim
 .B rgview
-.SH DESCRIPCI�N
+.SH DESCRIPCIÓN
 .B Vim
 Es un editor compatible con Vi.
 Puede usarse para editar toda clase de texto simple y
-es especialmente �til para editar programas.
+es especialmente útil para editar programas.
 .PP
-There are a lot of enhancements above Vi: multi level undo,
-multi windows and buffers, syntax highlighting, command line
-editing, filename completion, on-line help, visual selection, etc..
-See ":help vi_diff.txt" for a summary of the differences between
+Hay muchas mejoras sobre Vi: deshacer de multinivel,
+ventanas y búferes múltiples, resaltado de sintáxis,
+edición de la línea de comandos, completado de nombres
+de archivo, ayuda en línea, selección visual, etc.
+Véa «:help vi_diff.txt» para un resumen de las diferencias
+entre
 .B Vim
-and Vi.
+y
+.BR Vi .
 .PP
-While running
+Al ejecutar
 .B Vim
-a lot of help can be obtained from the on-line help system, with the ":help"
-command.
-See the ON-LINE HELP section below.
+hay gran cantidad de ayuda disponible del sistema de ayuda
+en línea, con el comando «:help».
+Véa la sección AYUDA EN LÍNEA más abajo.
 .PP
-Most often
+Lo más común es iniciar
 .B Vim
-is started to edit a single file with the command
+para editar un solo archivo con el comando
+.EX
+vim «archivo»
+.EE
 .PP
-	vim file
-.PP
-More generally
+Generalizando,
 .B Vim
-is started with:
-.PP
-	vim [options] [filelist]
+se inicia con el comando:
+.EX
+vim [opciones] [lista de archivos]
+.EE
 .PP
 If the filelist is missing, the editor will start with an empty buffer.
 Otherwise exactly one out of the following four may be used to choose one or
@@ -475,7 +480,7 @@ GTK GUI only: Use the GtkPlug mechanism to run gvim in another window.
 .TP
 \-\-version
 Print version information and exit.
-.SH AYUDA EN L�NEA
+.SH AYUDA EN LÍNEA
 Type ":help" in
 .B Vim
 to get started.
@@ -540,7 +545,7 @@ Files used for PostScript printing.
 For recent info read the VIM home page:
 .br
 <URL:http://www.vim.org/>
-.SH V�ASE TAMBI�N
+.SH VÉASE TAMBIÉN
 vimtutor(1)
 .SH AUTOR
 Most of
