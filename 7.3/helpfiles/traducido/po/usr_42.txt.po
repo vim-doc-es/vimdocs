@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-09 16:51+0100\n"
-"PO-Revision-Date: 2011-04-05 13:24-0500\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2011-04-05 13:42-0500\n"
+"Last-Translator: Javier Rojas <jerojasro@devnull.li>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -372,9 +372,8 @@ msgstr ""
 #: original/txt/usr_42.txt:74
 #, no-wrap
 msgid "\t  10\t20     40     50      60       70\t\t9999\n"
-msgstr "\t  10\t20     40     50      60       70\t\t9999\n"
+msgstr "\t  10\t   20      40\t\t 50\t   60      70\t\t9999\n"
 
-# TODO revisar formateo
 #. type: Plain text
 #: original/txt/usr_42.txt:78
 #, no-wrap
@@ -383,9 +382,9 @@ msgid ""
 "\t| File\tEdit  Tools  Syntax  Buffers  Window\t\tHelp |\n"
 "\t+------------------------------------------------------------+\n"
 msgstr ""
-"\t+------------------------------------------------------------+\n"
-"\t| Archivo\tEditar  Herramientas  Sintaxis  Búfers  Ventana\t\tAyuda |\n"
-"\t+------------------------------------------------------------+\n"
+"\t+---------------------------------------------------------------------+\n"
+"\t| Archivo  Editar  Herramientas  Sintaxis  Búfers  Ventana\tAyuda |\n"
+"\t+---------------------------------------------------------------------+\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:84
@@ -403,7 +402,6 @@ msgstr ""
 "desplegable. Los números pequeños aparecen arriba, los números más grandes\n"
 "abajo. Éstas son la prioridades del menú «Archivo»:\n"
 
-# TODO comprobar formateo
 #. type: Plain text
 #: original/txt/usr_42.txt:102
 #, no-wrap
@@ -426,23 +424,23 @@ msgid ""
 "\t    10.620\t|Exit\t\t  |\n"
 "\t\t\t+-----------------+\n"
 msgstr ""
-"\t\t\t+-----------------+\n"
-"\t    10.310\t|Abrir...\t  |\n"
-"\t    10.320\t|Abrir en otra ventana...\t  |\n"
-"\t    10.325\t|Nuevo\t\t  |\n"
-"\t    10.330\t|Cerrar\t\t  |\n"
-"\t    10.335\t|---------------- |\n"
+"\t\t\t+-------------------------+\n"
+"\t    10.310\t|Abrir...\t\t  |\n"
+"\t    10.320\t|Abrir en otra ventana... |\n"
+"\t    10.325\t|Nuevo\t\t\t  |\n"
+"\t    10.330\t|Cerrar\t\t\t  |\n"
+"\t    10.335\t|------------------------ |\n"
 "\t    10.340\t|Guardar\t\t  |\n"
 "\t    10.350\t|Guardar como...\t  |\n"
-"\t    10.400\t|---------------- |\n"
-"\t    10.410\t|Mostrar diferencias como  |\n"
-"\t    10.420\t|Mostrar parcheado por |\n"
-"\t    10.500\t|---------------- |\n"
+"\t    10.400\t|------------------------ |\n"
+"\t    10.410\t|Mostrar diferencias como |\n"
+"\t    10.420\t|Mostrar parcheado por\t  |\n"
+"\t    10.500\t|------------------------ |\n"
 "\t    10.510\t|Imprimir\t\t  |\n"
-"\t    10.600\t|---------------- |\n"
+"\t    10.600\t|------------------------ |\n"
 "\t    10.610\t|Guardar y salir\t  |\n"
-"\t    10.620\t|Salir\t\t  |\n"
-"\t\t\t+-----------------+\n"
+"\t    10.620\t|Salir\t\t\t  |\n"
+"\t\t\t+-------------------------+\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:108
@@ -885,8 +883,8 @@ msgid ""
 "\t\t\tsystems.)\n"
 msgstr ""
 "\tg\t\tAl eliminarla, los elementos de menú deshabilitados no\n"
-"\t\t\taparecen grises sino que son eliminados. (No funciona en\n"
-"\t\t\ttodos los sistemas.)\n"
+"\t\t\taparecen grises sino que son eliminados. (No funciona\n"
+"\t\t\ten todos los sistemas.)\n"
 
 # TODO tearoff
 #. type: Plain text
@@ -894,7 +892,8 @@ msgstr ""
 #, no-wrap
 msgid "\tt\t\tWhen removed the tearoff feature is not enabled.\n"
 msgstr ""
-"\tt\t\tAl eliminarla se deshabilita la característica de desacoplar los menús.\n"
+"\tt\t\tAl eliminarla se deshabilita la característica de\n"
+"\t\t\tdesacoplar los menús.\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:277
@@ -1045,7 +1044,6 @@ msgstr ""
 "hace visible cuando el puntero del ratón está sobre el elemento, inmóvil. Es "
 "muy útil si la intención que expresa la imagen no es tan obvia. Ejemplo: >"
 
-# TODO revisar formateo
 #. type: Plain text
 #: original/txt/usr_42.txt:334
 #, no-wrap
@@ -1059,8 +1057,8 @@ msgstr ""
 "\t:tmenu ToolBar.Make  Ejecutar make en el directorio actual\n"
 "<\n"
 "\tNota:\n"
-"\tTenga en cuenta la capitalización de letras usada.  «Toolbar» y «toolbar» no son iguales a\n"
-"\t«ToolBar»!\n"
+"\tTenga en cuenta la capitalización de letras usada.  «Toolbar» y\n"
+"\t«toolbar» no son iguales a «ToolBar»!\n"
 
 #. type: Plain text
 #: original/txt/usr_42.txt:336
