@@ -190,17 +190,15 @@ msgstr "\tset runtimepath\n"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:2
-#, fuzzy, no-wrap
-#| msgid "*usr_29.txt*\tFor Vim version 7.3.  Last change: 2008 Jun 28\n"
+#, no-wrap
 msgid "*usr_43.txt*\tFor Vim version 7.3.  Last change: 2008 Dec 28\n"
-msgstr "*usr_29.esx*\tPara Vim versión 7.3.  Último cambio: 8/6/2008\n"
+msgstr "*usr_43.txt*\tPara Vim versión 7.3.  Último cambio: 28/5/2008\n"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:6
-#, fuzzy, no-wrap
-#| msgid "\t\t\t     Editing other files\n"
+#, no-wrap
 msgid "\t\t\t       Using filetypes\n"
-msgstr "\t\t\t    Editar otros archivos\n"
+msgstr "\t\t\t       Uso de tipos de archivo\n"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:12
@@ -210,42 +208,39 @@ msgid ""
 "quickly get tired of manually setting these each time.  This chapter "
 "explains how to do it automatically."
 msgstr ""
+"Al editar un archivo de un cierto tipo, como por ejemplo un programa C o un "
+"script de línea de órdenes, es usual usar el mismo conjunto de opciones y "
+"macros. Definirlas manualmente cada vez que se edita el archivo se hace "
+"tedioso muy pronto. Este capítulo explica cómo hacer esto automáticamente."
 
 #. type: Plain text
 #: original/txt/usr_43.txt:15
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|43.1|\tPlugins for a filetype\n"
 "|43.2|\tAdding a filetype\n"
 msgstr ""
-"|usr_43.txt|  Using filetypes\n"
-"\t\t|43.1|\tPlugins for a filetype\n"
-"\t\t|43.2|\tAdding a filetype\n"
+"|43.1|\tExtensiones para un tipo de archivo\n"
+"|43.2|\tAñadir un tipo de archivo\n"
 
+# TODO copiar el título una vez traducido
 #. type: Plain text
 #: original/txt/usr_43.txt:19
-#, fuzzy, no-wrap
-#| msgid ""
-#| "     Next chapter: |usr_06.txt|  Using syntax highlighting\n"
-#| " Previous chapter: |usr_04.txt|  Making small changes\n"
-#| "Table of contents: |usr_toc.txt|\n"
+#, no-wrap
 msgid ""
 "     Next chapter: |usr_44.txt|  Your own syntax highlighted\n"
 " Previous chapter: |usr_42.txt|  Add new menus\n"
 "Table of contents: |usr_toc.txt|\n"
 msgstr ""
-" Capítulo siguiente: |usr_06.esx|  Uso del resaltado de sintaxis\n"
-"  Capítulo anterior: |usr_04.esx|  Hacer cambios pequeños\n"
+" Capítulo siguiente: |usr_44.esx|  Your own syntax highlighted\n"
+"  Capítulo anterior: |usr_42.esx|  Añadir nuevos menús\n"
 "Tabla de contenidos: |usr_toc.esx|\n"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:22
-#, fuzzy, no-wrap
-#| msgid "*41.12*\tWriting a filetype plugin\t*write-filetype-plugin* *ftplugin*\n"
+#, no-wrap
 msgid "*43.1*\tPlugins for a filetype\t\t\t\t*filetype-plugin*\n"
-msgstr ""
-"\t\t\t\t\t*write-filetype-plugin* *ftplugin*\n"
-"*41.12*\tEscribir extensiones de tipo de archivo\n"
+msgstr "*43.1*\tExtensiones para un tipo de archivo\t\t\t\t*filetype-plugin*\n"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:28
@@ -256,6 +251,12 @@ msgid ""
 "want to set the 'softtabstop' option to 4 and define a mapping to insert a "
 "three-line comment.  You do this with only two steps:"
 msgstr ""
+"La forma de activar la característica de extensiones de tipo de archivo ya ha "
+"sido cuierta en |add-filetype-plugin|. Pero seguramente no está satisfecho "
+"con los valores de las opciones predeterminadas, porque éstas son mínimas. "
+"Suponga que para los archivos de C desea darle a 'softtabstop' el valor de 4, "
+"y definir una macro para insertar un comentario de tres líneas. Puede hacer "
+"esto en sólo dos pasos:"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:32
@@ -265,6 +266,8 @@ msgid ""
 "1. Create your own runtime directory.  On Unix this usually is \"~/.vim\".  In\n"
 "   this directory create the \"ftplugin\" directory: >\n"
 msgstr ""
+"1. Crear su propio directorio de tiempo de ejecución. En Unix usualmente es\n"
+"   «~/.vim». En dicho directorio, cree el directorio «ftplugin»: >\n"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:38
@@ -276,6 +279,11 @@ msgid ""
 "   When you are not on Unix, check the value of the 'runtimepath' option to\n"
 "   see where Vim will look for the \"ftplugin\" directory: >\n"
 msgstr ""
+"\tmkdir ~/.vim\n"
+"\tmkdir ~/.vim/ftplugin\n"
+"<\n"
+"   Si su sistema no es Unix, compruebe el valor de la opción 'runtimepath'\n"
+"   para identificar en qué sitios buscará Vim el directorio «ftplugin»: >\n"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:44
@@ -285,12 +293,16 @@ msgid ""
 "   You might want to prepend a directory name to the 'runtimepath' option in\n"
 "   your |vimrc| file if you don't like the default value.\n"
 msgstr ""
+"<   La convención es usar el primer directorio listado (antes de la primera\n"
+"    coma.) Si lo desea, también puede anteponer otro directorio al valor de la\n"
+"    opción 'runtimepath' en su archivo |vimrc| si no le agrada el valor\n"
+"    predeterminado.\n"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:46
 #, no-wrap
 msgid "2. Create the file \"~/.vim/ftplugin/c.vim\", with the contents: >\n"
-msgstr ""
+msgstr "2. Cree el archivo «~/.vim/ftplugin/c.vim», con este contenido: >\n"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:49
@@ -299,6 +311,8 @@ msgid ""
 "\tsetlocal softtabstop=4\n"
 "\tnoremap <buffer> <LocalLeader>c o/**************<CR><CR>/<Esc>\n"
 msgstr ""
+"\tsetlocal softtabstop=4\n"
+"\tnoremap <buffer> <LocalLeader>c o/**************<CR><CR>/<Esc>\n"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:56
@@ -311,6 +325,13 @@ msgid ""
 "buffer it will get the default value or the value from the last \":set\" "
 "command."
 msgstr ""
+"Ahora edite un archivo C. Notará que se le ha dado el valor 4 a la opción "
+"'softtabstop'. Pero si edita otro archivo, se cambia su valor al "
+"predeterminado de cero. Esto sucede porque se usó la orden «:setlocal». Ésta "
+"define el valor de la opción 'softtabstop' únicamente para el búfer actual. "
+"Al editar otro búfer, se le dará el valor definido para el mismo. Al editar "
+"un búfer nuevo obtendrá el valor predeterminado o el valor definido por la "
+"última orden «:set»."
 
 #. type: Plain text
 #: original/txt/usr_43.txt:62
@@ -321,20 +342,23 @@ msgid ""
 "\", etc.  The |<LocalLeader>| in the mapping is replaced with the value of "
 "the \"maplocalleader\" variable."
 msgstr ""
+"De la misma manera, la macro para «\\c» desaparecerá al editar otro búfer. La "
+"orden «:map <buffer>» crea una macro local al búfer actual. Esta opción tiene "
+"el mismo efecto en cualquier orden para macros: «:map!», «:vmap», etc. El "
+"|<LocalLeader>| en la macro se reemplaza con el valor de la variable "
+"«maplocalleader»."
 
 #. type: Plain text
 #: original/txt/usr_43.txt:64
-#, fuzzy
-#| msgid "The generic names for the filetype plugins are: >"
 msgid "You can find examples for filetype plugins in this directory: >"
-msgstr "Los nombres genéricos para las extensiones de tipo de archivo son: >"
+msgstr ""
+"En este directorio encontrará ejemplos de extensiones de tipo de archivo: >"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:66
-#, fuzzy, no-wrap
-#| msgid "\t:echo $VIMRUNTIME\n"
+#, no-wrap
 msgid "\t$VIMRUNTIME/ftplugin/\n"
-msgstr "\t:echo $VIMRUNTIME\n"
+msgstr "\t$VIMRUNTIME/ftplugin/\n"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:69
@@ -342,13 +366,14 @@ msgid ""
 "More details about writing a filetype plugin can be found here: |write-"
 "plugin|."
 msgstr ""
+"En |write-plugin| encontrará más detalles para escribir extensiones de tipo "
+"de archivo."
 
 #. type: Plain text
 #: original/txt/usr_43.txt:72
-#, fuzzy, no-wrap
-#| msgid "*22.3*\tFinding a file\n"
+#, no-wrap
 msgid "*43.2*\tAdding a filetype\n"
-msgstr "*22.3*\tEncontrar un archivo\n"
+msgstr "*43.2*\tAñadir un tipo de archivo\n"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:76
@@ -357,6 +382,9 @@ msgid ""
 "to get it recognized.  You need a runtime directory of your own.  See |your-"
 "runtime-dir| above."
 msgstr ""
+"Si Vim no reconoce el tipo de archivo que está usando, esto es lo que debe "
+"hacer para corregir el problema. Necesita un directorio de tiempo de "
+"ejecución propio. Véase |your-runtime-dir| anteriormente."
 
 #. type: Plain text
 #: original/txt/usr_43.txt:79
@@ -364,6 +392,9 @@ msgid ""
 "Create a file \"filetype.vim\" which contains an autocommand for your "
 "filetype.  (Autocommands were explained in section |40.3|.)  Example: >"
 msgstr ""
+"Cree un archivo «tipoarchivo.vim» que contenga una orden automática para su "
+"tipo de archivo. (Las órdenes automáticas se explican el la sección |40.3|.) "
+"Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:83
@@ -373,6 +404,9 @@ msgid ""
 "\tau BufNewFile,BufRead *.xyz\tsetf xyz\n"
 "\taugroup END\n"
 msgstr ""
+"\taugroup filetypedetect\n"
+"\tau BufNewFile,BufRead *.xyz\tsetf xyz\n"
+"\taugroup END\n"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:90
@@ -384,6 +418,13 @@ msgid ""
 "option to its argument, unless it was set already.  This will make sure that "
 "'filetype' isn't set twice."
 msgstr ""
+"Con esto se reconocerá a todos los archivos cuyo nombre termina en «.xyz» "
+"como del tipo «xyz». Las órdenes «:augroup» ubican esta orden automática en "
+"el grupo «filetypedetect» (detección de tipos de archivo). Esto permite "
+"eliminar todas las órdenes automáticas de detección de tipo de archivo al "
+"ejecutar «:filetype off». La orden «:setf» definirá la opción 'filetype' con "
+"el argumento que se le pase, a menos que ya esté definido. Esto asegura que "
+"'filetype' no sea definido más de una vez."
 
 #. type: Plain text
 #: original/txt/usr_43.txt:95
@@ -393,6 +434,11 @@ msgid ""
 "the files under \"/usr/share/scripts/\" are all \"ruby\" files, but don't "
 "have the expected file name extension.  Adding this to the example above: >"
 msgstr ""
+"Puede usar distintos patrones que coincidan con el nombre de su archivo. "
+"También es posible incluir nombres de directorios. Véase |autocmd-patterns|. "
+"Por ejemplo, suponga que todos los archivos en «/usr/share/scripts» son "
+"archivos ruby, pero no tienen la extensión usual. Puede añadir la siguiente "
+"línea al ejemplo anterior: >"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:100
@@ -403,6 +449,10 @@ msgid ""
 "\tau BufNewFile,BufRead /usr/share/scripts/*\tsetf ruby\n"
 "\taugroup END\n"
 msgstr ""
+"\taugroup filetypedetect\n"
+"\tau BufNewFile,BufRead *.xyz\t\t\tsetf xyz\n"
+"\tau BufNewFile,BufRead /usr/share/scripts/*\tsetf ruby\n"
+"\taugroup END\n"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:107
