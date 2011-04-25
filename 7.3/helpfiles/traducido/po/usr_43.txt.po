@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2011-03-17 00:05+0100\n"
-"PO-Revision-Date: 2011-03-17 00:05+0100\n"
+"PO-Revision-Date: 2011-04-25 16:20-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: es\n"
@@ -566,6 +566,9 @@ msgid ""
 "To recognize this script create a file \"scripts.vim\" in your runtime "
 "directory (same place where filetype.vim goes).  It might look like this: >"
 msgstr ""
+"Para reconocer este script cree un archivo «scripts.vim» en su directorio de "
+"tiempo de ejecución (el mismo sitio en donde está «filetype.vim»). El "
+"contenido del archivo es similar a lo siguiente: >"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:152
@@ -578,6 +581,12 @@ msgid ""
 "\t  setf xyz\n"
 "\tendif\n"
 msgstr ""
+"\tif did_filetype()\n"
+"\t  finish\n"
+"\tendif\n"
+"\tif getline(1) =~ '^#!.*[/\\\\]xyz\\>'\n"
+"\t  setf xyz\n"
+"\tendif\n"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:159
@@ -590,6 +599,13 @@ msgid ""
 "   The scripts.vim file is sourced by an autocommand in the default\n"
 "filetype.vim file.  Therefore, the order of checks is:\n"
 msgstr ""
+"La primera comprobación con «did_filetype()» evita que se revise el contenido\n"
+"de un archivo cuyo tipo ya fue detectado usando el nombre de archivo. Así se\n"
+"evita desperdiciar tiempo revisando el archivo cuando se sabe que la orden\n"
+"«setf» no tendrá ningún efecto.\n"
+"   El archivo «scripts.vim» es leído por una orden automática en el archivo\n"
+"«filetype.vim» predeterminado. Por consiguiente, el orden en que se hacen las\n"
+"comprobaciones es:\n"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:165
@@ -601,6 +617,11 @@ msgid ""
 "\t4. remainder of $VIMRUNTIME/filetype.vim\n"
 "\t5. filetype.vim files after $VIMRUNTIME in 'runtimepath'\n"
 msgstr ""
+"\t1. archivos «filetype.vim» antes de $VIMRUNTIME en 'runtimepath'\n"
+"\t2. primera parte de «$VIMRUNTIME/filetype.vim»\n"
+"\t3. todos los archivos «scripts.vim» en 'runtimepath'\n"
+"\t4. el resto de «$VIMRUNTIME/filetype.vim»\n"
+"\t5. archivos «filetype.vim» luego de $VIMRUNTIME en 'runtimepath'\n"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:168
@@ -609,10 +630,13 @@ msgid ""
 "and sources a script or executes a function to check the contents of the "
 "file."
 msgstr ""
+"Si estos mecanismos no son suficientes, puede añadir una orden automática que "
+"coincida con todos los archivos y lea un script o ejecute una función para "
+"revisar el contenido del archivo."
 
+# TODO traducción título capítulo
 #. type: Plain text
 #: original/txt/usr_43.txt:172
-#, fuzzy
-#| msgid "Next chapter: |usr_06.txt| Using syntax highlighting"
 msgid "Next chapter: |usr_44.txt| Your own syntax highlighted"
-msgstr "Capítulo siguiente: |usr_06.esx| Uso del resaltado de sintaxis"
+msgstr "Capítulo siguiente: |usr_44.txt| Your own syntax highlighted"
+
