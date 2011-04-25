@@ -465,6 +465,13 @@ msgid ""
 "example, you could use \"~/.vim/after/filetype.vim\".\n"
 "   You now put the detection of text files in ~/.vim/filetype.vim: >\n"
 msgstr ""
+"El problema ahora se presenta al editar archivos como\n"
+"«/usr/share/scripts/README.txt», que no es un archivo ruby. El problema de un\n"
+"patrón terminado en «*» es que coincide fácilmente con demasiados archivos.\n"
+"Para evitarlo, ubique el archivo «filetype.vim» en otro directorio, que esté\n"
+"al final de 'runtimepath'. Por ejemplo, en Unix puede usar\n"
+"«~/.vim/after/filetype.vim».\n"
+"   Ahora añada la detección de archivos de texto en «~/.vim/filetype.vim»: >\n"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:111
@@ -481,6 +488,8 @@ msgid ""
 "That file is found in 'runtimepath' first.  Then use this in ~/.vim/after/"
 "filetype.vim, which is found last: >"
 msgstr ""
+"Este archivo aparece primero en 'runtimepath'. Y luego escriba la siguiente "
+"orden en «~/.vim/after/filetype.vim», que será cargado al final: >"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:118
@@ -490,6 +499,9 @@ msgid ""
 "\tau BufNewFile,BufRead /usr/share/scripts/*\tsetf ruby\n"
 "\taugroup END\n"
 msgstr ""
+"\taugroup filetypedetect\n"
+"\tau BufNewFile,BufRead /usr/share/scripts/*\tsetf ruby\n"
+"\taugroup END\n"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:133
@@ -510,11 +522,26 @@ msgid ""
 "checked.  Only the one for ruby matches and \"setf ruby\" sets 'filetype' to\n"
 "ruby.\n"
 msgstr ""
+"Ahora Vim buscará por archivos llamados «filetype.vim» en cada directorio\n"
+"listado en 'runtimepath'. Primero encuentra «~/.vim/filetype.vim». Allí está\n"
+"definida la orden automática para los archivos *.txt. Luego Vim encuentra el\n"
+"«filetype.vim» que está en $VIMRUNTIME, más o menos a la mitad de\n"
+"'runtimepath'. Finalmente, se encuentra «~/.vim/after/filetype.vim», y se\n"
+"añade la orden automática para detectar archivos ruby en «/usr/share/scripts».\n"
+"   Cuando edite «/usr/share/scripts/README.txt», se revisa las órdenes\n"
+"automáticas en el orden en que fueron definidas. El patrón «*.txt» coincide,\n"
+"así que se ejecuta la orden «setf text» para definir el tipo de archivo como\n"
+"«text» (texto). El patrón para archivos ruby también coincide, así que también\n"
+"se ejecuta «setf ruby». Pero como 'filetype' ya tiene el valor «text», no\n"
+"sucede nada.\n"
+"   Cuando edite el archivo «/usr/share/scripts/foobar» se revisarán las mismas\n"
+"órdenes automáticas. Sólo la de ruby coincide y «setf ruby» define 'filetype'\n"
+"a ruby.\n"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:136
 msgid "RECOGNIZING BY CONTENTS"
-msgstr ""
+msgstr "RECONOCIMIENTO POR CONTENIDO"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:140
@@ -523,12 +550,15 @@ msgid ""
 "recognize it by its contents.  For example, many script files start with a "
 "line like:"
 msgstr ""
+"Si el tipo de su archivo no se puede identificar revisando el nombre del "
+"mismo, también tiene la posibilidad de reconocerlo revisando su contenido. "
+"Por ejemplo, muchos archivos de scripts empiezan con una línea como:"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:142
 #, no-wrap
 msgid "\t#!/bin/xyz ~\n"
-msgstr ""
+msgstr "\t#!/bin/xyz ~\n"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:145
