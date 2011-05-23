@@ -256,18 +256,14 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_44.txt:29
-#, fuzzy, no-wrap
-#| msgid ""
-#| "     Next chapter: |usr_05.txt|  Set your settings\n"
-#| " Previous chapter: |usr_03.txt|  Moving around\n"
-#| "Table of contents: |usr_toc.txt|\n"
+#, no-wrap
 msgid ""
 "     Next chapter: |usr_45.txt|  Select your language\n"
 " Previous chapter: |usr_43.txt|  Using filetypes\n"
 "Table of contents: |usr_toc.txt|\n"
 msgstr ""
-" Capítulo siguiente: |usr_05.esx|  Configuración\n"
-"  Capítulo anterior: |usr_03.esx|  Desplazamiento\n"
+" Capítulo siguiente: |usr_45.txt|  Seleccione su idioma\n"
+"  Capítulo anterior: |usr_43.txt|  Uso de tipos de archivo\n"
 "Tabla de contenidos: |usr_toc.esx|\n"
 
 #. type: Plain text
@@ -284,6 +280,11 @@ msgid ""
 "similar.  These files will also show you the normal layout of a syntax "
 "file.  To understand it, you need to read the following."
 msgstr ""
+"Partir de un archivo de sintaxis preexistente le ahorrará mucho tiempo. Trate "
+"de encontrar un archivo de sintaxis para un lenguaje similar en "
+"$VIMRUNTIME/syntax. También puede usarlos como modelo respecto a la "
+"estructura que debe tener un archivo de sintaxis. Para entenderla, debe leer "
+"lo siguiente."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:40
@@ -291,6 +292,8 @@ msgid ""
 "Let's start with the basic arguments.  Before we start defining any new "
 "syntax, we need to clear out any old definitions: >"
 msgstr ""
+"Empecemos con los argumentos básicos. Antes de definir ningún elemento de "
+"sintaxis, debemos borrar las definiciones previas que pueda haber: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:45
@@ -298,6 +301,8 @@ msgid ""
 "This isn't required in the final syntax file, but very useful when "
 "experimenting."
 msgstr ""
+"Este paso no es necesario en la versión final del archivo de sintaxis, pero "
+"es útil mientras se experimenta."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:49
@@ -306,28 +311,27 @@ msgid ""
 "file to be used by others, read all the way through the end to find out the "
 "details."
 msgstr ""
+"En este capítulo hay varias simplificaciones. Si va a escribir un archivo de "
+"sintaxis que será usado por otras personas, lea el contenido completo para "
+"enterarse de todos los detalles."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:52
-#, fuzzy
-#| msgid "FINDING DEFINED IDENTIFIERS"
 msgid "LISTING DEFINED ITEMS"
-msgstr "ENCONTRAR UN IDENTIFICADOR DEFINIDO"
+msgstr "MOSTRAR LOS ELEMENTOS DEFINIDOS"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:54
-#, fuzzy
-#| msgid "To see on which byte you are in the file use this command: >"
 msgid "To check which syntax items are currently defined, use this command: >"
 msgstr ""
-"Use esta orden para ver en que byte se encuentra dentro de un archivo: >"
+"Para revisar qué elementos de sintaxis están definidos actualmente, use esta "
+"orden: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:56
-#, fuzzy, no-wrap
-#| msgid "\t:syntax off\n"
+#, no-wrap
 msgid "\t:syntax\n"
-msgstr "\t:syntax off\n"
+msgstr "\t:syntax\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:61
@@ -338,27 +342,32 @@ msgid ""
 "colors used for each item, which helps to find out what is what.\n"
 "   To list the items in a specific syntax group use: >\n"
 msgstr ""
+"Puede usarla para revisar qué elementos han sido definidos. Es muy útil cuando\n"
+"se está experimentando con un nuevo archivo de sintaxis. También muestra los\n"
+"colores definidos para cada elemento, lo que ayuda a determinar qué es qué.\n"
+"   Para mostrar los elementos de un grupo de sintaxis en particular, use: >\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:63
-#, fuzzy, no-wrap
-#| msgid "\t:syntax enable\n"
+#, no-wrap
 msgid "\t:syntax list {group-name}\n"
-msgstr "\t:syntax enable\n"
+msgstr "\t:syntax list {nombre-grupo}\n"
 
+# TODO cluster
 #. type: Plain text
 #: original/txt/usr_44.txt:66
 msgid ""
 "This also can be used to list clusters (explained in |44.8|).  Just include "
 "the @ in the name."
 msgstr ""
+"También puede usar dicha orden para listar los clústeres (explicados en "
+"|44.8|). Sólo incluya una «@» en el nombre."
+
 
 #. type: Plain text
 #: original/txt/usr_44.txt:69
-#, fuzzy
-#| msgid "SEARCHING BACKWARDS"
 msgid "MATCHING CASE"
-msgstr "BUSCAR EN SENTIDO INVERSO"
+msgstr "SENSIBILIDAD A MAYÚSCULAS Y MINÚSCULAS"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:75
@@ -370,6 +379,11 @@ msgid ""
 "\t:syntax case match\n"
 "\t:syntax case ignore\n"
 msgstr ""
+"Algunos lenguajes, como Pascal, no distinguen entre mayúsculas y minúsculas.\n"
+"Otros, como C, sí hacen esa distinción. Debe indicar a qué tipo corresponde su\n"
+"lenguaje mediante alguna de las siguientes órdenes: >\n"
+"\t:syntax case match\n"
+"\t:syntax case ignore\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:84
@@ -384,6 +398,16 @@ msgid ""
 "contains both case-sensitive and non-case-sensitive elements, however, you can\n"
 "scatter the \":syntax case\" command throughout the file.\n"
 msgstr ""
+"Al usar «match» como argumento Vim revisará que las mayúsculas y minúsculas de\n"
+"los elementos definidos coincida. En este caso, «int» difiere de «Int» y de\n"
+"«INT». Al usar el argumento «ignore», elementos como los siguientes serán\n"
+"considerados equivalentes: «Procedure», «PROCEDURE» y «procedure».\n"
+"   Las órdenes «syntax case» pueden aparecer en cualquier sitio del archivo de\n"
+"sintaxis, y afectan a las definiciones de sintaxis que le sigan. En la mayoría\n"
+"de los casos sólo hay un «:syntax case» en el archivo de sintaxis; si está\n"
+"trabajando con un lenguaje inusual, con elementos sensibles a mayúsculas y\n"
+"minúsculas, y con otros insensibles a ellas, puede agregar tantas órdenes\n"
+"«syntax case» a lo largo del archivo como sea necesario.\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:87
@@ -397,12 +421,14 @@ msgid ""
 "The most basic syntax elements are keywords.  To define a keyword, use the "
 "following form: >"
 msgstr ""
+"Los elementos de sintaxis más básicos son las palabras clave. Para definir "
+"una palabra clave, use el siguiente esquema: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:92
 #, no-wrap
 msgid "\t:syntax keyword {group} {keyword} ...\n"
-msgstr ""
+msgstr "\t:syntax keyword {grupo} {palabra-clave} ...\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:96
@@ -411,6 +437,9 @@ msgid ""
 "you can assign colors to a {group}.  The {keyword} argument is an actual "
 "keyword.  Here are a few examples: >"
 msgstr ""
+"{grupo} corresponde al nombre de un grupo de sintaxis. Puede asignar colores "
+"a un {grupo} usando la orden «:highlight». El argumento {palabra-clave} "
+"corresponde a una palabra clave. A continuación algunos ejemplos: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:99
@@ -419,6 +448,8 @@ msgid ""
 "\t:syntax keyword xType int long char\n"
 "\t:syntax keyword xStatement if then else endif\n"
 msgstr ""
+"\t:syntax keyword xType int long char\n"
+"\t:syntax keyword xStatement if then else endif\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:109
@@ -434,6 +465,16 @@ msgid ""
 "another way.  Now you need to connect the x group names to standard Vim\n"
 "names.  You do this with the following commands: >\n"
 msgstr ""
+"Este ejemplo usa los nombres de grupo «xType» y «xStatement». Por convención,\n"
+"cada nombre de grupo tiene antepuesto el tipo de archivo para el lenguaje que\n"
+"se está definiendo. Este ejemplo define la sintaxis para el lenguaje x\n"
+"(lenguaje de ejemplo (eXample) carente de nombre interesante). En un archivo\n"
+"de sintaxis para scripts de «csh» se usaría «cshType». El prefijo usado es\n"
+"igual al valor de 'filetype'.\n"
+"   Estas órdenes hacen que las palabras «int», «long», y «char» sean\n"
+"resaltadas de una forma, e «if», «then», «else» y «endif» de otra. Ahora es\n"
+"necesario conectar los nombres de grupos de x a los nombres estándar de Vim.\n"
+"Puede hacerlo usando las órdenes siguientes: >\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:112
@@ -442,6 +483,8 @@ msgid ""
 "\t:highlight link xType Type\n"
 "\t:highlight link xStatement Statement\n"
 msgstr ""
+"\t:highlight link xType Type\n"
+"\t:highlight link xStatement Statement\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:115
@@ -449,13 +492,14 @@ msgid ""
 "This tells Vim to highlight \"xType\" like \"Type\" and \"xStatement\" like "
 "\"Statement\".  See |group-name| for the standard names."
 msgstr ""
+"Éstas le indican a Vim que debe resaltar «xType» de la misma forma que a "
+"«Type», y a «xStatement» de la misma forma que a «Statement». Consulte "
+"|group-name| para el listado de nombres estándar."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:118
-#, fuzzy
-#| msgid "KEYWORDS"
 msgid "UNUSUAL KEYWORDS"
-msgstr "PALABRAS CLAVES"
+msgstr "PALABRAS CLAVE INUSUALES"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:126
@@ -469,6 +513,15 @@ msgid ""
 "\t:setlocal iskeyword+=-\n"
 "\t:syntax keyword xStatement when-not\n"
 msgstr ""
+"Los caracteres que se usen en una palabra clave deben estar contenidos en la\n"
+"opción 'iskeyword'. Si usa un carácter que no esté allí, no habrá\n"
+"coincidencias con la palabra. Vim no le mostrará ningún mensaje de advertencia\n"
+"en este caso.\n"
+"   El lenguaje x usa el carácter «-» en sus palabras clave. Para permitir su\n"
+"uso en la definición de sintaxis, use las siguientes órdenes: >\n"
+"\n"
+"\t:setlocal iskeyword+=-\n"
+"\t:syntax keyword xStatement when-not\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:131
@@ -478,6 +531,10 @@ msgid ""
 "\".  If that is not wanted, don't define a keyword but use a match "
 "(explained in the next section)."
 msgstr ""
+"La orden «:setlocal» se usa para cambiar el valor de 'iskeyword' únicamente "
+"en el búfer actual. Al hacer esto se está cambiando el comportamiento de "
+"órdenes como «w» y «*». Si no desea este efecto, no defina una palabra clave, "
+"sino una coincidencia (se explica en la siguiente sección.)"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:136
