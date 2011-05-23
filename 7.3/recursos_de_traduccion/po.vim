@@ -569,7 +569,7 @@ function! s:FormatMsgstr(...)
     let &tw = b:po_target_tw
   else
     if has_mw
-      if !exists("b:po_target_tw")
+      if !exists("b:po_target_tw") || b:po_target_tw !~ '\d\+'
         " TODO check that the user input is an integer expression
         " regexp + eval() should cut it
         let b:po_target_tw = input("Desired textwidth: ")
