@@ -1,0 +1,2754 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.1" version="1.1">
+  <file original="po/usr_28.txt.po" source-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit xml:space="preserve" id="1" approved="no" restype="x-gettext-domain-header">
+        <source>Project-Id-Version: Vim 7.2
+Report-Msgid-Bugs-To: vim@bugs.org
+POT-Creation-Date: 2010-09-23 20:27+0300
+PO-Revision-Date: 2011-02-26 19:15+0200
+Last-Translator: Omar Campagne &lt;ocampagne@gmail.com&gt;
+Language-Team: vim-doc-es &lt;vim-doc-es@freelists.org&gt;
+Language: es
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Plural-Forms: nplurals=2; plural=(n != 1);
+X-Generator: Virtaal 0.5.2
+</source>
+        <target state="translated">Project-Id-Version: Vim 7.2
+Report-Msgid-Bugs-To: vim@bugs.org
+POT-Creation-Date: 2010-09-23 20:27+0300
+PO-Revision-Date: 2011-02-26 19:15+0200
+Last-Translator: Omar Campagne &lt;ocampagne@gmail.com&gt;
+Language-Team: vim-doc-es &lt;vim-doc-es@freelists.org&gt;
+Language: es
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Plural-Forms: nplurals=2; plural=(n != 1);
+X-Generator: Virtaal 0.5.2
+</target>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-trancomment">vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es 
+Copyright (C) 2010 
+This file is distributed under the same license as the Vim (version) package.
+Translators credits:
+  - Initial translation
+      Omar Campagne &lt;ocampagne@gmail.com&gt;, 2010
+  - Updates
+      TRADUCTOR &lt;CORREO&gt;, AÑO 
+Debido al formato (txt) y al máximo de 80 columnas que pueden tener 
+los textos de ayuda en Vim, así como el formato PO, por favor, leete los
+apuntes concernientes a la edición de los archivos PO relativos a la
+aplicación que desees usar.
+También encontrarás información acerca del uso de herramientas gettext en el 
+proyecto de localización (l10n) de Vim.
+- http://www.assembla.com/wiki/show/vim-doc-es
+No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
+este enlace puede ser de interés. A pesar de no formar parte, nuestra 
+intención es homologarnos con su terminología y uso de la lengua 
+en la medida de lo útil y posible.
+ - El proyecto de traducción de Debian al español
+    http://www.debian.org/intl/spanish/notas
+La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
+pero también puede servir de referencia para otros términos no técnicos.
+No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
+traducción sea comprensible independientemente de la nacionalidad del
+usuario. Si crees que alguna traducción puede llevar a confusión, consulta
+la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
+ - www.rae.es 
+ - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&amp;page=showpages   
+Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
+se puede consultar con un simple grep, pogrep o cargado en Virtaal.</context>
+        </context-group>
+        <note from="po-translator">vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es 
+Copyright (C) 2010 
+This file is distributed under the same license as the Vim (version) package.
+Translators credits:
+  - Initial translation
+      Omar Campagne &lt;ocampagne@gmail.com&gt;, 2010
+  - Updates
+      TRADUCTOR &lt;CORREO&gt;, AÑO 
+Debido al formato (txt) y al máximo de 80 columnas que pueden tener 
+los textos de ayuda en Vim, así como el formato PO, por favor, leete los
+apuntes concernientes a la edición de los archivos PO relativos a la
+aplicación que desees usar.
+También encontrarás información acerca del uso de herramientas gettext en el 
+proyecto de localización (l10n) de Vim.
+- http://www.assembla.com/wiki/show/vim-doc-es
+No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
+este enlace puede ser de interés. A pesar de no formar parte, nuestra 
+intención es homologarnos con su terminología y uso de la lengua 
+en la medida de lo útil y posible.
+ - El proyecto de traducción de Debian al español
+    http://www.debian.org/intl/spanish/notas
+La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
+pero también puede servir de referencia para otros términos no técnicos.
+No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
+traducción sea comprensible independientemente de la nacionalidad del
+usuario. Si crees que alguna traducción puede llevar a confusión, consulta
+la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
+ - www.rae.es 
+ - http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&amp;page=showpages   
+Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
+se puede consultar con un simple grep, pogrep o cargado en Virtaal.</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="2" approved="yes">
+        <source>==============================================================================
+</source>
+        <target state="translated">==============================================================================
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/intro.txt</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/intro.txt</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/intro.txt</context>
+          <context context-type="linenumber">180</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/intro.txt</context>
+          <context context-type="linenumber">290</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/intro.txt</context>
+          <context context-type="linenumber">518</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/intro.txt</context>
+          <context context-type="linenumber">596</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/intro.txt</context>
+          <context context-type="linenumber">689</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/intro.txt</context>
+          <context context-type="linenumber">817</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/intro.txt</context>
+          <context context-type="linenumber">880</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_toc.txt</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_toc.txt</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_toc.txt</context>
+          <context context-type="linenumber">172</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_toc.txt</context>
+          <context context-type="linenumber">281</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_toc.txt</context>
+          <context context-type="linenumber">340</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_toc.txt</context>
+          <context context-type="linenumber">352</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_01.txt</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_01.txt</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_01.txt</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_01.txt</context>
+          <context context-type="linenumber">181</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_02.txt</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_02.txt</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_02.txt</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_02.txt</context>
+          <context context-type="linenumber">179</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_02.txt</context>
+          <context context-type="linenumber">239</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_02.txt</context>
+          <context context-type="linenumber">307</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_02.txt</context>
+          <context context-type="linenumber">369</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_02.txt</context>
+          <context context-type="linenumber">406</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_02.txt</context>
+          <context context-type="linenumber">560</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">172</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">223</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">265</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">320</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">491</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">552</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">650</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">194</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">269</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">324</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">360</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">390</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">446</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">469</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">510</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_05.txt</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_05.txt</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_05.txt</context>
+          <context context-type="linenumber">219</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_05.txt</context>
+          <context context-type="linenumber">266</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_05.txt</context>
+          <context context-type="linenumber">418</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_05.txt</context>
+          <context context-type="linenumber">467</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_05.txt</context>
+          <context context-type="linenumber">506</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_05.txt</context>
+          <context context-type="linenumber">621</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_06.txt</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_06.txt</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_06.txt</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_06.txt</context>
+          <context context-type="linenumber">189</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_06.txt</context>
+          <context context-type="linenumber">270</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_06.txt</context>
+          <context context-type="linenumber">276</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_07.txt</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_07.txt</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_07.txt</context>
+          <context context-type="linenumber">179</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_07.txt</context>
+          <context context-type="linenumber">266</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_07.txt</context>
+          <context context-type="linenumber">316</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_07.txt</context>
+          <context context-type="linenumber">404</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_07.txt</context>
+          <context context-type="linenumber">444</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_07.txt</context>
+          <context context-type="linenumber">475</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_08.txt</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_08.txt</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_08.txt</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_08.txt</context>
+          <context context-type="linenumber">161</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_08.txt</context>
+          <context context-type="linenumber">215</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_08.txt</context>
+          <context context-type="linenumber">278</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_08.txt</context>
+          <context context-type="linenumber">337</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_08.txt</context>
+          <context context-type="linenumber">477</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_08.txt</context>
+          <context context-type="linenumber">509</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_08.txt</context>
+          <context context-type="linenumber">597</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_09.txt</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_09.txt</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_09.txt</context>
+          <context context-type="linenumber">175</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_09.txt</context>
+          <context context-type="linenumber">259</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_09.txt</context>
+          <context context-type="linenumber">285</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_10.txt</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_10.txt</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_10.txt</context>
+          <context context-type="linenumber">221</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_10.txt</context>
+          <context context-type="linenumber">342</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_10.txt</context>
+          <context context-type="linenumber">378</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_10.txt</context>
+          <context context-type="linenumber">547</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_10.txt</context>
+          <context context-type="linenumber">621</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_10.txt</context>
+          <context context-type="linenumber">667</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_10.txt</context>
+          <context context-type="linenumber">692</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_10.txt</context>
+          <context context-type="linenumber">820</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_11.txt</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_11.txt</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_11.txt</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_11.txt</context>
+          <context context-type="linenumber">288</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_11.txt</context>
+          <context context-type="linenumber">303</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_12.txt</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_12.txt</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_12.txt</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_12.txt</context>
+          <context context-type="linenumber">177</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_12.txt</context>
+          <context context-type="linenumber">202</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_12.txt</context>
+          <context context-type="linenumber">231</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_12.txt</context>
+          <context context-type="linenumber">281</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_12.txt</context>
+          <context context-type="linenumber">309</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_12.txt</context>
+          <context context-type="linenumber">354</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_20.txt</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_20.txt</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_20.txt</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_20.txt</context>
+          <context context-type="linenumber">285</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_20.txt</context>
+          <context context-type="linenumber">327</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_20.txt</context>
+          <context context-type="linenumber">380</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_21.txt</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_21.txt</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_21.txt</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_21.txt</context>
+          <context context-type="linenumber">236</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_21.txt</context>
+          <context context-type="linenumber">385</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_21.txt</context>
+          <context context-type="linenumber">438</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_21.txt</context>
+          <context context-type="linenumber">495</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_22.txt</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_22.txt</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_22.txt</context>
+          <context context-type="linenumber">213</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_22.txt</context>
+          <context context-type="linenumber">272</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_22.txt</context>
+          <context context-type="linenumber">396</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_23.txt</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_23.txt</context>
+          <context context-type="linenumber">114</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_23.txt</context>
+          <context context-type="linenumber">156</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_23.txt</context>
+          <context context-type="linenumber">238</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_23.txt</context>
+          <context context-type="linenumber">324</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_23.txt</context>
+          <context context-type="linenumber">339</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">268</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">305</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">336</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">369</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">493</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">537</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">583</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">602</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_25.txt</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_25.txt</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_25.txt</context>
+          <context context-type="linenumber">210</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_25.txt</context>
+          <context context-type="linenumber">287</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_25.txt</context>
+          <context context-type="linenumber">453</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_25.txt</context>
+          <context context-type="linenumber">574</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">217</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_27.txt</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_27.txt</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_27.txt</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_27.txt</context>
+          <context context-type="linenumber">239</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_27.txt</context>
+          <context context-type="linenumber">320</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_27.txt</context>
+          <context context-type="linenumber">350</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_27.txt</context>
+          <context context-type="linenumber">427</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_27.txt</context>
+          <context context-type="linenumber">469</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_27.txt</context>
+          <context context-type="linenumber">510</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_27.txt</context>
+          <context context-type="linenumber">559</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">185</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">211</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">269</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">315</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">331</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">375</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">389</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">422</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_29.txt</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_29.txt</context>
+          <context context-type="linenumber">273</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_29.txt</context>
+          <context context-type="linenumber">320</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_29.txt</context>
+          <context context-type="linenumber">441</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_29.txt</context>
+          <context context-type="linenumber">570</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_29.txt</context>
+          <context context-type="linenumber">609</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_30.txt</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_30.txt</context>
+          <context context-type="linenumber">202</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_30.txt</context>
+          <context context-type="linenumber">280</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_30.txt</context>
+          <context context-type="linenumber">336</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_30.txt</context>
+          <context context-type="linenumber">409</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_30.txt</context>
+          <context context-type="linenumber">515</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_30.txt</context>
+          <context context-type="linenumber">639</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_31.txt</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_31.txt</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_31.txt</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_31.txt</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_31.txt</context>
+          <context context-type="linenumber">208</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_31.txt</context>
+          <context context-type="linenumber">268</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="3" approved="yes">
+        <source>		     VIM USER MANUAL - by Bram Moolenaar
+</source>
+        <target state="translated">		MANUAL DE USUARIO DE VIM - por Bram Moolenaar
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_toc.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_01.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_02.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_05.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_06.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_07.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_08.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_09.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_10.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_11.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_12.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_20.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_21.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_22.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_23.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_25.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_27.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_29.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_30.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_31.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="4" approved="yes">
+        <source>Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:</source>
+        <target state="translated">Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_toc.txt</context>
+          <context context-type="linenumber">354</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_01.txt</context>
+          <context context-type="linenumber">185</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_02.txt</context>
+          <context context-type="linenumber">564</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">654</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">514</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_05.txt</context>
+          <context context-type="linenumber">625</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_06.txt</context>
+          <context context-type="linenumber">280</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_07.txt</context>
+          <context context-type="linenumber">479</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_08.txt</context>
+          <context context-type="linenumber">601</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_09.txt</context>
+          <context context-type="linenumber">289</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_10.txt</context>
+          <context context-type="linenumber">824</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_11.txt</context>
+          <context context-type="linenumber">307</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_12.txt</context>
+          <context context-type="linenumber">358</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_20.txt</context>
+          <context context-type="linenumber">384</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_21.txt</context>
+          <context context-type="linenumber">499</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_22.txt</context>
+          <context context-type="linenumber">400</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_23.txt</context>
+          <context context-type="linenumber">343</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">606</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_25.txt</context>
+          <context context-type="linenumber">578</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">221</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_27.txt</context>
+          <context context-type="linenumber">563</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">426</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_29.txt</context>
+          <context context-type="linenumber">613</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_30.txt</context>
+          <context context-type="linenumber">643</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_31.txt</context>
+          <context context-type="linenumber">272</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="5" approved="yes">
+        <source>	:mkview
+</source>
+        <target state="translated">	:mkview
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_21.txt</context>
+          <context context-type="linenumber">400</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">194</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="6" approved="yes">
+        <source>	:loadview
+</source>
+        <target state="translated">	:loadview
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_21.txt</context>
+          <context context-type="linenumber">405</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">200</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="7" approved="yes">
+        <source>*usr_28.txt*	For Vim version 7.3.  Last change: 2008 Jun 14
+</source>
+        <target state="translated">*usr_28.esx*	Para Vim versión 7.3.  Último cambio: 8/2/2007
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="8" approved="yes">
+        <source>				   Folding
+</source>
+        <target state="translated">				 Plegar
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="9" approved="yes">
+        <source>Structured text can be separated in sections.  And sections in sub-sections.  Folding allows you to display a section as one line, providing an overview.  This chapter explains the different ways this can be done.</source>
+        <target state="translated">El texto estructurado se puede separar en secciones, y éstas en sub-secciones. Plegar le permite mostrar una sección como una sola línea, ofreciendo una vista más general. Este capítulo explica las diferentes maneras de hacerlo.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="10" approved="yes">
+        <source>|28.1|	What is folding?
+|28.2|	Manual folding
+|28.3|	Working with folds
+|28.4|	Saving and restoring folds
+|28.5|	Folding by indent
+|28.6|	Folding with markers
+|28.7|	Folding by syntax
+|28.8|	Folding by expression
+|28.9|	Folding unchanged lines
+|28.10| Which fold method to use?
+</source>
+        <target state="translated">|28.1|	¿Qué es plegar?
+|28.2|	Plegar manualmente
+|28.3|	Trabajar con pliegues
+|28.4|	Guardar y restaurar pliegues
+|28.5|	Plegar por sangrado
+|28.6|	Plegar con marcadores
+|28.7|	Plegar por sintaxis
+|28.8|	Plegar por expresión
+|28.9|	Plegar líneas sin cambios
+|28.10¿| ¿Qué método de plegar debería usar?
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="11" approved="yes">
+        <source>     Next chapter: |usr_29.txt|  Moving through programs
+ Previous chapter: |usr_27.txt|  Search commands and patterns
+Table of contents: |usr_toc.txt|
+</source>
+        <target state="translated"> Capítulo siguiente: |usr_29.esx|  Moverse a través de programas
+  Capítulo anterior: |usr_27.esx|  Órdenes de búsqueda y patrones
+Tabla de contenidos: |usr_toc.esx|
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="12" approved="yes">
+        <source>*28.1*	What is folding?
+</source>
+        <target state="translated">*28.1¿*	¿Qué es plegar?
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="13" approved="yes">
+        <source>Folding is used to show a range of lines in the buffer as a single line on the screen.  Like a piece of paper which is folded to make it shorter:</source>
+        <target state="translated">Plegar se usa para mostrar un rango de líneas en un búfer como una sola línea en la pantalla. Como un trozo de papel plegado para acortarlo.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="14" approved="yes">
+        <source>	+------------------------+
+	| line 1		 |
+	| line 2		 |
+	| line 3		 |
+	|_______________________ |
+	\			 \
+	 \________________________\
+	 / folded lines		  /
+	/________________________/
+	| line 12		 |
+	| line 13		 |
+	| line 14		 |
+	+------------------------+
+</source>
+        <target state="translated">	+------------------------+
+	| línea 1		 |
+	| línea 2		 |
+	| línea 3		 |
+	|_______________________ |
+	\			 \
+	 \________________________\
+	 / líneas plegadas	  /
+	/________________________/
+	| línea 12		 |
+	| línea 13		 |
+	| línea 14		 |
+	+------------------------+
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="15" approved="yes">
+        <source>The text is still in the buffer, unchanged.  Only the way lines are displayed is affected by folding.</source>
+        <target state="translated">El texto aún está en el búfer, sin cambios. Plegar sólo afecta a la manera en que se muestran las líneas.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="16" approved="yes">
+        <source>The advantage of folding is that you can get a better overview of the structure of text, by folding lines of a section and replacing it with a line that indicates that there is a section.</source>
+        <target state="translated">La ventaja de plegar es que obtiene una mejor vista general de la estructura del texto, mediante el de plegado las líneas de una sección, reemplazando éstos con una línea indicando que hay una sección.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="17" approved="yes">
+        <source>*28.2*	Manual folding
+</source>
+        <target state="translated">*28.2*	Plegar manualmente
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="18" approved="yes">
+        <source>Try it out: Position the cursor in a paragraph and type: &gt;</source>
+        <target state="translated">Pruebe esto: posicione el cursor en un párrafo y teclee: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="19" approved="yes">
+        <source>	zfap
+</source>
+        <target state="translated">	zfap
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="20" approved="yes">
+        <source>You will see that the paragraph is replaced by a highlighted line.  You have created a fold.  |zf| is an operator and |ap| a text object selection.  You can use the |zf| operator with any movement command to create a fold for the text that it moved over.  |zf| also works in Visual mode.</source>
+        <target state="translated">Verá que una línea resaltada reemplaza al párrafo. Ha creado un pliegue. |zf| es un operando y |ap| una selección de un objeto textual. Puede usar el operando |zf| con cualquier orden de desplazamiento para crear un pliegue para el texto reemplazado. |zf| funciona también en el modo Visual.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="21" approved="yes">
+        <source>To view the text again, open the fold by typing: &gt;</source>
+        <target state="translated">Para ver el texto otra vez, abra el pliegue con lo siguiente: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="22" approved="yes">
+        <source>	zo
+</source>
+        <target state="translated">	zo
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="23" approved="yes">
+        <source>And you can close the fold again with: &gt;</source>
+        <target state="translated">Y puede cerrar el pliegue otra vez con: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="24" approved="yes">
+        <source>	zc
+</source>
+        <target state="translated">	zc
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="25" approved="yes">
+        <source>All the folding commands start with "z".  With some fantasy, this looks like a folded piece of paper, seen from the side.  The letter after the "z" has a mnemonic meaning to make it easier to remember the commands:</source>
+        <target state="translated">Todas las órdenes de plegado empiezan con «z». Si usa la imaginación, se asemeja a un papel plegado visto de lado. La letra a continuación de «z» tiene un significado nemónico que facilita recordar las órdenes:</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="26" approved="yes">
+        <source>	zf	F-old creation
+	zo	O-pen a fold
+	zc	C-lose a fold
+</source>
+        <target state="translated">	zf	F-old creation (crear pliegue)
+	zo	O-pen a fold (abrir pliegue)
+	zc	C-lose a fold (cerrar pliegue)
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="27" approved="yes">
+        <source>Folds can be nested: A region of text that contains folds can be folded again.  For example, you can fold each paragraph in this section, and then fold all the sections in this chapter.  Try it out.  You will notice that opening the fold for the whole chapter will restore the nested folds as they were, some may be open and some may be closed.</source>
+        <target state="translated">Puede anidar los pliegues: Una región de texto que contiene pliegues se puede anidar nuevamente. Por ejemplo, puede plegar cada párrafo de esta sección, y después plegar todas las secciones en este capítulo. Pruébelo, notará que abrir el pliegue del capítulo completo devolverá los pliegues anidados a su forma previa, algunos abiertos y otros cerrados.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="28" approved="yes">
+        <source>Suppose you have created several folds, and now want to view all the text.  You could go to each fold and type "zo".  To do this faster, use this command: &gt;</source>
+        <target state="translated">Imagine que ha creado varios pliegues, y que ahora desea ver todo el texto. Puede ir a cada pliegue y teclear «zo». Use la siguiente orden para hacer esto mismo con rapidez: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="29" approved="yes">
+        <source>	zr
+</source>
+        <target state="translated">	zr
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="30" approved="yes">
+        <source>This will R-educe the folding.  The opposite is: &gt;</source>
+        <target state="translated">Esto r_educe el plegado. Lo opuesto es: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="31" approved="yes">
+        <source>	zm
+</source>
+        <target state="translated">	zm
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="32" approved="yes">
+        <source>This folds M-ore.  You can repeat "zr" and "zm" to open and close nested folds of several levels.</source>
+        <target state="translated">Esto pliega m_ás. Puede repetir «zr» y «zm» para abrir y cerrar pliegues anidados en varios niveles.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="33" approved="yes">
+        <source>If you have nested several levels deep, you can open all of them with: &gt;</source>
+        <target state="translated">Si ha anidado pliegues con varios niveles de profundidad, puede abrirlos todos con: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="34" approved="yes">
+        <source>	zR
+</source>
+        <target state="translated">	zR
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="35" approved="yes">
+        <source>This R-educes folds until there are none left.  And you can close all folds with: &gt;</source>
+        <target state="translated">Esto r_educe los pliegues hasta que no queda ninguno, Y puede cerrar todos los pliegues con: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="36" approved="yes">
+        <source>	zM
+</source>
+        <target state="translated">	zM
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="37" approved="yes">
+        <source>This folds M-ore and M-ore.</source>
+        <target state="translated">Esto pliega m_ás y m_ás.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="38" approved="yes">
+        <source>You can quickly disable the folding with the |zn| command.  Then |zN| brings back the folding as it was.  |zi| toggles between the two.  This is a useful way of working: - create folds to get overview on your file - move around to where you want to do your work - do |zi| to look at the text and edit it - do |zi| again to go back to moving around</source>
+        <target state="translated">Puede desactivar el plegado rápidamente con la orden |zn|. |Zn| devuelve el plegado a su estado previo. |zi| pasa de uno a otro. Esta es una buena forma de trabajar: creación de pliegues para obtener una visión general de su archivo - desplazarse a las áreas que desea modificar - visionado y edición del texto con |zi| - repita |zi| para seguir desplazándose.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">118</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="39" approved="yes">
+        <source>More about manual folding in the reference manual: |fold-manual|</source>
+        <target state="translated">Para más información acerca del plegado manual, consulte la siguiente sección en el manual de referencia: |fold-manual|.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="40" approved="yes">
+        <source>*28.3*	Working with folds
+</source>
+        <target state="translated">*28.3*	Trabajar con pliegues
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="41" approved="yes">
+        <source>When some folds are closed, movement commands like "j" and "k" move over a fold like it was a single, empty line.  This allows you to quickly move around over folded text.</source>
+        <target state="translated">De haber algunos pliegues cerrados, las órdenes de movimiento como «j» y «k» se desplazarán sobre el pliegue como si fuese una única línea vacía. Esto permite un desplazamiento más rápido sobre texto plegado.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="42" approved="yes">
+        <source>You can yank, delete and put folds as if it was a single line.  This is very useful if you want to reorder functions in a program.  First make sure that each fold contains a whole function (or a bit less) by selecting the right 'foldmethod'.  Then delete the function with "dd", move the cursor and put it with "p".  If some lines of the function are above or below the fold, you can use Visual selection: - put the cursor on the first line to be moved - hit "V" to start Visual mode - put the cursor on the last line to be moved - hit "d" to delete the selected lines.  - move the cursor to the new position and "p"ut the lines there.</source>
+        <target state="translated">Puede copiar, eliminar y mover pliegues como si fuesen una sola línea. Esto es útil si desea reordenar las funciones de un programa. Primero asegúrese de que cada pliegue contiene una función completa (o casi) seleccionado el método 'foldmethod' adecuado. Elimine después la función con «dd», desplaze el cursor y pegue el texto con «p». Puede usar la selección Visual de existir algunas líneas de la función por encima o a continuación del pliegue: coloque el cursor sobre la primera línea a mover - pulse «V» para iniciar el modo Visual - coloque el cursor sobre la última línea a mover - pulse «d» para eliminar las líneas seleccionadas - desplace el cursor a la nueva posición y «p»onga ahí las líneas.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="43" approved="yes">
+        <source>It is sometimes difficult to see or remember where a fold is located, thus where a |zo| command would actually work.  To see the defined folds: &gt;</source>
+        <target state="translated">A veces es difícil ver o recordar la ubicación de un pliegue; la orden |zo| es de utilidad en estos caso. Para ver los pliegues definidos: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="44" approved="yes">
+        <source>	:set foldcolumn=4
+</source>
+        <target state="translated">	:set foldcolumn=4
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="45" approved="yes">
+        <source>This will show a small column on the left of the window to indicate folds.  A "+" is shown for a closed fold.  A "-" is shown at the start of each open fold and "|" at following lines of the fold.</source>
+        <target state="translated">Esto muestra una pequeña columna a la izquierda de la ventana que indica los pliegues. Un «+» simboliza un pliegue cerrado. Un «-» aparece al principio de cada pliegue abierto y «|» simboliza líneas del pliegue a continuación. </target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="46" approved="yes">
+        <source>You can use the mouse to open a fold by clicking on the "+" in the foldcolumn.  Clicking on the "-" or a "|" below it will close an open fold.</source>
+        <target state="translated">Puede usar el ratón para abrir un pliegue pulsando sobre la «+» en la columna de plegado. Pulsar sobre «-» o el «|» que aparece debajo cierra un pliegue abierto.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="47" approved="yes">
+        <source>To open all folds at the cursor line use |zO|.  To close all folds at the cursor line use |zC|.  To delete a fold at the cursor line use |zd|.  To delete all folds at the cursor line use |zD|.</source>
+        <target state="translated">Use |zO| para abrir todos los pliegues en la línea del cursor. Use |zC| para cerrar todos los pliegues en la línea del cursor. Puede eliminar un pliegue en la línea del cursor con |zd|. Use |zD| para borrar todos los pliegues bajo la línea del cursor.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">156</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="48" approved="yes">
+        <source>When in Insert mode, the fold at the cursor line is never closed.  That allows you to see what you type!</source>
+        <target state="translated">La línea del cursor nunca se cierra en el modo Insertar. Esto permite ver lo que teclea.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">159</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="49" approved="yes">
+        <source>Folds are opened automatically when jumping around or moving the cursor left or right.  For example, the "0" command opens the fold under the cursor (if 'foldopen' contains "hor", which is the default).  The 'foldopen' option can be changed to open folds for specific commands.  If you want the line under the cursor always to be open, do this: &gt;</source>
+        <target state="translated">Los pliegues se abren automáticamente al desplazarse o moviendo el cursor a la izquierda o a la derecha. Por ejemplo, la orden «0» abre el pliegue bajo el cursor (si 'foldopen' contiene 'hor', el valor predeterminado). Puede modificar la opción 'foldopen' para abrir los pliegues con órdenes específicas. Haga lo siguiente si desea que la línea bajo el cursor esté siempre abierta: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">165</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="50" approved="yes">
+        <source>	:set foldopen=all
+</source>
+        <target state="translated">	:set foldopen=all
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">167</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="51" approved="yes">
+        <source>Warning: You won't be able to move onto a closed fold then.  You might want to use this only temporarily and then set it back to the default: &gt;</source>
+        <target state="translated">Aviso: en esta situación, no será capaz de desplazarse a un pliegue cerrado. Puede que desea usar esto temporalmente para después devolverlo al valor original: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="52" approved="yes">
+        <source>	:set foldopen&amp;
+</source>
+        <target state="translated">	:set foldopen&amp;
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">172</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="53" approved="yes">
+        <source>You can make folds close automatically when you move out of it: &gt;</source>
+        <target state="translated">Puede hacer que los pliegues se cierren automáticamente al salir de éstos: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">174</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="54" approved="yes">
+        <source>	:set foldclose=all
+</source>
+        <target state="translated">	:set foldclose=all
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">176</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="55" approved="yes">
+        <source>This will re-apply 'foldlevel' to all folds that don't contain the cursor.  You have to try it out if you like how this feels.  Use |zm| to fold more and |zr| to fold less (reduce folds).</source>
+        <target state="translated">Esto ejecutará 'foldlevel' en todos los pliegues que no contengan el cursor. Tiene que probar para ver si le gusta. Use |zm| para plegar más, y |zr| para plegar menos (reducir los pliegues).</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">180</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="56" approved="yes">
+        <source>The folding is local to the window.  This allows you to open two windows on the same buffer, one with folds and one without folds.  Or one with all folds closed and one with all folds open.</source>
+        <target state="translated">El pliegue es local para la ventana. Esto permite abrir dos ventanas en el mismo búfer, uno con pliegues y otro sin ellos. O uno con todos los pliegues cerrados y otro con todos los pliegues abiertos.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">184</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="57" approved="yes">
+        <source>*28.4*	Saving and restoring folds
+</source>
+        <target state="translated">*28.4*	Guardar y restaurar pliegues
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">187</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="58" approved="yes">
+        <source>When you abandon a file (starting to edit another one), the state of the folds is lost.  If you come back to the same file later, all manually opened and closed folds are back to their default.  When folds have been created manually, all folds are gone! To save the folds use the |:mkview| command: &gt;</source>
+        <target state="translated">Al cerrar un archivo para iniciar la edición de otro, el estado del pliegue es eliminado. Si vuelve al mismo archivo más tarde, todos aquellos pliegues cerrados y abiertos manualmente volverán a su estado predeterminado. ¡Perderá todos los pliegues creados manualmente. Use la orden |:mkview| para guardar el estado de los archivos: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">192</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="59" approved="yes">
+        <source>This will store the settings and other things that influence the view on the file.  You can change what is stored with the 'viewoptions' option.  When you come back to the same file later, you can load the view again: &gt;</source>
+        <target state="translated">Esto guardará la configuración y otras que cosas que modifican el visionado del archivo. Puede modificar lo guardado con  la opción 'viewoptions'. Puede cargar el mismo visionado al volver al archivo más tarde: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="60" approved="yes">
+        <source>You can store up to ten views on one file.  For example, to save the current setup as the third view and load the second view: &gt;</source>
+        <target state="translated">Puede guardar hasta diez visionados distintos de un archivo. Por ejemplo, para guardar la configuración actual como el tercer visionado, y cargar después el segundo: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">203</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="61" approved="yes">
+        <source>	:mkview 3
+	:loadview 2
+</source>
+        <target state="translated">	:mkview 3
+	:loadview 2
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">206</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="62" approved="yes">
+        <source>Note that when you insert or delete lines the views might become invalid.  Also check out the 'viewdir' option, which specifies where the views are stored.  You might want to delete old views now and then.</source>
+        <target state="translated">Tenga en cuenta que, al insertar o eliminar líneas, las vistas dejarán de ser válidas. Revise también la opción 'viewdir', que define donde se guardan los visionados. Puede que desee eliminar viejos visionados de vez en cuando.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">210</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="63" approved="yes">
+        <source>*28.5*	Folding by indent
+</source>
+        <target state="translated">*28.5*	Plegar según el sangrado
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">213</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="64" approved="yes">
+        <source>Defining folds with |zf| is a lot of work.  If your text is structured by giving lower level items a larger indent, you can use the indent folding method.  This will create folds for every sequence of lines with the same indent.  Lines with a larger indent will become nested folds.  This works well with many programming languages.</source>
+        <target state="translated">Definir pliegues con |zf| supone mucho trabajo. Si el texto está estructurado de forma que los elementos de un nivel inferior tienen un mayor sangrado, puede usar el método de pliegue por sangrado. Ésto crea pliegues para cada secuencia de líneas dentro del mismo sangrado. Las líneas con un sangrado mayor se convertirán en pliegues anidados. Esto funciona muy bien con varios lenguajes de programación.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">219</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="65" approved="yes">
+        <source>Try this by setting the 'foldmethod' option: &gt;</source>
+        <target state="translated">Pruebe esto definiendo la opción 'foldmethod': &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">221</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="66" approved="yes">
+        <source>	:set foldmethod=indent
+</source>
+        <target state="translated">	:set foldmethod=indent
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">223</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="67" approved="yes">
+        <source>Then you can use the |zm| and |zr| commands to fold more and reduce folding.  It's easy to see on this example text:</source>
+        <target state="translated">Puede después usar las órdenes |zm| y |zr| para aumentar y reducir el plegado. Es fácil de ver con este texto de ejemplo:</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">226</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="68" approved="yes">
+        <source>This line is not indented
+	This line is indented once
+		This line is indented twice
+		This line is indented twice
+	This line is indented once
+This line is not indented
+	This line is indented once
+	This line is indented once
+</source>
+        <target state="translated">La línea no tiene sangrado
+	Esta línea tiene un sangrado
+		Esta línea tiene doble sangrado
+		Esta línea tiene doble sangrado
+	Esta línea tiene un sangrado
+La línea no tiene sangrado
+	Esta línea tiene un sangrado
+	Esta línea tiene un sangrado
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">235</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="69" approved="yes">
+        <source>Note that the relation between the amount of indent and the fold depth depends on the 'shiftwidth' option.  Each 'shiftwidth' worth of indent adds one to the depth of the fold.  This is called a fold level.</source>
+        <target state="translated">Tenga en cuenta que la relación entre la cantidad de sangrado y la profundidad del pliegue depende de la opción 'shiftwidth'. Cada 'shiftwidth' con el valor de un sangrado añade uno a la profundidad del pliegue. Este se denomina nivel de plegado.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">239</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="70" approved="yes">
+        <source>When you use the |zr| and |zm| commands you actually increase or decrease the 'foldlevel' option.  You could also set it directly: &gt;</source>
+        <target state="translated">En realidad, cuando usa las órdenes |zr| y |zm| aumento o disminuye la opción 'foldlevel'. Puede también definirlo directamente: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">242</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="71" approved="yes">
+        <source>	:set foldlevel=3
+</source>
+        <target state="translated">	:set foldlevel=3
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">244</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="72" approved="yes">
+        <source>This means that all folds with three times a 'shiftwidth' indent or more will be closed.  The lower the foldlevel, the more folds will be closed.  When 'foldlevel' is zero, all folds are closed.  |zM| does set 'foldlevel' to zero.  The opposite command |zR| sets 'foldlevel' to the deepest fold level that is present in the file.</source>
+        <target state="translated">Esto significa que todos los pliegues con un sangrado tres veces el valor de 'shiftwidth' se cerrarán. Cuanto más bajo es 'foldlevel', más pliegues se cerrarán. Si el valor de 'foldlevel' es cero, se cerrarán todos los pliegues. |zM| define 'foldlevel' como cero. La orden opuesta |zR| define 'foldlevel' con el valor de nivel de pliegue más bajo presente en el archivo.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">250</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="73" approved="yes">
+        <source>Thus there are two ways to open and close the folds:
+(A) By setting the fold level.
+    This gives a very quick way of "zooming out" to view the structure of the
+    text, move the cursor, and "zoom in" on the text again.
+</source>
+        <target state="translated">Por ello, hay dos maneras de abrir y cerrar los pliegues:
+(a) Definiendo el nivel de pliegue (foldlevel).
+    Esto ofrece un rápida manera de alejar la vista para ver la estructura
+    general del texto, desplazar el cursor, acercar la vista y de vuelta al
+    texto otra vez.
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">255</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="74" approved="yes">
+        <source>(B) By using |zo| and |zc| commands to open or close specific folds.
+    This allows opening only those folds that you want to be open, while other
+    folds remain closed.
+</source>
+        <target state="translated">(B) Usando las órdenes |zo| y |zc| para abrir o cerrar pliegues específicos.
+    Esto permite abrir sólo aquellos pliegues que desea abrir, manteniendo
+    los otros cerrados.
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">259</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="75" approved="yes">
+        <source>This can be combined: You can first close most folds by using |zm| a few times and then open a specific fold with |zo|.  Or open all folds with |zR| and then close specific folds with |zc|.</source>
+        <target state="translated">Esto se puede combinar: primero puede cerrar la mayoría de los pliegues usando |zm| unas cuantas veces, y después abrir un pliegue en particular con |zo|. O abrir todos los pliegues con |zR| y después cerrar pliegues específicos con |zc|.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">263</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="76" approved="yes">
+        <source>But you cannot manually define folds when 'foldmethod' is "indent", as that would conflict with the relation between the indent and the fold level.</source>
+        <target state="translated">Pero no puede definir pliegues manualmente cuando 'foldmethod' es «indent» (sangrado), ya que entraría en conflicto con la relación entre sangrado y el nivel de plegado.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">266</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="77" approved="yes">
+        <source>More about folding by indent in the reference manual: |fold-indent|</source>
+        <target state="translated">Puede ver más acerca de plegar por sangrado en el manual de referencia: |fold-indent|</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">268</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="78" approved="yes">
+        <source>*28.6*	Folding with markers
+</source>
+        <target state="translated">*28.6*	Plegar con marcadores
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">271</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="79" approved="yes">
+        <source>Markers in the text are used to specify the start and end of a fold region.  This gives precise control over which lines are included in a fold.  The disadvantage is that the text needs to be modified.</source>
+        <target state="translated">Los marcadores en el texto sirven  para definir el inicio y fin de una región plegada, ofreciendo un control preciso sobre qué líneas se incluyen un pliegue. La desventaja de esto es que tiene que modificar el texto.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">275</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="80" approved="yes">
+        <source>Try it: &gt;</source>
+        <target state="translated">Pruebe esto: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">277</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="81" approved="yes">
+        <source>	:set foldmethod=marker
+</source>
+        <target state="translated">	:set foldmethod=marker
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">279</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="82" approved="yes">
+        <source>Example text, as it could appear in a C program:</source>
+        <target state="translated">Un texto de ejemplo, como podría aparecer en un programa C:</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">281</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="83" approved="yes">
+        <source>	/* foobar () {{{ */
+	int foobar()
+	{
+		/* return a value {{{ */
+		return 42;
+		/* }}} */
+	}
+	/* }}} */
+</source>
+        <target state="translated">	/* foobar () {{{ */
+	int foobar()
+	{
+		/* return a value {{{ */
+		return 42;
+		/* }}} */
+	}
+	/* }}} */
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">290</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="84" approved="yes">
+        <source>Notice that the folded line will display the text before the marker.  This is very useful to tell what the fold contains.</source>
+        <target state="translated">Observe que la líena plegada mostrará el texto previo al marcador. Es útil para informar de los contenidos del pliegue.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">293</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="85" approved="yes">
+        <source>It's quite annoying when the markers don't pair up correctly after moving some lines around.  This can be avoided by using numbered markers.  Example:</source>
+        <target state="translated">Es bastante molesto cuando los marcadores no encajan correctamente tras desplazar algunas líneas. Esto se puede evitar usando marcadores numerados. Ejemplo: </target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">296</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="86" approved="yes">
+        <source>	/* global variables {{{1 */
+	int varA, varB;
+</source>
+        <target state="translated">	/* global variables {{{1 */
+	int varA, varB;
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">299</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="87" approved="yes">
+        <source>	/* functions {{{1 */
+	/* funcA() {{{2 */
+	void funcA() {}
+</source>
+        <target state="translated">	/* functions {{{1 */
+	/* funcA() {{{2 */
+	void funcA() {}
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">303</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="88" approved="yes">
+        <source>	/* funcB() {{{2 */
+	void funcB() {}
+	/* }}}1 */
+</source>
+        <target state="translated">	/* funcB() {{{2 */
+	void funcB() {}
+	/* }}}1 */
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">307</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="89" approved="yes">
+        <source>At every numbered marker a fold at the specified level begins.  This will make any fold at a higher level stop here.  You can just use numbered start markers to define all folds.  Only when you want to explicitly stop a fold before another starts you need to add an end marker.</source>
+        <target state="translated">Un pliegue se iniciará con el nivel definido por cada marcador numerado. Esto detiene en este punto cualquier pliegue de nivel superior. Puede usar marcadores de inicio numerados para definir todos los pliegues. Tendrá que añadir un marcador de fin sólo cuando desee detener un pliegue antes de iniciar otro.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">312</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="90" approved="yes">
+        <source>More about folding with markers in the reference manual: |fold-marker|</source>
+        <target state="translated">Consulte el manual de referencia para más información acerca de plegar con marcadores: |fold-marker|</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">314</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="91" approved="yes">
+        <source>*28.7*	Folding by syntax
+</source>
+        <target state="translated">*28.7*	Plegar por sintaxis
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">317</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="92" approved="yes">
+        <source>For each language Vim uses a different syntax file.  This defines the colors
+for various items in the file.  If you are reading this in Vim, in a terminal
+that supports colors, the colors you see are made with the "help" syntax file.
+   In the syntax files it is possible to add syntax items that have the "fold"
+argument.  These define a fold region.  This requires writing a syntax file
+and adding these items in it.  That's not so easy to do.  But once it's done,
+all folding happens automatically.
+   Here we'll assume you are using an existing syntax file.  Then there is
+nothing more to explain.  You can open and close folds as explained above.
+The folds will be created and deleted automatically when you edit the file.
+</source>
+        <target state="translated">Vim usa un archivo de sintaxis diferente según el lenguaje. Éste define
+los colores de varios elementos en el archivo. Si está leyendo esto en Vim
+en una terminal compatible con colores,  los que ve se generan con el
+archivo de sintaxis «help».
+  Es posible añadir elementos sintácticos al archivo que contengan el
+argumento «fold». Esto define una región plegada. Requiere editar
+un archivo de sintaxis al que añadir estos elementos. No es tan fácil,
+pero una vez hecho, el plegado ocurrirá automáticamente.
+  Supongamos que está usando un archivo de sintaxis existente.
+No queda mucho más que explicar, puede abrir y cerrar pliegues
+tal y como se vió anteriormente. Esto pliegues se crearán y eliminarán
+automáticamente al editar el archivo.
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">328</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="93" approved="yes">
+        <source>More about folding by syntax in the reference manual: |fold-syntax|</source>
+        <target state="translated">Consulte el manual de referencia para más información acerca de plegar por sintaxis: |fold-syntax|</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">330</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="94" approved="yes">
+        <source>*28.8*	Folding by expression
+</source>
+        <target state="translated">*28.8*	Plegar por expresión
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">333</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="95" approved="yes">
+        <source>This is similar to folding by indent, but instead of using the indent of a line a user function is called to compute the fold level of a line.  You can use this for text where something in the text indicates which lines belong together.  An example is an e-mail message where the quoted text is indicated by a "&gt;" before the line.  To fold these quotes use this: &gt;</source>
+        <target state="translated">Es similar a plegar por sangrado pero usa una función de usuario para computar el nivel de pliegue de una línea, en lugar del sangrado. Puede usar esto con texto en el que éste indica qué líneas están juntas. Un ejemplo es un correo electrónico en el que el texto citado se indica con un «&gt;» al inicio de la línea. Use esto para plegar esas citas: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">339</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="96" approved="yes">
+        <source>	:set foldmethod=expr
+	:set foldexpr=strlen(substitute(substitute(getline(v:lnum),'\\s','',\"g\"),'[^&gt;].*','',''))
+</source>
+        <target state="translated">	:set foldmethod=expr
+	:set foldexpr=strlen(substitute(substitute(getline(v:lnum),'\\s','',\"g\"),'[^&gt;].*','',''))
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">342</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="97" approved="yes">
+        <source>You can try it out on this text:</source>
+        <target state="translated">Puede probarlo con este texto:</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">344</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="98" approved="yes">
+        <source>&gt; quoted text he wrote &gt; quoted text he wrote &gt; &gt; double quoted text I wrote &gt; &gt; double quoted text I wrote</source>
+        <target state="translated">&gt; texto citado que él escribió &gt; texto citado que él escribió &gt; &gt; doble texto citado que yo escribí &gt; &gt; doble texto citado que yo escribí</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">349</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="99" approved="yes">
+        <source>Explanation for the 'foldexpr' used in the example (inside out):
+   getline(v:lnum)			gets the current line
+   substitute(...,'\\s','','g')		removes all white space from the line
+   substitute(...,'[^&gt;].*','','')	removes everything after leading '&gt;'s
+   strlen(...)				counts the length of the string, which
+					is the number of '&gt;'s found
+</source>
+        <target state="translated">Explicación del 'foldexpr' usado en el ejemplo (de dentro a fuera):
+   getline(v:lnum)			obtiene la línea actual
+   substitute(...,'\\s','','g')		elimina los espacios blancos de la línea
+   substitute(...,'[^&gt;].*','','')	elimina todo lo que '&gt; precede
+   strlen(...)				cuenta la longitud de la cadena,
+					el cual es el número de '&gt;'
+					encontrados.
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">356</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="100" approved="yes">
+        <source>Note that a backslash must be inserted before every space, double quote and backslash for the ":set" command.  If this confuses you, do &gt;</source>
+        <target state="translated">Tenga en cuenta que al usar la orden «:set» debe insertar una barra inversa antes de cada espacio, comilla doble y barra inversa. Si esto le confunde, haga &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">359</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="101" approved="yes">
+        <source>	:set foldexpr
+</source>
+        <target state="translated">	:set foldexpr
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">361</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="102" approved="yes">
+        <source>to check the actual resulting value.  To correct a complicated expression, use the command-line completion: &gt;</source>
+        <target state="translated">para revisar el valor actual resultante. Para corregir una expresión compleja, use el auto completa de línea de órdenes: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">364</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="103" approved="yes">
+        <source>	:set foldexpr=&lt;Tab&gt;
+</source>
+        <target state="translated">	:set foldexpr=&lt;Tab&gt;
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">366</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="104" approved="yes">
+        <source>Where &lt;Tab&gt; is a real Tab.  Vim will fill in the previous value, which you can then edit.</source>
+        <target state="translated">Aquí, &lt;Tab&gt; es una tabulación real. Vim rellenará el valor previo, el cual puede después editar.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">369</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="105" approved="yes">
+        <source>When the expression gets more complicated you should put it in a function and set 'foldexpr' to call that function.</source>
+        <target state="translated">Si la expresión gana complejidad, puede insertarla dentro de una función y definir que 'foldexpr' invoque tal función.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">372</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="106" approved="yes">
+        <source>More about folding by expression in the reference manual: |fold-expr|</source>
+        <target state="translated">Consulte el manual de referencia para más información acerca de plegar por expresión: |fold-marker|</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">374</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="107" approved="yes">
+        <source>*28.9*	Folding unchanged lines
+</source>
+        <target state="translated">*28.9*	Plegar líneas sin cambios
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">377</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="108" approved="yes">
+        <source>This is useful when you set the 'diff' option in the same window.  The |vimdiff| command does this for you.  Example: &gt;</source>
+        <target state="translated">Es útil cuando define la opción 'diff' en la misma ventana. La orden |vimdiff| hace esto por usted. Ejemplo: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">380</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="109" approved="yes">
+        <source>	:setlocal diff foldmethod=diff scrollbind nowrap foldlevel=1
+</source>
+        <target state="translated">	:setlocal diff foldmethod=diff scrollbind nowrap foldlevel=1
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">382</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="110" approved="yes">
+        <source>Do this in every window that shows a different version of the same file.  You will clearly see the differences between the files, while the text that didn't change is folded.</source>
+        <target state="translated">Haga esto en cada ventana que muestre una versión distinta del mismo archivo. Verá claramente las diferencias entre archivos, plegando a su vez aquellas líneas que no contienen cambios.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">386</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="111" approved="yes">
+        <source>For more details see |fold-diff|.</source>
+        <target state="translated">Para más detalles, consulte |fold-diff|.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">388</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="112" approved="yes">
+        <source>*28.10* Which fold method to use?
+</source>
+        <target state="translated">*28.10* ¿Qué método de plegado debería usar?
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">391</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="113" approved="yes">
+        <source>All these possibilities make you wonder which method you should choose.  Unfortunately, there is no golden rule.  Here are some hints.</source>
+        <target state="translated">Todas estas posibilidades le hacen preguntarse qué método escoger. Por desgracia, no existe ninguna regla de oro. Aquí tiene algunas pistas.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">394</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="114" approved="yes">
+        <source>If there is a syntax file with folding for the language you are editing, that is probably the best choice.  If there isn't one, you might try to write it.  This requires a good knowledge of search patterns.  It's not easy, but when it's working you will not have to define folds manually.</source>
+        <target state="translated">De existir un archivo de sintaxis con plegado para el lenguaje en el que está editando, puede que sea la mejor opción. De no ser así, puede intentar crear uno. Esto requiere un buen conocimiento de patrones de búsqueda. No resulta sencillo, pero una vez que funciona no tendrá definir los pliegues manualmente.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">399</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="115" approved="yes">
+        <source>Typing commands to manually fold regions can be used for unstructured text.  Then use the |:mkview| command to save and restore your folds.</source>
+        <target state="translated">Puede escribir órdenes para plegar manualmente ciertas regiones al tratar con un texto sin estructura. Use después la orden |:mkview| para guardar y restaurar los pliegues.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">402</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="116" approved="yes">
+        <source>The marker method requires you to change the file.  If you are sharing the
+files with other people or you have to meet company standards, you might not
+be allowed to add them.
+   The main advantage of markers is that you can put them exactly where you
+want them.  That avoids that a few lines are missed when you cut and paste
+folds.  And you can add a comment about what is contained in the fold.
+</source>
+        <target state="translated">El método de marcado requiere que modifique el archivo. Si comparte archivos
+con más personas, o tiene que cumplir con las directrices de una compañía,
+cabe que no se le permita añadirlos.
+   La principal ventaja de los marcadores es que puede insertarlas
+exactamente donde desee. Esto evita que se pierdan algunas líneas al copiar
+y pegar pliegues. Puede después añadir un comentario acerca de los contenidos
+del pliegue.
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">409</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="117" approved="yes">
+        <source>Folding by indent is something that works in many files, but not always very well.  Use it when you can't use one of the other methods.  However, it is very useful for outlining.  Then you specifically use one 'shiftwidth' for each nesting level.</source>
+        <target state="translated">Plegar por sangrado funciona en muchos ficheros, aunque con resultados variables. Úselo cuando no puede usar ninguno de los otros métodos. Aún así, es de utilidad con los diseños preliminares. Puede entonces usar un 'shiftwidth' en particular para cada nivel de anidado.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">414</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="118" approved="yes">
+        <source>Folding with expressions can make folds in almost any structured text.  It is
+quite simple to specify, especially if the start and end of a fold can easily
+be recognized.
+   If you use the "expr" method to define folds, but they are not exactly how
+you want them, you could switch to the "manual" method.  This will not remove
+the defined folds.  Then you can delete or add folds manually.
+</source>
+        <target state="translated">Plegar con expresiones puede crear pliegues en prácticamente cualquier texto
+estructurado. Es sencillo de definir, particularmente se se pueden discernir con facilidad el principio y final de un pliegue.
+   Si al definir los pliegues usa el método «expr», pero no con los
+resultados deseados, puede pasar al método «manual». Esto no elimina los
+pliegues ya definidos. Puede entonces añadir o eliminar pliegues de
+manualmente.
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">421</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="119" approved="yes">
+        <source>Next chapter: |usr_29.txt| Moving through programs</source>
+        <target state="translated">Capítulo siguiente: |usr_29.esx| Moverse a través de programas</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">425</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

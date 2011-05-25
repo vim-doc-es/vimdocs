@@ -34,8 +34,8 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-09-23 20:27+0300\n"
-"PO-Revision-Date: 2010-12-06 18:03+0100\n"
-"Last-Translator: Omar Campagne <<ocampagne@gmail.com>>\n"
+"PO-Revision-Date: 2011-02-26 19:14+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -181,7 +181,7 @@ msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
 #: original/TXT/usr_29.txt:613 original/TXT/usr_30.txt:643
 #: original/TXT/usr_31.txt:272
 msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
-msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 
 #. type: Plain text
 #: original/TXT/usr_10.txt:524 original/TXT/usr_25.txt:238
@@ -385,9 +385,9 @@ msgid ""
 "first line, all you get is a short line:"
 msgstr ""
 "El editor Vim no es un editor de documentos. En un editor de documentos, si "
-"borra algo al inicio del párrafo, se reorganizan los saltos de línea. No es "
-"así en Vim; así que se borra la palabra «programación» en la primera línea, "
-"obtendría los siguiente:"
+"elimina algo al inicio del párrafo, se reorganizan los saltos de línea. No "
+"es así en Vim; así que se borra la palabra «programación» en la primera "
+"línea, obtendría los siguiente:"
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:81
@@ -465,7 +465,7 @@ msgid ""
 "layouts, see |auto-format|."
 msgstr ""
 "Nota: existe una manera de dar formato automáticamente para tipos "
-"específicos de plantillas de texto, véase |auto-format|."
+"específicos de plantillas de texto, consulte |auto-format|."
 
 #. type: Plain text
 #: original/TXT/usr_25.txt:110
@@ -1228,7 +1228,7 @@ msgstr ""
 "Estas órdenes hacen lo mismo que «j» y «k» si la línea no está justificada.\n"
 "De activar 'wrap', se desplazan a un carácter visible en una línea inferior\n"
 "o superior.\n"
-"   Puede que desee usar estos mapeado, que relacionan estas órdenes de\n"
+"   Puede que desee usar estas macros, que relacionan estas órdenes de\n"
 "desplazamiento a las teclas de cursor: >\n"
 
 #. type: Plain text
@@ -1353,9 +1353,10 @@ msgid ""
 ">\n"
 "\t:g/\\S/,/^\\s*$/join\n"
 msgstr ""
-"Observe que esto no funciona si la línea de separación está en blanco pero\n"
-"no vacía; cuando contiene espacios y/o tabulados. Esta orden funciona con\n"
-"líneas en blanco:\n"
+"Tenga en cuenta que esto no funciona si la línea de separación está en "
+"blanco,\n"
+"pero no vacía; cuando contiene espacios y/o tabulados. Esta orden funciona\n"
+"con líneas en blanco:\n"
 ">\n"
 "\t:g/\\S/,/^\\s*$/join\n"
 

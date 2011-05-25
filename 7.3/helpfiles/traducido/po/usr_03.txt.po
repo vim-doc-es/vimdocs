@@ -45,9 +45,9 @@ msgstr ""
 "Project-Id-Version: Vim 7,2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-09-23 20:27+0300\n"
-"PO-Revision-Date: 2010-12-06 18:01+0100\n"
-"Last-Translator: Álvaro Castro Castilla <alvaro.castro.castilla@gmail.com>\n"
-"Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
+"PO-Revision-Date: 2011-02-04 22:25+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: vim-doc-es\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -190,7 +190,7 @@ msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
 #: original/TXT/usr_29.txt:613 original/TXT/usr_30.txt:643
 #: original/TXT/usr_31.txt:272
 msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
-msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 
 #. type: Plain text
 #: original/TXT/usr_01.txt:85 original/TXT/usr_03.txt:474
@@ -359,7 +359,7 @@ msgid ""
 "moving by WORDs are also uppercase, as this figure shows:\n"
 msgstr ""
 "Una palabra termina en un carácter de separación, como «.», «-» o «)». Para\n"
-"cambiar lo que Vim considera una palabra, véase la opción 'iskeyword'.\n"
+"cambiar lo que Vim considera una palabra, consulte la opción 'iskeyword'.\n"
 "   También es posible desplazarse por palabras separadas por espacios en\n"
 "blanco. Esto no es una PALABRA en el sentido habitual, por ello se usan las\n"
 "mayúsculas para designarla. Las órdenes para desplazarse por PALABRAS están\n"
@@ -695,7 +695,7 @@ msgstr ""
 "el mejor modo, pero funciona. Uno mucho mejor es usar la orden «G». Con un\n"
 "multiplicador, esta orden le posiciona en la línea indicada. Por ejemplo,\n"
 "«33G» le lleva a la línea 33. (Hay un modo aún mejor de ir por la lista de\n"
-"errores del compilador, véase |usr_30.txt| para información sobre «:make».)\n"
+"errores del compilador, consulte |usr_30.txt| para información sobre «:make».)\n"
 "   Sin argumentos, «G» le posiciona al final del archivo. Una forma rápida de\n"
 "ir al comienzo de la línea es usar «gg». «1G» hará lo mismo, pero es una\n"
 "pizca más lento de escribir.\n"
@@ -969,7 +969,7 @@ msgid ""
 "compatible key mappings CTRL-Y will redo a change instead of scroll.)"
 msgstr ""
 "Para bajar una sola línea use CTRL-E (avanzar) y CTRL-Y (retroceder). Piense "
-"en CTRL-E como si le diese una línea Extra. (Si usa un mapeo de teclas "
+"en CTRL-E como si le diese una línea Extra. (Si usa un mapa de teclado "
 "compatible con MS-Windows CTRL-Y rehará un cambio en lugar de desplazar el "
 "texto.)"
 
@@ -1027,8 +1027,8 @@ msgid ""
 "lines of context around the cursor, use the 'scrolloff' option."
 msgstr ""
 "La orden «zt» pone la línea del cursor arriba, «zb» la situa en la parte "
-"inferior. Hay algunas órdenes más de desplazamiento de texto, véase |Q_sc|.  "
-"Para mantener siempre contexto alrededor del cursor, use la opción "
+"inferior. Hay algunas órdenes más de desplazamiento de texto, consulte |"
+"Q_sc|. Para mantener siempre contexto alrededor del cursor, use la opción "
 "'scrolloff'."
 
 #. type: Plain text
@@ -1203,7 +1203,7 @@ msgstr ""
 "órdenes. Presionar <Intro> en este punto busca «tres». Si no pulsa\n"
 "<Intro> y presiona <Arriba>, Vim cambia el texto a «/dos». Si pulsa de nuevo\n"
 "<Arriba>, verá «/uno».\n"
-"   Puede usar también la tecla de cursor <Abajo> para moverse por el histórico\n"
+"   Puede usar también la tecla de cursor <Abajo> para moverse por el historial\n"
 "de órdenes de búsqueda en la otra dirección.\n"
 
 #. type: Plain text
@@ -1225,8 +1225,8 @@ msgid ""
 "recall a previous command and execute it again.  These two histories are "
 "separate."
 msgstr ""
-"Las órdenes que comienzan con «:» también tienen un histórico. Esto ayuda a "
-"reutilizar órdenes que ha usado antes. Estos dos históricos son "
+"Las órdenes que comienzan con «:» también tienen un historial. Esto ayuda a "
+"reutilizar órdenes que ha usado antes. Estos dos historiales son "
 "independientes."
 
 #. type: Plain text
@@ -1594,7 +1594,7 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/usr_03.txt:532
 msgid "MATCHING ANY SINGLE CHARACTER"
-msgstr "EMPAREJAR CUALQUIER CARACTER"
+msgstr "EMPAREJAR CUALQUIER CARÁCTER"
 
 #. type: Plain text
 #: original/TXT/usr_03.txt:536
@@ -1631,7 +1631,7 @@ msgid ""
 "   If you search for \"ter.\", you will find these matches:\n"
 msgstr ""
 "Si realmente desea coinciordar un punto, debe suprimir su significado especial\n"
-"poniendo antes una barra invertida.\n"
+"poniendo antes una barra inversa.\n"
 "   Si busca «an.», obtendría las siguientes coincidencias:\n"
 
 #. type: Plain text

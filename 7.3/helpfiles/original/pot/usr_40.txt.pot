@@ -1,0 +1,1525 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the Vim package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Vim 7.3\n"
+"Report-Msgid-Bugs-To: vim@bugs.org\n"
+"POT-Creation-Date: 2010-12-09 16:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: original/txt/intro.txt:18 original/txt/intro.txt:79
+#: original/txt/intro.txt:180 original/txt/intro.txt:290
+#: original/txt/intro.txt:518 original/txt/intro.txt:596
+#: original/txt/intro.txt:689 original/txt/intro.txt:817
+#: original/txt/intro.txt:880 original/txt/usr_toc.txt:7
+#: original/txt/usr_toc.txt:58 original/txt/usr_toc.txt:172
+#: original/txt/usr_toc.txt:281 original/txt/usr_toc.txt:340
+#: original/txt/usr_toc.txt:352 original/txt/usr_01.txt:19
+#: original/txt/usr_01.txt:50 original/txt/usr_01.txt:100
+#: original/txt/usr_01.txt:181 original/txt/usr_02.txt:25
+#: original/txt/usr_02.txt:69 original/txt/usr_02.txt:130
+#: original/txt/usr_02.txt:179 original/txt/usr_02.txt:239
+#: original/txt/usr_02.txt:307 original/txt/usr_02.txt:369
+#: original/txt/usr_02.txt:406 original/txt/usr_02.txt:560
+#: original/txt/usr_03.txt:28 original/txt/usr_03.txt:74
+#: original/txt/usr_03.txt:101 original/txt/usr_03.txt:147
+#: original/txt/usr_03.txt:172 original/txt/usr_03.txt:223
+#: original/txt/usr_03.txt:265 original/txt/usr_03.txt:320
+#: original/txt/usr_03.txt:491 original/txt/usr_03.txt:552
+#: original/txt/usr_03.txt:650 original/txt/usr_04.txt:27
+#: original/txt/usr_04.txt:74 original/txt/usr_04.txt:160
+#: original/txt/usr_04.txt:194 original/txt/usr_04.txt:269
+#: original/txt/usr_04.txt:324 original/txt/usr_04.txt:360
+#: original/txt/usr_04.txt:390 original/txt/usr_04.txt:446
+#: original/txt/usr_04.txt:469 original/txt/usr_04.txt:510
+#: original/txt/usr_05.txt:24 original/txt/usr_05.txt:63
+#: original/txt/usr_05.txt:219 original/txt/usr_05.txt:266
+#: original/txt/usr_05.txt:418 original/txt/usr_05.txt:467
+#: original/txt/usr_05.txt:506 original/txt/usr_05.txt:621
+#: original/txt/usr_06.txt:24 original/txt/usr_06.txt:50
+#: original/txt/usr_06.txt:135 original/txt/usr_06.txt:189
+#: original/txt/usr_06.txt:270 original/txt/usr_06.txt:276
+#: original/txt/usr_07.txt:24 original/txt/usr_07.txt:63
+#: original/txt/usr_07.txt:179 original/txt/usr_07.txt:266
+#: original/txt/usr_07.txt:316 original/txt/usr_07.txt:404
+#: original/txt/usr_07.txt:444 original/txt/usr_07.txt:475
+#: original/txt/usr_08.txt:26 original/txt/usr_08.txt:82
+#: original/txt/usr_08.txt:109 original/txt/usr_08.txt:161
+#: original/txt/usr_08.txt:215 original/txt/usr_08.txt:278
+#: original/txt/usr_08.txt:337 original/txt/usr_08.txt:477
+#: original/txt/usr_08.txt:509 original/txt/usr_08.txt:597
+#: original/txt/usr_09.txt:21 original/txt/usr_09.txt:124
+#: original/txt/usr_09.txt:175 original/txt/usr_09.txt:259
+#: original/txt/usr_09.txt:285 original/txt/usr_10.txt:27
+#: original/txt/usr_10.txt:144 original/txt/usr_10.txt:221
+#: original/txt/usr_10.txt:342 original/txt/usr_10.txt:378
+#: original/txt/usr_10.txt:547 original/txt/usr_10.txt:621
+#: original/txt/usr_10.txt:667 original/txt/usr_10.txt:692
+#: original/txt/usr_10.txt:820 original/txt/usr_11.txt:22
+#: original/txt/usr_11.txt:82 original/txt/usr_11.txt:144
+#: original/txt/usr_11.txt:288 original/txt/usr_11.txt:303
+#: original/txt/usr_12.txt:25 original/txt/usr_12.txt:90
+#: original/txt/usr_12.txt:131 original/txt/usr_12.txt:177
+#: original/txt/usr_12.txt:202 original/txt/usr_12.txt:231
+#: original/txt/usr_12.txt:281 original/txt/usr_12.txt:309
+#: original/txt/usr_12.txt:354 original/txt/usr_20.txt:22
+#: original/txt/usr_20.txt:113 original/txt/usr_20.txt:158
+#: original/txt/usr_20.txt:285 original/txt/usr_20.txt:327
+#: original/txt/usr_20.txt:380 original/txt/usr_21.txt:24
+#: original/txt/usr_21.txt:47 original/txt/usr_21.txt:87
+#: original/txt/usr_21.txt:236 original/txt/usr_21.txt:385
+#: original/txt/usr_21.txt:438 original/txt/usr_21.txt:495
+#: original/txt/usr_22.txt:22 original/txt/usr_22.txt:148
+#: original/txt/usr_22.txt:213 original/txt/usr_22.txt:272
+#: original/txt/usr_22.txt:396 original/txt/usr_23.txt:23
+#: original/txt/usr_23.txt:114 original/txt/usr_23.txt:156
+#: original/txt/usr_23.txt:238 original/txt/usr_23.txt:324
+#: original/txt/usr_23.txt:339 original/txt/usr_24.txt:28
+#: original/txt/usr_24.txt:96 original/txt/usr_24.txt:119
+#: original/txt/usr_24.txt:268 original/txt/usr_24.txt:305
+#: original/txt/usr_24.txt:336 original/txt/usr_24.txt:369
+#: original/txt/usr_24.txt:493 original/txt/usr_24.txt:537
+#: original/txt/usr_24.txt:583 original/txt/usr_24.txt:602
+#: original/txt/usr_25.txt:22 original/txt/usr_25.txt:132
+#: original/txt/usr_25.txt:210 original/txt/usr_25.txt:287
+#: original/txt/usr_25.txt:453 original/txt/usr_25.txt:574
+#: original/txt/usr_26.txt:21 original/txt/usr_26.txt:46
+#: original/txt/usr_26.txt:103 original/txt/usr_26.txt:136
+#: original/txt/usr_26.txt:217 original/txt/usr_27.txt:26
+#: original/txt/usr_27.txt:88 original/txt/usr_27.txt:136
+#: original/txt/usr_27.txt:239 original/txt/usr_27.txt:320
+#: original/txt/usr_27.txt:350 original/txt/usr_27.txt:427
+#: original/txt/usr_27.txt:469 original/txt/usr_27.txt:510
+#: original/txt/usr_27.txt:559 original/txt/usr_28.txt:27
+#: original/txt/usr_28.txt:54 original/txt/usr_28.txt:121
+#: original/txt/usr_28.txt:185 original/txt/usr_28.txt:211
+#: original/txt/usr_28.txt:269 original/txt/usr_28.txt:315
+#: original/txt/usr_28.txt:331 original/txt/usr_28.txt:375
+#: original/txt/usr_28.txt:389 original/txt/usr_28.txt:422
+#: original/txt/usr_29.txt:23 original/txt/usr_29.txt:273
+#: original/txt/usr_29.txt:320 original/txt/usr_29.txt:441
+#: original/txt/usr_29.txt:570 original/txt/usr_29.txt:609
+#: original/txt/usr_30.txt:23 original/txt/usr_30.txt:202
+#: original/txt/usr_30.txt:280 original/txt/usr_30.txt:336
+#: original/txt/usr_30.txt:409 original/txt/usr_30.txt:515
+#: original/txt/usr_30.txt:639 original/txt/usr_31.txt:22
+#: original/txt/usr_31.txt:81 original/txt/usr_31.txt:133
+#: original/txt/usr_31.txt:160 original/txt/usr_31.txt:208
+#: original/txt/usr_31.txt:268 original/txt/usr_32.txt:21
+#: original/txt/usr_32.txt:44 original/txt/usr_32.txt:92
+#: original/txt/usr_32.txt:140 original/txt/usr_32.txt:176
+#: original/txt/usr_40.txt:20 original/txt/usr_40.txt:279
+#: original/txt/usr_40.txt:424 original/txt/usr_40.txt:653
+#: original/txt/usr_41.txt:33 original/txt/usr_41.txt:133
+#: original/txt/usr_41.txt:267 original/txt/usr_41.txt:345
+#: original/txt/usr_41.txt:482 original/txt/usr_41.txt:532
+#: original/txt/usr_41.txt:877 original/txt/usr_41.txt:1104
+#: original/txt/usr_41.txt:1390 original/txt/usr_41.txt:1447
+#: original/txt/usr_41.txt:1617 original/txt/usr_41.txt:2038
+#: original/txt/usr_41.txt:2224 original/txt/usr_41.txt:2270
+#: original/txt/usr_41.txt:2346 original/txt/usr_41.txt:2410
+#: original/txt/usr_41.txt:2425 original/txt/usr_42.txt:21
+#: original/txt/usr_42.txt:140 original/txt/usr_42.txt:254
+#: original/txt/usr_42.txt:293 original/txt/usr_42.txt:361
+#: original/txt/usr_90.txt:21 original/txt/usr_90.txt:214
+#: original/txt/usr_90.txt:288 original/txt/usr_90.txt:341
+#: original/txt/usr_90.txt:417 original/txt/usr_90.txt:494
+#, no-wrap
+msgid "==============================================================================\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_toc.txt:4 original/txt/usr_01.txt:4
+#: original/txt/usr_02.txt:4 original/txt/usr_03.txt:4
+#: original/txt/usr_04.txt:4 original/txt/usr_05.txt:4
+#: original/txt/usr_06.txt:4 original/txt/usr_07.txt:4
+#: original/txt/usr_08.txt:4 original/txt/usr_09.txt:4
+#: original/txt/usr_10.txt:4 original/txt/usr_11.txt:4
+#: original/txt/usr_12.txt:4 original/txt/usr_20.txt:4
+#: original/txt/usr_21.txt:4 original/txt/usr_22.txt:4
+#: original/txt/usr_23.txt:4 original/txt/usr_24.txt:4
+#: original/txt/usr_25.txt:4 original/txt/usr_26.txt:4
+#: original/txt/usr_27.txt:4 original/txt/usr_28.txt:4
+#: original/txt/usr_29.txt:4 original/txt/usr_30.txt:4
+#: original/txt/usr_31.txt:4 original/txt/usr_32.txt:4
+#: original/txt/usr_40.txt:4 original/txt/usr_41.txt:4
+#: original/txt/usr_42.txt:4 original/txt/usr_90.txt:4
+#, no-wrap
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_toc.txt:354 original/txt/usr_01.txt:185
+#: original/txt/usr_02.txt:564 original/txt/usr_03.txt:654
+#: original/txt/usr_04.txt:514 original/txt/usr_05.txt:625
+#: original/txt/usr_06.txt:280 original/txt/usr_07.txt:479
+#: original/txt/usr_08.txt:601 original/txt/usr_09.txt:289
+#: original/txt/usr_10.txt:824 original/txt/usr_11.txt:307
+#: original/txt/usr_12.txt:358 original/txt/usr_20.txt:384
+#: original/txt/usr_21.txt:499 original/txt/usr_22.txt:400
+#: original/txt/usr_23.txt:343 original/txt/usr_24.txt:606
+#: original/txt/usr_25.txt:578 original/txt/usr_26.txt:221
+#: original/txt/usr_27.txt:563 original/txt/usr_28.txt:426
+#: original/txt/usr_29.txt:613 original/txt/usr_30.txt:643
+#: original/txt/usr_31.txt:272 original/txt/usr_32.txt:180
+#: original/txt/usr_40.txt:657 original/txt/usr_41.txt:2429
+#: original/txt/usr_42.txt:365 original/txt/usr_90.txt:498
+msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_20.txt:64 original/txt/usr_40.txt:519
+msgid "DELETING"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:2
+#, no-wrap
+msgid "*usr_40.txt*\tFor Vim version 7.3.  Last change: 2006 Jun 21\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:6
+#, no-wrap
+msgid "\t\t\t      Make new commands\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:11
+msgid ""
+"Vim is an extensible editor.  You can take a sequence of commands you use "
+"often and turn it into a new command.  Or redefine an existing command.  "
+"Autocommands make it possible to execute commands automatically."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:15
+#, no-wrap
+msgid ""
+"|40.1|\tKey mapping\n"
+"|40.2|\tDefining command-line commands\n"
+"|40.3|\tAutocommands\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:19
+#, no-wrap
+msgid ""
+"     Next chapter: |usr_41.txt|  Write a Vim script\n"
+" Previous chapter: |usr_32.txt|  The undo tree\n"
+"Table of contents: |usr_toc.txt|\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:22
+#, no-wrap
+msgid "*40.1*\tKey mapping\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:29
+#, no-wrap
+msgid ""
+"A simple mapping was explained in section |05.3|.  The principle is that one\n"
+"sequence of key strokes is translated into another sequence of key strokes.\n"
+"This is a simple, yet powerful mechanism.\n"
+"   The simplest form is that one key is mapped to a sequence of keys.  Since\n"
+"the function keys, except <F1>, have no predefined meaning in Vim, these are\n"
+"good choices to map.  Example: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:31
+#, no-wrap
+msgid "\t:map <F2> GoDate: <Esc>:read !date<CR>kJ\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:43
+#, no-wrap
+msgid ""
+"This shows how three modes are used.  After going to the last line with \"G\",\n"
+"the \"o\" command opens a new line and starts Insert mode.  The text \"Date: \" is\n"
+"inserted and <Esc> takes you out of insert mode.\n"
+"   Notice the use of special keys inside <>.  This is called angle bracket\n"
+"notation.  You type these as separate characters, not by pressing the key\n"
+"itself.  This makes the mappings better readable and you can copy and paste\n"
+"the text without problems.\n"
+"   The \":\" character takes Vim to the command line.  The \":read !date\" command\n"
+"reads the output from the \"date\" command and appends it below the current\n"
+"line.  The <CR> is required to execute the \":read\" command.\n"
+"   At this point of execution the text looks like this:\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:46
+#, no-wrap
+msgid ""
+"\tDate:  ~\n"
+"\tFri Jun 15 12:54:34 CEST 2001 ~\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:49
+#, no-wrap
+msgid ""
+"Now \"kJ\" moves the cursor up and joins the lines together.\n"
+"   To decide which key or keys you use for mapping, see |map-which-keys|.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:52
+msgid "MAPPING AND MODES"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:56
+msgid ""
+"The \":map\" command defines remapping for keys in Normal mode.  You can "
+"also define mappings for other modes.  For example, \":imap\" applies to "
+"Insert mode.  You can use it to insert a date below the cursor: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:58
+#, no-wrap
+msgid "\t:imap <F2> <CR>Date: <Esc>:read !date<CR>kJ\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:65
+#, no-wrap
+msgid ""
+"It looks a lot like the mapping for <F2> in Normal mode, only the start is\n"
+"different.  The <F2> mapping for Normal mode is still there.  Thus you can map\n"
+"the same key differently for each mode.\n"
+"   Notice that, although this mapping starts in Insert mode, it ends in Normal\n"
+"mode.  If you want it to continue in Insert mode, append an \"a\" to the\n"
+"mapping.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:67
+msgid "Here is an overview of map commands and in which mode they work:"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:75
+#, no-wrap
+msgid ""
+"\t:map\t\tNormal, Visual and Operator-pending\n"
+"\t:vmap\t\tVisual\n"
+"\t:nmap\t\tNormal\n"
+"\t:omap\t\tOperator-pending\n"
+"\t:map!\t\tInsert and Command-line\n"
+"\t:imap\t\tInsert\n"
+"\t:cmap\t\tCommand-line\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:79
+msgid ""
+"Operator-pending mode is when you typed an operator character, such as \"d\" "
+"or \"y\", and you are expected to type the motion command or a text object.  "
+"Thus when you type \"dw\", the \"w\" is entered in operator-pending mode."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:85
+msgid ""
+"Suppose that you want to define <F7> so that the command d<F7> deletes a C "
+"program block (text enclosed in curly braces, {}).  Similarly y<F7> would "
+"yank the program block into the unnamed register.  Therefore, what you need "
+"to do is to define <F7> to select the current program block.  You can do "
+"this with the following command: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:87
+#, no-wrap
+msgid "\t:omap <F7> a{\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:91
+msgid ""
+"This causes <F7> to perform a select block \"a{\" in operator-pending mode, "
+"just like you typed it.  This mapping is useful if typing a { on your "
+"keyboard is a bit difficult."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:94
+msgid "LISTING MAPPINGS"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:98
+msgid ""
+"To see the currently defined mappings, use \":map\" without arguments.  Or "
+"one of the variants that include the mode in which they work.  The output "
+"could look like this:"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:104
+#, no-wrap
+msgid ""
+"\t   _g\t\t :call MyGrep(1)<CR> ~\n"
+"\tv  <F2>\t\t :s/^/> /<CR>:noh<CR>`` ~\n"
+"\tn  <F2>\t\t :.,$s/^/> /<CR>:noh<CR>`` ~\n"
+"\t   <xHome>\t <Home>\n"
+"\t   <xEnd>\t <End>\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:113
+#, no-wrap
+msgid ""
+"The first column of the list shows in which mode the mapping is effective.\n"
+"This is \"n\" for Normal mode, \"i\" for Insert mode, etc.  A blank is used for a\n"
+"mapping defined with \":map\", thus effective in both Normal and Visual mode.\n"
+"   One useful purpose of listing the mapping is to check if special keys in <>\n"
+"form have been recognized (this only works when color is supported).  For\n"
+"example, when <Esc> is displayed in color, it stands for the escape character.\n"
+"When it has the same color as the other text, it is five characters.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:116
+msgid "REMAPPING"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:119
+msgid ""
+"The result of a mapping is inspected for other mappings in it.  For example, "
+"the mappings for <F2> above could be shortened to: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:123
+#, no-wrap
+msgid ""
+"\t:map <F2> G<F3>\n"
+"\t:imap <F2> <Esc><F3>\n"
+"\t:map <F3>  oDate: <Esc>:read !date<CR>kJ\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:127
+msgid ""
+"For Normal mode <F2> is mapped to go to the last line, and then behave like "
+"<F3> was pressed.  In Insert mode <F2> stops Insert mode with <Esc> and then "
+"also uses <F3>.  Then <F3> is mapped to do the actual work."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:130
+msgid ""
+"Suppose you hardly ever use Ex mode, and want to use the \"Q\" command to "
+"format text (this was so in old versions of Vim).  This mapping will do it: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:132
+#, no-wrap
+msgid "\t:map Q gq\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:135
+msgid ""
+"But, in rare cases you need to use Ex mode anyway.  Let's map \"gQ\" to Q, "
+"so that you can still go to Ex mode: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:137
+#, no-wrap
+msgid "\t:map gQ Q\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:142
+#, no-wrap
+msgid ""
+"What happens now is that when you type \"gQ\" it is mapped to \"Q\".  So far so\n"
+"good.  But then \"Q\" is mapped to \"gq\", thus typing \"gQ\" results in \"gq\", and\n"
+"you don't get to Ex mode at all.\n"
+"   To avoid keys to be mapped again, use the \":noremap\" command: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:144
+#, no-wrap
+msgid "\t:noremap gQ Q\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:147
+msgid ""
+"Now Vim knows that the \"Q\" is not to be inspected for mappings that apply "
+"to it.  There is a similar command for every mode:"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:155
+#, no-wrap
+msgid ""
+"\t:noremap\tNormal, Visual and Operator-pending\n"
+"\t:vnoremap\tVisual\n"
+"\t:nnoremap\tNormal\n"
+"\t:onoremap\tOperator-pending\n"
+"\t:noremap!\tInsert and Command-line\n"
+"\t:inoremap\tInsert\n"
+"\t:cnoremap\tCommand-line\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:158
+msgid "RECURSIVE MAPPING"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:164
+#, no-wrap
+msgid ""
+"When a mapping triggers itself, it will run forever.  This can be used to\n"
+"repeat an action an unlimited number of times.\n"
+"   For example, you have a list of files that contain a version number in the\n"
+"first line.  You edit these files with \"vim *.txt\".  You are now editing the\n"
+"first file.  Define this mapping: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:166
+#, no-wrap
+msgid "\t:map ,, :s/5.1/5.2/<CR>:wnext<CR>,,\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:177
+#, no-wrap
+msgid ""
+"Now you type \",,\".  This triggers the mapping.  It replaces \"5.1\" with \"5.2\"\n"
+"in the first line.  Then it does a \":wnext\" to write the file and edit the\n"
+"next one.  The mapping ends in \",,\".  This triggers the same mapping again,\n"
+"thus doing the substitution, etc.\n"
+"   This continues until there is an error.  In this case it could be a file\n"
+"where the substitute command doesn't find a match for \"5.1\".  You can then\n"
+"make a change to insert \"5.1\" and continue by typing \",,\" again.  Or the\n"
+"\":wnext\" fails, because you are in the last file in the list.\n"
+"   When a mapping runs into an error halfway, the rest of the mapping is\n"
+"discarded.  CTRL-C interrupts the mapping (CTRL-Break on MS-Windows).\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:180
+msgid "DELETE A MAPPING"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:183
+msgid ""
+"To remove a mapping use the \":unmap\" command.  Again, the mode the "
+"unmapping applies to depends on the command used:"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:191
+#, no-wrap
+msgid ""
+"\t:unmap\t\tNormal, Visual and Operator-pending\n"
+"\t:vunmap\t\tVisual\n"
+"\t:nunmap\t\tNormal\n"
+"\t:ounmap\t\tOperator-pending\n"
+"\t:unmap!\t\tInsert and Command-line\n"
+"\t:iunmap\t\tInsert\n"
+"\t:cunmap\t\tCommand-line\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:195
+msgid ""
+"There is a trick to define a mapping that works in Normal and Operator-"
+"pending mode, but not in Visual mode.  First define it for all three modes, "
+"then delete it for Visual mode: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:198
+#, no-wrap
+msgid ""
+"\t:map <C-A> /---><CR>\n"
+"\t:vunmap <C-A>\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:200
+msgid ""
+"Notice that the five characters \"<C-A>\" stand for the single key CTRL-A."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:204
+msgid ""
+"To remove all mappings use the |:mapclear| command.  You can guess the "
+"variations for different modes by now.  Be careful with this command, it "
+"can't be undone."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:207 original/txt/usr_42.txt:111
+msgid "SPECIAL CHARACTERS"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:213
+#, no-wrap
+msgid ""
+"The \":map\" command can be followed by another command.  A | character\n"
+"separates the two commands.  This also means that a | character can't be used\n"
+"inside a map command.  To include one, use <Bar> (five characters).  Example:\n"
+">\n"
+"\t:map <F8> :write <Bar> !checkin %<CR>\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:219
+#, no-wrap
+msgid ""
+"The same problem applies to the \":unmap\" command, with the addition that you\n"
+"have to watch out for trailing white space.  These two commands are different:\n"
+">\n"
+"\t:unmap a | unmap b\n"
+"\t:unmap a| unmap b\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:221
+msgid "The first command tries to unmap \"a \", with a trailing space."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:223
+msgid "When using a space inside a mapping, use <Space> (seven characters): >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:225
+#, no-wrap
+msgid "\t:map <Space> W\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:227
+msgid "This makes the spacebar move a blank-separated word forward."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:231
+msgid ""
+"It is not possible to put a comment directly after a mapping, because the \" "
+"character is considered to be part of the mapping.  You can use |\", this "
+"starts a new, empty command with a comment.  Example: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:233
+#, no-wrap
+msgid "\t:map <Space> W|     \" Use spacebar to move forward a word\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:236
+msgid "MAPPINGS AND ABBREVIATIONS"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:249
+#, no-wrap
+msgid ""
+"Abbreviations are a lot like Insert mode mappings.  The arguments are handled\n"
+"in the same way.  The main difference is the way they are triggered.  An\n"
+"abbreviation is triggered by typing a non-word character after the word.  A\n"
+"mapping is triggered when typing the last character.\n"
+"   Another difference is that the characters you type for an abbreviation are\n"
+"inserted in the text while you type them.  When the abbreviation is triggered\n"
+"these characters are deleted and replaced by what the abbreviation produces.\n"
+"When typing the characters for a mapping, nothing is inserted until you type\n"
+"the last character that triggers it.  If the 'showcmd' option is set, the\n"
+"typed characters are displayed in the last line of the Vim window.\n"
+"   An exception is when a mapping is ambiguous.  Suppose you have done two\n"
+"mappings: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:252
+#, no-wrap
+msgid ""
+"\t:imap aa foo\n"
+"\t:imap aaa bar\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:258
+msgid ""
+"Now, when you type \"aa\", Vim doesn't know if it should apply the first or "
+"the second mapping.  It waits for another character to be typed.  If it is "
+"an \"a\", the second mapping is applied and results in \"bar\".  If it is a "
+"space, for example, the first mapping is applied, resulting in \"foo\", and "
+"then the space is inserted."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:261
+msgid "ADDITIONALLY..."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:264
+msgid ""
+"The <script> keyword can be used to make a mapping local to a script.  See |:"
+"map-<script>|."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:267
+msgid ""
+"The <buffer> keyword can be used to make a mapping local to a specific "
+"buffer.  See |:map-<buffer>|"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:271
+msgid ""
+"The <unique> keyword can be used to make defining a new mapping fail when it "
+"already exists.  Otherwise a new mapping simply overwrites the old one.  See "
+"|:map-<unique>|."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:274
+msgid ""
+"To make a key do nothing, map it to <Nop> (five characters).  This will make "
+"the <F7> key do nothing at all: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:276
+#, no-wrap
+msgid "\t:map <F7> <Nop>| map! <F7> <Nop>\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:278
+msgid "There must be no space after <Nop>."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:281
+#, no-wrap
+msgid "*40.2*\tDefining command-line commands\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:285
+#, no-wrap
+msgid ""
+"The Vim editor enables you to define your own commands.  You execute these\n"
+"commands just like any other Command-line mode command.\n"
+"   To define a command, use the \":command\" command, as follows: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:287
+#, no-wrap
+msgid "\t:command DeleteFirst 1delete\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:290
+msgid ""
+"Now when you execute the command \":DeleteFirst\" Vim executes \":1delete\", "
+"which deletes the first line."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:295
+#, no-wrap
+msgid ""
+"\tNote:\n"
+"\tUser-defined commands must start with a capital letter.  You cannot\n"
+"\tuse \":X\", \":Next\" and \":Print\".  The underscore cannot be used!  You\n"
+"\tcan use digits, but this is discouraged.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:297
+msgid "To list the user-defined commands, execute the following command: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:299
+#, no-wrap
+msgid "\t:command\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:303
+msgid ""
+"Just like with the builtin commands, the user defined commands can be "
+"abbreviated.  You need to type just enough to distinguish the command from "
+"another.  Command line completion can be used to get the full name."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:306
+msgid "NUMBER OF ARGUMENTS"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:311
+msgid ""
+"User-defined commands can take a series of arguments.  The number of "
+"arguments must be specified by the -nargs option.  For instance, the "
+"example :DeleteFirst command takes no arguments, so you could have defined "
+"it as follows: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:313
+#, no-wrap
+msgid "\t:command -nargs=0 DeleteFirst 1delete\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:316
+msgid ""
+"However, because zero arguments is the default, you do not need to add \"-"
+"nargs=0\".  The other values of -nargs are as follows:"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:322
+#, no-wrap
+msgid ""
+"\t-nargs=0\tNo arguments\n"
+"\t-nargs=1\tOne argument\n"
+"\t-nargs=*\tAny number of arguments\n"
+"\t-nargs=?\tZero or one argument\n"
+"\t-nargs=+\tOne or more arguments\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:325
+msgid "USING THE ARGUMENTS"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:328
+msgid ""
+"Inside the command definition, the arguments are represented by the <args> "
+"keyword.  For example: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:330
+#, no-wrap
+msgid "\t:command -nargs=+ Say :echo \"<args>\"\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:332
+msgid "Now when you type >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:334
+#, no-wrap
+msgid "\t:Say Hello World\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:337
+msgid ""
+"Vim echoes \"Hello World\".  However, if you add a double quote, it won't "
+"work.  For example: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:339
+#, no-wrap
+msgid "\t:Say he said \"hello\"\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:342
+msgid ""
+"To get special characters turned into a string, properly escaped to use as "
+"an expression, use \"<q-args>\": >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:344
+#, no-wrap
+msgid "\t:command -nargs=+ Say :echo <q-args>\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:346
+msgid "Now the above \":Say\" command will result in this to be executed: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:348
+#, no-wrap
+msgid "\t:echo \"he said \\\"hello\\\"\"\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:354
+#, no-wrap
+msgid ""
+"The <f-args> keyword contains the same information as the <args> keyword,\n"
+"except in a format suitable for use as function call arguments.  For example:\n"
+">\n"
+"\t:command -nargs=* DoIt :call AFunction(<f-args>)\n"
+"\t:DoIt a b c\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:356
+msgid "Executes the following command: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:358
+#, no-wrap
+msgid "\t:call AFunction(\"a\", \"b\", \"c\")\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:361
+msgid "LINE RANGE"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:365
+msgid ""
+"Some commands take a range as their argument.  To tell Vim that you are "
+"defining such a command, you need to specify a -range option.  The values "
+"for this option are as follows:"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:370
+#, no-wrap
+msgid ""
+"\t-range\t\tRange is allowed; default is the current line.\n"
+"\t-range=%\tRange is allowed; default is the whole file.\n"
+"\t-range={count}\tRange is allowed; the last number in it is used as a\n"
+"\t\t\tsingle number whose default is {count}.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:375
+msgid ""
+"When a range is specified, the keywords <line1> and <line2> get the values "
+"of the first and last line in the range.  For example, the following command "
+"defines the SaveIt command, which writes out the specified range to the file "
+"\"save_file\": >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:377
+#, no-wrap
+msgid "\t:command -range=% SaveIt :<line1>,<line2>write! save_file\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:380
+msgid "OTHER OPTIONS"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:382
+msgid "Some of the other options and keywords are as follows:"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:399
+#, no-wrap
+msgid ""
+"\t-count={number}\t\tThe command can take a count whose default is\n"
+"\t\t\t\t{number}.  The resulting count can be used\n"
+"\t\t\t\tthrough the <count> keyword.\n"
+"\t-bang\t\t\tYou can use a !.  If present, using <bang> will\n"
+"\t\t\t\tresult in a !.\n"
+"\t-register\t\tYou can specify a register.  (The default is\n"
+"\t\t\t\tthe unnamed register.)\n"
+"\t\t\t\tThe register specification is available as\n"
+"\t\t\t\t<reg> (a.k.a. <register>).\n"
+"\t-complete={type}\tType of command-line completion used.  See\n"
+"\t\t\t\t|:command-completion| for the list of possible\n"
+"\t\t\t\tvalues.\n"
+"\t-bar\t\t\tThe command can be followed by | and another\n"
+"\t\t\t\tcommand, or \" and a comment.\n"
+"\t-buffer\t\t\tThe command is only available for the current\n"
+"\t\t\t\tbuffer.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:402
+msgid ""
+"Finally, you have the <lt> keyword.  It stands for the character <.  Use "
+"this to escape the special meaning of the <> items mentioned."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:405
+msgid "REDEFINING AND DELETING"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:407
+msgid "To redefine the same command use the ! argument: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:410
+#, no-wrap
+msgid ""
+"\t:command -nargs=+ Say :echo \"<args>\"\n"
+"\t:command! -nargs=+ Say :echo <q-args>\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:413
+msgid ""
+"To delete a user command use \":delcommand\".  It takes a single argument, "
+"which is the name of the command.  Example: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:415
+#, no-wrap
+msgid "\t:delcommand SaveIt\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:417
+msgid "To delete all the user commands: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:419
+#, no-wrap
+msgid "\t:comclear\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:421
+msgid "Careful, this can't be undone!"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:423
+msgid "More details about all this in the reference manual: |user-commands|."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:426
+#, no-wrap
+msgid "*40.3*\tAutocommands\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:434
+#, no-wrap
+msgid ""
+"An autocommand is a command that is executed automatically in response to some\n"
+"event, such as a file being read or written or a buffer change.  Through the\n"
+"use of autocommands you can train Vim to edit compressed files, for example.\n"
+"That is used in the |gzip| plugin.\n"
+"   Autocommands are very powerful.  Use them with care and they will help you\n"
+"avoid typing many commands.  Use them carelessly and they will cause a lot of\n"
+"trouble.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:437
+msgid ""
+"Suppose you want to replace a datestamp on the end of a file every time it "
+"is written.  First you define a function: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:442
+#, no-wrap
+msgid ""
+"\t:function DateInsert()\n"
+"\t:  $delete\n"
+"\t:  read !date\n"
+"\t:endfunction\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:445
+msgid ""
+"You want this function to be called each time, just before a file is "
+"written.  This will make that happen: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:447
+#, no-wrap
+msgid "\t:autocmd FileWritePre *  call DateInsert()\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:455
+#, no-wrap
+msgid ""
+"\"FileWritePre\" is the event for which this autocommand is triggered: Just\n"
+"before (pre) writing a file.  The \"*\" is a pattern to match with the file\n"
+"name.  In this case it matches all files.\n"
+"   With this command enabled, when you do a \":write\", Vim checks for any\n"
+"matching FileWritePre autocommands and executes them, and then it\n"
+"performs the \":write\".\n"
+"   The general form of the :autocmd command is as follows: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:457
+#, no-wrap
+msgid "\t:autocmd [group] {events} {file_pattern} [nested] {command}\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:465
+#, no-wrap
+msgid ""
+"The [group] name is optional.  It is used in managing and calling the commands\n"
+"(more on this later).  The {events} parameter is a list of events (comma\n"
+"separated) that trigger the command.\n"
+"   {file_pattern} is a filename, usually with wildcards.  For example, using\n"
+"\"*.txt\" makes the autocommand be used for all files whose name end in \".txt\".\n"
+"The optional [nested] flag allows for nesting of autocommands (see below), and\n"
+"finally, {command} is the command to be executed.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:468
+msgid "EVENTS"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:473
+msgid ""
+"One of the most useful events is BufReadPost.  It is triggered after a new "
+"file is being edited.  It is commonly used to set option values.  For "
+"example, you know that \"*.gsm\" files are GNU assembly language.  To get "
+"the syntax file right, define this autocommand: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:475
+#, no-wrap
+msgid "\t:autocmd BufReadPost *.gsm  set filetype=asm\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:480
+msgid ""
+"If Vim is able to detect the type of file, it will set the 'filetype' option "
+"for you.  This triggers the Filetype event.  Use this to do something when a "
+"certain type of file is edited.  For example, to load a list of "
+"abbreviations for text files: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:482
+#, no-wrap
+msgid "\t:autocmd Filetype text  source ~/.vim/abbrevs.vim\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:484
+msgid ""
+"When starting to edit a new file, you could make Vim insert a skeleton: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:486
+#, no-wrap
+msgid "\t:autocmd BufNewFile *.[ch]  0read ~/skeletons/skel.c\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:488
+msgid "See |autocmd-events| for a complete list of events."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:491
+msgid "PATTERNS"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:496
+#, no-wrap
+msgid ""
+"The {file_pattern} argument can actually be a comma-separated list of file\n"
+"patterns.  For example: \"*.c,*.h\" matches files ending in \".c\" and \".h\".\n"
+"   The usual file wildcards can be used.  Here is a summary of the most often\n"
+"used ones:\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:502
+#, no-wrap
+msgid ""
+"\t*\t\tMatch any character any number of times\n"
+"\t?\t\tMatch any character once\n"
+"\t[abc]\t\tMatch the character a, b or c\n"
+"\t.\t\tMatches a dot\n"
+"\ta{b,c}\t\tMatches \"ab\" and \"ac\"\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:510
+#, no-wrap
+msgid ""
+"When the pattern includes a slash (/) Vim will compare directory names.\n"
+"Without the slash only the last part of a file name is used.  For example,\n"
+"\"*.txt\" matches \"/home/biep/readme.txt\".  The pattern \"/home/biep/*\" would\n"
+"also match it.  But \"home/foo/*.txt\" wouldn't.\n"
+"   When including a slash, Vim matches the pattern against both the full path\n"
+"of the file (\"/home/biep/readme.txt\") and the relative path (e.g.,\n"
+"\"biep/readme.txt\").\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:516
+#, no-wrap
+msgid ""
+"\tNote:\n"
+"\tWhen working on a system that uses a backslash as file separator, such\n"
+"\tas MS-Windows, you still use forward slashes in autocommands.  This\n"
+"\tmakes it easier to write the pattern, since a backslash has a special\n"
+"\tmeaning.  It also makes the autocommands portable.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:522
+msgid ""
+"To delete an autocommand, use the same command as what it was defined with, "
+"but leave out the {command} at the end and use a !.  Example: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:524
+#, no-wrap
+msgid "\t:autocmd! FileWritePre *\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:527
+msgid ""
+"This will delete all autocommands for the \"FileWritePre\" event that use "
+"the \"*\" pattern."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:530
+msgid "LISTING"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:532
+msgid "To list all the currently defined autocommands, use this: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:534
+#, no-wrap
+msgid "\t:autocmd\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:538
+msgid ""
+"The list can be very long, especially when filetype detection is used.  To "
+"list only part of the commands, specify the group, event and/or pattern.  "
+"For example, to list all BufNewFile autocommands: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:540
+#, no-wrap
+msgid "\t:autocmd BufNewFile\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:542
+msgid "To list all autocommands for the pattern \"*.c\": >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:544
+#, no-wrap
+msgid "\t:autocmd * *.c\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:547
+msgid ""
+"Using \"*\" for the event will list all the events.  To list all "
+"autocommands for the cprograms group: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:549
+#, no-wrap
+msgid "\t:autocmd cprograms\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:552
+msgid "GROUPS"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:558
+#, no-wrap
+msgid ""
+"The {group} item, used when defining an autocommand, groups related autocommands\n"
+"together.  This can be used to delete all the autocommands in a certain group,\n"
+"for example.\n"
+"   When defining several autocommands for a certain group, use the \":augroup\"\n"
+"command.  For example, let's define autocommands for C programs: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:563
+#, no-wrap
+msgid ""
+"\t:augroup cprograms\n"
+"\t:  autocmd BufReadPost *.c,*.h :set sw=4 sts=4\n"
+"\t:  autocmd BufReadPost *.cpp   :set sw=3 sts=3\n"
+"\t:augroup END\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:565
+msgid "This will do the same as: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:568
+#, no-wrap
+msgid ""
+"\t:autocmd cprograms BufReadPost *.c,*.h :set sw=4 sts=4\n"
+"\t:autocmd cprograms BufReadPost *.cpp   :set sw=3 sts=3\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:570
+msgid "To delete all autocommands in the \"cprograms\" group: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:572
+#, no-wrap
+msgid "\t:autocmd! cprograms\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:575
+msgid "NESTING"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:580
+msgid ""
+"Generally, commands executed as the result of an autocommand event will not "
+"trigger any new events.  If you read a file in response to a "
+"FileChangedShell event, it will not trigger the autocommands that would set "
+"the syntax, for example.  To make the events triggered, add the \"nested\" "
+"argument: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:582
+#, no-wrap
+msgid "\t:autocmd FileChangedShell * nested  edit\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:585
+msgid "EXECUTING AUTOCOMMANDS"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:588
+msgid ""
+"It is possible to trigger an autocommand by pretending an event has "
+"occurred.  This is useful to have one autocommand trigger another one.  "
+"Example: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:590
+#, no-wrap
+msgid "\t:autocmd BufReadPost *.new  execute \"doautocmd BufReadPost \" . expand(\"<afile>:r\")\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:595
+msgid ""
+"This defines an autocommand that is triggered when a new file has been "
+"edited.  The file name must end in \".new\".  The \":execute\" command uses "
+"expression evaluation to form a new command and execute it.  When editing "
+"the file \"tryout.c.new\" the executed command will be: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:597
+#, no-wrap
+msgid "\t:doautocmd BufReadPost tryout.c\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:601
+msgid ""
+"The expand() function takes the \"<afile>\" argument, which stands for the "
+"file name the autocommand was executed for, and takes the root of the file "
+"name with \":r\"."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:604
+msgid ""
+"\":doautocmd\" executes on the current buffer.  The \":doautoall\" command "
+"works like \"doautocmd\" except it executes on all the buffers."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:607
+msgid "USING NORMAL MODE COMMANDS"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:611
+msgid ""
+"The commands executed by an autocommand are Command-line commands.  If you "
+"want to use a Normal mode command, the \":normal\" command can be used.  "
+"Example: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:613
+#, no-wrap
+msgid "\t:autocmd BufReadPost *.log normal G\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:625
+#, no-wrap
+msgid ""
+"This will make the cursor jump to the last line of *.log files when you start\n"
+"to edit it.\n"
+"   Using the \":normal\" command is a bit tricky.  First of all, make sure its\n"
+"argument is a complete command, including all the arguments.  When you use \"i\"\n"
+"to go to Insert mode, there must also be a <Esc> to leave Insert mode again.\n"
+"If you use a \"/\" to start a search pattern, there must be a <CR> to execute\n"
+"it.\n"
+"   The \":normal\" command uses all the text after it as commands.  Thus there\n"
+"can be no | and another command following.  To work around this, put the\n"
+"\":normal\" command inside an \":execute\" command.  This also makes it possible\n"
+"to pass unprintable characters in a convenient way.  Example: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:628
+#, no-wrap
+msgid ""
+"\t:autocmd BufReadPost *.chg execute \"normal ONew entry:\\<Esc>\" |\n"
+"\t\t\\ 1read !date\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:631
+msgid ""
+"This also shows the use of a backslash to break a long command into more "
+"lines.  This can be used in Vim scripts (not at the command line)."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:635
+msgid ""
+"When you want the autocommand do something complicated, which involves "
+"jumping around in the file and then returning to the original position, you "
+"may want to restore the view on the file.  See |restore-position| for an "
+"example."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:638
+msgid "IGNORING EVENTS"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:642
+msgid ""
+"At times, you will not want to trigger an autocommand.  The 'eventignore' "
+"option contains a list of events that will be totally ignored.  For example, "
+"the following causes events for entering and leaving a window to be ignored: "
+">"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:644
+#, no-wrap
+msgid "\t:set eventignore=WinEnter,WinLeave\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:646
+msgid "To ignore all events, use the following command: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:648
+#, no-wrap
+msgid "\t:set eventignore=all\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:650
+msgid "To set it back to the normal behavior, make 'eventignore' empty: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:652
+#, no-wrap
+msgid "\t:set eventignore=\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_40.txt:656
+msgid "Next chapter: |usr_41.txt| Write a Vim script"
+msgstr ""

@@ -11,8 +11,11 @@ Esta sección está dividida en dos partes.
 
 		    Traducción de la documentación de ayuda
 
+El marco de trabajo está basado en po4a, y por ello, en el formato PO. Aún así,
+es posible usar XLIFF para la traducción.
 
-Algunas instrucciones para el uso de po4a.
+
+* Algunas instrucciones para el uso de po4a.
 
 Ejecutar en este directorio «po4a po4a.cfg» actualiza los pot y po, y crea los
 documentos traducidos. También se le pueden introducir opciones, p. ej.:
@@ -46,7 +49,8 @@ Añade el archivo deseado en el campo de los documentos ([type:module]). Ejecuta
 po4a po4a.cfg. Esto crea el archivo po, y reusa traducciones comunes a otros
 po.
 
-[2] po4a-gettextize -f text -o tabs=verbatim -m <original> -p <po_de_salida>
+[2] po4a-gettextize -f text -o tabs=verbatim -o nobullets -m <original> \
+-p <po_de_salida>
 
 Notad que no hay opción «-l» (documento traducido).
 
@@ -56,7 +60,7 @@ Notad que no hay opción «-l» (documento traducido).
 [1] «po4a po4a.cfg»
 
 [2]po4a-translate -M utf-8 -L utf-8 -f text -o tabs=verbatim -m\
-   original/TXT/usr_04.txt -p traducido/PO/usr_04.txt.po -l\
+   -o nobullets original/TXT/usr_04.txt -p traducido/PO/usr_04.txt.po -l\
    traducido/ESX/usr_04.esx
 
 
@@ -78,6 +82,18 @@ original/TXT/usr_04.txt -l traducido/ESX/usr_04.esx\
 Es de suma importancia usar «-o tabs=verbatim» para que el analizador de po4a
 no «rompa» el índice al inicio de cada capítulo.
 
+
+				Uso de XLIFF
+
+También es posible traducir usando XLIFF, un formato estanadar de documento
+orientado a los traductores, mediante las herramientas de conversión
+de translate-toolkit, po2xliff y xliff2po.
+
+Este formato acepta más estados para diferenciar un segmento.
+
+Ya que venimos usando formato PO, y es natural querer usar vim para la edición,
+es el que hay que subir para revisiones. XLIFF es demasiado «verboso» como para
+abrirlo en algo que no sea un editor especializado.
 
 
 		      Traducción de los mensajes de ayuda.

@@ -47,7 +47,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-09-23 20:27+0300\n"
-"PO-Revision-Date: 2010-12-06 18:03+0100\n"
+"PO-Revision-Date: 2011-02-26 19:15+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
 "Language: es\n"
@@ -194,7 +194,7 @@ msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
 #: original/TXT/usr_29.txt:613 original/TXT/usr_30.txt:643
 #: original/TXT/usr_31.txt:272
 msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
-msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:400 original/TXT/usr_28.txt:194
@@ -558,7 +558,7 @@ msgstr ""
 "existir algunas líneas de la función por encima o a continuación del "
 "pliegue: coloque el cursor sobre la primera línea a mover - pulse «V» para "
 "iniciar el modo Visual - coloque el cursor sobre la última línea a mover - "
-"pulse «d» para borrar las líneas seleccionadas - desplace el cursor a la "
+"pulse «d» para eliminar las líneas seleccionadas - desplace el cursor a la "
 "nueva posición y «p»onga ahí las líneas."
 
 #. type: Plain text
@@ -606,9 +606,9 @@ msgid ""
 "delete all folds at the cursor line use |zD|."
 msgstr ""
 "Use |zO| para abrir todos los pliegues en la línea del cursor. Use |zC| para "
-"cerrar todos los pliegues en la línea del cursor. Puede borrar un pliegue en "
-"la línea del cursor con |zd|. Use |zD| para borrar todos los pliegues bajo "
-"la línea del cursor."
+"cerrar todos los pliegues en la línea del cursor. Puede eliminar un pliegue "
+"en la línea del cursor con |zd|. Use |zD| para borrar todos los pliegues "
+"bajo la línea del cursor."
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:159
@@ -749,9 +749,10 @@ msgid ""
 "Also check out the 'viewdir' option, which specifies where the views are "
 "stored.  You might want to delete old views now and then."
 msgstr ""
-"Observe que al insertar o eliminar líneas, las vistas dejarán de ser "
-"válidas. Revise también la opción 'viewdir', que define donde se guardan los "
-"visionados. Puede que desee borrar viejos visionados de vez en cuando."
+"Tenga en cuenta que, al insertar o eliminar líneas, las vistas dejarán de "
+"ser válidas. Revise también la opción 'viewdir', que define donde se guardan "
+"los visionados. Puede que desee eliminar viejos visionados de vez en "
+"cuando."
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:213
@@ -824,10 +825,10 @@ msgid ""
 "depends on the 'shiftwidth' option.  Each 'shiftwidth' worth of indent adds "
 "one to the depth of the fold.  This is called a fold level."
 msgstr ""
-"Observe que la relación entre la cantidad de sangrado y la profundidad del "
-"pliegue depende de la opción 'shiftwidth'. Cada 'shiftwidth' con el valor de "
-"un sangrado añade uno a la profundidad del pliegue. Este se denomina nivel "
-"de plegado."
+"Tenga en cuenta que la relación entre la cantidad de sangrado y la "
+"profundidad del pliegue depende de la opción 'shiftwidth'. Cada 'shiftwidth' "
+"con el valor de un sangrado añade uno a la profundidad del pliegue. Este se "
+"denomina nivel de plegado."
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:242
@@ -1240,7 +1241,7 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/usr_28.txt:388
 msgid "For more details see |fold-diff|."
-msgstr "Para más detalles, véase |fold-diff|."
+msgstr "Para más detalles, consulte |fold-diff|."
 
 #. type: Plain text
 #: original/TXT/usr_28.txt:391

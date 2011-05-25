@@ -34,7 +34,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-09-23 20:27+0300\n"
-"PO-Revision-Date: 2010-09-23 20:02+0200\n"
+"PO-Revision-Date: 2011-02-26 17:22+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
 "Language: es\n"
@@ -181,7 +181,7 @@ msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
 #: original/TXT/usr_29.txt:613 original/TXT/usr_30.txt:643
 #: original/TXT/usr_31.txt:272
 msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
-msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 
 #. type: Plain text
 #: original/TXT/usr_08.txt:153 original/TXT/usr_24.txt:168
@@ -292,8 +292,8 @@ msgid ""
 "\"f\" of \"fallen\" in the next line pressing CTRL-U does this:"
 msgstr ""
 "En caso de haber realizado errores en una línea, y desea empezar otra vez, "
-"use CTRL-U para borrarlo. Esto mantiene el texto después del cursor, así "
-"como la tabulación. Sólo se borra el texto desde el primer espacio que no "
+"use CTRL-U para eliminarlo. Esto mantiene el texto después del cursor, así "
+"como la tabulación. Sólo se elimina el texto desde el primer espacio que no "
 "esté vacío hasta el cursor. Pulsar CTRL-U con el cursor sobre la «c» de "
 "«cayó» hace lo siguiente:"
 
@@ -399,7 +399,7 @@ msgstr ""
 "más fácil de recordar, pero lleva más tiempo (tiene que mover sus manos de\n"
 "las letras a las teclas del cursor, y es difícil pulsar la tecla <Fin> sin\n"
 "mirar el teclado).\n"
-"   Estas teclas especiales son más útiles cuando escribe un mapeado que no\n"
+"   Estas teclas especiales son más útiles cuando escribe una macro que no\n"
 "abandona el modo Insertar. El tecleo adicional no importa en este caso.\n"
 "   Este es un resumen de las teclas que puede usar en el modo Insertar:\n"
 
@@ -879,7 +879,7 @@ msgid ""
 msgstr ""
 "Necesita crear un archivo de etiquetas y definir la opción 'tags' si desea "
 "editar código C. Consulte |ft-c-omni|. Puede que tenga que realizar algo\n"
-"similar para otros tipos de archivo, véase más adelante |compl-omni-"
+"similar para otros tipos de archivo, consulte más adelante |compl-omni-"
 "filetypes|. Sólo funciona para ciertos tipos de archivo. Revise el valor de "
 "la opción 'omnifunc' para ver si funcionaría."
 
@@ -1458,7 +1458,7 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/usr_24.txt:478
 msgid "REMAPPING ABBREVIATIONS"
-msgstr "REDEFINIR EL MAPEO DE UNA ABREVIATURA"
+msgstr "REDEFINIR LA MACRO DE UNA ABREVIATURA"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:481
@@ -1466,8 +1466,8 @@ msgid ""
 "There is one thing to watch out for when defining an abbreviation: The "
 "resulting string should not be mapped.  For example: >"
 msgstr ""
-"Existe un aspecto a tener en cuenta a la hora de definir una abreviatura: La "
-"cadena resultante no se debería mapear. Por ejemplo: >"
+"Existe un aspecto a tener en cuenta a la hora de definir una abreviatura: no "
+"debería asignar la cadena resultante a una macro. Por ejemplo: >"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:484
@@ -1488,7 +1488,7 @@ msgid ""
 msgstr ""
 "Si ahora teclea @a, obtendrá «adisk-doorer». Esto no es lo que quiere. Para "
 "evitarlo, use la orden «:noabbrev». Hace lo mismo que «:abbreviate», pero "
-"evita que la cadena resultante se use en mapeados."
+"evita que la cadena resultante se use en macros."
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:490
@@ -1802,8 +1802,8 @@ msgstr ""
 "en el modo normal. Si desea usar uno, abandone el modo Insertar con <Esc>,\n"
 "ejecuto la orden en modo Normal, y vuelva al modo Insertar con «i» o «a».\n"
 "   Hay una manera más rápida. Con CTRL-O {orden} puede ejecutar cualquier\n"
-"orden de modo Normal en el modo Insertar. Por ejemplo, para borrar desde el\n"
-"cursor hasta el final de la línea: >\n"
+"orden de modo Normal en el modo Insertar. Por ejemplo, para eliminar desde\n"
+"el cursor hasta el final de la línea: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:594
@@ -1829,7 +1829,7 @@ msgstr "\tCTRL-O \"g3dw\n"
 #. type: Plain text
 #: original/TXT/usr_24.txt:601
 msgid "This deletes up to the third word into register g."
-msgstr "Esto borra hasta la tercera palabra en el registro «g»."
+msgstr "Esto elimina hasta la tercera palabra en el registro «g»."
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:605

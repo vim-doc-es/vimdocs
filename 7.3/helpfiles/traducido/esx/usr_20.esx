@@ -28,8 +28,8 @@ la orden o el patrón de búsqueda. A esto se le llama la línea de órdenes.
 También cuando se usa para introducir una orden de búsqueda.
 
 La manera más obvia de editar la orden introducida es pulsando la tecla <BS>.
-Esto borra el carácter anterior al cursor. Para borrar otro carácter introducido
-previamente, desplace antes el cursor con las teclas del cursos.
+Esto elimina el carácter anterior al cursor. Para eliminar otro carácter
+introducido previamente, desplace antes el cursor con las teclas del cursos.
    Por ejemplo, suponga que ha tecleado esto: >
 
 	:s/vaba/cerdo/
@@ -61,16 +61,12 @@ Las teclas más usadas para desplazarse en la línea de órdenes:
 También puede usar el ratón para mover el cursor.
 
 
-BORRAR
+ELIMINAR
 
 Como ya se ha dicho, <BS> elimina el carácter anterior al cursor. Para
-borrar toda una palabra, use CTRL-W.
+eliminar toda una palabra, use CTRL-W.
 
-#-#-#-#-#  traducido/ESX/usr_20.esx:68  #-#-#-#-#
 	/el sutil cerdo ~
-
-#-#-#-#-#  traducido/ESX/usr_20.esx:81  #-#-#-#-#
-	/el cerdo sutil ~
 
 		     CTRL-W
 
@@ -84,11 +80,7 @@ SUPERPOSICIÓN
 La tecla <Insertar> conmuta entra insertar caracteres y reemplaza los
 existentes. Comience con este texto.
 
-#-#-#-#-#  traducido/ESX/usr_20.esx:68  #-#-#-#-#
 	/el sutil cerdo ~
-
-#-#-#-#-#  traducido/ESX/usr_20.esx:81  #-#-#-#-#
-	/el cerdo sutil ~
 
 Desplace el cursor al inicio de «sutil» con <S-Izq.> dos veces (o <Izq.>
 ocho veces, si <S-Izq.> no funciona. Pulse ahora <Insertar> para pasar a
@@ -114,7 +106,7 @@ desechar de lo que ya tecleó sin ejecutarlo pulse CTRL-C o <Esc>.
 	Ya que	esto se puede considerar un fallo, Vim usa <Esc> para cancelar
 	la orden.
 	Pero puede hacer que sea compatible con Vi con la opción 'cpoptions'.
-	Y cuando usa un mapeado (quizá escrito para Vi) <Esc> también funciona
+	Y cuando usa una macro (quizá escrito para Vi) <Esc> también funciona
 	de manera compatible con Vi. Por ello, siempre funcionará el metodo
  	CTRL-C.
 
@@ -302,14 +294,14 @@ Puede leer más acerca de esto aquí: |cmdline-completion|
 ==============================================================================
 *20.4*	Histórico de la línea de órdenes
 
-En el capítulo 3 mencionamos de manera breve el histórico. Lo básico es que
+En el capítulo 3 mencionamos de manera breve el historial. Lo básico es que
 puede usar la tecla <Arriba> para invocar una orden ya pasada. <Abajo> le
 lleva a aquellas órdenes más recientes.
 
-De hecho, hay cuatro históricos. Los que vamos a mencionar aquí son las
+De hecho, hay cuatro historiales. Los que vamos a mencionar aquí son las
 órdenes «:» y las órdenes de búsqueda «/» y «?». Las órdenes «/» y «?»
-comparten el mismo histórico, ya que ambos son órdenes de búsqueda. Los
-otros dos históricos sirven para las expresiones y líneas de entrada de la
+comparten el mismo historial, ya que ambos son órdenes de búsqueda. Los
+otros dos historiales sirven para las expresiones y líneas de entrada de la
 función input().  |cmdline-history|
 
 Suponga que ejecutó una orden «:set», introdujo diez órdenes «:» más y que
@@ -324,15 +316,15 @@ menos no tendrá que pulsar <Arriba> varias veces (a menos que las órdenes
 «:set» sea todo lo que ha hecho).
 
 La tecla <Arriba> usará el texto introducido hasta el momento y lo comparará
-con las líneas en el histórico. Solo se usarán las líneas coincidentes.
+con las líneas en el historial. Solo se usarán las líneas coincidentes.
    En caso de no encontrar la línea que buscaba, use <Down> para volver a lo
 que tecleó y corrija eso. O use CTRL-U para iniciar el proceso otra vez. 
 
-Para ver todas las líneas del histórico: >
+Para ver todas las líneas del historial: >
 
 	:history
 
-Este es el histórico de las órdenes «:». Puede ver el histórico de búsquedas
+Este es el historial de las órdenes «:». Puede ver el historial de búsquedas
 con esta orden: >
 
 	:history /
@@ -354,7 +346,7 @@ Abra la ventana de línea de órdenes con esta orden: >
 
 	q:
 
-Vim abrirá ahora una pequeña ventana en la base. Contiene el histórico de la
+Vim abrirá ahora una pequeña ventana en la base. Contiene el historial de la
 línea de órdenes, y una línea vacía al final.
 
 	+-------------------------------------+
@@ -384,11 +376,11 @@ se cerrará.
    La orden <Intro> ejecutará la línea bajo el cursor. No importa si Vim está
 en el modo Normal o Insertar.
    Perderá los cambios en la ventana de línea de órdenes, no resulta en
-cambios en el histórico. Excepto que la orden que ejecute se añadira al final
-del histórico, como todas las órdenes ejecutadas.
+cambios en el historial. Excepto que la orden que ejecute se añadirá al final
+del historial, como todas las órdenes ejecutadas.
 
 La ventana de línea de órdenes es muy útil cuando quiere una vista general
-del histórico, mirar una orden similar, modificarlo y ejecutarlo. Puede usar
+del historial, mirar una orden similar, modificarlo y ejecutarlo. Puede usar
 una orden de búsqueda para buscar algo.
    En el ejemplo anterior, la orden de búsqueda «?config» se podría haber
 usado para encontrar una orden anterior que contenga «?config». Es un poco
@@ -400,7 +392,7 @@ teclee la orden de búsqueda, ya que sólo puede haber una.
 
 Siguiente capítulo: |usr_21.esx| Abandonar el editor y volver
 
-Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
+Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
 
 ==============================================================================
 

@@ -143,10 +143,10 @@ La siguiente orden hace que el ratón se comporte como en Windows: >
 
 	:behave mswin
 
-El comportamiento predefinido de un ratón en los sistemas UNIX es xterm.  El
-comportamiento predefinido en un sistema Windows se selecciona durante la
-instalación. Para más detalles sobre estos comportamientos, véase
-|:behave|.  Esto es un pequeño resumen:
+El comportamiento predeterminado de un ratón en los sistemas UNIX es
+xterm. El comportamiento predeterminado en un sistema Windows se selecciona
+durante la instalación. Para más detalles sobre estos comportamientos,
+consulte |:behave|. Aquí tiene un pequeño resumen:
 
 
 COMPORTAMIENTO DEL RATÓN XTERM
@@ -168,8 +168,8 @@ Click botón central		pegar texto desde el portapapeles
 Click botón derecho		mostrar un menú pop-up
 
 
-Puede configurar el ratón con más detalle. Léa estas opciones para ver cómo
-funciona el ratón:
+Puede configurar el ratón con más detalle. Consulte estas opciones si desea
+cambiar el funcionamiento del ratón:
 
 	'mouse'			en qué modo Vim usa el ratón
 	'mousemodel'		qué efectos tiene pulsar con el ratón
@@ -188,8 +188,8 @@ intercambiar texto entre programas. MS-Windows sólo tiene uno.
 
 En X-Windows hay una «selección actual». Esto es el texto que está
 actualmente marcado. En Vim esto es el área Visual (suponiendo que usa las
-opciones predefinidas). Puede pegar esta selección en otra aplicación sin
-ninguna acción ulterior.
+opciones predeterminadas). Puede pegar esta selección en otra aplicación sin
+ninguna acción posterior.
    Por ejemplo, en este texto seleccione unas cuantas palabras con el
 ratón. Vim pasará al modo Visual y resaltará el texto. Ahora inicie otro
 gVim, sin un nombre de archivo, de forma que muestre una ventana vacía.
@@ -201,7 +201,7 @@ ventana. Se dará cuenta de que las palabras que estaban previamente
 seleccionadas en otra ventana gVim se muestran de otro modo. Esto significa
 que ya no están en la «selección actual».
 
-No necesitas seleccionar texto con el ratón, el uso de comandos del teclado
+No necesitas seleccionar texto con el ratón, el uso de órdenes del teclado
 para el modo Visual funciona igual.
 
 
@@ -297,7 +297,7 @@ Puedes ajustar el funcionamiento del modo Seleccionar mediante la opción
 
 Capítulo siguiente: |usr_10.esx| Hacer cambios grandes
 
-Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
+Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
 
 ==============================================================================
 

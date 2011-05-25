@@ -1,0 +1,909 @@
+# Spanish translations for Vim package
+# Copyright (C) 2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the Vim package.
+# Automatically generated, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Vim 7.3\n"
+"Report-Msgid-Bugs-To: vim@bugs.org\n"
+"POT-Creation-Date: 2010-12-09 16:51+0100\n"
+"PO-Revision-Date: 2011-02-01 21:20+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Plain text
+#: original/txt/intro.txt:18 original/txt/intro.txt:79
+#: original/txt/intro.txt:180 original/txt/intro.txt:290
+#: original/txt/intro.txt:518 original/txt/intro.txt:596
+#: original/txt/intro.txt:689 original/txt/intro.txt:817
+#: original/txt/intro.txt:880 original/txt/usr_toc.txt:7
+#: original/txt/usr_toc.txt:58 original/txt/usr_toc.txt:172
+#: original/txt/usr_toc.txt:281 original/txt/usr_toc.txt:340
+#: original/txt/usr_toc.txt:352 original/txt/usr_01.txt:19
+#: original/txt/usr_01.txt:50 original/txt/usr_01.txt:100
+#: original/txt/usr_01.txt:181 original/txt/usr_02.txt:25
+#: original/txt/usr_02.txt:69 original/txt/usr_02.txt:130
+#: original/txt/usr_02.txt:179 original/txt/usr_02.txt:239
+#: original/txt/usr_02.txt:307 original/txt/usr_02.txt:369
+#: original/txt/usr_02.txt:406 original/txt/usr_02.txt:560
+#: original/txt/usr_03.txt:28 original/txt/usr_03.txt:74
+#: original/txt/usr_03.txt:101 original/txt/usr_03.txt:147
+#: original/txt/usr_03.txt:172 original/txt/usr_03.txt:223
+#: original/txt/usr_03.txt:265 original/txt/usr_03.txt:320
+#: original/txt/usr_03.txt:491 original/txt/usr_03.txt:552
+#: original/txt/usr_03.txt:650 original/txt/usr_04.txt:27
+#: original/txt/usr_04.txt:74 original/txt/usr_04.txt:160
+#: original/txt/usr_04.txt:194 original/txt/usr_04.txt:269
+#: original/txt/usr_04.txt:324 original/txt/usr_04.txt:360
+#: original/txt/usr_04.txt:390 original/txt/usr_04.txt:446
+#: original/txt/usr_04.txt:469 original/txt/usr_04.txt:510
+#: original/txt/usr_05.txt:24 original/txt/usr_05.txt:63
+#: original/txt/usr_05.txt:219 original/txt/usr_05.txt:266
+#: original/txt/usr_05.txt:418 original/txt/usr_05.txt:467
+#: original/txt/usr_05.txt:506 original/txt/usr_05.txt:621
+#: original/txt/usr_06.txt:24 original/txt/usr_06.txt:50
+#: original/txt/usr_06.txt:135 original/txt/usr_06.txt:189
+#: original/txt/usr_06.txt:270 original/txt/usr_06.txt:276
+#: original/txt/usr_07.txt:24 original/txt/usr_07.txt:63
+#: original/txt/usr_07.txt:179 original/txt/usr_07.txt:266
+#: original/txt/usr_07.txt:316 original/txt/usr_07.txt:404
+#: original/txt/usr_07.txt:444 original/txt/usr_07.txt:475
+#: original/txt/usr_08.txt:26 original/txt/usr_08.txt:82
+#: original/txt/usr_08.txt:109 original/txt/usr_08.txt:161
+#: original/txt/usr_08.txt:215 original/txt/usr_08.txt:278
+#: original/txt/usr_08.txt:337 original/txt/usr_08.txt:477
+#: original/txt/usr_08.txt:509 original/txt/usr_08.txt:597
+#: original/txt/usr_09.txt:21 original/txt/usr_09.txt:124
+#: original/txt/usr_09.txt:175 original/txt/usr_09.txt:259
+#: original/txt/usr_09.txt:285 original/txt/usr_10.txt:27
+#: original/txt/usr_10.txt:144 original/txt/usr_10.txt:221
+#: original/txt/usr_10.txt:342 original/txt/usr_10.txt:378
+#: original/txt/usr_10.txt:547 original/txt/usr_10.txt:621
+#: original/txt/usr_10.txt:667 original/txt/usr_10.txt:692
+#: original/txt/usr_10.txt:820 original/txt/usr_11.txt:22
+#: original/txt/usr_11.txt:82 original/txt/usr_11.txt:144
+#: original/txt/usr_11.txt:288 original/txt/usr_11.txt:303
+#: original/txt/usr_12.txt:25 original/txt/usr_12.txt:90
+#: original/txt/usr_12.txt:131 original/txt/usr_12.txt:177
+#: original/txt/usr_12.txt:202 original/txt/usr_12.txt:231
+#: original/txt/usr_12.txt:281 original/txt/usr_12.txt:309
+#: original/txt/usr_12.txt:354 original/txt/usr_20.txt:22
+#: original/txt/usr_20.txt:113 original/txt/usr_20.txt:158
+#: original/txt/usr_20.txt:285 original/txt/usr_20.txt:327
+#: original/txt/usr_20.txt:380 original/txt/usr_21.txt:24
+#: original/txt/usr_21.txt:47 original/txt/usr_21.txt:87
+#: original/txt/usr_21.txt:236 original/txt/usr_21.txt:385
+#: original/txt/usr_21.txt:438 original/txt/usr_21.txt:495
+#: original/txt/usr_22.txt:22 original/txt/usr_22.txt:148
+#: original/txt/usr_22.txt:213 original/txt/usr_22.txt:272
+#: original/txt/usr_22.txt:396 original/txt/usr_23.txt:23
+#: original/txt/usr_23.txt:114 original/txt/usr_23.txt:156
+#: original/txt/usr_23.txt:238 original/txt/usr_23.txt:324
+#: original/txt/usr_23.txt:339 original/txt/usr_24.txt:28
+#: original/txt/usr_24.txt:96 original/txt/usr_24.txt:119
+#: original/txt/usr_24.txt:268 original/txt/usr_24.txt:305
+#: original/txt/usr_24.txt:336 original/txt/usr_24.txt:369
+#: original/txt/usr_24.txt:493 original/txt/usr_24.txt:537
+#: original/txt/usr_24.txt:583 original/txt/usr_24.txt:602
+#: original/txt/usr_25.txt:22 original/txt/usr_25.txt:132
+#: original/txt/usr_25.txt:210 original/txt/usr_25.txt:287
+#: original/txt/usr_25.txt:453 original/txt/usr_25.txt:574
+#: original/txt/usr_26.txt:21 original/txt/usr_26.txt:46
+#: original/txt/usr_26.txt:103 original/txt/usr_26.txt:136
+#: original/txt/usr_26.txt:217 original/txt/usr_27.txt:26
+#: original/txt/usr_27.txt:88 original/txt/usr_27.txt:136
+#: original/txt/usr_27.txt:239 original/txt/usr_27.txt:320
+#: original/txt/usr_27.txt:350 original/txt/usr_27.txt:427
+#: original/txt/usr_27.txt:469 original/txt/usr_27.txt:510
+#: original/txt/usr_27.txt:559 original/txt/usr_28.txt:27
+#: original/txt/usr_28.txt:54 original/txt/usr_28.txt:121
+#: original/txt/usr_28.txt:185 original/txt/usr_28.txt:211
+#: original/txt/usr_28.txt:269 original/txt/usr_28.txt:315
+#: original/txt/usr_28.txt:331 original/txt/usr_28.txt:375
+#: original/txt/usr_28.txt:389 original/txt/usr_28.txt:422
+#: original/txt/usr_29.txt:23 original/txt/usr_29.txt:273
+#: original/txt/usr_29.txt:320 original/txt/usr_29.txt:441
+#: original/txt/usr_29.txt:570 original/txt/usr_29.txt:609
+#: original/txt/usr_30.txt:23 original/txt/usr_30.txt:202
+#: original/txt/usr_30.txt:280 original/txt/usr_30.txt:336
+#: original/txt/usr_30.txt:409 original/txt/usr_30.txt:515
+#: original/txt/usr_30.txt:639 original/txt/usr_31.txt:22
+#: original/txt/usr_31.txt:81 original/txt/usr_31.txt:133
+#: original/txt/usr_31.txt:160 original/txt/usr_31.txt:208
+#: original/txt/usr_31.txt:268 original/txt/usr_32.txt:21
+#: original/txt/usr_32.txt:44 original/txt/usr_32.txt:92
+#: original/txt/usr_32.txt:140 original/txt/usr_32.txt:176
+#: original/txt/usr_40.txt:20 original/txt/usr_40.txt:279
+#: original/txt/usr_40.txt:424 original/txt/usr_40.txt:653
+#: original/txt/usr_41.txt:33 original/txt/usr_41.txt:133
+#: original/txt/usr_41.txt:267 original/txt/usr_41.txt:345
+#: original/txt/usr_41.txt:482 original/txt/usr_41.txt:532
+#: original/txt/usr_41.txt:877 original/txt/usr_41.txt:1104
+#: original/txt/usr_41.txt:1390 original/txt/usr_41.txt:1447
+#: original/txt/usr_41.txt:1617 original/txt/usr_41.txt:2038
+#: original/txt/usr_41.txt:2224 original/txt/usr_41.txt:2270
+#: original/txt/usr_41.txt:2346 original/txt/usr_41.txt:2410
+#: original/txt/usr_41.txt:2425 original/txt/usr_42.txt:21
+#: original/txt/usr_42.txt:140 original/txt/usr_42.txt:254
+#: original/txt/usr_42.txt:293 original/txt/usr_42.txt:361
+#: original/txt/usr_90.txt:21 original/txt/usr_90.txt:214
+#: original/txt/usr_90.txt:288 original/txt/usr_90.txt:341
+#: original/txt/usr_90.txt:417 original/txt/usr_90.txt:494
+#, no-wrap
+msgid "==============================================================================\n"
+msgstr "==============================================================================\n"
+
+#. type: Plain text
+#: original/txt/usr_toc.txt:4 original/txt/usr_01.txt:4
+#: original/txt/usr_02.txt:4 original/txt/usr_03.txt:4
+#: original/txt/usr_04.txt:4 original/txt/usr_05.txt:4
+#: original/txt/usr_06.txt:4 original/txt/usr_07.txt:4
+#: original/txt/usr_08.txt:4 original/txt/usr_09.txt:4
+#: original/txt/usr_10.txt:4 original/txt/usr_11.txt:4
+#: original/txt/usr_12.txt:4 original/txt/usr_20.txt:4
+#: original/txt/usr_21.txt:4 original/txt/usr_22.txt:4
+#: original/txt/usr_23.txt:4 original/txt/usr_24.txt:4
+#: original/txt/usr_25.txt:4 original/txt/usr_26.txt:4
+#: original/txt/usr_27.txt:4 original/txt/usr_28.txt:4
+#: original/txt/usr_29.txt:4 original/txt/usr_30.txt:4
+#: original/txt/usr_31.txt:4 original/txt/usr_32.txt:4
+#: original/txt/usr_40.txt:4 original/txt/usr_41.txt:4
+#: original/txt/usr_42.txt:4 original/txt/usr_90.txt:4
+#, no-wrap
+msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
+msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
+
+#. type: Plain text
+#: original/txt/usr_toc.txt:354 original/txt/usr_01.txt:185
+#: original/txt/usr_02.txt:564 original/txt/usr_03.txt:654
+#: original/txt/usr_04.txt:514 original/txt/usr_05.txt:625
+#: original/txt/usr_06.txt:280 original/txt/usr_07.txt:479
+#: original/txt/usr_08.txt:601 original/txt/usr_09.txt:289
+#: original/txt/usr_10.txt:824 original/txt/usr_11.txt:307
+#: original/txt/usr_12.txt:358 original/txt/usr_20.txt:384
+#: original/txt/usr_21.txt:499 original/txt/usr_22.txt:400
+#: original/txt/usr_23.txt:343 original/txt/usr_24.txt:606
+#: original/txt/usr_25.txt:578 original/txt/usr_26.txt:221
+#: original/txt/usr_27.txt:563 original/txt/usr_28.txt:426
+#: original/txt/usr_29.txt:613 original/txt/usr_30.txt:643
+#: original/txt/usr_31.txt:272 original/txt/usr_32.txt:180
+#: original/txt/usr_40.txt:657 original/txt/usr_41.txt:2429
+#: original/txt/usr_42.txt:365 original/txt/usr_90.txt:498
+msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+
+#. type: Plain text
+#: original/txt/usr_40.txt:207 original/txt/usr_42.txt:111
+msgid "SPECIAL CHARACTERS"
+msgstr "CARACTERES ESPECIALES"
+
+#. type: Plain text
+#: original/txt/usr_42.txt:2
+#, fuzzy, no-wrap
+#| msgid "*usr_01.txt*\tFor Vim version 7.3.  Last change: 2008 May 07\n"
+msgid "*usr_42.txt*\tFor Vim version 7.3.  Last change: 2008 May 05\n"
+msgstr "*usr_01.esx*\tPara Vim versión 7.3.  Último cambio: 7/6/2008\n"
+
+#. type: Plain text
+#: original/txt/usr_42.txt:6
+#, fuzzy, no-wrap
+#| msgid "\t\t\t      About the manuals\n"
+msgid "\t\t\t      Add new menus\n"
+msgstr "\t\t\t    Acerca de los manuales\n"
+
+#. type: Plain text
+#: original/txt/usr_42.txt:11
+msgid ""
+"By now you know that Vim is very flexible.  This includes the menus used in "
+"the GUI.  You can define your own menu entries to make certain commands "
+"easily accessible.  This is for mouse-happy users only."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:16
+#, fuzzy, no-wrap
+msgid ""
+"|42.1|\tIntroduction\n"
+"|42.2|\tMenu commands\n"
+"|42.3|\tVarious\n"
+"|42.4|\tToolbar and popup menus\n"
+msgstr ""
+"|usr_42.txt|  Add new menus\n"
+"\t\t|42.1|\tIntroduction\n"
+"\t\t|42.2|\tMenu commands\n"
+"\t\t|42.3|\tVarious\n"
+"\t\t|42.4|\tToolbar and popup menus\n"
+
+#. type: Plain text
+#: original/txt/usr_42.txt:20
+#, fuzzy, no-wrap
+#| msgid ""
+#| "     Next chapter: |usr_23.txt|  Editing other files\n"
+#| " Previous chapter: |usr_21.txt|  Go away and come back\n"
+#| "Table of contents: |usr_toc.txt|\n"
+msgid ""
+"     Next chapter: |usr_43.txt|  Using filetypes\n"
+" Previous chapter: |usr_41.txt|  Write a Vim script\n"
+"Table of contents: |usr_toc.txt|\n"
+msgstr ""
+" Capítulo siguiente: |usr_23.esx|  Editar otros archivos\n"
+"  Capítulo anterior: |usr_21.est|  Abandonar el editor y volver\n"
+"Tabla de contenidos: |usr_toc.est|\n"
+
+#. type: Plain text
+#: original/txt/usr_42.txt:23
+#, fuzzy, no-wrap
+#| msgid "*23.3*\tEncryption\n"
+msgid "*42.1*\tIntroduction\n"
+msgstr "*23.3*\tCifrado\n"
+
+#. type: Plain text
+#: original/txt/usr_42.txt:29
+#, no-wrap
+msgid ""
+"The menus that Vim uses are defined in the file \"$VIMRUNTIME/menu.vim\".  If\n"
+"you want to write your own menus, you might first want to look through that\n"
+"file.\n"
+"   To define a menu item, use the \":menu\" command.  The basic form of this\n"
+"command is as follows: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:31
+#, no-wrap
+msgid "\t:menu {menu-item} {keys}\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:35
+msgid ""
+"The {menu-item} describes where on the menu to put the item.  A typical "
+"{menu-item} is \"File.Save\", which represents the item \"Save\" under the "
+"\"File\" menu.  A dot is used to separate the names.  Example: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:37
+#, no-wrap
+msgid "\t:menu File.Save  :update<CR>\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:48
+#, no-wrap
+msgid ""
+"The \":update\" command writes the file when it was modified.\n"
+"   You can add another level: \"Edit.Settings.Shiftwidth\" defines a submenu\n"
+"\"Settings\" under the \"Edit\" menu, with an item \"Shiftwidth\".  You could use\n"
+"even deeper levels.  Don't use this too much, you need to move the mouse quite\n"
+"a bit to use such an item.\n"
+"   The \":menu\" command is very similar to the \":map\" command: the left side\n"
+"specifies how the item is triggered and the right hand side defines the\n"
+"characters that are executed.  {keys} are characters, they are used just like\n"
+"you would have typed them.  Thus in Insert mode, when {keys} is plain text,\n"
+"that text is inserted.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:51
+msgid "ACCELERATORS"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:59
+#, no-wrap
+msgid ""
+"The ampersand character (&) is used to indicate an accelerator.  For instance,\n"
+"you can use Alt-F to select \"File\" and S to select \"Save\".  (The 'winaltkeys'\n"
+"option may disable this though!).  Therefore, the {menu-item} looks like\n"
+"\"&File.&Save\".  The accelerator characters will be underlined in the menu.\n"
+"   You must take care that each key is used only once in each menu.  Otherwise\n"
+"you will not know which of the two will actually be used.  Vim doesn't warn\n"
+"you for this.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:62
+msgid "PRIORITIES"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:64
+msgid "The actual definition of the File.Save menu item is as follows: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:66
+#, no-wrap
+msgid "\t:menu 10.340 &File.&Save<Tab>:w  :confirm w<CR>\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:72
+#, no-wrap
+msgid ""
+"The number 10.340 is called the priority number.  It is used by the editor to\n"
+"decide where it places the menu item.  The first number (10) indicates the\n"
+"position on the menu bar.  Lower numbered menus are positioned to the left,\n"
+"higher numbers to the right.\n"
+"   These are the priorities used for the standard menus:\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:74
+#, no-wrap
+msgid "\t  10\t20     40     50      60       70\t\t9999\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:78
+#, fuzzy, no-wrap
+#| msgid "------------------------------------------------------------------------------\n"
+msgid ""
+"\t+------------------------------------------------------------+\n"
+"\t| File\tEdit  Tools  Syntax  Buffers  Window\t\tHelp |\n"
+"\t+------------------------------------------------------------+\n"
+msgstr "------------------------------------------------------------------------------\n"
+
+#. type: Plain text
+#: original/txt/usr_42.txt:84
+#, no-wrap
+msgid ""
+"Notice that the Help menu is given a very high number, to make it appear on\n"
+"the far right.\n"
+"   The second number (340) determines the location of the item within the\n"
+"pull-down menu.  Lower numbers go on top, higher number on the bottom.  These\n"
+"are the priorities in the File menu:\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:102
+#, no-wrap
+msgid ""
+"\t\t\t+-----------------+\n"
+"\t    10.310\t|Open...\t  |\n"
+"\t    10.320\t|Split-Open...\t  |\n"
+"\t    10.325\t|New\t\t  |\n"
+"\t    10.330\t|Close\t\t  |\n"
+"\t    10.335\t|---------------- |\n"
+"\t    10.340\t|Save\t\t  |\n"
+"\t    10.350\t|Save As...\t  |\n"
+"\t    10.400\t|---------------- |\n"
+"\t    10.410\t|Split Diff with  |\n"
+"\t    10.420\t|Split Patched By |\n"
+"\t    10.500\t|---------------- |\n"
+"\t    10.510\t|Print\t\t  |\n"
+"\t    10.600\t|---------------- |\n"
+"\t    10.610\t|Save-Exit\t  |\n"
+"\t    10.620\t|Exit\t\t  |\n"
+"\t\t\t+-----------------+\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:108
+#, no-wrap
+msgid ""
+"Notice that there is room in between the numbers.  This is where you can\n"
+"insert your own items, if you really want to (it's often better to leave the\n"
+"standard menus alone and add a new menu for your own items).\n"
+"   When you create a submenu, you can add another \".number\" to the priority.\n"
+"Thus each name in {menu-item} has its priority number.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:116
+msgid ""
+"The {menu-item} in this example is \"&File.&Save<Tab>:w\".  This brings up "
+"an important point: {menu-item} must be one word.  If you want to put a dot, "
+"space or tabs in the name, you either use the <> notation (<Space> and "
+"<Tab>, for instance) or use the backslash (\\) escape. >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:118
+#, no-wrap
+msgid "\t:menu 10.305 &File.&Do\\ It\\.\\.\\. :exit<CR>\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:121
+msgid ""
+"In this example, the name of the menu item \"Do It...\" contains a space and "
+"the command is \":exit<CR>\"."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:127
+msgid ""
+"The <Tab> character in a menu name is used to separate the part that defines "
+"the menu name from the part that gives a hint to the user.  The part after "
+"the <Tab> is displayed right aligned in the menu.  In the File.Save menu the "
+"name used is \"&File.&Save<Tab>:w\".  Thus the menu name is \"File.Save\" "
+"and the hint is \":w\"."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:130
+msgid "SEPARATORS"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:137
+#, no-wrap
+msgid ""
+"The separator lines, used to group related menu items together, can be defined\n"
+"by using a name that starts and ends in a '-'.  For example \"-sep-\".  When\n"
+"using several separators the names must be different.  Otherwise the names\n"
+"don't matter.\n"
+"   The command from a separator will never be executed, but you have to define\n"
+"one anyway.  A single colon will do.  Example: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:139
+#, no-wrap
+msgid "\t:amenu 20.510 Edit.-sep3- :\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:142
+#, fuzzy, no-wrap
+#| msgid "*21.2*\tExecuting shell commands\n"
+msgid "*42.2*\tMenu commands\n"
+msgstr "*21.2*\tEjecutar órdenes de consola\n"
+
+#. type: Plain text
+#: original/txt/usr_42.txt:145
+msgid ""
+"You can define menu items that exist for only certain modes.  This works "
+"just like the variations on the \":map\" command:"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:154
+#, no-wrap
+msgid ""
+"\t:menu\t\tNormal, Visual and Operator-pending mode\n"
+"\t:nmenu\t\tNormal mode\n"
+"\t:vmenu\t\tVisual mode\n"
+"\t:omenu\t\tOperator-pending mode\n"
+"\t:menu!\t\tInsert and Command-line mode\n"
+"\t:imenu\t\tInsert mode\n"
+"\t:cmenu\t\tCommand-line mode\n"
+"\t:amenu\t\tAll modes\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:157
+msgid ""
+"To avoid that the commands of a menu item are being mapped, use the command "
+"\":noremenu\", \":nnoremenu\", \":anoremenu\", etc."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:160
+#, fuzzy
+#| msgid "USING A COUNT"
+msgid "USING :AMENU"
+msgstr "USAR UN MULTIPLICADOR"
+
+#. type: Plain text
+#: original/txt/usr_42.txt:167
+#, no-wrap
+msgid ""
+"The \":amenu\" command is a bit different.  It assumes that the {keys} you\n"
+"give are to be executed in Normal mode.  When Vim is in Visual or Insert mode\n"
+"when the menu is used, Vim first has to go back to Normal mode.  \":amenu\"\n"
+"inserts a CTRL-C or CTRL-O for you.  For example, if you use this command:\n"
+">\n"
+"\t:amenu  90.100 Mine.Find\\ Word  *\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:169
+msgid "Then the resulting menu commands will be:"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:175
+#, no-wrap
+msgid ""
+"\tNormal mode:\t\t*\n"
+"\tVisual mode:\t\tCTRL-C *\n"
+"\tOperator-pending mode:\tCTRL-C *\n"
+"\tInsert mode:\t\tCTRL-O *\n"
+"\tCommand-line mode:\tCTRL-C *\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:181
+#, no-wrap
+msgid ""
+"When in Command-line mode the CTRL-C will abandon the command typed so far.\n"
+"In Visual and Operator-pending mode CTRL-C will stop the mode.  The CTRL-O in\n"
+"Insert mode will execute the command and then return to Insert mode.\n"
+"   CTRL-O only works for one command.  If you need to use two or more\n"
+"commands, put them in a function and call that function.  Example: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:187
+#, no-wrap
+msgid ""
+"\t:amenu  Mine.Next\\ File  :call <SID>NextFile()<CR>\n"
+"\t:function <SID>NextFile()\n"
+"\t:  next\n"
+"\t:  1/^Code\n"
+"\t:endfunction\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:193
+#, no-wrap
+msgid ""
+"This menu entry goes to the next file in the argument list with \":next\".  Then\n"
+"it searches for the line that starts with \"Code\".\n"
+"   The <SID> before the function name is the script ID.  This makes the\n"
+"function local to the current Vim script file.  This avoids problems when a\n"
+"function with the same name is defined in another script file.  See |<SID>|.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:196
+msgid "SILENT MENUS"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:203
+#, no-wrap
+msgid ""
+"The menu executes the {keys} as if you typed them.  For a \":\" command this\n"
+"means you will see the command being echoed on the command line.  If it's a\n"
+"long command, the hit-Enter prompt will appear.  That can be very annoying!\n"
+"   To avoid this, make the menu silent.  This is done with the <silent>\n"
+"argument.  For example, take the call to NextFile() in the previous example.\n"
+"When you use this menu, you will see this on the command line:\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:205
+#, no-wrap
+msgid "\t:call <SNR>34_NextFile() ~\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:208
+msgid ""
+"To avoid this text on the command line, insert \"<silent>\" as the first "
+"argument: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:210
+#, no-wrap
+msgid "\t:amenu <silent> Mine.Next\\ File :call <SID>NextFile()<CR>\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:214
+msgid ""
+"Don't use \"<silent>\" too often.  It is not needed for short commands.  If "
+"you make a menu for someone else, being able the see the executed command "
+"will give him a hint about what he could have typed, instead of using the "
+"mouse."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:217
+#, fuzzy
+#| msgid "LISTING BUFFERS"
+msgid "LISTING MENUS"
+msgstr "LISTAR BÚFERS"
+
+#. type: Plain text
+#: original/txt/usr_42.txt:221
+msgid ""
+"When a menu command is used without a {keys} part, it lists the already "
+"defined menus.  You can specify a {menu-item}, or part of it, to list "
+"specific menus.  Example: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:223
+#, no-wrap
+msgid "\t:amenu\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:226
+msgid ""
+"This lists all menus.  That's a long list! Better specify the name of a menu "
+"to get a shorter list: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:228
+#, no-wrap
+msgid "\t:amenu Edit\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:231
+msgid ""
+"This lists only the \"Edit\" menu items for all modes.  To list only one "
+"specific menu item for Insert mode: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:233
+#, no-wrap
+msgid "\t:imenu Edit.Undo\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:237
+msgid ""
+"Take care that you type exactly the right name.  Case matters here.  But the "
+"'&' for accelerators can be omitted.  The <Tab> and what comes after it can "
+"be left out as well."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:240
+#, fuzzy
+#| msgid "DELETING"
+msgid "DELETING MENUS"
+msgstr "BORRAR"
+
+#. type: Plain text
+#: original/txt/usr_42.txt:244
+msgid ""
+"To delete a menu, the same command is used as for listing, but with \"menu\" "
+"changed to \"unmenu\".  Thus \":menu\" becomes, \":unmenu\", \":nmenu\" "
+"becomes \":nunmenu\", etc.  To delete the \"Tools.Make\" item for Insert "
+"mode: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:246
+#, no-wrap
+msgid "\t:iunmenu Tools.Make\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:249
+msgid ""
+"You can delete a whole menu, with all its items, by using the menu name.  "
+"Example: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:251
+#, no-wrap
+msgid "\t:aunmenu Syntax\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:253
+msgid "This deletes the Syntax menu and all the items in it."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:256
+#, fuzzy, no-wrap
+#| msgid "*31.5*\tVarious\n"
+msgid "*42.3*\tVarious\n"
+msgstr "*31.5*\tVarios\n"
+
+#. type: Plain text
+#: original/txt/usr_42.txt:260
+msgid ""
+"You can change the appearance of the menus with flags in 'guioptions'.  In "
+"the default value they are all included, except \"M\".  You can remove a "
+"flag with a command like: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:264
+#, no-wrap
+msgid ""
+"\t:set guioptions-=m\n"
+"<\n"
+"\tm\t\tWhen removed the menubar is not displayed.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:266
+#, no-wrap
+msgid "\tM\t\tWhen added the default menus are not loaded.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:270
+#, no-wrap
+msgid ""
+"\tg\t\tWhen removed the inactive menu items are not made grey\n"
+"\t\t\tbut are completely removed.  (Does not work on all\n"
+"\t\t\tsystems.)\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:272
+#, no-wrap
+msgid "\tt\t\tWhen removed the tearoff feature is not enabled.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:277
+msgid ""
+"The dotted line at the top of a menu is not a separator line.  When you "
+"select this item, the menu is \"teared-off\": It is displayed in a separate "
+"window.  This is called a tearoff menu.  This is useful when you use the "
+"same menu often."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:279
+msgid "For translating menu items, see |:menutrans|."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:284
+msgid ""
+"Since the mouse has to be used to select a menu item, it is a good idea to "
+"use the \":browse\" command for selecting a file.  And \":confirm\" to get a "
+"dialog instead of an error message, e.g., when the current buffer contains "
+"changes.  These two can be combined: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:286
+#, no-wrap
+msgid "\t:amenu File.Open  :browse confirm edit<CR>\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:292
+#, no-wrap
+msgid ""
+"The \":browse\" makes a file browser appear to select the file to edit.  The\n"
+"\":confirm\" will pop up a dialog when the current buffer has changes.  You can\n"
+"then select to save the changes, throw them away or cancel the command.\n"
+"   For more complicated items, the confirm() and inputdialog() functions can\n"
+"be used.  The default menus contain a few examples.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:295
+#, no-wrap
+msgid "*42.4*\tToolbar and popup menus\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:298
+msgid ""
+"There are two special menus: ToolBar and PopUp.  Items that start with these "
+"names do not appear in the normal menu bar."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:301
+#, fuzzy
+#| msgid "THE TOOLBAR"
+msgid "TOOLBAR"
+msgstr "LA BARRA DE HERRAMIENTAS"
+
+#. type: Plain text
+#: original/txt/usr_42.txt:312
+#, no-wrap
+msgid ""
+"The toolbar appears only when the \"T\" flag is included in the 'guioptions'\n"
+"option.\n"
+"   The toolbar uses icons rather than text to represent the command.  For\n"
+"example, the {menu-item} named \"ToolBar.New\" causes the \"New\" icon to appear\n"
+"on the toolbar.\n"
+"   The Vim editor has 28 built-in icons.  You can find a table here:\n"
+"|builtin-tools|.  Most of them are used in the default toolbar.  You can\n"
+"redefine what these items do (after the default menus are setup).\n"
+"   You can add another bitmap for a toolbar item.  Or define a new toolbar\n"
+"item with a bitmap.  For example, define a new toolbar item with: >\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:315
+#, no-wrap
+msgid ""
+"\t:tmenu ToolBar.Compile  Compile the current file\n"
+"\t:amenu ToolBar.Compile  :!cc % -o %:r<CR>\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:322
+#, no-wrap
+msgid ""
+"Now you need to create the icon.  For MS-Windows it must be in bitmap format,\n"
+"with the name \"Compile.bmp\".  For Unix XPM format is used, the file name is\n"
+"\"Compile.xpm\".  The size must be 18 by 18 pixels.  On MS-Windows other sizes\n"
+"can be used as well, but it will look ugly.\n"
+"   Put the bitmap in the directory \"bitmaps\" in one of the directories from\n"
+"'runtimepath'.  E.g., for Unix \"~/.vim/bitmaps/Compile.xpm\".\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:328
+msgid ""
+"You can define tooltips for the items in the toolbar.  A tooltip is a short "
+"text that explains what a toolbar item will do.  For example \"Open file\".  "
+"It appears when the mouse pointer is on the item, without moving for a "
+"moment.  This is very useful if the meaning of the picture isn't that "
+"obvious.  Example: >"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:334
+#, no-wrap
+msgid ""
+"\t:tmenu ToolBar.Make  Run make in the current directory\n"
+"<\n"
+"\tNote:\n"
+"\tPay attention to the case used.  \"Toolbar\" and \"toolbar\" are different\n"
+"\tfrom \"ToolBar\"!\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:336
+#, fuzzy
+#| msgid "To travel forward in time again use the |:later| command: >"
+msgid "To remove a tooltip, use the |:tunmenu| command."
+msgstr "Para viajar hacia adelante en el tiempo use la orden |:later|: >"
+
+#. type: Plain text
+#: original/txt/usr_42.txt:340
+msgid ""
+"The 'toolbar' option can be used to display text instead of a bitmap, or "
+"both text and a bitmap.  Most people use just the bitmap, since the text "
+"takes quite a bit of space."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:343
+msgid "POPUP MENU"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:355
+#, no-wrap
+msgid ""
+"The popup menu pops up where the mouse pointer is.  On MS-Windows you activate\n"
+"it by clicking the right mouse button.  Then you can select an item with the\n"
+"left mouse button.  On Unix the popup menu is used by pressing and holding the\n"
+"right mouse button.\n"
+"   The popup menu only appears when the 'mousemodel' has been set to \"popup\"\n"
+"or \"popup_setpos\".  The difference between the two is that \"popup_setpos\"\n"
+"moves the cursor to the mouse pointer position.  When clicking inside a\n"
+"selection, the selection will be used unmodified.  When there is a selection\n"
+"but you click outside of it, the selection is removed.\n"
+"   There is a separate popup menu for each mode.  Thus there are never grey\n"
+"items like in the normal menus.\n"
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:360
+msgid ""
+"What is the meaning of life, the universe and everything? *42* Douglas "
+"Adams, the only person who knew what this question really was about is now "
+"dead, unfortunately.  So now you might wonder what the meaning of death is..."
+msgstr ""
+
+#. type: Plain text
+#: original/txt/usr_42.txt:364
+#, fuzzy
+#| msgid "Next chapter: |usr_09.txt| Using the GUI"
+msgid "Next chapter: |usr_43.txt| Using filetypes"
+msgstr "Capítulo siguiente: |usr_09.esx| Uso de la interfaz gráfica"

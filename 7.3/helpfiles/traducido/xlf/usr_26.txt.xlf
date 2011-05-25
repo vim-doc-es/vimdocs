@@ -1,0 +1,2011 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.1" version="1.1">
+  <file original="po/usr_26.txt.po" source-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit xml:space="preserve" id="1" approved="no" restype="x-gettext-domain-header">
+        <source>Project-Id-Version: Vim 7.2
+Report-Msgid-Bugs-To: vim@bugs.org
+POT-Creation-Date: 2010-09-23 20:27+0300
+PO-Revision-Date: 2011-02-26 17:36+0200
+Last-Translator: Omar Campagne &lt;ocampagne@gmail.com&gt;
+Language-Team: vim-doc-es &lt;vim-doc-es@freelists.org&gt;
+Language: es
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Plural-Forms: nplurals=2; plural=(n != 1);
+X-Generator: Virtaal 0.5.0-rc1
+</source>
+        <target state="translated">Project-Id-Version: Vim 7.2
+Report-Msgid-Bugs-To: vim@bugs.org
+POT-Creation-Date: 2010-09-23 20:27+0300
+PO-Revision-Date: 2011-02-26 17:36+0200
+Last-Translator: Omar Campagne &lt;ocampagne@gmail.com&gt;
+Language-Team: vim-doc-es &lt;vim-doc-es@freelists.org&gt;
+Language: es
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Plural-Forms: nplurals=2; plural=(n != 1);
+X-Generator: Virtaal 0.5.0-rc1
+</target>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-trancomment">vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es
+Copyright (C) 2009
+This file is distributed under the same license as the Vim 7.2 package.
+Translators credits:
+- Initial translation
+Omar Campagne &lt;ocampagne@gmail.com&gt;, 2009
+- Updates
+TRADUCTOR &lt;CORREO&gt;, AÑO
+Debido al formato (txt) y al máximo de 80 columnas que pueden tener
+los textos de ayuda en Vim, así como el formato PO, por favor, leete los
+apuntes concernientes a la edición de los archivos PO relativos a la
+aplicación que desees usar.
+También encontrarás información acerca del uso de herramientas gettext en el
+proyecto de localización (l10n) de Vim.
+- http://www.assembla.com/wiki/show/vim-doc-es
+No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
+este enlace puede ser de interés. A pesar de no formar parte, nuestra
+intención es homologarnos con su terminología y uso de la lengua
+en la medida de lo útil y posible.
+- El proyecto de traducción de Debian al español
+http://www.debian.org/intl/spanish/notas
+La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
+pero también puede servir de referencia para otros términos no técnicos.
+No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
+traducción sea comprensible independientemente de la nacionalidad del
+usuario. Si crees que alguna traducción puede llevar a confusión, consulta
+la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
+- www.rae.es
+- http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&amp;page=showpages
+Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
+se puede consultar con un simple grep, pogrep o cargado en Virtaal.</context>
+        </context-group>
+        <note from="po-translator">vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es
+Copyright (C) 2009
+This file is distributed under the same license as the Vim 7.2 package.
+Translators credits:
+- Initial translation
+Omar Campagne &lt;ocampagne@gmail.com&gt;, 2009
+- Updates
+TRADUCTOR &lt;CORREO&gt;, AÑO
+Debido al formato (txt) y al máximo de 80 columnas que pueden tener
+los textos de ayuda en Vim, así como el formato PO, por favor, leete los
+apuntes concernientes a la edición de los archivos PO relativos a la
+aplicación que desees usar.
+También encontrarás información acerca del uso de herramientas gettext en el
+proyecto de localización (l10n) de Vim.
+- http://www.assembla.com/wiki/show/vim-doc-es
+No somos parte del proyecto de traducción en Debian. Sin embargo, creemos que
+este enlace puede ser de interés. A pesar de no formar parte, nuestra
+intención es homologarnos con su terminología y uso de la lengua
+en la medida de lo útil y posible.
+- El proyecto de traducción de Debian al español
+http://www.debian.org/intl/spanish/notas
+La R.A.E. no es un inmenso referente en cuanto a términos tecnológicos,
+pero también puede servir de referencia para otros términos no técnicos.
+No pretendemos hacer es_ES, es_CO, es_AR, etc..., sino que la misma
+traducción sea comprensible independientemente de la nacionalidad del
+usuario. Si crees que alguna traducción puede llevar a confusión, consulta
+la R.A.E., o el diccionario de Maria Moliner, y escribe un correo.
+- www.rae.es
+- http://www.diclib.com/cgi-bin/d1.cgi?base=moliner&amp;page=showpages
+Disponemos también de un archivo «terminology.po» en «/recursos_de..» que
+se puede consultar con un simple grep, pogrep o cargado en Virtaal.</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="2" approved="yes">
+        <source>==============================================================================
+</source>
+        <target state="translated">==============================================================================
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/intro.txt</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/intro.txt</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/intro.txt</context>
+          <context context-type="linenumber">180</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/intro.txt</context>
+          <context context-type="linenumber">290</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/intro.txt</context>
+          <context context-type="linenumber">518</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/intro.txt</context>
+          <context context-type="linenumber">596</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/intro.txt</context>
+          <context context-type="linenumber">689</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/intro.txt</context>
+          <context context-type="linenumber">817</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/intro.txt</context>
+          <context context-type="linenumber">880</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_toc.txt</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_toc.txt</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_toc.txt</context>
+          <context context-type="linenumber">172</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_toc.txt</context>
+          <context context-type="linenumber">281</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_toc.txt</context>
+          <context context-type="linenumber">340</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_toc.txt</context>
+          <context context-type="linenumber">352</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_01.txt</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_01.txt</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_01.txt</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_01.txt</context>
+          <context context-type="linenumber">181</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_02.txt</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_02.txt</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_02.txt</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_02.txt</context>
+          <context context-type="linenumber">179</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_02.txt</context>
+          <context context-type="linenumber">239</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_02.txt</context>
+          <context context-type="linenumber">307</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_02.txt</context>
+          <context context-type="linenumber">369</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_02.txt</context>
+          <context context-type="linenumber">406</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_02.txt</context>
+          <context context-type="linenumber">560</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">172</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">223</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">265</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">320</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">491</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">552</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">650</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">194</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">269</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">324</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">360</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">390</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">446</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">469</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">510</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_05.txt</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_05.txt</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_05.txt</context>
+          <context context-type="linenumber">219</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_05.txt</context>
+          <context context-type="linenumber">266</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_05.txt</context>
+          <context context-type="linenumber">418</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_05.txt</context>
+          <context context-type="linenumber">467</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_05.txt</context>
+          <context context-type="linenumber">506</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_05.txt</context>
+          <context context-type="linenumber">621</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_06.txt</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_06.txt</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_06.txt</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_06.txt</context>
+          <context context-type="linenumber">189</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_06.txt</context>
+          <context context-type="linenumber">270</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_06.txt</context>
+          <context context-type="linenumber">276</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_07.txt</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_07.txt</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_07.txt</context>
+          <context context-type="linenumber">179</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_07.txt</context>
+          <context context-type="linenumber">266</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_07.txt</context>
+          <context context-type="linenumber">316</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_07.txt</context>
+          <context context-type="linenumber">404</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_07.txt</context>
+          <context context-type="linenumber">444</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_07.txt</context>
+          <context context-type="linenumber">475</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_08.txt</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_08.txt</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_08.txt</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_08.txt</context>
+          <context context-type="linenumber">161</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_08.txt</context>
+          <context context-type="linenumber">215</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_08.txt</context>
+          <context context-type="linenumber">278</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_08.txt</context>
+          <context context-type="linenumber">337</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_08.txt</context>
+          <context context-type="linenumber">477</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_08.txt</context>
+          <context context-type="linenumber">509</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_08.txt</context>
+          <context context-type="linenumber">597</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_09.txt</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_09.txt</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_09.txt</context>
+          <context context-type="linenumber">175</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_09.txt</context>
+          <context context-type="linenumber">259</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_09.txt</context>
+          <context context-type="linenumber">285</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_10.txt</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_10.txt</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_10.txt</context>
+          <context context-type="linenumber">221</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_10.txt</context>
+          <context context-type="linenumber">342</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_10.txt</context>
+          <context context-type="linenumber">378</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_10.txt</context>
+          <context context-type="linenumber">547</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_10.txt</context>
+          <context context-type="linenumber">621</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_10.txt</context>
+          <context context-type="linenumber">667</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_10.txt</context>
+          <context context-type="linenumber">692</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_10.txt</context>
+          <context context-type="linenumber">820</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_11.txt</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_11.txt</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_11.txt</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_11.txt</context>
+          <context context-type="linenumber">288</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_11.txt</context>
+          <context context-type="linenumber">303</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_12.txt</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_12.txt</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_12.txt</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_12.txt</context>
+          <context context-type="linenumber">177</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_12.txt</context>
+          <context context-type="linenumber">202</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_12.txt</context>
+          <context context-type="linenumber">231</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_12.txt</context>
+          <context context-type="linenumber">281</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_12.txt</context>
+          <context context-type="linenumber">309</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_12.txt</context>
+          <context context-type="linenumber">354</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_20.txt</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_20.txt</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_20.txt</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_20.txt</context>
+          <context context-type="linenumber">285</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_20.txt</context>
+          <context context-type="linenumber">327</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_20.txt</context>
+          <context context-type="linenumber">380</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_21.txt</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_21.txt</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_21.txt</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_21.txt</context>
+          <context context-type="linenumber">236</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_21.txt</context>
+          <context context-type="linenumber">385</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_21.txt</context>
+          <context context-type="linenumber">438</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_21.txt</context>
+          <context context-type="linenumber">495</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_22.txt</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_22.txt</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_22.txt</context>
+          <context context-type="linenumber">213</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_22.txt</context>
+          <context context-type="linenumber">272</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_22.txt</context>
+          <context context-type="linenumber">396</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_23.txt</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_23.txt</context>
+          <context context-type="linenumber">114</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_23.txt</context>
+          <context context-type="linenumber">156</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_23.txt</context>
+          <context context-type="linenumber">238</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_23.txt</context>
+          <context context-type="linenumber">324</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_23.txt</context>
+          <context context-type="linenumber">339</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">268</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">305</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">336</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">369</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">493</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">537</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">583</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">602</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_25.txt</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_25.txt</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_25.txt</context>
+          <context context-type="linenumber">210</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_25.txt</context>
+          <context context-type="linenumber">287</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_25.txt</context>
+          <context context-type="linenumber">453</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_25.txt</context>
+          <context context-type="linenumber">574</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">217</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_27.txt</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_27.txt</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_27.txt</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_27.txt</context>
+          <context context-type="linenumber">239</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_27.txt</context>
+          <context context-type="linenumber">320</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_27.txt</context>
+          <context context-type="linenumber">350</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_27.txt</context>
+          <context context-type="linenumber">427</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_27.txt</context>
+          <context context-type="linenumber">469</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_27.txt</context>
+          <context context-type="linenumber">510</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_27.txt</context>
+          <context context-type="linenumber">559</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">185</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">211</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">269</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">315</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">331</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">375</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">389</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">422</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_29.txt</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_29.txt</context>
+          <context context-type="linenumber">273</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_29.txt</context>
+          <context context-type="linenumber">320</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_29.txt</context>
+          <context context-type="linenumber">441</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_29.txt</context>
+          <context context-type="linenumber">570</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_29.txt</context>
+          <context context-type="linenumber">609</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_30.txt</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_30.txt</context>
+          <context context-type="linenumber">202</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_30.txt</context>
+          <context context-type="linenumber">280</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_30.txt</context>
+          <context context-type="linenumber">336</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_30.txt</context>
+          <context context-type="linenumber">409</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_30.txt</context>
+          <context context-type="linenumber">515</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_30.txt</context>
+          <context context-type="linenumber">639</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_31.txt</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_31.txt</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_31.txt</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_31.txt</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_31.txt</context>
+          <context context-type="linenumber">208</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_31.txt</context>
+          <context context-type="linenumber">268</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="3" approved="yes">
+        <source>		     VIM USER MANUAL - by Bram Moolenaar
+</source>
+        <target state="translated">		MANUAL DE USUARIO DE VIM - por Bram Moolenaar
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_toc.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_01.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_02.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_05.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_06.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_07.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_08.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_09.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_10.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_11.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_12.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_20.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_21.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_22.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_23.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_25.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_27.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_29.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_30.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_31.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="4" approved="yes">
+        <source>Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:</source>
+        <target state="translated">Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_toc.txt</context>
+          <context context-type="linenumber">354</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_01.txt</context>
+          <context context-type="linenumber">185</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_02.txt</context>
+          <context context-type="linenumber">564</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_03.txt</context>
+          <context context-type="linenumber">654</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_04.txt</context>
+          <context context-type="linenumber">514</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_05.txt</context>
+          <context context-type="linenumber">625</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_06.txt</context>
+          <context context-type="linenumber">280</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_07.txt</context>
+          <context context-type="linenumber">479</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_08.txt</context>
+          <context context-type="linenumber">601</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_09.txt</context>
+          <context context-type="linenumber">289</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_10.txt</context>
+          <context context-type="linenumber">824</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_11.txt</context>
+          <context context-type="linenumber">307</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_12.txt</context>
+          <context context-type="linenumber">358</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_20.txt</context>
+          <context context-type="linenumber">384</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_21.txt</context>
+          <context context-type="linenumber">499</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_22.txt</context>
+          <context context-type="linenumber">400</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_23.txt</context>
+          <context context-type="linenumber">343</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_24.txt</context>
+          <context context-type="linenumber">606</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_25.txt</context>
+          <context context-type="linenumber">578</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">221</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_27.txt</context>
+          <context context-type="linenumber">563</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_28.txt</context>
+          <context context-type="linenumber">426</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_29.txt</context>
+          <context context-type="linenumber">613</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_30.txt</context>
+          <context context-type="linenumber">643</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_31.txt</context>
+          <context context-type="linenumber">272</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="5" approved="yes">
+        <source>Another example:</source>
+        <target state="translated">Otro ejemplo:</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_21.txt</context>
+          <context context-type="linenumber">486</context>
+        </context-group>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="6" approved="yes">
+        <source>*usr_26.txt*	For Vim version 7.3.  Last change: 2006 Apr 24
+</source>
+        <target state="translated">*usr_26.esx*	Para Vim versión 7.3. Último cambio: 24/5/2006
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="7" approved="yes">
+        <source>				  Repeating
+</source>
+        <target state="translated">				 Repetición
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="8" approved="yes">
+        <source>An editing task is hardly ever unstructured.  A change often needs to be made several times.  In this chapter a number of useful ways to repeat a change will be explained.</source>
+        <target state="translated">Rara vez, una tarea de edición carece de estructura. A menudo tiene que realizar un cambio varias veces. En este capítulo se muestran varias maneras útiles de repetir un cambio.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="9" approved="yes">
+        <source>|26.1|	Repeating with Visual mode
+|26.2|	Add and subtract
+|26.3|	Making a change in many files
+|26.4|	Using Vim from a shell script
+</source>
+        <target state="translated">|26.1|	Repetir en modo Visual
+|26.2|	Sumar y restar
+|26.3|	Realizar un cambio en varios archivos
+|26.4|	Usar Vim desde un script de intérprete de órdenes
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="10" approved="yes">
+        <source>     Next chapter: |usr_27.txt|  Search commands and patterns
+ Previous chapter: |usr_25.txt|  Editing formatted text
+Table of contents: |usr_toc.txt|
+</source>
+        <target state="translated"> Siguiente capítulo: |usr_27.esx|  Órdenes y patrones de búsqueda
+  Capitulo anterior: |usr_24.esx|  Editar otros archivos
+Tabla de contenidos: |usr_toc.esx|
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="11" approved="yes">
+        <source>*26.1*	Repeating with Visual mode
+</source>
+        <target state="translated">*26.1*	Repetición en modo Visual
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="12" approved="yes">
+        <source>Visual mode is very handy for making a change in any sequence of lines.  You
+can see the highlighted text, thus you can check if the correct lines are
+changed.  But making the selection takes some typing.  The "gv" command
+selects the same area again.  This allows you to do another operation on the
+same text.
+   Suppose you have some lines where you want to change "2001" to "2002" and
+"2000" to "2001":
+</source>
+        <target state="translated">El modo Visual es útil cuando desea modificar una secuencia de líneas.
+Al poder ver el texto resaltado, puede revisar si las líneas a modificar
+lo han sido correctamente. Pero hacer la selección conlleva teclear. La
+orden «gv» selecciona la misma área otra vez. Esto le permite realizar otra
+acción sobre el texto seleccionado.
+   Suponga que tiene algunas líneas en las que desea cambiar «2001» a «2002»
+y «2000» a «2001»:
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="13" approved="yes">
+        <source>	The financial results for 2001 are better ~
+	than for 2000.  The income increased by 50%, ~
+	even though 2001 had more rain than 2000. ~
+			2000		2001 ~
+	income		45,403		66,234 ~
+</source>
+        <target state="translated">	Los resultados financieros de 2001 son mejores ~
+	que para el año 2000. Los ingresos aumentaron un ~
+	50%, ~ 2001, más aun cuando había más lluvia que en el 2000. ~
+			2000		2001~
+	ingresos	45.403		66.234 ~
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="14" approved="yes">
+        <source>First change "2001" to "2002".  Select the lines in Visual mode, and use: &gt;</source>
+        <target state="translated">Primero cambie «2001» a ««2002». Seleccione las líneas en modo Visual y use: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="15" approved="yes">
+        <source>	:s/2001/2002/g
+</source>
+        <target state="translated">	:s/2001/2002/g
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="16" approved="yes">
+        <source>Now use "gv" to reselect the same text.  It doesn't matter where the cursor
+is.  Then use ":s/2000/2001/g" to make the second change.
+   Obviously, you can repeat these changes several times.
+</source>
+        <target state="translated">Use ahora «gv» para seleccionar otra vez el mismo texto. No importa donde está
+el cursor. Use entonces «:s/2000/2001/g» para hacer el segundo cambio.
+   Obviamente, puede repetir estos cambios varias veces.
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="17" approved="yes">
+        <source>*26.2*	Add and subtract
+</source>
+        <target state="translated">*26.2*	Sumar y restar
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="18" approved="yes">
+        <source>When repeating the change of one number into another, you often have a fixed
+offset.  In the example above, one was added to each year.  Instead of typing
+a substitute command for each year that appears, the CTRL-A command can be
+used.
+   Using the same text as above, search for a year: &gt;
+</source>
+        <target state="translated">Al repetir un cambio de un número a otro, lo normal es que tenga una
+compensación fijada. En el ejemplo anterior, se añado «1» a cada año. Puede
+usar la orden CTRL-A en lugar de teclear una orden de sustitución para cada
+año en el texto.
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="19" approved="yes">
+        <source>	/19[0-9][0-9]\|20[0-9][0-9]
+</source>
+        <target state="translated">	/19[0-9][0-9]\|20[0-9][0-9]
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="20" approved="yes">
+        <source>Now press CTRL-A.  The year will be increased by one:</source>
+        <target state="translated">Ahora pulse Ctrl-A. El año se incrementará en uno:</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="21" approved="yes">
+        <source>	The financial results for 2002 are better ~
+	than for 2000.  The income increased by 50%, ~
+	even though 2001 had more rain than 2000. ~
+			2000		2001 ~
+	income		45,403		66,234 ~
+</source>
+        <target state="translated">	Los resultados financieros de 2002 son mejores ~
+	que para el año 2000. Los ingresos aumentaron un ~
+	50%, ~ 2001, más aun cuando había más lluvia que en el 2000. ~
+			2000		2001~
+	ingresos	45.403		66.234 ~
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="22" approved="yes">
+        <source>Use "n" to find the next year, and press "." to repeat the CTRL-A ("." is a
+bit quicker to type).  Repeat "n" and "." for all years that appear.
+   Hint: set the 'hlsearch' option to see the matches you are going to change,
+then you can look ahead and do it faster.
+</source>
+        <target state="translated">Use «n» para encontrar el siguiente año y pulse «.» para repetir CTRL-A
+(«.» es más rápido de teclear). Repita «n» y «.» para todos los años.
+   Pista: active la opción 'hlsearch' para ver las coincidencias que
+se modificaran. De esta manera, podrá ver los siguientes cambios, y
+realizarlos rápidamente.
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="23" approved="yes">
+        <source>Adding more than one can be done by prepending the number to CTRL-A.  Suppose you have this list:</source>
+        <target state="translated">Es posible añadir más de uno si prefija un número a CTRL-A.
+Suponga que tiene esta lista:</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="24" approved="yes">
+        <source>	1.  item four ~
+	2.  item five ~
+	3.  item six ~
+</source>
+        <target state="translated">	1.  cuarto elemento ~
+	2.  quinto elemento ~
+	3.  sexto elemento ~
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="25" approved="yes">
+        <source>Move the cursor to "1." and type: &gt;</source>
+        <target state="translated">Mueva el cursor a «1.» y escriba: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="26" approved="yes">
+        <source>	3 CTRL-A
+</source>
+        <target state="translated">	3 CTRL-A
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="27" approved="yes">
+        <source>The "1." will change to "4.".  Again, you can use "." to repeat this on the other numbers.</source>
+        <target state="translated">El «1.» pasará a ser «4.». Otra vez, puede usar «.» para repetir la misma acción sobre otros números.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="28" approved="yes">
+        <source>	006	foo bar ~
+	007	foo bar ~
+</source>
+        <target state="translated">	006	foo bar ~
+	007	foo bar ~
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="29" approved="yes">
+        <source>Using CTRL-A on these numbers results in:</source>
+        <target state="translated">Usar CTRL-A sobre estos números resulta en:</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="30" approved="yes">
+        <source>	007	foo bar ~
+	010	foo bar ~
+</source>
+        <target state="translated">	007	foo bar ~
+	010	foo bar ~
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="31" approved="yes">
+        <source>7 plus one is 10? What happened here is that Vim recognized "007" as an octal number, because there is a leading zero.  This notation is often used in C programs.  If you do not want a number with leading zeros to be handled as octal, use this: &gt;</source>
+        <target state="translated">¿7 más 1 igual a 10? Lo que ha ocurrido es que Vim reconoció 007 como un número octal, ya que hay un cero precediendo el número. Esta notación se usa a menudo en programas C. Si no desea que un número con ceros a la izquierda se considere un número octal, use lo siguiente: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="32" approved="yes">
+        <source>	:set nrformats-=octal
+</source>
+        <target state="translated">	:set nrformats-=octal
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="33" approved="yes">
+        <source>The CTRL-X command does subtraction in a similar way.</source>
+        <target state="translated">La orden CTRL-X realiza la resta de una manera similar.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="34" approved="yes">
+        <source>*26.3*	Making a change in many files
+</source>
+        <target state="translated">*26.3*	Realizar un cambio en varios archivos
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="35" approved="yes">
+        <source>Suppose you have a variable called "x_cnt" and you want to change it to
+"x_counter".  This variable is used in several of your C files.  You need to
+change it in all files.  This is how you do it.
+   Put all the relevant files in the argument list: &gt;
+</source>
+        <target state="translated">Suponga que tiene una variable llamada «x_cnt» y que desea cambiarla a
+«x_counter». Ya que esta variable aparece en varios de sus archivos C, tendrá
+que realizar este cambio en todos los archivos. Esta es la manera de hacerlo.
+   Ponga todos los archivos relevantes en la lista de argumentos: &gt;
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="36" approved="yes">
+        <source>	:args *.c
+&lt;
+This finds all C files and edits the first one.  Now you can perform a
+substitution command on all these files: &gt;
+</source>
+        <target state="translated">	:args *.c
+&lt;
+Esto encuentra todos los archivos C y edita el primero. Ahora puede realizar
+una orden de sustitución sobre todos estos archivos: &gt;
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="37" approved="yes">
+        <source>	:argdo %s/\&lt;x_cnt\&gt;/x_counter/ge | update
+</source>
+        <target state="translated">	:argdo %s/\&lt;x_cnt\&gt;/x_counter/ge | update
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="38" approved="yes">
+        <source>The ":argdo" command takes an argument that is another command.  That command
+will be executed on all files in the argument list.
+   The "%s" substitute command that follows works on all lines.  It finds the
+word "x_cnt" with "\&lt;x_cnt\&gt;".  The "\&lt;" and "\&gt;" are used to match the whole
+word only, and not "px_cnt" or "x_cnt2".
+   The flags for the substitute command include "g" to replace all occurrences
+of "x_cnt" in the same line.  The "e" flag is used to avoid an error message
+when "x_cnt" does not appear in the file.  Otherwise ":argdo" would abort on
+the first file where "x_cnt" was not found.
+   The "|" separates two commands.  The following "update" command writes the
+file only if it was changed.  If no "x_cnt" was changed to "x_counter" nothing
+happens.
+</source>
+        <target state="translated">La orden «:argdo» toma otra orden como argumento. Esta orden se ejecutará
+sobre todos los archivos en la lista de argumentos.
+   La orden de sustitución «%s» a continuación afecta a todas las líneas.
+Busca la palabra «x_cnt» con «\&lt;x_cnt\&gt;». Los «\&lt;» y «\&gt;» se usan para
+encontrar sólo la palabra completa, y no «px_cnt» o «x_cnt2».
+   Las opciones para la orden de sustitución incluyen «g» para reemplazar
+todas las apariciones de «x_cnt» en la misma línea. La opción «e» se emplea
+para evitar un mensaje de error cuando «x_cnt» no está presente en el
+archivo. En caso contrar, «:argdo» se interrumpiría en el primer archivo en
+el que no se encontrase «x_cnt».
+   La «|» separa dos órdenes. La orden a continuación «update» escribe en el
+archivo sólo si éste cambió. Si no se cambió ningún «x_cnt» a «x_counter»
+no ocurrirá nada.
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="39" approved="yes">
+        <source>There is also the ":windo" command, which executes its argument in all windows.  And ":bufdo" executes its argument on all buffers.  Be careful with this, because you might have more files in the buffer list than you think.  Check this with the ":buffers" command (or ":ls").</source>
+        <target state="translated">También dispone de la orden «:windo», que ejecuta su argumento en todas las ventanas. «:bufdo» ejecuta su argumento en todos los búfers. Sea cuidadoso
+con esto, porque puede que tenga más archivos de los que crea en su lista
+de búfers. Revise esto con la orden «:buffers» (o «:ls»).</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="40" approved="yes">
+        <source>*26.4*	Using Vim from a shell script
+</source>
+        <target state="translated">*26.4*	Usar Vim desde un script de intérprete de órdenes
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">138</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="41" approved="yes">
+        <source>Suppose you have a lot of files in which you need to change the string
+"-person-" to "Jones" and then print it.  How do you do that?  One way is to
+do a lot of typing.  The other is to write a shell script to do the work.
+   The Vim editor does a superb job as a screen-oriented editor when using
+Normal mode commands.  For batch processing, however, Normal mode commands do
+not result in clear, commented command files; so here you will use Ex mode
+instead.  This mode gives you a nice command-line interface that makes it easy
+to put into a batch file.  ("Ex command" is just another name for a
+command-line (:) command.)
+   The Ex mode commands you need are as follows: &gt;
+</source>
+        <target state="translated">Suponga que tiene que cambiar la cadena «-persona-»  a «Juan» en varios
+archivos, e imprimirlo después. ¿Como se hace? Una manera es teclear mucho.
+La otra es escribir un script de consola para hacer la tarea.
+   El editor Vim realiza un trabajo superlativo como un editor orientado a
+pantalla cuando usa las órdenes de modo Normal. Para un procesamiento en
+lotes, por otra parte, las órdenes de modo Normal no finalizan correctamente
+como archivos claros y comentados; para ello tiene que usar el modo Ex.
+Este modo ofrece una bonita interfaz de línea de órdenes que facilita su
+inserción en un archivo de lotes. («Orden Ex» es sólo otro nombre para una
+orden en la línea de órdenes («:»).)
+   Las órdenes del modo Ex que necesita son las siguientes: &gt;
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">149</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="42" approved="yes">
+        <source>	%s/-person-/Jones/g
+	write tempfile
+	quit
+</source>
+        <target state="translated">	%s/-persona-/Juan/g
+	write archivo_temporal
+	quit
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">153</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="43" approved="yes">
+        <source>You put these commands in the file "change.vim".  Now to run the editor in batch mode, use this shell script: &gt;</source>
+        <target state="translated">Ponga estas órdenes en el archivo «change.vim». Para ejecutar el editor en modo de lotes, ese este script de consola: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">156</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="44" approved="yes">
+        <source>	for file in *.txt; do
+	  vim -e -s $file &lt; change.vim
+	  lpr -r tempfile
+	done
+</source>
+        <target state="translated">	for file in *.txt; do
+	  vim -e -s $file &lt; change.vim
+	  lpr -r archivo_temporal
+	done
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">161</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="45" approved="yes">
+        <source>The for-done loop is a shell construct to repeat the two lines in between,
+while the $file variable is set to a different file name each time.
+   The second line runs the Vim editor in Ex mode (-e argument) on the file
+$file and reads commands from the file "change.vim".  The -s argument tells
+Vim to operate in silent mode.  In other words, do not keep outputting the
+:prompt, or any other prompt for that matter.
+   The "lpr -r tempfile" command prints the resulting "tempfile" and deletes
+it (that's what the -r argument does).
+</source>
+        <target state="translated">El bucle for-done es una construcción de consola para repetir las dos
+líneas entre ellas, mientras que la variable $file es definida con un nombre
+diferente cada vez.
+   La segunda línea inicia Vim en modo Ex (argumento «-e») en el archivo
+$file y lee las órdenes del archivo «change.vim». El argumento «-s» le dice
+a Vim que opere en modo silencioso. En otras palabras, no mostrar «:prompt»
+(cuadro de diálogo interactivo), o cualquier otro diálogo.
+   La orden «lpr -r archivo_temporal» muestra el «archivo_temporal»
+resultante y lo elimina (esto es lo que hace el argumento «-r»).
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="46" approved="yes">
+        <source>READING FROM STDIN</source>
+        <target state="translated">LEER DESDE LA ENTRADA ESTÁNDAR</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="47" approved="yes">
+        <source>Vim can read text on standard input.  Since the normal way is to read commands there, you must tell Vim to read text instead.  This is done by passing the "-" argument in place of a file.  Example: &gt;</source>
+        <target state="translated">Vim puede leer texto desde la entrada estándar. Debido a que esta es la manera normal de leer órdenes, tendrá que decirle a Vim que lea texto. Esto se hace introduciendo el argumento «-» en lugar de un archivo. Ejemplo: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">177</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="48" approved="yes">
+        <source>	ls | vim -
+</source>
+        <target state="translated">	ls | vim -
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">179</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="49" approved="yes">
+        <source>This allows you to edit the output of the "ls" command, without first saving
+the text in a file.
+   If you use the standard input to read text from, you can use the "-S"
+argument to read a script: &gt;
+</source>
+        <target state="translated">Esto permite editar la salida de la orden «ls», sin guardar primero el texto
+en un archivo.
+   Si usa la entrada estándar para leer texto, puede usar el argumento «-S»
+para leer un script: &gt;
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">184</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="50" approved="yes">
+        <source>	producer | vim -S change.vim -
+</source>
+        <target state="translated">	producer | vim -S change.vim -
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">186</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="51" approved="yes">
+        <source>NORMAL MODE SCRIPTS</source>
+        <target state="translated">MODO NORMAL EN SCRIPTS</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">189</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="52" approved="yes">
+        <source>If you really want to use Normal mode commands in a script, you can use it like this: &gt;</source>
+        <target state="translated">Si realmente desea usar órdenes de modo Normal en un script, puede hacerlo del siguiente modo: &gt;</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">192</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="53" approved="yes">
+        <source>	vim -s script file.txt ...
+&lt;
+	Note:
+	"-s" has a different meaning when it is used without "-e".  Here it
+	means to source the "script" as Normal mode commands.  When used with
+	"-e" it means to be silent, and doesn't use the next argument as a
+	file name.
+</source>
+        <target state="translated">	vim -s script file.txt ...
+&lt;
+	Nota:
+	«-s» tiene un significado diferente cuando se usa sin «-e». Aquí
+	significa que tiene que cargar el script como si fueran órdenes de
+	modo Normal. «-e» significa modo silencioso, y no usa el siguiente
+	argumento como un nombre de archivo.
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">200</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="54" approved="yes">
+        <source>The commands in "script" are executed like you typed them.  Don't forget that
+a line break is interpreted as pressing &lt;Enter&gt;.  In Normal mode that moves
+the cursor to the next line.
+   To create the script you can edit the script file and type the commands.
+You need to imagine what the result would be, which can be a bit difficult.
+Another way is to record the commands while you perform them manually.  This
+is how you do that: &gt;
+</source>
+        <target state="translated">Las órdenes en «script» se ejecutan como los introdujo. No olvide que un 
+salto de línea se interpreta como &lt;Intro&gt;. En modo Normal, desplaza el cursor
+a la siguiente línea.
+   Para crear el script, puede editar el archivo de script y teclear las
+órdenes. Necesita imaginar el resultado final, lo cual es un poco difícil.
+Otra manera es grabar las órdenes al ejecutarlas manualmente.
+Así es como se hace: &gt;
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">208</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="55" approved="yes">
+        <source>	vim -w script file.txt ...
+</source>
+        <target state="translated">	vim -w script file.txt ...
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">210</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="56" approved="yes">
+        <source>All typed keys will be written to "script".  If you make a small mistake you
+can just continue and remember to edit the script later.
+   The "-w" argument appends to an existing script.  That is good when you
+want to record the script bit by bit.  If you want to start from scratch and
+start all over, use the "-W" argument.  It overwrites any existing file.
+</source>
+        <target state="translated">Todas las teclas pulsadas se escribirán a «script». Si comete errores,
+continúe, acordándose después de editar el script.
+   El argumento «-w» añade a un script existente. Esto es útil cuando desea
+grabar el script poco a poco. Si desea empezar otra vez desde cero, use el
+argumento «-W», que sobreescribe todo archivo existente.
+</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">216</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="57" approved="yes">
+        <source>Next chapter: |usr_27.txt| Search commands and patterns</source>
+        <target state="translated">Siquiente capítulo: |usr_27.esx| Órdenes y patrones de búsqueda</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">original/TXT/usr_26.txt</context>
+          <context context-type="linenumber">220</context>
+        </context-group>
+        <context-group name="po-entry" purpose="information">
+          <context context-type="x-po-autocomment">type: Plain text</context>
+        </context-group>
+        <note from="developer">type: Plain text</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

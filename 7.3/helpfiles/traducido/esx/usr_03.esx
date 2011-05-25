@@ -58,7 +58,7 @@ esto para moverse por un párrafo, mucho más rápido que usando «l», «b» ha
 lo mismo en la otra dirección.
 
 Una palabra termina en un carácter de separación, como «.», «-» o «)». Para
-cambiar lo que Vim considera una palabra, véase la opción 'iskeyword'.
+cambiar lo que Vim considera una palabra, consulte la opción 'iskeyword'.
    También es posible desplazarse por palabras separadas por espacios en
 blanco. Esto no es una PALABRA en el sentido habitual, por ello se usan las
 mayúsculas para designarla. Las órdenes para desplazarse por PALABRAS están
@@ -185,7 +185,7 @@ parte superior del archivo y «32j» para ir hacia abajo 32 líneas. Este no es
 el mejor modo, pero funciona. Uno mucho mejor es usar la orden «G». Con un
 multiplicador, esta orden le posiciona en la línea indicada. Por ejemplo,
 «33G» le lleva a la línea 33. (Hay un modo aún mejor de ir por la lista de
-errores del compilador, véase |usr_30.txt| para información sobre «:make».)
+errores del compilador, consulte |usr_30.txt| para información sobre «:make».)
    Sin argumentos, «G» le posiciona al final del archivo. Una forma rápida de
 ir al comienzo de la línea es usar «gg». «1G» hará lo mismo, pero es una
 pizca más lento de escribir.
@@ -294,7 +294,7 @@ abajo, con lo que desplaza el texto hacia arriba media pantalla.
 				       +----------------+
 
 Para bajar una sola línea use CTRL-E (avanzar) y CTRL-Y (retroceder). Piense
-en CTRL-E como si le diese una línea Extra. (Si usa un mapeo de teclas
+en CTRL-E como si le diese una línea Extra. (Si usa un mapa de teclado
 compatible con MS-Windows CTRL-Y rehará un cambio en lugar de desplazar el
 texto.)
 
@@ -318,8 +318,8 @@ ver el contexto alrededor del cursor, pulsa la orden «zz».
 	+---------------------+		 +---------------------+
 
 La orden «zt» pone la línea del cursor arriba, «zb» la situa en la parte
-inferior. Hay algunas órdenes más de desplazamiento de texto, véase |Q_sc|.
-Para mantener siempre contexto alrededor del cursor, use la opción
+inferior. Hay algunas órdenes más de desplazamiento de texto, consulte
+|Q_sc|. Para mantener siempre contexto alrededor del cursor, use la opción
 'scrolloff'.
 
 ==============================================================================
@@ -385,15 +385,15 @@ presiona <Arriba> (la tecla de cursor), Vim introduce «tres» en la línea de
 órdenes. Presionar <Intro> en este punto busca «tres». Si no pulsa
 <Intro> y presiona <Arriba>, Vim cambia el texto a «/dos». Si pulsa de nuevo
 <Arriba>, verá «/uno».
-   Puede usar también la tecla de cursor <Abajo> para moverse por el histórico
+   Puede usar también la tecla de cursor <Abajo> para moverse por el historial
 de órdenes de búsqueda en la otra dirección.
 
 Si sabe cómo comienza una de sus búsquedas anteriores y la quiere usar de
 nuevo, introduzca ese carácter antes de presionar <Arriba>. En el ejemplo
 anterior, teclea «/u<Arriba>» y Vim pondrá «/uno» en la línea de órdenes.
 
-Las órdenes que comienzan con «:» también tienen un histórico. Esto ayuda a
-reutilizar órdenes que ha usado antes. Estos dos históricos son
+Las órdenes que comienzan con «:» también tienen un historial. Esto ayuda a
+reutilizar órdenes que ha usado antes. Estos dos historiales son
 independientes.
 
 
@@ -536,7 +536,7 @@ línea consistente en «que». El espacio en blanco se considera, por lo que si
 contiene un espacio tras la palabra, como «que», el patrón no coincide.
 
 
-EMPAREJAR CUALQUIER CARACTER
+EMPAREJAR CUALQUIER CARÁCTER
 
 El carácter . (punto) concuerda cualquier carácter existente. Por ejemplo,
 el patrón «a.i» se identifica con cadenas cuyo primer carácter es una «a»,
@@ -549,7 +549,7 @@ su segundo es cualquiera, y su tercero es el carácter «i»:
 CONCORDAR CARACTERES ESPECIALES
 
 Si realmente desea coinciordar un punto, debe suprimir su significado especial
-poniendo antes una barra invertida.
+poniendo antes una barra inversa.
    Si busca «an.», obtendría las siguientes coincidencias:
 
 	...tan altas doncellas, como vuestras presencias demuestran.~
@@ -660,7 +660,7 @@ Verá unos cuantos marcadores especiales. Entre ellos:
 
 Capítulo siguiente: |usr_04.esx| Hacer cambios pequeños
 
-Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
+Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
 
 ==============================================================================
 

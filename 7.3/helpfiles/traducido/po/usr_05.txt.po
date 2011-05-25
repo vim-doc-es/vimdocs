@@ -45,9 +45,9 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-11-30 20:04+0100\n"
-"PO-Revision-Date: 2010-12-06 18:01+0100\n"
-"Last-Translator: Álvaro Castro Castillo <alvaro.castro.castilla@gmail.com>\n"
-"Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
+"PO-Revision-Date: 2011-02-26 19:12+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"Language-Team: vim-doc-es\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -190,7 +190,7 @@ msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
 #: original/TXT/usr_29.txt:613 original/TXT/usr_30.txt:643
 #: original/TXT/usr_31.txt:272
 msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
-msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 
 #. type: Plain text
 #: original/TXT/usr_05.txt:2
@@ -229,7 +229,7 @@ msgid ""
 msgstr ""
 "|05.1|\tEl archivo vimrc\n"
 "|05.2|\tExplicación del archivo vimrc de ejemplo\n"
-"|05.3|\tMapeos sencillos\n"
+"|05.3|\tMacros sencillas\n"
 "|05.4|\tAñadir una extensión\n"
 "|05.5|\tAñadir un archivo de ayuda\n"
 "|05.6|\tLa ventana de opciones\n"
@@ -262,8 +262,8 @@ msgid ""
 "it starts up."
 msgstr ""
 "Probablemente se haya cansado de introducir órdenes que usa muy a menudo.  "
-"Para iniciar Vim con todas sus opciones y mapeos favoritos, los define en lo "
-"que se llama el archivo vimrc. Vim ejecuta las órdenes en este archivo al "
+"Para iniciar Vim con todas sus opciones y macros favoritas, defínalos en lo "
+"que se llama el archivo «vimrc». Vim ejecuta las órdenes en este archivo al "
 "inicio."
 
 #. type: Plain text
@@ -288,9 +288,9 @@ msgid ""
 "create a vimrc file.  Also, the \":version\" command mentions the name of "
 "the \"user vimrc file\" Vim looks for."
 msgstr ""
-"Si todavía no tiene un archivo vimrc, lea |vimrc| para saber dónde puede "
-"crear un archivo vimrc. La orden «:version» también menciona el nombre del "
-"«archivo vimrc de usuario» que Vim busca."
+"Si todavía no tiene un archivo vimrc, consulte |vimrc| para saber dónde "
+"puede crear un archivo vimrc. La orden «:version» también menciona el nombre "
+"del «archivo vimrc de usuario» que Vim busca."
 
 #. type: Plain text
 #: original/TXT/usr_05.txt:42
@@ -496,7 +496,7 @@ msgid ""
 "Keep 50 commands and 50 search patterns in the history.  Use another number "
 "if you want to remember fewer or more lines.  >"
 msgstr ""
-"Mantiene 50 órdenes y 50 patrones de búsqueda en el histórico. Use otro "
+"Mantiene 50 órdenes y 50 patrones de búsqueda en el historial. Use otro "
 "número si quiere almacenar más o menos líneas.  >"
 
 #. type: Plain text
@@ -595,10 +595,10 @@ msgid ""
 "is how it worked before Vim 5.0.  Otherwise the \"Q\" command starts Ex "
 "mode, but you will not need it."
 msgstr ""
-"Define el mapeo de una tecla (más información en la próxima sección). Esto "
-"define la orden «Q» para que de formato con el operador «gq». Así es como "
-"funcionaba antes de Vim 5.0. En ausencia de esto, la orden «Q» inicia el "
-"modo Ex, pero no lo necesitará."
+"Esto define asigna una macro a una tecla (más información en la próxima "
+"sección). Define la orden «Q» para que de formato con el operador «gq». Así "
+"es como funcionaba antes de Vim 5.0. En caso contrario, la orden «Q» inicia "
+"el modo Ex, pero no lo necesitará."
 
 #. type: Plain text
 #: original/TXT/usr_05.txt:154
@@ -618,8 +618,8 @@ msgid ""
 "used to do quite complicated things.  Still, it is just a sequence of "
 "commands that are executed like you typed them."
 msgstr ""
-"Este mapeo copia el texto seleccionado visualmente y lo busca en archivos "
-"C.  Este es un mapeo complicado. Aquí puede ver que los mapeos se pueden "
+"Esta macro copia el texto seleccionado visualmente y lo busca en archivos "
+"C.  Este es una macro complicado. Aquí puede ver que los macro se pueden "
 "emplear para hacer cosas realmente complicadas. En cualquier caso, es "
 "simplemente una secuencia de órdenes que se ejecutan justo como los tecleas."
 
@@ -702,7 +702,7 @@ msgstr ""
 "   cuando edita un archivo «c», es muy útil activar la opción «cindent»\n"
 "   para sangrar las líneas automáticamente. Estas opciones empleadas\n"
 "   comúnmente están incluidas con Vim en las extensiones de tipos de\n"
-"   archivo. También puede incluir las tuyas propias, véase\n"
+"   archivo. También puede incluir las tuyas propias, consulte\n"
 "   |write-filetype-plugin|.\n"
 
 #. type: Plain text
@@ -775,16 +775,16 @@ msgid ""
 msgstr ""
 "Otra autoorden. Esta vez se ejecuta tras leer cualquier archivo. Las cosas "
 "tan complicadas que hay después de él comprueban si la marca '\" está "
-"definida, y salta hacia ella si lo está. La barra invertida al comienzo de "
-"la línea se emplea para continuarla desde la anterior. Esto ayuda a acortar "
-"las líneas.  Véase |line-continuation|. Esto funciona sólo dentro de un "
-"script de Vim, no cuando se teclean órdenes en la línea de órdenes."
+"definida, y salta hacia ella si lo está. La barra inversa al comienzo de la "
+"línea se emplea para continuarla desde la anterior. Esto ayuda a acortar las "
+"líneas.  Véase |line-continuation|. Esto funciona sólo dentro de un script "
+"de Vim, no cuando se teclean órdenes en la línea de órdenes."
 
 #. type: Plain text
 #: original/TXT/usr_05.txt:221
 #, no-wrap
 msgid "*05.3*\tSimple mappings\n"
-msgstr "*05.3*\tMapeos sencillos\n"
+msgstr "*05.3*\tMacros sencillas\n"
 
 #. type: Plain text
 #: original/TXT/usr_05.txt:227
@@ -795,7 +795,7 @@ msgid ""
 "\"{amount}\".  With the :map command, you can tell Vim that the F5 key does "
 "this job.  The command is as follows: >"
 msgstr ""
-"Un mapeo le permite atar un conjunto de órdenes Vim a una sola tecla.  "
+"Una macro le permite ligar un conjunto de órdenes de Vim a una sola tecla.  "
 "Suponga, por ejemplo, que necesita poner una palabra entre llaves. En otras "
 "palabras necesita cambiar una palabra como «cantidad» a «{cantidad}». Con la "
 "orden :map, puede decirle a Vim que la tecla F5 haga precisamente eso. La "
@@ -875,10 +875,10 @@ msgstr ""
 "En este ejemplo, el lanzador es una simple tecla; pero puede ser una\n"
 "cadena. Pero cuando use una orden de Vim preexistente, esa orden ya no\n"
 "volverá a estar disponible.\n"
-"   Una tecla que puede usar con los mapeos es la barra invertida o\n"
-"<Leader>. Ya que querrá definir más de un mapeo, añada otro carácter.\n"
-"Puedes mapear \"\\p\" para que añada paréntesis alrededor de una palabra, y\n"
-"«\\c» para que añada llaves, por ejemplo: >\n"
+"   Una tecla que puede usar con las macros es la barra inversa o\n"
+"<Leader>. Ya que querrá definir más de una macro, añada otro carácter.\n"
+"Puede ligar a una macro «\\p» para que añada paréntesis alrededor de\n"
+"una palabra, y «\\c» para que añada llaves, por ejemplo: >\n"
 
 #. type: Plain text
 #: original/TXT/usr_05.txt:259
@@ -905,8 +905,8 @@ msgid ""
 "The \":map\" command (with no arguments) lists your current mappings.  At "
 "least the ones for Normal mode.  More about mappings in section |40.1|."
 msgstr ""
-"La orden «:map» (sin argumentos) le da un listado de sus mapeos actuales.  "
-"Al menos aquellos en el modo Normal. Más sobre mapeos en la sección |40.1|."
+"La orden «:map» (sin argumentos) le da un listado de sus macros actuales. Al "
+"menos aquellos en el modo Normal. Más sobre macros en la sección |40.1|."
 
 #. type: Plain text
 #: original/TXT/usr_05.txt:268
@@ -1011,7 +1011,7 @@ msgstr ""
 "  $VIMRUNTIME/macro y sus subdirectorios.\n"
 "- Descargarlos de la red. Hay una buena colección en http://www.vim.org.\n"
 "- Algunas veces se envían a la |maillist| de Vim.\n"
-"- Puede escribir uno usted mismo, véase |write-plugin|.\n"
+"- Puede escribir uno usted mismo, consulte |write-plugin|.\n"
 
 #. type: Plain text
 #: original/TXT/usr_05.txt:309
@@ -1019,8 +1019,8 @@ msgid ""
 "Some plugins come as a vimball archive, see |vimball|.  Some plugins can be "
 "updated automatically, see |getscript|."
 msgstr ""
-"Algunas extensiones vienen como un archivo comprimido, véase |vimball|.  "
-"Algunas extensiones pueden ser actualizados automáticamente, véase |"
+"Algunas extensiones vienen como un archivo comprimido, consulte |vimball|.  "
+"Algunas extensiones pueden ser actualizados automáticamente, consulte |"
 "getscript|."
 
 #. type: Plain text
@@ -1278,8 +1278,8 @@ msgstr ""
 "La parte <tipo_de_archivo> es el nombre del tipo de archivo para el cuál se "
 "usa la extensión. Sólo los archivos de este tipo cargarán esta extensión.  "
 "La parte <nombre> de la extensión no importa, puede usarlo para tener varias "
-"extensiones del mismo tipo de archivo. Observe que debe terminar con la "
-"extensión «.vim»."
+"extensiones del mismo tipo de archivo. Tenga en cuenta que debe terminar "
+"con la extensión «.vim»."
 
 #. type: Plain text
 #: original/TXT/usr_05.txt:417
@@ -1298,7 +1298,7 @@ msgstr ""
 "Lecturas de ampliación:\n"
 "|filetype-plugins|\tDocumentación para las extensiones de tipo de\n"
 "\t\t\tarchivo e información sobre como evitar problemas\n"
-"\t\t\tcon mapeos.\n"
+"\t\t\tcon macros.\n"
 "|load-plugins|\t\tCuándo las extensiones globales se cargan.\n"
 "|ftplugin-overrule|\tSobreescribir las opciones de una extensión global.\n"
 "|write-plugin|\t\tCómo escribir un script de extensión.\n"
@@ -1436,7 +1436,7 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/usr_05.txt:466
 msgid "For writing a local help file, see |write-local-help|."
-msgstr "Para escribir un archivo local de ayuda, véase |write-local-help|."
+msgstr "Para escribir un archivo local de ayuda, consulte |write-local-help|."
 
 #. type: Plain text
 #: original/TXT/usr_05.txt:469
@@ -1698,7 +1698,7 @@ msgstr "\t:set whichwrap=b,s,<,>,[,]\n"
 #. type: Plain text
 #: original/TXT/usr_05.txt:561
 msgid "There are a few other flags that can be added, see 'whichwrap'."
-msgstr "Hay unas cuantas banderas que se pueden ser añadir, véase 'whichwrap'."
+msgstr "Hay unas cuantas opciones disponibles, consulte 'whichwrap'."
 
 #. type: Plain text
 #: original/TXT/usr_05.txt:564
@@ -1730,8 +1730,10 @@ msgid ""
 "If you have a color terminal, or are using the GUI, Vim can show the spaces\n"
 "and tabs as highlighted characters.  Use the 'listchars' option: >\n"
 msgstr ""
-"Ahora todas las pestañas se mostrarán como ^I. Un «$» se mostrará al final de\n"
-"cada línea, permitiéndole ver espacios finales que pasarían desapercibidos.\n"
+"Ahora todas las pestañas se mostrarán como ^I. Un «$» se mostrará al final "
+"de\n"
+"cada línea, permitiéndole ver espacios finales que de otra forma pasarían\n"
+"desapercibidos.\n"
 "   Una desventaja de esto es que tiene una apariencia desagradable cuando\n"
 "hay muchas pestañas. Si tiene una terminal con colores o usa GVim, puede\n"
 "ver los espacios y las pestañas como marcas de color. Use la opción\n"

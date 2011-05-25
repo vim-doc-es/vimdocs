@@ -70,7 +70,7 @@ Puede haber una serie de motivos por los que no vea colores:
 		TERM=xterm-color; export TERM
 
 <	El nombre de la terminal debe coincidir con la terminal que esté
-	usando. Si aún así no funciona, véase |xterm-color|,
+	usando. Si aún así no funciona, consulte |xterm-color|,
 	donde puede ver unas cuantas maneras de hacer que se vean colores.
 
 - El tipo de archivo no es reconocido.
@@ -101,7 +101,7 @@ Puede haber una serie de motivos por los que no vea colores:
 - No hay resaltado para su tipo de archivo.
 	Puede intentar usar un archivo similar activándolo manualmente como se
 	explica más arriba. Si no tiene suficiente, puede escribir su propio
-	archivo de sintaxis, véase |mysyntaxfile|.
+	archivo de sintaxis, consulte |mysyntaxfile|.
 
 
 O los colores están mal:
@@ -128,10 +128,10 @@ O los colores están mal:
 	Vim no lee el archivo completo. Comienza justo en el punto donde está
 	viendo el archivo. Eso ahorra mucho tiempo, pero a veces los colores
 	están mal. Un arreglo rápido consiste en teclear CTRL-L, o ir hacia
-	atrás y de nuevo hacia delante en el texto. Para un arreglo real, véase
-	|:syn-sync|. Algunos archivos de sintaxis tienen un modo de mirar hacia
-	el texto hacia atrás, mire la ayuda específica para la sintaxis. Por
-	ejemplo, |tex.vim| para la sintaxis de TeX.
+	atrás y de nuevo hacia delante en el texto. Para un arreglo real,
+	consulte |:syn-sync|. Algunos archivos de sintaxis tienen un modo de
+	mirar hacia el texto hacia atrás, mire la ayuda específica para la
+	sintaxis. Por ejemplo, |tex.vim| para la sintaxis de TeX.
 
 ==============================================================================
 *06.3*	Diferentes colores				*:syn-default-override*
@@ -174,7 +174,7 @@ hace:
 	:highlight Comment ctermfg=green guifg=green
 <
    Los atributos que puede usar para «cterm» y «gui» son «bold» y «underline».
-   Si quiere los dos, escriba «bold,underline». Para más detalles, véase la
+   Si quiere los dos, escriba «bold,underline». Para más detalles, consulte la
    orden |:highlight|.
 
 3.  Decir a Vim que use siempre su esquema. Incluya esto en su |vimrc|: >
@@ -282,7 +282,7 @@ a otros ver el texto resaltado.
 
 Capítulo siguiente: |usr_07.esx| Editar más de un archivo
 
-Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
+Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
 
 ==============================================================================
 

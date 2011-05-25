@@ -92,7 +92,7 @@ Por ejemplo, con:
 *21.3*	Recordar información; viminfo
 
 Tras llevar un rato editando, tendrá texto en los registros, marcas en
-varios archivos, y un histórico de la línea de órdenes con órdenes
+varios archivos, y un historial de la línea de órdenes con órdenes
 compuestos cuidadosamente. ¡Todo esto se pierde al cerrar Vim, pero puede
 recuperarlo!
 
@@ -138,11 +138,11 @@ usen, y ralenticen el arranque de Vim) puede usar un máximo de 500 líneas: >
 	:set viminfo='1000,f1,<500
 <
 Otras opciones que puede que desee usar:
-	:	número de líneas a guardar del histórico de la línea
+	:	número de líneas a guardar del historial de la línea
 		de órdenes
 	@	número de líneas a guardar de la línea de entrada del
-		histórico
-	/	número de líneas a guardar de del histórico de búsquedas
+		historial
+	/	número de líneas a guardar del historial de búsquedas
 	r	dispositivos extraíbles, del cual no se guardan marcas
 		(se puede introducir varias veces)
 	!	variables globales que comienzan con mayúscula y que no
@@ -154,7 +154,7 @@ Otras opciones que puede que desee usar:
 	n	nombre usado para el archivo viminfo (tiene que ser la
 		última opción)
 
-Para más información, véase la opción 'viminfo' y |viminfo-file|.
+Para más información, consulte la opción 'viminfo' y |viminfo-file|.
 
 Cuando inicia varias instancias de Vim, la última que cierre guardará su
 información. Esto puede causar que se pierda información que otras
@@ -272,16 +272,16 @@ significa sesión (en realidad, puede introducir cualquier script a Vim con
 «-S», por ello también puede significar «source», fuente).
 
 Las ventanas que estaban abiertas se restauran, con la misma posición y
-tamaño que antes. Los mapeados y valores de opciones son también las mismas.
+tamaño que antes. Las macros y valores de opciones son también las mismas.
    Lo que se restaura exactamente depende de la opción 'sessionoptions'. El
 valor predeterminado es «blank,buffers,curdir,folds,help,options,winsize».
 
 	blank		mantener ventanas vacías
 	buffers		todos los «buffers», no sólo los de una ventana
 	curdir		el directorio actual
-	folds		plegados, también los manualmente creados
-	help		la ventana de ayuda
-	options		todas las opciones y mapeados
+	folds		pliegues, también los manualmente creados
+	help			la ventana de ayuda
+	options		todas las opciones y macros
 	winsize		tamaño de ventanas
 
 Modifique esto según su convenienvia. Para también restaurar el tamaño de la
@@ -339,7 +339,7 @@ siempre que quiera.
 
 Ésta tiene una ventana de ayuda en la parte superior, para que pueda leer
 este texto. La estrecha ventana vertical a la izquierda contiene un
-explorador de archivos. Este es un complemento de Vim que lista los
+explorador de archivos. Esta es una extensión de Vim que lista los
 contenidos de un directorio. Puede seleccionar qué archivos editar ahí.
 Más acerca de esto en el siguiente capítulo.
    Puede crear esto con una instancia nueva de Vim con: >
@@ -381,15 +381,15 @@ no entiende «\».
 SESIONES Y VIMINFO
 
 Las sesiones guardan muchas cosas, pero no la posición de las marcas,
-contenidos de registros e histórios de la línea de órdenes. Precisa emplear
+contenidos de registros e historiales de la línea de órdenes. Precisa emplear
 «viminfo» para estas cosas.
    En la mayoría de las situaciones deseará usar sesiones separadas de
-viminfo.
-Puede emplear esto para pasar a otra sesión, pero manteniendo el histórico
+«viminfo».
+Puede emplear esto para pasar a otra sesión, pero manteniendo el historial
 de la línea de órdenes. También puede copiar el texto de los registros de una
 sesión, y pegarlos en otra sesión diferente.
    Puede que prefiera mantener el información en la sesión. Tendrá que hacer
-ésto usted mismo. Ejemplo: >
+esto usted mismo. Ejemplo: >
 
 	:mksession! ~/.vim/secreto.vim
 	:wviminfo! ~/.vim/secreto.viminfo
@@ -503,24 +503,24 @@ un espacio en blanco antes de «vim», o «vim» ha de estar al inicio de la
 línea. Por ello, usar algo como «gvim» no funcionaría.
    La parte entre los dos puntos es una orden «:set». Funciona de la misma
 manera que teclear la orden «:set», con la excepción de que tiene que
-introducir una barra invertida antes de un colon (de no ser así, se vería
+introducir una barra inversa antes de un colon (de no ser así, se vería
 como el final de un «modeline»).
 
 Otro ejemplo:
 
 	// vim:set textwidth=72 dir=c\:\tmp:  use c:\tmp here ~
 
-Hay una barra invertida extra antes del primer colon, y por ello se incluye
-en la orden «:set». Se ignora el texto antes del segundo colon, y por ello
+Hay una barra inversa extra antes del primer colon, y por ello se incluye en
+la orden «:set». Se ignora el texto antes del segundo colon, y por ello
 puede introducir aquí un comentario.
 
-Para más detalles, véase |modeline|.
+Para más detalles, consulte |modeline|.
 
 ==============================================================================
 
 Siguiente capítulo: |usr_22.esx| Encontrar el archivo a editar
 
-Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
+Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
 
 ==============================================================================
 

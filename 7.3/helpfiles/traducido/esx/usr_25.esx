@@ -68,9 +68,9 @@ No necesita introducir líneas nuevas; Vim las insertará automáticamente.
 REFORMATEAR
 
 El editor Vim no es un editor de documentos. En un editor de documentos, si
-borra algo al inicio del párrafo, se reorganizan los saltos de línea. No es
-así en Vim; así que se borra la palabra «programación» en la primera línea,
-obtendría los siguiente:
+elimina algo al inicio del párrafo, se reorganizan los saltos de línea. No
+es así en Vim; así que se borra la palabra «programación» en la primera
+línea, obtendría los siguiente:
 
 		 1	   2	     3
 	12345678901234567890123456789012345
@@ -99,7 +99,7 @@ después el operador «gq». El resultado es:
 	Historia verídica.~
 
 Nota: existe una manera de dar formato automáticamente para tipos
-específicos de plantillas de texto, véase |auto-format|.
+específicos de plantillas de texto, consulte |auto-format|.
 
 Ya que «gq» es un operador, puede usar una de las tres maneras en las que
 funciona la selección de texto: el modo Visual, con un movimiento y con un
@@ -411,7 +411,7 @@ pantalla en caso de usarlo sobre una larga línea.
 Estas órdenes hacen lo mismo que «j» y «k» si la línea no está justificada.
 De activar 'wrap', se desplazan a un carácter visible en una línea inferior
 o superior.
-   Puede que desee usar estos mapeado, que relacionan estas órdenes de
+   Puede que desee usar estas macros, que relacionan estas órdenes de
 desplazamiento a las teclas de cursor: >
 
 	:map <Up> gk
@@ -596,7 +596,7 @@ La orden «gR» usa el modo Virtual Reemplazar. Esto respeta el diseño:
 
 Siguiente capítulo: |usr_26.txt| Repetición
 
-Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
+Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
 
 ==============================================================================
 

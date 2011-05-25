@@ -26,7 +26,7 @@ programas y archivos de formato de texto normal.
    Todas las órdenes se introducen mediante el teclado. Ésto ofrece la ventaja
 de poder tener sus dedos en el teclado y sus ojos en la pantalla. Para
 aquellos que lo deseen, también tiene compatibilidad con ratón y una versión
-que ofrece una interfaz gráfica con barras de desplazamiento y menús (véase
+que ofrece una interfaz gráfica con barras de desplazamiento y menús (consulte
 |gui.txt|).
 
 Encontrará una visión general de este manual en el archivo «help.txt»,
@@ -37,14 +37,14 @@ en caso de no encontrarse en la ubicación habitual. Puede saltar de un tema
 a otro como si fuesen etiquetas:
 Use CTRL-] para pasar al tema bajo el cursor, y CTRL-T para volver.
 
-Las diferencias entre Vi y Vim se señalarán con corchetes, por ejemplo: {Vi
-no tiene ayuda en línea}. Consulte |vi_diff.txt| para un resumen de las
+Las diferencias entre Vi y Vim se señalarán con llaves, por ejemplo: {Vi no
+tiene ayuda en línea}. Consulte |vi_diff.txt| para un resumen de las
 diferencias entre Vim y Vi.
 
 Este manual trata el uso de Vim en varios sistemas. Pueden existir pequeñas
 diferencias entre computadoras y terminales. Además de los comentarios que
 se ofrecen en este documento, hay un documento aparte para cada sistema
-compatible, véase |sys-file-list|.
+compatible, consulte |sys-file-list|.
 
 					*pronounce* *pronunciar*
 Vim se pronuncia como una sola palabra, como Jim, no uve-a-eme. Se escribe
@@ -53,7 +53,7 @@ mayúscula, ya que es un nombre al igual que Jim.
 Este manual es una referencia para todas las órdenes y opciones de Vim. No
 es una introducción al uso de Vi o Vim, y algunas secciones son
 complejas. Hay un tutor práctico, |tutor|. Si quiere aprender a usar Vim,
-lea el manual de usuario |usr_toc.txt|.
+consulte el manual de usuario |usr_toc.txt|.
 
 							*book*
 Existen muchos libros sobre Vi que contienen una sección para principiantes.
@@ -99,8 +99,8 @@ de mencionar esto último.
 						*mail-list* *maillist*
 Existen varias listas de correo acerca de Vim:
 <vim@vim.org>
-	Para discusiones acerca del uso de varias versiones de Vim: Útiles
-	mapeados, preguntas, respuestas, dónde obtener una versión especifica.
+	Para discusiones acerca del uso de varias versiones de Vim: Macros
+	útiles, preguntas, respuestas, dónde obtener una versión especifica.
 	Hay varias personas mirando esta lista, y que responden a
 	preguntas, también para principiantes. No dude en preguntar.
 <vim-dev@vim.org>				*vim-dev* *vimdev*
@@ -277,7 +277,7 @@ Vi	«El original». Sin mas detalle, esta es la versión de Vim que apareció
 	más información a cerca de Vi:
 		http://vi-editor.org (no funciona a día de hoy...)
 							*Posix*
-Posix	Pertenece al estándar IEEE 1003.2. Parte 2:Consola y utilidades.
+Posix	Pertenece al estándar IEEE 1003.2. Parte 2: Consola y utilidades.
 	Generalmente conocido como «Posix»,  una descripción textual de cómo
 	debe funcionar Vi.
 	Véase |posix-compliance|.
@@ -316,7 +316,7 @@ texto literal.
 		para esto es facilitar la lectura de las órdenes. Si la opción
 		esta activada, el número (parcialmente) introducido se
 		mostrará en la parte inferior de la ventana. Puede usar <Supr>
-		para borrar el último dígito (|N<Supr>|).
+		para eliminar el último dígito (|N<Supr>|).
 
 							 *quotex*
 ["x]		Un destino opcional para un registro dónde guardar el texto.
@@ -324,14 +324,14 @@ texto literal.
 		y 'z', o 'A' y 'Z' o '"', y en algunos casos (con la orden
 		«put») entre '0' y '9', '%', '#', u otros. Las mayúsculas y
 		y minúsculas designan el mismo registro, pero la minúscula se
-		usa para borrar los contenidos anteriores del registro, y
+		usa para eliminar los contenidos anteriores del registro, y
 		la mayúscula para añadir contenido. El texto se almacenará
 		en un registro sin nombre en caso de no usar «"x» o «""».
 
 							*{}*
-{}		Los corchetes indican qué partes de una orden son
+{}		Las llaves indican qué partes de una orden son
 		obligatorios, pero que pueden tomar distintos valores. Las
-		diferencias entre Vim y Vi también se resaltan con corchetes
+		diferencias entre Vim y Vi también se resaltan con llaves
 		(el contexto aclarará esto).
 
 							*{car1-car2}*
@@ -352,9 +352,9 @@ texto literal.
 		desplazarse sobre el texto en edición.
 		- Si un elemento de moción incluye un número, y el operador
 		  también incluye un número, ambos se multiplicarán. Por
-		  ejemplo, «2d3w» borra 6 palabras.
+		  ejemplo, «2d3w» elimina 6 palabras.
 		- Puede desplazarse en sentido inverso. Por ejemplo, «db» para
-		  borrar hasta el inicio de la palabra.
+		  eliminar hasta el inicio de la palabra.
 		- El movimiento puede también ser una pulsación del ratón.
 		  Por otra parte, no todas las terminales son compatibles con
 		  el ratón.
@@ -422,7 +422,7 @@ notación	significado	    equivalente	    valor(es) decimal  ~
 <lt>		menos que		<	 60	*<lt>*
 <Bslash>	barra inversa		\	 92	*backslash* *<Bslash>*
 <Bar>		barra vertical		|	124	*<Bar>*
-<Del>		borrar				127
+<Del>		eliminar				127
 <CSI>		command sequence intro 	ALT-Esc 155	*<CSI>*
 <xCSI>		CSI tecleado en la interfaz gráfica	*<xCSI>*
 
@@ -504,8 +504,8 @@ literalmente, por ejemplo con la orden «:map». Las reglas son:
 	<C-LeftMouse>		Control + botón izq. del ratón
 	<S-F11>			Tecla de función 11 + shift
 	<M-a>			Meta- a («a» 8 bits)
-	<M-A>			Meta- A («A» 8bits)
-	<t_kd>			La entrada termacap de «kd» (tecla de
+	<M-A>			Meta- A («A» 8 bits)
+	<t_kd>			La entrada termcap de «kd» (tecla de
 				dirección abajo)
 
 Si desea usar la notación <> completa con Vim, asegúrese que la marca «<»
@@ -538,7 +538,7 @@ Vim posee seis modos BÁSICOS:
 Modo Normal		En modo normal puede introducir todas las órdenes
 			normales de un editor. Es el modo de arranque
 			predeterminado (a menos que defina la opción
-			'insertmode', véase más abajo) También se conoce
+			'insertmode', consulte más abajo) También se conoce
 			como el modo de órdenes.
 
 Modo Visual		Es similar al modo Normal, pero las órdenes de
@@ -549,7 +549,7 @@ Modo Visual		Es similar al modo Normal, pero las órdenes de
 			«-- VISUAL --» en la parte inferior de la ventana.
 
 Modo seleccionar		Similar al modo de selección de MS-Windows.
-			Teclear un carácter imprimible borra la selección
+			Teclear un carácter imprimible elimina la selección
 			e inicia el modo Insertar. Consulte |Select-mode|.
 			Si la opción 'showmode' esta activada, verá
 			«-- SELECT --» en la parte inferior de la ventana.
@@ -691,7 +691,7 @@ Q			Pasar a modo «Ex». Es similar a pulsar órdenes «:»
 			- La pantalla no se refresca tras cada orden.
 			- No se usan mapeos y abreviaturas.
 			De hecho, editará las líneas con las órdenes de
-			edición estándar (<Del> o <BS> para borrar, CTRL-U
+			edición estándar (<Del> o <BS> para eliminar, CTRL-U
 			para eliminar toda la línea).
 			Vim pasará a este modo por omisión si es invocado con
 			«ex» en la línea de órdenes.
@@ -715,14 +715,14 @@ gQ			Pasar al modo «Ex» al igual que con «Q», pero
 La ventana muestra los contenidos actuales del búfer en modo Normal y modo
 Insertar/Reemplazar: lo que ve es lo que hay. Hay dos excepciones:
 - Si la opción 'cppoptions' contiene «$», y el cambio se realizará dentro
-  de una línea, el texto no se borrará directamente, sino que se insertará
+  de una línea, el texto no se eliminará directamente, sino que se insertará
   «$» en el último carácter eliminado.
 - Si inserta texto en una ventana, otras ventanas mostrando el mismo
   contenido no se actualizarán hasta finalizar la inserción.
 {Vi: La pantalla no se refrescará siempre en terminales lentas}
 
 Las líneas más largas que el ancho de la ventana se justificarán a menos que
-la opción 'wrap' esté desactivada (véase a continuación). La opción
+la opción 'wrap' esté desactivada (consulte a continuación). La opción
 'linebreak' se puede configurar para justificar a partir de un carácter
 vacío.
 

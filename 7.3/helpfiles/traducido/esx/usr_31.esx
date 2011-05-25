@@ -164,14 +164,14 @@ submenú, e <Izquierda> lo cierra. <Esc> también puede cerrar un menú.<Enter>
 activa el elemento seleccionado del menú.
 
 Hay un conflicto con el uso de la tecla <Alt> para seleccionar elementos de
-menús, y el uso de la tecla <Alt> en combinaciones de teclas para mapeos. La
+menús, y el uso de la tecla <Alt> en combinaciones de teclas para macros. La
 opción 'winaltkeys' le indica a Vim qué hacer con la tecla <Alt>.
    El valor predeterminado «menu» es la selección inteligente: si la
 combinación de teclas es un atajo de teclado para el menú, no se la puede
-mapear. Todas las otras teclas están disponibles para crear mapeos.
+usar en una macro. Todas las otras teclas están disponibles para crear macros.
    El valor «no» hace que no se use ninguna tecla <Alt> para los menús. Por
 esto, es necesario usar el ratón para acceder a los menús, y todas las teclas
-<Alt> se pueden mapear.
+<Alt> se pueden incluir en macros.
    El valor «yes» implica que Vim usará cualquier tecla <Alt> para los menús.
 Algunas combinaciones de teclas con <Alt> pueden hacer cosas distintas a
 seleccionar un menú.
@@ -296,7 +296,7 @@ por ejemplo, definir otro tamaño para el tipo de letra.
 
 Capítulo siguiente: |usr_32.esx| El árbol de deshacer
 
-Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
+Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
 
 ==============================================================================
 

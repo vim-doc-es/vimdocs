@@ -113,7 +113,7 @@ endif
 let b:did_po_mode_ftplugin = 1
 
 setlocal comments=
-setlocal errorformat=%f:%l:\ %m
+setlocal errorformat=%-Gmsgfmt:%.%#,%f:%l:%c:\ %m,%f:%l:\ %m
 setlocal makeprg=msgfmt
 
 let b:po_path = '.,..,../src,../src/*'
@@ -230,16 +230,38 @@ if !hasmapto('<Plug>RemoveFuzzy')
 	imap <buffer> <unique> <LocalLeader>Z <Plug>RemoveFuzzy
 	nmap <buffer> <unique> <LocalLeader>Z <Plug>RemoveFuzzy
 endif
-inoremap <buffer> <unique> <Plug>RemoveFuzzy <ESC>{vap:call <SID>RemoveFuzzy()<CR>i
-nnoremap <buffer> <unique> <Plug>RemoveFuzzy {vap:call <SID>RemoveFuzzy()<CR>
+inoremap <buffer> <unique> <Plug>RemoveFuzzy <ESC>:call <SID>RemoveFuzzy()<CR>i
+nnoremap <buffer> <unique> <Plug>RemoveFuzzy :call <SID>RemoveFuzzy()<CR>
+
+" {{{1 looks for the initial and final lines of a translation unit
+"
+" returns a 2 item list, with the initial and final numbers of the translation
+" unit
+function! s:UnitBoundary() " {{{1
+  " standard search options:
+  " accept match at cursor, don't move cursor, don't wrap around the buffer
+  let srchopts = "cnW"
+  let s = search('^$', 'b' . srchopts) + 1
+  let e = search('^$', srchopts) - 1
+  return {'s': s, 'e': e}
+endfunction "}}}1
 
 fu! <SID>RemoveFuzzy()
-	let line = getline(".")
-	if line =~ '^#,\s*fuzzy$'
-		exe "normal! dd"
-	elseif line =~ '^#,\(.*,\)\=\s*fuzzy'
-		exe 's/,\s*fuzzy//'
-	endif
+  let pos = getpos('.')
+  let r = s:UnitBoundary()
+  let b:last_del_line = 0
+  silent exec r.s . ',' . r.e 'g/^#,\s*fuzzy$/d|let b:last_del_line=line(".")'
+  silen exec r.s . ',' . r.e 'g/^#,.*fuzzy.*/s/fuzzy, //'
+  if b:last_del_line != 0 && b:last_del_line < pos[1]
+    let pos[1] = pos[1] - 1
+  endif
+  let b:last_del_line = 0
+  let b:cnt_del_lines = 0
+  silen exec r.s . ',' . r.e 'g/^#|/d|let b:cnt_del_lines+=1|let b:last_del_line=line(".")'
+  if b:last_del_line != 0 && b:last_del_line < pos[1]
+    let pos[1] = pos[1] - b:cnt_del_lines
+  endif
+  call setpos('.', pos)
 endf
 
 " Show PO translation statistics. (Only available on UNIX computers for now.)
@@ -258,21 +280,40 @@ if has("unix")
 	inoremap <buffer> <unique> <Plug>MsgfmtTest <ESC>:call <SID>Msgfmt('test')<CR>
 	nnoremap <buffer> <unique> <Plug>MsgfmtTest :call <SID>Msgfmt('test')<CR>
 
-	fu! <SID>Msgfmt(action)
-		" Check if the file needs to be saved first.
-		exe "if &modified | w | endif"
-		if a:action == 'stats'
-			exe "!msgfmt --statistics -o /dev/null %"
-		elseif a:action == 'test'
-			if exists("g:po_msgfmt_args")
-				let args = g:po_msgfmt_args
-			else
-				let args = '-vv -c'
-			endif
-			exe "make! " . args . " -o /dev/null %"
-			copen
-		endif
-	endf
+    fu! <SID>Msgfmt(action)
+      " Check if the file needs to be saved first.
+      exe "if &modified | w | endif"
+      if a:action == 'stats'
+        let stats_r = system("msgfmt --statistics -o /dev/null " . shellescape(expand("%")))
+        let stats_t = split(stats_r, "\n")[0]
+        let _trans = matchlist(stats_t, '\(\d\+\) translated messages\{0,1}')
+        let tr_m = 0.0
+        if len(_trans) >= 2
+          let tr_m = eval(_trans[1] . ".0")
+        endif
+        let _trans = matchlist(stats_t, '\(\d\+\) fuzzy translations\{0,1}')
+        let fu_m = 0.0
+        if len(_trans) >= 2
+          let fu_m = eval(_trans[1] . ".0")
+        endif
+        let _trans = matchlist(stats_t, '\(\d\+\) untranslated messages\{0,1}')
+        let ut_m = 0.0
+        if len(_trans) >= 2
+          let ut_m = eval(_trans[1] . ".0")
+        endif
+        echo printf("%.0g translated messages, %.0g fuzzy translations, %.0g "
+                    \ ."untranslated messages. %.2g completed", tr_m,
+                    \ fu_m, ut_m, (100.0 * tr_m)/(tr_m + fu_m + ut_m))
+      elseif a:action == 'test'
+        if exists("g:po_msgfmt_args")
+          let args = g:po_msgfmt_args
+        else
+          let args = '-vv -c'
+        endif
+        exe "make! " . args . " -o /dev/null %"
+        copen
+      endif
+    endf
 endif
 
 " Add translator info in the file header.
@@ -414,3 +455,167 @@ fu! <SID>fmt_whole_file()
 	" the buffer. So it may not be so safe as the farmer method.
 	"exe "!msgmerge % % -o %"
 endf
+
+"{{{1 return the initial and final line numbers of the text corresponding to the
+" msgid.
+"
+" returns a dictionary, with two keys: s, and e, which contain, respectively,
+" the initial and final line numbers (inclusive, [s, e]) of the contents
+" belonging to the msgid
+"
+" the contents of msgid are defined to start with a line starting with the
+" text 'msgid', and to end in the line previous to the closest one downwards
+" starting with the 'msgstr' text
+function! s:MsgIdLocation() "{{{1
+  " standard search options:
+  " accept match at cursor, don't move cursor, don't wrap around the buffer
+  let srchopts = "cnW"
+  let s = search('^msgid ', 'b' . srchopts)
+  if s == 0
+    " throw something, no messageid
+  endif
+  let e_prev = search('^msgstr ', 'b' . srchopts)
+  if e_prev > s
+    return {'s': s, 'e': e_prev - 1}
+  endif
+
+  let e_next = search('^msgstr ', srchopts)
+  if e_next == 0
+    " throw something, no messagestr
+  endif
+
+  let s_next = search('^msgid ', srchopts)
+  if s_next == 0
+    return {'s': s, 'e': e_next - 1}
+  endif
+
+  if s_next < e_next
+    " throw something, msgid folloed by msgid
+  endif
+  return {'s': s, 'e': e_next - 1}
+endfunction "}}}1
+
+" contents of msgstr are defined as
+" text from the line that starts with the 'msgstr' text
+" until the closest line downwards that is empty
+" TODO finish docstring
+function! s:MsgStrLocation(s)
+  " TODO assert that text at line a:s starts with msgstr
+  call cursor(a:s, 1)
+  let srchopts = "cnW"
+  let e = search('^$', srchopts) 
+  if e == 0
+    " throw something, didn't find what we wanted
+  endif
+  let s_nextmsgid = search('^[^#"]', srchopts)
+  if s_nextmsgid != 0 && s_nextmsgid < e
+    " throw something, msgid before msgend
+  endif
+  return {'s': a:s, 'e': e - 1}
+endfunction
+
+" TODO finish docstring
+function! CopyMsgidMsgStr()
+  let r_a = @"
+
+  let id_l = s:MsgIdLocation()
+  let ms_l = s:MsgStrLocation(id_l.e + 1)
+  exe 'silent ' . ms_l.s . ',' . ms_l.e . 'delete _'
+  exe 'silent ' . id_l.s . ',' . id_l.e . 'yank'
+  call cursor(id_l.e, 1)
+  put
+  call cursor(id_l.e + 1, 1)
+  normal "_de
+  let @" = 'msgstr'
+  normal P
+  " TODO decide where do we want the cursor after deleting and pasting
+  " TODO exception raising and handling
+  " TODO mapping
+  " TODO docs
+
+  let @" = r_a
+endfunction
+
+" {{{1 Checks if the message has manual line wrapping (#, no-wrap flag)
+"
+" Returns: 1 if the message is manually wrapped, zero otherwise
+"
+" NOTE: This function assumes the cursor is on or below of the line with the
+"       no-wrap marker
+function! s:HasManualWrap() " {{{1
+  let nwpos = search('^#,.*no-wrap', 'bcn')
+  let blankpos = search('^$', 'bcn')
+  return (blankpos < nwpos)
+endfunction "}}}1
+
+function! s:FormatMsgstr(...)
+  " TODO account for msgstr "yaddayadda..."
+  " TODO raise exception when receiving anything different from 2 or 3 numbers
+  " by default figure out line range and text width
+  let line_range_s = '?^msgstr?+1'
+  let line_range_e = '/^$/-1'
+  let user_tw = a:0 == 3
+  let user_range = !(a:1 == line(".") && a:2 == 1)
+  if user_range
+    let line_range_s = a:1
+    let line_range_e = a:2
+  endif
+  if user_tw
+    let b:po_target_tw = eval(a:3)
+  endif
+  let has_mw = s:HasManualWrap()
+  let old_tw = &tw
+  if user_tw
+    let &tw = b:po_target_tw
+  else
+    if has_mw
+      if !exists("b:po_target_tw")
+        " TODO check that the user input is an integer expression
+        " regexp + eval() should cut it
+        let b:po_target_tw = input("Desired textwidth: ")
+      endif
+      let &tw = b:po_target_tw
+    else
+      let &tw = 77 " plus the 2 quotes, plus the space before quotes: 80
+                   " which is the proper tw for po files
+    endif
+  endif
+
+  let range_exp = line_range_s . "," . line_range_e
+  " remove all ' "'.
+  exec 'silent! ' . range_exp . 's/[^\\]\zs "$//'
+  " remove all '\n"'
+  exec 'silent! ' . range_exp . 's/[^\\]\zs\\n"$//'
+  " remove all other "  doesn't work for 2 double quotes next to each other...
+  exec 'silent! ' . range_exp . 's/^"\|[^\\]\zs"//g'
+
+  " place cursor at top of selection, then format paragraph
+  if user_range
+    let me = s:MsgStrLocation(line(".")).e
+    call cursor(line_range_s, 1)
+    " XXX the else part should work for any case, but alas, it doesn't. vim bug?
+    if line_range_e == line_range_s
+      normal gwl
+    else
+      let s = "normal " . string(line_range_e - line_range_s) . "gwj"
+      exec s
+    endif
+    let nme = s:MsgStrLocation(line(".")).e
+    let line_range_e = eval(line_range_e) + (nme - me)
+    let range_exp = line_range_s . "," . line_range_e
+  else
+    call search("^msgstr", "bc")
+    normal j
+    normal gw}
+  endif
+  if has_mw
+    exec 'silent ' . range_exp . 's/.*/"\0\\n"/'
+  else
+    exec 'silent ' . range_exp . 's/.*/"\0 "/'
+    normal $hx
+  endif
+  let &tw = old_tw
+endfunction
+
+command! -range=0 -nargs=? PoFormatMsgstr :call s:FormatMsgstr(<line1>, <line2>, <f-args>)
+

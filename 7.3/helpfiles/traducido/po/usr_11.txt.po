@@ -47,8 +47,8 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-09-23 20:27+0300\n"
-"PO-Revision-Date: 2010-12-06 18:02+0100\n"
-"Last-Translator: Álvaro Castro Castillo <alvaro.castro.castilla@gmail.com>\n"
+"PO-Revision-Date: 2011-02-26 17:27+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -192,7 +192,7 @@ msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
 #: original/TXT/usr_29.txt:613 original/TXT/usr_30.txt:643
 #: original/TXT/usr_31.txt:272
 msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
-msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 
 #. type: Plain text
 #: original/TXT/usr_11.txt:2
@@ -416,7 +416,8 @@ msgstr "\tvim -r \"\"\n"
 msgid ""
 "You must be in the right directory, otherwise Vim can't find the swap file."
 msgstr ""
-"Deberá estar en el mismo directorio para poder recuperar la información."
+"Debe estar en el directorio adecuado. En caso contrario, Vim no podrá "
+"encontrar el archivo de intercambio."
 
 #. type: Plain text
 #: original/TXT/usr_11.txt:84
@@ -945,7 +946,7 @@ msgid ""
 "If you really don't want to see this message, you can add the 'A' flag to "
 "the 'shortmess' option.  But it's very unusual that you need this."
 msgstr ""
-"Si realmente no quiere ver este mensaje, puede añadir la marca 'A' a la "
+"Si realmente no quiere ver este mensaje, puede añadir la opción 'A' a la "
 "opción 'shortmess'. Pero es poco habitual que lo necesite."
 
 #. type: Plain text

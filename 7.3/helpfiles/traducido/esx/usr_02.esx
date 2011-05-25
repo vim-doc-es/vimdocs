@@ -379,7 +379,7 @@ Para salir, use la orden «ZZ». Esta orden escribe el archivo y sale.
 	Al revés que muchos otros editores, Vim no hace un archivo de
 	seguridad automático. Si escribe «ZZ», sus cambios se comprometen
 	sin vuelta atrás. Puede configurar el editor Vim para que haga
-	copias de seguridad, véase |07.4|.
+	copias de seguridad, consulte |07.4|.
 
 
 DESCARTAR CAMBIOS
@@ -424,7 +424,7 @@ Los creadores de Vim hicieron algo muy inteligente (o fueron muy vagos) con el
 sistema de ayuda: Hicieron la ventana de ayuda una ventana normal de edición.
 Puede usar todas las órdenes comunes de Vim para moverse por ella. Por lo
 tanto, h, j, k, l mueven el cursor hacia la izquierda, derecha, arriba y abajo.
-   Para salir de la ventana de ayuda, usa el mismo comando que usas para salir
+   Para salir de la ventana de ayuda, usa la misma orden que usas para salir
 del editor: «ZZ». Esto sólo cierra la ayuda, no sale de Vim.
 
 A medida que lea el texto de ayuda, notará que hay texto entre barras
@@ -470,7 +470,7 @@ siguiente orden muestra la ayuda para la orden CTRL-H en modo normal: >
 	:help CTRL-H
 
 Para identificar otros modos, se necesita un prefijo de modo. Si quiere
-ayuda para la versión en modo insertar del comando, use «i_».  Para, CTRL-H
+ayuda para la versión en modo Insertar de una orden, use «i_».  Para, CTRL-H
 es la siguiente orden: >
 
 	:help i_CTRL-H
@@ -569,7 +569,7 @@ Resumen:					*help-summary*  >
 
 Capítulo siguiente: |usr_03.esx| Desplazamiento
 
-Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
+Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
 
 ==============================================================================
 

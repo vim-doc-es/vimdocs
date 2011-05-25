@@ -27,7 +27,7 @@ Tabla de contenidos: |usr_toc.esx|
 *27.1*	Ignorar la distinción entre mayúsculas y minúsculas
 
 Vim distingue entre mayúsculas y minúsculas al realizar un búsqueda de forma
-predefinida. «INCLUDE», «Include» e «include»  son por ello tres palabras
+predeterminada. «INCLUDE», «Include» e «include»  son por ello tres palabras
 distintas, y una búsqueda encontraría sólo una de ellas.
    Active ahora la opción 'ignorecase': >
 
@@ -298,9 +298,9 @@ número «m» de veces |inclusive|. Ejemplo: >
 	/ab\{3,5}
 
 empareja «abbb», «abbbb» y «abbbbb».
-  El valor predefinido cero en ausencia de «n». El valor predefinido es
-infinito en ausencia de «m». En ausencia de «m», se empareja exactamente
-«n» veces.
+  El valor predeterminado cero en ausencia de «n». El valor predeterminado
+es infinito en ausencia de «m». En ausencia de «m», se empareja
+exactamente «n» veces.
 Ejemplos:
 
 	patrón		número de coincidencias ~
@@ -444,7 +444,7 @@ más ejemplos:
 	\U	alfa no mayúscula	[^A-Z]
 
 	Nota:
-	El uso de estos rangos predefinidos es más rápido que el rango de
+	El uso de estos rangos predeterminados es más rápido que el rango de
 	caracteres que simbolizan.
 	Estos elementos no se pueden usar dentro de []. Así, «[\d\l]» NO
 	funciona para encontrar un dígito o un alfa minúscula. En lugar
@@ -472,7 +472,7 @@ omisión en Unix es: >
 	:set isfname
 	isfname=@,48-57,/,.,-,_,+,,,#,$,%,~,=
 
-El valor predefinido depende del sistema. Así, puede crear un patrón de
+El valor predeterminado depende del sistema. Así, puede crear un patrón de
 búsqueda con «\f» para emparejar un nombre de archivo, y ajustarse
 automáticamente al sistema en el que lo está usando.
 
@@ -480,7 +480,7 @@ automáticamente al sistema en el que lo está usando.
 	En realidad, Unix permita usar casi cualquier carácter, incluyendo
 	espacios. Incluir estos caracteres en 'isfname' sería teóricamente
 	correcto, pero imposibilitaría encontrar el fin del nombre de archivo
-	en el texto. Así, el valor predefinido de 'isfname' es importante.
+	en el texto. Así, el valor predeterminado de 'isfname' es importante.
 
 Las clases de caracteres son:
 
@@ -593,7 +593,7 @@ subrayados. Puede encontrar esto con: >
 
 Siguiente capítulo: |usr_28.txt| Plegar
 
-Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
+Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
 
 ==============================================================================
 

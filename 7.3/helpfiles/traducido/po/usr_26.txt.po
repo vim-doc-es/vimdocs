@@ -34,8 +34,8 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-09-23 20:27+0300\n"
-"PO-Revision-Date: 2010-12-06 18:03+0100\n"
-"Last-Translator: Omar Campagne <<ocampagne@gmail.com>>\n"
+"PO-Revision-Date: 2011-02-26 17:36+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -181,7 +181,7 @@ msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
 #: original/TXT/usr_29.txt:613 original/TXT/usr_30.txt:643
 #: original/TXT/usr_31.txt:272
 msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
-msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 
 #. type: Plain text
 #: original/TXT/usr_21.txt:486 original/TXT/usr_26.txt:85
@@ -521,10 +521,10 @@ msgstr ""
 "   La orden de sustitución «%s» a continuación afecta a todas las líneas.\n"
 "Busca la palabra «x_cnt» con «\\<x_cnt\\>». Los «\\<» y «\\>» se usan para\n"
 "encontrar sólo la palabra completa, y no «px_cnt» o «x_cnt2».\n"
-"   Las marcas para la orden de sustitución incluyen «g» para reemplazar\n"
-"todas las apariciones de «x_cnt» en la misma línea. La marca «e» se emplea\n"
+"   Las opciones para la orden de sustitución incluyen «g» para reemplazar\n"
+"todas las apariciones de «x_cnt» en la misma línea. La opción «e» se emplea\n"
 "para evitar un mensaje de error cuando «x_cnt» no está presente en el\n"
-"archivo. De otra manera, «:argdo» se interrumpiría en el primer archivo en\n"
+"archivo. En caso contrar, «:argdo» se interrumpiría en el primer archivo en\n"
 "el que no se encontrase «x_cnt».\n"
 "   La «|» separa dos órdenes. La orden a continuación «update» escribe en el\n"
 "archivo sólo si éste cambió. Si no se cambió ningún «x_cnt» a «x_counter»\n"
@@ -632,7 +632,7 @@ msgstr ""
 "a Vim que opere en modo silencioso. En otras palabras, no mostrar «:prompt»\n"
 "(cuadro de diálogo interactivo), o cualquier otro diálogo.\n"
 "   La orden «lpr -r archivo_temporal» muestra el «archivo_temporal»\n"
-"resultante y lo borra (esto es lo que hace el argumento «-r»).\n"
+"resultante y lo elimina (esto es lo que hace el argumento «-r»).\n"
 
 #. type: Plain text
 #: original/TXT/usr_26.txt:173

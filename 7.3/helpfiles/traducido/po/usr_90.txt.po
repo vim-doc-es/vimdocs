@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-12-05 15:35+0100\n"
-"PO-Revision-Date: 2010-12-09 11:39+0200\n"
+"PO-Revision-Date: 2011-03-09 14:04-0500\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: es\n"
@@ -125,8 +125,7 @@ msgstr ""
 #: original/txt/usr_90.txt:417 original/txt/usr_90.txt:494
 #, no-wrap
 msgid "==============================================================================\n"
-msgstr "============================================================================"
-"==\n"
+msgstr "==============================================================================\n"
 
 #. type: Plain text
 #: original/txt/usr_toc.txt:4 original/txt/usr_01.txt:4
@@ -163,13 +162,13 @@ msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
 #: original/txt/usr_31.txt:272 original/txt/usr_32.txt:180
 #: original/txt/usr_90.txt:498
 msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
-msgstr "Copyright: véase |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
+msgstr "Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:2
 #, no-wrap
 msgid "*usr_90.txt*\tFor Vim version 7.3.  Last change: 2008 Sep 10\n"
-msgstr "*usr_90.esx*\tPara Vim versión 7.3.  Último cambio: 10/09/2008\n"
+msgstr "*usr_90.esx*\tPara Vim versión 7.3. Último cambio: 10/09/2008\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:6
@@ -187,9 +186,9 @@ msgid ""
 "upgrading to a new version is done.\n"
 msgstr ""
 "\t\t\t\t\t\t\t*instalar* *install*\n"
-"Antes de usar Vim, tiene que instalarlo. Es sencillo o fácil\n"
-"dependiendo de su sistema. Este capítulo ofrece algunas\n"
-"indicaciones y explica cómo se actualiza a una nueva versión.\n"
+"Antes de usar Vim, tiene que instalarlo. Es sencillo o fácil dependiendo de su\n"
+"sistema. Este capítulo ofrece algunas indicaciones y explica cómo se actualiza\n"
+"a una nueva versión.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:17
@@ -237,13 +236,13 @@ msgid ""
 "base.  The files will be placed in subdirectories like \"bin\" and \"shared/vim\".\n"
 msgstr ""
 "Primero debe decidir si va a instalar Vim para uno o todos los usuarios. La\n"
-"instalación es muy similar, pero difiere el directorio de instalación de Vim.\n"
-"   Para una instalación de sistema (todos los usuarios), a menudo se usa\n"
-"el directorio base «/usr/local». Pero puede ser distinto en su sistema.\n"
-"Intente averiguar dónde se instalan los otros paquetes.\n"
+"instalación es muy similar, pero el directorio de instalación de Vim difiere.\n"
+"   Para una instalación de sistema (todos los usuarios), a menudo se usa el\n"
+"directorio base «/usr/local». Pero puede ser distinto en su sistema. Intente\n"
+"averiguar dónde se instalan los otros paquetes.\n"
 "   Cuando realiza una instalación para un sólo usuario, puede usar su\n"
-"directorio personal como base. Los ficheros se ubicarań en subdirectorios\n"
-"como «bin» y «shared/vim».\n"
+"directorio personal como base. Los archivos se ubicarán en subdirectorios como\n"
+"«bin» y «shared/vim».\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:35
@@ -286,9 +285,9 @@ msgid ""
 "finding another Vim package in your distribution, or search on the web site."
 msgstr ""
 "Si tiene una distribución de Linux, el programa vi es probablemente una "
-"versión mínima de Vim. No ejecuta el resaltado de sintaxis, por ejemplo. "
-"Intente buscar otro paquete de Vim en su distribución, o busque en la página "
-"web."
+"versión mínima de Vim. No cuenta con resaltado de sintaxis, por ejemplo. "
+"Intente buscar otro paquete de Vim para su distribución, o busque en la "
+"página web."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:52
@@ -318,8 +317,8 @@ msgid ""
 "To get the Vim archives, look in this file for a mirror near you, this "
 "should provide the fastest download:"
 msgstr ""
-"Para obtener los archivos de Vim, busque en este archivo un servidor "
-"réplica. Le debería ofrecer la descarga más rápida posible:"
+"Para obtener los archivos de Vim, busque en este archivo un servidor réplica "
+"cerca a usted. Le debería ofrecer la descarga más rápida posible:"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:63 original/txt/usr_90.txt:230
@@ -339,12 +338,12 @@ msgid ""
 "6.1 the single big one is called:\n"
 msgstr ""
 "O use la página oficial ftp.vim.org, si cree que es suficientemente rápida.\n"
-"Vaya al directorio «unix», y encontrará una serie de archivos. El\n"
-"número de versión está integrado en el nombre del archivo. Querrá obtener\n"
-"la versión más reciente.\n"
-"   Puede obtener los archivos para Unix de dos formas: Un único archivo\n"
-"grande que contiene todo, o cuatro más pequeños que caben en un\n"
-"disquete. El archivo de la versión 6.1 se llama:\n"
+"Vaya al directorio «unix», y encontrará una serie de archivos. El número de\n"
+"versión está integrado en el nombre del archivo. Querrá obtener la versión más\n"
+"reciente.\n"
+"   Puede obtener los archivos para Unix de dos formas: Un único archivo grande\n"
+"que contiene todo, o cuatro más pequeños que caben cada uno en un disquete. El\n"
+"archivo grande para la versión 6.1 se llama:\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:72
@@ -359,9 +358,9 @@ msgid ""
 "four smaller files, which can be uncompressed with gzip.  For Vim 6.1 they "
 "are called:"
 msgstr ""
-"Necesita el programa bzip2 para descomprimirlo. Si no lo tiene, descargue "
-"los cuatro archivos más pequeños, que se pueden descomprimir con gzip. Para "
-"Vim 6.1, se llaman:"
+"Necesita el programa bzip2 para descomprimirlo. Si no lo tiene, descargue los "
+"cuatro archivos más pequeños, que se pueden descomprimir con gzip. Para Vim "
+"6.1, se llaman:"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:81
@@ -404,8 +403,8 @@ msgid ""
 "Then unpack the archives there.  If you have the one big archive, you unpack "
 "it like this: >"
 msgstr ""
-"Descomprima los archivos en esa ubicación. Si tiene el archivo único grande, "
-"lo puede desempaquetar de la siguiente forma: >"
+"Luego descomprima los archivos en esa ubicación. Si tiene el archivo único "
+"grande, lo puede desempaquetar de la siguiente forma: >"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:94
@@ -439,7 +438,7 @@ msgid ""
 "is setup properly, you should be able to compile Vim with just this: >"
 msgstr ""
 "Si le satisfacen las funcionalidades predeterminadas, y si su entorno está "
-"correctamente configurado, debería poder compilar Vim con lo siguiente: >"
+"configurado correctamente, debería poder compilar Vim con lo siguiente: >"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:107
@@ -463,12 +462,12 @@ msgid ""
 "Look in the Makefile for specific hints for your system.\n"
 msgstr ""
 "El programa «make» ejecutará «configure» y compilará todo. Más adelante\n"
-"explicaremos como compilar con diferentes funcionalidades.\n"
+"explicaremos como compilar con funcionalidades distintas.\n"
 "   Si detecta errores durante la compilación, mire con detenimiento los\n"
 "mensajes de error. Debería haber una indicación de qué falló. Con suerte,\n"
-"podrá corregirlos. Puede que tenga que desactivar algunas funcionalidades\n"
-"para poder compilar Vim. Consulte el archivo «Makefile» para ver\n"
-"indicaciones específicas a su sistema.\n"
+"podrá corregirlo. Puede que deba desactivar algunas funcionalidades para poder\n"
+"compilar Vim. Consulte el archivo «Makefile» para ver indicaciones específicas\n"
+"a su sistema.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:117
@@ -494,7 +493,7 @@ msgid ""
 "flash by.  If it is alright you will finally see:"
 msgstr ""
 "Esto ejecutará una secuencia de scripts de prueba para comprobar que Vim "
-"funciona de la manera esperada. Se iniciará Vim varias veces, y aparecerán "
+"funciona de la manera esperada. Se iniciará Vim varias veces, y aparecerá "
 "rápidamente todo tipo de texto y mensajes. Si todo es correcto, verá:"
 
 #. type: Plain text
@@ -520,12 +519,12 @@ msgid ""
 msgstr ""
 "Si le devuelve «TEST FAILURE», es que ha fallado alguna prueba. Si existen "
 "uno o más mensajes de pruebas fallidas, puede que Vim funcione, pero no a la "
-"perfección. Si ve muchos mensajes de error o Vim no continua hasta el final, "
+"perfección. Si ve muchos mensajes de error o Vim no continúa hasta el final, "
 "puede que exista algún problema. Puede intentar encontrarlo manualmente, o "
-"encontrar a alguien que lo puede solucionar. También puede consultar la "
-"lista de correo (|maillist-archive|) en busca de una solución. Si todo "
-"falla, puede preguntar en la lista de correo (|maillist|) de Vim si alguien "
-"le puede ayudar."
+"encontrar a alguien que lo puede solucionar. También puede consultar la lista "
+"de correo (|maillist-archive|) en busca de una solución. Si todo falla, puede "
+"preguntar en la lista de correo (|maillist|) de Vim si alguien le puede "
+"ayudar."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:141
@@ -538,8 +537,8 @@ msgid ""
 msgstr ""
 "INSTALACIÓN\n"
 "\t\t\t\t\t\t\t*install-home*\n"
-"Si desea instalar Vim en su directorio personal (o «home»), edite el\n"
-"archivo «Makefile» y busque la siguiente línea:\n"
+"Si desea instalar Vim en su directorio personal (o «home»), edite el archivo\n"
+"«Makefile» y busque la siguiente línea:\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:143
@@ -558,9 +557,9 @@ msgid ""
 msgstr ""
 "Elimine «#» al principio de la línea.\n"
 "   Al instalar para todo el sistema, los más probable es que Vim haya\n"
-"seleccionado un directorio de instalación adecuado. También puede\n"
-"definir uno; vea a continuación. Necesita ser el administrador para\n"
-"poder realizar lo siguiente.\n"
+"seleccionado un directorio de instalación adecuado. También puede definir uno;\n"
+"vea a continuación. Necesita ser el administrador para poder realizar lo\n"
+"siguiente.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:150
@@ -583,7 +582,7 @@ msgstr ""
 "Esto debería mover todos los archivos relevantes al sitio adecuado. Ahora "
 "puede intentar ejecutar Vim para comprobar que funciona. Use dos pruebas "
 "sencillas para comprobar que Vim puede encontrar sus archivos de tiempo de "
-"ejecución."
+"ejecución: >"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:159
@@ -655,20 +654,21 @@ msgid ""
 "enabled from the Makefile.\n"
 msgstr ""
 "Vim ofrece varias formas de seleccionar funcionalidades. Una de las más\n"
-"sencillas es editar el archivo «Makefile». Hay muchas indicaciones y\n"
-"ejemplos. Generalmente, puede activar o desactivar una funcionalidad\n"
-"simplemente descomentando una línea.\n"
+"sencillas es editar el archivo «Makefile». Hay muchas indicaciones y ejemplos.\n"
+"Generalmente, puede activar o desactivar una funcionalidad simplemente\n"
+"descomentando una línea.\n"
 "   Otra alternativa es ejecutar «configure» de forma separada. Le permite\n"
-"especificar opciones de configuración manualmente. La desventaja es que\n"
-"tiene que averiguar qué teclear exactamente.\n"
-"   A continuación tiene algunas de los argumentos más interesantes. También\n"
-"se pueden activar desde el archivo «Makefile».\n"
+"especificar opciones de configuración manualmente. La desventaja es que tiene\n"
+"que averiguar qué teclear exactamente.\n"
+"   A continuación tiene algunas de los argumentos más interesantes. También se\n"
+"pueden activar desde el archivo «Makefile».\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:187
 #, no-wrap
 msgid "\t--prefix={directory}\t\tTop directory where to install Vim.\n"
-msgstr "\t--prefix={directorio}\t\tDirectorio superior donde instalar Vim.\n"
+msgstr "\t--prefix={directorio}\t\tDirectorio superior donde instalar\n"
+"\t\t\t\t\tVim.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:194
@@ -681,12 +681,17 @@ msgid ""
 "\t\t\t\t\tSee |+feature-list| for which feature\n"
 "\t\t\t\t\tis enabled in which case.\n"
 msgstr ""
-"\t--with-features=tiny\t\tCompilación con varias funcionalidades desactivadas.\n"
-"\t--with-features=small\t\tCompilación con algunas funcionalidades desactivadas.\n"
-"\t--with-features=big\t\tCompilación con más funcionalidades activadas.\n"
-"\t--with-features=huge\t\tCompilación con la mayoría de funcionalidades activadas.\n"
+"\t--with-features=tiny\t\tCompilación con varias funcionalidades\n"
+"\t\t\t\t\tdesactivadas.\n"
+"\t--with-features=small\t\tCompilación con algunas\n"
+"\t\t\t\t\tfuncionalidades desactivadas.\n"
+"\t--with-features=big\t\tCompilación con más funcionalidades\n"
+"\t\t\t\t\tactivadas.\n"
+"\t--with-features=huge\t\tCompilación con la mayoría de\n"
+"\t\t\t\t\tfuncionalidades activadas.\n"
 "\t\t\t\t\tConsulte |+feature-list| para ver qué\n"
-"\t\t\t\t\tfuncionalidad está activa por omisión.\n"
+"\t\t\t\t\tfuncionalidad está activa en cada\n"
+"\t\t\t\t\tcaso.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:198
@@ -698,7 +703,7 @@ msgid ""
 msgstr ""
 "\t--enable-perlinterp\t\tActiva la interfaz de Perl. Existen\n"
 "\t\t\t\t\targumentos similares para Ruby,\n"
-"\t\t\t\t\tPython y tcl.\n"
+"\t\t\t\t\tPython y Tcl.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:204
@@ -711,10 +716,10 @@ msgid ""
 "\t\t\t\t\tmakes startup faster.\n"
 msgstr ""
 "\t--disable-gui\t\t\tNo compila la interfaz gráfica.\n"
-"\t--without-x\t\t\tNo compila las funcionalidades del sistema\n"
-"\t\t\t\t\t\tde ventanas X.\n"
-"\t\t\t\t\tSi se usan las dos, Vim no se conectará al\n"
-"\t\t\t\t\tservidor de X, lo cual agiliza el inicio.\n"
+"\t--without-x\t\t\tNo compila las funcionalidades del\n"
+"\t\t\t\t\tsistema de ventanas X.  Si se usan las\n"
+"\t\t\t\t\tdos, Vim no se conectará al servidor\n"
+"\t\t\t\t\tde X, lo cual agiliza el inicio.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:206
@@ -736,10 +741,10 @@ msgid ""
 "   For the adventurous, edit the file \"feature.h\".  You can also change the\n"
 "source code yourself!\n"
 msgstr ""
-"Puede encontrar una explicación de cada funcionalidad y enlaces a\n"
-"más información aquí: |feature-list|.\n"
-"   Para los atrevido, edite el archivo «feature.h». ¡También puede\n"
-"modificar el código fuente directamente!"
+"Puede encontrar una explicación de cada funcionalidad y enlaces a más\n"
+"información aquí: |feature-list|.\n"
+"   Para los atrevidos, edite el archivo «feature.h». ¡También puede modificar\n"
+"el código fuente directamente!\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:216
@@ -756,7 +761,7 @@ msgid ""
 "first one, you will need:"
 msgstr ""
 "Existen dos formas de instalar el programa Vim para Microsoft Windows. Puede "
-"descomprimir varios archivos, o usar un sólo archivo de instalación "
+"descomprimir varios archivos, o usar un único archivo de instalación "
 "automática. La mayoría de usuarios con ordenadores relativamente recientes "
 "pueden preferir el segundo método. Se requiere lo siguiente para usar el "
 "primero:"
@@ -807,8 +812,8 @@ msgid ""
 "For the first method you must chose one of the binary archives.  These are "
 "available:"
 msgstr ""
-"Debe escoger uno de los archivos binarios para realizar el primer método. "
-"Los siguientes están disponibles:"
+"Debe escoger uno de los archivos binarios para usar el primer método. Los "
+"siguientes están disponibles:"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:255
@@ -826,18 +831,21 @@ msgid ""
 "\tvim61d16.zip\t\t16 bit MS-DOS version.  Only for old systems.\n"
 "\t\t\t\tDoes not support long filenames.\n"
 msgstr ""
-"\tgvim61.zip\t\tLa versión de interfaz gráfica normal de MS Windows.\n"
-"\tgvim61ole.zip\t\tLa versión gráfica de MS Windows con compatibilidad\n"
-"\t\t\t\t\tcon OLE.\n"
+"\tgvim61.zip\t\tLa versión de interfaz gráfica normal de MS\n"
+"\t\t\t\tWindows.\n"
+"\tgvim61ole.zip\t\tLa versión gráfica de MS Windows con\n"
+"\t\t\t\tcompatibilidad con OLE.\n"
 "\t\t\t\tUsa más memoria, permite interactuar con otras\n"
 "\t\t\t\taplicaciones OLE.\n"
-"\tvim61w32.zip\t\tLa versión de consola de 32 bit para MS Windows.\n"
-"\t\t\t\tPara el uso en una consola Win NT/2000/XP console.\n"
-"\t\t\t\tNo funciona bien en Win 95/98.\n"
-"\tvim61d32.zip\t\tVersión de 32 bit para MS-DOS. Para el uso en una\n"
-"\t\t\t\tventana de consola de Win 95/98.\n"
-"\tvim61d16.zip\t\tVersión de 16 bit para MS-DOS. Sólo para sistemas\n"
-"\t\t\t\tantiguos. No permite el uso de nombres de archivo largos.\n"
+"\tvim61w32.zip\t\tLa versión de consola de 32 bit para MS\n"
+"\t\t\t\tWindows. Para el uso en una consola Win\n"
+"\t\t\t\tNT/2000/XP console. No funciona bien en Win\n"
+"\t\t\t\t95/98.\n"
+"\tvim61d32.zip\t\tVersión de 32 bit para MS-DOS. Para el uso en\n"
+"\t\t\t\tuna ventana de consola de Win 95/98.\n"
+"\tvim61d16.zip\t\tVersión de 16 bit para MS-DOS. Sólo para\n"
+"\t\t\t\tsistemas antiguos. No permite el uso de\n"
+"\t\t\t\tnombres de archivo largos.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:258
@@ -861,7 +869,7 @@ msgid ""
 "Use your un-zip program to unpack the files.  For example, using the \"unzip"
 "\" program: >"
 msgstr ""
-"Use su programa un-zip para descomprimir lso archivos. Por ejemplo, usando "
+"Use su programa un-zip para descomprimir los archivos. Por ejemplo, usando "
 "el programa «unzip»: >"
 
 #. type: Plain text
@@ -886,7 +894,8 @@ msgid ""
 "   Now change to the \"vim\\vim61\" directory and run the install program: >\n"
 msgstr ""
 "Éstas órdenes desempaquetarán los ficheros en el directorio «c:\\vim\\vim61».\n"
-"Si ya tiene un directorio «vim», puede navegar al directorio superior a él.\n"
+"Si ya tiene un directorio «vim», se sugiere navegar al directorio superior a\n"
+"él.\n"
 "   Ahora, entre al directorio «vim\\vim61» y ejecute el programa de\n"
 "instalación: >\n"
 
@@ -906,11 +915,11 @@ msgid ""
 "   The install program doesn't move the runtime files.  They remain where you\n"
 "unpacked them.\n"
 msgstr ""
-"Revise los mensajes con cuidado y seleccione las opciones que desea usar.\n"
-"Si al final selecciona «do it», el programa de instalación llevará a cabo las\n"
-"acciones seleccionadas.\n"
+"Revise los mensajes con cuidado y seleccione las opciones que desea usar. Si\n"
+"al final selecciona «do it» (ejecutar), el programa de instalación llevará a\n"
+"cabo las acciones seleccionadas.\n"
 "   El programa de instalación no reubica los archivos de tiempo de ejecución.\n"
-"Permanecerán en el lugar en el que los desempaquetó."
+"Permanecerán en el lugar en el que usted los desempaquetó.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:287
@@ -922,10 +931,10 @@ msgid ""
 "Borland command-line compiler 5.5 can be used, as well as the free MingW and "
 "Cygwin compilers.  Check the file src/INSTALLpc.txt for hints."
 msgstr ""
-"En el caso de que no esté satisfecho con las características incluidas en "
-"los binarios proporcionados, puede intentar compilar Vim. Obtenga el archivo "
-"de fuentes de la misma ubicación de los binarios. Necesitará un compilador "
-"que permita «makefiles». Microsoft Visual C funciona, pero es caro. Puede "
+"En el caso de que no esté satisfecho con las características incluidas en los "
+"binarios proporcionados, puede intentar compilar Vim. Obtenga el archivo de "
+"fuentes de la misma ubicación de los binarios. Necesitará un compilador para "
+"el que exista un «makefile». Microsoft Visual C funciona, pero es caro. Puede "
 "usar el compilador de línea de órdenes libre Borland 5.5, así como los "
 "compiladores libres MingW y Cygwin. Consulte el archivo «src/INSTALLpc.txt» "
 "para más indicaciones."
@@ -962,15 +971,14 @@ msgid ""
 "delete the old runtime files manually.  Just delete the directory with the\n"
 "version number in it and all files below it.  Example: >\n"
 msgstr ""
-"Cuando teclea «make install», los ficheros de tiempo de ejecución se\n"
-"copiarán un directorio específico a la versión. Por ello, no sobreescribirán\n"
-"una versión anterior. Esto permite usar dos o más versiones\n"
-"simultáneamente.\n"
-"   El ejecutable «vim» sobreescribirá una versión anterior. Si no le\n"
-"interesa preservar la versión más antigua, ejecutar «make install»\n"
-"funcionará sin problemas. Puede borrar los archivos de\n"
-"tiempo de ejecución manualmente. Simplemente borre el directorio con\n"
-"el número de versión y todos los archivos contenidos en él. Ejemplo: >\n"
+"Cuando teclea «make install», los ficheros de tiempo de ejecución se copiarán\n"
+"un directorio específico a la versión. Por ello, no sobreescribirán los de una\n"
+"versión anterior. Esto permite usar dos o más versiones simultáneamente.\n"
+"   El ejecutable «vim» sobreescribirá una versión anterior. Si no le interesa\n"
+"preservar la versión más antigua, ejecutar «make install» funcionará sin\n"
+"problemas. Puede eliminar los archivos de tiempo de ejecución manualmente.\n"
+"Simplemente elimine el directorio con el número de versión y todos los\n"
+"archivos contenidos en él. Ejemplo: >\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:307
@@ -987,7 +995,7 @@ msgid ""
 msgstr ""
 "Generalmente, bajo este directorio no hay archivos modificados. Si ha "
 "modificado el archivo «filetype.vim», por ejemplo, será mejor que introduzca "
-"esos cambios en la versión nueva antes de borrar el archivo."
+"esos cambios en la versión nueva antes de eliminar el archivo."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:315
@@ -1015,8 +1023,8 @@ msgid ""
 "   When you finally decide to switch to the new version, all you need to do is\n"
 "to rename the binary to \"vim\".  For example: >\n"
 msgstr ""
-"Debería usar «make -n install» antes de ejecutar «make install» para\n"
-"comprobar que no se sobreescribirá ningún archivo valioso.\n"
+"Debería usar «make -n install» antes de ejecutar «make install» para comprobar\n"
+"que no se sobreescribirá ningún archivo valioso.\n"
 "   Cuando decida pasar a la nueva versión, todo lo que necesita hacer es\n"
 "renombrar el binario a «vim». Por ejemplo: >\n"
 
@@ -1049,19 +1057,19 @@ msgid ""
 "previous version.  See |90.5|.\n"
 msgstr ""
 "Actualizar es casi idéntico a instalar una versión nueva. Sencillamente\n"
-"desempaquete los archivos en la misma ubicación de la versión anterior.\n"
-"Se creará un directorio nuevo, esto es, «vim61», para los archivos de la\n"
-"versión nueva. Sus archivos de tiempo de ejecución, «vimrc» y «viminfo»\n"
-"no se modificarán.\n"
+"desempaquete los archivos en la misma ubicación de la versión anterior. Se\n"
+"creará un directorio nuevo, por ejemplo, «vim61», para los archivos de la\n"
+"versión nueva. Sus archivos de tiempo de ejecución, «vimrc» y «viminfo» no se\n"
+"modificarán.\n"
 "   Si desea ejecutar la nueva versión junto a la antigua, tendrá que hacer\n"
 "algún trabajo manual. No ejecute el programa de instalación, ya que\n"
 "sobreescribirá algunos archivos de la versión antigua. Ejecute los binarios\n"
 "nuevos especificando la ruta completa. El programa debería averiguar\n"
-"automáticamente la ubicación de los archivos de tiempo de ejecución para\n"
-"la versión adecuada. Por otra parte, no funcionará si define en algún lugar\n"
-"la variable «$VIMRUNTIME».\n"
-"   Si la actualización le satisface, puede borrar los archivos de la versión\n"
-"anterior. Consulte |90.5|. "
+"automáticamente la ubicación de los archivos de tiempo de ejecución para la\n"
+"versión adecuada. Por otra parte, no funcionará si define en algún lugar la\n"
+"variable «$VIMRUNTIME».\n"
+"   Si la actualización le satisface, puede eliminar los archivos de la versión\n"
+"anterior. Consulte |90.5|.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:343
@@ -1084,7 +1092,7 @@ msgstr ""
 #: original/txt/usr_90.txt:350
 msgid "Q: I Do Not Have Root Privileges.  How Do I Install Vim? (Unix)"
 msgstr ""
-"P: No tengo privilegios de administrador.  ¿Cómo puedo instalar Vim? (Unix)"
+"P: No tengo privilegios de administrador. ¿Cómo puedo instalar Vim? (Unix)"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:353
@@ -1155,7 +1163,7 @@ msgid ""
 msgstr ""
 "La definición del código que cada tecla envía no está muy clara con las "
 "teclas de retroceso <BS> y eliminar <Del>. Primero, compruebe su opción de "
-"configuración «$TERM». Si no detecta nada incorrecto: pruebe esto: >"
+"configuración «$TERM». Si no detecta nada incorrecto, pruebe esto: >"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:379
@@ -1243,7 +1251,7 @@ msgid ""
 "Vim scripts and plugins there."
 msgstr ""
 "Visite el sitio web de Vim: http://vim.sf.net. Muchos usuarios han enviado "
-"útiles scripts de Vim y extensiones a esta ubicación de Internet."
+"scripts de Vim y extensiones útiles a esta ubicación de Internet."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:413
@@ -1285,8 +1293,7 @@ msgid ""
 msgstr ""
 "Si ha instalado Vim como un paquete, compruebe su gestor de paquetes para\n"
 "averiguar cómo eliminar el paquete.\n"
-"   Si ha instalado Vim a partir de las fuentes, puede usar la siguiente "
-"orden: >\n"
+"   Si ha instalado Vim a partir de las fuentes, puede usar la siguiente orden: >\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:431
@@ -1304,7 +1311,7 @@ msgstr ""
 "Sin embargo, si ha eliminado los archivos originales, o ha usado un archivo "
 "que alguien le ha proporcionado, no podrá hacer esto. Este es un ejemplo de "
 "desinstalación manual de Vim cuando «/usr/local» se ha usado como el "
-"directorio raíz."
+"directorio raíz: >"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:469
@@ -1392,17 +1399,16 @@ msgid ""
 "probably contains your vimrc file and other runtime files that you created, so\n"
 "be careful.\n"
 msgstr ""
-"Si ha instalado Vim el archivo de instalación automática, puede\n"
-"ejecutar el programa «uninstall-gui», ubicado en el mismo directorio\n"
-"de otros programas de Vim. Esto es, «c:\\vim\\vim61». También puede\n"
-"iniciarlo desde el menú de aplicaciones si ha instalado las entradas\n"
-"de Vim. Esto elimina la mayoría de los archivos, entradas de menú\n"
-"y enlaces directos. Sin embargo, algunos archivos permanecerán en\n"
-"el sistema, ya que necesitan un reinicio de Windows antes de su\n"
-"eliminación.\n"
-"   Se le dará la opción de eliminar todo el directorio «vim».\n"
-"Probablemente, contiene su archivo «vimrc» y otros archivos de\n"
-"tiempo de ejecución que ha creado, tenga cuidado.\n"
+"Si ha instalado Vim usando el archivo de instalación automática, puede\n"
+"ejecutar el programa «uninstall-gui», ubicado en el mismo directorio de los\n"
+"otros programas de Vim, por ejemplo, «c:\\vim\\vim61». También puede iniciarlo\n"
+"desde el menú de aplicaciones si ha instalado las entradas de Vim. Esto\n"
+"elimina la mayoría de los archivos, entradas de menú y enlaces directos. Sin\n"
+"embargo, algunos archivos permanecerán en el sistema, ya que necesitan un\n"
+"reinicio de Windows antes de su eliminación.\n"
+"   Se le dará la opción de eliminar todo el directorio «vim». Probablemente,\n"
+"contiene su archivo «vimrc» y otros archivos de tiempo de ejecución que ha\n"
+"creado, tenga cuidado.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:493
@@ -1420,19 +1426,16 @@ msgid ""
 "files that you created.  You might want to keep that.\n"
 msgstr ""
 "Por otra parte, si ha instalado Vim con los archivos zip, la manera\n"
-"recomendada es usar el programa «uninstal» (note la omisión de la\n"
-"última «l»). Lo encontrará en el mismo directorio que el programa\n"
-"«install». Esto es, «c:\\vim\\vim61». También debería funcionar desde\n"
-"la aplicación habitual «Instalar/eliminar software».\n"
-"   Sin embargo, no elimina la entradas de Vim en el registro. Tendrá\n"
-"que eliminar estos archivos manualmente. Sencillamente seleccione\n"
-"el directorio «vim\\vim61» y elimínelo recursivamente. No debería\n"
-"contener archivos modificados por el usuario, pero quizá quiera\n"
-"comprobarlo.\n"
-"   Probablemente, el directorio «vim» contiene su archivo «vimrc» y\n"
-"otros archivos de tiempo de ejecución que ha creado. Puede que\n"
-"desee preservarlos.\n"
-" "
+"recomendada es usar el programa «uninstal» (observe la omisión de la última\n"
+"«l»). Lo encontrará en el mismo directorio que el programa «install», por\n"
+"ejemplo, «c:\\vim\\vim61». También debería funcionar desde la aplicación\n"
+"habitual «Instalar/eliminar programas».\n"
+"   Sin embargo, esto sólo elimina la entradas de Vim en el registro. Tendrá\n"
+"que eliminar los archivos manualmente. Sencillamente seleccione el directorio\n"
+"«vim\\vim61» y elimínelo recursivamente. No debería contener archivos\n"
+"modificados por el usuario, pero quizá quiera comprobarlo.\n"
+"   Probablemente, el directorio «vim» contiene su archivo «vimrc» y otros\n"
+"archivos de tiempo de ejecución que ha creado. Puede que desee preservarlos.\n"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:497

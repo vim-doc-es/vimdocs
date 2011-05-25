@@ -1,0 +1,1330 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.1" version="1.1">
+  <file original="po/en-curso/gui_x11.po" source-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit xml:space="preserve" id="1" approved="no" restype="x-gettext-domain-header">
+        <source>Project-Id-Version: Vim 7.2
+Report-Msgid-Bugs-To: 
+POT-Creation-Date: 2009-08-04 13:43+0200
+PO-Revision-Date: 2009-09-22 22:36-0400
+Last-Translator: Omar Campagne &lt;ocampagne@gmail.com&gt;
+Language-Team: Spanish &lt;debian-l10n-spanish@lists.debian.org&gt;
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+X-Generator: Translate Toolkit 1.3.0
+</source>
+        <target state="translated">Project-Id-Version: Vim 7.2
+Report-Msgid-Bugs-To: 
+POT-Creation-Date: 2009-08-04 13:43+0200
+PO-Revision-Date: 2009-09-22 22:36-0400
+Last-Translator: Omar Campagne &lt;ocampagne@gmail.com&gt;
+Language-Team: Spanish &lt;debian-l10n-spanish@lists.debian.org&gt;
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+X-Generator: Translate Toolkit 1.3.0
+</target>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="2" approved="yes">
+        <source>*gui_x11.txt*   For Vim version 7.2.  Last change: 2007 Dec 09</source>
+        <target state="translated">*gui_x11.txt*  Para Vim versión 7.2. Último cambio: 2007 Dec 09</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="3" approved="yes">
+        <source>		  VIM REFERENCE MANUAL    by Bram Moolenaar</source>
+        <target state="translated">		  MANUAL DE REFERENCIA DE VIM    por Bram Moolenaar</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="4" approved="yes">
+        <source>Vim's Graphical User Interface				*gui-x11* *GUI-X11*
+							*Athena* *Motif*
+1. Starting the X11 GUI		|gui-x11-start|
+2. GUI Resources		|gui-resources|
+3. Shell Commands		|gui-pty|
+4. Various			|gui-x11-various|
+5. GTK version			|gui-gtk|
+6. GNOME version		|gui-gnome|
+7. KDE version			|gui-kde|
+8. Compiling			|gui-x11-compiling|
+9. X11 selection mechanism	|x11-selection|</source>
+        <target state="translated">Interfaz gráfica de usuario de Vim				*gui-x11* *GUI-X11*
+							*Athena* *Motif*
+1. Iniciar GUI para X11		|gui-x11-start|
+2. Recursos de la GUI		|gui-resources|
+3. Órdenes del intérprete de órdenes		|gui-pty|
+4. Varios			|gui-x11-various|
+5. Versión GTK			|gui-gtk|
+6. Versión GNOME 		|gui-gnome|
+7. Versión KDE 			|gui-kde|
+8. Compilar			|gui-x11-compiling|
+9. Mecanismo de selección de X11	|x11-selection|</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="5" approved="yes">
+        <source>Other relevant documentation:
+|gui.txt|	For generic items of the GUI.</source>
+        <target state="translated">Más documentación relevante:
+|gui.txt|	Para los elementos genéricos de la GUI.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="6" approved="yes">
+        <source>{Vi does not have any of these commands}</source>
+        <target state="translated">{Vi no tiene ninguna de estas órdenes}</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="7" approved="yes">
+        <source>==============================================================================
+1. Starting the X11 GUI					*gui-x11-start* *E665*</source>
+        <target state="translated">==============================================================================
+1. Iniciando la IGU de X11					*gui-x11-start* *E665*</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="8" approved="yes">
+        <source>Then you can run the GUI version of Vim in either of these ways:
+    gvim [options] [files...]
+    vim -g [options] [files...]</source>
+        <target state="translated">Puede iniciar la interfaz gráfica de Vim de cualquiera de estas
+maneras:
+    gvim [opciones] [archivos...]
+    vim -g [opciones] [archivos...]</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="9" approved="yes">
+        <source>So if you call the executable "gvim", or make "gvim" a link to the executable,
+then the GUI version will automatically be used.  Additional characters may be
+added after "gvim", for example "gvim-5".</source>
+        <target state="translated">Por ello, si invoca el ejecutable «gvim», o enlaza «gvim» al ejecutable,
+la interfaz gráfica se usará automáticamente. Se pueden añadir caracteres
+adicionales tras «gvim», «gvim-5» por ejemplo.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="10" approved="yes">
+        <source>You may also start up the GUI from within the terminal version by using one of
+these commands:
+	:gui [++opt] [+cmd] [-f|-b] [files...]			*:gu* *:gui*
+	:gvim [++opt] [+cmd] [-f|-b] [files...]			*:gv* *:gvim*
+The "-f" option runs Vim in the foreground.
+The "-b" option runs Vim in the background (this is the default).
+Also see |++opt| and |+cmd|.</source>
+        <target state="translated">También puede iniciar la interfaz gráfica desde la versión de terminal
+mediante una de estas órdenes:
+	:gui [++opt] [+cmd] [-f|-b] [-f|-b] [archivos...]			*:gu* *:gui*
+	:gvim [++opt] [+cmd] [-f|-b] [-f|-b] [archivos...]			*:gv* *:gvim*
+La opción «-f» ejecuta Vim en primer plano
+La opción «-b» ejecuta Vim de fondo (por omisión).
+Véase también |++opt| y |+cmd|.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="11" approved="yes">
+        <source>							*gui-fork*
+When the GUI is started, it does a fork() and exits the current process.
+When gvim was started from a shell this makes the shell accept further
+commands.  If you don't want this (e.g. when using gvim for a mail program
+that waits for gvim to exit), start gvim with "gvim -f", "vim -gf" or use
+":gui -f".  Don't use "vim -fg", because "-fg" specifies the foreground
+color.</source>
+        <target state="translated">							*gui-fork*
+Cuando inicia la GUI, crea un «fork()» y termina el proceso actual.
+Cuando se ha iniciado gvim desde un interprete de órdenes, esto
+hace que la consola pueda recibir futuras órdenes. Si no desea
+esto, (p. ej., cuando usa gvim para un programa de correo que 
+espera a que gvim se cierre), inicie gvim con «gvim -f», «vim -gf»
+o use «:gui -f». No use «vim -fg» porque «-fg» especifica el color
+en primer plano.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="12" approved="yes">
+        <source>When using "gvim -f" and then ":gui", Vim will run in the foreground.  The
+"-f" argument will be remembered.  To force running Vim in the background use
+":gui -b".</source>
+        <target state="translated">Si usa «gvim -f», y después «:gui», Vim se ejectuará en primer plano.
+El argumento «-f» se recordará. Para forzar que Vim se inicie de fondo,
+use «gui -b».</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="13" approved="yes">
+        <source>"gvim --nofork" does the same as "gvim -f".</source>
+        <target state="translated">«gvim --nofork» hace lo mismo que «gvim -f».</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="14" approved="yes">
+        <source>If you want the GUI to run in the foreground always, include the 'f'
+flag in 'guioptions'.  |-f|.</source>
+        <target state="translated">Si desea que la IGU siempre se ejecute en primer plano, incluya
+la marca «f» en 'guioptions'. |-f|.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="15" approved="yes">
+        <source>==============================================================================
+2. GUI Resources			*gui-resources* *.Xdefaults*</source>
+        <target state="translated">==============================================================================
+2. Recursos de la IGU			*gui-resources* *.Xdefaults*</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="16" approved="yes">
+        <source>If using the Motif or Athena version of the GUI (not for the KDE, GTK+ or Win32
+version), a number of X resources are available.  You should use Vim's class
+"Vim" when setting these.  They are as follows:</source>
+        <target state="translated">En caso de que este usando la versión Motif o Athena de la IGU (no la versión 
+de KDE, GTK+ o Win32), no dispondrá de una serie de recursos. Debería usar
+la clase de Vim «Vim» cuando define esto. Son como sigue:</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="17" approved="yes">
+        <source>    Resource name	Meaning		~</source>
+        <target state="translated">    Nombre del recurso	Significado		~</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="18" approved="yes">
+        <source>    reverseVideo	Boolean: should reverse video be used?
+    background		Color of background.
+    foreground		Color of normal text.
+    scrollBackground	Color of trough portion of scrollbars.
+    scrollForeground	Color of slider and arrow portions of scrollbars.
+    menuBackground	Color of menu backgrounds.
+    menuForeground	Color of menu foregrounds.
+    tooltipForeground	Color of tooltip and balloon foreground.
+    tooltipBackground	Color of tooltip and balloon background.</source>
+        <target state="translated">    reverseVideo	Boolean: ¿Se debe usar el vídeo inverso?
+    background		Color del fondo.
+    foreground		Color del texto normal.
+    scrollBackground	Color de la porción pilón de las barras de desplazamiento.
+    scrollForeground	Color de la barra y las porciones de flecha de las barras
+		                desplazamiento.
+    menuBackground	Color de fondo del menú.
+    menuForeground	Color de primer plano del menú.
+    tooltipForeground	Color de primer plano de las sugerencias y de los globos.
+    tooltipBackground	Color de fondo de las sugerencias y de los globos.</target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="19">
+        <source>    font		Name of font used for normal text.
+    boldFont		Name of font used for bold text.
+    italicFont		Name of font used for italic text.
+    boldItalicFont	Name of font used for bold, italic text.
+    menuFont		Name of font used for the menus, used when compiled
+			without the |+xfontset| feature
+    menuFontSet		Name of fontset used for the menus, used when compiled
+			with the |+xfontset| feature
+    tooltipFont		Name of the font used for the tooltip and balloons.
+			When compiled with the |+xfontset| feature this is a
+			fontset name.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="20">
+        <source>    geometry		Initial geometry to use for gvim's window (default
+			is same size as terminal that started it).
+    scrollbarWidth	Thickness of scrollbars.
+    borderWidth		Thickness of border around text area.
+    menuHeight		Height of the menu bar (only for Athena).</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="21">
+        <source>A special font for italic, bold, and italic-bold text will only be used if
+the user has specified one via a resource.  No attempt is made to guess what
+fonts should be used for these based on the normal text font.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="22">
+        <source>Note that the colors can also be set with the ":highlight" command, using the
+"Normal", "Menu", "Tooltip", and "Scrollbar" groups.  Example: &gt;
+	:highlight Menu guibg=lightblue
+	:highlight Tooltip guibg=yellow
+	:highlight Scrollbar guibg=lightblue guifg=blue
+	:highlight Normal guibg=grey90
+&lt;
+							*font-sizes*
+Note: All fonts (except for the menu and tooltip) must be of the same size!!!
+If you don't do this, text will disappear or mess up the display.  Vim does
+not check the font sizes.  It's the size in screen pixels that must be the
+same.  Note that some fonts that have the same point size don't have the same
+pixel size!  Additionally, the positioning of the fonts must be the same
+(ascent and descent).  You can check this with "xlsfonts -l {fontname}".</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="23">
+        <source>If any of these things are also set with Vim commands, e.g. with
+":set guifont=Screen15", then this will override the X resources (currently
+'guifont' is the only option that is supported).</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="24">
+        <source>Here is an example of what you might put in your ~/.Xdefaults file: &gt;</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="25">
+        <source>	Vim*useSchemes:			all
+	Vim*sgiMode:			true
+	Vim*useEnhancedFSB:		true
+	Vim.foreground:			Black
+	Vim.background:			Wheat
+	Vim*fontList:			7x13</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="26">
+        <source>The first three of these are standard resources on Silicon Graphics machines
+which make Motif applications look even better, highly recommended!</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="27">
+        <source>The "Vim*fontList" is to set the menu font for Motif.  Example: &gt;
+	Vim*menuBar*fontList:	     -*-courier-medium-r-*-*-10-*-*-*-*-*-*-*
+With Athena: &gt;
+	Vim*menuBar*SmeBSB*font:     -*-courier-medium-r-*-*-10-*-*-*-*-*-*-*
+	Vim*menuBar*MenuButton*font: -*-courier-medium-r-*-*-10-*-*-*-*-*-*-*</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="28">
+        <source>NOTE: A more portable, and indeed more correct, way to specify the menu font
+in either Motif or Athena is through the resource: &gt;
+	Vim.menuFont:	     -*-courier-medium-r-*-*-10-*-*-*-*-*-*-*
+Or, when compiled with the |+xfontset| feature: &gt;
+	Vim.menuFontSet:     -*-courier-medium-r-*-*-10-*-*-*-*-*-*-*</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">138</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="29">
+        <source>Don't use "Vim*geometry" in the defaults.  This will break the menus.  Use
+"Vim.geometry" instead.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="30">
+        <source>If you get an error message "Cannot allocate colormap entry for "gray60",
+try adding this to your Vim resources (change the colors to your liking): &gt;</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="31">
+        <source>	Vim*scrollBackground:		Black
+	Vim*scrollForeground:		Blue</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">150</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="32">
+        <source>The resources can also be set with arguments to Vim:</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="33">
+        <source>    argument		meaning	~
+							*-gui*
+   -display {display}	Run vim on {display}		*-display*
+   -iconic		Start vim iconified		*-iconic*
+   -background {color}	Use {color} for the background	*-background*
+   -bg {color}		idem				*-bg*
+   -foreground {color}	Use {color} for normal text	*-foreground*
+   -fg {color}		idem				*-fg*
+   -ul {color}		idem				*-ul*
+   -font {font}		Use {font} for normal text	*-font*
+   -fn {font}		idem				*-fn*
+   -boldfont {font}	Use {font} for bold text	*-boldfont*
+   -italicfont {font}	Use {font} for italic text	*-italicfont*
+   -menufont {font}	Use {font} for menu items	*-menufont*
+   -menufontset {fontset} Use {fontset} for menu items	*-menufontset*
+   -mf {font}		idem				*-mf*
+   -geometry {geom}	Use {geom} for initial geometry	*-geometry*
+   -geom {geom}		idem, see |-geometry-example|	*-geom*
+   -borderwidth {width}	Use a border width of {width}	*-borderwidth*
+   -bw {width}		idem				*-bw*
+							*-scrollbarwidth*
+   -scrollbarwidth {width}	Use a scrollbar width of {width}
+   -sw {width}		idem				*-sw*
+   -menuheight {height}	Use a menu bar height of {height} *-menuheight*
+   -mh {height}		idem				*-mh*
+			NOTE: On Motif the value is ignored, the menu height
+			is computed to fit the menus.
+   -reverse		Use reverse video		*-reverse*
+   -rv			idem				*-rv*
+   +reverse		Don't use reverse video		*-+reverse*
+   +rv			idem				*-+rv*
+   -xrm {resource}	Set the specified resource	*-xrm*</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="34">
+        <source>Note about reverse video: Vim checks that the result is actually a light text
+on a dark background.  The reason is that some X11 versions swap the colors,
+and some don't.  These two examples will both give yellow text on a blue
+background:
+    gvim -fg Yellow -bg Blue -reverse
+    gvim -bg Yellow -fg Blue -reverse</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">188</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="35">
+        <source>							*-geometry-example*
+An example for the geometry argument: &gt;
+	gvim -geometry 80x63+8+100
+This creates a window with 80 columns and 63 lines at position 8 pixels from
+the left and 100 pixels from the top of the screen.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">195</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="36">
+        <source>==============================================================================
+3. Shell Commands					*gui-pty*</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">201</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="37">
+        <source>WARNING: Executing an external command from the GUI will not always work.
+"normal" commands like "ls", "grep" and "make" mostly work fine.  Commands
+that require an intelligent terminal like "less" and "ispell" won't work.
+Some may even hang and need to be killed from another terminal.  So be
+careful!</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">204</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="38">
+        <source>There are two ways to do the I/O with a shell command: Pipes and a pseudo-tty.
+The default is to use a pseudo-tty.  This should work best on most systems.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">210</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="39">
+        <source>Unfortunately, the implementation of the pseudo-tty is different on every Unix
+system.  And some systems require root permission.  To avoid running into
+problems with a pseudo-tty when you least expect it, test it when not editing
+a file.  Be prepared to "kill" the started command or Vim.  Commands like
+":r !cat" may hang!</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">213</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="40">
+        <source>If using a pseudo-tty does not work for you, reset the 'guipty' option: &gt;</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">219</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="41">
+        <source>	:set noguipty</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">221</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="42">
+        <source>Using a pipe should work on any Unix system, but there are disadvantages:
+- Some shell commands will notice that a pipe is being used and behave
+  differently.  E.g., ":!ls" will list the files in one column.
+- The ":sh" command won't show a prompt, although it will sort of work.
+- When using ":make" it's not possible to interrupt with a CTRL-C.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">223</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="43">
+        <source>Typeahead while the external command is running is often lost.  This happens
+both with a pipe and a pseudo-tty.  This is a known problem, but it seems it
+can't be fixed (or at least, it's very difficult).</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">229</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="44">
+        <source>							*gui-pty-erase*
+When your erase character is wrong for an external command, you should fix
+this in your "~/.cshrc" file, or whatever file your shell uses for
+initializations.  For example, when you want to use backspace to delete
+characters, but hitting backspaces produces "^H" instead, try adding this to
+your "~/.cshrc": &gt;
+	stty erase ^H
+The ^H is a real CTRL-H, type it as CTRL-V CTRL-H.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">233</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="45">
+        <source>==============================================================================
+4. Various						*gui-x11-various*</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">242</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="46">
+        <source>							*gui-x11-printing*
+The "File/Print" menu simply sends the current buffer to "lpr".  No options or
+whatever.  If you want something else, you can define your own print command.
+For example: &gt;</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">245</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="47">
+        <source>  :10amenu File.Print :w !lpr -Php3
+  :10vmenu File.Print :w !lpr -Php3
+&lt;
+							*X11-icon*
+Vim uses a black&amp;white icon by default when compiled with Motif or Athena.  A
+colored Vim icon is included as $VIMRUNTIME/vim32x32.xpm.  For GTK+, this is
+the builtin icon used.  Unfortunately, how you should install it depends on
+your window manager.  When you use this, remove the 'i' flag from
+'guioptions', to remove the black&amp;white icon: &gt;
+  :set guioptions-=i</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">250</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="48">
+        <source>If you use one of the fvwm* family of window managers simply add this line to
+your .fvwm2rc configuration file: &gt;</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">261</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="49">
+        <source>  Style "vim"		Icon vim32x32.xpm</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">264</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="50">
+        <source>Make sure the icon file's location is consistent with the window manager's
+ImagePath statement.  Either modify the ImagePath from within your .fvwm2rc or
+drop the icon into one the pre-defined directories: &gt;</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">266</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="51">
+        <source>  ImagePath /usr/X11R6/include/X11/pixmaps:/usr/X11R6/include/X11/bitmaps</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">270</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="52">
+        <source>Note: older versions of fvwm use "IconPath" instead of "ImagePath".</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">272</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="53">
+        <source>For CDE "dtwm" (a derivative of Motif) add this line in the .Xdefaults: &gt;
+   Dtwm*Vim*iconImage: /usr/local/share/vim/vim32x32.xpm</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">274</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="54">
+        <source>For "mwm" (Motif window manager) the line would be: &gt;
+   Mwm*Vim*iconImage: /usr/local/share/vim/vim32x32.xpm</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">277</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="55">
+        <source>Mouse Pointers Available in X11				*X11_mouse_shapes*</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">280</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="56">
+        <source>By using the |'mouseshape'| option, the mouse pointer can be automatically
+changed whenever Vim enters one of its various modes (e.g., Insert or
+Command).  Currently, the available pointers are:</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">282</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="57">
+        <source>	arrow			an arrow pointing northwest
+	beam			a I-like vertical bar
+	size			an arrow pointing up and down
+	busy			a wristwatch
+	blank			an invisible pointer
+	crosshair		a thin "+" sign
+	hand1			a dark hand pointing northeast
+	hand2			a light hand pointing northwest
+	pencil			a pencil pointing southeast
+	question		question_arrow
+	right_arrow		an arrow pointing northeast
+	up_arrow		an arrow pointing upwards</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">286</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="58">
+        <source>Additionally, any of the mouse pointers that are built into X11 may be
+used by specifying an integer from the X11/cursorfont.h include file.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">299</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="59">
+        <source>If a name is used that exists on other systems, but not in X11, the default
+"arrow" pointer is used.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">302</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="60">
+        <source>==============================================================================
+5. GTK version						*gui-gtk* *GTK+* *GTK*</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">305</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="61">
+        <source>The GTK version of the GUI works a little bit different.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">308</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="62">
+        <source>GTK does _not_ use the traditional X resource settings.  Thus items in your
+~/.Xdefaults or app-defaults files are not used.
+Many of the traditional X command line arguments are not supported.  (e.g.,
+stuff like -bg, -fg, etc).  The ones that are supported are:</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">310</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="63">
+        <source>    command line argument   resource name	meaning ~
+    -fn  or  -font	    .font		font name for the text
+    -geom  or  -geometry    .geometry		size of the gvim window
+    -rv  or  -reverse	    *reverseVideo	white text on black background
+    -display					display to be used
+    -fg -foreground {color}			foreground color
+    -bg -background {color}			background color</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">315</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="64">
+        <source>To set the font, see |'guifont'|.  For GTK, there's also a menu option that
+does this.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">323</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="65">
+        <source>Additionally, there are these command line arguments, which are handled by GTK
+internally.  Look in the GTK documentation for how they are used:
+	--sync
+	--gdk-debug
+	--gdk-no-debug
+	--no-xshm	(not in GTK+ 2)
+	--xim-preedit	(not in GTK+ 2)
+	--xim-status	(not in GTK+ 2)
+	--gtk-debug
+	--gtk-no-debug
+	--g-fatal-warnings
+	--gtk-module
+	--display	(GTK+ counterpart of -display; works the same way.)
+	--screen	(The screen number; for GTK+ 2.2 multihead support.)</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">326</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="66">
+        <source>These arguments are ignored when the |+netbeans_intg| feature is used:
+	-xrm
+	-mf</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">341</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="67">
+        <source>As for colors, Vim's color settings (for syntax highlighting) is still
+done the traditional Vim way.  See |:highlight| for more help.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">345</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="68">
+        <source>If you want to set the colors of remaining gui components (e.g., the
+menubar, scrollbar, whatever), those are GTK specific settings and you
+need to set those up in some sort of gtkrc file.  You'll have to refer
+to the GTK documentation, however little there is, on how to do this.
+See http://developer.gnome.org/doc/API/2.0/gtk/gtk-Resource-Files.html
+for more information.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">348</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="69">
+        <source>						*gtk-tooltip-colors*
+Example, which sets the tooltip colors to black on light-yellow: &gt;</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">355</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="70">
+        <source>	style "tooltips"
+	{
+		bg[NORMAL] = "#ffffcc"
+		fg[NORMAL] = "#000000"
+	}</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">358</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="71">
+        <source>	widget "gtk-tooltips*"		style "tooltips"</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">364</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="72">
+        <source>Write this in the file ~/.gtkrc and it will be used by GTK+.  For GTK+ 2
+you might have to use the file ~/.gtkrc-2.0 instead, depending on your
+distribution.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">366</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="73">
+        <source>Using Vim as a GTK+ plugin				*gui-gtk-socketid*</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">370</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="74">
+        <source>When the GTK+ version of Vim starts up normally, it creates its own top level
+window (technically, a 'GtkWindow').  GTK+ provides an embedding facility with
+its GtkSocket and GtkPlug widgets.  If one GTK+ application creates a
+GtkSocket widget in one of its windows, an entirely different GTK+ application
+may embed itself into the first application by creating a top-level GtkPlug
+widget using the socket's ID.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">372</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="75">
+        <source>If you pass Vim the command-line option '--socketid' with a decimal or
+hexadecimal value, Vim will create a GtkPlug widget using that value instead
+of the normal GtkWindow.  This enables Vim to act as a GTK+ plugin.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">379</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="76">
+        <source>This really is a programmer's interface, and is of no use without a supporting
+application to spawn the Vim correctly.  For more details on GTK+ sockets, see
+http://www.gtk.org/api/</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">383</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="77">
+        <source>Note that this feature requires the latest GTK version.  GTK 1.2.10 still has
+a small problem.  The socket feature has not yet been tested with GTK+ 2 --
+feel free to volunteer.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">387</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="78">
+        <source>==============================================================================
+6. GNOME version				*gui-gnome* *Gnome* *GNOME*</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">391</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="79">
+        <source>The GNOME GUI works just like the GTK+ version.  See |GTK+| above for how it
+works.  It looks a bit different though, and implements one important feature
+that's not available in the plain GTK+ GUI:  Interaction with the session
+manager. |gui-gnome-session|</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">394</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="80">
+        <source>These are the different looks:
+- Uses GNOME dialogs (GNOME 1 only).  The GNOME 2 GUI uses the same nice
+  dialogs as the GTK+ 2 version.
+- Uses the GNOME dock, so that the toolbar and menubar can be moved to
+  different locations other than the top (e.g., the toolbar can be placed on
+  the left, right, top, or bottom).  The placement of the menubar and
+  toolbar is only saved in the GNOME 2 version.
+- That means the menubar and toolbar handles are back!  Yeah!  And the
+  resizing grid still works too.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">399</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="81">
+        <source>GNOME is compiled with if it was found by configure and the
+--enable-gnome-check argument was used.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">409</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="82">
+        <source>GNOME session support			*gui-gnome-session* *gnome-session*</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">413</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="83">
+        <source>On logout, Vim shows the well-known exit confirmation dialog if any buffers
+are modified.  Clicking [Cancel] will stop the logout process.  Otherwise the
+current session is stored to disk by using the |:mksession| command, and
+restored the next time you log in.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">415</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="84">
+        <source>The GNOME session support should also work with the KDE session manager.
+If you are experiencing any problems please report them as bugs.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">420</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="85">
+        <source>Note: The automatic session save works entirely transparent, in order to
+avoid conflicts with your own session files, scripts and autocommands.  That
+means in detail:
+- The session file is stored to a separate directory (usually $HOME/.gnome2).
+- 'sessionoptions' is ignored, and a hardcoded set of appropriate flags is
+  used instead: &gt;
+	blank,curdir,folds,globals,help,options,tabpages,winsize
+- The internal variable |v:this_session| is not changed when storing the
+  session.  Also, it is restored to its old value when logging in again.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">423</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="86">
+        <source>The position and size of the GUI window is not saved by Vim since doing so
+is the window manager's job.  But if compiled with GTK+ 2 support, Vim helps
+the WM to identify the window by restoring the window role (using the |--role|
+command line argument).</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">433</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="87">
+        <source>==============================================================================
+7. KDE version					*gui-kde* *kde* *KDE* *KVim*
+							*gui-x11-kde*
+There is no KDE version of Vim.  There has been some work on a port using the
+Qt toolkit, but it never worked properly and it has been abandoned.  Work
+continues on Yzis: www.yzis.org.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">438</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="88">
+        <source>==============================================================================
+8. Compiling						*gui-x11-compiling*</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">445</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="89">
+        <source>If using X11, Vim's Makefile will by default first try to find the necessary
+GTK+ files on your system.  If the GTK+ files cannot be found, then the Motif
+files will be searched for.  Finally, if this fails, the Athena files will be
+searched for.  If all three fail, the GUI will be disabled.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">448</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="90">
+        <source>For GTK+, Vim's configuration process requires that GTK+ be properly
+installed.  That is, the shell script 'gtk-config' must be in your PATH, and
+you can already successful compile, build, and execute a GTK+ program.  The
+reason for this is because the compiler flags (CFLAGS) and link flags
+(LDFLAGS) are obtained through the 'gtk-config' shell script.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">453</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="91">
+        <source>If you want to build with GTK+ 2 support pass the --enable-gtk2-check argument
+to ./configure.  Optionally, support for GNOME 2 will be compiled if the
+--enable-gnome-check option is also given.  Note that the support for GTK+ 2
+is still experimental.  However, many people have reported that it works just
+fine for them.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">459</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="92">
+        <source>Otherwise, if you are using Motif or Athena, when you have the Motif or Athena
+files in a directory where configure doesn't look, edit the Makefile to enter
+the names of the directories.  Search for "GUI_INC_LOC" for an example to set
+the Motif directories, "CONF_OPT_X" for Athena.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">465</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="93">
+        <source>							*gui-x11-gtk*
+At the time of this writing, you may use either GTK+ version 1.0.6 or 1.2.  It
+is suggested that you use v1.2 since not all of Vim's GUI features are present
+if using v1.0.6.  For instance, there are no tearoff menus present in v1.0.6.
+Using a version from GTK+'s CVS tree may or may not work, and is therefore not
+supported and not recommended.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">470</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="94">
+        <source>For the experimental GTK+ 2 GUI, using the latest release of the GTK+ 2.0 or
+GTK+ 2.2 series is recommended.  CVS HEAD seems to work fine most of time as
+well.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">477</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="95">
+        <source>Lastly, although GTK+ has supposedly been ported to the Win32 platform, this
+has not been tested with Vim and is also unsupported.  Also, it's unlikely to
+even compile since GTK+ GUI uses parts of the generic X11 code.  This might
+change in distant future; particularly because getting rid of the X11 centric
+code parts is also required for GTK+ framebuffer support.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">481</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="96">
+        <source>							*gui-x11-motif*
+For Motif, you need at least Motif version 1.2 and/or X11R5.  Motif 2.0 and
+X11R6 are OK.  Motif 1.1 and X11R4 might work, no guarantee (there may be a
+few problems, but you might make it compile and run with a bit of work, please
+send me the patches if you do).  The newest releases of LessTif have been
+reported to work fine too.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">487</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="97">
+        <source>							*gui-x11-athena*
+The Athena version uses the Xaw widget set by default.  If you have the 3D
+version, you might want to link with Xaw3d instead.  This will make the
+menus look a bit better.  Edit the Makefile and look for "XAW_LIB".  The
+scrollbars will remain the same, because Vim has its own, which are already
+3D (in fact, they look more like Motif).</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">494</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="98">
+        <source>							*gui-x11-neXtaw*
+The neXtaw version is mostly like Athena, but uses different widgets.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">501</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="99">
+        <source>							*gui-x11-misc*
+In general, do not try to mix files from different GTK+, Motif, Athena and X11
+versions.  This will cause problems.  For example, using header files for
+X11R5 with a library for X11R6 probably doesn't work (although the linking
+won't give an error message, Vim will crash later).</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">504</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="100">
+        <source>==============================================================================
+9. X11 selection mechanism				*x11-selection*</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">510</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="101">
+        <source>If using X11, in either the GUI or an xterm with an X11-aware Vim, then Vim
+provides varied access to the X11 selection and clipboard.  These are accessed
+by using the two selection registers "* and "+.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">513</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="102">
+        <source>X11 provides two basic types of global store, selections and cut-buffers,
+which differ in one important aspect: selections are "owned" by an
+application, and disappear when that application (e.g., Vim) exits, thus
+losing the data, whereas cut-buffers, are stored within the X-server itself
+and remain until written over or the X-server exits (e.g., upon logging out).</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">517</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="103">
+        <source>The contents of selections are held by the originating application (e.g., upon
+a copy), and only passed on to another application when that other application
+asks for them (e.g., upon a paste).</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">523</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="104">
+        <source>The contents of cut-buffers are immediately written to, and are then
+accessible directly from the X-server, without contacting the originating
+application.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">527</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="105">
+        <source>							*quoteplus* *quote+*
+There are three documented X selections: PRIMARY (which is expected to
+represent the current visual selection - as in Vim's Visual mode), SECONDARY
+(which is ill-defined) and CLIPBOARD (which is expected to be used for
+cut, copy and paste operations).</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">531</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="106">
+        <source>Of these three, Vim uses PRIMARY when reading and writing the "* register
+(hence when the X11 selections are available, Vim sets a default value for
+|'clipboard'| of "autoselect"), and CLIPBOARD when reading and writing the "+
+register.  Vim does not access the SECONDARY selection.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">537</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="107">
+        <source>Examples: (assuming the default option values)
+- Select an URL in Visual mode in Vim.  Go to a text field in Netscape and
+  click the middle mouse button.  The selected text will be inserted
+  (hopefully!).
+- Select some text in Netscape by dragging with the mouse.  Go to Vim and
+  press the middle mouse button: The selected text is inserted.
+- Select some text in Vim and do "+y.  Go to Netscape, select some text in a
+  textfield by dragging with the mouse.  Now use the right mouse button and
+  select "Paste" from the popup menu.  The selected text is overwritten by the
+  text from Vim.
+Note that the text in the "+ register remains available when making a Visual
+selection, which makes other text available in the "* register.  That allows
+overwriting selected text.
+							*x11-cut-buffer*
+There are, by default, 8 cut-buffers: CUT_BUFFER0 to CUT_BUFFER7.  Vim only
+uses CUT_BUFFER0, which is the one that xterm uses by default.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">542</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="108">
+        <source>Whenever Vim is about to become unavailable (either via exiting or becoming
+suspended), and thus unable to respond to another application's selection
+request, it writes the contents of any owned selection to CUT_BUFFER0.  If the
+"+ CLIPBOARD selection is owned by Vim, then this is written in preference,
+otherwise if the "* PRIMARY selection is owned by Vim, then that is written.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">559</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="109">
+        <source>Similarly, when Vim tries to paste from "* or "+ (either explicitly, or, in
+the case of the "* register, when the middle mouse button is clicked), if the
+requested X selection is empty or unavailable, Vim reverts to reading the
+current value of the CUT_BUFFER0.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">565</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="110">
+        <source>Note that when text is copied to CUT_BUFFER0 in this way, the type of
+selection (character, line or block) is always lost, even if it is a Vim which
+later pastes it.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">570</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="111">
+        <source>Xterm, by default, always writes visible selections to both PRIMARY and
+CUT_BUFFER0.  When it pastes, it uses PRIMARY if this is available, or else
+falls back upon CUT_BUFFER0.  For this reason, when cutting and pasting
+between Vim and an xterm, you should use the "* register.  Xterm doesn't use
+CLIPBOARD, thus the "+ doesn't work with xterm.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">574</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="112">
+        <source>Most newer applications will provide their current selection via PRIMARY ("*)
+and use CLIPBOARD ("+) for cut/copy/paste operations.  You thus have access to
+both by choosing to use either of the "* or "+ registers.</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">580</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit xml:space="preserve" id="113">
+        <source> vim:tw=78:sw=4:ts=8:ft=help:norl:</source>
+        <target></target>
+        <context-group name="po-reference" purpose="location">
+          <context context-type="sourcefile">gui_x11.txt</context>
+          <context context-type="linenumber">585</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
