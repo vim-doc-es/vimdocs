@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2011-05-14 19:11+0300\n"
 "PO-Revision-Date: 2011-05-14 19:11+0300\n"
-"Last-Translator: Automatically generated\n"
+"Last-Translator: Javier Rojas <jerojasro@devnull.li>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -533,8 +533,8 @@ msgid ""
 msgstr ""
 "La orden «:setlocal» se usa para cambiar el valor de 'iskeyword' únicamente "
 "en el búfer actual. Al hacer esto se está cambiando el comportamiento de "
-"órdenes como «w» y «*». Si no desea este efecto, no defina una palabra clave, "
-"sino una coincidencia (se explica en la siguiente sección.)"
+"órdenes como «w» y «*». Si no desea este efecto, defina una coincidencia en "
+"lugar de una palabra clave (se explica en la siguiente sección.)"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:136
@@ -545,11 +545,17 @@ msgid ""
 ">\n"
 "\t:syntax keyword xStatement n[ext]\n"
 msgstr ""
+"El lenguaje x permite abreviaciones. Por ejemplo, «n», «ne», o «nex» son\n"
+"abreviaturas válidas para «next» . Puede definirlas usando la siguiente orden:\n"
+">\n"
+"\t:syntax keyword xStatement n[ext]\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:138
 msgid "This doesn't match \"nextone\", keywords always match whole words only."
 msgstr ""
+"Dicha definición no coincide con «nextone», ya que las palabras clave "
+"coinciden únicamente con palabras completas."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:141
@@ -564,6 +570,10 @@ msgid ""
 "identifiers.  To do this, you define a match syntax item.  This one matches "
 "any word consisting of only lowercase letters: >"
 msgstr ""
+"Ahora considere una definición algo más compleja. Desea definir "
+"identificadores normales. Para hacerlo, debe definir un elemento de sintaxis "
+"de coincidencia. El elemento a continuación coincide con cualquier palabra "
+"que consista únicamente de letras en minúscula: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:153
@@ -577,6 +587,13 @@ msgid ""
 "\tcommands above, even though they also match the pattern for\n"
 "\txIdentifier.\n"
 msgstr ""
+"\t:syntax match xIdentifier /\\<\\l\\+\\>/\n"
+"<\n"
+"\tNota:\n"
+"\tLas palabras clave tienen precedencia sobre cualquier otro tipo de\n"
+"\telemento de sintaxis. Por este motivo las palabras clave «if», «then»,\n"
+"\tetc., serán consideradas palabras clave, aun cuando también coinciden\n"
+"\tcon el patrón de xIdentifier.\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:157
@@ -585,6 +602,9 @@ msgid ""
 "used to surround the pattern (like how it's done in a \":substitute\" "
 "command).  You can use any other character, like a plus or a quote."
 msgstr ""
+"El elemento final es un patrón, similar al que se usa para buscar texto. El "
+"// se usa para rodear el patrón (como se hace en la orden «:substitute»). "
+"Puede usar cualquier otro carácter, como el signo de suma o una comilla."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:160
@@ -592,13 +612,14 @@ msgid ""
 "Now define a match for a comment.  In the x language it is anything from # "
 "to the end of a line: >"
 msgstr ""
+"Defina ahora una coincidencia para un comentario. En el lenguaje x "
+"corresponde a todo el texto desde un # hasta el final de la línea: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:162
-#, fuzzy, no-wrap
-#| msgid "\t:set comments=://\n"
+#, no-wrap
 msgid "\t:syntax match xComment /#.*/\n"
-msgstr "\t:set comments=://\n"
+msgstr "\t:syntax match xComment /#.*/\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:165
@@ -606,6 +627,9 @@ msgid ""
 "Since you can use any search pattern, you can highlight very complex things "
 "with a match item.  See |pattern| for help on search patterns."
 msgstr ""
+"Como es posible usar un patrón de búsqueda, puede resaltar cosas bastante "
+"complejas usando elementos de coincidencia. Consulte |pattern| para obtener "
+"más ayuda respecto a los patrones de búsqueda."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:168
