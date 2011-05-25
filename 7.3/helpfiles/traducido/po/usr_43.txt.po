@@ -2,20 +2,22 @@
 # Copyright (C) 2011 Free Software Foundation, Inc.
 # This file is distributed under the same license as the Vim package.
 # Automatically generated, 2011.
-#
+# Omar Campagne <ocampagne@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2011-03-17 00:05+0100\n"
-"PO-Revision-Date: 2011-05-19 13:21-0500\n"
-"Last-Translator: Javier Rojas <jerojasro@devnull.li>\n"
+"PO-Revision-Date: 2011-05-25 22:44+0200\n"
+"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.0-rc1\n"
+"X-Project-Style: default\n"
 
 #. type: Plain text
 #: original/txt/intro.txt:18 original/txt/intro.txt:79
@@ -139,7 +141,8 @@ msgstr ""
 #: original/txt/usr_90.txt:494
 #, no-wrap
 msgid "==============================================================================\n"
-msgstr "==============================================================================\n"
+msgstr "============================================================================"
+"==\n"
 
 #. type: Plain text
 #: original/txt/usr_toc.txt:4 original/txt/usr_01.txt:4
@@ -232,8 +235,8 @@ msgid ""
 " Previous chapter: |usr_42.txt|  Add new menus\n"
 "Table of contents: |usr_toc.txt|\n"
 msgstr ""
-" Capítulo siguiente: |usr_44.esx|  Your own syntax highlighted\n"
-"  Capítulo anterior: |usr_42.esx|  Añadir nuevos menús\n"
+"    Capítulo siguiente: |usr_44.esx|  Your own syntax highlighted\n"
+"      Capítulo anterior: |usr_42.esx|  Añadir nuevos menús\n"
 "Tabla de contenidos: |usr_toc.esx|\n"
 
 #. type: Plain text
@@ -251,12 +254,12 @@ msgid ""
 "want to set the 'softtabstop' option to 4 and define a mapping to insert a "
 "three-line comment.  You do this with only two steps:"
 msgstr ""
-"La forma de activar las extensiones de tipo de archivo ya ha sido cubierta en "
-"|add-filetype-plugin|. Pero seguramente no está satisfecho con los valores de "
-"las opciones predeterminadas, porque éstas son mínimas. Suponga que para los "
-"archivos de C desea darle a 'softtabstop' el valor de 4, y definir una macro "
-"para insertar un comentario de tres líneas. Puede hacer esto en sólo dos "
-"pasos:"
+"La forma de activar las extensiones de tipo de archivo ya ha sido cubierta "
+"en |add-filetype-plugin|. Pero seguramente no está satisfecho con los "
+"valores de las opciones predeterminadas, porque éstas son mínimas. Suponga "
+"que para los archivos de C desea darle a 'softtabstop' el valor de 4, y "
+"definir una macro para insertar un comentario de tres líneas. Puede hacer "
+"esto en sólo dos pasos:"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:32
@@ -295,7 +298,8 @@ msgid ""
 "   your |vimrc| file if you don't like the default value.\n"
 msgstr ""
 "<   La convención es usar el primer directorio listado (antes de la primera\n"
-"    coma.) Si lo desea, también puede anteponer otro directorio al valor de la\n"
+"    coma.) Si lo desea, también puede anteponer otro directorio al valor de "
+"la\n"
 "    opción 'runtimepath' en su archivo |vimrc| si no le agrada el valor\n"
 "    predeterminado.\n"
 
@@ -383,9 +387,9 @@ msgid ""
 "to get it recognized.  You need a runtime directory of your own.  See |your-"
 "runtime-dir| above."
 msgstr ""
-"Si Vim no reconoce el tipo de archivo que está usando, esto es lo que debe "
-"hacer para corregir el problema. Necesita un directorio de tiempo de "
-"ejecución propio. Consulte |your-runtime-dir| anteriormente."
+"Si Vim no reconoce el tipo de archivo que está usando, siga los siguientes "
+"pasos para corregir el problema. Necesita un directorio de tiempo de "
+"ejecución propio. Consulte antes |your-runtime-dir|."
 
 #. type: Plain text
 #: original/txt/usr_43.txt:79
@@ -419,13 +423,13 @@ msgid ""
 "option to its argument, unless it was set already.  This will make sure that "
 "'filetype' isn't set twice."
 msgstr ""
-"Con esto se reconocerá a todos los archivos cuyo nombre termina en «.xyz» "
+"Con esto se reconocerán todos los archivos cuyo nombre termina en «.xyz» "
 "como del tipo «xyz». Las órdenes «:augroup» ubican esta orden automática en "
 "el grupo «filetypedetect» (detección de tipos de archivo). Esto permite "
 "eliminar todas las órdenes automáticas de detección de tipo de archivo al "
 "ejecutar «:filetype off». La orden «:setf» definirá la opción 'filetype' con "
 "el argumento que se le pase, a menos que ya esté definido. Esto asegura que "
-"'filetype' no sea definido más de una vez."
+"no se defina 'filetype' más de una vez."
 
 #. type: Plain text
 #: original/txt/usr_43.txt:95
@@ -436,8 +440,8 @@ msgid ""
 "have the expected file name extension.  Adding this to the example above: >"
 msgstr ""
 "Puede usar distintos patrones que coincidan con el nombre de su archivo. "
-"También es posible incluir nombres de directorios. Consulte "
-"|autocmd-patterns|.  Por ejemplo, suponga que todos los archivos en "
+"También es posible incluir nombres de directorios. Consulte |autocmd-"
+"patterns|.  Por ejemplo, suponga que todos los archivos en "
 "«/usr/share/scripts» son archivos «ruby», pero no tienen la extensión usual. "
 "Puede añadir la siguiente línea al ejemplo anterior: >"
 
@@ -482,6 +486,9 @@ msgid ""
 "\tau BufNewFile,BufRead *.txt\t\t\tsetf text\n"
 "\taugroup END\n"
 msgstr ""
+"\taugroup filetypedetect\n"
+"\tau BufNewFile,BufRead *.txt\t\t\tsetf text\n"
+"\taugroup END\n"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:114
@@ -489,8 +496,8 @@ msgid ""
 "That file is found in 'runtimepath' first.  Then use this in ~/.vim/after/"
 "filetype.vim, which is found last: >"
 msgstr ""
-"Este archivo aparece primero en 'runtimepath'. Y luego escriba la siguiente "
-"orden en «~/.vim/after/filetype.vim», que será cargado al final: >"
+"Este archivo aparece primero en 'runtimepath'. A continuación escriba la "
+"siguiente orden en «~/.vim/after/filetype.vim», que se cargará al final: >"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:118
@@ -523,26 +530,32 @@ msgid ""
 "checked.  Only the one for ruby matches and \"setf ruby\" sets 'filetype' to\n"
 "ruby.\n"
 msgstr ""
-"Ahora Vim buscará archivos llamados «filetype.vim» en cada directorio listado\n"
-"en 'runtimepath'. Primero encuentra «~/.vim/filetype.vim». Allí está definida\n"
+"Ahora Vim buscará archivos llamados «filetype.vim» en cada directorio "
+"listado\n"
+"en 'runtimepath'. Primero encuentra «~/.vim/filetype.vim». Allí está "
+"definida\n"
 "la orden automática para los archivos «*.txt». Luego Vim encuentra el\n"
 "«filetype.vim» que está en $VIMRUNTIME, más o menos a la mitad de\n"
 "'runtimepath'. Finalmente, se encuentra «~/.vim/after/filetype.vim», y se\n"
-"añade la orden automática para detectar archivos ruby en «/usr/share/scripts».\n"
+"añade la orden automática para detectar archivos ruby en "
+"«/usr/share/scripts».\n"
 "   Cuando edite «/usr/share/scripts/README.txt», se revisa las órdenes\n"
 "automáticas en el orden en que fueron definidas. El patrón «*.txt» coincide,\n"
 "así que se ejecuta la orden «setf text» para definir el tipo de archivo como\n"
-"«text» (texto). El patrón para archivos ruby también coincide, así que también\n"
+"«text» (texto). El patrón para archivos ruby también coincide, así que "
+"también\n"
 "se ejecuta «setf ruby». Pero como 'filetype' ya tiene el valor «text», no\n"
 "sucede nada.\n"
-"   Cuando edite el archivo «/usr/share/scripts/foobar» se revisarán las mismas\n"
-"órdenes automáticas. Sólo la de ruby coincide y «setf ruby» define 'filetype'\n"
+"   Cuando edite el archivo «/usr/share/scripts/foobar» se revisarán las "
+"mismas\n"
+"órdenes automáticas. Sólo la de ruby coincide y «setf ruby» define "
+"'filetype'\n"
 "a ruby.\n"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:136
 msgid "RECOGNIZING BY CONTENTS"
-msgstr "RECONOCIMIENTO POR CONTENIDO"
+msgstr "IDENTIFICACIÓN POR CONTENIDO"
 
 #. type: Plain text
 #: original/txt/usr_43.txt:140
@@ -552,7 +565,7 @@ msgid ""
 "line like:"
 msgstr ""
 "Si el tipo de su archivo no se puede identificar revisando el nombre del "
-"mismo, también tiene la posibilidad de reconocerlo revisando su contenido. "
+"mismo, también tiene la posibilidad de identificarlo revisando su contenido. "
 "Por ejemplo, muchos archivos de scripts empiezan con una línea como:"
 
 #. type: Plain text
@@ -567,8 +580,8 @@ msgid ""
 "To recognize this script create a file \"scripts.vim\" in your runtime "
 "directory (same place where filetype.vim goes).  It might look like this: >"
 msgstr ""
-"Para reconocer este script cree un archivo «scripts.vim» en su directorio de "
-"tiempo de ejecución (el mismo sitio en donde está «filetype.vim»). El "
+"Para identificar este script cree un archivo «scripts.vim» en su directorio "
+"de tiempo de ejecución (el mismo sitio en donde está «filetype.vim»). El "
 "contenido del archivo es similar a lo siguiente: >"
 
 #. type: Plain text
@@ -600,12 +613,14 @@ msgid ""
 "   The scripts.vim file is sourced by an autocommand in the default\n"
 "filetype.vim file.  Therefore, the order of checks is:\n"
 msgstr ""
-"La primera comprobación con «did_filetype()» evita que se revise el contenido\n"
+"La primera comprobación con «did_filetype()» evita que se revise el "
+"contenido\n"
 "de un archivo cuyo tipo ya fue detectado usando el nombre de archivo. Así se\n"
 "evita desperdiciar tiempo revisando el archivo cuando se sabe que la orden\n"
 "«setf» no tendrá ningún efecto.\n"
 "   El archivo «scripts.vim» es leído por una orden automática en el archivo\n"
-"«filetype.vim» predeterminado. Por consiguiente, el orden en que se hacen las\n"
+"«filetype.vim» predeterminado. Por consiguiente, el orden en que se hacen "
+"las\n"
 "comprobaciones es:\n"
 
 #. type: Plain text
@@ -631,13 +646,12 @@ msgid ""
 "and sources a script or executes a function to check the contents of the "
 "file."
 msgstr ""
-"Si estos mecanismos no son suficientes, puede añadir una orden automática que "
-"coincida con todos los archivos y lea un script o ejecute una función para "
-"revisar el contenido del archivo."
+"Si estos mecanismos no son suficientes, puede añadir una orden automática "
+"que coincida con todos los archivos y lea un script o ejecute una función "
+"para revisar el contenido del archivo."
 
 # TODO traducción título capítulo
 #. type: Plain text
 #: original/txt/usr_43.txt:172
 msgid "Next chapter: |usr_44.txt| Your own syntax highlighted"
 msgstr "Capítulo siguiente: |usr_44.txt| Your own syntax highlighted"
-
