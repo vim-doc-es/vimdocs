@@ -460,9 +460,9 @@ Acaba con dos líneas:
 	|Unfortunately for the programmer, |
 	+----------------------------------+
 
-Observe que esto no funciona si la línea de separación está en blanco pero
-no vacía; cuando contiene espacios y/o tabulados. Esta orden funciona con
-líneas en blanco:
+Tenga en cuenta que esto no funciona si la línea de separación está en blanco,
+pero no vacía; cuando contiene espacios y/o tabulados. Esta orden funciona
+con líneas en blanco:
 >
 	:g/\S/,/^\s*$/join
 

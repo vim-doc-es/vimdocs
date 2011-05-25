@@ -7,7 +7,8 @@
 
 Vim es un editor extensible. Puede tomar una secuencia de órdenes que usa
 regularmente, y transformarla en una nueva orden, o redefinir una orden
-existente. Las órdenes automáticas («Autocommands») lo permiten.
+existente. Las órdenes automáticas («Autocommands») permiten ejecutar
+órdenes de forma automática.
 
 |40.1|	Macros de teclado
 |40.2|	Definir órdenes de línea de órdenes
@@ -25,27 +26,27 @@ es que una secuencia de pulsaciones de tecla se traduce a otra secuencia de
 pulsaciones de tecla. Es un mecanismo sencillo pero poderoso.
    La forma más simple es asignar una tecla a una secuencia de teclas. Debido
 a que las teclas de función, a excepción de <F1>, no tienen un significado
-predete para Vim, son buenos candidatos a los que asignar teclas.
-Ejemplo: >
+predefinido para Vim, son buenas candidatas para definir macros. Ejemplo: >
 
-	:map <F2> GoDate: <Esc>:read !date<CR>kJ
+	:map <F2> GoFecha: <Esc>:read !date<CR>kJ
 
-Este ejemplo muestra como usar tres modos. Después de ir a la última línea
-con «G», la orden «o» crea una nueva línea e inicia el modo Insertar. El
-texto «Date:» se inserta, y <Esc> abandona el modo de inserción.
-   Tenga en cuenta el uso de teclas especiales dentro de <>. Se llaman
-corchetes agudos. Los teclea como caracteres distintos, y no pulsando
-la misma tecla. Esto hace que las macros sean más leíbles,
-permitiendo copiar y pegar el texto sin problema.
+Este ejemplo muestra como usar tres modos. Después de ir a la última línea con
+«G», la orden «o» crea una nueva línea e inicia el modo Insertar. Se inserta
+el texto «Date:», y <Esc> abandona el modo de inserción.
+   Tenga en cuenta la definición de teclas especiales dentro de <>. Se la
+denomina notación de corchetes agudos. Escribe el nombre de la tecla usando
+varios caracteres, en vez de pulsar la tecla referida. Esto hace que las
+macros sean más legibles, permitiendo copiar y pegar el texto de las mismas
+sin problema.
    El carácter «:» inicia la línea de órdenes de Vim. La orden «:read !date»
-lee la salida de la orden «date» y la añade bajo la línea actual. La orden
+lee la salida de la orden «date» (fecha) y la añade bajo la línea actual. El
 <CR> se requiere para ejecutar la orden «:read».
    En este punto, el texto tiene el siguiente aspecto:
 
-	Date:  ~
+	Fecha:  ~
 	Fri Jun 15 12:54:34 CEST 2001 ~
 
-Ahora, «kJ» desplaza el cursor hacia arriba y une las líneas.
+Ahora «kJ» desplaza el cursor hacia arriba y une las líneas.
    Para decidir qué teclas usar para las macros, consulte |map-which-keys|.
 
 
@@ -55,16 +56,16 @@ La orden «:map» define una macro a usar en modo Normal. También puede
 definir macros para otros modos. Por ejemplo, «imap» afecta al modo
 Insertar. Puede usarlo para insertar una fecha bajo el cursor: >
 
-	:imap <F2> <CR>Date: <Esc>:read !date<CR>kJ
+	:imap <F2> <CR>Fecha: <Esc>:read !date<CR>kJ
 
-Se parece mucho a la macro para <F2> en modo Normal, sólo el
-principio es diferente. La macro <F2> para el modo Normal aún existe.
-Puede asignar la misma tecla de forma diferente según el modo.
-   Tenga en cuenta que, aunque esta macro empieza en el modo Insertar,
-termina en modo Normal. Si desea continuar en modo Insertar, añada una
-«a» a la asignación.
+Se parece mucho a la macro para <F2> en modo Normal, sólo el principio es
+diferente. La macro <F2> para el modo Normal aún existe.  Puede asignar la
+misma tecla de forma diferente según el modo.
+   Tenga en cuenta que, aunque esta macro empieza en el modo Insertar, termina
+en modo Normal. Si desea continuar en modo Insertar, añada una «a» a la macro.
 
-Esta es una vista general de las órdenes «:map» y el modo en que funcionan:
+Esta es una vista general de las órdenes «:map» y los modos en que
+funcionan:
 
 	:map		Normal, Visual y Operator-pending
 	:vmap		Visual
@@ -74,29 +75,30 @@ Esta es una vista general de las órdenes «:map» y el modo en que funcionan:
 	:imap		Insertar
 	:cmap		Línea de órdenes
 
-El modo Operator-pending es cuando introduce un carácter como operador, por
-ejemplo «y» o «d», y se espera a que introduzca la orden de desplazamiento o
-un objeto de texto. Por ello, cuando teclea «dw», la «w» es introducida en
-el modo Operator-pending
+El modo Operator-pending es aquel al que se entra al aplicar un operador
+introduciendo el carácter correspondiente al mismo, por ejemplo «y» o «d», y
+se espera a que se indique una orden de desplazamiento o un objeto de
+texto. Por ello, cuando teclea «dw», la «w» es introducida en el modo
+Operator-pending
 
 Suponga que desea definir <F7> para que la orden «d<F7>» elimine el bloque
-de un programa escrito en C (el texto se cierra con llaves, {}). De forma
+de un programa escrito en C (el texto encerrado con llaves, {}). De forma
 similar «y<F7>» copiaría el bloque del programa al registro sin nombre. Por
 ello, lo que debe hacer es definir <F7> para seleccionar el bloque actual
 del programa. La siguiente orden le permite hacer esto: >
 
 	:omap <F7> a{
 
-Esto provoca que <F7> realice una selección  de bloque «a{» en el modo
+Esto hace que <F7> realice una selección de bloque «a{» en el modo
 Operator-pending, justo como lo escribió. Esta macro es útil si teclear «a{»
 en su teclado es difícil.
 
 
 LISTAR MACROS
 
-Para ver las macros definidas en el momento presente, use «:map» sin
-argumentos, o una de las variantes que incluyen el modo en que funcionan. La
-salida podría ser similar a esta:
+Para ver las macros definidas actualmente, use «:map» sin argumentos. O una
+de las variantes que incluyen el modo en que funcionan. La salida de dicha
+orden es similar a ésta:
 
 	   _g		 :call MyGrep(1)<CR> ~
 	v  <F2>		 :s/^/> /<CR>:noh<CR>`` ~
@@ -107,13 +109,13 @@ salida podría ser similar a esta:
 
 La primera columna de la lista muestra el modo en el que la macro tiene
 efecto. Esto es, «n» para el modo Normal, «i» para el modo Insertar, etc... Se
-usa un espacio en blanco con las macros definidas mediante «:map», y por
-ello, con efecto en el modo Visual y Normal.
+usa un espacio en blanco con las macros definidas mediante «:map», y por ello,
+con efecto en el modo Visual y Normal.
    Un propósito útil de listar las macros es comprobar si se han reconocido
-las teclas especiales con la forma <> (sólo funciona con compatibilidad con
+las teclas especiales de la forma <> (sólo funciona con compatibilidad con
 color). Por ejemplo, cuando <Esc> se muestra en color, simboliza el carácter
-de escape. Cuando tiene el mismo color que el resto del texto, simboliza
-cinco caracteres.
+de escape. Cuando tiene el mismo color que el resto del texto, simboliza cinco
+caracteres.
 
 
 REASIGNACIÓN DE MACROS
@@ -124,12 +126,12 @@ acortar: >
 
 	:map <F2> G<F3>
 	:imap <F2> <Esc><F3>
-	:map <F3>  oDate: <Esc>:read !date<CR>kJ
+	:map <F3>  oFecha: <Esc>:read !date<CR>kJ
 
-En modo Normal, <F2> tiene un macro para ir a la última línea, y después
+En modo Normal, <F2> tiene una macro para ir a la última línea, y después
 comportarse como si se hubiese pulsado <F3>. En modo Insertar, <F2> detiene
-el modo Insertar con <Esc>, y después usa también <F3>. Por ello, se usa la
-macro de <F3> para el trabajo real.
+el modo Insertar con <Esc>, y después usa también <F3>. <F3> tiene una macro
+que se encarga de hacer el trabajo real.
 
 Suponga que apenas usa el modo Ex, y desea usar la orden «Q» para formatear
 texto (este era el comportamiento en versiones anteriores de Vim). Esta
@@ -142,48 +144,47 @@ para que así pueda ir la modo Ex: >
 
 	:map gQ Q
 
-Lo que ocurre ahora es que cuando escribe «gQ», se asigna a la «Q». Por
-ahora, todo bien. Pero, a continuación, asigna «Q» a «gq», y por ello escribir
-«gQ» resulta en «gq», y no entra en modo Ex.
-   Para evitar que las claves se asignen otra vez, utilice la orden
-«:noremap»: 
+Lo que ocurre ahora es que cuando escribe «gQ», se asigna a la «Q». Por ahora,
+todo bien. Pero, a continuación, asigna «Q» a «gq», y por ello escribir «gQ»
+resulta en «gq», y no entra en modo Ex.
+   Para evitar que las teclas se asignen de nuevo, utilice la orden
+«:noremap»: >
 
 	:noremap gQ Q
 
-Ahora Vim sabe que no se puede analizar «Q» en busca de macros que le
+Ahora Vim sabe que no debe analizar «Q» en busca de macros que le
 afecten. Existe una orden similar para cada modo:
 
-	:noremap		Normal, Visual y Operator-pending
+	:noremap	Normal, Visual y Operator-pending
 	:vnoremap	Visual
 	:nnoremap	Normal
 	:onoremap	Operator-pending
-	:noremap!		Insertar y Línea de órdenes
-	:inoremap		Insertar
+	:noremap!	Insertar y Línea de órdenes
+	:inoremap	Insertar
 	:cnoremap	Línea de órdenes
 
 
 MACROS RECURSIVAS
 
-Cuando una macro se activa, se ejecutará indefinidamente. Puede
+Cuando una macro se activa a sí misma, se ejecutará indefinidamente. Puede
 usar esto para repetir una acción un número ilimitado de veces.
-   Por ejemplo, tiene una lista de archivos que contienen un número de
-versión en la primera línea. Después, edita estos archivos con «vim.txt».
-Ahora está editando el primer archivo. Defina esta macro: >
+   Por ejemplo, tiene una lista de archivos que contienen un número de versión
+en la primera línea. Después, edita estos archivos con «vim *.txt».  Ahora
+está editando el primer archivo. Defina esta macro: >
 
 	:map ,, :s/5.1/5.2/<CR>:wnext<CR>,,
 
-Ahora introduce «,,», iniciando la macro. Reemplaza «5.1» con «5.2»
-en la primera línea. A continuación, ejecuta «:wnext» para guardar el
-archivo y editar el siguiente. La macro termina con «,,», iniciando la
-macro una vez más, llevando a cabo la sustitución.
-   Continua hasta encontrar un error. En tal caso, podría ser un archivo
-que no contiene ninguna coincidencia con el patrón de sustitución, «5.1».
-Puede hacer un cambio para insertar «5.1» para continuar tecleando «,,»
-otra vez. La orden «:wnext» puede devolver error si está en el último
+Ahora introduce «,,», iniciando la macro. Reemplaza «5.1» con «5.2» en la
+primera línea. A continuación, ejecuta «:wnext» para guardar el archivo y
+editar el siguiente. La macro termina con «,,», iniciando la macro una vez
+más, llevando a cabo la sustitución, etc.
+   Este proceso continúa hasta encontrar un error. En este caso, podría ser un
+archivo que no contiene ninguna coincidencia con el patrón de sustitución,
+«5.1». Puede hacer un cambio para insertar «5.1» y continuar tecleando «,,»
+otra vez. O, la orden «:wnext» puede devolver error si está en el último
 archivo de la lista.
-   Cuando una macro detecta un error durante el proceso, se descarta
-el resto de la asignación. «CTRL-C» interrumpe la macro («CTRL-ins»
-en Windows).
+   Cuando una macro detecta un error durante el proceso, se descarta el resto
+de la misma. «CTRL-C» interrumpe la macro («CTRL-Ins» en Windows).
 
 
 BORRAR UNA MACRO
@@ -199,8 +200,8 @@ que actúa la eliminación de la macro depende de la orden usada:
 	:iunmap		Insertar
 	:cunmap		Línea de órdenes
 
-Dispone de un truco para definir una macro que funciona tanto modo
-Operator-pending como normal, pero no en modo visual. Primero, defina la
+Dispone de un truco para definir una macro que funcione tanto en modo
+Operator- pending como Normal, pero no en modo Visual. Primero, defina la
 macro para los tres modos, y después borre la macro del modo Visual: >
 
 	:map <C-A> /---><CR>
@@ -209,64 +210,64 @@ macro para los tres modos, y después borre la macro del modo Visual: >
 Tenga en cuenta que los cinco caracters «<C-A>» representan una única tecla,
 «CTRL-A».
 
-Use la orden |:mapclear| para eliminar todas las macros. Ahora puede
-averiguar las variantes según el modo. Tenga cuidado con esta orden, ya que
-su acción no se puede deshacer.
+Use la orden |:mapclear| para eliminar todas las macros. A estas alturas
+puede adivinar las variantes disponibles para los distintos modos. Tenga
+cuidado con esta orden, ya que su acción no se puede deshacer.
 
 
 CARACTERES ESPECIALES
 
 La orden «:map» puede ir seguida de otra orden. Un carácter «|» separa ambas
-órdenes. Esto también significa que no puede usar un carácter «|» dentro
-de una orden «map». Para incluir uno, use <Bar> (cinco caracteres). Ejemplo: >
+órdenes. Esto también significa que no puede usar un carácter «|» dentro de
+una orden «map». Para incluir uno, use <Bar> (cinco caracteres). Ejemplo: >
 :map <F8> :write <Bar> !checkin %<CR>
 
-El mismo problema afecta a la orden «:unmap», con la adición de que debe
-tener cuidado con espacio vacío adicional al final de la línea. Estas dos
+El mismo problema afecta a la orden «:unmap», con la adición de que debe tener
+cuidado con espacios vacíos adicionales al final de la línea. Estas dos
 órdenes son diferentes: >
 	:unmap a | unmap b
 	:unmap a| unmap b
 
-La primera orden intenta eliminar la macro de «a», con un espacio adicional.
+La primera orden intenta eliminar la macro de «a », con un espacio
+adicional.
 
 Al usar un espacio en una macro, use <Space> (siete caracteres): >
 
 	:map <Space> W
 
-Esto hace que la barra espaciador avance una palabra separada por espacios.
+Esto hace que la barra de espacio avance una palabra separada por espacios.
 
 No es posible insertar un comentario justo antes de una macro, ya que el
 carácter «"» se considera parte de la macro. Puede usar «|"», iniciando una
-nueva y vacía orden con un comentario. Ejemplo: >
+nueva orden, vacía, con un comentario. Ejemplo: >
 
-	:map <Space> W|     " Usa la barra espaciadora para avanzar un palabra
+	:map <Space> W|     " Usa la barra de espacio para avanzar un palabra
 
 
 MACROS Y ABREVIATURAS
 
-Las abreviaturas se parecen mucho a las macros del modo Insetar. Los
-argumentos se tratan de la misma forma. La diferencia principal es la
-forma en que se ejecutan. Una abreviatura se inicia tecleando un
-carácter que no sea una palabra, a continuación de una palabra. Una
-macro se inicia al teclear el último carácter.
-   Otra diferencia es que los caracteres que usa para una abreviatura
-se insertan en el texto mientras los teclea. Al ejecutar la abreviatura,
-estos caracteres se eliminan y reemplazan por el resultado de la
-abreviatura. Al teclear los caracteres de una macro, no se inserta nada
-hasta que introduce el último carácter que lo inicia. Si se define la
-opción 'showcmd', los caracteres tecleados se muestran en la última
-línea de la ventana de Vim.
+Las abreviaturas se parecen mucho a las macros del modo Insertar. Los
+argumentos se tratan de la misma forma. La diferencia principal es la forma en
+que se ejecutan. Una abreviatura se inicia tecleando un carácter que no sea
+una palabra, a continuación de una palabra. Una macro se inicia al teclear el
+último carácter.
+   Otra diferencia es que los caracteres que usa para una abreviatura se
+insertan en el texto mientras los teclea. Al ejecutar la abreviatura, estos
+caracteres se eliminan y reemplazan por el resultado de la abreviatura. Al
+teclear los caracteres de una macro, no se inserta nada hasta que introduce el
+último carácter que la inicia. Si la opción 'showcmd' está definida, los
+caracteres tecleados se muestran en la última línea de la ventana de Vim.
    Una excepción es cuando la macro es ambigua. Suponga que tiene
 dos macros: >
 
 	:imap aa foo
 	:imap aaa bar
 
-Ahora, cuando escribe «aa», Vim no sabe si afecta a la primera o segunda
-macro. Espera a que se introduzca otro carácter. Si es una «a», se ejecuta
-la segunda macro, y cuyo resultado es «bar». Si es un espacio, por ejemplo,
-se ejecuta la primera macro, resultando en «foo», para después insertar el
-espacio.
+Ahora, cuando escribe «aa», Vim no sabe si corresponde a la primera o a la
+segunda macro. Espera a que se introduzca otro carácter. Si es una «a», se
+ejecuta la segunda macro, cuyo resultado es «bar». Si es un espacio, por
+ejemplo, se ejecuta la primera macro, resultando en «foo», para después
+insertar el espacio.
 
 
 ADEMÁS...
@@ -278,10 +279,10 @@ La palabra clave <buffer> se puede usar para que una macro sea local a un
 búfer específico. Consulte |:map-<buffer>|.
 
 La palabra clave <unique> se puede usar para que definir una macro nueva
-falle cuando ya existe. De lo contrario, una nueva macro sencillamente
-sobreescribe el antiguo. Consulte |:map-<unique>|.
+falle cuando ésta ya existe. En caso contrario, una nueva macro
+sencillamente sobreescribe la preexistente. Consulte |:map-<unique>|.
 
-Para que una tecla no haga nada, asígnelo a <Nop> (cinco caracteres). Lo
+Para que una tecla no haga nada, asígnela a <Nop> (cinco caracteres). Lo
 siguiente hace que la tecla <F7> no tenga efecto alguno: >
 
 	:map <F7¡> <Nop>| map! <F7> <Nop>
@@ -293,18 +294,17 @@ No debe haber ningún espacio después de <Nop>.
 
 El editor Vim le permite crear sus propias órdenes. Puede ejecutar estas
 órdenes como cualquier otra orden del modo Línea de órdenes.
-   Para definir una orden, use la orden «:command» de la siguiente
-forma: >
+   Para definir una orden, use la orden «:command» de la siguiente forma: >
 
-	:command DeleteFirst 1delete
+	:command BorrarPrimera 1delete
 
-Ahora, cuando ejecuta la orden «DeleteFirst», Vim ejecuta «:1delete», que
+Ahora, cuando ejecuta la orden «BorrarPrimera», Vim ejecuta «:1delete», que
 elimina la primera línea.
 
 	Nota:
 	Las órdenes definidas por el usuario deben comenzar con una letra
-	mayúscula. No puede usar «:X», «:Next» y «:Print». ¡No puede usar el
-	guión bajo. Puede usar dígitos, pero no se recomienda.
+	mayúscula. No puede usar «:X», «:Next» ni «:Print». ¡No puede usar el
+	guión bajo! Puede usar dígitos, pero no se recomienda.
 
 Use la siguiente orden para listar las órdenes de usuario: >
 
@@ -312,18 +312,18 @@ Use la siguiente orden para listar las órdenes de usuario: >
 
 Al igual que las órdenes integradas, las órdenes definidas por el usuario se
 pueden abreviar. Necesita teclear lo justo para distinguir una orden de
-otra. El autocompletado de línea de órdenes se puede usar para obtener el
+otra. Puede usar el autocompletado de línea de órdenes para obtener el
 nombre completo.
 
 
 NÚMERO DE ARGUMENTOS
 
-Las órdenes definidas por el usuario aceptan una serie de argumentos. El
-número de argumentos se debe especificar con la opción «-nargs». Por
-ejemplo, la orden de ejemplo «DeleteFirst» no permite argumentos, así que lo
-debe definir del siguiente modo: >
+Las órdenes definidas por el usuario pueden tomar una serie de
+argumentos. El número de argumentos se debe especificar con la opción
+«-nargs». Por ejemplo, la orden de ejemplo «BorrarPrimera» no permite
+argumentos, así que la debe definir del siguiente modo: >
 
-	:command -nargs=0 DeleteFirst 1delete
+	:command -nargs=0 BorrarPrimera 1delete
 
 Sin embargo, ya que cero argumentos es el comportamiento predeterminado, no
 necesita añadir «-nargs=0». A continuación puede ver los otros valores de
@@ -341,66 +341,68 @@ USAR ARGUMENTOS
 Dentro de la definición de la orden, los argumentos se representan con la
 palabra clave <args>. Por ejemplo: >
 
-	:command -nargs=+ Say :echo "<args>"
+	:command -nargs=+ Decir :echo "<args>"
 
 Ahora, cuando escribe >
 
-	:Say Hello World
+	:Decir Hola Mundo
 
-Vim muestra «Hello World». Sin embargo, no funcionará si añade una comilla
+Vim muestra «Hola Mundo». Sin embargo, no funcionará si añade una comilla
 doble. Por ejemplo: >
 
-	:Say he said "hello"
+	:Decir él dijo "hola"
 
 Para que los caracteres especiales se conviertan en una cadena,
 correctamente escapada para usarla como expresión, use «<q-args>»: >
 
-	:command -nargs=+ Say :echo <q-args>
+	:command -nargs=+ Decir :echo <q-args>
 
-Ahora, la anterior orden «:Say» resultará en lo siguiente al ejecutarse: >
+Ahora, la anterior orden «:Decir» resultará en lo siguiente al ejecutarse: >
 
-	:echo "he said \"hello\""
+	:echo "él dijo \"hola\""
 
-La palabra clave <f-args> contiene la misma información que la palabra
-clave <args>, pero en un formato adecuado para usar argumentos que
-invocan funciones. Por ejemplo: >
-	:command -nargs=* DoIt :call AFunction(<f-args>)
-	:DoIt a b c
+La palabra clave <f-args> contiene la misma información que la palabra clave
+<args>, pero en un formato adecuado para usar como argumentos para invocación
+de funciones. Por ejemplo:
+>
+	:command -nargs=* Ejecutar :call UnaFuncion(<f-args>)
+	:Ejecutar a b c
 
 Ejecuta la siguiente orden: >
 
-	:call AFunction("a", "b", "c")
+	:call UnaFuncion("a", "b", "c")
 
 
-RANGO DE LÍNEA
+RANGOS DE LÍNEA
 
 Algunas órdenes toman un rango como argumento. Para indicar a Vim que está
 definiendo una orden así, debe especificar una opción «-range». A
 continuación puede ver los valores de esta opción:
 
 	-range		El rango está permitido, el valor
-				predeterminado es la línea actual.
+			predeterminado es la línea actual.
 	-range=%	El rango está permitido, el valor
-				predeterminado es el archivo completo.
+			predeterminado es el archivo completo.
 	-range={número}	El rango está permitido, el último número
-				presente se usa como un sólo número cuyo valor
-				predeterminado es {número}.
+			presente se usa como un sólo número cuyo valor
+			predeterminado es {número}.
 
-Cuando un rango se especifica, las palabras clave <line1> y <line2> obtienen
-el valor de la primera y última línea del rango. Por ejemplo, la siguiente
-orden define la orden «SaveIt», que escribe el rango especificado al archivo
-«save_file»: >
+Cuando se especifica un rango, las palabras clave <line1> y <line2> obtienen
+el valor de la primera y la última línea del rango. Por ejemplo, la
+siguiente orden define la orden «Guardalo», que escribe el rango
+especificado al archivo «archivo_guardado»: >
 
-	:command -range=% SaveIt :<line1>,<line2>write! save_file
+	:command -range=% Guardalo :<line1>,<line2>write! archivo_guardado
 
 
 OTRAS OPCIONES
 
 A continuación puede ver algunas de las otras opciones y palabras clave:
 
-	-count={número}		La orden acepta un cómputo cuyo valor
-				predeterminado es {número}. El cómputo resultante
-				se puede usar con la palabra clave <count>.
+	-count={número}		La orden acepta un número cuyo valor
+				predeterminado es {número}. El número
+				resultante se puede usar con la palabra clave
+				<count>.
 	-bang			Puede usar «!».  Si está presente, usar <bang>
 				resultará en «!».
 	-register		Puede definir un registro. (El registro
@@ -422,13 +424,13 @@ REDEFINIR Y ELIMINAR
 
 Use el argumento «!» para redefinir la misma orden: >
 
-	:command -nargs=+ Say :echo "<args>"
-	:command! -nargs=+ Say :echo <q-args>
+	:command -nargs=+ Decir :echo "<args>"
+	:command! -nargs=+ Decir :echo <q-args>
 
 Use «:delcommand» para eliminar una orden de usuario. Toma un único
 argumento, el nombre de la orden. Ejemplo: >
 
-	:delcommand SaveIt
+	:delcommand Guardalo
 
 Para eliminar todas las órdenes de usuario: >
 
@@ -439,66 +441,64 @@ Para eliminar todas las órdenes de usuario: >
 Puede encontrar más detalles en el manual de referencia: |user-commands|.
 
 ==============================================================================
-*40.3*	Autocommands
+*40.3*	Órdenes automáticas
 
 Una orden automática (Autocommand) es una orden a ejecutar en respuesta otro
-evento, un archivo siendo leído y editado o un cambio en un búfer, por
-ejemplo. Por ejemplo, Vim puede editar archivos comprimidos a través de las
-órdenes automáticas.
-La extensión |gzip| hace uso de esto.
-   Las órdenes automáticas son muy potentes. Úselos con cuidado, y le ayudarán
-a disminuir el número de órdenes que introduce. Úselos sin cuidado, y
+evento, como por ejemplo la lectura o edición de un archivo, o un cambio en un
+búfer.  Por ejemplo, Vim puede editar archivos comprimidos a través de las
+órdenes automáticas.  La extensión |gzip| hace uso de esto.
+   Las órdenes automáticas son muy potentes. Úselas con cuidado, y le ayudarán
+a disminuir el número de órdenes que introduce. Úselas sin cuidado, y
 generarán un gran número de problemas.
 
 Suponga que desea reemplazar una marca de tiempo al final del archivo cada
-vez que se escriba. Primero, define una función: >
+vez que lo guarde. Primero, defina una función: >
 
-	:function DateInsert()
+	:function InsertarFecha()
 	:  $delete
 	:  read !date
 	:endfunction
 
 Desea que esta función se invoque justo antes de guardar un archivo.  Lo
-siguiente lo logra este objetivo: >
+siguiente logra este objetivo: >
 
-	:autocmd FileWritePre *  call DateInsert()
+	:autocmd FileWritePre *  call InsertarFecha()
 
 «FileWritePre» es el evento que activa esta orden automática. Justo
-antes de (pre) guardar un archivo. El carácter «*» es el patrón con el que
+antes (pre) de guardar un archivo. El carácter «*» es el patrón con el que
 comparar el nombre del archivo. En este caso, coincide con todos los
 archivos.
-   Si activa esta orden, al ejecutar «:write» Vim comprobará cualquier
-orden automática que coincida con «FileWritePre», ejecutándolo,
-para finalizar realizando la acción «:write».
+   Si activa esta orden, al ejecutar «:write» Vim comprobará todas las órdenes
+automáticas «FileWritePre» para las que haya coincidencia, ejecutándolas, para
+finalizar realizando la acción «:write».
   A continuación tiene la forma habitual de la orden «:autocmd»: >
 
-	:autocmd [grupo] {eventos} {patrón_archivo} [anidado] {orden}
+	:autocmd [group] {eventos} {patrón_archivo} [nested] {orden}
 
-El elemento [grupo] es opcional. Se usa al gestionar e invocar las órdenes
-(más información más adelante). El parámetro {eventos} es una lista separada
- por comas de eventos que inician la orden.
+El elemento [group] (grupo) es opcional. Se usa al gestionar e invocar las
+órdenes (más información más adelante). El parámetro {eventos} es una lista
+separada por comas de eventos que inician la orden.
   {patrón_archivo} es un nombre de archivo, a menudo con comodines. Por
 ejemplo, usar «*.txt» provoca que la orden automática afecte a todos los
-archivos cuyo nombre termina en «.txt».
-La elemento opcional [anidado] permite anidar órdenes automáticas (a
-continuación), y, por último, {orden} es la orden a ejecutar.
+archivos cuyo nombre termina en «.txt».  El elemento opcional [nested]
+(anidado) permite anidar órdenes automáticas (ver a continuación), y, por
+último, {orden} es la orden a ejecutar.
 
 
 EVENTOS
 
-Uno de los eventos más útiles es «BufReadPost». Se inicia después de editar
-un nuevo archivo. Se usa habitualmente para definir valores para
-opciones. Por ejemplo, sabe que los archivos «.gsm» están escritos en
-lenguaje ensamblador de GNU. Especifique esta orden para obtener la adecuada
-sintaxis de archivo: >
+Uno de los eventos más útiles es «BufReadPost». Se inicia después de iniciar
+la edición de un nuevo archivo. Se usa habitualmente para definir valores
+para opciones.  Por ejemplo, sabe que los archivos «.gsm» están escritos en
+lenguaje ensamblador de GNU. Especifique esta orden para obtener la sintaxis
+de archivo adecuada: >
 
 	:autocmd BufReadPost *.gsm  set filetype=asm
 
 Si Vim es capaz de detectar el tipo de archivo, definirá la opción
-'filetype' automáticamente. Los siguiente incia el evento «Filetype». Puede
-usarlo para iniciar una acción al editar un tipo de archivo en
-particular. Por ejemplo, para cargar una lista de abreviaturas de archivos
-de texto: >
+'filetype' automáticamente. Esto provoca el evento «Filetype». Puede usarlo
+para iniciar una acción al editar un tipo de archivo en particular.  Por
+ejemplo, para cargar una lista de abreviaturas para archivos de texto: >
 
 	:autocmd Filetype text  source ~/.vim/abbrevs.vim
 
@@ -513,7 +513,7 @@ Consulte |autocmd-events| para una lista completa de eventos.
 PATRONES
 
 El argumento {patrón_archivo] puede ser una lista separada por comas de
-patrones de archivo. Por ejemplo, "*.c,*.h" coincide con los archivos
+patrones de archivo. Por ejemplo, «*.c,*.h» coincide con los archivos
 terminados en «.c» y «.h».
    Puede usar los comodines de archivo habituales. Aquí tiene un resumen
 de los más usados:
@@ -524,18 +524,17 @@ de los más usados:
 	.		Busca un punto
 	a{b,c}		Busca «ab» y «ac»
 
-Cuando el patrón incluye una barra inversa «/», Vim comparará los
-nombres de directorio. Sin la barra, sólo se usará la última parte
-del nombre de archivo. Por ejemplo, «*.txt» coincide con
-«/home/biep/readme.txt». El patrón «/home/biep/*» también
-coincidiría, pero no «home/foo/*.txt».
+Cuando el patrón incluye una barra «/», Vim comparará los nombres de
+directorio. Sin la barra, sólo se usará la última parte del nombre de archivo.
+Por ejemplo, «*.txt» coincide con «/home/biep/leame.txt». El patrón
+«/home/biep/*» también coincidiría, pero no «home/foo/*.txt».
    Al incluir la barra, Vim compara el patrón con la ruta absoluta del
-archivo, «/home/biep/readme.txt» y con la ruta relativa, esto es,
-«biep/readme.txt»).
+archivo, «/home/biep/leame.txt» y con la ruta relativa, esto es,
+«biep/leame.txt»).
 
 	Nota:
 	Al trabajar con un sistema que usa la barra inversa como separador de
-	archivos, como MS-Windows, necesita una barra inclinada en las
+	archivos, como MS-Windows, es necesario usar la barra inclinada en las
 	órdenes automáticas. Esto facilita escribir un patrón, ya que la barra
 	inversa tiene un significado especial. También hace portables las
 	órdenes automáticas.
@@ -548,18 +547,18 @@ definió, pero omitiendo la {orden} al final y usando «!». Ejemplo: >
 
 	:autocmd! FileWritePre *
 
-Esto eliminaría todas las órdenes automáticas para el evento «FileWritePre»
+Esto eliminará todas las órdenes automáticas para el evento «FileWritePre»
 que usan el patrón «*».
 
 
 LISTAR
 
 Use la siguiente orden para listar todas las órdenes automáticas definidas
-en ese  momento: >
+actualmente: >
 
 	:autocmd
 
-Esta lista puede ser muy largo, en particular si se utiliza la detección de
+Esta lista puede ser muy larga, en particular si se utiliza la detección de
 tipo de archivo. Para listar sólo parte de las órdenes, especifique el
 grupo, evento y/o patrón. Por ejemplo, para listar todas las órdenes
 automáticas para «BufNewFile»: >
@@ -578,12 +577,12 @@ Usar «*» como el evento lista todos los eventos. Para listar todas las
 
 GRUPOS
 
-El elemento {grupo}, usado al definir una orden automática, agrupa
-órdenes automáticas relacionadas. Se puede usar para eliminar todas las
-órdenes automáticas en un grupo particular, por ejemplo.
+El elemento {grupo}, usado al definir una orden automática, agrupa órdenes
+automáticas relacionadas. Se puede usar para eliminar todas las órdenes
+automáticas en un grupo particular, por ejemplo.
    Al definir varias órdenes automáticas para un grupo particular, use la
-orden «:augroup». Por ejemplo, vamos a definir unas órdenes automáticas
-para programas C: >
+orden «:augroup». Por ejemplo, definamos unas órdenes automáticas para
+programas C: >
 
 	:augroup cprograms
 	:  autocmd BufReadPost *.c,*.h :set sw=4 sts=4
@@ -603,15 +602,15 @@ Para eliminar todas las órdenes automáticas en el grupo «cprograms»: >
 ANIDADO
 
 Habitualmente, las órdenes ejecutadas como resultado de un evento de orden
-automática no iniciarán ningún evento nuevo. Si lee un archivo como
-respuesta a un evento «FileChangedShell», no iniciará las órdenes
-automáticas que definirían la sintaxis, por ejemplo. Para que se los eventos
-se inicien, añada el argumento «nested»: >
+automática no iniciarán ningún evento nuevo. Por ejemplo, si lee un archivo
+como respuesta a un evento «FileChangedShell», no se iniciarán las órdenes
+automáticas que definirían la sintaxis. Para que se los eventos se inicien,
+añada el argumento «nested»: >
 
 	:autocmd FileChangedShell * nested  edit
 
 
-EJECUTAR AUTOCOMMANDS
+EJECUTAR ÓRDENES AUTOMÁTICAS
 
 Es posible iniciar una orden automática simulando un evento. Es útil para
 que una orden automática inicie otra. Ejemplo: >
@@ -620,12 +619,12 @@ que una orden automática inicie otra. Ejemplo: >
 
 Esto define una orden automática que se inicia al editar un nuevo
 archivo. El nombre de archivo debe terminar con «.new». La orden «:execute»
-usa expresiones de evaluación para formar una nueva orden y ejecutarla. La
+usa evaluación de expresiones para formar una orden nueva y ejecutarla. La
 orden ejecutada al editar el archivo «prueba.c.new» sería: >
 
 	:doautocmd BufReadPost tryout.c
 
-La función expand() toma un arguemnto «<afile>», que simboliza el nombre de
+La función expand() toma el argumento «<afile>», que simboliza el nombre de
 archivo para el que se inició la orden automática, y toma la raíz del nombre
 archivo con «:r».
 
@@ -642,19 +641,18 @@ de órdenes. Si desea usar una orden del modo normal, puede usar la orden
 	:autocmd BufReadPost *.log normal G
 
 Esto hará que el cursor salte a la última línea de archivos «*.log» cuando
-empieza a editarlo.
+empiece a editarlos.
    Usar la orden «:normal» es un poco difícil. Primero, compruebe que su
-argumento es una orden completa, incluyendo todos los argumentos.
-Cuando usa una «i» para entrar el modo Insertar, también debe tener un
-<Esc> para abandonar el modo Insertar. Si usa «/» para iniciar una búsqueda
-de un patrón, debe usar <CR> para ejecutarlo.
-   La orden «:normal» usa todo el texto a continuación como órdenes. Por
-ello, no debe estar presente «|» y una orden a continuación. Para solucionar
-este problema, ubique la orden «:normal» dentro de una orden «:execute».
-También posibilita pasar caracteres no imprimibles de una forma
-cómoda. Ejemplo: >
+argumento es una orden completa, incluyendo todos los argumentos.  Cuando usa
+una «i» para entrar el modo Insertar, también debe tener un <Esc> para
+abandonar el modo Insertar. Si usa «/» para iniciar una búsqueda de un patrón,
+debe usar <CR> para ejecutarlo.
+   La orden «:normal» usa todo el texto a continuación como órdenes. Por ello,
+no debe estar presente «|» y una orden a continuación. Para solucionar este
+problema, ubique la orden «:normal» dentro de una orden «:execute».  También
+posibilita pasar caracteres no imprimibles de una forma cómoda. Ejemplo: >
 
-	:autocmd BufReadPost *.chg execute "normal ONew entry:\<Esc>" |
+	:autocmd BufReadPost *.chg execute "normal ONueva entrada:\<Esc>" |
 		\ 1read !date
 
 Esto también muestra el usa de la barra inversa para dividir una orden en

@@ -121,10 +121,10 @@ sobre todos los archivos en la lista de argumentos.
    La orden de sustitución «%s» a continuación afecta a todas las líneas.
 Busca la palabra «x_cnt» con «\<x_cnt\>». Los «\<» y «\>» se usan para
 encontrar sólo la palabra completa, y no «px_cnt» o «x_cnt2».
-   Las marcas para la orden de sustitución incluyen «g» para reemplazar
-todas las apariciones de «x_cnt» en la misma línea. La marca «e» se emplea
+   Las opciones para la orden de sustitución incluyen «g» para reemplazar
+todas las apariciones de «x_cnt» en la misma línea. La opción «e» se emplea
 para evitar un mensaje de error cuando «x_cnt» no está presente en el
-archivo. De otra manera, «:argdo» se interrumpiría en el primer archivo en
+archivo. En caso contrar, «:argdo» se interrumpiría en el primer archivo en
 el que no se encontrase «x_cnt».
    La «|» separa dos órdenes. La orden a continuación «update» escribe en el
 archivo sólo si éste cambió. Si no se cambió ningún «x_cnt» a «x_counter»

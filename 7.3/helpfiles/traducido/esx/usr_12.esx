@@ -31,7 +31,7 @@ una palabra con otra: >
 
 	:%s/cuatro/4/g
 
-El rango «%» significa reemplazar en todas las líneas. La marca «g» al final
+El rango «%» significa reemplazar en todas las líneas. La opción «g» final
 hace que todas las palabras de una línea sean sustituidas.
    Esto no hará lo que desea si su archivo también contiene «veinticuatro».
 Será reemplazado por «veinti4». Para evitar que esto ocurra, use el «\<»
@@ -45,7 +45,7 @@ concordar el final de una palabra: >
 	:%s/\<cuatro\>/4/g
 
 Si está programando, quizá desee reemplazar «cuatro» en los comentarios,
-pero no en el código. Ya que es difícil de especificar, añada la marca «c»
+pero no en el código. Ya que es difícil de especificar, añada la opción «c»
 para que se le pida una confirmación cada vez que se vaya a reemplazar la
 palabra: >
 
@@ -83,11 +83,11 @@ ir a un archivo siguiente. Esto parará la ejecución y todo terminará.
 
 Hay un pequeño problema: Si uno de los archivos .cpp no contiene la palabra
 «GetResp», obtendrá un error y la ejecución se detendrá. Para evitar esto,
-añada la marca «e» a la orden de sustituir: >
+añada la opción «e» a la orden de sustituir: >
 
 	:%s/\<GetResp\>/GetAnswer/ge
 
-La marca «e» le dice a «:substitute» que ninguna coincidencia no es un
+La opción «e» le dice a «:substitute» que ninguna coincidencia no es un
 error.
 
 ==============================================================================

@@ -47,7 +47,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-09-23 20:27+0300\n"
-"PO-Revision-Date: 2011-02-01 21:20+0100\n"
+"PO-Revision-Date: 2011-05-25 23:24+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
 "Language: \n"
@@ -255,8 +255,8 @@ msgstr ""
 "|usr_40.txt| Crear órdenes nuevas\n"
 "|usr_41.txt| Crear un Vim script\n"
 "|usr_42.txt| Añadir menús nuevos\n"
-"|usr_43.txt| Usar tipos de archivo (filetypes)\n"
-"|usr_44.txt| Crear su propio resaltado de sintaxis\n"
+"|usr_43.txt| Usar tipos de archivo \n"
+"|usr_44.txt| Su propio resaltado de sintaxis\n"
 "|usr_45.txt| Seleccionar su idioma"
 
 #. type: Plain text
@@ -892,15 +892,15 @@ msgstr ""
 "\t\t|41.9|\tExcepciones\n"
 "\t\t|41.10|\tObservaciones\n"
 "\t\t|41.11|\tEscribir extensiones\n"
-"\t\t|41.12|\tEscribir extensiones para tipo de archivo"
-"\t\t|41.13|\tEscribir extensiones para compiladores"
+"\t\t|41.12|\tEscribir extensiones para tipo de archivo\n"
+"\t\t|41.13|\tEscribir extensiones para compiladores\n"
 "\t\t|41.14|\tEscribir extensiones que carguen rápidamente\n"
 "\t\t|41.15|\tEscribir bibliotecas\n"
 "\t\t|41.16|\tDistribuir scripts de Vim\n"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:314
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|usr_42.txt|  Add new menus\n"
 "\t\t|42.1|\tIntroduction\n"
@@ -908,23 +908,23 @@ msgid ""
 "\t\t|42.3|\tVarious\n"
 "\t\t|42.4|\tToolbar and popup menus\n"
 msgstr ""
-"|usr_42.txt|  Add new menus\n"
-"\t\t|42.1|\tIntroduction\n"
-"\t\t|42.2|\tMenu commands\n"
-"\t\t|42.3|\tVarious\n"
-"\t\t|42.4|\tToolbar and popup menus\n"
+"|usr_42.txt|  Añadir nuevos menús\n"
+"\t\t|42.1|\tIntroducción\n"
+"\t\t|42.2|\tÓrdenes para menús\n"
+"\t\t|42.3|\tVarios\n"
+"\t\t|42.4|\tBarra de herramientas y menús contextuales\n"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:318
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|usr_43.txt|  Using filetypes\n"
 "\t\t|43.1|\tPlugins for a filetype\n"
 "\t\t|43.2|\tAdding a filetype\n"
 msgstr ""
-"|usr_43.txt|  Using filetypes\n"
-"\t\t|43.1|\tPlugins for a filetype\n"
-"\t\t|43.2|\tAdding a filetype\n"
+"|usr_43.txt|  Uso de tipos de archivo\n"
+"\t\t|43.1|\tExtensiones para un tipo de archivo\n"
+"\t\t|43.2|\tAñadir un tipo de archivo\n"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:332
@@ -978,19 +978,17 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:342
-#, fuzzy
 msgid "Making Vim Run ~"
-msgstr "Making Vim Run ~"
+msgstr "Iniciar Vim ~"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:344
-#, fuzzy
 msgid "Before you can use Vim."
-msgstr "Before you can use Vim."
+msgstr "Antes de poder usar Vim."
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:351
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "|usr_90.txt|  Installing Vim\n"
 "\t\t|90.1|\tUnix\n"
@@ -999,12 +997,12 @@ msgid ""
 "\t\t|90.4|\tCommon installation issues\n"
 "\t\t|90.5|\tUninstalling Vim\n"
 msgstr ""
-"|usr_90.txt|  Installing Vim\n"
+"|usr_90.txt|  Instalar Vim\n"
 "\t\t|90.1|\tUnix\n"
 "\t\t|90.2|\tMS-Windows\n"
-"\t\t|90.3|\tUpgrading\n"
-"\t\t|90.4|\tCommon installation issues\n"
-"\t\t|90.5|\tUninstalling Vim\n"
+"\t\t|90.3|\tActualizar\n"
+"\t\t|90.4|\tProblemas de instalación habituales\n"
+"\t\t|90.5|\tDesinstalar Vim\n"
 
 #. type: Plain text
 #: original/TXT/usr_toc.txt:354 original/TXT/usr_01.txt:185

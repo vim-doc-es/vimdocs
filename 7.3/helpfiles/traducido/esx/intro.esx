@@ -311,9 +311,10 @@ texto literal.
 						   *[número]* *[count]* *E489*
 		Un número opcional que puede preceder a la orden para
 		multiplicar o cambiar la orden. Si no introduce un número, se
-		usará uno. Tenga en cuenta que en este manual, el [número]
-		no se menciona en las descripciones de las órdenes. La razón
-		para esto es facilitar la lectura de las órdenes. Si la opción
+		usará uno a menos que se indique lo contrario. Tenga en cuenta]
+		que en este manual, el [número no se menciona en las descripciones
+		de las órdenes.
+		La razón para esto es facilitar la lectura de las órdenes. Si la opción
 		esta activada, el número (parcialmente) introducido se
 		mostrará en la parte inferior de la ventana. Puede usar <Supr>
 		para eliminar el último dígito (|N<Supr>|).
@@ -484,8 +485,8 @@ Nota: El uso de las teclas del teclado numérico es idéntico a sus teclas
 <Home>. Si una tecla del bloque envía el mismo código que su equivalente
 externo al bloque numérico, será reconocido como un código que no pertenece
 al bloque. Por ejemplo, cuando <kHome> envía el mismo código que <Home>, Vim
-creerá que pulsa <Home> cuando en realidad pulsa <kHome>. De ser así, los
-mapeos con <kHome> no funcionarán.
+creerá que pulsa <Home> cuando en realidad pulsa <kHome>. De ser así, las
+macros con <kHome> no funcionarán.
 
 								*<>*
 A menudo, los ejemplos aparecen con la notación <>. Generalmente sirve para
@@ -508,23 +509,23 @@ literalmente, por ejemplo con la orden «:map». Las reglas son:
 	<t_kd>			La entrada termcap de «kd» (tecla de
 				dirección abajo)
 
-Si desea usar la notación <> completa con Vim, asegúrese que la marca «<»
-está excluida de 'cpoptions' (predeterminado si 'compatible' no está
+Si desea usar la notación <> completa con Vim, asegúrese de no incluir la
+opción  «<» en 'cpoptions' (predeterminado si 'compatible' no está
 activado): >
 	:set cpo-=<
 La notación <> usa <lt> para escapar el significado especial de nombres de
 tecla. También puede usar una barra inversa pero sólo si 'cpoptions' no
-incluye la marca 'B'.
+incluye la opción 'B'.
 
-Ejemplos para mapear CTRL-H a los seis caracteres «<Home>»: >
+Ejemplos para asignar CTRL-H a los seis caracteres «<Home>»: >
 	:imap <C-H> \<Home>
 	:imap <C-H> <lt>Home>
-El primero sólo funciona si la marca 'B' no está en 'cpoptions'. El segundo
+El primero sólo funciona si la opción 'B' no está en 'cpoptions'. El segundo
 siempre funciona.
-Para obtener un <lt> en un mapeo: >
+Para obtener un <lt> en una macro: >
 	:map <C-L> <lt>lt>
 
-Puede copiar y pegar los ejemplos directamente para los mapeos, abreviaturas
+Puede copiar y pegar los ejemplos directamente para las macros, abreviaturas
 y órdenes de menú. O también introducirlos literalmente, incluyendo los
 caracteres «<» y «>». ¡Esto NO funciona con otras órdenes, como «:set» y
 «:autocmd».!
@@ -652,7 +653,7 @@ Ex		 :vi	  --	  --	 --	    --	      --
    'wildchar', lo que iniciaría el auto-completado en línea de órdenes. Puede
    ignorar esto y pulsar <Esc> otra vez. {Vi: pulsar <Esc> ejecuta la orden
    en la línea, lo cual sorprendía a la mayoría de la gente; debido a ello,
-   sufrió un cambio en Vim. Pero si <Esc> es parte de un mapeado, la línea de
+   sufrió un cambio en Vim. Pero si <Esc> es parte de una macro, la línea de
    órdenes se ejecutará. Si desea el comportamiento de Vi también al pulsar
    <Esc>, use «:cmap^V<Esc> ^V^M»}
 *4 Pase del modo Normal a Seleccionar con:
@@ -679,7 +680,7 @@ argumento, como |f| o |m|, se aplicará la cuenta atrás definida con
 
 	*CTRL-\_CTRL-G* *i_CTRL-\_CTRL-G* *c_CTRL-\_CTRL-G* *v_CTRL-\_CTRL-G*
 La orden CTRL-\ CTRL-G o <C-\><C-G> se puede usar para pasar al modo Insertar
-cuando 'insertmode' está definido. De no ser así, vuelve al modo Normal.
+cuando 'insertmode' está definido. En caso contrario, vuelve al modo Normal.
 Puede usar esto para asegurarse de que Vim está en el modo indicado por
 'insertmode', sin conocer el modo actual en el que está Vim.
 
@@ -689,7 +690,7 @@ Q			Pasar a modo «Ex». Es similar a pulsar órdenes «:»
 			uno detrás de otro, con alguna diferencia:
 			- No tiene que pulsar «:».
 			- La pantalla no se refresca tras cada orden.
-			- No se usan mapeos y abreviaturas.
+			- No se usan macros ni abreviaturas.
 			De hecho, editará las líneas con las órdenes de
 			edición estándar (<Del> o <BS> para eliminar, CTRL-U
 			para eliminar toda la línea).
@@ -753,7 +754,7 @@ aspecto:>
 Las líneas «@» indican que hay una línea que no cabe en la ventana.
 
 No verá caracteres «@» en la parte izquierda de la ventana de estar presente
-la marca «lastline» en la opción 'display'. Si la última línea no encaja,
+la opción «lastline» en la opción 'display'. Si la última línea no encaja,
 sólo verá la parte que sí lo hace. Los tres últimos caracteres de está línea
 aparecerá como «@@@», como en el siguiente ejemplo: >
 

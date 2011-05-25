@@ -144,10 +144,10 @@ Mostrar la coincidencia de un patrón de búsqueda antes de pulsar <Entrar>.
 >
 	map Q gq
 
-Define una macro de una tecla (más información en la próxima sección). Esto
-define la orden «Q» para que de formato con el operador «gq». Así es como
-funcionaba antes de Vim 5.0. En ausencia de esto, la orden «Q» inicia el
-modo Ex, pero no lo necesitará.
+Esto define asigna una macro a una tecla (más información en la próxima
+sección). Define la orden «Q» para que de formato con el operador «gq». Así
+es como funcionaba antes de Vim 5.0. En caso contrario, la orden «Q» inicia
+el modo Ex, pero no lo necesitará.
 
 >
 	vnoremap _g y:exe "grep /" . escape(@", '\\/') . "/ *.c *.h"<CR>
@@ -410,8 +410,8 @@ tipo de archivo «cosas» en Unix: >
 La parte <tipo_de_archivo> es el nombre del tipo de archivo para el cuál se
 usa la extensión. Sólo los archivos de este tipo cargarán esta extensión.
 La parte <nombre> de la extensión no importa, puede usarlo para tener varias
-extensiones del mismo tipo de archivo. Observe que debe terminar con la
-extensión «.vim».
+extensiones del mismo tipo de archivo. Tenga en cuenta que debe terminar con
+la extensión «.vim».
 
 
 Lecturas de ampliación:
@@ -571,7 +571,7 @@ haga esto en también modo Insertar, escriba: >
 
 	:set whichwrap=b,s,<,>,[,]
 
-Hay unas cuantas banderas que se pueden ser añadir, consulte 'whichwrap'.
+Hay unas cuantas opciones disponibles, consulte 'whichwrap'.
 
 
 VISTA DE PESTAÑAS
@@ -582,7 +582,8 @@ visibles: >
 	:set list
 
 Ahora todas las pestañas se mostrarán como ^I. Un «$» se mostrará al final de
-cada línea, permitiéndole ver espacios finales que pasarían desapercibidos.
+cada línea, permitiéndole ver espacios finales que de otra forma pasarían
+desapercibidos.
    Una desventaja de esto es que tiene una apariencia desagradable cuando
 hay muchas pestañas. Si tiene una terminal con colores o usa GVim, puede
 ver los espacios y las pestañas como marcas de color. Use la opción

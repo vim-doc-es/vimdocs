@@ -211,9 +211,9 @@ después el segundo: >
 	:mkview 3
 	:loadview 2
 
-Observe que al insertar o eliminar líneas, las vistas dejarán de ser
-válidas. Revise también la opción 'viewdir', que define donde se guardan los
-visionados. Puede que desee eliminar viejos visionados de vez en cuando.
+Tenga en cuenta que, al insertar o eliminar líneas, las vistas dejarán de
+ser válidas. Revise también la opción 'viewdir', que define donde se guardan
+los visionados. Puede que desee eliminar viejos visionados de vez en cuando.
 
 ==============================================================================
 *28.5*	Plegar según el sangrado
@@ -241,10 +241,10 @@ La línea no tiene sangrado
 	Esta línea tiene un sangrado
 	Esta línea tiene un sangrado
 
-Observe que la relación entre la cantidad de sangrado y la profundidad del
-pliegue depende de la opción 'shiftwidth'. Cada 'shiftwidth' con el valor de
-un sangrado añade uno a la profundidad del pliegue. Este se denomina nivel
-de plegado.
+Tenga en cuenta que la relación entre la cantidad de sangrado y la
+profundidad del pliegue depende de la opción 'shiftwidth'. Cada 'shiftwidth'
+con el valor de un sangrado añade uno a la profundidad del pliegue. Este se
+denomina nivel de plegado.
 
 En realidad, cuando usa las órdenes |zr| y |zm| aumento o disminuye la
 opción 'foldlevel'. Puede también definirlo directamente: >

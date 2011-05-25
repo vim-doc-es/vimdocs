@@ -221,9 +221,9 @@ bien. Puede hacerlo con una orden 'set': >
 Con esta opción activada, cuando escriba algo como «if (x)», la siguiente
 línea tendrá un nivel de sangrado adicional de forma automática.
 
-				    if (flag)
+				    if (opción)
 	Sangrado automático  --->		do_the_work();
-	Eliminar sangrado automático <--	    if (other_flag) {
+	Eliminar sangrado automático <--	    if (otra_opción) {
 	Sangrado automático   --->		do_file();
 	Preservar el sangrado			do_some_more();
 	Eliminar sangrado automático <--	    }
@@ -274,7 +274,7 @@ estilo de sangrado con la opción 'cinoptions'.
  predeterminado. Puede añadir varios elementos cuando desee algo
 diferente. Por ejemplo, para ubicar llaves de la siguiente forma:
 
-	if (flag) ~
+	if (opción) ~
 	  { ~
 	    i = 8; ~
 	    j = 0; ~
@@ -417,10 +417,10 @@ ejemplo, el cursor está sobre «printf»:
 
 	texto original		después de «>i{»	    después de «>a{»
 
-	if (flag)		if (flag)		if (flag) ~
+	if (opción)		if (opción)		if (opción) ~
 	{			{			    { ~
 	printf("yes");		    printf("yes");	    printf("yes"); ~
-	flag = 0;		    flag = 0;		    flag = 0;  ~
+	opción = 0;		    opción = 0;		    opción = 0;  ~
 	}			}			    } ~
 
 ==============================================================================
@@ -580,7 +580,8 @@ romperá la línea. Una vez más, se inserta «*» automáticamente.
 	 * la línea ~
 	 */ ~
 
-Para su funcionamiento, debe especificar algunas marcas en 'formatoptions':
+Para su funcionamiento, debe especificar algunas opciones en
+'formatoptions':
 
 	r	inserta «*» al pulsar <Enter> en modo Insertar
 	o	inserta «*» a usar «o» o «O» en modo Normal
@@ -600,12 +601,12 @@ Por ejemplo, para que Vim entienda comentarios en C++: >
 
 	:set comments=://
 
-Los dos puntos separan las marcas de un elemento del texto por el cual se
+Los dos puntos separan las opciones de un elemento del texto por el cual se
 reconoce un comentario. La forma habitual de un elemento en 'comments' es:
 
-	{marcas}:{texto}
+	{opcio}:{texto}
 
-La parte de {marcas} puede estar vacía, como es el caso.
+La parte de {opcio} puede estar vacía, como es el caso.
    Puede concatenar varios de estos elementos separándolos con comas, lo que
 permite reconocer diferentes tipos de comentarios a la vez. Por ejemplo,
 vamos a editar un mensaje de correo electrónico. Al responder, el texto que
@@ -615,7 +616,7 @@ Esta orden debería servir: >
 	:set comments=n:>,n:!
 
 Hay dos elementos, uno para los comentarios que empiezan con «>» y otro para
-los comentarios que comienzan con «!».  Ambos usan la marca «n».  Esto
+los comentarios que comienzan con «!».  Ambos usan la opción «n».  Esto
 significa que estos comentarios se anidan.  Por lo tanto, una línea
 comenzando con «>» puede tener otro comentario después de «>».  Esto permite
 dar formato a un mensaje como este:
@@ -652,10 +653,10 @@ comentario en tres partes. Los dos puntos separan las marcas del texto
 por el cual se detecta que es un comentario: «/*». Hay una marca, «1». Indica
 a Vim que la parte central tiene un «offset» de un espacio.
    La parte central «mb:*» comienza con «m», que indica que es la parte
-central. La marca «b» indica que el texto debe ir seguido de un espacio
+central. La opción «b» indica que el texto debe ir seguido de un espacio
 en blanco. En caso contrario, Vim considerará que el texto como «*pointer»
 también es la parte central de un comentario.
-   La parte final «ex:*/» tiene «e» como identificador. La marca «x» tiene
+   La parte final «ex:*/» tiene «e» como identificador. La opción «x» tiene
 un significado especial. Indica que pulsar «/» eliminará el espacio
 adicional después de que Vim haya insertado automáticamente un asterisco, «*».
 
