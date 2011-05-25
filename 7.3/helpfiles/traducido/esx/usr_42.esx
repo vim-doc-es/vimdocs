@@ -1,4 +1,4 @@
-*usr_01.esx*	Para Vim versión 7.3.  Último cambio: 5/5/2008
+*usr_42.esx*	Para Vim versión 7.3.  Último cambio: 5/5/2008
 
 		MANUAL DE USUARIO DE VIM - por Bram Moolenaar
 
@@ -15,7 +15,7 @@ acceder.  Esto es principalmente para usuarios asiduos del ratón.
 |42.3|	Varios
 |42.4|	Barra de herramientas y menús contextuales
 
- Capítulo siguiente: |usr_43.esx|  Using filetypes
+ Capítulo siguiente: |usr_43.esx|  Uso de tipos de archivo
   Capítulo anterior: |usr_41.esx|  Escribir scripts para Vim
 Tabla de contenidos: |usr_toc.esx|
 
@@ -47,7 +47,7 @@ menú.
 cómo se activa el elemento y el lado derecho define los caracteres que se
 ejecutan. {teclas} corresponde a caracteres; éstos se usan tal como si los
 hubiera introducido manualmente. Así que en modo Insertar, cuando {teclas}
-corresponde a texto plano, se inserta dicho texto.
+corresponde a texto simple, se inserta dicho texto.
 
 
 ACELERADORES
@@ -82,7 +82,7 @@ los más grandes a la derecha.
 	+---------------------------------------------------------------------+
 
 Tenga en cuenta que el menú «Ayuda» tiene un número muy grande, para hacer que
-aparezca a la extrema derecha.
+aparezca en el extremo derecho.
    El segundo número determina la ubicación del elemento dentro del menú
 desplegable. Los números pequeños aparecen arriba, los números más grandes
 abajo. Éstas son la prioridades del menú «Archivo»:
@@ -114,7 +114,7 @@ De esta forma cada nombre en {elemento-menú} obtiene un número de prioridad.
 
 CARACTERES ESPECIALES
 
-El {elemento-menú} de este ejemplo es "&Archivo.&Guardar<Tab>:w". Esto llama
+El {elemento-menú} de este ejemplo es «&Archivo.&Guardar<Tab>:w». Esto llama
 la atención sobre un punto importante: {elemento-menú} debe ser una sola
 palabra. Si desea usar puntos, espacios o tabuladores en el nombre, debe
 usar la notación <> (por ejemplo, <Space> y <Tab>) o escapar estos
@@ -122,22 +122,22 @@ caracteres usando una barra inversa (\). >
 
 	:menu 10.305 &Archivo.&Ejecutar\ Tarea\.\.\. :exit<CR>
 
-En este ejemplo, el nombre del elemento del menú "Ejecutar Tarea" contiene
-un espacio, y la orden es ":exit<CR>".
+En este ejemplo, el nombre del elemento del menú «Ejecutar Tarea» contiene
+un espacio, y la orden es «:exit<CR>».
 
 El carácter <Tab> se usa en el nombre de un menú para separar la definición
 del nombre del mismo de la parte que se usa como indicación al usuario. La
-parte luego del <Tab> se muestra justificada a la derecha en el menú. El
-nombre usado en el menú «Archivo.Guardar» es "&Archivo.&Guardar<Tab>:w". De
-acuerdo a lo anterior, el nombre del menú es «Archivo.Guardar» y la
-indicación es «:w».
+parte a continuación de <Tab> se muestra justificada a la derecha en el
+menú. El nombre usado en el menú «Archivo.Guardar» es
+«&Archivo.&Guardar<Tab>:w». De acuerdo a lo anterior, el nombre del menú es
+«Archivo.Guardar» y la indicación es «:w».
 
 
 SEPARADORES
 
 Las líneas o separadores, usadas para agrupar elementos de menú relacionados,
 se definen usando un nombre que empieza y termina con '-'. Por ejemplo
-"-sep-". Al usar varios separadores debe dárseles nombres diferentes.
+«-sep-». Al usar varios separadores se les debe dar nombres diferentes.
 Aparte de esto los nombres particulares no tienen importancia.
    La orden de un separador nunca será ejecutada, pero hay que definirla de
 todos modos. Un «:» es suficiente. Por ejemplo: >
@@ -147,7 +147,7 @@ todos modos. Un «:» es suficiente. Por ejemplo: >
 ==============================================================================
 *42.2*	Órdenes de menú
 
-Puede definir elementos de menús que sólo existen para ciertos modos. El
+Puede definir elementos de menú que sólo existen para ciertos modos. El
 funcionamiento de esta característica es idéntico al proporcionado por las
 variaciones de la orden «:map»:
 
@@ -243,8 +243,8 @@ modos. Para listar un elemento específico de un menú para modo Insertar: >
 	:imenu Editar.Deshacer
 
 Asegúrese de introducir exactamente el nombre apropiado. Las diferencias
-entre mayúsculas y minúsculas son importantes aquí. El <Tab> y lo que sigue
-después de él puede omitirse.
+entre mayúsculas y minúsculas son importantes. El <Tab> y lo que aparece a
+continuación se puede omitir.
 
 
 BORRAR MENÚS
@@ -280,10 +280,10 @@ Es posible cambiar la apariencia de los menús definiendo opciones en
 			aparecen grises sino que son eliminados. (No funciona
 			en todos los sistemas.)
 
-	t		Al eliminarla se deshabilita la característica de
-			desacoplar los menús.
+	t		Al eliminarla se deshabilita la función de
+			desacoplar los menús de la interfaz.
 
-La línea punteada en la parte superior de un menú no es un separador. Al
+La línea de puntos en la parte superior de un menú no es un separador. Al
 seleccionar este elemento, el menú es «desacoplado»: se lo muestra en una
 ventana separada. Se lo denomina menú desacoplable. Es una característica
 útil si usa un mismo menú con frecuencia.
@@ -308,22 +308,22 @@ complicados. Los menús predeterminados contienen algunos ejemplos.
 ==============================================================================
 *42.4*	Menús de barra de herramientas y menús contextuales
 
-Hay dos menús especiales: ToolBar (Barra de Herramientas) y PopUp (Menú
-Contextual). Los elementos cuyos nombres empiezan con estas palabras clave
+Hay dos menús especiales: ToolBar (barra de herramientas) y PopUp (menú
+contextual). Los elementos cuyos nombres empiezan con estas palabras clave
 no aparecen en la barra de menú normal.
 
 
-BARRA DE HERRAMIENTAS (TOOLBAR)
+BARRA DE HERRAMIENTAS
 
 La barra de herramientas aparece únicamente cuando se incluye la opción «T» en
 'guioptions'.
-   La barra de herramientas usa íconos en lugar de texto para representar la
+   La barra de herramientas usa iconos en lugar de texto para representar la
 orden asociada. Por ejemplo, el {elemento-menú} llamado «ToolBar.Nueva» hace
-que el ícono «Nueva» aparezca en la barra de herramientas.
-   El editor Vim cuenta con 28 íconos incorporados. En |builtin-tools|
-encuentra una tabla con todos ellos. La mayoría de ellos se usa en la barra de
+que el icono «Nueva» aparezca en la barra de herramientas.
+   El editor Vim cuenta con 28 iconos incorporados. La sección |builtin-tools|
+muestra una tabla con todos ellos. La mayoría de ellos se usa en la barra de
 herramientas predeterminada. Es posible redefinir qué hacen estos elementos
-(luego de la configuración de los menús predeterminados.)
+(tras configurar los menús predeterminados.)
 Puede añadir otro mapa de bits como elemento de una barra de herramientas. O
 definir un elemento nuevo en una barra de herramientas con un mapa de bits.
 Por ejemplo, puede definir un elemento de la barra de herramientas así: >
@@ -331,10 +331,10 @@ Por ejemplo, puede definir un elemento de la barra de herramientas así: >
 	:tmenu ToolBar.Compile  Compilar el archivo actual
 	:amenu ToolBar.Compile  :!cc % -o %:r<CR>
 
-Ahora debe crear el ícono. En MS-Windows debe usar el formato bitmap (mapa de
+Ahora debe crear el icono. En MS-Windows debe usar el formato bitmap (mapa de
 bits), con el nombre «Compile.bmp». En Unix se usa el formato XPM, por lo que
-el nombre de archivo es «Compile.xpm». El tamaño del ícono debe ser de 18 por
-18 pixeles. En MS-Windows se pueden usar otros tamaños, pero la apariencia no
+el nombre de archivo es «Compile.xpm». El tamaño del icono debe ser de 18 por
+18 píxeles. En MS-Windows se pueden usar otros tamaños, pero la apariencia no
 será agradable.
    Ubique el mapa de bits en el directorio «bitmaps» en uno cualquiera de los
 directorios en 'runtimepath'. Por ejemplo, en Unix, puede usar
@@ -355,8 +355,8 @@ imagen no es tan obvia. Ejemplo: >
 
 Para eliminar una indicación, use la orden |:tunmenu|.
 
-Puede usar la opción 'toolbar' para mostrar texto en lugar de un ícono, o
-mostrar texto y un ícono. Muchas personas simplemente usan el ícono, ya que
+Puede usar la opción 'toolbar' para mostrar texto en lugar de un icono, o
+mostrar texto y un icono. Muchas personas simplemente usan el icono, ya que
 el texto consume bastante espacio.
 
 
@@ -369,9 +369,9 @@ se usa manteniendo presionado el botón derecho del ratón.
    El menú contextual sólo aparece cuando a la opción 'mousemodel' se le ha
 dado alguno de los valores «popup» o «popup_setpos». La diferencia entre estos
 dos valores consiste en que «popup_setpos» mueve el cursor al sitio en que se
-encuentra el puntero del ratón. Al hacer clic en una selección, ésta será
-usada sin modificaciones. Cuando hay una región seleccionada y se hace clic
-fuera de ella, se descarta la selección.
+encuentra el puntero del ratón. Al pulsar sobre en una selección, ésta se
+usará sin modificaciones. Cuando hay una región seleccionada y se pulsa
+el ratón fuera de ella, se descarta la selección.
    Hay un menú contextual por cada modo. Por este motivo nunca hay elementos
 deshabilitados como sucede en los menús normales.
 
@@ -382,6 +382,13 @@ preguntarse tal vez cuál es el significado de la muerte...
 
 ==============================================================================
 
-Capítulo siguiente: |usr_43.esx| Using filetypes
+Capítulo siguiente: |usr_43.esx| Uso de tipos de archivo
 
 Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
+
+==============================================================================
+
+Traducción del capítulo: Javier Rojas
+
+Proyecto: |vim-doc-es|
+

@@ -1,4 +1,4 @@
-*usr_43.txt*	Para Vim versión 7.3.  Último cambio: 28/5/2008
+*usr_43.txt*	Para Vim versión 7.3.  Último cambio: 28/12/2008
 
 		MANUAL DE USUARIO DE VIM - por Bram Moolenaar
 
@@ -13,7 +13,7 @@ tedioso muy pronto. Este capítulo explica cómo hacerlo automáticamente.
 |43.1|	Extensiones para un tipo de archivo
 |43.2|	Añadir un tipo de archivo
 
- Capítulo siguiente: |usr_44.esx|  Your own syntax highlighted
+ Capítulo siguiente: |usr_44.esx|  Su propio resaltado de sintaxis
   Capítulo anterior: |usr_42.esx|  Añadir nuevos menús
 Tabla de contenidos: |usr_toc.esx|
 
@@ -73,9 +73,9 @@ de archivo.
 ==============================================================================
 *43.2*	Añadir un tipo de archivo
 
-Si Vim no reconoce el tipo de archivo que está usando, esto es lo que debe
-hacer para corregir el problema. Necesita un directorio de tiempo de
-ejecución propio. Consulte |your-runtime-dir| anteriormente.
+Si Vim no reconoce el tipo de archivo que está usando, siga los siguientes
+pasos para corregir el problema. Necesita un directorio de tiempo de
+ejecución propio. Consulte antes |your-runtime-dir|.
 
 Cree un archivo «filetype.vim» que contenga una orden automática para su
 tipo de archivo. (Las órdenes automáticas se explican el la sección |40.3|.)
@@ -85,13 +85,13 @@ Ejemplo: >
 	au BufNewFile,BufRead *.xyz	setf xyz
 	augroup END
 
-Con esto se reconocerá a todos los archivos cuyo nombre termina en «.xyz»
+Con esto se reconocerán todos los archivos cuyo nombre termina en «.xyz»
 como del tipo «xyz». Las órdenes «:augroup» ubican esta orden automática en
 el grupo «filetypedetect» (detección de tipos de archivo). Esto permite
 eliminar todas las órdenes automáticas de detección de tipo de archivo al
 ejecutar «:filetype off». La orden «:setf» definirá la opción 'filetype' con
 el argumento que se le pase, a menos que ya esté definido. Esto asegura que
-'filetype' no sea definido más de una vez.
+no se defina 'filetype' más de una vez.
 
 Puede usar distintos patrones que coincidan con el nombre de su
 archivo. También es posible incluir nombres de directorios. Consulte
@@ -116,8 +116,8 @@ al final de 'runtimepath'. Por ejemplo, en Unix puede usar
 	au BufNewFile,BufRead *.txt			setf text
 	augroup END
 
-Este archivo aparece primero en 'runtimepath'. Y luego escriba la siguiente
-orden en «~/.vim/after/filetype.vim», que será cargado al final: >
+Este archivo aparece primero en 'runtimepath'. A continuación escriba la
+siguiente orden en «~/.vim/after/filetype.vim», que se cargará al final: >
 
 	augroup filetypedetect
 	au BufNewFile,BufRead /usr/share/scripts/*	setf ruby
@@ -140,17 +140,17 @@ sucede nada.
 a ruby.
 
 
-RECONOCIMIENTO POR CONTENIDO
+IDENTIFICACIÓN POR CONTENIDO
 
 Si el tipo de su archivo no se puede identificar revisando el nombre del
-mismo, también tiene la posibilidad de reconocerlo revisando su
+mismo, también tiene la posibilidad de identificarlo revisando su
 contenido. Por ejemplo, muchos archivos de scripts empiezan con una línea
 como:
 
 	#!/bin/xyz ~
 
-Para reconocer este script cree un archivo «scripts.vim» en su directorio de
-tiempo de ejecución (el mismo sitio en donde está «filetype.vim»). El
+Para identificar este script cree un archivo «scripts.vim» en su directorio
+de tiempo de ejecución (el mismo sitio en donde está «filetype.vim»). El
 contenido del archivo es similar a lo siguiente: >
 
 	if did_filetype()
@@ -180,6 +180,13 @@ para revisar el contenido del archivo.
 
 ==============================================================================
 
-Capítulo siguiente: |usr_44.txt| Your own syntax highlighted
+Capítulo siguiente: |usr_44.txt| Su propio resaltado de sintaxis
 
 Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
+
+==============================================================================
+
+Traducción del capítulo: Javier Rojas
+
+Proyecto: |vim-doc-es|
+
