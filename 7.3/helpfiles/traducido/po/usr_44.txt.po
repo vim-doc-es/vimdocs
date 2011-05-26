@@ -645,12 +645,16 @@ msgid ""
 "(double quote) and a region end (double quote).  The definition is as "
 "follows: >"
 msgstr ""
+"En el lenguaje de ejemplo x, las cadenas de texto van entre comillas dobles "
+"(\"). Para resaltar cadenas es necesario definir una región. Se requiere un "
+"inicio de región (comilla doble) y un final de región (comilla doble). La "
+"definición se presenta a continuación: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:174
 #, no-wrap
 msgid "\t:syntax region xString start=/\"/ end=/\"/\n"
-msgstr ""
+msgstr "\t:syntax region xString start=/\"/ end=/\"/\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:177
@@ -658,12 +662,15 @@ msgid ""
 "The \"start\" and \"end\" directives define the patterns used to find the "
 "start and end of the region.  But what about strings that look like this?"
 msgstr ""
+"Las directrices «start» y «end» definen los patrones usados para ubicar el "
+"inicio y final de la región. Pero, ¿qué pasa con las cadenas parecidas a "
+"esta?"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:179
 #, no-wrap
 msgid "\t\"A string with a double quote (\\\") in it\" ~\n"
-msgstr ""
+msgstr "\t\"Una cadena con una comilla doble (\\\") en ella\" ~\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:183
@@ -672,12 +679,16 @@ msgid ""
 "string will end the region.  You need to tell Vim to skip over any escaped "
 "double quotes in the string.  Do this with the skip keyword: >"
 msgstr ""
+"Esta situación crea un problema: la comilla doble en la mitad de la cadena "
+"marcará el fin de la región. Debe indicarle a Vim que omita las comillas "
+"dobles protegidas dentro de la cadena. Hágalo usando la palabra clave «skip»: "
+">"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:185
 #, no-wrap
 msgid "\t:syntax region xString start=/\"/ skip=/\\\\\"/ end=/\"/\n"
-msgstr ""
+msgstr "\t:syntax region xString start=/\"/ skip=/\\\\\"/ end=/\"/\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:188
@@ -685,6 +696,8 @@ msgid ""
 "The double backslash matches a single backslash, since the backslash is a "
 "special character in search patterns."
 msgstr ""
+"La barra inversa doble coincide con una única barra inversa, ya que ésta es "
+"un carácter especial en los patrones de búsqueda."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:195
@@ -697,6 +710,15 @@ msgid ""
 "define.  And it is easier to use nested items, as is explained in the next "
 "section."
 msgstr ""
+"¿Cuándo debe usar una región en lugar de una coincidencia? La diferencia "
+"principal es que una coincidencia es un único patrón, que debe coincidir "
+"completamente. Una región empieza apenas se encuentra una coincidencia para "
+"el patrón indicado en «start». No tiene importancia si se encuentra o no una "
+"coincidencia para el patrón indicado en «end». Si el elemento a resaltar "
+"requiere que haya una coincidencia para el patrón en «end», usar una región "
+"no servirá. Aparte de eso, las regiones son más fáciles de definir. Y es más "
+"fácil también usar elementos anidados, como se explica en la siguiente "
+"sección."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:198
@@ -707,13 +729,13 @@ msgstr "*44.5*\tElementos anidados\n"
 #. type: Plain text
 #: original/txt/usr_44.txt:200
 msgid "Take a look at this comment:"
-msgstr ""
+msgstr "Observe este comentario:"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:202
 #, no-wrap
 msgid "\t%Get input  TODO: Skip white space ~\n"
-msgstr ""
+msgstr "\t%Obtener entrada  TODO: Descartar espacios en blanco ~\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:206
@@ -722,6 +744,9 @@ msgid ""
 "comment that is highlighted blue.  To let Vim know about this, you define "
 "the following syntax groups: >"
 msgstr ""
+"Se desea resaltar el «TODO»  con letras grandes y amarillas, aún cuando esté "
+"dentro del comentario, que se resalta con azul. Para que Vim pueda hacerlo, "
+"debe definir los siguientes grupos de sintaxis: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:209
@@ -730,6 +755,8 @@ msgid ""
 "\t:syntax keyword xTodo TODO contained\n"
 "\t:syntax match xComment /%.*/ contains=xTodo\n"
 msgstr ""
+"\t:syntax keyword xTodo TODO contained\n"
+"\t:syntax match xComment /%.*/ contains=xTodo\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:216
@@ -741,13 +768,18 @@ msgid ""
 "\"xComment\" and made blue.  The word TODO inside it is matched by xTodo and "
 "highlighted yellow (highlighting for xTodo was setup for this)."
 msgstr ""
+"En la primera línea, el argumento «contained» le indica a Vim que esta "
+"palabra clave sólo puede aparecer dentro de otro elemento de sintaxis. La "
+"siguiente línea tiene «contains=xTodo». Esto indica que el elemento de "
+"sintaxis «xTodo» está contenido en «xComment». El resultado es que toda la "
+"línea con el comentario coincide con «xComment», y se resalta azul. La "
+"palabra «TODO» dentro del comentario coincide con «xTodo» y se resalta "
+"amarilla (el resaltado de «xTodo» se configuró de esta manera)."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:219
-#, fuzzy
-#| msgid "RECURSIVE MAPPING"
 msgid "RECURSIVE NESTING"
-msgstr "MACROS RECURSIVAS"
+msgstr "ANIDAMIENTO RECURRENTE"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:222
@@ -755,19 +787,20 @@ msgid ""
 "The x language defines code blocks in curly braces.  And a code block may "
 "contain other code blocks.  This can be defined this way: >"
 msgstr ""
+"En el lenguaje x los bloques de código se definen usando llaves. Y además, un "
+"bloque de código puede contener otros bloques de código. Este tipo de "
+"definición se hace como se muestra a continuación: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:224
 #, no-wrap
 msgid "\t:syntax region xBlock start=/{/ end=/}/ contains=xBlock\n"
-msgstr ""
+msgstr "\t:syntax region xBlock start=/{/ end=/}/ contains=xBlock\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:226
-#, fuzzy
-#| msgid "Suppose you do three searches: >"
 msgid "Suppose you have this text:"
-msgstr "Suponga que realiza tres búsquedas: >"
+msgstr "Suponga que tiene este texto:"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:232
@@ -779,6 +812,11 @@ msgid ""
 "\t\t} ~\n"
 "\t} ~\n"
 msgstr ""
+"\twhile i < b { ~\n"
+"\t\tif a { ~\n"
+"\t\t\tb = c; ~\n"
+"\t\t} ~\n"
+"\t} ~\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:240
@@ -791,18 +829,25 @@ msgid ""
 "xBlock.  Because the } is included in the nested region, it is hidden from "
 "the first xBlock region.  Then at the last } the first xBlock region ends."
 msgstr ""
+"El primer «xBlock» empieza en el { de la primera línea. En la segunda línea "
+"aparece otro {. Al estar dentro de un elemento «xBlock», y como éste puede "
+"contenerse a sí mismo, aquí inicia un elemento «xBlock» anidado. Por este "
+"motivo la línea «b = c» se considera dentro de la región «xBlock» de segundo "
+"nivel. Luego se encuentra un } en la línea siguiente, que coincide con el "
+"patrón de fin de la región. Aquí se termina la región del «xBlock» anidado. "
+"Debido a que el } hace parte de la región anidada, está oculto para la "
+"primera región «xBlock». Luego termina la primera región «xBlock» al llegar "
+"al último }"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:243
-#, fuzzy
-#| msgid "KEEPING THE ORIGINAL FILE"
 msgid "KEEPING THE END"
-msgstr "MANTENER EL ARCHIVO ORIGINAL"
+msgstr "CONSERVAR EL FINAL"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:245
 msgid "Consider the following two syntax items: >"
-msgstr ""
+msgstr "Considere ahora los siguientes elementos de sintaxis: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:248
@@ -811,6 +856,8 @@ msgid ""
 "\t:syntax region xComment start=/%/ end=/$/ contained\n"
 "\t:syntax region xPreProc start=/#/ end=/$/ contains=xComment\n"
 msgstr ""
+"\t:syntax region xComment start=/%/ end=/$/ contained\n"
+"\t:syntax region xPreProc start=/#/ end=/$/ contains=xComment\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:254
@@ -821,6 +868,11 @@ msgid ""
 "includes a \"contains=xComment\" argument.  Now look what happens with this "
 "text:"
 msgstr ""
+"Un comentario está definido como todo el texto desde el % hasta el final de "
+"la línea. Una directriz del preprocesador consiste en el texto desde un # "
+"hasta el final de la línea. Como es posible tener comentarios dentro de "
+"directrices del preprocesador, la definición para el preprocesador incluye el "
+"argumento «contains=xComment». Observe ahora lo que pasa con este texto:"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:257
@@ -829,6 +881,8 @@ msgid ""
 "\t#define X = Y  % Comment text ~\n"
 "\tint foo = 1; ~\n"
 msgstr ""
+"\t#define X = Y  % Texto de un comentario ~\n"
+"\tint foo = 1; ~\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:268
@@ -845,6 +899,18 @@ msgid ""
 "end of line, use the \"keepend\" argument.  This takes care of\n"
 "the double end-of-line matching: >\n"
 msgstr ""
+"Lo que verá es que la segunda línea también se resalta como «xPreProc». La\n"
+"directriz de preprocesador debería terminar al finalizar la línea. Por eso\n"
+"definió «end=/$/». ¿Qué está pasando?\n"
+"   La causa del problema es el comentario. Éste empieza con % y termina al\n"
+"finalizar la línea. Al terminar el comentario, se sigue estando en la región\n"
+"de preprocesador. Esto ocurre después de haber procesado el fin de línea, por\n"
+"lo que termina incluyéndose la siguiente línea.\n"
+"   Para evitar este problema y para evitar que un elemento de sintaxis anidado\n"
+"consuma el fin de línea necesario, puede usar el argumento «keepend». Al\n"
+"hacerlo se soluciona el problema de las coincidencias de dos fines de línea\n"
+"seguidos: >\n"
+   
 
 #. type: Plain text
 #: original/txt/usr_44.txt:271
@@ -853,27 +919,28 @@ msgid ""
 "\t:syntax region xComment start=/%/ end=/$/ contained\n"
 "\t:syntax region xPreProc start=/#/ end=/$/ contains=xComment keepend\n"
 msgstr ""
+"\t:syntax region xComment start=/%/ end=/$/ contained\n"
+"\t:syntax region xPreProc start=/#/ end=/$/ contains=xComment keepend\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:274
 msgid "CONTAINING MANY ITEMS"
-msgstr ""
+msgstr "ELEMENTOS MÚLTIPLES CONTENIDOS"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:277
-#, fuzzy
-#| msgid "You can start Vim to edit a sequence of files.  For example: >"
 msgid ""
 "You can use the contains argument to specify that everything can be "
 "contained.  For example: >"
 msgstr ""
-"Puede iniciar Vim para editar una secuencia de archivos. Por ejemplo: >"
+"Es posible usar el argumento «contains» para indicar que un elemento puede "
+"contener a cualquier otro. Por ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:279
 #, no-wrap
 msgid "\t:syntax region xList start=/\\[/ end=/\\]/ contains=ALL\n"
-msgstr ""
+msgstr "\t:syntax region xList start=/\\[/ end=/\\]/ contains=ALL\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:286
