@@ -953,6 +953,13 @@ msgid ""
 ">\n"
 "\t:syntax region xList start=/\\[/ end=/\\]/ contains=ALLBUT,xString\n"
 msgstr ""
+"Este elemento de sintaxis podrá contener a todos los otros elementos que estén\n"
+"definidos. También puede contenerse a sí mismo, pero no empezando desde la\n"
+"misma posición (eso causaría un ciclo infinito).\n"
+"   Puede indicar qué grupos no están contenidos. De esta forma, se contendrá a\n"
+"todos los elementos excepto los que se listen explícitamente:\n"
+">\n"
+"\t:syntax region xList start=/\\[/ end=/\\]/ contains=ALLBUT,xString\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:290
@@ -961,6 +968,11 @@ msgid ""
 "\" argument.  \"CONTAINED\" is used to only include items with a \"contained"
 "\" argument.  See |:syn-contains| for the details."
 msgstr ""
+"Puede incluir todos los elementos que no tienen en su definición el argumento "
+"«contained» usando el elemento «TOP». De manera similar, «CONTAINED» sirve "
+"para incluir únicamente los elementos de sintaxis que cuentan con el "
+"argumento «contained». Consulte |:syn-contains| para ver los detalles al "
+"respecto."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:293
@@ -970,16 +982,14 @@ msgstr "*44.6*\tEncadenamiento de grupos\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:295
-#, fuzzy
-#| msgid "You have a list of names in this form:"
 msgid "The x language has statements in this form:"
-msgstr "Tiene una lista de nombre de la siguiente forma:"
+msgstr "Las instrucciones del lenguaje x tienen la siguiente estructura:"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:297
 #, no-wrap
 msgid "\tif (condition) then ~\n"
-msgstr ""
+msgstr "\tif (condition) then ~\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:301
@@ -988,6 +998,9 @@ msgid ""
 "\"then\" might also appear in other places, where they get different "
 "highlighting.  This is how you can do this: >"
 msgstr ""
+"Desea que los tres elementos tengan un resaltado diferente. Pero "
+"«(condition)» y «then» también pueden aparecen en otros lugares, en los que "
+"deberán tener un resaltado diferente. Puede hacerlo de la siguiente manera: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:305
@@ -997,6 +1010,9 @@ msgid ""
 "\t:syntax match xIfCondition /([^)]*)/ contained nextgroup=xThen skipwhite\n"
 "\t:syntax match xThen /then/ contained\n"
 msgstr ""
+"\t:syntax match xIf /if/ nextgroup=xIfCondition skipwhite\n"
+"\t:syntax match xIfCondition /([^)]*)/ contained nextgroup=xThen skipwhite\n"
+"\t:syntax match xThen /then/ contained\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:309
@@ -1005,12 +1021,15 @@ msgid ""
 "required.  If none of the items that are specified are found, nothing "
 "happens.  For example, in this text:"
 msgstr ""
+"El argumento «nextgroup» especifica los elementos que pueden venir a "
+"continuación. Éstos no son obligatorios. Si no se encuentra ninguno de los "
+"elementos especificados, no sucede nada. Por ejemplo, en el texto siguiente:"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:311
 #, no-wrap
 msgid "\tif not (condition) then ~\n"
-msgstr ""
+msgstr "\tif not (condition) then ~\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:314
@@ -1018,6 +1037,8 @@ msgid ""
 "The \"if\" is matched by xIf.  \"not\" doesn't match the specified nextgroup "
 "xIfCondition, thus only the \"if\" is highlighted."
 msgstr ""
+"El «if» coincide con «xIf». «not» no coincide con el grupo especificado como "
+"siguiente («xIfCondition»), por lo que sólo se resalta el «if»."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:320
@@ -1028,6 +1049,12 @@ msgid ""
 "lines.  Notice that \"skipnl\" doesn't skip an empty line, something must "
 "match after the line break."
 msgstr ""
+"El argumento «skipwhite» le indica a Vim que puede haber espacio en blanco "
+"(espacios y tabuladores) entre los elementos de sintaxis. Otros argumentos "
+"similares son «skipnl», que permite manejar cambios de línea entre elementos, "
+"y «skipempty», que permite manejar líneas vacías. Tenga en cuenta que "
+"«skipnl» no maneja líneas vacías; debe haber una coincidencia con algo "
+"inmediatamente después del cambio de línea."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:323
@@ -1035,12 +1062,11 @@ msgstr ""
 msgid "*44.7*\tOther arguments\n"
 msgstr "*44.7*\tOtros argumentos\n"
 
+# no traducir - corresponde al nombre de un argumento
 #. type: Plain text
 #: original/txt/usr_44.txt:325
-#, fuzzy
-#| msgid "GROUPS"
 msgid "MATCHGROUP"
-msgstr "GRUPOS"
+msgstr "MATCHGROUP"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:329
