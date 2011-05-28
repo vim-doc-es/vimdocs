@@ -1075,12 +1075,15 @@ msgid ""
 "group name specified.  To highlight the text enclosed in parentheses () with "
 "the group xInside, for example, use the following command: >"
 msgstr ""
+"Al definir una región, toda ella se resalta de acuerdo al nombre de grupo "
+"especificado. Por ejemplo, use la siguiente orden para resaltar el texto "
+"entre paréntesis () con el grupo xInside: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:331
 #, no-wrap
 msgid "\t:syntax region xInside start=/(/ end=/)/\n"
-msgstr ""
+msgstr "\t:syntax region xInside start=/(/ end=/)/\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:336
@@ -1090,12 +1093,17 @@ msgid ""
 "\"matchgroup\" argument.  This tells Vim to highlight the start and end of a "
 "region with a different highlight group (in this case, the xParen group): >"
 msgstr ""
+"Suponga que quiere resaltar los paréntesis de forma diferente. Puede lograrlo "
+"usando varias declaraciones de regiones bastante complicadas, o puede usar el "
+"argumento «matchgroup». Éste le indica a Vim que resalte el inicio y el final "
+"de una región con un grupo diferente (para este ejemplo, el grupo «xParen»): "
+">"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:338
 #, no-wrap
 msgid "\t:syntax region xInside matchgroup=xParen start=/(/ end=/)/\n"
-msgstr ""
+msgstr "\t:syntax region xInside matchgroup=xParen start=/(/ end=/)/\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:342
@@ -1104,6 +1112,9 @@ msgid ""
 "after it.  In the previous example both start and end are highlighted with "
 "xParen.  To highlight the end with xParenEnd: >"
 msgstr ""
+"El argumento «matchgroup» tiene efecto sobre las coincidencias que aparezcan "
+"después de él. En el ejemplo anterior tanto el inicio como el final de la "
+"región se resaltan usando «xParen». Para resaltar el final con «xParenEnd»: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:345
@@ -1112,6 +1123,8 @@ msgid ""
 "\t:syntax region xInside matchgroup=xParen start=/(/\n"
 "\t\t\\ matchgroup=xParenEnd end=/)/\n"
 msgstr ""
+"\t:syntax region xInside matchgroup=xParen start=/(/\n"
+"\t\t\\ matchgroup=xParenEnd end=/)/\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:348
@@ -1120,11 +1133,14 @@ msgid ""
 "in the start or end of the region.  The example for \"transparent\" uses "
 "this."
 msgstr ""
+"Un efecto secundario del uso de «matchgroup» es que los elementos contenidos "
+"no coincidirán con el inicio ni con el final de la región. El ejemplo para el "
+"argumento «transparent» usa ésto."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:351
 msgid "TRANSPARENT"
-msgstr ""
+msgstr "TRANSPARENT"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:362
@@ -1141,6 +1157,17 @@ msgid ""
 "\t\t\\ contains=cCondNest\n"
 "\t:syntax region cCondNest start=/(/ end=/)/ contained transparent\n"
 msgstr ""
+"Suponga que, en un archivo de lenguaje C, desea resaltar los () que van luego\n"
+"del texto «while» de manera diferente a los () que siguen al texto «for». En\n"
+"ambos casos puede haber pares () anidados, que deben ser resaltados de la\n"
+"misma manera. Debe asegurarse de que el resaltado para los () se detenga en el\n"
+") coincidente. Puede lograrlo con las siguientes órdenes:\n"
+">\n"
+"\t:syntax region cWhile matchgroup=cWhile start=/while\\s*(/ end=/)/\n"
+"\t\t\\ contains=cCondNest\n"
+"\t:syntax region cFor matchgroup=cFor start=/for\\s*(/ end=/)/\n"
+"\t\t\\ contains=cCondNest\n"
+"\t:syntax region cCondNest start=/(/ end=/)/ contained transparent\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:373
@@ -1157,11 +1184,24 @@ msgid ""
 ") and the region would continue after it.  Now cCondNest only matches after\n"
 "the match with the start pattern, thus after the first (.\n"
 msgstr ""
+"Con esto puede definir resaltados diferentes para «cWhile» y «cFor». El\n"
+"elemento «cCondNest» puede aparecer dentro de cualquiera de ellos, pero tendrá\n"
+"precedencia sobre el resaltado del elemento en el que está contenido. El\n"
+"argumento «transparent» provoca esto.\n"
+"   Observe que el argumento «matchgroup» tiene el mismo grupo del elemento en\n"
+"que está definido. Entonces, ¿para qué se lo define? Bien, el efecto colateral\n"
+"de usar «matchgroup» es que los elementos contenidos no aparecerán en la\n"
+"coincidencia del elemento inicial. Esto evita que el grupo «cCondNest»\n"
+"coincida con el ( de justo después del «while» o «for». Si esto pasara, la\n"
+"coincidencia de inicio cubriría todo el texto hasta el ) correspondiente, y la\n"
+"región continuaría luego de éste. De esta forma «cCondNest» sólo coincide\n"
+"luego de la coincidencia con el patrón de inicio de la región, luego del\n"
+"primer (.\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:376
 msgid "OFFSETS"
-msgstr ""
+msgstr "DESPLAZAMIENTOS"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:380
@@ -1170,12 +1210,15 @@ msgid ""
 "\"if\".  But you don't want to include the \"if\" or the ( and ).  You can "
 "do this by specifying offsets for the patterns.  Example: >"
 msgstr ""
+"Suponga que va a definir como región el texto entre los ( y ) que aparecen "
+"luego de un «if». Pero no desea incluir el «if» ni los ( o ). Puede lograrlo "
+"indicando desplazamientos para los patrones. Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:382
 #, no-wrap
 msgid "\t:syntax region xCond start=/if\\s*(/ms=e+1 end=/)/me=s-1\n"
-msgstr ""
+msgstr "\t:syntax region xCond start=/if\\s*(/ms=e+1 end=/)/me=s-1\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:390
@@ -1189,33 +1232,36 @@ msgid ""
 "\"s-1\" means the start of the pattern match and then one character back.  The\n"
 "result is that in this text:\n"
 msgstr ""
+"El desplazamiento para el patrón de inicio es «ms=e+1». «ms» representa el\n"
+"Inicio de la Coincidencia (Match Start). Éste define un desplazamiento para el\n"
+"inicio de la coincidencia. Usualmente la coincidencia empieza donde el patrón\n"
+"coincide. «e+1» indica que la coincidencia ahora debe empezar al final de la\n"
+"coincidencia del patrón, y luego un carácter más allá.\n"
+"   El desplazamiento para el patrón de finalización es «me=s-1». «me»\n"
+"representa el Fin de Coincidencia (Match End). «s-1» equivale al inicio de la\n"
+"coincidencia del patrón, y luego un carácter atrás. El resultado final es que\n"
+"en este texto:\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:392
 #, no-wrap
 msgid "\tif (foo == bar) ~\n"
-msgstr ""
+msgstr "\tif (foo == bar) ~\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:394
 msgid "Only the text \"foo == bar\" will be highlighted as xCond."
-msgstr ""
+msgstr "Sólo se resaltará el texto «foo == bar» usando «xCond»."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:396
-#, fuzzy
-#| msgid "More about these modifiers here: |filename-modifiers|."
 msgid "More about offsets here: |:syn-pattern-offset|."
-msgstr ""
-"Para más información acerca de los modificadores, consulte: |filename-"
-"modifiers|."
+msgstr "Más información acerca de desplazamientos en: |:syn-pattern-offset|."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:399
-#, fuzzy
-#| msgid "JOINING LINES"
 msgid "ONELINE"
-msgstr "UNIR LÍNEAS"
+msgstr "ONELINE"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:402
