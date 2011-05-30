@@ -1269,12 +1269,14 @@ msgid ""
 "The \"oneline\" argument indicates that the region does not cross a line "
 "boundary.  For example: >"
 msgstr ""
+"El argumento «oneline» indica que la región no se extiende más allá de una "
+"línea. Por ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:404
 #, no-wrap
 msgid "\t:syntax region xIfThen start=/if/ end=/then/ oneline\n"
-msgstr ""
+msgstr "\t:syntax region xIfThen start=/if/ end=/then/ oneline\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:407
@@ -1282,6 +1284,8 @@ msgid ""
 "This defines a region that starts at \"if\" and ends at \"then\".  But if "
 "there is no \"then\" after the \"if\", the region doesn't match."
 msgstr ""
+"Esta orden define una región que empieza en el «if» y termina en el «end». "
+"Pero si no se encuentra un «end» luego del «if», no hay coincidencia."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:413
@@ -1293,11 +1297,16 @@ msgid ""
 "\tcheck if there is a match for the end pattern.  The region starts even\n"
 "\twhen the end pattern doesn't match in the rest of the file.\n"
 msgstr ""
+"\tNota:\n"
+"\tAl usar «oneline» la región no empieza si el patrón final no coincide\n"
+"\ten la misma línea. Sin «oneline» Vim _no_ revisa si hay coincidencia\n"
+"\tpara el patrón final. La región empieza incluso si no  hay ninguna\n"
+"\tcoincidencia para el patrón final en el resto del archivo.\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:416
 msgid "CONTINUATION LINES AND AVOIDING THEM"
-msgstr ""
+msgstr "CONTINUACIÓN DE LÍNEAS Y CÓMO EVITARLAS"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:422
@@ -1308,6 +1317,11 @@ msgid ""
 "The way you handle this is to allow the syntax item to contain a "
 "continuation pattern: >"
 msgstr ""
+"Las cosas se hacen algo más complejas. Definamos una línea de preprocesador. "
+"Empieza con un «#» en la primera columna y continúa hasta el final de la "
+"línea. Una línea que termine con \\ hace que la siguiente línea sea una "
+"continuación de la primera. Para cubrir este caso, debe permitir que el "
+"elemento de sintaxis contenga un patrón de continuación: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:425
@@ -1316,6 +1330,8 @@ msgid ""
 "\t:syntax region xPreProc start=/^#/ end=/$/ contains=xLineContinue\n"
 "\t:syntax match xLineContinue \"\\\\$\" contained\n"
 msgstr ""
+"\t:syntax region xPreProc start=/^#/ end=/$/ contains=xLineContinue\n"
+"\t:syntax match xLineContinue \"\\\\$\" contained\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:429
@@ -1324,6 +1340,10 @@ msgid ""
 "contained in it (namely xLineContinue) lets it go on for more than one "
 "line.  For example, it would match both of these lines:"
 msgstr ""
+"En este caso, aunque «xPreProc» usualmente coincidiría sólo con una línea de "
+"texto, «xLineContinue» (el grupo contenido en la definición) permite que se "
+"continúe por más de una línea. Por ejemplo, dicha definición coincidiría con "
+"las dos siguientes líneas:"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:432
@@ -1332,6 +1352,8 @@ msgid ""
 "\t#define SPAM  spam spam spam \\ ~\n"
 "\t\t\tbacon and spam ~\n"
 msgstr ""
+"\t#define SPAM  spam spam spam \\ ~\n"
+"\t\t\tbacon and spam ~\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:438
@@ -1342,6 +1364,12 @@ msgid ""
 "but only at the end of the line.  To avoid making the xPreProc continue on "
 "the next line, like xLineContinue does, use \"excludenl\" like this: >"
 msgstr ""
+"En este caso, este es el comportamiento deseado. Si no es lo que se quiere, "
+"puede hacer que la coincidencia esté en una sóla línea añadiendo «excludenl» "
+"al patrón contenido. Por ejemplo, desea resaltar «end» en «xPreProc», pero "
+"sólo al final de la línea. Para evitar que «xPreProc» continúe en la "
+"siguiente línea, como lo hace «xLineContinue», use «excludenl» de esta "
+"manera: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:443
@@ -1352,6 +1380,10 @@ msgid ""
 "\t:syntax match xPreProcEnd excludenl /end$/ contained\n"
 "\t:syntax match xLineContinue \"\\\\$\" contained\n"
 msgstr ""
+"\t:syntax region xPreProc start=/^#/ end=/$/\n"
+"\t\t\\ contains=xLineContinue,xPreProcEnd\n"
+"\t:syntax match xPreProcEnd excludenl /end$/ contained\n"
+"\t:syntax match xLineContinue \"\\\\$\" contained\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:447
@@ -1360,6 +1392,9 @@ msgid ""
 "doesn't have \"excludenl\", a match with it will extend xPreProc to the next "
 "line as before."
 msgstr ""
+"Debe poner el argumento «excludenl» antes del patrón. Debido a que "
+"«xLineContinue» no contiene «excludenl», una coincidencia con él extenderá "
+"«xPreProc» a la siguiente línea como lo hacía antes."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:450
@@ -1378,6 +1413,13 @@ msgid ""
 "loops, and functions.  Each of them contains the same syntax elements: numbers\n"
 "and identifiers.  You define them like this: >\n"
 msgstr ""
+"Una de las cosas que notará cuando escriba un archivo de sintaxis es que\n"
+"terminará generando un montón de grupos de sintaxis. Para hacer esto más\n"
+"manejable, Vim le permite definir una colección de grupos de sintaxis, llamada\n"
+"clúster.\n"
+"   Suponga que tiene un lenguaje que cuenta con ciclos «for», instrucciones\n"
+"«if», ciclos «while», y funciones. Cada uno de ellos tiene los mismos\n"
+"elementos de sintaxis: números e identificadores. Usted los define así: >\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:461
@@ -1387,6 +1429,9 @@ msgid ""
 "\t:syntax match xIf /^if.*/ contains=xNumber,xIdent\n"
 "\t:syntax match xWhile /^while.*/ contains=xNumber,xIdent\n"
 msgstr ""
+"\t:syntax match xFor /^for.*/ contains=xNumber,xIdent\n"
+"\t:syntax match xIf /^if.*/ contains=xNumber,xIdent\n"
+"\t:syntax match xWhile /^while.*/ contains=xNumber,xIdent\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:468
@@ -1399,12 +1444,18 @@ msgid ""
 "   To define a cluster for the two items that the three groups contain, use\n"
 "the following command: >\n"
 msgstr ""
+"Debe repetir la misma declaración «contains=» cada vez. Si quiere añadir otro\n"
+"elemento contenido, tendrá que hacerlo 3 veces. Los clústeres de sintaxis\n"
+"simplifican estas definiciones permitiéndole crear un clúster que represente a\n"
+"varios grupos de sintaxis.\n"
+"   Use la siguiente orden para definir un clúster para los dos elementos\n"
+"contenidos por los tres grupos: >\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:470
 #, no-wrap
 msgid "\t:syntax cluster xState contains=xNumber,xIdent\n"
-msgstr ""
+msgstr "\t:syntax cluster xState contains=xNumber,xIdent\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:473
@@ -1412,6 +1463,9 @@ msgid ""
 "Clusters are used inside other syntax items just like any syntax group.  "
 "Their names start with @.  Thus, you can define the three groups like this: >"
 msgstr ""
+"Puede usar clústeres dentro de otros elementos de sintaxis de la misma forma "
+"que cualquier otro grupo de sintaxis. Sus nombres siempre empiezan con «@». "
+"Con esto, puede definir los tres grupos así: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:477
@@ -1421,6 +1475,9 @@ msgid ""
 "\t:syntax match xIf /^if.*/ contains=@xState\n"
 "\t:syntax match xWhile /^while.*/ contains=@xState\n"
 msgstr ""
+"\t:syntax match xFor /^for.*/ contains=@xState\n"
+"\t:syntax match xIf /^if.*/ contains=@xState\n"
+"\t:syntax match xWhile /^while.*/ contains=@xState\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:479
