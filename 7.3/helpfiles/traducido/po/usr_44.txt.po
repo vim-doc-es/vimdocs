@@ -1481,28 +1481,28 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_44.txt:479
-#, fuzzy
-#| msgid "You can add items to a List with the add() function: >"
 msgid ""
 "You can add new group names to this cluster with the \"add\" argument: >"
-msgstr "Puede añadir elementos a una lista mediante la función add(): >"
+msgstr ""
+"Puede añadir nombres de grupos adicionales a un clúster mediante el argumento "
+"«add»: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:481
 #, no-wrap
 msgid "\t:syntax cluster xState add=xString\n"
-msgstr ""
+msgstr "\t:syntax cluster xState add=xString\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:483
 msgid "You can remove syntax groups from this list as well: >"
-msgstr ""
+msgstr "También puede eliminar grupos de sintaxis de la lista: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:485
 #, no-wrap
 msgid "\t:syntax cluster xState remove=xNumber\n"
-msgstr ""
+msgstr "\t:syntax cluster xState remove=xNumber\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:488
@@ -1517,13 +1517,16 @@ msgid ""
 "want to write two syntax files, you can have the C++ syntax file read in the "
 "one for C by using the following command: >"
 msgstr ""
+"La sintaxis del lenguaje C++ es un superconjunto de la del lenguaje C. "
+"Considerando lo molesto que resultaría escribir dos veces la parte común del "
+"resaltado de sintaxis, es posible hacer que el archivo de sintaxis de C++ lea "
+"el archivo de sintaxis para C usando la siguiente orden: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:494
-#, fuzzy, no-wrap
-#| msgid "\t:runtime syntax/colortest.vim\n"
+#, no-wrap
 msgid "\t:runtime! syntax/c.vim\n"
-msgstr "\t:runtime syntax/colortest.vim\n"
+msgstr "\t:runtime! syntax/c.vim\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:501
@@ -1536,17 +1539,25 @@ msgid ""
 "   After loading the C syntax items the specific C++ items can be defined.\n"
 "For example, add keywords that are not used in C: >\n"
 msgstr ""
+"La orden «:runtime!» carga todos los archivos «syntax/c.vim» que se encuentren\n"
+"en 'runtimepath'. Esto hace que las partes correspondientes a C de la sintaxis\n"
+"de C++ estén definidas de la misma forma que para archivos de C. Si ha\n"
+"reemplazado el archivo de sintaxis «c.vim», o ha añadido elementos con\n"
+"archivos adicionales, éstos también serán incluidos.\n"
+"   Luego de carga los elementos de sintaxis para C es posible definir los\n"
+"elementos específicos de C++. Por ejemplo, añadir palabras clave que no\n"
+"existen en C: >\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:503
 #, no-wrap
 msgid "\t:syntax keyword cppStatement\tnew delete this friend using\n"
-msgstr ""
+msgstr "\t:syntax keyword cppStatement\tnew delete this friend using\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:505
 msgid "This works just like in any other syntax file."
-msgstr ""
+msgstr "El funcionamiento es el mismo que en cualquier otro archivo de sintaxis."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:513
@@ -1560,6 +1571,14 @@ msgid ""
 "the elements it defined in a syntax cluster.  For Perl, the statements are as\n"
 "follows: >\n"
 msgstr ""
+"Considere ahora el lenguaje Perl. Un script de Perl consta de dos partes\n"
+"diferentes: la sección de documentación en formato POD, y el programa\n"
+"propiamente dicho, escrito en Perl. La sección POD empieza con el texto\n"
+"«=head» y termina con «=cut».\n"
+"   Desea definir la sintaxis POD en un archivo, y usarla desde el archivo de\n"
+"sintaxis de Perl. La orden «:syntax include» lee el archivo de sintaxis dado y\n"
+"almacena los elementos que se definen allí en un clúster de sintaxis. Para\n"
+"Perl, las instrucciones son las siguientes: >\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:516
@@ -1568,6 +1587,8 @@ msgid ""
 "\t:syntax include @Pod <sfile>:p:h/pod.vim\n"
 "\t:syntax region perlPOD start=/^=head/ end=/^=cut/ contains=@Pod\n"
 msgstr ""
+"\t:syntax include @Pod <sfile>:p:h/pod.vim\n"
+"\t:syntax region perlPOD start=/^=head/ end=/^=cut/ contains=@Pod\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:529
@@ -1586,6 +1607,19 @@ msgid ""
 "the directory name of the file.  This causes the pod.vim file in the same\n"
 "directory to be included.\n"
 msgstr ""
+"en un archivo Perl, el texto «=head» marca el inicio de la región «perlPOD».\n"
+"El clúster «@Pod» está contenido en esta región. Todos los elementos definidos\n"
+"como de nivel superior en los archivos de sintaxis «pod.vim» coincidirán aquí.\n"
+"Al encontrar «=cut», la región termina y se retoman los elementos definidos en\n"
+"el archivo para Perl.\n"
+"   La orden «:syntax include» tiene el cuidado de ignorar las órdenes «:syntax\n"
+"clear» en el archivo que incluye. Y argumentos como «contains=ALL» sólo harán\n"
+"que se incluyan los elementos definidos en el archivo incluido, y no en el\n"
+"archivo que hace la inclusión.\n"
+"   El texto «<sfile>:p:h» usa el nombre del archivo actual (<sfile>), lo\n"
+"convierte en una ruta completa (:p) y luego descarta la parte final (:h). De\n"
+"este proceso resulta el nombre completo de directorio del archivo. Con esto se\n"
+"logra incluir el archivo «pod.vim» del mismo directorio.\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:532
@@ -1605,13 +1639,21 @@ msgid ""
 "for the beginning or end of a C-style comment and begin syntax coloring from\n"
 "there: >\n"
 msgstr ""
+"La tarea de los compiladores es fácil. Empiezan desde el principio de un\n"
+"archivo, y hacen el análisis sintáctico hasta el fin del mismo. La tarea de\n"
+"Vim no es tan fácil. Debe empezar el análisis a mitad del archivo, justo en\n"
+"donde se está editando el texto. Así que, ¿De qué manera puede Vim ubicarse en\n"
+"el archivo?\n"
+"   El secreto es la orden «:syntax sync». Ésta le indica a Vim cómo ubicarse\n"
+"dentro del archivo. Por ejemplo, la siguiente oren le indica a Vim que busque\n"
+"hacia atrás hasta encontrar el principio de un comentario estilo C, y que\n"
+"empiece el resaltado de sintaxis desde ahí: >\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:542
-#, fuzzy, no-wrap
-#| msgid "\t:syntax clear\n"
+#, no-wrap
 msgid "\t:syntax sync ccomment\n"
-msgstr "\t:syntax clear\n"
+msgstr "\t:syntax sync ccomment\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:548
@@ -1623,12 +1665,15 @@ msgid ""
 "   For example, the following command tells Vim to look at least 10 lines\n"
 "before the top of the screen: >\n"
 msgstr ""
+"Es posible afinar el proceso con algunos argumentos. El argumento «minlines»\n"
+"le indica a Vim la cantidad mínima de líneas a revisar hacia atrás, y\n"
+"«maxlines» le indica al editor la cantidad máxima de líneas a revisar.\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:550
 #, no-wrap
 msgid "\t:syntax sync ccomment minlines=10 maxlines=500\n"
-msgstr ""
+msgstr "\t:syntax sync ccomment minlines=10 maxlines=500\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:561
@@ -1645,12 +1690,23 @@ msgid ""
 "syntax group.  If you want to color things another way, you can specify a\n"
 "different syntax group: >\n"
 msgstr ""
+"Si no es posible ubicarse en el espacio inicial, se va buscando más y más\n"
+"atrás hasta que logra ubicarse. Pero no se mira más allá de 500 líneas atrás.\n"
+"(Un valor grande en «maxlines» ralentiza el procesamiento. Uno pequeño puede\n"
+"hacer que la sincronización falle.)\n"
+"   Para hacer que la sincronización funcione algo más rápido, indíquele a Vim\n"
+"qué elementos puede omitir. Cada coincidencia o región que sólo necesite\n"
+"usarse cuando se esté mostrando su texto puede identificarse pasándole el\n"
+"argumento «display».\n"
+"   De manera predeterminada, el comentario que se encuentre se resaltará como\n"
+"parte del grupo de sintaxis «Comment». Puede especificar un grupo de sintaxis\n"
+"diferente si quiere colorear las cosas de otra forma: >\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:563
 #, no-wrap
 msgid "\t:syntax sync ccomment xAltComment\n"
-msgstr ""
+msgstr "\t:syntax sync ccomment xAltComment\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:568
@@ -1661,13 +1717,17 @@ msgid ""
 "following command tells Vim to go back 150 lines and start parsing from "
 "there: >"
 msgstr ""
+"Si su lenguaje de programación no cuenta con comentarios estilo C, puede "
+"intentar usar otro método de sincronización. La forma más sencilla de hacerlo "
+"es indicarle a Vim que retroceda una cantidad dada de líneas y que trate de "
+"resolver el problema desde allí. La siguiente orden le indica a Vim que "
+"retroceda 150 líneas e inicie el análisis desde allí: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:570
-#, fuzzy, no-wrap
-#| msgid "\t:set modelines=10\n"
+#, no-wrap
 msgid "\t:syntax sync minlines=150\n"
-msgstr "\t:set modelines=10\n"
+msgstr "\t:syntax sync minlines=150\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:577
@@ -1680,6 +1740,13 @@ msgid ""
 "\t:syntax sync match {sync-group-name}\n"
 "\t\t\\ grouphere {group-name} {pattern}\n"
 msgstr ""
+"Un valor grande en «minlines» puede hacer que Vim se ralentice,\n"
+"particularmente al desplazarse hacia atrás en un archivo.\n"
+"   Finalmente, puede especificar el grupo de sintaxis a buscar usando esta\n"
+"orden:\n"
+">\n"
+"\t:syntax sync match {nombre-grupo-sintaxis}\n"
+"\t\t\\ grouphere {nombre-grupo} {patrón}\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:582
