@@ -1,86 +1,70 @@
 ./" vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es 
 ./"
 ./" Copyright (C) 2009 
-./" This file is distributed under the same license as the Vim 7.3 package.
+./" This file is distributed under the same license as the Vim 7.2 package.
 ./"
 ./" Translators credits:
 ./"   - Initial translation
-./"       Pedro Alejandro López-Valencia <vorbote@users.sf.net>, 2009-2011
+./"       Pedro Alejandro López-Valencia <vorbote@users.sourceforge.net>, 2009
 ./"
 ./"   - Updates
 ./"       TRADUCTOR <CORREO>, AÑO 
 ./"
-.TH VIMTUTOR 1 "Abril 2 2001"
-.SH NOMBRE
-vimtutor \- El tutor de Vim
-.SH SINOPSIS
+.TH VIMTUTOR 1 "2001 April 2"
+.SH NAME
+vimtutor \- the Vim tutor
+.SH SYNOPSIS
 .br
-.B vimtutor 
-.BI [ \-g ] 
-.BI [ idioma ]
-.SH DESCRIPCIÓN
+.B vimtutor [\-g] [language]
+.SH DESCRIPTION
 .B Vimtutor
-inicia el tutor de
+starts the
 .B Vim
-copiando primero el archivo del tutorial, de manera que pueda ser modificado
-sin cambiar el archivo original.
+tutor.
+It copies the tutor file first, so that it can be modified without changing
+the original file.
 .PP
+The
 .B Vimtutor
-es útil para las personas que desean aprender sus primeras órdenes de
-.BR Vim ,
-el editor.
-.PP
-El argumento opcional 
-.I \-g
-inicia
-.B Vimtutor
-con
-.B gVim
-en vez de
+is useful for people that want to learn their first
 .B Vim
-si la version gráfica de 
-.B Vim 
-está disponible en el sistema; o utiliza a
-.B Vim 
-si
-.B gVim
-no está disponible en el sistema.
+commands.
 .PP
-El argumento opcional
-.BI [ idioma ]
-es el código de dos letras de un idioma, como «it» por italiano o «es»
-por español.
-Si el argumento
-.BI [ idioma ]
-no está presente, se usará el idioma de la configuración regional en uso 
-si existe un tutorial para ese idioma; en otro caso se usará la versión 
-inglesa.
+The optional argument \-g starts vimtutor with gvim rather than vim, if the
+GUI version of vim is available, or falls back to Vim if gvim is not found.
+.PP
+The optional [language] argument is the two-letter name of a language, like
+"it" or "es".
+If the [language] argument is missing, the language of the current locale will
+be used.
+If a tutor in this language is available, it will be used.
+Otherwise the English version will be used.
 .PP
 .B Vim
-se inicia siempre en modo compatible.
-.SH ARCHIVOS
+is always started in Vi compatible mode.
+.SH FILES
 .TP 15
-\fC/usr/local/lib/vim/tutor/tutor[.idioma]\fR
-.PP
-El archivo de texto de
+/usr/local/lib/vim/tutor/tutor[.language]
+The
 .B Vimtutor
+text file(s).
 .TP 15
-\fC/usr/local/lib/vim/tutor/tutor.vim\fR
-.PP
-El «script» de
-.B Vim
-usado para copiar el archivo de texto de
-.BR Vimtutor .
-.SH AUTOR
+/usr/local/lib/vim/tutor/tutor.vim
+The Vim script used to copy the
 .B Vimtutor
-fué escrito originalmente por Michael C.\ Pierce y Robert K.\ Ware
-de la Escuela de Minas de Colorado usando ideas sugeridas por
-Charles Smith de la Universidad Estatal de Colorado.
+text file.
+.SH AUTHOR
+The
+.B Vimtutor
+was originally written for Vi by Michael C. Pierce and Robert K. Ware,
+Colorado School of Mines using ideas supplied by Charles Smith,
+Colorado State University.
 E-mail: bware@mines.colorado.edu.
-.PP
-Fué modificado por Bram Moolenar para
-.BR Vim .
-Vea los archivos de tutorial para los nombres de los traductores.
-.SH VÉASE TAMBIÉN
-.BR vim (1)
-./" vim:fenc=latin1:ft=nroff
+.br
+It was modified for
+.B Vim
+by Bram Moolenaar.
+For the names of the translators see the tutor files.
+.SH SEE ALSO
+vim(1)
+." vim:fenc=latin1:ft=nroff
