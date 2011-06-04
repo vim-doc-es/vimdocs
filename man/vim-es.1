@@ -1,14 +1,14 @@
 ./" vim-doc-es https://www.assembla.com/wiki/show/vim-doc-es 
 ./"
 ./" Copyright (C) 2009 
-./" This file is distributed under the same license as the Vim 7.2 package.
+./" This file is distributed under the same license as the Vim 7.3 package.
 ./"
 ./" Translators credits:
 ./"   - Initial translation
-./"       Pedro Alejandro L�pez-Valencia <vorbote@users.sourceforge.net>, 2009
+./"       Pedro Alejandro López-Valencia <vorbote@users.sf.net>, 2009-2011
 ./"
 ./"   - Updates
-./"       TRADUCTOR <CORREO>, A�O 
+./"       TRADUCTOR <CORREO>, AÑO 
 ./"
 .TH VIM 1 "Abril 11 del 2006"
 .SH NOMBRE
@@ -17,17 +17,16 @@ vim \- Vi IMproved (mejorado), un editor de texto para programadores.
 .SH SINOPSIS
 .PP
 .B vim
-[opciones] [file ...]
+.BI "[" opciones "] [" "file ..." "]"
 .PP
 .B vim
-[opciones] \-
+.BI "[" opciones "] " \-
 .PP
 .B vim
-[opciones] \-t marca
+.BI "[" opciones "] " "\-t " marca
 .PP
 .B vim
-[opciones] \-q [archivo de errores]
-.PP
+.BI "[" opciones "] " "\-q " "[" archivo de errores "]"
 .PP
 .B ex
 .PP
@@ -42,127 +41,143 @@ vim \- Vi IMproved (mejorado), un editor de texto para programadores.
 .B rview
 .B rgvim
 .B rgview
-.SH DESCRIPCI�N
+.SH DESCRIPCIÓN
 .B Vim
 Es un editor compatible con Vi.
 Puede usarse para editar toda clase de texto simple y
-es especialmente �til para editar programas.
+es especialmente útil para editar programas.
 .PP
-There are a lot of enhancements above Vi: multi level undo,
-multi windows and buffers, syntax highlighting, command line
-editing, filename completion, on-line help, visual selection, etc..
-See ":help vi_diff.txt" for a summary of the differences between
+Hay muchas mejoras sobre Vi: deshacer de multinivel,
+ventanas y búferes múltiples, resaltado de sintáxis,
+edición de la línea de comandos, completado de nombres
+de archivo, ayuda en línea, selección visual, etc.
+Véa «:help vi_diff.txt» para un resumen de las diferencias
+entre
 .B Vim
-and Vi.
+y
+.BR Vi .
 .PP
-While running
+Al ejecutar
 .B Vim
-a lot of help can be obtained from the on-line help system, with the ":help"
-command.
-See the ON-LINE HELP section below.
+hay gran cantidad de ayuda disponible del sistema de ayuda
+en línea, con el comando «:help».
+Véa la sección AYUDA EN LÍNEA más abajo.
 .PP
-Most often
+Lo más común es iniciar
 .B Vim
-is started to edit a single file with the command
+para editar un solo archivo con el comando
+.br
+.EX
+vim «archivo»
+.EE
 .PP
-	vim file
-.PP
-More generally
+Generalizando,
 .B Vim
-is started with:
+se inicia con el comando:
+.br
+.EX
+vim [opciones] [lista de archivos]
+.EE
 .PP
-	vim [options] [filelist]
-.PP
+Si falta la lista de archivos, el editor se iniciará con un búfer vacio.
 If the filelist is missing, the editor will start with an empty buffer.
 Otherwise exactly one out of the following four may be used to choose one or
 more files to be edited.
 .TP 12
-file ..
-A list of filenames.
-The first one will be the current file and read into the buffer.
-The cursor will be positioned on the first line of the buffer.
-You can get to the other files with the ":next" command.
-To edit a file that starts with a dash, precede the filelist with "\-\-".
+archivo ...
+Una lista de archivos.
+El primero será el archivo activo y será leido dentro del búfer.
+La posición del cursor será la primera línea del búfer.
+Para acceder a los otros archivos se usa el comando «:next»,
+y para editar un archivo cuyo nombre empieza con un guión, se
+precede la lista de archivos con «\-\-»
 .TP
 \-
-The file to edit is read from stdin.  Commands are read from stderr, which
-should be a tty.
+El archivo a editar se leerá de la entrada estándar (stdin). Los comandos
+se leen del error estándar (stderr) el cual deberá ser una tty.
 .TP
-\-t {tag}
-The file to edit and the initial cursor position depends on a "tag", a sort
-of goto label.
-{tag} is looked up in the tags file, the associated file becomes the current
-file and the associated command is executed.
-Mostly this is used for C programs, in which case {tag} could be a function
-name.
-The effect is that the file containing that function becomes the current file
-and the cursor is positioned on the start of the function.
-See ":help tag\-commands".
+\-t {etiqueta}
+El archivo a editar y la posición inicial del cursor depende de una
+«etiqueta», una forma de marca de «goto».
+La {etiqueta} se busca en el archvo de etiquetas, el archivo asociado
+se convierte en el archivo activo y se ejecuta el comando correspondiente.
+En general, esto se usa para programas en C, en cuyo caso {etiqueta}
+puede ser un nombre de función.
+El efecto es que el archivo conteniendo esa funcipon se convierte en
+el archivo activo y el cursor se posiciona en el comienzo de la
+función.
+Véase «:help tag\-commands».
 .TP
-\-q [errorfile]
-Start in quickFix mode.
-The file [errorfile] is read and the first error is displayed.
-If [errorfile] is omitted, the filename is obtained from the 'errorfile'
-option (defaults to "AztecC.Err" for the Amiga, "errors.err" on other
-systems).
-Further errors can be jumped to with the ":cn" command.
-See ":help quickfix".
+\-q [archivo de errores]
+Iniciar en modo «quickFix».
+Se lee el archivo [archivo de errores] y se muestra el primer error.
+Si se omite el [archivo de errores], el nombre del archivo se obtiene
+de la opción «errorfile» cuyo valor por defecto es «AztecC.Err» en el
+Amiga y «errors.err» en otros sistemas.
+Se puede saltar a otros errores con el comando «:cn».
+Véase «:help quickfix».
 .PP
 .B Vim
-behaves differently, depending on the name of the command (the executable may
-still be the same file).
+se comporta diferentemente dependiendo del nombre de comando con el cual
+se invoca, la imágen ejecutable puede ser el mismo archivo.
 .TP 10
-vim
-The "normal" way, everything is default.
+.C vim
+La forma «normal» en la que todo es por defecto.
 .TP
-ex
-Start in Ex mode.
-Go to Normal mode with the ":vi" command.
-Can also be done with the "\-e" argument.
+.B ex
+Iniciar en modo Ex.
+Para ir al modo normal, se usa el comando «:vi».
+Tambiíen puede usarse el argumento «\-e».
 .TP
 view
-Start in read-only mode.  You will be protected from writing the files.  Can
-also be done with the "\-R" argument.
+Iniciar en modo de solo lectura.
+Usted no podrá escribir archivos.
+Tambiíen puede usarse el argumento «\-R».
 .TP
 gvim gview
-The GUI version.
-Starts a new window.
-Can also be done with the "\-g" argument.
+La versión gráfica (GUI).
+Inicia una nueva ventana.
+Tambiíen puede usarse el argumento «\-g».
 .TP
 evim eview
-The GUI version in easy mode.
-Starts a new window.
-Can also be done with the "\-y" argument.
+La versión GUI in modo fácil.
+Inicia una nueva ventana.
+Tambiíen puede usarse el argumento «\-y».
 .TP
 rvim rview rgvim rgview
-Like the above, but with restrictions.  It will not be possible to start shell
-commands, or suspend
+Como las opciones arriba, pero con restricciones.
+No será posible interactuar con el procesador de comandos
+o suspender a
 .B Vim.
-Can also be done with the "\-Z" argument.
-.SH OPTIONS
-The options may be given in any order, before or after filenames.
-Options without an argument can be combined after a single dash.
+Tambiíen puede usarse el argumento «\-Z».
+.SH OPCIONES
+Las opciones pueden darse en cualquier orden, antes o despues
+de los nombres de archivo.
+Las opciones sin argumento pueden combinarse después de un
+guión único.
 .TP 12
 +[num]
-For the first file the cursor will be positioned on line "num".
-If "num" is missing, the cursor will be positioned on the last line.
+El cursor será puesto en la línea «num» del primer nombre de
+archivo en la línea de comandos.
+Si no se especifica «num», el cursor será puesto en la última
+línea.
 .TP
 +/{pat}
-For the first file the cursor will be positioned on the
-first occurrence of {pat}.
-See ":help search\-pattern" for the available search patterns.
+El cursor será puesto en la primera ocurrencia de {pat}.
+Vea «:help search\-pattern» para los posibles patrones
+de búsqueda.
 .TP
-+{command}
++{comando}
 .TP
-\-c {command}
-{command} will be executed after the
-first file has been read.
-{command} is interpreted as an Ex command.
-If the {command} contains spaces it must be enclosed in double quotes (this
-depends on the shell that is used).
-Example: Vim "+set si" main.c
+\-c {comando}
+Se ejecutará {command} después de leer el primer archivo mencionado
+en la línea de comandos.
+{comando} se interpreta cono un comando Ex.
+Si el {comando} contiene espacios, debe encerrarse en comillas dobles
+(esto depende del procesador de comandos en uso).
+Ejemplo: Vim "+set si" principal.c
 .br
-Note: You can use up to 10 "+" or "\-c" commands.
+Nota: Usted puede usar hasta 10 comandos «+» o «\-c».
 .TP
 \-S {file}
 {file} will be sourced after the first file has been read.
@@ -476,7 +491,7 @@ GTK GUI only: Use the GtkPlug mechanism to run gvim in another window.
 .TP
 \-\-version
 Print version information and exit.
-.SH ON-LINE HELP
+.SH AYUDA EN LÍNEA
 Type ":help" in
 .B Vim
 to get started.
@@ -487,7 +502,7 @@ Tags are present to jump from one place to another (sort of hypertext links,
 see ":help").
 All documentation files can be viewed in this way, for example
 ":help syntax.txt".
-.SH FILES
+.SH ARCHIVOS
 .TP 15
 /usr/share/vim/vim72/doc/*.txt
 The
@@ -541,9 +556,9 @@ Files used for PostScript printing.
 For recent info read the VIM home page:
 .br
 <URL:http://www.vim.org/>
-.SH SEE ALSO
+.SH VÉASE TAMBIÉN
 vimtutor(1)
-.SH AUTHOR
+.SH AUTOR
 Most of
 .B Vim
 was made by Bram Moolenaar, with a lot of help from others.
@@ -564,4 +579,8 @@ And if you think other things are bugs "because Vi does it differently",
 you should take a closer look at the vi_diff.txt file (or type :help
 vi_diff.txt when in Vim).
 Also have a look at the 'compatible' and 'cpoptions' options.
-.\" vim:fenc=latin1:ft=nroff
+./"
+./"
+./" vim:enc=latin1:fenc=latin1:ft=nroff
+./"
+./"
