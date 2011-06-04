@@ -130,48 +130,54 @@ Para ir al modo normal, se usa el comando «:vi».
 Tambiíen puede usarse el argumento «\-e».
 .TP
 view
-Start in read-only mode.  You will be protected from writing the files.  Can
-also be done with the "\-R" argument.
+Iniciar en modo de solo lectura.
+Usted no podrá escribir archivos.
+Tambiíen puede usarse el argumento «\-R».
 .TP
 gvim gview
-The GUI version.
-Starts a new window.
-Can also be done with the "\-g" argument.
+La versión gráfica (GUI).
+Inicia una nueva ventana.
+Tambiíen puede usarse el argumento «\-g».
 .TP
 evim eview
-The GUI version in easy mode.
-Starts a new window.
-Can also be done with the "\-y" argument.
+La versión GUI in modo fácil.
+Inicia una nueva ventana.
+Tambiíen puede usarse el argumento «\-y».
 .TP
 rvim rview rgvim rgview
-Like the above, but with restrictions.  It will not be possible to start shell
-commands, or suspend
+Como las opciones arriba, pero con restricciones.
+No será posible interactuar con el procesador de comandos
+o suspender a
 .B Vim.
-Can also be done with the "\-Z" argument.
+Tambiíen puede usarse el argumento «\-Z».
 .SH OPCIONES
-The options may be given in any order, before or after filenames.
-Options without an argument can be combined after a single dash.
+Las opciones pueden darse en cualquier orden, antes o despues
+de los nombres de archivo.
+Las opciones sin argumento pueden combinarse después de un
+guión único.
 .TP 12
 +[num]
-For the first file the cursor will be positioned on line "num".
-If "num" is missing, the cursor will be positioned on the last line.
+El cursor será puesto en la línea «num» del primer nombre de
+archivo en la línea de comandos.
+Si no se especifica «num», el cursor será puesto en la última
+línea.
 .TP
 +/{pat}
-For the first file the cursor will be positioned on the
-first occurrence of {pat}.
-See ":help search\-pattern" for the available search patterns.
+El cursor será puesto en la primera ocurrencia de {pat}.
+Vea «:help search\-pattern» para los posibles patrones
+de búsqueda.
 .TP
-+{command}
++{comando}
 .TP
-\-c {command}
-{command} will be executed after the
-first file has been read.
-{command} is interpreted as an Ex command.
-If the {command} contains spaces it must be enclosed in double quotes (this
-depends on the shell that is used).
-Example: Vim "+set si" main.c
+\-c {comando}
+Se ejecutará {command} después de leer el primer archivo mencionado
+en la línea de comandos.
+{comando} se interpreta cono un comando Ex.
+Si el {comando} contiene espacios, debe encerrarse en comillas dobles
+(esto depende del procesador de comandos en uso).
+Ejemplo: Vim "+set si" principal.c
 .br
-Note: You can use up to 10 "+" or "\-c" commands.
+Nota: Usted puede usar hasta 10 comandos «+» o «\-c».
 .TP
 \-S {file}
 {file} will be sourced after the first file has been read.
