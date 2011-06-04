@@ -5,10 +5,10 @@
 ./"
 ./" Translators credits:
 ./"   - Initial translation
-./"       Pedro Alejandro López-Valencia <vorbote@users.sf.net>, 2009-2011 
+./"       Pedro Alejandro López-Valencia <vorbote@users.sourceforge.net>, 2009
 ./"
 ./"   - Updates
-./"       TRADUCTOR <CORREO>, AÑO
+./"       TRADUCTOR <CORREO>, AÑO 
 ./"
 .\"
 .\" 21st May 1996
@@ -18,431 +18,380 @@
 .TH XXD 1 "Agosto 1996" "Página de manual para xxd"
 .SH NOMBRE
 .PP
-.B xxd
-\- Crear un volcado hexadecimal o lo contrario.
+.I xxd
+\- Crear un «dump» hexadecimal o lo contrario.
 .SH SINOPSIS
 .PP
-.BI xxd \-h [ elp ]
+.B xxd
+\-h[elp]
 .PP
 .B xxd
-.BI [ opciones "] [" entrada " [" salida ]]
+[opciones] [entrada [salida]]
 .PP
 .B xxd
-.BI \-r "" [ evertir "] [" opciones "] [" entrada " [" salida ]]
+\-r[evertir] [opciones] [entrada [salida]]
 .SH DESCRIPCIÓN
-.B xxd
-crea un volcado hexadecimal de un archivo dado o de la entrada estándar.
-También puede convertir un volcado hexadecimal a su forma binaria original.
+.I xxd
+crea un «dump» hexadecimal de un archivo dado o de la entrada standard.
+Puede convertir un «dump» hexadecimal a su forma binaria original.
 Tal y como
 .BR uuencode (1)
 y
-.BR uudecode (1),
-.B xxd
+.BR uudecode (1)
 permite la transmisión de datos binarios en una representación ASCII que la
 hace segura para el correo electrónico pero tiene la ventaja de decodificar
 a la salida estándar.
 Mas aún, puede usarse para parchear archivos binarios.
 .SH OPCIONES
-.PP
 Si no se suministra un 
 .I archivo de entrada
 se leerá la entrada estándar.
 Si se especifica un
 .I archivo de entrada
 como el caracter
-.RB « \- »
-se tomarán los datos de la entrada estándar.
+.RB \` \- '
+se tomarán los datos de la entrada estándad.
 Si no se suministra un
 .I archivo de salida
 o se suministra un caracter
-.RB « \- »
+.RB \` \- '
 en su lugar, los resultados se enviarán a la salida estándar.
 .PP
-Nótese que se usa un analizador «perezoso» que no revisa mas que la
+Nótese que se usa un analizador ``perezoso'' que no revisa mas que la
 primera letra de la opción, a menos que la opción sea seguida por un
 parametro.
 Los espacios entre una opción de letra única y su parámetro son
-opcionales y los parámetros pueden especificarse en notación decimal,
+opcionales.
+Los parámetros pueden especificarse en notación decimal,
 hexadecimal u octal.
-Así pues,
-.IR \-c 8,
-.IR \-c " 8,"
-.IR \-c " 010"
+Así
+.BR \-c8 ,
+.BR "\-c 8" ,
+.B \-c 010
 y
-.IR \-cols " 8"
+.B \-cols 8
 son equivalentes.
 .PP
 .TP
-.IB \-a " | " \-autoskip
-Activa/desactiva «autoskip».
-Un «*» reemplaza lineas nulas. Desactivado por defecto.
+.IR \-a " | " \-autoskip
+Activa/desactiva autoskip.
+Un `*' replace lineas nulas. Desactivado por defecto.
 .TP
-.IB \-b " | " \-bits
-Hace un volcado en bits (digitos binarios) en vez de hexadecimal.
+.IR \-b " | " \-bits
+Hace un dump en bits (digitos binarios) en vez de hexadecimal.
 Esta opción escribe octetos como ocho dígitos de unos y ceros
 en vez de un dump hexadecimal normal.
 Cada línea se precede de un número de línea en hexadecimal
 y es seguida de una representación en ASCII (o EBCDIC).
-Las opciones de línea de comando 
-.IR \-r ", " \-p " e " \-i 
-no funcionan en este modo de operación.
+Las opciones de línea de comando \-r, \-p e \-i no funcionan en
+este modo de operación.
 .TP
-.IR \-c " columnas  \fB|\fR " \-cols " columnas"
+.IR "\-c columnas " | " \-cols columnas"
 especifica un formato de
-.BI < columnas >
+.RI < columnas >
 de octetos por línea.
-El valor por defecto es 16 (
-.IR \-i ": 12, " \-ps ": 30, " \-b ": 6)."
+El valod por defecto es 16 (\-i: 12, \-ps: 30, \-b: 6). 
 El valor máximo es de 256.
 .TP
-.IB \-E " | " \-EBCDIC
+.IR \-E " | " \-EBCDIC
 Cambia el vector de codificación en la columna de la derecha de
 ASCII a EBCDIC.
-Esto no altera la representación hexadecimal. Esta opción no funciona
-en combinación con las opciones 
-.IR \-r , \-p o \-i.
+Esto no cambia la representación hexadecimal. Esta opción no funciona
+en combinación con las opciones \-r, \-p o \-i.
 .TP
-.IB "\-g bytes " | " \-groupsize bytes"
-Separa la salida de cada número de
-.BI < bytes >
+.IR "\-g bytes " | " \-groupsize bytes"
+separa la salida de cada número de
+.RI < bytes >
 (dos caracteres hexadecimales u ocho dígitos binarios) con un espacio.
 Use
-.IR \-g " 0"
+.I \-g 0
 para suprimir el espaciamiento.
-.BI < Bytes > 
-tiene un valor por defecto de 2 en modo normal y de 1 en modo binario.
+< Bytes > 
+.I tiene un valor por defecto de 
+2 en modo normal y de
+.I 1
+en modo binario.
 El agrupamiento no se aplica a PostScript o incluye estilos.
 .TP
-.IB \-h " | " \-help
-Imprime un resumen de los comandos disponibles y termina.
-No se hace ningún volcado hexadecimal.
+.IR \-h " | " \-help
+print a summary of available commands and exit.  No hex dumping is performed.
 .TP
-.IB \-i " | " \-include
-El resultado sale en el estilo de un archivo de inclusión de C.
-Se escribe una definición completa de un arreglo estático nombrado
-siguiendo el nombre del archivo original, a menos que
-.I xxd
-lea la entrada estándar.
+.IR \-i " | " \-include
+output in C include file style. A complete static array definition is written
+(named after the input file), unless xxd reads from stdin.
 .TP
-.IB "\-l longitud " | " \-len longitud"
-Detenerse despues de escribir determinada
-.BI  < longitud >
-de octetos.
+.IR "\-l len " | " \-len len"
+stop after writing
+.RI  < len >
+octets.
 .TP
-.IB \-p " | " \-ps " | " \-postscript " | " \-plain
-salida en postscript, en estilo de volcado hexadecimal continuo, 
-también conocido como estilo de volcado hexadecimal simple («plain»).
+.IR \-p " | " \-ps " | " \-postscript " | " \-plain
+output in postscript continuous hexdump style. Also known as plain hexdump
+style.
 .TP
-.IB \-r " | " \-revert
-Operación inversa: convierte (o parchea) un «hexdump» a binario.
-Si no esta escribiendo a la salida estándar,
-.I xxd
-escribe al archivo de salida sin truncarlo.
-Use la combinación
+.IR \-r " | " \-revert
+reverse operation: convert (or patch) hexdump into binary.
+If not writing to stdout, xxd writes into its output file without truncating
+it. Use the combination
 .I \-r \-p
-Para leer volcados hexadecimales sin información de números de línea y sin
-un formato de columna particular. Se permite espacio adicional y quiebres
-de línea en cualquier parte.
+to read plain hexadecimal dumps without line number information and without a
+particular column layout. Additional Whitespace and line-breaks are allowed
+anywhere.
 .TP
-.IR \-seek " desplazamiento"
-Cuando se usa después de
-.IR \-r ,
-revierte con un
-.BI < desplazamiento >
-añadido a las posiciones de archivo en el volcado hexadecimal.
+.I \-seek offset
+When used after
+.IR \-r :
+revert with
+.RI < offset >
+added to file positions found in hexdump.
 .TP
-.IR \-s " [+][\-]búsqueda"
-Comenzar en
-.BI < búsqueda >
-de bytes  absolutos, o relativos de desplazamiento dentro del archivo.
-.B +
-indica que la búsqueda es relativa a la posición actual en el archvo de entrada
-estándar (lo que carece de sentido si no se está leyendo la entrada estándar).
-.B \-
-indica que la búsqueda debe comenzar tantos caracteres del final del archivo
-como se indique o si se combina con
-.B +
-antes de la posición actual en el archivo de entrada estándar.
-Sin la opción
-.BR \-s ,
-.I xxd
-se inicia el la posición actual del archivo.
+.I \-s [+][\-]seek
+start at
+.RI < seek >
+bytes abs. (or rel.) infile offset.
+\fI+ \fRindicates that the seek is relative to the current stdin file position
+(meaningless when not reading from stdin).  \fI\- \fRindicates that the seek
+should be that many characters from the end of the input (or if combined with
+\fI+\fR: before the current stdin file position).
+Without \-s option, xxd starts at the current file position.
 .TP
 .I \-u
-Use letras mayúsculas para describir el volcado hexadecimal;
-se usan minúsculas por defecto.
+use upper case hex letters. Default is lower case.
 .TP
-.IB \-v " | " \-version
-Mostrar la cadena de versión del programa.
-.SH ADVERTENCIAS
+.IR \-v " | " \-version
+show version string.
+.SH CAVEATS
 .PP
-.BI xxd \-r
-tiene algo de magia integrada cuando evalua información de números de
-línea.
-Si el archivo de salida es buscable, los números de línea al comienzo
-de cada volcado hexadecimal puede estar en desorden y puede haber líneas
-faltantes o sobrepuestas.
-En estos casos,
-.I xxd
-hara un
-.BR lseek (1)
-hasta la siguiete posición.
-Si el archivo de salida no es buscable, solo se permiten vacios,
-los que serán llenados con bytes nulos.
+.I xxd \-r
+has some builtin magic while evaluating line number information.
+If the output file is seekable, then the linenumbers at the start of each
+hexdump line may be out of order, lines may be missing, or overlapping. In
+these cases xxd will lseek(2) to the next position. If the output file is not
+seekable, only gaps are allowed, which will be filled by null-bytes.
 .PP
-.BI xxd \-r
-nunca genera errores de análisis.
-La basura se salta silenciosamente.
+.I xxd \-r
+never generates parse errors. Garbage is silently skipped.
 .PP
-Cuando edite volcados hexadecimales, note por favor que
-.BI xxd \-r
-salta todo en la línea de entrada despues de leer suficientes
-columnas de datos hexadecimales (véase la opción
-.IR \-c ")."
-Esto siginifica también que los cambios a las columnas de
-ASCII imprimible (o EBCDIC) se ignoran siempre. Al revertir a un estilo
-de salida simple (o PostScript) del volcado hexadecimal con
-.IB xxd "\-r \-p"
-no importa si se tiene el número «correcto» de columnas.
-En este caso se interpretará cualquier cosa que parezca un par de
-dígitos hexadecimales.
+When editing hexdumps, please note that
+.I xxd \-r
+skips everything on the input line after reading enough columns of hexadecimal
+data (see option \-c). This also means, that changes to the printable ascii (or
+ebcdic) columns are always ignored. Reverting a plain (or postscript) style
+hexdump with xxd \-r \-p does not depend on the correct number of columns. Here anything that looks like a pair of hex-digits is interpreted.
 .PP
-Nótese que la diferencia de la salida de los comandos
-.nf
-\fC% xxd \-i archivo\fR,
-\fC% xxd \-i < archivo\fR y
-\fC% xxd \-s +búsqueda\fR
-.fi
-puede ser diferente de
+Note the difference between
 .br
-\.fC% xxd \-s búsqueda\fR,
+\fI% xxd \-i file\fR
 .br
-pues
-.BR lseek (2)
-se usa para «retroceder» sobre la entrada.
-Un 
-.RB « + »
-hace la diferencia de si la fuente de entrada es la entrada
-estándar y si la posición de archivo de la entrada estándar no es al
-comienzo del archivo en el momento en que se inicia
-.B xxd
-y se le alimenta con datos.
-Los siguientes ejemplos pueden ayudar a aclarar o (a confundir más)
-la mente del lector.
+and
+.br
+\fI% xxd \-i < file\fR
 .PP
-Retroceder sobre la entrada estándar antes de leer; se necesita pues el
-«encadenado» («cat») ya ha leido hasta el final de la entrada estándar.
+.I xxd \-s +seek
+may be different from
+.IR "xxd \-s seek" ,
+as lseek(2) is used to "rewind" input.  A '+'
+makes a difference if the input source is stdin, and if stdin's file position
+is not at the start of the file by the time xxd is started and given its input.
+The following examples may help to clarify (or further confuse!)...
 .PP
-\fC% sh \-c "cat > copia_simple; xxd \-s 0 > copia_hex" < archivo\fR
+Rewind stdin before reading; needed because the `cat' has already read to the
+end of stdin.
+.br
+\fI% sh \-c "cat > plain_copy; xxd \-s 0 > hex_copy" < file\fR
 .PP
-Volcado hexadecimal desde la posición de archivo 0x480 (=1024+128)
-hacia adelante.
-El símbolo 
-.RB « + » 
-significa «relativo a la posición actual», así que el «128» añade al 
-primer Kb donde se quedó
-.BR dd .
+Hexdump from file position 0x480 (=1024+128) onwards.
+The `+' sign means "relative to the current position", thus the `128' adds to
+the 1k where dd left off.
+.br
+\fI% sh \-c "dd of=plain_snippet bs=1k count=1; xxd \-s +128 > hex_snippet" < file\fR
 .PP
-\fC% sh \-c "dd of=fragmento_simple bs=1k count=1; xxd \-s +128 > fragmento_hex" < archivo\fR
+Hexdump from file position 0x100 ( = 1024\-768) on.
+.br
+\fI% sh \-c "dd of=plain_snippet bs=1k count=1; xxd \-s +\-768 > hex_snippet" < file\fR
 .PP
-Volcado hexadecimal desde la posición de archivo 0x100 (=1024\-768).
+However, this is a rare situation and the use of `+' is rarely needed.
+The author prefers to monitor the effect of xxd with strace(1) or truss(1), whenever \-s is used.
+.SH EXAMPLES
 .PP
-\fC% sh \-c "dd of=fragmento_simple bs=1k count=1; xxd \-s +\-768 > fragmento_hex" < archivo\fR
+.br
+Print everything but the first three lines (hex 0x30 bytes) of
+.BR file .
+.br
+\fI% xxd \-s 0x30 file\fR
 .PP
-Sin embargo, esta es una situación poco común y raramente se necesita
-usar 
-.RB « + ».
-El autor prefiere observar el efecto de
-.B xdd
-con
-.BR strace (1)
-o con
-.BR truss (1),
-siempre que usa
-.BR \-s .
-.SH EJEMPLOS
-.PP
-Imprimir todo excepto las primeras tres líneas (0x30 bytes en hex) del
-.BR archivo .
-.PP
-.I % xxd \-s 0x30 file
-.PP
+.br
 Print 3 lines (hex 0x30 bytes) from the end of
 .BR file .
+.br
+\fI% xxd \-s \-0x30 file\fR
 .PP
-\fC% xxd \-s \-0x30 file\fR
-.PP
+.br
 Print 120 bytes as continuous hexdump with 20 octets per line.
-.PP
-\fC% xxd \-l 120 \-ps \-c 20 xxd.1\fR
-.nf
-\fC
+.br
+\fI% xxd \-l 120 \-ps \-c 20 xxd.1\fR
+.br
 2e54482058584420312022417567757374203139
+.br
 39362220224d616e75616c207061676520666f72
+.br
 20787864220a2e5c220a2e5c222032317374204d
+.br
 617920313939360a2e5c22204d616e2070616765
+.br
 20617574686f723a0a2e5c2220202020546f6e79
+.br
 204e7567656e74203c746f6e79407363746e7567
-\fR
-.fi
-.PP
-Hexdump the first 120 bytes of this man page with 12 octets per line.
-.PP
-\fC% xxd \-l 120 \-c 12 xxd.1\fR
-.nf
-\fC
-0000000: 2e54 4820 5858 4420 3120 2241  .TH XXD 1 "A
-000000c: 7567 7573 7420 3139 3936 2220  ugust 1996" 
-0000018: 224d 616e 7561 6c20 7061 6765  "Manual page
-0000024: 2066 6f72 2078 7864 220a 2e5c   for xxd"..\\
-0000030: 220a 2e5c 2220 3231 7374 204d  "..\\" 21st M
-000003c: 6179 2031 3939 360a 2e5c 2220  ay 1996..\\" 
-0000048: 4d61 6e20 7061 6765 2061 7574  Man page aut
-0000054: 686f 723a 0a2e 5c22 2020 2020  hor:..\\"    
-0000060: 546f 6e79 204e 7567 656e 7420  Tony Nugent 
-000006c: 3c74 6f6e 7940 7363 746e 7567  <tony@sctnug
-\fR
-.fi
-.PP
-Display just the date from the file 
-.B xxd.1
-.PP
-\fC% xxd \-s 0x36 \-l 13 \-c 13 xxd.1\fR
-.PP
-\fC0000036: 3231 7374 204d 6179 2031 3939 36  21st May 1996\fR
-.PP
-Copiar
-.I archivo_de_entrada
-a
-.I archivo_de_salida
-y anteponer 100 bytes con el valor 0x00.
-.PP
-.\fC% xxd archivo_de_entrada | xxd \-r \-s 100 > archivo_de_salida\fR
-.PP
-Parchear la fecha en el archivo
-.BI xdd.1 .
-(Esto solo aplica a la versión original en inglés).
-.PP
-\fC% echo "0000037: 3574 68" | xxd \-r \- xxd.1\R
-.PP
-\fC% xxd \-s 0x36 \-l 13 \-c 13 xxd.1\fR
-.PP
-\fC0000036: 3235 7468 204d 6179 2031 3939 36  25th May 1996\fR
-.PP
-Crear un archivo de 65537 bytes, todos con un valor de 0x00,
-excepto por el último, el cual es «A» (hex 0x41).
-.PP
-\fC% echo "010000: 41" | xxd \-r > file\fR
-.PP
-Volcado hexadecimal de este archivo con «autoskip».
-.PP
-.nf
-\fC
-% xxd \-a \-c 12 archivo
+.br
 
+.br
+Hexdump the first 120 bytes of this man page with 12 octets per line.
+.br
+\fI% xxd \-l 120 \-c 12 xxd.1\fR
+.br
+0000000: 2e54 4820 5858 4420 3120 2241  .TH XXD 1 "A
+.br
+000000c: 7567 7573 7420 3139 3936 2220  ugust 1996" 
+.br
+0000018: 224d 616e 7561 6c20 7061 6765  "Manual page
+.br
+0000024: 2066 6f72 2078 7864 220a 2e5c   for xxd"..\\
+.br
+0000030: 220a 2e5c 2220 3231 7374 204d  "..\\" 21st M
+.br
+000003c: 6179 2031 3939 360a 2e5c 2220  ay 1996..\\" 
+.br
+0000048: 4d61 6e20 7061 6765 2061 7574  Man page aut
+.br
+0000054: 686f 723a 0a2e 5c22 2020 2020  hor:..\\"    
+.br
+0000060: 546f 6e79 204e 7567 656e 7420  Tony Nugent 
+.br
+000006c: 3c74 6f6e 7940 7363 746e 7567  <tony@sctnug
+.PP
+.br
+Display just the date from the file xxd.1
+.br
+\fI% xxd \-s 0x36 \-l 13 \-c 13 xxd.1\fR
+.br
+0000036: 3231 7374 204d 6179 2031 3939 36  21st May 1996
+.PP
+.br
+Copy
+.B input_file
+to
+.B output_file
+and prepend 100 bytes of value 0x00.
+.br
+\fI% xxd input_file | xxd \-r \-s 100 > output_file\fR
+.br
+
+.br
+Patch the date in the file xxd.1
+.br
+\fI% echo "0000037: 3574 68" | xxd \-r \- xxd.1\fR
+.br
+\fI% xxd \-s 0x36 \-l 13 \-c 13 xxd.1\fR
+.br
+0000036: 3235 7468 204d 6179 2031 3939 36  25th May 1996
+.PP
+.br
+Create a 65537 byte file with all bytes 0x00,
+except for the last one which is 'A' (hex 0x41).
+.br
+\fI% echo "010000: 41" | xxd \-r > file\fR
+.PP
+.br
+Hexdump this file with autoskip.
+.br
+\fI% xxd \-a \-c 12 file\fR
+.br
 0000000: 0000 0000 0000 0000 0000 0000  ............
+.br
 *
+.br
 000fffc: 0000 0000 40                   ....A
-\fR
-.fi
 .PP
-Crear un archivo de 1 (un) byte conteniendo un solo caracter «A».
-El número despues de
-.RI « "\-r\-s" »
-añade a las líneas numéricas que se encuentran en el archivo;
-los bytes precedentes se suprimen para todo efecto.
+Create a 1 byte file containing a single 'A' character.
+The number after '\-r \-s' adds to the linenumbers found in the file;
+in effect, the leading bytes are suppressed.
+.br
+\fI% echo "010000: 41" | xxd \-r \-s \-0x10000 > file\fR
 .PP
-\fC% echo "010000: 41" | xxd \-r \-s \-0x10000 > archivo\fR
+Use xxd as a filter within an editor such as
+.B vim(1)
+to hexdump a region marked between `a' and `z'.
+.br
+\fI:'a,'z!xxd\fR
 .PP
-Usar
-.B xxd
-como un filtro dentro de un editor tal y como
-.BR vim (1)
-para volcar hexadecimalmente una región marcada entre «a» y «z».
+Use xxd as a filter within an editor such as
+.B vim(1)
+to recover a binary hexdump marked between `a' and `z'.
+.br
+\fI:'a,'z!xxd \-r\fR
 .PP
-\fC:'a,'z!xxd\fR
+Use xxd as a filter within an editor such as
+.B vim(1)
+to recover one line of a hexdump.  Move the cursor over the line and type:
+.br
+\fI!!xxd \-r\fR
 .PP
-Usar
-.B xxd
-como un filtro dentro de un editor tal y como
-.BR vim (1)
-para recuperar un volcado hexadecimal binario marcado entre
-«a» y «z».
+Read single characters from a serial line
+.br
+\fI% xxd \-c1 < /dev/term/b &\fR
+.br
+\fI% stty < /dev/term/b \-echo \-opost \-isig \-icanon min 1\fR
+.br
+\fI% echo \-n foo > /dev/term/b\fR
 .PP
-\fC:'a,'z!xxd \-r\fR
-.PP
-Usar
-.B xxd
-como un filtro dentro de un editor tal y como
-.BR vim (1)
-para recuperar una línea de un volcado hexadecimal.
-Mueva el cursor sobre la línea y pulse:
-.PP
-\fC!!xxd \-r\fR
-.PP
-Leer caracteres únicos desde una línea serial:
-.PP
-.nf
-\fC
-% xxd \-c1 < /dev/term/b &
-% stty < /dev/term/b \-echo \-opost \-isig \-icanon min 1
-% echo \-n foo > /dev/term/b
-\fR
-.fi
-.SH VALORES DE RETORNO
-La aplicación puede dar los siguientes valores de retorno:
+.SH "RETURN VALUES"
+The following error values are returned:
 .TP
 0
-no se encontró ningún error.
+no errors encountered.
 .TP
 \-1
-operación no soportada
 operation not supported (
-.BI xxd "\-r \-i"
-es imposible todavía).
+.I xxd \-r \-i
+still impossible).
 .TP
 1
-error al analizar las opciones.
+error while parsing options.
 .TP
 2
-problemas con el archivo de entrada.
+problems with input file.
 .TP
 3
-problemas con el archivo de salida.
+problems with output file.
 .TP
 4,5
-la posición de búsqueda deseada es inalcanzable.
-.SH VÉASE TAMBIÉN
-.BR uuencode (1),
-.BR uudecode (1),
-.BR  patch (1)
-.SH AVISO
-La rareza de las herramientas describe el cerebro del creador.
-Use completamente a su propio riesgo.
-Copie archivos.
-Ratree su ejecución.
-Vuelvase un mago.
+desired seek position is unreachable.
+.SH "SEE ALSO"
+uuencode(1), uudecode(1), patch(1)
 .br
-.SH VERSIÓN
-Esta página de manual documenta a
-.B xxd
-version 1.7.
-.SH AUTOR
+.SH WARNINGS
+The tools weirdness matches its creators brain.
+Use entirely at your own risk. Copy files. Trace it. Become a wizard.
 .br
-(c) 1990-1997, Juergen Weigert
+.SH VERSION
+This manual page documents xxd version 1.7
+.SH AUTHOR
+.br
+(c) 1990-1997 by Juergen Weigert
 .br
 <jnweiger@informatik.uni\-erlangen.de>
 .LP
-.nf
-Distribuye libremente y acredítame,
-haz dinero y comparte conmigo,
-pierde dinero y no me preguntes.
-.fi
+Distribute freely and credit me,
+.br
+make money and share with me,
+.br
+lose money and don't ask me.
 .PP
-Página de manual escrita por Tony Nugent
-<tony@sctnugen.ppp.gu.edu.au>, <T.Nugent@sct.gu.edu.au>.
-Pequeños cambios por Bram Moolenar.
-Editada por Juergen Weigert.
-Traducción al español por Pedro Alejandro López-Valencia
-<vorbote@users.sf.net>.
-./" vim:fenc=latin1:ft=nroff
+Manual page started by Tony Nugent
+.br
+<tony@sctnugen.ppp.gu.edu.au> <T.Nugent@sct.gu.edu.au>
+.br
+Small changes by Bram Moolenaar.
+Edited by Juergen Weigert.
+.PP
+." vim:fenc=latin1:ft=nroff
