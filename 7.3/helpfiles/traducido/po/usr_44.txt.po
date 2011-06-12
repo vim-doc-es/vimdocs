@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2011-05-14 19:11+0300\n"
-"PO-Revision-Date: 2011-05-14 19:11+0300\n"
+"PO-Revision-Date: 2011-06-11 21:48-0500\n"
 "Last-Translator: Javier Rojas <jerojasro@devnull.li>\n"
 "Language-Team: none\n"
 "Language: es\n"
@@ -1757,6 +1757,11 @@ msgid ""
 "scripting language begins an if statement with \"if\" and ends it with \"fi"
 "\":"
 msgstr ""
+"Esto le indica a Vim que cuando encuentre {patrón} el grupo de sintaxis "
+"llamado {nombre-grupo} empieza, justo después del patrón dado. El argumento "
+"{nombre-grupo-sintaxis} se usa para dar un nombre a esta especificación de "
+"sincronización. Por ejemplo, en el lenguaje de scripting sh la instrucción "
+"condicional if empieza con el texto «if» y termina con «fi»:"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:586
@@ -1766,21 +1771,24 @@ msgid ""
 "\t\techo \"File exists\" ~\n"
 "\tfi ~\n"
 msgstr ""
+"\tif [ --f archivo.txt ] ; then ~\n"
+"\t\techo \"Archivo existe\" ~\n"
+"\tfi ~\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:589
-#, fuzzy
-#| msgid "To center a range of lines, use the following command: >"
 msgid ""
 "To define a \"grouphere\" directive for this syntax, you use the following "
 "command: >"
-msgstr "Use la siguiente orden para centrar un rango de líneas: >"
+msgstr ""
+"Para definir una directiva «grouphere» para esta sintaxis, use la orden "
+"siguiente: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:591
 #, no-wrap
 msgid "\t:syntax sync match shIfSync grouphere shIf \"\\<if\\>\"\n"
-msgstr ""
+msgstr "\t:syntax sync match shIfSync grouphere shIf \"\\<if\\>\"\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:594
@@ -1788,12 +1796,14 @@ msgid ""
 "The \"groupthere\" argument tells Vim that the pattern ends a group.  For "
 "example, the end of the if/fi group is as follows: >"
 msgstr ""
+"El argumento «groupthere» le indica a Vim que el patrón marca el fin de un "
+"grupo. Por ejemplo, el final del grupo if/fi se define como sigue: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:596
 #, no-wrap
 msgid "\t:syntax sync match shIfSync groupthere NONE \"\\<fi\\>\"\n"
-msgstr ""
+msgstr "\t:syntax sync match shIfSync groupthere NONE \"\\<fi\\>\"\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:599
@@ -1801,6 +1811,9 @@ msgid ""
 "In this example, the NONE tells Vim that you are not in any special syntax "
 "region.  In particular, you are not inside an if block."
 msgstr ""
+"En este ejemplo, «NONE» le indica a Vim que en este punto no se encuentra en "
+"ninguna región particular de sintaxis. En particular, no se encuentra dentro "
+"de un bloque condicional «if»."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:604
@@ -1810,21 +1823,24 @@ msgid ""
 "synchronization.  For example, the following skips over anything inside {}, "
 "even if it would normally match another synchronization method: >"
 msgstr ""
+"También puede definir coincidencias y regiones que no usan ninguno de los "
+"argumentos «grouphere» o «groupthere». Estos grupos corresponden a los grupos "
+"de sintaxis que se omiten durante la sincronización. Por ejemplo, la "
+"siguiente definición omite el texto entre {}, aún si normalmente coincidiría "
+"con otro de los métodos de sincronización: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:606
 #, no-wrap
 msgid "\t:syntax sync match xSpecial /{.*}/\n"
-msgstr ""
+msgstr "\t:syntax sync match xSpecial /{.*}/\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:608
-#, fuzzy
-#| msgid "More about manual folding in the reference manual: |fold-manual|"
 msgid "More about synchronizing in the reference manual: |:syn-sync|."
 msgstr ""
-"Para más información acerca del plegado manual, consulte la siguiente "
-"sección en el manual de referencia: |fold-manual|."
+"Para más información acerca de sincronización de sintaxis, consulte: "
+"|:syn-sync|."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:611
@@ -1841,18 +1857,25 @@ msgid ""
 "  The name of the syntax file must be equal to the file type, with \".vim\"\n"
 "added.  Thus for the x language, the full path of the file would be:\n"
 msgstr ""
+"Cuando su archivo de sintaxis esté listo, cópielo en un directorio «syntax» en\n"
+"cualquiera de las rutas en 'runtimepath'. En Unix una posibilidad es\n"
+"«~/.vim/syntax».\n"
+"   El nombre del archivo de sintaxis debe coincidir con el del tipo de\n"
+"archivo, y debe usar la extensión «.vim». Por ejemplo, para el lenguaje x, la\n"
+"ruta completa del archivo sería la siguiente:\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:618
-#, fuzzy, no-wrap
-#| msgid "\t~/.vim/indent/help.vim ~\n"
+#, no-wrap
 msgid "\t~/.vim/syntax/x.vim ~\n"
-msgstr "\t~/.vim/indent/help.vim ~\n"
+msgstr "\t~/.vim/syntax/x.vim ~\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:620
 msgid "You must also make the file type be recognized.  See |43.2|."
 msgstr ""
+"También debe asegurarse de que Vim reconozca el tipo de archivo. Consulte "
+"|43.2|."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:626
@@ -1863,11 +1886,17 @@ msgid ""
 "explain how the filetype can be detected.  With a bit of luck your file will "
 "be included in the next Vim version!"
 msgstr ""
+"Si su archivo funciona bien, considere hacerlo disponible a otros usuarios de "
+"Vim.  Primero, lea la sección siguiente para asegurarse de que su archivo "
+"funcionará bien en otros sistemas. Luego, envíelo al mantenedor de Vim: "
+"<maintainer@vim.org>. Por favor indique también cómo funciona la detección de "
+"tipo de archivo. Con algo de suerte ¡su archivo será incluido en la siguiente "
+"versión de Vim!"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:629
 msgid "ADDING TO AN EXISTING SYNTAX FILE"
-msgstr ""
+msgstr "ADICIONES A UN ARCHIVO DE SINTAXIS EXISTENTE"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:638
@@ -1882,6 +1911,15 @@ msgid ""
 ">\n"
 "\t:syntax keyword cType off_t uint\n"
 msgstr ""
+"Hasta ahora hemos asumido que estábamos creando un archivo de sintaxis\n"
+"completamente nuevo. Cuando ya hay un archivo de sintaxis que funciona, pero\n"
+"al que le faltan algunos elementos, es posible añadirlos en un archivo\n"
+"separado. Con esto se evita tener que modificar el archivo de sintaxis que\n"
+"viene con Vim, ya que los cambios que se hagan a dicho archivo se perderían al\n"
+"instalar una nueva versión de Vim.\n"
+"   Escriba las órdenes de sintaxis en su archivo; puede usar nombres de grupos\n"
+"de la sintaxis existente. Por ejemplo, para añadir nuevos tipos de variables a\n"
+"un archivo de sintaxis para C: >\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:642
@@ -1890,13 +1928,16 @@ msgid ""
 "\"c.vim\".  Place it in a directory near the end of 'runtimepath'.  This "
 "makes it loaded after the original syntax file.  For Unix this would be:"
 msgstr ""
+"Guarde el archivo con el mismo nombre del archivo de sintaxis original. En "
+"este caso, «c.vim». Ubíquelo en uno de los directorios que están al final de "
+"'runtimepath'. Con esto hace que se cargue luego del archivo de sintaxis "
+"original. En Unix puede usar:"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:644
-#, fuzzy, no-wrap
-#| msgid "\t~/.vim/indent/help.vim ~\n"
+#, no-wrap
 msgid "\t~/.vim/after/syntax/c.vim ~\n"
-msgstr "\t~/.vim/indent/help.vim ~\n"
+msgstr "\t~/.vim/after/syntax/c.vim ~\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:647
@@ -1910,6 +1951,9 @@ msgid ""
 "Wouldn't it be nice if all Vim users exchange syntax files? To make this "
 "possible, the syntax file must follow a few guidelines."
 msgstr ""
+"¿No sería agradable que todos los usuarios de Vim pudieran intercambiar "
+"archivos de sintaxis? Para posibilitar esto, debe tener en cuenta algunas "
+"recomendaciones al escribir un archivo de sintaxis."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:654
@@ -1918,6 +1962,10 @@ msgid ""
 "it and when it was last updated.  Don't include too much information about "
 "changes history, not many people will read it.  Example: >"
 msgstr ""
+"Empiece el archivo con un encabezado explicando el propósito del archivo de "
+"sintaxis, quién lo mantiene, y la fecha de la última actualización. No "
+"incluya información excesiva acerca del historial de cambios; no muchos "
+"estarán interesados. Por ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:660
@@ -1929,6 +1977,11 @@ msgid ""
 "\t\" Last Change:\t2001 Jun 18\n"
 "\t\" Remark:\tIncluded by the C++ syntax.\n"
 msgstr ""
+"\t\" Vim syntax file\n"
+"\t\" Language:\tC\n"
+"\t\" Maintainer:\tBram Moolenaar <Bram@vim.org>\n"
+"\t\" Last Change:\t2001 Jun 18\n"
+"\t\" Remark:\tIncluded by the C++ syntax.\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:663
@@ -1936,6 +1989,8 @@ msgid ""
 "Use the same layout as the other syntax files.  Using an existing syntax "
 "file as an example will save you a lot of time."
 msgstr ""
+"Use la misma disposición que hay en otros archivos de sintaxis. Usar un "
+"archivo de sintaxis existente como ejemplo le ahorrará mucho tiempo."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:668
@@ -1945,6 +2000,11 @@ msgid ""
 "the syntax file \"name.vim\", 'filetype', b:current_syntax and the start of "
 "each syntax group (nameType, nameStatement, nameString, etc)."
 msgstr ""
+"Escoja un nombre descriptivo para su archivo de sintaxis. Use letras "
+"minúsculas y dígitos. No use un nombre muy largo, ya que hay que usar este "
+"nombre en varios sitios: el nombre del archivo de sintaxis «name.vim», "
+"'filetype', b:current_syntax, y el prefijo para los nombres de cada grupo de "
+"sintaxis (nameType, nameStatement, nameString, etc.)"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:671
@@ -1952,29 +2012,26 @@ msgid ""
 "Start with a check for \"b:current_syntax\".  If it is defined, some other "
 "syntax file, earlier in 'runtimepath' was already loaded: >"
 msgstr ""
+"Continúe el archivo revisando si la variable «b:current_syntax» está "
+"definida. Si lo está, ya fue cargado algún otro archivo de sintaxis listado "
+"antes en 'runtimepath': >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:675
-#, fuzzy, no-wrap
-#| msgid ""
-#| "\t:if exists(\"current_compiler\")\n"
-#| "\t:  finish\n"
-#| "\t:endif\n"
-#| "\t:let current_compiler = \"mine\"\n"
+#, no-wrap
 msgid ""
 "\tif exists(\"b:current_syntax\")\n"
 "\t  finish\n"
 "\tendif\n"
 msgstr ""
-"\t:if exists(\"current_compiler\")\n"
-"\t:  finish\n"
-"\t:endif\n"
-"\t:let current_compiler = \"mine\"\n"
+"\tif exists(\"b:current_syntax\")\n"
+"\t  finish\n"
+"\tendif\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:677
 msgid "To be compatible with Vim 5.8 use: >"
-msgstr ""
+msgstr "Para tener compatibilidad con Vim 5.8 use: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:683
@@ -1986,6 +2043,11 @@ msgid ""
 "\t  finish\n"
 "\tendif\n"
 msgstr ""
+"\tif version < 600\n"
+"\t  syntax clear\n"
+"\telseif exists(\"b:current_syntax\")\n"
+"\t  finish\n"
+"\tendif\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:687
@@ -1994,6 +2056,10 @@ msgid ""
 "that included files do this too, you might have to reset \"b:current_syntax"
 "\" if you include two files."
 msgstr ""
+"Al final del archivo, defina «b:current_syntax», dándole como valor el nombre "
+"de la sintaxis. No olvide que los archivos de sintaxis que incluya también "
+"harán esto, por lo que puede tener que redefinir «b:current_syntax» si "
+"incluye dos archivos."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:690
@@ -2001,6 +2067,9 @@ msgid ""
 "If you want your syntax file to work with Vim 5.x, add a check for v:"
 "version.  See yacc.vim for an example."
 msgstr ""
+"Si desea que su archivo de sintaxis funcione con Vim 5.x, compruebe el valor "
+"de la variable «v:version». Consulte el archivo «yacc.vim» para un ejemplo al "
+"respecto."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:693
@@ -2008,6 +2077,9 @@ msgid ""
 "Do not include anything that is a user preference.  Don't set 'tabstop', "
 "'expandtab', etc.  These belong in a filetype plugin."
 msgstr ""
+"No incluya órdenes que sean configuradas por el usuario. No defina 'tabstop', "
+"'expandtab', etc. Dichas órdenes deben ubicarse en extensiones de tipo de "
+"archivo."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:696
@@ -2015,6 +2087,9 @@ msgid ""
 "Do not include mappings or abbreviations.  Only include setting 'iskeyword' "
 "if it is really necessary for recognizing keywords."
 msgstr ""
+"No incluya macros o abreviaciones. La única opción que debería incluir es "
+"'iskeyword', si es realmente necesario modificarla para identificar las "
+"palabras clave."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:703
@@ -2026,6 +2101,13 @@ msgid ""
 "schemes.  And don't forget that some people use a different background "
 "color, or have only eight colors available."
 msgstr ""
+"Para permitir que los usuarios escojan los colores que deseen, cree un nombre "
+"de grupo diferente para cada tipo de elemento resaltado. Luego asócielos a "
+"alguno de los grupo de resaltado estándar. De esta forma el archivo "
+"funcionará con todos los esquemas de color. Si selecciona colores "
+"específicos, el resaltado podría verse mal con algunos esquemas de color. No "
+"olvide que otros usuarios de Vim pueden usar un color de fondo diferente, o "
+"pueden tener sólo 8 colores disponibles."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:706
@@ -2033,6 +2115,9 @@ msgid ""
 "For the linking use \"hi def link\", so that the user can select different "
 "highlighting before your syntax file is loaded.  Example: >"
 msgstr ""
+"Para definir la asociación use «hi def link», para que el usuario pueda "
+"definir un resaltado diferente antes de que se cargue su archivo de sintaxis. "
+"Por ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:711
@@ -2043,6 +2128,10 @@ msgid ""
 "\t  hi def link nameCommand\tStatement\n"
 "\t  ... etc ...\n"
 msgstr ""
+"\t  hi def link nameString\tString\n"
+"\t  hi def link nameNumber\tNumber\n"
+"\t  hi def link nameCommand\tStatement\n"
+"\t  ... etc ...\n"
 
 #. type: Plain text
 #: original/txt/usr_44.txt:714
@@ -2050,10 +2139,11 @@ msgid ""
 "Add the \"display\" argument to items that are not used when syncing, to "
 "speed up scrolling backwards and CTRL-L."
 msgstr ""
+"Añada el argumento «display» a los elementos que no se usan al sincronizar el "
+"resaltado, para acelerar el desplazamiento hacia atrás en el archivo, y "
+"CTRL-L."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:718
-#, fuzzy
-#| msgid "Next chapter: |usr_05.txt| Set your settings"
 msgid "Next chapter: |usr_45.txt| Select your language"
-msgstr "Capítulo siguiente: |usr_05.esx| Configuración"
+msgstr "Próximo capítulo: |usr_45.esx| Seleccione su idioma"
