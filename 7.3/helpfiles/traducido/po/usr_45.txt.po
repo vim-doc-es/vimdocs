@@ -312,12 +312,17 @@ msgid ""
 "   The first way is to set the environment to the desired language before\n"
 "starting Vim.  Example for Unix: >\n"
 msgstr ""
+"¿Pero qué debe hacer si desea usar otro idioma para los mensajes?  Existen\n"
+"distintas soluciones. La elección de la correcta dependerá de la funcionalidad\n"
+"de su sistema.\n"
+"   La primera solución es definir una variable de entorno con el idioma\n"
+"deseado antes de iniciar Vim. Un ejemplo para Unix: >\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:49
 #, no-wrap
 msgid "\tenv LANG=de_DE.ISO_8859-1  vim\n"
-msgstr ""
+msgstr "\tenv LANG=es_ES.ISO_8859-1  vim\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:54
@@ -328,12 +333,17 @@ msgid ""
 "Vim.  If you want to change language while Vim is running, you can use the "
 "second method: >"
 msgstr ""
+"Ésta sólo funcionará si dicho idioma está disponible en su sistema. Tiene la "
+"ventaja de que todos los mensajes de la interfaz gráfica y demás elementos en "
+"bibliotecas también usarán el idioma apropiado. La desventaja radica en que "
+"debe definir la variable antes de iniciar Vim. Si desea cambiar de idioma "
+"mientras Vim está ejecutándose, use la segunda solución: >"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:56
 #, no-wrap
 msgid "\t:language fr_FR.ISO_8859-1\n"
-msgstr ""
+msgstr "\t:language fr_FR.ISO_8859-1\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:67
@@ -350,6 +360,19 @@ msgid ""
 "   Be careful to type the name exactly as it should be.  Upper and lowercase\n"
 "matter, and the '-' and '_' characters are easily confused.\n"
 msgstr ""
+"De esta forma puede hacer pruebas para determinar el nombre de sistema\n"
+"correcto para su idioma. Obtendrá un mensaje de error cuando la opción\n"
+"intentada no está disponible en su sistema. No se mostrarán errores si los\n"
+"mensajes traducidos no están disponibles. En dicho caso, Vim usará los\n"
+"predeterminados con Inglés.\n"
+"   Para averiguar qué idiomas ofrece su sistema, ubique el directorio en que\n"
+"están almacenados. En mi sistema dicho directorio es «/usr/share/locale». En\n"
+"algunos sistemas es «/usr/lib/locale». La página del manual para «setlocale»\n"
+"debe contener indicaciones acerca de la ubicación de este directorio en su\n"
+"sistema.\n"
+"   Tenga el cuidado de escribir el nombre exactamente. La diferencia entre\n"
+"mayúsculas y minúsculas importa, y los caracteres «-» y «_» se confunden\n"
+"fácilmente.\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:70
@@ -357,11 +380,13 @@ msgid ""
 "You can also set the language separately for messages, edited text and the "
 "time format.  See |:language|."
 msgstr ""
+"También puede dar definiciones distintas para los mensajes, el texto editado, "
+"y el formato de fecha. Consulte |:language|."
 
 #. type: Plain text
 #: original/txt/usr_45.txt:73
 msgid "DO-IT-YOURSELF MESSAGE TRANSLATION"
-msgstr ""
+msgstr "TRADUCCIÓN MANUAL DE MENSAJES"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:84
@@ -378,6 +403,15 @@ msgid ""
 "to others.  Upload it at vim-online (http://vim.sf.net) or e-mail it to\n"
 "the Vim maintainer <maintainer@vim.org>.  Or both.\n"
 msgstr ""
+"Si la traducción de mensajes no está disponible en su idioma, puede optar por\n"
+"escribirla usted mismo. Para hacerlo, obtenga una copia del código fuente de\n"
+"Vim, y el paquete GNU gettext. Al extraer las fuentes, encontrará\n"
+"instrucciones en el directorio src/po/README.txt.\n"
+"   No es difícil hacer la traducción. No hace falta saber programación. Sólo\n"
+"debe, por supuesto, saber Inglés y el idioma al cual está traduciendo.\n"
+"   Cuando esté satisfecho con la traducción, considere hacerla disponible a\n"
+"otras personas. Súbala a vim-online (http://vim.sf.net) o envíela por correo\n"
+"electrónico al encargado de Vim <maintainer@vim.org>. O haga ambas cosas.\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:87
