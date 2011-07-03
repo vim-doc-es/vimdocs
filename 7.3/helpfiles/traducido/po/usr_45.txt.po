@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2011-05-14 19:11+0300\n"
 "PO-Revision-Date: 2011-05-14 19:11+0300\n"
-"Last-Translator: Automatically generated\n"
+"Last-Translator: Javier Rojas <jerojasro@devnull.li>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -245,8 +245,8 @@ msgid ""
 " Previous chapter: |usr_44.txt|  Your own syntax highlighted\n"
 "Table of contents: |usr_toc.txt|\n"
 msgstr ""
-" Capítulo siguiente: |usr_08.esx|  Dividir en ventanas\n"
-"  Capítulo anterior: |usr_06.esx|  Uso del coloreado de sintaxis\n"
+" Capítulo siguiente: |usr_90.esx|  Instalar Vim\n"
+"  Capítulo anterior: |usr_44.esx|  Su propio resaltado de sintaxis\n"
 "Tabla de contenidos: |usr_toc.esx|\n"
 
 #. type: Plain text
@@ -263,12 +263,16 @@ msgid ""
 "language (if they are available).  To see what the current language is, use "
 "this command: >"
 msgstr ""
+"Cuando inicia Vim, se revisa el entorno para averiguar el lenguaje que usa el "
+"sistema. Esto en general funciona correctamente, y los mensajes que se "
+"muestren estarán en el idioma apropiado (si están disponibles). Para "
+"consultar el idioma actual, use esta orden: >"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:31
 #, no-wrap
 msgid "\t:language\n"
-msgstr ""
+msgstr "\t:language\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:34
@@ -276,6 +280,8 @@ msgid ""
 "If it replies with \"C\", this means the default is being used, which is "
 "English."
 msgstr ""
+"Si la respuesta es «C», significa que se está usando el idioma "
+"predeterminado, Inglés."
 
 #. type: Plain text
 #: original/txt/usr_45.txt:41
@@ -288,6 +294,13 @@ msgid ""
 "\tOK.  If you see \"-gettext\" or \"-multi_lang\" you will have to find\n"
 "\tanother Vim.\n"
 msgstr ""
+"\tNota:\n"
+"\tUsar otros idiomas sólo funciona cuando se compila Vim con el soporte\n"
+"\tpara ellos. Para averiguar si dicho soporte está disponible, use la\n"
+"\torden «:version» y busque en el texto mostrado las cadenas «+gettext»\n"
+"\ty «+multi_lang». Si están allí, todo está bien. Si encuentra\n"
+"\t«-gettext» o «-multi_lang» tendrá que usar una instalación diferente\n"
+"\tde Vim\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:47
