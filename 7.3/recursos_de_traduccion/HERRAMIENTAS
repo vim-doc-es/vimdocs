@@ -1,0 +1,12 @@
+El plugin po.vim facilita enormemente varias tareas específicas al trabajar con
+archivos PO: navegación entre cadenas, copiado de cadenas, etc.
+
+Una versión actualizada de po.vim está disponible en http://git.devnull.li/po.vim.git/
+
+dicha versión hace las siguientes adiciones:
+
+  * mejor cálculo de estadísticas; ahora muestra porcentaje de avance.
+  * Formateo de párrafo con ancho de línea apropiado, para cadenas que cubren
+    varias líneas, vía la orden :PoFormatMsgstr
+  * Omni-completado (TODO, FIX esa traducción) para los términos no
+    traducibles: números, etiquetas XML, etc.
