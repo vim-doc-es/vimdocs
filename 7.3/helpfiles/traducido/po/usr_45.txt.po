@@ -432,24 +432,31 @@ msgid ""
 "use \"File\" instead of \"Datei\".  You can switch back to using the English menus\n"
 "this way: >\n"
 msgstr ""
+"Los menús predeterminados están escritos en Inglés. Para poder usar el idioma\n"
+"local, deben estar traducidos. Usualmente el proceso es automático, si las\n"
+"variables de entorno están configuradas apropiadamente, tal como pasa con los\n"
+"mensajes. No es necesario hacer nada más. Pero, sólo funciona si las\n"
+"traducciones para el idioma están disponibles.\n"
+"   Suponga que está en España, el idioma está definido como Español, pero\n"
+"prefiere usar «File» en lugar de «Archivo». Puede seguir usando los menús en\n"
+"Inglés de la siguiente manera:\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:98
-#, fuzzy, no-wrap
-#| msgid "\t:set autoindent\n"
+#, no-wrap
 msgid "\t:set langmenu=none\n"
-msgstr "\t:set autoindent\n"
+msgstr "\t:set langmenu=none\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:100
 msgid "It is also possible to specify a language: >"
-msgstr ""
+msgstr "También es posible especificar un idioma particular: >"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:102
 #, no-wrap
 msgid "\t:set langmenu=nl_NL.ISO_8859-1\n"
-msgstr ""
+msgstr "\t:set langmenu=nl_NL.ISO_8859-1\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:110
@@ -463,6 +470,14 @@ msgid ""
 "   If you really want to switch menu language while running Vim, you can do it\n"
 "this way: >\n"
 msgstr ""
+"En este caso, y de la misma manera que al definir el idioma a usar, las\n"
+"diferencias entre «-» y «_» son importantes. Sin embargo, las diferencias\n"
+"entre mayúsculas y minúsculas no se tienen en cuenta aquí.\n"
+"   La opción 'langmenu' debe estar definida antes de cargar los menús. Una vez\n"
+"se hayan cargado, cambiar el valor de 'langmenu' no tiene ningún efecto\n"
+"directo. Debido a esto, debe ubicar la orden 'langmenu' en su archivo vimrc.\n"
+"   Si necesita cambiar el idioma de los menús mientras Vim está ejecutándose,\n"
+"puede hacerlo como se muestra a continuación: >\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:114
@@ -472,6 +487,9 @@ msgid ""
 "\t:set langmenu=de_DE.ISO_8859-1\n"
 "\t:source $VIMRUNTIME/menu.vim\n"
 msgstr ""
+"\t:source $VIMRUNTIME/delmenu.vim\n"
+"\t:set langmenu=es_ES.ISO_8859-1\n"
+"\t:source $VIMRUNTIME/menu.vim\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:117
@@ -479,11 +497,13 @@ msgid ""
 "There is one drawback: All menus that you defined yourself will be gone.  "
 "You will need to redefine them as well."
 msgstr ""
+"Esta alternativa tiene una desventaja: todos los menús que usted haya "
+"definido desaparecerán. Tendrá que definirlos de nuevo."
 
 #. type: Plain text
 #: original/txt/usr_45.txt:120
 msgid "DO-IT-YOURSELF MENU TRANSLATION"
-msgstr ""
+msgstr "TRADUCCIÓN MANUAL DE MENÚS"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:122
