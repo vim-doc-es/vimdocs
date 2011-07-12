@@ -509,13 +509,13 @@ msgstr "TRADUCCIÓN MANUAL DE MENÚS"
 #: original/txt/usr_45.txt:122
 msgid "To see which menu translations are available, look in this directory:"
 msgstr ""
+"Para ver qué traducciones de menú están disponibles, compruebe el directorio:"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:124
-#, fuzzy, no-wrap
-#| msgid "\t:echo $VIMRUNTIME\n"
+#, no-wrap
 msgid "\t$VIMRUNTIME/lang ~\n"
-msgstr "\t:echo $VIMRUNTIME\n"
+msgstr "\t$VIMRUNTIME/lang ~\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:132
@@ -529,18 +529,29 @@ msgid ""
 "own runtime directory, as found early in 'runtimepath'.  For example, for Unix\n"
 "you would do: >\n"
 msgstr ""
+"Los archivos se nombran de acuerdo al esquema menu_{idioma}.vim. Si no\n"
+"encuentra el archivo correspondiente al idioma de su interés, es posible hacer\n"
+"sus propias traducciones. La forma más sencilla de hacerlo es usar uno de los\n"
+"archivos que existen para otros idiomas, y modificarlo.\n"
+"   Primero averigüe el nombre correspondiente para su idioma, usando la orden\n"
+"«:language». Use el nombre que indique la orden, pero escrito usando\n"
+"minúsculas. Luego copie el archivo a su directorio de tiempo de ejecución,\n"
+"como está definido en 'runtimepath'. Por ejemplo, en Unix debería hacer lo\n"
+"siguiente: >\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:134
 #, no-wrap
 msgid "\t:!cp $VIMRUNTIME/lang/menu_ko_kr.euckr.vim ~/.vim/lang/menu_nl_be.iso_8859-1.vim\n"
-msgstr ""
+msgstr "\t:!cp $VIMRUNTIME/lang/menu_ko_kr.euckr.vim ~/.vim/lang/menu_nl_be.iso_8859-1.vim\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:136
 msgid ""
 "You will find hints for the translation in \"$VIMRUNTIME/lang/README.txt\"."
 msgstr ""
+"Encontrará sugerencias para hacer la traducción en "
+"«$VIMRUNTIME/lang/README.txt»."
 
 #. type: Plain text
 #: original/txt/usr_45.txt:139
@@ -568,6 +579,23 @@ msgid ""
 "language, the default should work fine and you don't need to do anything.  The\n"
 "following is only relevant when you want to edit different languages.\n"
 msgstr ""
+"Vim considera que los archivos que está editando usan la codificación\n"
+"correspondiente a su idioma. Para muchos idiomas europeos, esta es «latin1».\n"
+"Cada byte corresponde a un carácter. Esto significa que hay 256 caracteres\n"
+"disponibles. Para los archivos en idiomas asiáticos este límite no es\n"
+"suficiente. En general usan una codificación de dos bytes por carácter, lo que\n"
+"ofrece más de diez mil caracteres posibles. Incluso este límite es\n"
+"insuficiente para archivos con textos en varios idiomas distintos. Aquí entra\n"
+"Unicode; fue diseñado para incluir todos los caracteres existentes en los\n"
+"idiomas de uso común. Es la «super codificación que reemplaza a todas las\n"
+"demás». Pero su uso aún no está muy difundido.\n"
+"   Afortunadamente, Vim cuenta con soporte para estos tres tipos de\n"
+"codificación. Y, teniendo en cuenta algunas restricciones, puede usarlas aún\n"
+"si en su entorno está definido un idioma distinto al del texto.\n"
+"   De cualquier manera, cuando edita archivos cuya codificación corresponde a\n"
+"la de su idioma, el comportamiento predeterminado debería bastar, y no\n"
+"requerir ninguna acción adicional. Las indicaciones a continuación únicamente\n"
+"tienen relevancia para editar archivos codificados para otros idiomas.\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:161
