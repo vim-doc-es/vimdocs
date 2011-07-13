@@ -607,11 +607,17 @@ msgid ""
 "\toutput for \"+multi_byte\".  If it's there, you are OK.  If you see\n"
 "\t\"-multi_byte\" you will have to find another Vim.\n"
 msgstr ""
+"\tNota:"
+"\tUsar codificaciones diferentes sólo funcionará si Vim se compiló con\n"
+"\tel soporte necesario. Para comprobar que dicho soporte esté incluido,\n"
+"\tuse la orden «:version» y busque en la salida la opción «+multi_byte».\n"
+"\tSi está allí, no habrá problemas. Si en su lugar encuentra\n"
+"\t«-multi_byte», tendrá que usar una instalación diferente de Vim.\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:164
 msgid "USING UNICODE IN THE GUI"
-msgstr ""
+msgstr "USO DE UNICODE EN LA INTERFAZ GRÁFICA"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:173
@@ -626,6 +632,15 @@ msgid ""
 "   Let's start with the GUI version of Vim, which is able to display Unicode\n"
 "characters.  This should work: >\n"
 msgstr ""
+"Lo bueno de Unicode es que es posible convertir hacia y desde dicha\n"
+"codificación sin perder información. Si configura Vim para usar Unicode\n"
+"internamente, podrá editar archivos que usen cualquier codificación.\n"
+"   Desafortunadamente, la cantidad de sistemas con soporte para Unicode aún es\n"
+"limitada. Por este motivo es poco probable que la configuración de sistema\n"
+"para su idioma la use. Tendrá que indicarle a Vim que desea usar Unicode, y\n"
+"también cómo interactuar con el resto del sistema en este aspecto.\n"
+"   Empecemos con la versión gráfica de Vim, que tiene la capacidad de mostrar\n"
+"caracteres Unicode. Lo siguiente debería funcionar: >\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:176
@@ -634,6 +649,8 @@ msgid ""
 "\t:set encoding=utf-8\n"
 "\t:set guifont=-misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1\n"
 msgstr ""
+"\t:set encoding=utf-8\n"
+"\t:set guifont=-misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:185
@@ -648,13 +665,22 @@ msgid ""
 "enhance xterm with Unicode support.  If you don't have this font, you might\n"
 "find it here:\n"
 msgstr ""
+"La opción 'encoding' le indica a Vim la codificación de caracteres que usted\n"
+"usa. Dicha opción aplica al texto en los búfers (archivos en edición),\n"
+"registros, archivos de script para Vim, etc. Puede considerar 'encoding' como\n"
+"la opción para los mecanismos internos de Vim.\n"
+"   Este ejemplo asume que cuenta con el tipo de letra usado en su sistema. El nombre\n"
+"usado en el ejemplo tiene el formato usado por el sistema de ventanas X. Este\n"
+"tipo de letra hace parte de un paquete usado para habilitar el soporte de Unicode en\n"
+"xterm. Si no cuenta con este tipo de letra, puede encontrarlo en:\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:187
 #, no-wrap
 msgid "\thttp://www.cl.cam.ac.uk/~mgk25/download/ucs-fonts.tar.gz ~\n"
-msgstr ""
+msgstr "\thttp://www.cl.cam.ac.uk/~mgk25/download/ucs-fonts.tar.gz ~\n"
 
+# TODO comprobar que traduccion de menu corresponda
 #. type: Plain text
 #: original/txt/usr_45.txt:192
 msgid ""
@@ -663,12 +689,17 @@ msgid ""
 "select and try out the fonts available.  Only fixed-width fonts can be used "
 "though.  Example: >"
 msgstr ""
+"En MS-Windows, algunos tipos de letra cuentan con una cantidad limitada de "
+"caracteres Unicode. Intente usando el tipo de letra «Courier New». Puede usar "
+"el menú «Editar/Seleccionar tipo de letra»... para escoger y probar los tipos "
+"de letra disponibles. Sin embargo, sólo es posible usar tipos de letra de "
+"ancho fijo.  Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:194
 #, no-wrap
 msgid "\t:set guifont=courier_new:h12\n"
-msgstr ""
+msgstr "\t:set guifont=courier_new:h12\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:197
@@ -676,12 +707,14 @@ msgid ""
 "If it doesn't work well, try getting a fontpack.  If Microsoft didn't move "
 "it, you can find it here:"
 msgstr ""
+"Si esta elección de tipo de letra no funciona bien, trate de obtener un "
+"paquete de tipos de letra. Si Microsoft no lo reubicó, podrá encontrarlo en:"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:199
 #, no-wrap
 msgid "\thttp://www.microsoft.com/typography/fonts/default.aspx ~\n"
-msgstr ""
+msgstr "\thttp://www.microsoft.com/typography/fonts/default.aspx ~\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:205
@@ -692,6 +725,12 @@ msgid ""
 "language from which to convert with the 'termencoding' option.  You can do "
 "it like this: >"
 msgstr ""
+"Con esto le ha indicado a Vim que use Unicode internamente y que muestre el "
+"texto usando un tipo de letra Unicode. Los caracteres ingresados seguirán "
+"llegando a Vim usando la codificación definida originalmente para su idioma. "
+"Esto requiere convertirlos a Unicode. Use la opción 'termencoding' para "
+"indicarle a Vim la codificación e idioma desde el cual hacer la conversión. "
+"Puede hacerlo como se muestra a continuación: >"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:208 original/txt/usr_45.txt:239
@@ -700,6 +739,8 @@ msgid ""
 "\t:let &termencoding = &encoding\n"
 "\t:set encoding=utf-8\n"
 msgstr ""
+"\t:let &termencoding = &encoding\n"
+"\t:set encoding=utf-8\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:213
@@ -709,11 +750,15 @@ msgid ""
 "setup.  It should work especially well when using an input method for an "
 "Asian language, and you want to edit Unicode text."
 msgstr ""
+"Estas órdenes asignan el valor de 'encoding' a 'termencoding' antes de "
+"redefinir 'encoding' con el valor «utf-8». Tendrá que probar si esto funciona "
+"adecuadamente en su sistema. Debería funcionar muy bien al usar un método de "
+"entrada para idiomas asiáticos, y tratar de editar texto Unicode."
 
 #. type: Plain text
 #: original/txt/usr_45.txt:216
 msgid "USING UNICODE IN A UNICODE TERMINAL"
-msgstr ""
+msgstr "USAR UNICODE EN UNA TERMINAL UNICODE"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:223
@@ -726,12 +771,19 @@ msgid ""
 "   Start the xterm with the \"-u8\" argument.  You might also need so specify a\n"
 "font.  Example: >\n"
 msgstr ""
+"Hay emuladores de terminal que soportan Unicode de manera directa. El xterm\n"
+"estándar que se incluye en XFree86 es uno de ellos. Lo usaremos como ejemplo.\n"
+"   En primer lugar, xterm debe haber sido compilado con soporte para Unicode.\n"
+"Consulte |UTF8-xterm| para ver cómo hacer esta comprobación o compilarlo si es\n"
+"necesario.\n"
+"   Inicie un xterm pasándole el argumento «-u8». Puede que también deba\n"
+"especificar un tipo de letra apropiado. Ejemplo: >\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:225
 #, no-wrap
 msgid "   xterm -u8 -fn -misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1\n"
-msgstr ""
+msgstr "   xterm -u8 -fn -misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:228
@@ -739,11 +791,13 @@ msgid ""
 "Now you can run Vim inside this terminal.  Set 'encoding' to \"utf-8\" as "
 "before.  That's all."
 msgstr ""
+"Ahora ya puede ejecutar Vim usando este emulador de terminar. Defina "
+"'encoding' con el valor «utf-8» como se mostró anteriormente. Eso es todo."
 
 #. type: Plain text
 #: original/txt/usr_45.txt:231
 msgid "USING UNICODE IN AN ORDINARY TERMINAL"
-msgstr ""
+msgstr "USAR UNICODE EN UNA TERMINAL ORDINARIA"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:236
@@ -753,6 +807,10 @@ msgid ""
 "supported by the terminal will not be displayed.  The layout of the text "
 "will be preserved.  >"
 msgstr ""
+"Suponga que desea trabajar con archivos Unicode, pero no tiene una terminal "
+"con soporte para Unicode. Aún puede hacerlo usando Vim, aunque éste no "
+"mostrará los caracteres que no están soportados por la terminal. Se "
+"conservará la disposición del texto. >"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:250
@@ -769,12 +827,25 @@ msgid ""
 "where a character should be that the terminal can't display.  Move the cursor\n"
 "to a question mark and use this command: >\n"
 msgstr ""
+"Es el mismo mecanismo usado por la interfaz gráfica. Pero funciona de manera\n"
+"diferente: Vim convertirá el texto que muestre antes de enviarlo a la\n"
+"terminal. Con esto evita que la visualización se desordene debido a caracteres\n"
+"extraños.\n"
+"   Para que esto funcione debe ser posible hacer la conversión entre\n"
+"'termencoding' y 'encoding'. Vim puede hacer la conversión de latin1 a\n"
+"Unicode, por lo que dicha configuración siempre funcionará adecuadamente.\n"
+"Para otras conversiones es necesario contar con la característica |+iconv|.\n"
+"   Intente editar un archivo que contenga caracteres Unicode. Notará que Vim\n"
+"usará signos de cierre de interrogación (o guión bajo, o algún otro carácter)\n"
+"en los lugares en que hay un carácter que la terminal no puede mostrar. Ubique\n"
+"el cursor sobre uno de dicho símbolos de cierre de pregunta y use esta orden:\n"
+">\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:252
 #, no-wrap
 msgid "\tga\n"
-msgstr ""
+msgstr "\tga\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:256
