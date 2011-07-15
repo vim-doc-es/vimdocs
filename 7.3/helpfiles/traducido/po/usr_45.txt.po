@@ -230,7 +230,7 @@ msgstr ""
 "|45.1|\tIdioma para Mensajes\n"
 "|45.2|\tIdioma para Menús\n"
 "|45.3|\tUsar otra codificación\n"
-"|45.4|\tEditar archivos con distintas codificaciones\n"
+"|45.4|\tEditar archivos con codificaciones diferentes\n"
 "|45.5|\tEscribir caracteres idiomáticos\n"
 
 #. type: Plain text
@@ -854,6 +854,10 @@ msgid ""
 "hint about what character it is.  You can look it up in a Unicode table.  "
 "You could actually view a file that way, if you have lots of time at hand."
 msgstr ""
+"Vim mostrará una línea con el código del carácter. Esto le ofrece una "
+"indicación respecto a qué carácter está revisando. Puede buscar dicho código "
+"en una tabla Unicode. En realidad es posible ver un archivo completo de esta "
+"forma, si cuenta con mucho tiempo libre."
 
 #. type: Plain text
 #: original/txt/usr_45.txt:262
@@ -865,12 +869,18 @@ msgid ""
 "\tand the 'viminfo' file (e.g., a remembered search pattern).  It's\n"
 "\trecommended to set 'encoding' in your vimrc file, and leave it alone.\n"
 msgstr ""
+"\tNota:\n"
+"\tYa que 'encoding' para todo el texto dentro de Vim, cambiarlo invalida\n"
+"\ttodo el texto no-ASCII. Esto será evidente al usar registros y el\n"
+"\tarchivo 'viminfo' (por ejemplo, con un patrón de búsqueda almacenado).\n"
+"\tLo más recomendable es definir 'encoding' en su archivo vimrc, y no\n"
+"\tmodificarlo más.\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:265
 #, no-wrap
 msgid "*45.4*\tEditing files with a different encoding\n"
-msgstr "*45.4*\tEditar archivos con distintas codificaciones\n"
+msgstr "*45.4*\tEditar archivos con codificaciones diferentes\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:275
@@ -886,7 +896,17 @@ msgid ""
 "value is: \"ucs-bom,utf-8,latin1\".  This means that Vim checks the file to see\n"
 "if it's one of these encodings:\n"
 msgstr ""
+"Suponga que ha configurado Vim para que use Unicode, y desea editar un archivo\n"
+"que está codificado usando Unicode de 16 bits. ¿Suena sencillo, verdad? Pues\n"
+"bien, en realidad Vim usa internamente codificación utf-8, por lo que debe\n"
+"convertirse la codificación de 16 bits, ya que el conjunto de caracteres\n"
+"(Unicode) y la codificación (utf-8 o de 16 bits).\n"
+"   Vim intentará identificar el tipo de archivo que está editando. Usará los\n"
+"nombres de codificación definidos en la opción 'fileencodings'. Al usar\n"
+"Unicode, el valor predeterminado es: «ucs-bom,utf-8,latin1». Esto significa\n"
+"que Vim comprueba si el archivo usa alguna de las siguientes codificaciones:\n"
 
+# TODO comprobar formateo
 #. type: Plain text
 #: original/txt/usr_45.txt:282
 #, no-wrap
@@ -898,6 +918,11 @@ msgid ""
 "\t\t\tbytes is illegal in utf-8.\n"
 "\tlatin1\t\tThe good old 8-bit encoding.  Always works.\n"
 msgstr ""
+"\tucs-bom\t\tEl archivo debe empezar con una Marca de Orden de Bytes (BOM por sus siglas en inglés). Así\n"
+"\t\t\tse detectan codificaciones de 16 bits, 32 bits, y utf-8\n"
+"\tutf-8\t\tUnicode utf-8.  Ésta se rechaza si alguna secuencia de bytes encontrada\n"
+"\t\t\tes ilegal en utf-8.\n"
+"\tlatin1\t\tLa conocida codificación de 8 bits. Siempre funciona.\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:292
@@ -923,12 +948,18 @@ msgid ""
 "it is never illegal.  An example, to fall back to Japanese when the file "
 "doesn't have a BOM and isn't utf-8: >"
 msgstr ""
+"Si el valor predeterminado de 'fileencodings' no es apropiado para usted, "
+"defínalo con las codificaciones que desea que Vim pruebe. Al probar una "
+"codificación, sólo se pasará a la siguiente si se encuentra un valor "
+"inválido.  Poner «latin1» en primer lugar no funcionará, porque no tiene "
+"valores inválidos. Como ejemplo, para usar japonés cuando el archivo no tiene "
+"una BOM y no es utf-8: >"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:300
 #, no-wrap
 msgid "\t:set fileencodings=ucs-bom,utf-8,sjis\n"
-msgstr ""
+msgstr "\t:set fileencodings=ucs-bom,utf-8,sjis\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:303
@@ -936,6 +967,8 @@ msgid ""
 "See |encoding-values| for suggested values.  Other values may work as well.  "
 "This depends on the conversion available."
 msgstr ""
+"Consulte |encoding-values| para ver los valores sugeridos. Otros valores "
+"también pueden funcionar. Esto dependerá de las conversiones disponibles."
 
 #. type: Plain text
 #: original/txt/usr_45.txt:306
