@@ -973,7 +973,7 @@ msgstr ""
 #. type: Plain text
 #: original/txt/usr_45.txt:306
 msgid "FORCING AN ENCODING"
-msgstr ""
+msgstr "FORZAR UNA CODIFICACIÓN"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:309
@@ -981,13 +981,14 @@ msgid ""
 "If the automatic detection doesn't work you must tell Vim what encoding the "
 "file is.  Example: >"
 msgstr ""
+"Si la detección automática no funciona tendrá que indicarle a Vim qué "
+"codificación usa el archivo. Ejemplo :>"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:311
-#, fuzzy, no-wrap
-#| msgid "\t:edit ++ff=unix file.txt\n"
+#, no-wrap
 msgid "\t:edit ++enc=koi8-r russian.txt\n"
-msgstr "\t:edit ++ff=unix file.txt\n"
+msgstr "\t:edit ++enc=koi8-r russian.txt\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:318
