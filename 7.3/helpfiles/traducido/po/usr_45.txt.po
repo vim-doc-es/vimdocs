@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2011-05-14 19:11+0300\n"
-"PO-Revision-Date: 2011-05-14 19:11+0300\n"
+"PO-Revision-Date: 2011-07-18 19:38-0500\n"
 "Last-Translator: Javier Rojas <jerojasro@devnull.li>\n"
-"Language-Team: none\n"
+"Language-Team: LANGUAGE TEAM <E-MAIL@ADDRESS or HOME PAGE>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -201,8 +201,7 @@ msgstr "*usr_45.esx*\tPara Vim version 7.3.  Último cambio: 15/11/2008\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:6
-#, fuzzy, no-wrap
-#| msgid "\t\t\t      Set your settings\n"
+#, no-wrap
 msgid "\t\t\t     Select your language\n"
 msgstr " \t\t\t     Seleccione su idioma\n"
 
@@ -235,11 +234,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/txt/usr_45.txt:21
-#, fuzzy, no-wrap
-#| msgid ""
-#| "     Next chapter: |usr_08.txt|  Splitting windows\n"
-#| " Previous chapter: |usr_06.txt|  Using syntax highlighting\n"
-#| "Table of contents: |usr_toc.txt|\n"
+#, no-wrap
 msgid ""
 "     Next chapter: |usr_90.txt|  Installing Vim\n"
 " Previous chapter: |usr_44.txt|  Your own syntax highlighted\n"
@@ -938,6 +933,17 @@ msgid ""
 "   An empty value for 'fileencoding' means that no conversion is to be done.\n"
 "Thus the text is assumed to be encoded with 'encoding'.\n"
 msgstr ""
+"Cuando abre un archivo Unicode de 16 bits, y tiene una BOM, Vim la detectará y\n"
+"convertirá el archivo a utf-8 al leerlo. La opción 'fileencoding' (sin la «s»\n"
+"al final) se define con el valor detectado. En este caso corresponde a\n"
+"«utf-16le». Esto significa que es Unicode, de 16 bits y little-endian. Es un\n"
+"formato de archivo común en MS-Windows (por ejemplo, para archivos de\n"
+"registro.)\n"
+"   Al escribir el archivo, Vim compara 'fileencoding' con 'encoding'. Si son\n"
+"diferentes, convierte el texto.\n"
+"   No usar ningún valor en 'fileencoding' implica que no se lleva a cabo\n"
+"ninguna conversión. Se asume que se codificará el texto con el valor de\n"
+"'encoding'.\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:298
@@ -1001,6 +1007,13 @@ msgid ""
 "   The same argument can be used when writing the file.  This way you can\n"
 "actually use Vim to convert a file.  Example: >\n"
 msgstr ""
+"La parte «++enc» especifica el nombre de la codificación a usar para este\n"
+"archivo. Vim convertirá el archivo desde la codificación especificada, en este\n"
+"ejemplo rusa, a 'encoding'. También se definirá 'fileencoding' con la\n"
+"codificación indicada, para poder hacer la conversión recíproca al escribir el\n"
+"archivo.\n"
+"   Puede usar el mismo argumento al escribir el archivo. De esta forma puede\n"
+"usar Vim para convertir un archivo. Ejemplo: >\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:326
@@ -1014,6 +1027,14 @@ msgid ""
 "\tillegal characters.  Conversion from Unicode to other encodings often\n"
 "\tloses information when there was more than one language in the file.\n"
 msgstr ""
+"\t:write ++enc=utf-8 russian.txt\n"
+"<\n"
+"\tNota:\n"
+"\tEs posible que se pierdan caracteres al hacer la conversión. Convertir\n"
+"\tdesde una codificación particular hacia Unicode y de vuelta\n"
+"\tprácticamente no presenta este problema, a menos que haya caracteres\n"
+"\tilegales. Convertir desde Unicode a otras codificaciones a menudo\n"
+"\timplica perder información cuando hay más de un idioma en el archivo.\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:329
@@ -1037,11 +1058,22 @@ msgid ""
 "with other programs.  For details see |mbyte-XIM| for the X Window system and\n"
 "|mbyte-IME| for MS-Windows.\n"
 msgstr ""
+"Los teclados de los computadores apenas si tienen un centenar de teclas.\n"
+"Algunos idiomas tienen miles de caracteres, Unicode tiene decenas de miles.\n"
+"¿Cómo ingresa esos caracteres?\n"
+"   En primer lugar, si no usa demasiados caracteres especiales, puede usar\n"
+"dígrafos. Su uso ya fue presentado en |24.9|.\n"
+"   Cuando usa un idioma con muchos más caracteres que teclas en su teclado, lo\n"
+"apropiado es usar un Método de Entrada (IM, por sus siglas en inglés.) Para\n"
+"hacerlo debe conocer la traducción que se hace entre teclas presionadas y el\n"
+"carácter resultante. Debería funcionar con vim de la misma forma que con otros\n"
+"programas. Para los detalles consulte |mbyte-XIM| para el sistema de ventanas\n"
+"X, y |mbyte-IME| para MS-Windows.\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:344
 msgid "KEYMAPS"
-msgstr ""
+msgstr "CORRESPONDENCIAS DE TECLADO"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:349
@@ -1052,13 +1084,17 @@ msgid ""
 "uses keymaps for this.\n"
 "   Suppose you want to type Hebrew.  You can load the keymap like this: >\n"
 msgstr ""
+"En algunos idiomas el conjunto de caracteres es diferente al latino, pero usa\n"
+"una cantidad similar de caracteres. Es posible hacer corresponder teclas a\n"
+"caracteres. Vim usa correspondencias de teclado para hacerlo.\n"
+"   Suponga que desea escribir hebreo. Puede cargar la correspondencia de\n"
+"teclado así: >\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:351
-#, fuzzy, no-wrap
-#| msgid "\t:set filetype\n"
+#, no-wrap
 msgid "\t:set keymap=hebrew\n"
-msgstr "\t:set filetype\n"
+msgstr "\t:set keymap=hebrew\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:354
@@ -1066,6 +1102,9 @@ msgid ""
 "Vim will try to find a keymap file for you.  This depends on the value of "
 "'encoding'.  If no matching file was found, you will get an error message."
 msgstr ""
+"Vim tratará de ubicar la correspondencia de teclado necesaria. Ésta dependerá "
+"del valor en 'encoding'. Si no se encuentra el archivo correspondiente, "
+"obtendrá un mensaje de error."
 
 #. type: Plain text
 #: original/txt/usr_45.txt:358
@@ -1074,13 +1113,15 @@ msgid ""
 "\":\" command, Vim automatically switches to English.  You can use this "
 "command to switch between Hebrew and English: >"
 msgstr ""
+"Ahora puede escribir en hebreo en modo Insertar. En modo normal, y al "
+"ingresar órdenes «:», Vim cambia a inglés automáticamente. Puede usar la "
+"siguiente orden para cambiar entre hebreo e inglés: >"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:360
-#, fuzzy, no-wrap
-#| msgid "\tCTRL-L\n"
+#, no-wrap
 msgid "\tCTRL-^\n"
-msgstr "\tCTRL-L\n"
+msgstr "\tCTRL-^\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:368
@@ -1094,37 +1135,46 @@ msgid ""
 "   You can also change the usage of the keymap with the 'iminsert' and\n"
 "'imsearch' options.\n"
 msgstr ""
+"Esto sólo funciona en modo Insertar y en modo de Línea de Órdenes. En modo\n"
+"normal hace algo completamente diferente (salta al archivo alterno).\n"
+"   El uso de la correspondencia de teclas se muestra en el mensaje de modo, si\n"
+"la opción 'showmode' está definida. En la interfaz gráfica Vim indicará el uso\n"
+"de la correspondencia de teclado con un color de cursor diferente.\n"
+"   También puede cambiar el uso de la correspondencia de teclado mediante las\n"
+"opciones 'iminsert' y 'imsearch'.\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:370
-#, fuzzy
-#| msgid "To edit the last one, you use the command: >"
 msgid "To see the list of mappings, use this command: >"
-msgstr "Use la siguiente orden para editar el último: >"
+msgstr "Para ver la lista de correspondencias, use esta orden: >"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:372
 #, no-wrap
 msgid "\t:lmap\n"
-msgstr ""
+msgstr "\t:lmap\n"
 
+# TODO unificar "asociación de teclados (menu), correspondencia de teclados
 #. type: Plain text
 #: original/txt/usr_45.txt:375
 msgid ""
 "To find out which keymap files are available, in the GUI you can use the "
 "Edit/Keymap menu.  Otherwise you can use this command: >"
 msgstr ""
+"Para averiguar qué correspondencias de teclado están disponibles, puede usar "
+"en la interfaz gráfica el menú «Editar/Asociación de teclados». También puede "
+"usar la siguiente orden: >"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:377
 #, no-wrap
 msgid "\t:echo globpath(&rtp, \"keymap/*.vim\")\n"
-msgstr ""
+msgstr "\t:echo globpath(&rtp, \"keymap/*.vim\")\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:380
 msgid "DO-IT-YOURSELF KEYMAPS"
-msgstr ""
+msgstr "correspondencias de teclado manuales"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:386
@@ -1136,6 +1186,11 @@ msgid ""
 "would use the directory \"~/.vim/keymap\".\n"
 "   The name of the keymap file must look like this:\n"
 msgstr ""
+"Puede crear su propio archivo de correspondencia de teclado. No es muy\n"
+"difícil. Empiece con un archivo similar al del idioma que desea usar. Cópielo\n"
+"al directorio «keymap» en su directorio de tiempo de ejecución. Por ejemplo,\n"
+"en Unix, use el directorio «~/.vim/keymap».\n"
+"   El nombre del archivo debe ser similar a lo siguiente:\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:390
@@ -1145,6 +1200,9 @@ msgid ""
 "or\n"
 "\tkeymap/{name}_{encoding}.vim ~\n"
 msgstr ""
+"\tkeymap/{nombre}.vim ~\n"
+"o\n"
+"\tkeymap/{nombre}_{codificacion}.vim ~\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:395
@@ -1154,6 +1212,11 @@ msgid ""
 "keymap file).  {name} cannot contain an underscore.  Optionally, add the "
 "encoding used after an underscore.  Examples:"
 msgstr ""
+"{nombre} es el nombre de la correspondencia de teclado. Escoja un nombre "
+"obvio, pero diferente de las correspondencias existentes (a menos que desee "
+"reemplazar una correspondencia de teclado existente.) {nombre} no puede usar "
+"guiones bajos. Opcionalmente, añada la codificación usada después de un guión "
+"bajo. Ejemplos:"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:398
@@ -1162,6 +1225,8 @@ msgid ""
 "\tkeymap/hebrew.vim ~\n"
 "\tkeymap/hebrew_utf-8.vim ~\n"
 msgstr ""
+"\tkeymap/hebrew.vim ~\n"
+"\tkeymap/hebrew_utf-8.vim ~\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:401
@@ -1169,17 +1234,23 @@ msgid ""
 "The contents of the file should be self-explanatory.  Look at a few of the "
 "keymaps that are distributed with Vim.  For the details, see |mbyte-keymap|."
 msgstr ""
+"El contenido del archivo debería bastar para explicar su formato. Mire "
+"algunas de las correspondencias de teclado que se distribuyen con Vim. Para "
+"los detalles, consulte |mbyte-keymap|."
 
 #. type: Plain text
 #: original/txt/usr_45.txt:404
 msgid "LAST RESORT"
-msgstr ""
+msgstr "EL ÚLTIMO RECURSO"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:406
 msgid "If all other methods fail, you can enter any character with CTRL-V:"
 msgstr ""
+"Si todos los otros métodos fallan, puede ingresar cualquier carácter usando "
+"CTRL-V:"
 
+# TODO revisar formateo
 #. type: Plain text
 #: original/txt/usr_45.txt:412
 #, no-wrap
@@ -1190,15 +1261,19 @@ msgid ""
 "\t16-bit     CTRL-V u 013b\thexadecimal 0000-ffff\n"
 "\t31-bit\t   CTRL-V U 001303a4\thexadecimal 00000000-7fffffff\n"
 msgstr ""
+"\tcodificación   tipo\t\t\trango ~\n"
+"\t8-bit\t   CTRL-V 123\t\tdecimal 0-255\n"
+"\t8-bit\t   CTRL-V x a1\t\thexadecimal 00-ff\n"
+"\t16-bit     CTRL-V u 013b\thexadecimal 0000-ffff\n"
+"\t31-bit\t   CTRL-V U 001303a4\thexadecimal 00000000-7fffffff\n"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:414
 msgid "Don't type the spaces.  See |i_CTRL-V_digit| for the details."
 msgstr ""
+"No ingrese los espacios. Consulte |i_CTRL-V_digit| para los detalles."
 
 #. type: Plain text
 #: original/txt/usr_45.txt:418
-#, fuzzy
-#| msgid "Next chapter: |usr_24.txt| Inserting quickly"
 msgid "Next chapter: |usr_90.txt| Installing Vim"
-msgstr "Siguiente capítulo: |usr_24.esx| Insertar con rapidez"
+msgstr "Siguiente capítulo: |usr_90.esx| Instalar Vim"
