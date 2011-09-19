@@ -34,7 +34,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-09-23 20:27+0300\n"
-"PO-Revision-Date: 2011-02-26 17:22+0200\n"
+"PO-Revision-Date: 2011-09-18 22:13-0500\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
 "Language: es\n"
@@ -1638,12 +1638,6 @@ msgstr "*24.9*\tDígrafos\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:543
-#, fuzzy
-#| msgid ""
-#| "Some characters are not on the keyboard.  For example, the copyright "
-#| "character (©).  To type these characters in Vim, you use digraphs, where "
-#| "two characters represent one.  To enter a ©, for example, you press three "
-#| "keys: >"
 msgid ""
 "Some characters are not on the keyboard.  For example, the copyright "
 "character (�).  To type these characters in Vim, you use digraphs, where two "
@@ -1678,11 +1672,7 @@ msgstr "Vim mostrará la tabla de dígrafos. Aquí puede ver tres líneas:"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:555
-#, fuzzy, no-wrap
-#| msgid ""
-#| "  AC ~_ 159  NS |  160  !I ¡  161  Ct ¢  162  Pd £  163  Cu ¤  164  Ye ¥  165 ~\n"
-#| "  BB ¦  166  SE §  167  ': ¨  168  Co ©  169  -a ª  170  << «  171  NO ¬  172 ~\n"
-#| "  -- ­  173  Rg ®  174  'm ¯  175  DG °  176  +- ±  177  2S ²  178  3S ³  179 ~\n"
+#, no-wrap
 msgid ""
 "  AC ~_ 159  NS |  160  !I �  161  Ct �  162  Pd �  163  Cu �  164  Ye �  165 ~\n"
 "  BB �  166  SE �  167  ': �  168  Co �  169  -a �  170  << �  171  NO �  172 ~\n"
@@ -1694,16 +1684,7 @@ msgstr ""
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:564
-#, fuzzy, no-wrap
-#| msgid ""
-#| "This shows, for example, that the digraph you get by typing CTRL-K Pd is the\n"
-#| "character (£).  This is character number 163 (decimal).\n"
-#| "   Pd is short for Pound.  Most digraphs are selected to give you a hint about\n"
-#| "the character they will produce.  If you look through the list you will\n"
-#| "understand the logic.\n"
-#| "   You can exchange the first and second character, if there is no digraph for\n"
-#| "that combination.  Thus CTRL-K dP also works.  Since there is no digraph for\n"
-#| "\"dP\" Vim will also search for a \"Pd\" digraph.\n"
+#, no-wrap
 msgid ""
 "This shows, for example, that the digraph you get by typing CTRL-K Pd is the\n"
 "character (�).  This is character number 163 (decimal).\n"
@@ -1744,18 +1725,12 @@ msgstr "Puede configurar sus propios dígrafos. Ejemplo: >"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:573
-#, fuzzy, no-wrap
-#| msgid "\t:digraph a\" ä\n"
+#, no-wrap
 msgid "\t:digraph a\" �\n"
 msgstr "\t:digraph a\" ä\n"
 
 #. type: Plain text
 #: original/TXT/usr_24.txt:576
-#, fuzzy
-#| msgid ""
-#| "This defines that CTRL-K a\" inserts an ä character.  You can also "
-#| "specify the character with a decimal number.  This defines the same "
-#| "digraph: >"
 msgid ""
 "This defines that CTRL-K a\" inserts an � character.  You can also specify "
 "the character with a decimal number.  This defines the same digraph: >"
