@@ -29,11 +29,12 @@ Para ejecutar Vim, introduzca esta orden: >
 
 	gvim file.txt
 
-En UNIX puede introducir esta orden en cualquier interprete de órdenes. Si está
-bajo Microsoft Windows, abra una terminal de MS-DOS e introduzca la orden.
-   En ambos casos, Vim se inicia con la edición de un archivo llamado file.txt.
-Ya que es un archivo nuevo, obtendrá un ventana vacía. Así es como su pantalla
-debería aparecer:
+En UNIX puede introducir esta orden en cualquier interprete de órdenes. Si
+está bajo Microsoft Windows, abra una terminal de MS-DOS e introduzca la
+orden.
+   En ambos casos, Vim se inicia con la edición de un archivo llamado
+file.txt. Ya que es un archivo nuevo, obtendrá un ventana vacía. Así es como
+su pantalla debería aparecer:
 
 	+---------------------------------------+
 	|#					|
@@ -45,7 +46,7 @@ debería aparecer:
 	+---------------------------------------+
 		('#" es la posición del cursor.)
 
-Las líneas con tilde (~) indican líneas que no se hallan en el archivo.  En
+Las líneas con tilde (~) indican líneas que no se hallan en el archivo. En
 otras palabras, cuando Vim se queda sin archivo que mostrar muestra líneas
 con tilde. En la parte inferior de la pantalla, un mensaje muestra que el
 archivo se llama file.txt y que está creando un archivo nuevo. La
@@ -54,7 +55,7 @@ información del mensaje es temporal y otra información la sobreescribirá.
 
 LA ORDEN VIM
 
-La orden «gvim» hace que el editor cree una nueva ventana para editar.  Si
+La orden «gvim» hace que el editor cree una nueva ventana para editar. Si
 usa la orden: >
 
 	vim file.txt
@@ -62,7 +63,7 @@ usa la orden: >
 la edición ocurre dentro de la ventana de llamada. En otras palabras, si
 está dentro de una xterm, el editor usa su ventana xterm. Si está usando una
 terminal de MS-DOS bajo Windows, la edición tendrá lugar dentro de esta
-ventana.  El texto en la ventana tendrá el mismo aspecto en ambas versiones,
+ventana. El texto en la ventana tendrá el mismo aspecto en ambas versiones,
 pero con gvim tiene características extra, como una barra de
 menú. Volveremos a este punto posteriormente.
 
@@ -70,21 +71,22 @@ menú. Volveremos a este punto posteriormente.
 *02.2*	Insertar texto
 
 El editor Vim es un editor modal. Esto significa que el editor se comporta de
-manera diferente, dependiendo del modo en el que está. Los dos modos básicos se
-denominan modo Normal y modo Insertar. En modo Normal, los caracteres que
+manera diferente, dependiendo del modo en el que está. Los dos modos básicos
+se denominan modo Normal y modo Insertar. En modo Normal, los caracteres que
 introduzca son órdenes. En modo Insertar, los caracteres insertados son texto.
    Ya que acaba de iniciar Vim, estará en modo Normal. Para iniciar el modo
 Insertar introduzca la orden «i» (i de Insertar). Entonces podrá introducir
-texto y este se insertará en el archivo. No se preocupe si comete
-errores; puede corregirlos después. Teclee esto para introducir la siguiente
-quintilla: >
+texto y este se insertará en el archivo. No se preocupe si comete errores;
+puede corregirlos después. Teclee esto para introducir la siguiente quintilla:
+>
 
 	iA very intelligent turtle
 	Found programming UNIX a hurdle
 
-Tras teclear «turtle», pulse la tecla <Intro> para comenzar una nueva
-línea.  Por último, presione la tecla <Esc> para salir del modo Insertar y
-volver al modo Normal. Ahora tienes dos línea de texto en su ventana de Vim:
+Tras teclear «turtle», pulse la tecla <Enter> (Intro) para comenzar una
+nueva línea. Por último, presione la tecla <Esc> para salir del modo
+Insertar y volver al modo Normal. Ahora tiene dos línea de texto en su
+ventana de Vim:
 
 	+---------------------------------------+
 	|A very intelligent turtle		|
@@ -101,12 +103,12 @@ Para ver en que modo está, teclee la siguiente orden: >
 
 	:set showmode
 
-Comprobará que cuando introduce dos puntos, Vim desplaza el cursor a la
-última línea de la ventana. Allí es donde introducirá órdenes con dos puntos
-(órdenes que comienzan con dos puntos). Finalice la orden presionando la
-tecla <Intro> (todas estas órdenes se finalizan de este modo).
-   Si pulsase ahora la orden «i», Vim mostrará --INSERT-- en la parte
-inferior de la ventana. Esto indica que está en el modo Insertar.
+Notará que cuando introduce dos puntos, Vim desplaza el cursor a la última
+línea de la ventana. Allí es donde introducirá órdenes con dos puntos (órdenes
+que comienzan con dos puntos). Finalice la orden presionando la tecla <Enter>
+(todas estas órdenes se finalizan de este modo).
+   Si pulsase ahora la orden «i», Vim mostrará --INSERT-- en la parte inferior
+de la ventana. Esto indica que está en el modo Insertar.
 
 	+---------------------------------------+
 	|A very intelligent turtle		|
@@ -124,8 +126,8 @@ LA CONFUSIÓN DE LOS MODOS
 Uno de los problemas para los que comienzan a usar Vim es la confusión de
 los modos, que se produce al olvidar en qué modo está o por teclear
 accidentalmente una orden que cambia de modo. Para volver al modo Normal, no
-importa el modo en el que esté,presione la tecla <Esc>. En algunas
-ocasiones, tendrá que presionarlo dos veces. Si Vim emite un pitido,
+importa el modo en el que esté, presione la tecla <Esc>. En algunas
+ocasiones, tendrá que presionarla dos veces. Si Vim emite un pitido,
 entonces es que está de vuelta al modo Normal.
 
 ==============================================================================
@@ -143,14 +145,14 @@ arbitrariamente. Después de todo, ¿quién ha visto usar l para derecha? De
 hecho, hay una buena razón para esto: mover el cursor es una de las cosas
 más comunes que hará en un editor, y estas teclas están en la fila central
 de su mano derecha. En otras palabras, estas órdenes se sitúan donde puede
-teclearlos de manera más rápida (especialmente cuando escribe con diez
+teclearlas de manera más rápida (especialmente cuando escribe con diez
 dedos).
 
 	Nota:
-	También puede mover el cursor usando las flechas. Si lo haces, sin
+	También puede mover el cursor usando las flechas. Si lo hace, sin
 	embargo, ralentizará considerablemente la edición, ya que para ello
-	tendrá que desplazar su mano desde las letras a las flechas del
-	teclado. Teniendo en cuenta que debe hacerlo cientos de veces cada
+	tendrá que desplazar su mano desde las teclas de letras a las flechas
+	del teclado. Teniendo en cuenta que debe hacerlo cientos de veces cada
 	hora, esto puede llevar un tiempo considerable.
 	   Además, hay teclados que no tienen teclas de flechas, o que las
 	colocan en lugares inusuales; por lo tanto, conocer el uso de hjkl
@@ -185,7 +187,7 @@ Para eliminar un carácter, sitúe el cursor encima de él y presione
 «x». (Esto es una reminiscencia de los días de las máquinas de escribir,
 cuando se eliminaban caracteres escribiendo xxxx sobre ellos.) Sitúe el
 cursor al comienzo de la primera línea, por ejemplo, y pulse xxxxxxx (siete
-«xx») para eliminar «A very». El resultado debería ser:
+«xx») para eliminar «A very ». El resultado debería ser:
 
 	+---------------------------------------+
 	|intelligent turtle			|
@@ -241,14 +243,15 @@ Mueva el cursor a la primera línea y pulse «J»:
 ==============================================================================
 *02.5*	Deshacer y rehacer
 
-Suponga que elimina demasiado. Puede teclearlo de nuevo, pero existe una
-manera más fácil. La orden «u» deshace la última edición. Vea
-esto en acción: Tras usar «dd» para eliminar la última línea, «u» la devuelve.
-   Otra más: mueve el cursor a la A en la primera línea:
+Suponga que elimina demasiado. Puede teclearlo de nuevo, pero existe
+una manera más fácil. La orden «u» deshace la última edición. Vea esto
+en acción: Tras usar «dd» para eliminar la última línea, «u» la
+devuelve.
+   Otra más: mueva el cursor a la A en la primera línea:
 
 	A young intelligent turtle ~
 
-Ahora teclee xxxxxxx para eliminar «A young».  El resultado es el siguiente:
+Ahora teclee xxxxxxx para eliminar «A young». El resultado es el siguiente:
 
 	 intelligent turtle ~
 
@@ -257,7 +260,7 @@ la g, por lo que deshacer la devuelve.
 
 	g intelligent turtle ~
 
-La siguiente orden «u» le devuelve el último carácter eliminado:
+La siguiente orden «u» le devuelve el penúltimo carácter eliminado:
 
 	ng intelligent turtle ~
 
@@ -270,11 +273,11 @@ La siguiente orden «u» le devuelve la u, y así en adelante:
 	A young intelligent turtle ~
 
 	Nota:
-	Si teclea la «u» dos veces, y el resultado que obtendrá es el mismo
+	Si teclea la «u» dos veces, y el resultado que obtiene es el mismo
 	texto de vuelta, es que tiene Vim configurado para que sea
-	Vi-compatible. Véase aquí para solucionarlo: |not-compatible|.
-	   Este texto asume que trabaja en «El Modo Vim». Quizá quiera usar
-	el viejo modo Vi, pero entonces tendrá que observar las pequeñas
+	Vi-compatible. Consulte aquí para solucionarlo: |not-compatible|.
+	   Este texto asume que trabaja en «El Modo Vim». Quizá quiera usar el
+	viejo modo Vi, pero entonces deberá tener cuidado con las pequeñas
 	diferencias.
 
 
@@ -282,12 +285,13 @@ REHACER
 
 Si deshace de más, puede pulsar CTRL-R (rehacer) para revertir la orden
 precedente. En otras palabras, deshace el deshacer. Para ver esto en acción,
-presione CTRL-R dos veces. El carácter A y el espacio desaparecerían:
+presione CTRL-R dos veces.  El carácter A y el espacio luego de él
+desaparecen:
 
 	young intelligent turtle ~
 
 Hay una versión especial de la orden deshacer, la orden «U» (deshacer
-línea).  La orden deshacer línea deshace todos los cambios realizados en la
+línea). La orden deshacer línea deshace todos los cambios realizados en la
 última línea editada. Si teclea esta orden dos veces, deshará la «U»
 precedente.
 
@@ -310,17 +314,17 @@ ir a cualquier situación anterior. Más información en la sección |32.2|.
 ==============================================================================
 *02.6*	Otras órdenes de edición
 
-Vim tiene una larga lista de órdenes para modificar texto. Véase |Q_in| y a
-continuación. Aquí hay algunos de uso frecuente.
+Vim tiene una larga lista de órdenes para modificar texto. Consulte |Q_in| y
+el texto a continuación. Aquí hay algunas de uso frecuente.
 
 
 AÑADIR
 
 La orden «i» inserta un carácter antes del carácter bajo el cursor. Esto
-funciona bien; pero ¿qué ocurre si quieres añadir algo al final de la línea?
+funciona bien; pero ¿qué ocurre si quiere añadir algo al final de la línea?
 Para ello necesita insertar texto después del cursor. Esto se hace con la
 orden «a» (añadir).
- Por ejemplo, para modificar la línea
+   Por ejemplo, para modificar la línea
 
 	and that's not saying much for the turtle. ~
 a
@@ -328,7 +332,7 @@ a
 
 Mueva el cursor sobre el punto al final de la línea. Pulse «x» para eliminar
 el punto. El cursor estará situado ahora al final de la línea, en la «e» de
-turtle.Teclee ahora: >
+turtle. Teclee ahora: >
 
 	a!!!<Esc>
 
@@ -340,7 +344,7 @@ para añadir tres signos de exclamación después de la e en turtle:
 ABRIR UNA NUEVA LÍNEA
 
 La orden «o» crea una nueva línea vacía debajo del cursor y pone Vim en modo
-insertar. Puede introducir el texto de la nueva línea.
+Insertar. Puede introducir el texto de la nueva línea.
    Suponga que el cursor está en algún lugar de la primera de estas líneas:
 
 	A very intelligent turtle ~
@@ -367,8 +371,8 @@ multiplicador con muchas órdenes. Anteriormente en este capítulo, añadió
 tres exclamaciones al final de la línea con «a!!!<Esc>». Otra forma de hacer
 esto es usar la orden «3a!<Esc>». El multiplicador 3 hace que la orden a
 continuación triplique su efecto. De igual modo, para eliminar tres
-caracteres, use «3x». El multiplicador siempre va delante de la orden sobre
-el que se aplica.
+caracteres, use «3x». El multiplicador siempre se indica antes de la orden
+sobre la que se aplica.
 
 ==============================================================================
 *02.7*	Salir
@@ -390,9 +394,9 @@ todos los cambios. Es: >
 
 	:q!
 
-No se olvide de presionar <Intro> para finalizar la orden.
+No se olvide de presionar <Enter> para finalizar la orden.
 
-Para aquellos de vosotros interesados en los detalles, las tres partes de esta
+Para aquellos de ustedes interesados en los detalles, las tres partes de esta
 orden son los dos puntos (:), que entra en el modo en línea de órdenes; la
 orden «q», para salir; y el modificador de anulación (!).
    El modificador de anulación es necesario porque Vim se resiste a perder los
@@ -403,7 +407,8 @@ negaría a salir:
 	(añada ! para forzar) ~
 
 Si especifica el operador de anulación, le está diciendo a Vim «Sé que lo
-que hago parece una estupidez, pero ya soy mayorcito y sé lo que hago.»
+que hago parece una estupidez, pero ya soy mayorcito y en serio quiero
+hacerlo.»
 
 Si desea continuar editando con Vim: la orden «:e!» vuelve a cargar la
 versión original del archivo.
@@ -417,30 +422,31 @@ Todo lo que quiera saber puede encontrarlo en los archivos de ayuda.
 
 	:help
 
-También puede usar la tecla <F1>. Si su teclado tiene tecla <Ayuda> puede que
-funcione también.
-   Si no define un tema, «:help» muestra la ventana de ayuda general.
-Los creadores de Vim hicieron algo muy inteligente (o fueron muy vagos) con el
-sistema de ayuda: Hicieron la ventana de ayuda una ventana normal de edición.
-Puede usar todas las órdenes comunes de Vim para moverse por ella. Por lo
-tanto, h, j, k, l mueven el cursor hacia la izquierda, derecha, arriba y abajo.
-   Para salir de la ventana de ayuda, usa la misma orden que usas para salir
+También puede usar la tecla <F1>. Si su teclado tiene tecla <Help> (ayuda)
+puede que funcione también.
+   Si no define un tema, «:help» muestra la ventana de ayuda general. Los
+creadores de Vim hicieron algo muy inteligente (o fueron muy vagos) con el
+sistema de ayuda: Hicieron de la ventana de ayuda una ventana normal de
+edición. Puede usar todas las órdenes comunes de Vim para moverse por ella.
+Por lo tanto, h, j, k, l mueven el cursor hacia la izquierda, derecha, arriba
+y abajo.
+   Para salir de la ventana de ayuda, use la misma orden que usa para salir
 del editor: «ZZ». Esto sólo cierra la ayuda, no sale de Vim.
 
 A medida que lea el texto de ayuda, notará que hay texto entre barras
 verticales (por ejemplo, |help|). Esto indica un hiperenlace. Si sitúa el
 cursor en cualquier lugar entre las barras y presiona CTRL-] (saltar a
-etiqueta), el sistema de ayuda le llevará al tema indicado, (por motivos que
-no corresponden a esta explicación). La terminología Vim para hiperenlace es
-etiqueta o «tag». Por lo tanto, CTRL-] salta a la ubicación del «tag» dado
-por la palabra bajo el cursor.)
-   Tras unos cuantos saltos, quizá desee volver atrás.  CTRL-T (saltar hacia
-atrás en la pila) le devuelve a la posición precedente  CTRL-O (saltar hacia
+etiqueta), el sistema de ayuda le llevará al tema indicado. (Por motivos que
+no corresponden a esta explicación, el término usado en Vim para «hiperenlace»
+es «etiqueta» o «tag». Por lo tanto, CTRL-] salta a la ubicación del «tag»
+dado por la palabra bajo el cursor.)
+   Tras unos cuantos saltos, quizá desee volver atrás. CTRL-T (saltar hacia
+atrás en la pila) le devuelve a la posición precedente. CTRL-O (saltar hacia
 la posición anterior) también funciona bien aquí.
-   En la parte superior de la pantalla de ayuda, hay una notación *help.txt*.
-El nombre entre caracteres «*» se usa por el sistema de ayuda para definir
-una etiqueta (destino del hiperenlace).
-   Véase |29.1| para detalles sobre el uso de etiquetas.
+   En la parte superior de la pantalla de ayuda, se encuentra el texto
+*help.txt*.  El sistema de ayuda usa el nombre entre caracteres «*» para
+definir una etiqueta (destino del hiperenlace).
+   Consulte |29.1| para detalles sobre el uso de etiquetas.
 
 Para obtener ayuda sobre un tema concreto, use la siguiente orden: >
 
@@ -454,12 +460,13 @@ Para averiguar cómo eliminar texto, use la orden: >
 
 	:help deleting
 
-Para obtener un índice completo de todas los órdenes de Vim, use: >
+Para obtener un índice completo de todas las órdenes de Vim, use: >
 
 	:help index
 
-Cuando necesite obtener ayuda para las órdenes de control de carácter (por
-ejemplo, CTRL-A), debe escribirlo con el prefijo «CTRL-». >
+Cuando necesite obtener ayuda para las órdenes que usan caracteres de
+control (por  ejemplo, CTRL-A), debe escribir el carácter con el prefijo
+«CTRL-». >
 
 	:help CTRL-A
 
@@ -469,14 +476,14 @@ siguiente orden muestra la ayuda para la orden CTRL-H en modo normal: >
 
 	:help CTRL-H
 
-Para identificar otros modos, se necesita un prefijo de modo. Si quiere
-ayuda para la versión en modo Insertar de una orden, use «i_».  Para, CTRL-H
-es la siguiente orden: >
+Para indicar otros modos, se necesita un prefijo de modo. Si quiere ayuda
+para la versión en modo Insertar de una orden, use «i_». Para, CTRL-H es la
+siguiente orden: >
 
 	:help i_CTRL-H
 
 Cuando arranque el editor Vim, puede usar diversos argumentos de línea de
-órdenes. Todos ellos comienzan con guión (-)  Para buscar lo que el
+órdenes. Todos ellos comienzan con guión (-). Para buscar lo que el
 argumento «-t» hace, por ejemplo, use la orden: >
 
 	:help -t
@@ -492,7 +499,7 @@ Puede encontrar aquí la tabla con todos los prefijos de modo:
 |help-context|.
 
 Las teclas especiales se escriben entre corchetes angulares. Para encontrar
-ayuda sobre la flecha hacia arriba en modo insertar, use: >
+ayuda sobre la flecha hacia arriba en modo Insertar, use: >
 
 	:help i_<Up>
 
@@ -510,7 +517,7 @@ Resumen:					*help-summary*  >
 	:help
 <		Le aporta ayuda muy general. Desplace el texto hacia abajo
 		para ver una lista con todos los archivos de ayuda, incluyendo
-		los añadidos (que no se distribuyen con Vim). >
+		los instalados localmente (que no se distribuyen con Vim). >
 	:help user-toc.txt
 <		Índice de contenidos del manual de usuario. >
 	:help :tema
@@ -562,7 +569,7 @@ Resumen:					*help-summary*  >
 	    :copen
 	    :cclose
 <			abrir/cerrar la ventana «quickfix» (arreglos rápidos);
-			pulse <Intro> para ir al elemento bajo el cursor.
+			pulse <Enter> para ir al elemento bajo el cursor.
 
 
 ==============================================================================
@@ -570,10 +577,3 @@ Resumen:					*help-summary*  >
 Capítulo siguiente: |usr_03.esx| Desplazamiento
 
 Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
-
-==============================================================================
-
-Traducción del capítulo: Álvaro Castro Castillo 
-
-Proyecto: |vim-doc-es|
-
