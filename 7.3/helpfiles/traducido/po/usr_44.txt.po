@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2011-05-14 19:11+0300\n"
-"PO-Revision-Date: 2011-06-11 21:48-0500\n"
+"PO-Revision-Date: 2011-09-20 09:12-0500\n"
 "Last-Translator: Javier Rojas <jerojasro@devnull.li>\n"
 "Language-Team: none\n"
 "Language: es\n"
@@ -280,8 +280,8 @@ msgid ""
 "similar.  These files will also show you the normal layout of a syntax "
 "file.  To understand it, you need to read the following."
 msgstr ""
-"Partir de un archivo de sintaxis preexistente le ahorrará mucho tiempo. Trate "
-"de encontrar un archivo de sintaxis para un lenguaje similar en "
+"Partir de un archivo de sintaxis preexistente le ahorrará mucho tiempo. "
+"Trate de encontrar un archivo de sintaxis para un lenguaje similar en "
 "$VIMRUNTIME/syntax. También puede usarlos como modelo respecto a la "
 "estructura que debe tener un archivo de sintaxis. Para entenderla, debe leer "
 "lo siguiente."
@@ -360,9 +360,8 @@ msgid ""
 "This also can be used to list clusters (explained in |44.8|).  Just include "
 "the @ in the name."
 msgstr ""
-"También puede usar dicha orden para listar los clústeres (explicados en "
-"|44.8|). Sólo incluya una «@» en el nombre."
-
+"También puede usar dicha orden para listar los clústeres (explicados en |"
+"44.8|). Sólo incluya una «@» en el nombre."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:69
@@ -493,8 +492,8 @@ msgid ""
 "\"Statement\".  See |group-name| for the standard names."
 msgstr ""
 "Éstas le indican a Vim que debe resaltar «xType» de la misma forma que a "
-"«Type», y a «xStatement» de la misma forma que a «Statement». Consulte "
-"|group-name| para el listado de nombres estándar."
+"«Type», y a «xStatement» de la misma forma que a «Statement». Consulte |"
+"group-name| para el listado de nombres estándar."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:118
@@ -910,7 +909,6 @@ msgstr ""
 "consuma el fin de línea necesario, puede usar el argumento «keepend». Al\n"
 "hacerlo se soluciona el problema de las coincidencias de dos fines de línea\n"
 "seguidos: >\n"
-   
 
 #. type: Plain text
 #: original/txt/usr_44.txt:271
@@ -1557,7 +1555,8 @@ msgstr "\t:syntax keyword cppStatement\tnew delete this friend using\n"
 #. type: Plain text
 #: original/txt/usr_44.txt:505
 msgid "This works just like in any other syntax file."
-msgstr "El funcionamiento es el mismo que en cualquier otro archivo de sintaxis."
+msgstr ""
+"El funcionamiento es el mismo que en cualquier otro archivo de sintaxis."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:513
@@ -1839,8 +1838,8 @@ msgstr "\t:syntax sync match xSpecial /{.*}/\n"
 #: original/txt/usr_44.txt:608
 msgid "More about synchronizing in the reference manual: |:syn-sync|."
 msgstr ""
-"Para más información acerca de sincronización de sintaxis, consulte: "
-"|:syn-sync|."
+"Para más información acerca de sincronización de sintaxis, consulte: |:syn-"
+"sync|."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:611
@@ -1874,8 +1873,8 @@ msgstr "\t~/.vim/syntax/x.vim ~\n"
 #: original/txt/usr_44.txt:620
 msgid "You must also make the file type be recognized.  See |43.2|."
 msgstr ""
-"También debe asegurarse de que Vim reconozca el tipo de archivo. Consulte "
-"|43.2|."
+"También debe asegurarse de que Vim reconozca el tipo de archivo. Consulte |"
+"43.2|."
 
 #. type: Plain text
 #: original/txt/usr_44.txt:626
