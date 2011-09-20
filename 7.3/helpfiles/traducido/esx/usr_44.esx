@@ -1,0 +1,797 @@
+*usr_44.txt*	Para Vim versión 7.3.  Último cambio: 28/12/2008
+
+		MANUAL DE USUARIO DE VIM - por Bram Moolenaar
+
+			 Su propio resaltado de sintaxis
+
+
+Vim cuenta con resaltado de sintaxis para cerca de doscientos tipos de
+archivo diferentes. Si el archivo que está editando no está entre ellos, lea
+este capítulo para para averiguar cómo definir el resaltado para su tipo de
+archivo. Consulte también |:syn-define| en el manual de referencia.
+
+|44.1|	Órdenes básicas de sintaxis
+|44.2|	Palabras clave
+|44.3|	Coincidencias
+|44.4|	Regiones
+|44.5|	Elementos anidados
+|44.6|	Encadenamiento de grupos
+|44.7|	Otros argumentos
+|44.8|	Clústeres
+|44.9|	Inclusión de otros archivos de sintaxis
+|44.10|	Sincronización
+|44.11|	Instalación de archivos de sintaxis
+|44.12|	Archivos de sintaxis portátiles
+
+ Capítulo siguiente: |usr_45.txt|  Seleccione su idioma
+  Capítulo anterior: |usr_43.txt|  Uso de tipos de archivo
+Tabla de contenidos: |usr_toc.esx|
+
+==============================================================================
+*44.1*	Órdenes básicas de sintaxis
+
+Partir de un archivo de sintaxis preexistente le ahorrará mucho
+tiempo. Trate de encontrar un archivo de sintaxis para un lenguaje similar
+en $VIMRUNTIME/syntax. También puede usarlos como modelo respecto a la
+estructura que debe tener un archivo de sintaxis. Para entenderla, debe leer
+lo siguiente.
+
+Empecemos con los argumentos básicos. Antes de definir ningún elemento de
+sintaxis, debemos borrar las definiciones previas que pueda haber: >
+
+	:syntax clear
+
+Este paso no es necesario en la versión final del archivo de sintaxis, pero
+es útil mientras se experimenta.
+
+En este capítulo hay varias simplificaciones. Si va a escribir un archivo de
+sintaxis que será usado por otras personas, lea el contenido completo para
+enterarse de todos los detalles.
+
+
+MOSTRAR LOS ELEMENTOS DEFINIDOS
+
+Para revisar qué elementos de sintaxis están definidos actualmente, use esta
+orden: >
+
+	:syntax
+
+Puede usarla para revisar qué elementos han sido definidos. Es muy útil cuando
+se está experimentando con un nuevo archivo de sintaxis. También muestra los
+colores definidos para cada elemento, lo que ayuda a determinar qué es qué.
+   Para mostrar los elementos de un grupo de sintaxis en particular, use: >
+
+	:syntax list {nombre-grupo}
+
+También puede usar dicha orden para listar los clústeres (explicados en
+|44.8|). Sólo incluya una «@» en el nombre.
+
+
+SENSIBILIDAD A MAYÚSCULAS Y MINÚSCULAS
+
+Algunos lenguajes, como Pascal, no distinguen entre mayúsculas y minúsculas.
+Otros, como C, sí hacen esa distinción. Debe indicar a qué tipo corresponde su
+lenguaje mediante alguna de las siguientes órdenes: >
+	:syntax case match
+	:syntax case ignore
+
+Al usar «match» como argumento Vim revisará que las mayúsculas y minúsculas de
+los elementos definidos coincida. En este caso, «int» difiere de «Int» y de
+«INT». Al usar el argumento «ignore», elementos como los siguientes serán
+considerados equivalentes: «Procedure», «PROCEDURE» y «procedure».
+   Las órdenes «syntax case» pueden aparecer en cualquier sitio del archivo de
+sintaxis, y afectan a las definiciones de sintaxis que le sigan. En la mayoría
+de los casos sólo hay un «:syntax case» en el archivo de sintaxis; si está
+trabajando con un lenguaje inusual, con elementos sensibles a mayúsculas y
+minúsculas, y con otros insensibles a ellas, puede agregar tantas órdenes
+«syntax case» a lo largo del archivo como sea necesario.
+
+==============================================================================
+*44.2*	Palabras clave
+
+Los elementos de sintaxis más básicos son las palabras clave. Para definir
+una palabra clave, use el siguiente esquema: >
+
+	:syntax keyword {grupo} {palabra-clave} ...
+
+{grupo} corresponde al nombre de un grupo de sintaxis. Puede asignar colores
+a un {grupo} usando la orden «:highlight». El argumento {palabra-clave}
+corresponde a una palabra clave. A continuación algunos ejemplos: >
+
+	:syntax keyword xType int long char
+	:syntax keyword xStatement if then else endif
+
+Este ejemplo usa los nombres de grupo «xType» y «xStatement». Por convención,
+cada nombre de grupo tiene antepuesto el tipo de archivo para el lenguaje que
+se está definiendo. Este ejemplo define la sintaxis para el lenguaje x
+(lenguaje de ejemplo (eXample) carente de nombre interesante). En un archivo
+de sintaxis para scripts de «csh» se usaría «cshType». El prefijo usado es
+igual al valor de 'filetype'.
+   Estas órdenes hacen que las palabras «int», «long», y «char» sean
+resaltadas de una forma, e «if», «then», «else» y «endif» de otra. Ahora es
+necesario conectar los nombres de grupos de x a los nombres estándar de Vim.
+Puede hacerlo usando las órdenes siguientes: >
+
+	:highlight link xType Type
+	:highlight link xStatement Statement
+
+Éstas le indican a Vim que debe resaltar «xType» de la misma forma que a
+«Type», y a «xStatement» de la misma forma que a «Statement». Consulte
+|group-name| para el listado de nombres estándar.
+
+
+PALABRAS CLAVE INUSUALES
+
+Los caracteres que se usen en una palabra clave deben estar contenidos en la
+opción 'iskeyword'. Si usa un carácter que no esté allí, no habrá
+coincidencias con la palabra. Vim no le mostrará ningún mensaje de advertencia
+en este caso.
+   El lenguaje x usa el carácter «-» en sus palabras clave. Para permitir su
+uso en la definición de sintaxis, use las siguientes órdenes: >
+
+	:setlocal iskeyword+=-
+	:syntax keyword xStatement when-not
+
+La orden «:setlocal» se usa para cambiar el valor de 'iskeyword' únicamente
+en el búfer actual. Al hacer esto se está cambiando el comportamiento de
+órdenes como «w» y «*». Si no desea este efecto, defina una coincidencia en
+lugar de una palabra clave (se explica en la siguiente sección.)
+
+El lenguaje x permite abreviaciones. Por ejemplo, «n», «ne», o «nex» son
+abreviaturas válidas para «next» . Puede definirlas usando la siguiente orden:
+>
+	:syntax keyword xStatement n[ext]
+
+Dicha definición no coincide con «nextone», ya que las palabras clave
+coinciden únicamente con palabras completas.
+
+==============================================================================
+*44.3*	Coincidencias
+
+Ahora considere una definición algo más compleja. Desea definir
+identificadores normales. Para hacerlo, debe definir un elemento de sintaxis
+de coincidencia. El elemento a continuación coincide con cualquier palabra
+que consista únicamente de letras en minúscula: >
+
+	:syntax match xIdentifier /\<\l\+\>/
+<
+	Nota:
+	Las palabras clave tienen precedencia sobre cualquier otro tipo de
+	elemento de sintaxis. Por este motivo las palabras clave «if», «then»,
+	etc., serán consideradas palabras clave, aun cuando también coinciden
+	con el patrón de xIdentifier.
+
+El elemento final es un patrón, similar al que se usa para buscar texto. El
+// se usa para rodear el patrón (como se hace en la orden
+«:substitute»). Puede usar cualquier otro carácter, como el signo de suma o
+una comilla.
+
+Defina ahora una coincidencia para un comentario. En el lenguaje x
+corresponde a todo el texto desde un # hasta el final de la línea: >
+
+	:syntax match xComment /#.*/
+
+Como es posible usar un patrón de búsqueda, puede resaltar cosas bastante
+complejas usando elementos de coincidencia. Consulte |pattern| para obtener
+más ayuda respecto a los patrones de búsqueda.
+
+==============================================================================
+*44.4*	Regiones
+
+En el lenguaje de ejemplo x, las cadenas de texto van entre comillas dobles
+("). Para resaltar cadenas es necesario definir una región. Se requiere un
+inicio de región (comilla doble) y un final de región (comilla doble). La
+definición se presenta a continuación: >
+
+	:syntax region xString start=/"/ end=/"/
+
+Las directrices «start» y «end» definen los patrones usados para ubicar el
+inicio y final de la región. Pero, ¿qué pasa con las cadenas parecidas a
+esta?
+
+	"Una cadena con una comilla doble (\") en ella" ~
+
+Esta situación crea un problema: la comilla doble en la mitad de la cadena
+marcará el fin de la región. Debe indicarle a Vim que omita las comillas
+dobles protegidas dentro de la cadena. Hágalo usando la palabra clave
+«skip»: >
+
+	:syntax region xString start=/"/ skip=/\\"/ end=/"/
+
+La barra inversa doble coincide con una única barra inversa, ya que ésta es
+un carácter especial en los patrones de búsqueda.
+
+¿Cuándo debe usar una región en lugar de una coincidencia? La diferencia
+principal es que una coincidencia es un único patrón, que debe coincidir
+completamente. Una región empieza apenas se encuentra una coincidencia para
+el patrón indicado en «start». No tiene importancia si se encuentra o no una
+coincidencia para el patrón indicado en «end». Si el elemento a resaltar
+requiere que haya una coincidencia para el patrón en «end», usar una región
+no servirá. Aparte de eso, las regiones son más fáciles de definir. Y es más
+fácil también usar elementos anidados, como se explica en la siguiente
+sección.
+
+==============================================================================
+*44.5*	Elementos anidados
+
+Observe este comentario:
+
+	%Obtener entrada  TODO: Descartar espacios en blanco ~
+
+Se desea resaltar el «TODO»  con letras grandes y amarillas, aún cuando esté
+dentro del comentario, que se resalta con azul. Para que Vim pueda hacerlo,
+debe definir los siguientes grupos de sintaxis: >
+
+	:syntax keyword xTodo TODO contained
+	:syntax match xComment /%.*/ contains=xTodo
+
+En la primera línea, el argumento «contained» le indica a Vim que esta
+palabra clave sólo puede aparecer dentro de otro elemento de sintaxis. La
+siguiente línea tiene «contains=xTodo». Esto indica que el elemento de
+sintaxis «xTodo» está contenido en «xComment». El resultado es que toda la
+línea con el comentario coincide con «xComment», y se resalta azul. La
+palabra «TODO» dentro del comentario coincide con «xTodo» y se resalta
+amarilla (el resaltado de «xTodo» se configuró de esta manera).
+
+
+ANIDAMIENTO RECURRENTE
+
+En el lenguaje x los bloques de código se definen usando llaves. Y además,
+un bloque de código puede contener otros bloques de código. Este tipo de
+definición se hace como se muestra a continuación: >
+
+	:syntax region xBlock start=/{/ end=/}/ contains=xBlock
+
+Suponga que tiene este texto:
+
+	while i < b { ~
+		if a { ~
+			b = c; ~
+		} ~
+	} ~
+
+El primer «xBlock» empieza en el { de la primera línea. En la segunda línea
+aparece otro {. Al estar dentro de un elemento «xBlock», y como éste puede
+contenerse a sí mismo, aquí inicia un elemento «xBlock» anidado. Por este
+motivo la línea «b = c» se considera dentro de la región «xBlock» de segundo
+nivel. Luego se encuentra un } en la línea siguiente, que coincide con el
+patrón de fin de la región. Aquí se termina la región del «xBlock»
+anidado. Debido a que el } hace parte de la región anidada, está oculto para
+la primera región «xBlock». Luego termina la primera región «xBlock» al
+llegar al último }
+
+
+CONSERVAR EL FINAL
+
+Considere ahora los siguientes elementos de sintaxis: >
+
+	:syntax region xComment start=/%/ end=/$/ contained
+	:syntax region xPreProc start=/#/ end=/$/ contains=xComment
+
+Un comentario está definido como todo el texto desde el % hasta el final de
+la línea. Una directriz del preprocesador consiste en el texto desde un #
+hasta el final de la línea. Como es posible tener comentarios dentro de
+directrices del preprocesador, la definición para el preprocesador incluye
+el argumento «contains=xComment». Observe ahora lo que pasa con este texto:
+
+	#define X = Y  % Texto de un comentario ~
+	int foo = 1; ~
+
+Lo que verá es que la segunda línea también se resalta como «xPreProc». La
+directriz de preprocesador debería terminar al finalizar la línea. Por eso
+definió «end=/$/». ¿Qué está pasando?
+   La causa del problema es el comentario. Éste empieza con % y termina al
+finalizar la línea. Al terminar el comentario, se sigue estando en la región
+de preprocesador. Esto ocurre después de haber procesado el fin de línea, por
+lo que termina incluyéndose la siguiente línea.
+   Para evitar este problema y para evitar que un elemento de sintaxis anidado
+consuma el fin de línea necesario, puede usar el argumento «keepend». Al
+hacerlo se soluciona el problema de las coincidencias de dos fines de línea
+seguidos: >
+
+	:syntax region xComment start=/%/ end=/$/ contained
+	:syntax region xPreProc start=/#/ end=/$/ contains=xComment keepend
+
+
+ELEMENTOS MÚLTIPLES CONTENIDOS
+
+Es posible usar el argumento «contains» para indicar que un elemento puede
+contener a cualquier otro. Por ejemplo: >
+
+	:syntax region xList start=/\[/ end=/\]/ contains=ALL
+
+Este elemento de sintaxis podrá contener a todos los otros elementos que estén
+definidos. También puede contenerse a sí mismo, pero no empezando desde la
+misma posición (eso causaría un ciclo infinito).
+   Puede indicar qué grupos no están contenidos. De esta forma, se contendrá a
+todos los elementos excepto los que se listen explícitamente:
+>
+	:syntax region xList start=/\[/ end=/\]/ contains=ALLBUT,xString
+
+Puede incluir todos los elementos que no tienen en su definición el
+argumento «contained» usando el elemento «TOP». De manera similar,
+«CONTAINED» sirve para incluir únicamente los elementos de sintaxis que
+cuentan con el argumento «contained». Consulte |:syn-contains| para ver los
+detalles al respecto.
+
+==============================================================================
+*44.6*	Encadenamiento de grupos
+
+Las instrucciones del lenguaje x tienen la siguiente estructura:
+
+	if (condition) then ~
+
+Desea que los tres elementos tengan un resaltado diferente. Pero
+«(condition)» y «then» también pueden aparecen en otros lugares, en los que
+deberán tener un resaltado diferente. Puede hacerlo de la siguiente manera:
+>
+
+	:syntax match xIf /if/ nextgroup=xIfCondition skipwhite
+	:syntax match xIfCondition /([^)]*)/ contained nextgroup=xThen skipwhite
+	:syntax match xThen /then/ contained
+
+El argumento «nextgroup» especifica los elementos que pueden venir a
+continuación. Éstos no son obligatorios. Si no se encuentra ninguno de los
+elementos especificados, no sucede nada. Por ejemplo, en el texto siguiente:
+
+	if not (condition) then ~
+
+El «if» coincide con «xIf». «not» no coincide con el grupo especificado como
+siguiente («xIfCondition»), por lo que sólo se resalta el «if».
+
+El argumento «skipwhite» le indica a Vim que puede haber espacio en blanco
+(espacios y tabuladores) entre los elementos de sintaxis. Otros argumentos
+similares son «skipnl», que permite manejar cambios de línea entre
+elementos, y «skipempty», que permite manejar líneas vacías. Tenga en cuenta
+que «skipnl» no maneja líneas vacías; debe haber una coincidencia con algo
+inmediatamente después del cambio de línea.
+
+==============================================================================
+*44.7*	Otros argumentos
+
+MATCHGROUP
+
+Al definir una región, toda ella se resalta de acuerdo al nombre de grupo
+especificado. Por ejemplo, use la siguiente orden para resaltar el texto
+entre paréntesis () con el grupo xInside: >
+
+	:syntax region xInside start=/(/ end=/)/
+
+Suponga que quiere resaltar los paréntesis de forma diferente. Puede
+lograrlo usando varias declaraciones de regiones bastante complicadas, o
+puede usar el argumento «matchgroup». Éste le indica a Vim que resalte el
+inicio y el final de una región con un grupo diferente (para este ejemplo,
+el grupo «xParen»): >
+
+	:syntax region xInside matchgroup=xParen start=/(/ end=/)/
+
+El argumento «matchgroup» tiene efecto sobre las coincidencias que aparezcan
+después de él. En el ejemplo anterior tanto el inicio como el final de la
+región se resaltan usando «xParen». Para resaltar el final con «xParenEnd»:
+>
+
+	:syntax region xInside matchgroup=xParen start=/(/
+		\ matchgroup=xParenEnd end=/)/
+
+Un efecto secundario del uso de «matchgroup» es que los elementos contenidos
+no coincidirán con el inicio ni con el final de la región. El ejemplo para
+el argumento «transparent» usa ésto.
+
+
+TRANSPARENT
+
+Suponga que, en un archivo de lenguaje C, desea resaltar los () que van luego
+del texto «while» de manera diferente a los () que siguen al texto «for». En
+ambos casos puede haber pares () anidados, que deben ser resaltados de la
+misma manera. Debe asegurarse de que el resaltado para los () se detenga en el
+) coincidente. Puede lograrlo con las siguientes órdenes:
+>
+	:syntax region cWhile matchgroup=cWhile start=/while\s*(/ end=/)/
+		\ contains=cCondNest
+	:syntax region cFor matchgroup=cFor start=/for\s*(/ end=/)/
+		\ contains=cCondNest
+	:syntax region cCondNest start=/(/ end=/)/ contained transparent
+
+Con esto puede definir resaltados diferentes para «cWhile» y «cFor». El
+elemento «cCondNest» puede aparecer dentro de cualquiera de ellos, pero tendrá
+precedencia sobre el resaltado del elemento en el que está contenido. El
+argumento «transparent» provoca esto.
+   Observe que el argumento «matchgroup» tiene el mismo grupo del elemento en
+que está definido. Entonces, ¿para qué se lo define? Bien, el efecto colateral
+de usar «matchgroup» es que los elementos contenidos no aparecerán en la
+coincidencia del elemento inicial. Esto evita que el grupo «cCondNest»
+coincida con el ( de justo después del «while» o «for». Si esto pasara, la
+coincidencia de inicio cubriría todo el texto hasta el ) correspondiente, y la
+región continuaría luego de éste. De esta forma «cCondNest» sólo coincide
+luego de la coincidencia con el patrón de inicio de la región, luego del
+primer (.
+
+
+DESPLAZAMIENTOS
+
+Suponga que va a definir como región el texto entre los ( y ) que aparecen
+luego de un «if». Pero no desea incluir el «if» ni los ( o ). Puede lograrlo
+indicando desplazamientos para los patrones. Ejemplo: >
+
+	:syntax region xCond start=/if\s*(/ms=e+1 end=/)/me=s-1
+
+El desplazamiento para el patrón de inicio es «ms=e+1». «ms» representa el
+Inicio de la Coincidencia (Match Start). Éste define un desplazamiento para el
+inicio de la coincidencia. Usualmente la coincidencia empieza donde el patrón
+coincide. «e+1» indica que la coincidencia ahora debe empezar al final de la
+coincidencia del patrón, y luego un carácter más allá.
+   El desplazamiento para el patrón de finalización es «me=s-1». «me»
+representa el Fin de Coincidencia (Match End). «s-1» equivale al inicio de la
+coincidencia del patrón, y luego un carácter atrás. El resultado final es que
+en este texto:
+
+	if (foo == bar) ~
+
+Sólo se resaltará el texto «foo == bar» usando «xCond».
+
+Más información acerca de desplazamientos en: |:syn-pattern-offset|.
+
+
+ONELINE
+
+El argumento «oneline» indica que la región no se extiende más allá de una
+línea. Por ejemplo: >
+
+	:syntax region xIfThen start=/if/ end=/then/ oneline
+
+Esta orden define una región que empieza en el «if» y termina en el
+«end». Pero si no se encuentra un «end» luego del «if», no hay coincidencia.
+
+	Nota:
+	Al usar «oneline» la región no empieza si el patrón final no coincide
+	en la misma línea. Sin «oneline» Vim _no_ revisa si hay coincidencia
+	para el patrón final. La región empieza incluso si no  hay ninguna
+	coincidencia para el patrón final en el resto del archivo.
+
+
+CONTINUACIÓN DE LÍNEAS Y CÓMO EVITARLAS
+
+Las cosas se hacen algo más complejas. Definamos una línea de
+preprocesador. Empieza con un «#» en la primera columna y continúa hasta el
+final de la línea. Una línea que termine con \ hace que la siguiente línea
+sea una continuación de la primera. Para cubrir este caso, debe permitir que
+el elemento de sintaxis contenga un patrón de continuación: >
+
+	:syntax region xPreProc start=/^#/ end=/$/ contains=xLineContinue
+	:syntax match xLineContinue "\\$" contained
+
+En este caso, aunque «xPreProc» usualmente coincidiría sólo con una línea de
+texto, «xLineContinue» (el grupo contenido en la definición) permite que se
+continúe por más de una línea. Por ejemplo, dicha definición coincidiría con
+las dos siguientes líneas:
+
+	#define SPAM  spam spam spam \ ~
+			bacon and spam ~
+
+En este caso, este es el comportamiento deseado. Si no es lo que se quiere,
+puede hacer que la coincidencia esté en una sóla línea añadiendo «excludenl»
+al patrón contenido. Por ejemplo, desea resaltar «end» en «xPreProc», pero
+sólo al final de la línea. Para evitar que «xPreProc» continúe en la
+siguiente línea, como lo hace «xLineContinue», use «excludenl» de esta
+manera: >
+
+	:syntax region xPreProc start=/^#/ end=/$/
+		\ contains=xLineContinue,xPreProcEnd
+	:syntax match xPreProcEnd excludenl /end$/ contained
+	:syntax match xLineContinue "\\$" contained
+
+Debe poner el argumento «excludenl» antes del patrón. Debido a que
+«xLineContinue» no contiene «excludenl», una coincidencia con él extenderá
+«xPreProc» a la siguiente línea como lo hacía antes.
+
+==============================================================================
+*44.8*	Clústeres
+
+Una de las cosas que notará cuando escriba un archivo de sintaxis es que
+terminará generando un montón de grupos de sintaxis. Para hacer esto más
+manejable, Vim le permite definir una colección de grupos de sintaxis, llamada
+clúster.
+   Suponga que tiene un lenguaje que cuenta con ciclos «for», instrucciones
+«if», ciclos «while», y funciones. Cada uno de ellos tiene los mismos
+elementos de sintaxis: números e identificadores. Usted los define así: >
+
+	:syntax match xFor /^for.*/ contains=xNumber,xIdent
+	:syntax match xIf /^if.*/ contains=xNumber,xIdent
+	:syntax match xWhile /^while.*/ contains=xNumber,xIdent
+
+Debe repetir la misma declaración «contains=» cada vez. Si quiere añadir otro
+elemento contenido, tendrá que hacerlo 3 veces. Los clústeres de sintaxis
+simplifican estas definiciones permitiéndole crear un clúster que represente a
+varios grupos de sintaxis.
+   Use la siguiente orden para definir un clúster para los dos elementos
+contenidos por los tres grupos: >
+
+	:syntax cluster xState contains=xNumber,xIdent
+
+Puede usar clústeres dentro de otros elementos de sintaxis de la misma forma
+que cualquier otro grupo de sintaxis. Sus nombres siempre empiezan con
+«@». Con esto, puede definir los tres grupos así: >
+
+	:syntax match xFor /^for.*/ contains=@xState
+	:syntax match xIf /^if.*/ contains=@xState
+	:syntax match xWhile /^while.*/ contains=@xState
+
+Puede añadir nombres de grupos adicionales a un clúster mediante el
+argumento «add»: >
+
+	:syntax cluster xState add=xString
+
+También puede eliminar grupos de sintaxis de la lista: >
+
+	:syntax cluster xState remove=xNumber
+
+==============================================================================
+*44.9*	Inclusión de otros archivos de sintaxis
+
+La sintaxis del lenguaje C++ es un superconjunto de la del lenguaje
+C. Considerando lo molesto que resultaría escribir dos veces la parte común
+del resaltado de sintaxis, es posible hacer que el archivo de sintaxis de
+C++ lea el archivo de sintaxis para C usando la siguiente orden: >
+
+	:runtime! syntax/c.vim
+
+La orden «:runtime!» carga todos los archivos «syntax/c.vim» que se encuentren
+en 'runtimepath'. Esto hace que las partes correspondientes a C de la sintaxis
+de C++ estén definidas de la misma forma que para archivos de C. Si ha
+reemplazado el archivo de sintaxis «c.vim», o ha añadido elementos con
+archivos adicionales, éstos también serán incluidos.
+   Luego de carga los elementos de sintaxis para C es posible definir los
+elementos específicos de C++. Por ejemplo, añadir palabras clave que no
+existen en C: >
+
+	:syntax keyword cppStatement	new delete this friend using
+
+El funcionamiento es el mismo que en cualquier otro archivo de sintaxis.
+
+Considere ahora el lenguaje Perl. Un script de Perl consta de dos partes
+diferentes: la sección de documentación en formato POD, y el programa
+propiamente dicho, escrito en Perl. La sección POD empieza con el texto
+«=head» y termina con «=cut».
+   Desea definir la sintaxis POD en un archivo, y usarla desde el archivo de
+sintaxis de Perl. La orden «:syntax include» lee el archivo de sintaxis dado y
+almacena los elementos que se definen allí en un clúster de sintaxis. Para
+Perl, las instrucciones son las siguientes: >
+
+	:syntax include @Pod <sfile>:p:h/pod.vim
+	:syntax region perlPOD start=/^=head/ end=/^=cut/ contains=@Pod
+
+en un archivo Perl, el texto «=head» marca el inicio de la región «perlPOD».
+El clúster «@Pod» está contenido en esta región. Todos los elementos definidos
+como de nivel superior en los archivos de sintaxis «pod.vim» coincidirán aquí.
+Al encontrar «=cut», la región termina y se retoman los elementos definidos en
+el archivo para Perl.
+   La orden «:syntax include» tiene el cuidado de ignorar las órdenes «:syntax
+clear» en el archivo que incluye. Y argumentos como «contains=ALL» sólo harán
+que se incluyan los elementos definidos en el archivo incluido, y no en el
+archivo que hace la inclusión.
+   El texto «<sfile>:p:h» usa el nombre del archivo actual (<sfile>), lo
+convierte en una ruta completa (:p) y luego descarta la parte final (:h). De
+este proceso resulta el nombre completo de directorio del archivo. Con esto se
+logra incluir el archivo «pod.vim» del mismo directorio.
+
+==============================================================================
+*44.10*	Sincronización
+
+La tarea de los compiladores es fácil. Empiezan desde el principio de un
+archivo, y hacen el análisis sintáctico hasta el fin del mismo. La tarea de
+Vim no es tan fácil. Debe empezar el análisis a mitad del archivo, justo en
+donde se está editando el texto. Así que, ¿De qué manera puede Vim ubicarse en
+el archivo?
+   El secreto es la orden «:syntax sync». Ésta le indica a Vim cómo ubicarse
+dentro del archivo. Por ejemplo, la siguiente oren le indica a Vim que busque
+hacia atrás hasta encontrar el principio de un comentario estilo C, y que
+empiece el resaltado de sintaxis desde ahí: >
+
+	:syntax sync ccomment
+
+Es posible afinar el proceso con algunos argumentos. El argumento «minlines»
+le indica a Vim la cantidad mínima de líneas a revisar hacia atrás, y
+«maxlines» le indica al editor la cantidad máxima de líneas a revisar.
+
+	:syntax sync ccomment minlines=10 maxlines=500
+
+Si no es posible ubicarse en el espacio inicial, se va buscando más y más
+atrás hasta que logra ubicarse. Pero no se mira más allá de 500 líneas atrás.
+(Un valor grande en «maxlines» ralentiza el procesamiento. Uno pequeño puede
+hacer que la sincronización falle.)
+   Para hacer que la sincronización funcione algo más rápido, indíquele a Vim
+qué elementos puede omitir. Cada coincidencia o región que sólo necesite
+usarse cuando se esté mostrando su texto puede identificarse pasándole el
+argumento «display».
+   De manera predeterminada, el comentario que se encuentre se resaltará como
+parte del grupo de sintaxis «Comment». Puede especificar un grupo de sintaxis
+diferente si quiere colorear las cosas de otra forma: >
+
+	:syntax sync ccomment xAltComment
+
+Si su lenguaje de programación no cuenta con comentarios estilo C, puede
+intentar usar otro método de sincronización. La forma más sencilla de
+hacerlo es indicarle a Vim que retroceda una cantidad dada de líneas y que
+trate de resolver el problema desde allí. La siguiente orden le indica a Vim
+que retroceda 150 líneas e inicie el análisis desde allí: >
+
+	:syntax sync minlines=150
+
+Un valor grande en «minlines» puede hacer que Vim se ralentice,
+particularmente al desplazarse hacia atrás en un archivo.
+   Finalmente, puede especificar el grupo de sintaxis a buscar usando esta
+orden:
+>
+	:syntax sync match {nombre-grupo-sintaxis}
+		\ grouphere {nombre-grupo} {patrón}
+
+Esto le indica a Vim que cuando encuentre {patrón} el grupo de sintaxis
+llamado {nombre-grupo} empieza, justo después del patrón dado. El argumento
+{nombre-grupo-sintaxis} se usa para dar un nombre a esta especificación de
+sincronización. Por ejemplo, en el lenguaje de scripting sh la instrucción
+condicional if empieza con el texto «if» y termina con «fi»:
+
+	if [ --f archivo.txt ] ; then ~
+		echo "Archivo existe" ~
+	fi ~
+
+Para definir una directiva «grouphere» para esta sintaxis, use la orden
+siguiente: >
+
+	:syntax sync match shIfSync grouphere shIf "\<if\>"
+
+El argumento «groupthere» le indica a Vim que el patrón marca el fin de un
+grupo. Por ejemplo, el final del grupo if/fi se define como sigue: >
+
+	:syntax sync match shIfSync groupthere NONE "\<fi\>"
+
+En este ejemplo, «NONE» le indica a Vim que en este punto no se encuentra en
+ninguna región particular de sintaxis. En particular, no se encuentra dentro
+de un bloque condicional «if».
+
+También puede definir coincidencias y regiones que no usan ninguno de los
+argumentos «grouphere» o «groupthere». Estos grupos corresponden a los
+grupos de sintaxis que se omiten durante la sincronización. Por ejemplo, la
+siguiente definición omite el texto entre {}, aún si normalmente coincidiría
+con otro de los métodos de sincronización: >
+
+	:syntax sync match xSpecial /{.*}/
+
+Para más información acerca de sincronización de sintaxis, consulte:
+|:syn-sync|.
+
+==============================================================================
+*44.11*	Instalación de archivos de sintaxis
+
+Cuando su archivo de sintaxis esté listo, cópielo en un directorio «syntax» en
+cualquiera de las rutas en 'runtimepath'. En Unix una posibilidad es
+«~/.vim/syntax».
+   El nombre del archivo de sintaxis debe coincidir con el del tipo de
+archivo, y debe usar la extensión «.vim». Por ejemplo, para el lenguaje x, la
+ruta completa del archivo sería la siguiente:
+
+	~/.vim/syntax/x.vim ~
+
+También debe asegurarse de que Vim reconozca el tipo de archivo. Consulte
+|43.2|.
+
+Si su archivo funciona bien, considere hacerlo disponible a otros usuarios
+de Vim.  Primero, lea la sección siguiente para asegurarse de que su archivo
+funcionará bien en otros sistemas. Luego, envíelo al mantenedor de Vim:
+<maintainer@vim.org>. Por favor indique también cómo funciona la detección
+de tipo de archivo. Con algo de suerte ¡su archivo será incluido en la
+siguiente versión de Vim!
+
+
+ADICIONES A UN ARCHIVO DE SINTAXIS EXISTENTE
+
+Hasta ahora hemos asumido que estábamos creando un archivo de sintaxis
+completamente nuevo. Cuando ya hay un archivo de sintaxis que funciona, pero
+al que le faltan algunos elementos, es posible añadirlos en un archivo
+separado. Con esto se evita tener que modificar el archivo de sintaxis que
+viene con Vim, ya que los cambios que se hagan a dicho archivo se perderían al
+instalar una nueva versión de Vim.
+   Escriba las órdenes de sintaxis en su archivo; puede usar nombres de grupos
+de la sintaxis existente. Por ejemplo, para añadir nuevos tipos de variables a
+un archivo de sintaxis para C: >
+
+Guarde el archivo con el mismo nombre del archivo de sintaxis original. En
+este caso, «c.vim». Ubíquelo en uno de los directorios que están al final de
+'runtimepath'. Con esto hace que se cargue luego del archivo de sintaxis
+original. En Unix puede usar:
+
+	~/.vim/after/syntax/c.vim ~
+
+==============================================================================
+*44.12*	Archivos de sintaxis portátiles
+
+¿No sería agradable que todos los usuarios de Vim pudieran intercambiar
+archivos de sintaxis? Para posibilitar esto, debe tener en cuenta algunas
+recomendaciones al escribir un archivo de sintaxis.
+
+Empiece el archivo con un encabezado explicando el propósito del archivo de
+sintaxis, quién lo mantiene, y la fecha de la última actualización. No
+incluya información excesiva acerca del historial de cambios; no muchos
+estarán interesados. Por ejemplo: >
+
+	" Vim syntax file
+	" Language:	C
+	" Maintainer:	Bram Moolenaar <Bram@vim.org>
+	" Last Change:	2001 Jun 18
+	" Remark:	Included by the C++ syntax.
+
+Use la misma disposición que hay en otros archivos de sintaxis. Usar un
+archivo de sintaxis existente como ejemplo le ahorrará mucho tiempo.
+
+Escoja un nombre descriptivo para su archivo de sintaxis. Use letras
+minúsculas y dígitos. No use un nombre muy largo, ya que hay que usar este
+nombre en varios sitios: el nombre del archivo de sintaxis «name.vim»,
+'filetype', b:current_syntax, y el prefijo para los nombres de cada grupo de
+sintaxis (nameType, nameStatement, nameString, etc.)
+
+Continúe el archivo revisando si la variable «b:current_syntax» está
+definida. Si lo está, ya fue cargado algún otro archivo de sintaxis listado
+antes en 'runtimepath': >
+
+	if exists("b:current_syntax")
+	  finish
+	endif
+
+Para tener compatibilidad con Vim 5.8 use: >
+
+	if version < 600
+	  syntax clear
+	elseif exists("b:current_syntax")
+	  finish
+	endif
+
+Al final del archivo, defina «b:current_syntax», dándole como valor el
+nombre de la sintaxis. No olvide que los archivos de sintaxis que incluya
+también harán esto, por lo que puede tener que redefinir «b:current_syntax»
+si incluye dos archivos.
+
+Si desea que su archivo de sintaxis funcione con Vim 5.x, compruebe el valor
+de la variable «v:version». Consulte el archivo «yacc.vim» para un ejemplo
+al respecto.
+
+No incluya órdenes que sean configuradas por el usuario. No defina
+'tabstop', 'expandtab', etc. Dichas órdenes deben ubicarse en extensiones de
+tipo de archivo.
+
+No incluya macros o abreviaciones. La única opción que debería incluir es
+'iskeyword', si es realmente necesario modificarla para identificar las
+palabras clave.
+
+Para permitir que los usuarios escojan los colores que deseen, cree un
+nombre de grupo diferente para cada tipo de elemento resaltado. Luego
+asócielos a alguno de los grupo de resaltado estándar. De esta forma el
+archivo funcionará con todos los esquemas de color. Si selecciona colores
+específicos, el resaltado podría verse mal con algunos esquemas de color. No
+olvide que otros usuarios de Vim pueden usar un color de fondo diferente, o
+pueden tener sólo 8 colores disponibles.
+
+Para definir la asociación use «hi def link», para que el usuario pueda
+definir un resaltado diferente antes de que se cargue su archivo de
+sintaxis. Por ejemplo: >
+
+	  hi def link nameString	String
+	  hi def link nameNumber	Number
+	  hi def link nameCommand	Statement
+	  ... etc ...
+
+Añada el argumento «display» a los elementos que no se usan al sincronizar
+el resaltado, para acelerar el desplazamiento hacia atrás en el archivo, y
+CTRL-L.
+
+==============================================================================
+
+Próximo capítulo: |usr_45.esx| Seleccione su idioma
+
+Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
+
+==============================================================================
+
+Traducción del capítulo: Javier Rojas
+
+Proyecto: |vim-doc-es|
+
