@@ -1,0 +1,12 @@
+# Directory containing Xapian databases:
+database_dir /var/lib/xapian-omega/data
+
+# Directory containing OmegaScript templates:
+# TODO ADJUST ME
+template_dir /home/jerojasro/www/omega_templates
+
+# Directory to write Omega logs to:
+log_dir /var/log/xapian-omega
+
+# Directory containing any cdb files for the $lookup OmegaScript command:
+cdb_dir /var/lib/xapian-omega/cdb
