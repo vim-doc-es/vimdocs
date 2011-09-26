@@ -16,7 +16,7 @@ importantes. Puede encontrar una lista de estas órdenes a continuación
 |03.3|	Desplazarse a un carácter
 |03.4|	Emparejar un paréntesis
 |03.5|	Desplazarse a una línea específica
-|03.6|	Indicar dónde estás
+|03.6|	Indicar dónde está
 |03.7|	Desplazar el texto
 |03.8|	Búsquedas simples
 |03.9|	Patrones sencillos de búsqueda
@@ -31,7 +31,7 @@ Tabla de contenidos: |usr_toc.esx|
 
 Para mover el cursor una palabra hacia delante, use la orden «w». Del mismo
 modo que la mayoría de órdenes Vim, puede usar un prefijo numérico. Por
-ejemplos, «3w» se mueve tres palabras. Esta figura muestra cómo funciona:
+ejemplo, «3w» se mueve tres palabras. Esta figura muestra cómo funciona:
 
 	Ésta es una línea con texto de ejemplo ~
 	  --->-->--->--------------->
@@ -43,7 +43,7 @@ encuentra al comienzo de una palabra.
 
 	Ésta es una línea con texto de ejemplo ~
 	<----<--<---<---------<---
-	   b   b b    2b    b
+	   b   b b    2b        b
 
 Existe también la orden «e» que le desplaza hasta el final de la siguiente
 palabra, y «ge» que le desplaza hasta el final de la palabra anterior:
@@ -54,22 +54,21 @@ palabra, y «ge» que le desplaza hasta el final de la palabra anterior:
 
 Si se encuentra en la última palabra de la línea, la orden «w» le llevará
 hasta la primera palabra de la siguiente línea. Por lo tanto, puede usar
-esto para moverse por un párrafo, mucho más rápido que usando «l», «b» hace
+esto para moverse por un párrafo, mucho más rápido que usando «l». «b» hace
 lo mismo en la otra dirección.
 
 Una palabra termina en un carácter de separación, como «.», «-» o «)». Para
 cambiar lo que Vim considera una palabra, consulte la opción 'iskeyword'.
-   También es posible desplazarse por palabras separadas por espacios en
-blanco. Esto no es una PALABRA en el sentido habitual, por ello se usan las
-mayúsculas para designarla. Las órdenes para desplazarse por PALABRAS están
+   También es posible desplazarse por PALABRAs separadas por espacios en
+blanco. Esto no es una palabra en el sentido habitual, por ello se usan las
+mayúsculas para designarla. Las órdenes para desplazarse por PALABRAs están
 también en mayúsculas, como muestra la siguiente figura:
 
-	       ge      b	  w				e
-	       <-     <-	 --->			       --->
-	Ésta es-una línea, con palabras separadas/de forma/especial
-(y algo más). ~
-	   <----- <-----	 -------------------->	       ----->
-	     gE      B			 W			 E
+	        ge        b	           w				e
+	       <-        <-	          --->			       --->
+	Ésta es-una línea, con texto separado/de/forma/especial (y algo más). ~
+	   <-----   <------	          ---------------------->       ---->
+	     gE        B			 W			 E
 
 Con esta combinación de órdenes en mayúsculas y minúsculas, puede moverse
 rápidamente hacia atrás y hacia delante por un párrafo.
@@ -78,25 +77,25 @@ rápidamente hacia atrás y hacia delante por un párrafo.
 *03.2*	Desplazarse al principio o al final de la línea
 
 La orden «$» mueve el cursor al final de la línea. Si su teclado tiene la
-tecla <Fin>, conseguirá el mismo resultado pulsándola.
+tecla <End> (Fin), conseguirá el mismo resultado pulsándola.
 
 La orden «^» le lleva hacia el primer carácter no vacío de la línea. La
-orden «0» (cero) le mueve al primer carácter de la línea. La tecla <Inicio>
-hace lo mismo. En una imagen:
+orden «0» (cero) le mueve al primer carácter de la línea. La tecla <Home>
+(Inicio) hace lo mismo. En una imagen:
 
 		  ^
 	     <------------
 	.....Ésta es una línea con texto de ejemplo ~
-	<-----------------   --------------->
+	<-----------------   --------------------->
 		0		   $
 
 (los «.....» aquí indican espacios)
 
-   La orden «$» admite un multiplicador, como la mayoría de órdenes de evento.
-Pero moverse hacia el final de la línea varias veces no tiene sentido. Por lo
-tanto, lo que hace es moverle hacia el final de la siguiente línea. Por
-ejemplo, «1$» le mueve hacia el final de la primera línea (en la que está),
-«2$» te mueve al final de la siguiente línea, y así en adelante.
+   La orden «$» admite un multiplicador, como la mayoría de órdenes de
+movimiento.  Pero moverse hacia el final de la línea varias veces no tiene
+sentido. Por lo tanto, lo que hace es moverle hacia el final de la siguiente
+línea. Por ejemplo, «1$» le mueve hacia el final de la primera línea (en la
+que está), «2$» te mueve al final de la siguiente línea, y así en adelante.
    La orden «0» no admite ningún multiplicador, porque el «0» podría ser parte
 del número. Usar un multiplicador con «^» tampoco tiene ningún efecto.
 
@@ -111,29 +110,30 @@ ir a la «h» de «humano». Ejecute la orden «fh» y el cursor se posicionará
 sobre la h:
 
 	Errar es humano. Para liarla de verdad necesita un ordenador. ~
-	---------->--------------->
-	    fh		 fy
+	---------->----------->
+	    fh		 fl
 
-Esto también muestra que la orden «d» le lleva al comienzo de la palabra «de».
-Puede especificar un multiplicador; por lo tanto, puede ir a la «r»
-de «verdad» con «3fr»:
+Esto también muestra que la orden «fl» le lleva al comienzo de la palabra
+«liarla».
+   Puede especificar un multiplicador; por lo tanto, puede ir a la «r» de
+«verdad» con «3fr»:
 
 	Errar es humano. Para liarla de verdad necesita un ordenador. ~
-		  --------------------->
-			   3fl
+		  ------------------------>
+			   3fr
 
 La orden «F» busca hacia la izquierda:
 
 	Errar es humano. Para liarla de verdad necesitas un ordenador. ~
-		  <---------------------
+		 <---------------------
 			    Fh
 
-La orden «tx» funciona como la orden «fx», salvo que para un carácter antes
-del buscado. Truco: «t» viene de «To». La versión inversa de esta orden es
-«Tx».
+La orden «tx» funciona como la orden «fx», salvo que se detiene un carácter
+antes del buscado. Truco: «t» viene de «To» (hasta). La versión inversa de
+esta orden es «Tx».
 
 	Errar es humano. Para liarla de verdad necesita un ordenador. ~
-		   <------------  ------------->
+		  <------------  ------------->
 			Th		tn
 
 Estas cuatro órdenes se pueden repetir con «;». «,» repite en la otra
@@ -149,10 +149,10 @@ cancela la mayoría de las operaciones, no sólo búsquedas.
 ==============================================================================
 *03.4*	Emparejar un paréntesis
 
-Al escribir código, a menudo usa constructos anidados del tipo ().  Para
-ello la orden «%x resulta muy útil: le desplaza hasta el paréntesis
-opuesto. Si el cursor está en un «(», le moverá hasta el «)». Si está en un
-«)» le moverá hasta el «(» correspondiente.
+Al escribir código, a menudo usa estructuras anidadas del tipo (). Para ello
+la orden «%x» resulta muy útil: le desplaza hasta el paréntesis opuesto.  Si
+el cursor está en un «(», le moverá hasta el «)» correspondiente. Si está en
+un «)» le moverá hasta el «(» correspondiente.
 
 			    %
 			 <----->
@@ -165,7 +165,8 @@ la opción 'matchpairs'.)
 
 Cuando el cursor no se encuentra en un carácter útil, «%» irá hacia delante
 para buscar uno. Si el cursor se encuentra al comienzo de la línea del
-ejemplo anterior, «%» buscará hacia delante hasta el primer «(».
+ejemplo anterior, «%» buscará hacia delante hasta el primer «(». Luego se
+moverá hasta el paréntesis de cierre correspondiente:
 
 		if (a == (b * c) / d) ~
 		---+---------------->
@@ -174,8 +175,8 @@ ejemplo anterior, «%» buscará hacia delante hasta el primer «(».
 ==============================================================================
 *03.5*	Desplazarse a una línea específica
 
-Si eres un programador de C o C++, estará familiarizado con los mensajes de
-error del tipo presente a continuación:
+Si usted es un programador de C o C++, estará familiarizado con los mensajes
+de error tales como el siguiente:
 
 	prog.c:33: j   undeclared (first use in this function) ~
 
@@ -185,7 +186,7 @@ parte superior del archivo y «32j» para ir hacia abajo 32 líneas. Este no es
 el mejor modo, pero funciona. Uno mucho mejor es usar la orden «G». Con un
 multiplicador, esta orden le posiciona en la línea indicada. Por ejemplo,
 «33G» le lleva a la línea 33. (Hay un modo aún mejor de ir por la lista de
-errores del compilador, consulte |usr_30.txt| para información sobre «:make».)
+errores del compilador, consulte |usr_30.esx| para información sobre «:make».)
    Sin argumentos, «G» le posiciona al final del archivo. Una forma rápida de
 ir al comienzo de la línea es usar «gg». «1G» hará lo mismo, pero es una
 pizca más lento de escribir.
@@ -220,27 +221,27 @@ que puede ver? Esta figura le muestra las tres órdenes que puede emplear:
 		L -->	| texto ejemplo texto	    |
 			+---------------------------+
 
-Pista: «H» viene de «Home», «M» de «Middle» y «L» de «Last».
+Hints: "H" stands for Home, "M" for Middle and "L" for Last.
 
 ==============================================================================
 *03.6*	Indicar donde está
 
 Para ver dónde está en un archivo, hay tres maneras:
 
-1.   Use la orden CTRL-G. Obtendrá un mensaje como este (asumiendo que la
-      opción 'ruler' está desactivada:
+1.  Use la orden CTRL-G. Obtendrá un mensaje como este (asumiendo que la
+    opción 'ruler' está desactivada:
 
-	"usr_03.txt" line 233 of 650 --35%-- col 45-52 ~
+	"usr_03.txt" línea 233 de 650 --35%-- col 45-52 ~
 
     Esto le muestra el nombre del archivo que está editando, el número de
-    línea en el que se encuentra su cursor, la posición relativa (en
+    línea en el que se encuentra el cursor, la posición relativa (en
     porcentaje) y la columna del cursor.
        A veces verá dos números separados por guión. Por ejemplo, «col 2-9».
     Esto indica que el cursor está posicionado en el segundo carácter, pero ya
     que el primer carácter es un tabulador, ocupará ocho espacios de columnas,
     y la columna en pantalla será 9.
 
-2. Definir la opción 'number'. Esto mostrará el número de línea al
+2.  Defina la opción 'number'. Esto mostrará el número de línea al
     principio de cada línea: >
 
 	:set number
@@ -256,8 +257,8 @@ Para ver dónde está en un archivo, hay tres maneras:
     valor numérico y otras de cadenas de caracteres. Verá ejemplos de esto
     donde sean usados.
 
-3.   Activar la opción 'ruler'. Esto mostrará la posición del cursor
-            en la esquina inferior a la derecha de la ventana de Vim: >
+3.  Activar la opción 'ruler'. Esto mostrará la posición del cursor en la
+    esquina inferior a la derecha de la ventana de Vim: >
 
 	:set ruler
 
@@ -267,11 +268,11 @@ lo que no quitará mucho espacio para el texto.
 ==============================================================================
 *03.7*	Desplazar el texto
 
-La orden CTRL-U desplaza el texto hacia abajo. Imagine que mira a
-través de una ventana hacia un texto y mueve esta ventana hacia arriba una
+La orden CTRL-U desplaza el texto media pantalla hacia abajo. Imagine que mira
+a través de una ventana hacia un texto y mueve esta ventana hacia arriba una
 distancia igual a la mitad de la ventana. Entonces la ventana se mueve hacia
-arriba sobre el texto, lo cuál es hacia arriba en el archivo. No se preocupe
-si no recuerda qué es hacia arriba. A la mayoría de los usuarios les pasa.
+arriba sobre el texto, lo cuál es hacia atrás en el archivo. No se preocupe si
+no recuerda qué es hacia arriba. A la mayoría de los usuarios les pasa.
    La orden CTRL-D mueve la ventana de visualización media pantalla hacia
 abajo, con lo que desplaza el texto hacia arriba media pantalla.
 
@@ -298,10 +299,10 @@ en CTRL-E como si le diese una línea Extra. (Si usa un mapa de teclado
 compatible con MS-Windows CTRL-Y rehará un cambio en lugar de desplazar el
 texto.)
 
-Para avanzar una pantalla completa (menos dos líneas) use CTRL-F. La otra
-manera es hacia atrás, y se usa CTRL-B. Afortunadamente CTRL-F es Forward y
-CTRL-B es Backward, lo cuál lo hace fácil de recordar si sabe algo de
-inglés.
+Para avanzar una pantalla completa (excepto dos líneas) use CTRL-F. La otra
+manera es hacia atrás, y se usa CTRL-B. Afortunadamente CTRL-F es Forward
+(Adelante) y CTRL-B es Backward (Atrás), lo cuál lo hace fácil de recordar
+si sabe algo de inglés.
 
 Una cuestión habitual es que tras moverse hacia abajo muchas líneas con «j»,
 su cursor se encuentra en la parte de abajo de la pantalla. Si le gustaría
@@ -331,10 +332,10 @@ Para buscar una cadena, use la orden «/cadena». Para encontrar la palabra
 	/include
 
 Notará que cuando pulsa «/» el cursor salta a la última línea de la ventana
-Vim, como con la orden «:». Ahí es donde teclea la palabra. Puede pulsar
-la tecla de retroceso (flecha hacia atrás o <Retroceso>) para corregir. Use
+Vim, como con la orden «:». Ahí es donde teclea la palabra. Puede pulsar la
+tecla de retroceso (flecha hacia atrás o <BS> (retroceso)) para corregir. Use
 las teclas de cursor cuando sea necesario.
-   Presione <Intro> para ejecutar la orden.
+   Presione <Enter> para ejecutar la orden.
 
 	Nota:
 	Los caracteres .*[]^%/\?~$ tienen significados especiales. Si quiere
@@ -351,7 +352,7 @@ lo tanto «3n» va a la tercera. No se puede usar con «/».
 
 La orden «?» funciona como «/» pero busca hacia atrás: >
 
-	?word
+	?palabra
 
 La orden «N» repite la última búsqueda en la dirección opuesta. Por lo
 tanto, usar «N» después de una orden «/» busca hacia atrás, usar «N» tras
@@ -380,17 +381,17 @@ Suponga que realiza tres búsquedas: >
 	/dos
 	/tres
 
-Ahora comience a buscar tecleando un simple «/» sin presionar <Intro>. Si
-presiona <Arriba> (la tecla de cursor), Vim introduce «tres» en la línea de
-órdenes. Presionar <Intro> en este punto busca «tres». Si no pulsa
-<Intro> y presiona <Arriba>, Vim cambia el texto a «/dos». Si pulsa de nuevo
-<Arriba>, verá «/uno».
-   Puede usar también la tecla de cursor <Abajo> para moverse por el historial
-de órdenes de búsqueda en la otra dirección.
+Ahora comience a buscar tecleando un simple «/» sin presionar <Enter>. Si
+presiona <Up> (Arriba, la tecla de cursor), Vim introduce «tres» en la línea
+de órdenes. Presionar <Enter> en este punto busca «tres». Si no pulsa <Enter>
+y presiona <Up>, Vim cambia el texto a «/dos». Si pulsa de nuevo <Up>, verá
+«/uno».
+   Puede usar también la tecla de cursor <Down> (Abajo) para moverse por el
+historial de órdenes de búsqueda en la otra dirección.
 
 Si sabe cómo comienza una de sus búsquedas anteriores y la quiere usar de
-nuevo, introduzca ese carácter antes de presionar <Arriba>. En el ejemplo
-anterior, teclea «/u<Arriba>» y Vim pondrá «/uno» en la línea de órdenes.
+nuevo, introduzca ese carácter antes de presionar <Up>. En el ejemplo
+anterior, teclea «/u<Up>» y Vim pondrá «/uno» en la línea de órdenes.
 
 Las órdenes que comienzan con «:» también tienen un historial. Esto ayuda a
 reutilizar órdenes que ha usado antes. Estos dos historiales son
@@ -399,13 +400,14 @@ independientes.
 
 BUSCAR UNA PALABRA EN EL TEXTO
 
-Suponga que ve la palabra «ElNombreDeFunciónLargox en el texto y quiere
+Suponga que ve la palabra «ElNombreDeFunciónLargo» en el texto y quiere
 encontrar su próxima aparición escrita. Puede escribir
-«ElNombreDeFunciónLargo», pero eso conlleva mucho tiempo y no cabe equivocarse.
+«ElNombreDeFunciónLargo», pero eso conlleva mucho tiempo y no cabe
+equivocarse.
    Hay una forma mucho más sencilla: Coloque el cursor en la palabra y use la
 orden «*». Vim empleará la palabra bajo el cursor y la usará como cadena de
 búsqueda.
-   La orden «#x hace lo mismo en la otra dirección. Puede atribuirle un
+   La orden «#» hace lo mismo en la otra dirección. Puede atribuirle un
 multiplicador: «3*» busca la tercera ocurrencia de la palabra bajo el cursor.
 
 
@@ -416,7 +418,7 @@ que terminen en «el», use: >
 
 	/el\>
 
-El elemento z\>» es un marcador especial que sólo identifica el final de una
+El elemento «\>» es un marcador especial que sólo identifica el final de una
 palabra. De igual modo, «\<» identifica el comienzo de una palabra. Por lo
 tanto para buscar únicamente la palabra completa: >
 
@@ -433,12 +435,12 @@ RESALTAR COINCIDENCIAS
 Al editar un programa verá una variable llamada «nr». Quiere comprobar dónde se
 usa. Puede mover el cursor a «nr» y usar la orden «*» y presionar «n» para
 ir de cadena en cadena.
-   Pero hay otro modo.  Teclee la siguiente orden: >
+   Pero hay otro modo. Teclee la siguiente orden: >
 
 	:set hlsearch
 
-Si ahora busca «nr»,  Vim le destacará todas las concordancias. Este es un
-método muy bueno para ver dónde se emplea la variable, sin la necesidad de «n».
+Si ahora busca «nr»,  Vim resaltará todas las concordancias. Este es un método
+muy bueno para ver dónde se emplea la variable, sin la necesidad de «n».
    Para desactivarlo: >
 
 	:set nohlsearch
@@ -455,20 +457,21 @@ las órdenes «n» y «N».
 
 OPCIONES DE BÚSQUEDAS
 
-Hay algunas opciones que modifican el modo en el que la búsqueda se realiza.
-Estas son las esenciales:
+Hay algunas opciones que modifican el modo en el que se realizan las
+búsquedas.  Estas son las esenciales:
 >
 	:set incsearch
 
 Esto hace que Vim muestre la concordancia de la cadena mientras aún la teclea.
-Use esto para ver si la cadena correcta será encontrada. Pulse luego <Intro>
-para saltar a su localización. Puede también modificar la cadena.
+Use esto para ver si la cadena correcta será encontrada. Pulse luego <Enter>
+para saltar a su ubicación. O ingrese más caracteres para modificar la cadena
+de búsqueda.
 >
 	:set nowrapscan
 
-Esto detiene la búsqueda al final del archivo. O, cuando buscas hacia atrás,
-al comienzo del archivo. La opción 'wrapscan' se activa por omisión, por lo
-que buscará dando la vuelta al texto.
+Esto detiene la búsqueda al final del archivo. O, cuando busca hacia atrás,
+al comienzo del archivo. La opción 'wrapscan' está activa de manera
+predeterminada, por lo que buscará dando la vuelta al texto.
 
 
 INTERMEZZO
@@ -490,22 +493,23 @@ que lo introdujo en Vim. Por ejemplo: >
 	Go:set hlsearch<Esc>
 
 «G» le lleva al final del archivo. «o» comienza una nueva línea donde tecleó
-la orden «:set». Salga del modo insertar con <Esc>. Guarde el archivo. >
+el texto de la orden «:set». Salga del modo insertar con <Esc>. Guarde el
+archivo: >
 
 	ZZ
 
-Si reinicia ahora Vim, la opción 'hlsearch' se activará siempre.
+Cuando inicie Vim de nuevo, la opción 'hlsearch' ya estará activa.
 
 ==============================================================================
 *03.9*	Patrones sencillos de búsqueda
 
-El editor Vim usa expresiones regulares para especificar búsquedas  Las
+El editor Vim usa expresiones regulares para especificar búsquedas. Las
 expresiones regulares son un modo extremadamente potente y compacto de
 especificar un patrón de búsqueda. Por desgracia, esta potencia tiene un
-precio, porque las ER son un poco difíciles de escribir.
+precio, porque las expresiones regulares son un poco difíciles de escribir.
    En esta sección mencionaremos sólo algunas de las más esenciales.
 Encontrará más sobre patrones de búsqueda y órdenes en el capítulo
-27 |usr_27.txt|. Puede encontrar una explicación completa en: |pattern|.
+27 |usr_27.esx|. Puede encontrar una explicación completa en: |pattern|.
 
 
 COMIENZO Y FINAL DE LÍNEA
@@ -520,12 +524,12 @@ la palabra «era» sólo si esta se encuentra al final de una línea.
 Vamos a marcar los lugares donde «que» concuerda con esta línea con «x»s:
 
 	que este sobredicho hidalgo, los ratos que estaba ocioso (que ~
-	xxx			  xxx		       xxx
+	xxx			               xxx		  xxx
 
 Usando «/que$» se produce la siguiente concordancia:
 
 	que este sobredicho hidalgo, los ratos que estaba ocioso (que~
-						       xxx
+						                  xxx
 
 Y con «/^que» encontramos el siguiente:
 	que este sobredicho hidalgo, los ratos que estaba ocioso (que ~
@@ -533,7 +537,7 @@ Y con «/^que» encontramos el siguiente:
 
 Puede intentar buscar con «/^que$», que sólo se emparejará con una única
 línea consistente en «que». El espacio en blanco se considera, por lo que si
-contiene un espacio tras la palabra, como «que», el patrón no coincide.
+contiene un espacio tras la palabra, como «que », el patrón no coincide.
 
 
 EMPAREJAR CUALQUIER CARÁCTER
@@ -542,20 +546,20 @@ El carácter . (punto) concuerda cualquier carácter existente. Por ejemplo,
 el patrón «a.i» se identifica con cadenas cuyo primer carácter es una «a»,
 su segundo es cualquiera, y su tercero es el carácter «i»:
 
-	...afición y gusto, que olvidó casi de todo punto el ejercicio ~
-		 xxx		 xxx	  xxx
+	...afición y gusto, que olvidó casi de todo punto la camisa. ~
+	   xxx		               xxx	              xxx
 
 
 CONCORDAR CARACTERES ESPECIALES
 
-Si realmente desea coinciordar un punto, debe suprimir su significado especial
+Si realmente desea buscar un punto, debe suprimir su significado especial
 poniendo antes una barra inversa.
    Si busca «an.», obtendría las siguientes coincidencias:
 
 	...tan altas doncellas, como vuestras presencias demuestran.~
-		      xxxx			    xxxx
+	    xxx						         xxx
 
-Buscar «an\.» te daría sólo el segundo.
+Buscar «an\.» coincide únicamente con la segunda.
 
 ==============================================================================
 *03.10*	Uso de marcadores o marcas
@@ -598,8 +602,8 @@ al «El» identificado.
 	     |	texto de ejemplo      |	       |
 	     V	texto de la línea 33  ^	       V
 	     |	texto de ejemplo      |	       |
-       /^The |	texto de ejemplo      | CTRL-O | CTRL-I
-	     V	Aquí estás            |	       V
+       /^El  |	texto de ejemplo      | CTRL-O | CTRL-I
+	     V	Aquí está             |	       V
 		texto de ejemplo
 
 	Nota:
@@ -611,7 +615,7 @@ La orden «:jumps» le da una lista de posiciones a las que ha saltado. La
 
 MARCADORES							*bookmark*
 
-Vim le permite colocar sus propias marcas en el texto. La orden «m» marca el
+Vim le permite colocar sus propias marcas en el texto. La orden «ma» marca el
 lugar sobre el que se encuentra el cursor como «a». Puede poner hasta 26
 marcas (a-z). No puede verlas, son simplemente posiciones que Vim recuerda.
    Para ir a una marca, use la orden `{marca}, donde {marca} es la letra del
@@ -623,36 +627,36 @@ La orden '{marca} (apóstrofe o signo de comillas simples) le lleva al
 comienzo de la línea que contiene la marca. Esto difiere de la orden
 `{marca}, que le desplaza a la columna donde se hizo la marca.
 
-Los marcadores pueden ser muy útiles cuando se trabaja en dos partes del archivo
-relacionadas. Suponga que tiene un texto cerca del comienzo del archivo que
-necesitas mirar mientras trabaja en otra parte.
-   Vaya al texto del comienzo y ponga un marcador «s» (start) allí: >
+Los marcadores pueden ser muy útiles cuando se trabaja en dos partes del
+archivo relacionadas.  Suponga que tiene un texto cerca del comienzo del
+archivo que necesita mirar mientras trabaja en otra parte.
+   Vaya al texto del comienzo y ponga un marcador «i» (inicio) allí: >
 
-	ms
+	mi
 
-Para ir al texto sobre el que desea trabajar ponga la marca «e» (end) allí:
+Para ir al texto sobre el que desea trabajar ponga la marca «f» (fin) allí:
 >
 
-	me
+	mf
 
 Puede ahora moverse por el archivo, y cuando quiera mirar el comienzo del
 archivo, use esto para saltar a ese punto: >
 
-	's
+	'i
 
-Luego puede usar '' para saltar de vuelta a donde estaba, o 'e para saltar al
+Luego puede usar '' para saltar de vuelta a donde estaba, o 'f para saltar al
 texto donde estuvo trabajando.
-   No hay nada especial en usar s para el comienzo o e para el final, son
+   No hay nada especial en usar «i» para el inicio o «f» para el final, son
 simplemente fáciles de recordar.
 
-Puedes usar esta orden para obtener una lista de marcadores: >
+Puede usar esta orden para obtener una lista de marcadores: >
 
 	:marks
 
 Verá unos cuantos marcadores especiales. Entre ellos:
 
 	'	La posición del cursor antes del último salto
-	"	La posición del cursor antes de la última edición
+	"	La posición del cursor en de la última edición
 	[	Comienzo del último cambio
 	]	Final del último cambio
 
@@ -661,10 +665,3 @@ Verá unos cuantos marcadores especiales. Entre ellos:
 Capítulo siguiente: |usr_04.esx| Hacer cambios pequeños
 
 Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:
-
-==============================================================================
-
-Traducción del capítulo: Álvaro Castro Castillo 
-
-Proyecto: |vim-doc-es|
-
