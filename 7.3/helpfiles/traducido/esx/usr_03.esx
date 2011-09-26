@@ -66,7 +66,7 @@ también en mayúsculas, como muestra la siguiente figura:
 
 	        ge        b	           w				e
 	       <-        <-	          --->			       --->
-	Ésta es-una línea, con texto separado/de/forma/especial (y algo más). ~
+	Ésta es-una línea, con texto separado/de/forma/especial (y algo más).~
 	   <-----   <------	          ---------------------->       ---->
 	     gE        B			 W			 E
 
@@ -432,8 +432,8 @@ parciales).
 
 RESALTAR COINCIDENCIAS
 
-Al editar un programa verá una variable llamada «nr». Quiere comprobar dónde se
-usa. Puede mover el cursor a «nr» y usar la orden «*» y presionar «n» para
+Al editar un programa verá una variable llamada «nr». Quiere comprobar dónde
+se usa. Puede mover el cursor a «nr» y usar la orden «*» y presionar «n» para
 ir de cadena en cadena.
    Pero hay otro modo. Teclee la siguiente orden: >
 
@@ -514,10 +514,10 @@ Encontrará más sobre patrones de búsqueda y órdenes en el capítulo
 
 COMIENZO Y FINAL DE LÍNEA
 
-El carácter «^» identifica el comienzo de línea. En un teclado Español-España lo
-encontrará a la derecha de la «p». El patrón «include» concuerda la palabra
-«include» en cualquier parte de una línea. Pero el patrón «^include»
-concuerda la palabra «include» sólo si se encuentra al comienzo de la línea.
+El carácter «^» identifica el comienzo de línea. En un teclado Español-España
+lo encontrará a la derecha de la «p». El patrón «include» concuerda la palabra
+«include» en cualquier parte de una línea. Pero el patrón «^include» concuerda
+la palabra «include» sólo si se encuentra al comienzo de la línea.
    El carácter $ coincide el final de línea. Por lo tanto, "era$" concuerda
 la palabra «era» sólo si esta se encuentra al final de una línea.
 
@@ -577,8 +577,9 @@ salto también se registra.
 
 Generalmente, cada vez que emplea una orden que puede mover el cursor más allá
 de la misma línea, esto se llama salto. Incluye la búsqueda con órdenes «/» y
-«n» (no importa cuán lejos se encuentra la coincidencia), pero no las búsquedas
-de caracteres con «fx» y «tx» o los movimientos de palabra «w» y «e».
+«n» (no importa cuán lejos se encuentra la coincidencia), pero no las
+búsquedas de caracteres con «fx» y «tx» o los movimientos de palabra «w» y
+«e».
    Tampoco «j» ni «k» se consideran un salto. Incluso cuando usa un
 multiplicador para hacer que se mueva el cursor muy lejos.
 
