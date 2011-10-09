@@ -45,7 +45,7 @@ msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
 "POT-Creation-Date: 2010-09-23 20:27+0300\n"
-"PO-Revision-Date: 2011-02-26 19:12+0200\n"
+"PO-Revision-Date: 2011-10-09 13:07-0500\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
 "Language: \n"
@@ -211,8 +211,8 @@ msgid ""
 "around.  It teaches you the three basic ways to change text: operator-"
 "motion, Visual mode and text objects."
 msgstr ""
-"Este capítulo le muestra diferentes formas de hacer correcciones y moverse "
-"en el texto. Le muestra los tres modos básicos de cambiar texto: operador-"
+"Este capítulo muestra diferentes formas de hacer correcciones y moverse en el "
+"texto. Le enseña los tres modos básicos de cambiar texto: operador-"
 "movimiento, modo Visual y objetos de texto."
 
 #. type: Plain text
@@ -274,7 +274,7 @@ msgid ""
 msgstr ""
 "En el capítulo 2 aprendió que la orden «x» elimina un único carácter. Y\n"
 "que usar un multiplicador: «4x» elimina cuatro caracteres.\n"
-"   La orden «dw» elimina una palabra. Reconocerá la orden «w» como el de\n"
+"   La orden «dw» elimina una palabra. Reconocerá la orden «w» como la de\n"
 "movimiento sobre palabras. De hecho, la orden «d» se ha completar con\n"
 "una orden de movimiento, y elimina desde la posición actual hasta donde\n"
 "marque el movimiento.\n"
@@ -309,7 +309,7 @@ msgid ""
 msgstr ""
 "Vim sólo elimina hasta la posición donde la orden de movimiento le lleva.  "
 "Eso es porque Vim sabe que probablemente no desea eliminar la primera letra "
-"de una palabra. Si usa la orden «ex para desplazarse hasta el final de una "
+"de una palabra. Si usa la orden «e» para desplazarse hasta el final de una "
 "palabra, Vim adivina que quiere incluir el último carácter:"
 
 #. type: Plain text
@@ -396,9 +396,9 @@ msgid ""
 "except it leaves you in Insert mode.  For example, \"cw\" changes a word.  "
 "Or more specifically, it deletes a word and then puts you in Insert mode."
 msgstr ""
-"Otro operador es «c», cambiar (change). Actúa justo como el operador «d», "
-"excepto que le deja en modo Insertar. Por ejemplo «cw» cambia una palabra.  "
-"Es decir, elimina una palabra y le deja en modo Insertar."
+"Otro operador es «c», cambiar. Actúa justo como el operador «d», excepto que "
+"le deja en modo Insertar. Por ejemplo «cw» cambia una palabra. Es decir, "
+"elimina una palabra y le deja en modo Insertar."
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:84
@@ -452,7 +452,7 @@ msgstr ""
 "Si ha prestado atención, se habrá dado cuenta de que hay algo raro: El "
 "espacio antes de «humano» no se ha eliminado. Hay un dicho: para cada "
 "problema hay una solución que es simple, clara y errónea. Este es el caso "
-"con el ejemplo usado aquí con la orden «cw». El operador «c» funciona justo "
+"del el ejemplo usado aquí con la orden «cw». El operador «c» funciona justo "
 "como el operador «d», con una excepción: «cw». De hecho, funciona justo "
 "igual que «ce», cambiar hasta el final de la palabra. El espacio después de "
 "la palabra no se incluye. Esta excepción data de Vi. Ya que mucha gente se "
@@ -518,7 +518,7 @@ msgstr ""
 #. type: Plain text
 #: original/TXT/usr_04.txt:128
 msgid "WHERE TO PUT THE COUNT"
-msgstr "DÓNDE PONER EL CONTADOR"
+msgstr "DÓNDE PONER EL MULTIPLICADOR"
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:134
@@ -530,8 +530,8 @@ msgid ""
 "however.  For example, \"3d2w\" deletes two words, repeated three times, for "
 "a total of six words."
 msgstr ""
-"Las órdenes «3dw» y «d3wx eliminan tres palabras. Si quiere ponerse "
-"detallista, la primera ordem, «3dw», elimina una palabra tres veces; la "
+"Las órdenes «3dw» y «d3w» eliminan tres palabras. Si quiere ponerse "
+"detallista, la primera orden, «3dw», elimina una palabra tres veces; la "
 "orden «d3w» elimina tres palabras de una vez. Esta diferencia no se puede "
 "distinguir. Sin embargo, puede poner dos multiplicadores. Por ejemplo «3d2w» "
 "elimina dos palabras y lo repite 3 veces, un total de seis palabras."
@@ -602,9 +602,9 @@ msgid ""
 "number of characters deleted: \"4r<Enter>\" replaces four characters with "
 "one line break."
 msgstr ""
-"Para reemplazar un carácter con un salto de línea use «r<Entrar>». Esto "
+"Para reemplazar un carácter con un salto de línea use «r<Enter>». Esto "
 "elimina un carácter e inserta un salto. Usar un multiplicador aquí sólo "
-"afecta al número de caracteres eliminados: «4r<Entrar>» reemplaza cuatro "
+"afecta al número de caracteres eliminados: «4r<Enter>» reemplaza cuatro "
 "caracteres con un salto."
 
 #. type: Plain text
@@ -624,13 +624,13 @@ msgid ""
 "executes the last change command (in this case, \"df>\").  To delete another "
 "tag, position the cursor on the < and use the \".\" command."
 msgstr ""
-"La orden «.» es uno de los más sencillos pero más potentes de Vim. Repite el "
-"último cambio. Por ejemplo, suponga que está editando un archivo HTML y "
-"desea eliminar todas las etiquetas <B>. Para ello, coloque el cursor sobre "
-"el primer < y luego elimine el <B> con la orden «df>». Entonces va al < del "
-"</B> y lo elimina con la orden «.». La orden «.» ejecuta el último cambio "
-"(en este caso «df>»). Para eliminar otra etiqueta, coloque el cursor sobre "
-"el < y vuelve a pulsar la orden «.»."
+"La orden «.» es una de las más sencillas pero más potentes de Vim. Repite el "
+"último cambio. Por ejemplo, suponga que está editando un archivo HTML y desea "
+"eliminar todas las etiquetas <B>. Para ello, coloca el cursor sobre el primer "
+"< y luego elimina el <B> con la orden «df>». Entonces va al < del </B> y lo "
+"elimina con la orden «.». La orden «.» ejecuta la última orden de cambio (en "
+"este caso «df>»). Para eliminar otra etiqueta, coloque el cursor sobre el < y "
+"use la orden «.» de nuevo."
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:178
@@ -705,8 +705,8 @@ msgid ""
 "want to change.  Then you can use Visual mode."
 msgstr ""
 "Los cambios operador-movimiento funcionan bastante bien para eliminar "
-"elementos sencillos. Pero a menudo, no es fácil decidir que orden de "
-"movimiento le desplazará hasta el texto que quiere modificar.  Es el momento "
+"elementos sencillos. Pero a menudo, no es fácil decidir qué orden de "
+"movimiento le desplazará hasta el texto que quiere modificar. Es el momento "
 "de usar el modo Visual."
 
 #. type: Plain text
@@ -749,8 +749,8 @@ msgid ""
 "text will be deleted when you press \"d\"."
 msgstr ""
 "Cuando hace esto, no tiene que contar cuántas veces pulsa «e» o «h» para "
-"llegar a la posición deseada. Puede verlo de forma inmediata antes de pulsar "
-"«d»."
+"llegar a la posición deseada. Puede ver de inmediato qué texto se borrará "
+"cuando presione «d»."
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:218
@@ -813,8 +813,8 @@ msgid ""
 "If you want to work on a rectangular block of characters, use CTRL-V to "
 "start Visual mode.  This is very useful when working on tables."
 msgstr ""
-"Si desea trabajar en un bloque rectangular de caracteres, use CTRL-V para "
-"iniciar el modo Visual. Esto es muy útil si trabaja con tablas."
+"Si desea trabajar sobre un bloque rectangular de caracteres, use CTRL-V para "
+"iniciar el modo Visual. Esto es muy útil al trabajar con tablas."
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:246
@@ -839,10 +839,10 @@ msgid ""
 "first character of the last column is included.  To exclude it, use \"h\".  "
 "Now press \"d\" and the middle column is gone."
 msgstr ""
-"Para eliminar la columna central «Q2» desplaze el cursor a la «Q» de «Q2». "
+"Para eliminar la columna central «Q2» desplace el cursor a la «Q» de «Q2». "
 "Pulse CTRL-V para iniciar el modo Visual de bloques. Ahora mueva el cursor "
 "tres líneas abajo con «3j» y a la siguiente palabra con «w». Puede comprobar "
-"que el primer carácter de la última columna se ha incluido. Para excluirlo, "
+"que se incluyó el primer carácter de la última columna. Para excluirlo, "
 "use «h».  Si ahora pulsa «d» la columna central desaparecerá."
 
 #. type: Plain text
@@ -883,7 +883,7 @@ msgid ""
 "mode, where they open a new line below or above the cursor."
 msgstr ""
 "Tenga en cuenta que «o» y «O» en el modo Visual funcionan de forma muy "
-"diferente a cómo lo hacen en el modo Normal, donde abririán una nueva línea."
+"diferente a cómo lo hacen en el modo Normal, donde crearán una nueva línea."
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:271
@@ -903,13 +903,13 @@ msgid ""
 "move the cursor to where you want to put the line and use the \"p\" (put)\n"
 "command.  The line is inserted on the line below the cursor.\n"
 msgstr ""
-"Cuando elimina algo con «d», «x», u otra orden, el texto se guarda.\n"
-"Puede pegarlo usando la orden «p».  (El nombre de Vim para esto es «poner»,\n"
-"del inglés «put»).\n"
-"   Échale un vistazo a cómo funciona esto. Elimine primero una línea\n"
-"completa poniendo el cursor en la línea y pulsando «dd». Mueva ahora el\n"
-"cursor allá donde quiera poner la línea y use la orden «p». La línea se\n"
-"insertará en la línea siguiente a donde se encuentra el cursor.\n"
+"Cuando elimina algo con «d», «x», u otra orden, el texto se guarda.  Puede\n"
+"pegarlo usando la orden «p». (El nombre de Vim para esto es «pegar», del\n"
+"inglés «put»).\n"
+"   Observe cómo funciona esto. Elimine primero una línea completa poniendo el\n"
+"cursor en la línea y pulsando «dd». Mueva ahora el cursor allá donde quiera\n"
+"pegar la línea y use la orden «p». La línea se insertará en la línea siguiente\n"
+"a donde se encuentra el cursor.\n"
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:283
@@ -932,7 +932,7 @@ msgid ""
 msgstr ""
 "Ya que eliminó una línea completa, la orden «p» colocó la línea de texto "
 "debajo del cursor. Si elimina parte de una línea (una palabra, por ejemplo), "
-"la orden «px la pone justo después del cursor."
+"la orden «p» la pega justo después del cursor."
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:291
@@ -943,7 +943,7 @@ msgid ""
 "\t\t\t  dw\n"
 msgstr ""
 "\tMás de lo para mismo probar órdenes ~\n"
-"\t\t  ---->\n"
+"\t\t  ----->\n"
 "\t\t  dw\n"
 
 #. type: Plain text
@@ -967,7 +967,7 @@ msgstr "\tMás de lo mismo para probar órdenes ~\n"
 #. type: Plain text
 #: original/TXT/usr_04.txt:300
 msgid "MORE ON PUTTING"
-msgstr "MÁS SOBRE LA ORDEN PONER"
+msgstr "MÁS SOBRE LA ORDEN PEGAR"
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:304
@@ -977,9 +977,9 @@ msgid ""
 "When you deleted a word with \"dw\", \"P\" will put it back just before the "
 "cursor."
 msgstr ""
-"La orden «P» pone una línea como «p», pero antes del cursor. Cuando elimine "
-"una línea con «dd», «P» lo pondrá de vuelta sobre el cursor. Cuando elimine "
-"una palabra con «dw», «P» lo pondrá antes del cursor."
+"La orden «P» pega texto al igual que «p», pero antes del cursor. Cuando "
+"elimine una línea con «dd», «P» la pondrá de vuelta sobre el cursor. Cuando "
+"elimine una palabra con «dw», «P» la pondrá antes del cursor."
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:306
@@ -998,7 +998,7 @@ msgid ""
 msgstr ""
 "Puede usar un multiplicador con «p» y «P». El texto se repetirá tantas veces "
 "como especifique con el multiplicador. Por ejemplo, usar «dd» y luego «3p» "
-"pone tres copias de la misma línea eliminada."
+"pega tres copias de la misma línea eliminada."
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:313
@@ -1020,7 +1020,7 @@ msgstr ""
 "Vim hace que corregir estos problemas sea sencillo. Simplemente ponga el "
 "cursor sobre la «u» de «uqe» y ejecute la orden «xp». Esto funciona del "
 "siguiente modo: «x» elimina el carácter «u» y lo coloca en un registro. «p» "
-"pone el texto después del cursor, justo después de la «q»."
+"pega el texto después del cursor, justo después de la «q»."
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:323
@@ -1050,10 +1050,10 @@ msgid ""
 "for the change operator, and \"y\" was still available.  Calling this\n"
 "operator \"yank\" made it easier to remember to use the \"y\" key.\n"
 msgstr ""
-"Para copiar texto de un lugar a otro, puede eliminarlo, usar «u» para\n"
-"deshacer la eliminación y después usar «p» para colocarlo en otro lugar. Hay\n"
-"un modo mejor: «yank» (dar un tirón). El operador «y» copia texto en un\n"
-"registro. Puede usar una orden «p» para ponerlo.\n"
+"Para copiar texto de un lugar a otro, puede eliminarlo, usar «u» para deshacer\n"
+"la eliminación y después usar «p» para colocarlo en otro lugar. Pero hay un\n"
+"modo mejor: «yank» (dar un tirón). El operador «y» copia texto en un registro.\n"
+"Puede usar una orden «p» para pegarlo.\n"
 "   «Yanking» es simplemente el nombre de Vim para copiar. La letra «c» ya\n"
 "estaba en uso por el operador «cambiar», y la «y» estaba aún disponible.\n"
 "Llamar a este el operador «yank» hizo que fuera más fácil recordar la «y».\n"
@@ -1102,7 +1102,7 @@ msgid ""
 "this, use \"ye\"."
 msgstr ""
 "Observe que «yw» incluye el espacio en blanco después de la palabra. Si no "
-"quiere que esto ocurra, us «ye»."
+"quiere que esto ocurra, use «ye»."
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:354
@@ -1112,10 +1112,10 @@ msgid ""
 "line, \"Y\" works like \"yy\", it yanks the whole line.  Watch out for this "
 "inconsistency! Use \"y$\" to yank to the end of the line."
 msgstr ""
-"La orden «yy» copia una sola línea, al igual que «dd» la elimina. Sin "
-"embargo, mientras que «D» elimina desde el cursor hasta el final de la "
-"línea, «Y» funciona como «yy», copiando la línea completa. ¡Cuidado con esta "
-"inconsistencia! Use «y$» para copiar sólo hasta el final."
+"La orden «yy» copia una línea completa, de la misma forma que «dd» la "
+"elimina. Sin embargo, mientras que «D» elimina desde el cursor hasta el final "
+"de la línea, «Y» funciona como «yy», copiando la línea completa. ¡Cuidado con "
+"esta inconsistencia! Use «y$» para copiar sólo hasta el final."
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:359
@@ -1146,8 +1146,8 @@ msgid ""
 "You can paste the text in other programs.  In Vim itself too."
 msgstr ""
 "Si está usando la versión GUI de Vim (gvim), puede usar la opción «Copiar» "
-"del menú «Edit». Seleccione primero el texto en modo Visual, use después el "
-"menú Editar/Copiar. Así, el texto seleccionado se copia al portapapeles.  "
+"del menú «Editar». Seleccione primero el texto en modo Visual, use después el "
+"menú Editar/Copiar. Así, el texto seleccionado se copia al portapapeles. "
 "Ahora puede pegarlo en otros programas o en el propio Vim."
 
 #. type: Plain text
@@ -1173,7 +1173,7 @@ msgstr ""
 "La opción «Cortar» del menú elimina el texto antes de ponerlo en el "
 "portapapeles. Las opciones «Cortar», «Copiar» y «Pegar» están también "
 "disponibles en el menú contextual (sólo cuando esté disponible). Si su Vim "
-"tiene barra de tareas, puede encontrar estos botones allí también."
+"tiene barra de herramientas, puede encontrar estos botones allí también."
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:380
@@ -1183,8 +1183,8 @@ msgid ""
 "but prepend \"* (double-quote star) before it.  To copy a line to the "
 "clipboard: >"
 msgstr ""
-"Si no usa la GUI o no te gusta usar el menú, tiene otro modo. Use la orden "
-"«y» normal (copiar) y «p» (poner), pero antes escriba «\"*» (comillas "
+"Si no usa la GUI o no le gusta usar el menú, tiene otro modo. Use la orden "
+"«y» normal (copiar) y «p» (pegar), pero antes escriba «\"*» (comillas "
 "dobles, asterisco). Para copiar una línea en el portapapeles: >"
 
 #. type: Plain text
@@ -1196,7 +1196,7 @@ msgstr "\t\"*yy\n"
 #. type: Plain text
 #: original/TXT/usr_04.txt:384
 msgid "To put text from the clipboard back into the text: >"
-msgstr "Para poner texto desde el portapapeles en el texto: >"
+msgstr "Para pegar texto desde el portapapeles en el texto: >"
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:386
@@ -1211,7 +1211,7 @@ msgid ""
 "about the clipboard in section |09.3| and here: |clipboard|."
 msgstr ""
 "Esto sólo funciona en versiones de Vim que incluyen soporte para "
-"portapapeles.  Más sobre el portapapeles en la sección |09.3| y aquí: |"
+"portapapeles. Más sobre el portapapeles en la sección |09.3| y aquí: |"
 "clipboard|."
 
 #. type: Plain text
@@ -1255,10 +1255,11 @@ msgid ""
 "be precise, the white space after the word is also deleted (the white space "
 "before the word at the end of the line)."
 msgstr ""
-"La «d» de «daw» es el operador de eliminación. «aw» es el objeto de texto.  "
-"Truco: «aw» viene de «A Word». Por lo que «daw» es «Delete A Word». Para ser "
-"más precisos, el espacio después de la palabra se elimina también (el "
-"espacio antes de la palabra si ésta se encuentra al final de una línea)."
+"La «d» de «daw» es el operador de eliminación. «aw» es el objeto de texto. "
+"Truco: «aw» viene de «A Word» (Una Palabra, en inglés). Por lo que «daw» es "
+"«Delete A Word» (Borrar Una Palabra). Para ser más precisos, el espacio "
+"después de la palabra se elimina también (el espacio antes de la palabra si "
+"ésta se encuentra al final de una línea)."
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:413
@@ -1271,12 +1272,13 @@ msgid ""
 "object is used as a whole.  It doesn't matter where in the object the cursor\n"
 "was.\n"
 msgstr ""
-"Usar objetos de texto es la tercera manera de hacer cambios en Vim: \n"
-"el operador-movimiento, el modo Visual, y ahora el operador-objeto de texto.\n"
+"Usar objetos de texto es la tercera manera de hacer cambios en Vim: ya\n"
+"conocíamos el operador-movimiento y el modo Visual. Ahora añadimos al\n"
+"repertorio el operador-objeto de texto.\n"
 "   Es muy similar al operador-movimiento, pero en lugar de operar en el texto\n"
 "entre la posición inicial y final del cursor, el objeto de texto se emplea en\n"
-"su totalidad. No importa en que lugar del objeto se encontraba el cursor\n"
-"antes de la orden.\n"
+"su totalidad. No importa en qué lugar del objeto se encontraba el cursor antes\n"
+"de la orden.\n"
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:415
@@ -1341,11 +1343,12 @@ msgid ""
 "type new text the white space can remain, thus you use \"cis\"."
 msgstr ""
 "«cis» consiste del operador «c» (cambiar) y el objeto de texto «is». Esto "
-"viene de «Inner Sentence». También hay un objeto «as» (a sentence). La "
-"diferencia es que «as» incluye el espacio en blanco después de la frase e "
-"«is» no. Si desea eliminar la frase y quiere eliminar al mismo tiempo el "
-"espacio en blanco posterior, use entonces «das». Si quiere escribir otro "
-"texto, el espacio puede permanecer, con lo que puedes usar «cis»."
+"viene de «Inner Sentence» (Oración Interna). También hay un objeto «as» (a "
+"sentence, una oración). La diferencia es que «as» incluye el espacio en "
+"blanco después de la frase mientras que «is» no. Si desea eliminar la frase y "
+"quiere eliminar al mismo tiempo el espacio en blanco posterior, use entonces "
+"«das». Si quiere escribir otro texto, el espacio puede permanecer, con lo "
+"que puede usar «cis»."
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:443
@@ -1356,11 +1359,11 @@ msgid ""
 "sentence with \"as\".  Now you can repeat \"as\" to include more sentences.  "
 "Finally you use an operator to do something with the selected sentences."
 msgstr ""
-"También puede usar los objetos de texto on modo Visual. Incluirá el objeto "
-"de texto en la selección. El modo Visual permanece, así que puede hacerlo "
-"varias veces. Por ejemplo, inicie el modo Visual con «v» y seleccione una "
-"frase con «as». Ahora puede repetir «as» para incluir más frases.  Por "
-"último, use un operador para hacer algo con las frases seleccionadas."
+"También puede usar los objetos de texto en modo Visual. Incluirá el objeto de "
+"texto en la selección. El modo Visual permanece, así que puede hacerlo varias "
+"veces. Por ejemplo, inicie el modo Visual con «v» y seleccione una oración "
+"usando «as». Ahora puede repetir «as» para incluir más oraciones. Por último, "
+"use un operador para hacer algo con las oraciones seleccionadas."
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:445
@@ -1384,9 +1387,9 @@ msgid ""
 "   In this example you start Replace mode on the first \"t\" of \"text\":\n"
 msgstr ""
 "La orden «R» hace que Vim entre en modo reemplazar. En este modo, cada\n"
-"carácter que introduzca reemplaza al que está debajo del cursor. Esto\n"
-"continúa hasta que pulse <Esc>.\n"
-"   En este ejemplo, Ud. comienza el modo Reemplazar en la primera «t» de «texto»:\n"
+"carácter que introduzca reemplaza al que está debajo del cursor. Esto continúa\n"
+"hasta que pulse <Esc>.\n"
+"   En este ejemplo, se inicia el modo Reemplazar en la primera «t» de «texto»:\n"
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:456
@@ -1411,9 +1414,9 @@ msgid ""
 "with twelve others.  The \"R\" command automatically extends the line if it "
 "runs out of characters to replace.  It will not continue on the next line."
 msgstr ""
-"Puede que haya notado que ha reemplazado 5 caracteres en la línea con otros "
+"Puede que haya notado que reemplazó cinco caracteres en la línea con otros "
 "doce. La orden «R» extiende automáticamente la línea si se queda sin "
-"caracteres que reemplazar. Esto no ocurrirá en la siguiente línea."
+"caracteres que reemplazar. No reemplaza los caracteres de la línea siguiente."
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:464
@@ -1428,9 +1431,9 @@ msgid ""
 "old text is put back.  Thus it works like an undo command for the last typed "
 "character."
 msgstr ""
-"Cuando use <Retroceso> para hacer una corrección comprobará que el texto "
-"anterior reaparece. Por lo tanto, funciona como la orden deshacer para el "
-"último carácter tecleado."
+"Cuando use <BS> para hacer una corrección comprobará que el texto anterior "
+"reaparece. Por lo tanto, funciona como la orden deshacer para el último "
+"carácter tecleado."
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:471
@@ -1445,15 +1448,14 @@ msgid ""
 "to make lots of combinations.  Now that you know how it works, you can use N "
 "operators with M movement commands to make N * M commands!"
 msgstr ""
-"Los operadores, órdenes de movimiento y los objetos de texto le dan "
-"múltiples posibilidades para hacer muchas combinaciones.  Ahora que sabe "
-"cómo funciona, puede usar N operadores con M órdenes de movimiento para "
-"hacer M * N órdenes!"
+"Los operadores, órdenes de movimiento y los objetos de texto le dan múltiples "
+"posibilidades para hacer muchas combinaciones. Ahora que sabe cómo funcionan, "
+"puede usar N operadores con M órdenes de movimiento para tener M * N órdenes!"
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:477
 msgid "You can find a list of operators here: |operator|"
-msgstr "Puede usar la lista completa de operadores aquí: |operator|"
+msgstr "La lista completa de operadores se encuentra aquí: |operator|"
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:480
@@ -1461,7 +1463,7 @@ msgid ""
 "For example, there are many other ways to delete pieces of text.  Here are a "
 "few often used ones:"
 msgstr ""
-"Por ejemplo, hay otras muchas maneras de eliminar porciones de texto.  Aquí "
+"Por ejemplo, hay otras muchas maneras de eliminar porciones de texto. Aquí "
 "tiene algunas de las más empleadas:"
 
 #. type: Plain text
@@ -1481,12 +1483,12 @@ msgstr ""
 "x\telimina el carácter bajo el cursor (abreviado de \"dl\")\n"
 "X\telimina el carácter antes del cursor (abreviado de \"dh\")\n"
 "D\telimina desde el cursor hasta el final de línea (abreviado de \"d$\")\n"
-"dw\telimina desde el cursor hasta el próximo comienzo de palabra\n"
-"db\telimina desde el cursor hasta el anterior comienzo de palabra\n"
+"dw\telimina desde el cursor hasta el comienzo de palabra siguiente\n"
+"db\telimina desde el cursor hasta el comienzo de palabra anterior\n"
 "diw\telimina la palabra bajo el cursor (excluyendo el espacio en blanco)\n"
 "daw\telimina la palabra bajo el cursor (incluyendo el espacio en blanco)\n"
 "dG\telimina hasta el final del archivo\n"
-"dgg\telimina hasta el final del archivo\n"
+"dgg\telimina hasta el inicio del archivo\n"
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:493
@@ -1494,8 +1496,8 @@ msgid ""
 "If you use \"c\" instead of \"d\" they become change commands.  And with \"y"
 "\" you yank the text.  And so forth."
 msgstr ""
-"Si usa «c» en lugar de «d»,estos se convierten en órdenes de cambio.  Y con "
-"«y» copias el texto. Y así en adelante."
+"Si usa «c» en lugar de «d», éstas se convierten en órdenes de cambio. Y con "
+"«y» copia el texto. Y así en adelante."
 
 #. type: Plain text
 #: original/TXT/usr_04.txt:497
