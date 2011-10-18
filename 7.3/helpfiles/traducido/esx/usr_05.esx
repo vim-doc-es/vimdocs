@@ -6,8 +6,8 @@
 
 
 Puede ajustar Vim para que funcione como desee. Este capítulo le muestra
-cómo iniciar Vim con opciones ajustadas a diferentes valores, añadir
-extensiones o definir sus propias macros.
+cómo hacer que Vim inicie con opciones ajustadas a valores distintos a los
+predeterminados, a añadir extensiones, y a definir sus propias macros.
 
 |05.1|	El archivo «vimrc»
 |05.2|	El archivo «vimrc» de ejemplo, explicado
@@ -27,10 +27,10 @@ Tabla de contenidos: |usr_toc.esx|
 Probablemente se haya cansado de introducir órdenes que usa muy a menudo.
 Para iniciar Vim con todas sus opciones y macros favoritas, defínalos en lo
 que se llama el archivo «vimrc». Vim ejecuta las órdenes en este archivo al
-inicio.
+iniciarse.
 
 Si ya tiene un archivo vimrc (por ejemplo, si su administrador ha puesto uno
-por ti), puede editarlo de este modo: >
+por usted), puede editarlo de este modo: >
 
 	:edit $MYVIMRC
 
@@ -48,13 +48,13 @@ En MS-DOS y MS-Windows puede usar uno de los siguientes:
 	$VIM/_vimrc ~
 
 El archivo vimrc puede contener todas las órdenes que se pueden teclear tras
-«:». Los más sencillos son los que se usan para ajustar opciones. Por
+«:». Las más sencillas son las que se usan para ajustar opciones. Por
 ejemplo, si quiere que Vim comience siempre con la opción 'incsearch'
 activada, añada la siguiente línea al archivo: >
 
 	set incsearch
 
-Necesita salir de Vim e iniciarlo otra vez para que esta nueva línea tenga
+Necesita salir de Vim e iniciarlo otra vez para que esta nueva orden tenga
 efecto. Luego verá cómo hacer esto sin salir de Vim.
 
 Este capítulo sólo explica los elementos más básicos. Para más información
@@ -71,31 +71,30 @@ no-compatible (ver |not-compatible|). Puede encontrar el archivo aquí:
 
 En esta sección explicaremos las diferentes órdenes empleadas en este
 archivo. Esto le dará pistas sobre cómo preparar su propia configuración.
-No todo se explicará, en cualquier caso. Use la orden ":help" e investigue.
+No todo se explicará, en cualquier caso. Use la orden «:help» e investigue.
 
 >
 	set nocompatible
 
 Tal y como se mencionó en el primer capítulo, estos manuales explican un Vim
-funcionando en un modo mejorado, y por lo tanto no completamente
-Vi-compatible. Desactivar la opción 'compatible' o activar 'nocompatible' se
+funcionando en un modo mejorado, y por lo tanto no completamente compatible
+con Vi. Desactivar la opción 'compatible' o activar 'nocompatible' se
 encarga de esto.
 
 >
 	set backspace=indent,eol,start
 
-Esto especifica que se permita en el modo Insertar que <Retroceso> pueda
-eliminar el carácter delante del cursor. Los tres elementos, separados por
-comas, le dicen a Vim que puede eliminar el espacio en blanco al comienzo de
-la línea, un salto de línea y el carácter anterior a donde inició el modo
-Insertar.  >
+Esto especifica que se permita en el modo Insertar que <BS> pueda eliminar
+el carácter delante del cursor. Los tres elementos, separados por comas, le
+dicen a Vim que puede eliminar el espacio en blanco al comienzo de la línea,
+un cambio de línea y el carácter anterior a donde inició el modo Insertar. >
 
 	set autoindent
 
 Esto hace que Vim use la sangría de la línea anterior para una nueva línea,
 con lo que tendrá la misma cantidad de espacio en blanco al comienzo. Por
-ejemplo, cuando pulsa <Entrar> en modo Insertar, y cuando usa la orden «o»
-para iniciar una nueva línea.  >
+ejemplo, cuando pulsa <Enter> en modo Insertar, y cuando usa la orden «o»
+para iniciar una nueva línea. >
 
 	if has("vms")
 	  set nobackup
@@ -104,27 +103,27 @@ para iniciar una nueva línea.  >
 	endif
 
 Esto le dice a Vim que mantenga una copia de seguridad de un archivo cuando
-lo sobreescribe. Pero no en el sistema VMS, ya que éste mantiene versiones
-anteriores por su cuenta. El backup tendrá el mismo nombre con un «~»
-delante.  Véase |07.4| >
+lo sobreescribe. Pero no lo hace en el sistema VMS, ya que éste mantiene
+versiones anteriores por su cuenta. La copia de seguridad tendrá el mismo
+nombre del archivo original, con un «~» delante. Consulte |07.4| >
 
 	set history=50
 
 Mantiene 50 órdenes y 50 patrones de búsqueda en el historial. Use otro
-número si quiere almacenar más o menos líneas.  >
+número si quiere almacenar más o menos líneas. >
 
 	set ruler
 
-Muestra siempre la posición actual en la esquina inferior derecha de la
-ventana de Vim.
+Muestra siempre la posición actual del cursor en la esquina inferior derecha
+de la ventana de Vim.
 
 >
 	set showcmd
 
 Muestra una orden incompleta en la esquina inferior derecha de la ventana de
 Vim, a la izquierda del «ruler» (regla). Por ejemplo, cuando pulsa «2f», Vim
-está esperando que introduzcas el carácter a encontrar y muestra «2f» es
-mostrado.  Cuando pulse «w», la orden «2fw» es ejecutará y el «2f» se
+está esperando que introduzca el carácter a encontrar y muestra «2f» en ese
+sitio.  Cuando pulse «w», la orden «2fw» es ejecutará y el «2f» se
 eliminará.
 
 	+-------------------------------------------------+
@@ -139,13 +138,13 @@ eliminará.
 >
 	set incsearch
 
-Mostrar la coincidencia de un patrón de búsqueda antes de pulsar <Entrar>.
+Muestra la coincidencia de un patrón de búsqueda mientras se lo escribe.
 
 >
 	map Q gq
 
-Esto define asigna una macro a una tecla (más información en la próxima
-sección). Define la orden «Q» para que de formato con el operador «gq». Así
+Esto asigna una macro a una tecla (más información en la próxima
+sección). Define la orden «Q» para que dé formato con el operador «gq». Así
 es como funcionaba antes de Vim 5.0. En caso contrario, la orden «Q» inicia
 el modo Ex, pero no lo necesitará.
 
@@ -153,9 +152,9 @@ el modo Ex, pero no lo necesitará.
 	vnoremap _g y:exe "grep /" . escape(@", '\\/') . "/ *.c *.h"<CR>
 
 Esta macro copia el texto seleccionado visualmente y lo busca en archivos
-C.  Este es una macro complicado. Aquí puede ver que los macro se pueden
-emplear para hacer cosas realmente complicadas. En cualquier caso, es
-simplemente una secuencia de órdenes que se ejecutan justo como los tecleas.
+C. Esta es una macro complicada. Aquí puede ver que las macros se pueden
+emplear para hacer cosas realmente avanzadas. En cualquier caso, es
+simplemente una secuencia de órdenes que se ejecutan justo como los teclea.
 
 >
 	if &t_Co > 2 || has("gui_running")
@@ -166,45 +165,44 @@ simplemente una secuencia de órdenes que se ejecutan justo como los tecleas.
 Esto activa el resaltado de sintaxis, pero sólo si hay colores
 disponibles. Y la opción 'hlsearch' le dice a Vim que resalte las
 coincidencias con el último patrón de búsqueda empleado. La orden «if» es
-muy útil para activar opciones sólo cuando se cumple alguna condición.
-Véase |usr_41.txt|
+muy útil para activar opciones sólo cuando se cumple alguna
+condición. Consulte |usr_41.esx| para más información al respecto.
 
 							*vimrc-filetype*  >
 	filetype plugin indent on
 
 Esto activa tres mecanismos muy interesantes:
-1. Detección de tipo de archivo
+1. Detección de tipo de archivo.
    Cuando comienza a editar un archivo, Vim intentará averiguar qué tipo de
-   archivo es. Cuando edita «main.c», Vim verá la extensión «.c» y
-   la reconocerá como archivo de tipo C. Cuando edite un archivo que
-   comience con "#!/bin/sh", Vim reconocerá el tipo de archivo «sh».
-   La detección de tipo de archivo se usa para resaltar sintaxis y los
-   otros  dos aspectos de abajo.
-   Véase |filetypes|.
+   archivo es. Cuando edita «main.c», Vim verá la extensión «.c» y la
+   reconocerá como archivo de tipo C. Cuando edite un archivo que comience con
+   "#!/bin/sh", Vim reconocerá el tipo de archivo «sh».  La detección de
+   tipo de archivo se usa para resaltar sintaxis y los otros  dos aspectos a
+   continuación.
+   Consulte |filetypes|.
 
-2. Usar extensiones de tipo de archivo («filetype plugin»)
+2. Uso de extensiones de tipo de archivo.
    Muchos tipos de archivo se editan con diferentes opciones. Por ejemplo,
-   cuando edita un archivo «c», es muy útil activar la opción «cindent»
-   para sangrar las líneas automáticamente. Estas opciones empleadas
-   comúnmente están incluidas con Vim en las extensiones de tipos de
-   archivo. También puede incluir las tuyas propias, consulte
-   |write-filetype-plugin|.
+   cuando edita un archivo «c», es muy útil activar la opción «cindent» para
+   sangrar las líneas automáticamente. Estas opciones empleadas comúnmente
+   están incluidas con Vim en extensiones de tipos de archivo. También puede
+   incluir las suyas propias, consulte |write-filetype-plugin|.
 
-3. Usar archivos de tabulación
+3. Uso de archivos de sangrado
    Cuando edita programas, la sangría de una línea puede a menudo ser
-   computada de manera automática. Vim viene con esas reglas de sangrado
-   para diversos tipos de archivo.
-   Véase |:filetype-indent-on| y 'indentexpr'.
+   calculada de manera automática. Vim viene con esas reglas de sangrado para
+   diversos tipos de archivo. Consulte |:filetype-indent-on| e 'indentexpr'.
 
 >
 	autocmd FileType text setlocal textwidth=78
 
 Esto hace que Vim divida el texto para evitar que las líneas sean más largas
 de 78 caracteres. Pero sólo para archivos que se han identificado como de
-texto regular. Aqui hay dos aspectos. «autocmd FileType text» es una
-autoorden. Esto define que cuando el tipo de archivo sea «texto», la orden
-posterior se ejecute automáticamente. «setlocal textwidth=78» ajusta la
-opción 'textwidth' a 78, pero sólo localmente a un archivo.
+texto regular. Aquí hay dos aspectos. «autocmd FileType text» es una orden
+automática. Ésta indica que cuando el tipo de archivo sea «text» (texto
+regular), se ejecute automáticamente la orden posterior. «setlocal
+textwidth=78» ajusta la opción 'textwidth' a 78, pero sólo localmente en un
+archivo.
 
 							*restore-cursor*  >
 	autocmd BufReadPost *
@@ -212,21 +210,21 @@ opción 'textwidth' a 78, pero sólo localmente a un archivo.
 	    \   exe "normal! g`\"" |
 	    \ endif
 
-Otra autoorden. Esta vez se ejecuta tras leer cualquier archivo. Las cosas
-tan complicadas que hay después de él comprueban si la marca '" está
+Otra orden automática. Esta vez se ejecuta tras leer cualquier archivo. Las
+cosas tan complicadas que hay después de ella comprueban si la marca '" está
 definida, y salta hacia ella si lo está. La barra inversa al comienzo de la
 línea se emplea para continuarla desde la anterior. Esto ayuda a acortar las
-líneas.  Véase |line-continuation|. Esto funciona sólo dentro de un script
+líneas. Consulte |line-continuation|. Esto funciona sólo dentro de un script
 de Vim, no cuando se teclean órdenes en la línea de órdenes.
 
 ==============================================================================
 *05.3*	Macros sencillas
 
-Una macro le permite ligar un conjunto de órdenes de Vim a una sola tecla.
-Suponga, por ejemplo, que necesita poner una palabra entre llaves. En otras
-palabras necesita cambiar una palabra como «cantidad» a «{cantidad}». Con la
-orden :map, puede decirle a Vim que la tecla F5 haga precisamente eso. La
-orden es la siguiente: >
+Una macro le permite asociar un conjunto de órdenes de Vim a una sola
+tecla. Suponga, por ejemplo, que necesita poner una palabra entre llaves. En
+otras palabras, necesita cambiar una palabra como «cantidad» a
+«{cantidad}». Con la orden :map, puede decirle a Vim que la tecla F5 haga
+precisamente eso. La orden para hacerlo es la siguiente: >
 
 	:map <F5> i{<Esc>ea}<Esc>
 <
@@ -238,7 +236,7 @@ orden es la siguiente: >
 
 Veámoslo por partes:
     <F5>	La tecla de función F5.  Esta es la tecla que lanzará la
-                orden para que éste se ejecute al ser pulsada.
+                orden para que ésta se ejecute al ser pulsada.
 
     i{<Esc>	Insertar el carácter {. <Esc> sale del modo Insertar.
 
@@ -246,16 +244,16 @@ Veámoslo por partes:
 
     a}<Esc>	Añadir el } a la palabra.
 
-Tras ejecutar la orden «:map», todo lo que tiene que hacer para rodear la
+Tras ejecutar la orden «:map», todo lo que tiene que hacer para rodear una
 palabra con {} es poner el cursor en el primer carácter y pulsar F5.
 
-En este ejemplo, el lanzador es una simple tecla; pero puede ser una
-cadena. Pero cuando use una orden de Vim preexistente, esa orden ya no
-volverá a estar disponible.
-   Una tecla que puede usar con las macros es la barra inversa o
-<Leader>. Ya que querrá definir más de una macro, añada otro carácter.
-Puede ligar a una macro «\p» para que añada paréntesis alrededor de
-una palabra, y «\c» para que añada llaves, por ejemplo: >
+En este ejemplo, el lanzador es una simple tecla; pero puede ser cualquier
+cadena. Pero cuando use una orden de Vim preexistente, esa orden ya no volverá
+a estar disponible. Es conveniente que evite hacer eso.
+   Una tecla que puede usar con las macros es la barra inversa o <Leader>. Ya
+que querrá definir más de una macro, añada otro carácter. Puede asociar «\p»
+a una macro para que añada paréntesis alrededor de una palabra, y «\c» para
+que añada llaves, por ejemplo: >
 
 	:map \p i(<Esc>ea)<Esc>
 	:map \c i{<Esc>ea}<Esc>
@@ -269,55 +267,56 @@ menos aquellos en el modo Normal. Más sobre macros en la sección |40.1|.
 ==============================================================================
 *05.4*	Añadir una extensión				*add-plugin* *plugin*
 
-La funcionalidad de Vim puede ser extendida añadiendo extensiones. Una
-extensiones no es nada más que un script de Vim que se carga automáticamente
-cuando Vim arranca. Puede añadir nuevas extensiones añadiéndolos al
-directorio de extensiones.  {no disponible si no se ha compilad con Vim con
+La funcionalidad de Vim puede ser aumentada añadiendo extensiones. Una
+extensión no es nada más que un script de Vim que se carga automáticamente
+cuando Vim arranca. Puede añadir nuevas extensiones añadiéndolas al
+directorio de extensiones. {no disponible si no se ha compilado con Vim con
 la opción |+eval|}.
 
 Hay dos tipos de extensiones:
 
-               Extensión global: Empleado para todos los tipos de archivo
-   Extensión de tipo de archivo: Empleado para un tipo de archivo específico
+               Extensión global: Empleada para todos los tipos de archivo
+   Extensión de tipo de archivo: Empleada para un tipo de archivo específico
 
-Las extensiones globales se explicarán primero, se pasará después a los
-específicos de tipo de archivo |add-filetype.plugin|.
+Las extensiones globales se explicarán primero, se pasará después a las
+específicas de tipo de archivo |add-filetype.plugin|.
 
 
 EXTENSIONES GLOBALES					*standard-plugin*
 
 Cuando arranque Vim, verá que carga automáticamente un grupo de extensiones
-globales. No tiene que hacer nada al respecto. Éstos añaden funcionalidad
-que le interesan a la mayoría de gente, pero que se implementaron como
-scripts de Vim en lugar de compilarlos en Vim. Puedes verlos listados en el
-índice de ayuda |standard-plugin-list|. Véase también |load-plugins|.
+globales. No tiene que hacer nada para que esto pase. Éstas añaden
+funcionalidades que le interesan a la mayoría de gente, pero que se
+implementaron como scripts de Vim en lugar de compilarlos en Vim. Puede
+verlas listadas en el índice de ayuda |standard-plugin-list|. Consulte
+también |load-plugins|.
 
 							*add-global-plugin*
-Puede poner un extensión global para añadir funcionalidad que deba estar
-siempre presente cuando use Vim. Sólo tiene que seguir dos pasos para
-añadir una extensión global:
+Puede añadir una extensión global para añadir funcionalidad que deba estar
+siempre presente al usar Vim. Sólo tiene que seguir dos pasos para añadir una
+extensión global:
 1. Conseguir una copia de la extensión.
-2. Ubicar en el directorio adecuado
+2. Ubicarla en el directorio adecuado.
 
 
 CONSEGUIR UNA EXTENSIÓN GLOBAL
 
 ¿Dónde encontrar extensiones?
-- Algunos vienen con Vim. Puede encontrarlos en el directorio
+- Algunas vienen con Vim. Puede encontrarlas en el directorio
   $VIMRUNTIME/macro y sus subdirectorios.
-- Descargarlos de la red. Hay una buena colección en http://www.vim.org.
-- Algunas veces se envían a la |maillist| de Vim.
-- Puede escribir uno usted mismo, consulte |write-plugin|.
+- Descargarlas de la red. Hay una buena colección en http://www.vim.org.
+- Algunas veces se envían a la lista de correo (|maillist|) de Vim.
+- Puede escribir una usted mismo, consulte |write-plugin|.
 
-Algunas extensiones vienen como un archivo comprimido, consulte |vimball|.
-Algunas extensiones pueden ser actualizados automáticamente, consulte
-|getscript|.
+Algunas extensiones vienen como un archivo vimball, consulte
+|vimball|. Algunas extensiones pueden ser actualizadas automáticamente,
+consulte |getscript|.
 
 
 USAR UNA EXTENSIÓN GLOBAL
 
 Lea primero el texto en la extensión descargada para comprobar cualquier
-requerimiento. A continuación copielo al directorio de extensiones:
+requerimiento. A continuación cópiela al directorio de extensiones:
 
 	sistema		directorio de extensiones  ~
 	Unix		~/.vim/plugin/
@@ -327,7 +326,8 @@ requerimiento. A continuación copielo al directorio de extensiones:
 	Mac OS X	~/.vim/plugin/
 	RISC-OS		Choices:vimfiles.plugin
 
-Ejemplo para Unix (asumiendo que no tiene un directorio de extensiones): >
+Ejemplo para Unix (asumiendo que aún no tiene un directorio de extensiones):
+>
 
 	mkdir ~/.vim
 	mkdir ~/.vim/plugin
@@ -337,7 +337,7 @@ Ejemplo para Unix (asumiendo que no tiene un directorio de extensiones): >
 justificar texto.
 
 En lugar de poner las extensiones directamente en el directorio «plugins/»,
-quizá prefiera organizarlos poniéndolos en subdirectorios dentro de
+quizá prefiera organizarlas poniéndolas en subdirectorios dentro de
 «plugins/». Por ejemplo, ponga todas sus extensiones de Perl bajo el
 subdirectorio «~/.vim/plugin/perl/*.vim».
 
@@ -349,37 +349,35 @@ tipos de archivo, que puede comenzar a usar con esta orden: >
 
 	:filetype plugin on
 
-Eso es todo. Véase |vimrc-filetype|.
+¡Eso es todo! Consulte |vimrc-filetype|.
 
-Si echa de menos una extensión para un tipo de archivo que esté usando, o
-encontró uno mejor, puede añadirlo. Hay dos pasos para conseguirlo:
-1. Conseguir una copia de la extensión.  2. Copiar en el directorio
-adecuado.
+Si echa en falta una extensión para un tipo de archivo que esté usando, o
+encontró una mejor, puede añadirla. Hay dos pasos para hacerlo: 1. Conseguir
+una copia de la extensión. 2. Copiarla en el directorio adecuado.
 
 
 CONSEGUIR UNA EXTENSIÓN DE TIPO DE ARCHIVO
 
-Puede encontrarlos en los mismos sitios que las extensiones globales.
-Compruebe si el tipo de archivo se menciona o no, de ese modo puede saber si
-la extensión es global o de tipo de archivo. Los scripts en
+Puede encontrarlas en los mismos sitios que las extensiones
+globales. Compruebe si el tipo de archivo se menciona o no, de ese modo
+puede saber si la extensión es global o de tipo de archivo. Los scripts en
 «$VIMRUNTIME/macros» son globales, los específicos están en
 «$VIMRUNTIME/ftplugin».
 
 
 USAR UNA EXTENSIÓN DE TIPO DE ARCHIVO			*ftplugin-name*
 
-Puede añadir una extensión de tipo de archivo ubicándolo en el directorio
-adecuado. El nombre de este directorio está en el mismo directorio
-mencionado previamente para extensiones globales, pero la última parte es
-«ftplugin». Suponga que ha encontrado una extensión para el tipo de archivo
-«cosas» y que está bajo Unix.  Puede mover este archivo al directorio
-«ftplugin/»: >
+Puede añadir una extensión de tipo de archivo ubicándola en el directorio
+adecuado. El nombre de este directorio es el mismo mencionado previamente
+para extensiones globales, pero la última parte es «ftplugin». Suponga que
+ha encontrado una extensión para el tipo de archivo «cosas» y que está bajo
+Unix. Puede mover este archivo al directorio «ftplugin/»: >
 
-	mv thefile ~/.vim/ftplugin/cosas.vim
+	mv archivo ~/.vim/ftplugin/cosas.vim
 
 Si ese archivo ya existe, es que ya tiene una extensión para «cosas». Tal
-vez desee comprobar si la extensión existente no es conflictivo con el que
-añade. Si no hay conflicto, puede darle otro nombre:
+vez desee comprobar si la extensión existente no provoca conflictos con la
+que añade. Si no hay conflicto, puede darle otro nombre:
 
 	mv thefile ~/.vim/ftplugin/cosas_dos.vim
 
@@ -387,12 +385,12 @@ El guión bajo se usa para separar el nombre del tipo de archivo del resto,
 que puede ser cualquier cosa. Si usa «otrascosas.vim» no funcionaría, ya que
 se cargaría como tipo de archivo «otrascosas».
 
-En MS-DOS no puede usar nombres de archivo largos. Tendrá problemas si
-añades una segunda extensión el tipo de archivo tiene más de seis
-caracteres. Puede añadir un directorio extra para evitar este problema: >
+En MS-DOS no puede usar nombres de archivo largos. Tendrá problemas si añade
+una segunda extensión y el tipo de archivo usa más de seis caracteres. Puede
+añadir un directorio extra para evitar este problema: >
 
 	mkdir $VIM/vimfiles/ftplugin/fortran
-	copy thefile $VIM/vimfiles/ftplugin/fortran/dos.vim
+	copy archivo $VIM/vimfiles/ftplugin/fortran/dos.vim
 
 Los nombres genéricos para las extensiones de tipo de archivo son: >
 
@@ -400,53 +398,53 @@ Los nombres genéricos para las extensiones de tipo de archivo son: >
 	ftplugin/<tipo_de_archivo>_<nombre>.vim
 	ftplugin/<tipo_de_archivo>/<nombre>.vim
 
-Aquí, «<nombre>» puede ser cualquier nombre que quieras.  Ejemplos para el
-tipo de archivo «cosas» en Unix: >
+Aquí, «<nombre>» puede ser cualquier nombre que desee. Ejemplos para el tipo
+de archivo «cosas» en Unix: >
 
 	~/.vim/ftplugin/cosas.vim
 	~/.vim/ftplugin/cosas_def.vim
 	~/.vim/ftplugin/cosas/header.vim
 
-La parte <tipo_de_archivo> es el nombre del tipo de archivo para el cuál se
+La parte <tipo_de_archivo> es el nombre del tipo de archivo para el cual se
 usa la extensión. Sólo los archivos de este tipo cargarán esta extensión.
-La parte <nombre> de la extensión no importa, puede usarlo para tener varias
+La parte <nombre> de la extensión no importa, puede usarla para tener varias
 extensiones del mismo tipo de archivo. Tenga en cuenta que debe terminar con
 la extensión «.vim».
 
 
-Lecturas de ampliación:
+Lecturas adicionales:
 |filetype-plugins|	Documentación para las extensiones de tipo de
 			archivo e información sobre como evitar problemas
 			con macros.
-|load-plugins|		Cuándo las extensiones globales se cargan.
+|load-plugins|		Cuándo se cargan las extensiones globales.
 |ftplugin-overrule|	Sobreescribir las opciones de una extensión global.
-|write-plugin|		Cómo escribir un script de extensión.
+|write-plugin|		Cómo escribir una extensión.
 |plugin-details|	Para más información sobre cómo usar extensiones o
-			cuando la extensión no funciona.
+			cuando una extensión no funciona.
 |new-filetype|		Cómo detectar un nuevo tipo de archivo.
 
 ==============================================================================
 *05.5*	Añadir un archivo de ayuda	*add-local-help* *matchit-install*
 
-Si tiene suerte, la extensión que instaló viene con un archivo de ayuda.  Le
+Si tiene suerte, la extensión que instaló viene con un archivo de ayuda. Le
 explicaremos cómo instalar el archivo de ayuda, para que pueda encontrar
 ayuda fácilmente para su nueva extensión.
-   Usemos el plugin «matchit.vim» como ejemplo (viene incluido con Vim).
-Esta extensión hace que la orden «%» salte a tags emparejados de HTML,
-«if/else/endif» en scripts de Vim, etc. Muy útil, pero no es compatible
-con versiones anteriores (por lo que no está activado por defecto).
-   Esta extensión viene con la documentación «matchit.txt». Primero
-copiemos la extensión al directorio adecuado. Esta vez lo haremos desde
-dentro de Vim, así podremos usar $VIMRUNTIME. (Puede omitir la orden
-«mkdir» si ya tiene el directorio.) >
+   Usemos la extensión «matchit.vim» como ejemplo (viene incluida con Vim).
+Esta extensión hace que la orden «%» salte a etiquetas emparejadas de HTML,
+«if/else/endif» en scripts de Vim, etc. Muy útil, pero no es compatible con
+versiones anteriores (por lo que no está activada de manera predeterminada).
+   Esta extensión viene con documentación: «matchit.txt». Primero copiemos la
+extensión al directorio adecuado. Esta vez lo haremos desde dentro de Vim, así
+podremos usar $VIMRUNTIME. (Puede omitir la orden «mkdir» si ya tiene el
+directorio.) >
 
 	:!mkdir ~/.vim
 	:!mkdir ~/.vim/plugin
 	:!cp $VIMRUNTIME/macros/matchit.vim ~/.vim/plugin
 
-La orden «cp» es para Unix, en MS-DOS puedes usar «copy».
+La orden «cp» es para Unix, en MS-DOS puede usar «copy».
 
-Ahora cree un directorio «doc» en una de los directorios de 'runtimepath'. >
+Ahora cree un directorio «doc» en uno de los directorios de 'runtimepath'. >
 
 	:!mkdir ~/.vim/doc
 
@@ -455,7 +453,7 @@ Copie el archivo de ayuda al directorio «doc». >
 	:!cp $VIMRUNTIME/macros/matchit.txt ~/.vim/doc
 
 Por último el truco que le permite ir a los temas en el nuevo archivo de
-ayuda: Genere el archivo de tags locales con la orden |:helptags|. >
+ayuda: Genere el archivo de etiquetas locales con la orden |:helptags|. >
 
 	:helptags ~/.vim/doc
 
@@ -463,14 +461,15 @@ Ahora puede usar la orden >
 
 	:help g%
 
-para buscar ayuda para «g%» en el archivo de ayuda que acaba de añadir.
-Puede ver una entrada correspondiente al archivo local cuando escriba: >
+para buscar ayuda acerca de «g%» en el archivo de ayuda que acaba de
+añadir. Puede ver las entradas correspondientes a los archivos de ayuda
+local escribiendo: >
 
 	:help local-additions
 
 Las líneas con los títulos de los archivos de ayuda locales son añadidos
-automágicamente a la sección. Allí puede ver que archivos locales se han
-añadido e ir a ellos a través del tag creado.
+automágicamente a esta sección. Allí puede ver qué archivos locales se han
+añadido e ir a ellos a través de la etiqueta creada.
 
 Para escribir un archivo local de ayuda, consulte |write-local-help|.
 
@@ -483,36 +482,37 @@ de ayuda aquí: |options|. Otra forma es usar la orden: >
 	:options
 
 Esto abre una nueva ventana que contiene una lista de opciones con una
-explicación en una línea. Coloque el cursor sobre un tema y pulse <Intro>
-para ir a él. Pulse <Intro> de nuevo para volver atrás. O pulse CTRL-O.
+explicación en una línea. Las opciones están agrupadas por tema. Coloque el
+cursor sobre un tema y pulse <Enter> para ir a él. Pulse <Enter> de nuevo
+para volver atrás. O pulse CTRL-O.
 
 Puede cambiar el valor de una opción. Por ejemplo, vaya al tema «displaying
-text». Luego ponga el cursor abajo, en esta línea:
+text» (mostrar texto). Luego ponga el cursor abajo, en esta línea:
 
 	set wrap	nowrap ~
 
-Cuando pulse <Intro>, la línea cambiará a:
+Cuando pulse <Enter>, la línea cambiará a:
 
 	set nowrap	wrap ~
 
 La opción se ha desactivado.
 
-Justo sobre esta línea hay una descripción corta de la opción 'wrap'.  Ponga
-el cursor una línea arriba para colocarlos sobre esta línea. Ahora pulse
-<Intro> e irá hacia la descripción completa de la opción 'wrap'.
+Justo sobre esta línea hay una descripción corta de la opción 'wrap'. Ponga
+el cursor una línea arriba para colocarlo sobre la línea. Ahora pulse
+<Enter> e irá hacia la descripción completa de la opción 'wrap'.
 
 Para opciones que toman un número o una cadena de caracteres puede editar el
-valor. Pulse <Intro> para aplicar el nuevo valor. Por ejemplo, mueva el
+valor. Pulse <Enter> para aplicar el nuevo valor. Por ejemplo, mueva el
 cursor unas cuantas líneas arriba hasta esta línea:
 
 	set so=0 ~
 
-Posicione el cursor sobre el cero con «$». Modifiqueló a un cinco con
-«r5». Luego pulse <Intro> para aplicar el nuevo valor. Cuando mueva el
+Posicione el cursor sobre el cero con «$». Cámbielo por un cinco con
+«r5». Luego pulse <Enter> para aplicar el nuevo valor. Cuando mueva el
 cursor por un texto, notará que el texto se desplazará (scroll) antes de que
 llegue al borde. Esto es lo que la opción 'scrolloff' hace, especifica una
-compensación (offset) del punto donde comienza el desplazamiento (respecto
-al borde).
+margen (offset) del punto donde comienza el desplazamiento (respecto al
+borde de la ventana).
 
 ==============================================================================
 *05.7*	Opciones más comunes
@@ -525,7 +525,7 @@ alrededor del nombre de la opción. Por ejemplo: >
 	:help 'wrap'
 
 En caso de que haya descolocado el valor de una opción, puede devolverlo a
-la opción por defecto con un et (&) tras el nombre de la opción.  Por
+la opción por defecto con un et (&) tras el nombre de la opción. Por
 ejemplo: >
 
 	:set iskeyword&
@@ -536,7 +536,7 @@ LÍNEAS QUE NO DOBLAN
 Vim normalmente dobla líneas largas, de forma que pueda ver todo el texto. A
 veces es mejor dejar que el texto continúe a la derecha de la ventana. De
 este modo tiene que desplazarse de izquierda a derecha para ver toda una
-línea larga. Puede intercambiar el valor con la siguiente orden: >
+línea larga. Puede desactivar este doblado con la siguiente orden: >
 
 	:set nowrap
 
@@ -556,65 +556,65 @@ la cambia al valor predeterminado: >
 
 	:set whichwrap=b,s
 
-Esto permite que la tecla <Retroceso>, cuando se emplea en la primera
-posición de una línea se mueva al final de la línea anterior. También la
-tecla <Espacio> le desplazará desde el final de una línea hasta el comienzo
-de la siguiente.
+Esto permite que, al usar la tecla <BS> en la primera posición de una línea,
+el cursor se mueva al final de la línea anterior. También la tecla <Space>
+le desplazará desde el final de una línea hasta el comienzo de la siguiente.
 
-Para permitir que las teclas de cursor <Izq> y <Der> también lo hagan use
-esta orden: >
+Para permitir que las teclas de cursor <Left> (izquierda) y <Right>
+(derecha) también lo hagan, use esta orden: >
 
 	:set whichwrap=b,s,<,>
 
-Esto es exclusivamente en el modo Normal. Para permitir que <Izq> y <Der>
-haga esto en también modo Insertar, escriba: >
+Esto es exclusivamente para el modo Normal. Para permitir que <Left> y
+<Right> haga esto en también modo Insertar, escriba: >
 
 	:set whichwrap=b,s,<,>,[,]
 
-Hay unas cuantas opciones disponibles, consulte 'whichwrap'.
+Hay algunas otras posibilidades para esta opción, consulte 'whichwrap'.
 
 
 VISTA DE PESTAÑAS
 
-Cuando hay pestañas en un archivo, no puede ver dónde están. Para hacerlas
-visibles: >
+Cuando hay caracteres tabulador en un archivo, no puede ver dónde
+están. Para hacerlos visibles: >
 
 	:set list
 
-Ahora todas las pestañas se mostrarán como ^I. Un «$» se mostrará al final de
-cada línea, permitiéndole ver espacios finales que de otra forma pasarían
-desapercibidos.
-   Una desventaja de esto es que tiene una apariencia desagradable cuando
-hay muchas pestañas. Si tiene una terminal con colores o usa GVim, puede
-ver los espacios y las pestañas como marcas de color. Use la opción
-'listchars': >
+Ahora cada tabulador se mostrará como ^I. Además, un «$» se mostrará al final
+de cada línea, permitiéndole ver espacios al final de la línea que de otra
+forma pasarían desapercibidos.
+   Una desventaja de esto es que tiene una apariencia desagradable cuando hay
+muchos tabuladores. Si tiene una terminal con colores o usa GVim, Vim le puede
+mostrar los espacios y los tabuladores como caracteres resaltados. Use la
+opción 'listchars': >
 
 	:set listchars=tab:>-,trail:-
 
-Ahora cada pestaña se mostrará como «>---» (con más o menos «-») y los
-espacios al final de la línea como «-».  Más agradable, o no?
+Ahora cada tabulador se mostrará como «>---» (con más o menos «-») y los
+espacios al final de la línea como «-».  Más agradable, ¿o no?
 
 
-PALABRAS CLAVES
+PALABRAS CLAVE
 
-The 'iskeyword' option specifies which characters can appear in a word: >
+La opción 'iskeyword' especifica qué caracteres pueden formar parte de una
+palabra: >
 
 	:set iskeyword
 <	  iskeyword=@,48-57,_,192-255 ~
 
-El «@» implica todas las letras del alfabeto. «48-57» significa los
-caracteres ASCII 48 a 57, que son los números 0 a 9. «192-255» son los
-caracteres latinos imprimibles.
+El «@» implica todas las letras del alfabeto. «48-57» significa los caracteres
+ASCII 48 a 57, que son los números 0 a 9. «192-255» son los caracteres latinos
+imprimibles.
    A veces querrá incluir un guión en las palabras clave, para que órdenes
-como «w» consideren «upper-case» como una sola palabra.
-Puede hacerlo así: >
+como «w» consideren «una-palabra» como una sola palabra. Puede hacerlo así: >
 
 	:set iskeyword+=-
 	:set iskeyword
 <	  iskeyword=@,48-57,_,192-255,- ~
 
-Si miras el nuevo valor, comprobará que Vim ha añadido una coma por Ud.
-   Para eliminar un carácter usa «-=». Por ejemplo, el guión bajo: >
+Si mira el nuevo valor, comprobará que Vim ha añadido una coma por Ud.
+   Para eliminar un carácter usa «-=». Por ejemplo, para eliminar el guión
+bajo: >
 
 	:set iskeyword-=_
 	:set iskeyword
@@ -626,15 +626,15 @@ En esta ocasión la coma se elimina automáticamente.
 ESPACIO PARA MENSAJES
 
 Cuando Vim arranca hay una línea en la parte de abajo que se usa para
-mensajes. Cuando un mensaje es largo, o se trunca (con lo que sólo puede
-ver una parte) o el texto se desplaza y tienes que pulsar <Intro> para
-continuar.
-   Puedes asignar a la opción 'cmdheight' el número de líneas usado para
+mensajes. Cuando un mensaje es largo, o se trunca (con lo que sólo puede ver
+una parte) o el texto se desplaza y tiene que pulsar <Enter> para continuar.
+   Puede asignar a la opción 'cmdheight' el número de líneas usado para
 mensajes. Por ejemplo: >
 
 	:set cmdheight=3
 
-Esto significa que hay menos espacio para editar texto, tú decides.
+Esto significa que hay menos espacio para editar texto, por lo que hay un
+compromiso.
 
 ==============================================================================
 
