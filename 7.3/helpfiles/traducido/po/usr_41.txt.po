@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
-"POT-Creation-Date: 2010-12-09 16:51+0100\n"
+"POT-Creation-Date: 2011-10-16 21:07-0500\n"
 "PO-Revision-Date: 2011-09-20 08:41-0500\n"
 "Last-Translator: Javier Rojas <jerojasro@devnull.li>\n"
 "Language-Team: vim-doc-es\n"
@@ -134,6 +134,17 @@ msgstr ""
 #: original/txt/usr_41.txt:2425 original/txt/usr_42.txt:21
 #: original/txt/usr_42.txt:140 original/txt/usr_42.txt:254
 #: original/txt/usr_42.txt:293 original/txt/usr_42.txt:361
+#: original/txt/usr_43.txt:20 original/txt/usr_43.txt:70
+#: original/txt/usr_43.txt:169 original/txt/usr_44.txt:30
+#: original/txt/usr_44.txt:85 original/txt/usr_44.txt:139
+#: original/txt/usr_44.txt:166 original/txt/usr_44.txt:196
+#: original/txt/usr_44.txt:291 original/txt/usr_44.txt:321
+#: original/txt/usr_44.txt:448 original/txt/usr_44.txt:486
+#: original/txt/usr_44.txt:530 original/txt/usr_44.txt:609
+#: original/txt/usr_44.txt:645 original/txt/usr_44.txt:715
+#: original/txt/usr_45.txt:22 original/txt/usr_45.txt:85
+#: original/txt/usr_45.txt:137 original/txt/usr_45.txt:263
+#: original/txt/usr_45.txt:327 original/txt/usr_45.txt:415
 #: original/txt/usr_90.txt:21 original/txt/usr_90.txt:214
 #: original/txt/usr_90.txt:288 original/txt/usr_90.txt:341
 #: original/txt/usr_90.txt:417 original/txt/usr_90.txt:494
@@ -156,7 +167,9 @@ msgstr "========================================================================
 #: original/txt/usr_29.txt:4 original/txt/usr_30.txt:4
 #: original/txt/usr_31.txt:4 original/txt/usr_32.txt:4
 #: original/txt/usr_40.txt:4 original/txt/usr_41.txt:4
-#: original/txt/usr_42.txt:4 original/txt/usr_90.txt:4
+#: original/txt/usr_42.txt:4 original/txt/usr_43.txt:4
+#: original/txt/usr_44.txt:4 original/txt/usr_45.txt:4
+#: original/txt/usr_90.txt:4
 #, no-wrap
 msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
 msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
@@ -176,7 +189,9 @@ msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
 #: original/txt/usr_29.txt:613 original/txt/usr_30.txt:643
 #: original/txt/usr_31.txt:272 original/txt/usr_32.txt:180
 #: original/txt/usr_40.txt:657 original/txt/usr_41.txt:2429
-#: original/txt/usr_42.txt:365 original/txt/usr_90.txt:498
+#: original/txt/usr_42.txt:365 original/txt/usr_43.txt:173
+#: original/txt/usr_44.txt:719 original/txt/usr_45.txt:419
+#: original/txt/usr_90.txt:498
 msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 msgstr "Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 
@@ -4719,8 +4734,9 @@ msgid ""
 msgstr ""
 "Lo más probable es que añada nuevas correcciones a la extensión, y tenga en "
 "poco tiempo varias versiones de ésta. Cuando distribuya el archivo, la gente "
-"querrá saber quién escribió esta maravillosa extensión, y dónde pueden enviar "
-"comentarios. Por ello, incluya un encabezado al principio de su extensión: >"
+"querrá saber quién escribió esta maravillosa extensión, y dónde pueden "
+"enviar comentarios. Por ello, incluya un encabezado al principio de su "
+"extensión: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1676
@@ -4742,9 +4758,9 @@ msgid ""
 "either public domain or use the Vim |license|.  A short note about this near "
 "the top of the plugin should be sufficient.  Example: >"
 msgstr ""
-"Derechos de autor y licencias: Debido a que las extensiones son útiles, y que "
-"no merece la pena restringir su distribución, considere que su extensión sea "
-"de dominio público, o use la licencia de Vim (|license|). Una breve nota "
+"Derechos de autor y licencias: Debido a que las extensiones son útiles, y "
+"que no merece la pena restringir su distribución, considere que su extensión "
+"sea de dominio público, o use la licencia de Vim (|license|). Una breve nota "
 "cerca del inicio de la extensión debería servir. Ejemplo: >"
 
 #. type: Plain text
@@ -4826,11 +4842,11 @@ msgid ""
 "a user has his own plugin he wants to use.  Then the user must have a chance "
 "to disable loading this specific plugin.  This will make it possible: >"
 msgstr ""
-"Es posible que el usuario no desee cargar la extensión en cada momento. O que "
-"el administrador del sistema lo haya copiado al directorio de extensiones del "
-"sistema, pero el usuario quiere usar el suyo propio. En ese caso, el usuario "
-"debe tener la posibilidad de desactivar cargar esta extensión en particular. "
-"Lo siguiente lo hace posible: >"
+"Es posible que el usuario no desee cargar la extensión en cada momento. O "
+"que el administrador del sistema lo haya copiado al directorio de "
+"extensiones del sistema, pero el usuario quiere usar el suyo propio. En ese "
+"caso, el usuario debe tener la posibilidad de desactivar cargar esta "
+"extensión en particular. Lo siguiente lo hace posible: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1718
@@ -5047,10 +5063,10 @@ msgid ""
 "called from the script it was defined in.  There can also be a global Add()  "
 "function (without the \"s:\"), which is again another function."
 msgstr ""
-"Ahora invocamos la función «s:Anadir()» desde el mismo script. Si otro script "
-"también define «s:Anadir()», será local a ese script y solo se invocará desde "
-"el script en el que se define. También puede existir una función global "
-"«Anadir()» (sin la «s:»), que es otra función distinta."
+"Ahora invocamos la función «s:Anadir()» desde el mismo script. Si otro "
+"script también define «s:Anadir()», será local a ese script y solo se "
+"invocará desde el script en el que se define. También puede existir una "
+"función global «Anadir()» (sin la «s:»), que es otra función distinta."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1795
@@ -5474,8 +5490,8 @@ msgid ""
 "help| for how they are installed."
 msgstr ""
 "Es una buena idea crear algo de documentación para su extensión, en "
-"particular si el usuario puede modificar su comportamiento. Para lo referente "
-"a la instalación de documentación, consulte |add-local-help|."
+"particular si el usuario puede modificar su comportamiento. Para lo "
+"referente a la instalación de documentación, consulte |add-local-help|."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:1965
@@ -5761,8 +5777,8 @@ msgid ""
 "filetype plugin with only this line: >"
 msgstr ""
 "Usando este mecanismo, los usuarios pueden evitar cargar la extensión "
-"predeterminada si así lo desean, creando una extensión de tipo de archivo con "
-"sólo esta línea: >"
+"predeterminada si así lo desean, creando una extensión de tipo de archivo "
+"con sólo esta línea: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2069
@@ -5910,15 +5926,16 @@ msgid ""
 "might want to use \":noremap <script>\" to allow remapping mappings defined "
 "in this script that start with <SID>."
 msgstr ""
-"|hasmapto()| sirve para comprobar si el usuario ya ha definido una macro para "
-"«<Plug>JavaImport». Si no ha sido definida, la extensión de tipo de archivo "
-"define la macro actual. Esta empieza con |<LocalLeader>|, que permite al "
-"usuario seleccionar una o mas teclas con las que iniciar las macros de la "
-"extensión de tipo de archivo. El valor predeterminado es una barra inversa, "
-"«\\». «<unique>» sirve para emitir un mensaje de error si la macro ya existe "
-"o entra en conflicto con otra. |:noremap| sirve para evitar que las macros "
-"definidas por el usuario interfieran. Puede que desee usar «:noremap "
-"<script>» para permitir redefinir macros en el script que comienza con <SID>."
+"|hasmapto()| sirve para comprobar si el usuario ya ha definido una macro "
+"para «<Plug>JavaImport». Si no ha sido definida, la extensión de tipo de "
+"archivo define la macro actual. Esta empieza con |<LocalLeader>|, que "
+"permite al usuario seleccionar una o mas teclas con las que iniciar las "
+"macros de la extensión de tipo de archivo. El valor predeterminado es una "
+"barra inversa, «\\». «<unique>» sirve para emitir un mensaje de error si la "
+"macro ya existe o entra en conflicto con otra. |:noremap| sirve para evitar "
+"que las macros definidas por el usuario interfieran. Puede que desee usar «:"
+"noremap <script>» para permitir redefinir macros en el script que comienza "
+"con <SID>."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2131
@@ -6006,10 +6023,10 @@ msgid ""
 "buffer."
 msgstr ""
 "Las extensiones de tipo de archivo serán cargadas en cada búfer del tipo "
-"correspondiente. Las variables de script locales |s:var| se compartirán entre "
-"las diferentes llamadas a una misma extensión (o script en general.) Use las "
-"variables locales al búfer |b:var| si desea usar una variable local a un "
-"búfer."
+"correspondiente. Las variables de script locales |s:var| se compartirán "
+"entre las diferentes llamadas a una misma extensión (o script en general.) "
+"Use las variables locales al búfer |b:var| si desea usar una variable local "
+"a un búfer."
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2164
@@ -6023,9 +6040,10 @@ msgid ""
 "plugin will be sourced every time a file with this filetype will be opened.  "
 "This construct makes sure the function is only defined once: >"
 msgstr ""
-"Cada función necesita ser definida una sola vez. Pero la extensión de tipo de "
-"archivo se cargará cada vez que se abra un archivo del tipo correspondiente. "
-"Esta estructura asegura que la función se defina una sola vez: >"
+"Cada función necesita ser definida una sola vez. Pero la extensión de tipo "
+"de archivo se cargará cada vez que se abra un archivo del tipo "
+"correspondiente. Esta estructura asegura que la función se defina una sola "
+"vez: >"
 
 #. type: Plain text
 #: original/txt/usr_41.txt:2175

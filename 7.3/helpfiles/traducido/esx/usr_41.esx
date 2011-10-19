@@ -543,7 +543,7 @@ Se mueve hasta la primera línea y formatea todas las líneas usando el operador
 
 	:execute "normal " . ordenes_modo_normal
 
-La variables «ordenes_modo_normal» debe contener órdenes para el modo Normal.
+La variable «ordenes_modo_normal» debe contener órdenes para el modo Normal.
    Asegúrese de que el argumento para «:normal» es una orden completa. En caso
 contrario, Vim llegará al final del argumento e interrumpirá la orden. Por
 ejemplo, si inicia el modo Insertar, debe salir del mismo. Lo siguiente

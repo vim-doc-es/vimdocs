@@ -46,7 +46,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
-"POT-Creation-Date: 2010-09-23 20:27+0300\n"
+"POT-Creation-Date: 2011-10-16 21:07-0500\n"
 "PO-Revision-Date: 2011-09-20 08:28-0500\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
@@ -58,170 +58,207 @@ msgstr ""
 "X-Generator: Virtaal 0.5.2\n"
 
 #. type: Plain text
-#: original/TXT/intro.txt:18 original/TXT/intro.txt:79
-#: original/TXT/intro.txt:180 original/TXT/intro.txt:290
-#: original/TXT/intro.txt:518 original/TXT/intro.txt:596
-#: original/TXT/intro.txt:689 original/TXT/intro.txt:817
-#: original/TXT/intro.txt:880 original/TXT/usr_toc.txt:7
-#: original/TXT/usr_toc.txt:58 original/TXT/usr_toc.txt:172
-#: original/TXT/usr_toc.txt:281 original/TXT/usr_toc.txt:340
-#: original/TXT/usr_toc.txt:352 original/TXT/usr_01.txt:19
-#: original/TXT/usr_01.txt:50 original/TXT/usr_01.txt:100
-#: original/TXT/usr_01.txt:181 original/TXT/usr_02.txt:25
-#: original/TXT/usr_02.txt:69 original/TXT/usr_02.txt:130
-#: original/TXT/usr_02.txt:179 original/TXT/usr_02.txt:239
-#: original/TXT/usr_02.txt:307 original/TXT/usr_02.txt:369
-#: original/TXT/usr_02.txt:406 original/TXT/usr_02.txt:560
-#: original/TXT/usr_03.txt:28 original/TXT/usr_03.txt:74
-#: original/TXT/usr_03.txt:101 original/TXT/usr_03.txt:147
-#: original/TXT/usr_03.txt:172 original/TXT/usr_03.txt:223
-#: original/TXT/usr_03.txt:265 original/TXT/usr_03.txt:320
-#: original/TXT/usr_03.txt:491 original/TXT/usr_03.txt:552
-#: original/TXT/usr_03.txt:650 original/TXT/usr_04.txt:27
-#: original/TXT/usr_04.txt:74 original/TXT/usr_04.txt:160
-#: original/TXT/usr_04.txt:194 original/TXT/usr_04.txt:269
-#: original/TXT/usr_04.txt:324 original/TXT/usr_04.txt:360
-#: original/TXT/usr_04.txt:390 original/TXT/usr_04.txt:446
-#: original/TXT/usr_04.txt:469 original/TXT/usr_04.txt:510
-#: original/TXT/usr_05.txt:24 original/TXT/usr_05.txt:63
-#: original/TXT/usr_05.txt:219 original/TXT/usr_05.txt:266
-#: original/TXT/usr_05.txt:418 original/TXT/usr_05.txt:467
-#: original/TXT/usr_05.txt:506 original/TXT/usr_05.txt:621
-#: original/TXT/usr_06.txt:24 original/TXT/usr_06.txt:50
-#: original/TXT/usr_06.txt:135 original/TXT/usr_06.txt:189
-#: original/TXT/usr_06.txt:270 original/TXT/usr_06.txt:276
-#: original/TXT/usr_07.txt:24 original/TXT/usr_07.txt:63
-#: original/TXT/usr_07.txt:179 original/TXT/usr_07.txt:266
-#: original/TXT/usr_07.txt:316 original/TXT/usr_07.txt:404
-#: original/TXT/usr_07.txt:444 original/TXT/usr_07.txt:475
-#: original/TXT/usr_08.txt:26 original/TXT/usr_08.txt:82
-#: original/TXT/usr_08.txt:109 original/TXT/usr_08.txt:161
-#: original/TXT/usr_08.txt:215 original/TXT/usr_08.txt:278
-#: original/TXT/usr_08.txt:337 original/TXT/usr_08.txt:477
-#: original/TXT/usr_08.txt:509 original/TXT/usr_08.txt:597
-#: original/TXT/usr_09.txt:21 original/TXT/usr_09.txt:124
-#: original/TXT/usr_09.txt:175 original/TXT/usr_09.txt:259
-#: original/TXT/usr_09.txt:285 original/TXT/usr_10.txt:27
-#: original/TXT/usr_10.txt:144 original/TXT/usr_10.txt:221
-#: original/TXT/usr_10.txt:342 original/TXT/usr_10.txt:378
-#: original/TXT/usr_10.txt:547 original/TXT/usr_10.txt:621
-#: original/TXT/usr_10.txt:667 original/TXT/usr_10.txt:692
-#: original/TXT/usr_10.txt:820 original/TXT/usr_11.txt:22
-#: original/TXT/usr_11.txt:82 original/TXT/usr_11.txt:144
-#: original/TXT/usr_11.txt:288 original/TXT/usr_11.txt:303
-#: original/TXT/usr_12.txt:25 original/TXT/usr_12.txt:90
-#: original/TXT/usr_12.txt:131 original/TXT/usr_12.txt:177
-#: original/TXT/usr_12.txt:202 original/TXT/usr_12.txt:231
-#: original/TXT/usr_12.txt:281 original/TXT/usr_12.txt:309
-#: original/TXT/usr_12.txt:354 original/TXT/usr_20.txt:22
-#: original/TXT/usr_20.txt:113 original/TXT/usr_20.txt:158
-#: original/TXT/usr_20.txt:285 original/TXT/usr_20.txt:327
-#: original/TXT/usr_20.txt:380 original/TXT/usr_21.txt:24
-#: original/TXT/usr_21.txt:47 original/TXT/usr_21.txt:87
-#: original/TXT/usr_21.txt:236 original/TXT/usr_21.txt:385
-#: original/TXT/usr_21.txt:438 original/TXT/usr_21.txt:495
-#: original/TXT/usr_22.txt:22 original/TXT/usr_22.txt:148
-#: original/TXT/usr_22.txt:213 original/TXT/usr_22.txt:272
-#: original/TXT/usr_22.txt:396 original/TXT/usr_23.txt:23
-#: original/TXT/usr_23.txt:114 original/TXT/usr_23.txt:156
-#: original/TXT/usr_23.txt:238 original/TXT/usr_23.txt:324
-#: original/TXT/usr_23.txt:339 original/TXT/usr_24.txt:28
-#: original/TXT/usr_24.txt:96 original/TXT/usr_24.txt:119
-#: original/TXT/usr_24.txt:268 original/TXT/usr_24.txt:305
-#: original/TXT/usr_24.txt:336 original/TXT/usr_24.txt:369
-#: original/TXT/usr_24.txt:493 original/TXT/usr_24.txt:537
-#: original/TXT/usr_24.txt:583 original/TXT/usr_24.txt:602
-#: original/TXT/usr_25.txt:22 original/TXT/usr_25.txt:132
-#: original/TXT/usr_25.txt:210 original/TXT/usr_25.txt:287
-#: original/TXT/usr_25.txt:453 original/TXT/usr_25.txt:574
-#: original/TXT/usr_26.txt:21 original/TXT/usr_26.txt:46
-#: original/TXT/usr_26.txt:103 original/TXT/usr_26.txt:136
-#: original/TXT/usr_26.txt:217 original/TXT/usr_27.txt:26
-#: original/TXT/usr_27.txt:88 original/TXT/usr_27.txt:136
-#: original/TXT/usr_27.txt:239 original/TXT/usr_27.txt:320
-#: original/TXT/usr_27.txt:350 original/TXT/usr_27.txt:427
-#: original/TXT/usr_27.txt:469 original/TXT/usr_27.txt:510
-#: original/TXT/usr_27.txt:559 original/TXT/usr_28.txt:27
-#: original/TXT/usr_28.txt:54 original/TXT/usr_28.txt:121
-#: original/TXT/usr_28.txt:185 original/TXT/usr_28.txt:211
-#: original/TXT/usr_28.txt:269 original/TXT/usr_28.txt:315
-#: original/TXT/usr_28.txt:331 original/TXT/usr_28.txt:375
-#: original/TXT/usr_28.txt:389 original/TXT/usr_28.txt:422
-#: original/TXT/usr_29.txt:23 original/TXT/usr_29.txt:273
-#: original/TXT/usr_29.txt:320 original/TXT/usr_29.txt:441
-#: original/TXT/usr_29.txt:570 original/TXT/usr_29.txt:609
-#: original/TXT/usr_30.txt:23 original/TXT/usr_30.txt:202
-#: original/TXT/usr_30.txt:280 original/TXT/usr_30.txt:336
-#: original/TXT/usr_30.txt:409 original/TXT/usr_30.txt:515
-#: original/TXT/usr_30.txt:639 original/TXT/usr_31.txt:22
-#: original/TXT/usr_31.txt:81 original/TXT/usr_31.txt:133
-#: original/TXT/usr_31.txt:160 original/TXT/usr_31.txt:208
-#: original/TXT/usr_31.txt:268
+#: original/txt/intro.txt:18 original/txt/intro.txt:79
+#: original/txt/intro.txt:180 original/txt/intro.txt:290
+#: original/txt/intro.txt:518 original/txt/intro.txt:596
+#: original/txt/intro.txt:689 original/txt/intro.txt:817
+#: original/txt/intro.txt:880 original/txt/usr_toc.txt:7
+#: original/txt/usr_toc.txt:58 original/txt/usr_toc.txt:172
+#: original/txt/usr_toc.txt:281 original/txt/usr_toc.txt:340
+#: original/txt/usr_toc.txt:352 original/txt/usr_01.txt:19
+#: original/txt/usr_01.txt:50 original/txt/usr_01.txt:100
+#: original/txt/usr_01.txt:181 original/txt/usr_02.txt:25
+#: original/txt/usr_02.txt:69 original/txt/usr_02.txt:130
+#: original/txt/usr_02.txt:179 original/txt/usr_02.txt:239
+#: original/txt/usr_02.txt:307 original/txt/usr_02.txt:369
+#: original/txt/usr_02.txt:406 original/txt/usr_02.txt:560
+#: original/txt/usr_03.txt:28 original/txt/usr_03.txt:74
+#: original/txt/usr_03.txt:101 original/txt/usr_03.txt:147
+#: original/txt/usr_03.txt:172 original/txt/usr_03.txt:223
+#: original/txt/usr_03.txt:265 original/txt/usr_03.txt:320
+#: original/txt/usr_03.txt:491 original/txt/usr_03.txt:552
+#: original/txt/usr_03.txt:650 original/txt/usr_04.txt:27
+#: original/txt/usr_04.txt:74 original/txt/usr_04.txt:160
+#: original/txt/usr_04.txt:194 original/txt/usr_04.txt:269
+#: original/txt/usr_04.txt:324 original/txt/usr_04.txt:360
+#: original/txt/usr_04.txt:390 original/txt/usr_04.txt:446
+#: original/txt/usr_04.txt:469 original/txt/usr_04.txt:510
+#: original/txt/usr_05.txt:24 original/txt/usr_05.txt:63
+#: original/txt/usr_05.txt:219 original/txt/usr_05.txt:266
+#: original/txt/usr_05.txt:418 original/txt/usr_05.txt:467
+#: original/txt/usr_05.txt:506 original/txt/usr_05.txt:621
+#: original/txt/usr_06.txt:24 original/txt/usr_06.txt:50
+#: original/txt/usr_06.txt:135 original/txt/usr_06.txt:189
+#: original/txt/usr_06.txt:270 original/txt/usr_06.txt:276
+#: original/txt/usr_07.txt:24 original/txt/usr_07.txt:63
+#: original/txt/usr_07.txt:179 original/txt/usr_07.txt:266
+#: original/txt/usr_07.txt:316 original/txt/usr_07.txt:404
+#: original/txt/usr_07.txt:444 original/txt/usr_07.txt:475
+#: original/txt/usr_08.txt:26 original/txt/usr_08.txt:82
+#: original/txt/usr_08.txt:109 original/txt/usr_08.txt:161
+#: original/txt/usr_08.txt:215 original/txt/usr_08.txt:278
+#: original/txt/usr_08.txt:337 original/txt/usr_08.txt:477
+#: original/txt/usr_08.txt:509 original/txt/usr_08.txt:597
+#: original/txt/usr_09.txt:21 original/txt/usr_09.txt:124
+#: original/txt/usr_09.txt:175 original/txt/usr_09.txt:259
+#: original/txt/usr_09.txt:285 original/txt/usr_10.txt:27
+#: original/txt/usr_10.txt:144 original/txt/usr_10.txt:221
+#: original/txt/usr_10.txt:342 original/txt/usr_10.txt:378
+#: original/txt/usr_10.txt:547 original/txt/usr_10.txt:621
+#: original/txt/usr_10.txt:667 original/txt/usr_10.txt:692
+#: original/txt/usr_10.txt:820 original/txt/usr_11.txt:22
+#: original/txt/usr_11.txt:82 original/txt/usr_11.txt:144
+#: original/txt/usr_11.txt:288 original/txt/usr_11.txt:303
+#: original/txt/usr_12.txt:25 original/txt/usr_12.txt:90
+#: original/txt/usr_12.txt:131 original/txt/usr_12.txt:177
+#: original/txt/usr_12.txt:202 original/txt/usr_12.txt:231
+#: original/txt/usr_12.txt:281 original/txt/usr_12.txt:309
+#: original/txt/usr_12.txt:354 original/txt/usr_20.txt:22
+#: original/txt/usr_20.txt:113 original/txt/usr_20.txt:158
+#: original/txt/usr_20.txt:285 original/txt/usr_20.txt:327
+#: original/txt/usr_20.txt:380 original/txt/usr_21.txt:24
+#: original/txt/usr_21.txt:47 original/txt/usr_21.txt:87
+#: original/txt/usr_21.txt:236 original/txt/usr_21.txt:385
+#: original/txt/usr_21.txt:438 original/txt/usr_21.txt:495
+#: original/txt/usr_22.txt:22 original/txt/usr_22.txt:148
+#: original/txt/usr_22.txt:213 original/txt/usr_22.txt:272
+#: original/txt/usr_22.txt:396 original/txt/usr_23.txt:23
+#: original/txt/usr_23.txt:114 original/txt/usr_23.txt:156
+#: original/txt/usr_23.txt:238 original/txt/usr_23.txt:324
+#: original/txt/usr_23.txt:339 original/txt/usr_24.txt:28
+#: original/txt/usr_24.txt:96 original/txt/usr_24.txt:119
+#: original/txt/usr_24.txt:268 original/txt/usr_24.txt:305
+#: original/txt/usr_24.txt:336 original/txt/usr_24.txt:369
+#: original/txt/usr_24.txt:493 original/txt/usr_24.txt:537
+#: original/txt/usr_24.txt:583 original/txt/usr_24.txt:602
+#: original/txt/usr_25.txt:22 original/txt/usr_25.txt:132
+#: original/txt/usr_25.txt:210 original/txt/usr_25.txt:287
+#: original/txt/usr_25.txt:453 original/txt/usr_25.txt:574
+#: original/txt/usr_26.txt:21 original/txt/usr_26.txt:46
+#: original/txt/usr_26.txt:103 original/txt/usr_26.txt:136
+#: original/txt/usr_26.txt:217 original/txt/usr_27.txt:26
+#: original/txt/usr_27.txt:88 original/txt/usr_27.txt:136
+#: original/txt/usr_27.txt:239 original/txt/usr_27.txt:320
+#: original/txt/usr_27.txt:350 original/txt/usr_27.txt:427
+#: original/txt/usr_27.txt:469 original/txt/usr_27.txt:510
+#: original/txt/usr_27.txt:559 original/txt/usr_28.txt:27
+#: original/txt/usr_28.txt:54 original/txt/usr_28.txt:121
+#: original/txt/usr_28.txt:185 original/txt/usr_28.txt:211
+#: original/txt/usr_28.txt:269 original/txt/usr_28.txt:315
+#: original/txt/usr_28.txt:331 original/txt/usr_28.txt:375
+#: original/txt/usr_28.txt:389 original/txt/usr_28.txt:422
+#: original/txt/usr_29.txt:23 original/txt/usr_29.txt:273
+#: original/txt/usr_29.txt:320 original/txt/usr_29.txt:441
+#: original/txt/usr_29.txt:570 original/txt/usr_29.txt:609
+#: original/txt/usr_30.txt:23 original/txt/usr_30.txt:202
+#: original/txt/usr_30.txt:280 original/txt/usr_30.txt:336
+#: original/txt/usr_30.txt:409 original/txt/usr_30.txt:515
+#: original/txt/usr_30.txt:639 original/txt/usr_31.txt:22
+#: original/txt/usr_31.txt:81 original/txt/usr_31.txt:133
+#: original/txt/usr_31.txt:160 original/txt/usr_31.txt:208
+#: original/txt/usr_31.txt:268 original/txt/usr_32.txt:21
+#: original/txt/usr_32.txt:44 original/txt/usr_32.txt:92
+#: original/txt/usr_32.txt:140 original/txt/usr_32.txt:176
+#: original/txt/usr_40.txt:20 original/txt/usr_40.txt:279
+#: original/txt/usr_40.txt:424 original/txt/usr_40.txt:653
+#: original/txt/usr_41.txt:33 original/txt/usr_41.txt:133
+#: original/txt/usr_41.txt:267 original/txt/usr_41.txt:345
+#: original/txt/usr_41.txt:482 original/txt/usr_41.txt:532
+#: original/txt/usr_41.txt:877 original/txt/usr_41.txt:1104
+#: original/txt/usr_41.txt:1390 original/txt/usr_41.txt:1447
+#: original/txt/usr_41.txt:1617 original/txt/usr_41.txt:2038
+#: original/txt/usr_41.txt:2224 original/txt/usr_41.txt:2270
+#: original/txt/usr_41.txt:2346 original/txt/usr_41.txt:2410
+#: original/txt/usr_41.txt:2425 original/txt/usr_42.txt:21
+#: original/txt/usr_42.txt:140 original/txt/usr_42.txt:254
+#: original/txt/usr_42.txt:293 original/txt/usr_42.txt:361
+#: original/txt/usr_43.txt:20 original/txt/usr_43.txt:70
+#: original/txt/usr_43.txt:169 original/txt/usr_44.txt:30
+#: original/txt/usr_44.txt:85 original/txt/usr_44.txt:139
+#: original/txt/usr_44.txt:166 original/txt/usr_44.txt:196
+#: original/txt/usr_44.txt:291 original/txt/usr_44.txt:321
+#: original/txt/usr_44.txt:448 original/txt/usr_44.txt:486
+#: original/txt/usr_44.txt:530 original/txt/usr_44.txt:609
+#: original/txt/usr_44.txt:645 original/txt/usr_44.txt:715
+#: original/txt/usr_45.txt:22 original/txt/usr_45.txt:85
+#: original/txt/usr_45.txt:137 original/txt/usr_45.txt:263
+#: original/txt/usr_45.txt:327 original/txt/usr_45.txt:415
+#: original/txt/usr_90.txt:21 original/txt/usr_90.txt:214
+#: original/txt/usr_90.txt:288 original/txt/usr_90.txt:341
+#: original/txt/usr_90.txt:417 original/txt/usr_90.txt:494
 #, no-wrap
 msgid "==============================================================================\n"
 msgstr "==============================================================================\n"
 
 #. type: Plain text
-#: original/TXT/usr_toc.txt:4 original/TXT/usr_01.txt:4
-#: original/TXT/usr_02.txt:4 original/TXT/usr_03.txt:4
-#: original/TXT/usr_04.txt:4 original/TXT/usr_05.txt:4
-#: original/TXT/usr_06.txt:4 original/TXT/usr_07.txt:4
-#: original/TXT/usr_08.txt:4 original/TXT/usr_09.txt:4
-#: original/TXT/usr_10.txt:4 original/TXT/usr_11.txt:4
-#: original/TXT/usr_12.txt:4 original/TXT/usr_20.txt:4
-#: original/TXT/usr_21.txt:4 original/TXT/usr_22.txt:4
-#: original/TXT/usr_23.txt:4 original/TXT/usr_24.txt:4
-#: original/TXT/usr_25.txt:4 original/TXT/usr_26.txt:4
-#: original/TXT/usr_27.txt:4 original/TXT/usr_28.txt:4
-#: original/TXT/usr_29.txt:4 original/TXT/usr_30.txt:4
-#: original/TXT/usr_31.txt:4
+#: original/txt/usr_toc.txt:4 original/txt/usr_01.txt:4
+#: original/txt/usr_02.txt:4 original/txt/usr_03.txt:4
+#: original/txt/usr_04.txt:4 original/txt/usr_05.txt:4
+#: original/txt/usr_06.txt:4 original/txt/usr_07.txt:4
+#: original/txt/usr_08.txt:4 original/txt/usr_09.txt:4
+#: original/txt/usr_10.txt:4 original/txt/usr_11.txt:4
+#: original/txt/usr_12.txt:4 original/txt/usr_20.txt:4
+#: original/txt/usr_21.txt:4 original/txt/usr_22.txt:4
+#: original/txt/usr_23.txt:4 original/txt/usr_24.txt:4
+#: original/txt/usr_25.txt:4 original/txt/usr_26.txt:4
+#: original/txt/usr_27.txt:4 original/txt/usr_28.txt:4
+#: original/txt/usr_29.txt:4 original/txt/usr_30.txt:4
+#: original/txt/usr_31.txt:4 original/txt/usr_32.txt:4
+#: original/txt/usr_40.txt:4 original/txt/usr_41.txt:4
+#: original/txt/usr_42.txt:4 original/txt/usr_43.txt:4
+#: original/txt/usr_44.txt:4 original/txt/usr_45.txt:4
+#: original/txt/usr_90.txt:4
 #, no-wrap
 msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
 msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
 
 #. type: Plain text
-#: original/TXT/usr_toc.txt:354 original/TXT/usr_01.txt:185
-#: original/TXT/usr_02.txt:564 original/TXT/usr_03.txt:654
-#: original/TXT/usr_04.txt:514 original/TXT/usr_05.txt:625
-#: original/TXT/usr_06.txt:280 original/TXT/usr_07.txt:479
-#: original/TXT/usr_08.txt:601 original/TXT/usr_09.txt:289
-#: original/TXT/usr_10.txt:824 original/TXT/usr_11.txt:307
-#: original/TXT/usr_12.txt:358 original/TXT/usr_20.txt:384
-#: original/TXT/usr_21.txt:499 original/TXT/usr_22.txt:400
-#: original/TXT/usr_23.txt:343 original/TXT/usr_24.txt:606
-#: original/TXT/usr_25.txt:578 original/TXT/usr_26.txt:221
-#: original/TXT/usr_27.txt:563 original/TXT/usr_28.txt:426
-#: original/TXT/usr_29.txt:613 original/TXT/usr_30.txt:643
-#: original/TXT/usr_31.txt:272
+#: original/txt/usr_toc.txt:354 original/txt/usr_01.txt:185
+#: original/txt/usr_02.txt:564 original/txt/usr_03.txt:654
+#: original/txt/usr_04.txt:514 original/txt/usr_05.txt:625
+#: original/txt/usr_06.txt:280 original/txt/usr_07.txt:479
+#: original/txt/usr_08.txt:601 original/txt/usr_09.txt:289
+#: original/txt/usr_10.txt:824 original/txt/usr_11.txt:307
+#: original/txt/usr_12.txt:358 original/txt/usr_20.txt:384
+#: original/txt/usr_21.txt:499 original/txt/usr_22.txt:400
+#: original/txt/usr_23.txt:343 original/txt/usr_24.txt:606
+#: original/txt/usr_25.txt:578 original/txt/usr_26.txt:221
+#: original/txt/usr_27.txt:563 original/txt/usr_28.txt:426
+#: original/txt/usr_29.txt:613 original/txt/usr_30.txt:643
+#: original/txt/usr_31.txt:272 original/txt/usr_32.txt:180
+#: original/txt/usr_40.txt:657 original/txt/usr_41.txt:2429
+#: original/txt/usr_42.txt:365 original/txt/usr_43.txt:173
+#: original/txt/usr_44.txt:719 original/txt/usr_45.txt:419
+#: original/txt/usr_90.txt:498
 msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 msgstr "Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 
 #. type: Plain text
-#: original/TXT/usr_21.txt:400 original/TXT/usr_28.txt:194
+#: original/txt/usr_21.txt:400 original/txt/usr_28.txt:194
 #, no-wrap
 msgid "\t:mkview\n"
 msgstr "\t:mkview\n"
 
 #. type: Plain text
-#: original/TXT/usr_21.txt:405 original/TXT/usr_28.txt:200
+#: original/txt/usr_21.txt:405 original/txt/usr_28.txt:200
 #, no-wrap
 msgid "\t:loadview\n"
 msgstr "\t:loadview\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:2
+#: original/txt/usr_28.txt:2
 #, no-wrap
 msgid "*usr_28.txt*\tFor Vim version 7.3.  Last change: 2008 Jun 14\n"
 msgstr "*usr_28.esx*\tPara Vim versión 7.3.  Último cambio: 8/2/2007\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:6
+#: original/txt/usr_28.txt:6
 #, no-wrap
 msgid "\t\t\t\t   Folding\n"
 msgstr "\t\t\t\t Plegar\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:11
+#: original/txt/usr_28.txt:11
 msgid ""
 "Structured text can be separated in sections.  And sections in sub-"
 "sections.  Folding allows you to display a section as one line, providing an "
@@ -233,7 +270,7 @@ msgstr ""
 "maneras de hacerlo."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:22
+#: original/txt/usr_28.txt:22
 #, no-wrap
 msgid ""
 "|28.1|\tWhat is folding?\n"
@@ -259,7 +296,7 @@ msgstr ""
 "|28.10¿| ¿Qué método de plegar debería usar?\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:26
+#: original/txt/usr_28.txt:26
 #, no-wrap
 msgid ""
 "     Next chapter: |usr_29.txt|  Moving through programs\n"
@@ -271,13 +308,13 @@ msgstr ""
 "Tabla de contenidos: |usr_toc.esx|\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:29
+#: original/txt/usr_28.txt:29
 #, no-wrap
 msgid "*28.1*\tWhat is folding?\n"
 msgstr "*28.1¿*\t¿Qué es plegar?\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:32
+#: original/txt/usr_28.txt:32
 msgid ""
 "Folding is used to show a range of lines in the buffer as a single line on "
 "the screen.  Like a piece of paper which is folded to make it shorter:"
@@ -286,7 +323,7 @@ msgstr ""
 "línea en la pantalla. Como un trozo de papel plegado para acortarlo."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:46
+#: original/txt/usr_28.txt:46
 #, no-wrap
 msgid ""
 "\t+------------------------+\n"
@@ -318,7 +355,7 @@ msgstr ""
 "\t+------------------------+\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:49
+#: original/txt/usr_28.txt:49
 msgid ""
 "The text is still in the buffer, unchanged.  Only the way lines are "
 "displayed is affected by folding."
@@ -327,7 +364,7 @@ msgstr ""
 "en que se muestran las líneas."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:53
+#: original/txt/usr_28.txt:53
 msgid ""
 "The advantage of folding is that you can get a better overview of the "
 "structure of text, by folding lines of a section and replacing it with a "
@@ -338,24 +375,24 @@ msgstr ""
 "éstos con una línea indicando que hay una sección."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:56
+#: original/txt/usr_28.txt:56
 #, no-wrap
 msgid "*28.2*\tManual folding\n"
 msgstr "*28.2*\tPlegar manualmente\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:58
+#: original/txt/usr_28.txt:58
 msgid "Try it out: Position the cursor in a paragraph and type: >"
 msgstr "Pruebe esto: posicione el cursor en un párrafo y teclee: >"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:60
+#: original/txt/usr_28.txt:60
 #, no-wrap
 msgid "\tzfap\n"
 msgstr "\tzfap\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:65
+#: original/txt/usr_28.txt:65
 msgid ""
 "You will see that the paragraph is replaced by a highlighted line.  You have "
 "created a fold.  |zf| is an operator and |ap| a text object selection.  You "
@@ -368,29 +405,29 @@ msgstr ""
 "para el texto reemplazado. |zf| funciona también en el modo Visual."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:67
+#: original/txt/usr_28.txt:67
 msgid "To view the text again, open the fold by typing: >"
 msgstr "Para ver el texto otra vez, abra el pliegue con lo siguiente: >"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:69
+#: original/txt/usr_28.txt:69
 #, no-wrap
 msgid "\tzo\n"
 msgstr "\tzo\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:71
+#: original/txt/usr_28.txt:71
 msgid "And you can close the fold again with: >"
 msgstr "Y puede cerrar el pliegue otra vez con: >"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:73
+#: original/txt/usr_28.txt:73
 #, no-wrap
 msgid "\tzc\n"
 msgstr "\tzc\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:77
+#: original/txt/usr_28.txt:77
 msgid ""
 "All the folding commands start with \"z\".  With some fantasy, this looks "
 "like a folded piece of paper, seen from the side.  The letter after the \"z"
@@ -401,7 +438,7 @@ msgstr ""
 "tiene un significado nemónico que facilita recordar las órdenes:"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:81
+#: original/txt/usr_28.txt:81
 #, no-wrap
 msgid ""
 "\tzf\tF-old creation\n"
@@ -413,7 +450,7 @@ msgstr ""
 "\tzc\tC-lose a fold (cerrar pliegue)\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:87
+#: original/txt/usr_28.txt:87
 msgid ""
 "Folds can be nested: A region of text that contains folds can be folded "
 "again.  For example, you can fold each paragraph in this section, and then "
@@ -428,7 +465,7 @@ msgstr ""
 "anidados a su forma previa, algunos abiertos y otros cerrados."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:90
+#: original/txt/usr_28.txt:90
 msgid ""
 "Suppose you have created several folds, and now want to view all the text.  "
 "You could go to each fold and type \"zo\".  To do this faster, use this "
@@ -439,24 +476,24 @@ msgstr ""
 "esto mismo con rapidez: >"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:92
+#: original/txt/usr_28.txt:92
 #, no-wrap
 msgid "\tzr\n"
 msgstr "\tzr\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:94
+#: original/txt/usr_28.txt:94
 msgid "This will R-educe the folding.  The opposite is: >"
 msgstr "Esto r_educe el plegado. Lo opuesto es: >"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:96
+#: original/txt/usr_28.txt:96
 #, no-wrap
 msgid "\tzm\n"
 msgstr "\tzm\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:99
+#: original/txt/usr_28.txt:99
 msgid ""
 "This folds M-ore.  You can repeat \"zr\" and \"zm\" to open and close nested "
 "folds of several levels."
@@ -465,7 +502,7 @@ msgstr ""
 "anidados en varios niveles."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:101
+#: original/txt/usr_28.txt:101
 msgid ""
 "If you have nested several levels deep, you can open all of them with: >"
 msgstr ""
@@ -473,13 +510,13 @@ msgstr ""
 "todos con: >"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:103
+#: original/txt/usr_28.txt:103
 #, no-wrap
 msgid "\tzR\n"
 msgstr "\tzR\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:106
+#: original/txt/usr_28.txt:106
 msgid ""
 "This R-educes folds until there are none left.  And you can close all folds "
 "with: >"
@@ -488,18 +525,18 @@ msgstr ""
 "los pliegues con: >"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:108
+#: original/txt/usr_28.txt:108
 #, no-wrap
 msgid "\tzM\n"
 msgstr "\tzM\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:110
+#: original/txt/usr_28.txt:110
 msgid "This folds M-ore and M-ore."
 msgstr "Esto pliega m_ás y m_ás."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:118
+#: original/txt/usr_28.txt:118
 msgid ""
 "You can quickly disable the folding with the |zn| command.  Then |zN| brings "
 "back the folding as it was.  |zi| toggles between the two.  This is a useful "
@@ -514,20 +551,20 @@ msgstr ""
 "del texto con |zi| - repita |zi| para seguir desplazándose."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:120
+#: original/txt/usr_28.txt:120
 msgid "More about manual folding in the reference manual: |fold-manual|"
 msgstr ""
 "Para más información acerca del plegado manual, consulte la siguiente "
 "sección en el manual de referencia: |fold-manual|."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:123
+#: original/txt/usr_28.txt:123
 #, no-wrap
 msgid "*28.3*\tWorking with folds\n"
 msgstr "*28.3*\tTrabajar con pliegues\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:127
+#: original/txt/usr_28.txt:127
 msgid ""
 "When some folds are closed, movement commands like \"j\" and \"k\" move over "
 "a fold like it was a single, empty line.  This allows you to quickly move "
@@ -538,7 +575,7 @@ msgstr ""
 "permite un desplazamiento más rápido sobre texto plegado."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:139
+#: original/txt/usr_28.txt:139
 msgid ""
 "You can yank, delete and put folds as if it was a single line.  This is very "
 "useful if you want to reorder functions in a program.  First make sure that "
@@ -562,7 +599,7 @@ msgstr ""
 "nueva posición y «p»onga ahí las líneas."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:142
+#: original/txt/usr_28.txt:142
 msgid ""
 "It is sometimes difficult to see or remember where a fold is located, thus "
 "where a |zo| command would actually work.  To see the defined folds: >"
@@ -571,13 +608,13 @@ msgstr ""
 "es de utilidad en estos caso. Para ver los pliegues definidos: >"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:144
+#: original/txt/usr_28.txt:144
 #, no-wrap
 msgid "\t:set foldcolumn=4\n"
 msgstr "\t:set foldcolumn=4\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:148
+#: original/txt/usr_28.txt:148
 msgid ""
 "This will show a small column on the left of the window to indicate folds.  "
 "A \"+\" is shown for a closed fold.  A \"-\" is shown at the start of each "
@@ -588,7 +625,7 @@ msgstr ""
 "de cada pliegue abierto y «|» simboliza líneas del pliegue a continuación. "
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:151
+#: original/txt/usr_28.txt:151
 msgid ""
 "You can use the mouse to open a fold by clicking on the \"+\" in the "
 "foldcolumn.  Clicking on the \"-\" or a \"|\" below it will close an open "
@@ -599,7 +636,7 @@ msgstr ""
 "pliegue abierto."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:156
+#: original/txt/usr_28.txt:156
 msgid ""
 "To open all folds at the cursor line use |zO|.  To close all folds at the "
 "cursor line use |zC|.  To delete a fold at the cursor line use |zd|.  To "
@@ -611,7 +648,7 @@ msgstr ""
 "bajo la línea del cursor."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:159
+#: original/txt/usr_28.txt:159
 msgid ""
 "When in Insert mode, the fold at the cursor line is never closed.  That "
 "allows you to see what you type!"
@@ -620,7 +657,7 @@ msgstr ""
 "que teclea."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:165
+#: original/txt/usr_28.txt:165
 msgid ""
 "Folds are opened automatically when jumping around or moving the cursor left "
 "or right.  For example, the \"0\" command opens the fold under the cursor "
@@ -636,13 +673,13 @@ msgstr ""
 "siempre abierta: >"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:167
+#: original/txt/usr_28.txt:167
 #, no-wrap
 msgid "\t:set foldopen=all\n"
 msgstr "\t:set foldopen=all\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:170
+#: original/txt/usr_28.txt:170
 msgid ""
 "Warning: You won't be able to move onto a closed fold then.  You might want "
 "to use this only temporarily and then set it back to the default: >"
@@ -652,25 +689,25 @@ msgstr ""
 "original: >"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:172
+#: original/txt/usr_28.txt:172
 #, no-wrap
 msgid "\t:set foldopen&\n"
 msgstr "\t:set foldopen&\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:174
+#: original/txt/usr_28.txt:174
 msgid "You can make folds close automatically when you move out of it: >"
 msgstr ""
 "Puede hacer que los pliegues se cierren automáticamente al salir de éstos: >"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:176
+#: original/txt/usr_28.txt:176
 #, no-wrap
 msgid "\t:set foldclose=all\n"
 msgstr "\t:set foldclose=all\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:180
+#: original/txt/usr_28.txt:180
 msgid ""
 "This will re-apply 'foldlevel' to all folds that don't contain the cursor.  "
 "You have to try it out if you like how this feels.  Use |zm| to fold more "
@@ -681,7 +718,7 @@ msgstr ""
 "plegar menos (reducir los pliegues)."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:184
+#: original/txt/usr_28.txt:184
 msgid ""
 "The folding is local to the window.  This allows you to open two windows on "
 "the same buffer, one with folds and one without folds.  Or one with all "
@@ -692,13 +729,13 @@ msgstr ""
 "cerrados y otro con todos los pliegues abiertos."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:187
+#: original/txt/usr_28.txt:187
 #, no-wrap
 msgid "*28.4*\tSaving and restoring folds\n"
 msgstr "*28.4*\tGuardar y restaurar pliegues\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:192
+#: original/txt/usr_28.txt:192
 msgid ""
 "When you abandon a file (starting to edit another one), the state of the "
 "folds is lost.  If you come back to the same file later, all manually opened "
@@ -712,7 +749,7 @@ msgstr ""
 "guardar el estado de los archivos: >"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:198
+#: original/txt/usr_28.txt:198
 msgid ""
 "This will store the settings and other things that influence the view on the "
 "file.  You can change what is stored with the 'viewoptions' option.  When "
@@ -723,7 +760,7 @@ msgstr ""
 "cargar el mismo visionado al volver al archivo más tarde: >"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:203
+#: original/txt/usr_28.txt:203
 msgid ""
 "You can store up to ten views on one file.  For example, to save the current "
 "setup as the third view and load the second view: >"
@@ -733,7 +770,7 @@ msgstr ""
 "después el segundo: >"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:206
+#: original/txt/usr_28.txt:206
 #, no-wrap
 msgid ""
 "\t:mkview 3\n"
@@ -743,24 +780,24 @@ msgstr ""
 "\t:loadview 2\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:210
+#: original/txt/usr_28.txt:210
 msgid ""
 "Note that when you insert or delete lines the views might become invalid.  "
 "Also check out the 'viewdir' option, which specifies where the views are "
 "stored.  You might want to delete old views now and then."
 msgstr ""
-"Tenga en cuenta que, al insertar o eliminar líneas, las vistas dejarán de ser "
-"válidas. Revise también la opción 'viewdir', que define donde se guardan los "
-"visionados. Puede que desee eliminar viejos visionados de vez en cuando."
+"Tenga en cuenta que, al insertar o eliminar líneas, las vistas dejarán de "
+"ser válidas. Revise también la opción 'viewdir', que define donde se guardan "
+"los visionados. Puede que desee eliminar viejos visionados de vez en cuando."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:213
+#: original/txt/usr_28.txt:213
 #, no-wrap
 msgid "*28.5*\tFolding by indent\n"
 msgstr "*28.5*\tPlegar según el sangrado\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:219
+#: original/txt/usr_28.txt:219
 msgid ""
 "Defining folds with |zf| is a lot of work.  If your text is structured by "
 "giving lower level items a larger indent, you can use the indent folding "
@@ -776,18 +813,18 @@ msgstr ""
 "con varios lenguajes de programación."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:221
+#: original/txt/usr_28.txt:221
 msgid "Try this by setting the 'foldmethod' option: >"
 msgstr "Pruebe esto definiendo la opción 'foldmethod': >"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:223
+#: original/txt/usr_28.txt:223
 #, no-wrap
 msgid "\t:set foldmethod=indent\n"
 msgstr "\t:set foldmethod=indent\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:226
+#: original/txt/usr_28.txt:226
 msgid ""
 "Then you can use the |zm| and |zr| commands to fold more and reduce "
 "folding.  It's easy to see on this example text:"
@@ -796,7 +833,7 @@ msgstr ""
 "plegado. Es fácil de ver con este texto de ejemplo:"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:235
+#: original/txt/usr_28.txt:235
 #, no-wrap
 msgid ""
 "This line is not indented\n"
@@ -818,7 +855,7 @@ msgstr ""
 "\tEsta línea tiene un sangrado\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:239
+#: original/txt/usr_28.txt:239
 msgid ""
 "Note that the relation between the amount of indent and the fold depth "
 "depends on the 'shiftwidth' option.  Each 'shiftwidth' worth of indent adds "
@@ -830,7 +867,7 @@ msgstr ""
 "denomina nivel de plegado."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:242
+#: original/txt/usr_28.txt:242
 msgid ""
 "When you use the |zr| and |zm| commands you actually increase or decrease "
 "the 'foldlevel' option.  You could also set it directly: >"
@@ -839,13 +876,13 @@ msgstr ""
 "opción 'foldlevel'. Puede también definirlo directamente: >"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:244
+#: original/txt/usr_28.txt:244
 #, no-wrap
 msgid "\t:set foldlevel=3\n"
 msgstr "\t:set foldlevel=3\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:250
+#: original/txt/usr_28.txt:250
 msgid ""
 "This means that all folds with three times a 'shiftwidth' indent or more "
 "will be closed.  The lower the foldlevel, the more folds will be closed.  "
@@ -860,7 +897,7 @@ msgstr ""
 "'foldlevel' con el valor de nivel de pliegue más bajo presente en el archivo."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:255
+#: original/txt/usr_28.txt:255
 #, no-wrap
 msgid ""
 "Thus there are two ways to open and close the folds:\n"
@@ -875,7 +912,7 @@ msgstr ""
 "    texto otra vez.\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:259
+#: original/txt/usr_28.txt:259
 #, no-wrap
 msgid ""
 "(B) By using |zo| and |zc| commands to open or close specific folds.\n"
@@ -887,7 +924,7 @@ msgstr ""
 "    los otros cerrados.\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:263
+#: original/txt/usr_28.txt:263
 msgid ""
 "This can be combined: You can first close most folds by using |zm| a few "
 "times and then open a specific fold with |zo|.  Or open all folds with |zR| "
@@ -899,7 +936,7 @@ msgstr ""
 "específicos con |zc|."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:266
+#: original/txt/usr_28.txt:266
 msgid ""
 "But you cannot manually define folds when 'foldmethod' is \"indent\", as "
 "that would conflict with the relation between the indent and the fold level."
@@ -909,20 +946,20 @@ msgstr ""
 "sangrado y el nivel de plegado."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:268
+#: original/txt/usr_28.txt:268
 msgid "More about folding by indent in the reference manual: |fold-indent|"
 msgstr ""
 "Puede ver más acerca de plegar por sangrado en el manual de referencia: |"
 "fold-indent|"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:271
+#: original/txt/usr_28.txt:271
 #, no-wrap
 msgid "*28.6*\tFolding with markers\n"
 msgstr "*28.6*\tPlegar con marcadores\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:275
+#: original/txt/usr_28.txt:275
 msgid ""
 "Markers in the text are used to specify the start and end of a fold region.  "
 "This gives precise control over which lines are included in a fold.  The "
@@ -933,23 +970,23 @@ msgstr ""
 "un pliegue. La desventaja de esto es que tiene que modificar el texto."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:277
+#: original/txt/usr_28.txt:277
 msgid "Try it: >"
 msgstr "Pruebe esto: >"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:279
+#: original/txt/usr_28.txt:279
 #, no-wrap
 msgid "\t:set foldmethod=marker\n"
 msgstr "\t:set foldmethod=marker\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:281
+#: original/txt/usr_28.txt:281
 msgid "Example text, as it could appear in a C program:"
 msgstr "Un texto de ejemplo, como podría aparecer en un programa C:"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:290
+#: original/txt/usr_28.txt:290
 #, no-wrap
 msgid ""
 "\t/* foobar () {{{ */\n"
@@ -971,7 +1008,7 @@ msgstr ""
 "\t/* }}} */\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:293
+#: original/txt/usr_28.txt:293
 msgid ""
 "Notice that the folded line will display the text before the marker.  This "
 "is very useful to tell what the fold contains."
@@ -980,7 +1017,7 @@ msgstr ""
 "para informar de los contenidos del pliegue."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:296
+#: original/txt/usr_28.txt:296
 msgid ""
 "It's quite annoying when the markers don't pair up correctly after moving "
 "some lines around.  This can be avoided by using numbered markers.  Example:"
@@ -990,7 +1027,7 @@ msgstr ""
 "Ejemplo: "
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:299
+#: original/txt/usr_28.txt:299
 #, no-wrap
 msgid ""
 "\t/* global variables {{{1 */\n"
@@ -1000,7 +1037,7 @@ msgstr ""
 "\tint varA, varB;\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:303
+#: original/txt/usr_28.txt:303
 #, no-wrap
 msgid ""
 "\t/* functions {{{1 */\n"
@@ -1012,7 +1049,7 @@ msgstr ""
 "\tvoid funcA() {}\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:307
+#: original/txt/usr_28.txt:307
 #, no-wrap
 msgid ""
 "\t/* funcB() {{{2 */\n"
@@ -1024,7 +1061,7 @@ msgstr ""
 "\t/* }}}1 */\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:312
+#: original/txt/usr_28.txt:312
 msgid ""
 "At every numbered marker a fold at the specified level begins.  This will "
 "make any fold at a higher level stop here.  You can just use numbered start "
@@ -1038,20 +1075,20 @@ msgstr ""
 "iniciar otro."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:314
+#: original/txt/usr_28.txt:314
 msgid "More about folding with markers in the reference manual: |fold-marker|"
 msgstr ""
 "Consulte el manual de referencia para más información acerca de plegar con "
 "marcadores: |fold-marker|"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:317
+#: original/txt/usr_28.txt:317
 #, no-wrap
 msgid "*28.7*\tFolding by syntax\n"
 msgstr "*28.7*\tPlegar por sintaxis\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:328
+#: original/txt/usr_28.txt:328
 #, no-wrap
 msgid ""
 "For each language Vim uses a different syntax file.  This defines the colors\n"
@@ -1079,20 +1116,20 @@ msgstr ""
 "automáticamente al editar el archivo.\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:330
+#: original/txt/usr_28.txt:330
 msgid "More about folding by syntax in the reference manual: |fold-syntax|"
 msgstr ""
 "Consulte el manual de referencia para más información acerca de plegar por "
 "sintaxis: |fold-syntax|"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:333
+#: original/txt/usr_28.txt:333
 #, no-wrap
 msgid "*28.8*\tFolding by expression\n"
 msgstr "*28.8*\tPlegar por expresión\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:339
+#: original/txt/usr_28.txt:339
 msgid ""
 "This is similar to folding by indent, but instead of using the indent of a "
 "line a user function is called to compute the fold level of a line.  You can "
@@ -1107,7 +1144,7 @@ msgstr ""
 "inicio de la línea. Use esto para plegar esas citas: >"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:342
+#: original/txt/usr_28.txt:342
 #, no-wrap
 msgid ""
 "\t:set foldmethod=expr\n"
@@ -1117,12 +1154,12 @@ msgstr ""
 "\t:set foldexpr=strlen(substitute(substitute(getline(v:lnum),'\\\\s','',\\\"g\\\"),'[^>].*','',''))\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:344
+#: original/txt/usr_28.txt:344
 msgid "You can try it out on this text:"
 msgstr "Puede probarlo con este texto:"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:349
+#: original/txt/usr_28.txt:349
 msgid ""
 "> quoted text he wrote > quoted text he wrote > > double quoted text I wrote "
 "> > double quoted text I wrote"
@@ -1131,7 +1168,7 @@ msgstr ""
 "texto citado que yo escribí > > doble texto citado que yo escribí"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:356
+#: original/txt/usr_28.txt:356
 #, no-wrap
 msgid ""
 "Explanation for the 'foldexpr' used in the example (inside out):\n"
@@ -1150,7 +1187,7 @@ msgstr ""
 "\t\t\t\t\tencontrados.\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:359
+#: original/txt/usr_28.txt:359
 msgid ""
 "Note that a backslash must be inserted before every space, double quote and "
 "backslash for the \":set\" command.  If this confuses you, do >"
@@ -1160,13 +1197,13 @@ msgstr ""
 "haga >"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:361
+#: original/txt/usr_28.txt:361
 #, no-wrap
 msgid "\t:set foldexpr\n"
 msgstr "\t:set foldexpr\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:364
+#: original/txt/usr_28.txt:364
 msgid ""
 "to check the actual resulting value.  To correct a complicated expression, "
 "use the command-line completion: >"
@@ -1175,13 +1212,13 @@ msgstr ""
 "compleja, use el auto completa de línea de órdenes: >"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:366
+#: original/txt/usr_28.txt:366
 #, no-wrap
 msgid "\t:set foldexpr=<Tab>\n"
 msgstr "\t:set foldexpr=<Tab>\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:369
+#: original/txt/usr_28.txt:369
 msgid ""
 "Where <Tab> is a real Tab.  Vim will fill in the previous value, which you "
 "can then edit."
@@ -1190,7 +1227,7 @@ msgstr ""
 "puede después editar."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:372
+#: original/txt/usr_28.txt:372
 msgid ""
 "When the expression gets more complicated you should put it in a function "
 "and set 'foldexpr' to call that function."
@@ -1199,20 +1236,20 @@ msgstr ""
 "definir que 'foldexpr' invoque tal función."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:374
+#: original/txt/usr_28.txt:374
 msgid "More about folding by expression in the reference manual: |fold-expr|"
 msgstr ""
 "Consulte el manual de referencia para más información acerca de plegar por "
 "expresión: |fold-marker|"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:377
+#: original/txt/usr_28.txt:377
 #, no-wrap
 msgid "*28.9*\tFolding unchanged lines\n"
 msgstr "*28.9*\tPlegar líneas sin cambios\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:380
+#: original/txt/usr_28.txt:380
 msgid ""
 "This is useful when you set the 'diff' option in the same window.  The |"
 "vimdiff| command does this for you.  Example: >"
@@ -1221,13 +1258,13 @@ msgstr ""
 "vimdiff| hace esto por usted. Ejemplo: >"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:382
+#: original/txt/usr_28.txt:382
 #, no-wrap
 msgid "\t:setlocal diff foldmethod=diff scrollbind nowrap foldlevel=1\n"
 msgstr "\t:setlocal diff foldmethod=diff scrollbind nowrap foldlevel=1\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:386
+#: original/txt/usr_28.txt:386
 msgid ""
 "Do this in every window that shows a different version of the same file.  "
 "You will clearly see the differences between the files, while the text that "
@@ -1238,18 +1275,18 @@ msgstr ""
 "aquellas líneas que no contienen cambios."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:388
+#: original/txt/usr_28.txt:388
 msgid "For more details see |fold-diff|."
 msgstr "Para más detalles, consulte |fold-diff|."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:391
+#: original/txt/usr_28.txt:391
 #, no-wrap
 msgid "*28.10* Which fold method to use?\n"
 msgstr "*28.10* ¿Qué método de plegado debería usar?\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:394
+#: original/txt/usr_28.txt:394
 msgid ""
 "All these possibilities make you wonder which method you should choose.  "
 "Unfortunately, there is no golden rule.  Here are some hints."
@@ -1258,7 +1295,7 @@ msgstr ""
 "desgracia, no existe ninguna regla de oro. Aquí tiene algunas pistas."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:399
+#: original/txt/usr_28.txt:399
 msgid ""
 "If there is a syntax file with folding for the language you are editing, "
 "that is probably the best choice.  If there isn't one, you might try to "
@@ -1272,7 +1309,7 @@ msgstr ""
 "manualmente."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:402
+#: original/txt/usr_28.txt:402
 msgid ""
 "Typing commands to manually fold regions can be used for unstructured text.  "
 "Then use the |:mkview| command to save and restore your folds."
@@ -1282,7 +1319,7 @@ msgstr ""
 "restaurar los pliegues."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:409
+#: original/txt/usr_28.txt:409
 #, no-wrap
 msgid ""
 "The marker method requires you to change the file.  If you are sharing the\n"
@@ -1301,7 +1338,7 @@ msgstr ""
 "del pliegue.\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:414
+#: original/txt/usr_28.txt:414
 msgid ""
 "Folding by indent is something that works in many files, but not always very "
 "well.  Use it when you can't use one of the other methods.  However, it is "
@@ -1314,7 +1351,7 @@ msgstr ""
 "'shiftwidth' en particular para cada nivel de anidado."
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:421
+#: original/txt/usr_28.txt:421
 #, no-wrap
 msgid ""
 "Folding with expressions can make folds in almost any structured text.  It is\n"
@@ -1332,6 +1369,6 @@ msgstr ""
 "manualmente.\n"
 
 #. type: Plain text
-#: original/TXT/usr_28.txt:425
+#: original/txt/usr_28.txt:425
 msgid "Next chapter: |usr_29.txt| Moving through programs"
 msgstr "Capítulo siguiente: |usr_29.esx| Moverse a través de programas"

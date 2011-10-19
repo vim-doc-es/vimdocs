@@ -461,8 +461,8 @@ Acaba con dos líneas:
 	+----------------------------------+
 
 Tenga en cuenta que esto no funciona si la línea de separación está en blanco,
-pero no vacía; cuando contiene espacios y/o tabulados. Esta orden funciona
-con líneas en blanco:
+pero no vacía; cuando contiene espacios y/o tabulados. Esta orden funciona con
+líneas en blanco:
 >
 	:g/\S/,/^\s*$/join
 

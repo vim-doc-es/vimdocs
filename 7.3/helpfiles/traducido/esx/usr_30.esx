@@ -649,9 +649,9 @@ entrada en 'comments' tendría este aspecto: >
 	:set comments=s1:/*,mb:*,ex:*/
 
 El principio se define con «s1:/*». La «s» indica el principio de un
-comentario en tres partes. Los dos puntos separan las marcas del texto
-por el cual se detecta que es un comentario: «/*». Hay una marca, «1». Indica
-a Vim que la parte central tiene un «offset» de un espacio.
+comentario en tres partes. Los dos puntos separan las marcas del texto por el
+cual se detecta que es un comentario: «/*». Hay una marca, «1». Indica a Vim
+que la parte central tiene un «offset» de un espacio.
    La parte central «mb:*» comienza con «m», que indica que es la parte
 central. La opción «b» indica que el texto debe ir seguido de un espacio
 en blanco. En caso contrario, Vim considerará que el texto como «*pointer»

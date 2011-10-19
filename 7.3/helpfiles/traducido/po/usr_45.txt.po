@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
-"POT-Creation-Date: 2011-05-14 19:11+0300\n"
+"POT-Creation-Date: 2011-10-16 21:07-0500\n"
 "PO-Revision-Date: 2011-09-20 09:14-0500\n"
 "Last-Translator: Javier Rojas <jerojasro@devnull.li>\n"
 "Language-Team: LANGUAGE TEAM <E-MAIL@ADDRESS or HOME PAGE>\n"
@@ -258,8 +258,8 @@ msgid ""
 "language (if they are available).  To see what the current language is, use "
 "this command: >"
 msgstr ""
-"Cuando inicia Vim, se revisa el entorno para averiguar el lenguaje que usa el "
-"sistema. Esto en general funciona correctamente, y los mensajes que se "
+"Cuando inicia Vim, se revisa el entorno para averiguar el lenguaje que usa "
+"el sistema. Esto en general funciona correctamente, y los mensajes que se "
 "muestren estarán en el idioma apropiado (si están disponibles). Para "
 "consultar el idioma actual, use esta orden: >"
 
@@ -329,10 +329,10 @@ msgid ""
 "second method: >"
 msgstr ""
 "Ésta sólo funcionará si dicho idioma está disponible en su sistema. Tiene la "
-"ventaja de que todos los mensajes de la interfaz gráfica y demás elementos en "
-"bibliotecas también usarán el idioma apropiado. La desventaja radica en que "
-"debe definir la variable antes de iniciar Vim. Si desea cambiar de idioma "
-"mientras Vim está ejecutándose, use la segunda solución: >"
+"ventaja de que todos los mensajes de la interfaz gráfica y demás elementos "
+"en bibliotecas también usarán el idioma apropiado. La desventaja radica en "
+"que debe definir la variable antes de iniciar Vim. Si desea cambiar de "
+"idioma mientras Vim está ejecutándose, use la segunda solución: >"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:56
@@ -375,8 +375,8 @@ msgid ""
 "You can also set the language separately for messages, edited text and the "
 "time format.  See |:language|."
 msgstr ""
-"También puede dar definiciones distintas para los mensajes, el texto editado, "
-"y el formato de fecha. Consulte |:language|."
+"También puede dar definiciones distintas para los mensajes, el texto "
+"editado, y el formato de fecha. Consulte |:language|."
 
 #. type: Plain text
 #: original/txt/usr_45.txt:73
@@ -684,10 +684,10 @@ msgid ""
 "though.  Example: >"
 msgstr ""
 "En MS-Windows, algunos tipos de letra cuentan con una cantidad limitada de "
-"caracteres Unicode. Intente usando el tipo de letra «Courier New». Puede usar "
-"el menú «Editar/Seleccionar tipo de letra»... para escoger y probar los tipos "
-"de letra disponibles. Sin embargo, sólo es posible usar tipos de letra de "
-"ancho fijo.  Ejemplo: >"
+"caracteres Unicode. Intente usando el tipo de letra «Courier New». Puede "
+"usar el menú «Editar/Seleccionar tipo de letra»... para escoger y probar los "
+"tipos de letra disponibles. Sin embargo, sólo es posible usar tipos de letra "
+"de ancho fijo.  Ejemplo: >"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:194
@@ -745,9 +745,9 @@ msgid ""
 "Asian language, and you want to edit Unicode text."
 msgstr ""
 "Estas órdenes asignan el valor de 'encoding' a 'termencoding' antes de "
-"redefinir 'encoding' con el valor «utf-8». Tendrá que probar si esto funciona "
-"adecuadamente en su sistema. Debería funcionar muy bien al usar un método de "
-"entrada para idiomas asiáticos, y tratar de editar texto Unicode."
+"redefinir 'encoding' con el valor «utf-8». Tendrá que probar si esto "
+"funciona adecuadamente en su sistema. Debería funcionar muy bien al usar un "
+"método de entrada para idiomas asiáticos, y tratar de editar texto Unicode."
 
 #. type: Plain text
 #: original/txt/usr_45.txt:216
@@ -957,8 +957,8 @@ msgstr ""
 "defínalo con las codificaciones que desea que Vim pruebe. Al probar una "
 "codificación, sólo se pasará a la siguiente si se encuentra un valor "
 "inválido.  Poner «latin1» en primer lugar no funcionará, porque no tiene "
-"valores inválidos. Como ejemplo, para usar japonés cuando el archivo no tiene "
-"una BOM y no es utf-8: >"
+"valores inválidos. Como ejemplo, para usar japonés cuando el archivo no "
+"tiene una BOM y no es utf-8: >"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:300
@@ -1101,9 +1101,9 @@ msgid ""
 "Vim will try to find a keymap file for you.  This depends on the value of "
 "'encoding'.  If no matching file was found, you will get an error message."
 msgstr ""
-"Vim tratará de ubicar la correspondencia de teclado necesaria. Ésta dependerá "
-"del valor en 'encoding'. Si no se encuentra el archivo correspondiente, "
-"obtendrá un mensaje de error."
+"Vim tratará de ubicar la correspondencia de teclado necesaria. Ésta "
+"dependerá del valor en 'encoding'. Si no se encuentra el archivo "
+"correspondiente, obtendrá un mensaje de error."
 
 #. type: Plain text
 #: original/txt/usr_45.txt:358
@@ -1161,8 +1161,8 @@ msgid ""
 "Edit/Keymap menu.  Otherwise you can use this command: >"
 msgstr ""
 "Para averiguar qué correspondencias de teclado están disponibles, puede usar "
-"en la interfaz gráfica el menú «Editar/Asociación de teclados». También puede "
-"usar la siguiente orden: >"
+"en la interfaz gráfica el menú «Editar/Asociación de teclados». También "
+"puede usar la siguiente orden: >"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:377
@@ -1214,8 +1214,8 @@ msgstr ""
 "{nombre} es el nombre de la correspondencia de teclado. Escoja un nombre "
 "obvio, pero diferente de las correspondencias existentes (a menos que desee "
 "reemplazar una correspondencia de teclado existente.) {nombre} no puede usar "
-"guiones bajos. Opcionalmente, añada la codificación usada después de un guión "
-"bajo. Ejemplos:"
+"guiones bajos. Opcionalmente, añada la codificación usada después de un "
+"guión bajo. Ejemplos:"
 
 #. type: Plain text
 #: original/txt/usr_45.txt:398

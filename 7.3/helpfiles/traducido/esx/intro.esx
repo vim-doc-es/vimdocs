@@ -656,7 +656,8 @@ Ex		 :vi	  --	  --	 --	    --	      --
 *3 Puede pasar del modo Línea de órdenes a Normal realizando lo siguiente:
    - Pulsar <CR> o <NL>, que ejecuta la orden introducida.
    - Borrar una línea completa (p. ej., con CTRL-U) seguido de <BS>.
-   - Pulsar CTRL-C o <Esc>, cerrando la línea de órdenes sin ejecutar la orden.
+   - Pulsar CTRL-C o <Esc>, cerrando la línea de órdenes sin ejecutar la
+     orden.
    En el último caso, puede que <Esc> sea el carácter definido con la opción
    'wildchar', lo que iniciaría el auto-completado en línea de órdenes. Puede
    ignorar esto y pulsar <Esc> otra vez. {Vi: pulsar <Esc> ejecuta la orden
@@ -687,10 +688,10 @@ argumento, como |f| o |m|, se aplicará la cuenta atrás definida con
 'ttimeoutlen'.
 
 	*CTRL-\_CTRL-G* *i_CTRL-\_CTRL-G* *c_CTRL-\_CTRL-G* *v_CTRL-\_CTRL-G*
-La orden CTRL-\ CTRL-G o <C-\><C-G> se puede usar para pasar al modo Insertar
-cuando 'insertmode' está definido. En caso contrario, vuelve al modo Normal.
-Puede usar esto para asegurarse de que Vim está en el modo indicado por
-'insertmode', sin conocer el modo actual en el que está Vim.
+La orden CTRL-\ CTRL-G o <C-\><C-G> se puede usar para pasar al modo
+Insertar cuando 'insertmode' está definido. En caso contrario, vuelve al modo
+Normal.  Puede usar esto para asegurarse de que Vim está en el modo indicado
+por 'insertmode', sin conocer el modo actual en el que está Vim.
 
 				    *Q* *mode-Ex* *Ex-mode* *Ex* *EX*
 *E501*

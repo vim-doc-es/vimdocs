@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
-"POT-Creation-Date: 2010-12-05 15:35+0100\n"
+"POT-Creation-Date: 2011-10-16 21:07-0500\n"
 "PO-Revision-Date: 2011-09-20 09:14-0500\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
@@ -120,6 +120,30 @@ msgstr ""
 #: original/txt/usr_31.txt:268 original/txt/usr_32.txt:21
 #: original/txt/usr_32.txt:44 original/txt/usr_32.txt:92
 #: original/txt/usr_32.txt:140 original/txt/usr_32.txt:176
+#: original/txt/usr_40.txt:20 original/txt/usr_40.txt:279
+#: original/txt/usr_40.txt:424 original/txt/usr_40.txt:653
+#: original/txt/usr_41.txt:33 original/txt/usr_41.txt:133
+#: original/txt/usr_41.txt:267 original/txt/usr_41.txt:345
+#: original/txt/usr_41.txt:482 original/txt/usr_41.txt:532
+#: original/txt/usr_41.txt:877 original/txt/usr_41.txt:1104
+#: original/txt/usr_41.txt:1390 original/txt/usr_41.txt:1447
+#: original/txt/usr_41.txt:1617 original/txt/usr_41.txt:2038
+#: original/txt/usr_41.txt:2224 original/txt/usr_41.txt:2270
+#: original/txt/usr_41.txt:2346 original/txt/usr_41.txt:2410
+#: original/txt/usr_41.txt:2425 original/txt/usr_42.txt:21
+#: original/txt/usr_42.txt:140 original/txt/usr_42.txt:254
+#: original/txt/usr_42.txt:293 original/txt/usr_42.txt:361
+#: original/txt/usr_43.txt:20 original/txt/usr_43.txt:70
+#: original/txt/usr_43.txt:169 original/txt/usr_44.txt:30
+#: original/txt/usr_44.txt:85 original/txt/usr_44.txt:139
+#: original/txt/usr_44.txt:166 original/txt/usr_44.txt:196
+#: original/txt/usr_44.txt:291 original/txt/usr_44.txt:321
+#: original/txt/usr_44.txt:448 original/txt/usr_44.txt:486
+#: original/txt/usr_44.txt:530 original/txt/usr_44.txt:609
+#: original/txt/usr_44.txt:645 original/txt/usr_44.txt:715
+#: original/txt/usr_45.txt:22 original/txt/usr_45.txt:85
+#: original/txt/usr_45.txt:137 original/txt/usr_45.txt:263
+#: original/txt/usr_45.txt:327 original/txt/usr_45.txt:415
 #: original/txt/usr_90.txt:21 original/txt/usr_90.txt:214
 #: original/txt/usr_90.txt:288 original/txt/usr_90.txt:341
 #: original/txt/usr_90.txt:417 original/txt/usr_90.txt:494
@@ -141,6 +165,9 @@ msgstr "========================================================================
 #: original/txt/usr_27.txt:4 original/txt/usr_28.txt:4
 #: original/txt/usr_29.txt:4 original/txt/usr_30.txt:4
 #: original/txt/usr_31.txt:4 original/txt/usr_32.txt:4
+#: original/txt/usr_40.txt:4 original/txt/usr_41.txt:4
+#: original/txt/usr_42.txt:4 original/txt/usr_43.txt:4
+#: original/txt/usr_44.txt:4 original/txt/usr_45.txt:4
 #: original/txt/usr_90.txt:4
 #, no-wrap
 msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
@@ -160,6 +187,9 @@ msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
 #: original/txt/usr_27.txt:563 original/txt/usr_28.txt:426
 #: original/txt/usr_29.txt:613 original/txt/usr_30.txt:643
 #: original/txt/usr_31.txt:272 original/txt/usr_32.txt:180
+#: original/txt/usr_40.txt:657 original/txt/usr_41.txt:2429
+#: original/txt/usr_42.txt:365 original/txt/usr_43.txt:173
+#: original/txt/usr_44.txt:719 original/txt/usr_45.txt:419
 #: original/txt/usr_90.txt:498
 msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 msgstr "Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
@@ -358,9 +388,9 @@ msgid ""
 "four smaller files, which can be uncompressed with gzip.  For Vim 6.1 they "
 "are called:"
 msgstr ""
-"Necesita el programa bzip2 para descomprimirlo. Si no lo tiene, descargue los "
-"cuatro archivos más pequeños, que se pueden descomprimir con gzip. Para Vim "
-"6.1, se llaman:"
+"Necesita el programa bzip2 para descomprimirlo. Si no lo tiene, descargue "
+"los cuatro archivos más pequeños, que se pueden descomprimir con gzip. Para "
+"Vim 6.1, se llaman:"
 
 #. type: Plain text
 #: original/txt/usr_90.txt:81
@@ -521,10 +551,10 @@ msgstr ""
 "uno o más mensajes de pruebas fallidas, puede que Vim funcione, pero no a la "
 "perfección. Si ve muchos mensajes de error o Vim no continúa hasta el final, "
 "puede que exista algún problema. Puede intentar encontrarlo manualmente, o "
-"encontrar a alguien que lo puede solucionar. También puede consultar la lista "
-"de correo (|maillist-archive|) en busca de una solución. Si todo falla, puede "
-"preguntar en la lista de correo (|maillist|) de Vim si alguien le puede "
-"ayudar."
+"encontrar a alguien que lo puede solucionar. También puede consultar la "
+"lista de correo (|maillist-archive|) en busca de una solución. Si todo "
+"falla, puede preguntar en la lista de correo (|maillist|) de Vim si alguien "
+"le puede ayudar."
 
 #. type: Plain text
 #: original/txt/usr_90.txt:141
@@ -932,10 +962,10 @@ msgid ""
 "Borland command-line compiler 5.5 can be used, as well as the free MingW and "
 "Cygwin compilers.  Check the file src/INSTALLpc.txt for hints."
 msgstr ""
-"En el caso de que no esté satisfecho con las características incluidas en los "
-"binarios proporcionados, puede intentar compilar Vim. Obtenga el archivo de "
-"fuentes de la misma ubicación de los binarios. Necesitará un compilador para "
-"el que exista un «makefile». Microsoft Visual C funciona, pero es caro. "
+"En el caso de que no esté satisfecho con las características incluidas en "
+"los binarios proporcionados, puede intentar compilar Vim. Obtenga el archivo "
+"de fuentes de la misma ubicación de los binarios. Necesitará un compilador "
+"para el que exista un «makefile». Microsoft Visual C funciona, pero es caro. "
 "Puede usar el compilador de línea de órdenes libre Borland 5.5, así como los "
 "compiladores libres MingW y Cygwin. Consulte el archivo «src/INSTALLpc.txt» "
 "para más indicaciones."

@@ -250,9 +250,9 @@ continuación se puede omitir.
 BORRAR MENÚS
 
 Para borrar un menú se usa la misma orden que para listarlo, pero cambiando
-«menu» por «unmenu». Así, «:menu» se convierte en «:unmenu», «:nmenu» en
-«:nunmenu», etc. Para borrar el elemento «Herramientas.Ejecutar Make» para
-el modo Insertar: >
+«menu» por «unmenu». Así, «:menu» se convierte en «:unmenu», «:nmenu» en «:
+nunmenu», etc. Para borrar el elemento «Herramientas.Ejecutar Make» para el
+modo Insertar: >
 
 	:iunmenu Herramientas.Ejecutar\ Make
 
@@ -342,10 +342,10 @@ directorios en 'runtimepath'. Por ejemplo, en Unix, puede usar
 
 Puede definir indicaciones para los elementos de la barra de
 herramientas. Una indicación es un texto corto que explica la funcionalidad
-de un elemento de la barra de herramientas.  Por ejemplo, «Abrir
-Archivo». La indicación se hace visible cuando el puntero del ratón está
-sobre el elemento, inmóvil. Es muy útil si la intención que expresa la
-imagen no es tan obvia. Ejemplo: >
+de un elemento de la barra de herramientas. Por ejemplo, «Abrir Archivo». La
+indicación se hace visible cuando el puntero del ratón está sobre el
+elemento, inmóvil. Es muy útil si la intención que expresa la imagen no es
+tan obvia. Ejemplo: >
 
 	:tmenu ToolBar.Make  Ejecutar make en el directorio actual
 <
@@ -370,8 +370,8 @@ se usa manteniendo presionado el botón derecho del ratón.
 dado alguno de los valores «popup» o «popup_setpos». La diferencia entre estos
 dos valores consiste en que «popup_setpos» mueve el cursor al sitio en que se
 encuentra el puntero del ratón. Al pulsar sobre en una selección, ésta se
-usará sin modificaciones. Cuando hay una región seleccionada y se pulsa
-el ratón fuera de ella, se descarta la selección.
+usará sin modificaciones. Cuando hay una región seleccionada y se pulsa el
+ratón fuera de ella, se descarta la selección.
    Hay un menú contextual por cada modo. Por este motivo nunca hay elementos
 deshabilitados como sucede en los menús normales.
 

@@ -33,7 +33,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.3\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
-"POT-Creation-Date: 2010-12-09 16:51+0100\n"
+"POT-Creation-Date: 2011-10-16 21:07-0500\n"
 "PO-Revision-Date: 2011-09-20 08:34-0500\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: vim-doc-es\n"
@@ -159,6 +159,17 @@ msgstr ""
 #: original/txt/usr_41.txt:2425 original/txt/usr_42.txt:21
 #: original/txt/usr_42.txt:140 original/txt/usr_42.txt:254
 #: original/txt/usr_42.txt:293 original/txt/usr_42.txt:361
+#: original/txt/usr_43.txt:20 original/txt/usr_43.txt:70
+#: original/txt/usr_43.txt:169 original/txt/usr_44.txt:30
+#: original/txt/usr_44.txt:85 original/txt/usr_44.txt:139
+#: original/txt/usr_44.txt:166 original/txt/usr_44.txt:196
+#: original/txt/usr_44.txt:291 original/txt/usr_44.txt:321
+#: original/txt/usr_44.txt:448 original/txt/usr_44.txt:486
+#: original/txt/usr_44.txt:530 original/txt/usr_44.txt:609
+#: original/txt/usr_44.txt:645 original/txt/usr_44.txt:715
+#: original/txt/usr_45.txt:22 original/txt/usr_45.txt:85
+#: original/txt/usr_45.txt:137 original/txt/usr_45.txt:263
+#: original/txt/usr_45.txt:327 original/txt/usr_45.txt:415
 #: original/txt/usr_90.txt:21 original/txt/usr_90.txt:214
 #: original/txt/usr_90.txt:288 original/txt/usr_90.txt:341
 #: original/txt/usr_90.txt:417 original/txt/usr_90.txt:494
@@ -181,7 +192,9 @@ msgstr "========================================================================
 #: original/txt/usr_29.txt:4 original/txt/usr_30.txt:4
 #: original/txt/usr_31.txt:4 original/txt/usr_32.txt:4
 #: original/txt/usr_40.txt:4 original/txt/usr_41.txt:4
-#: original/txt/usr_42.txt:4 original/txt/usr_90.txt:4
+#: original/txt/usr_42.txt:4 original/txt/usr_43.txt:4
+#: original/txt/usr_44.txt:4 original/txt/usr_45.txt:4
+#: original/txt/usr_90.txt:4
 #, no-wrap
 msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
 msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
@@ -201,7 +214,9 @@ msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
 #: original/txt/usr_29.txt:613 original/txt/usr_30.txt:643
 #: original/txt/usr_31.txt:272 original/txt/usr_32.txt:180
 #: original/txt/usr_40.txt:657 original/txt/usr_41.txt:2429
-#: original/txt/usr_42.txt:365 original/txt/usr_90.txt:498
+#: original/txt/usr_42.txt:365 original/txt/usr_43.txt:173
+#: original/txt/usr_44.txt:719 original/txt/usr_45.txt:419
+#: original/txt/usr_90.txt:498
 msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 msgstr "Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 
@@ -231,8 +246,8 @@ msgid ""
 msgstr ""
 "Vim es un editor extensible. Puede tomar una secuencia de órdenes que usa "
 "regularmente, y transformarla en una nueva orden, o redefinir una orden "
-"existente. Las órdenes automáticas («Autocommands») permiten ejecutar órdenes "
-"de forma automática."
+"existente. Las órdenes automáticas («Autocommands») permiten ejecutar "
+"órdenes de forma automática."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:15
@@ -413,8 +428,8 @@ msgstr ""
 "El modo Operator-pending es aquel al que se entra al aplicar un operador "
 "introduciendo el carácter correspondiente al mismo, por ejemplo «y» o «d», y "
 "se espera a que se indique una orden de desplazamiento o un objeto de texto. "
-"Por ello, cuando teclea «dw», la «w» es introducida en el modo "
-"Operator-pending"
+"Por ello, cuando teclea «dw», la «w» es introducida en el modo Operator-"
+"pending"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:85
@@ -917,8 +932,8 @@ msgid ""
 "|:map-<unique>|."
 msgstr ""
 "La palabra clave <unique> se puede usar para que definir una macro nueva "
-"falle cuando ésta ya existe. En caso contrario, una nueva macro sencillamente "
-"sobreescribe la preexistente. Consulte |:map-<unique>|."
+"falle cuando ésta ya existe. En caso contrario, una nueva macro "
+"sencillamente sobreescribe la preexistente. Consulte |:map-<unique>|."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:274
@@ -1006,9 +1021,9 @@ msgid ""
 "another.  Command line completion can be used to get the full name."
 msgstr ""
 "Al igual que las órdenes integradas, las órdenes definidas por el usuario se "
-"pueden abreviar. Necesita teclear lo justo para distinguir una orden de otra. "
-"Puede usar el autocompletado de línea de órdenes para obtener el nombre "
-"completo."
+"pueden abreviar. Necesita teclear lo justo para distinguir una orden de "
+"otra. Puede usar el autocompletado de línea de órdenes para obtener el "
+"nombre completo."
 
 #. type: Plain text
 #: original/txt/usr_40.txt:306
@@ -1112,8 +1127,8 @@ msgid ""
 "To get special characters turned into a string, properly escaped to use as "
 "an expression, use \"<q-args>\": >"
 msgstr ""
-"Para que los caracteres especiales se conviertan en una cadena, correctamente "
-"escapada para usarla como expresión, use «<q-args>»: >"
+"Para que los caracteres especiales se conviertan en una cadena, "
+"correctamente escapada para usarla como expresión, use «<q-args>»: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:344
@@ -1203,9 +1218,9 @@ msgid ""
 "\"save_file\": >"
 msgstr ""
 "Cuando se especifica un rango, las palabras clave <line1> y <line2> obtienen "
-"el valor de la primera y la última línea del rango. Por ejemplo, la siguiente "
-"orden define la orden «Guardalo», que escribe el rango especificado al "
-"archivo «archivo_guardado»: >"
+"el valor de la primera y la última línea del rango. Por ejemplo, la "
+"siguiente orden define la orden «Guardalo», que escribe el rango "
+"especificado al archivo «archivo_guardado»: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:377
@@ -1473,10 +1488,10 @@ msgid ""
 "certain type of file is edited.  For example, to load a list of "
 "abbreviations for text files: >"
 msgstr ""
-"Si Vim es capaz de detectar el tipo de archivo, definirá la opción 'filetype' "
-"automáticamente. Esto provoca el evento «Filetype». Puede usarlo para iniciar "
-"una acción al editar un tipo de archivo en particular.  Por ejemplo, para "
-"cargar una lista de abreviaturas para archivos de texto: >"
+"Si Vim es capaz de detectar el tipo de archivo, definirá la opción "
+"'filetype' automáticamente. Esto provoca el evento «Filetype». Puede usarlo "
+"para iniciar una acción al editar un tipo de archivo en particular.  Por "
+"ejemplo, para cargar una lista de abreviaturas para archivos de texto: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:482
@@ -1626,9 +1641,9 @@ msgid ""
 "For example, to list all BufNewFile autocommands: >"
 msgstr ""
 "Esta lista puede ser muy larga, en particular si se utiliza la detección de "
-"tipo de archivo. Para listar sólo parte de las órdenes, especifique el grupo, "
-"evento y/o patrón. Por ejemplo, para listar todas las órdenes automáticas "
-"para «BufNewFile»: >"
+"tipo de archivo. Para listar sólo parte de las órdenes, especifique el "
+"grupo, evento y/o patrón. Por ejemplo, para listar todas las órdenes "
+"automáticas para «BufNewFile»: >"
 
 #. type: Plain text
 #: original/txt/usr_40.txt:540
