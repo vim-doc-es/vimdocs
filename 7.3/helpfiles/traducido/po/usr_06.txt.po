@@ -43,9 +43,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Vim 7.2\n"
 "Report-Msgid-Bugs-To: vim@bugs.org\n"
-"POT-Creation-Date: 2010-09-23 20:27+0300\n"
-"PO-Revision-Date: 2011-02-26 17:34+0200\n"
-"Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
+"POT-Creation-Date: 2011-10-18 22:01-0500\n"
+"PO-Revision-Date: 2011-10-23 12:11-0500\n"
+"Last-Translator: Javier Rojas <jerojasro@devnull.li>\n"
 "Language-Team: vim-doc-es <vim-doc-es@freelists.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -53,158 +53,195 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
-#: original/TXT/intro.txt:18 original/TXT/intro.txt:79
-#: original/TXT/intro.txt:180 original/TXT/intro.txt:290
-#: original/TXT/intro.txt:518 original/TXT/intro.txt:596
-#: original/TXT/intro.txt:689 original/TXT/intro.txt:817
-#: original/TXT/intro.txt:880 original/TXT/usr_toc.txt:7
-#: original/TXT/usr_toc.txt:58 original/TXT/usr_toc.txt:172
-#: original/TXT/usr_toc.txt:281 original/TXT/usr_toc.txt:340
-#: original/TXT/usr_toc.txt:352 original/TXT/usr_01.txt:19
-#: original/TXT/usr_01.txt:50 original/TXT/usr_01.txt:100
-#: original/TXT/usr_01.txt:181 original/TXT/usr_02.txt:25
-#: original/TXT/usr_02.txt:69 original/TXT/usr_02.txt:130
-#: original/TXT/usr_02.txt:179 original/TXT/usr_02.txt:239
-#: original/TXT/usr_02.txt:307 original/TXT/usr_02.txt:369
-#: original/TXT/usr_02.txt:406 original/TXT/usr_02.txt:560
-#: original/TXT/usr_03.txt:28 original/TXT/usr_03.txt:74
-#: original/TXT/usr_03.txt:101 original/TXT/usr_03.txt:147
-#: original/TXT/usr_03.txt:172 original/TXT/usr_03.txt:223
-#: original/TXT/usr_03.txt:265 original/TXT/usr_03.txt:320
-#: original/TXT/usr_03.txt:491 original/TXT/usr_03.txt:552
-#: original/TXT/usr_03.txt:650 original/TXT/usr_04.txt:27
-#: original/TXT/usr_04.txt:74 original/TXT/usr_04.txt:160
-#: original/TXT/usr_04.txt:194 original/TXT/usr_04.txt:269
-#: original/TXT/usr_04.txt:324 original/TXT/usr_04.txt:360
-#: original/TXT/usr_04.txt:390 original/TXT/usr_04.txt:446
-#: original/TXT/usr_04.txt:469 original/TXT/usr_04.txt:510
-#: original/TXT/usr_05.txt:24 original/TXT/usr_05.txt:63
-#: original/TXT/usr_05.txt:219 original/TXT/usr_05.txt:266
-#: original/TXT/usr_05.txt:418 original/TXT/usr_05.txt:467
-#: original/TXT/usr_05.txt:506 original/TXT/usr_05.txt:621
-#: original/TXT/usr_06.txt:24 original/TXT/usr_06.txt:50
-#: original/TXT/usr_06.txt:135 original/TXT/usr_06.txt:189
-#: original/TXT/usr_06.txt:270 original/TXT/usr_06.txt:276
-#: original/TXT/usr_07.txt:24 original/TXT/usr_07.txt:63
-#: original/TXT/usr_07.txt:179 original/TXT/usr_07.txt:266
-#: original/TXT/usr_07.txt:316 original/TXT/usr_07.txt:404
-#: original/TXT/usr_07.txt:444 original/TXT/usr_07.txt:475
-#: original/TXT/usr_08.txt:26 original/TXT/usr_08.txt:82
-#: original/TXT/usr_08.txt:109 original/TXT/usr_08.txt:161
-#: original/TXT/usr_08.txt:215 original/TXT/usr_08.txt:278
-#: original/TXT/usr_08.txt:337 original/TXT/usr_08.txt:477
-#: original/TXT/usr_08.txt:509 original/TXT/usr_08.txt:597
-#: original/TXT/usr_09.txt:21 original/TXT/usr_09.txt:124
-#: original/TXT/usr_09.txt:175 original/TXT/usr_09.txt:259
-#: original/TXT/usr_09.txt:285 original/TXT/usr_10.txt:27
-#: original/TXT/usr_10.txt:144 original/TXT/usr_10.txt:221
-#: original/TXT/usr_10.txt:342 original/TXT/usr_10.txt:378
-#: original/TXT/usr_10.txt:547 original/TXT/usr_10.txt:621
-#: original/TXT/usr_10.txt:667 original/TXT/usr_10.txt:692
-#: original/TXT/usr_10.txt:820 original/TXT/usr_11.txt:22
-#: original/TXT/usr_11.txt:82 original/TXT/usr_11.txt:144
-#: original/TXT/usr_11.txt:288 original/TXT/usr_11.txt:303
-#: original/TXT/usr_12.txt:25 original/TXT/usr_12.txt:90
-#: original/TXT/usr_12.txt:131 original/TXT/usr_12.txt:177
-#: original/TXT/usr_12.txt:202 original/TXT/usr_12.txt:231
-#: original/TXT/usr_12.txt:281 original/TXT/usr_12.txt:309
-#: original/TXT/usr_12.txt:354 original/TXT/usr_20.txt:22
-#: original/TXT/usr_20.txt:113 original/TXT/usr_20.txt:158
-#: original/TXT/usr_20.txt:285 original/TXT/usr_20.txt:327
-#: original/TXT/usr_20.txt:380 original/TXT/usr_21.txt:24
-#: original/TXT/usr_21.txt:47 original/TXT/usr_21.txt:87
-#: original/TXT/usr_21.txt:236 original/TXT/usr_21.txt:385
-#: original/TXT/usr_21.txt:438 original/TXT/usr_21.txt:495
-#: original/TXT/usr_22.txt:22 original/TXT/usr_22.txt:148
-#: original/TXT/usr_22.txt:213 original/TXT/usr_22.txt:272
-#: original/TXT/usr_22.txt:396 original/TXT/usr_23.txt:23
-#: original/TXT/usr_23.txt:114 original/TXT/usr_23.txt:156
-#: original/TXT/usr_23.txt:238 original/TXT/usr_23.txt:324
-#: original/TXT/usr_23.txt:339 original/TXT/usr_24.txt:28
-#: original/TXT/usr_24.txt:96 original/TXT/usr_24.txt:119
-#: original/TXT/usr_24.txt:268 original/TXT/usr_24.txt:305
-#: original/TXT/usr_24.txt:336 original/TXT/usr_24.txt:369
-#: original/TXT/usr_24.txt:493 original/TXT/usr_24.txt:537
-#: original/TXT/usr_24.txt:583 original/TXT/usr_24.txt:602
-#: original/TXT/usr_25.txt:22 original/TXT/usr_25.txt:132
-#: original/TXT/usr_25.txt:210 original/TXT/usr_25.txt:287
-#: original/TXT/usr_25.txt:453 original/TXT/usr_25.txt:574
-#: original/TXT/usr_26.txt:21 original/TXT/usr_26.txt:46
-#: original/TXT/usr_26.txt:103 original/TXT/usr_26.txt:136
-#: original/TXT/usr_26.txt:217 original/TXT/usr_27.txt:26
-#: original/TXT/usr_27.txt:88 original/TXT/usr_27.txt:136
-#: original/TXT/usr_27.txt:239 original/TXT/usr_27.txt:320
-#: original/TXT/usr_27.txt:350 original/TXT/usr_27.txt:427
-#: original/TXT/usr_27.txt:469 original/TXT/usr_27.txt:510
-#: original/TXT/usr_27.txt:559 original/TXT/usr_28.txt:27
-#: original/TXT/usr_28.txt:54 original/TXT/usr_28.txt:121
-#: original/TXT/usr_28.txt:185 original/TXT/usr_28.txt:211
-#: original/TXT/usr_28.txt:269 original/TXT/usr_28.txt:315
-#: original/TXT/usr_28.txt:331 original/TXT/usr_28.txt:375
-#: original/TXT/usr_28.txt:389 original/TXT/usr_28.txt:422
-#: original/TXT/usr_29.txt:23 original/TXT/usr_29.txt:273
-#: original/TXT/usr_29.txt:320 original/TXT/usr_29.txt:441
-#: original/TXT/usr_29.txt:570 original/TXT/usr_29.txt:609
-#: original/TXT/usr_30.txt:23 original/TXT/usr_30.txt:202
-#: original/TXT/usr_30.txt:280 original/TXT/usr_30.txt:336
-#: original/TXT/usr_30.txt:409 original/TXT/usr_30.txt:515
-#: original/TXT/usr_30.txt:639 original/TXT/usr_31.txt:22
-#: original/TXT/usr_31.txt:81 original/TXT/usr_31.txt:133
-#: original/TXT/usr_31.txt:160 original/TXT/usr_31.txt:208
-#: original/TXT/usr_31.txt:268
+#: original/txt/intro.txt:18 original/txt/intro.txt:79
+#: original/txt/intro.txt:180 original/txt/intro.txt:290
+#: original/txt/intro.txt:518 original/txt/intro.txt:596
+#: original/txt/intro.txt:689 original/txt/intro.txt:817
+#: original/txt/intro.txt:880 original/txt/usr_toc.txt:7
+#: original/txt/usr_toc.txt:58 original/txt/usr_toc.txt:172
+#: original/txt/usr_toc.txt:281 original/txt/usr_toc.txt:340
+#: original/txt/usr_toc.txt:352 original/txt/usr_01.txt:19
+#: original/txt/usr_01.txt:50 original/txt/usr_01.txt:100
+#: original/txt/usr_01.txt:181 original/txt/usr_02.txt:25
+#: original/txt/usr_02.txt:69 original/txt/usr_02.txt:130
+#: original/txt/usr_02.txt:179 original/txt/usr_02.txt:239
+#: original/txt/usr_02.txt:307 original/txt/usr_02.txt:369
+#: original/txt/usr_02.txt:406 original/txt/usr_02.txt:560
+#: original/txt/usr_03.txt:28 original/txt/usr_03.txt:74
+#: original/txt/usr_03.txt:101 original/txt/usr_03.txt:147
+#: original/txt/usr_03.txt:172 original/txt/usr_03.txt:223
+#: original/txt/usr_03.txt:265 original/txt/usr_03.txt:320
+#: original/txt/usr_03.txt:491 original/txt/usr_03.txt:552
+#: original/txt/usr_03.txt:650 original/txt/usr_04.txt:27
+#: original/txt/usr_04.txt:74 original/txt/usr_04.txt:160
+#: original/txt/usr_04.txt:194 original/txt/usr_04.txt:269
+#: original/txt/usr_04.txt:324 original/txt/usr_04.txt:360
+#: original/txt/usr_04.txt:390 original/txt/usr_04.txt:446
+#: original/txt/usr_04.txt:469 original/txt/usr_04.txt:510
+#: original/txt/usr_05.txt:24 original/txt/usr_05.txt:63
+#: original/txt/usr_05.txt:219 original/txt/usr_05.txt:266
+#: original/txt/usr_05.txt:418 original/txt/usr_05.txt:467
+#: original/txt/usr_05.txt:506 original/txt/usr_05.txt:621
+#: original/txt/usr_06.txt:24 original/txt/usr_06.txt:50
+#: original/txt/usr_06.txt:135 original/txt/usr_06.txt:189
+#: original/txt/usr_06.txt:270 original/txt/usr_06.txt:276
+#: original/txt/usr_07.txt:24 original/txt/usr_07.txt:63
+#: original/txt/usr_07.txt:179 original/txt/usr_07.txt:266
+#: original/txt/usr_07.txt:316 original/txt/usr_07.txt:404
+#: original/txt/usr_07.txt:444 original/txt/usr_07.txt:475
+#: original/txt/usr_08.txt:26 original/txt/usr_08.txt:82
+#: original/txt/usr_08.txt:109 original/txt/usr_08.txt:161
+#: original/txt/usr_08.txt:215 original/txt/usr_08.txt:278
+#: original/txt/usr_08.txt:337 original/txt/usr_08.txt:477
+#: original/txt/usr_08.txt:509 original/txt/usr_08.txt:597
+#: original/txt/usr_09.txt:21 original/txt/usr_09.txt:124
+#: original/txt/usr_09.txt:175 original/txt/usr_09.txt:259
+#: original/txt/usr_09.txt:285 original/txt/usr_10.txt:27
+#: original/txt/usr_10.txt:144 original/txt/usr_10.txt:221
+#: original/txt/usr_10.txt:342 original/txt/usr_10.txt:378
+#: original/txt/usr_10.txt:547 original/txt/usr_10.txt:621
+#: original/txt/usr_10.txt:667 original/txt/usr_10.txt:692
+#: original/txt/usr_10.txt:820 original/txt/usr_11.txt:22
+#: original/txt/usr_11.txt:82 original/txt/usr_11.txt:144
+#: original/txt/usr_11.txt:288 original/txt/usr_11.txt:303
+#: original/txt/usr_12.txt:25 original/txt/usr_12.txt:90
+#: original/txt/usr_12.txt:131 original/txt/usr_12.txt:177
+#: original/txt/usr_12.txt:202 original/txt/usr_12.txt:231
+#: original/txt/usr_12.txt:281 original/txt/usr_12.txt:309
+#: original/txt/usr_12.txt:354 original/txt/usr_20.txt:22
+#: original/txt/usr_20.txt:113 original/txt/usr_20.txt:158
+#: original/txt/usr_20.txt:285 original/txt/usr_20.txt:327
+#: original/txt/usr_20.txt:380 original/txt/usr_21.txt:24
+#: original/txt/usr_21.txt:47 original/txt/usr_21.txt:87
+#: original/txt/usr_21.txt:236 original/txt/usr_21.txt:385
+#: original/txt/usr_21.txt:438 original/txt/usr_21.txt:495
+#: original/txt/usr_22.txt:22 original/txt/usr_22.txt:148
+#: original/txt/usr_22.txt:213 original/txt/usr_22.txt:272
+#: original/txt/usr_22.txt:396 original/txt/usr_23.txt:23
+#: original/txt/usr_23.txt:114 original/txt/usr_23.txt:156
+#: original/txt/usr_23.txt:238 original/txt/usr_23.txt:324
+#: original/txt/usr_23.txt:339 original/txt/usr_24.txt:28
+#: original/txt/usr_24.txt:96 original/txt/usr_24.txt:119
+#: original/txt/usr_24.txt:268 original/txt/usr_24.txt:305
+#: original/txt/usr_24.txt:336 original/txt/usr_24.txt:369
+#: original/txt/usr_24.txt:493 original/txt/usr_24.txt:537
+#: original/txt/usr_24.txt:583 original/txt/usr_24.txt:602
+#: original/txt/usr_25.txt:22 original/txt/usr_25.txt:132
+#: original/txt/usr_25.txt:210 original/txt/usr_25.txt:287
+#: original/txt/usr_25.txt:453 original/txt/usr_25.txt:574
+#: original/txt/usr_26.txt:21 original/txt/usr_26.txt:46
+#: original/txt/usr_26.txt:103 original/txt/usr_26.txt:136
+#: original/txt/usr_26.txt:217 original/txt/usr_27.txt:26
+#: original/txt/usr_27.txt:88 original/txt/usr_27.txt:136
+#: original/txt/usr_27.txt:239 original/txt/usr_27.txt:320
+#: original/txt/usr_27.txt:350 original/txt/usr_27.txt:427
+#: original/txt/usr_27.txt:469 original/txt/usr_27.txt:510
+#: original/txt/usr_27.txt:559 original/txt/usr_28.txt:27
+#: original/txt/usr_28.txt:54 original/txt/usr_28.txt:121
+#: original/txt/usr_28.txt:185 original/txt/usr_28.txt:211
+#: original/txt/usr_28.txt:269 original/txt/usr_28.txt:315
+#: original/txt/usr_28.txt:331 original/txt/usr_28.txt:375
+#: original/txt/usr_28.txt:389 original/txt/usr_28.txt:422
+#: original/txt/usr_29.txt:23 original/txt/usr_29.txt:273
+#: original/txt/usr_29.txt:320 original/txt/usr_29.txt:441
+#: original/txt/usr_29.txt:570 original/txt/usr_29.txt:609
+#: original/txt/usr_30.txt:23 original/txt/usr_30.txt:202
+#: original/txt/usr_30.txt:280 original/txt/usr_30.txt:336
+#: original/txt/usr_30.txt:409 original/txt/usr_30.txt:515
+#: original/txt/usr_30.txt:639 original/txt/usr_31.txt:22
+#: original/txt/usr_31.txt:81 original/txt/usr_31.txt:133
+#: original/txt/usr_31.txt:160 original/txt/usr_31.txt:208
+#: original/txt/usr_31.txt:268 original/txt/usr_32.txt:21
+#: original/txt/usr_32.txt:44 original/txt/usr_32.txt:92
+#: original/txt/usr_32.txt:140 original/txt/usr_32.txt:176
+#: original/txt/usr_40.txt:20 original/txt/usr_40.txt:279
+#: original/txt/usr_40.txt:424 original/txt/usr_40.txt:653
+#: original/txt/usr_41.txt:33 original/txt/usr_41.txt:133
+#: original/txt/usr_41.txt:267 original/txt/usr_41.txt:345
+#: original/txt/usr_41.txt:482 original/txt/usr_41.txt:532
+#: original/txt/usr_41.txt:877 original/txt/usr_41.txt:1104
+#: original/txt/usr_41.txt:1390 original/txt/usr_41.txt:1447
+#: original/txt/usr_41.txt:1617 original/txt/usr_41.txt:2038
+#: original/txt/usr_41.txt:2224 original/txt/usr_41.txt:2270
+#: original/txt/usr_41.txt:2346 original/txt/usr_41.txt:2410
+#: original/txt/usr_41.txt:2425 original/txt/usr_42.txt:21
+#: original/txt/usr_42.txt:140 original/txt/usr_42.txt:254
+#: original/txt/usr_42.txt:293 original/txt/usr_42.txt:361
+#: original/txt/usr_43.txt:20 original/txt/usr_43.txt:70
+#: original/txt/usr_43.txt:169 original/txt/usr_44.txt:30
+#: original/txt/usr_44.txt:85 original/txt/usr_44.txt:139
+#: original/txt/usr_44.txt:166 original/txt/usr_44.txt:196
+#: original/txt/usr_44.txt:291 original/txt/usr_44.txt:321
+#: original/txt/usr_44.txt:448 original/txt/usr_44.txt:486
+#: original/txt/usr_44.txt:530 original/txt/usr_44.txt:609
+#: original/txt/usr_44.txt:645 original/txt/usr_44.txt:715
+#: original/txt/usr_45.txt:22 original/txt/usr_45.txt:85
+#: original/txt/usr_45.txt:137 original/txt/usr_45.txt:263
+#: original/txt/usr_45.txt:327 original/txt/usr_45.txt:415
+#: original/txt/usr_90.txt:21 original/txt/usr_90.txt:214
+#: original/txt/usr_90.txt:288 original/txt/usr_90.txt:341
+#: original/txt/usr_90.txt:417 original/txt/usr_90.txt:494
 #, no-wrap
 msgid "==============================================================================\n"
 msgstr "==============================================================================\n"
 
 #. type: Plain text
-#: original/TXT/usr_toc.txt:4 original/TXT/usr_01.txt:4
-#: original/TXT/usr_02.txt:4 original/TXT/usr_03.txt:4
-#: original/TXT/usr_04.txt:4 original/TXT/usr_05.txt:4
-#: original/TXT/usr_06.txt:4 original/TXT/usr_07.txt:4
-#: original/TXT/usr_08.txt:4 original/TXT/usr_09.txt:4
-#: original/TXT/usr_10.txt:4 original/TXT/usr_11.txt:4
-#: original/TXT/usr_12.txt:4 original/TXT/usr_20.txt:4
-#: original/TXT/usr_21.txt:4 original/TXT/usr_22.txt:4
-#: original/TXT/usr_23.txt:4 original/TXT/usr_24.txt:4
-#: original/TXT/usr_25.txt:4 original/TXT/usr_26.txt:4
-#: original/TXT/usr_27.txt:4 original/TXT/usr_28.txt:4
-#: original/TXT/usr_29.txt:4 original/TXT/usr_30.txt:4
-#: original/TXT/usr_31.txt:4
+#: original/txt/usr_toc.txt:4 original/txt/usr_01.txt:4
+#: original/txt/usr_02.txt:4 original/txt/usr_03.txt:4
+#: original/txt/usr_04.txt:4 original/txt/usr_05.txt:4
+#: original/txt/usr_06.txt:4 original/txt/usr_07.txt:4
+#: original/txt/usr_08.txt:4 original/txt/usr_09.txt:4
+#: original/txt/usr_10.txt:4 original/txt/usr_11.txt:4
+#: original/txt/usr_12.txt:4 original/txt/usr_20.txt:4
+#: original/txt/usr_21.txt:4 original/txt/usr_22.txt:4
+#: original/txt/usr_23.txt:4 original/txt/usr_24.txt:4
+#: original/txt/usr_25.txt:4 original/txt/usr_26.txt:4
+#: original/txt/usr_27.txt:4 original/txt/usr_28.txt:4
+#: original/txt/usr_29.txt:4 original/txt/usr_30.txt:4
+#: original/txt/usr_31.txt:4 original/txt/usr_32.txt:4
+#: original/txt/usr_40.txt:4 original/txt/usr_41.txt:4
+#: original/txt/usr_42.txt:4 original/txt/usr_43.txt:4
+#: original/txt/usr_44.txt:4 original/txt/usr_45.txt:4
+#: original/txt/usr_90.txt:4
 #, no-wrap
 msgid "\t\t     VIM USER MANUAL - by Bram Moolenaar\n"
 msgstr "\t\tMANUAL DE USUARIO DE VIM - por Bram Moolenaar\n"
 
 #. type: Plain text
-#: original/TXT/usr_toc.txt:354 original/TXT/usr_01.txt:185
-#: original/TXT/usr_02.txt:564 original/TXT/usr_03.txt:654
-#: original/TXT/usr_04.txt:514 original/TXT/usr_05.txt:625
-#: original/TXT/usr_06.txt:280 original/TXT/usr_07.txt:479
-#: original/TXT/usr_08.txt:601 original/TXT/usr_09.txt:289
-#: original/TXT/usr_10.txt:824 original/TXT/usr_11.txt:307
-#: original/TXT/usr_12.txt:358 original/TXT/usr_20.txt:384
-#: original/TXT/usr_21.txt:499 original/TXT/usr_22.txt:400
-#: original/TXT/usr_23.txt:343 original/TXT/usr_24.txt:606
-#: original/TXT/usr_25.txt:578 original/TXT/usr_26.txt:221
-#: original/TXT/usr_27.txt:563 original/TXT/usr_28.txt:426
-#: original/TXT/usr_29.txt:613 original/TXT/usr_30.txt:643
-#: original/TXT/usr_31.txt:272
+#: original/txt/usr_toc.txt:354 original/txt/usr_01.txt:185
+#: original/txt/usr_02.txt:564 original/txt/usr_03.txt:654
+#: original/txt/usr_04.txt:514 original/txt/usr_05.txt:625
+#: original/txt/usr_06.txt:280 original/txt/usr_07.txt:479
+#: original/txt/usr_08.txt:601 original/txt/usr_09.txt:289
+#: original/txt/usr_10.txt:824 original/txt/usr_11.txt:307
+#: original/txt/usr_12.txt:358 original/txt/usr_20.txt:384
+#: original/txt/usr_21.txt:499 original/txt/usr_22.txt:400
+#: original/txt/usr_23.txt:343 original/txt/usr_24.txt:606
+#: original/txt/usr_25.txt:578 original/txt/usr_26.txt:221
+#: original/txt/usr_27.txt:563 original/txt/usr_28.txt:426
+#: original/txt/usr_29.txt:613 original/txt/usr_30.txt:643
+#: original/txt/usr_31.txt:272 original/txt/usr_32.txt:180
+#: original/txt/usr_40.txt:657 original/txt/usr_41.txt:2429
+#: original/txt/usr_42.txt:365 original/txt/usr_43.txt:173
+#: original/txt/usr_44.txt:719 original/txt/usr_45.txt:419
+#: original/txt/usr_90.txt:498
 msgid "Copyright: see |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 msgstr "Copyright: consulte |manual-copyright| vim:tw=78:ts=8:ft=help:norl:"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:2
+#: original/txt/usr_06.txt:2
 #, no-wrap
 msgid "*usr_06.txt*\tFor Vim version 7.3.  Last change: 2009 Oct 28\n"
 msgstr "*usr_06.esx*\tPara Vim version 7.3.  Último cambio: 24/5/2006\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:6
+#: original/txt/usr_06.txt:6
 #, no-wrap
 msgid "\t\t\t  Using syntax highlighting\n"
 msgstr "\t\t\t Uso del resaltado de sintaxis\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:12
+#: original/txt/usr_06.txt:12
 msgid ""
 "Black and white text is boring.  With colors your file comes to life.  This "
 "not only looks nice, it also speeds up your work.  Change the colors used "
@@ -212,12 +249,12 @@ msgid ""
 "on the screen."
 msgstr ""
 "El texto en blanco y negro es aburrido. Con colores los archivos tienen más "
-"vida. No sólo adquieren mejor apariencia, si no que acelera la producción.  "
-"Cambie los colores para distintos tipos de texto. Imprima sus textos con los "
-"colores que ve en pantalla."
+"vida. No sólo adquieren mejor apariencia, si no que aumentan su "
+"productividad. Cambie los colores para distintos tipos de texto. Imprima sus "
+"textos con los colores que ve en pantalla."
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:19
+#: original/txt/usr_06.txt:19
 #, no-wrap
 msgid ""
 "|06.1|\tSwitching it on\n"
@@ -229,13 +266,13 @@ msgid ""
 msgstr ""
 "|06.1|\tActivar\n"
 "|06.2|\t¿Colores incorrectos o ausentes?\n"
-"|06.3|\tDiferentes colores\n"
+"|06.3|\tColores diferentes\n"
 "|06.4|\tCon colores o sin colores\n"
 "|06.5|\tImprimir con colores\n"
 "|06.6|\tMás información\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:23
+#: original/txt/usr_06.txt:23
 #, no-wrap
 msgid ""
 "     Next chapter: |usr_07.txt|  Editing more than one file\n"
@@ -247,24 +284,24 @@ msgstr ""
 "Tabla de contenidos: |usr_toc.esx|\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:26
+#: original/txt/usr_06.txt:26
 #, no-wrap
 msgid "*06.1*\tSwitching it on\n"
 msgstr "*06.1*\tActivar\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:28
+#: original/txt/usr_06.txt:28
 msgid "It all starts with one simple command: >"
 msgstr "Comencemos con una simple orden: >"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:30
+#: original/txt/usr_06.txt:30
 #, no-wrap
 msgid "\t:syntax enable\n"
 msgstr "\t:syntax enable\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:36
+#: original/txt/usr_06.txt:36
 msgid ""
 "That should work in most situations to get color in your files.  Vim will "
 "automagically detect the type of file and load the right syntax "
@@ -272,15 +309,15 @@ msgid ""
 "This makes it easy to overview the file.  After a while you will find that "
 "black&white text slows you down!"
 msgstr ""
-"Esto debería funcionar en la mayoría de las situaciones para obtener el "
-"coloreado. Vim detectará automágicamente el tipo de archivo y cargará la "
-"sintaxis correspondiente. De repente, los comentarios, las palabras clave y "
-"las cadenas se colorean. Esto facilita una vista general del archivo.  ¡Tras "
-"usarlo un poco se dará cuenta de lo que le ralentizaba la edición el blanco "
-"y negro!"
+"Esto debería funcionar en la mayoría de las situaciones para colorear sus "
+"archivos. Vim detectará automágicamente el tipo de archivo y cargará el "
+"resaltado de sintaxis correspondiente. De repente, los comentarios, las "
+"palabras clave y las cadenas se colorean. Esto facilita una vista general "
+"del archivo. ¡Tras usarlo un poco se dará cuenta de lo que le ralentizaba la "
+"edición en blanco y negro!"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:39
+#: original/txt/usr_06.txt:39
 msgid ""
 "If you always want to use syntax highlighting, put the \":syntax enable\" "
 "command in your |vimrc| file."
@@ -289,7 +326,7 @@ msgstr ""
 "enable» en su archivo |vimrc|."
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:42
+#: original/txt/usr_06.txt:42
 msgid ""
 "If you want syntax highlighting only when the terminal supports colors, you "
 "can put this in your |vimrc| file: >"
@@ -298,7 +335,7 @@ msgstr ""
 "puede poner esto en su archivo |vimrc|: >"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:46
+#: original/txt/usr_06.txt:46
 #, no-wrap
 msgid ""
 "\tif &t_Co > 1\n"
@@ -310,7 +347,7 @@ msgstr ""
 "\tendif\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:49
+#: original/txt/usr_06.txt:49
 msgid ""
 "If you want syntax highlighting only in the GUI version, put the \":syntax "
 "enable\" command in your |gvimrc| file."
@@ -319,18 +356,18 @@ msgstr ""
 "syntax enable» únicamente en el archivo |gvimrc|."
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:52
+#: original/txt/usr_06.txt:52
 #, no-wrap
 msgid "*06.2*\tNo or wrong colors?\n"
 msgstr "*06.2*\t¿Colores incorrectos o ausentes?\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:54
+#: original/txt/usr_06.txt:54
 msgid "There can be a number of reasons why you don't see colors:"
 msgstr "Puede haber una serie de motivos por los que no vea colores:"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:60
+#: original/txt/usr_06.txt:60
 #, no-wrap
 msgid ""
 "- Your terminal does not support colors.\n"
@@ -346,7 +383,7 @@ msgstr ""
 "\t|xfree-xterm|.\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:64
+#: original/txt/usr_06.txt:64
 #, no-wrap
 msgid ""
 "- Your terminal does support colors, but Vim doesn't know this.\n"
@@ -358,7 +395,7 @@ msgstr ""
 "\tuse una xterm que soporte colores: >\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:68
+#: original/txt/usr_06.txt:68
 #, no-wrap
 msgid ""
 "\t\tsetenv TERM xterm-color\n"
@@ -367,16 +404,16 @@ msgid ""
 msgstr ""
 "\t\tsetenv TERM xterm-color\n"
 "<\n"
-"\to (dependiendo de su consola): >\n"
+"\to (dependiendo de su intérprete de órdenes): >\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:70
+#: original/txt/usr_06.txt:70
 #, no-wrap
 msgid "\t\tTERM=xterm-color; export TERM\n"
 msgstr "\t\tTERM=xterm-color; export TERM\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:74
+#: original/txt/usr_06.txt:74
 #, no-wrap
 msgid ""
 "<\tThe terminal name must match the terminal you are using.  If it\n"
@@ -384,23 +421,24 @@ msgid ""
 "\tways to make Vim display colors (not only for an xterm).\n"
 msgstr ""
 "<\tEl nombre de la terminal debe coincidir con la terminal que esté\n"
-"\tusando. Si aún así no funciona, consulte |xterm-color|,\n"
-"\tdonde puede ver unas cuantas maneras de hacer que se vean colores.\n"
+"\tusando. Si aún así no funciona, consulte |xterm-color|, donde puede\n"
+"\tver unas cuantas maneras de hacer que se vean colores (no sólo para\n"
+"\txterm).\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:78
+#: original/txt/usr_06.txt:78
 #, no-wrap
 msgid ""
 "- The file type is not recognized.\n"
 "\tVim doesn't know all file types, and sometimes it's near to impossible\n"
 "\tto tell what language a file uses.  Try this command: >\n"
 msgstr ""
-"- El tipo de archivo no es reconocido.\n"
+"- No se reconoce el tipo de archivo.\n"
 "\tVim no conoce todos los tipos de archivos, y a veces es casi imposible\n"
-"\tdecir que lenguaje usa un archivo. Pruebe esta orden: >\n"
+"\taveriguar qué lenguaje usa un archivo. Pruebe esta orden: >\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:84
+#: original/txt/usr_06.txt:84
 #, no-wrap
 msgid ""
 "\t\t:set filetype\n"
@@ -412,17 +450,17 @@ msgstr ""
 "\t\t:set filetype\n"
 "<\n"
 "\tSi el resultado es «filetype=» entonces el problema es que Vim no sabe\n"
-"\tque de qué tipo de archivo se trata. Puede decirle el tipo de archivo\n"
-"\tde forma manual: >\n"
+"\tde qué tipo de archivo se trata. Puede indicarle el tipo de archivo de\n"
+"\tforma manual: >\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:86
+#: original/txt/usr_06.txt:86
 #, no-wrap
 msgid "\t\t:set filetype=fortran\n"
 msgstr "\t\t:set filetype=fortran\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:93
+#: original/txt/usr_06.txt:93
 #, no-wrap
 msgid ""
 "<\tTo see which types are available, look in the directory\n"
@@ -432,21 +470,21 @@ msgid ""
 "\tline can be used in a Makefile (put it near the start or end of the\n"
 "\tfile): >\n"
 msgstr ""
-"<\tPara ver qué tipos de archivos están disponibles,  mire en el\n"
-"\tdirectorio «$VIMRUNTIME/syntax». Para la GUI puede usar el menú Syntax.\n"
-"        También puede activar el tipo de archivo con un |modeline|, de forma\n"
-"\tque el archivo se resaltará cada vez que lo edite. Por ejemplo, puede\n"
-"\templear esta línea para los Makefiles (insértela cerca del principio o\n"
-"\tel final del archivo): >\n"
+"<\tPara ver qué tipos de archivo están disponibles, mire en el\n"
+"\tdirectorio «$VIMRUNTIME/syntax». Para la GUI puede usar el menú\n"
+"\tSintaxis. También puede activar el tipo de archivo con un |modeline|,\n"
+"\tde forma que el resaltado para el archivo se activará cada vez que lo\n"
+"\tedite. Por ejemplo, puede emplear esta línea para los archivos\n"
+"\tMakefile (póngala cerca del principio o del final del archivo): >\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:95
+#: original/txt/usr_06.txt:95
 #, no-wrap
 msgid "\t\t# vim: syntax=make\n"
 msgstr "\t\t# vim: syntax=make\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:99
+#: original/txt/usr_06.txt:99
 #, no-wrap
 msgid ""
 "<\tYou might know how to detect the file type yourself.  Often the file\n"
@@ -454,11 +492,12 @@ msgid ""
 "\tSee |new-filetype| for how to tell Vim to detect that file type.\n"
 msgstr ""
 "<\tQuizá sepa cómo detectar el tipo de archivo por cuenta propia. A\n"
-"\tmenudo se puede emplear la extensión del nombre de archivo.\n"
-"\tVéase |new-filetype| para ver cómo decirle a Vim que detecte el tipo.\n"
+"\tmenudo se puede emplear la extensión del nombre de archivo.  Consulte\n"
+"\t|new-filetype| para ver cómo decirle a Vim que detecte un nuevo tipo\n"
+"\tde archivo.\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:104
+#: original/txt/usr_06.txt:104
 #, no-wrap
 msgid ""
 "- There is no highlighting for your file type.\n"
@@ -468,16 +507,16 @@ msgid ""
 msgstr ""
 "- No hay resaltado para su tipo de archivo.\n"
 "\tPuede intentar usar un archivo similar activándolo manualmente como se\n"
-"\texplica más arriba. Si no tiene suficiente, puede escribir su propio\n"
+"\texplicó anteriormente. Si eso no basta, puede escribir su propio\n"
 "\tarchivo de sintaxis, consulte |mysyntaxfile|.\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:107
+#: original/txt/usr_06.txt:107
 msgid "Or the colors could be wrong:"
 msgstr "O los colores están mal:"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:114
+#: original/txt/usr_06.txt:114
 #, no-wrap
 msgid ""
 "- The colored text is very hard to read.\n"
@@ -492,28 +531,28 @@ msgstr ""
 "\t(u otro color oscuro) usará colores claros para el texto. Si es blanco\n"
 "\t(u otro color claro) usará colores oscuros para el texto. Si Vim no ha\n"
 "\tacertado, el texto se hará difícil de leer. Para solucionar esto,\n"
-"\tactive la opción 'background'. Para un fondo oscuro: >\n"
+"\tdefina la opción 'background'. Para un fondo oscuro: >\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:116
+#: original/txt/usr_06.txt:116
 #, no-wrap
 msgid "\t\t:set background=dark\n"
 msgstr "\t\t:set background=dark\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:118
+#: original/txt/usr_06.txt:118
 #, no-wrap
 msgid "<\tAnd for a light background: >\n"
 msgstr "<\tY para un fondo claro: >\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:120
+#: original/txt/usr_06.txt:120
 #, no-wrap
 msgid "\t\t:set background=light\n"
 msgstr "\t\t:set background=light\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:125
+#: original/txt/usr_06.txt:125
 #, no-wrap
 msgid ""
 "<\tMake sure you put this _before_ the \":syntax enable\" command,\n"
@@ -527,7 +566,7 @@ msgstr ""
 "\tlos colores.\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:134
+#: original/txt/usr_06.txt:134
 #, no-wrap
 msgid ""
 "- The colors are wrong when scrolling bottom to top.\n"
@@ -539,38 +578,40 @@ msgid ""
 "\tit look further back, see the help for the specific syntax file.  For\n"
 "\texample, |tex.vim| for the TeX syntax.\n"
 msgstr ""
-"- Los colores están mal cuando se desplaza el texto de abajo arriba.\n"
-"\tVim no lee el archivo completo. Comienza justo en el punto donde está\n"
-"\tviendo el archivo. Eso ahorra mucho tiempo, pero a veces los colores\n"
-"\testán mal. Un arreglo rápido consiste en teclear CTRL-L, o ir hacia\n"
-"\tatrás y de nuevo hacia delante en el texto. Para un arreglo real,\n"
-"\tconsulte |:syn-sync|. Algunos archivos de sintaxis tienen un modo de\n"
-"\tmirar hacia el texto hacia atrás, mire la ayuda específica para la\n"
-"\tsintaxis. Por ejemplo, |tex.vim| para la sintaxis de TeX.\n"
+"- Los colores están mal cuando se desplaza el texto de abajo hacia arriba.\n"
+"\tVim no lee el archivo completo para analizar el texto. Comienza justo\n"
+"\ten el punto donde está viendo el archivo. Eso ahorra mucho tiempo,\n"
+"\tpero a veces los colores están mal. Un arreglo rápido consiste en\n"
+"\tteclear CTRL-L, o ir hacia atrás y de nuevo hacia delante en el texto.\n"
+"\tPara un arreglo real, consulte |:syn-sync|. Algunos archivos de\n"
+"\tsintaxis tienen un modo de mirar el texto hacia atrás, mire la ayuda\n"
+"\tespecífica para la sintaxis. Por ejemplo, |tex.vim| para la sintaxis\n"
+"\tde TeX.\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:137
+#: original/txt/usr_06.txt:137
 #, no-wrap
 msgid "*06.3*\tDifferent colors\t\t\t\t*:syn-default-override*\n"
-msgstr "*06.3*\tDiferentes colores\t\t\t\t*:syn-default-override*\n"
+msgstr "*06.3*\tColores diferentes\t\t\t*:syn-default-override*\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:140
+#: original/txt/usr_06.txt:140
 msgid ""
 "If you don't like the default colors, you can select another color scheme.  "
 "In the GUI use the Edit/Color Scheme menu.  You can also type the command: >"
 msgstr ""
-"Si no le gustan los colores predeterminados, puede seleccionar otro esquema "
-"de colores. En GVim, use el menú Edit/Color. También puede usar la orden: >"
+"Si no le gustan los colores predeterminados, puede seleccionar otro esquema de "
+"colores. En GVim, use el menú Editar/Esquema de colores. También puede usar la "
+"orden: >"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:142
+#: original/txt/usr_06.txt:142
 #, no-wrap
 msgid "\t:colorscheme evening\n"
 msgstr "\t:colorscheme evening\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:145
+#: original/txt/usr_06.txt:145
 msgid ""
 "\"evening\" is the name of the color scheme.  There are several others you "
 "might want to try out.  Look in the directory $VIMRUNTIME/colors."
@@ -579,7 +620,7 @@ msgstr ""
 "quiera probar. Mire en el directorio «$MYVIMRUNTIME/colors»."
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:148
+#: original/txt/usr_06.txt:148
 msgid ""
 "When you found the color scheme that you like, add the \":colorscheme\" "
 "command to your |vimrc| file."
@@ -588,23 +629,23 @@ msgstr ""
 "colorscheme» a su archivo |vimrc|."
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:150
+#: original/txt/usr_06.txt:150
 msgid "You could also write your own color scheme.  This is how you do it:"
 msgstr ""
 "También puede escribir su propio esquema de colores. Así es que como se hace:"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:153
+#: original/txt/usr_06.txt:153
 #, no-wrap
 msgid ""
 "1. Select a color scheme that comes close.  Copy this file to your own Vim\n"
 "   directory.  For Unix, this should work: >\n"
 msgstr ""
-"1. Seleccione un esquema que se parezca. Copie ese archivo a su propio\n"
-"   directorio de Vim. Bajo Unix, esto debería funcionar: >\n"
+"1. Seleccione un esquema que se parezca al que usted quiere. Copie ese archivo\n"
+"   a su propio directorio de Vim. Bajo Unix, esto debería funcionar: >\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:158
+#: original/txt/usr_06.txt:158
 #, no-wrap
 msgid ""
 "\t!mkdir ~/.vim/colors\n"
@@ -615,18 +656,18 @@ msgstr ""
 "\t!mkdir ~/.vim/colors\n"
 "\t!cp $VIMRUNTIME/colors/morning.vim ~/.vim/colors/mine.vim\n"
 "<\n"
-"   Esto se hace desde Vim, porque conoce el valor de $VIMRUNTIME.\n"
+"   Esto se hace desde Vim, porque Vim conoce el valor de $VIMRUNTIME.\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:160
+#: original/txt/usr_06.txt:160
 #, no-wrap
 msgid "2. Edit the color scheme file.  These entries are useful:\n"
 msgstr ""
-"2. Editar el archivo del esquema de colores. Estas entradas son\n"
+"2. Edite el archivo del esquema de colores. Estas entradas son\n"
 "   útiles:\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:168
+#: original/txt/usr_06.txt:168
 #, no-wrap
 msgid ""
 "\tterm\t\tattributes in a B&W terminal\n"
@@ -646,13 +687,13 @@ msgstr ""
 "\tguibg\t\tcolor de fondo de la GUI\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:170
+#: original/txt/usr_06.txt:170
 #, no-wrap
 msgid "   For example, to make comments green: >\n"
-msgstr "   Por ejemplo, para hacer los comentarios en verde: >\n"
+msgstr "   Por ejemplo, para que los comentarios sean verdes: >\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:176
+#: original/txt/usr_06.txt:176
 #, no-wrap
 msgid ""
 "\t:highlight Comment ctermfg=green guifg=green\n"
@@ -663,39 +704,39 @@ msgid ""
 msgstr ""
 "\t:highlight Comment ctermfg=green guifg=green\n"
 "<\n"
-"   Los atributos que puede usar para «cterm» y «gui» son «bold» y «underline».\n"
-"   Si quiere los dos, escriba «bold,underline». Para más detalles, consulte la\n"
-"   orden |:highlight|.\n"
+"   Los atributos que puede usar para «cterm» y «gui» son «bold» (negrita) y\n"
+"   «underline» (subrayado). Si quiere los dos, escriba «bold,underline». Para\n"
+"   más detalles, consulte la orden |:highlight|.\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:178
+#: original/txt/usr_06.txt:178
 #, no-wrap
 msgid "3. Tell Vim to always use your color scheme.  Put this line in your |vimrc|: >\n"
-msgstr "3.  Decir a Vim que use siempre su esquema. Incluya esto en su |vimrc|: >\n"
+msgstr "3. Dígale a Vim que use siempre su esquema. Incluya esto en su |vimrc|: >\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:180
+#: original/txt/usr_06.txt:180
 #, no-wrap
 msgid "\tcolorscheme mine\n"
 msgstr "\tcolorscheme mine\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:183
+#: original/txt/usr_06.txt:183
 msgid ""
 "If you want to see what the most often used color combinations look like, "
 "use this command: >"
 msgstr ""
-"Si quiere ver cómo son los colores más habitualmente usados, emplee esta "
+"Si quiere ver cómo son los colores más usados habitualmente, emplee esta "
 "orden: >"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:185
+#: original/txt/usr_06.txt:185
 #, no-wrap
 msgid "\t:runtime syntax/colortest.vim\n"
 msgstr "\t:runtime syntax/colortest.vim\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:188
+#: original/txt/usr_06.txt:188
 msgid ""
 "You will see text in various color combinations.  You can check which ones "
 "are readable and look nice."
@@ -704,13 +745,13 @@ msgstr ""
 "legibles y que tienen un apariencia agradable."
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:191
+#: original/txt/usr_06.txt:191
 #, no-wrap
 msgid "*06.4*\tWith colors or without colors\n"
 msgstr "*06.4*\tCon colores o sin colores\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:194
+#: original/txt/usr_06.txt:194
 msgid ""
 "Displaying text in color takes a lot of effort.  If you find the displaying "
 "too slow, you might want to disable syntax highlighting for a moment: >"
@@ -720,18 +761,18 @@ msgstr ""
 "momentáneamente: >"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:196
+#: original/txt/usr_06.txt:196 original/txt/usr_44.txt:42
 #, no-wrap
 msgid "\t:syntax clear\n"
 msgstr "\t:syntax clear\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:198
+#: original/txt/usr_06.txt:198
 msgid "When editing another file (or the same one) the colors will come back."
 msgstr "Cuando edite otro archivo (o el mismo) los colores reaparecerán."
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:201
+#: original/txt/usr_06.txt:201
 #, no-wrap
 msgid ""
 "\t\t\t\t\t\t\t*:syn-off*\n"
@@ -741,22 +782,22 @@ msgstr ""
 "Si quiere desactivar el resaltado por completo use: >\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:203
+#: original/txt/usr_06.txt:203
 #, no-wrap
 msgid "\t:syntax off\n"
 msgstr "\t:syntax off\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:206
+#: original/txt/usr_06.txt:206
 msgid ""
 "This will completely disable syntax highlighting and remove it immediately "
 "for all buffers."
 msgstr ""
-"Esto desactivará completamente el resaltado de sintaxis y eliminará "
+"Esto desactivará completamente el resaltado de sintaxis y lo eliminará "
 "inmediatamente de todos los búfers."
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:209
+#: original/txt/usr_06.txt:209
 #, no-wrap
 msgid ""
 "\t\t\t\t\t\t\t*:syn-manual*\n"
@@ -766,24 +807,24 @@ msgstr ""
 "Si desea resaltado de sintaxis sólo para archivos específicos, use esto: >\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:211
+#: original/txt/usr_06.txt:211
 #, no-wrap
 msgid "\t:syntax manual\n"
 msgstr "\t:syntax manual\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:215
+#: original/txt/usr_06.txt:215
 msgid ""
 "This will enable the syntax highlighting, but not switch it on automatically "
 "when starting to edit a buffer.  To switch highlighting on for the current "
 "buffer, set the 'syntax' option: >"
 msgstr ""
-"Esto permitirá el resaltado, pero no lo activará automáticamente cuando "
-"edites un búfer. Para activarla en el búfer actual, asigne la opción "
+"Esto permitirá el resaltado, pero no lo activará automáticamente cuando edite "
+"un búfer. Para activar el resaltado en el búfer actual, defina la opción "
 "'syntax' del siguiente modo: >"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:218
+#: original/txt/usr_06.txt:218
 #, no-wrap
 msgid ""
 "\t:set syntax=ON\n"
@@ -791,43 +832,44 @@ msgid ""
 "==============================================================================\n"
 msgstr ""
 "\t:set syntax=ON\n"
+"<\n"
 "==============================================================================\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:220
+#: original/txt/usr_06.txt:220
 #, no-wrap
 msgid "*06.5*\tPrinting with colors\t\t\t\t*syntax-printing*\n"
 msgstr "*06.5*\tImprimir con colores\t\t\t\t*syntax-printing*\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:222
+#: original/txt/usr_06.txt:222
 msgid ""
 "In the MS-Windows version you can print the current file with this command: >"
 msgstr ""
-"En la version MS-Windows puede imprimir el archivo actual del siguiente "
-"modo: >"
+"En la versión MS-Windows de Vim puede imprimir el archivo actual del "
+"siguiente modo: >"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:224
+#: original/txt/usr_06.txt:224
 #, no-wrap
 msgid "\t:hardcopy\n"
 msgstr "\t:hardcopy\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:229
+#: original/txt/usr_06.txt:229
 msgid ""
 "You will get the usual printer dialog, where you can select the printer and "
 "a few settings.  If you have a color printer, the paper output should look "
 "the same as what you see inside Vim.  But when you use a dark background the "
 "colors will be adjusted to look good on white paper."
 msgstr ""
-"Le aparecerá el típico diálogo de impresora, donde puede seleccionarla junto "
-"con algunas opciones. Si tiene una impresora a color, la salida impresa debe "
-"ser similar a lo que aparece en pantalla. Sin embargo, cuando tiene un fondo "
+"Aparecerá el típico diálogo de impresora, donde puede seleccionarla junto con "
+"algunas opciones. Si tiene una impresora a color, la salida impresa debe ser "
+"similar a lo que aparece en pantalla. Sin embargo, cuando tiene un fondo "
 "oscuro, los colores se ajustarán para verse bien sobre blanco."
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:235
+#: original/txt/usr_06.txt:235
 #, no-wrap
 msgid ""
 "There are several options that change the way Vim prints:\n"
@@ -843,7 +885,7 @@ msgstr ""
 "\t'printoptions'\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:238
+#: original/txt/usr_06.txt:238
 msgid ""
 "To print only a range of lines, use Visual mode to select the lines and then "
 "type the command: >"
@@ -852,57 +894,57 @@ msgstr ""
 "seleccionarlas e introduzca luego la orden: >"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:240
+#: original/txt/usr_06.txt:240
 #, no-wrap
 msgid "\tv100j:hardcopy\n"
 msgstr "\tv100j:hardcopy\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:244
+#: original/txt/usr_06.txt:244
 msgid ""
 "\"v\" starts Visual mode.  \"100j\" moves a hundred lines down, they will be "
 "highlighted.  Then \":hardcopy\" will print those lines.  You can use other "
 "commands to move in Visual mode, of course."
 msgstr ""
-"«v» inicia el modo Visual. «100j» le mueve 100 líneas hacia abajo, que se "
-"resaltarán. Por último «:hardcopy» imprimirá las líneas destacadas. Puede "
-"usar otras órdenes para moverse en modo Visual, por supuesto."
+"«v» inicia el modo Visual. «100j» mueve el cursor 100 líneas hacia abajo, que "
+"se resaltarán. Por último «:hardcopy» imprimirá las líneas destacadas. Puede "
+"usar otras órdenes de movimiento en modo Visual, por supuesto."
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:248
+#: original/txt/usr_06.txt:248
 msgid ""
 "This also works on Unix, if you have a PostScript printer.  Otherwise, you "
 "will have to do a bit more work.  You need to convert the text to HTML "
 "first, and then print it from a web browser."
 msgstr ""
 "Esto también funciona en Unix si tiene una impresora PostScript. En caso "
-"contrario, tendrá que hacer un poco más de trabajo. Tendrá que convertir a "
-"HTML primero y luego imprimirlo desde un navegador web."
+"contrario, tendrá que hacer un poco más de trabajo. Tendrá que convertir el "
+"texto a HTML primero y luego imprimirlo desde un navegador web."
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:250
+#: original/txt/usr_06.txt:250
 msgid "Convert the current file to HTML with this command: >"
 msgstr "Convierta el archivo a HTML con esta orden: >"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:252
+#: original/txt/usr_06.txt:252
 #, no-wrap
 msgid "\t:TOhtml\n"
 msgstr "\t:TOhtml\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:254
+#: original/txt/usr_06.txt:254
 msgid "In case that doesn't work: >"
 msgstr "En el caso de que no funcione: >"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:256
+#: original/txt/usr_06.txt:256
 #, no-wrap
 msgid "\t:source $VIMRUNTIME/syntax/2html.vim\n"
 msgstr "\t:source $VIMRUNTIME/syntax/2html.vim\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:262
+#: original/txt/usr_06.txt:262
 #, no-wrap
 msgid ""
 "You will see it crunching away, this can take quite a while for a large file.\n"
@@ -911,27 +953,27 @@ msgid ""
 ">\n"
 "\t:write main.c.html\n"
 msgstr ""
-"Lo verá trabajar, esto puede llevar un buen tiempo para archivos grandes.\n"
-"Un rato después otra ventana muestra el código HTML. Ahora guarde esto en algún\n"
+"Lo verá trabajar, esto puede llevar un buen tiempo para archivos grandes. Un\n"
+"rato después otra ventana muestra el código HTML. Ahora guarde esto en algún\n"
 "lugar (no importa dónde, lo eliminará en cuanto termine de imprimir):\n"
 ">\n"
 "\t:write main.c.html\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:266
+#: original/txt/usr_06.txt:266
 msgid ""
 "Open this file in your favorite browser and print it from there.  If all "
 "goes well, the output should look exactly as it does in Vim.  See |2html."
 "vim| for details.  Don't forget to delete the HTML file when you are done "
 "with it."
 msgstr ""
-"Abra este archivo en su navegador favorito e imprímalo desde allí. Si todo "
-"ha salido bien, la salida debe tener la misma apariencia que tenía en Vim.  "
-"Véase |2html.vim| para más detalles. No se olvide de eliminar el archivo "
-"HTML."
+"Abra este archivo en su navegador favorito e imprímalo desde allí. Si todo ha "
+"salido bien, la salida debe tener la misma apariencia que tenía en Vim. "
+"Consulte |2html.vim| para más detalles. No se olvide de eliminar el archivo "
+"HTML cuando haya terminado de usarlo."
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:269
+#: original/txt/usr_06.txt:269
 msgid ""
 "Instead of printing, you could also put the HTML file on a web server, and "
 "let others look at the colored text."
@@ -940,13 +982,13 @@ msgstr ""
 "a otros ver el texto resaltado."
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:272
+#: original/txt/usr_06.txt:272
 #, no-wrap
 msgid "*06.6*\tFurther reading\n"
 msgstr "*06.6*\tMás información\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:275
+#: original/txt/usr_06.txt:275
 #, no-wrap
 msgid ""
 "|usr_44.txt|  Your own syntax highlighted.\n"
@@ -956,6 +998,6 @@ msgstr ""
 "|syntax|      Todos los detalles.\n"
 
 #. type: Plain text
-#: original/TXT/usr_06.txt:279
+#: original/txt/usr_06.txt:279
 msgid "Next chapter: |usr_07.txt| Editing more than one file"
 msgstr "Capítulo siguiente: |usr_07.esx| Editar más de un archivo"
